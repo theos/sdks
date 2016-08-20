@@ -1,0 +1,32 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RTCReportingFetchStatesWithUserInfo,
+                        _RTCReportingInitWithSessionInfo, _RTCReportingSendMessageWithDictionary,
+                        _RTCReportingSendMsg, _RTCReportingSetMessageBlock,
+                        _RTCReportingSetServerInfo, _RTCReportingStartConfiguration,
+                        _asl, _kRTCReportingBackendAWD,
+                        _kRTCReportingBackendHTTPPost, _kRTCReportingBackendPowerlog,
+                        _kRTCReportingDefaultsDomain, _kRTCReportingDefaultsKeyUUIDRespectDNU,
+                        _kRTCReportingLogDataData, _kRTCReportingLogDataStartTime,
+                        _kRTCReportingMessageParametersFlag, _kRTCReportingMessageParametersType,
+                        _kRTCReportingSessionInfoClientType, _kRTCReportingSessionInfoEnableFlag,
+                        _kRTCReportingSessionInfoSessionID, _kRTCReportingUserInfoServiceName,
+                        _validateMessageWithDictionary, _validateSessionInfo,
+                        _RTCReportingFlushMessages, _RTCReportingSendMessageWithError,
+                        _RTCReportingSetServer, _RTCReportingUploadLogWithArray,
+                        _kRTCReportingBackendDashboard, _kRTCReportingBackendUploadServer,
+                        _kRTCReportingErrorDomain, _kRTCReportingMessageParametersCategory,
+                        _kRTCReportingSessionInfoBatchEvent, _kRTCReportingSessionInfoRequireUserInfo,
+                        _validateMessageWithCategory ]
+    objc-classes:     [ _RTCReporting,
+                        _RTCReportingLogging, _UpdateAndReportServices,
+                        _RTCReportingAggregationObject ]
+...

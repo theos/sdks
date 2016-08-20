@@ -1,0 +1,61 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaSocial.framework/MediaSocial
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSCLAccountEntityPropertyAuthenticationSecret,
+                        _MSCLAccountEntityPropertyAuthorIdentity, _MSCLAccountEntityPropertyEnabled,
+                        _MSCLAccountEntityPropertyPreferredPageIdentifier, _MSCLAccountEntityPropertyServiceIdentifier,
+                        _MSCLAccountEntityPropertyUserName, _MSCLAccountPropertyAuthenticationToken,
+                        _MSCLAccountPropertyFullName, _MSCLAccountPropertyPreferredPageIdentifier,
+                        _MSCLAccountPropertyUserId, _MSCLAccountStoreDidChangeNotification,
+                        _MSCLCameraKitFramework, _MSCLFacebookReadPermissions,
+                        _MSCLLinearValueForDecibels, _MSCLServiceIdentifierTwitter,
+                        _MSCLTemporaryAssetsDirectoryPath, _MSCLVoiceMemosFramework,
+                        _MSCLWeakLinkedSymbolForString, _MediaSocialVersionString,
+                        __QueryKeyForAuthorType, _MSCLAccountEntityPropertyAuthenticationToken,
+                        _MSCLAccountEntityPropertyFullName, _MSCLAccountEntityPropertyUserIdentifier,
+                        _MSCLAccountPropertyEnabled, _MSCLAccountPropertyServiceIdentifier,
+                        _MSCLAssetsLibraryFramework, _MSCLFacebookWritePermissions,
+                        _MSCLStringsTablePostComposition, _MSCLWeakLinkedClassForString,
+                        __BagKeyForServiceIdentifier ]
+    objc-classes:     [ _MSCLAccount,
+                        _MSCLAccountEntity, _MSCLAccountStore,
+                        _MSCLAccountTokenRegisterOperation, _MSCLAttachment,
+                        _MSCLAttachmentDownloadOperation, _MSCLAttachmentPropertiesTableViewSection,
+                        _MSCLAttributionSelectionViewController, _MSCLAudioCoverImageSelectionTableViewCell,
+                        _MSCLAudioPickerMediaLibraryViewController, _MSCLAudioPickerSourcesViewController,
+                        _MSCLAudioPickerVoiceMemoTableViewCell, _MSCLAudioPlayer,
+                        _MSCLAudioPlayerStatus, _MSCLAuthorSelectionAlertController,
+                        _MSCLComposeImagePickerController, _MSCLComposePostView,
+                        _MSCLCompositionContainerViewController, _MSCLDurationFormatter,
+                        _MSCLFacebookLoadImageOperation, _MSCLFacebookPageSelectionHeaderView,
+                        _MSCLFacebookPageTableViewCell, _MSCLImageAttachmentPreviewView,
+                        _MSCLLoadConfigurationOperation, _MSCLLockupView,
+                        _MSCLManageAccountViewController, _MSCLPhotoPickerCollectionViewLayout,
+                        _MSCLPreparePostDescriptionOperation, _MSCLSettingsTableHeaderView,
+                        _MSCLSettingsTextFieldTableViewCell, _MSCLSetupAccountViewController,
+                        _MSCLSocialService, _MSCLSocialServiceSetupViewController,
+                        _MSCLSoundBiteViewButton, _MSCLStoreItem,
+                        _MSCLTag, _MSCLTagListTableViewCell,
+                        _MSCLTagTokenTextAttachment, _MSCLTokenTextAttachment,
+                        _MSCLTokenTextView, _MSCLTwitterAuthenticationRequest,
+                        _MSCLValueTableViewController, _MSCLVideoCoverImageSelectionView,
+                        _MSCLVoiceRecorder, _MSCLWaveformImageProducer,
+                        _MSCLAccountDatabase, _MSCLAccountTokenRefreshOperation,
+                        _MSCLAttachmentAlertController, _MSCLAttachmentPropertiesViewController,
+                        _MSCLAudioPickerMediaItemTableViewCell, _MSCLAudioPickerViewController,
+                        _MSCLAudioPlayerManager, _MSCLAuthorView,
+                        _MSCLComposePostViewController, _MSCLFacebookAccountsRequest,
+                        _MSCLFacebookPageSelectionViewController, _MSCLLoadAuthorAlbumsOperation,
+                        _MSCLMPArtworkCatalogResourceOperation, _MSCLPhotoPickerShelfViewController,
+                        _MSCLSettingsTableViewCell, _MSCLSocialPostTemplateViewElement,
+                        _MSCLSoundBiteView, _MSCLStoreItemArtworkRequest,
+                        _MSCLTagListViewController, _MSCLTokenTextAttachmentView,
+                        _MSCLTwitterServiceSetupTableViewSection, _MSCLVideoScrubberControl ]
+...

@@ -1,0 +1,19 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CoreFollowUpVersionNumber,
+                        _FLDaemonExportedInterface, _FLLog,
+                        _CoreFollowUpVersionString, _FLLoc ]
+    objc-classes:     [ _FLConstants,
+                        _FLFollowUpAction, _FLFollowUpItem,
+                        _FLHSA2LoginNotification, _FLLogController,
+                        _FLDaemon, _FLFollowUpNotification,
+                        _FLHSA2PasswordResetNotification ]
+...

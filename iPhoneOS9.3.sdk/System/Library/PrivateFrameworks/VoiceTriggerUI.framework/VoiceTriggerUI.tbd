@@ -1,0 +1,28 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _VTUI_AVAudioSessionPortBorealisInput,
+                        _VoiceTriggerUIVersionString, _kVTUIAspectRatioDeviceDoneN61NoCable,
+                        _kVTUIFontSize_Button, _kVTUIFontSize_Footer,
+                        _kVTUIFontSize_Progress, _kVTUIPath_ImageDeviceDoneN61Cable,
+                        _kVTUIPath_ImageDeviceIntroN61, _kVTUIPath_ImageTick,
+                        _kVTUIPath_ImageXMask, _kVTUIStandardScreenWidth,
+                        _VoiceTriggerUIVersionNumber, _kVTUIAspectRatioDeviceIntroN61,
+                        _kVTUIFontSize_Main, _kVTUIPath_ImageDeviceDoneN61NoCable,
+                        _kVTUIPath_ImageTickMask, _kVTUIStandardScreenHeight ]
+    objc-classes:     [ _AudioCircularBuffer,
+                        _AudioFileWriterInt, _VTUIArtworksManager,
+                        _VTUIEnrollTrainingViewController, _VTUIEnrollmentStateView,
+                        _VTUIPagedLabel, _VTUISigmoid,
+                        _VTUIStyle, _VTUITrainingManager,
+                        _VTUITrainingSessionWithPayload, _AudioFileWriter,
+                        _VTUIAudioSessionAVVC, _VTUIEnrollmentSuccessView,
+                        _VTUIStringsHelper, _VTUITrainingSession ]
+...

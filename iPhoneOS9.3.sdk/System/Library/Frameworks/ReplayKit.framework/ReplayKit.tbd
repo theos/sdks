@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/ReplayKit.framework/ReplayKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _RPLocalizedFrameworkString, _RPPhotoLibraryFrameworkBundle, 
+                       _RPRecordingErrorDomain, _RPScreenRecorderRequiredFreeSpace, 
+                       _RPScreenRecorderTempDirectory, _RPVideoEditorExtensionAppNameKey, 
+                       _RPVideoEditorExtensionBundleIdentifierKey, _RPVideoEditorExtensionFileAttachmentKey, 
+                       _RPVideoEditorExtensionMoviePathKey, _RPVideoEditorExtensionOverrideShareMessageKey, 
+                       _RPVideoOverlayBackgroundMaskImageName, _RPVideoOverlayDefaultGlyphAlpha, 
+                       _RPVideoOverlayFlatBackgroundAlpha, _RPVideoOverlayFlatBackgroundWhite, 
+                       _RPVideoOverlayGlyphMaskImageName, _RPVideoOverlayHighlightedGlyphAlpha, 
+                       _ReplayKitVersionNumber, _ReplayKitVersionString ]
+    objc-classes:    [ _RPDaemonProxy, _RPFlatVideoOverlayButton, _RPHighFidelityVideoOverlayButton, 
+                       _RPPreviewViewController, _RPScreenRecorder, _RPStoreInfo, 
+                       _RPStoreManager, _RPVideoEditorExtensionHostContext, 
+                       _RPVideoEditorHostViewController, _RPVideoEditorViewController, 
+                       _RPYouTubeActivity, _RPYouTubeActivityProgressOverlay ]
+...

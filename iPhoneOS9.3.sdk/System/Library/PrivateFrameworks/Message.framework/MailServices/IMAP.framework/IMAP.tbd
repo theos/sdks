@@ -1,0 +1,43 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Message.framework/MailServices/IMAP.framework/IMAP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMAPAccountOfflineOperationQueuedNotification,
+                        _IMAPESearchCountKey, _IMAPESearchMinKey,
+                        _IMAPServerPathPrefix, _MFAuthSchemeGmailClientToken,
+                        _MFAuthSchemeOAuth2Token, _MFIMAPDateSearchStringForDate,
+                        _MFIMAPSourceUidSetResponseKey, _MFUIDPlusInfoFromResponse,
+                        __IMAPListsOnlySubscribedMailboxes, _flagsFromFetchResults,
+                        _iToolsAccountVersionKey, _mf_mobileMeHostname,
+                        _uidFromFetchResults, _IMAPESearchAllKey,
+                        _IMAPESearchTagKey, _MFAuthSchemeNewcastle,
+                        _MFIMAPDestinationUidSetResponseKey, _UseGoogleMail,
+                        _iToolsAccountVersionCurrent, _tokenizeCriterionWithHandler ]
+    objc-classes:     [ _AOLAccount,
+                        _ExchangeAccount, _IMAPAccount,
+                        _MFBaseSyncResponseQueue, _MFFetchResponseQueue,
+                        _MFGmailSMTPAccount, _MFIMAPCompoundDownload,
+                        _MFIMAPConnectionFlagSearchRequest, _MFIMAPDownload,
+                        _MFIMAPFetchResult, _MFIMAPMessageDownload,
+                        _MFIMAPOfflineCopyOnStupidServerOperation, _MFIMAPOperationCache,
+                        _MFIMAPResponse, _MFIMAPSimpleDownload,
+                        _MFNewcastleAuthScheme, _MFOAuth2TokenAuthScheme,
+                        _MFOSXServerSMTPAccount, _MFSearchResponseQueue,
+                        _MFYahooSMTPAccount, _MFiToolsDelivery,
+                        _YahooAccount, __MFFlagChangeEntry,
+                        __MFIMAPFetchUnit, __MFNewcastleAuthenticator,
+                        __MFWholeMessageSection, _iToolsAccount,
+                        _CastleIMAPAccount, _MFAPSManager,
+                        _MFGmailClientTokenAuthScheme, _MFIMAPConnection,
+                        _MFIMAPDownloadCache, _MFIMAPMessageWithCache,
+                        _MFIMAPParseContext, _MFLibraryIMAPStore,
+                        _MFOSXServerIMAPAccount, _MFSyncResponseQueue,
+                        _MobileMeAccount, __MFGmailClientTokenAuthenticator,
+                        __MFOAuth2TokenAuthenticator ]
+...

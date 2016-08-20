@@ -1,0 +1,31 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MetalTools.framework/MetalTools
+current-version: 0.0.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ZN19ILayerLockingPolicyD0Ev,
+                        __ZN19ILayerLockingPolicyD2Ev, __ZN20NoLayerLockingPolicy6unlockEv,
+                        __ZTI19ILayerLockingPolicy, __ZTS19ILayerLockingPolicy,
+                        __ZTV19ILayerLockingPolicy, __ZTV20NoLayerLockingPolicy,
+                        __ZN19ILayerLockingPolicyD1Ev, __ZNK20NoLayerLockingPolicy5cloneEv,
+                        __ZTS20NoLayerLockingPolicy ]
+    objc-classes:     [ _MTLDebugBlitCommandEncoder,
+                        _MTLDebugCommandBuffer, _MTLDebugComputeCommandEncoder,
+                        _MTLDebugDepthStencilState, _MTLDebugFragmentRenderCommandEncoder,
+                        _MTLDebugLibrary, _MTLDebugRenderCommandEncoder,
+                        _MTLDebugSamplerState, _MTLToolsBlitCommandEncoder,
+                        _MTLToolsCommandBuffer, _MTLToolsCommandQueue,
+                        _MTLToolsComputePipelineState, _MTLToolsDevice,
+                        _MTLToolsFunction, _MTLToolsObject,
+                        _MTLToolsRenderCommandEncoder, _MTLToolsResource,
+                        _MTLToolsTexture, _MTLDebugBuffer,
+                        _MTLDebugComputePipelineState, _MTLDebugFunction,
+                        _MTLDebugRenderPipelineState, _MTLToolsBuffer,
+                        _MTLToolsComputeCommandEncoder, _MTLToolsFragmentRenderCommandEncoder,
+                        _MTLToolsParallelRenderCommandEncoder, _MTLToolsSamplerState ]
+...

@@ -1,0 +1,24 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserNotificationServices.framework/UserNotificationServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _UNSBundleIdentifierToPushSettingsUnarchiveFromData,
+                        _UNSLocalNotificationWhitelistedUnarchiveFromData, _UNSNotificationRegistrarRemoteNotificationSettingsEntitlementName,
+                        _UNSNotificationSchedulerProxyEntitlementName, _UNSPowerNotificationBundleIDKey,
+                        _UNSRegisterForPowerNotifications, _UNSUILocalNotificationDecodeClasses,
+                        _UNSUserNotificationSettingsWhitelistedUnarchiveFromData, _UserNotificationServicesVersionString,
+                        __UNPostRemoteNotificationRecievedPowerNotification, _UNSLocalNotificationFiredPowerNotification,
+                        _UNSNotificationRegistrarServiceName, _UNSPowerNotificationPIDKey,
+                        _UNSUnRegisterForPowerNotifications, __UNPostLocalNotificationFiredPowerNotification ]
+    objc-classes:     [ _UNSNotificationRegistrarConnection,
+                        _UNSNotificationSchedule, _UNSNotificationScheduler,
+                        _UNSNotificationSchedulerService, _UNSUserNotificationRegistrar,
+                        _UNSNotificationRegistrarService, _UNSNotificationSchedulerConnection,
+                        _UNSRemoteNotificationRegistrar ]
+...

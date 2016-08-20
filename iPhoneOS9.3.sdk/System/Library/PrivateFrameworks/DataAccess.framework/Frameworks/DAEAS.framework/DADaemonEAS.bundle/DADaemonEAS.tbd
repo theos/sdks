@@ -1,0 +1,18 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAEAS.framework/DADaemonEAS.bundle/DADaemonEAS
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ASSyncTaskPreservedActionsFromActions,
+                        __DASyncableActionsFromDAActions ]
+    objc-classes:     [ _ASAgent,
+                        _ASContactDataHandler, _ASDaemonPolicyManager,
+                        _ASEventDataHandler, _ASNoteDataHandler,
+                        _ASToDoDataHandler, _ASAgentFolderHierarchyContext,
+                        _ASDataHandler, _ASFolderChangedHistory ]
+...

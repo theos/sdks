@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
+current-version: 191.2.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GetNSFriendlySeparator,
+                        _IPLoadAssistantServicesFramework, _IPNameOrderFamilyNameFirstKey,
+                        _IPNameOrderKey, _IPPreferNicknamesDisabled,
+                        _IPPreferNicknamesKey, _IPShortNameFormatFamilyNameGivenInitialKey,
+                        _IPShortNameFormatGivenNameFamilyInitialKey, _IPShortNameFormatKey,
+                        _IPShortNamesDisabled, _IPUIKeyboardCanonicalInputModeName,
+                        _IPUIKeyboardInputModeGetBaseLanguage, _IPUIKeyboardInputModeGetLanguageWithRegion,
+                        _IPUIKeyboardInputMode_Intl, _IUIntlPreferencesVersionNumber,
+                        _IntlPreferencesValue, _NSPersonNameDefaultDisplayNameOrderKey,
+                        _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShouldPreferNicknamesKey,
+                        _NSPersonNamePreferencesDidChangeNotification, _IPAFPreferences,
+                        _IPNameOrderGivenNameFirstKey, _IPPreferNicknamesEnabled,
+                        _IPShortNameFormatFamilyOnlyKey, _IPShortNameFormatUnsetKey,
+                        _IPUIKeyboardInputModeController, _IPUIKeyboardInputModeGetNormalizedIdentifier,
+                        _IUIntlPreferencesVersionString, _NSPersonNameDefaultNamePreferencesDomain,
+                        _NSPersonNameDefaultShortNameFormatKey ]
+    objc-classes:     [ _IPFoundationNamePreferenceInfoProvider,
+                        _IPiOSABNamePreferenceInfoProvider, _NSPersonNameComponentsFormatterPreferences,
+                        _IPOSXABNamePreferenceInfoProvider, _IntlUtility ]
+...

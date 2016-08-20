@@ -1,0 +1,62 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _VMApplicationResumedNotification,
+                        _VMMessageWaitingFallbackNotification, _VMNotificationShouldContainNewVoicemailDuration,
+                        _VMServiceClientDisconnected, _VMServiceClientObjectTypeVoicemail,
+                        _VMServiceDataAvailableNotification, _VMServiceDataReceiveContinuedNotification,
+                        _VMServiceMailboxParametersChangedNotification, _VMServiceMessageWaitingFallbackNotification,
+                        _VMServiceNewServiceNotification, _VMServicePasswordChangedNotification,
+                        _VMServicePasswordRequestCancelledNotification, _VMServiceSetupRequirementChangedNotification,
+                        _VMServiceTaskCancelledNotification, _VMServiceTaskStartedNotification,
+                        _VMServiceUnreadCountChangedNotification, _VMStoreChangedNotification,
+                        _VMStoreRemovedVoicemailsNotification, _VMStoreVoicemailChangedFlagsKey,
+                        _VMStoreVoicemailFlagsDidChangeNotification, _VMStoreVoicemailNewFlagsKey,
+                        _VMXPCConnectionAvailable, _VMXPCConnectionInterrupted,
+                        _VMXPCInboundMessageRecieved, _VMXPCMachServiceName,
+                        _VVServiceContextActivationErrorNotification, _VVServiceDataReceiveBeganNotification,
+                        _VVServiceFinishedAddingRecordsNotification, _VVServiceMailboxUsageChangedNotification,
+                        _VVServiceMessageWaitingStateChangedNotification, _VVServiceOnlineStateChangedNotification,
+                        _VVServicePasswordNeededNotification, _VVServiceRecordsAddedNotification,
+                        _VVServiceSubscriptionStatusChangedNotification, _VVServiceTaskEndedNotification,
+                        _VVServiceTrashedCountChangedNotification, _VVSharedServiceSubscriptionStateChangedNotification,
+                        __VVSharedServiceIsSubscribed, ___VMVoicemailAllVoicemailsMapHousekeepingScheduled,
+                        ___VVSharedVerifier, _kVMServiceAddedRecordsKey,
+                        _kVMServiceErrorKey, _kVMServiceMailboxUsageKey,
+                        _kVMServiceSuppressErrorKey, _kVMServiceTaskWillBeRetriedKey,
+                        _kVMServiceUnreadCountKey, _kVVErrorDomain,
+                        _kVVPDPActivationErrorDomain, _kVVServiceAddedRecordsKey,
+                        _kVVServiceErrorKey, _kVVServiceMailboxUsageKey,
+                        _kVVServiceSuppressErrorKey, _kVVServiceTaskWillBeRetriedKey,
+                        _kVVServiceUnreadCountKey, _kVVVerifierBeaconSentCheckpointKey,
+                        _kVVVerifierConfigurationDictionaryKeyAccountSettingsName, _kVVVerifierConfigurationDictionaryKeyAccountSettingsServer,
+                        _kVVVerifierConfigurationDictionaryKeyBeaconCount, _kVVVerifierKeyDescriptionsDescription,
+                        _kVVVerifierKeyDescriptionsLatestFailure, _kVVVerifierServerLoginCheckpointKey,
+                        _kVVVerifierValidCarrierBundleCheckpointKey, _VMApplicationSuspendedNotification,
+                        _VMServiceClientConnected, _VMServiceContextActivationErrorNotification,
+                        _VMServiceFinishedAddingRecordsNotification, _VMServiceMessageWaitingStateChangedNotification,
+                        _VMServicePasswordNeededNotification, _VMServiceSubscriptionStatusChangedNotification,
+                        _VMServiceTrashedCountChangedNotification, _VMStoreRemovedAllVoicemailsNotification,
+                        _VMStoreVoicemailFlagsChangedNotification, _VMStoreVoicemailOldFlagsKey,
+                        _VMXPCConnectionInvalidated, _VVMessageWaitingFallbackNotification,
+                        _VVServiceDataReceiveContinuedNotification, _VVServiceMessageWaitingFallbackNotification,
+                        _VVServicePasswordChangedNotification, _VVServiceSetupRequirementChangedNotification,
+                        _VVServiceTaskStartedNotification, _VVVerifierChangedNotification,
+                        ___VMVoicemailAllVoicemailsMapMutex, _kVMServiceCurrentDataLengthKey,
+                        _kVMServiceRecordKey, _kVMServiceTrashedCountKey,
+                        _kVVLastWarnedUsageDefault, _kVVServiceCurrentDataLengthKey,
+                        _kVVServiceRecordKey, _kVVServiceTrashedCountKey,
+                        _kVVVerifierConfigurationDictionaryKeyAccountSettings, _kVVVerifierConfigurationDictionaryKeyAccountState,
+                        _kVVVerifierKeyDescriptionsKeyName, _kVVVerifierTelephonyRegisteredCheckpointKey ]
+    objc-classes:     [ _VMAccount,
+                        _VMVoicemail, _VVNotificationInterpreter,
+                        _VVVerifier, _VMServiceClient,
+                        _VVService ]
+...

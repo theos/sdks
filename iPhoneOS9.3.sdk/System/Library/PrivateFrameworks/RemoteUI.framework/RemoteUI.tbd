@@ -1,0 +1,43 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RUIAlertCancelButtonIndex,
+                        _RUIHTTPRequestErrorDomain, _RUIImageLoaderDidLoadImageNotification,
+                        _RUIIsDebug, _RUIJSObjectModel_class,
+                        _RUISetLoggingEnabled, _RemoteUIDefaultLeftTableMargin,
+                        _RemoteUIFooterFont, _RemoteUIHeaderFont,
+                        _RemoteUISubheaderFont, _datePickerClass,
+                        _htmlButtonClass, _htmlLabelClass,
+                        _labelClass, _linkedOptionClass,
+                        _photoPickerClass, _selectPageClass,
+                        _switchClass, _RUIErrorDomain,
+                        _RUIImageLoaderLoadingStatusDidChangeNotification, _RUILog,
+                        _RemoteUIDetailHeaderTextColor, _RemoteUIHeaderTextColor,
+                        _editableTextClass, _htmlLinkClass,
+                        _numberPickerClass, _selectClass ]
+    objc-classes:     [ _RUIAlertButton,
+                        _RUIBarButtonItem, _RUIElement,
+                        _RUIFrontRowStyle, _RUIHTMLFooterView,
+                        _RUIHTMLHeaderView, _RUIHeaderElement,
+                        _RUIImageLoad, _RUILoader,
+                        _RUINavigationController, _RUIPage,
+                        _RUIPasscodeView, _RUIPlatform,
+                        _RUISetupAssistantModalStyle, _RUISpinnerRecord,
+                        _RUIStyle, _RUITableViewRow,
+                        _RUIVariableHeightCell, _RUIWebView,
+                        _RemoteUILinkFooter, _RemoteUITableViewCell,
+                        _RemoteUITableViewSubtitleAndValueLayoutManager, _RemoteUIWebViewController,
+                        _RUIAlertView, _RUIFooterElement,
+                        _RUIHTMLHeaderElement, _RUIHeaderView,
+                        _RUINavBarSpinnerManager, _RUIParser,
+                        _RUISelectOption, _RUISpinnerView,
+                        _RUITableViewSection, _RemoteUIController,
+                        _RemoteUITableViewSubtitleAndValueCell ]
+...

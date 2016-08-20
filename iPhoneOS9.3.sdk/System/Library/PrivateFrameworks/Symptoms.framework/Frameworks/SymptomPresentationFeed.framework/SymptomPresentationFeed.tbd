@@ -1,0 +1,53 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomPresentationFeed.framework/SymptomPresentationFeed
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NSTargetObjectUserInfoKey,
+                        _NSUnknownUserInfoKey, _kDarwinNotificationHasAlternateAdvice,
+                        _kNOIDiscretionaryInvitesWhenForegroundToo, _kPerformanceFlowConnAttempts,
+                        _kPerformanceFlowKind, _kPerformanceFlowRemoteID,
+                        _kPerformanceFlowTimesThresholded, _kPerformanceFlowTxPackets,
+                        _kPerformanceFlowTxReTxPackets, _kPerformanceNetAttachBytesOut,
+                        _kPerformanceNetAttachConnSuccesses, _kPerformanceNetAttachFaultyStay,
+                        _kPerformanceNetAttachKnownGood, _kPerformanceNetAttachLowQualyStay,
+                        _kPerformanceNetAttachLqmTransitionRate, _kPerformanceNetAttachPacketsIn,
+                        _kPerformanceNetAttachReTxBytes, _kPerformanceNetAttachRttMin,
+                        _kPerformanceNetAttachRxDupeBytes, _kPerformanceNetAttachSinceTime,
+                        _kPerformanceNetAttachTopDownloadRate, _kUsageCalendarDaySlot,
+                        _kUsageCalendarTier2, _kUsageCalendarTier4,
+                        _kUsageCalendarWeekSlot, _kUsageLastTime,
+                        _kUsageNetworkAwdlInBytes, _kUsageNetworkAwdlInBytes_var,
+                        _kUsageNetworkAwdlOutBytes_mean, _kUsageNetworkAwdlSampleCount,
+                        _kUsageNetworkCellInBytes, _kUsageNetworkCellInBytes_var,
+                        _kUsageNetworkCellOutBytes_mean, _kUsageNetworkCellSampleCount,
+                        _kUsageNetworkExpensiveInBytes, _kUsageNetworkExpensiveInBytes_var,
+                        _kUsageNetworkExpensiveOutBytes_mean, _kUsageNetworkExpensiveSampleCount,
+                        _kUsageNetworkWiFiInBytes, _kUsageNetworkWiFiInBytes_var,
+                        _kUsageNetworkWiFiOutBytes_mean, _kUsageNetworkWiFiSampleCount,
+                        _kUsageNetworkWiredInBytes, _kUsageNetworkWiredInBytes_var,
+                        _kUsageNetworkWiredOutBytes_mean, _kUsageNetworkWiredSampleCount,
+                        _kUsageProcessDataKey, _kUsageSinceTime,
+                        _stringToAdvisory, _NSUnknownKeyException,
+                        _kDeltaOnly, _kPerformanceFlowConnSuccesses,
+                        _kPerformanceFlowTimeStamp, _kPerformanceFlowTxReTxInterval,
+                        _kPerformanceNetAttachConnAttempts, _kPerformanceNetAttachIdentifier,
+                        _kPerformanceNetAttachLqmTransitionCount, _kPerformanceNetAttachPacketsOut,
+                        _kPerformanceNetAttachRttVar, _kPerformanceNetAttachTimeStamp,
+                        _kUsageCalendarTier1, _kUsageCalendarTier5,
+                        _kUsageNetworkAwdl, _kUsageNetworkAwdlOutBytes,
+                        _kUsageNetworkCell, _kUsageNetworkCellOutBytes,
+                        _kUsageNetworkExpensive, _kUsageNetworkExpensiveOutBytes,
+                        _kUsageNetworkWiFi, _kUsageNetworkWiFiOutBytes,
+                        _kUsageNetworkWired, _kUsageNetworkWiredOutBytes,
+                        _kUsageProcessBundleName, _kUsageProcessProcName ]
+    objc-classes:     [ _NWNetworkOfInterest,
+                        _NWNetworkPredictions, _ProcessNetStatsIndividualEntity,
+                        _UsageFeed, _NWNetworkOfInterestManager,
+                        _NetworkPerformanceFeed ]
+...

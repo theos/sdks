@@ -1,0 +1,46 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SymptomAnalyticsFrameworkDidSaveNotification,
+                        _init_symptom_analytics_logging, _kProcessKeyTypeProcName,
+                        _kSymptomAnalyticsNetworkAdvisoryDefiniteImprovement, _kSymptomAnalyticsNetworkAdvisoryDefiniteUse,
+                        _kSymptomAnalyticsNetworkAdvisoryInconclusive, _kSymptomAnalyticsNetworkAdvisoryKey,
+                        _kSymptomAnalyticsNetworkAdvisoryNotSupported, _kSymptomAnalyticsNetworkAdvisoryWeakNotUse,
+                        _kSymptomAnalyticsRootDefaultDirectory, _kSymptomAnalyticsServiceCopyRelationship,
+                        _kSymptomAnalyticsServiceCurrentWiFiAttachment, _kSymptomAnalyticsServiceEndpoint,
+                        _kSymptomAnalyticsServiceFlowHistorical, _kSymptomAnalyticsServiceFlowTag,
+                        _kSymptomAnalyticsServiceFlowTagIKE, _kSymptomAnalyticsServiceNOICanUseOnAlternate,
+                        _kSymptomAnalyticsServiceNOICanUseOnAlternateReasons, _kSymptomAnalyticsServiceNOIFetchForegroundActivity,
+                        _kSymptomAnalyticsServiceNOIFetchL2ThroughputMetrics, _kSymptomAnalyticsServiceNOIFetchPredictionsError,
+                        _kSymptomAnalyticsServiceNOIFetchTrafficInvitesHourlyDistribution, _kSymptomAnalyticsServiceNOIPredictions24hrs,
+                        _kSymptomAnalyticsServiceNetworkAttachmentCurrent, _kSymptomAnalyticsServiceNetworkAttachmentInstant,
+                        _kSymptomAnalyticsServicePostProcess, _kSymptomAnalyticsServiceProcessWithGeneration,
+                        _kSymptomAnalyticsServiceSweepUsage, _kSymptomAnalyticsServiceUsage,
+                        _kSymptomAnalyticsServiceWatchpointTarget, _kSymptomAnalyticsTypeBundleIdentifier,
+                        _prefs_add_logger, _analyticsVerbose,
+                        _kSymptomAnalyticsModelTrainServiceEndpoint, _kSymptomAnalyticsNetworkAdvisoryError,
+                        _kSymptomAnalyticsNetworkAdvisoryNoImprovement, _kSymptomAnalyticsNetworkAdvisoryWeakUse,
+                        _kSymptomAnalyticsServiceCurrentCellAttachment, _kSymptomAnalyticsServiceFlowCurrent,
+                        _kSymptomAnalyticsServiceFlowTagAll, _kSymptomAnalyticsServiceNOICanUseOnAlternateCodes,
+                        _kSymptomAnalyticsServiceNOIFetchInstantQuality, _kSymptomAnalyticsServiceNOIFetchPredictionsGenerationDate,
+                        _kSymptomAnalyticsServiceNameChain, _kSymptomAnalyticsServiceNetworkAttachmentPerformance,
+                        _kSymptomAnalyticsServiceRefreshUsage, _kSymptomAnalyticsServiceWatchpointKey,
+                        _kSymptomAnalyticsTypeProcessName ]
+    objc-classes:     [ _AnalyticsWorkspace,
+                        _AppAnalytics, _AppRun,
+                        _CheckUpEvent, _Event,
+                        _Flow, _LiveRoutePerf,
+                        _NetworkAttachment, _ObjectAnalytics,
+                        _Process, _ProvisioningData,
+                        _UsageAnalytics, _WiFiData,
+                        _App, _AppTypicalUsage,
+                        _EventScene, _LiveUsage,
+                        _Peer, _TshootingData ]
+...

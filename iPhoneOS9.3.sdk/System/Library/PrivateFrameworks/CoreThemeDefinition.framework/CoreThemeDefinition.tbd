@@ -1,0 +1,60 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreThemeDefinition.framework/CoreThemeDefinition
+current-version: 247.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AbortDistillKey,
+                        _CoreThemeArtworkFormatCAAR, _CoreThemeArtworkFormatPSD,
+                        _CoreThemeDefinitionErrorDomain, _CoreThemeDefinitionVersionString,
+                        _CoreThemeSchemaTargetPlatformKey, _DistillingAbortedKey,
+                        _PreviousCoreThemeDefinitionDataModelKey, _RenditionSpecKey,
+                        _kObsoletePrefix, _CSIDataKey,
+                        _CoreThemeDefinitionDataModelKey, _CoreThemeDocumentFileType,
+                        _NSCoreThemeDefinitionColorSpaceKey, _gThemeIterationTypes ]
+    objc-classes:     [ _CTDPSDPreviewRef,
+                        _CoreThemeAssetMigrationPolicy, _CoreThemeConstantHelper,
+                        _CoreThemeDefinitionMigrator, _CoreThemeRenditionKeyMigrationPolicy,
+                        _CoreThemeTemplateMigrationPolicy, _TDAsset,
+                        _TDAssetPackDistiller, _TDColorName,
+                        _TDCursorPhotoshopProduction, _TDCustomArtworkRenditionSpec,
+                        _TDCustomAssetImportInfo, _TDDistillRunner,
+                        _TDEffectComponent, _TDEffectParameterValue,
+                        _TDEffectStyleProduction, _TDElementProduction,
+                        _TDFlattenedImageRenditionSpec, _TDFontSizeDefinition,
+                        _TDImageStackAsset, _TDLayerMapping,
+                        _TDLayerStackProduction, _TDLogger,
+                        _TDMetafontSizeSelector, _TDMicaElementProduction,
+                        _TDNamedArtworkProduction, _TDNamedEffectProduction,
+                        _TDPNGAsset, _TDPackedName,
+                        _TDPacker, _TDPhotoshopAsset,
+                        _TDPhotoshopLayer, _TDProMergeableCommonAssetStorage,
+                        _TDRenditionEntry, _TDRenditionSpec,
+                        _TDRenditionType, _TDResolvedLayerReference,
+                        _TDSchemaDefinition, _TDSchemaElementDefinition,
+                        _TDSchemaMaterialDefinition, _TDSchemaRenditionSpec,
+                        _TDSimpleArtworkRenditionSpec, _TDTag,
+                        _TDThemeBitSource, _TDThemeDirection,
+                        _TDThemeElement, _TDThemeIdiom,
+                        _TDThemePart, _TDThemePreviousState,
+                        _TDThemeSchema, _TDThemeState,
+                        _TDThemeValue, __TDLayerStackFilterHelper,
+                        _CoreThemeAlignmentMigrationPolicy, _CoreThemeConstantMigrationPolicy,
+                        _CoreThemeSliceMigrationPolicy, _TDAssetPack,
+                        _TDCursorFacetDefinition, _TDCustomAsset,
+                        _TDDistiller, _TDEffectRenditionSpec,
+                        _TDFacetDefinition, _TDHistorian,
+                        _TDLayerReference, _TDMetafontSelector,
+                        _TDMicaRenditionSpec, _TDNamedElement,
+                        _TDPackedRenditionSpec, _TDPhotoshopElementProduction,
+                        _TDRadiosityImageRenditionSpec, _TDRenditionSubtype,
+                        _TDSchemaCategory, _TDSchemaElementProduction,
+                        _TDSimpleArtworkElementProduction, _TDTemplateRenderingMode,
+                        _TDThemeDrawingLayer, _TDThemeLook,
+                        _TDThemePreviousValue, _TDThemeUISizeClass,
+                        _TDThreadMOCOrganizer ]
+...

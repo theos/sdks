@@ -1,0 +1,22 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MusicStoreUI.framework/MusicStoreUI
+current-version: 1187.21.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSGetTrackListBorderColor,
+                        _MSGetTrackListOddRowColor, _MusicStoreUIVersionString,
+                        _MSGetTrackListEvenRowColor, _MusicStoreUIVersionNumber ]
+    objc-classes:     [ _MSAudioProgressView,
+                        _MSPurchaseBatch, _MSStructuredPageTableDataSource,
+                        _MSTableCell, _MSTrackListCellConfiguration,
+                        _MSTrackListCopyrightFooterView, _MSTrackListHeaderView,
+                        _MSTrackListLoadMoreCellConfiguration, _MSTrackListViewController,
+                        _MSVolumeViewController, _MSPieImageView,
+                        _MSStructuredPageViewController, _MSTrackListCellContext,
+                        _MSTrackListLinkCellConfiguration, _MSViewControllerFactory ]
+...

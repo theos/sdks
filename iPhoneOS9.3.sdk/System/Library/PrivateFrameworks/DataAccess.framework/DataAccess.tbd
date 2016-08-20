@@ -1,0 +1,56 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/DataAccess
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DAAccountFolderContentsChangedNotification,
+                        _DAAccountFolderHierarchyNeedsUpdateNotification, _DAAccountFolderUpdatedWithNoChangesNotification,
+                        _DAAccountValidationDomain, _DAIsRunningInDataAccessD,
+                        _DAModelString, _DAReListenForAccounts,
+                        _DAUpdateMigrationVersion, _DAWeakLinkClass,
+                        __DASecCopyIdentityFromPersist, __DASecIdentityCopySSLClientAuthenticationChain,
+                        _acDataclassesForDADataclasses, _appBundleIDsForDADataclasses,
+                        _daDataclassForACDataclass, _daDeviceID,
+                        _kDAAccountDoNotSaveReason, _kDAAccountHost,
+                        _kDAAccountOldKeychainURLs, _kDAAccountPersistentUUIDOldKey,
+                        _kDAAccountPrincipalPath, _kDAAccountUseSSL,
+                        _kDAAccountWasUpgradedFromLegacyAccount, _kDADidAutodiscoverKey,
+                        _kDAIdentityPersist, _kDAPowerLogCalendarItemsDownloadedEventName,
+                        _kDAPowerLogContainerID, _kDAPowerLogSyncAccountClass,
+                        _kDAPowerLogSyncAccountName, _kDAPowerLogSyncStartEventName,
+                        _kDATaskManagerUnitTestFakePowerIdentifier, _kGenericDAAccountType,
+                        _kSubCalCalendarStoreExternalId, _setDAIsRunningInDataAccessD,
+                        _statusAndErrorIndicatePersistentFolderSyncFailure, _walkUpDAErrorChain,
+                        _DAAccountFolderHierarchyChangedNotification, _DAAccountPushedFolderPreferencesChangedNotification,
+                        _DAMigrationIsNeeded, _DAStringFromCalEntityType,
+                        _DAWeakLinkSymbol, _acDataclassForDADataclass,
+                        _areDADiagnosticsEnabled, _flockWithProcessAssertion,
+                        _kDAAccountIdentifiersToIgnoreForUniquenessCheck, _kDAAccountPort,
+                        _kDAAccountVersion2Key, _kDAEncryptionIdentityPersistentReference,
+                        _kDAPowerLogCalendarItemsUploadedEventName, _kDAPowerLogSyncAccountID,
+                        _kDASigningIdentityPersistentReference, _kGenericDAAccountWithLoggingType,
+                        _sharedDAAccountStore, _statusAndErrorIndicateWeShouldTurnOnReachability ]
+    objc-classes:     [ _ASAccountActor,
+                        _ContactFolderItemsSyncContext, _DAAccountClassNames,
+                        _DAAccountMonitor, _DABabysitter,
+                        _DADataHandler, _DADuetReporter,
+                        _DAKeychain, _DALocalDBHelper,
+                        _DAMailMessage, _DAMailboxFetchMessageRequest,
+                        _DAMailboxGetUpdatesRequest, _DAMailboxSetFlagsRequest,
+                        _DAMessageMoveRequest, _DAMoveResponse,
+                        _DAPriorityManager, _DAResolveRecipientsRequest,
+                        _DAResponse, _DATrafficLogger,
+                        _DATransactionMonitor, _DAUserNotificationInfo,
+                        _DAWaiterWrapper, _EventsFolderItemsSyncContext,
+                        _ASTrafficLogger, _DAAccountLoader,
+                        _DAConvertCRtoCRLFStream, _DAFolder,
+                        _DALocalDBWatcher, _DAMailboxFetchSearchResultRequest,
+                        _DAMessageFetchAttachmentRequest, _DAPowerAssertionManager,
+                        _DAResolvedRecipient, _DATransaction,
+                        _DAUserNotificationUtilities, _DAiCalendarLogger ]
+...

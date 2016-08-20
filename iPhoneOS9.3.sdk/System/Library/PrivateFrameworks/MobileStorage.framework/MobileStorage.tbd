@@ -1,0 +1,21 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileStorage.framework/MobileStorage
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DOMDialogIsDisplayed,
+                        _MobileStorageCopyAndFixPlist, _MobileStorageMount,
+                        _MobileStorageSync, _dmlog,
+                        _makePathWithSignature, _path_contains_links,
+                        _remove_item_at_path, _signatureFromPath,
+                        _strFromData, _traverse_path,
+                        _DOMDisplayAutoDismissDialog, _MobileStorageOpenUserFSNode,
+                        _hexSignatureFromPath, _path_is_bad,
+                        _signatureMatchesPath, _stringForXPCType ]
+    objc-classes:     [ _PlistProcessor ]
+...

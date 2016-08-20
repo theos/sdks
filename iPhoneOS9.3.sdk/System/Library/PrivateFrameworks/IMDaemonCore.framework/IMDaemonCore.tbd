@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IMDaemonCore.framework/IMDaemonCore
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMCreateIMDChatFromIMDChatRecordRef,
+                        _IMDAttachmentRecordRefFromIMFileTransfer, _IMDFileTransferAcceptedNotification,
+                        _IMDFileTransferArchiveSucceededNotification, _IMDFileTransferRemovedNotification,
+                        _IMDManagedPreferencesChangedNotification, _IMDMessageStoreHandleCountryCodeKey,
+                        _IMDUpdateIMFileTransferFromIMFileTransfer, _IMDaemonWillShutdownNotification,
+                        _kPictureCacheAddedPictureNotification, _kPictureCacheHashKey,
+                        _kPictureCacheNameKey, _IMCreateIMDChatRecordRefWithIMDChat,
+                        _IMDFileTransferArchiveFailedNotification, _IMDFileTransferStoppedNotification,
+                        _IMDMessageStoreHandleUnformattedIDKey, _IMFileTransferFromIMDAttachmentRecordRef,
+                        _kPictureCacheNameChangedNotification ]
+    objc-classes:     [ _IMDAccount,
+                        _IMDAppleServiceSession, _IMDChat,
+                        _IMDChatStore, _IMDHandle,
+                        _IMDIDSService, _IMDLocationSharingController,
+                        _IMDQuickSwitchController, _IMDServiceController,
+                        _IMDSpotlightIndexDelegate, _IMTunesController,
+                        _IMDAccountController, _IMDChatRegistry,
+                        _IMDIDSAccount, _IMDMessageStore,
+                        _IMDServiceSession ]
+...

@@ -1,0 +1,43 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput
+current-version: 390.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SCROSerializeWrapper,
+                        _kSCROAlertAttribute, _kSCROAlertTimeoutAttribute,
+                        _kSCROBrailleDisplayBluetoothAddress, _kSCROBrailleDisplayBrailleInputMode,
+                        _kSCROBrailleDisplayDriverIdentifier, _kSCROBrailleDisplayMainSize,
+                        _kSCROBrailleDisplayModelIdentifier, _kSCROBrailleDisplayState,
+                        _kSCROBrailleDisplayToken, _kSCROBrailleDriverAutoDetectDictionaries,
+                        _kSCROBrailleDriverBluetoothDeviceClasses, _kSCROBrailleDriverBluetoothSPDUUID16ServiceClass,
+                        _kSCROBrailleDriverMainDisplaySize, _kSCROBrailleDriverStatusDisplaySize,
+                        _kSCROBrailleIBeamLocationAttribute, _kSCROBrailleInputMemorizeNowInterval,
+                        _kSCROBrailleKeyboardKeyModifierCommand, _kSCROBrailleKeyboardKeyModifierNull,
+                        _kSCROBrailleKeyboardKeyModifierSecondaryFn, _kSCROBrailleOffsetAttribute,
+                        _kSCROBrailleOverrideStringAttribute, _kSCROBrailleRouterKeyLocation,
+                        _kSCROBrailleSizeAttribute, _kSCROBrailleStatusAttribute,
+                        _kSCROBrailleUnicodeCharacterDot7, _kSCROBrailleUnicodeCharacterDot8,
+                        _kSCROCursorAttribute, _kSCROLanguageAttribute,
+                        _kSCROSelectionAttribute, _kSCROStatusAttribute,
+                        _kSCROStatusAttributeCellTitle, _kSCROTechnicalContextAttribute,
+                        _kSCROTokenAttribute, _SCROUnserializeWrapper,
+                        _kSCROAppTokenAttribute, _kSCROBrailleDisplayConnectedNotification,
+                        _kSCROBrailleDisplayModeAttribute, _kSCROBrailleDisplayStatusSize,
+                        _kSCROBrailleDriverBluetoothConnectionIsIncoming, _kSCROBrailleDriverBluetoothSearchDictionary,
+                        _kSCROBrailleDriverType, _kSCROBrailleInputMemorizePulseInterval,
+                        _kSCROBrailleKeyboardKeyModifierOption, _kSCROBrailleOriginalStringAttribute,
+                        _kSCROBrailleRouterKeyToken, _kSCROBrailleUnicodeCharacterBase,
+                        _kSCROBrailleUnicodeCharacterSpace, _kSCROLineFocusAttribute,
+                        _kSCROStatusAttributeCellIndex, _kSCROStatusAttributeDotText ]
+    objc-classes:     [ _SCROBrailleClient,
+                        _SCROBrailleKey, _SCROCallback,
+                        _SCROIOElement, _SCROIOUSBElement,
+                        _SCROMobileBrailleDisplayInputManager, _SCROWeakReferenceContainer,
+                        _SCROBrailleDisplayAutoDetector, _SCROEvent,
+                        _SCROIOUSBHIDElement, _SCROScriptClient ]
+...

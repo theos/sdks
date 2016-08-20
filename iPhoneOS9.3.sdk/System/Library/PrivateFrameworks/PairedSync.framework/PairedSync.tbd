@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PairedSync.framework/PairedSync
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NSStringFromPSYDeviceSyncState,
+                        _NSStringFromPSYSyncSessionState, _PSYActivityProgressXPCInterface,
+                        _PSYConnectionXPCInterface, _PSYDeviceSyncDidCompleteDarwinNotification,
+                        _PSYErrorForCode, _PSYGetPreferredActivityOrdering,
+                        _PSYLastSyncSwitchIDNotification, _PSYProgressClientXPCInterface,
+                        _PSYSyncSessionObserverXPCInterface, _PSYSyncStateObserverXPCInterface,
+                        _PSYToolInterfaceXPCInterface, __querySyncState,
+                        _kPSYLoggingFacility, _NSStringFromPSYSyncSessionActivityState,
+                        _PSYActivityXPCInterface, _PSYErrorDomain,
+                        _PSYInitialSyncStateMachServiceName, _PSYProgressServerXPCInterface,
+                        _PSYSyncStateProviderXPCInterface, __notifyCanRetryFailedRequests ]
+    objc-classes:     [ _PSYActivityInfo,
+                        _PSYDeviceSyncStateEntry, _PSYOptions,
+                        _PSYProgressObserver, _PSYSyncCoordinator,
+                        _PSYSyncSession, _PSYSyncSessionObserver,
+                        _PSYSyncSessionUpdate, _PSYTestInput,
+                        _PSYConnection, _PSYPlistFilter,
+                        _PSYSyncOptions, _PSYSyncSessionObserverExportedObject,
+                        _PSYSyncStateObserverExportedObject ]
+...

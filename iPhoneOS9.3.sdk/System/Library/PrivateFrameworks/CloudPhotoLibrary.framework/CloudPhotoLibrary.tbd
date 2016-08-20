@@ -1,0 +1,57 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CPLErrorDomain,
+                        _CPLErrorRejectedRecordIdentifiersKey, _CPLErrorRetryAfterDateKey,
+                        _CPLSyncProgressStateKey, __CPLConfigurationDidChangeNotification,
+                        __CPLDefaultValueNSINTEGER0, __CPLExit,
+                        __CPLLogSectionEnd, __CPLLogSectionsInherit,
+                        __CPLLogSetSilent, __CPLStatusDidChangeNotification,
+                        ___CPLEngineStoreSetFakeUserIdentifier, ___CPLGenericLogDomain,
+                        ___CPLLogEverything, ___CPLLog_basev,
+                        ___CPLStoreLogDomain, ___SBSSetStatusBarShowsActivityForApplication,
+                        _CPLErrorRecordIdentifiersWithMissingResourcesKey, _CPLSyncProgressCountOfPulledAssetsKey,
+                        __CPLDefaultValueBOOLNO, __CPLLogSectionBegin,
+                        __CPLLogSectionsSet, ___CPLEngineLogDomain,
+                        ___CPLLogDispatchOnce, ___CPLShouldLog,
+                        ___CPLVersion ]
+    objc-classes:     [ _CPLAdjustmentFingerprinting,
+                        _CPLAlbumChange, _CPLAssetChange,
+                        _CPLBackgroundDownloadsTask, _CPLBatteryMonitor,
+                        _CPLChangeSession, _CPLConfiguration,
+                        _CPLContainerRelation, _CPLDateFormatter,
+                        _CPLEngineChangePipe, _CPLEngineCloudCache,
+                        _CPLEngineDerivativesCache, _CPLEngineIDMapping,
+                        _CPLEngineQuarantinedRecords, _CPLEngineResourceDownloadQueue,
+                        _CPLEngineResourceDownloadTaskGroup, _CPLEngineResourceUploadQueue,
+                        _CPLEngineScheduler, _CPLEngineStore,
+                        _CPLEngineSyncEmergencyTask, _CPLEngineSyncTask,
+                        _CPLEngineTransientRepository, _CPLErrors,
+                        _CPLFileWatcher, _CPLIDMapping,
+                        _CPLLibraryManager, _CPLMinglePulledChangesTask,
+                        _CPLNetworkWatcher, _CPLPersonReference,
+                        _CPLPlatform, _CPLPowerAssertion,
+                        _CPLProxyLibraryManagerOutstandingInvocation, _CPLProxyPushSession,
+                        _CPLProxySession, _CPLPullFromTransportTask,
+                        _CPLPushToTransportTask, _CPLRemoveCloudLibraryTask,
+                        _CPLResourceIdentity, _CPLResourceTransferTask,
+                        _CPLSyncIndicator, __CPLEngineStoreBatchedTransaction,
+                        _CPLAdjustments, _CPLAssetKeywordSortDescriptor,
+                        _CPLChangeBatch, _CPLContainerChange,
+                        _CPLDownloadOriginalsTask, _CPLEngineComponentEnumerator,
+                        _CPLEngineLibrary, _CPLEngineResourceDownloadTask,
+                        _CPLEngineResourceUploadTask, _CPLEngineStoreTransaction,
+                        _CPLEngineSystemMonitor, _CPLFileStorageItem,
+                        _CPLItemChange, _CPLNetworkIndicator,
+                        _CPLPlaceAnnotation, _CPLProxyLibraryManager,
+                        _CPLProxyResourceTransferTask, _CPLPushChangeSession,
+                        _CPLResource, _CPLStatus,
+                        _CPLTransaction ]
+...

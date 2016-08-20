@@ -1,0 +1,33 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AFUICreateAssistantResourcesDirectoryURL,
+                        _AFUICreateGizmoLogController, _AFUIDebugOverrideDictionary,
+                        _AFUIFileURLForConversationWithIdentifier, _AFUIGuideCacheManagerCacheDurationMax,
+                        _AFUIPresentationPropertiesRequestSourceKey, _AFUIPreviousConversationIdentifier,
+                        _AFUIRelativeStringFromDate, _AFUIScreenSupportsKnobInteraction,
+                        _AFUISetLanguageCode, _AFUIStarkDirectActionStringForRequestOptions,
+                        _AssistantUIBundle, _PhoneBundleID,
+                        _kSirilandTransitionTest, _AFUICreateDebugController,
+                        _AFUIDidShowEmergencyCallViewNotification, _AFUIPathForDebugOverridePlist,
+                        _AFUIPurgeCachedLocalizedStrings, _AFUIScreenSupportsTouchInteraction,
+                        _AFUIWillLeaveEmergencyCallViewNotification, _kPresentSnippetKey ]
+    objc-classes:     [ _AFUIApplicationStateHelper,
+                        _AFUIAudioPlayer, _AFUIDebugError,
+                        _AFUIDebugLogManager, _AFUIDialogPhase,
+                        _AFUIImageResource, _AFUIQueue,
+                        _AFUIRequestTrigger, _AFUISiriRemoteContainerView,
+                        _AFUISiriSession, _AFUISiriViewController,
+                        _AFUISpeechSynthesisElement, _AFUITestInput,
+                        __AFUIAssertingDelayedActionCommand, _AFUIAudioMessagePlayer,
+                        _AFUIDebugLog, _AFUIGuideCacheManager,
+                        _AFUIRequestOptions, _AFUISiriRemoteViewController,
+                        _AFUISpeechSynthesis, _AFUIVoicemailPlayer ]
+...

@@ -1,0 +1,35 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSPBookmarkStorageArrayFromPropertyList,
+                        _MSPBookmarksKey, _MSPBookmarksVersionKey,
+                        _MSPDirectionsSearchReadFrom, _MSPFavoriteGetAbridgedBookmarkStorageForSpotlightStorage,
+                        _MSPFavoriteMakeFromBookmarkStorage, _MSPHistoryEntryStorageReadFrom,
+                        _MSPHistoryVersionCurrent, _MSPPinReadFrom,
+                        _MSPPlaceBookmarkReadFrom, _MSPPropertyListFromBookmarkStorageArray,
+                        _MSPQuerySearchReadFrom, _MSPRouteBookmarkReadFrom,
+                        _kMSPContainerUnavailableKeysKey, _kMSPDuplicateStorageIdentifierObjectsKey,
+                        _kMSPUnderlyingErrorsKey, _MSPBookmarkStorageReadFrom,
+                        _MSPCompanionSyncedItemReadFrom, _MSPFavoriteGetBookmarkStorage,
+                        _MSPHistoryKey, _MSPPinStorageReadFrom,
+                        _MSPPropertyListFromHistoryEntryStorageArray, _kMSPContainerErrorDomain,
+                        _kMSPContainerUntransferableObjectKey ]
+    objc-classes:     [ _MSPBookmarkStorage,
+                        _MSPContainer, _MSPDirectionsSearch,
+                        _MSPFavoritesContainer, _MSPFileContainerPersister,
+                        _MSPMapsPushDaemonRemoteProxy, _MSPMutableFavoritePlace,
+                        _MSPMutableFavoriteRoute, _MSPPin,
+                        _MSPPlaceBookmark, _MSPQuerySearch,
+                        _MSPRouteBookmark, _MSPSyncManager,
+                        _MSPCompanionSyncedItem, _MSPDroppedPin,
+                        _MSPHistoryEntryStorage, _MSPMutableFavoriteRegion,
+                        _MSPPinStorage, _MSPRegionBookmark,
+                        _MSPSerializer ]
+...

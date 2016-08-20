@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/QuickLook.framework/QuickLook
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _QLAdaptSizeToRect, _QLGetDefaultZoomForContentType, 
+                       _QLGuessEncodingForTextFileAtURL, _QLPreviewControllerSupportsContentType, 
+                       _QLPreviewCopyEmbeddedPDF, _QLPreviewGetSupportedMIMETypes, 
+                       _QLPreviewItemContentTypeIsAudio, _QLPreviewNeedsHelpUnzippingURL, 
+                       _QLPreviewRequestAppendDataToAttachment, _QLPreviewRequestCreateAttachmentURL, 
+                       _QLPreviewRequestGetDocumentObject, _QLPreviewRequestIsCancelled, 
+                       _QLPreviewRequestSetDataRepresentation, _QLPreviewRequestSetDocumentObject, 
+                       _QLPreviewRequestSetError, _QLPreviewRequestStartDataRepresentation, 
+                       _QLPreviewScheme, _QLPreviewSupportsContentType, 
+                       _QLPreviewTestBehavior, _QLTypeCopyBestMimeTypeForFileNameAndMimeType, 
+                       _QLTypeCopyBestMimeTypeForURLAndMimeType, _QLTypeCopyUTIForURLAndMimeType, 
+                       __QLUsesModernUI, _kQLPreviewOptionPasswordKey, 
+                       _kQLPreviewPropertyAllowJavascriptKey, _kQLPreviewPropertyAttachmentDataKey, 
+                       _kQLPreviewPropertyAttachmentsKey, _kQLPreviewPropertyHeightKey, 
+                       _kQLPreviewPropertyMIMETypeKey, _kQLPreviewPropertyTextEncodingNameKey, 
+                       _kQLPreviewPropertyWidthKey ]
+    objc-classes:    [ _QLDisplayBundle, _QLPreviewController, _QLPreviewConverter, 
+                       _QLPreviewItemAVState, _QLPreviewThumbnailGenerator, 
+                       _QLThumbnail, _QLThumbnailCreationOperation, _QLThumbnailDescriptor ]
+    objc-ivars:      [ _QLDisplayBundle._audioSessionActive, _QLDisplayBundle._delegate, 
+                       _QLDisplayBundle._loaded, _QLDisplayBundle._loading, 
+                       _QLDisplayBundle._navigationBarVerticalOffset, _QLDisplayBundle._overlayHidden, 
+                       _QLDisplayBundle._password, _QLDisplayBundle._previewItem, 
+                       _QLDisplayBundle._previewMode, _QLDisplayBundle._refreshTimer, 
+                       _QLPreviewController._reserved ]
+...

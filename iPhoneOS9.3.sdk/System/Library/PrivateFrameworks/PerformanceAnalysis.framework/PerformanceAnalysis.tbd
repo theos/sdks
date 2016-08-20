@@ -1,0 +1,67 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PerformanceAnalysis.framework/PerformanceAnalysis
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CSSymbolOwnerGetRangeOfText_SP,
+                        _CountedStateForSampleThread, _CreateSymbolOwnerForUUIDAtPath,
+                        _FreeMountStatusData, _OBJC_EHTYPE_$_PAException,
+                        _PACommonAverageFromArray, _PAGatherProcessStackshot,
+                        _PAMachTimeForNSNumberOfMachAbsTime, _PANSDictionaryCopyStringForKey,
+                        _PASerializableAddInstanceToSerializationDictionaryWithClassKey, _PASerializableFillSerializedIndicesWithDictionaryOfSerializableArrays,
+                        _PASerializableIndexForPointerFromSerializationDictionary, _PASerializableNewDataBufferDictionaryFromSerializationDictionary,
+                        _PASerializableNewMutableDictionaryFromIndexList, _PASerializableNewMutableSetFromIndexList,
+                        _PASerializableSizeInBytesForDictionaryOfInstances, _PA_dscsym_iterate_binaries,
+                        _StringForThreadQoS, __CheckAppleInternal,
+                        __CreateSanitizedCopy, __IsTimerLimited,
+                        __PALogTimestamp, __PASerializableInstanceForIndex,
+                        __addInstanceToDeserializationDictionaryWithClassKey, __audio_is_running,
+                        __fprintf_frame_base, __fprintf_frame_timerange,
+                        __indexToInstanceDictionaryFromDeserializationDictionary, __newDataBufferFromPointerToIndexDictionary,
+                        __newNumberForPointer, __pidsForName,
+                        _abortSafely, _formattedAddress,
+                        _formattedBytesDouble, _fprintf_frame,
+                        _fprintf_seconds, _fprintf_timeline_frame,
+                        _kPABinaryLocatorDatabaseDirectory, _kPAErrorIndex,
+                        _kPAWSUpdateNoSuchIndex, _nameForProcInfo,
+                        _pagesToBytes, _printHeaderSpacingToStream,
+                        _uuidForString, _CopyMountStatusData,
+                        _CreateSymbolicatorForLiveProcess, _PACFBundleCopyStringForKey,
+                        _PAMachTimeForMachAbsTime, _PAOrderAddedListKey,
+                        _PASerializableFillSerializedIndicesWithDictionaryOfSerializableInstances, _PASerializableNewMutableArrayFromIndexList,
+                        _PASerializableSizeInBytesForDictionaryOfArrays, _SanitizedSignature,
+                        __CopyStringForTime, __IsTimerNormal,
+                        __ShouldSymbolicatePid, __copy_commerce_info_strings,
+                        __getIndexRangeForTimestamps, __newMutableCollectionFromIndexList,
+                        __pointerInBufferForIndexWithClass, _formattedBytes,
+                        _fprintf_sample_task_name, _fprintf_timeline_state_frame,
+                        _kPANullIndex, _newProcessStructures,
+                        _uuidForBytes ]
+    objc-classes:     [ _PAAggregatedDispatchQueue,
+                        _PAAggregatedInstruction, _PAAggregatedMainThread,
+                        _PAAggregatedTask, _PABinaryLocator,
+                        _PACSSymbolOwnerWrapper, _PACountedFrame,
+                        _PACountedSampleTreeFrame, _PAExecutableAggregator,
+                        _PAGenealogyBreadcrumb, _PAGenealogyTraceMessage,
+                        _PAMicrostackshotData, _PAMountStatus,
+                        _PAProcessInstanceAggregator, _PASample,
+                        _PASampleAggregatorOptions, _PASampleFrameIterator,
+                        _PASamplePowerstatsThreadData, _PASampleTaskDataPrivateData,
+                        _PASampleTimeInsensitiveTaskData, _PASampleUserFrame,
+                        _PAStackshotFrameIterator, _PAStackshotTask,
+                        _PASymbol, _PASymbolHandle,
+                        _PASymbolSourceInfo, _PAWSUpdate,
+                        _PAWSUpdateTimeToIndexMapping, _PAAggregatedExecutable,
+                        _PAAggregatedProcessInstance, _PACSRefWrapper,
+                        _PACountedSampleFrame, _PAFanSpeed,
+                        _PAGenealogyTracker, _PAMountStatusTracker,
+                        _PASampleAggregator, _PASampleKernelFrame,
+                        _PASampleThreadData, _PAStackshot,
+                        _PAStackshotThread, _PASymbolOwner,
+                        _PAWSUpdateDataStore ]
+...

@@ -1,0 +1,47 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DuetExpertCenter.framework/DuetExpertCenter
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DECMusicContainerCodingKeybundleId,
+                        _DECMusicContainerCodingKeyplayTime, _DECMusicStateProcessorCarPlayConnectedPredicate,
+                        _DECMusicStateProcessorNowPlayingPredicatePaused, _DECMusicStateProcessorUserDefaultinCar,
+                        _DECMusicStateProcessorUserDefaultlastPlayedInCar, _DECNowPlayingConsumerAggregateDictionaryEngagedKey,
+                        _DECNowPlayingConsumerAggregateDictionaryShownKey, _DuetExpertCenterVersionString,
+                        __DECConsumerInterface, __DECItemExpertScores,
+                        __DECNowPlayingRecommendationEnded, __DECPredictionReasonBluetoothDeviceName,
+                        __DECPredictionReasonLocationOfInterestType, __DECSchedulerActivityIdentifier,
+                        __DECShouldPrewarmNotification, __kDECFeedbackMetadataItemsShownCount,
+                        __kDECFeedbackMetadataQueryString, _kDECNowPlayingConsumerMinimumDurationForConversionTimeIntervalDefault,
+                        _onLockStateChange, _onNowPlayingChange,
+                        _DECMusicContainerCodingKeypauseTime, _DECMusicStateProcessorCarPlayDisconnectedPredicate,
+                        _DECMusicStateProcessorUserDefaultlastPlayed, _DECNowPlayingConsumerAggregateDictionaryPredictedItemsKey,
+                        __DECAggregateDictionaryKey, __DECMachServiceName,
+                        __DECPredictionReasonDeviceName, __DECServerInterface,
+                        __kDECFeedbackMetadataLaunchSource, _kDECNowPlayingConsumerScreenLockNotification ]
+    objc-classes:     [ __DECABHelper,
+                        __DECAggregateLogger, __DECAppItem,
+                        __DECBackupHelper, __DECContextHelper,
+                        __DECDailyTrainingScheduler, __DECDeviceInfo,
+                        __DECExpertManager, __DECFeedbackBuilder,
+                        __DECFeedbackProvider, __DECInternalConsumer,
+                        __DECItem, __DECLogging,
+                        __DECMusicStateProcessor, __DECNowPlayingFeedbackProvider,
+                        __DECPrediction, __DECPredictionCacheResult,
+                        __DECPredictionItem, __DECPrewarmManager,
+                        __DECResult, __DECResultNotifier,
+                        __DECScheduler, __DECServerResponder,
+                        __DECTypes, __DKExpertConsumerCategory,
+                        __DKExpertFeedbackMetadataKey, __DECAggregateKeys,
+                        __DECAsset, __DECDaemon,
+                        __DECExpert, __DECFeedbackLoggerManager,
+                        __DECInternalConsumerManager, __DECMusicContainer,
+                        __DECPersonItem, __DECPredictionExpiry,
+                        __DECRankBuilder, __DECRules,
+                        __DECSpotlightItem, __DECXPCObjectFactory ]
+...

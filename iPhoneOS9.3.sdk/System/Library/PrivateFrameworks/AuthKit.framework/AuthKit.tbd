@@ -1,0 +1,35 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AKAnisetteErrorDomain,
+                        _AKAppleIDAuthenticationErrorDomain, _AKAuthenticationAlternateDSIDKey,
+                        _AKAuthenticationConfigurationInfoKey, _AKAuthenticationDidShowServerUIKey,
+                        _AKAuthenticationIDMSTokenKey, _AKAuthenticationIsHSA2Key,
+                        _AKAuthenticationIsServerUIRequiredKey, _AKAuthenticationManagedAppleIDKey,
+                        _AKAuthenticationPasswordKey, _AKAuthenticationRememberPasswordKey,
+                        _AKAuthenticationUsernameKey, _AKExtensionItemLocationSignInAlertKey,
+                        _AKExtensionItemSecondFactorEntryAlertKey, _AKLoginCodeNotificationCreate,
+                        _AKUnregisterAllAppleIDs, _AuthKitVersionString,
+                        __AKAppleIDLoginCodeWasEnteredNotification, __AKLogInternalV,
+                        __AKLogTrafficInternal, _AKAnisetteProvisioningMachService,
+                        _AKAuthenticationAuditLoginKey, _AKAuthenticationFirstNameKey,
+                        _AKAuthenticationIsPasscodeResetRequiredKey, _AKAuthenticationNewAppleIDSetupInfoKey,
+                        _AKAuthenticationShortLivedTokenKey, _AKExtensionItemSecondFactorAlertKey,
+                        _AKSetFileLoggingEnabled, __AKAppleIDLoginCodeKey,
+                        __AKLogInternal ]
+    objc-classes:     [ _AKAbsintheSigner,
+                        _AKAnisetteProvisioningController, _AKAppleIDAuthenticationClientInterface,
+                        _AKAppleIDAuthenticationController, _AKAppleIDServerResourceLoadDelegate,
+                        _AKCertificatePinning, _AKDevice,
+                        _AKURLDataTask, __AKAppleIDAuthenticationContextManager,
+                        _AKAnisetteData, _AKAppleIDAuthenticationContext,
+                        _AKAppleIDSession, _AKURLBag,
+                        _AKURLSession ]
+...

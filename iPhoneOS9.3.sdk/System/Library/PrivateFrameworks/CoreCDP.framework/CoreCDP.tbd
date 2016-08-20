@@ -1,0 +1,22 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreCDP.framework/CoreCDP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CDPDaemonExportedInterface,
+                        _CDPLocalizedString, _CDPSetFileLoggingEnabled,
+                        _CDPUIProviderExportedInterface, _CoreCDPVersionString,
+                        __CDPLogInternalV, __CDPStateError,
+                        _CDPGetFileLoggingEnabled, _CDPStateErrorDomain,
+                        __CDPLogInternal ]
+    objc-classes:     [ _CDPAccount,
+                        _CDPDaemonConnection, _CDPKeychainSync,
+                        _CDPLocalDeviceSecretHandler, _CDPStateController,
+                        _CDPUtilities, _CDPContext,
+                        _CDPLocalDevice, _CDPStateUIProviderProxy ]
+...

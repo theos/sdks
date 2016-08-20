@@ -1,0 +1,22 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FileProvider.framework/FileProvider
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FPBookmarkableStringFromDocumentURL,
+                        _FPDocumentURLFromBookmarkableString, _FPFileProviderVersionNumber,
+                        _FPInvalidBookmarkableStringError, _FPInvalidURLError,
+                        _FPLoc, _FPMarkAsFileProviderBookmark,
+                        _FPNotFoundErrorURL, _FPPluginOperationFailedError,
+                        _FPRegisterFileProvidersForFileCoordination, __FPFileIsBookmarkURLProperty,
+                        _FPClientLacksEntitlement, _FPFileProviderVersionString,
+                        _FPIsFileProviderBookmark, _FPNotFoundError,
+                        _FPProxyNotFoundError, _FPSandboxExtensionFailedError ]
+    objc-classes:     [ _FPDaemonConnection,
+                        _FPLocalization ]
+...

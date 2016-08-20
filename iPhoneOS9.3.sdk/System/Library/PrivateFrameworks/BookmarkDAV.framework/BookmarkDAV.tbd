@@ -1,0 +1,26 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BookmarkDAV.framework/BookmarkDAV
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BABookmarkCopyURL_Safe,
+                        _cdXBELFolder, _cdXBELInfo,
+                        _cdXBELMetaDataAppleOwner, _cdXBELPosition,
+                        _cdXBELURI, _cdXMLBookmarkDAVBookmarkBarFolder,
+                        _cdXMLBookmarkDAVBookmarkFolder, _cdXMLBookmarkDAVBookmarkMenuFolder,
+                        _cdXMLBookmarkDAVMultiGetReport, _cdXMLBookmarkDAVRootSyncToken,
+                        _cdXMLMMeBookmarkDAVURI, _cdXBELBookmark,
+                        _cdXBELMetaData, _cdXBELTitle,
+                        _cdXMLBookmarkDAVBookmarkData, _cdXMLBookmarkDAVGetPTag,
+                        _cdXMLBookmarkDAVRootCTag ]
+    objc-classes:     [ _BookmarkDAVBookmark,
+                        _BookmarkDAVFolder, _BookmarkDAVGetAccountPropertiesTaskGroup,
+                        _BookmarkDAVRecursiveContainerSyncTaskGroup, _BookmarkDAVSyncDriver,
+                        _BookmarkDAVBulkPostTask, _BookmarkDAVMultiGetTask,
+                        _BookmarkDAVSyncData ]
+...

@@ -1,0 +1,67 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NetworkStatistics.framework/NetworkStatistics
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NStatManagerAddAllRoutes,
+                        _NStatManagerAddAllTCPWithFilter, _NStatManagerAddAllUDPWithFilter,
+                        _NStatManagerCreateInterfaceSource, _NStatManagerCreateSysinfoSource,
+                        _NStatManagerCreateUDPSource, _NStatManagerQueryAllSources,
+                        _NStatManagerQueryAllSourcesUpdate, _NStatManagerSetInterfaceSourceFD,
+                        _NStatManagerSetQueuePriority, _NStatSourceCopyProperties,
+                        _NStatSourceQueryCounts, _NStatSourceRemove,
+                        _NStatSourceSetDescriptionBlock, _NStatSourceSetFilter,
+                        _kNStatProviderInterface, _kNStatProviderSysinfo,
+                        _kNStatProviderUDP, _kNStatSrcKeyConnProbeFailed,
+                        _kNStatSrcKeyConnectSuccess, _kNStatSrcKeyEUPID,
+                        _kNStatSrcKeyInterface, _kNStatSrcKeyInterfaceCellConfigInactivityTime,
+                        _kNStatSrcKeyInterfaceCellUlMaxQueueSize, _kNStatSrcKeyInterfaceDescription,
+                        _kNStatSrcKeyInterfaceDlMaxBandwidth, _kNStatSrcKeyInterfaceIsAWDL,
+                        _kNStatSrcKeyInterfaceIsExpensive, _kNStatSrcKeyInterfaceName,
+                        _kNStatSrcKeyInterfaceType, _kNStatSrcKeyInterfaceTypeLoopback,
+                        _kNStatSrcKeyInterfaceTypeWiFi, _kNStatSrcKeyInterfaceUlBytesLost,
+                        _kNStatSrcKeyInterfaceUlEffectiveLatency, _kNStatSrcKeyInterfaceUlMaxLatency,
+                        _kNStatSrcKeyInterfaceUlReTxtLevel, _kNStatSrcKeyInterfaceWifiConfigMulticastRate,
+                        _kNStatSrcKeyInterfaceWifiDlErrorRate, _kNStatSrcKeyInterfaceWifiDlMinLatency,
+                        _kNStatSrcKeyInterfaceWifiScanDuration, _kNStatSrcKeyLocal,
+                        _kNStatSrcKeyPID, _kNStatSrcKeyProcessName,
+                        _kNStatSrcKeyRcvBufSize, _kNStatSrcKeyReadProbeFailed,
+                        _kNStatSrcKeyRouteDestination, _kNStatSrcKeyRouteGateway,
+                        _kNStatSrcKeyRouteID, _kNStatSrcKeyRouteParentID,
+                        _kNStatSrcKeyRxCellularBytes, _kNStatSrcKeyRxOOOBytes,
+                        _kNStatSrcKeyRxWiFiBytes, _kNStatSrcKeySndBufSize,
+                        _kNStatSrcKeyTCPCCAlgorithm, _kNStatSrcKeyTCPTxCongWindow,
+                        _kNStatSrcKeyTCPTxWindow, _kNStatSrcKeyTrafficMgtFlags,
+                        _kNStatSrcKeyTxCellularBytes, _kNStatSrcKeyTxReTx,
+                        _kNStatSrcKeyTxWiredBytes, _kNStatSrcKeyUUID,
+                        _kNStatSrcKeyVarRTT, _kNStatSrcTCPStateCloseWait,
+                        _kNStatSrcTCPStateClosing, _kNStatSrcTCPStateFinWait1,
+                        _kNStatSrcTCPStateLastAck, _kNStatSrcTCPStateSynReceived,
+                        _kNStatSrcTCPStateTimeWait, _NStatManagerAddAllTCP,
+                        _NStatManagerCreate, _NStatManagerCreateTCPSource,
+                        _NStatManagerQueryAllSourcesDescriptions, _NStatManagerSetInterfaceTraceFD,
+                        _NStatSourceCopyProperty, _NStatSourceSetCountsBlock,
+                        _NStatSourceSetRemovedBlock, _kNStatProviderTCP,
+                        _kNStatSrcKeyConnectAttempt, _kNStatSrcKeyEUUID,
+                        _kNStatSrcKeyInterfaceCellUlAvgQueueSize, _kNStatSrcKeyInterfaceDlCurrentBandwidth,
+                        _kNStatSrcKeyInterfaceIsCellFallback, _kNStatSrcKeyInterfaceThreshold,
+                        _kNStatSrcKeyInterfaceTypeUnknown, _kNStatSrcKeyInterfaceUlCurrentBandwidth,
+                        _kNStatSrcKeyInterfaceUlMinLatency, _kNStatSrcKeyInterfaceWifiDlEffectiveLatency,
+                        _kNStatSrcKeyInterfaceWifiScanCount, _kNStatSrcKeyMinRTT,
+                        _kNStatSrcKeyProvider, _kNStatSrcKeyRemote,
+                        _kNStatSrcKeyRouteGatewayID, _kNStatSrcKeyRxBytes,
+                        _kNStatSrcKeyRxPackets, _kNStatSrcKeySndBufUsed,
+                        _kNStatSrcKeyTCPTxUnacked, _kNStatSrcKeyTxBytes,
+                        _kNStatSrcKeyTxWiFiBytes, _kNStatSrcKeyVUUID,
+                        _kNStatSrcTCPStateClosed, _kNStatSrcTCPStateFinWait2,
+                        _kNStatSrcTCPStateSynSent ]
+    objc-classes:     [ _NWStatisticsDelegateBlockWrapper,
+                        _NWStatisticsManager, _NWStatisticsSource,
+                        _NWStatisticsUDPSource, _NWStatisticsInterfaceSource,
+                        _NWStatisticsTCPSource ]
+...

@@ -1,0 +1,57 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VectorKit.framework/VectorKit
+current-version: 1156.40.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GEOPDCameraPathFrameFromVKCameraFrame,
+                        _VKAnimationCurveDefaultCameraSpring, _VKAnimationCurveEaseIn,
+                        _VKAnimationCurveEaseOut, _VKAnimationCurveExponentialEaseInOut,
+                        _VKAnimationCurveLinear, _VKCameraFrameFromGEOPDCameraPathFrame,
+                        _VKDidReceiveMemoryWarningNotification, _VKEnablePerformanceHUD,
+                        _VKGeodesicAngleFromLocationCoordinate2D, _VKLocationCoordinate2DForVKPoint,
+                        _VKLocationCoordinate3DMake, _VKMapDisplayStyleNight,
+                        _VKMapDisplayStyleTransit, _VKMapViewDidBecomeFullyDrawnNotification,
+                        _VKMinimalPerformanceHUD, _VKPerfDiagGetNumberOfRoadClasses,
+                        _VKPerfDoSingleTileTestSetup, _VKPerfSetSingleTileNameAndReset,
+                        _VKPointForVKLocationCoordinate2DExt, _VKPointInPolygon,
+                        _VKPounceDidEndNotification, _VKRasterTileKeyGetSuperTileKey,
+                        _VKRectContainsPoint, _VKRoadSignBaseHeight,
+                        _VKRoadSignTextColorRGBA, _VKShieldColorsFromHexString,
+                        _VKTilePointFromPoint, _VKTrafficIncidentSetTitleBlock,
+                        _VKWorldBoundsFromGEOTileKeyExt, __vk_wrapAngleDegrees,
+                        _kVKOuterStrokeWidthAttributeName, _pgl_point_predictor,
+                        _pgl_tagged_point_predictor, _GEOTileKeyFromVKPoint,
+                        _VKAnimationCurveEaseInOut, _VKAnimationCurveExponentialEaseOut,
+                        _VKCameraPropertiesForRect, _VKExpandedPerformanceHUD,
+                        _VKLocationCoordinate2DMake, _VKMapDisplayStyleRoute,
+                        _VKMapViewDidBecomePartiallyDrawnNotification, _VKPerfDoPostLoadSingleTileTestSetup,
+                        _VKPointForVKLocationCoordinate2D, _VKPointProjectExt,
+                        _VKRasterTileKeyToString, _VKRoadSignFontSize,
+                        _VKShouldFlushTileCachesNotification, _VKWorldBoundsFromGEOTileKey,
+                        __ZTSNSt3__117bad_function_callE, _dynamicValueAnimation,
+                        _pgl_tagged_point_corrector ]
+    objc-classes:     [ _VKAnchorWrapper,
+                        _VKAnnotationMarker, _VKCameraContext,
+                        _VKDebugSettings, _VKFeatureMarker,
+                        _VKImage, _VKLabelMarker,
+                        _VKLabelMarkerShield, _VKMapSnapshotCreator,
+                        _VKMapSnapshotServer, _VKNavUserLocationAnnotationMarker,
+                        _VKPlatform, _VKPolylineGroupOverlay,
+                        _VKPolylineOverlay, _VKPuckAnimator,
+                        _VKRasterMapTileCreator, _VKRasterMapTileServer,
+                        _VKRasterOverlay, _VKRouteContext,
+                        _VKShieldArtwork, _VKShieldManager,
+                        _VKTimer, _VKTrafficIncidentImageManager,
+                        _VKTriangulator, _VKViewportInfo,
+                        _VKAnimation, _VKCompoundAnimation,
+                        _VKIconManager, _VKLabelMarkerFeatureHandle,
+                        _VKMapSnapshotRequest, _VKObjectBoundsContext,
+                        _VKPolylineGroupOverlayPainter, _VKRasterMapTile,
+                        _VKRasterMapTileServerLoadBalancer, _VKSharedResources,
+                        _VKTimedAnimation, _VKTransitLineMarker ]
+...

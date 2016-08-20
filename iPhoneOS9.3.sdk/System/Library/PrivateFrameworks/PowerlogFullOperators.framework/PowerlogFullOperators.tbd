@@ -1,0 +1,32 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerlogFullOperators.framework/PowerlogFullOperators
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ArmUtilityThreshold,
+                        _BBArmUtilBucket, _BBPAPExclusion,
+                        _BBPerepherialMax, _BBPowerName,
+                        _BBPowerToolDuration, _BBPowerToolPointHelper,
+                        _BBPowerValue, _MAV_REPORT_ACTION,
+                        _MagicDeltaThreshold, _STATE,
+                        _causeMarginalCoverage, _causeRachFail,
+                        _causeTcXO, _kPLPMUAgentSensors,
+                        _kPLPersistentConnectionAgentConfig, _kPLSmartPLServiceEventPointSample,
+                        _kPLSyslogAgentLogLine, _nameCampedRat,
+                        _nameStrength, _rrcDisconnected,
+                        _umtsRRCState, _BBAggregatedARMUtil,
+                        _BBPIsContinuous, _BBPowerToolCause,
+                        _BBPowerToolTimeStamp, _MAV_REPORT_CLIENT,
+                        _causeBackground, _causeStruckInDCH,
+                        _kPLPersistentConnectionAgentCache, _kPLSmartPLServiceEventPointSmartTrigger,
+                        _namePrachCount, _oosDuration ]
+    objc-classes:     [ _BBSmartPL,
+                        _PLPMUAgent, _PLScheduledWakeAgent,
+                        _PLSyslogAgent, _SmartPLMemoryTracking,
+                        _PLBBPowerToolService, _PLSmartPLService ]
+...

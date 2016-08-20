@@ -1,0 +1,46 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXHearingSupport.framework/AXHearingSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXHACHearingAidCapabilities,
+                        _AXHACHearingAidComplianceSetEnabled, _AXHAMessageKeyPayload,
+                        _AXHARoundToPixel, _AXHearingAidAudioRoutesChangedNotification,
+                        _AXHearingAidServerReadyNotification, _AXLEHIAuthVersionCharacteristicUUIDString,
+                        _AXLEHIDISHardwareVersionCharacteristicUUIDString, _AXLEHIDISModelNumberCharacteristicUUIDString,
+                        _AXLEHIServiceUUIDString, _HAPerformBlockOnMainThread,
+                        _HAPerformBlockSynchronouslyOnMainThread, __accessibilityHWModel,
+                        _accessibilityHearingAidSupportBundle, _hearingAidStreamAvailable,
+                        _hearingLocString, _propertyContainsProperty,
+                        _supportsBinauralStreamingForHearingAid, _AXHACHearingAidComplianceEnabled,
+                        _AXHANULL, _AXHearingAidServerName,
+                        _AXLEHIDISFirmwareVersionCharacteristicUUIDString, _AXLEHIDISServiceUUIDString,
+                        _HAPerformBlockOnMainThreadAfterDelay, _accessibilityHearingAidImageNamed,
+                        _hearingAidStreamSelected, _hp_clean,
+                        _hp_dump, _hp_hacEnable,
+                        _hp_streaming, _hpd_addLogFile,
+                        _hpd_comm_client_connect, _hpd_comm_recv,
+                        _hpd_comm_send, _hpd_daemonExists,
+                        _hpd_enableStderr, _hpd_log,
+                        _hpd_mkdir, _hpd_process,
+                        _hpd_setLogLevel, _hpd_util_cfGetNumber,
+                        _hpd_vlog ]
+    objc-classes:     [ _AXHAAccessQueue,
+                        _AXHAControllerBrowser, _AXHAListenerHelper,
+                        _AXHAMessage, _AXHAPacket,
+                        _AXHARemoteMessage, _AXHAServer,
+                        _AXHASettingsListenerHelper, _AXHATimer,
+                        _AXHAXPCClient, _AXHearingAidConnectingCell,
+                        _AXHearingAidDevice, _AXHearingAidFakeDevice,
+                        _AXHearingDetailViewController, _AXHearingProgramCell,
+                        _AXHearingSliderValueCell, _AXRemoteHearingAidDevice,
+                        _AXHAController, _AXHALiveListenController,
+                        _AXHARemoteController, _AXHASettings,
+                        _AXHAUtilities, _AXHearingAidDetailCell,
+                        _AXHearingAidMode, _AXHearingSlaveController ]
+...

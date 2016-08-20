@@ -1,0 +1,50 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Search.framework/Search
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SPAllDomainKeys,
+                        _SPCanEnableInternetDomains, _SPDayAndTimeStringForDate,
+                        _SPDisplayIdentifierForDomain, _SPDisplayNameForExtendedDomain,
+                        _SPGetDisabledBundleSet, _SPGetDisabledDomains,
+                        _SPGetExtendedDomains, _SPGetInternetDomainsEnabled,
+                        _SPKeyForSearchDomain, _SPLogV,
+                        _SPSearchDomainForKey, _SPSearchFrameworkPath,
+                        _SPSearchResultSectionReadFirstDomainOnly, _SPSearchResultSkipFrom,
+                        _SPSetInternetDomainsAvailable, _SPSpotlightSupportDirectoryPath,
+                        _SPTimeStringForDate, _SearchParsecEnabledKey,
+                        _SearchParsecLoggingEnabledKey, _SearchResultDomainCount,
+                        __SPLog, _setSPLogLevel,
+                        _setSPLogOutputLevel, _SPAllDomainsVector,
+                        _SPDayStringForDate, _SPDomainOrderingIsTransient,
+                        _SPGetDomainOrdering, _SPIsiPad,
+                        _SPSearchDomainForDisplayIdentifierAndCategory, _SPSearchResultSectionReadDomainFrom,
+                        _SPSetExtendedDomains, _SPStringForDuration,
+                        _SearchParsecLedBellyEnabledKey, _SmartCategoryRankingEnabledKey,
+                        _gSPLogLevel ]
+    objc-classes:     [ _SPActionButton,
+                        _SPApp, _SPBuyButton,
+                        _SPDaemonConnection, _SPDataSection,
+                        _SPDomainManager, _SPFeedbackAbandonment,
+                        _SPFeedbackEngagement, _SPFeedbackRender,
+                        _SPFeedbackSearch, _SPLabeledImage,
+                        _SPMetaSchema, _SPMovieInfoDetails,
+                        _SPMovieListSection, _SPProxyObject,
+                        _SPRichTitleSection, _SPSearchAgent,
+                        _SPSearchResult, _SPSearchResultSection,
+                        _SPSection, _SPTableRowSection,
+                        _SPTitleSection, _SPTrailersSection,
+                        _SPXPCConnection, _SPXPCServer,
+                        _SPAlignmentSchema, _SPContentResult,
+                        _SPDescriptionSection, _SPFeedbackContext,
+                        _SPFeedbackResult, _SPMatcher,
+                        _SPMovieInfoSection, _SPRichText,
+                        _SPSearchQuery, _SPSearchResultSerializer,
+                        _SPTextMarkup, _SPTwitterSection,
+                        _SPXPCMessage ]
+...

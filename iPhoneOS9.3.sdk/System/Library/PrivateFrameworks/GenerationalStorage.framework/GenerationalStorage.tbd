@@ -1,0 +1,41 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage
+current-version: 239.2.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GSAdditionCreationDisplayNameKey,
+                        _GSAdditionCreationKeepFileIDKey, _GSAdditionCreationNameSpaceKey,
+                        _GSAdditionCreationOptionsKey, _GSAdditionCreationUserInfoKey,
+                        _GSAdditionFieldOptionsKey, _GSAdditionFieldURLKey,
+                        _GSDaemonConnectionClose, _GSDaemonProxy,
+                        _GSGenerationalStorageErrorDomain, _GSLibraryAddGenerationWithOptionsByCopyingFile,
+                        _GSLibraryCopyAllGenerationsInfos, _GSLibraryCopyGenerationInfoDictionary,
+                        _GSLibraryCopyGenerationInfos, _GSLibraryCopyGenerationOriginalDisplayName,
+                        _GSLibraryCreateClientManaged, _GSLibraryDocumentDidSafeSave,
+                        _GSLibraryGetGenerationOptions, _GSLibraryHasGenerationsForPaths,
+                        _GSLibraryPrivateTransferGenerationToClientName, _GSLibraryResolveDocumentId2,
+                        _GSLibrarySetGenerationInfoValueForKey, _GSLibrarySetGenerationOriginalDisplayName,
+                        _GSMergeInfoValueDictionary, _GSSetGenerationOptions,
+                        _GSSetOriginalDisplayName, _GSTrackDocument,
+                        __BeforePathRemove, __GSErrorForErrno,
+                        __GSIsDocumentRevision, __PathRename,
+                        __RemoveSubTrees, __SetBirthTimeSpecForFD,
+                        _kGSLibraryErrorDomain, _GSAdditionCreationInfoValidate,
+                        _GSAdditionCreationOnDuplicateKey, _GSAdditionFieldNameSpaceKey,
+                        _GSArchiveTree, _GSDocumentVersionsNameSpace,
+                        _GSLibraryAddGenerationWithOptionsByMovingFile, _GSLibraryCopyGenerationInfoValueForKey,
+                        _GSLibraryCopyURLForGeneration, _GSLibraryDocumentWillSafeSave,
+                        _GSLibraryInternalStatGeneration, _GSLibraryRestoreGeneration,
+                        _GSLibrarySetStorageOptions, _GSSetInfoDictionary,
+                        _GSUbiquitousConflictsNameSpace, __GSErrorForStatus,
+                        __PathResolve, _get_volume_uuid ]
+    objc-classes:     [ _GSAddition,
+                        _GSDocumentIdentifier, _GSStagingPrefix,
+                        _GSTemporaryStorage, _GSDaemonProxySync,
+                        _GSStorageManager ]
+...

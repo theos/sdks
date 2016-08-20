@@ -1,0 +1,45 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CMTimeMod,
+                        _ISBlurKeyPath, _ISCubicEaseOut,
+                        _ISExifOrientationFromImageOrientation, _ISKDebugIsEnabled,
+                        _ISPlayerDebugInfoDidChangeNotification, _ISQuadraticEaseOut,
+                        _ISQuinticEaseOut, _ISRectWithAspectRatioFittingRect,
+                        _ISStringFromInputType, _ISStringFromPlayerItemLoadingTarget,
+                        _PhotosPlayerErrorDomain, _PhotosPlayerVersionString,
+                        _is_dispatch_on_main_queue, _ISBlurFilterName,
+                        _ISDefaultLiveSwipeDuration, _ISKDebugTrace,
+                        _ISQuarticEaseOut, _ISSineEaseOut,
+                        _ISStringFromPlayerStatus, _deviceIsGlutenFree ]
+    objc-classes:     [ _ISAVPlayer,
+                        _ISAsset, _ISCrossfadeChefA2Operation,
+                        _ISCrossfadeItem, _ISDeferredDealloc,
+                        _ISDynamicValueFilter, _ISForcePlayrateInput,
+                        _ISForceScrubInput, _ISHoldGestureRecognizer,
+                        _ISInputController, _ISLongPressPlaybackInput,
+                        _ISMutedAudioInput, _ISPerformanceDiagnosticsSettings,
+                        _ISPlaybackSpec, _ISPlayer,
+                        _ISPlayerItemChef, _ISPlayerSettings,
+                        _ISReuseQueue, _ISScrollViewVitalityController,
+                        _ISTimeScrubber, _ISVideoAnalyzerFrameTimesOperation,
+                        _ISVisibilityOffsetHelper, _ISVitalityAutoplayFilter,
+                        _ISVitalityFilter, _ISVitalitySettings,
+                        _ISVitalitySpecificSettings, _IrisAVPlayerLayer,
+                        __ISCrossfadeFrameLayer, __ISPlayerDebugView,
+                        __ISTargetView, _ISAVPlayerController,
+                        _ISCrossfadeChefOperation, _ISDisplayLink,
+                        _ISForcePressPlaybackInput, _ISInput,
+                        _ISManualPlaybackInput, _ISPlaybackController,
+                        _ISPlayerItem, _ISPlayerView,
+                        _ISSettings, _ISVideoVolumeController,
+                        _ISVitalityConstantFilter, _ISVitalitySimpleFilter,
+                        __ISAVPlayerView, __ISPlayerItemChefOperation ]
+...

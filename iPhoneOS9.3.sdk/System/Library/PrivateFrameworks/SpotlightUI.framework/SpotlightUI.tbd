@@ -1,0 +1,42 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MICROPHONE_BUTTON_SIZE,
+                        _SPUIMusicBundleIdentifier, _SPUIPerfMetricsTestCacheDuetQueries,
+                        _SPUIPerfMetricsTestEnd, _SPUIPerfMetricsTestTableReset,
+                        _SPUISymbolicTraitAttributeName, _SearchResultDidLoadNotification,
+                        _SpotlightUIVersionNumber, _kSPUISearchDictationCircleWhiteAlpha,
+                        _kSPUISearchPlaceholderWhiteAlpha, _SPUIMapsBundleIdentifier,
+                        _SPUIPerfMetricsTestDisableRecycling, _SPUISpringBoardBundleIdentifier,
+                        _SpotlightUIPrefsDomain, _kSPUISearchHeaderHeight ]
+    objc-classes:     [ _SPUIAutoLayoutUtils,
+                        _SPUIBoundLayoutConstraint, _SPUINavigationBar,
+                        _SPUIObservingLabel, _SPUISearchBackdropView,
+                        _SPUISearchDetailsViewControllerContainerViewController, _SPUISearchField,
+                        _SPUISearchHeader, _SPUISearchMailCell,
+                        _SPUISearchMovie, _SPUISearchMovieTextView,
+                        _SPUISearchParsecCell, _SPUISearchParsecSimpleCell,
+                        _SPUISearchParsecSimpleMultiIconsCell, _SPUISearchParseciTunesCell,
+                        _SPUISearchPlayButton, _SPUISearchResultsAction,
+                        _SPUISearchResultsAppSearchAction, _SPUISearchResultsCloudDocumentAction,
+                        _SPUISearchResultsDetailsViewControllerAction, _SPUISearchResultsModalViewControllerAction,
+                        _SPUISearchResultsViewControllerAction, _SPUISearchResultsiTunesAction,
+                        _SPUISearchStoreProductViewController, _SPUISearchTableView,
+                        _SPUISearchUICardViewControllerAction, _SPUISearchWikiMainContentCell,
+                        _SPUISearchWikiRowImageCell, _SPUISearchWikiTitleCell,
+                        __SPUINullBarBackgroundView, _SPUIBaselineBoundLayoutConstraint,
+                        _SPUINavigationController, _SPUISearchContactButtonsView,
+                        _SPUISearchFirstTimeViewController, _SPUISearchModel,
+                        _SPUISearchMoviesViewController, _SPUISearchParsecSimpleChevronCell,
+                        _SPUISearchPlaceViewController, _SPUISearchResultsActionManager,
+                        _SPUISearchResultsDefaultAction, _SPUISearchResultsMoviesAction,
+                        _SPUISearchStandardCell, _SPUISearchTableViewCell,
+                        _SPUISearchWikiRowCell, _SPUISearchWikipediaViewController ]
+...

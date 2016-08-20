@@ -1,0 +1,51 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CryptoTokenKit.framework/CryptoTokenKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TKEntitlementSlotType,
+                        _TKNotifyNameFirstSlot, _TKProtocolSlotRegistryName,
+                        _TKSlotTypeSmartCard, _TKSmartCardSessionProtocol,
+                        _TKSmartCardSlotATR, _TKSmartCardSlotMaxOutputLength,
+                        _TKSmartCardSlotSecurePINChangeSupportedKey, _TKSmartCardSlotShareStateKey,
+                        _TKTokenClassDriverClassIDKey, _TKTransportSlotArrived,
+                        _TKTransportSlotRemoved, _deserializeError,
+                        _kAKSKeyAccessGroups, _kAKSKeyAclConstraintAccessGroups,
+                        _kAKSKeyAclConstraintKofN, _kAKSKeyAclConstraintPolicy,
+                        _kAKSKeyAclParamCredentialMaxAge, _kAKSKeyAclParamRequirePasscode,
+                        _kAKSKeyData, _kAKSKeyFlags,
+                        _kAKSKeyKeybagClass, _kAKSKeyOpAttest,
+                        _kAKSKeyOpCreate, _kAKSKeyOpDefaultAcl,
+                        _kAKSKeyOpEncrpyt, _kAKSKeyOpSetKeyClass,
+                        _kAKSKeyOpSync, _kAKSKeyOpWrap,
+                        _kAKSKeyPad, _kAKSKeyProtectedData,
+                        _kAKSKeyRefKey, _kAKSKeySalt,
+                        _kAKSKeyType, _kAKSKeyVersion,
+                        _serializeError, _TKErrorDomain,
+                        _TKRegisterOptionRemoveObjects, _TKSmartCardSessionSensitive,
+                        _TKSmartCardSlotPowerStateKey, _TKSmartCardSlotStateKey,
+                        _TKTransportSlotName, _kAKSKeyACMHandle,
+                        _kAKSKeyAclConstraintBio, _kAKSKeyAclConstraintUserPasscode,
+                        _kAKSKeyAuthData, _kAKSKeyIterations,
+                        _kAKSKeyOpComputeKey, _kAKSKeyOpDelete,
+                        _kAKSKeyOpSign, _kAKSKeyOperation,
+                        _kAKSKeyPublicKey, _kAKSKeyTag,
+                        _kAKSKeyWrappedKey ]
+    objc-classes:     [ _TKBERTLVRecord,
+                        _TKDataSource, _TKSimpleTLVRecord,
+                        _TKSmartCardATR, _TKSmartCardPINFormat,
+                        _TKSmartCardSessionRequest, _TKSmartCardSlotEngine,
+                        _TKSmartCardSlotProxy, _TKSmartCardUserInteractionForConfirmation,
+                        _TKSmartCardUserInteractionForSecurePINChange, _TKSmartCardUserInteractionForStringEntry,
+                        _TKTokenDriver, _TKTokenDriverRequest,
+                        _TKTokenService_Subsystem, __TKSmartCardSlotReservation,
+                        _TKCompactTLVRecord, _TKSmartCard,
+                        _TKSmartCardSessionEngine, _TKSmartCardSlotManager,
+                        _TKSmartCardUserInteractionForPINOperation, _TKTLVRecord,
+                        _TKTokenEndpoint, _TKTokenSession ]
+...

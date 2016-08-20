@@ -1,0 +1,38 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXSBLockScreenViewController,
+                        _AXSBUIControllerSharedInstance, _AXSpringBoardGlueSBLockScreenControllerInstance,
+                        _SBAXBacklightControllerInstance, _SBAXLocalizedStringWithTable,
+                        _SBOrientationLockChangedNotification, __UIAXLoadVisualAlertsBundle,
+                        __UIActionSheetDismissDuration, _AXSBSEventObserverEventLockedAndDimmed,
+                        _AXSpringBoardServerInstanceDidInitializeNotification, _SBMediaNowPlayingChangedNotification,
+                        _SBWorkspaceEntitySideSwitcherIdentifier ]
+    objc-classes:     [ _AXAlertAction,
+                        _AXSBHearingAidDeviceController, _AXSBPassKitPrearmTriggerAccessibility,
+                        _AXSBScreenshotManagerAccessibility, _AXSBServerHelperSBControlCenterController,
+                        _AXSBServerHelperSpringBoard, _AXSBServerUIApplication,
+                        _AXSBUIModalItemContentViewSafeCategory, _AXSBVoiceOverShakeMessage,
+                        _AXSB_SBSceneResizeSnakebiteGestureRecognizerSafeCategory, _AXSB_UIAlertControllerSafeCategory,
+                        _AXSB_UIModalItemTableViewCellSafeCategory, _AXSpringBoardServerHelper,
+                        _AXSpringBoardSettingsLoader, __AXSpringBoardServerInstance,
+                        ___AXSBLockScreenManager_super, ___AXSBReachabilityManagerAccessibility_super,
+                        ___AXSBServerHelperBulletinWindowController_super, ___AXSBServerHelperSBNotificationCenterController_super,
+                        ___AXSBServerSBHUDController_super, ___AXSBServerVolumeControl_super,
+                        ___AXSBUIWindow_super, ___AXSB_UIAlertControllerCollectionViewCellSafeCategory_super,
+                        ___AXSB_UIGestureRecognizerSafeCategory_super, ___AXSpringBoardServerSideAppManager,
+                        _AXSBAssistantController, _AXSBReachabilityManagerAccessibility,
+                        _AXSBServerHelperSBNotificationCenterController, _AXSBServerVolumeControl,
+                        _AXSBVoiceOverSwipeDetectorView, _AXSB_UIGestureRecognizerSafeCategory,
+                        _AXSpringBoardServerSideAppManager, ___AXSBAssistantController_super,
+                        ___AXSBScreenshotManagerAccessibility_super, ___AXSBServerHelperSpringBoard_super,
+                        ___AXSBUIModalItemContentViewSafeCategory_super, ___AXSB_UIAlertControllerSafeCategory_super,
+                        ___AXSB_UIModalItemTableViewCellSafeCategory_super ]
+...

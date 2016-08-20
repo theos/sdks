@@ -1,0 +1,50 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ABImageDirectoryPathComponent,
+                        _ABSourcesDirectoryPathComponent, _CNAggregateComparator,
+                        _CNCacheMissPolicyNewMutableArray, _CNContactsFoundationErrorDomain,
+                        _CNDispatchSemaphoreWait, _CNIsArrayEmpty,
+                        _CNIsDictionaryEmpty, _CNIsNotNull,
+                        _CNJsonStringFromObject, _CNNilToNull,
+                        _CNObjectEquals, _CNObserverCompletionHandler,
+                        _CNResultWithAutoreleasePool, _CNSocialProfileIsStandardServiceName,
+                        _CNSocialProfileServiceFlickr, _CNSocialProfileServiceMySpace,
+                        _CNSocialProfileServiceTencentWeibo, _CNSocialProfileServiceUsernameURLTemplate,
+                        _CNSocialProfileStandardServices, _CNSocialProfileURLForUserIdentifier,
+                        _CNStringContainsChineseJapaneseKoreanCharacters, _CNStringContainsNonLatinCharacters,
+                        _CNVirtualSchedulerClockUnitsPerSecond, __CNToStringFromTypeAndValue,
+                        _cn_objectResultWithPropertyLock, _cn_runWithPropertyLock,
+                        _cn_vfprintf, _cn_vprintf,
+                        _ABMetadataDirectoryPathComponent, _CNBoolResultAndErrorWithAutoreleasePool,
+                        _CNDebugLog, _CNIsChineseJapaneseKoreanString,
+                        _CNIsStringEmpty, _CNNullToNil,
+                        _CNResultAndErrorWithAutoreleasePool, _CNSocialProfileServiceFacebook,
+                        _CNSocialProfileServiceSinaWeibo, _CNSocialProfileServiceYelp,
+                        _CNSocialProfileURLForUsername, _CNUnimplementedMethodException,
+                        _cn_fprintf, _cn_sprintf ]
+    objc-classes:     [ _CNCache,
+                        _CNDateHelper, _CNEntitlementVerifier,
+                        _CNEqualsBuilder, _CNFoundationSocialProfile,
+                        _CNFuture, _CNLocalization,
+                        _CNManualObservable, _CNMutableMultiDictionary,
+                        _CNNameStringTokenizer, _CNObservable,
+                        _CNObserver, _CNPair,
+                        _CNPropertyListSerialization, _CNScheduler,
+                        _CNStack, _CNTestableObserver,
+                        _CNTracedLogger, _CNVirtualScheduler,
+                        _CNWeakReference, _CNXPC,
+                        _CNCancelationToken, _CNEnvironment,
+                        _CNFoundationUserDefaults, _CNLoggingContext,
+                        _CNMutableOrderedDictionary, _CNObservedResult,
+                        _CNPromise, _CNSocialProfileURLParser,
+                        _CNTracedLog, _CNWeakProxy,
+                        _CNWrappedDictionary ]
+...

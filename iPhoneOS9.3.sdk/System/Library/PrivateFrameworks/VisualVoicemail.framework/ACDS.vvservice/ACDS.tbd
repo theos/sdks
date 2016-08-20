@@ -1,0 +1,29 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VisualVoicemail.framework/ACDS.vvservice/ACDS
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ACDSCopyBase64EncryptedStringForPassword,
+                        _ACDSCreateSecurityHandle, _ACDSServiceLoadCallback,
+                        _VMAcknowledgeMessages, _VMConnectionExists,
+                        _VMCopyTokenAndRemoveInitialPasswordFromServerInformation, _VMExchangeKeys,
+                        _VMLoadStop, _VMRetrieveGreeting,
+                        _VMRetrieveMessage, _VMSetMailboxParams,
+                        _VoicemailDefaultNameForParameter, _kACDSNotificationTokenURLKey,
+                        _kReadStreamEvents, _ACDSCopyDecodedInitialPassword,
+                        _ACDSStringForResponseStatus, _VMCopyMailboxName,
+                        _VMGetServerInformation, _VMRetrieveMailboxParams,
+                        _VMSetPrimaryGreeting, _VoicemailGreetingTypeForParameterValue ]
+    objc-classes:     [ _ACDSCachingMessageFetchTask,
+                        _ACDSFlagPushTask, _ACDSKeyExchangeTask,
+                        _ACDSMessageFetchTask, _ACDSParamsFetchTask,
+                        _ACDSService, _ACDSSetParamsTask,
+                        _ACDSTaskQueue, _ACDSChangePasswordTask,
+                        _ACDSListFetchTask, _ACDSResponseMessage,
+                        _ACDSTask ]
+...

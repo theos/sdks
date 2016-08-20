@@ -1,0 +1,65 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpringBoardUI.framework/SpringBoardUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BBLocalized,
+                        _SBAlertItemDidPrepareNewAlertSheetNotification, _SBApplicationNetworkFlagsChangedNotification,
+                        _SBApplicationURLWillOpenNotification, _SBAwayViewPluginActivatingForRemoteEvent,
+                        _SBAwayViewPluginDeactivatingForApplicationExit, _SBAwayViewPluginDeactivatingForUnlock,
+                        _SBAwayViewPluginLegibilitySettingsDidChangeNotification, _SBAwayViewPluginWantsToDisableNotification,
+                        _SBAwayViewPluginWantsToFullscreenDurationKey, _SBAwayViewPluginWantsToFullscreenStatusKey,
+                        _SBBacklightChangeSourceKey, _SBBacklightLevelChangedNotification,
+                        _SBBacklightOldFactorKey, _SBBacklightWillTurnOnWhileUILockedNotification,
+                        _SBBannerWillAnimateRevealNotification, _SBBulletinIsPluginAction,
+                        _SBBulletinResponseOriginBanner, _SBBulletinResponseOriginList,
+                        _SBBulletinResponseOriginModalAlert, _SBBulletinResponseOriginStark,
+                        _SBCallCountChangedNotification, _SBDisplayDidDeactivateNotification,
+                        _SBDisplayWillActivateNotification, _SBHeadsetButtonUpNotification,
+                        _SBIncomingCallPendingNotification, _SBMarkLockedBulletinsAsReadNotification,
+                        _SBPluginFullscreenAlertDidAnimateInNotification, _SBProximityDidChangeNotification,
+                        _SBSoftwareUpdateDownloadStateChangedNotification, _SBTelephonyDaemonRestartNotification,
+                        _SBTestingConfigureNextVoiceRecognitionAudioInputPathsNotification, _SBUIBannerViewHeightForTargetIdiom,
+                        _SBUIControlCenterControlAlphaForState, _SBUIControlCenterControlConfigureForState,
+                        _SBUIControlCenterControlRemoveObserver, _SBUIControlCenterCreateGlyph,
+                        _SBUIGetUserAgent, _SBUILaunchOptionKeyPNGLess,
+                        _SBUILogv, _SBUIPluginContextOptionBundleId,
+                        _SBUIPluginStringForActivationEvent, _SBUISetUserAgent,
+                        _SBVolumeChangedNotification, _SpringBoardUIBundle,
+                        __SBControlCenterSettings, __SBUIControlCenterControlBlendModeForState,
+                        __SBUIControlCenterControlComputeControlAlphaForBrightness, __SBUIControlCenterControlDefaultAlpha,
+                        __SBUIControlCenterControlShouldAnimateProperty, __SBUIControlCenterVibrantControls,
+                        _kSBNotificationKeyApplicationURL, _kSBNotificationKeyCurrentVolume,
+                        _kSBNotificationKeyDisplayIdentifier, _kSBNotificationKeyFrame,
+                        _kSBNotificationKeyLocalNotification, _kSBNotificationKeyState,
+                        _kSBUIBannerDefaultPriority, _SBActiveCallStateChangedNotification,
+                        _SBApplicationURLDidOpenNotification, _SBAwayViewPluginActivationReasonKey,
+                        _SBAwayViewPluginDeactivationReasonKey, _SBAwayViewPluginWantsToFullscreenAnimatedKey,
+                        _SBBacklightAboutToUndimNotification, _SBBacklightNewFactorKey,
+                        _SBBannerWillAnimateDismissalNotification, _SBBulletinLaunchOriginToResonseOrigin,
+                        _SBBulletinResponseOriginLockScreen, _SBBulletinResponseOriginToLaunchOrigin,
+                        _SBDisplayDidLaunchNotification, _SBHomescreenIconsDidAppearNotification,
+                        _SBMenuButtonPressedNotification, _SBRingerChangedNotification,
+                        _SBTestingConfigureNextAssistantRecognitionStrings, _SBUIControlCenterControlAddObserver,
+                        _SBUIControlCenterControlConfigureForStateAnimated, _SBUIFrameworkBundleID,
+                        _SBUILoggingEnabled, _SBUIPluginContextOptionSupportsCarFullScreen,
+                        _SBUserEventOccurredNotification, __SBControlCenterControlSettingsDidChangeForKey,
+                        __SBUIControlCenterControlColorForState, __SBUIControlCenterControlGetBlendMode,
+                        _kSBNotificationKeyAnimationDuration, _kSBNotificationKeyDeviceLockState,
+                        _kSBNotificationKeyHeadsetButtonLongPress, _kSBNotificationKeyPreferenceChangedKey ]
+    objc-classes:     [ _SBAlertItem,
+                        _SBBulletinEvent, _SBUIBannerAction,
+                        _SBUIBannerItem, _SBUIBannerTargetProxy,
+                        _SBUIControlCenterLabel, _SBUIControlCenterVisualEffect,
+                        _SBUILockScreenDisableAssertion, _SBUIPluginAppearanceContext,
+                        _SBUIScene, _SBUISound,
+                        _SBUIWorkspace, _SBAwayViewPluginController,
+                        _SBUIBannerContext, _SBUIControlCenterButton,
+                        _SBUIFullscreenAlertController, _SBUIPluginController,
+                        _SBUISlidingFullscreenAlertController ]
+...

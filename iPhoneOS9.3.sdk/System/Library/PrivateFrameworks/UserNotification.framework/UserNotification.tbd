@@ -1,0 +1,37 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserNotification.framework/UserNotification
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _UNApplicationDataStoreLocalNotificationsKey,
+                        _UNBundleIdentifierKey, _UNEnabledTypesForPushSettings,
+                        _UNIsAuthorizedForRegionMonitoring, _UNLocalNotificationLoggingLevel,
+                        _UNLocalNotificationsDidChangeNotification, _UNLocalNotificationsSchedulingProxyEntitlement,
+                        _UNNotificationEnabledKey, _UNNotificationLocalizedString,
+                        _UNNotificationStoreActionTextKey, _UNNotificationStoreCategoryKey,
+                        _UNNotificationStoreImageURLKey, _UNNotificationStoreLocalNotificationDataKey,
+                        _UNNotificationStoreNotificationTypeKey, _UNNotificationStoreSoundKey,
+                        _UNNotificationStoreUserInfoKey, _UNRemoteNotificationLoggingPreferenceKey,
+                        _UNRemoteNotificationsPreferencesEntitlement, _UNSupportedTypesForPushSettings,
+                        _UNTriggerLocationArrow, _UserNotificationVersionNumber,
+                        __SBSAppNotificationStoreDirectory, _kUNNotificationStoreNotificationTypeLocal,
+                        _kUNNotificationStoreSoundDefault, _UNApplicationDataStoreLocalNotificationsLastFireDateKey,
+                        _UNFormatNetworkString, _UNLocalNotificationLoggingPreferenceKey,
+                        _UNNotificationBundleIdentifierKey, _UNNotificationSettingsDidChangeNotification,
+                        _UNNotificationStoreCreationDateKey, _UNNotificationStoreMessageKey,
+                        _UNNotificationStoreTitleKey, _UNRemoteNotificationsEnvironmentEntitlement,
+                        _UNSystemDidSetBadgeForBundleIdentifier, _UserNotificationVersionString,
+                        _kUNNotificationStoreNotificationTypeRemote ]
+    objc-classes:     [ _UNDefaultDataProvider,
+                        _UNLocalNotificationClient, _UNLocalNotificationService,
+                        _UNNotificationAuthorizationAlertController, _UNNotificationSchedulerConnectionListener,
+                        _UNNotificationStore, _UNRemoteNotificationLogger,
+                        _UNUserNotificationServer, _UNDefaultDataProviderFactory,
+                        _UNLocationMonitor, _UNNotificationSettingsService,
+                        _UNRemoteNotificationServer ]
+...

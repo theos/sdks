@@ -1,0 +1,43 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symbolication.framework/Symbolication
+current-version: 58044.1.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _LZ4_compress,
+                        _LZ4_compress_continue, _LZ4_compress_limitedOutput_continue,
+                        _LZ4_compress_withState, _LZ4_decompress_fast,
+                        _LZ4_decompress_safe, _LZ4_decompress_safe_withPrefix64k,
+                        _LZ4_resetStreamState, _LZ4_sizeofStreamState,
+                        _LZ4_uncompress, _VMUEnumerateVMAnnotatedMallocObjectsWithBlock,
+                        _VMUIntersectionRange, _VMURangeContainsRange,
+                        _VMURangeIntersectsRange, _VMUScanTypeKeywordDescription,
+                        _VMUUnionRange, _VMUVMRegionShareModeName,
+                        ___crashreporter_info__, _fc_lzfseDecode,
+                        _lz4_decode_fast, _lzfse_decode,
+                        _pidFromHint, _task_enumerate_malloc_blocks,
+                        _task_foreach_malloc_zone, _task_get_malloc_ptrs_by_zone,
+                        _task_peek, _task_peek_natural_size,
+                        _task_stop_peeking, _task_try_peek,
+                        _LZ4_compressBound, _LZ4_compress_limitedOutput_withState,
+                        _LZ4_decompress_fast_withPrefix64k, _LZ4_free,
+                        _LZ4_slideInputBuffer, _VMUGetFlagsForAllVMRegionStatistics,
+                        _VMURangeIntersectsOrAbutsRange, _VMUScanTypeScanDescription,
+                        _VMUunusedSharedLibLabelPrefix, _lz4_decode,
+                        _psName, _task_get_malloc_ptrs,
+                        _task_peek_clear_cache, _task_start_peeking ]
+    objc-classes:     [ _VMUArchitecture,
+                        _VMUCallTreeNode, _VMUClassInfo,
+                        _VMUDebugTimer, _VMUObjectGraph,
+                        _VMUProcInfo, _VMUProcessDescription,
+                        _VMURangeArray, _VMUSourceInfo,
+                        _VMUSymbolOwnerCache, _VMUTaskMemoryScanner,
+                        _VMUVMRegionIdentifier, _VMUBacktrace,
+                        _VMUClassInfoMap, _VMUObjectIdentifier,
+                        _VMUProcessObjectGraph, _VMUSymbol,
+                        _VMUVMRegion ]
+...

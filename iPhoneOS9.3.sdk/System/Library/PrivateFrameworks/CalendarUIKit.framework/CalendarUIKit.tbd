@@ -1,0 +1,28 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit
+current-version: 120.2.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CUIKBundle,
+                        _CUIKEventTimeDetectorResultAllDayKey, _CUIKEventTimeDetectorResultStartDateKey,
+                        _CUIKEventTimeDetectorResultTitleKey, _CUIKNS_Continuity_Log,
+                        _CUIKNS_Log, _kCUIKLogFacility,
+                        _CUIKEventDescriptionWasInvalidatedNotification, _CUIKEventTimeDetectorResultTimeZoneKey,
+                        _CUIKNS_DateStrings_Log, _CUIKParticipantDisplaySort ]
+    objc-classes:     [ _CUIKAttendeeDescriptionGenerator,
+                        _CUIKDateDescriptionGenerator, _CUIKDescriptionGenerator,
+                        _CUIKEventHeuristics, _CUIKEventTimeDetector,
+                        _CUIKRecurrenceRuleDescriptionGenerator, _CUIKSingleDayTimelineLayoutPartition,
+                        _CUIKSplashScreenStrings, _CUIKUserActivity,
+                        _CUIKUserActivityCalendarEvent, _CUIKUserActivityRemindersListDate,
+                        _CUIKUserActivityRemindersListSharedInvitation, _CUIKiCloudKVStore,
+                        _CUIKAttendeeHeuristics, _CUIKEventDescriptionGenerator,
+                        _CUIKNotificationDescriptionGenerator, _CUIKSingleDayTimelineOccurrenceBucket,
+                        _CUIKUserActivityCalendarDate, _CUIKUserActivityRemindersListScheduled,
+                        _CUIKUserActivityWithSource ]
+...

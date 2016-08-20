@@ -1,0 +1,31 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PLBatchDropMessages,
+                        _PLBatteryGaugePauseTracing, _PLBatteryGaugePauseTracingForPid,
+                        _PLBatteryGaugeResumeTracing, _PLBatteryGaugeResumeTracingForPid,
+                        _PLBatteryGaugeStartTracing, _PLBatteryGaugeStartTracingForPid,
+                        _PLBatteryGaugeStopTracing, _PLBatteryGaugeStopTracingForPid,
+                        _PLBatteryGaugeVersion, _PLBatteryLifeMonitorLogCoreDuetAdmissionEvent,
+                        _PLBatteryLifeMonitorLogCoreDuetEventsAggregate, _PLBatteryLifeMonitorLogDuetEvent,
+                        _PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet, _PLBatteryLifeMonitorReportEnergyCoreDuet,
+                        _PLBatteryLifeMonitorStopAllDuetEvents, _PLFDefaultsValueForKey,
+                        _PLLogEvent, _PLQuery,
+                        _PLShouldLogEvent, _PLTalkToPowerlogHelper,
+                        _queryPowerlog, _PLBatteryGaugeGetSnapshot,
+                        _PLBatteryGaugePauseTracingForProcessName, _PLBatteryGaugeResumeTracingForProcessName,
+                        _PLBatteryGaugeStartTracingForProcessName, _PLBatteryGaugeStopTracingForProcessName,
+                        _PLBatteryLifeMonitorLogCoreDuetEvent, _PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet,
+                        _PLBatteryLifeMonitorReportEnergyDuet, _PLForceBatching,
+                        _PLQueryRegistered, _PLShouldLogRegisteredEvent ]
+    objc-classes:     [ _PLClientLogger,
+                        _PLCoreDuetEventInterval, _PLModelingUtilities,
+                        _PLCoreDuetEvent ]
+...

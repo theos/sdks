@@ -1,0 +1,62 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ICE.framework/ICE
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CelltechToStr,
+                        _DiscardOneRelayBindingWithChannelNumber, _FillSockAddrStorage,
+                        _FreeLocalInterfaceList, _GKSRelayParameter_ClientData,
+                        _GKSRelayParameter_PeerAddrPointer, _GKSRelayParameter_PeerExternalAddr,
+                        _GKSRelayParameter_PeerNatType, _GKSRelayParameter_PeerRelayNatIP,
+                        _GKSRelayParameter_PeerRelayPort, _GKSRelayParameter_SelfAddrPointer,
+                        _GKSRelayParameter_SelfExternalAddr, _GKSRelayParameter_SelfRelayIP,
+                        _GKSRelayParameter_SelfRelayNatPort, _GKSRelayParameter_Token,
+                        _GKSRelayType, _GetConnectionTypeFromCellTech,
+                        _GetIPPortFromDict, _GetLocalIFIndexForDstIPPort,
+                        _GetLocalInterfaceListWithOptionsAndCellInterfaceName, _GetNATIPNetmask,
+                        _GetNetworkID, _GetSTUNAttr,
+                        _ICEAddOneInterfaceWithPriorityHints, _ICEAddRemovedRemoteIPPort,
+                        _ICECompressCandidates, _ICEConnectionDataContainsCellCandidate,
+                        _ICEConvertToNewCompression, _ICECreateHandle,
+                        _ICEDisableCandidatePairFilter, _ICEDiscardOneRelayBindingWithChannelNumber,
+                        _ICEDiscardResult, _ICEGetCandidates,
+                        _ICEGetCandidatesVCCExtra, _ICEGetConnErrorCode,
+                        _ICEGetExtIPIndex, _ICEGetIPInfo,
+                        _ICEGetNextBestCandidate, _ICEGetRemoteCIDForDstIPPort,
+                        _ICEGetRemovedRemoteInterface, _ICEGetResultAFOnly,
+                        _ICEInterfaceNeedsUpdateExternalMapping, _ICERecvUDPPacketWithTimeout,
+                        _ICERefreshRelayBinding, _ICERemoveOneRelayBeat,
+                        _ICESendOldHeartbeat, _ICESetForceRelay,
+                        _ICESetTimeout, _ICEStartConnectivityCheckN,
+                        _ICEUpdateCellTech, _ICEUpdateRelayIPPort,
+                        _ICEUpdateSMSTUNIPPort, _IPPORTToSA,
+                        _IPPORTToString, _IPToStringWithBrackets,
+                        _IsBoundSocketEquivalentToIPPort, _IsIPPORTValid,
+                        _MakeAddress, _MakeAllocateRequest,
+                        _MakeIPPORT, _MakeIPPORTWithHostnameIPv4Only,
+                        _NameForNetworkWithIPPort, _ProcessAllocateErrorResponse,
+                        _ProcessChannelBindErrorResponse, _STUNEncodeMessage,
+                        _htonIPPORT, _ntohIPPORT,
+                        _CompareWithFlippedIP, _FlipIP,
+                        _GKSRelayParameter_ConnectionID, _GKSRelayParameter_PeerID,
+                        _GKSRelayParameter_PeerRelayNatPort, _GKSRelayParameter_SelfBlob,
+                        _GKSRelayParameter_SelfRelayNatIP, _GKSRelayParameter_TransactionID,
+                        _GetConnectionTypeFromConnectionResult, _GetLocalInterfaceListWithOptions,
+                        _GetNetworkAddress, _ICEAddOneInterface,
+                        _ICECloseHandle, _ICEConnectionDataContainsIPPort,
+                        _ICECreateHandleWithCallback, _ICEDiscardRelayBinding,
+                        _ICEGetCandidatesForPeer, _ICEGetConnType,
+                        _ICEGetLocalAndExtIPPort, _ICEGetRemoteICEVersion,
+                        _ICEGetResultSrcIPPort, _ICERefreshAllRelayBinding,
+                        _ICERemoveOneRelayBeatForLocal, _ICESetSKEState,
+                        _ICEStopConnectivityCheck, _ICEUpdateRole,
+                        _IPPORTToSA6, _InterpretAddressX,
+                        _IsSameAddressAndPort, _MakeChannelBindRequest,
+                        _MakeRefreshRequest, _ProcessAllocateResponse,
+                        _UpdateOneRelayBeat ]
+...

@@ -1,0 +1,27 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _APSAWDAudioSessionEndedOnClient,
+                        _APSAWDScreenSessionEndedOnClient, _APSAWDSubmit,
+                        _APSAWDVideoSessionStartedOnClient, _APSAudioSessionEnsureSetup,
+                        _APSAudioSessionGetSupportedFormats, _APSCarPlayControlServer_AddInterface,
+                        _APSCarPlayControlServer_Delete, _APSCarPlayControlServer_Start,
+                        _APSConnectionInterfaceManagerCreate, _APSConnectionInterfaceManagerReleaseInterfaceSelection,
+                        _APSCreateSecureMemAllocator, _APSDashboardClientDelete,
+                        _APSGetFBOPropertyCMTime, _APSGetFBOPropertyDouble,
+                        _APSKeyHolderGetCMBaseObject, _APSNTPClockCreate,
+                        _APSSetFBOPropertyData, _APSSetFBOPropertyInt64,
+                        _APSSignalErrorAt, _APSAWDAudioSessionStartedOnClient,
+                        _APSAWDVideoSessionEndedOnClient, _APSAudioSessionEnsureTornDown,
+                        _APSCarPlayControlServer_Create, _APSCarPlayControlServer_Stop,
+                        _APSConnectionInterfaceManagerSelectInterface, _APSDashboardClientSendLog,
+                        _APSGetFBOPropertyInt64, _APSSetFBOPropertyCString,
+                        _APSSetFBOPropertyDouble ]
+...

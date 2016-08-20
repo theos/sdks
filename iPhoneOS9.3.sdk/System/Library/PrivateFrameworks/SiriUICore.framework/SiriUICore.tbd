@@ -1,0 +1,20 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SUICGetSiriUILanguageCode,
+                        _SUICPluginSiriDomainsKey, _SUICPurgeCachedLocalizedStrings,
+                        _SUICSiriLanguageIsRTL, _SiriUICoreVersionString,
+                        _SUICPluginSiriDisambiguationDomainsKey, _SUICSetSiriUILanguageCode,
+                        _SiriUICoreVersionNumber ]
+    objc-classes:     [ _FlameGroup,
+                        _SUICFlamesView, _SUICPluginManager,
+                        _SUICSuggestions, _SUICAudioLevelSmoother,
+                        _SUICSiriLanguage ]
+...

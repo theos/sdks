@@ -1,0 +1,32 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudServices.framework/Frameworks/EscrowService.framework/EscrowService
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kEscrowServiceAccountInfoKey,
+                        _kEscrowServiceAuthenticationAuthToken, _kEscrowServiceAuthenticationEscrowProxyURL,
+                        _kEscrowServiceAuthenticationiCloudEnvironment, _kEscrowServiceChallengeDeviceAreaCodeKey,
+                        _kEscrowServiceChallengeDeviceCountryCodeKey, _kEscrowServiceChallengeDeviceIDKey,
+                        _kEscrowServiceChallengeDeviceTypeKey, _kEscrowServiceErrorBadParameters,
+                        _kEscrowServiceErrorMissingiCloudCredentials, _kEscrowServiceErrorUnavailable,
+                        _kEscrowServiceHSAEnabledKey, _kEscrowServiceNewPassphraseKey,
+                        _kEscrowServiceOperationStatusKey, _kEscrowServicePassphraseKey,
+                        _kEscrowServiceRecordDateKey, _kEscrowServiceRecordLabelKey,
+                        _kEscrowServiceRecordMetadataKey, _kEscrowServiceRecordStatusKey,
+                        _kEscrowServiceRecordTimestampKey, _kEscrowServiceSMSChallengeCodeKey,
+                        _kEscrowServiceSMSChallengeLengthKey, _kEscrowServiceSMSTargetInfoKey,
+                        _kEscrowServiceSilentAttemptKey, _kEscrowServiceiCDPLabel,
+                        _kEscrowServiceAuthenticationAppleID, _kEscrowServiceAuthenticationPassword,
+                        _kEscrowServiceChallengeDeviceCountryAlphaCodeKey, _kEscrowServiceChallengeDevicePhoneNumberKey,
+                        _kEscrowServiceErrorKey, _kEscrowServiceErrorUnknown,
+                        _kEscrowServiceOperationFailure, _kEscrowServiceRecordDataKey,
+                        _kEscrowServiceRecordMetadataHashKey, _kEscrowServiceRecordStatusValid,
+                        _kEscrowServiceSMSChallengeDevicesKey, _kEscrowServiceSMSTargetRequiredKey,
+                        _kEscrowServiceStingrayLabel ]
+    objc-classes:     [ _EscrowService ]
+...

@@ -1,0 +1,66 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MusicCarDisplayUI.framework/MusicCarDisplayUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MCDAlbumDetailFormat,
+                        _MCDAlbumsDetailViewControllerIdentifier, _MCDArtistsViewControllerIdentifier,
+                        _MCDAudiobooksViewControllerIdentifier, _MCDCarDisplayBundle,
+                        _MCDCarDisplayUIMode, _MCDCompilationsViewControllerIdentifier,
+                        _MCDForYouViewControllerIdentifier, _MCDGenresViewControllerIdentifier,
+                        _MCDNewViewControllerIdentifier, _MCDPCDidInvalidateNotificationName,
+                        _MCDPCErrorDomain, _MCDPCIndexPathKey,
+                        _MCDPCItemsKey, _MCDPCNowPlayingDidChangeNotificationName,
+                        _MCDPlaylistsBrowserViewControllerIdentifier, _MCDPlaylistsViewControllerIdentifier,
+                        _MCDRecentlyAddedControllerIdentifier, _MCDRootControllerRadioNotificicationName,
+                        _MCDSetSharedAVPlayer, _MCDSharedAVPlayer,
+                        _MCDSongsViewControllerIdentifier, _MCDTiledArtworkForCatalog,
+                        _MCDViewControllerDataSourceIsEmpty, __MCDStringFromIndexPath,
+                        ___gMCDSharedDefaults, _MCDAlbumPlaceholderImageWithStyle,
+                        _MCDAudiobooksDetailViewControllerIdentifier, _MCDCarDisplayScreen,
+                        _MCDComposersViewControllerIdentifier, _MCDMyMusicViewControllerIdentifier,
+                        _MCDPCDidUpdateContentNotificationName, _MCDPCItemKey,
+                        _MCDPCWillInvalidateNotificationName, _MCDRadioViewControllerIdentifier,
+                        _MCDSetChargeOnDescendantsOfView, _MCDSharedDefaults,
+                        _MCDTimeStringForDuration, _MCDViewForNowPlayingButton ]
+    objc-classes:     [ _MCDActionCellConfiguration,
+                        _MCDAlbumCellConfiguration, _MCDAlbumsDetailTableHeaderView,
+                        _MCDAlbumsViewController, _MCDAndOthersLabel,
+                        _MCDArtistCellConfiguration, _MCDArtistsViewController,
+                        _MCDAudiobooksTableViewController, _MCDBrowserIdentifiers,
+                        _MCDBrowserViewController, _MCDCellConfiguration,
+                        _MCDComposersViewController, _MCDErrorViewController,
+                        _MCDGeniusMixesViewController, _MCDGenresViewController,
+                        _MCDLikeButton, _MCDMediaRemoteNowPlayingViewController,
+                        _MCDMusicNowPlayingViewController, _MCDNewPlaylistsTableViewController,
+                        _MCDNoContentView, _MCDNowPlayingNavigationController,
+                        _MCDPCContainer, _MCDPCModel,
+                        _MCDPlayModeControlView, _MCDPlaylistCellConfiguration,
+                        _MCDPlaylistsBrowserDataSource, _MCDPlaylistsDataSource,
+                        _MCDPodcastEpisodesTableViewController, _MCDProgressBarView,
+                        _MCDQueryDataSource, _MCDRadioStationListViewController,
+                        _MCDRecentlyAddedAlbumsViewController, _MCDRepeatButton,
+                        _MCDSectionedTableViewController, _MCDSongCellConfiguration,
+                        _MCDStoreSectionTableViewController, _MCDTableViewCell,
+                        _MCDTimeoutContentView, _MCDTransportControlView,
+                        _MCDiTunesUEpisodesTableViewController, __MCDAlbumTracksCell,
+                        __MCDBrowsableTableView, __MCDNowPlayingButtonWrapper,
+                        __MCDPCNotifcationCallbackHelper, __MCDTableViewCell,
+                        _MCDActionTableViewCell, _MCDAlbumsDetailViewController,
+                        _MCDArtistAlbumsDataSource, _MCDAudiobookPartsTableViewController,
+                        _MCDBrowserTableViewController, _MCDComposerCellConfiguration,
+                        _MCDForYouViewController, _MCDGlobalQueueManager,
+                        _MCDMoreActionCellConfiguration, _MCDNewViewController,
+                        _MCDNowPlayingViewController, _MCDPlayModeButton,
+                        _MCDPlaylistsBrowserCellConfiguration, _MCDPlaylistsViewController,
+                        _MCDProgressView, _MCDRadioViewController,
+                        _MCDRootController, _MCDSongsViewController,
+                        _MCDTableViewController, _MCD_OLD_TableViewController,
+                        __MCDBrowsableContentTableViewPreloader, __MCDNowPlayingHostView,
+                        __MCDStackItem ]
+...

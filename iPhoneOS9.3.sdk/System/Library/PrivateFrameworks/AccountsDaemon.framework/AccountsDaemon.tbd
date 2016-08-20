@@ -1,0 +1,46 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon
+current-version: 577.4.14
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ACAccountSyncClientID,
+                        _ACAccountSyncKeychainExtension, _ACDAccountStoreDidChangeNotification,
+                        _ACDAccountSyncEnabled, _ACDDatabaseFileName,
+                        _ACDDatbaseTestingFilePrefix, _ACDEntityAccount,
+                        _ACDEntityAccountType, _ACDEntityCredentialItem,
+                        _ACDLanguageDidChangeNotification, _ACDManagedObjectModelName,
+                        _ACDisableAccountSync, _ACOneTimeMigrateAccountSync,
+                        _CopyExternalSourcesEnabledForDataType, _SetAccountNameEnabledForDataType,
+                        _SetTetheredSyncingDisabledForDatatype, __ACDLogInternal,
+                        __ACMessageIdentifierKey, __ACMessageNeedsReplyKey,
+                        __ACMessagePayloadCommandKey, __ACMessagePayloadKey,
+                        __ACMessagePayloadResultKey, __ACMessagePayloadSuccessKey,
+                        _kACDSyncDataTypeCalendars, _kACDSyncDataTypeMailAccounts,
+                        _syncDataTypeForDataclass, _tetheredSyncSourceTypeForDataType,
+                        _ACAccountSyncDevices, _ACDAccountSyncDevices,
+                        _ACDDatabaseRelativePath, _ACDEntityAccountProperty,
+                        _ACDEntityDataclass, _ACDServerRun,
+                        _CopyAccountNamesEnabledForDataType, _SetExternalSourceEnabledForDataType,
+                        __ACIDSServiceIdentifier, __ACMessagePayloadAccountKey,
+                        __ACMessagePayloadOptionsKey, _kACDSyncDataTypeBookmarks,
+                        _kACDSyncDataTypeNotes ]
+    objc-classes:     [ _ACDAccessPluginManager,
+                        _ACDAccountNotifier, _ACDAccountStoreFilter,
+                        _ACDAuthenticationDialogManager, _ACDAuthenticationPluginManager,
+                        _ACDClientAuthorization, _ACDDatabase,
+                        _ACDDatabaseMigrator, _ACDDataclassOwnersManagerInterface,
+                        _ACDKeychain, _ACDKeychainManager,
+                        _ACDPluginLoader, _ACDQueueDictionary,
+                        _ACDTCCUtilities, _ACDUserNotification,
+                        _ACRemoteDeviceMessage, __ACDTestServer,
+                        _ACDAccountChange, _ACDAccountSync,
+                        _ACDClient, _ACDDatabaseInitializer,
+                        _ACDFakeRemoteAccountStoreSession, _ACDOAuthSigner,
+                        _ACDServer, _ACRemoteCommandHandler,
+                        _ACRemoteDeviceProxy ]
+...

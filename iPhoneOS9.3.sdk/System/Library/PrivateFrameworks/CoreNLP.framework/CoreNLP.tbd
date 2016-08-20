@@ -1,0 +1,23 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
+current-version: 51.1.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NLSearchParseCandidateCopyAttributedInput,
+                        _NLSearchParseCandidateCopyRankCategories, _NLSearchParseGetConfidence,
+                        _NLSearchParserCopyParse, _NLSearchParserCreate,
+                        _NLSearchParserSetContext, _NLSearchParserSetLocale,
+                        _NLTransliterationCandidateCopyInputString, _NLTransliterationCandidateCreate,
+                        _NLTransliterationCandidateIsInVocabulary, _NLTransliteratorAcceptCandidate,
+                        _NLTransliteratorCreate, _NLTransliteratorResetDynamicLanguageModel,
+                        _kNLSearchParserLocaleKey, _kNLTransliteratorTargetLocaleKey,
+                        _NLSearchParseCandidateCopyDescription, _NLSearchParserAppendString,
+                        _NLSearchParserGetTokenCount, _NLSearchParserSetString,
+                        _NLTransliterationCandidateIsExtensionCandidate, _NLTransliteratorCopyCandidates,
+                        _kNLSearchParserContextIdentifierKey ]
+...

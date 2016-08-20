@@ -1,0 +1,16 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _UIArbiterLog,
+                        __UIKeyboardArbiter_ForSpringBoard_WorkspaceIdentifier, __UIKeyboardArbiter_SceneIdentifier,
+                        _UIArbiterLogv ]
+    objc-classes:     [ __UIKeyboardArbiter,
+                        __UIKeyboardArbiter_ForSpringBoard ]
+...

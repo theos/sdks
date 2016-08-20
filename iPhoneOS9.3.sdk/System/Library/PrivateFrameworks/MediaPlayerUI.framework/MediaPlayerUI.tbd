@@ -1,0 +1,73 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaPlayerUI.framework/MediaPlayerUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/MPUFoundation.framework/MPUFoundation ]
+    symbols:          [ _MPUApplicationDefaultsDidChangeNotification,
+                        _MPUExtrasDetailTextCellIdentifier, _MPUExtrasGridSectionStyleImage,
+                        _MPUExtrasGridSectionStyleProduct, _MPUExtrasImageBrowserZoomingImageTransitionIdentifier,
+                        _MPUExtrasListTableViewHeaderIdentifier, _MPUExtrasLockupDetailTextCellIdentifier,
+                        _MPUExtrasMainTemplateMenuItemTypeAttribute, _MPUExtrasMenuBarItemIdentifier,
+                        _MPUExtrasReusableHeaderIdentifier, _MPUExtrasStackCollectionHeaderIdentifier,
+                        _MPUHTMLParserMultipleErrorsKey, _MPUStoreFrontURLForMediaType,
+                        _MPUViewControllerAttributeConfigurationClassKey, _MPUViewControllerAttributeDataSourceClassKey,
+                        _MPUViewControllerAttributeLocalizedNavigationItemTitleKeyKey, _MPUViewControllerAttributeLocalizedTitleKeyKey,
+                        _MPUViewControllerAttributeResourceBundleKey, _MPUViewControllerAttributeViewControllerClassKey,
+                        __MPUEnumerateItemsOfCollectionView, ___connectionQueue,
+                        _MPUExtrasCarouselZoomingImageTransitionIdentifier, _MPUExtrasGridSectionStyleKey,
+                        _MPUExtrasListTableViewCellIdentifier, _MPUExtrasMainTemplateBarHeightChangeNotification,
+                        _MPUExtrasNavigationBlurGroupName, _MPUHTMLParserErrorDomain,
+                        _MPUViewControllerAttributeAggregateStatisticDisplayCountKeyKey, _MPUViewControllerAttributeEntityTypeKey,
+                        _MPUViewControllerAttributeNavigationControllerClassKey, _MPUViewControllerAttributeViewControllerTypeKey ]
+    objc-classes:     [ _AVTimeFormatter,
+                        _MPUAdaptiveCollectionViewController, _MPUAlertViewDelegateFacade,
+                        _MPUArtworkView, _MPUBackdropContentViewController,
+                        _MPUCollectionViewController, _MPUCompletionQueryDataSource,
+                        _MPUExtrasActivityIndicatorElementViewController, _MPUExtrasArtworkLayoutTriggeringView,
+                        _MPUExtrasBannerController, _MPUExtrasCarouselCollectionView,
+                        _MPUExtrasCarouselCollectionViewFlowLayout, _MPUExtrasCarouselViewController,
+                        _MPUExtrasConstrainedArtworkContainerView, _MPUExtrasDetailTextCell,
+                        _MPUExtrasFeatureContainerViewController, _MPUExtrasGridCellStyle,
+                        _MPUExtrasGridElementViewController, _MPUExtrasGridSectionHeaderStyle,
+                        _MPUExtrasImageBrowserViewController, _MPUExtrasJSITunesStore,
+                        _MPUExtrasLoadingView, _MPUExtrasLockupElementViewController,
+                        _MPUExtrasMainTemplateViewController, _MPUExtrasNavigationBarButton,
+                        _MPUExtrasRootViewController, _MPUExtrasSlideshowArtworkCatalogHelper,
+                        _MPUExtrasSlideshowViewController, _MPUExtrasStackTemplateViewController,
+                        _MPUExtrasTableViewCell, _MPUExtrasTemplateViewController,
+                        _MPUExtrasVideoTimelineEvent, _MPUExtrasZoomableImageView,
+                        _MPUExtrasZoomingImageTransitionContext, _MPUGradientView,
+                        _MPUIndeterminateProgressIndicatorView, _MPUItemOfferButton,
+                        _MPUMediaControlsControlCenterTitlesView, _MPUMediaControlsVolumeView,
+                        _MPUMoreListController, _MPUNavigationController,
+                        _MPUNowPlayingTitlesView, _MPUPlaybackAlertController,
+                        _MPURadioArtworkDataSource, _MPURemoteApplicationActivity,
+                        _MPUSharedLibrariesViewController, _MPUStandardTransportButton,
+                        _MPUSystemMediaControlsView, _MPUTabBarController,
+                        _MPUTheme, _MPUTransportControlsView,
+                        __MPUControlCenterDetailSlider, __MPUExtrasGridHeaderView,
+                        __MPUExtrasShelfCollectionViewLayout, __MPUHTMLParserState,
+                        __MPUViewControllerCreationInformation, __MPUViewControllerRestoration,
+                        _MPMediaCollectionDownloadObserver, _MPUApplicationDefaults,
+                        _MPUChronologicalProgressView, _MPUExtrasActivityIndicator,
+                        _MPUExtrasBackgroundViewController, _MPUExtrasCarouselCollectionViewCell,
+                        _MPUExtrasCollectionReusableView, _MPUExtrasElementViewController,
+                        _MPUExtrasGridCollectionViewCell, _MPUExtrasGridViewControllerStyle,
+                        _MPUExtrasListTemplateViewController, _MPUExtrasMainMenuSectionMetrics,
+                        _MPUExtrasNavigationController, _MPUExtrasSlideshowTemplateViewController,
+                        _MPUExtrasTableView, _MPUExtrasVideoTimeline,
+                        _MPUExtrasZoomingImageInteractiveTransitionSourceContext, _MPUHTMLParser,
+                        _MPUMatchMediaDownloadObserver, _MPUMediaDownloadObserver,
+                        _MPUNowPlayingController, _MPUProspectivePlaybackInformation,
+                        _MPURemoteApplicationActivityController, _MPUSystemBuyButtonConfiguration,
+                        _MPUTextButton, _MPUVignetteBackgroundView,
+                        __MPUExtrasMainMenuItemCollectionViewCell, __MPUSharedLibrariesViewController ]
+    objc-ivars:       [ _MPUMediaDownloadObserver._hasPendingProgressHandlerExecution,
+                        _MPUMediaDownloadObserver._pid, _MPUMediaDownloadObserver._queue ]
+...

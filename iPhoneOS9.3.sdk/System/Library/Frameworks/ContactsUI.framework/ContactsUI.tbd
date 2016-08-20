@@ -1,0 +1,49 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/ContactsUI.framework/ContactsUI
+current-version: 33.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ABAddressBookBundle, _ABAddressBookGetDefaultRotationContentSettings, 
+                       _ABAddressBookSetAutorotationEnabled, _ABAddressBookShouldAllowAutorotation, 
+                       _ABCapabilitiesConferenceHistoryChanged, _ABHilightedColorAttributeName, 
+                       _ABNotesFontAttributeName, _ABNotesTextColorAttributeName, 
+                       _ABTextStyleAttributeName, _CNAvatarViewDefaultSize, 
+                       _CNContactUIBirthdaysKey, _CNContactUISystemCalendarKey, 
+                       _CNContactsUIBundle, _CNQuickActionCategoryAddToContacts, 
+                       _CNQuickActionCategoryAudioCall, _CNQuickActionCategoryInfo, 
+                       _CNQuickActionCategoryInstantMessage, _CNQuickActionCategoryMail, 
+                       _CNQuickActionCategoryVideoCall, _CNUIContactActionDestinationType, 
+                       _CNUIContactActionDestinationTypeEmail, _CNUIContactActionDestinationTypeFaceTime, 
+                       _CNUIContactActionDestinationTypeFaceTimeAudio, 
+                       _CNUIContactActionDestinationTypePhoneNumber, _CNUIContactActionFaceTimeMediaType, 
+                       _CNUIContactActionFaceTimeMediaTypeAudioOnly, _CNUIContactActionFaceTimeMediaTypeVideo, 
+                       _CNUIContactActionShareActivityType, _CNUIContactActionTapPropertyIdentifier, 
+                       _CNUIContactActionTypeAddToFavorites, _CNUIContactActionTypeFaceTime, 
+                       _CNUIContactActionTypeLink, _CNUIContactActionTypeSendMessage, 
+                       _CNUIContactActionTypeShare, _CNUIContactActionTypeTapProperty, 
+                       _CNUIContactActionTypeUnlink, _CNUIIsContacts, _CNUIIsDDActionsService, 
+                       _CNUIIsFaceTime, _CNUIIsFirstParty, _CNUIIsMessages, 
+                       _CNUIIsMobilePhone, _CNUIIsWatchCompanion, _CNUIPixelAlignedPoint, 
+                       _CNUIPixelAlignedRect, _CNUIPixelAlignedSize, _CNUIRoundToViewScale, 
+                       _CNUISetLoggingBlock, _CNUISetUseSiriLocalization, 
+                       _CNUIShouldUseSiriLocalization, __CNUILog ]
+    objc-classes:    [ _CNAvatarCardController, _CNAvatarView, _CNCapabilitiesManager, 
+                       _CNCardActionGroupItem, _CNCardGroup, _CNCardGroupItem, 
+                       _CNCardPropertyGroup, _CNContactAction, _CNContactCell, 
+                       _CNContactContentViewController, _CNContactCustomDataSource, 
+                       _CNContactFilter, _CNContactGridViewController, 
+                       _CNContactHeaderDisplayView, _CNContactHeaderEditView, 
+                       _CNContactHeaderView, _CNContactListViewController, 
+                       _CNContactNavigationController, _CNContactPicker, 
+                       _CNContactPickerViewController, _CNContactSection, 
+                       _CNContactStoreDataSource, _CNContactStoreFilter, 
+                       _CNContactStyle, _CNContactView, _CNContactViewController, 
+                       _CNMonogrammer, _CNPostalAddressEditorNavigationController, 
+                       _CNPropertyGroupItem, _CNQuickAction, _CNQuickActionsView, 
+                       _CNStarkContactViewController, _CNStarkContactsBrowserViewController, 
+                       _CNStarkContactsListViewController, _CNStyleProvider, 
+                       _CNTabletStyleProvider, _CNTransportButton, _CNUIDataCollector, 
+                       _CNVCardViewController ]
+...

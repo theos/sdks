@@ -1,0 +1,40 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CaptiveNetwork.framework/CaptiveNetwork
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CNAccountsAdd,
+                        _CNAccountsResolve, _CNDebugLaunchWebsheet,
+                        _CNForgetSSID, _CNIAmTheWebsheetApp2,
+                        _CNNetworkCopyPluginNames, _CNNetworkGetInterfaceName,
+                        _CNNetworkGetSSID, _CNNetworkGetSignalStrength,
+                        _CNNetworkIsChosenPlugin, _CNNetworkSetCaptive,
+                        _CNNetworkSetPassword, _CNNetworkWasJustJoined,
+                        _CNPluginCommandCopyCurrentNetwork, _CNPluginCommandGetInterfaceName,
+                        _CNPluginCommandGetTypeID, _CNPluginLogoffNetwork,
+                        _CNPluginMonitorStart, _CNPluginRegister,
+                        _CNPluginResponseDeliver, _CNPluginResponseSetNetwork,
+                        _CNProberCreate, _CNProberGetTypeID,
+                        _CNScanListFilterStart, _CNScrapeCredentials,
+                        _CaptiveCopyWiFiLandingPageURL, _CaptiveNetworkVersionString,
+                        ___CNCopySupportedInterfaces, ___CNMarkPortalOnline,
+                        _kCNPluginOptionDisplayName, _kCNSCaptiveNetworkProperty,
+                        _kCNSNetworkWasCaptiveProperty, _kCNSWebsheetInfoPropertySSID,
+                        _kCNStateAuthReply, _kCNStateDisabled,
+                        _kCNStateRedirect, _kCNStateURL,
+                        _kCNStateWaitingOnUI, _CNAccountsCopy,
+                        _CNDumpState, _CNLogoff,
+                        _CNNetworkGetPassword, _CNNetworkGetTypeID,
+                        _CNNetworkSetConfidence, _CNPluginCommandBindReadStream,
+                        _CNPluginCommandGetType, _CNPluginMonitorEventCopyDisplayIDs,
+                        _CNPluginResponseCreate, _CNPluginResponseSetNetworkList,
+                        _CNSClientCNSClient_subsystem, _CNWebsheetNotifyComplete,
+                        ___CNCopyCurrentNetworkInfo, ___CNSetSupportedSSIDs,
+                        _kCNSDisabledByCaptiveProperty, _kCNSWebsheetInfoPropertyURL,
+                        _kCNStateKey, _kCNStateStage ]
+...

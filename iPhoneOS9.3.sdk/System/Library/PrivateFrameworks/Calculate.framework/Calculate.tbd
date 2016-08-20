@@ -1,0 +1,16 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Calculate.framework/Calculate
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CalculateExpression,
+                        _CalculateInternationalExpression, _CalculatePerformExpression,
+                        _CalculateExpressionError ]
+    objc-classes:     [ _Converter,
+                        _CurrencyCache ]
+...

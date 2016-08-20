@@ -1,0 +1,70 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ContactsAutocomplete.framework/ContactsAutocomplete
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CNALoggingContextDebug,
+                        _CNALoggingContextProbes, _CNAutocompleteAdditionalResultsKey,
+                        _CNAutocompleteDefaultsDebugLogEnabled, _CNAutocompleteDefaultsDuetEnabled,
+                        _CNAutocompleteDefaultsKeystrokeCoalescingInterval, _CNAutocompleteDefaultsNextPeopleSearchEnabled,
+                        _CNAutocompleteDefaultsProbesLogEnabled, _CNAutocompleteDefaultsSortingLogEnabled,
+                        _CNAutocompleteDefaultsSuggestionsEnabled, _CNAutocompleteDefaultsSuppressAddressesAlreadyChosen,
+                        _CNAutocompleteIsDebugLoggingEnabled, _CNAutocompleteIsSortingLoggingEnabled,
+                        _CNAutocompleteProbeBatchKey, _CNAutocompleteProbeBuildKey,
+                        _CNAutocompleteProbeIgnoreResultsThreshold, _CNAutocompleteProbeKeyIncludingServers,
+                        _CNAutocompleteProbeKeyPerformanceLatency, _CNAutocompleteProbeKeyUsageMonitorConsideredSuggestionCount,
+                        _CNAutocompleteProbeKeyUsageMonitorKey, _CNAutocompleteProbeKeyUsageMonitorNoResultsFromDuet,
+                        _CNAutocompleteProbeKeyUsageMonitorPredictionCategoryKey, _CNAutocompleteProbeKeyUsageMonitorSelectedIndexKey,
+                        _CNAutocompleteProbeKeyUsageMonitorUserIgnoreDelayKey, _CNAutocompleteProbeResultTypeKeyPrediction,
+                        _CNAutocompleteProbeSourceTypeKey, _CNAutocompleteProbeSourceTypeKeyContact,
+                        _CNAutocompleteProbeSourceTypeKeyPrediction, _CNAutocompleteProbeSourceTypeKeyPureSuggestion,
+                        _CNAutocompleteProbeSourceTypeKeySuggestion, _CNAutocompleteProbeSourceTypeKeyUnknown,
+                        _CNAutocompleteResultAddressStringForHashingEmailTransform, _CNAutocompleteResultAddressStringForHashingTransform,
+                        _CNAutocompleteResultUserInfoDescriptionTransform, _ContactsAutocompleteVersionString,
+                        _sNormalizeCaseDiactriticsAndCharacterWidth, _sSortRecentResultsByCompletingChosenGroup,
+                        _sSortRecentResultsByDateCount, _sSortResultsByAddress,
+                        _sSortResultsByDisplayName, _sSortResultsByPreferredDomain,
+                        _CNALoggingContextPerformance, _CNAutocompleteDefaultsCalendarServersEnabled,
+                        _CNAutocompleteDefaultsDuetIdentifierTypeGuessWorkEnabled, _CNAutocompleteDefaultsPredictedResultLimit,
+                        _CNAutocompleteDefaultsSuggestionsCharactersThreshold, _CNAutocompleteErrorDomain,
+                        _CNAutocompleteLoggingSubsystem, _CNAutocompleteProbeDuetModelID,
+                        _CNAutocompleteProbeKeyPerformanceKey, _CNAutocompleteProbeKeyUsageMonitorDuetReturnedResults,
+                        _CNAutocompleteProbeKeyUsageMonitorNumberOfCharactersKey, _CNAutocompleteProbeKeyUsageMonitorSourceTypeKey,
+                        _CNAutocompleteProbeResultTypeKeyPureSuggestion, _CNAutocompleteProbeSourceTypeKeyDirectoryServer,
+                        _CNAutocompleteProbeSourceTypeKeyRecent, _CNAutocompleteRejectedResultsKey,
+                        _CNAutocompleteResultStringForHashingTransform, __CNAInternalBuild,
+                        _sSortRecentResultsByDate, _sSortResultsByCategory ]
+    objc-classes:     [ _CNAutocompleteAggdPerformanceProbe,
+                        _CNAutocompleteAggdProbeAggdWrapper, _CNAutocompleteCalendarServerOperationFactory,
+                        _CNAutocompleteCalendarServerSearch, _CNAutocompleteDirectoryServerResult,
+                        _CNAutocompleteDuetContactResult, _CNAutocompleteEntitlementVerifier,
+                        _CNAutocompleteFetchContext, _CNAutocompleteFetchRequestTracing,
+                        _CNAutocompleteGroupResult, _CNAutocompleteLocalContactResultTransformBuilder,
+                        _CNAutocompleteLocalGroupsFetcher, _CNAutocompleteLocalSearch,
+                        _CNAutocompleteNetworkActivityPolicy, _CNAutocompleteObservable,
+                        _CNAutocompleteObservableBuilderBatchingHelperFactory, _CNAutocompleteProbeProviderFactory,
+                        _CNAutocompleteQueryResponsePreparer, _CNAutocompleteRecentResult,
+                        _CNAutocompleteResult, _CNAutocompleteResultTokenMatcher,
+                        _CNAutocompleteResultValue, _CNAutocompleteSearchProviderFactory,
+                        _CNAutocompleteStore, _CNAutocompleteSuggestedContactResult,
+                        _CNAutocompleteTokenMatcher, _CNAutocompleteUserSession,
+                        __CNAutocompleteAggregateSourceInclusionPolicy, __CNAutocompleteCalendarObservableBuilderBatchingHelper,
+                        __CNAutocompleteFetchDelegateSafeWrapper, __CNAutocompleteNonCachingSearchProvider,
+                        __CNAutocompleteResponsePreparerDecorator, __CNAutocompleteUserDefaultsSourceInclusionPolicy,
+                        __CNDelegateAdjustingResponsePreparer, __CNFilteringResponsePreparer,
+                        __CNSortingResponsePreparer, _CNAutocompleteAggdProbe,
+                        _CNAutocompleteCalendarServerResult, _CNAutocompleteDirectoryServerSearch,
+                        _CNAutocompleteFetchBlockDelegate, _CNAutocompleteFrequentRecentResult,
+                        _CNAutocompleteLocalContactsFetcher, _CNAutocompleteNameComponents,
+                        _CNAutocompleteObservableBuilder, _CNAutocompleteQuery,
+                        _CNAutocompleteRecentsSearch, _CNAutocompleteResultTracing,
+                        _CNAutocompleteSourceInclusionPolicy, _CNAutocompleteSuggestionsSearch,
+                        __CNAutocompleteAggdProbeProvider, __CNAutocompleteEntitlementSourceInclusionPolicy,
+                        __CNAutocompleteObservableBuilderBatchingHelper, __CNAutocompleteUserSessionDisplayedResults,
+                        __CNDiagnosticResponsePreparer ]
+...

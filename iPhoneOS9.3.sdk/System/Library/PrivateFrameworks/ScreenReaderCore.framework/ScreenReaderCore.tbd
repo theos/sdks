@@ -1,0 +1,44 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ScreenReaderCore.framework/ScreenReaderCore
+current-version: 390.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SCRCArgumentParserRunWithClassName,
+                        _SCRCFormatFloat, _SCRCFormatInteger,
+                        _SCRCFormatUnsignedInteger, _SCRCIsInt32BitSafe,
+                        _SCRCLogInitializeWithKeys, _SCRCLogMaskUIElement,
+                        _SCRCMathGetAverage, _SCRCMathGetVectorAndDistanceForPoints,
+                        _SCRCMathUpdateAverage, _kSCRCMathExpressionKeyChildren,
+                        _kSCRCMathExpressionKeyContent, _kSCRCMathExpressionKeyFontStyle,
+                        _kSCRCMathExpressionKeyNumeratorObject, _kSCRCMathExpressionKeyOperator,
+                        _kSCRCMathExpressionKeyRadicandObject, _kSCRCMathExpressionKeySubscriptObject,
+                        _kSCRCMathExpressionKeyType, _kSCRCMathExpressionKeyUnichar,
+                        _kSCRCMathFontStyleBold, _kSCRCMathStringAttributeIsNonTechnicalText,
+                        _kSCRCMathStringAttributeSpeakWithPitchInflection, _kSCRCMathTypeFenced,
+                        _kSCRCMathTypeIdentifier, _kSCRCMathTypeNumber,
+                        _kSCRCMathTypeRootOperation, _kSCRCMathTypeSpace,
+                        _kSCRCMathTypeTable, _kSCRCMathTypeTableRow,
+                        _kSCRCMathTypeUnderOver, _kSCRCThreadWaitForever,
+                        _kSCRCThreadWaitMedium, _kSCRCThreadWaitShort,
+                        _SCRCEnableProcessKeepAlive, _SCRCFormatNumber,
+                        _SCRCLogMaskThread, _SCRCMathGetDistanceBetweenPoints,
+                        _kSCRCMathExpressionKeyBaseObject, _kSCRCMathExpressionKeyDenominatorObject,
+                        _kSCRCMathExpressionKeyOpenOperator, _kSCRCMathExpressionKeyRootIndexObject,
+                        _kSCRCMathExpressionKeyUnderObject, _kSCRCMathFontStyleItalic,
+                        _kSCRCMathStringAttributeTreePosition, _kSCRCMathTypeLongDivision,
+                        _kSCRCMathTypeRow, _kSCRCMathTypeTableCell,
+                        _kSCRCThreadNoWait, _kSCRCThreadWaitLong ]
+    objc-classes:     [ _SCRCArgumentParser,
+                        _SCRCException, _SCRCGestureFactory,
+                        _SCRCIndexMap, _SCRCPhotoEvaluator,
+                        _SCRCPhotoEvaluatorResultPeople, _SCRCStackQueue,
+                        _SCRCTargetSelectorTimer, _SCRCThreadedWeakLinkedObject,
+                        _SCRCArgumentSubcommand, _SCRCGestureFinger,
+                        _SCRCPhotoEvaluatorPersonFeature, _SCRCTargetSelector,
+                        _SCRCThread ]
+...

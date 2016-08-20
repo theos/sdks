@@ -1,0 +1,48 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+current-version: 374.1.1
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CSIEqualMetrics,
+                        _CUIBlendModeDescriptionFromCGBlendMode, _CUICGBlendModeFromLSRDescription,
+                        _CUICalcNonAlphaAreaOfImage, _CUICompareRenditionKey,
+                        _CUICurrentPlatform, _CUIDrawExtrudedImageInContext,
+                        _CUIEdgeInsetsFromCGRect, _CUIEdgeInsetsInvalid,
+                        _CUIEdgeInsetsOutsetRect, _CUIEdgeInsetsValid,
+                        _CUIEqualRenditionKeysIgnoringAttribute, _CUIImageIsMonochrome,
+                        _CUIRenditionKeyCopy, _CUIRenditionKeySetValueForAttribute,
+                        _CUIRenditionKeyTokenCount, _CUISystemThemeRenditionKeyFormat,
+                        _gArtworkDraftTypes, _gColors,
+                        _gEffectTypes, _gMetafontSizes,
+                        _gRenditionTypes, _gThemeDrawingLayers,
+                        _gThemeGraphicsFeatureSetClasses, _gThemeLooks,
+                        _gThemeParts, _gThemeSizes,
+                        _gThemeTemplateRenderingModes, _gThemeValues,
+                        _gZeroCodeArtworkInfo, _CSIIllegalMetrics,
+                        _CUICGImageGetAlphaInfo, _CUIConvertCGImageFormat,
+                        _CUIEdgeInsetsEqualToEdgeInsets, _CUIEdgeInsetsMake,
+                        _CUIEdgeInsetsZero, _CUIMaxScaleForTargetPlatform,
+                        _CUIRenditionKeyStandardize, _CUIThemeInfoVersion,
+                        _gEffectParameterTypes, _gRenditionSubtypes,
+                        _gThemeElements, _gThemeMemoryPerformanceClasses,
+                        _gThemeStates, _gThemeUISizeClasses ]
+    objc-classes:     [ _CSIBitmapWrapper,
+                        _CUICatalog, _CUIImage,
+                        _CUIMutableCommonAssetStorage, _CUINamedExternalLink,
+                        _CUINamedImageAtlas, _CUINamedLayerImage,
+                        _CUIPSDImageRef, _CUIPSDLayerEffectColorOverlay,
+                        _CUIPSDLayerEffectGradientOverlay, _CUIPSDLayerEffectInnerShadow,
+                        _CUIPSDLayerEffects, _CUIRenditionKey,
+                        _CUIShapeEffectPreset, _CUISingleNamedAssetCreator,
+                        _CUIStyleEffectConfiguration, _CUIThemeSchemaPSDLayerGroup,
+                        _CUIThemeSchemaRenditionGroup, _CSIGenerator,
+                        _CUIMutableCatalog, _CUINamedImage,
+                        _CUINamedLayerStack, _CUIPSDLayerEffectDropShadow,
+                        _CUIPSDLayerEffectOuterGlow, _CUIRenditionLayerReference,
+                        _CUIStructuredThemeStore, _CUIThemeSchemaPSDRenditionLayer ]
+...

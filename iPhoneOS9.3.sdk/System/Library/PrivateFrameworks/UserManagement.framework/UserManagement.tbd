@@ -1,0 +1,20 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _UMErrorPasscodeBackOffInterval,
+                        _UserManagementVersionNumber, _UserManagementVersionString,
+                        _UMUserManagerErrorDomain ]
+    objc-classes:     [ _UMError,
+                        _UMLog, _UMMutableUser,
+                        _UMTask, _UMUserManager,
+                        _UMUserSwitchContext, _UMXPCServer,
+                        _UMException, _UMQueue,
+                        _UMUserSwitchBlockingTask, _UMUserSyncTask ]
+...

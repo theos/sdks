@@ -1,0 +1,27 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager
+current-version: 0.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CTCellularPlanConnectionPropertiesKey,
+                        _CTCellularPlanInfoDidChangeNotification, _CTCellularPlanItemIdentifierHomePlanWithRoaming,
+                        _CTCellularPlanLaunchOptionsFlowTypeIsSequoiaKey, _CTCellularPlanLaunchOptionsParametersKey,
+                        _CTCellularPlanProxyKey, _CTCellularPlanSocketTimeoutKey,
+                        _CTCellularPlanSubscriptionKey, _kCTDaemonReadyNotification,
+                        _kCellularPlanDaemonService, _CTCellularPlanErrorDomain,
+                        _CTCellularPlanLaunchOptionsCsnKey, _CTCellularPlanLaunchOptionsUseBootstrapRoamingInternetBypassKey,
+                        _CTCellularPlanSubscriptionDidUpdateNotification, _CTCellularPlanXpcWhitelistSet ]
+    objc-classes:     [ _CTCellularPlan,
+                        _CTCellularPlanBoolValidator, _CTCellularPlanDateParser,
+                        _CTCellularPlanError, _CTCellularPlanJsonResponseParser,
+                        _CTCellularPlanManager, _CTCellularPlanProfile,
+                        _CTCellularPlanStringValidator, _CTCellularPlanSubscription,
+                        _CTCellularPlanSubscriptionParser, _CTCellularPlanArrayValidator,
+                        _CTCellularPlanDictionaryValidator, _CTCellularPlanLogger,
+                        _CTCellularPlanRequest, _CTCellularPlanSubscriptionDataUsage ]
+...

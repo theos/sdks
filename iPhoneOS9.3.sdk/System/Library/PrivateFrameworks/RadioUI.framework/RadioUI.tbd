@@ -1,0 +1,32 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RadioUI.framework/RadioUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RUJingleReportingPlayEventCollectionFromReportingEvents,
+                        _RURadioAVItemAlbumBuyButtonInfoDidChangeNotification, _RURadioAdObserverHeartbeatDidChangeNotification,
+                        _RURadioAdTrackActionDidFinishNotification, _RURadioAdTrackDidFailToLoadNotification,
+                        _RURadioDataSourceDidInvalidateNotification, _RURadioQueueFeederExplicitTracksEnabledDidChangeNotification,
+                        _RURadioStationPlaybackMetadataCreateStationInModel, _RURadioStreamTrackAVItemPingsUserInfoKey,
+                        __RURadioAVItemInternalIsInWishListDidChangeNotification, _RUPreviewSessionDefaultFadeDuration,
+                        _RURadioAdSlotAdTracksDidChangeNotification, _RURadioAdTrackUserInfoKeyWillLeaveApplication,
+                        _RURadioQueueFeederUserDefaultExplicitTracksEnabledDidChangeNotification, _RURadioStreamTrackAVItemDidReceiveTimedMetadataPingsNotification ]
+    objc-classes:     [ _RUAddStationEpilogueContext,
+                        _RUMutableRadioStationPlaybackMetadata, _RUNowPlayingObserver,
+                        _RUPrepareRadioPlaybackOperation, _RURTCReportingController,
+                        _RURadioAVPlayer, _RURadioAdArtworkDataSource,
+                        _RURadioAdSlot, _RURadioAudioClipAVItem,
+                        _RURadioGetTracksOperation, _RURadioPlaybackContext,
+                        _RURadioQueueFeeder, _RURadioStationPreparationContext,
+                        _RURadioStreamTrackAVItem, _RURadioTrackPreviewAVItem,
+                        _RUTrackDownloadView, __MPRadioStreamMetadata,
+                        _RUJingleTiltReportingController, _RUPlaybackTimeoutInfoController,
+                        _RURadioAVItem, _RURadioAdObserver,
+                        _RURadioDataSource, _RURadioPlaybackCoordinator,
+                        _RURadioStreamPing, _RUStoreProductViewController ]
+...

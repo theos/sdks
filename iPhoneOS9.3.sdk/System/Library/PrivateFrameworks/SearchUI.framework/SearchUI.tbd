@@ -1,0 +1,44 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SearchUIAlignmentCenter,
+                        _SearchUIAlignmentRight, _SearchUICardSectionTypeKeyValueData,
+                        _SearchUICardSectionTypeNowPlaying, _SearchUICardSectionTypeRow,
+                        _SearchUICardSectionTypeSpacer, _SearchUICardSectionTypeTitle,
+                        _SearchUICardSectionTypeTwitter, _SearchUIStyleIsVibrant,
+                        _SearchUIVersionString, _SearchUIAlignmentLeft,
+                        _SearchUICardSectionTypeMovie, _SearchUICardSectionTypeScoreSummary,
+                        _SearchUICardSectionTypeTrailers, _SearchUIVersionNumber ]
+    objc-classes:     [ _SearchUI,
+                        _SearchUIAppActionButton, _SearchUICardDetailsView,
+                        _SearchUICardSectionView, _SearchUICenteredResultTableViewCell,
+                        _SearchUIContactActionButton, _SearchUIContentAdvisoryView,
+                        _SearchUIFeedbackEvent, _SearchUIIconView,
+                        _SearchUIInlineCardSectionsTableViewCell, _SearchUILocalMediaController,
+                        _SearchUIMovieCardSectionView, _SearchUINowPlayingCollectionViewController,
+                        _SearchUIPunchoutActionButton, _SearchUIRichTextField,
+                        _SearchUIRichTitleCardSectionView, _SearchUIRoundedView,
+                        _SearchUIRowFormatter, _SearchUISimpleMultiResultTableViewCell,
+                        _SearchUISingleResultTableViewCell, _SearchUIStarView,
+                        _SearchUITableLayoutInfo, _SearchUITableRowContainerView,
+                        _SearchUITableView, _SearchUITableViewController,
+                        _SearchUITestStyleViewController, _SearchUITestTableViewController,
+                        _SearchUITextAreaView, _SearchUITrailerView,
+                        _SearchUITwitterCardSectionView, _SearchUIVerticalResultView,
+                        _SearchUIVibrantView, _TopAlignedCollectionViewFlowLayout,
+                        _SearchUIActionButtonView, _SearchUICardSectionFormatter,
+                        _SearchUICollectionViewCell, _SearchUIDescriptionCardSectionView,
+                        _SearchUIIconViewContainer, _SearchUIMovieCardSectionBuyButtonView,
+                        _SearchUIPlayActionButton, _SearchUIRichTextLayoutItem,
+                        _SearchUIRowCardSectionView, _SearchUISingleContactTableViewCell,
+                        _SearchUITableHeaderCardSectionView, _SearchUITableRowHeaderCardSectionView,
+                        _SearchUITestNavigationController, _SearchUITextAreaData,
+                        _SearchUITrailersCardSectionView, _SearchUIVibrantLabel ]
+...

@@ -1,0 +1,63 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PKAllowedPlugInsEntitlement,
+                        _PKAnnotationExtensionKey, _PKAttributesInfoKey,
+                        _PKAutoElectEntitlement, _PKBundleInfoFormKey,
+                        _PKContainingAppAttribute, _PKDAccessRequest,
+                        _PKDAnnotateRequest, _PKDBulkRequest,
+                        _PKDDataKey, _PKDErrorKey,
+                        _PKDFlagsKey, _PKDLockdownRequest,
+                        _PKDMatchesKey, _PKDReadyRequest,
+                        _PKDRemoveRequest, _PKDRulesKey,
+                        _PKDVersionKey, _PKDataProtocol,
+                        _PKDelegateInfoKey, _PKEmbeddedProtocolInfoKey,
+                        _PKExclusionsPreferenceKey, _PKFormatAttribute,
+                        _PKHostEntitlementInfoKey, _PKHubProtocolVersionInfoKey,
+                        _PKIdentifierAttribute, _PKIdentifierFormKey,
+                        _PKLastModifiedFormKey, _PKLocalizedNameFormKey,
+                        _PKManagerContainingIdentifierKey, _PKManagerEntitlement,
+                        _PKManagerHostPathKey, _PKManagerPlugInBundleIdentifierKey,
+                        _PKManagerPlugInVersionKey, _PKNotifyAnnotationChange,
+                        _PKOverrideEntitlement, _PKOverridingFormKey,
+                        _PKPathFormKey, _PKPlugInKitHostInfoKey,
+                        _PKPlugInKitInfoKey_L, _PKPreferenceDomain,
+                        _PKPrepareHostProtocolKey, _PKPrepareUUIDKey,
+                        _PKPrincipalClassInfoKey, _PKProtocolAttribute_L,
+                        _PKProtocolInfoKey_L, _PKSDKInfoKey,
+                        _PKSDKSpecInfoKey, _PKStandardFormat,
+                        _PKSystemResidentFormKey, _PKUUIDAttribute,
+                        _PKUserElectionAttribute, _PKVersionAnnotationsKey,
+                        _PKVersionAttribute_L, _pkAugmentInterface,
+                        _pkErrorf, _pkFindProtocols,
+                        _xpc_dictionary_get_array, _xpc_dictionary_get_dictionary,
+                        _PKAnnotationElectionKey, _PKAttributesInfoKey_L,
+                        _PKCleanTimeoutInfoKey, _PKDAddRequest,
+                        _PKDConflictsKey, _PKDExtensionsKey,
+                        _PKDMatchRequest, _PKDReceiptRequest,
+                        _PKDUUIDKey, _PKDedicatedInfoKey,
+                        _PKErrorKeyBusyPlugIns, _PKHashFormKey,
+                        _PKHybridFormat, _PKInfoFormKey,
+                        _PKLocalizedShortNameFormKey, _PKManagerHostBundleIdentifierKey,
+                        _PKManagerPlugInPathKey, _PKOriginalIdentifierFormKey,
+                        _PKPassProxyInfoKey, _PKPlugInKitInfoKey,
+                        _PKPrepareExtensionsKey, _PKPrepareVersionKey,
+                        _PKProtocolInfoKey, _PKSDKInfoKey_L,
+                        _PKSubsystemsInfoKey, _PKUUIDFormKey,
+                        _PKVersionAttribute, _pkError,
+                        _pkIssueSandboxExtension ]
+    objc-classes:     [ _PKBundle,
+                        _PKDiscoveryDriver, _PKHost,
+                        _PKHostPlugIn, _PKPlugInCore,
+                        _PKService, _PKServicePersonality,
+                        _PKXPCObject, _PKDaemonClient,
+                        _PKHostDefaults, _PKSandboxExtension,
+                        _PKServiceDefaults ]
+...

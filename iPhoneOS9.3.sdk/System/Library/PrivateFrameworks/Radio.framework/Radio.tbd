@@ -1,0 +1,65 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Radio.framework/Radio
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RAD264455_107,
+                        _RAD264455_112, _RadioAddStationRequestShareURLDictionaryKey,
+                        _RadioArtworkDictionaryURLKey, _RadioAvailabilityControllerRadioAvailableDidChangeNotification,
+                        _RadioDialogAdditionalDataKey, _RadioGetArtworkURLFromVariantsForSize,
+                        _RadioGetServerTimingFromHTTPHeaderFields, _RadioLogInitialize,
+                        _RadioModelWasDeletedNotification, _RadioNetworkObserverIsUsingNetworkDidChangeNotification,
+                        _RadioRecentStationsControllerStationsDidChangeNotification, _RadioRequestResponseKeyRetryIntervalInMilliseconds,
+                        _RadioSearchResultCategoryKeyHasMoreResults, _RadioSearchResultCategoryKeyStationResults,
+                        _RadioSearchResultCategoryKeyType, _RadioSearchResultStationResultsKeyStation,
+                        _RadioStationMatchLibraryTrackMetadataKindSong, _RadioStationMatchLibraryTrackMetadataKindUploadedVideo,
+                        _RadioStoreBagDidLoadNotification, __RadioRequestErrorCodeForErrorDictionary,
+                        __RadioRequestStatusForHTTPStatusCode, _RAD264455_108,
+                        _RadioArtworkDictionaryHeightKey, _RadioDialogActionKindGetTracks,
+                        _RadioGetServerApplicationInstanceFromHTTPHeaderFields, _RadioModelCurrentDatabaseVersion,
+                        _RadioPlaybackTimeoutInfoControllerCurrentTimeoutInfoDidChangeNotification, _RadioSearchHighlightRangeFromDictionary,
+                        _RadioSearchResultCategoryKeyStations, _RadioStationMatchLibraryTrackMetadataKindMusicVideo,
+                        _RadioStationSkipControllerNumberOfAvailableSkipsDidChangeNotification, __RadioLogEnabled ]
+    objc-classes:     [ _RadioAddStationRequest,
+                        _RadioArtwork, _RadioAudioClip,
+                        _RadioClearPlayHistoryRequest, _RadioDeleteStationRequest,
+                        _RadioFetchMetadataRequest, _RadioGetFeaturedStationsRequest,
+                        _RadioGetHistoryRequest, _RadioGetStationsRequest,
+                        _RadioGetTrackEventsRequest, _RadioGetTracksResponse,
+                        _RadioHistoryCategory, _RadioImageCache,
+                        _RadioLikeRequest, _RadioManagedSkipHistory,
+                        _RadioModel, _RadioMutableHistoryItem,
+                        _RadioMutablePlayEvent, _RadioMutablePlaybackContext,
+                        _RadioMutableRecentStationsGroup, _RadioMutableSeedMetadata,
+                        _RadioMutableTrackHistorySectionInfo, _RadioNetworkObserver,
+                        _RadioPlayEvent, _RadioPlayEventsRequest,
+                        _RadioPlaybackTimeoutInfo, _RadioPushNotificationController,
+                        _RadioRecentStationsGroup, _RadioRecentStationsResponse,
+                        _RadioRemoveAllFromWishListRequest, _RadioRequest,
+                        _RadioRevision, _RadioSearchResultAccessedRequest,
+                        _RadioSearchStationResult, _RadioShareInfoRequest,
+                        _RadioShareStationRequest, _RadioStation,
+                        _RadioStationMatchLibraryAlbumMetadata, _RadioStationMatchLibraryTrackMetadata,
+                        _RadioStationMatchRequest, _RadioStationSkipController,
+                        _RadioStoreBag, _RadioSyncRequest,
+                        _RadioTrack, _RadioTrackAsset,
+                        _RadioTrackPlaybackDescriptor, _RadioUpdateSortOrderRequest,
+                        __RadioPlayEventStationInformation, _RadioAddToWishListRequest,
+                        _RadioAvailabilityController, _RadioFairPlayKBSyncManager,
+                        _RadioGetGenreTreeNodesRequest, _RadioGetStreamingStationsRequest,
+                        _RadioGetWishListRequest, _RadioLikeBanItem,
+                        _RadioManagedStation, _RadioMutableLikeBanItem,
+                        _RadioMutablePlaybackTimeoutInfo, _RadioMutableStationTreeNode,
+                        _RadioOptInRequest, _RadioPlaybackContext,
+                        _RadioRecentStationsController, _RadioRecentStationsResponseStationGroup,
+                        _RadioRequestContext, _RadioSearchResultCategory,
+                        _RadioShareInformation, _RadioStationMatchContext,
+                        _RadioStationMatchMetadata, _RadioStationTreeNode,
+                        _RadioTermsCheckRequest, _RadioTrackHistorySectionInfo,
+                        _RadioUpdateStationRequest ]
+...

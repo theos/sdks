@@ -1,0 +1,17 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VisualAlert.framework/VisualAlert
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    objc-classes:     [ _AXAutoForwardingLocalNotificationHandler,
+                        _AXDistributedNotificationHandler, _AXNotificationHandler,
+                        _AXVisualAlertManager, _AXVisualAlertSBCCFlashlightSetting,
+                        ___AXVisualAlertSBBulletinSoundController_super, ___AXVisualAlertSBLockScreenNotificationListController_super,
+                        _AXCameraTorchManagerBackgroundAdapter, _AXTelephonyNotificationHandler,
+                        _AXVisualAlertSBLockScreenNotificationListController, ___AXVisualAlertSBCCFlashlightSetting_super ]
+...

@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUIService.framework/AccessibilityUIService
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXUIAlertDefaultDelayBetweenSubsequentAlerts,
+                        _AXUIAlertDisplayTimeDefaultForBanners, _AXUIAlertSizeMetricFillingContainer,
+                        _AXUIErrorDomainCommunication_ServiceFramework, _AXUIErrorDomainServiceEntitlementMismatch_ServiceFramework,
+                        _AXUIErrorDomainServiceMessageHandling_ServiceFramework, __AXUIMessageReplyKeyClientRegistrationWithServerDidSucceed_ServiceFramework,
+                        __AXUIMessageReplyKeyErrorDescription_ServiceFramework, __AXUIServiceDescription_ServiceFramework,
+                        __AXUIServiceMessageKeyInitializationMessage_ServiceFramework, __AXUIServiceMessageKeyMessageWasEmpty_ServiceFramework,
+                        __AXUIServiceName_ServiceFramework, _AXUIAlertDisplayTimeDefaultForAlerts,
+                        _AXUIAlertSizeMetricFitting, _AXUIErrorDomainServiceInitialization_ServiceFramework,
+                        __AXUIMessageReplyKeyDidSucceed_ServiceFramework, __AXUIServiceMessageKeyClientIdentifier_ServiceFramework,
+                        __AXUIServiceMessageKeyServiceBundleName_ServiceFramework ]
+    objc-classes:     [ _AXStaticFrameView,
+                        _AXUIAlert, _AXUIAlertStyleProvider,
+                        _AXUIDisplayManager, _AXUIMessageReplyHandler_ServiceFramework,
+                        _AXUINSBundleOverride, _AXUIPassiveWindow,
+                        _AXUIServiceContext, _AXUIServiceManager,
+                        _AXUIWindow, ___AXUINSBundleOverride_super,
+                        _AXUIActiveWindow, _AXUIClientMessenger,
+                        _AXUIMessageSender_ServiceFramework, _AXUIRootViewController,
+                        _AXUIUtilities_ServiceFramework ]
+...

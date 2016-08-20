@@ -1,0 +1,36 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/StoreKit.framework/StoreKit
+current-version: 798.46
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SKCloudServiceCapabilitiesDidChangeNotification, 
+                       _SKDownloadTimeRemainingUnknown, _SKErrorDomain, 
+                       _SKGetDataForError, _SKGetErrorForData, _SKGetRatingStarsImage, 
+                       _SKReceiptPropertyIsExpired, _SKReceiptPropertyIsRevoked, 
+                       _SKReceiptPropertyIsVolumePurchase, _SKStoreProductAppleCampaignParsec, 
+                       _SKStoreProductParameterAdvertisingPartnerToken, 
+                       _SKStoreProductParameterAffiliateToken, _SKStoreProductParameterAppleCampaignIdentifier, 
+                       _SKStoreProductParameterCampaignIdentifier, _SKStoreProductParameterCampaignToken, 
+                       _SKStoreProductParameterHighlightedITunesItemIdentifier, 
+                       _SKStoreProductParameterITunesItemIdentifier, _SKStoreProductParameterProviderToken, 
+                       _SKStoreProductParameterQToken, _SKStorefrontIdentifierDidChangeNotification, 
+                       _SKTerminateForInvalidReceipt, _SKXPCCreateCFObjectFromXPCObject, 
+                       _SKXPCCreateXPCObjectFromCFObject, _SKXPCDictionaryCopyCFObject, 
+                       _SKXPCDictionaryCopyCFObjectWithClass, _SKXPCDictionarySetCFObject, 
+                       _StoreKitVersionNumber, _StoreKitVersionString ]
+    objc-classes:    [ _SKAccountPageViewController, _SKCloudServiceController, 
+                       _SKComposeReviewViewController, _SKDownload, _SKDownloadChangeset, 
+                       _SKHandleInvalidReceiptRequest, _SKMutablePayment, 
+                       _SKPayment, _SKPaymentInternal, _SKPaymentQueue, 
+                       _SKPaymentQueueClient, _SKPaymentQueueInternal, 
+                       _SKPaymentTransaction, _SKPaymentTransactionInternal, 
+                       _SKPrivacyController, _SKProduct, _SKProductInternal, 
+                       _SKProductsRequest, _SKProductsRequestInternal, 
+                       _SKProductsResponse, _SKProductsResponseInternal, 
+                       _SKReceiptRefreshRequest, _SKRequest, _SKRequestInternal, 
+                       _SKStarRatingAlertView, _SKStarRatingAlertViewDelegate, 
+                       _SKStarRatingControl, _SKStorePageRequest, _SKStorePageViewController, 
+                       _SKStoreProductViewController, _SKTermsPageViewController ]
+...

@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BYAssistantFixUpVoiceTriggerStateIfNeeded,
+                        _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPresentedKey,
+                        _BYBuddyDoneKey, _BYBuddyLastExitKey,
+                        _BYBuddyNotBackedUpIdentifier, _BYBuddyRunHSA2MiniBuddy,
+                        _BYBuddyRunMesaMiniBuddy, _BYBuddyVersionKey,
+                        _BYLog, _BYLogInfo,
+                        _BYLoggingEnabled, _BYRestrictionsEnabled,
+                        _BYSetupAssistantBundleIdentifier, _BYSetupAssistantFinishedDarwinNotification,
+                        _BYSetupAssistantIsRunningSilentTokenUpgrade, _BYSetupAssistantNeedsToRun,
+                        _BYSetupAssistantSilentTokenUpgradeCompletedNotification, _Daemon_BYSetupAssistantNeedsToRun,
+                        _BYAssistantScreenShouldBeShownInSetupAssistant, _BYBuddyCurrentVersion,
+                        _BYBuddyMachService, _BYBuddyRunKeychainSyncMiniBuddy,
+                        _BYClearLaunchSentinel, _BYLogPublic,
+                        _BYSetLaunchSentinel, _BYSetupAssistantHasCompletedInitialRun,
+                        _BYSetupAssistantPrepareLaunchSentinel, _BYSetupAssistantSilentTokenUpgradeInProgressKey ]
+    objc-classes:     [ _BYAppleIDAccountsManager,
+                        _BYBuddyDaemonInterface, _BYManagedAppleIDBootstrap,
+                        _BYNetworkMonitor, _BYBuddyClientInterface,
+                        _BYLicenseAgreement ]
+...

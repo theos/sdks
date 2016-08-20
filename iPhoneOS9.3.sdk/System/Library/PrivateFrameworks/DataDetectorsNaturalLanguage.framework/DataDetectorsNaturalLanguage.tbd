@@ -1,0 +1,25 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/DataDetectorsNaturalLanguage
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DataDetectorsNaturalLanguageVersionNumber,
+                        _IPFeatureDataContextDateTimeIsTenseDependent, _IPFeatureDataContextEventEndDateTimeZone,
+                        _IPFeatureDataContextEventPlacemark, _IPFeatureDataContextExtractedFromSubject,
+                        _IPFeatureDataContextTimeIsApproximate, _IPFeatureExtractorDetectedDateInSubject,
+                        _ipsos_isTimeApproximateKey, _DataDetectorsNaturalLanguageVersionString,
+                        _IPFeatureDataContextEventIsAllDay, _IPFeatureDataContextIsDateTimeComplement,
+                        _ipsos_isDateTimeTenseDependentKey ]
+    objc-classes:     [ _IPDDFeatureExtractor,
+                        _IPFeature, _IPFeatureExtractor,
+                        _IPFeatureSentence, _IPMessage,
+                        _IPMessageUnit, _IPQuoteParser,
+                        _IPTenseDetector, _IPDDGeoFeatureExtractor,
+                        _IPFeatureManager, _IPMessageThread,
+                        _IPSentenceFeatureExtractor ]
+...

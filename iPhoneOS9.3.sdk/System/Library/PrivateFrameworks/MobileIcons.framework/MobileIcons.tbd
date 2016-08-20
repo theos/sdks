@@ -1,0 +1,30 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _LIBytesNeededForGhostlyImageOfSize,
+                        _LICopyBestImageForVariantFromBundle, _LICopyIconPathsFromBundle,
+                        _LICopyIconURLArrayForBundleURLIconsDictionary, _LICreateDefaultIcon,
+                        _LICreateGhostlyVersion, _LICreateIconForBundle,
+                        _LICreateIconForImage, _LICreateIconFromCachedBitmap,
+                        _LICreateImageFromCachedUncompressedData, _LICreateUncompressedBitmapDataFromImage,
+                        _LIExpectedImageInputSizeForVariant, _LIGetIconVariantDimensionsForStyle,
+                        _LIGetStyleFallbackContainer, _LIIconOutputSizeForVariant,
+                        _LISideInsetForHomeScreenVariant, _LIUncompressedBitmapFormatID,
+                        __LICopyImagesForIconURLs, __LICreateIconDataForAppContainerWithIconsDictionary,
+                        __LICreateIconDataForBundleURLWithIconsDictionary, __LICreateIconForBundleWithIconsDictionaryAndContainers,
+                        __copyDefaultIconURLs, _copyImagesForIconURLsFilteringForVariant,
+                        _outputVisibleImageBoundsForVariant, _LIBytesPerRowForGhostlyImageOfWidth,
+                        _LICopyIconPathsFromBundleForStyles, _LICreateDeviceAppropriateHomeScreenIconImageFromBundle,
+                        _LICreateIconForBundleURLWithIconsDictionary, _LICreateIconOverlay,
+                        _LICreateUncompressedBitmapDataFromImageWithOptions, _LIGetImageInfoFromCachedUncompressedData,
+                        _LIIconOutputVisibleImageBoundsForVariant, __LICopyIconURLsForBundleWithFiles,
+                        __LICreateIconDataForBundleResourcesDirectoryWithFiles, __copyDefaultIconImages,
+                        __copyNanoDefaultIconImages ]
+...

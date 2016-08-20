@@ -1,0 +1,36 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TPAirplaneViewCreate,
+                        _TPDialerSoundControllerWillBeginSoundsNotification, _TPIsUnknown,
+                        _TPPixelCGCeiling, _TPRectIntegral,
+                        _TPStarkInCallViewControllerUpdateClockTickNotification, _TPStringForNumberPadCharacter,
+                        _kCarrierDomain, _kTPSuperBottomBarImageNameCamera,
+                        _kVMShouldHideVoicemailUI, _TPDialerSoundControllerDidEndSoundsNotification,
+                        _TPMainScreenScale, _TPShouldHideVoicemailUI,
+                        _TelephonyUIBundle, _kTPSuperBottomBarImageNameMute ]
+    objc-classes:     [ _TPAlertAction,
+                        _TPBackgroundRoundedRectView, _TPBottomDoubleButtonBar,
+                        _TPButton, _TPDialerSoundController,
+                        _TPLCDSubImageView, _TPLCDTextViewScrollingView,
+                        _TPNumberPad, _TPNumberPadDarkStyleButton,
+                        _TPPasscodeView, _TPPhonePad,
+                        _TPRevealingRingView, _TPSetPINViewController,
+                        _TPSimpleNumberPadButton, _TPStarkDividerView,
+                        _TPStarkInCallButtonRing, _TPStarkInCallHardPauseButton,
+                        _TPStarkPhoneCallContainer, _TPStarkPhoneCallViewCell,
+                        _TPStatusBarManager, _TPSuperBottomBarButton,
+                        _TPSuperBottomBarSupplementalButton, _TPAlertViewHelper,
+                        _TPBottomSingleButtonBar, _TPLCDBar,
+                        _TPLCDView, _TPNumberPadLightStyleButton,
+                        _TPPortraitOnlyNavigationController, _TPSimpleNumberPad,
+                        _TPStarkInCallButton, _TPStarkInCallViewController,
+                        _TPStarkUtilities, _TPSuperBottomBar ]
+...

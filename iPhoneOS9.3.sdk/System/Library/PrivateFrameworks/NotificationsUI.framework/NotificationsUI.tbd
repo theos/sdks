@@ -1,0 +1,20 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NotificationsUI.framework/NotificationsUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NCDateLabelNeedsUpdateNotification,
+                        _NCInteractiveNotificationServiceXPCInterface, _NCNotificationsUIFrameworkBundle,
+                        _NCInteractiveNotificationActionContextLaunchURLKey ]
+    objc-classes:     [ _NCBannerAccessoryHostViewController,
+                        _NCContentHostViewController, _NCDefaultDateLabel,
+                        _NCInteractiveNotificationViewController, _NCNotificationDateLabelFactory,
+                        _NCRelativeDateTimer, _NCViewServiceDescriptor,
+                        _NCBannerAccessoryViewController, _NCInteractiveNotificationHostViewController,
+                        _NCRelativeDateLabel ]
+...

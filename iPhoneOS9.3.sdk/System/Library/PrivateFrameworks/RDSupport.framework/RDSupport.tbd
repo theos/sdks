@@ -1,0 +1,43 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RDSupport.framework/RDSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RCControlEventContextKey,
+                        _RCGizmoConfigurationKey, _RDBundleIDCarouselLauncher,
+                        _RDBundleIDKey, _RDCompanionDaemonName,
+                        _RDDefaultsAbsolutePath, _RDDefaultsNotificationCenterPrepopulatedKey,
+                        _RDEventTypeAppTransition, _RDEventTypeGlanceUIShown,
+                        _RDGizmoBatteryLevelKey, _RDGizmoConfigurationRequest,
+                        _RDGizmoDisableSleepRequest, _RDGizmoEnableSleepRequest,
+                        _RDGizmoEnteredMessageEmojiPicker, _RDGizmoEnteredWatchFaceSwitcher,
+                        _RDGizmoLanguagesAndLocalesReply, _RDGizmoRebootReqeuest,
+                        _RDGizmoStartPlayingDemoMovieRequest, _RDGizmoUserDismissedScreenSaver,
+                        _RDMaximumFileLogLevelKey, _RDServiceHealthCheckPayload,
+                        _RDStartPlayingDemoMovie, _RDStopPlayingDemoMovie,
+                        _RDSubBundleIDKey, _RDSupportVersionNumber,
+                        _RDToolProcessName, __useIDSForEventDelivery,
+                        _deviceSerialNumber, _isRunningInDaemon,
+                        _isRunningInRDTool, _isValidLogLevel,
+                        _kHandshakingMulticastAddress, _kIDSUserDefaultsDomain,
+                        _kIDSUserDefaultsFixedInterfaceKey, _kMobileUuid,
+                        _killProcessNamed, _setupRDLogging,
+                        _RCGizmoAppTransitionKey, _RDBundleIDClockFace,
+                        _RDControlEventTypeKey, _RDEventTypeAlertUIShown,
+                        _RDEventTypeKey, _RDGizmoDaemonName,
+                        _RDGizmoEnteredMessageCompose, _RDGizmoLanguagesAndLocalesKey,
+                        _RDGizmoResetNotificationCenterIfNeeded, _RDMaximumConsoleLogLevelKey,
+                        _RDServiceIdentifierKey, _RDStopPlayingDemoMovieNotification,
+                        _RDSupportVersionString, __xpcConnection,
+                        _isRunningInF5DemoMode, _kHandshakeMessagePrefix,
+                        _kIDSUserDefaultsFixedInterfaceDestinationKey, _kUnknownRemoteIP,
+                        _logLevelFromDefaultsDictionary ]
+    objc-classes:     [ _RDBridge,
+                        _RDGizmoCommands, _RDSetupSupport,
+                        _RDDaemonConnection, _RDMulticastService ]
+...

@@ -1,0 +1,26 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/MobileAccessoryUpdater
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FUDError,
+                        _FudLogCopyMessages, _FudLogv,
+                        _addObjectToXpcDictionary, _dumpXPCObject,
+                        _getProgressWeightsFromPluginInfo, _kMAU_STEP_BOOTSTRAP,
+                        _kMAU_STEP_CONTINUE, _kMAU_STEP_END,
+                        _kMAU_STEP_FINISH, _objectFinalizer,
+                        _sendMessageToExternalClient, _sendReplyMessageToClient,
+                        _sendReplyMessageToInternalClient, _unarchivedKeyedObject,
+                        _FudLog, _MAUError,
+                        _getOperationNameFromCode, _kMAU_STEP_COMPLETE_INFO_KEY_NEXT_STEP,
+                        _kMAU_STEP_FIND, _objectFromXpcDictionary,
+                        _sendReplyMessageToExternalClient ]
+    objc-classes:     [ _FudInternalConnection,
+                        _FudXPCConnection, _MobileAccessoryUpdater,
+                        _FudProgressWeights ]
+...

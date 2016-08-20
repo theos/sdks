@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AVKitErrorDomain ]
+    objc-classes:    [ _AVChapter, _AVPictureInPictureController, _AVPlayerController, 
+                       _AVPlayerViewController ]
+...

@@ -1,0 +1,56 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BABookmarkCopyURL,
+                        _BAChangeChangedItemOrderWithinParent, _BAChangeCopyServerId,
+                        _BAChangeGetIsBookmarkChange, _BADatabaseAddBookmarkUnderFolderWithServerId,
+                        _BADatabaseBeginMergingChanges, _BADatabaseClearChangesForToken,
+                        _BADatabaseCopyBookmarkWithServerId, _BADatabaseCopyFolderWithServerId,
+                        _BADatabaseCopyServerIdsInFolderWithServerId, _BADatabaseCopySyncKeysForServerIds,
+                        _BADatabaseCreateBookmark, _BADatabaseFinishMergingChanges,
+                        _BADatabaseRemoveItemWithServerId, _BADatabaseSetChildrenOrderForFolderWithServerId,
+                        _BAFolderGetFolderType, _BAItemCopyParentServerId,
+                        _BAItemCopySyncData, _BAItemCopyTitle,
+                        _BAItemSetServerId, _BAItemSetSyncKey,
+                        _BookmarksNotificationBookmarkIdentifierKey, _WebBookmarkIDFromNSString,
+                        _WebBookmarksBookmarksBarFolderTitle, _WebBookmarksChangedFolderIDKey,
+                        _WebBookmarksDataclassDidChangeNotification, _WebBookmarksFolderContentsDidChangeNotification,
+                        _WebBookmarksOmitFromUIKey, _WebBookmarksReadingListFolderTitle,
+                        _WebBookmarksRootBookmarkTitle, _WebBookmarksSpecialFoldersDidChangeNotification,
+                        _WebNSStringFromBookmarkID, _kSafariFetcherClearReadingListArchiveMessageName,
+                        _kSafariFetcherDidFinishFetchingMessageName, _kSafariFetcherDidStopFetchingItemMessageName,
+                        _kSafariFetcherRegisterForReadingListFetcherUpdatesMessageName, _kSafariFetcherUnregisterForReadingListFetcherUpdatesMessageName,
+                        _kSafariSearchEngineShortNameDictionaryKey, _kWebBookmarksAddressKey,
+                        _kWebBookmarksClearAllSafariHistoryMessageName, _kWebBookmarksClientBundleIDKey,
+                        _kWebBookmarksDeleteAllSafariWebSecurityOriginsMessageName, _kWebBookmarksDeleteSafariWebSecurityOriginMessageName,
+                        _kWebBookmarksDidTogglePrivateBrowsingMessageName, _kWebBookmarksGetSafariDataUsageSummaryMessageName,
+                        _kWebBookmarksItemsKey, _kWebBookmarksProgressKey,
+                        _kWebBookmarksTitleKey, _kWebBookmarksdServiceName,
+                        _kWebsiteDataAllRecordsKey, _kWebsiteDataRecordKey,
+                        _BABookmarkSetURL, _BAChangeGetChangeType,
+                        _BADatabaseAddFolderUnderFolderWithServerId, _BADatabaseClose,
+                        _BADatabaseCopyServerIdAtIndexInFolderWithServerId, _BADatabaseCreate,
+                        _BADatabaseOpen, _BADatabaseSetSyncData,
+                        _BAItemCopyServerId, _BAItemSetExtraAttributes,
+                        _BAItemSetTitle, _WebBookmarkWebFilterSettingsDidChange,
+                        _WebBookmarksDatabaseResetReasonKey, _WebBookmarksHistoryFolderTitle,
+                        _WebBookmarksResetCloudHistoryAccountDefaultsKey, _WebBookmarksWebFilterWhiteListFolderTitle,
+                        _kSafariFetcherDServiceName, _kSafariFetcherDidUpdateProgressMessageName,
+                        _kSafariGetCurrentlySelectedSearchEngineMessage, _kWebBookmarksClearAllCloudTabDevicesMessageName,
+                        _kWebBookmarksClientNameKey, _kWebBookmarksDidToggleCloudTabsMessageName,
+                        _kWebBookmarksGetSafariWebDataUsageMessageName, _kWebBookmarksTerminateAfterUpdatingKey,
+                        _kWebDataUsageSizeKey ]
+    objc-classes:     [ _CloudTabServices,
+                        _WBFeatureManager, _WBWebsiteDataRecord,
+                        _WebBookmarkCollection, _WebBookmarkWebFilterSettings,
+                        _WebBookmarksXPCConnection, _WebBookmarksXPCListener,
+                        _SafariFetcherServerProxy, _WebBookmark,
+                        _WebBookmarksSettingsGateway ]
+...

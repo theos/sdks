@@ -1,0 +1,19 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VideoUpload.framework/VideoUpload
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GetScrambledKey,
+                        _VUAuthenticatorFailureNotification, _VUCreateMD5WithData,
+                        _JSONHTTPRequestErrorDomain, _VUAuthenticatorStateChangeNotification ]
+    objc-classes:     [ _JSONHTTPRequest,
+                        _VUCategory, _VUFileUpload,
+                        _VUPublishAgent, _VUPublishViewController,
+                        _VUAuthenticator, _VUFooterContainerView,
+                        _VUPublishPost ]
+...

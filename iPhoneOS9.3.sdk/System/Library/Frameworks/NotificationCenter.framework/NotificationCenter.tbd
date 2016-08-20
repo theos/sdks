@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/NotificationCenter.framework/NotificationCenter
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NCExtensionItemUserInfoDefaultMarginsKey, _NCWidgetControllerConnectionName, 
+                       _NCWidgetControllerHasContentEntitlement ]
+    objc-classes:    [ _NCDataSourceManager, _NCSnippetDataSource, _NCSnippetDatum, 
+                       _NCWidgetController, _NCWidgetDataSource, _NCWidgetDatum ]
+...

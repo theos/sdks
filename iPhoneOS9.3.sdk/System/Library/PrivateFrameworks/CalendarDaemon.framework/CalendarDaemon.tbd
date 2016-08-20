@@ -1,0 +1,32 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CADCopyEntity,
+                        _CADEKPersistentEventDefaultPropertiesToLoad, _CADEntityIsInRestrictedStore,
+                        _CADExitStatusCode_UnexpectedCompletionOfMainFunction, _CADLogInitIfNeeded,
+                        _CALACCESSD_UNITTEST_SERVICE, _CalEntityCopyProperty,
+                        _GetSharedXPCInterfaceForCADClientInterface, __CADDaemonStartedNotification,
+                        ___GetCalaccessdDatabasePath, ___GetCalaccessdUnitTestListenerEndpoint,
+                        ___SetCalaccessdDatabaseInitOptions, ___SetCalaccessdIsUnitTesting,
+                        _kCADLogFacility, _kCADNullObjectID,
+                        _CADDeleteEntity, _CADExitStatusCode_Normal,
+                        _CALACCESSD_SERVICE, _CalEntitySetProperty,
+                        ___GetCalaccessdDatabaseInitOptions, ___IsCalaccessdUnitTesting,
+                        ___SetCalaccessdUnitTestListenerEndpoint ]
+    objc-classes:     [ _CADCalendarItemsWithExternalIdentifierPredicate,
+                        _CADEventCreatedFromSuggestionPredicate, _CADEventPredicate,
+                        _CADNotificationCenterVisibleEventsPredicate, _CADRespondedEventsPredicate,
+                        _CADTravelEventsPredicate, _CADUnalertedEventsPredicate,
+                        _CADXPCProxyHelper, _EKAlarmOccurrence,
+                        _EKPredicate, _EKScheduledReminderPredicate,
+                        _CADEntityWrapper, _CADNotifiableEventsPredicate,
+                        _CADServer, _CADUpcomingEventsPredicate,
+                        _EKMasterEventsPredicate, _EKReminderPredicate ]
+...

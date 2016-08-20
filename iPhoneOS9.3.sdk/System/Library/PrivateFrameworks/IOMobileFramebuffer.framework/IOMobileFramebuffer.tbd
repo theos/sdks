@@ -1,0 +1,52 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IOMobileFrameBufferEnableDebugTracing,
+                        _IOMobileFrameBufferGetDebugTraces, _IOMobileFrameBufferPrintDebugTraces,
+                        _IOMobileFrameBufferprintDisplayRegs, _IOMobileFramebufferALSSGetRGBCoeffs,
+                        _IOMobileFramebufferALSSGetWindowsSums, _IOMobileFramebufferALSSSetWindows,
+                        _IOMobileFramebufferCreateDisplayList, _IOMobileFramebufferDisableCRCNotifications,
+                        _IOMobileFramebufferDisableVSyncNotifications, _IOMobileFramebufferEnableDisableDithering,
+                        _IOMobileFramebufferEnableHotPlugDetectNotifications, _IOMobileFramebufferEnableStatistics,
+                        _IOMobileFramebufferFactoryPortal, _IOMobileFramebufferGetCRCRunLoopSource,
+                        _IOMobileFramebufferGetColorRemapMode, _IOMobileFramebufferGetDisplayArea,
+                        _IOMobileFramebufferGetDotPitch, _IOMobileFramebufferGetGammaTable,
+                        _IOMobileFramebufferGetHDCPDownstreamState, _IOMobileFramebufferGetHotPlugRunLoopSource,
+                        _IOMobileFramebufferGetLayerDefaultSurface, _IOMobileFramebufferGetMatrix,
+                        _IOMobileFramebufferGetSecondaryDisplay, _IOMobileFramebufferGetSupportedDigitalOutModes,
+                        _IOMobileFramebufferGetVSyncRunLoopSource, _IOMobileFramebufferGetWirelessSurfaceWithOptions,
+                        _IOMobileFramebufferHDCPSendRequest, _IOMobileFramebufferIsMainDisplay,
+                        _IOMobileFramebufferOpen, _IOMobileFramebufferReadyForSwap,
+                        _IOMobileFramebufferSPLCGetBrightness, _IOMobileFramebufferSetBrightnessCorrection,
+                        _IOMobileFramebufferSetColorRemapMode, _IOMobileFramebufferSetDebugFlags,
+                        _IOMobileFramebufferSetDisplayDevice, _IOMobileFramebufferSetFlags,
+                        _IOMobileFramebufferSetLine21Data, _IOMobileFramebufferSetMirrorContentRegion,
+                        _IOMobileFramebufferSetRenderingAngle, _IOMobileFramebufferSetTVOutSignalType,
+                        _IOMobileFramebufferSetVideoDACGain, _IOMobileFramebufferSetWhiteOnBlackMode,
+                        _IOMobileFramebufferSwapBegin, _IOMobileFramebufferSwapEnd,
+                        _IOMobileFramebufferSwapSetColorMatrix, _IOMobileFramebufferSwapSetGammaTable,
+                        _IOMobileFramebufferSwapSetTimestamp, _IOMobileFramebufferSwapSetUISubRegion,
+                        _IOMobileFramebufferSwapSignal, _IOMobileFramebufferSwapUIEdgeBlendMode,
+                        _IOMobileFramebufferSwapWaitWithTimeout, _kIOMFB_TotalSwaps,
+                        _kIOMFB_TotalVBLs, _IOMobileFrameBufferEnableVBLTraces,
+                        _IOMobileFrameBufferSetLogLevel, _IOMobileFramebufferALSSGetWindows,
+                        _IOMobileFramebufferCopyProperty, _IOMobileFramebufferDisableHotPlugDetectNotifications,
+                        _IOMobileFramebufferEnableDisableVideoPowerSavings, _IOMobileFramebufferEnableVSyncNotifications,
+                        _IOMobileFramebufferGetCanvasSizes, _IOMobileFramebufferGetDisplaySize,
+                        _IOMobileFramebufferGetHDCPAuthenticationProtocol, _IOMobileFramebufferGetID,
+                        _IOMobileFramebufferGetMirrorError, _IOMobileFramebufferGetTypeID,
+                        _IOMobileFramebufferHDCPGetReply, _IOMobileFramebufferKernelTests,
+                        _IOMobileFramebufferRequestPowerChange, _IOMobileFramebufferSetCanvasSize,
+                        _IOMobileFramebufferSetDigitalOutMode, _IOMobileFramebufferSetGammaTable,
+                        _IOMobileFramebufferSetParameter, _IOMobileFramebufferSetUnderrunColor,
+                        _IOMobileFramebufferSwapActiveRegion, _IOMobileFramebufferSwapSetBackgroundColor,
+                        _IOMobileFramebufferSwapSetLayer, _IOMobileFramebufferSwapSetVideoDestEdgeAlpha,
+                        _IOMobileFramebufferSwapWait, _IOMobileFramebufferWaitSurface ]
+...

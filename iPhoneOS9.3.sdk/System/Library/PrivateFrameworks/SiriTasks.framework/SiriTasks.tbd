@@ -1,0 +1,35 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriTasks.framework/SiriTasks
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _STErrorReasonKey,
+                        _STVocabularyErrorDomain, _STWorkoutErrorDomain,
+                        __STVocabularyIdentifierStoreFileName, _STMaximumVocabularyItemsPerIntentSlot,
+                        _STVocabularyErrorNotification ]
+    objc-classes:     [ _STEmailMessage,
+                        _STGenericIntentDateRange, _STGenericIntentHelper,
+                        _STGenericIntentPerson, _STGenericIntentResponse,
+                        _STMapItem, _STMapViewportVertex,
+                        _STPromptManeuverRequest, _STSendEmailRequest,
+                        _STShowChannelRequest, _STShowDraftMessageRequest,
+                        _STShowHourlyWeatherForecastRequest, _STShowMapsSearchResultsRequest,
+                        _STShowStockOverviewRequest, _STShowWeatherCurrentConditionsRequest,
+                        _STStartNavigationRequest, _STStopNavigationRequest,
+                        _STUpdateWatchListRequest, _STVocabularyUpdater,
+                        _STWeatherAttributes, _STWeatherHourlyForecast,
+                        _STWorkoutSetStateRequest, __STSynapseSyncTransaction,
+                        __STVocabularyGenerationDocument, __STVocabularyStoreManager,
+                        _STGenericIntent, _STGenericIntentLocation,
+                        _STGenericIntentTopic, _STMediaChannel,
+                        _STShowActivityRequest, _STShowDraftMessageUsageResult,
+                        _STShowMessageRequest, _STShowWeatherForecastRequest,
+                        _STTemperature, _STWatchFace,
+                        _STWeatherUnits, __STVocabularyGenerationDiff,
+                        __STVocabularyObserver ]
+...

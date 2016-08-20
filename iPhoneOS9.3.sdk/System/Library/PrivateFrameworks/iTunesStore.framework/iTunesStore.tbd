@@ -1,0 +1,71 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iTunesStore.framework/iTunesStore
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ISAccountURLWithURL,
+                        _ISCarrierSettingsDidChangeNotification, _ISClientIdentifierBookStore,
+                        _ISClientIdentifierForURLScheme, _ISClientIdentifierITunesU,
+                        _ISClientIdentifierMusicPlayer, _ISClientIdentifierPodcasts,
+                        _ISClientPartnerHeaderChangedNotification, _ISCompareProductVersions,
+                        _ISCopyDecodedBase64, _ISCopyDigestFromString,
+                        _ISCopyGzippedDataForData, _ISDeviceIncompatibleAppErrorWithAppTitle,
+                        _ISDictionaryValueForCaseInsensitiveString, _ISErrorDialogKey,
+                        _ISErrorIndicatesSlowNetwork, _ISErrorWithDomain,
+                        _ISErrorWithUnderlyingError, _ISItemIdentifierKey,
+                        _ISNetworkObserverCellularRestrictionChangedNotification, _ISNetworkReachabilityFlagsChangedNotification,
+                        _ISNetworkUsageStateChangedNotification, _ISProtocolKeySection,
+                        _ISRedeemTermsAndConditionsOperation, _ISSoftwareMapInvalidatedExternalNotification,
+                        _ISStoreProtocolVersionString, _ISTermsAndConditionsOperation,
+                        _ISURLBagDidLoadNotification, _ISURLCacheSaveMemoryCache,
+                        _ISUniqueOperationQueueAdjustsConcurrentOperationCount, _ISUniqueOperationUnlock,
+                        _ISWeakLinkedStringConstantForString, _ISWeakLinkerLoadLibrary,
+                        _b64_decode, _b64_encode,
+                        _b64_getErrorString, _kClientIdentifierMusicStore,
+                        _kISDaemonCacheDirectoryName, _kISFailureTypeKey,
+                        _kISLoadMoreEndIDParameter, _kISMetadataBetaExternalVersionIdentifierKey,
+                        _kISMetadataVariantIdentifierKey, _kISSoftwareMapInvalidatedNotification,
+                        _kISURLBagAuthCanPostKey, _kITunesStoreDaemonDefaultsID,
+                        _ISCarrierBundleKeyShowCellularAutomaticDownloadSwitch, _ISClientIdentifierForBundleIdentifier,
+                        _ISClientIdentifierMoveToiOS, _ISClientIdentifierVideoPlayer,
+                        _ISCompareSoftwareVersions, _ISCopyEncodedBase64,
+                        _ISDialogReceivedNotification, _ISErrorDomain,
+                        _ISErrorWithExternalError, _ISMD5StringForBytes,
+                        _ISNetworkTypeChangedNotification, _ISProtocolNotificationSelectFooterSection,
+                        _ISSoftwareMapInvalidatedNotification, _ISThreadSetBackgroundPriority,
+                        _ISUniqueOperationLock, _ISWeakLinkedClassForString,
+                        ___ISURLOperationDebugLevel, _b64_encode2,
+                        _kISCookieHeader, _kISITunesMetadataFileName,
+                        _kISMetadataItemIdentifierKey, _kISTriggerDownloadQueueKey,
+                        _kITunesDaemonDefaultsChangedNotification ]
+    objc-classes:     [ _ISAuthenticationChallenge,
+                        _ISClient, _ISDataProvider,
+                        _ISDelegateProxy, _ISDevice,
+                        _ISDialogButton, _ISDialogTextField,
+                        _ISHashError, _ISITunesSyncHelper,
+                        _ISJSONDataProvider, _ISLoadURLBagOperation,
+                        _ISNetworkObserver, _ISOpenURLRequest,
+                        _ISOperationQueue, _ISPersonalizeOffersOperation,
+                        _ISPostReviewOperation, _ISPropertyListProvider,
+                        _ISReview, _ISSSURLBag,
+                        _ISSetApplicationBadgeOperation, _ISSoftwareCapabilitiesDialogOperation,
+                        _ISStoreAuthenticateOperation, _ISStoreServicesRequestOperation,
+                        _ISStoreVersion, _ISURLBag,
+                        _ISURLBagLoadingController, _ISURLCacheConfiguration,
+                        _ISURLOperationPool, _ISURLRequest,
+                        _ISUniqueOperationContext, _ISUserNotification,
+                        _RemovableSoftwareLookupTable, _ISAuthenticationChallengeOperation,
+                        _ISDelayedInvocationRecorder, _ISDialog,
+                        _ISFetchReviewOperation, _ISInvocationRecorder,
+                        _ISMainThreadInvocationRecorder, _ISOperation,
+                        _ISPersonalizeOffersRequest, _ISProtocolDataProvider,
+                        _ISServerAuthenticationOperation, _ISSoftwareMap,
+                        _ISStoreURLOperation, _ISURLBagCache,
+                        _ISURLOperation, _ISURLRequestPerformance,
+                        _OpenURLTarget ]
+...

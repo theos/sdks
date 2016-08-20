@@ -1,0 +1,31 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Pegasus.framework/Pegasus
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PGActivateApplicationWithProcessIdentifier,
+                        _PGBundleIdentifierForProcessIdentifier, _PGLocalizedString,
+                        _PGLoggingReloadDefaults, _PGPegasusErrorDomain,
+                        _PGPictureInPictureProxyPictureInPictureActiveChangedNotification, _PGSizeIsEmpty,
+                        _PGSizeIsValid, _PGWaitForNotificationWithTimeout,
+                        __PGLog, __PGLoggingSetEnabled,
+                        __UIHostedWindowDidRegisterScrollToTopViewNotificationName, __UIHostedWindowDidUpdateCurrentTintViewNotificationName,
+                        ___PGLoggingEnabledPrivate, _PGBundle,
+                        _PGLocalizedStringFromTable, _PGPictureInPictureExportedInterface,
+                        _PGSizeIsInvalid, _PG_dispatch_async_with_timeout,
+                        __PGLogv, __UIHostedWindowScrollToTopNotificationViewKey ]
+    objc-classes:     [ _PGBackdropView,
+                        _PGHostedWindow, _PGLayerHostView,
+                        _PGPictureInPictureApplication, _PGPictureInPictureControlsViewController,
+                        _PGPictureInPictureRemoteObject, _PGPlaybackProgressIndicator,
+                        _PGTimer, __PGPictureInPictureConnectionExportedObject,
+                        __PGPlaybackProgressIndicatorMaskedView, ___PGView,
+                        _PGChevronView, _PGLoadingIndicatorView,
+                        _PGPictureInPictureProxy, _PGStashedView,
+                        __PGPlaybackProgressIndicatorMaskView, ___PGButton ]
+...

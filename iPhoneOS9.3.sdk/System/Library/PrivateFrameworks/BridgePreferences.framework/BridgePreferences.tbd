@@ -1,0 +1,44 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BPSAccessoryColor,
+                        _BPSActivationLockCapabilityKey, _BPSApplyStyleToNavBar,
+                        _BPSBackgroundColorWhiteLevel, _BPSBoldFontWithSize,
+                        _BPSBridgePreferencesVersionString, _BPSBulletinBoardAppsSettingsDomain,
+                        _BPSCarrierDirectCallingCapabilityKey, _BPSCustomMailRepliesCapabilityKey,
+                        _BPSDeprecatedInVersionKey, _BPSDeviceHasAllCapabilitiesForStrings,
+                        _BPSEditablePlaceholderColor, _BPSForegroundColor,
+                        _BPSInternalWatchCapabilityKey, _BPSIsDeviceCompatibleWithVersions,
+                        _BPSLocalizedShortEdition, _BPSMirrorDNDKey,
+                        _BPSMirrorGroupID, _BPSMirrorSwitchID,
+                        _BPSMuteFitnessCoachingCapabilityKey, _BPSNanoBulletinShowsAlerts,
+                        _BPSNanoBulletinShowsPreview, _BPSNanoBulletinSubsections,
+                        _BPSNavBarBackgroundPointImage, _BPSNightstandCapabilityKey,
+                        _BPSPreviewGroupID, _BPSProgressBarTrackTintColor,
+                        _BPSRemoveCapabilityIncompatibleSpecifiersFromArray, _BPSRequiredWatchCapabilitiesKey,
+                        _BPSSeparatorColorWhiteLevel, _BPSSetupTintColor,
+                        _BPSShowAlertsID, _BPSStringForProductType,
+                        _BPSTableDetailTextSize, _BPSTextColor,
+                        _BPSUnlocalizedNameForMaterial, _BPSVibrationGroupID,
+                        __BPSIsPairingCompatible, __BPSOverrideDeviceCompatibleVersions,
+                        _BPSAccessoryHighlightColor, _BPSBackgroundColor,
+                        _BPSBridgePreferencesVersionNumber, _BPSBulletinDistributorBBSectionsDidChangeNotification,
+                        _BPSDNDDomainKey, _BPSDeviceHasCapabilityForString,
+                        _BPSForegroundColorWhiteLevel, _BPSLocalizedNameForMaterial,
+                        _BPSMirrorDNDStateChangedNotification, _BPSMoreDTFriendsCapabilityKey,
+                        _BPSNanoBulletinShowsCustomSettings, _BPSNanoBulletinUpdateTimestamp,
+                        _BPSPresentGizmoUnreachableAlertWithDismissalHandler, _BPSRegularFontWithSize,
+                        _BPSSeparatorColor, _BPSShortLocalizedVariantSizeForProductType,
+                        _BPSSystemAppIsRemoved, _BPSThirdPartyComplicationsCapabilityKey,
+                        _BPSVibrationID ]
+    objc-classes:     [ _BPSAppGlanceManager,
+                        _BPSNotificationAppController, _BPSRemoteUISetupStyle,
+                        _BPSInternalGlanceManager ]
+...

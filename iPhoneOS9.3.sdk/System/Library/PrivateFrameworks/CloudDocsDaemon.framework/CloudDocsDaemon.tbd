@@ -1,0 +1,53 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/CloudDocsDaemon
+current-version: 384.35.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BRCCopyFakeQuarantineInfo,
+                        _BRCItemFieldsPrettyPrint, _BRCItemIDRoot,
+                        _BRCPrettyPrintEnumWithContext, _BRFieldCKInfoReadFrom,
+                        _BRFieldPkgHeaderReadFrom, _BRFieldPkgLocalItemReadFrom,
+                        _BRFieldXattrBlobReadFrom, _brc_task_tracker_async_and_inherit_log_sections,
+                        _brc_task_tracker_create, _kBRCSyncThrottlePredicateFormatKey,
+                        _kBRCSyncThrottlesKey, _kBRCThrottleGiveUpAfter,
+                        _kBRCThrottleWaitAtLeast, _kBRCXPCActivityAllowBattery,
+                        _kBRCXPCActivityGracePeriod, _kBRCXPCActivityPriority,
+                        _kBRCXPCActivityRequireScreenSleep, _kBRRecordIDPrefixContent,
+                        _kBRRecordIDPrefixDocumentStructure, _kBRRecordKeyBirthtime,
+                        _kBRRecordKeyFileContent, _kBRRecordKeyFilenameBaseHash,
+                        _kBRRecordKeyFilenameEncryptedBasename, _kBRRecordKeyFinderTags,
+                        _kBRRecordKeyIsExecutable, _kBRRecordKeyModificationTime,
+                        _kBRRecordKeyPackageManifest, _kBRRecordKeyParentRef,
+                        _kBRRecordKeyQuarantineInfo, _kBRRecordKeyTargetRef,
+                        _kBRRecordKeyThumbnailQuickLookMetadata, _kBRRecordTypeContent,
+                        _prettyprintFSEventFlags, _BRCExtensionErrorPayloadReadFrom,
+                        _BRCPrettyPrintBitmapWithContext, _BRFieldFinderTagsReadFrom,
+                        _BRFieldUserIdentityReadFrom, _brc_task_tracker_cancel,
+                        _kBRCSyncThrottleSupportedPlatformsKey, _kBRCThrottleStartAfter,
+                        _kBRCXPCActivityDelay, _kBRCXPCActivityRepeating,
+                        _kBRRecordIDPrefixDirectoryStructure, _kBRRecordKeyDontLearnPkgExtension,
+                        _kBRRecordKeyFilenameBounceNo, _kBRRecordKeyHasHiddenExtension,
+                        _kBRRecordKeyPackageContent, _kBRRecordKeyPublicPermissions,
+                        _kBRRecordKeyThumbnail1024x1024, _kBRRecordTypeStructure ]
+    objc-classes:     [ _BRCAccountHandler,
+                        _BRCContainerScheduler, _BRCExtensionErrorPayload,
+                        _BRCFSReader, _BRCFileCoordinator,
+                        _BRCItemID, _BRCLocalContainer,
+                        _BRCMinHeap, _BRCPackageItem,
+                        _BRCPackageManifestWriter, _BRCPrivateServerZone,
+                        _BRCServerItem, _BRCSharedServerZone,
+                        _BRCStatInfo, _BRCTermDumper,
+                        _BRCUserDefaults, _BRFieldCKInfo,
+                        _BRFieldPkgHeader, _BRFieldPkgLocalItem,
+                        _BRFieldXattr, _BRFieldXattrBlob,
+                        _BRCAccountSession, _BRCFSEventsMonitor,
+                        _BRCGenerationID, _BRCLocalItem,
+                        _BRCPackageManifestReader, _BRCRelativePath,
+                        _BRCStageRegistry, _BRCURLToItemLookup,
+                        _BRFieldFinderTags, _BRFieldUserIdentity ]
+...

@@ -1,0 +1,20 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UITriggerVC.framework/UITriggerVC
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CSLUIPBNumberReadFrom,
+                        _CSLUIPBPropertyValueReadFrom, _CSLUIPBUIPluginListRequestReadFrom,
+                        _CSLUIPBUIPluginTriggerRequestReadFrom, _CSLUIPBUIPluginTriggerResponseReadFrom,
+                        _CSLUIPBPropertyReadFrom, _CSLUIPBUIPluginListResponseReadFrom ]
+    objc-classes:     [ _CSLUIPBNumber,
+                        _CSLUIPBPropertyValue, _CSLUIPBUIPluginListRequest,
+                        _CSLUIPBUIPluginTriggerRequest, _UITriggerTableViewController,
+                        _CSLUIPBProperty, _CSLUIPBUIPluginListResponse,
+                        _CSLUIPBUIPluginTriggerResponse ]
+...

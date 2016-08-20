@@ -1,0 +1,27 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WirelessProximity.framework/WirelessProximity
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _WPBeaconAdvInterval,
+                        _WPBeaconType, _WPBeaconTypeAirPlayTargetPresence,
+                        _WPBeaconTypeCompany, _WPBeaconTypeCompanyMinor,
+                        _WPHomeKitScanBlobData, _WPHomeKitScanMaskData,
+                        _WPMagicSwitchAdvertiseTypeInterval, _WPMagicSwitchScanBlobData,
+                        _WPMagicSwitchScanMaskData, _WPPuckType,
+                        _WPPuckTypeAirPlaySoloRSSI, _WPPuckTypeAirPlaySoloTargetPresence,
+                        _kFoundDevices, _WPBeaconTX,
+                        _WPBeaconTypeAirPlayTargetPresencePayload, _WPBeaconTypeCompanyUUID,
+                        _WPLoggingInit, _WPMagicSwitchScanDutyCycle,
+                        _WPPuckTypeAirPlaySoloAdvertisingData, _isWPPoweredOn ]
+    objc-classes:     [ _WPAWDL,
+                        _WPAirPlaySolo, _WPDeviceScanner,
+                        _WPMagicSwitch, _WPZoneTracker,
+                        _XPCClient, _WPAdvertising,
+                        _WPHomeKit, _WirelessProximity ]
+...

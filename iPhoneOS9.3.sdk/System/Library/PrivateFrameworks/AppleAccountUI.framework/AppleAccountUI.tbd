@@ -1,0 +1,34 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AAUIBeginUsingAddressBookSingleton,
+                        _AAUIDeviceLocatorStateDidChangeNotification, _AAUIFamilyDetailsCacheDidChangeNotification,
+                        _AAUISignInErrorDomain, _AAUICopyCompositeName,
+                        _AAUIProfilePictureStoreDidChangeNotification ]
+    objc-classes:     [ _AACDPOperation,
+                        _AAUIAcceptFamilyInviteRequest, _AAUIAccountRepairRemoteUI,
+                        _AAUIAddPhotoView, _AAUIBaseSignInViewController,
+                        _AAUICDPController, _AAUICDPRemoteApprovalViewController,
+                        _AAUICloudSyncServicesController, _AAUIContactsSearchController,
+                        _AAUIDeclineChildTransferRequest, _AAUIDeviceLocatorConfirmationUtilities,
+                        _AAUIExplainAppleIDViewController, _AAUIFamilyDetailsCache,
+                        _AAUIFamilyMemberPhotoRequest, _AAUIFamilyPaymentInfoRequest,
+                        _AAUIFamilySetupBuddyMLRequest, _AAUIFamilySetupOrganizerViewController,
+                        _AAUIFamilySetupViewController, _AAUIGenericTermsRemoteUI,
+                        _AAUIPhotoResponse, _AAUIProfilePictureStore,
+                        _AAUIRemoteUIController, _AAUIServerSuppliedProfilePictureCache,
+                        _AAUISignInFlowController, _AAUIUpdateMyPhotoRequest,
+                        _AAUIAcceptChildTransferRequest, _AAUIAccountValidationController,
+                        _AAUIBleachedNavigationController, _AAUIChildAccountCreationController,
+                        _AAUICredentialRecoveryController, _AAUIDeviceLocatorService,
+                        _AAUIFamilyInvitationAcceptanceViewController, _AAUIFamilyPaymentInfoResponse,
+                        _AAUIFamilySetupPrompter, _AAUIMyPhotoRequest,
+                        _AAUIRemotePage, _AAUIServerSuppliedProfilePictureCacheEntry ]
+...

@@ -1,0 +1,26 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoGlanceSettings.framework/NanoGlanceSettings
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ApplicationsChanged,
+                        _GlanceSettingsChanged, _NGSAppBundleIdentifierKey,
+                        _NGSDomainKey, _NGSGlanceBundlePathKey,
+                        _NGSGlanceNameKey, _NGSIsDefaultGlanceKey,
+                        _NGSMaxActiveGlanceCount, _NGSNanoGlanceSettingsVersionString,
+                        _NGSReadPreference, _NGSSettingsChangedNotification,
+                        _NGSSockPuppetBundleIdentifier, __NGSLog,
+                        __NGSLogTagFromTypes, ___NGSLoggingTypesPriv,
+                        ___NGSLoggingTypesUseNSLogPriv, ___isInternalInstall,
+                        _DeviceChanged, _NGSCannotBeDisabledKey,
+                        _NGSGlanceDefinitionsKey, _NGSLoggingReloadDefaults,
+                        _NGSPrelaunchGlanceKey, _NGSSockPuppetAppIdentifierKey,
+                        __NGSLogMsgForTypes, ___NGSLoggingTypesUseCPLogPriv ]
+    objc-classes:     [ _NGSGlance,
+                        _NGSSettingsManager, _NGSInternalSettingsManager ]
+...

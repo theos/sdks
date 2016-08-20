@@ -1,0 +1,26 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IAPAuthentication.framework/IAPAuthentication
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AllocCapsFromAuthCert,
+                        _CanInductiveCharge, _CanUnlockiAPOverUART,
+                        _CanUsePowerDuringSleep, _CanUseUltraHighPower,
+                        _CanUseiAPProtocol, _FinalizeSigningContext,
+                        _GetRandomDigest, _IapAuthCertVerifyAuthVersion,
+                        _IapAuthChallengeRespondSync, _IapAuthGetAppCert,
+                        _IapAuthGetAppCertP7Sync, _IapAuthRandomNumber,
+                        _InitSigningContext, _UpdateSigningContext,
+                        _VerifyCertAuthorityDictionary, _VerifyNonceSigned,
+                        _kAuthNonceBufferKey, _kAuthVersionKey,
+                        _CanHighVoltageCharge, _CanUnlockiAPOverUSB,
+                        _CanUseiAPOverAppleIDBus, _GetCertClass,
+                        _IapAuthChallengeRespond, _IapAuthGetAppCertP7,
+                        _IapAuthVerifyCertSerialNumber, _VerifyCertAuthority,
+                        _kAuthCertBufferKey, _kAuthResponseBufferKey ]
+...

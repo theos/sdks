@@ -1,0 +1,42 @@
+---
+# Generated with machotbd by mstg
+# https://github.com/mstg/machotbd
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriUI.framework/SiriUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SiriLanguageIsRTL,
+                        _SiriLanguageTextAlignment, _SiriUIBlockExecuteMonitored,
+                        _SiriUIDefaultFooterViewInsets, _SiriUIDeviceIsLargeFormatPad,
+                        _SiriUIDeviceIsZoomed, _SiriUIFrameworkBundleIdentifier,
+                        _SiriUIIsAllOrientationsSupported, _SiriUIIsCompactWidth,
+                        _SiriUIRectForLabelWithDistanceFromBottomToBaseline, _SiriUISnippetPluginErrorDomain,
+                        _SiriUISystemLanguageSemanticContentAttribute, _SiriUIUtteranceWidthForAvailableWidthAndInsetX,
+                        _SiriLanguageSemanticContentAttribute, _SiriUIDefaultEdgePadding,
+                        _SiriUIDeviceIsLargeFormatPhone, _SiriUIInvokeOnMainQueue,
+                        _SiriUIIsExtendedWidth, _SiriUISystemLanguageIsRTL ]
+    objc-classes:     [ _SiriRoutePickerAlertController,
+                        _SiriUIAceObjectControllerCell, _SiriUIAcousticIDSpinner,
+                        _SiriUIAnimationUtilities, _SiriUIAudioRoutePickerButton,
+                        _SiriUIBaseSnippetViewController, _SiriUIChevronButton,
+                        _SiriUIConfiguration, _SiriUIContentCollectionViewCell,
+                        _SiriUIDisambiguationItem, _SiriUIErrorSnippetViewController,
+                        _SiriUIHelpButton, _SiriUIKeyline,
+                        _SiriUIMapDetailsContainerView, _SiriUIObjectPickerViewController,
+                        _SiriUIPhotoCollectionViewCell, _SiriUIPrivateViewControllerOverrides,
+                        _SiriUIReusableFooterView, _SiriUIReusableSubtitledHeaderView,
+                        _SiriUIReviewsHeaderView, _SiriUISiriStatusView,
+                        _SiriUISnippetBridgeViewManager, _SiriUISnippetManager,
+                        _SiriUIStarsView, _SiriUITranscriptItem,
+                        _SiriUIURLSession, _SiriUIURLSessionImageDownload,
+                        _SiriRoutePickerAlertWindow, _SiriUIActionableFooterView,
+                        _SiriUIAudioRoutePickerController, _SiriUIClearBackgroundCell,
+                        _SiriUIContentLabel, _SiriUIFontScalingUtilities,
+                        _SiriUIMapCollectionViewCell, _SiriUIPersonPickerViewController,
+                        _SiriUIReusableConfirmationFooterView, _SiriUIReviewItemCell,
+                        _SiriUISnippetBridgeView, _SiriUISnippetViewController,
+                        _SiriUITwoButtonFooterView ]
+...
