@@ -1,6 +1,4 @@
 ---
-# Generated with machotbd by mstg
-# https://github.com/mstg/machotbd
 archs:           [ armv7, armv7s, arm64 ]
 platform:        ios
 install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/GKSPerformance.framework/GKSPerformance
