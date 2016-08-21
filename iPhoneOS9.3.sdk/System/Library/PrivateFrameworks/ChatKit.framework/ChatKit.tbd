@@ -173,7 +173,7 @@ exports:
                         _CKTranscriptMessageCell, _CKTranscriptPreviewController,
                         _CKTranscriptRecipientsController, _CKTranscriptReportSpamCell,
                         _CKTranscriptStatusCell, _CKTruncatedTextBalloonView,
-                        _CKTypingIndicatorLayer, _CKUIBehavior,
+                        _CKTypingIndicatorLayer, _CKTypingView, _CKUIBehavior,
                         _CKUIBehaviorHUDPhone, _CKUIBehaviorNanoNotifications,
                         _CKUIBehaviorPhone, _CKVideoCancelActionMenuItem,
                         _CKVideoMessageRecordingViewController, _CKVideoRecorder,
