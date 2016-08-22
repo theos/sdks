@@ -74,4 +74,11 @@ exports:
                         _CallDBManagerServer, _CallFingerprint,
                         _DBManager, _NotificationSender,
                         _Transaction ]
+    objc-ivars:       [ _CHMigrationPolicy.currentLocale,
+                        _CHMigrationPolicy.mccToISOCountryCodeMap, _CallHistoryDBClientHandle._observerCallTimersRef,
+                        _CallHistoryDBHandle._dataStoreAddedRef, _CallHistoryDBHandle._observerCallDBPropRef,
+                        _CallHistoryDBHandle.callDBManager, _CallHistoryDBHandle.fCallRecordContext,
+                        _CallHistoryDBHandle.objectId, _CHMigrationPolicy.lastQueriedISOCountryCode,
+                        _CallHistoryDBClientHandle.dbStoreHandle, _CallHistoryDBHandle._observerCallRecordRef,
+                        _CallHistoryDBHandle.fCallDBPropertiesContext ]
 ...

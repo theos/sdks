@@ -509,5 +509,6 @@ exports:
                         _WKWindowFeatures, __WKFrameHandle,
                         __WKSecurityOrigin, __WKVisitedLinkProvider ]
     objc-ivars:       [ _WKDOMNode._impl,
-                        _WKDOMTextIterator._textIterator, _WKDOMTextIterator._upconvertedText ]
+                        _WKDOMTextIterator._textIterator, _WKDOMTextIterator._upconvertedText,
+                        _WKDOMRange._impl ]
 ...

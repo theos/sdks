@@ -56,4 +56,7 @@ exports:
                         _MSCLSoundBiteView, _MSCLStoreItemArtworkRequest,
                         _MSCLTagListViewController, _MSCLTokenTextAttachmentView,
                         _MSCLTwitterServiceSetupTableViewSection, _MSCLVideoScrubberControl ]
+    objc-ivars:       [ _MSCLSocialServiceSetupTableViewSection._accountStore,
+                        _MSCLSocialServiceSetupTableViewSection._facebookPages, _MSCLSocialServiceSetupTableViewSection._service,
+                        _MSCLSocialServiceSetupTableViewSection._clientContext, _MSCLSocialServiceSetupTableViewSection._image ]
 ...

@@ -10,4 +10,7 @@ exports:
                         _WFUserWhiteListAllowedSitesPageTitle, _WFUserWhiteListAllowedSitesBookmarkPath ]
     objc-classes:     [ _WFUserSettings,
                         _WebFilterEvaluator ]
+    objc-ivars:       [ _WebFilterEvaluator._buffer,
+                        _WebFilterEvaluator._pageTitle, _WebFilterEvaluator._url,
+                        _WebFilterEvaluator._filterState ]
 ...

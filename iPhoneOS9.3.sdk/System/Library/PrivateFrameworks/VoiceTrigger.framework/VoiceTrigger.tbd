@@ -349,4 +349,5 @@ exports:
                         _VTAudioFileLog, _VTPhraseSpotterControlRemote,
                         _VTStateManagerSingleton, __VTFirstUnlockAfterRebootPolicy,
                         __VTSiriAssertionPolicy, __VTSpringBoardStartedPolicy ]
+    objc-ivars:       [ __VTStatePolicy._queue ]
 ...

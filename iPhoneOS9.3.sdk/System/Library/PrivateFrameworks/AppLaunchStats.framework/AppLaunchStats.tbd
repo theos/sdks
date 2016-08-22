@@ -36,4 +36,6 @@ exports:
                         _AppEntry, _AppLaunchStatsDelayLaunch,
                         _AppLaunchStatsLogFormater, _AppLaunchStatsSBSettings,
                         _AppLaunchStatsStateHandler, _HistogramElement ]
+    objc-ivars:       [ _RankElement.score,
+                        _RankElement.timeIndex ]
 ...

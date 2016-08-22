@@ -146,4 +146,11 @@ exports:
                         _BSPropertyMetadata, _BSSignal,
                         _BSTransaction, _BSXPCConnectionListener,
                         _BSZeroingWeakReference, __BSCategoryLogger ]
+    objc-ivars:       [ _BSBaseXPCClient._queue,
+                        _BSBasicServerClient._connection, _BSDateTimeCache._6daysAgo,
+                        _BSDateTimeCache._lastSuccessfulResetTime, _BSDateTimeCache._prevWeek,
+                        _BSDateTimeCache._tomorrow, _BSFileLogger._enabledByPreference,
+                        _BSSettings._settingToObjectMap, _BSBaseXPCServer._queue,
+                        _BSDateTimeCache._lastAttemptedResetTime, _BSDateTimeCache._today,
+                        _BSSettings._settingToFlagMap ]
 ...

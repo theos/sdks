@@ -81,4 +81,7 @@ exports:
                         _DCRemoteDocumentManager, _HTTPSASLClientSession,
                         _SDFDictionaryUtils, _SDFGenerationIdentifierUtils,
                         _SDFRequestUtils, _SDFURLUtils ]
+    objc-ivars:       [ _DCConfiguration._expiry,
+                        _DCConfiguration._hasValidSignature, _DCService._url,
+                        _DCConfiguration._fetchDate, _DCService._keychainItemIdentifier ]
 ...

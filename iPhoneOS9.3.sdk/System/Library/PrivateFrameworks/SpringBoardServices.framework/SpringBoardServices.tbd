@@ -202,4 +202,5 @@ exports:
                         _SBSLocalNotificationClient, _SBSRemoteAlertClient,
                         _SBSRestartRenderServerAction, _SBSWallpaperClient,
                         _SBSpringBoardDiedDeactivationHandler ]
+    objc-ivars:       [ _SBSAccelerometer._delegate ]
 ...

@@ -69,5 +69,6 @@ exports:
                         _IDSAccountController, _IDSDaemonController,
                         _IDSPairedDeviceManager, _IDSServiceAvailabilityController ]
     objc-ivars:       [ _IDSPairedDeviceManager._allowedTrafficClassifiers,
-                        _IDSPairedDeviceManager._deliveryStatsCompletion, _IDSPairedDeviceManager._pairedCompletion ]
+                        _IDSPairedDeviceManager._deliveryStatsCompletion, _IDSPairedDeviceManager._pairedCompletion,
+                        _IDSPairedDeviceManager._deleteCompletion, _IDSPairedDeviceManager._localCompletion ]
 ...

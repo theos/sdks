@@ -37,4 +37,9 @@ exports:
                         _SPUISearchResultsDefaultAction, _SPUISearchResultsMoviesAction,
                         _SPUISearchStandardCell, _SPUISearchTableViewCell,
                         _SPUISearchWikiRowCell, _SPUISearchWikipediaViewController ]
+    objc-ivars:       [ _SPUISearchDictationView._endpointButton,
+                        _SPUISearchDictationView._flamesView, _SPUISearchModel._cachedResultImages,
+                        _SPUISearchModel._isDeferredQUeryComplete, _SPUISearchModel._prefetchOperationQueue,
+                        _SPUISearchModel._waitOperation, _SPUISearchDictationView._endpointButtonLandscape,
+                        _SPUISearchModel._deferredResults, _SPUISearchModel._loadOperationQueue ]
 ...

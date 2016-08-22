@@ -28,4 +28,6 @@ exports:
                         _BKSProcessAssertionDestroyEvent, _BKSProcessAssertionUpdateEvent,
                         _BKSProcess, _BKSProcessAssertionCreateResponseEvent,
                         _BKSProcessAssertionEvent ]
+    objc-ivars:       [ _BKSProcess._bundlePath,
+                        _BKSProcess._pid, _BKSProcess._clientQueue ]
 ...

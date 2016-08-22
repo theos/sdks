@@ -64,4 +64,8 @@ exports:
                         _PBRequest, _PBStreamReader,
                         _PBUnknownFields, _PBDataReader,
                         _PBMutableData, _PBStreamWriter ]
+    objc-ivars:       [ _PBDataReader._bytes,
+                        _PBDataReader._error, _PBDataReader._pos,
+                        _PBDataWriter._data, _PBDataReader._data,
+                        _PBDataReader._length ]
 ...

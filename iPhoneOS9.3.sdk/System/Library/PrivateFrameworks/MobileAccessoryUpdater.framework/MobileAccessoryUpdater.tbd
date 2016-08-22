@@ -21,4 +21,11 @@ exports:
     objc-classes:     [ _FudInternalConnection,
                         _FudXPCConnection, _MobileAccessoryUpdater,
                         _FudProgressWeights ]
+    objc-ivars:       [ _FudInternalConnection.clientIdentifier,
+                        _FudInternalConnection.handlerQueue, _FudInternalConnection.pendingRequests,
+                        _FudProgressWeights.finishWeight, _FudXPCConnection.clientIdentifier,
+                        _FudXPCConnection.connectionQueue, _FudXPCConnection.messageHandler,
+                        _FudXPCConnection.replyQueue, _FudXPCConnection.sessionQueue,
+                        _FudInternalConnection.didStop, _FudProgressWeights.applyWeight,
+                        _FudXPCConnection.connection, _FudXPCConnection.notifyToken ]
 ...

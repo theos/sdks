@@ -36,4 +36,9 @@ exports:
                         _ATDeviceSyncSessionTask, _ATIDSService,
                         _ATLegacyMessageLink, _ATLockdownSocket,
                         _ATStoreAssetLink, _ATWakeupCall ]
+    objc-ivars:       [ _ATWakeupCall._browser,
+                        _ATWakeupCall._hostLibraryIdentifiers, _ATWakeupCall._resolvedLibraryIdentifiers,
+                        _ATWakeupCall._resolving, _ATWakeupCall._searching,
+                        _ATWakeupCall._wakeThread, _ATWakeupCall._completion,
+                        _ATWakeupCall._resolvedLibraryServices, _ATWakeupCall._resolvingHosts ]
 ...

@@ -38,4 +38,5 @@ exports:
                         _XBApplicationIdentity, _XBApplicationSnapshotGenerationContext,
                         _XBApplicationSnapshotManifestImpl, _XBDisplaySnapshotLayer,
                         _XBLaunchImageProvider, _XBMutableStatusBarSettings ]
+    objc-ivars:       [ _XBStatusBarSettings._settings ]
 ...

@@ -21,4 +21,9 @@ exports:
                         __ATXAppIconState, __ATXAppLaunch,
                         __ATXAppLaunchMonitor, __ATXDataStoreMigrations,
                         __ATXGlobals, __ATXScoreInterpreterCtx ]
+    objc-ivars:       [ __ATXFeedback._baseAlpha,
+                        __ATXFeedback._decayHalfLifeSeconds, __ATXFeedback._priorBeta,
+                        __ATXFeedback._store, __ATXScoreInterpreterCtx.stack,
+                        __ATXScoreInterpreterCtx.subscores, __ATXFeedback._baseBeta,
+                        __ATXFeedback._priorMean, __ATXScoreInterpreterCtx.stackLen ]
 ...

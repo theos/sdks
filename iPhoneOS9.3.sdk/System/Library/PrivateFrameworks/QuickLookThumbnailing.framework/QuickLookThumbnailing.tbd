@@ -24,4 +24,14 @@ exports:
                         _QLThumbnailCachedAddition, _QLThumbnailServiceProxy,
                         _QLThumbnailVersion, _QLThumbnailAdditionCache,
                         _QLThumbnailStoreRetrievalOperation ]
+    objc-ivars:       [ _QLThumbnailAddition._addition,
+                        _QLThumbnailAddition._additionURLSandboxToken, _QLThumbnailAddition._thumbnailDataDictionary,
+                        _QLThumbnailAdditionCache._additionsCache, _QLThumbnailCachedAddition._fileID,
+                        _QLThumbnailServiceProxy._proxy, _QLThumbnailStoreRetrievalOperation._addition,
+                        _QLThumbnailStoreRetrievalOperation._documentURL, _QLThumbnailStoreRetrievalOperation._executing,
+                        _QLThumbnailStoreRetrievalOperation._generateThumbnailsAtBackgroundPriority, _QLThumbnailVersion._fileSize,
+                        _QLThumbnailVersion._generatorVersion, _QLThumbnailVersion._modificationDate,
+                        _QLThumbnailAddition._additionURL, _QLThumbnailAddition._thumbnailVersion,
+                        _QLThumbnailServiceProxy._connection, _QLThumbnailStoreRetrievalOperation._allowsThumbnailGeneration,
+                        _QLThumbnailStoreRetrievalOperation._finished, _QLThumbnailVersion._generatorID ]
 ...

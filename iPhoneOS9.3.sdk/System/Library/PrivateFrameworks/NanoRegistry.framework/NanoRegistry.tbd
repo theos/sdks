@@ -72,4 +72,8 @@ exports:
                         _NRKeyedUnarchiver, _NRMutableStateBase,
                         _NRPBPairingModeResponse, _NRSecureDevicePropertyStore,
                         _NRTextFormattingUtilities ]
+    objc-ivars:       [ _NRPBPairingModeRequest._has,
+                        _NRPBPairingModeRequest._phonePairingProtocolVersionMax, _NRPBPairingModeRequest._watchPairingProtocolVersion,
+                        _NRPBPairingModeResponse._success, _NRPBPairingModeRequest._pairingMode,
+                        _NRPBPairingModeRequest._phonePairingProtocolVersionMin ]
 ...

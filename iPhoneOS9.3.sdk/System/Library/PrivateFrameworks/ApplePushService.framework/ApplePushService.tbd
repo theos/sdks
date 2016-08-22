@@ -47,4 +47,5 @@ exports:
                         _APSIncomingMessage, _APSMultiUserFS,
                         _APSOutgoingMessage, __APSLogFileCompressor,
                         _APSFileLogging, _APSMultiUserMode ]
+    objc-ivars:       [ __APSLogFileCompressor._archivers ]
 ...

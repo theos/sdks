@@ -43,4 +43,9 @@ exports:
                         _tGvVBtfGSsOH67XQ ]
     objc-classes:     [ _AirPlayController,
                         _MediaControlClient, _AirPlayRemoteSlideshow ]
+    objc-ivars:       [ _AirPlayRemoteSlideshow._client,
+                        _AirPlayRemoteSlideshow._internalQueue, _AirPlayRemoteSlideshow._started,
+                        _MediaControlClient._client, _MediaControlClient._eventHandlerQueue,
+                        _MediaControlClient._queue, _AirPlayRemoteSlideshow._delegate,
+                        _AirPlayRemoteSlideshow._userQueue, _MediaControlClient._eventHandlerBlock ]
 ...

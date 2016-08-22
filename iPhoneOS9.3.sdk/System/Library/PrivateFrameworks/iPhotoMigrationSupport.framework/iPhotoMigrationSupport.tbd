@@ -34,4 +34,5 @@ exports:
                         _BLAlertAction, _BLModalPresenter,
                         _iPhotoMigrationSupport, _BLAlert,
                         _BLModalPresenterRootViewController ]
+    objc-ivars:       [ _BLModalPresenterRootViewController._background ]
 ...

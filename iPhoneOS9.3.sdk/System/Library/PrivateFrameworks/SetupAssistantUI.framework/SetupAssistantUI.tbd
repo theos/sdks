@@ -11,4 +11,8 @@ exports:
                         _BFFLocationController, _BFFNonceController,
                         _BFFPreferencesController, _BFFStyle,
                         _BFFLocaleDataSource, _BFFPaneHeaderView ]
+    objc-ivars:       [ _BFFLocationController._aliasDict,
+                        _BFFLocationController._guessedCountryFromTelephony, _BFFLocationController.fWifiDevice,
+                        _BFFLocationController.fWifiManager, _BFFLocationController._guessedCountries,
+                        _BFFLocationController._validCountries ]
 ...

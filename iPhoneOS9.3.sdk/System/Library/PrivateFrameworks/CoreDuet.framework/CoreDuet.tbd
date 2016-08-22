@@ -114,4 +114,7 @@ exports:
                         __DKObjectMOConverter, __DKPeriodOfDayCategory,
                         __DKQuantityType, __DKRelationMO,
                         __DKStarkMetadataKey, __DKTristateCategory ]
+    objc-ivars:       [ __CDPSimpleModelParameterManagerTuningValue._lambda,
+                        __CDPSimpleModelParameterManagerTuningValue._threshold, __CDPSimpleModelParameterManagerTuningValue._w0,
+                        __CDPSimpleModelParameterManagerTuningValue._score ]
 ...

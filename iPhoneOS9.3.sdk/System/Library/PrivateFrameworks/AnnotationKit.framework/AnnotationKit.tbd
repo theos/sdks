@@ -130,4 +130,11 @@ exports:
                         _AKToggleButton, _AKTriangleAnnotation,
                         _AKTwoPointRectangularTextPointOfInterestHelper, _TSDBrushStroke,
                         _TSDPathIntersection ]
+    objc-ivars:       [ _TSDLineEnd.mEndPoint,
+                        _TSDLineEnd.mIsFilled, _TSDLineEnd.mPath,
+                        _TSDPathCut.mSegment, _TSDPathCut.mT,
+                        _TSDPathIntersection.mSegment, _TSDPathIntersection.mT,
+                        _TSDPathIntersection.mTB, _TSDLineEnd.mIdentifier,
+                        _TSDLineEnd.mWrapPath, _TSDPathIntersection.mPoint,
+                        _TSDPathIntersection.mSegmentB ]
 ...

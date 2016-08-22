@@ -132,4 +132,7 @@ exports:
                         _TUFaceTimeVideoCallModel, _TULogging,
                         _TUMetadataDestinationID, _TUPrivacyRule,
                         _TUReplyWithMessageStore, _TUTelephonyCallModel ]
+    objc-ivars:       [ _TUCall._abLabel,
+                        _TUCall._displayName, _TUCall._phoneCallFlags,
+                        _TUCall._companyName, _TUCall._displayNameBreakPoint ]
 ...

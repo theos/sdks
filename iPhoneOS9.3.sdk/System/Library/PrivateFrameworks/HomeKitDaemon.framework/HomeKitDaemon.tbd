@@ -251,4 +251,5 @@ exports:
                         _HMDZone, _HMHAPMetadataCharacteristic,
                         _HMIncomingHomeInvitationData, _HMMsgHandler,
                         _WLOHomeKitEvent ]
+    objc-ivars:       [ _HMDWatchSyncState._syncs ]
 ...

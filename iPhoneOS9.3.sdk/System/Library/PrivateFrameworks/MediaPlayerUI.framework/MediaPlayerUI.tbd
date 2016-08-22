@@ -67,5 +67,6 @@ exports:
                         _MPUTextButton, _MPUVignetteBackgroundView,
                         __MPUExtrasMainMenuItemCollectionViewCell, __MPUSharedLibrariesViewController ]
     objc-ivars:       [ _MPUMediaDownloadObserver._hasPendingProgressHandlerExecution,
-                        _MPUMediaDownloadObserver._pid, _MPUMediaDownloadObserver._queue ]
+                        _MPUMediaDownloadObserver._pid, _MPUMediaDownloadObserver._queue,
+                        _MPUMediaDownloadObserver._invalidated, _MPUMediaDownloadObserver._progressHandler ]
 ...

@@ -38,5 +38,6 @@ exports:
                         _WebUIModalAlertView, __WBUPasswordAlertActionViewController,
                         __WBUPasswordPicker ]
     objc-ivars:       [ _WebUIDownloadManager._delegate,
-                        _WebUIDownloadManager._downloadPath, _WebUIModalAlertView._clickedButton ]
+                        _WebUIDownloadManager._downloadPath, _WebUIModalAlertView._clickedButton,
+                        _WebUIDownloadManager._download ]
 ...

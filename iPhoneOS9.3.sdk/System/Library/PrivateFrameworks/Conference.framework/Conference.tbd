@@ -11,4 +11,6 @@ exports:
                         _CNFInternalAccountViewController, _CNFInternalSettingsUtilities,
                         _CNFUIUtilities, _CNFInternalAccountListViewController,
                         _CNFInternalProcessListController ]
+    objc-ivars:       [ _CNFInternalAccountListViewController._connectionHandler,
+                        _CNFInternalAccountListViewController._service ]
 ...

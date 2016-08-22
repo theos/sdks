@@ -36,4 +36,11 @@ exports:
                         _GSDocumentIdentifier, _GSStagingPrefix,
                         _GSTemporaryStorage, _GSDaemonProxySync,
                         _GSStorageManager ]
+    objc-ivars:       [ _GSDaemonProxySync._error,
+                        _GSDaemonProxySync._proxy, _GSDaemonProxySync._result,
+                        _GSDocumentIdentifier.documentID, _GSStagingPrefix._deviceID,
+                        _GSStagingPrefix._path, _GSStagingPrefix._sandboxHandle,
+                        _GSStagingPrefix._volumeUUID, _GSDaemonProxySync._group,
+                        _GSDocumentIdentifier.deviceID, _GSStagingPrefix._extension,
+                        _GSStagingPrefix._pathComponents ]
 ...

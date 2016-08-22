@@ -32,4 +32,12 @@ exports:
                         _UNUserNotificationServer, _UNDefaultDataProviderFactory,
                         _UNLocationMonitor, _UNNotificationSettingsService,
                         _UNRemoteNotificationServer ]
+    objc-ivars:       [ _UNDefaultDataProvider._displayName,
+                        _UNDefaultDataProvider._publisherBulletinIDs, _UNDefaultDataProvider._sectionID,
+                        _UNNotificationStore._observersByBundleID, _UNRemoteNotificationClient._backgroundDeliveryDisabled,
+                        _UNRemoteNotificationClient._dailyCountOfNewsstandPushes, _UNRemoteNotificationClient._environment,
+                        _UNRemoteNotificationClient._missingDate, _UNUserNotificationServer._registrarConnectionListener,
+                        _UNUserNotificationServer._schedulerConnectionListener, _UNDefaultDataProvider._proxy,
+                        _UNNotificationStore._notificationsQueue, _UNRemoteNotificationClient._bundleIdentifier,
+                        _UNRemoteNotificationClient._lastKnownDeviceToken, _UNRemoteNotificationClient._tokenIdentifier ]
 ...

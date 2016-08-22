@@ -41,4 +41,7 @@ exports:
                         _ACDFakeRemoteAccountStoreSession, _ACDOAuthSigner,
                         _ACDServer, _ACRemoteCommandHandler,
                         _ACRemoteDeviceProxy ]
+    objc-ivars:       [ _ACDDatabaseInitializer._accessKeys,
+                        _ACDDatabaseInitializer._accounts, _ACDDatabaseInitializer._dataclasses,
+                        _ACDDatabaseInitializer._accountTypes, _ACDDatabaseInitializer._database ]
 ...

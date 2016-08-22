@@ -191,4 +191,8 @@ exports:
                         _PLAssetsdClientServiceSender, _PLFileSystemPersistence,
                         _PLImageDataInfo, _PLUUIDString,
                         _PLXPCShMemData ]
+    objc-ivars:       [ _PLDiskController._bytesRequiredForPhoto,
+                        _PLDiskController._lastFSCheck, _PLXPCShMemData._buffer,
+                        _PLXPCShMemData._dataLength, _PLDiskController._flags,
+                        _PLXPCShMemData._bufferLength ]
 ...

@@ -16,4 +16,19 @@ exports:
                         _PBThermalFilter, _PBXRayFilter,
                         _PBCoreImageContext, _PBLightTunnelFilter,
                         _PBStretchFilter, _PBTwirlFilter ]
+    objc-ivars:       [ _PBFilter._ciFilter,
+                        _PBFilterClassDescription._attributes, _PBKaleidoscopeFilter._inputAmount,
+                        _PBKaleidoscopeFilter.lastInputDecay, _PBKaleidoscopeFilter.lastInputSize,
+                        _PBKaleidoscopeFilter.lastInputY, _PBLightTunnelFilter.firstTime,
+                        _PBLightTunnelFilter.lastInputRotation, _PBLightTunnelFilter.lastInputY,
+                        _PBMirrorFilter.lastInputAngle, _PBMirrorFilter.lastInputY,
+                        _PBSqueezeFilter.firstTime, _PBSqueezeFilter.lastInputScale,
+                        _PBSqueezeFilter.lastInputY, _PBStretchFilter.lastInputX,
+                        _PBTwirlFilter._inputAmount, _PBTwirlFilter.lastInputAngle,
+                        _PBTwirlFilter.lastInputX, _PBTwirlFilter.lastInputY,
+                        _PBFilter._wrapMirrorFilter, _PBKaleidoscopeFilter.firstTime,
+                        _PBKaleidoscopeFilter.lastInputX, _PBLightTunnelFilter.lastInputRadius,
+                        _PBMirrorFilter.firstTime, _PBSqueezeFilter._inputAmount,
+                        _PBSqueezeFilter.lastInputX, _PBStretchFilter.lastInputY,
+                        _PBTwirlFilter.lastInputRadius ]
 ...

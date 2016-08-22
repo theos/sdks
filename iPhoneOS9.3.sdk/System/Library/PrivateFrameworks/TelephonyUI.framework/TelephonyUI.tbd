@@ -31,4 +31,23 @@ exports:
                         _TPPortraitOnlyNavigationController, _TPSimpleNumberPad,
                         _TPStarkInCallButton, _TPStarkInCallViewController,
                         _TPStarkUtilities, _TPSuperBottomBar ]
+    objc-ivars:       [ _TPAlertViewHelper._alertView,
+                        _TPBottomBar._orientation, _TPBottomDoubleButtonBar._button2,
+                        _TPBottomSingleButtonBar._delegate, _TPLCDSubImageView._image,
+                        _TPLCDTextView._animation, _TPLCDTextView._delegate,
+                        _TPLCDTextView._fontSize, _TPLCDTextView._leftTruncates,
+                        _TPLCDTextView._scrollingView, _TPLCDTextView._text,
+                        _TPLCDTextView._textRect, _TPLCDTextViewScrollingView._owner,
+                        _TPLCDView._imageView, _TPLCDView._layoutAsLabelled,
+                        _TPPhonePad._bottomHeight, _TPPhonePad._delegateSoundCallbacks,
+                        _TPPhonePad._highlightKey, _TPPhonePad._inflightSounds,
+                        _TPPhonePad._leftWidth, _TPPhonePad._midWidth,
+                        _TPPhonePad._rightWidth, _TPPhonePad._supportsHardPause,
+                        _TPPhonePad._topHeight, _TPAlertViewHelper._completionHandler,
+                        _TPBottomSingleButtonBar._button, _TPLCDTextView._animates,
+                        _TPLCDTextView._font, _TPLCDTextView._minFontSize,
+                        _TPLCDTextView._textColor, _TPLCDView._contentView,
+                        _TPLCDView._textView, _TPPhonePad._downKey,
+                        _TPPhonePad._keyToButtonMap, _TPPhonePad._playsSounds,
+                        _TPPhonePad._soundsActivated ]
 ...

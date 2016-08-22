@@ -65,4 +65,9 @@ exports:
                         __CNAutocompleteAggdProbeProvider, __CNAutocompleteEntitlementSourceInclusionPolicy,
                         __CNAutocompleteObservableBuilderBatchingHelper, __CNAutocompleteUserSessionDisplayedResults,
                         __CNDiagnosticResponsePreparer ]
+    objc-ivars:       [ _CNAutocompleteInfrequentRecentResult._dateCount,
+                        _CNAutocompleteLocalQuery._contactStore, _CNAutocompleteLocalQuery._request,
+                        _CNAutocompleteNameComponents._lastName, _CNAutocompleteNameComponents._nickname,
+                        _CNAutocompleteRecentResult._matchesSendingAddress, _CNAutocompleteLocalQuery._contactFetcherStore,
+                        _CNAutocompleteNameComponents._firstName, _CNAutocompleteRecentResult._date ]
 ...

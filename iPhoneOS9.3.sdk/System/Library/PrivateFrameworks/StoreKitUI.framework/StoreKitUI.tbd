@@ -572,4 +572,8 @@ exports:
                         _SKUIWishlistViewController, __Badge,
                         __SKUIDynamicGridSizeCacheKey, __SKUIResourceCacheValue,
                         __SKUITrendingSearchResultButton ]
+    objc-ivars:       [ _SKUIApplicationControllerOptions._requiresLocalBootstrapScript,
+                        _SKUIApplicationControllerOptions._tabBarControllerStyle, _SKUICommentPostBarView._postTextField,
+                        _SKUISignInTextView._keyboardType, _SKUIApplicationControllerOptions._supportsFullApplicationReload,
+                        _SKUICommentPostBarView._postButton ]
 ...

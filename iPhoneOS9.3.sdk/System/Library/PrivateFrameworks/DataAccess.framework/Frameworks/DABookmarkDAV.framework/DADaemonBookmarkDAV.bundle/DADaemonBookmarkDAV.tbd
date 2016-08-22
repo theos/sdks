@@ -8,4 +8,9 @@ exports:
   - archs:            [ armv7, armv7s, arm64 ]
     objc-classes:     [ _BookmarkDAVAgent,
                         _BookmarkDAViCloudDaemonAccount, _BookmarkDAVDaemonAccount ]
+    objc-ivars:       [ _BookmarkDAVAgent._containerPushKey,
+                        _BookmarkDAVAgent._isSyncingHierarchy, _BookmarkDAVAgent._serverTokenRegistrationURL,
+                        _BookmarkDAViCloudDaemonAccount._host, _BookmarkDAViCloudDaemonAccount._useSSL,
+                        _BookmarkDAVAgent._isSyncing, _BookmarkDAVDaemonAccount._syncDriver,
+                        _BookmarkDAViCloudDaemonAccount._port ]
 ...

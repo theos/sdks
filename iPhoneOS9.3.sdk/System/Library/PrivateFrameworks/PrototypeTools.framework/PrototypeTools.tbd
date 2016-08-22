@@ -51,4 +51,6 @@ exports:
                         _PTSSwitchRow, _PTSlider,
                         _PTXLiveView, _PTXParallaxImageView,
                         _PTXParallaxSettings ]
+    objc-ivars:       [ _PTVolumeChangeNotifier.ringerSilentChangedHandlers,
+                        _PTVolumeChangeNotifier.ringerVolumeChangedHandlers ]
 ...

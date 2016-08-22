@@ -80,4 +80,17 @@ exports:
                         _FBSWorkspaceActionsEvent, _FBSWorkspaceCreateSceneRequestResponseEvent,
                         _FBSWorkspaceDestroySceneRequestEvent, _FBSWorkspaceEvent,
                         _FBSWorkspaceSceneEvent, _FBSWorkspaceSceneUpdateResponseEvent ]
+    objc-ivars:       [ _FBSSceneAction._callOutQueue,
+                        _FBSSceneClientSettings._occlusions, _FBSSceneClientSettings._preferredInterfaceOrientation,
+                        _FBSSceneClientSettings._preferredSceneHostIdentifier, _FBSSceneLayer._context,
+                        _FBSSceneLayer._identifier, _FBSSceneLayer._scene,
+                        _FBSSceneSettings._backgrounded, _FBSSceneSettings._ignoreOcclusionReasons,
+                        _FBSSceneSettings._level, _FBSSceneSettings._occludedHasBeenCalculated,
+                        _FBSSceneSettings._otherSettings, _FBSSettingsDiff._changes,
+                        _FBSSettingsDiff._settingsClass, _FBSSettingsDiffInspector._observerInfo,
+                        _FBSWorkspace._queue, _FBSSceneAction._scene,
+                        _FBSSceneClientSettings._preferredLevel, _FBSSceneLayer._delegate,
+                        _FBSSceneLayer._shouldObserveUpdates, _FBSSceneSettings._interfaceOrientation,
+                        _FBSSceneSettings._occlusions, _FBSSettingsDiff._otherSettingsDiff,
+                        _FBSSettingsDiffInspector._otherSettingsObserverInfo ]
 ...

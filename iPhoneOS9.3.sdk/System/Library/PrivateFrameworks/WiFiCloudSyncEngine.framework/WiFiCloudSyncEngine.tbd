@@ -16,4 +16,7 @@ exports:
                         _WiFiCloudSyncEngineScheduleWithRunLoop, _WiFiCloudSyncEngineUnScheduleWithRunLoop ]
     objc-classes:     [ _WiFiCloudSyncEngineCore,
                         _WiFiCloudSyncEngineLogger ]
+    objc-ivars:       [ _WiFiCloudSyncEngineCore.callback,
+                        _WiFiCloudSyncEngineCore.context, _WiFiCloudSyncEngineCore.keyValueStore,
+                        _WiFiCloudSyncEngineCore.clientThread, _WiFiCloudSyncEngineCore.iCloudSyncingEnabled ]
 ...

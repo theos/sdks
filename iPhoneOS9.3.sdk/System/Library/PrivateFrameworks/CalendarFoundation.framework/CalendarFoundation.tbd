@@ -103,4 +103,7 @@ exports:
                         _CalMessageTracer, _CalPreferences,
                         _CalStopwatch, _EKCalendarDate,
                         _EKStats ]
+    objc-ivars:       [ _EKCalendarDate._dateAbs,
+                        _EKCalendarDate._flags, _EKCalendarDate._timeZone,
+                        _EKCalendarDate._dateGr ]
 ...

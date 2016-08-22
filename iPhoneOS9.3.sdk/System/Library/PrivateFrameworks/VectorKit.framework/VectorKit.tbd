@@ -52,4 +52,23 @@ exports:
                         _VKPolylineGroupOverlayPainter, _VKRasterMapTile,
                         _VKRasterMapTileServerLoadBalancer, _VKSharedResources,
                         _VKTimedAnimation, _VKTransitLineMarker ]
+    objc-ivars:       [ _VKAnimation._completionHandler,
+                        _VKAnimation._priority, _VKAnimation._runsForever,
+                        _VKBuildingFeatureMarker._buildingFeature, _VKCompoundAnimation._groupStepHandler,
+                        _VKDynamicAnimation._lastTimestamp, _VKFeatureMarker._feature,
+                        _VKMapSnapshotCreator._didBecomeFullyDrawn, _VKMapSnapshotCreator._hasFailedTiles,
+                        _VKMapSnapshotCreator._mapType, _VKPolylineOverlayPainter._routeLine,
+                        _VKPolylineOverlayPainter._routeLineWidthScaleRegular, _VKPolylineOverlayPainter._selected,
+                        _VKRasterOverlay._level, _VKRasterOverlay._replaceMapContentInRect,
+                        _VKShieldArtwork._scale, _VKTimedAnimation._lastTimestamp,
+                        _VKTimedAnimation._startTimestamp, _VKTimedAnimation._stepHandler,
+                        _VKTrafficIncidentImageManager._imageCache, _VKTriangulator._mesh,
+                        _VKTriangulator._opaque_segments, _VKTriangulator._scratch,
+                        _VKTriangulator._segments_capacity, _VKAnimation._name,
+                        _VKAnimation._state, _VKDynamicAnimation._dynamicStepHandler,
+                        _VKMapSnapshotCreator._completion, _VKMapSnapshotCreator._mapCanvas,
+                        _VKPolylineOverlayPainter._routeLineHalfWidthRealisticScale, _VKRasterOverlay._delegate,
+                        _VKRoadFeatureMarker._roadFeature, _VKTimedAnimation._resuming,
+                        _VKTimedAnimation._timingFunction, _VKTriangulator._mesh_capacity,
+                        _VKTriangulator._opaque_triangulator ]
 ...

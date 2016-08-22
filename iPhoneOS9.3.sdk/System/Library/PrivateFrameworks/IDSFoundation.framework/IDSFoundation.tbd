@@ -222,4 +222,20 @@ exports:
                         _IDSSocketPairReflectedDeliveryReceipt, _IDSSocketPairSMSDeliveryReceipt,
                         _IDSSocketPairSMSReadReceipt, _IDSSocketPairServiceMapMessage,
                         _IDSSocketPairSessionEndMessage, _IDSWRMExchange ]
+    objc-ivars:       [ _IDSDelegateInfo._queue,
+                        _IDSMessageToDelete._dataProtectionClass, _IDSSockAddrWrapper._sa,
+                        _IDSSocketPairResourceTransferReceiver._done, _IDSSocketPairResourceTransferReceiver._fileDescriptor,
+                        _IDSSocketPairResourceTransferReceiver._messageUUID, _IDSSocketPairResourceTransferReceiver._peerResponseIdentifier,
+                        _IDSSocketPairResourceTransferReceiver._resumeResourceTransfers, _IDSSocketPairResourceTransferReceiver._streamID,
+                        _IDSSocketPairResourceTransferReceiver._totalBytesReceived, _IDSSocketPairResourceTransferSender._compressPayload,
+                        _IDSSocketPairResourceTransferSender._done, _IDSSocketPairResourceTransferSender._fileDescriptor,
+                        _IDSSocketPairResourceTransferSender._messageUUID, _IDSSocketPairResourceTransferSender._nextByte,
+                        _IDSSocketPairResourceTransferSender._resourceAttributes, _IDSSocketPairResourceTransferSender._resumeResourceTransfers,
+                        _IDSSocketPairResourceTransferSender._sequenceNumber, _IDSSocketPairResourceTransferSender._totalBytes,
+                        _IDSSocketPairResourceTransferSender._wantsAppAck, _IDSMessageToDelete._alternateGUID,
+                        _IDSSocketPairResourceTransferReceiver._compressed, _IDSSocketPairResourceTransferReceiver._isResuming,
+                        _IDSSocketPairResourceTransferReceiver._resourcePath, _IDSSocketPairResourceTransferReceiver._totalBytesExpected,
+                        _IDSSocketPairResourceTransferSender._compressed, _IDSSocketPairResourceTransferSender._maxChunkSize,
+                        _IDSSocketPairResourceTransferSender._peerResponseIdentifier, _IDSSocketPairResourceTransferSender._sentFirstMessage,
+                        _IDSSocketPairResourceTransferSender._streamID ]
 ...

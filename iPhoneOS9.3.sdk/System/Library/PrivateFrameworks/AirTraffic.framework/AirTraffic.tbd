@@ -44,4 +44,13 @@ exports:
                         _ATAsset, _ATFileBufferedPipe,
                         _ATMessageLinkProxy, _ATRollableLog,
                         _ATSessionTask, _ATXPCConnection ]
+    objc-ivars:       [ _ATLegacyMessage._dataClass,
+                        _ATLegacyMessage._messageType, _ATLegacyMessage._params,
+                        _ATLegacyMessage._result, _ATLegacyMessage._sig,
+                        _ATRollableLog._baseFilename, _ATRollableLog._fdWatcher,
+                        _ATRollableLog._generationalFilenameFormat, _ATRollableLog._logQueue,
+                        _ATStoreInfo._assetDictionary, _ATStoreInfo._downloadDictionary,
+                        _ATLegacyMessage._messageId, _ATLegacyMessage._payload,
+                        _ATLegacyMessage._timestamp, _ATRollableLog._fh,
+                        _ATRollableLog._logRequestQueue ]
 ...

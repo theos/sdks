@@ -56,4 +56,6 @@ exports:
                         _TTSSpeechVoice, _TTSVoiceAssetManager,
                         _TTSFormatArgument, _TTSSpeechSynthesizer,
                         _TTSVoiceAsset ]
+    objc-ivars:       [ _TTSFormatArgument.attributes,
+                        _TTSFormatArgument.formattedArg, _TTSFormatArgument.formatSpecifier ]
 ...

@@ -23,4 +23,13 @@ exports:
                         _ATMessageLinkProxyListener, _ATNetServiceSocket,
                         _ATPResponse, _ATServiceProxyListener,
                         _ATSignatureProvider, _ATStatusObserverConnection ]
+    objc-ivars:       [ _ATPError._code,
+                        _ATPError._domainCode, _ATPError._has,
+                        _ATPMessage._has, _ATPMessage._messageType,
+                        _ATPMessage._paramsSignature, _ATPMessage._payloadSignature,
+                        _ATPMessage._response, _ATPMessage._streamError,
+                        _ATPRequest._dataClass, _ATPResponse._error,
+                        _ATPError._domain, _ATPMessage._additionalPayload,
+                        _ATPMessage._parameters, _ATPMessage._request,
+                        _ATPRequest._command ]
 ...

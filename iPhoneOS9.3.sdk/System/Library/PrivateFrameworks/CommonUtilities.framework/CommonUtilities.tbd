@@ -30,4 +30,9 @@ exports:
                         _CUTPowerAssertion, _CUTReachability,
                         _CUTWeakReference, _CUTWiFiManager,
                         _CUTNetworkInterfaceListener, _CUTTelephonyManager ]
+    objc-ivars:       [ _CUTNetworkInterfaceListener._IPv4Addresses,
+                        _CUTNetworkInterfaceListener._cellState, _CUTNetworkInterfaceListener._delegateQueue,
+                        _CUTNetworkInterfaceListener._wifiState, _CUTPowerAssertion._identifier,
+                        _CUTPowerAssertion._stack, _CUTNetworkInterfaceListener._IPv6Addresses,
+                        _CUTNetworkInterfaceListener._dynamicStore, _CUTPowerAssertion._assertion ]
 ...

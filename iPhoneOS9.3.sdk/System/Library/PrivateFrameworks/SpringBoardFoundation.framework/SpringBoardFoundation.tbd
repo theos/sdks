@@ -92,4 +92,15 @@ exports:
                         _SBSecurityDefaults, _SBStatusBarDefaults,
                         _SBWallpaperDefaults, __SBFBlockObservable,
                         __SBFQueueScheduler, __SBFVibrantTableViewCell ]
+    objc-ivars:       [ _SBFDeviceLockController._isBlockedForThermalCondition,
+                        _SBFPasscodeLockAssertionTracker._assertions, _SBFWallpaperView._wallpaperSettings,
+                        __SBFAccumulatingObserver._error, __SBFAccumulatingObserver._semaphore,
+                        __SBFBlockObserver._completionBlock, __SBFBlockObserver._resultBlock,
+                        __SBFForkJoinObservable._results, __SBFScheduledObservable._observable,
+                        __SBFThrottledObservable._delayToken, __SBFThrottledObservable._interval,
+                        __SBFThrottledObservable._result, __SBFThrottledObservable._scheduler,
+                        _SBFDeviceLockController._lockState, __SBFAccumulatingObserver._didComplete,
+                        __SBFBlockObservable._block, __SBFForkJoinObservable._observables,
+                        __SBFScheduledObservable._scheduler, __SBFThrottledObservable._observable,
+                        __SBFThrottledObservable._resultCounter ]
 ...

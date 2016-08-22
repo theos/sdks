@@ -27,4 +27,7 @@ exports:
                         __MFLogging, _kMFMailAccountsChangedNotification,
                         _kMFProfileListChangedDomain ]
     objc-classes:     [ _MFDebugTimer ]
+    objc-ivars:       [ _MFDebugTimer._timer_base,
+                        _MFDebugTimer._timer_nsecs, _MFDebugTimer._timer_ticks,
+                        _MFDebugTimer._timer_end, _MFDebugTimer._timer_start ]
 ...

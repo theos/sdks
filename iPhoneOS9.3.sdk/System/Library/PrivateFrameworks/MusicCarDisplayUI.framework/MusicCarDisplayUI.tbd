@@ -61,4 +61,5 @@ exports:
                         _MCDTableViewController, _MCD_OLD_TableViewController,
                         __MCDBrowsableContentTableViewPreloader, __MCDNowPlayingHostView,
                         __MCDStackItem ]
+    objc-ivars:       [ _MCDBrowserIdentifiers._showSubscriptionContent ]
 ...

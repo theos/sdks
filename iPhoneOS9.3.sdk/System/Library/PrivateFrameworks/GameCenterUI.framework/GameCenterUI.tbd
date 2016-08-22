@@ -61,4 +61,8 @@ exports:
                         _GKRemoteViewController, _GKScreenConfigurationController,
                         _GKTextStylePad, _GKThreadsafeImageCache,
                         _GKUIRemoteViewController, _GKiOSAppIconBrushShare ]
+    objc-ivars:       [ _GKLoginAlertView._passwordFieldIndex,
+                        _GKOpenGraphNode._error, _GKOpenGraphNode._numberOfFriendLikes,
+                        _GKOpenGraphNode._url, _GKUITheme._resourceCache,
+                        _GKLoginAlertView._username, _GKOpenGraphNode._numberOfLikes ]
 ...

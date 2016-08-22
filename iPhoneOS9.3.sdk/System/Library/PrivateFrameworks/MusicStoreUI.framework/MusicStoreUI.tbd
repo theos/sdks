@@ -17,4 +17,15 @@ exports:
                         _MSVolumeViewController, _MSPieImageView,
                         _MSStructuredPageViewController, _MSTrackListCellContext,
                         _MSTrackListLinkCellConfiguration, _MSViewControllerFactory ]
+    objc-ivars:       [ _MSPurchasesViewController._activeViewControllerIndex,
+                        _MSPurchasesViewController._segmentedControl, _MSTonePurchaseContinuation._actionSheet,
+                        _MSTonePurchaseContinuation._peoplePicker, _MSTrackListCellContext._shouldHideContentRating,
+                        _MSTrackListCopyrightFooterView._text, _MSTrackListHeaderView._albumLabel,
+                        _MSTrackListHeaderView._artworkImage, _MSTrackListHeaderView._delegate,
+                        _MSTrackListHeaderView._item, _MSTrackListHeaderView._offerButton,
+                        _MSTrackListHeaderView._touchCaptureView, _MSTrackListTableHeaderView._titleSize,
+                        _MSTrackListViewController._headerView, _MSPurchasesViewController._containerView,
+                        _MSTonePurchaseContinuation._alertView, _MSTrackListCellContext._showSubtitle,
+                        _MSTrackListHeaderView._artistLabel, _MSTrackListHeaderView._disclaimerLabel,
+                        _MSTrackListHeaderView._releaseDateLabel, _MSTrackListTableHeaderView._title ]
 ...

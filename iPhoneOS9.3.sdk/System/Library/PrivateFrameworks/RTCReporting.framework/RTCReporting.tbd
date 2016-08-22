@@ -27,4 +27,7 @@ exports:
     objc-classes:     [ _RTCReporting,
                         _RTCReportingLogging, _UpdateAndReportServices,
                         _RTCReportingAggregationObject ]
+    objc-ivars:       [ _RTCReportingAggregationObject._aggregationBlock,
+                        _UpdateAndReportServices._report, _UpdateAndReportServices._update,
+                        _UpdateAndReportServices._block ]
 ...

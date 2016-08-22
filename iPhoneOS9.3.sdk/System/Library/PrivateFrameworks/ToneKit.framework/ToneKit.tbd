@@ -21,4 +21,12 @@ exports:
                         _TKTonePickerTableViewCellLayoutManager, _TKVibrationPickerViewController,
                         _TKVibrationRecorderRippleRingLayer, _TKVibrationRecorderTouchSurfaceRecordedDataWrapper,
                         _TKVibrationRecorderViewController ]
+    objc-ivars:       [ _TKVibrationPickerViewController._alertType,
+                        _TKVibrationPickerViewController._canEnterEditingMode, _TKVibrationPickerViewController._isCallingParentViewController,
+                        _TKVibrationPickerViewController._showsDefault, _TKVibrationPickerViewController._showsNone,
+                        _TKVibrationPickerViewController._showsUserGenerated, _TKVibrationPickerViewController._sortedUserGeneratedVibrationIdentifiers,
+                        _TKVibrationPickerViewController._swipeToDeleteMode, _TKVibrationPickerViewController._vibrationShouldStopTimer,
+                        _TKVibrationPickerViewController._viewHasAppearedAtLeastOnce, _TKVibrationPickerViewController._allowsDeletingDefaultVibration,
+                        _TKVibrationPickerViewController._noneString, _TKVibrationPickerViewController._showsNothingSelected,
+                        _TKVibrationPickerViewController._sortedVibrationIdentifiers, _TKVibrationPickerViewController._vibratorController ]
 ...

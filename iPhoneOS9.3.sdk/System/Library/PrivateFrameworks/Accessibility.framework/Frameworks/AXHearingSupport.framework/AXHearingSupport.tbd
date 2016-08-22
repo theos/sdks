@@ -41,4 +41,12 @@ exports:
                         _AXHARemoteController, _AXHASettings,
                         _AXHAUtilities, _AXHearingAidDetailCell,
                         _AXHearingAidMode, _AXHearingSlaveController ]
+    objc-ivars:       [ _AXHearingAidConnectingCell._loadingIndicator,
+                        _AXHearingAidDetailCell._leftLabel, _AXHearingAidDetailCell._loadingIndicator,
+                        _AXHearingAidDetailCell._rightLabel, _AXHearingAidFakeDevice._leftFakePrograms,
+                        _AXHearingProgramCell._checkedView, _AXHearingSliderValueCell._leftView,
+                        _AXHearingSliderValueCell._slider, _AXHearingSliderValueCell._valueLabel,
+                        _AXHearingSliderValueCell._valueWidth, _AXHearingAidDetailCell._device,
+                        _AXHearingAidDetailCell._numberFormatter, _AXHearingAidFakeDevice._rightFakePrograms,
+                        _AXHearingSliderValueCell._numberFormatter, _AXHearingSliderValueCell._sliderMargin ]
 ...

@@ -9,4 +9,5 @@ exports:
     symbols:          [ _coreDAVValidationErrorFromRawError ]
     objc-classes:     [ _DACoreDAVLogger,
                         _DACoreDAVTaskManager ]
+    objc-ivars:       [ _DACoreDAVTaskManager._applicationsShowingActivity ]
 ...

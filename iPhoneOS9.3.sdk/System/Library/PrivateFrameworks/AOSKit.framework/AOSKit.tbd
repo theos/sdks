@@ -47,4 +47,11 @@ exports:
                         _kAOSTokenAuth ]
     objc-classes:     [ _AOSContext,
                         _AOSTransaction, _AOSThreadManager ]
+    objc-ivars:       [ _AOSContext._account,
+                        _AOSContext._callbackThread, _AOSContext._transaction,
+                        _AOSTransaction.callbackFunction, _AOSTransaction.context,
+                        _AOSTransaction.contextRetain, _AOSTransaction.didSucceed,
+                        _AOSTransaction.result, _AOSTransaction.waitLock,
+                        _AOSContext._callback, _AOSTransaction.callbackBlock,
+                        _AOSTransaction.contextRelease, _AOSTransaction.error ]
 ...

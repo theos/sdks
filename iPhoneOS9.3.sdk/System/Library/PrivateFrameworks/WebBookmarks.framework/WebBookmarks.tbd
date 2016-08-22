@@ -51,4 +51,19 @@ exports:
                         _WebBookmarksXPCConnection, _WebBookmarksXPCListener,
                         _SafariFetcherServerProxy, _WebBookmark,
                         _WebBookmarksSettingsGateway ]
+    objc-ivars:       [ _WebBookmark._UUID,
+                        _WebBookmark._deletable, _WebBookmark._extraAttributes,
+                        _WebBookmark._folder, _WebBookmark._iconData,
+                        _WebBookmark._inserted, _WebBookmark._locallyAdded,
+                        _WebBookmark._orderIndex, _WebBookmark._serverID,
+                        _WebBookmark._syncData, _WebBookmark._syncable,
+                        _WebBookmark._url, _WebBookmarkCollection._db,
+                        _WebBookmarkCollection._favoritesFolderIdentifier, _WebBookmarkCollection._merging,
+                        _WebBookmarkCollection._safariFetcherServerProxy, _WebBookmarkList._bookmarkCount,
+                        _WebBookmarkList._collection, _WebBookmarkList._skipOffset,
+                        _WebBookmark._archiveStatus, _WebBookmark._fetchedIconData,
+                        _WebBookmark._id, _WebBookmark._needsSyncUpdate,
+                        _WebBookmark._specialID, _WebBookmark._title,
+                        _WebBookmarkCollection._dirty, _WebBookmarkCollection._rootBookmark,
+                        _WebBookmarkList._bookmarks, _WebBookmarkList._query ]
 ...

@@ -15,4 +15,7 @@ exports:
                         __DMLog ]
     objc-classes:     [ _DMConnection,
                         _DataClassMigrator, _DMXPCConnection ]
+    objc-ivars:       [ _DMXPCConnection._connection,
+                        _DMXPCConnection._replyQueue, _DataClassMigrator._context,
+                        _DMXPCConnection._queue ]
 ...

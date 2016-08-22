@@ -10,4 +10,11 @@ exports:
                         _CardDAVFacebookDaemonAccount, _CardDAVVCardItem,
                         _CardDAViCloudGetAccountPropertiesTaskGroup, _CardDAVDaemonAccount,
                         _CardDAViCloudDaemonAccount ]
+    objc-ivars:       [ _CardDAVAgent._bulkUploadHREFBlacklist,
+                        _CardDAVAgent._containerPushKeys, _CardDAVAgent._folderItemSyncRequestLock,
+                        _CardDAVAgent._folderURLToSyncInfo, _CardDAVAgent._matchMode,
+                        _CardDAVAgent._outstandingFolderRequests, _CardDAVAgent._testRecord,
+                        _CardDAVSyncInfo._uuidToPersonCache, _CardDAVAgent._bulkUploadUUIDBlacklist,
+                        _CardDAVAgent._folderURLToHeldAsideGroups, _CardDAVAgent._matchedRecord,
+                        _CardDAVSyncInfo._startedWithNoContacts ]
 ...

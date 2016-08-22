@@ -423,4 +423,7 @@ exports:
                         _PKSecureElementConsistencyData, _PKShippingMethodValidator,
                         _PKValueAddedMerchant, _PKVerificationRequestRecord,
                         _PKXPCService ]
+    objc-ivars:       [ _PKAssertionCoordinator._acquiredAssertions,
+                        _PKKeychainItemWrapper.genericPasswordQuery, _PKPassField._value,
+                        _PKAssertionCoordinator._remoteService, _PKKeychainItemWrapper.keychainItemData ]
 ...

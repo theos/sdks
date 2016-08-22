@@ -46,4 +46,6 @@ exports:
                         _MCAppleAccountUtilities, _MCManagedAppManager,
                         _MCSSDownloadManifestRequestDelegate, _MCSSRequestDelegate,
                         _MCSoftwareUpdateInfo, _MCSoftwareUpdateStatus ]
+    objc-ivars:       [ _MCSSAuthenticationRequestDelegate._authenticatedAccount,
+                        _MCSSPersonalizeOffersDelegate._response, _MCSSDownloadManifestRequestDelegate._response ]
 ...

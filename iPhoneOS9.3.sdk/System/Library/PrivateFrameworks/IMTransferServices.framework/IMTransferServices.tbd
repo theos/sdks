@@ -9,4 +9,5 @@ exports:
     symbols:          [ _IMTransferServicesErrorDomain ]
     objc-classes:     [ _IMTransferServicesCompressionController,
                         _IMTransferServicesController ]
+    objc-ivars:       [ _IMTransferServicesCompressionController._blockMap ]
 ...

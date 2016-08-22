@@ -85,4 +85,17 @@ exports:
                         _SimpleRuleEvaluator, _State,
                         _SymptomSet, _SystemProperties,
                         _TrackerPolicy, _WiFiShim ]
+    objc-ivars:       [ _AnalyticsEngineCore.workspace,
+                        _InterfaceTypeTracker.trackerCache, _SimpleSymptomEvaluator.symptomKey,
+                        _SimpleSymptomEvaluator.symptomName, _SimpleSymptomEvaluator.symptomSaveAdditionalId,
+                        _SimpleSymptomEvaluator.symptomUTF8Name, _TrackerPolicy._classMap,
+                        _TrackerPolicy._mgmtFlagsMap, _TrackerPolicy._numMgmtFlagsMaps,
+                        _cellFlowObserver._classFlags, _cellFlowObserver._everReportedClassFlags,
+                        _cellFlowObserver._flowSnapshotActive, _cellFlowObserver._flowSnapshotFlags,
+                        _cellFlowObserver._foregroundAppWatchlist, _cellFlowObserver._lastReportTimestamp,
+                        _cellFlowObserver._seqno, _InterfaceTypeTracker._defaultPolicy,
+                        _SimpleSymptomEvaluator.symptomMaxRetainTime, _SimpleSymptomEvaluator.symptomSaveFlags,
+                        _TrackerPolicy._defaultDisposition, _cellFlowObserver._classCounter,
+                        _cellFlowObserver._everSetClassFlags, _cellFlowObserver._foreground,
+                        _cellFlowObserver._lastReportedClassFlags ]
 ...

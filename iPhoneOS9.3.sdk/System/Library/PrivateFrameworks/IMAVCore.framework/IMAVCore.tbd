@@ -42,4 +42,5 @@ exports:
                         _IMAVMicrophoneController, _IMAVTelephonyManager,
                         _IMAVCamera, _IMAVController,
                         _IMAVMicrophone ]
+    objc-ivars:       [ _IMAVInterface._delegate ]
 ...

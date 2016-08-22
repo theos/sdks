@@ -83,4 +83,6 @@ exports:
                         _GKSupplementaryViewMetrics, _GKTextBubbleContentView,
                         _GKTurnBasedMatchDetailHeaderView, _GKViewController,
                         __GKBubbleFlowPseudoModalViewController, __GKCustomDrawnSpeechBalloonBackgroundView ]
+    objc-ivars:       [ _GKBubbleFlowRootViewController._animator,
+                        __GKBubbleFlowPathTransitionInfo._bubbleEndPositionsByType ]
 ...

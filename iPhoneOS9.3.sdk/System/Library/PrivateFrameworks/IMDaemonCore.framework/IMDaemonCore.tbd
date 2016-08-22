@@ -25,4 +25,12 @@ exports:
                         _IMDAccountController, _IMDChatRegistry,
                         _IMDIDSAccount, _IMDMessageStore,
                         _IMDServiceSession ]
+    objc-ivars:       [ _IMDChatStore._lastModificationStamp,
+                        _IMDMessageStore._cachedLastFailedMessageID, _IMDMessageStore._modificationStamp,
+                        _IMDMessageStore._suppressedUpdates, _IMDServiceSession._buddies,
+                        _IMDServiceSession._proxyAccount, _IMDServiceSession._proxyPassword,
+                        _IMDServiceSession._proxyType, _IMDServiceSession._serverPort,
+                        _IMDServiceSession._useSSL, _IMDLocationSharingController._session,
+                        _IMDMessageStore._pendingDBUpdatePost, _IMDServiceSession._password,
+                        _IMDServiceSession._proxyPort, _IMDServiceSession._service ]
 ...

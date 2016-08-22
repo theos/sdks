@@ -9,4 +9,16 @@ exports:
     symbols:          [ _payload_length_for_command ]
     objc-classes:     [ _EAFirmwareUpdater,
                         _iAUPServer, _FirmwareBundle ]
+    objc-ivars:       [ _EAFirmwareUpdater._accessory,
+                        _EAFirmwareUpdater._applyCompletion, _EAFirmwareUpdater._eaNotificationDispatchQueue,
+                        _EAFirmwareUpdater._firmwareBundleURL, _EAFirmwareUpdater._firmwareVersionMajor,
+                        _EAFirmwareUpdater._firmwareVersionRelease, _EAFirmwareUpdater._isExpectingReconnect,
+                        _EAFirmwareUpdater._productIDCode, _EAFirmwareUpdater._protocolString,
+                        _EAFirmwareUpdater._session, _iAUPServer._delegate,
+                        _iAUPServer._firmwareImageBaseTransferAddress, _iAUPServer._telegramChecksum,
+                        _iAUPServer._telegramLength, _iAUPServer.objectBlockTransferSizes,
+                        _EAFirmwareUpdater._appProtocol, _EAFirmwareUpdater._firmwareBundleFilename,
+                        _EAFirmwareUpdater._firmwareVersionMinor, _EAFirmwareUpdater._outputData,
+                        _EAFirmwareUpdater._reconnectTimer, _iAUPServer._escapeInProgress,
+                        _iAUPServer._telegramDataIn ]
 ...

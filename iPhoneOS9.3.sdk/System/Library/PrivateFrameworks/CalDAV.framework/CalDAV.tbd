@@ -103,4 +103,9 @@ exports:
                         _CalDAVPutCalendarItemTask, _CalDAVScheduleCalendarTranspItem,
                         _CalDAVServerVersion, _CalDAVUpdateFreeBusySetTaskGroup,
                         _CalendarServerVersion, _YahooCalDAVServerVersion ]
+    objc-ivars:       [ _CalDAVCalendarServerChangedPropertyItem._changedParameters,
+                        _CalDAVCalendarServerChangedPropertyItem._typeAttribute, _CalDAVMultiMoveWithFallbackTaskGroup._isAutoScheduleSupported,
+                        _CalDAVScheduleResponseDetailsItem._calendarData, _CalDAVScheduleResponseDetailsItem._requestStatus,
+                        _CalDAVScheduleResponseDetailsItem._topLevelErrorItem, _CalDAVCalendarServerChangedPropertyItem._nameAttribute,
+                        _CalDAVMultiMoveWithFallbackTaskGroup._sourceEntityScheduleTags, _CalDAVScheduleResponseDetailsItem._responseDescription ]
 ...

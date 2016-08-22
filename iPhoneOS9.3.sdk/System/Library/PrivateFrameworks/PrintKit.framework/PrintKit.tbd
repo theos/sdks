@@ -202,4 +202,5 @@ exports:
                         _PKPrintSettings, _PKPrinterBrowser,
                         _PKSupply, _PKDefaults,
                         _PKPaperList, _PKPrinter ]
+    objc-ivars:       [ _PKPrinterBrowser.delegate ]
 ...

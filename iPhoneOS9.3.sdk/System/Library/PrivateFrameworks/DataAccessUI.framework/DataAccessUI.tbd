@@ -11,4 +11,6 @@ exports:
     objc-classes:     [ _DADiagnosticsNotesController,
                         _DADiagnosticsPSController, _DASettingsDataclassConfigurationViewController,
                         _DADiagnosticsNotesPane, _DASettingsAccountsUIController ]
+    objc-ivars:       [ _DADiagnosticsNotesPane._notesView,
+                        _DASettingsAccountsUIController._account ]
 ...

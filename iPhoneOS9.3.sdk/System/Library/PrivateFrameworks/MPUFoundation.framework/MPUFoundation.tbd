@@ -101,4 +101,11 @@ exports:
                         _MPUTextDrawingContext, _MPUTransportControl,
                         _MPUVibrantContentEffectView, __MPUAVItemSourceContext,
                         __MPUMarqueeContentView, __MPUProtoBufUserActivityContext ]
+    objc-ivars:       [ _MPUContentItemIdentifierCollection._identifierTypeToIdentifier,
+                        _MPUFontDescriptor._leadingAdjustment, _MPUFontDescriptor._usesItalic,
+                        _MPUFontDescriptor._weight, _MPUUserActivityContainerItem._containerItemType,
+                        _MPUUserActivityContainerItem._visualReferenceMediaEntity, _MPUUserActivityContext._originatorType,
+                        _MPUUserActivityContext._originatorVersion, _MPUContentItemIdentifierCollection._itemType,
+                        _MPUFontDescriptor._wantsMonospaceNumbers, _MPUUserActivityContainerItem._selectedMediaEntity,
+                        _MPUUserActivityContext._containerItems ]
 ...

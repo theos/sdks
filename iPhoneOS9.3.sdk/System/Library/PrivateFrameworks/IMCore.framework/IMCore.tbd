@@ -149,5 +149,10 @@ exports:
                         _IMMessage._flags, _IMMessage._isInvitationMessage,
                         _IMMessage._messageSubject, _IMMessage._sender,
                         _IMMessage._text, _IMMessage._timeDelivered,
-                        _IMMessage._timeRead, _IMServiceAgent._currentAVChatInfo ]
+                        _IMMessage._timeRead, _IMServiceAgent._currentAVChatInfo,
+                        _IMAccount._asleep, _IMAttachment._guid,
+                        _IMFMFSession._establishingAccountID, _IMLocationManager._error,
+                        _IMLocationManager._locationManager, _IMMessage._fileTransferGUIDs,
+                        _IMMessage._messageID, _IMMessage._subject,
+                        _IMMessage._timePlayed ]
 ...

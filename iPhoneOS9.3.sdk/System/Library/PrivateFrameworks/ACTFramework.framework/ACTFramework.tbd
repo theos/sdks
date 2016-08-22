@@ -167,4 +167,13 @@ exports:
     objc-classes:     [ _ACTGLBase,
                         _ACTVideoMotionDetector, _ACTVideoUtilities,
                         _ACTSlowmoResults, _ACTVideoProcessor ]
+    objc-ivars:       [ _ACTGLBase.mFramebuffer,
+                        _ACTGLBase.mGLContext, _ACTSlowmoResults._results,
+                        _ACTVideoMotionDetector._curProjIndex, _ACTVideoMotionDetector._lastFrameTimestamp,
+                        _ACTVideoMotionDetector._processedFrameCount, _ACTVideoMotionDetector._result,
+                        _ACTVideoMotionDetector._rowGradient, _ACTVideoMotionDetector._skipSecondPass,
+                        _ACTVideoMotionDetector._url, _ACTVideoMotionDetector._verbose,
+                        _ACTGLBase.mGLBackupContext, _ACTVideoMotionDetector._colGradient,
+                        _ACTVideoMotionDetector._outputRawMarkers, _ACTVideoMotionDetector._results,
+                        _ACTVideoMotionDetector._startTimestamp ]
 ...

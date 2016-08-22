@@ -45,4 +45,15 @@ exports:
                         _PKPhysicsFieldElectric, _PKPhysicsFieldRadialGravity,
                         _PKPhysicsFieldVortex, _PKPhysicsJointPrismatic,
                         _PKPhysicsWorld ]
+    objc-ivars:       [ _PKPhysicsBody._edgeRadius,
+                        _PKPhysicsBody._p0, _PKPhysicsBody._pathPtr,
+                        _PKPhysicsBody._radius, _PKPhysicsBody._size,
+                        _PKPhysicsField._position, _PKPhysicsField._rotation,
+                        _PKPhysicsFieldCustomBlock._batchBlock, _PKPhysicsWorld._accumulatedDt,
+                        _PKPhysicsWorld._contactListener, _PKPhysicsWorld._gravity,
+                        _PKPhysicsWorld._postStepBlocks, _PKPhysicsWorld._world,
+                        _PKPhysicsWorld.drawPacket, _PKPhysicsBody._mask,
+                        _PKPhysicsBody._quadTree, _PKPhysicsField._field,
+                        _PKPhysicsField._scale, _PKPhysicsWorld._bodies,
+                        _PKPhysicsWorld._joints, _PKPhysicsWorld._speed ]
 ...

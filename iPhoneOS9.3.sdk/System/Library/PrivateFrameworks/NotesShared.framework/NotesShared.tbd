@@ -1000,4 +1000,8 @@ exports:
                         _ICUsageAnalyticsReporter, _TTMergeableAttributedString,
                         _TTMergeableStringUndoEditCommand, _TTParagraphStyle,
                         _TTVectorMultiTimestamp, _TTVectorTimestampElement ]
+    objc-ivars:       [ _ICDrawingCommand._cachedBounds,
+                        _ICLRUCache.mMax, _ICRWLock._rwLock,
+                        _TTMergeableStringSelection._selectionRanges, _ICLRUCache.mData,
+                        _ICLRUCache.mOrderedKeys ]
 ...

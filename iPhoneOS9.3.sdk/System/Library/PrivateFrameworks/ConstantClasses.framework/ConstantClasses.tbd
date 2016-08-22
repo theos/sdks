@@ -19,4 +19,8 @@ exports:
                         __NSConstantNumber, __NSConstantNumberFloat,
                         __NSConstantNumberInt, __NSConstantArrayEnumerator,
                         __NSConstantDictionaryEnumerator, __NSConstantNumberBool ]
+    objc-ivars:       [ __NSConstantArrayEnumerator.capacity,
+                        __NSConstantArrayEnumerator.objects, __NSConstantDictionaryEnumerator.currentKey,
+                        __NSConstantDictionaryEnumerator.keyIndex, __NSConstantArrayEnumerator.index,
+                        __NSConstantDictionaryEnumerator.capacity ]
 ...

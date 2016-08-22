@@ -12,4 +12,9 @@ exports:
                         _FKGetBuildGitHash, _FKRecognizeGlyph ]
     objc-classes:     [ _FKTextDetector,
                         _FKTextFeature ]
+    objc-ivars:       [ _FKTextDetector._sessions,
+                        _FKTextDetector._timeConcomps, _FKTextDetector._timeRecognizer,
+                        _FKTextFeature._backingObject, _FKTextFeature._session,
+                        _FKTextDetector._timeBinarizer, _FKTextDetector._timeSequences,
+                        _FKTextFeature._scale ]
 ...

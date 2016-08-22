@@ -21,4 +21,20 @@ exports:
                         _BookmarkDAVRecursiveContainerSyncTaskGroup, _BookmarkDAVSyncDriver,
                         _BookmarkDAVBulkPostTask, _BookmarkDAVMultiGetTask,
                         _BookmarkDAVSyncData ]
+    objc-ivars:       [ _BookmarkDAVBookmark._appleAttributeString,
+                        _BookmarkDAVBookmark._bookmarkURL, _BookmarkDAVBookmark._ignoreLevel,
+                        _BookmarkDAVBookmark._parseState, _BookmarkDAVBookmark._syncKey,
+                        _BookmarkDAVBulkPostTask._checkCTagURL, _BookmarkDAVBulkPostTask._nextRootCTag,
+                        _BookmarkDAVBulkPostTask._parsedBookmarks, _BookmarkDAVBulkPostTask._parsedFolders,
+                        _BookmarkDAVFolder._appleAttributes, _BookmarkDAVFolder._bulkParsedPTag,
+                        _BookmarkDAVFolder._childrenOrder, _BookmarkDAVSyncDriver._changeToken,
+                        _BookmarkDAVSyncDriver._forceSafariOrdering, _BookmarkDAVSyncDriver._getAccountPropertiesHandler,
+                        _BookmarkDAVSyncDriver._homeURL, _BookmarkDAVSyncDriver._outstandingTaskGroups,
+                        _BookmarkDAVSyncDriver._pushTransport, _BookmarkDAVSyncDriver._saveDBBlock,
+                        _BookmarkDAVSyncDriver._taskManager, _BookmarkDAVSyncDriver._topLevelSyncData,
+                        _BookmarkDAVBookmark._appleAttributes, _BookmarkDAVBookmark._name,
+                        _BookmarkDAVBulkPostTask._checkCTag, _BookmarkDAVBulkPostTask._nextRootSyncToken,
+                        _BookmarkDAVBulkPostTask._parsedFoldersByURL, _BookmarkDAVFolder._bulkUploadErrorItem,
+                        _BookmarkDAVSyncDriver._closeDBBlock, _BookmarkDAVSyncDriver._getDBBlock,
+                        _BookmarkDAVSyncDriver._pushKey, _BookmarkDAVSyncDriver._syncHandler ]
 ...

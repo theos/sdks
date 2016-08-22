@@ -12,4 +12,16 @@ exports:
                         ___AXVisualAlertSBBulletinSoundController_super, ___AXVisualAlertSBLockScreenNotificationListController_super,
                         _AXCameraTorchManagerBackgroundAdapter, _AXTelephonyNotificationHandler,
                         _AXVisualAlertSBLockScreenNotificationListController, ___AXVisualAlertSBCCFlashlightSetting_super ]
+    objc-ivars:       [ _AXAutoForwardingLocalNotificationHandler._possibleHandlers,
+                        _AXCameraTorchManagerBackgroundAdapter._q, _AXNotificationHandler._dispatcher,
+                        _AXNotificationHandler._observerIdentifier, _AXNotificationHandler._valid,
+                        _AXVisualAlertManager._activePatternCursor, _AXVisualAlertManager._bulletins,
+                        _AXVisualAlertManager._deviceLockStateChangedNotificationHandler, _AXVisualAlertManager._isQuietModeEnabled,
+                        _AXVisualAlertManager._notificationHandlers, _AXVisualAlertManager._patterns,
+                        _AXVisualAlertManager._skipAutomaticStopOnUserInteraction, _AXVisualAlertManager._torchDeviceOn,
+                        _AXVisualAlertManager._torchForceShutdownTimer, _AXVisualAlertManager._videoConferenceCallRinging,
+                        _AXAutoForwardingLocalNotificationHandler._possibleHandlersCount, _AXNotificationHandler._notificationName,
+                        _AXVisualAlertManager._activePattern, _AXVisualAlertManager._captureSessionRunning,
+                        _AXVisualAlertManager._isTorchEnabledInControlCenter, _AXVisualAlertManager._shouldRepeatPattern,
+                        _AXVisualAlertManager._torchDeviceOpen, _AXVisualAlertManager._torchInControlCenterWasEnabledNotificationHandler ]
 ...

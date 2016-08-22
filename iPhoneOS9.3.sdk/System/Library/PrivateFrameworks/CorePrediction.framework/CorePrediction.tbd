@@ -324,4 +324,7 @@ exports:
                         _CPMLSchema, _CPMLTrainer,
                         _CPMLEvalutionResult, _CPMLNaiveBayesStorageManager,
                         _CPMLStorageManager ]
+    objc-ivars:       [ _CPMLModel._mData,
+                        _CPMLModel._totalBytesIntSection, _CPMLModel._totalBytesRealSection,
+                        _CPMLModel._realBase ]
 ...

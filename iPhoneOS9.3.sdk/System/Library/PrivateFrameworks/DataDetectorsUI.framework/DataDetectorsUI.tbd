@@ -18,4 +18,13 @@ exports:
                         _DDAddToContactsViewController, _DDCreateEventAction,
                         _DDPreviewAction, _DDRemoteActionViewControllerProvider,
                         _DDAddToAddressBookAction, _DDDetectionController ]
+    objc-ivars:       [ _DDAction._associatedResults,
+                        _DDAction._cachedCoalescedResult, _DDAction._companion,
+                        _DDAction._delegate, _DDAction._result,
+                        _DDAddToContactsViewController._action, _DDAddToContactsViewController._proxy,
+                        _DDDetectionController._containerToContextsTable, _DDDetectionController._containerToResultsTable,
+                        _DDDetectionController._fullScannerQueue, _DDDetectionController._urlScannerQueue,
+                        _DDAction._cachedAssociatedResults, _DDAction._context,
+                        _DDAction._url, _DDDetectionController._actionController,
+                        _DDDetectionController._delegate, _DDDetectionController._protectQueue ]
 ...

@@ -142,4 +142,5 @@ exports:
                         _AFVoiceInfo, _AFZlibDataDecompressor,
                         _STContactAddress, _STSettingChange,
                         _STSiriModelObject, __AFSpeakableUtterancePassThroughProvider ]
+    objc-ivars:       [ __SAMetricsSendCompletionsProxy._blocks ]
 ...

@@ -79,4 +79,6 @@ exports:
                         _kDDOtherLabel, _kDDWorkFAXLabel ]
     objc-classes:     [ _DDScannerResult,
                         _DDURLifier, _DDURLMatch ]
+    objc-ivars:       [ _DDURLMatch._range,
+                        _DDURLMatch._url ]
 ...

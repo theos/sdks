@@ -27,4 +27,6 @@ exports:
                         _CADEntityWrapper, _CADNotifiableEventsPredicate,
                         _CADServer, _CADUpcomingEventsPredicate,
                         _EKMasterEventsPredicate, _EKReminderPredicate ]
+    objc-ivars:       [ _EKPredicate._shouldLoadDefaultProperties,
+                        _EKPredicate._uuid, _EKPredicate._timeZone ]
 ...

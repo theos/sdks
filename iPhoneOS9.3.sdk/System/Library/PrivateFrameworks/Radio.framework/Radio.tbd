@@ -60,4 +60,15 @@ exports:
                         _RadioStationMatchMetadata, _RadioStationTreeNode,
                         _RadioTermsCheckRequest, _RadioTrackHistorySectionInfo,
                         _RadioUpdateStationRequest ]
+    objc-ivars:       [ _RadioHistoryCategory._categoryDescription,
+                        _RadioHistoryCategory._name, _RadioHistoryCategory._stationID,
+                        _RadioHistoryItem._datePlayed, _RadioHistoryItem._track,
+                        _RadioPlayEvent._datePlayed, _RadioPlayEvent._endTimeInTrack,
+                        _RadioPlayEvent._startTimeInTrack, _RadioPlayEvent._timedMetadata,
+                        _RadioPlayEvent._type, _RadioRecentStationsGroup._localizedTitle,
+                        _RadioSearchResultCategory._categoryType, _RadioSearchResultCategory._name,
+                        _RadioSearchResultCategory._stationResults, _RadioHistoryCategory._items,
+                        _RadioHistoryCategory._type, _RadioHistoryItem._type,
+                        _RadioPlayEvent._externalIdentifier, _RadioPlayEvent._trackInfo,
+                        _RadioRecentStationsGroup._stations, _RadioSearchResultCategory._responseDictionary ]
 ...

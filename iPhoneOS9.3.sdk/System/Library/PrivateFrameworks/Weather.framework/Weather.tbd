@@ -121,4 +121,13 @@ exports:
                         _WeatherCloudPersistence, _WeatherImageLoader,
                         _WeatherLogs, _WeatherUserDefaults,
                         _WeatherWindSpeedFormatter ]
+    objc-ivars:       [ _City._autoUpdate,
+                        _ProgressController._loadingCount, _TWCLocationUpdater._geocoder,
+                        _TWCUpdater._pendingCities, _WeatherHTTPRequest._connection,
+                        _WeatherHTTPRequest._request, _WeatherPreferences._isCelsius,
+                        _WeatherPreferences._persistence, _WeatherPreferences._serviceHost,
+                        _WeatherView._showWind, _WeatherView._windView,
+                        _ProgressController._hideSpinnerTimer, _TWCLocationUpdater._localWeatherHandler,
+                        _WeatherHTTPRequest._rawData, _WeatherPreferences._lastUbiquitousWrittenDefaults,
+                        _WeatherView._city, _WeatherView._showingDay ]
 ...

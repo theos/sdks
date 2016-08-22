@@ -86,4 +86,21 @@ exports:
                         _CNFRegSigninLearnMoreView, _CNFRegStripedAppearanceController,
                         _CNFRegViewAccountController, _FTRegAccountMonitor,
                         _FTRegAppleIDSetupManager ]
+    objc-ivars:       [ _CKSettingsMessagesController._profileToken,
+                        _CNFRegAliasTableCell._hidesDisclosureButton, _CNFRegDisabledController._spinner,
+                        _CNFRegFirstRunController._account, _CNFRegFirstRunController._completionControllerClass,
+                        _CNFRegFirstRunController._customRightButton, _CNFRegFirstRunController._previousHidesBackButton,
+                        _CNFRegFirstRunController._previousRightButton, _CNFRegFirstRunController._timedOut,
+                        _CNFRegServerWebViewController._regController, _CNFRegShadowView._cachedPath,
+                        _CNFRegSignInController._actionGroupSpecifier, _CNFRegSignInController._hideLearnMoreButton,
+                        _CNFRegSignInController._passwordSpecifier, _CNFRegSignInController._pendingUsername,
+                        _CNFRegSignInController._signinFailureCount, _CNFRegSignInController._usernameSpecifier,
+                        _CNFRegTableLabel._URLText, _CNFRegTableLabel._isTopmostHeader,
+                        _CNFRegTableLabel._specifier, _FTRegAccountServiceDelegate._completionHandler,
+                        _FTRegAccountServiceDelegate._responseDictionary, _CKSettingsMessagesController._showingChildViewController,
+                        _CNFRegDisabledController._turnOnButton, _CNFRegFirstRunController._customLeftButton,
+                        _CNFRegFirstRunController._previousLeftButton, _CNFRegFirstRunController._timeoutTimer,
+                        _CNFRegShadowView._shadowImage, _CNFRegSignInController._learnMoreButton,
+                        _CNFRegSignInController._signInButtonSpecifier, _CNFRegTableLabel._URLTarget,
+                        _CNFRegTableLabel._label, _FTRegAccountServiceDelegate._regController ]
 ...

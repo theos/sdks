@@ -38,4 +38,9 @@ exports:
     objc-classes:     [ _ASRuntimeFixMailAccount,
                         _BasicAccount, _DeviceLocalAccount,
                         _AccountsManager ]
+    objc-ivars:       [ _ASRuntimeFixMailAccount._shouldNotifyMobileMail,
+                        _AccountsManager._childAccountIDToParentAccountID, _AccountsManager._orderedTopLevelAccounts,
+                        _BasicAccount._fullAccount, _BasicAccount._parentAccount,
+                        _BasicAccount._syncAccount, _ASRuntimeFixMailAccount._supportedMailClasses,
+                        _AccountsManager._topLevelAccountsByID, _BasicAccount._properties ]
 ...

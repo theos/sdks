@@ -611,4 +611,6 @@ exports:
                         _HAPRelayAccessory, _HAPRelayResponseMessage,
                         _HAPService, _HAPTunneledAccessoryBTLE,
                         _WLOTcpServer, __HAPAccessoryServerBTLE200 ]
+    objc-ivars:       [ _HAPAccessoryServer._identifier,
+                        _HAPTimer._timeInterval, _HAPAccessoryServer._name ]
 ...

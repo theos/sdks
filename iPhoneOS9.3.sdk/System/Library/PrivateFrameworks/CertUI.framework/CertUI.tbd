@@ -18,4 +18,9 @@ exports:
                         _kCertUITrustResponseKey ]
     objc-classes:     [ _CertUIConnectionDelegate,
                         _CertUITrustManager, _CertUIPrompt ]
+    objc-ivars:       [ _CertUIConnectionDelegate._connectionDisplayName,
+                        _CertUIConnectionDelegate._forwardingDelegate, _CertUIPrompt._connectionDisplayName,
+                        _CertUIPrompt._responseBlock, _CertUIPrompt._trust,
+                        _CertUITrustManager._access, _CertUIConnectionDelegate._delegateRespondsTo,
+                        _CertUIPrompt._host, _CertUIPrompt._service ]
 ...

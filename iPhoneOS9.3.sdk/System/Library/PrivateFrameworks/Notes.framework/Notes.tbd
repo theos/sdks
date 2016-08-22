@@ -79,4 +79,6 @@ exports:
                         _ICSearchQueryOperation, _ICSpotlightUtilities,
                         _MNFNoteProperty, _NoteChangeObject,
                         _NoteResurrectionMergePolicy, _NotesLocalization ]
+    objc-ivars:       [ _ICSearchIndexTransactionInfo._transactionInfoDictionary,
+                        _NoteAccountObject._constraints, _ICSearchIndexableIdentifiers._identifiers ]
 ...

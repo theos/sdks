@@ -10,4 +10,7 @@ exports:
                         _DAIMAPNotesFolder, _DAIMAPNotesUtils,
                         _IMAPNotesOutgoingMessage, _DAIMAPNotesDaemonAccount,
                         _IMAPNotesLibrary ]
+    objc-ivars:       [ _DAIMAPNotesFolderSyncRequest._noteContext,
+                        _IMAPNotesLibrary._noteContext, _IMAPNotesLibrary._notesAccount,
+                        _IMAPNotesLibrary._account ]
 ...

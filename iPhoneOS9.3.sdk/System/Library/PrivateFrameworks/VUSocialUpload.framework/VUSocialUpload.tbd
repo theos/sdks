@@ -18,4 +18,9 @@ exports:
                         _VimeoPost, _VimeoUploadSession,
                         _FlickrComposeViewController, _FlickrPhotoSetResponse,
                         _FlickrUploadSession, _VimeoDetailsController ]
+    objc-ivars:       [ _FlickrResponse._partialPhotoIDString,
+                        _VimeoPost._canUploadOverCellular, _VimeoPost._countOfBytesStored,
+                        _VimeoPost._ticketID, _VimeoPost._uploadState,
+                        _VimeoPost._videoID, _VimeoPost._baseURL,
+                        _VimeoPost._retryCount, _VimeoPost._uploadEndpoint ]
 ...

@@ -27,4 +27,10 @@ exports:
                         _RURadioAVItem, _RURadioAdObserver,
                         _RURadioDataSource, _RURadioPlaybackCoordinator,
                         _RURadioStreamPing, _RUStoreProductViewController ]
+    objc-ivars:       [ _RURadioStationPlaybackMetadata._artworkCollection,
+                        _RURadioStationPlaybackMetadata._hasSetStationHash, _RURadioStationPlaybackMetadata._hasSetStationName,
+                        _RURadioStationPlaybackMetadata._hasValidRadioStation, _RURadioStationPlaybackMetadata._stationHash,
+                        _RURadioStationPlaybackMetadata._stationName, _RURadioStationPlaybackMetadata._stationStringID,
+                        _RURadioStationPlaybackMetadata._hasSetArtworkCollection, _RURadioStationPlaybackMetadata._hasSetStationStringID,
+                        _RURadioStationPlaybackMetadata._stationID ]
 ...

@@ -26,4 +26,6 @@ exports:
                         _MTLDebugRenderPipelineState, _MTLToolsBuffer,
                         _MTLToolsComputeCommandEncoder, _MTLToolsFragmentRenderCommandEncoder,
                         _MTLToolsParallelRenderCommandEncoder, _MTLToolsSamplerState ]
+    objc-ivars:       [ _MTLDebugCommandBuffer._currentEncoder,
+                        _MTLToolsResource._options, _MTLToolsObject._strongParent ]
 ...

@@ -27,4 +27,6 @@ exports:
                         _FTMessageDelivery_HTTP, _FTRegion,
                         _IDSAcceptMessage, _IDSRejectMessage,
                         _IDSRelayInitiateMessage ]
+    objc-ivars:       [ _FTMessageDelivery._retries,
+                        _FTPasswordManager._runningQueries, _FTPasswordManager._accountStore ]
 ...

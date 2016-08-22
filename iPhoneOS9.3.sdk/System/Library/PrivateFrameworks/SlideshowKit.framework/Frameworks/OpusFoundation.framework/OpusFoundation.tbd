@@ -62,4 +62,8 @@ exports:
                         _OFUIGridViewController, _OFUIPagingViewController,
                         _OFUITrackingPinchGestureRecognizer, _OFUIWindow,
                         _OFUIWindowDraggingSession, __OFPageViewControllerContentView ]
+    objc-ivars:       [ _OFRescalableSegment._compressibility,
+                        _OFRescalableSegment._expandability, _OFRescalableSegment._minimumDuration,
+                        _OFUICircularPagingView._gapBetweenPages, _OFRescalableSegment._defaultDuration,
+                        _OFRescalableSegment._maximumDuration ]
 ...

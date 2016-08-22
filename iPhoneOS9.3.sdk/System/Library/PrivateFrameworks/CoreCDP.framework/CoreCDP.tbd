@@ -17,4 +17,11 @@ exports:
                         _CDPLocalDeviceSecretHandler, _CDPStateController,
                         _CDPUtilities, _CDPContext,
                         _CDPLocalDevice, _CDPStateUIProviderProxy ]
+    objc-ivars:       [ _CDPDevice._deviceColor,
+                        _CDPDevice._hasNumericSecret, _CDPDevice._isUsingMultipleiCSC,
+                        _CDPDevice._model, _CDPDevice._modelVersion,
+                        _CDPDevice._platform, _CDPDevice._recordID,
+                        _CDPDevice._remainingAttempts, _CDPDevice._enclosureColor,
+                        _CDPDevice._localizedName, _CDPDevice._numericSecretLength,
+                        _CDPDevice._recordDate ]
 ...

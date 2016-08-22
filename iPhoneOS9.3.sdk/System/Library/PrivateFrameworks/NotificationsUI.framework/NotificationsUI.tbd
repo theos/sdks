@@ -15,4 +15,14 @@ exports:
                         _NCRelativeDateTimer, _NCViewServiceDescriptor,
                         _NCBannerAccessoryViewController, _NCInteractiveNotificationHostViewController,
                         _NCRelativeDateLabel ]
+    objc-ivars:       [ _NCDefaultDateLabel._allDay,
+                        _NCDefaultDateLabel._effectiveAllDayEndDate, _NCDefaultDateLabel._effectiveAllDayStartDate,
+                        _NCDefaultDateLabel._isTimestamp, _NCDefaultDateLabel._timeZoneRelativeEndDate,
+                        _NCDefaultDateLabel._updateTimer, _NCRelativeDateLabel._comparedToNow,
+                        _NCRelativeDateLabel._resolution, _NCRelativeDateTimer._currResolution,
+                        _NCRelativeDateTimer._date, _NCRelativeDateTimer._gregorian,
+                        _NCRelativeDateTimer._timer, _NCDefaultDateLabel._effectiveAllDay,
+                        _NCDefaultDateLabel._isCoalescingUpdates, _NCDefaultDateLabel._timeZoneRelativeStartDate,
+                        _NCRelativeDateLabel._relativeDateTimer, _NCRelativeDateTimer._currValue,
+                        _NCRelativeDateTimer._delegate ]
 ...

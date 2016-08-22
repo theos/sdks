@@ -28,4 +28,10 @@ exports:
                         _NanoPhoneVoicemailBody, _VoicemailCompanionReplication,
                         _NPHCountryCodeCompanionReplication, _NPHVMSyncSessionManager,
                         _NanoPhoneVoicemailMeta ]
+    objc-ivars:       [ _NanoPhoneVoicemailBody._voicemailNumber,
+                        _NanoPhoneVoicemailMeta._callbackNumber, _NanoPhoneVoicemailMeta._date,
+                        _NanoPhoneVoicemailMeta._flags, _NanoPhoneVoicemailMeta._identifier,
+                        _NanoPhoneVoicemailMeta._sender, _NanoPhoneVoicemailMeta._voicemailNumber,
+                        _NanoPhoneVoicemailBody._voicemailRecording, _NanoPhoneVoicemailMeta._duration,
+                        _NanoPhoneVoicemailMeta._remoteUID, _NanoPhoneVoicemailMeta._voicemailBody ]
 ...

@@ -125,4 +125,7 @@ exports:
                         _TIKeyboardLayoutState, _TILexicon,
                         _TIPinyinDisambiguationCandidate, _TIShortcutConversionCandidate,
                         _TIUserDictionaryWord ]
+    objc-ivars:       [ _TIWordTokenizer.m_bufferOffset,
+                        _TIWordTokenizer.m_searchRange, _TIWordTokenizer.m_tokenRange,
+                        _TIWordTokenizer.m_inlineBuffer, _TIWordTokenizer.m_string ]
 ...

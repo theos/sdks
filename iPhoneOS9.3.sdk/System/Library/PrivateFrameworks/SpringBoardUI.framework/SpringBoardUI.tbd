@@ -60,4 +60,15 @@ exports:
                         _SBUIBannerContext, _SBUIControlCenterButton,
                         _SBUIFullscreenAlertController, _SBUIPluginController,
                         _SBUISlidingFullscreenAlertController ]
+    objc-ivars:       [ _SBAlertItem._alertSheet,
+                        _SBAlertItem._allowInSetup, _SBAlertItem._allowedBundleIDs,
+                        _SBAlertItem._didEverDeactivate, _SBAlertItem._ignoreIfAlreadyDisplaying,
+                        _SBAlertItem._pendInSetupIfNotAllowed, _SBAlertItem._preventLockOver,
+                        _SBBulletinEvent._feed, _SBUIFullscreenAlertController._activationContext,
+                        _SBUIFullscreenAlertController._pendingDeactivationInvocation, _SBUIPluginController._host,
+                        _SBUISlidingFullscreenAlertController._animatingIn, _SBUISlidingFullscreenAlertController._bottomBar,
+                        _SBUISlidingFullscreenAlertController._topBar, _SBAlertItem._allowInCar,
+                        _SBAlertItem._didEverActivate, _SBAlertItem._orderOverSBAlert,
+                        _SBBulletinEvent._bulletinID, _SBUIFullscreenAlertController._animationStartTime,
+                        _SBUIPluginController._isVisible, _SBUISlidingFullscreenAlertController._animatingOut ]
 ...

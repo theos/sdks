@@ -14,4 +14,10 @@ exports:
                         _DuetConfigurator, _PoolResource,
                         _fetchFilterEntry, _BudgetPool,
                         _fetchDenyEntry ]
+    objc-ivars:       [ _DuetLogger.binaryName,
+                        _DuetLogger.duetLoggerSource, _DuetLogger.fileMgr,
+                        _DuetLogger.filePath, _DuetLogger.homeDir,
+                        _DuetLogger.logState, _DuetLogger.log_msg,
+                        _DuetLogger.canWriteToFile, _DuetLogger.fileName,
+                        _DuetLogger.logQueue, _DuetLogger.log_client ]
 ...

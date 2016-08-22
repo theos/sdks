@@ -25,4 +25,8 @@ exports:
     objc-classes:     [ _IPFoundationNamePreferenceInfoProvider,
                         _IPiOSABNamePreferenceInfoProvider, _NSPersonNameComponentsFormatterPreferences,
                         _IPOSXABNamePreferenceInfoProvider, _IntlUtility ]
+    objc-ivars:       [ _IntlUtility.mBidiLanguagesArray,
+                        _IntlUtility.mDisplayLanguageCachePtr, _IntlUtility.mLanguageList,
+                        _IntlUtility.mLocalizedLanguageList, _IntlUtility.mBidiTestedLanguagesArray,
+                        _IntlUtility.mDisplayLanguageCacheUsed ]
 ...

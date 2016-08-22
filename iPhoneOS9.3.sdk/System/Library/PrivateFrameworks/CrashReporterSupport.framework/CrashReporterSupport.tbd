@@ -94,4 +94,8 @@ exports:
                         _parseThread, _simulatecrash_withdesc ]
     objc-classes:     [ _AppleErrorReport,
                         _StructuredDataReport, _LogCounterObject ]
+    objc-ivars:       [ _AppleErrorReport._capture_time,
+                        _AppleErrorReport._incidentID, _AppleErrorReport._notes,
+                        _StructuredDataReport._raw_logfile, _AppleErrorReport._deviceID,
+                        _StructuredDataReport._log_type ]
 ...

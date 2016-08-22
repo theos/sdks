@@ -17,4 +17,5 @@ exports:
                         _CDPExtensionContext, _CDPPassphraseEntryPane,
                         _CDPServiceViewController, _CDPUIController,
                         __CDPExtensionHostContext ]
+    objc-ivars:       [ _CDPPassphraseEntryPane._headerView ]
 ...

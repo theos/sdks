@@ -15,4 +15,8 @@ exports:
                         __Z22SBStringFromClientType12SBClientType ]
     objc-classes:     [ _SBManagerClient,
                         _SBManagerClientCache ]
+    objc-ivars:       [ _SBManagerClientCache._behaviorBundleSupport,
+                        _SBManagerClientCache._cacheLock, _SBManagerClientCache._queue,
+                        _SBManagerClientCache.fCallbacks, _SBManagerClientCache._behaviorBundleSupportKnown,
+                        _SBManagerClientCache._keyValueCache ]
 ...

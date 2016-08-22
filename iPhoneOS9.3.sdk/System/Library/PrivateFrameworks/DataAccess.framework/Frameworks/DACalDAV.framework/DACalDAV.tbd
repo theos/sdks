@@ -107,4 +107,6 @@ exports:
                         _CalDAVHTTPTrafficLog, _CalDAVRefreshContext,
                         _DACalDAViCalItem, _MobileCalDAVDeletedItemContext,
                         _MobileCalDAVPrincipal ]
+    objc-ivars:       [ _MobileCalDAVAccountRefreshActor._transaction,
+                        _MobileCalDAVSubscribedCalendar._properties, _MobileCalDAVCalendar._calendarURLString ]
 ...

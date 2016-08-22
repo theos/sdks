@@ -238,4 +238,8 @@ exports:
                         _WBSTouchIconResponse, _WBSURLCompletionMatch,
                         _WBSURLSuffixChecker, __WBSFieldLabelPatternMatcherFactory,
                         __WBSParsecDictionarySchema ]
+    objc-ivars:       [ _WBSFrequentlyVisitedSitesController._bannedURLStore,
+                        _WBSHistory._entriesByURLStringAccessQueue, _WBSHistory._stringsForUserTypedDomainExpansion,
+                        _WBSHistoryItem._urlString, _WBSHistoryItem._visitsPendingWriteToDataStore,
+                        _WBSHistory._entriesByURLString, _WBSHistoryItem._lastVisit ]
 ...

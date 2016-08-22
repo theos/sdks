@@ -708,4 +708,20 @@ exports:
                         _CalSearch, _EKObjectID,
                         _EKPersistentChangeStoreRowInfo, _CDBRecurrenceDayOfWeek,
                         _CalItemMetadata, _EKPersistentChangeStoreInfo ]
+    objc-ivars:       [ _CDBRecurrenceGenerator._allDay,
+                        _CDBRecurrenceGenerator._daysOfTheMonth, _CDBRecurrenceGenerator._daysOfTheYear,
+                        _CDBRecurrenceGenerator._endDate, _CDBRecurrenceGenerator._eventStartDate,
+                        _CDBRecurrenceGenerator._frequency, _CDBRecurrenceGenerator._monthsOfTheYear,
+                        _CDBRecurrenceGenerator._shouldPinMonthDays, _CDBRecurrenceGenerator._weeksOfTheYear,
+                        _CalAlarmMetadata._attendee, _CalAlarmMetadata._summary,
+                        _CalItemMetadata._x_props, _CalSearch._dataSourceDeallocLock,
+                        _CalSearch._dateToStartShowingResultsSentToDataSink, _CalSearch._implementsCancellationCallback,
+                        _CalSearch._matchedLocationsSet, _CalSearch._moreResultsAvailable,
+                        _CalSearch._partialCachedDaysIndexes, _CalSearch._partialResults,
+                        _CalSearch._seed, _CalSearch._stopLoadingResults,
+                        _CDBRecurrenceGenerator._calendar, _CDBRecurrenceGenerator._duration,
+                        _CDBRecurrenceGenerator._eventTimeZone, _CDBRecurrenceGenerator._setPositions,
+                        _CalAlarmMetadata._attach, _CalItemMetadata._classification,
+                        _CalSearch._database, _CalSearch._matchedEventsSet,
+                        _CalSearch._partialCachedDays, _CalSearch._searchString ]
 ...

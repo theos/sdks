@@ -11,4 +11,13 @@ exports:
                         _CalculateExpressionError ]
     objc-classes:     [ _Converter,
                         _CurrencyCache ]
+    objc-ivars:       [ _Converter._additionalResults,
+                        _Converter._currencyUpdateTimeOut, _Converter._inputUnit,
+                        _Converter._isCurrency, _Converter._localizedOutputUnit,
+                        _Converter._localizedOutputValueAndUnit, _Converter._outputValue,
+                        _CurrencyCache._currentCurrency, _CurrencyCache._currentString,
+                        _CurrencyCache._mutableCurrencyCache, _CurrencyCache._uuid,
+                        _Converter._conversionType, _Converter._inputValue,
+                        _Converter._localizedOutputValue, _CurrencyCache._currencyData,
+                        _CurrencyCache._lastRefreshDate ]
 ...

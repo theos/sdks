@@ -91,4 +91,23 @@ exports:
                         _VSGenericBlockHolder, _VSRecognitionConfirmAction,
                         _VSRecognitionResultHandlingRequest, _VSRecognitionURLAction,
                         _VSSpeechRequest, _VSTextPreProcessor ]
+    objc-ivars:       [ _VSAssetUpdateListener._assetCleanupTimer,
+                        _VSCacheUpdateListener._dataProviders, _VSCacheUpdateListener._isListening,
+                        _VSCacheUpdateListener._updateRequestQueue, _VSCacheUpdateRequest._modelID,
+                        _VSFormatArgument.formatSpecifier, _VSRecognitionConfirmAction._confirmFlags,
+                        _VSRecognitionConfirmAction._deniedAction, _VSRecognitionDisambiguateAction._ambiguousValues,
+                        _VSRecognitionDisambiguateAction._knownPhoneticValues, _VSRecognitionDisambiguateAction._repeatedSpokenFeedbackString,
+                        _VSRecognitionRecognizeAction._audioInputPath, _VSRecognitionRecognizeAction._keywords,
+                        _VSRecognitionRecognizeAction._modelIdentifier, _VSRecognitionRecognizeAction._recognizeFlags,
+                        _VSRecognitionResultHandlingRequest._action, _VSRecognitionResultHandlingRequest._results,
+                        _VSRecognitionResultHandlingThread._lock, _VSRecognitionResultHandlingThread._resultHandlingFlags,
+                        _VSRecognitionURLAction._url, _VSTextPreProcessor._rules,
+                        _VSTextPreProcessorRule._caseSensitive, _VSTextPreProcessorRule._matchPattern,
+                        _VSTextPreProcessorRule._replacement, _VSAssetUpdateListener._isListening,
+                        _VSCacheUpdateListener._lock, _VSFormatArgument.attributes,
+                        _VSRecognitionConfirmAction._confirmedAction, _VSRecognitionDisambiguateAction._context,
+                        _VSRecognitionDisambiguateAction._sequenceTag, _VSRecognitionRecognizeAction._levelInterval,
+                        _VSRecognitionRecognizeAction._results, _VSRecognitionResultHandlingThread._delegate,
+                        _VSRecognitionSpeakAction._shouldTerminate, _VSTextPreProcessor._tokenizer,
+                        _VSTextPreProcessorRule._eatPunctuation ]
 ...

@@ -92,4 +92,9 @@ exports:
                         _kSCROStatusAttributeCellTitle, _kSCROTechnicalContextAttribute ]
     objc-classes:     [ _SCRDFileReader,
                         _SCRDUSBDevice ]
+    objc-ivars:       [ _SCRDFileReader._delegate,
+                        _SCRDFileReader._readerThread, _SCRDUSBDevice._device,
+                        _SCRDUSBDevice._isConfigured, _SCRDUSBDevice._notification,
+                        _SCRDUSBDevice._privateRunLoopMode, _SCRDFileReader._fileHandle,
+                        _SCRDUSBDevice._interface, _SCRDUSBDevice._notificationPort ]
 ...

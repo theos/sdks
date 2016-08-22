@@ -240,4 +240,8 @@ exports:
                         _AXSubsystemVOTVNotifications, _AXSubsystemZoom,
                         _AXSystemAppServer, _AXValidationManager,
                         _AXWordDescriptionManager_ja, __AXAssertionServer ]
+    objc-ivars:       [ _AXBackBoardServer._eventListeners,
+                        _AXBackBoardServer._zoomAttributeListeners, _AXReplayableGesture._arePointsDeviceRelative,
+                        _AXThreadTimer._thread, _AXBackBoardServer._overrideGestureRecognition,
+                        _AXThreadTimer._cancelBlock ]
 ...

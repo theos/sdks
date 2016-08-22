@@ -29,4 +29,7 @@ exports:
                         _AAUIFamilyInvitationAcceptanceViewController, _AAUIFamilyPaymentInfoResponse,
                         _AAUIFamilySetupPrompter, _AAUIMyPhotoRequest,
                         _AAUIRemotePage, _AAUIServerSuppliedProfilePictureCacheEntry ]
+    objc-ivars:       [ _AACDPOperation._account,
+                        _AACDPOperation._completionBlock, _AACDPOperation._semaphore,
+                        _AACDPOperation._cdpStateController, _AACDPOperation._presenter ]
 ...

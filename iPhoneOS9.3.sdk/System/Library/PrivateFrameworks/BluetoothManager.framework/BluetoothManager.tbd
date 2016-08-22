@@ -21,4 +21,11 @@ exports:
                         _BluetoothPairingUserConfirmationNotification ]
     objc-classes:     [ _BluetoothDevice,
                         _RemoteDeviceManager, _BluetoothManager ]
+    objc-ivars:       [ _BluetoothDevice._address,
+                        _BluetoothDevice._name, _BluetoothManager._audioConnected,
+                        _BluetoothManager._btAddrDict, _BluetoothManager._discoveryAgent,
+                        _BluetoothManager._pairingAgent, _BluetoothManager._scanningInProgress,
+                        _BluetoothManager._session, _BluetoothDevice._device,
+                        _BluetoothManager._available, _BluetoothManager._localDevice,
+                        _BluetoothManager._scanningServiceMask ]
 ...

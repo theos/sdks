@@ -50,4 +50,11 @@ exports:
                         _SGObject, _SGPostalAddressComponents,
                         _SGRealtimeEvent, _SGSimpleTimeRange,
                         _SGTuple2 ]
+    objc-ivars:       [ _SGEntityTagPrefixOptions.indexed,
+                        _SGEntityTagPrefixOptions.tracked, _SGOrigin._cc,
+                        _SGOrigin._contextSnippetRange, _SGOrigin._externalKey,
+                        _SGOrigin._sourceKey, _SGOrigin._to,
+                        _SGPreferenceManager._suggestionsDefaults, _SGEntityTagPrefixOptions.stored,
+                        _SGOrigin._contextSnippet, _SGOrigin._from,
+                        _SGOrigin._type ]
 ...

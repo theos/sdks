@@ -24,4 +24,22 @@ exports:
                         _ACDSTaskQueue, _ACDSChangePasswordTask,
                         _ACDSListFetchTask, _ACDSResponseMessage,
                         _ACDSTask ]
+    objc-ivars:       [ _ACDSChangePasswordTask._isInitialSetup,
+                        _ACDSChangePasswordTask._oldPassword, _ACDSFlagPushTask._changedRecordIdentifiers,
+                        _ACDSFlagPushTask._messageIdentifiersToDetach, _ACDSFlagPushTask._timeOfLastFlagChange,
+                        _ACDSGreetingFetchTask._lastWrittenOffset, _ACDSGreetingFetchTask._service,
+                        _ACDSMessageFetchTask._fd, _ACDSMessageFetchTask._noteUserInfo,
+                        _ACDSMessageFetchTask._progressiveParser, _ACDSMessageFetchTask._service,
+                        _ACDSResponseMessage._headerData, _ACDSService._acdsServiceFlags,
+                        _ACDSService._activeTaskType, _ACDSService._flagChangedRecords,
+                        _ACDSService._lastParamFetchTime, _ACDSService._queue,
+                        _ACDSService._serverPublicKey, _ACDSSetGreetingTask._greetingData,
+                        _ACDSTask._lastAttemptTime, _ACDSTask._lastErrorDomain,
+                        _ACDSTask._timeBetweenAttempts, _ACDSTaskQueue._pendedTasks,
+                        _ACDSChangePasswordTask._newPassword, _ACDSFlagPushTask._messageIdentifiersToCompact,
+                        _ACDSGreetingFetchTask._fd, _ACDSGreetingFetchTask._totalLength,
+                        _ACDSMessageFetchTask._parseError, _ACDSResponseMessage._bodyData,
+                        _ACDSService._activeTask, _ACDSService._flagPushAttempts,
+                        _ACDSService._securityHandle, _ACDSSetParamsTask._paramsDict,
+                        _ACDSTask._retryCount ]
 ...

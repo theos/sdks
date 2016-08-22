@@ -23,4 +23,12 @@ exports:
                         _VTUITrainingSessionWithPayload, _AudioFileWriter,
                         _VTUIAudioSessionAVVC, _VTUIEnrollmentSuccessView,
                         _VTUIStringsHelper, _VTUITrainingSession ]
+    objc-ivars:       [ _VTUITrainingSession._ASRErrorOccured,
+                        _VTUITrainingSession._locale, _VTUITrainingSession._pcmBufArray,
+                        _VTUITrainingSession._queue, _VTUITrainingSession._rmsDelegate,
+                        _VTUITrainingSession._sessionProcess, _VTUITrainingSession._speechRecognitionRequest,
+                        _VTUITrainingSession._speechRecognizer, _VTUITrainingSession._trainingCompletion,
+                        _VTUITrainingSession._utteranceId, _VTUITrainingSession._audioSession,
+                        _VTUITrainingSession._phraseSpotter, _VTUITrainingSession._sessionNumber,
+                        _VTUITrainingSession._speechRecognitionTask, _VTUITrainingSession._status ]
 ...

@@ -92,4 +92,6 @@ exports:
                         _RCTrimSavedRecordingOperation, _RCUIViewControllerNoticationObserver,
                         _RCWaveformScrollView, _RCWaveformSnapshotGenerator,
                         __RCCompositionUndoItem, __RCUIViewNamedConstraints ]
+    objc-ivars:       [ _RCWaveform._decodedVersion,
+                        _RCWaveform._segments ]
 ...

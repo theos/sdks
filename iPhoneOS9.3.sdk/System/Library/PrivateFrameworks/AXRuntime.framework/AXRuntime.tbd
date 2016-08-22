@@ -172,4 +172,10 @@ exports:
                         _AXObserverElementPair, _AXSimpleRuntimeManager,
                         _AXVisualElementGrouper, _AXElement,
                         _AXElementGrouper, _AXUIElement ]
+    objc-ivars:       [ _AXAttributedString._string,
+                        _AXRemoteElement._allChildren, _AXRemoteElement._onClientSide,
+                        _AXRemoteElement._remotePid, _AXUIElement._axElement,
+                        _AXUIElement._cachedRefCount, _AXUIElement._isValid,
+                        _AXObserverElementPair._observer, _AXRemoteElement._remoteChildrenDelegate,
+                        _AXUIElement._cachedAttributes ]
 ...

@@ -13,4 +13,8 @@ exports:
     objc-classes:     [ _OACredential,
                         _OAPlainTextSigner, _OAURLRequestSigner,
                         _OAHMAC_SHA1Signer ]
+    objc-ivars:       [ _OACredential._consumerKey,
+                        _OACredential._oauthToken, _OAURLRequestSigner._credential,
+                        _OAURLRequestSigner._signatureMethod, _OACredential._consumerSecret,
+                        _OACredential._oauthTokenSecret ]
 ...

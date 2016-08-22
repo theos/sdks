@@ -11,4 +11,5 @@ exports:
                         _kSPContentSummaryKey, _kSPContentTitleKey,
                         _kSPContentAuxiliaryTitleKey, _kSPContentSubtitleKey ]
     objc-classes:     [ _SPSpotlightManager ]
+    objc-ivars:       [ _SPSpotlightManager._displayID ]
 ...

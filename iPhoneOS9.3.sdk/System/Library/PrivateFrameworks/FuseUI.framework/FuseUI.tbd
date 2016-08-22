@@ -239,4 +239,8 @@ exports:
                         _MusicUpNextTransitionController, _MusicVerticalScrollingContainerCollectionView,
                         _MusicVerticalScrollingContainerViewController, __MusicEntityDownloadInformationRegisteredSource,
                         __MusicInterleavedEntityProviderMergeInformation ]
+    objc-ivars:       [ _MusicContextualActionsHeaderBlendingHighlightView._colorBurnView,
+                        _MusicEntityPlaybackStatus._playbackCurrentTime, _MusicEntityPlaybackStatus._playbackDisplayState,
+                        _MusicEntityPlaybackStatus._playbackRate, _MusicContextualActionsHeaderBlendingHighlightView._plusDView,
+                        _MusicEntityPlaybackStatus._playbackDuration ]
 ...

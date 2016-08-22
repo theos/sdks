@@ -81,4 +81,12 @@ exports:
                         _FBWindowContextHostManager, _FBWorkspaceEvent,
                         _FBWorkspaceScene, __FBSqlitePreparedCompoundStatement,
                         __FBSystemGestureManager ]
+    objc-ivars:       [ _FBBundleInfo._bundle,
+                        _FBProcess._bundleIdentifier, _FBProcess._delegate,
+                        _FBProcess._name, _FBProcess._pid,
+                        _FBProcess._running, _FBProcess._workspace,
+                        _FBSceneTransform._transform, __FBSqlitePreparedSimpleStatement._weak_dbConnection,
+                        _FBBundleInfo._proxy, _FBProcess._jobLabel,
+                        _FBProcess._queue, _FBSceneTransform._targets,
+                        __FBSqlitePreparedSimpleStatement._statement ]
 ...

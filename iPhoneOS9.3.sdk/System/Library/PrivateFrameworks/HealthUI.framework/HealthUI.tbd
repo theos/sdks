@@ -123,4 +123,8 @@ exports:
                         _HKUITodayCirclePulseView, __HKBaseBlockCoordinateList,
                         __HKChartCachePendingFetchOperationManager, __HKEmergencyContactRelationshipPicker,
                         __HKHorizontalSingleLineSeriesMarkEntry, __HKStackedCategoryValueSeriesCoordinate ]
+    objc-ivars:       [ _HKAbstractFixedAxisScalingRule._axisBoundsOverrides,
+                        _HKAbstractMinimumRangeScalingRule._axisRangeOverrides, _HKNumericClampingAxisScalingRule._chartBoundsRuleChoices,
+                        _HKQuantityClampingAxisScalingRule._chartBoundsRuleChoicesByUnit, _HKQuantityClampingAxisScalingRule._unit,
+                        _HKAbstractFixedAxisScalingRule._defaultAxisBounds, _HKQuantityClampingAxisScalingRule._chartBoundsRuleChoices ]
 ...

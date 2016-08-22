@@ -57,4 +57,15 @@ exports:
                         _VMVoicemail, _VVNotificationInterpreter,
                         _VVVerifier, _VMServiceClient,
                         _VVService ]
+    objc-ivars:       [ _VMAccount._cache,
+                        _VMAccount._voicemailSummaries, _VMVoicemail._cache,
+                        _VMVoicemail._callbackPhoneNumber, _VMVoicemail._senderPhoneNumber,
+                        _VVService._activationError, _VVService._carrierParameters,
+                        _VVService._mailboxUsage, _VVService._password,
+                        _VVService._passwordMailboxName, _VVService._retryIntervals,
+                        _VVService._trashCompactionAge, _VVService._unreadCount,
+                        _VMAccount._cacheQueue, _VMVoicemail._cacheQueue,
+                        _VVCarrierParameters._parameterValues, _VVService._lock,
+                        _VVService._passwordError, _VVService._serviceFlags,
+                        _VVService._trashedCount ]
 ...

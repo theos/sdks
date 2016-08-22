@@ -33,4 +33,6 @@ exports:
                         ___AXSBScreenshotManagerAccessibility_super, ___AXSBServerHelperSpringBoard_super,
                         ___AXSBUIModalItemContentViewSafeCategory_super, ___AXSB_UIAlertControllerSafeCategory_super,
                         ___AXSB_UIModalItemTableViewCellSafeCategory_super ]
+    objc-ivars:       [ _AXTripleClickTableViewCell._bottomLine,
+                        _AXTripleClickTableViewCell._topLine ]
 ...

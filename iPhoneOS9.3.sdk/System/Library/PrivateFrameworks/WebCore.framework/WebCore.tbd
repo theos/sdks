@@ -1909,4 +1909,15 @@ exports:
                         _DOMWebKitTransitionEvent, _NSCursor,
                         _WAKWindow, _WebScriptObject,
                         _WebUndefined ]
+    objc-ivars:       [ _WAKScrollView._contentView,
+                        _WAKScrollView._documentView, _WAKWindow._availableScreenSize,
+                        _WAKWindow._entireWindowVisibleForTesting, _WAKWindow._frozenVisibleRect,
+                        _WAKWindow._nextResponder, _WAKWindow._rootLayer,
+                        _WAKWindow._screenSize, _WAKWindow._useOrientationDependentFontAntialiasing,
+                        _WebEventRegion.p1, _WebEventRegion.p3,
+                        _WebScriptObject._private, _WebScriptObjectPrivate.isCreatedByDOMWrapper,
+                        _WebScriptObjectPrivate.rootObject, _WAKScrollView._delegate,
+                        _WAKWindow._contentView, _WAKWindow._hostLayer,
+                        _WAKWindow._screenScale, _WAKWindow._visible,
+                        _WebEventRegion.p4, _WebScriptObjectPrivate.originRootObject ]
 ...

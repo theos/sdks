@@ -11,4 +11,11 @@ exports:
                         _MobileCalDAVDownloadContext, _MobileCalDAVSharingResponse,
                         _MobileCalDAViCloudDaemonAccount, _CalDAVGetToFileWithProgressTask,
                         _MobileCalDAVDirectorySearch, _MobileCalDAVFacebookDaemonAccount ]
+    objc-ivars:       [ _CalDAVGetToFileWithProgressTask._downloader,
+                        _MobileCalDAVAttachmentDownloader._account, _MobileCalDAVAttachmentDownloader._attachmentType,
+                        _MobileCalDAVAttachmentDownloader._attachmentUUID, _MobileCalDAVAttachmentDownloader._etag,
+                        _MobileCalDAVAttachmentDownloader._localFilename, _MobileCalDAVAttachmentDownloader._waiterID,
+                        _MobileCalDAVAttachmentDownloader._waitingForGatekeeper, _CalDAVGetToFileWithProgressTask._previousETag,
+                        _MobileCalDAVAttachmentDownloader._attachmentURL, _MobileCalDAVAttachmentDownloader._holdingGatekeeperLock,
+                        _MobileCalDAVAttachmentDownloader._taskManager ]
 ...

@@ -138,4 +138,8 @@ exports:
                         _kGSVideoCameraCapability, _kGSWAPICapability,
                         _kGSiPadCapability, _kXTFontTraitWidth ]
     objc-classes:     [ __UIFontExtraData ]
+    objc-ivars:       [ __UIFontExtraData._ascender,
+                        __UIFontExtraData._descender, __UIFontExtraData._latin1MappingTable,
+                        __UIFontExtraData._lineHeight, __UIFontExtraData._coveredCharacterSet,
+                        __UIFontExtraData._lineGap ]
 ...

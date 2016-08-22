@@ -38,4 +38,6 @@ exports:
                         _reportingTierLog, _reportingVideoProp,
                         _reportingWiFiCallingLogCallEnd ]
     objc-classes:     [ _TimingCollection ]
+    objc-ivars:       [ _TimingCollection.queue,
+                        _TimingCollection.timings ]
 ...
