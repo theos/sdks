@@ -1,0 +1,23 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FMAlertCategoryNone,
+                        _FMErrorDomain, __FMBlockDescriptor,
+                        __FMFutureDidPerformCallback, __FMPopScopedDescriptor,
+                        __FMScopedDescriptor, _kFMSynchronizerTimeoutNever,
+                        _FMEmptyResult, __FMDictionaryOfMetrics,
+                        __FMPushScopedDescriptor ]
+    objc-classes:     [ _FMAlert,
+                        _FMConcurrentMutableArray, _FMFuture,
+                        _FMLogger, _FMPreferencesUtil,
+                        _FMQueue, _FMScheduler,
+                        _FMSynchronizer, __FMLazyFuture,
+                        _FMCancelationToken, _FMInternalFileContainer,
+                        _FMPromise, _FMSharedFileContainer,
+                        _FMValueThrottler ]
+...

@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FTAWD.framework/FTAWD
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FTAWDLogCallAcceptReceived,
+                        _FTAWDLogCallCancelSent, _FTAWDLogCallDeclineSent,
+                        _FTAWDLogCallEndedViceroy, _FTAWDLogCallInterruptionBegan,
+                        _FTAWDLogCallInvitationReceived, _FTAWDLogCallRelayInitiateReceived,
+                        _FTAWDLogCallRelayUpdateSent, _FTAWDLogCallStarted,
+                        _FTAWDLogIMessageAttachmentDownloadNew, _FTAWDLogIMessageAttachmentUploadNew,
+                        _FTAWDLogIMessageDelivered, _FTAWDLogIMessageQueryFinished,
+                        _FTAWDLogIMessageReversePushQueryPerformed, _FTAWDLogRegistrationAuthenticate,
+                        _FTAWDLogRegistrationGetHandles, _FTAWDLogRegistrationPhoneNumberValidationFinished,
+                        _FTAWDLogRegistrationProfileLinkHandles, _FTAWDLogRegistrationProfileValidateHandle,
+                        _FTAWDLogRegistrationRegister, _FTAWDLogSMSSent,
+                        _FTAWDSetSubmissionDate, _FTAWDLogCallAcceptSent,
+                        _FTAWDLogCallEnded, _FTAWDLogCallInterruptionEnded,
+                        _FTAWDLogCallRelayInitiateSent, _FTAWDLogIMessageAttachmentDownload,
+                        _FTAWDLogIMessageDeduplicated, _FTAWDLogIMessageReceived,
+                        _FTAWDLogRegistrationGetDependentRegistrations, _FTAWDLogRegistrationProfileAuthenticate,
+                        _FTAWDLogRegistrationProfileValidateInvitationContext, _FTAWDLogSMSReceived ]
+...

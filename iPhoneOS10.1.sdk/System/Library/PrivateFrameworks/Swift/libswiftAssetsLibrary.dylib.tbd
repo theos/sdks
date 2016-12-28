@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftAssetsLibrary.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TFE13AssetsLibraryCSo15ALAssetsLibrary24enumerateGroupsWithTypesfTVs6UInt3210usingBlockGSQFTGSQCSo13ALAssetsGroup_GSQGSpV10ObjectiveC8ObjCBool___T__12failureBlockGSQFGSQCSo7NSError_T___T_,
+                        __swift_FORCE_LOAD_$_swiftAssetsLibrary ]
+...

@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AAUIBeginUsingAddressBookSingleton,
+                        _AAUICopyCompositeName, _AAUIDisableStingrayRefreshResponseStateKey,
+                        _AAUIFamilyDetailsCacheDidChangeNotification, _AAUIPasscodeValidationResponseStateKey,
+                        _AAUISignInErrorDomain, _AAUIClientInfoActionKey,
+                        _AAUIEndUsingAddressBookSingleton, _AAUIProfilePictureStoreDidChangeNotification ]
+    objc-classes:     [ _AAUIAcceptChildTransferRequest,
+                        _AAUIAccountCreationRemoteUI, _AAUIAccountValidationController,
+                        _AAUIAlertView, _AAUIBleachedNavigationController,
+                        _AAUICDPStingrayController, _AAUICloudSyncServicesController,
+                        _AAUIContactsSearchController, _AAUIDeclineChildTransferRequest,
+                        _AAUIDeviceLocatorConfirmationUtilities, _AAUIExplainAppleIDViewController,
+                        _AAUIFamilyDetailsCache, _AAUIFamilyMemberPhotoRequest,
+                        _AAUIFamilyPaymentInfoRequest, _AAUIFamilySetupBuddyMLRequest,
+                        _AAUIFamilySetupOrganizerViewController, _AAUIFamilySetupViewController,
+                        _AAUIGenericTermsRemoteUI, _AAUIPhotoResponse,
+                        _AAUIProfilePictureStore, _AAUIRemoteUIController,
+                        _AAUIServerSuppliedProfilePictureCache, _AAUISignInFlowController,
+                        __AAUIRawImageAndCropRectCache, __AAUIRawImageAndCropRectCacheEntry,
+                        _AAUIAcceptFamilyInviteRequest, _AAUIAddPhotoView,
+                        _AAUICDPHelper, _AAUIConfirmIdentityViewController,
+                        _AAUIDeclineFamilyInviteRequest, _AAUIFamilyCreditCard,
+                        _AAUIFamilyPaymentCardUIRequest, _AAUIFamilySetupGetStartedViewController,
+                        _AAUIFamilySharingFeaturesView, _AAUIPickInviteeViewController,
+                        _AAUIRemoteUIRepairFlow, _AAUIUpdateMyPhotoRequest ]
+...

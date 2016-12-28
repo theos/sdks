@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+current-version: 427.2.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CSIEqualMetrics,
+                        _CUIBlendModeDescriptionFromCGBlendMode, _CUICGBlendModeFromLSRDescription,
+                        _CUICalcNonAlphaAreaOfImage, _CUICompareRenditionKey,
+                        _CUIConvertCompressionTypeToString, _CUIConvertImageToPixelFormat,
+                        _CUIDefaultThemeRenditionKeyFormat, _CUIEdgeInsetsEqualToEdgeInsets,
+                        _CUIEdgeInsetsInsetRect, _CUIEdgeInsetsMake,
+                        _CUIEdgeInsetsToCGRect, _CUIEdgeInsetsZero,
+                        _CUIFillCARKeyArrayForRenditionKey, _CUIGetFormatForFeatureSetAndPixelFormat,
+                        _CUIKeyFormatToArrayString, _CUIRenditionKeyCopy,
+                        _CUIRenditionKeyHasIdentifier, _CUIRenditionKeyStandardize,
+                        _CUIRenditionKeyValueForAttribute, _CUIThemeInfoVersion,
+                        _gArtworkDraftTypes, _gColors,
+                        _gEffectTypes, _gMetafontSizes,
+                        _gRenditionTypes, _gThemeDeploymentTargets,
+                        _gThemeDisplayGamuts, _gThemeElements,
+                        _gThemeIdioms, _gThemeMemoryPerformanceClasses,
+                        _gThemePresentationStates, _gThemeStates,
+                        _gThemeTextureFaces, _gThemeTexturePixelFormats,
+                        _gThemeValues, _gZeroCodeArtworkInfo,
+                        _CSIIllegalMetrics, _CUICGImageGetAlphaInfo,
+                        _CUIConvertCGImageFormat, _CUICurrentPlatform,
+                        _CUIEdgeInsetsFromCGRect, _CUIEdgeInsetsOutsetRect,
+                        _CUIEqualRenditionKeysIgnoringAttribute, _CUIImageIsMonochrome,
+                        _CUIRenditionKeyFormatRemoveAttribute, _CUIRenditionKeyTokenCount,
+                        __CUILogHandle, _gEffectParameterTypes,
+                        _gRenditionSubtypes, _gThemeDirections,
+                        _gThemeGraphicsFeatureSetClasses, _gThemeParts,
+                        _gThemeTemplateRenderingModes, _gThemeUISizeClasses ]
+    objc-classes:     [ _CSIBitmapWrapper,
+                        _CUICatalog, _CUIImage,
+                        _CUIMutableCommonAssetStorage, _CUINamedExternalLink,
+                        _CUINamedImageAtlas, _CUINamedLayerImage,
+                        _CUINamedTexture, _CUIPSDLayerEffectBevelEmboss,
+                        _CUIPSDLayerEffectDropShadow, _CUIPSDLayerEffectInnerGlow,
+                        _CUIPSDLayerEffectOuterGlow, _CUIPSLayerEffectsPreset,
+                        _CUIRenditionLayerReference, _CUIShapeEffectStack,
+                        _CUIStructuredThemeStore, _CUIThemeSchema,
+                        _CUIThemeSchemaPSDRenditionLayer, _CUIThemeSchemaRenditionGroup,
+                        _CSIGenerator, _CUIMutableCatalog,
+                        _CUINamedImage, _CUINamedLayerStack,
+                        _CUIPSDLayerEffectColorOverlay, _CUIPSDLayerEffectInnerShadow,
+                        _CUIRenditionKey, _CUISingleNamedAssetCreator,
+                        _CUIThemeSchemaPSDLayerGroup ]
+...

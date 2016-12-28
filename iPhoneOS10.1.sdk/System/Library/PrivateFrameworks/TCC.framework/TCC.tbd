@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/TCC.framework/TCC
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TCCAccessCheckAuditToken,
+                        _TCCAccessCopyBundleIdentifiersForService, _TCCAccessCopyInformationForBundle,
+                        _TCCAccessGetOverride, _TCCAccessPreflight,
+                        _TCCAccessReset, _TCCAccessResetForPath,
+                        _TCCAccessRestricted, _TCCAccessSet,
+                        _TCCAccessSetForBundle, _TCCAccessSetOverride,
+                        _kTCCAccessCheckOptionPrompt, _kTCCInfoBundle,
+                        _kTCCInfoLastUsed, _kTCCInfoService,
+                        _kTCCServiceAll, _kTCCServiceCalendar,
+                        _kTCCServiceCamera, _kTCCServiceKeyboardNetwork,
+                        _kTCCServiceMSO, _kTCCServiceMicrophone,
+                        _kTCCServicePhotos, _kTCCServiceShareKit,
+                        _kTCCServiceSiri, _kTCCServiceTencentWeibo,
+                        _kTCCServiceUbiquity, _kTCCServiceWillow,
+                        _TCCAccessCopyBundleIdentifiersDisabledForService, _TCCAccessDeclarePolicy,
+                        _TCCAccessRequest, _TCCAccessResetPoliciesExcept,
+                        _TCCAccessSetForAuditToken, _TCCTestInternal,
+                        _kTCCInfoGranted, _kTCCServiceAddressBook,
+                        _kTCCServiceCalls, _kTCCServiceLiverpool,
+                        _kTCCServiceMotion, _kTCCServiceSinaWeibo,
+                        _kTCCServiceTwitter ]
+...

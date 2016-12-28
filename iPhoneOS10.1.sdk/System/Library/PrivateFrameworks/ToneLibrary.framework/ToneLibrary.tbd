@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NSStringFromTLAlertPlaybackCompletionType,
+                        _NSStringFromTLWatchAlertPolicy, _TLAlertInterruptionOptionsMake,
+                        _TLAlertTopicActivityGoalAttained, _TLAlertTopicAlarmGoToSleep,
+                        _TLAlertTopicAppNotificationRemote, _TLAlertTopicSOSCountdownTick,
+                        _TLAlertTopicSystemNotificationBluetoothLowEnergy, _TLAlertTopicTextMessageInConversation,
+                        _TLLocalizedString, _TLLogPlayback,
+                        _TLLogVibrationManagement, _TLServiceCommunicationErrorDomain,
+                        _TLServiceValidationErrorDomain, _TLVibrationIdentifierNone,
+                        _TLVibrationUserGeneratedVibrationPatternIdentifierPrefix, _TLVibrationUserGeneratedVibrationPatternsDictionaryKeyPattern,
+                        __TLAlertTypeGetHumanReadableDescription, __TLAlertWatchPrefersSalientToneAndVibrationDidChangeNotification,
+                        __TLToneManagerContentsChangedNotification, __TLVibrationPatternIntensityKey,
+                        __TLVibrationPatternOffDurationKey, __TLVibrationPatternVibePatternKey,
+                        _kSystemSoundID_InvalidTone, _kToneAlbumKey,
+                        _kToneArtworkFileKey, _kToneFileExtensionKey,
+                        _kToneGenreKey, _kTonePIDKey,
+                        _kToneProtectedContentKey, _kToneTitleKey,
+                        _NSStringFromTLAlertType, _TLAlertPlaybackCompletionTypeFromString,
+                        _TLAlertTopicAlarmWakeUp, _TLAlertTopicSOSDialStart,
+                        _TLAlertTypeFromString, _TLLogToneManagement,
+                        _TLServicePersistenceErrorDomain, _TLVibrationManagerUserGeneratedVibrationsDidChangeNotification,
+                        _TLWatchAlertPolicyFromString, __TLAssertShouldAbort,
+                        __TLVibrationPatternLoopedKey, __TLVibrationSynchronizedVibrationPatternIdentifierPrefix,
+                        _kToneArtistKey, _kToneGUIDKey,
+                        _kTonePrivateKey, _kTonePurchasedKey ]
+    objc-classes:     [ _TLAccessQueue,
+                        _TLAlertConfiguration, _TLAlertController,
+                        _TLAlertSystemSoundContext, _TLAlertTone,
+                        _TLITunesTone, _TLSystemApplication,
+                        _TLToneManager, _TLVibrationPattern,
+                        _TLVibrationPersistenceUtilities, _TLAlert,
+                        _TLAlertQueuePlayerController, _TLCapabilitiesManager,
+                        _TLSystemSound, _TLVibrationManager ]
+...

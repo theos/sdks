@@ -1,0 +1,35 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _VTUILogContextFacility,
+                        _VTUILoggingSubsystem, _VoiceTriggerUIVersionNumber,
+                        _kVTUIAspectRatioDeviceDoneN61Cable, _kVTUIAspectRatioDeviceIntroN61,
+                        _kVTUIFontSize_ButtonSmall, _kVTUIFontSize_Main,
+                        _kVTUIFontSize_Title, _kVTUIPath_ImageDeviceDoneN61Cable,
+                        _kVTUIPath_ImageDeviceIntroN61, _kVTUIPath_ImageTick,
+                        _kVTUIPath_ImageXMask, _kVTUIStandardScreenWidth,
+                        _VTUILogInitIfNeeded, _VoiceTriggerUIVersionString,
+                        _kVTUIFontSize_Button, _kVTUIFontSize_Progress,
+                        _kVTUIPath_ImageDeviceDoneN61NoCable, _kVTUIPath_ImageTickMask,
+                        _kVTUIStandardScreenHeight ]
+    objc-classes:     [ _VTUIASRGrammars,
+                        _VTUIAudioSessionAVVC, _VTUIEnrollmentSetupIntroView,
+                        _VTUIEnrollmentSuccessView, _VTUIRegularExpressionMatcher,
+                        _VTUIStringsHelper, _VTUITickMarkView,
+                        _VTUITrainingSession, _VTUITrainingSessionWithPayload,
+                        _VTUIArtworksManager, _VTUIEnrollmentStateView,
+                        _VTUISigmoid, _VTUITrainingManager ]
+    objc-ivars:       [ _VTUITrainingSession._ASRErrorOccured,
+                        _VTUITrainingSession._locale, _VTUITrainingSession._pcmBufArray,
+                        _VTUITrainingSession._queue, _VTUITrainingSession._sessionDelegate,
+                        _VTUITrainingSession._sessionProcess, _VTUITrainingSession._speechRecognitionRequest,
+                        _VTUITrainingSession._speechRecognizer, _VTUITrainingSession._trainingCompletion,
+                        _VTUITrainingSession._utteranceId, _VTUITrainingSession._audioSession,
+                        _VTUITrainingSession._phraseSpotter, _VTUITrainingSession._sessionNumber,
+                        _VTUITrainingSession._speechRecognitionTask, _VTUITrainingSession._status ]
+...

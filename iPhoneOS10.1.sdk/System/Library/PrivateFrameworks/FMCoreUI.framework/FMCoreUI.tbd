@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMCoreUI.framework/FMCoreUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FMShortcutItemIdentifierKey ]
+    objc-classes:     [ _FMAccuracyOverlay,
+                        _FMAppShortcutManager, _FMBorderedButton,
+                        _FMBottomPaneSegue, _FMDynamicTypeButton,
+                        _FMDynamicTypeTextField, _FMFixedSizeView,
+                        _FMHorizontalRule, _FMMapGestureRecognizer,
+                        _FMObservingCell, _FMRightPaneSegue,
+                        _FMSlidingPaneViewController, _FMTitleViewCenteringNavigationBar,
+                        _FMVerticalRule, _FMViewController,
+                        _FMAnnotationView, _FMBorderedView,
+                        _FMDynamicTypeLabel, _FMHairlineConstraint,
+                        _FMMapView, _FMRule,
+                        _FMTopPaneSegue ]
+...

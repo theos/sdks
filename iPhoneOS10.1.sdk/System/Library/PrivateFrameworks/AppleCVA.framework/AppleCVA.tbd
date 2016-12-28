@@ -1,0 +1,47 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleCVA.framework/AppleCVA
+current-version: 1.8.2
+compatibility-version: 1.8.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CVAFusionCreate,
+                        _CVAFusionGetTypeID, _CVAVideoMattingBypass,
+                        _CVAVideoMattingGetTypeID, _CVAVideoMattingRenderSdofContinuous,
+                        _CVAVideoMattingUpdate, _kCVAFusionFocusPosition_autofocusStable,
+                        _kCVAFusionFocusPosition_focusDistance, _kCVAFusionFocusPosition_focusRegion,
+                        _kCVAFusionFocusPosition_normRoi, _kCVAFusionProperty_bgShiftUpdateRate,
+                        _kCVAFusionProperty_dsHighScale, _kCVAFusionProperty_dsLowScale,
+                        _kCVAFusionProperty_height, _kCVAFusionProperty_minDeltaShift,
+                        _kCVAFusionRelativeShift_bgShiftSum, _kCVAFusionRelativeShift_dstRelativeShift,
+                        _kCVAFusionRelativeShift_invalidShiftRatio, _kCVAFusionRelativeShift_rawShiftScore,
+                        _kCVAVideoMattingBypass_srcColor, _kCVAVideoMattingProperty_alphaContrastExponent,
+                        _kCVAVideoMattingProperty_alphaGuidedFilterEps, _kCVAVideoMattingProperty_alphaMaxLaplacian,
+                        _kCVAVideoMattingProperty_colorCropX, _kCVAVideoMattingProperty_colorHeight,
+                        _kCVAVideoMattingProperty_deltaShift, _kCVAVideoMattingProperty_guidedFilterMinDistToDeweight,
+                        _kCVAVideoMattingProperty_kernelSize, _kCVAVideoMattingProperty_maxDistToPushShiftEdgesRev,
+                        _kCVAVideoMattingProperty_maxShiftFillingInconsistency, _kCVAVideoMattingProperty_referenceLensPosition,
+                        _kCVAVideoMattingProperty_renderingInvalidShiftFillValue, _kCVAVideoMattingProperty_renderingShiftBlurRadius,
+                        _kCVAVideoMattingProperty_shiftCropX, _kCVAVideoMattingProperty_shiftFilterColorStd,
+                        _kCVAVideoMattingProperty_shiftHeight, _kCVAVideoMattingProperty_shiftWidth,
+                        _kCVAVideoMattingProperty_srcColorWidth, _kCVAVideoMattingRender_callback,
+                        _kCVAVideoMattingRender_fNumber, _kCVAVideoMattingRender_focusShift,
+                        _kCVAVideoMattingRender_radiusOfConfusion, _kCVAVideoMattingRender_renderedBuffer,
+                        _kCVAVideoMattingRender_srcAlpha, _kCVAVideoMattingRender_srcColorGain,
+                        _kCVAVideoMattingRender_srcColorSNR, _kCVAVideoMattingUpdate_callback,
+                        _kCVAVideoMattingUpdate_dstColor, _kCVAVideoMattingUpdate_srcColor,
+                        _kCVAVideoMattingUpdate_srcShift, _CVAFusionGetRelativeShift,
+                        _CVAVideoMattingCreate, _CVAVideoMattingSdofRadiusOfConfusion,
+                        _kCVAFusionFocusPosition_autofocusStatus, _kCVAFusionFocusPosition_focusRegionType,
+                        _kCVAFusionProperty_cntDeltaShift, _kCVAFusionProperty_dsLowThld,
+                        _kCVAFusionProperty_width, _kCVAFusionRelativeShift_focusShift,
+                        _kCVAVideoMattingBypass_dstColor, _kCVAVideoMattingProperty_alphaGammaExponent,
+                        _kCVAVideoMattingProperty_alphaWidth, _kCVAVideoMattingProperty_colorWidth,
+                        _kCVAVideoMattingProperty_guidedFilterUnconfidentWeight, _kCVAVideoMattingProperty_maxShiftFillingDistFromFg,
+                        _kCVAVideoMattingProperty_referenceShift, _kCVAVideoMattingProperty_renderingShiftUpdateRate,
+                        _kCVAVideoMattingProperty_shiftFilterUpdateRate, _kCVAVideoMattingProperty_srcColorHeight,
+                        _kCVAVideoMattingRender_dstColor, _kCVAVideoMattingRender_minShiftInFocus,
+                        _kCVAVideoMattingRender_shiftAtInf, _kCVAVideoMattingRender_srcColorLux,
+                        _kCVAVideoMattingUpdate_dstAlpha, _kCVAVideoMattingUpdate_focusShift ]
+...

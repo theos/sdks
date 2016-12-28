@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kSymptomDiagnosticActionCancel,
+                        _kSymptomDiagnosticActionStart, _kSymptomDiagnosticCaseUsageKeyCasesAccepted,
+                        _kSymptomDiagnosticCaseUsageKeyDomain, _kSymptomDiagnosticCaseUsageKeyInterArrivalVar,
+                        _kSymptomDiagnosticCaseUsageKeyLastSeen, _kSymptomDiagnosticCaseUsageKeySubType,
+                        _kSymptomDiagnosticDomainEnergy, _kSymptomDiagnosticDomainResourceNotify,
+                        _kSymptomDiagnosticErrorHourlyLimitExceeded, _kSymptomDiagnosticErrorNone,
+                        _kSymptomDiagnosticErrorRandomizedSuppression, _kSymptomDiagnosticErrorServiceNotReady,
+                        _kSymptomDiagnosticErrorSessionNotFound, _kSymptomDiagnosticEventResultSuccess,
+                        _kSymptomDiagnosticEventStatusStart, _kSymptomDiagnosticEventTypeExpertSystem,
+                        _kSymptomDiagnosticEventTypeProbe, _kSymptomDiagnosticKeyEventContext,
+                        _kSymptomDiagnosticKeyEventDuration, _kSymptomDiagnosticKeyEventInterface,
+                        _kSymptomDiagnosticKeyEventName, _kSymptomDiagnosticKeyEventRatio,
+                        _kSymptomDiagnosticKeyEventStatus, _kSymptomDiagnosticKeyPayloadPath,
+                        _kSymptomDiagnosticKeyType, _kSymptomDiagnosticPayloadTypePacketCapture,
+                        _kSymptomDiagnosticReplyReason, _kSymptomDiagnosticReplySuccess,
+                        _kSymptomDiagnosticSignatureContext, _kSymptomDiagnosticSignatureDomain,
+                        _kSymptomDiagnosticSignaturePID, _kSymptomDiagnosticSignatureSubType,
+                        _kSymptomDiagnosticSignatureThresholdValues, _kSymptomDiagnosticSignatureUUID,
+                        _kSymptomDiagnosticTypeFunctional, _kSymptomDiagnosticTypePerformance,
+                        _kSymptomDiagnosticActionSnapshot, _kSymptomDiagnosticCaseUsageKeyCasesSeen,
+                        _kSymptomDiagnosticCaseUsageKeyLastAccepted, _kSymptomDiagnosticCaseUsageKeyType,
+                        _kSymptomDiagnosticErrorDailyLimitExceeded, _kSymptomDiagnosticErrorNotSupported,
+                        _kSymptomDiagnosticErrorServiceUnavailable, _kSymptomDiagnosticEventStatusFinish,
+                        _kSymptomDiagnosticEventTypeMessage, _kSymptomDiagnosticKeyEventCount,
+                        _kSymptomDiagnosticKeyEventInterfaceType, _kSymptomDiagnosticKeyEventResult,
+                        _kSymptomDiagnosticKeyTimestamp, _kSymptomDiagnosticPayloadTypePlist,
+                        _kSymptomDiagnosticSignatureBundleIdentifier, _kSymptomDiagnosticSignatureEffectiveProcess,
+                        _kSymptomDiagnosticSignatureSubTypeContext, _kSymptomDiagnosticTypeEnergy,
+                        _kSymptomDiagnosticTypeOperational ]
+    objc-classes:     [ _SDRDiagnosticReporter ]
+...

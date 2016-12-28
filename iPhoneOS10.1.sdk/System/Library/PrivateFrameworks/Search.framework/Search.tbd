@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Search.framework/Search
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DisableCategoryPromotion,
+                        _DisableParsec, _DisableShortcut,
+                        _OldRankingEnabledKey, _SPAllDomainKeys,
+                        _SPCanEnableInternetDomains, _SPDayStringForDate,
+                        _SPDisplayNameForDomain, _SPDomainOrderingIsTransient,
+                        _SPGetDisabledDomainSet, _SPGetDomainOrdering,
+                        _SPGetInternetDomainsAvailable, _SPIsiPad,
+                        _SPLogDirectory, _SPLogForSPLogCategoryIndex,
+                        _SPLogInit, _SPLogPersistedTypesKey,
+                        _SPLogSetOutputLevel, _SPOutputLevelKey,
+                        _SPSearchDomainForKey, _SPSearchFrameworkPath,
+                        _SPSetInternetDomainsAvailable, _SPSpotlightSupportDirectoryPath,
+                        _SPTimeStringForDate, _SPTransactionDone,
+                        _SearchDisableTapToRadar, _SearchParsecEnabledKey,
+                        _SearchParsecLoggingEnabledKey, _SearchResultDomainCount,
+                        _gSPLogDebugAsDefault, _gSPLogLevel,
+                        _DisableCoreDuet, _DisableTextMatch,
+                        _SPAllDomainsVector, _SPDisplayIdentifierForDomain,
+                        _SPGetDisabledBundleSet, _SPGetExtendedDomains,
+                        _SPKeyForSearchDomain, _SPLogForSPLogCategoryQuery,
+                        _SPLogSetLevel, _SPSearchDomainForDisplayIdentifierAndCategory,
+                        _SPSetExtendedDomains, _SPStringForDuration,
+                        _SPZKWSearchDomains, _SearchParsecLedBellyEnabledKey,
+                        __SPLog, _gSPLogInfoAsDefault ]
+    objc-classes:     [ _SFMutableResultSection,
+                        _SFSearchResult_SpotlightExtras, _SPDaemonQueryToken,
+                        _SPFeedbackManager, _SPResultSet,
+                        _SPSearchQuery, _SPXPCConnection,
+                        _SPXPCServer, _SFSearchResult_Compatibility,
+                        _SPDomainManager, _SPSearchAgent,
+                        _SPXPCMessage ]
+    objc-ivars:       [ _SPDaemonQueryToken._delegate,
+                        _SPDaemonQueryToken._queryID, _SPSearchAgent._currentZKWLevel,
+                        _SPSearchAgent._mutableSections, _SPSearchAgent._options,
+                        _SPSearchAgent._queryComplete, _SPSearchAgent._resultCount,
+                        _SPSearchAgent._searchThroughAllowed, _SPSearchAgent._topHitResultSection,
+                        _SPSearchQuery._cancelled, _SPSearchQuery._finished,
+                        _SPSearchQuery._searchString, _SPDaemonQueryToken._query,
+                        _SPSearchAgent._delegate, _SPSearchAgent._prefixWithNoResults,
+                        _SPSearchAgent._searchDomains, _SPSearchQuery._cancellationTime,
+                        _SPSearchQuery._queryID ]
+...

@@ -1,0 +1,67 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Navigation.framework/Navigation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MNActiveRouteDetailsReadFrom,
+                        _MNInstructionsCalculateDistanceUnits, _MNInstructionsDisplayStringForProceedToRouteStep,
+                        _MNInstructionsDistanceTypeConvertToMeters, _MNInstructionsIsStepAppropriateForProceedToRouteAnnouncement,
+                        _MNInstructionsLocalizedMetricUnits, _MNInstructionsShortPromptTypeForStepInRoute,
+                        _MNInstructionsSpokenAnnouncementForProceedingToRoute, _MNInstructionsSpokenForSubstep,
+                        _MNLocationDetailsReadFrom, _MNRoutePlanningDetailsReadFrom,
+                        _MNTracePlaybackDetailsReadFrom, _MNTrafficIncidentAlertDetailsReadFrom,
+                        _MNGetHoursAndMinutesForTimeInterval, _MNInstructionsDisplayedInSignForContinuingOnRoad,
+                        _MNInstructionsLocalizedImperialUnits, _MNInstructionsSpokenAnnouncementForContinuingOnRoad,
+                        _MNLocaleDidChangeNotification, _MNTraceBookmarkReadFrom ]
+    objc-classes:     [ _MNActiveRouteDetails,
+                        _MNAudioOutputSetting, _MNCoreMotionContextProvider,
+                        _MNDriveGuidanceManager, _MNETADisplayFormatter,
+                        _MNGuidanceManager, _MNListInstructionContents,
+                        _MNLocationDetails, _MNNanoFormattedStringFormatter,
+                        _MNNavigationServer, _MNPreloadSession,
+                        _MNRoutePlanningDetails, _MNSignInstructionContents,
+                        _MNTraceBookmark, _MNTracePlaybackDetails,
+                        _MNTracePlayerScheduler, _MNTraceRecorder,
+                        _MNTrafficIncidentAlertDetails, _MNTransitStepInstruction,
+                        _MNVoiceController, _MNWalkingTurnByTurnLocationTracker,
+                        _MNAudioFrameworkSymbols, _MNDebugInstructionContents,
+                        _MNETAManager, _MNLocation,
+                        _MNNavigationAudioSession, _MNRouteCoordinate,
+                        _MNTrace, _MNTracePlayer,
+                        _MNTrafficIncidentAlert, _MNTransitWalkingLegInstruction,
+                        _MNWalkGuidanceManager ]
+    objc-ivars:       [ _MNAudioOutputSetting._hfpPreference,
+                        _MNAudioOutputSetting._selected, _MNGuidanceManager._baselineDistance,
+                        _MNGuidanceManager._contentOfExecutionAnnouncement, _MNGuidanceManager._currentDirectionsContinueStraight,
+                        _MNGuidanceManager._currentRoadName, _MNGuidanceManager._currentShieldType,
+                        _MNGuidanceManager._delegate, _MNGuidanceManager._didAnnounceManeuverContinue,
+                        _MNGuidanceManager._didAnnounceManeuverInitial, _MNGuidanceManager._didAnnounceProceedToRoute,
+                        _MNGuidanceManager._didShowPrimarySign, _MNGuidanceManager._distanceWhenExecuteAnnounced,
+                        _MNGuidanceManager._distanceWhenInitialAnnounced, _MNGuidanceManager._estimateOfTimeToSpeakExecutionAnnouncement,
+                        _MNGuidanceManager._lastUpdateTime, _MNGuidanceManager._navigationSession,
+                        _MNGuidanceManager._route, _MNGuidanceManager._shouldSkipExecuteAnnounce,
+                        _MNGuidanceManager._shouldSkipPrepareAnnounce, _MNGuidanceManager._timeLastAnnouncementStarted,
+                        _MNListInstructionContents._branchNames, _MNListInstructionContents._distance,
+                        _MNListInstructionContents._exitNumber, _MNListInstructionContents._intersectionName,
+                        _MNListInstructionContents._maneuverType, _MNListInstructionContents._suppressNames,
+                        _MNListInstructionContents._towardNames, _MNNavigationAudioSession._language,
+                        _MNSettings._acceptFasterReroute, _MNSettings._backgroundTimeWindow,
+                        _MNSettings._distanceUnits, _MNSettings._etaRequestInterval,
+                        _MNSettings._initialRequestDelay, _MNSettings._isTracePlaybackCameraTestMode,
+                        _MNSettings._pauseSpokenAudio, _MNSettings._shouldLoadInitialRouteFromTrace,
+                        _MNSettings._speechEnabled, _MNSettings._voiceVolume,
+                        _MNVoiceController._activeNavigationSession, _MNAudioOutputSetting._pickableRoutes,
+                        _MNGuidanceManager._baselineSpeed, _MNGuidanceManager._currentInstructionOptions,
+                        _MNGuidanceManager._currentStepIndex, _MNGuidanceManager._didAnnounceManeuverExecution,
+                        _MNGuidanceManager._didAnnounceSecondaryManeuver, _MNGuidanceManager._distanceWhenFirstAnnouncementAllowed,
+                        _MNGuidanceManager._guidanceState, _MNGuidanceManager._pointIndexForCurrentRoadInfo,
+                        _MNGuidanceManager._shouldSkipInitialAnnounce, _MNGuidanceManager._timeUntilNextAnnouncement,
+                        _MNListInstructionContents._distanceFormat, _MNListInstructionContents._junctionAngle,
+                        _MNListInstructionContents._toFreeway, _MNNavigationAudioSession._sessionType,
+                        _MNSettings._beepBeforeInstruction, _MNSettings._fakeTrafficIncidentAlert,
+                        _MNSettings._muteSpeechOverride, _MNSettings._shouldLoadReroutesFromTrace,
+                        _MNSettings._walkingVoiceGuidance ]
+...

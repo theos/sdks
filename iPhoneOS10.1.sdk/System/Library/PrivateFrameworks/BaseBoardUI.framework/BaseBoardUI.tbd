@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BaseBoardUI.framework/BaseBoardUI
+current-version: 0.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BSUIBaseBoardUIVersionNumber,
+                        _BSUICreateIOSurface, _BSUISurfaceImageWithColorSpaceAndDrawBlock,
+                        _BSUIBaseBoardUIVersionString, _BSUICreateUISurfaceWithColorSpaceAndDrawBlock ]
+    objc-classes:     [ _BSUIAnimationFactory,
+                        _BSUIMappedImageCacheFuture, _BSUIMappedSurfaceImage,
+                        __BSUIAnimationAttributesFactory, _BSUIMappedImageCache,
+                        _BSUIScrollView ]
+...

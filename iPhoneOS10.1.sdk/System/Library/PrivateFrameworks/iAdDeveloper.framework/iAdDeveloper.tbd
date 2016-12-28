@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iAdDeveloper.framework/iAdDeveloper
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ADFSEventsCallback,
+                        _kADCreativeTypeDouble, _kADCreativeTypeFullscreen,
+                        _kADCreativeTypeMediumRectangle, _kADCreativeTypePreroll,
+                        _kADCreativeTypeStandard, _kADCreativeTypeVideo,
+                        _kADCreativeTypeAudio, _kADCreativeTypeLarge,
+                        _kADCreativeTypeSeminative ]
+    objc-classes:     [ _ADEmbeddedAdServer,
+                        _HTSHTTPMessageRequest, _HTSHTTPServer,
+                        _HTSHTTPServerConnection, _HTSHTTPMessage,
+                        _HTSHTTPMessageResponse ]
+...

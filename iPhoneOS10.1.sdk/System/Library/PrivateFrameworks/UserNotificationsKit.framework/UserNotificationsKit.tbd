@@ -1,0 +1,58 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NCIsEqual,
+                        _NCIsEqualToDictionary, _NCMakePlistDebuggingState,
+                        _NCNotificationActionEnvironmentMinimal, _NCRegisterDebuggingStateProvider,
+                        _NCUILogClient, _NCUILogExtensions,
+                        _NCUILogSubsystem, _UserNotificationsKitVersionNumber,
+                        _UserNotificationsKitVersionString, _NCIsEqualToArray,
+                        _NCNotificationActionEnvironmentDefault, _NCRegisterUserNotificationsUILogging,
+                        _NCUILogLists, _NCUserNotificationsKitFrameworkBundle ]
+    objc-classes:     [ _NCCoalescedNotification,
+                        _NCMutableNotificationAction, _NCMutableNotificationOptions,
+                        _NCMutableNotificationSectionSettings, _NCNotificationAction,
+                        _NCNotificationCollapsingQueue, _NCNotificationDestinationsRegistry,
+                        _NCNotificationOptions, _NCNotificationSection,
+                        _NCNotificationSound, _NCNotificationStore,
+                        _NCMutableCoalescedNotification, _NCMutableNotificationRequest,
+                        _NCNotificationAlertQueue, _NCNotificationDispatcher,
+                        _NCNotificationSectionSettings ]
+    objc-ivars:       [ _NCCoalescedNotification._notificationRequests,
+                        _NCNotificationAction._activationMode, _NCNotificationAction._behaviorParameters,
+                        _NCNotificationAction._identifier, _NCNotificationAction._launchURL,
+                        _NCNotificationAction._shouldDismissNotification, _NCNotificationContent._attachmentImage,
+                        _NCNotificationContent._dateAllDay, _NCNotificationContent._icon,
+                        _NCNotificationContent._subtitle, _NCNotificationContent._title,
+                        _NCNotificationOptions._addToLockScreenWhenLocked, _NCNotificationOptions._alertsWhenLocked,
+                        _NCNotificationOptions._canPlaySound, _NCNotificationOptions._coalescesWhenLocked,
+                        _NCNotificationOptions._hideClearActionInList, _NCNotificationOptions._lockScreenPersistence,
+                        _NCNotificationOptions._messageNumberOfLines, _NCNotificationOptions._overridesQuietMode,
+                        _NCNotificationOptions._realertCount, _NCNotificationOptions._revealsAdditionalContentOnPresentation,
+                        _NCNotificationOptions._suppressesAlertsWhenAppIsActive, _NCNotificationOptions._suppressesSubtitleWhenLocked,
+                        _NCNotificationRequest._clearAction, _NCNotificationRequest._collapsedNotificationsCount,
+                        _NCNotificationRequest._context, _NCNotificationRequest._isCollapsedNotification,
+                        _NCNotificationRequest._options, _NCNotificationRequest._peopleIdentifiers,
+                        _NCNotificationRequest._sectionIdentifier, _NCNotificationRequest._silenceAction,
+                        _NCNotificationRequest._sourceInfo, _NCNotificationRequest._supplementaryActions,
+                        _NCNotificationRequest._timestamp, _NCNotificationSectionSettings._sectionIdentifier,
+                        _NCNotificationSectionSettings._subSectionIdentifier, _NCNotificationSound._alertConfiguration,
+                        _NCNotificationSound._maxDuration, _NCNotificationSound._ringtoneName,
+                        _NCNotificationSound._soundBehavior, _NCNotificationSound._systemSoundID,
+                        _NCNotificationSound._vibrationPattern, _NCNotificationAction._actionRunner,
+                        _NCNotificationAction._destructiveAction, _NCNotificationAction._requiresAuthentication,
+                        _NCNotificationContent._date, _NCNotificationContent._message,
+                        _NCNotificationContent._topic, _NCNotificationOptions._alternateActionLabel,
+                        _NCNotificationOptions._dismissAutomatically, _NCNotificationOptions._lockScreenPriority,
+                        _NCNotificationOptions._preemptsPresentedNotification, _NCNotificationOptions._silencedByMenuButtonPress,
+                        _NCNotificationRequest._categoryIdentifier, _NCNotificationRequest._content,
+                        _NCNotificationRequest._notificationIdentifier, _NCNotificationRequest._requestDestinations,
+                        _NCNotificationRequest._sound, _NCNotificationRequest._threadIdentifier,
+                        _NCNotificationSectionSettings._settings, _NCNotificationSound._controllerAttributes,
+                        _NCNotificationSound._songPath, _NCNotificationSound._soundType ]
+...

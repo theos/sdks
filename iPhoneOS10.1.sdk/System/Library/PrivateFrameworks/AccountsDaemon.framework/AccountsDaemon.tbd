@@ -1,0 +1,54 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon
+current-version: 637.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ACAccountSyncClientID,
+                        _ACAccountSyncDevices, _ACAccountSyncExchangeType,
+                        _ACAccountSyncKeychainExtension, _ACAccountSyncMailProtocolKey,
+                        _ACDAccountStoreDidChangeNotification, _ACDAccountSyncDevices,
+                        _ACDAccountSyncMarkAccountCreated, _ACDAccountSyncRemoveTombstones,
+                        _ACDDatabaseFileName, _ACDDatbaseTestingFilePrefix,
+                        _ACDEntityAccount, _ACDEntityAccountType,
+                        _ACDEntityCredentialItem, _ACDKeychainItemVersionKey,
+                        _ACDLogAccessRequest, _ACDServerRun,
+                        _ACEnableAccountSync, _ACOneTimeLDAPFixAccountSync,
+                        _ACOneTimeSMTPFixAccountSync, _CopyExternalSourcesEnabledForDataType,
+                        _SetAccountNameEnabledForDataType, _SetTetheredSyncingDisabledForDatatype,
+                        __ACDConnectionLogSystem, __ACDLogSystem,
+                        __ACMessageIdentifierKey, __ACMessageNeedsReplyKey,
+                        __ACMessagePayloadCommandKey, __ACMessagePayloadKey,
+                        __ACMessagePayloadResultKey, __ACMessagePayloadSuccessKey,
+                        _kACDSyncDataTypeBookmarks, _kACDSyncDataTypeContacts,
+                        _kACDSyncDataTypeNotes, _tetheredSyncSourceTypeForDataType,
+                        _ACAccountSyncDataclassKeychainExtension, _ACAccountSyncHostnameKeychainExtension,
+                        _ACAccountSyncQualifiedUsername, _ACDAccountSyncEnabled,
+                        _ACDBridgeMOMFilename, _ACDEntityAccessOptionsKey,
+                        _ACDEntityAuthorization, _ACDLanguageDidChangeNotification,
+                        _ACDisableAccountSync, _ACOneTimeMigrateAccountSync,
+                        _GetTetheredSyncingDisabledForDataType, __ACDAuthenticationDialogHostBundleID,
+                        __ACIDSServiceIdentifier, __ACMessagePayloadAccountKey,
+                        __ACMessagePayloadOptionsKey, _kACDKeychainVersionCurrent,
+                        _kACDSyncDataTypeMailAccounts, _syncDataTypeForDataclass ]
+    objc-classes:     [ _ACDAccessPluginManager,
+                        _ACDAccountNotifier, _ACDAccountStoreFilter,
+                        _ACDAuthenticationDialogManager, _ACDAuthenticationPluginManager,
+                        _ACDClientAuthorization, _ACDDatabase,
+                        _ACDDatabaseMigrator, _ACDDataclassOwnersManagerInterface,
+                        _ACDKeychain, _ACDKeychainItem,
+                        _ACDKeychainMigrator, _ACDPairedDeviceAccountCache,
+                        _ACDPreferences, _ACDServer,
+                        _ACDTestManager, _ACRemoteCommandHandler,
+                        _ACRemoteDeviceProxy, __ACDTestServer,
+                        _ACDAccountChange, _ACDAccountSync,
+                        _ACDClient, _ACDDatabaseInitializer,
+                        _ACDFakeRemoteAccountStoreSession, _ACDKeychainManager,
+                        _ACDPluginLoader, _ACDTCCUtilities,
+                        _ACRemoteDeviceMessage ]
+    objc-ivars:       [ _ACDDatabaseInitializer._accessKeys,
+                        _ACDDatabaseInitializer._accounts, _ACDDatabaseInitializer._dataclasses,
+                        _ACDDatabaseInitializer._accountTypes, _ACDDatabaseInitializer._database ]
+...

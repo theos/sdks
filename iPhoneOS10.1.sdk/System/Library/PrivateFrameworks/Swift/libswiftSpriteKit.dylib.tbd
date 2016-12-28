@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftSpriteKit.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TFE9SpriteKitCSo11SKShapeNodeg25customPlaygroundQuickLookOs19PlaygroundQuickLook,
+                        __TFE9SpriteKitCSo14SKTextureAtlasg25customPlaygroundQuickLookOs19PlaygroundQuickLook, __TTWCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook,
+                        __TTWCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, __TWPCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKit,
+                        __TWPCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKit, __TWaCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKit,
+                        __TWaCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKit, __swift_FORCE_LOAD_$_swiftSpriteKit,
+                        __TFE9SpriteKitCSo12SKSpriteNodeg25customPlaygroundQuickLookOs19PlaygroundQuickLook, __TTWCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook,
+                        __TWPCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKit, __TWaCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKit,
+                        __TWaCSo9SKTextures29CustomPlaygroundQuickLookable9SpriteKit ]
+    objc-classes:     [ __TtC9SpriteKit24_SpriteKitMethodProvider ]
+...

@@ -1,0 +1,55 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NSStringFromBiometricKitStatus,
+                        _NSStringFromSBUIBiometricMatchMode, _SBFloatCeilForScale,
+                        _SBFloatFloorForScale, _SBFloatRoundForMainScreenScale,
+                        _SBLayoutDefaultSideLayoutElementWidth, _SBLockOverlayStyleIsOpaque,
+                        _SBPointEqualToPointAtScale, _SBPointRoundForMainScreenScale,
+                        _SBRectEqualsRect, _SBRectRoundForMainScreenScale,
+                        _SBRectWithSize, _SBSUIIdleTimerModeDescription,
+                        _SBSUIRotationModeDescription, _SBSUIWallpaperGetCurrentHomeScreenImage,
+                        _SBSUIWallpaperGetLegibilitySettings, _SBSUIWallpaperSetImage,
+                        _SBSUIWallpaperSetImageAsWallpaperForLocations, _SBSUIWallpaperSetVariant,
+                        _SBSizeEqualsSize, _SBSizeLessThanSize,
+                        _SBUICurrentPasscodeStyleForUser, _SBUIFloatFloorForScale,
+                        _SBUIHardwareKeyboardReturnKeyPressedNotification, _SBUIWidgetIdiomNotificationCenterKey,
+                        _SBUIWidgetViewControllersKey, __SBSUIWallpaperSetImageWithoutCheckingMC,
+                        __enhanceContrastChanged, _kLargeriPhoneSize,
+                        _NSStringFromSBUIBiometricEvent, _SBFloatEqualsFloat,
+                        _SBFloatRoundForScale, _SBPhoneOnPadFallbackLaunchSize,
+                        _SBPointRoundForScale, _SBRectRoundForScale,
+                        _SBSUIMagicWallpaperSetWithOptions, _SBSUIWallpaperGetCurrentLockScreenImage,
+                        _SBSUIWallpaperSetImageArchive, _SBSUIWallpaperSetVideo,
+                        _SBUICommonInitialize, _SBUIGraphicsQuality,
+                        _SBUIWidgetIdiomNotificationCenterTodayKey, __SBUIWidgetBundlePaths ]
+    objc-classes:     [ _SBBlackBackdropSettings,
+                        _SBInteractionPassThroughView, _SBLockOverlayStyleProperties,
+                        _SBNumberPadWithDelegate, _SBPasscodeNumberPadButton,
+                        _SBSUICarDisplayNowPlayingViewController, _SBSUILoginUISceneClientSettings,
+                        _SBSUILoginUISceneSpecification, _SBSUIRemoteAlertItemContentViewController,
+                        _SBSUIWallpaperPreviewViewController, _SBUIAlphanumericPasscodeEntryField,
+                        _SBUIBiometricResource, _SBUICallToActionLabel,
+                        _SBUIEmergencyCallServiceViewController, _SBUIKeyboardEnablementManager,
+                        _SBUILegibilityView, _SBUILongNumericPasscodeEntryField,
+                        _SBUIPasscodeBiometricResource, _SBUIPasscodeLockNumberPad,
+                        _SBUIPasscodeLockViewFactory, _SBUIPasscodeLockViewInstallTonightSimpleFixedDigitKeypad,
+                        _SBUIPasscodeLockViewLongNumericKeypad, _SBUIPasscodeLockViewSimpleFixedDigitKeypad,
+                        _SBUIPasscodeLockViewWithKeypad, _SBUIRemoteAlertServiceViewController,
+                        _SBUISimpleFixedDigitPasscodeEntryField, _SBUIVibrantButton,
+                        _SpringBoardUIServices, __SBUIBiometricKitInterface,
+                        __SBUISwitcherPageServiceViewController, __SBUIWidgetViewController,
+                        _SBEmptyButtonView, _SBLockOverlayStylePropertiesFactory,
+                        _SBSUICarDisplayNowPlayingStateContext, _SBSUILoginUISceneClientSettingsDiffInspector,
+                        _SBSUIWallpaperPreviewView, _SBUIAppleLogoView,
+                        _SBUIEmergencyCallHostViewController, _SBUILegibilityLabel,
+                        _SBUINumericPasscodeEntryFieldBase, _SBUIPasscodeLockViewBase,
+                        _SBUIPasscodeLockViewInstallTonightWithKeyboard, _SBUIPasscodeLockViewWithKeyboard,
+                        _SBUIRingViewLabelButton, _SBWhiteBackdropSettings,
+                        __SBUIBiometricMatchingAssertion ]
+...

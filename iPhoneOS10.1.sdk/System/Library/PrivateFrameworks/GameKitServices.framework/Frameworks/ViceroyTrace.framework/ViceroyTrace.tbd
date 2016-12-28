@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AWDFacetimeSubmitMetric,
+                        _GKSSubmitAWDMetricsFromGameD, _VCMarcoAction,
+                        _VCMarcoAddCallMetric_Int, _VCMarcoBegin,
+                        _VCMarcoLog, _VCMarcoPerformSnapshot,
+                        _VRTraceCheckpoint_, _VRTraceErrorLogLevelFromCSTR,
+                        _VRTraceFlush, _VRTraceGetSessionLogging,
+                        _VRTraceGetUseCFLog, _VRTracePrintLoggingInfo,
+                        _VRTraceReset, _VRTraceSetErrorLogLevelForModule,
+                        _VRTraceSetMonitorNSLog, _VRTraceSetStandardLogStream,
+                        _VRTraceSetUseASL, _VRTraceSetUseMarcoLogging,
+                        _connectingGKLog, _gVRTraceModuleFilterEnabled,
+                        _perfTimerStart, _reportingAWDCallStart,
+                        _reportingClassSendMsgToServer, _reportingConnecting,
+                        _reportingConnectionType, _reportingCreateAgent,
+                        _reportingGKAppInfo, _reportingGKLog,
+                        _reportingGetDefaults, _reportingHandoverResult,
+                        _reportingLocalAndRemoteInterface, _reportingModeRoleTransportLog,
+                        _reportingRegisterPeriodicTask, _reportingReleaseObject,
+                        _reportingStartTimer, _reportingThermal,
+                        _reportingUnregisterPeriodicTask, _reportingVideoPaused,
+                        _reportingVisualRectangle, _reportingWiFiCallingLogCallStart,
+                        _reportingWiFiCallingLogMetricSample, _AWDGCKSubmitLinkStatusMetric,
+                        _VCMarcoAddCallMetric_Double, _VCMarcoEnd,
+                        _VCMarcoShouldLog, _VRTraceErrorLogLevelToCSTR,
+                        _VRTraceGetUseASL, _VRTracePrint_,
+                        _VRTraceSetLogFile, _VRTraceSetStreamOutputFormat,
+                        _VRTraceVariable_, _gVRTraceOSLog,
+                        _reportingCancelLog, _reportingConnectionEstablishment,
+                        _reportingDisconnected, _reportingGKPerfTimes,
+                        _reportingHomeKitIPCameraEvent, _reportingPerfTimes,
+                        _reportingRemoteFrameSize, _reportingTierLog,
+                        _reportingVideoProp, _reportingWiFiCallingLogCallEnd ]
+    objc-classes:     [ _TimingCollection ]
+    objc-ivars:       [ _TimingCollection.queue,
+                        _TimingCollection.timings ]
+...

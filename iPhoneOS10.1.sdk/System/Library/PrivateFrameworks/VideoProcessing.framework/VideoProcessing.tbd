@@ -1,0 +1,61 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VideoProcessing.framework/VideoProcessing
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MediaAnalysisAdjustedFingerprintKey,
+                        _MediaAnalysisBlacklistAgeOutInterval, _MediaAnalysisBlurResultsKey,
+                        _MediaAnalysisChangedVersion3, _MediaAnalysisClassificationResultsKey,
+                        _MediaAnalysisConvertAnalysisToOriginalTime, _MediaAnalysisDateAnalyzedKey,
+                        _MediaAnalysisDeleteRetainInterval, _MediaAnalysisDistanceResultsKey,
+                        _MediaAnalysisDomain, _MediaAnalysisFeatureVectorResultsKey,
+                        _MediaAnalysisFlagsForTypes, _MediaAnalysisInterestingnessResultsKey,
+                        _MediaAnalysisIrisRecommendResultsKey, _MediaAnalysisJunkResultsKey,
+                        _MediaAnalysisMovingObjectResultsKey, _MediaAnalysisObstructionResultsKey,
+                        _MediaAnalysisPostProcessSlowmoResults, _MediaAnalysisQualityKey,
+                        _MediaAnalysisQualityUnknown, _MediaAnalysisResultDistanceAttributeKey,
+                        _MediaAnalysisResultDuplicateAttributeKey, _MediaAnalysisResultFaceBoundsAttributeKey,
+                        _MediaAnalysisResultFacePositionAttributeKey, _MediaAnalysisResultFlagsKey,
+                        _MediaAnalysisResultJunkAttributeKey, _MediaAnalysisResultMovingObjectsAttributeKey,
+                        _MediaAnalysisResultNeighborDateModifiedAttributeKey, _MediaAnalysisResultPreEncodeDataAttributeKey,
+                        _MediaAnalysisResultSaliencyBoundsAttributeKey, _MediaAnalysisResultSharpnessAttributeKey,
+                        _MediaAnalysisResultShotTypeAttributeKey, _MediaAnalysisResultSummaryTimerangeAttributeKey,
+                        _MediaAnalysisResultVanishingPointConfidenceAttributeKey, _MediaAnalysisResultsKeyToType,
+                        _MediaAnalysisResultsTypeToKey, _MediaAnalysisSaliencyResultsKey,
+                        _MediaAnalysisServiceName, _MediaAnalysisStorageServiceName,
+                        _MediaAnalysisSubjectMotionResultsKey, _MediaAnalysisTypeShortDescription,
+                        _MediaAnalysisUtteranceResultsKey, _MediaAnalysisVersionKey,
+                        _StringForAnalysisTypes, _VCPCompressionSessionCompleteFrames,
+                        _VCPCompressionSessionCopySupportedPropertyDictionary, _VCPCompressionSessionEncodeFrame,
+                        _VCPCompressionSessionGetTypeID, _VCPCompressionSessionSetProperty,
+                        _VCPDecompressionSessionCopyProperty, _VCPDecompressionSessionCopySupportedPropertyDictionary,
+                        _VCPDecompressionSessionDecodeFrame, _VCPDecompressionSessionGetTypeID,
+                        _VCPDecompressionSessionSetProperties, _VCPDecompressionSessionWaitForAsynchronousFrames,
+                        _VCPParseParameterSetsAndCreateConfigurationRecord, _VCPReadDecMaxFrameFormat,
+                        _VCPReadFrameSliceHeader, _VCPSessionCopyProperty,
+                        _VCPSessionCreateDefaultBufferProperties, _VCPSessionGetTypeID,
+                        _VPModuleInitialize, _MediaAnalysisAnalysisTypesKey,
+                        _MediaAnalysisCameraMotionResultsKey, _MediaAnalysisCompositionResultsKey,
+                        _MediaAnalysisDateModifiedKey, _MediaAnalysisDistanceUnknown,
+                        _MediaAnalysisFineSubjectMotionResultsKey, _MediaAnalysisIrisObjectsResultsKey,
+                        _MediaAnalysisMasterFingerprintKey, _MediaAnalysisOrientationResultsKey,
+                        _MediaAnalysisQualityResultsKey, _MediaAnalysisResultDominantLineAttributeKey,
+                        _MediaAnalysisResultFacePoseYawAttributeKey, _MediaAnalysisResultIndexAttributeKey,
+                        _MediaAnalysisResultNeighborAttributeKey, _MediaAnalysisResultQualityKey,
+                        _MediaAnalysisResultSharpnessFacesAttributeKey, _MediaAnalysisResultVanishingPointAttributeKey,
+                        _MediaAnalysisResultsKeysForAnalysisTypes, _MediaAnalysisSceneResultsKey,
+                        _MediaAnalysisStripInternalResultsFromAnalysis, _MediaAnalysisTypesUpdatedSince,
+                        _MediaAnalysisVoiceResultsKey, _VCPCompressionSessionCopyProperty,
+                        _VCPCompressionSessionGetPixelBufferPool, _VCPDecompressionSessionCopyBlackPixelBuffer,
+                        _VCPDecompressionSessionCreate, _VCPDecompressionSessionInvalidate,
+                        _VCPParseConfigurationRecordAndCreateParameterSets, _VCPReadEncMaxFrameFormat,
+                        _VCPSessionCreate, _VCPSessionSetProperty ]
+    objc-classes:     [ _VCPFingerprint,
+                        _VCPImageDescriptor, _VCPInterAssetAnalyzer,
+                        _VCPMediaAnalysisService, _VCPMovieAnalyzer,
+                        _VCPPhotoAnalyzer, _VCPImageConverter,
+                        _VCPLogManager, _VCPMediaAnalyzer ]
+...

@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TPDefaultLog,
+                        _TPDialerSoundControllerWillBeginSoundsNotification, _TPFrameworkBundleIdentifier,
+                        _TPMainScreenScale, _TPNumberPadKeyResetLocale,
+                        _TPPixelCGFloor, _TPShouldHideVoicemailUI,
+                        _TPStringForNumberPadCharacter, _kCarrierDomain,
+                        _kTPSuperBottomBarImageNameCamera, _kVMShouldHideVoicemailUI,
+                        _TPDialerSoundControllerDidEndSoundsNotification, _TPIsUnknown,
+                        _TPPixelCGCeiling, _TPStatusBarManagerStringChangedNotification,
+                        _kTPSuperBottomBarImageNameAudio, _kTPSuperBottomBarImageNameMute ]
+    objc-classes:     [ _TPAlertAction,
+                        _TPBottomBar, _TPBottomSingleButtonBar,
+                        _TPDialerNumberPad, _TPFavoritesCollectionViewFlowLayout,
+                        _TPFavoritesEntryCell, _TPFileStorageManager,
+                        _TPLCDSubImageView, _TPLCDTextViewScrollingView,
+                        _TPNumberPad, _TPNumberPadDarkStyleButton,
+                        _TPNumberPadLightStyleButton, _TPPhonePad,
+                        _TPRevealingRingView, _TPSetPINViewController,
+                        _TPSimpleNumberPadButton, _TPStatusBarManager,
+                        _TPSuperBottomBarButton, __TPTemplatedColoredImageView,
+                        _TPAlertViewHelper, _TPButton,
+                        _TPFavoritesController, _TPLCDBar,
+                        _TPLCDView, _TPNumberPadKey,
+                        _TPPortraitOnlyNavigationController, _TPSimpleNumberPad,
+                        _TPSuperBottomBar ]
+    objc-ivars:       [ _TPAlertViewHelper._alertView,
+                        _TPBottomBar._orientation, _TPBottomDoubleButtonBar._button2,
+                        _TPBottomSingleButtonBar._delegate, _TPLCDSubImageView._image,
+                        _TPLCDTextView._animation, _TPLCDTextView._delegate,
+                        _TPLCDTextView._fontSize, _TPLCDTextView._leftTruncates,
+                        _TPLCDTextView._scrollingView, _TPLCDTextView._text,
+                        _TPLCDTextView._textRect, _TPLCDTextViewScrollingView._owner,
+                        _TPLCDView._imageView, _TPLCDView._layoutAsLabelled,
+                        _TPPhonePad._bottomHeight, _TPPhonePad._delegateSoundCallbacks,
+                        _TPPhonePad._highlightKey, _TPPhonePad._inflightSounds,
+                        _TPPhonePad._leftWidth, _TPPhonePad._midWidth,
+                        _TPPhonePad._rightWidth, _TPPhonePad._topHeight,
+                        _TPAlertViewHelper._completionHandler, _TPBottomSingleButtonBar._button,
+                        _TPLCDTextView._animates, _TPLCDTextView._font,
+                        _TPLCDTextView._minFontSize, _TPLCDTextView._textColor,
+                        _TPLCDView._contentView, _TPLCDView._textView,
+                        _TPPhonePad._downKey, _TPPhonePad._keyToButtonMap,
+                        _TPPhonePad._playsSounds, _TPPhonePad._soundsActivated ]
+...

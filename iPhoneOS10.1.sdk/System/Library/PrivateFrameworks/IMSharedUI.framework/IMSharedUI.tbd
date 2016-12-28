@@ -1,0 +1,14 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IMSharedUI.framework/IMSharedUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMAnonymizeContentAndContacts,
+                        _IMSetAnonymizeContentAndContacts, _IMSharedUIBundleID,
+                        _IMSharedUIVersionString, _kCKThinkingDotsOpacityDefault,
+                        _IMAnonymizeContentAndContactsDidChangeNotification, _IMSharedUIVersionNumber ]
+    objc-classes:     [ _IMTypingIndicatorLayer ]
+...

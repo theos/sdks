@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 37076996-95AF-3385-B431-A3187E53E419', 'armv7s: 70E78922-1886-36B9-ADFA-EA798E7B04B3', 
+                   'arm64: A59EAA01-6AFA-3B2E-B0BC-3F4EFD3EED68' ]
+platform:        ios
+install-name:    /usr/lib/libChineseTokenizer.dylib
+current-version: 21.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ChineseTokenizerAdvanceToNextToken, _ChineseTokenizerCreate, 
+                       _ChineseTokenizerGetCurrentTokenRange, _ChineseTokenizerGoToTokenAtIndex, 
+                       _ChineseTokenizerRelease, _ChineseTokenizerSetCustomWordCheckBlock, 
+                       _ChineseTokenizerSetDynamicLexicon, _ChineseTokenizerSetString ]
+...

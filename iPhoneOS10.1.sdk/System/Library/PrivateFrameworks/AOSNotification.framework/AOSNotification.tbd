@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AOSNotification.framework/AOSNotification
+current-version: 0.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AOSFMFInviteNotification,
+                        _AOSVetFinishedNotification, _NETWORK_STATUS_KEY,
+                        _kAOSAccountDataclassPropAppServerHostnameKey, _kAOSAccountDataclassPropHostnameKey,
+                        _kAOSAccountDataclassPropertiesKey, _kAOSAccountEnabledDataclassesKey,
+                        _kAOSAccountNameKey, _kAOSAccountPersonIDKey,
+                        _kAOSAccountTokensDictKey, _kAOSAccountUserInfoKey,
+                        _kAOSDataclassCalendars, _kAOSDataclassDeviceLocator,
+                        _kAOSDataclassShareLocation, _kAOSLocalNetworkStatusChangedNotification,
+                        _kAOSMigrateAccountNotification, _kAOSNotificationServiceClientNotify,
+                        _kAOSNotification_NotBackedUp_Pref_Domain, _kAOSNotification_Public_NotBackedUp_Pref_Domain,
+                        _kAOSTokenStatus, _kAOSTokenStatusNotAccessible,
+                        _kAOSTokenStatusOK, _kAOSTokenTypeAvailableAfterFirstUnlock,
+                        _kAOSTokenTypeAvailableWhenUnlocked, _kAOSTokenValueKey,
+                        _kConnectJIDKey, _kFMFAppBundleIdentifier,
+                        _kFMIPStateDidChangeNotification, _kFMMEnabledPrefDomain,
+                        _kFMMRemoveAuthRight, _kLostModeIsActiveKey,
+                        _kLostModeScreenTextKey, _kServiceIdentifierFindMyDevice,
+                        _kServiceIdentifierFindMyMac, _kTopicURIKey,
+                        _AOSNotificationRetrieveAllAccounts, _kAOSAccountDataclassPropAPSEnvKey,
+                        _kAOSAccountDataclassPropUriSchemeKey, _kAOSAccountMigratedNotification,
+                        _kAOSAccountTokenKey, _kAOSDataclassBookmarks,
+                        _kAOSDataclassMail, _kAOSMessageTopicURIKey,
+                        _kAOSNotification_App_ID, _kAOSTokenInternalKey,
+                        _kAOSTokenStatusNotFound, _kAOSTokenTypeAvailableAlways,
+                        _kActivationLockStateDidChangeNotification, _kFMFLocationManagerBundlePath,
+                        _kFMMEnabledPrefKey, _kLostModeScreenOwnerNumKey,
+                        _kServiceIdentifierFindMyFriends, _kStopLostModeAlarmNotification ]
+    objc-classes:     [ _AOSNotifySession ]
+...

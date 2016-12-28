@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PersistentConnection.framework/PersistentConnection
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PCForceDemoMaxKeepAliveIntervalKey,
+                        _PCIntervalCacheChangedNotification, _PCIntervalCacheKeepAliveIntervalKey,
+                        _PCPreferencesDidChangeNotification, _PCSettingsGetClassPushEnabled,
+                        _PCSettingsGetGlobalMCCForceManualWhenRoaming, _PCSettingsGetStyle,
+                        _PCSettingsPurgeDictionariesExceptForCurrent, _PCSettingsSetClassPushEnabled,
+                        _PCSettingsSetForceManualWhenRoamingForMCCAccount, _PCSettingsSetStyle,
+                        _PCWiFiInterfaceNameKey, __PCSettingsGetStyle,
+                        _PCForceMinKeepAliveIntervalKey, _PCPersistentConnectionBundleIdentifier,
+                        _PCSettingsGetForceManualWhenRoamingForMCCAccount, _PCSettingsMobileMeOTASyncAccountIdentifier,
+                        _PCSettingsSetDefaultStyle, _PCTimerFireEarlyToCoalesceKey ]
+    objc-classes:     [ _PCConnectionManager,
+                        _PCLogging, _PCPersistentTimer,
+                        _PCSimpleTimer, _PCInterfaceMonitor,
+                        _PCPersistentInterfaceManager ]
+    objc-ivars:       [ _PCConnectionManager._connectionClass,
+                        _PCConnectionManager._delayTimer, _PCConnectionManager._delegateQueue,
+                        _PCConnectionManager._disableEarlyFire, _PCConnectionManager._enableNonCellularConnections,
+                        _PCConnectionManager._guidancePriority, _PCConnectionManager._inCallback,
+                        _PCConnectionManager._intervalTimer, _PCConnectionManager._isReachable,
+                        _PCConnectionManager._keepAliveGracePeriod, _PCConnectionManager._lastReconnectTime,
+                        _PCConnectionManager._lastScheduledGrowthAlgorithm, _PCConnectionManager._lastStopTime,
+                        _PCConnectionManager._onlyAllowedStyle, _PCConnectionManager._pollingIntervalOverride,
+                        _PCConnectionManager._powerAssertionID, _PCConnectionManager._prefsStyle,
+                        _PCConnectionManager._reconnectIteration, _PCConnectionManager._reconnectWithKeepAliveDelay,
+                        _PCConnectionManager._timerGuidance, _PCConnectionManager._wifiGrowthAlgorithm,
+                        _PCPersistentInterfaceManager._WWANContextIdentifier, _PCPersistentInterfaceManager._WiFiAutoAssociationDelegates,
+                        _PCPersistentInterfaceManager._ctIsWWANInHomeCountry, _PCPersistentInterfaceManager._delegatesAndQueues,
+                        _PCPersistentInterfaceManager._inCallWWANOverrideTimer, _PCPersistentInterfaceManager._isInCall,
+                        _PCPersistentInterfaceManager._isWWANInterfaceActivationPermitted, _PCPersistentInterfaceManager._isWWANInterfaceInProlongedHighPowerState,
+                        _PCPersistentInterfaceManager._isWakeOnWiFiEnabled, _PCPersistentInterfaceManager._lastActivationTime,
+                        _PCPersistentInterfaceManager._shouldOverrideOnCallBehavior, _PCPersistentInterfaceManager._wakeOnWiFiDisableTimer,
+                        _PCPersistentTimer._disableSystemWaking, _PCPersistentTimer._guidancePriority,
+                        _PCPersistentTimer._queue, _PCPersistentTimer._serviceIdentifier,
+                        _PCPersistentTimer._startTime, _PCPersistentTimer._triggerOnGMTChange,
+                        _PCPersistentTimer._userVisible, _PCSimpleTimer._earlyFireDelta,
+                        _PCSimpleTimer._fireTimer, _PCSimpleTimer._powerAssertionID,
+                        _PCSimpleTimer._queue, _PCSimpleTimer._selector,
+                        _PCSimpleTimer._significantTimeChangeToken, _PCSimpleTimer._startTime,
+                        _PCSimpleTimer._timeChangeSource, _PCSimpleTimer._timerRunLoop,
+                        _PCSimpleTimer._userInfo, _PCSimpleTimer._userVisible,
+                        _PCConnectionManager._defaultPollingInterval, _PCConnectionManager._delegateRunLoop,
+                        _PCConnectionManager._forceManualWhenRoaming, _PCConnectionManager._interfaceIdentifier,
+                        _PCConnectionManager._isRunning, _PCConnectionManager._lastResumeTime,
+                        _PCConnectionManager._onTimeKeepAliveTime, _PCConnectionManager._pollingIntervalOverrideSet,
+                        _PCConnectionManager._pushIsConnectedToken, _PCConnectionManager._serviceIdentifier,
+                        _PCConnectionManager._wwanGrowthAlgorithm, _PCPersistentInterfaceManager._WiFiAutoAssociationDisableTimer,
+                        _PCPersistentInterfaceManager._hasWWANStatusIndicator, _PCPersistentInterfaceManager._isPowerStateDetectionSupported,
+                        _PCPersistentInterfaceManager._isWWANInterfaceUp, _PCPersistentInterfaceManager._lock,
+                        _PCPersistentInterfaceManager._wwanRSSI, _PCPersistentTimer._minimumEarlyFireProportion,
+                        _PCPersistentTimer._simpleTimer, _PCPersistentTimer._userInfo,
+                        _PCSimpleTimer._fireTime, _PCSimpleTimer._preventSleepTimer,
+                        _PCSimpleTimer._serviceIdentifier, _PCSimpleTimer._target,
+                        _PCSimpleTimer._triggerOnGMTChange ]
+...

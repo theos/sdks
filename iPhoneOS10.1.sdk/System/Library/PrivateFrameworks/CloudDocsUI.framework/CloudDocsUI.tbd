@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudDocsUI.framework/CloudDocsUI
+current-version: 81.0.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BRFormatPhoneNumber,
+                        __CDAdaptLocalizedStringForItemType, __UIDocumentPickerCollectionViewCompactIconTrait,
+                        __UIDocumentPickerDescriptorCloudEnabledStatusDidChange, __UIDocumentPickerModelModifiedThumbnailKey,
+                        __UIDocumentPickerModelUpdatedNotificationChangesKey, __UIDocumentPickerUnavailableIdentifier,
+                        __UIDocumentPickerUserDefaultsKey, _cdui_default_log,
+                        _cdui_perf_log, _CDAddLocalizedSuffixForType,
+                        __UIDocumentPickerCollectionViewListModeTrait, __UIDocumentPickerModelUpdatedNotification,
+                        __UIDocumentPickerUserDefaultsEnabledKey, __UIDocumentPickerUserDefaultsOrderKey ]
+    objc-classes:     [ _BRObservableFile,
+                        __UIDocumentPickerCloudDirectoryObserver, __UIDocumentPickerURLContainerModel,
+                        __UIDocumentTargetSelectionController, __UIViewServiceViewController,
+                        __UIDocumentListController, __UIDocumentSearchListController,
+                        __UIPreferredContentSizeRelayingNavigationController ]
+...

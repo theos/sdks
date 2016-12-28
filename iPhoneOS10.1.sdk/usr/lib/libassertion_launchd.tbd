@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 4864B322-D5AC-3F08-BACC-3D7C7401A954', 'armv7s: 026667B3-373F-35EF-8440-99430FACA3B2', 
+                   'arm64: A936F280-CE64-3083-A6C1-326EC43CADAA' ]
+platform:        ios
+install-name:    /usr/lib/libassertion_launchd.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _assertion_set_process_state ]
+...

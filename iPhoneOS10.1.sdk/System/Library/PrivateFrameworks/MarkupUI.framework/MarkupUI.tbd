@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MarkupUI.framework/MarkupUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MUAnimationIconImage,
+                        _MUAnimationSourceRect, _MUDisplayAsFullScreen,
+                        _MUFileDisplayName, _MUAnimationMaskRect,
+                        _MUEncryptPrivateMetadata ]
+    objc-classes:     [ _MUCGPDFAnnotationAdaptor,
+                        _MUImageContentViewController, _MUPDFContentViewController,
+                        _MarkupViewController, _MUCGPDFNukeAndPaveWriter,
+                        _MURemoteViewController ]
+...

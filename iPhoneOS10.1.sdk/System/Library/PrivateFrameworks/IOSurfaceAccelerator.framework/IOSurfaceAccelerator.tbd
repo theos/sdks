@@ -1,0 +1,36 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IOSurfaceAcceleratorAbortCaptures,
+                        _IOSurfaceAcceleratorBlitSurface, _IOSurfaceAcceleratorCaptureSurface,
+                        _IOSurfaceAcceleratorConfigurePerformanceStats, _IOSurfaceAcceleratorGetFrameworkInfo,
+                        _IOSurfaceAcceleratorGetRunLoopSource, _IOSurfaceAcceleratorGetStatistics,
+                        _IOSurfaceAcceleratorKernelTests, _IOSurfaceAcceleratorSetFilterCoefficients,
+                        _IOSurfaceAcceleratorTransferSurfaceWithSwap, _kDisplayColorRemapModeKey,
+                        _kIOSurfaceAcceleratorBorderFillAlpha, _kIOSurfaceAcceleratorBorderFillGreenCb,
+                        _kIOSurfaceAcceleratorBorderFillRedY, _kIOSurfaceAcceleratorBorderFillX,
+                        _kIOSurfaceAcceleratorDitherControl, _kIOSurfaceAcceleratorFixUpscaling,
+                        _kIOSurfaceAcceleratorHistogramBinMode, _kIOSurfaceAcceleratorHistogramMaxPixelValue,
+                        _kIOSurfaceAcceleratorHistogramOffsetY, _kIOSurfaceAcceleratorHistogramWidth,
+                        _kIOSurfaceAcceleratorOptOutBlitClip, _kIOSurfaceAcceleratorPseudoLinearScaling,
+                        _kIOSurfaceAcceleratorSharpenerMode, _kIOSurfaceAcceleratorSharpenerMode_Static,
+                        _kIOSurfaceAcceleratorSharpenerSourceCleaness_Clean, _kIOSurfaceAcceleratorSharpenerSourceCleaness_Normal,
+                        _kIOSurfaceAcceleratorSharpenerSourceSharpness_Blur, _kIOSurfaceAcceleratorSharpenerStrength,
+                        _kIOSurfaceAcceleratorSharpenerStrength_Strong, _kIOSurfaceAcceleratorSkipAsyncCallback,
+                        _kIOSurfaceAcceleratorUnwireSurfaceKey, _kIOSurfaceAcceleratorUseNearestFilter,
+                        _prepareCustomFilter, _prepareTransformRectangles,
+                        _IOSurfaceAcceleratorAbortTransfers, _IOSurfaceAcceleratorConditionalTransferSurfaceWithSwap,
+                        _IOSurfaceAcceleratorGetID, _IOSurfaceAcceleratorGetTypeID,
+                        _IOSurfaceAcceleratorTransferSurface, _kIOSurfaceAcceleratorAlphaOverride,
+                        _kIOSurfaceAcceleratorBorderFillHeight, _kIOSurfaceAcceleratorBorderFillY,
+                        _kIOSurfaceAcceleratorForceMaxSpeedKey, _kIOSurfaceAcceleratorHistogramOffsetX,
+                        _kIOSurfaceAcceleratorLockInScaler, _kIOSurfaceAcceleratorSharpener,
+                        _kIOSurfaceAcceleratorSharpenerSourceCleaness, _kIOSurfaceAcceleratorSharpenerSourceSharpness,
+                        _kIOSurfaceAcceleratorSharpenerStrength_Normal, _kIOSurfaceAcceleratorSymmetricTransformKey,
+                        _kIOSurfaceAcceleratorZeroFill, _prepareTransformBuffersAndOptions ]
+...

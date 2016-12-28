@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ProactiveEventTrackerVersionNumber,
+                        _ProactiveEventTrackerVersionString ]
+    objc-classes:     [ _PETAggdLoggingOutlet,
+                        _PETDistributionEventTracker, _PETEventFreeValuedProperty,
+                        _PETEventProperty, _PETEventStringValuedProperty,
+                        _PETGoalConversionEventTracker, _PETScalarEventTracker,
+                        _PETTestLoggingOutlet, _PETDeviceInfo,
+                        _PETEventNumericalProperty, _PETEventTracker,
+                        _PETStringPairs ]
+...

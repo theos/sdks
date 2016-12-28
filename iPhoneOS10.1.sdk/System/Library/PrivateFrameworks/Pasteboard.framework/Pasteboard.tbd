@@ -1,0 +1,29 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PBBestMatchForType,
+                        _PBCannotCoerceObjectOfClassToObjectOfClassError, _PBCannotCopyFileError,
+                        _PBCannotInstantiateObjectOfClassError, _PBCannotLoadRepresentationError,
+                        _PBCannotUnarchiveItemCollectionError, _PBCannotUnserializePasteboardNameError,
+                        _PBErrorDomain, _PBGeneralPasteboardName,
+                        _PBIsPasteboardNameAllowed, _PBItemQueue,
+                        _PBMetadataExpirationDateKey, _PBMetadataNameKey,
+                        _PBNewClientToServerXPCInterface, _PBNotAuthorizedError,
+                        _PBPasteboardChangedNotificationStateKey, _PBPasteboardNameInvalidError,
+                        _PBPasteboardNotAvailableError, _PBPasteboardPreferencesDomain,
+                        _PBPreferencesBoolValue, _PBTypeNotFoundError,
+                        _PBURLFromURLArchive, _PBBestMatchForTypes,
+                        _PBCannotCreateRepresentationError, _PBCannotSerializePasteboardError,
+                        _PBDispatchAsyncCallback, _PBIndexOutOfRangeError,
+                        _PBMetadataChangeCountKey, _PBMetadataPersistentKey,
+                        _PBPasteboardChangedNotification, _PBPasteboardNameNotAvailableError,
+                        _PBPlistableClasses, _PBSHA1HashOfString ]
+    objc-classes:     [ _PBCoercionRegistry,
+                        _PBItemCollection, _PBServerConnection,
+                        _PBItem, _PBKeyedUnarchiver ]
+...

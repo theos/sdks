@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VisualVoicemail.framework/IMAP.vvservice/IMAP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _H_X_APPLEVM_DELETION_DATE,
+                        _H_X_APPLEVM_MESSAGE_VERSION, ___VVSharedMFLogInterceptor,
+                        _kCurrentAppleVMMessageVersion, _kIMAPServiceAccountDataClass,
+                        _kIMAPServiceBeaconServiceCenterAddress, _kIMAPServiceBodyCachingTaskName,
+                        _kIMAPServiceBypassSMSCAvailabilityCheck, _kIMAPServiceClientManagesTrash,
+                        _kIMAPServiceFlagPushTaskName, _kIMAPServiceLibraryRecordsAddedNotification,
+                        _kIMAPServiceMaxPINLength, _kIMAPServiceMinPINLength,
+                        _kIMAPServiceRetrieveGreetingTaskName, _kIMAPServiceSetCustomGreetingTaskName,
+                        _kIMAPServiceSupportsGreetingNotification, _kIMAPServiceUsesMWI,
+                        _kInboxMailboxName, _vm_default_log,
+                        _vm_ui_log, _vm_vmstore_log,
+                        _vm_vmtool_log, _H_X_APPLEVM_DURATION,
+                        _kAppleVMActiveGreetingFlag, _kIMAPServiceBeaconAddress,
+                        _kIMAPServiceBodyRetrievingTaskName, _kIMAPServiceDeliverLegacyNotificationsBeforeSetup,
+                        _kIMAPServiceMaxGreetingDuration, _kIMAPServicePreferredAuthenticationScheme,
+                        _kIMAPServiceSetDefaultGreetingTaskName, _kIMAPServiceUsesSSL,
+                        _vm_imap_log, _vm_vmd_log ]
+    objc-classes:     [ _IMAPNotificationInterpreter,
+                        _IMAPServiceAccount, _IMAPServiceBodyLoadContext,
+                        _IMAPServiceConnection, _IMAPServiceGreetingStore,
+                        _IMAPServiceLibraryMessage, __VVMFLogInterceptor,
+                        _IMAPService, _IMAPServiceBodyLoadMonitor,
+                        _IMAPServiceLibrary, _IMAPServiceStore ]
+    objc-ivars:       [ _IMAPService._account,
+                        _IMAPService._addedRecords, _IMAPService._bodyLoadMonitor,
+                        _IMAPService._greetingLock, _IMAPService._imapParameters,
+                        _IMAPService._messageChangeQueue, _IMAPService._parametersFilePath,
+                        _IMAPService._pendingDeletesLock, _IMAPServiceAccount._checkInForcefully,
+                        _IMAPServiceAccount._idleLock, _IMAPServiceAccount._idleTimer,
+                        _IMAPServiceAccount._offlineCachePath, _IMAPServiceAccount._serviceAccountLock,
+                        _IMAPServiceActivityController._activeActivities, _IMAPServiceActivityController._service,
+                        _IMAPServiceBodyLoadContext._expectedLength, _IMAPServiceBodyLoadContext._headersDict,
+                        _IMAPServiceBodyLoadContext._lengthWritten, _IMAPServiceBodyLoadContext._parser,
+                        _IMAPServiceBodyLoadContext._service, _IMAPServiceBodyLoadMonitor._service,
+                        _IMAPServiceConnection._checkedOutThreadsLock, _IMAPServiceLibrary._account,
+                        _IMAPServiceLibraryMessage._messageIDHeader, __VVMFLogInterceptor._data,
+                        __VVMFLogInterceptor._lock, _IMAPService._activityController,
+                        _IMAPService._greetingDuration, _IMAPService._imapServiceFlags,
+                        _IMAPService._pendingDeletes, _IMAPServiceAccount._hasBeenInvalidated,
+                        _IMAPServiceAccount._nextIdleFire, _IMAPServiceAccount._storeCacheLock,
+                        _IMAPServiceBodyLoadContext._base64, _IMAPServiceBodyLoadContext._lastOffset,
+                        _IMAPServiceBodyLoadContext._recordLibraryId, _IMAPServiceConnection._checkedOutThreads,
+                        _IMAPServiceLibrary._sharedGenericStore, _IMAPServiceStore._imapServiceStoreFlags ]
+...

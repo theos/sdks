@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreCapture.framework/CoreCapture
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CCPipe_capture,
+                        _CCPipe_getClientRef, _CCPipe_getTypeID,
+                        _CCPipe_willDropMessage, _CCStream_clearLogFlag,
+                        _CCStream_getConsoleFlags, _CCStream_getFlags,
+                        _CCStream_getTypeID, _CCStream_logAlert,
+                        _CCStream_logCrit, _CCStream_logDebug,
+                        _CCStream_logEmergency, _CCStream_logIf,
+                        _CCStream_logInfoIf, _CCStream_logNoticeIf,
+                        _CCStream_logSpamIf, _CCStream_logWarnIf,
+                        _CCStream_setConsoleLevel, _CCStream_setFlags,
+                        _CCStream_setLogFlag, _CC_getConnectRef,
+                        ___incrementUInt8Ptr, _CCPipe_create,
+                        _CCPipe_logw, _CCStream_create,
+                        _CCStream_getLevel, _CCStream_logAlertIf,
+                        _CCStream_logDebugIf, _CCStream_logInfo,
+                        _CCStream_logSpam, _CCStream_setConsoleFlags,
+                        _CCStream_setLevel, _CC_getTypeID ]
+...

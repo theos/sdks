@@ -1,0 +1,63 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MetalTools.framework/MetalTools
+current-version: 0.0.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __Z19emitKernelTelemetryP18MTLTelemetryDevice,
+                        __Z20emitDrawDistributionP18MTLTelemetryDeviceP31MTLTelemetryDrawDistributionRec, __Z23emitEncoderDistributionP18MTLTelemetryDeviceP34MTLTelemetryEncoderDistributionRec,
+                        __Z23emitSamplerDistributionP18MTLTelemetryDeviceP34MTLTelemetrySamplerDistributionRec, __Z24emitComputePipelineStatsP18MTLTelemetryDeviceP34MTLTelemetryComputeFunctionStatRecP42MTLTelemetryComputePipelineDistributionRec,
+                        __Z24emitRenderPassAttributesP18MTLTelemetryDeviceP26MTLTelemetryStatisticUIRec, __Z28emitRenderTargetDistributionP18MTLTelemetryDeviceNSt3__113unordered_mapI14MTLPixelFormat36MTLTelemetryRenderTargetDistributionNS1_4hashIyEENS1_8equal_toIS3_EENS1_9allocatorINS1_4pairIKS3_S4_EEEEEE,
+                        __Z38emitParallellRenderEncoderDistributionP18MTLTelemetryDevice26MTLTelemetryStatisticUIRec, __ZN19ILayerLockingPolicyD1Ev,
+                        __ZN20NoLayerLockingPolicy4lockEv, __ZNK20NoLayerLockingPolicy5cloneEv,
+                        __ZTI20NoLayerLockingPolicy, __ZTS20NoLayerLockingPolicy,
+                        __ZTV20NoLayerLockingPolicy, __Z20emitBlitDistributionP18MTLTelemetryDeviceNSt3__113unordered_mapI14MTLPixelFormat28MTLTelemetryBlitDistributionNS1_4hashIyEENS1_8equal_toIS3_EENS1_9allocatorINS1_4pairIKS3_S4_EEEEEE,
+                        __Z23emitRenderPipelineStatsP18MTLTelemetryDeviceP33MTLTelemetryRenderFunctionStatRecS2_P41MTLTelemetryRenderPipelineDistributionRec, __Z24emitDispatchDistributionP18MTLTelemetryDeviceP35MTLTelemetryDispatchDistributionRec,
+                        __Z29emitCommandBufferDistributionP18MTLTelemetryDeviceP34MTLTelemetryCommandBufferCounttRec, __ZN19ILayerLockingPolicyD2Ev,
+                        __ZTI19ILayerLockingPolicy, __ZTV19ILayerLockingPolicy ]
+    objc-classes:     [ _MTLDebugBlitCommandEncoder,
+                        _MTLDebugBufferMarker, _MTLDebugCommandQueue,
+                        _MTLDebugComputePipelineState, _MTLDebugDevice,
+                        _MTLDebugFunction, _MTLDebugLibrary,
+                        _MTLDebugRenderCommandEncoder, _MTLDebugResource,
+                        _MTLDebugTexture, _MTLTelemetryBlitCommandEncoder,
+                        _MTLTelemetryCommandBuffer, _MTLTelemetryComputeCommandEncoder,
+                        _MTLTelemetryDepthStencilState, _MTLTelemetryHeap,
+                        _MTLTelemetryRenderCommandEncoder, _MTLTelemetrySamplerState,
+                        _MTLToolsBlitCommandEncoder, _MTLToolsCommandBuffer,
+                        _MTLToolsCommandQueue, _MTLToolsComputePipelineState,
+                        _MTLToolsDevice, _MTLToolsFragmentRenderCommandEncoder,
+                        _MTLToolsHeap, _MTLToolsObject,
+                        _MTLToolsRenderCommandEncoder, _MTLToolsResource,
+                        _MTLToolsTexture, _MTLToolsTextureLayout,
+                        _MTLDebugBuffer, _MTLDebugComputeCommandEncoder,
+                        _MTLDebugFragmentRenderCommandEncoder, _MTLDebugParallelRenderCommandEncoder,
+                        _MTLDebugSamplerState, _MTLTelemetryBuffer,
+                        _MTLTelemetryComputePipelineState, _MTLTelemetryParallelRenderCommandEncoder,
+                        _MTLTelemetryTexture, _MTLToolsCommandEncoder,
+                        _MTLToolsDepthStencilState, _MTLToolsFunction,
+                        _MTLToolsParallelRenderCommandEncoder, _MTLToolsSamplerState ]
+    objc-ivars:       [ _MTLDebugCommandBuffer._currentEncoder,
+                        _MTLDebugRenderCommandEncoder._dirtyBits, _MTLDebugRenderCommandEncoder._vertexBuiltinArgumentCapacity,
+                        _MTLDebugRenderCommandEncoder._vertexBuiltinArguments, _MTLTelemetryCommandBuffer.blitEncoderBlitDistribution,
+                        _MTLTelemetryCommandBuffer.cbBlits, _MTLTelemetryCommandBuffer.cbDraws,
+                        _MTLTelemetryCommandBuffer.computeEncoderDispatchDistribution, _MTLTelemetryCommandBuffer.dispatchDistribution,
+                        _MTLTelemetryCommandBuffer.encoderCount, _MTLTelemetryCommandBuffer.renderEncoderDrawCallDistribution,
+                        _MTLTelemetryDevice.attachmentCount, _MTLTelemetryDevice.blitEncoderBlitDistribution,
+                        _MTLTelemetryDevice.bufferDistribution, _MTLTelemetryDevice.commandBufferDispatchDistribution,
+                        _MTLTelemetryDevice.commandBufferDrawCallDistribution, _MTLTelemetryDevice.computePipelineDistribution,
+                        _MTLTelemetryDevice.depthClipModeClampDistribution, _MTLTelemetryDevice.dispatchDistribution,
+                        _MTLTelemetryDevice.encoderDistribution, _MTLTelemetryDevice.frontFaceStencilStateDistribution,
+                        _MTLTelemetryDevice.parallellRenderEncoderDistribution, _MTLTelemetryDevice.renderEncoderDrawCallDistribution,
+                        _MTLTelemetryDevice.renderTargetMap, _MTLTelemetryDevice.textureMap,
+                        _MTLToolsObject._parent, _MTLToolsResource._options,
+                        _MTLDebugRenderCommandEncoder._attachmentInfo, _MTLDebugRenderCommandEncoder._vertexBuiltinArgumentCount,
+                        _MTLTelemetryCommandBuffer.blitMap, _MTLTelemetryCommandBuffer.commandBufferDistribution,
+                        _MTLTelemetryCommandBuffer.drawDistribution, _MTLTelemetryCommandBuffer.renderTargetMap,
+                        _MTLTelemetryDevice.blitMap, _MTLTelemetryDevice.commandBufferDistribution,
+                        _MTLTelemetryDevice.computeStatDistribution, _MTLTelemetryDevice.drawDistribution,
+                        _MTLTelemetryDevice.kernelDistribution, _MTLTelemetryDevice.renderPipelineDistribution,
+                        _MTLTelemetryDevice.vertexStatDistribution, _MTLToolsObject._strongParent ]
+...

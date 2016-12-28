@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CFStringHashNSString,
+                        _TypeNameForClassOfObject, _codeString,
+                        _gDataDictionary, _gDictDictionary,
+                        _gStringDictionary, _normalizedStringForString,
+                        _parseElement, _usage,
+                        _GetDataName, _gArrayDictionary,
+                        _gNumberDictionary, _objectCount,
+                        _referenceElement ]
+    objc-classes:     [ __NSConstantArray,
+                        __NSConstantData, __NSConstantDictionary,
+                        __NSConstantNumber, __NSConstantNumberFloat,
+                        __NSConstantNumberInt, __NSConstantArrayEnumerator,
+                        __NSConstantDictionaryEnumerator, __NSConstantNumberBool ]
+    objc-ivars:       [ __NSConstantArrayEnumerator.capacity,
+                        __NSConstantArrayEnumerator.objects, __NSConstantDictionaryEnumerator.currentKey,
+                        __NSConstantDictionaryEnumerator.keyIndex, __NSConstantArrayEnumerator.index,
+                        __NSConstantDictionaryEnumerator.capacity ]
+...

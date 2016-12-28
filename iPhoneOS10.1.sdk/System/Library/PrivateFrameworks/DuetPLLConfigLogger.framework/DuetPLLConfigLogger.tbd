@@ -1,0 +1,23 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DuetPLLConfigLogger.framework/DuetPLLConfigLogger
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DUET_CLOG,
+                        _DUET_CLOG_MASK, _getStateForC,
+                        _reportAggDNonDiscretionaryBackgroundDownload, _DUET_CLOGMODE,
+                        _reportAggDBackgroundDownload ]
+    objc-classes:     [ _AppLaunchStatsAggD,
+                        _DuetConfigurator, _PoolResource,
+                        _fetchFilterEntry, _BudgetPool,
+                        _fetchDenyEntry ]
+    objc-ivars:       [ _DuetLogger.binaryName,
+                        _DuetLogger.duetLoggerSource, _DuetLogger.fileMgr,
+                        _DuetLogger.filePath, _DuetLogger.homeDir,
+                        _DuetLogger.logState, _DuetLogger.log_msg,
+                        _DuetLogger.canWriteToFile, _DuetLogger.fileName,
+                        _DuetLogger.logQueue, _DuetLogger.log_client ]
+...

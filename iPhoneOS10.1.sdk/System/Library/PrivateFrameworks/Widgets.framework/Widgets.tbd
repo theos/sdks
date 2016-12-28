@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Widgets.framework/Widgets
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NCBundleIDForPID,
+                        _WGApplicationIdentifierForWidgetWithBundleIdentifier, _WGCachedNSHomeDirectory,
+                        _WGContainingBundleCachePathForWidgetWithContainingBundleIdentifier, _WGEnsureDirectoryExistsAtPath,
+                        _WGIsBundleWithIdentifierInternal, _WGIsWidgetWithBundleIdentifierInternal,
+                        _WGLogSubsystem, _WGMainScreenReferenceBounds,
+                        _WGPlugInBundleIdentifiersForContainingBundleIdentifier, _WGRegisterWidgetsLogging,
+                        _WGRoundToScale, _WGShortStringFromLayoutMode,
+                        _WGStringForAppearState, _WGStringFromWidgetLifeCycleSequenceState,
+                        _WGTodayViewArchiveGetDisplayModeForIdentifier, _WGTodayViewArchiveGetOrderedIdentifiersInGroup,
+                        _WGTodayViewArchiveMigrateArchiveFromLegacy, _WGTodayViewArchiveSave,
+                        _WGTodayViewArchiveSetKnownForIdentifier, _WGTodayViewArchiveSetPenalizedForIdentifier,
+                        _WGWidgetAssociatedApplicationIdentifier, _WGWidgetErrorDomain,
+                        _WGWidgetHostingViewControllerErrorDomain, _WGWidgetLifeCycleErrorDomain,
+                        _WGWidgetListEditViewControllerDidDisappearNotification, _WGWidgetListEditViewControllerWillDisappearNotification,
+                        _WGWidgetRowHeightDidChangeNotification, _WGWidgetViewControllerAddRequestNotification,
+                        _WGWidgetsFrameworkBundle, _WidgetsVersionString,
+                        __WGIsSystemVersionSameOrAfterSystemVersion, __WGTodayViewArchiveRemoveFromOrderedIdentifiersInGroup,
+                        _kWGWidgetViewControllerLargestAvailableDisplayMode, _kWGWidgetViewControllerUserSpecifiedDisplayMode,
+                        _WGApplicationIconForImage, _WGCachesPathForSandboxPath,
+                        _WGIsBundleWithIdentifierFirstParty, _WGIsWidgetWithBundleIdentifierWantsTop,
+                        _WGNewWidgetsCountKey, _WGRoundToMainScreenScale,
+                        _WGStocksWidgetIdentifier, _WGTodayViewArchiveGetArchive,
+                        _WGTodayViewArchiveGetPenalizedForIdentifier, _WGTodayViewArchiveSetDisplayModeForIdentifier,
+                        _WGWeatherWidgetIdentifier, _WGWidgetGroupViewControllerWidgetContentStateDidChangeNotification,
+                        _WGWidgetListEditViewControllerDidAppearNotification, _WGWidgetListViewControllerWidgetContentStateDidChangeNotification,
+                        _WGWidgetWantsTop, __WGGraphicsQuality,
+                        _kWGWidgetViewControllerHasContentKey ]
+    objc-classes:     [ _WGCalendarWidgetInfo,
+                        _WGCircleCheckView, _WGMajorListViewController,
+                        _WGMinorListViewController, _WGSeparatorView,
+                        _WGWidgetAttributionView, _WGWidgetEventTracker,
+                        _WGWidgetHostingViewController, _WGWidgetLifeCycleSequence,
+                        _WGWidgetListEditViewTableHeaderView, _WGWidgetListFooterView,
+                        _WGWidgetPersistentStateController, _WGWidgetViewController,
+                        __WGWidgetRemoteViewController, _WGCheckView,
+                        _WGMappedImageCache, _WGShortLookStyleButton,
+                        _WGWidgetGroupViewController, _WGWidgetListEditViewController,
+                        _WGWidgetListViewController, __WGBrokenWidgetView ]
+    objc-ivars:       [ _WGShortLookStyleButton._backgroundView,
+                        _WGShortLookStyleButton._fontProvider, _WGWidgetListViewController._cancelTouchesAssertionsByWidgetID,
+                        _WGWidgetListViewController._shortLookViewForMeasuring, _WGWidgetListViewController._stackView,
+                        __WGBrokenWidgetView._label, _WGShortLookStyleButton._dimension,
+                        _WGWidgetListViewController._discoveryController, _WGWidgetListViewController._shortLookViewsByWidgetID ]
+...

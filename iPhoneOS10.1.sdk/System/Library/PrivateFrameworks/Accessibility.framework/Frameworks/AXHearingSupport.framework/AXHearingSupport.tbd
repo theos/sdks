@@ -1,0 +1,61 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXHearingSupport.framework/AXHearingSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXCloudKitContainerIdentifier,
+                        _AXCloudKitMaxRecordDataBytes, _AXCloudKitServerChangeTokenKey,
+                        _AXHACHearingAidCapabilities, _AXHACHearingAidComplianceSetEnabled,
+                        _AXHAMessageKeyPayload, _AXHARoundToPixel,
+                        _AXHearingAidAudioRoutesChangedNotification, _AXHearingAidServerReadyNotification,
+                        _AXLEHIAuthVersionCharacteristicUUIDString, _AXLEHIDISHardwareVersionCharacteristicUUIDString,
+                        _AXLEHIDISModelNumberCharacteristicUUIDString, _AXLEHIServiceUUIDString,
+                        _AXTTYMessageKeyContactID, _AXTTYMessageKeyContactSearchAction,
+                        _AXTTYMessageKeyConversationUpdates, _AXTTYMessageKeyReadAction,
+                        _AXTTYMessageKeySettingsKey, _AXTTYMessageKeyValue,
+                        _AXTTYPreferredTransportMethodChangedNotification, _HAPerformBlockOnMainThread,
+                        _HAPerformBlockSynchronouslyOnMainThread, __accessibilityHWModel,
+                        _accessibilityHearingAidSupportBundle, _currentProcessIsHeard,
+                        _hearingAidStreamSelected, _hearingPropertyDescription,
+                        _supportsBinauralStreamingForHearingAid, _ttyLocString,
+                        _AXCloudKitErrorDomain, _AXCloudKitZoneName,
+                        _AXHAMessageKeyIdentifier, _AXHATrustChainReady,
+                        _AXLEHIAuthServiceUUIDString, _AXLEHIDISManufacturerCharacteristicUUIDString,
+                        _AXTTYMessageKeyCallID, _AXTTYMessageKeyConversation,
+                        _AXTTYMessageKeyResult, _AXTTYMessageKeyWriteAction,
+                        _HAPerformBlockOnMainThreadAfterDelay, _accessibilityHearingAidImageNamed,
+                        _hearingAidStreamAvailable, _propertyContainsProperty,
+                        _ttyImageNamed ]
+    objc-classes:     [ _AXCloudKitHelper,
+                        _AXFakeHearingAidDevice, _AXHAAccessQueueTimer,
+                        _AXHAControllerBrowser, _AXHAFakeXPCClient,
+                        _AXHALiveListenController, _AXHAPacket,
+                        _AXHASecurityHelper, _AXHASettings,
+                        _AXHAStepSlider, _AXHAXPCClient,
+                        _AXHeardController, _AXHearingAidConnectingCell,
+                        _AXHearingAidDevice, _AXHearingAidMode,
+                        _AXHearingLiveListenMeterCell, _AXHearingSlaveController,
+                        _AXRemoteHearingAidDevice, _AXTTYSettingsListenerHelper,
+                        _TTYCall, _TTYConversation,
+                        _TTYDatabaseHelper, _TTYHistory,
+                        _TTYSettings, _TTYTextView,
+                        _TTYUtterance, _TTYUtteranceRequest,
+                        _AXCloudKitHelperManagedObjectContext, _AXHAController,
+                        _AXHAListenerHelper, _AXHARemoteController,
+                        _AXHASettingsListenerHelper, _AXHAXPCMessage,
+                        _AXHearingAidDetailCell, _AXHearingDetailViewController,
+                        _AXHearingSliderValueCell, _TTYAbbreviationCell,
+                        _TTYConversationViewController, _TTYServer,
+                        _TTYUtilities, _TTYUtteranceCell ]
+    objc-ivars:       [ _AXFakeHearingAidDevice._leftFakePrograms,
+                        _AXHearingAidConnectingCell._loadingIndicator, _AXHearingAidDetailCell._leftLabel,
+                        _AXHearingAidDetailCell._loadingIndicator, _AXHearingAidDetailCell._rightLabel,
+                        _AXHearingProgramCell._checkedView, _AXHearingSliderValueCell._leftView,
+                        _AXHearingSliderValueCell._slider, _AXHearingSliderValueCell._valueLabel,
+                        _AXHearingSliderValueCell._valueWidth, _AXFakeHearingAidDevice._rightFakePrograms,
+                        _AXHearingAidDetailCell._leftStatusIndicator, _AXHearingAidDetailCell._rightStatusIndicator,
+                        _AXHearingSliderValueCell._numberFormatter, _AXHearingSliderValueCell._sliderMargin ]
+...

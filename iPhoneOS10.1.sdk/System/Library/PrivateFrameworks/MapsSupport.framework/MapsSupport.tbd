@@ -1,0 +1,49 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSPBookmarkStorageArrayFromPropertyList,
+                        _MSPBookmarksKey, _MSPBookmarksVersionKey,
+                        _MSPDirectionsSearchReadFrom, _MSPFavoriteGetAbridgedBookmarkStorageForSpotlightStorage,
+                        _MSPFavoriteMakeFromBookmarkStorage, _MSPHistoryEntriesArrayMakeFromSerializedRepresentation,
+                        _MSPHistoryEntryMakeFromStorage, _MSPHistoryEntryStorageReadFrom,
+                        _MSPHistoryVersionCurrent, _MSPPinReadFrom,
+                        _MSPPlaceBookmarkReadFrom, _MSPPropertyListFromBookmarkStorageArray,
+                        _MSPQuerySearchReadFrom, _MSPRidesharingTripReadFrom,
+                        _MSPSerializedRepresentationForFavoritesArray, _MSPTransitLineBookmarkReadFrom,
+                        _MSPTransitStorageAttributionReadFrom, _MSPTransitStorageIncidentEntityReadFrom,
+                        _MSPTransitStorageLineItemReadFrom, _MSPTransitStorageShieldReadFrom,
+                        _kMSPBookmarksDataKey, _kMSPContainerErrorUnkownStorageIdentifierKey,
+                        _kMSPContainerUntransferableObjectKey, _kMSPSearchResultHistoryItemDataKey,
+                        _kMSPUnderlyingErrorsKey, _MSPBookmarkStorageReadFrom,
+                        _MSPCompanionSyncedItemReadFrom, _MSPFavoriteGetBookmarkStorage,
+                        _MSPHistoryEntryGetStorage, _MSPHistoryKey,
+                        _MSPPinStorageReadFrom, _MSPPropertyListFromHistoryEntryStorageArray,
+                        _MSPRouteBookmarkReadFrom, _MSPTransitStorageArtworkReadFrom,
+                        _MSPTransitStorageIncidentReadFrom, _MSPTransitStorageSystemReadFrom,
+                        _kMSPContainerUnavailableKeysKey, _kMSPDuplicateStorageIdentifierObjectsKey ]
+    objc-classes:     [ _MSPBookmarkStorage,
+                        _MSPContainer, _MSPDirectionsSearch,
+                        _MSPFavoritesContainer, _MSPFileContainerPersister,
+                        _MSPHistoryEntryStorage, _MSPMapsPaths,
+                        _MSPMutableFavorite, _MSPMutableFavoriteRegion,
+                        _MSPMutableFavoriteTransitLine, _MSPMutableHistoryEntryPlaceDisplay,
+                        _MSPMutableHistoryEntrySearch, _MSPPin,
+                        _MSPPlaceBookmark, _MSPQuery,
+                        _MSPRegionBookmark, _MSPRemoteHistoryContainerPersister,
+                        _MSPRidesharingTrip, _MSPSerializer,
+                        _MSPTransitLineBookmark, _MSPTransitStorageAttribution,
+                        _MSPTransitStorageIncident, _MSPTransitStorageLine,
+                        _MSPTransitStorageShield, _MSPUserRoutingPreferences,
+                        _MSPCompanionSyncedItem, _MSPDroppedPin,
+                        _MSPHistoryContainer, _MSPMapsPushDaemonRemoteProxy,
+                        _MSPMutableFavoriteRoute, _MSPMutableHistoryEntryRoute,
+                        _MSPPinStorage, _MSPQuerySearch,
+                        _MSPRidesharingInformationSource, _MSPSyncManager,
+                        _MSPTransitStorageIcon, _MSPTransitStorageLineItem,
+                        _MSPTransitStorageSystem ]
+...

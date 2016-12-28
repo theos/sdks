@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriUI.framework/SiriUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SiriLanguageIsRTL,
+                        _SiriLanguageTextAlignment, _SiriUIBlockExecuteMonitored,
+                        _SiriUIDefaultFooterViewInsets, _SiriUIDeviceIsLargeFormatPad,
+                        _SiriUIDisableAlternativesFeature, _SiriUIFrameworkBundleIdentifier,
+                        _SiriUIIsAllOrientationsSupported, _SiriUIIsCompactWidth,
+                        _SiriUIIsLargePhoneLayout, _SiriUIRectForLabelWithDistanceFromTopToBaseline,
+                        _SiriUISnippetPluginErrorDomain, _SiriUISystemLanguageSemanticContentAttribute,
+                        _SiriUIUtteranceWidthForAvailableWidthAndInsetX, _SiriLanguageSemanticContentAttribute,
+                        _SiriUIDefaultEdgePadding, _SiriUIDeviceIsZoomed,
+                        _SiriUIInvokeOnMainQueue, _SiriUIIsExtendedWidth,
+                        _SiriUIShowSpeechAlternativeScore, _SiriUISystemLanguageIsRTL ]
+    objc-classes:     [ _SiriRoutePickerAlertController,
+                        _SiriUIAceObjectControllerCell, _SiriUIAcousticIDSpinner,
+                        _SiriUIActivityIndicatorTemplateView, _SiriUIAnimationUtilities,
+                        _SiriUIAudioRoutePickerButton, _SiriUIBaseSnippetViewController,
+                        _SiriUIBaseTemplateViewController, _SiriUIChevronButton,
+                        _SiriUIComponentConstraintFactory, _SiriUIContentButton,
+                        _SiriUIContentLabel, _SiriUIDisambiguationItem,
+                        _SiriUIErrorSnippetViewController, _SiriUIHelpButton,
+                        _SiriUIKeyline, _SiriUILabelStackTemplateView,
+                        _SiriUIMapDetailsContainerView, _SiriUIMapTemplateViewController,
+                        _SiriUIMessageContentTemplateViewController, _SiriUIObjectPickerViewController,
+                        _SiriUIPersonPickerViewController, _SiriUIPrivatePeoplePickerViewController,
+                        _SiriUIProfileTemplateView, _SiriUIReusableConfirmationFooterView,
+                        _SiriUIReusableHeaderView, _SiriUIReviewItemCell,
+                        _SiriUIReviewsViewController, _SiriUISelectionTemplateView,
+                        _SiriUISettingTemplateView, _SiriUISiriStatusView,
+                        _SiriUISnippetBridgeViewManager, _SiriUISnippetManager,
+                        _SiriUIStarsView, _SiriUITemplateViewController,
+                        _SiriUITextTemplateView, _SiriUITranscriptItem,
+                        _SiriUIURLSession, _SiriUIURLSessionImageDownload,
+                        _SiriRoutePickerAlertWindow, _SiriUIActionableFooterView,
+                        _SiriUIAttributionImage, _SiriUIBaseTemplateView,
+                        _SiriUIClearBackgroundCell, _SiriUIContentCollectionViewCell,
+                        _SiriUIDownloadableImageView, _SiriUIImageMaskView,
+                        _SiriUIMapCollectionViewCell, _SiriUIMessageContentTemplateView,
+                        _SiriUIPassThroughHitTestView, _SiriUIPrivateViewControllerOverrides,
+                        _SiriUIReusableFooterView, _SiriUIReviewsHeaderView,
+                        _SiriUISelectionTemplateViewController, _SiriUISnippetBridgeView,
+                        _SiriUISnippetViewController, _SiriUITemplatedStackSnippetView,
+                        _SiriUITwoButtonFooterView ]
+...

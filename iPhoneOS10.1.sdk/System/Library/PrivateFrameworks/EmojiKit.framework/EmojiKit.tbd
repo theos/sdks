@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit
+current-version: 12.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _EMKEmojiConversionDisabledNotificationName,
+                        _EMKEmojiSignifierAttributeName, _EMKStartTimerNotificationName,
+                        _EmojiKitVersionNumber, _EmojiKitVersionString,
+                        _EMKEmojiConversionLanguageAttributeName, _EMKStopTimerNotificationName ]
+    objc-classes:     [ _EMKEmojiSignifier,
+                        _EMKGestureRecognizerDelegate, _EMKLayoutManager,
+                        _EMKTextEnumerator, _EMKTextView,
+                        _EMKEmojiTokenList, _EMKOverlayView ]
+...

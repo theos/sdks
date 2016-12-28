@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VideoUpload.framework/VideoUpload
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GetScrambledKey,
+                        _VUAuthenticatorFailureNotification, _VUCreateMD5WithData,
+                        _JSONHTTPRequestErrorDomain, _VUAuthenticatorStateChangeNotification ]
+    objc-classes:     [ _JSONHTTPRequest,
+                        _VUCategory, _VUFileUpload,
+                        _VUPublishAgent, _VUPublishViewController,
+                        _VUAuthenticator, _VUFooterContainerView,
+                        _VUPublishPost ]
+    objc-ivars:       [ _JSONHTTPRequest._connection,
+                        _JSONHTTPRequest._overridePostBody, _JSONHTTPRequest._receivedValidResponse,
+                        _JSONHTTPRequest._signer, _VUAuthenticator._authenticationRequest,
+                        _VUPublishAgent._navigationController, _VUPublishAgent._publishViewController,
+                        _VUPublishViewController._accessCells, _VUPublishViewController._accountAlert,
+                        _VUPublishViewController._authenticationAlert, _VUPublishViewController._categoryCell,
+                        _VUPublishViewController._descriptionHeight, _VUPublishViewController._headerImageView,
+                        _VUPublishViewController._picker, _VUPublishViewController._sectionIndices,
+                        _VUPublishViewController._tableView, _VUPublishViewController._titleCell,
+                        _VUPublishViewController._viewShrunk, _JSONHTTPRequest._delegate,
+                        _JSONHTTPRequest._request, _VUAuthenticator._authenticatorState,
+                        _VUPublishPost._delegate, _VUPublishViewController._accountCell,
+                        _VUPublishViewController._descriptionCell, _VUPublishViewController._optionCells,
+                        _VUPublishViewController._showingPicker, _VUPublishViewController._tagCells ]
+...

@@ -1,0 +1,29 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iCloudQuota.framework/iCloudQuota
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ICQActionParameterServerLinkIdentifierKey,
+                        _ICQActionParameterURLQueryParametersKey, _ICQLogEventDetails,
+                        __ICQActionForServerActionString, __ICQAppendServerMessageFormatAndLinks,
+                        __ICQBundleIDForKnownContainerID, __ICQGetLogSystem,
+                        __ICQLinkForServerMessageParameter, __ICQLinkForServerValues,
+                        __ICQLinksForServerMessageParametersWithOptions, __ICQMessageWithFormat,
+                        __ICQOpenPurchaseFlowInSettings, __ICQStringFromAction,
+                        __ICQUpgradeOfferPageIdentifier, _iCloudQuotaVersionString,
+                        _kSpaceCharacter, _ICQActionParameterURLKey,
+                        _ICQOpenURL, __ICQBooleanForServerObjectDefault,
+                        __ICQLinkButtonForServerMessage, __ICQLinksForServerMessageParameters,
+                        __ICQOpenManageStorageInSettings, __ICQUpgradeCompletePageIdentifier,
+                        _kNonBreakingSpaceCharacter ]
+    objc-classes:     [ _ICQAlert,
+                        _ICQOffer, __ICQAlertSpecification,
+                        __ICQButtonSpecification, __ICQPageSpecification,
+                        __ICQServiceSpecification, __ICQUpgradeFlowSpecification,
+                        __ICQUpgradeOfferPageSpecification, _ICQLink,
+                        __ICQBannerSpecification, __ICQPersistedOffer,
+                        __ICQUpgradeCompletePageSpecification ]
+...

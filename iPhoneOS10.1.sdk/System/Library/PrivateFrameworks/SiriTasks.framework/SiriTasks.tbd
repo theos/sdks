@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriTasks.framework/SiriTasks
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _STStringFromGenericIntentResponseCode,
+                        _STWorkoutErrorDomain ]
+    objc-classes:     [ _STAlarmAction,
+                        _STAlarmShowAlarmAndPerformActionRequest, _STDeleteAlarmAction,
+                        _STGenericIntent, _STGenericIntentGroup,
+                        _STGenericIntentLocation, _STGenericIntentRequest,
+                        _STGenericIntentTopic, _STMapViewport,
+                        _STMediaChannel, _STReminderListObject,
+                        _STSendEmailRequest, _STShowAlarmAction,
+                        _STShowDailyWeatherForecastRequest, _STShowDraftMessageUsageResult,
+                        _STShowMapPointRequest, _STShowMessageRequest,
+                        _STShowWeatherConditionsRequest, _STShowWeatherForecastRequest,
+                        _STStartWorkoutRequest, _STStopwatchShowAndPerformStopwatchAction,
+                        _STTimerShowTimerAndPerformAction, _STUpdateWatchListRequest,
+                        _STWeatherAttributes, _STWeatherHourlyForecast,
+                        _STWorkoutSetStateRequest, _STAlarmModification,
+                        _STEmailMessage, _STGenericIntentHelper,
+                        _STGenericIntentResponse, _STMapViewportVertex,
+                        _STSendDraftMessageRequest, _STShowChannelRequest,
+                        _STShowHourlyWeatherForecastRequest, _STShowStockOverviewRequest,
+                        _STStartNavigationRequest, _STTemperature,
+                        _STWatchFace, _STWeatherUnits ]
+...

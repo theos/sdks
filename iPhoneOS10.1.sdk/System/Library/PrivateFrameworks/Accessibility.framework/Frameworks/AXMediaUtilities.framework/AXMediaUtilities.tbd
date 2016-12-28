@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXMediaUtilities.framework/AXMediaUtilities
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXMediaUtilitiesVersionNumber,
+                        _UIAXFileTypeDescriptionForFile, _UIAXPhotoDescriptionString,
+                        _UIAccessibilityAddMetadataDescriptionToImage, _UIAccessibilityEmojiDescription,
+                        _UIAccessibilityMetadataDescriptionForImage, __eyesLocSuffixForSuffix,
+                        __heartLocSuffixForSuffix, __removeMetadataDescriptionItems,
+                        _accessibilityMediaUIKitLocalizedString, _AXMediaUtilitiesVersionString,
+                        _UIAXPhotoFacesDescription, _UIAccessibilityIsImageScreenshot,
+                        __handLocSuffixForSuffix, __mouthLocSuffixForSuffix ]
+    objc-classes:     [ _AXFaceDetection,
+                        _FaceCoreLightWrapper, _FaceWrapper,
+                        _AXVKImageAnalyzer ]
+...

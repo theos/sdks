@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftCloudKit.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TTWOSC11CKErrorCode10Foundation15_BridgedNSError8CloudKitZFS1_g14_nsErrorDomainSS,
+                        __TTWOSC11CKErrorCode10Foundation34_ObjectiveCBridgeableErrorProtocol8CloudKitFS1_CfT15_bridgedNSErrorCSo7NSError_GSqx_, __TTWOSC11CKErrorCodes13ErrorProtocol8CloudKitFS0_g7_domainSS,
+                        __TTWOSC11CKErrorCodes16RawRepresentable8CloudKitFS0_g8rawValuewx8RawValue, __TTWOSC11CKErrorCodes9Equatable8CloudKitZFS0_oi2eefTxx_Sb,
+                        __TWPOSC11CKErrorCode10Foundation16__BridgedNSError8CloudKit, __TWPOSC11CKErrorCodes13ErrorProtocol8CloudKit,
+                        __TWPOSC11CKErrorCodes8Hashable8CloudKit, __TWaOSC11CKErrorCode10Foundation15_BridgedNSError8CloudKit,
+                        __TWaOSC11CKErrorCode10Foundation34_ObjectiveCBridgeableErrorProtocol8CloudKit, __TWaOSC11CKErrorCodes16RawRepresentable8CloudKit,
+                        __TWaOSC11CKErrorCodes9Equatable8CloudKit, __swift_FORCE_LOAD_$_swiftCloudKit,
+                        __TTWOSC11CKErrorCode10Foundation16__BridgedNSError8CloudKitZFS1_g14_nsErrorDomainSS, __TTWOSC11CKErrorCodes16RawRepresentable8CloudKitFS0_CfT8rawValuewx8RawValue_GSqx_,
+                        __TWPOSC11CKErrorCode10Foundation15_BridgedNSError8CloudKit, __TWPOSC11CKErrorCodes16RawRepresentable8CloudKit,
+                        __TWaOSC11CKErrorCode10Foundation16__BridgedNSError8CloudKit, __TWaOSC11CKErrorCodes8Hashable8CloudKit,
+                        __TZFE8CloudKitOSC11CKErrorCodeg14_nsErrorDomainSS ]
+...

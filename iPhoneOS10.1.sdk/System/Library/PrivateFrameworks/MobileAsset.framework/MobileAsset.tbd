@@ -1,0 +1,57 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ASAssetAccessCount,
+                        _ASAssetDownloadOptions, _ASAssetGarbageCollectionBehaviorKey,
+                        _ASAssetInstallDate, _ASAssetInstallationReasonAutomaticUpdate,
+                        _ASAssetInstallationReasonPreinstall, _ASAssetLastDownloadAttempt,
+                        _ASAssetQueuingServiceURL, _ASAttributeAutomaticUpdateDisabled,
+                        _ASAttributeContentVersion, _ASAttributeEventRecordingServiceURL,
+                        _ASAttributeMasteredVersion, _ASBuildVersion,
+                        _ASComputeReclaimableSpace, _ASDefaultInstallWithOSPath,
+                        _ASDefaultRequiredOnlyByInternalOSPath, _ASDownloadOptionAllow3G,
+                        _ASDownloadOptionAllowBatteryPower, _ASDownloadOptionAllowWiFi,
+                        _ASDownloadOptionObsoletedAsset, _ASDownloadOptionPriority,
+                        _ASDownloadOptionUseStreamingZip, _ASDownloadPriorityHigh,
+                        _ASDownloadPriorityNormal, _ASDownloadStateBackgrounded,
+                        _ASErrorDomain, _ASLegacyDefaultAssetRepositoryPath,
+                        _ASOperationCompleted, _ASOperationDownloadQueued,
+                        _ASOperationStalled, _ASOperationVerifyingAsset,
+                        _ASProductVersion, _ASSetAssetServerURL,
+                        _ASSetDefaultAssetServerURLForAssetType, _ASStateOperation,
+                        _ASStateOperationProgress, _ASStateStallError,
+                        _MobileAssetCancelDownload, _MobileAssetCopyAssetProperties,
+                        _MobileAssetCreateForType, _MobileAssetGetTypeID,
+                        _MobileAssetPurge, _MobileAssetQueryCreateArrayOfKnownAssets,
+                        _MobileAssetQueryGetTypeID, _MobileAssetQueryRefreshKnownAssets,
+                        _MobileAssetSetLogLevel, __MobileAssetGarbageCollectionBehaviorForAttributes,
+                        __MobileAssetReplaceProperties, ___GetDownloadQueueToken,
+                        ___MobileAssetVersionString, ___RestartDownloads,
+                        ___SetAssetRepoURL, ___SetCachedContentURLs,
+                        ___SetLastDanglingReferenceCheckDate, ___StartBackgroundedDownloads,
+                        ___TriggerAssetMigration, _kMobileAssetEnforceProductionSigning,
+                        _kMobileAssetLogLevel, _kMobileAssetRequiredByOSPreinstalledAssetsPath,
+                        _kMobileAssetSUAllowSameVersionFullReplacement, _kMobileAssetSUDisableBuildNumberComparison,
+                        _ASAssetAccessingClients, _ASAssetHTTPEntityTag,
+                        _ASAssetInstallationReasonDownloaded, _ASAssetObsoletedAssets,
+                        _ASAttributeCompatibilityVersion, _ASAttributeIsZipStreamable,
+                        _ASCollectGarbage, _ASDefaultRequiredByOSPath,
+                        _ASDownloadOptionAllow4G, _ASDownloadOptionAssetVersionString,
+                        _ASDownloadOptionSecondaryIdentifier, _ASDownloadPriorityLow,
+                        _ASDownloadStateQueued, _ASNonUserInitiatedDownloadsAllowed,
+                        _ASOperationDownloadingAsset, _ASOperationWaitingToDownload,
+                        _ASSetAssetServerURLForAssetType, _ASStateOperationEstimatedTimeRemaining,
+                        _ASStateStallReason, _MobileAssetCopyLocalURL,
+                        _MobileAssetPauseDownload, _MobileAssetQueryGetMatchingAsset,
+                        _MobileAssetResumeDownload, __MobileAssetLog,
+                        ___MobileAssetVersionNumber, ___RetryQueuedDownloads,
+                        ___SetEnforceProductionSigning, ___TerminateDaemon,
+                        _kMobileAssetInstallWithOSPreinstalledAssetsPath, _kMobileAssetRequiredOnlyByInternalOSPreinstalledAssetsPath ]
+    objc-classes:     [ _ASAsset,
+                        _ASAssetQuery ]
+...

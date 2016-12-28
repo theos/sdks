@@ -1,0 +1,24 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression
+current-version: 88.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AFSCLockFileFd,
+                        _AFSCUnlockFile, _CompressFile,
+                        _CreateStreamCompressor, _CreateStreamCompressorQueueWithOptions,
+                        _FinishCompressionAndCleanUp, _VolumeSupportsCompression,
+                        _catFile, _kAFSCAllowLargeResourceForks,
+                        _kAFSCCompressionRulesKey, _kAFSCCompressionTypes,
+                        _kAFSCFlagsKey, _kAFSCInverseFlags,
+                        _kAFSCPathContainsStringKey, _kAFSCPathExactlyEqualsStringKey,
+                        _kAFSCRuleTypeInclude, _kAFSCSkipMachOFileTypes,
+                        _kAFSCThrottledIO, _type5_handler_function,
+                        _AFSCLockFilePath, _CreateCompressionQueue,
+                        _DrainStreamCompressorQueue, _WriteToStreamCompressor,
+                        _kAFSCCompressionLevel, _kAFSCDispatchQueuePriority,
+                        _kAFSCPathBeginsWithStringKey, _kAFSCRuleTypeExclude,
+                        _kAFSCSkipMachOOverridePaths, _queryCompressionInfo ]
+...

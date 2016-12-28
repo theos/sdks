@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WirelessProximity.framework/WirelessProximity
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MaxAirplayPayload,
+                        _WPBeaconAdvInterval, _WPBeaconType,
+                        _WPBeaconTypeAirPlayTargetPresence, _WPBeaconTypeCompany,
+                        _WPBeaconTypeCompanyMinor, _WPErrorDomain,
+                        _WPHomeKitScanBlobData, _WPHomeKitScanMaskData,
+                        _WPLoggingInit, _WPMagicSwitchAdvertisingData,
+                        _WPMagicSwitchScanDutyCycle, _WPMagicSwitchScanPeers,
+                        _WPPairingKeyAdvertisingChannel, _WPPairingKeyPaired,
+                        _WPPuckTypeAirPlaySoloAdvertisingChannel, _WPPuckTypeAirPlaySoloRSSI,
+                        _WPPuckTypeAirPlaySoloTargetPresence, _WiProxLog,
+                        _kActiveScanning, _kAdvertisingRate,
+                        _kAttributePermissions, _kCharacteristicProperties,
+                        _kData, _kMaskValue,
+                        _kPeers, _kRemoveServices,
+                        _kScanningOptions, _kWPScanCache,
+                        _kZonesToTrack, _kZonesValue,
+                        _MaxCompanyPayload, _WPBeaconTypeATVSetup,
+                        _WPBeaconTypeCompanyMajor, _WPHeySiriAdvertisingData,
+                        _WPLogInitOnce, _WPMagicSwitchScanBlobData,
+                        _WPNearbyKeyRSSI, _WPPuckType,
+                        _WPPuckTypeAirPlaySoloSourcePresence, _WiproxBTPairingLaunchNotification,
+                        _kAllowDuplicates, _kConnectableAdvert,
+                        _kPeerTrackingData, _kScanWhenLocked,
+                        _kWriteType ]
+    objc-classes:     [ _WPAWDL,
+                        _WPAdvertisingRequest, _WPCharacteristic,
+                        _WPContinuity, _WPDeviceScanner,
+                        _WPHomeKit, _WPNearby,
+                        _WPPeerTrackingRequest, _WPStateTracker,
+                        _WPZoneTracker, _WirelessProximity,
+                        _WPAdvertising, _WPClient,
+                        _WPHeySiri, _WPPairing,
+                        _WPTransfer, _WPZoneTrackingRequest ]
+...

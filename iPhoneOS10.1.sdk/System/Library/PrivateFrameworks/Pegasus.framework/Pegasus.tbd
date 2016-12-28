@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Pegasus.framework/Pegasus
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PGActivateApplicationWithProcessIdentifier,
+                        _PGBundleIdentifierForProcessIdentifier, _PGLocalizedString,
+                        _PGLogCommon, _PGPegasusErrorDomain,
+                        _PGPictureInPictureProxyPictureInPictureActiveChangedNotification, _PGSizeIsEmpty,
+                        _PGSizeIsValid, _PGWaitForNotificationWithTimeout,
+                        __PGLogMethodProem, _PGBundle,
+                        _PGLocalizedStringFromTable, _PGPictureInPictureExportedInterface,
+                        _PGSizeIsInvalid, _PG_dispatch_async_with_timeout ]
+    objc-classes:     [ _PGBackdropView,
+                        _PGHostedWindow, _PGLayerHostView,
+                        _PGPictureInPictureApplication, _PGPictureInPictureControlsViewController,
+                        _PGPictureInPictureRemoteObject, _PGPlaybackProgress,
+                        _PGSetterThrottler, _PGTimer,
+                        __PGPictureInPictureConnectionExportedObject, ___PGButton,
+                        ___PGView, _PGChevronView,
+                        _PGLoadingIndicatorView, _PGPictureInPictureProxy,
+                        _PGPlaybackProgressIndicator, __PGBundle,
+                        __PGPlaybackProgressIndicatorRangesView ]
+...

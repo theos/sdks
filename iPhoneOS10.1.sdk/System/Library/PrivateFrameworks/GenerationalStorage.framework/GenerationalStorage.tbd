@@ -1,0 +1,46 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage
+current-version: 259.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GSAdditionCreationDisplayNameKey,
+                        _GSAdditionCreationKeepFileIDKey, _GSAdditionCreationNameSpaceKey,
+                        _GSAdditionCreationOptionsKey, _GSAdditionCreationUserInfoKey,
+                        _GSAdditionFieldOptionsKey, _GSAdditionFieldURLKey,
+                        _GSDaemonConnectionClose, _GSDaemonProxy,
+                        _GSGenerationalStorageErrorDomain, _GSLibraryAddGenerationWithOptionsByCopyingFile,
+                        _GSLibraryCopyAllGenerationsInfos, _GSLibraryCopyGenerationInfoDictionary,
+                        _GSLibraryCopyGenerationInfos, _GSLibraryCopyGenerationOriginalDisplayName,
+                        _GSLibraryCreateClientManaged, _GSLibraryDocumentDidSafeSave,
+                        _GSLibraryGetGenerationOptions, _GSLibraryGetStorageOptions,
+                        _GSLibraryInternalStatGeneration, _GSLibraryRemoveGenerations,
+                        _GSLibraryRestoreGeneration, _GSLibrarySetGenerationOptions,
+                        _GSLibrarySetStorageOptions, _GSMutableInfoDictionary,
+                        _GSSetInfoDictionary, _GSSetOriginalPOSIXName,
+                        _GSUbiquitousConflictsNameSpace, __GSError,
+                        __GSErrorForStatus, __GSOpenByID,
+                        __PathResolve, __RemoveTree,
+                        _get_volume_uuid, _kGSLibraryErrorDomain,
+                        _GSAdditionCreationInfoValidate, _GSAdditionCreationOnDuplicateKey,
+                        _GSAdditionFieldNameSpaceKey, _GSArchiveTree,
+                        _GSDocumentVersionsNameSpace, _GSLibraryAddGenerationWithOptionsByMovingFile,
+                        _GSLibraryCopyGenerationInfoValueForKey, _GSLibraryCopyURLForGeneration,
+                        _GSLibraryDocumentWillSafeSave, _GSLibraryHasGenerationsForPaths,
+                        _GSLibraryResolveDocumentId2, _GSLibrarySetGenerationOriginalDisplayName,
+                        _GSSetGenerationOptions, _GSTrackDocument,
+                        __GSErrorForErrno, __PathRename,
+                        __SetBirthTimeSpecForFD ]
+    objc-classes:     [ _GSAddition,
+                        _GSDocumentIdentifier, _GSStagingPrefix,
+                        _GSTemporaryStorage, _GSDaemonProxySync,
+                        _GSStorageManager ]
+    objc-ivars:       [ _GSDaemonProxySync._error,
+                        _GSDaemonProxySync._target, _GSDocumentIdentifier.documentID,
+                        _GSStagingPrefix._deviceID, _GSStagingPrefix._path,
+                        _GSStagingPrefix._sandboxHandle, _GSStagingPrefix._volumeUUID,
+                        _GSDaemonProxySync._result, _GSDocumentIdentifier.volumeUUID,
+                        _GSStagingPrefix._pathComponents ]
+...

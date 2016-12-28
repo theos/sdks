@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/XPCService.framework/XPCService
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AppSandboxUtilRealPathForPath,
+                        _XPCServiceBundleExtention, _XPCServiceDictionaryAdditionalServicesKey,
+                        _XPCServiceDictionaryDirtyJetsamMemoryLimit, _XPCServiceDictionaryEnvironmentVariablesKey,
+                        _XPCServiceDictionaryMultipleInstancesKey, _XPCServiceDictionaryRunloopTypeKey,
+                        _XPCServiceDictionaryServiceTypeKey, _XPCServiceVersionNumber,
+                        __xpc_main, _xpc_service_main,
+                        _AppSandboxUtilRealPathForUTF8StringPath, _XPCServiceDictionaryAllowedClientsKey,
+                        _XPCServiceDictionaryJoinExistingSessionKey, _XPCServiceDictionarySandboxProfileKey,
+                        _XPCServiceVersionString ]
+    objc-classes:     [ _XPCServiceBundle,
+                        _XPCServiceRuntime ]
+    objc-ivars:       [ _XPCServiceBundle._bundle,
+                        _XPCServiceBundle._executablePathPredicate, _XPCServiceBundle._launchdJobDictionaryPredicate,
+                        _XPCServiceBundle._realExecutablePathPredicate, _XPCServiceBundle._serviceDictionaryPredicate,
+                        _XPCServiceBundle._serviceIdentifierPredicate, _XPCServiceBundle._serviceTypePredicate,
+                        _XPCServiceBundle._xpcJobDataPredicate, _XPCServiceRuntime._entitlements,
+                        _XPCServiceBundle._executablePath, _XPCServiceBundle._realExecutablePath,
+                        _XPCServiceBundle._serviceIdentifier, _XPCServiceBundle._xpcJobData ]
+...

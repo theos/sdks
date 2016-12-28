@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MIFunctionNameErrorKey,
+                        _MILibMISErrorNumberKey, _MISourceFileLineErrorKey,
+                        _MobileInstallationClearUninstalled, _MobileInstallationCopyInstalledAppsForLaunchServices,
+                        _MobileInstallationCopySafeHarbors, _MobileInstallationEnumerateAllInstalledItemDictionaries,
+                        _MobileInstallationInstallForLaunchServicesWithError, _MobileInstallationLookupUninstalled,
+                        _MobileInstallationProcessRestoredContainerWithIdentifierOfType, _MobileInstallationRegisterSafeHarborForContainerType,
+                        _MobileInstallationRemoveSafeHarborForContainerType, _MobileInstallationUninstallForLaunchServicesWithError,
+                        _MobileInstallationUpdateSinfForLaunchServices, _MobileInstallationWatchKitInstallerShouldSkipInstall,
+                        _kMICallbackPercentCompleteKey, _kMIDemotionCompleteNotificationName,
+                        _kMIUninstallParallelPlaceholderKey, _kMIUpdateSystemAppDataContainerDataProtection,
+                        _kMIWatchKitSnapshotOptionCreatePlaceholder, _kMIWatchKitSnapshotOptionMaxWKAppVersion,
+                        _MIInstallerErrorDomain, _MobileInstallationCheckCapabilitiesMatch,
+                        _MobileInstallationCopyInstalledDeveloperAppsForLaunchServices, _MobileInstallationInstallForLaunchServices,
+                        _MobileInstallationProcessRestoredContainer, _MobileInstallationRemoveSafeHarbor,
+                        _MobileInstallationUpdateContainerDataProtectionForMigratorOnly, _MobileInstallationWatchKitInstallerSnapshotWKApp,
+                        _kMIInstallResultInstalledAppInfoArrayKey, _kMIWatchKitSnapshotInfoDiskUsageBytes ]
+    objc-classes:     [ _AITransactionLog ]
+...

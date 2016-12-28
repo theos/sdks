@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _APSAlert,
+                        _APSBundleIdentifier, _APSConnectionInterruptedHandlerBlock,
+                        _APSCopyValueForKey, _APSCreateMIGServerSource,
+                        _APSCreateXPCObjectFromDictionary, _APSDecodeDictionary,
+                        _APSEncodeDictionary, _APSEnvironmentDevelopment,
+                        _APSEnvironmentQA2, _APSErrorDomain,
+                        _APSGetContextForCalloutCurrentMIGServerSource, _APSGetEnableStatusNotifications,
+                        _APSGetIgnoredTopicsFromXPCDictionary, _APSGetOpportunisticTopicsFromXPCDictionary,
+                        _APSGetXPCArrayFromDictionary, _APSGetXPCConnectionContext,
+                        _APSGetXPCDictionaryFromDictionary, _APSGetXPCIntFromDictionary,
+                        _APSHexStringFromNSData, _APSIncomingMessageLastMessageFromStorageKey,
+                        _APSIncomingMessageTimestampKey, _APSInsertBoolsToXPCDictionary,
+                        _APSInsertDoublesToXPCDictionary, _APSInsertIgnoredTopicsToXPCDictionary,
+                        _APSInsertNSArraysToXPCDictionary, _APSInsertNSStringsToXPCDictionary,
+                        _APSLaunchdJobLabel, _APSMessageGUIDKey,
+                        _APSMessageTopicKey, _APSNSDataFromHexString,
+                        _APSOutgoingMessageCriticalKey, _APSOutgoingMessagePayloadFormatKey,
+                        _APSOutgoingMessagePriorityKey, _APSOutgoingMessageSendInterfaceKey,
+                        _APSOutgoingMessageSentKey, _APSOutgoingMessageTimeoutKey,
+                        _APSPerAppTokenAppIdsKey, _APSPrefBundleIdentifier,
+                        _APSSafeArrayOfStrings, _APSSetXPCConnectionContext,
+                        _APSUnderlyingError, _APSXPCConfigureConnection,
+                        _APSXPCCreateConnectionForService, _APSXPCCreateServerConnection,
+                        _APSXPCMessageTypeKey, _ConnectionDeliver_server,
+                        __APSConnectionDeliver_subsystem, __APSPingClient,
+                        _aps_connection_event_handler, _APSAssert,
+                        _APSConnectionInvalidationHandlerBlock, _APSCreateMIGServerSourceWithContext,
+                        _APSDefaultUserID, _APSEnvironmentProduction,
+                        _APSGetBooleanValueForKey, _APSGetEnabledTopicsFromXPCDictionary,
+                        _APSGetUsesAppLaunchStats, _APSGetXPCDataFromDictionary,
+                        _APSGetXPCStringFromDictionary, _APSIncomingMessagePriorityString,
+                        _APSInsertDatasToXPCDictionary, _APSInsertIntsToXPCDictionary,
+                        _APSInsertOpportunisticTopicsToXPCDictionary, _APSMessageIdentifierKey,
+                        _APSOutgoingMessageCancelledKey, _APSOutgoingMessagePayloadLengthKey,
+                        _APSOutgoingMessageSenderTokenNameKey, _APSOutgoingMessageTimestampKey,
+                        _APSPropertyListFromNSData, _APSSynchronize,
+                        _APSXPCConnectionSetEventHandlers, _APSXPCLog,
+                        _ConnectionDeliver_server_routine, __APSJWStringToCharPtr ]
+    objc-classes:     [ _APSConnection,
+                        _APSIncomingMessage, _APSMultiUserFS,
+                        _APSOutgoingMessage, __APSLogFileCompressor,
+                        _APSFileLogging, _APSMultiUserMode ]
+    objc-ivars:       [ __APSLogFileCompressor._archivers ]
+...

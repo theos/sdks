@@ -1,0 +1,14 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DASubCal.framework/DADaemonSubCal.bundle/DADaemonSubCal
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kSubCalRefreshTaskErrorDomain ]
+    objc-classes:     [ _HolidayCalDaemonAccount,
+                        _SubCalChangeTracker, _SubCalICSDataActor,
+                        _SubCalWebcalHandler, _SubCalAgent,
+                        _SubCalRefreshTask ]
+...

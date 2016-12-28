@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary
+current-version: 340.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ADClientAddValueForScalarKey,
+                        _ADClientCheckpoint, _ADClientClearScalarKey,
+                        _ADClientDayChanged, _ADClientGetLogsMessages,
+                        _ADClientPushValueForDistributionKey, _ADClientSetLogsMessages,
+                        _ADClientSetValueForScalarKey, _ADContainerPath,
+                        _ADGetDBSize, _ADMonotonicTimeGetCurrent,
+                        _ADPushTimeIntervalForDistributionKeyTimingBlock, __ZN2AD8Database11newDatabaseEPKcb,
+                        __ZN2AD8Database12insertScalarEPKcix, __ZN2AD8Database12updateScalarEix,
+                        __ZN2AD8Database13schemaVersionEv, __ZN2AD8Database16executeStatementEPKc,
+                        __ZN2AD8Database17commitTransactionEv, __ZN2AD8Database18appendDistributionEPKciid,
+                        __ZN2AD8Database18lookupDistributionEPKci, __ZN2AD8Database20DistributionIteratorC1EPS0_i,
+                        __ZN2AD8Database20DistributionIteratorD1Ev, __ZN2AD8Database20createTablesVersion1Ev,
+                        __ZN2AD8Database23distributionsWithPrefixEPKciiU13block_pointerFvS2_iRNS0_20DistributionIteratorEPbE, __ZN2AD8Database24upgradeSchemaVersion1to2Ev,
+                        __ZN2AD8Database29deleteAllValuesOnOrBeforeDateEi, __ZN2AD8DatabaseC1Ev,
+                        __ZN2AD8DatabaseD1Ev, __ZN2AD8DatabaseD2Ev,
+                        _ADClientBatchKeys, _ADClientCommit,
+                        _ADClientIsEnabled, _ADClientSetValueForDistributionKey,
+                        _ADDaysSince1970, _ADPushTimeIntervalForDistributionKeySinceStartTime,
+                        __ZN2AD8Database12deleteScalarEPKci, __ZN2AD8Database13RowIDNotFoundE,
+                        __ZN2AD8Database16prepareStatementEPKc, __ZN2AD8Database18deleteDistributionEPKci,
+                        __ZN2AD8Database20DistributionIteratorC2EPS0_i, __ZN2AD8Database20initializeConnectionEv,
+                        __ZN2AD8Database27performMigrationIfNecessaryEv, __ZN2AD8DatabaseC2Ev ]
+...

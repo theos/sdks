@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NewsServices.framework/NewsServices
+current-version: 608.5.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NSSBundle,
+                        _NSSNewsTodayWidgetBundleID, _NSSNotificationAttachmentPublisherLogoKey,
+                        _NSSNotificationUserInfoExcerptKey, _NSSNotificationUserInfoPublishDateKey,
+                        _NSSNotificationUserInfoThumbnailDataKey, _NSSSpotlightArticleDomainIdentifier,
+                        _NewsServicesVersionString, _NewsWidgetPolicyDaemonClientUUID,
+                        _NSSNewsAppBundleID, _NSSNotificationAttachmentThumbnailKey,
+                        _NSSNotificationUserInfoPublisherNameKey, _NewsServicesVersionNumber,
+                        _NewsWidgetPolicyDaemonClientType ]
+    objc-classes:     [ _NSSArticle,
+                        _NSSArticleViewController, _NWPNewsWidgetClientTypeLoader,
+                        _NSSArticleView, _NSSBundleLookupClass ]
+...

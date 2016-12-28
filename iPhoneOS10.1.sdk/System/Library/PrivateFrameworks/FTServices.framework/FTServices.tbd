@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FTServices.framework/FTServices
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FTCTRegistrationStatusCanRegisterKey,
+                        _FTCTRegistrationStatusPhoneNumberKey, _FTErrorDomain,
+                        _FTServerBagFinishedLoadingNotification, _FaceTimeDeviceCapabilityChangedNotification,
+                        _FaceTimeDeviceRegistrationCapabilityChangedNotification, _FaceTimeDeviceRestictionsChangedNotification,
+                        _FaceTimeDeviceSIMRemovedNotification, _MessageLogEvent,
+                        __AuthenticationDictionaryFromParameters, __DeviceCapabilitiesFromParameters,
+                        __FTIDSFlagsNumber, __FZErrorTypeFromNSError,
+                        __GenerateNonceAndSignature, _FTCTRegistrationStatusChangedNotification,
+                        _FTRegionListFinishedLoadingNotification, _FaceTimeDeviceIDChangedNotification,
+                        _FaceTimeDeviceSIMInsertedNotification, _MessageLogStatistic,
+                        __FTAreIDsEquivalent, __FZErrorTypeFromResponseCodeAndError ]
+    objc-classes:     [ _FTDeviceSupport,
+                        _FTIDSMessage, _FTMessageDelivery_APS,
+                        _FTMessageQueue, _FTPasswordManager,
+                        _FTRegionSupport, _FTUserConfiguration,
+                        _IDSCancelMessage, _IDSInitiateMessage,
+                        _IDSRelayCancelMessage, _IDSRelayUpdateMessage,
+                        _IDSSendMessage, _FTEntitlementSupport,
+                        _FTMessageDelivery_HTTP, _FTRegion,
+                        _IDSAcceptMessage, _IDSRejectMessage,
+                        _IDSRelayInitiateMessage ]
+    objc-ivars:       [ _FTMessageDelivery._retries,
+                        _FTPasswordManager._runningQueries, _FTPasswordManager._userNotificationCenter,
+                        _FTPasswordManager._accountStore ]
+...

@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccessUI.framework/DataAccessUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DAAccountDescriptionFromHostname,
+                        _kDADiagnosticSaveNotesDelegate, _DiagnosticsEnabledKey ]
+    objc-classes:     [ _DADiagnosticsNotesController,
+                        _DADiagnosticsPSController, _DASettingsDataclassConfigurationViewController,
+                        _DADiagnosticsNotesPane, _DASettingsAccountsUIController ]
+    objc-ivars:       [ _DADiagnosticsNotesPane._notesView,
+                        _DASettingsAccountsUIController._account ]
+...

@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXFrontBoardUtils.framework/AXFrontBoardUtils
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXFrontBoardCategoriesDidInstallNotification,
+                        _AXFrontBoardFocusedAppPID, _AXFrontBoardFocusedAppPIDsIgnoringSiri,
+                        _AXFrontBoardFocusedAppProcessExcludingSiri, _AXFrontBoardFocusedAppProcessesExcludingSiri,
+                        _AXFrontBoardIsSystemAppShowingAlert, _AXFrontBoardRunningAppPIDs,
+                        _AXFrontBoardSpeakThisAppPIDForPoint, _AXFrontBoardSystemAppPID,
+                        _AXFrontBoardUtilsVersionNumber, _AXFrontBoardVisibleAppProcesses,
+                        _AXIsPurpleBuddyFrontmost, _AXFrontBoardFBSceneManager,
+                        _AXFrontBoardFocusedAppProcess, _AXFrontBoardFocusedApps,
+                        _AXFrontBoardRunningAppProcesses, _AXFrontBoardSystemAppProcess,
+                        _AXFrontBoardUtilsVersionString ]
+    objc-classes:     [ _AXFBFakeProcess,
+                        _AXFrontBoardProcessWatcher, ___SBSheetControllerFBSceneAccessibility_super,
+                        _AXFBFakeProcessState, _SBSheetControllerFBSceneAccessibility ]
+...

@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NetworkServiceProxyCopyDefaultsDictionary,
+                        _NetworkServiceProxySetCurrentLocation, _NetworkServiceProxySetServiceNameForConnection,
+                        _NetworkServiceProxyVersionNumber, __ZN13NPFrameStream14amountToBeReadEv,
+                        __ZN13NPFrameStream17takeCurrentPacketEv, __ZN13NPFrameStream5flushER3AIO,
+                        __ZN13NPFrameStream7open_nwEv, __ZN6Crypto7Session6sipkeyE,
+                        __ZTS13NPFrameStream, _copyOSVersionString,
+                        _createMetadataFromProperties, _createWaldoURLFromSettings,
+                        _dictionaryToData, _getRTTFromFrame,
+                        _getServerConnectionForSelector, _latitudeLongitudeToGeohash,
+                        _nplog_app_proxy_obj, _nplog_server_obj,
+                        _serviceNameToID, _tuscanyClientDestroy,
+                        _tuscanyClientGetDataSize, _tuscanyClientGetHeaderSize,
+                        _tuscanyClientGetMaxDataSendSize, _tuscanyClientHandleConnectionConnected,
+                        _tuscanyClientSendAcknowledge, _tuscanyClientSendData,
+                        _tuscanyClientSendPing, _tuscanyLoopbackClientCreate,
+                        _tuscanyWindowCreate, _tuscanyWindowGetAmountToAck,
+                        _tuscanyWindowGetCredits, _NetworkServiceProxyIsEnabled,
+                        _NetworkServiceProxyStart, __ZN13NPFrameStream14handleReadDataEP6NSData,
+                        __ZN13NPFrameStream7disposeEPKcb, __ZTI10BufferPool,
+                        __ZTI11PendingPool, __ZTI13PendingStream,
+                        __ZTI23NPTuscanyLoopbackClient, __ZTI3Log,
+                        __ZTI6Client, __ZTI6Socket,
+                        __ZTI7Address, __ZTI8Datagram,
+                        __ZTI9AddressV4, __ZTIN3Log6StderrE,
+                        __ZTIN3Log8DateTimeE, __ZTIN5Frame4AEADE,
+                        __ZTIN6Client5QueryE, __ZTIN6Socket6ErrorsE,
+                        __ZTS11FrameStream, __ZTS13PendingStream,
+                        __ZTS23NPTuscanyLoopbackClient, __ZTS3Log,
+                        __ZTS6Client, __ZTS6Socket,
+                        __ZTS7Address, __ZTS8Datagram,
+                        __ZTS9AddressV4, __ZTSN3Log6StderrE,
+                        __ZTSN3Log8DateTimeE, __ZTSN5Frame4AEADE,
+                        __ZTSN6Client5QueryE, __ZTSN6Socket6ErrorsE,
+                        _copyProductTypeString, _dataToDictionary,
+                        _getServerConnection, _myIsEqual,
+                        _nplog_uea_obj, _tuscanyClientGetAmountToRead,
+                        _tuscanyClientGetInitialWindowSize, _tuscanyClientHandleReadData,
+                        _tuscanyClientSendException, _tuscanyWindowAddCredits,
+                        _tuscanyWindowDestroy ]
+    objc-classes:     [ _NPAverage,
+                        _NPKey, _NPLocation,
+                        _NPTunnel, _NPTunnelFlowHTTP,
+                        _NPTunnelFlowProtocol, _NPTunnelFlowTelemetry,
+                        _NPTunnelTuscany, _NPTunnelTuscanyLoopback,
+                        _NPTuscanyOnRamp, _NPWaldo,
+                        _NSPConnectionInfo, _NSPKeyNetworkAgent,
+                        _NSPNetworkAgent, _NetworkServiceProxyControlRequestStats,
+                        _NetworkServiceProxyRequestStats, _NetworkServiceProxyStats,
+                        _NPEdgeLatency, _NPNetworkInfo,
+                        _NPTunnelFlowMetrics, _NPTunnelFlowUDP,
+                        _NPTuscanyEdge, _NSPAppRule,
+                        _NSPManager, _NetworkServiceProxyDurationBuckets,
+                        _NetworkServiceProxyRespTimeBuckets ]
+...

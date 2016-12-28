@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IOCEC.framework/IOCEC
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IOCECInterfaceCloseReceiveQueue,
+                        _IOCECInterfaceCreate, _IOCECInterfaceGetTypeID,
+                        _IOCECInterfaceListenerGetTypeID, _IOCECInterfaceListenerScheduleWithDispatchQueue,
+                        _IOCECInterfaceOpenReceiveQueue, _IOCECInterfaceReceiveFrameAvailable,
+                        _IOCECInterfaceRegisterTerminatedCallback, _IOCECInterfaceSendFrame,
+                        _IOCECInterfaceUnscheduleFromDispatchQueue, _IOCECInterfaceCopyProperty,
+                        _IOCECInterfaceListenerCreate, _IOCECInterfaceListenerUnscheduleFromDispatchQueue,
+                        _IOCECInterfaceRegisterReceiveCallback, _IOCECInterfaceSetLogicalAddressMask ]
+...

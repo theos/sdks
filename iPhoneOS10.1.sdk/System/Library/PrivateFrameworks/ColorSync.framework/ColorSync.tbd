@@ -1,0 +1,49 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ColorSync.framework/ColorSync
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ColorSyncConvertDoubleXYZToD50,
+                        _ColorSyncCreateCodeFragmentPriv, _ColorSyncCreateOutputPoppyProfile,
+                        _ColorSyncCreateSignatureFromFourCharCode, _ColorSyncMakeProfile,
+                        _ColorSyncMatrixGetOptions, _ColorSyncMatrixGetRange,
+                        _ColorSyncNxMLUTGetFunction, _ColorSyncNxMLUTGetProperties,
+                        _ColorSyncNxMLUTGetTypeID, _ColorSyncProfileCopyData,
+                        _ColorSyncProfileCopyHeader, _ColorSyncProfileCopyTagSignatures,
+                        _ColorSyncProfileCreateMutable, _ColorSyncProfileCreateSanitizedCopy,
+                        _ColorSyncProfileCreateWithURL, _ColorSyncProfileGetMD5,
+                        _ColorSyncProfileIsWideGamut, _ColorSyncProfileSetDescriptionTag,
+                        _ColorSyncProfileSetTag, _ColorSyncTRCGetFunction,
+                        _ColorSyncTRCGetProperties, _ColorSyncTRCGetTypeID,
+                        _ColorSyncTransformCopyProperty, _ColorSyncTransformCreateWithName,
+                        _ColorSyncTransformIterate, _ColorSyncVerifySRGBData,
+                        _kColorSyncAdobeRGB1998Profile, _kColorSyncConversion1DLut,
+                        _kColorSyncConversionBPC, _kColorSyncConversionGridPoints,
+                        _kColorSyncConversionMatrix, _kColorSyncConversionOutChan,
+                        _kColorSyncConversionParamCurve1, _kColorSyncConversionParamCurve3,
+                        _kColorSyncConvertThreadCount, _kColorSyncDCIP3Profile,
+                        _kColorSyncFixedPointRange, _kColorSyncGenericGrayGamma22Profile,
+                        _kColorSyncGenericLabProfile, _kColorSyncGenericXYZProfile,
+                        _kColorSyncITUR709Profile, _kColorSyncProfile,
+                        _kColorSyncRenderingIntent, _kColorSyncRenderingIntentPerceptual,
+                        _kColorSyncRenderingIntentSaturation, _kColorSyncSRGBProfile,
+                        _kColorSyncTransformCodeFragmentType, _kColorSyncTransformDstSpace,
+                        _kColorSyncTransformPCSToDevice, _kColorSyncTransformParametricConversionData,
+                        _kColorSyncTransformSrcSpace, _kColorSyncTransformTag,
+                        _ColorSyncCreateCodeFragment, _ColorSyncCreateOutputPoppyProfileForRGBData,
+                        _ColorSyncMatrixGetFunction, _ColorSyncMatrixGetTypeID,
+                        _ColorSyncNxMLUTGetRange, _ColorSyncProfileCopyDescriptionString,
+                        _ColorSyncProfileCreate, _ColorSyncProfileCreateWithName,
+                        _ColorSyncProfileGetTypeID, _ColorSyncProfileSetHeader,
+                        _ColorSyncTRCGetOptions, _ColorSyncTransformConvert,
+                        _ColorSyncTransformGetTypeID, _kColorSyncACESCGLinearProfile,
+                        _kColorSyncConversion3DLut, _kColorSyncConversionInpChan,
+                        _kColorSyncConversionParamCurve0, _kColorSyncConversionParamCurve4,
+                        _kColorSyncDisplayP3Profile, _kColorSyncGenericGrayProfile,
+                        _kColorSyncITUR2020Profile, _kColorSyncROMMRGBProfile,
+                        _kColorSyncRenderingIntentRelative, _kColorSyncTransformAdobeRGBTosRGB,
+                        _kColorSyncTransformFullConversionData, _kColorSyncTransformSimplifiedConversionData ]
+...

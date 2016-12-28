@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BackgroundTaskAgent.framework/BackgroundTaskAgent
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BackgroundTaskAgentAddJob,
+                        _BackgroundTaskAgentInit, _btaLock,
+                        _bta_logconsole_asl_handle, _gClientName,
+                        _initialized, _kBackgroundTaskAgentAllowedDuringVoiceCall,
+                        _kBackgroundTaskAgentJobExpired, _kBackgroundTaskAgentJobStatusBatteryLevel,
+                        _kBackgroundTaskAgentJobStatusPowerPluggedin, _kBackgroundTaskAgentJobWindowAdjustTime,
+                        _kBackgroundTaskAgentJobWindowStartTime, _kBackgroundTaskAgentPowerOptLevel,
+                        _kBackgroundTaskAgentRequiredBatteryLevel, _kBackgroundTaskAgentUserContext,
+                        _BackgroundTaskAgentCopyJob, _btaUnlock,
+                        _initSem, _kBackgroundTaskAgentCellularAllowed,
+                        _kBackgroundTaskAgentJobStatusNetwork, _kBackgroundTaskAgentJobWindowEndTime,
+                        _kBackgroundTaskAgentPowerPluggedinTime, _kBackgroundTaskAgentScreenBlankedTime ]
+...

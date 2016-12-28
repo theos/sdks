@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/Catalyst.framework/Catalyst ]
+    symbols:          [ _DMFBundleIdentifierErrorKey,
+                        _DMFDeviceAppLockedKey, _DMFDeviceAvailableBytesKey,
+                        _DMFDeviceBuildVersionKey, _DMFDeviceDeviceOrientationKey,
+                        _DMFDeviceInstalledApplicationsKey, _DMFDeviceIsEphemeralMultiUserKey,
+                        _DMFDeviceLockStateKey, _DMFDeviceModelKey,
+                        _DMFDeviceOrientationLockedKey, _DMFDevicePlatformKey,
+                        _DMFDevicePropertiesDidChangeNotificationName, _DMFDeviceSecondaryOpenApplicationKey,
+                        _DMFDeviceSystemNameKey, _DMFDeviceUserDisplayNameKey,
+                        _DMFDeviceUserGivenNameKey, _DMFDeviceUserImageURLKey,
+                        _DMFDeviceVolumeKey, _DMFErrorWithCodeAndUserInfo,
+                        _DMFInterfaceOrientationFromUIInterfaceOrientation, _DMFInterfaceOrientationToUIInterfaceOrientation,
+                        _DMFInvalidPropertyErrorKey, _DMFItemPathErrorKey,
+                        _DeviceManagementVersionNumber, _DeviceManagementVersionString,
+                        _DMFDeviceActiveAirPlayRouteKey, _DMFDeviceBatteryLevelKey,
+                        _DMFDeviceIdentifierKey, _DMFDeviceIsSupervisedKey,
+                        _DMFDeviceNameKey, _DMFDevicePrimaryOpenApplicationKey,
+                        _DMFDeviceSerialNumberKey, _DMFDeviceUserFamilyNameKey,
+                        _DMFDeviceUserLoginStateKey, _DMFIdentifierErrorKey,
+                        _DMFInvalidParameterErrorKey, _DMFURLStringErrorKey ]
+    objc-classes:     [ _DMFAssignUserRequest,
+                        _DMFControlGroupIdentifier, _DMFDevicePropertiesResultObject,
+                        _DMFFetchControlGroupIdentifiersRequest, _DMFFetchDevicePropertiesRequest,
+                        _DMFFetchInstalledApplicationsResultObject, _DMFFetchLastLoginDateResultObject,
+                        _DMFFetchScreenshotResultObject, _DMFJoinControlGroupRequest,
+                        _DMFLogoutUserRequest, _DMFManagementUnlockRequest,
+                        _DMFOpenURLRequest, _DMFSetInterfaceOrientationRequest,
+                        _DMFStartAppLockRequest, _DMFUpdatePickableAirPlayRoutesRequest,
+                        __DMFErrorHelper, _DMFConnection,
+                        _DMFDevicePropertyNotificationSubscriptionRequest, _DMFFetchInstalledApplicationsRequest,
+                        _DMFFetchScreenshotRequest, _DMFLeaveControlGroupRequest,
+                        _DMFOpenAppRequest, _DMFSetVolumeRequest,
+                        _DMFStopAppLockRequest ]
+...

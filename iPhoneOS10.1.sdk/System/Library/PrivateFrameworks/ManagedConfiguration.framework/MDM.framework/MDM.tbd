@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ManagedConfiguration.framework/MDM.framework/MDM
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __performBlockOnMainThread,
+                        _kMCAPMPromptingStatusDidChangeNotification, _kMCMAMRejectionReasonAlreadyQueued,
+                        _kMCMAMRejectionReasonLicenseNotFound, _kMCMAMRejectionReasonSystemApp,
+                        _kMCMDMPCommandKey, _kMCMDMPErrorChainKey,
+                        _kMCMDMPRequestTypeActivationLockBypassCode, _kMCMDMPRequestTypeAvailableOSUpdates,
+                        _kMCMDMPRequestTypeClearActivationLockBypassCode, _kMCMDMPRequestTypeClearRestrictionsPassword,
+                        _kMCMDMPRequestTypeDeviceConfigured, _kMCMDMPRequestTypeDeviceLocation,
+                        _kMCMDMPRequestTypeDisableLostMode, _kMCMDMPRequestTypeEraseDevice,
+                        _kMCMDMPRequestTypeInstallMedia, _kMCMDMPRequestTypeInstallProfileSilent,
+                        _kMCMDMPRequestTypeInstalledApplicationList, _kMCMDMPRequestTypeLogOutUser,
+                        _kMCMDMPRequestTypeManagedApplicationConfiguration, _kMCMDMPRequestTypeManagedApplicationsList,
+                        _kMCMDMPRequestTypeOSUpdateStatus, _kMCMDMPRequestTypeProvisioningProfileList,
+                        _kMCMDMPRequestTypeRemoveMedia, _kMCMDMPRequestTypeRemoveProvisioningProfile,
+                        _kMCMDMPRequestTypeRequestUnlockToken, _kMCMDMPRequestTypeScheduleOSUpdate,
+                        _kMCMDMPRequestTypeSecurityInfo, _kMCMDMPRequestTypeStopMirroring,
+                        _kMCMDMPRequestTypeValidateApplications, _kMCMDMPSettingsSettingsAppConfig,
+                        _kMCMDMPSettingsSettingsDeviceName, _kMCMDMPSettingsSettingsPersonalHotspot,
+                        _kMCMDMPSettingsSettingsWallpaper, _kMCMDMPStatusIdle,
+                        _kMCMDMPStatusNotPermitted, _kMCMDMPTopicKey,
+                        _kMCSSMetadataResponseBundleIdentifierKey, _kMCSSMetadataResponseLocalizedAppTitleKey,
+                        _kIdentifierKey, _kMCMAMRejectionReasonCouldNotVerify,
+                        _kMCMAMRejectionReasonUserRejected, _kMCMDMPPushMagicKey,
+                        _kMCMDMPRequestTypeCertificateList, _kMCMDMPRequestTypeDeleteUser,
+                        _kMCMDMPRequestTypeDeviceLock, _kMCMDMPRequestTypeInstallApplication,
+                        _kMCMDMPRequestTypeInstallProvisioningProfile, _kMCMDMPRequestTypeManagedApplicationAttributes,
+                        _kMCMDMPRequestTypeManagedMediaList, _kMCMDMPRequestTypeRemoveApplication,
+                        _kMCMDMPRequestTypeRequestMirroring, _kMCMDMPRequestTypeScheduleOSUpdateScan,
+                        _kMCMDMPRequestTypeUserList, _kMCMDMPSettingsSettingsDataRoaming,
+                        _kMCMDMPSettingsSettingsVoiceRoaming, _kMCMDMPStatusNotNow,
+                        _kMCMDMPUnlockTokenKey, _kMCSSMetadataResponseExternalVersionIdentifierKey ]
+    objc-classes:     [ _MCAirPlayManager,
+                        _MCMDMLostDeviceLocationManager, _MCMDMUtilities,
+                        _MCManagedAssetManager, _MCSSAuthenticationRequestDelegate,
+                        _MCSSItemLookupRequestDelegate, _MCSSPurchaseRequestDelegate,
+                        _MCSoftwareUpdateActionResult, _MCSoftwareUpdateDownloadOptions,
+                        _MCSoftwareUpdateInstallOptions, _MCSoftwareUpdateManager,
+                        _MCStoreAppMetadata, _MCUserMDMParser,
+                        _MCAppleAccountUtilities, _MCManagedAppManager,
+                        _MCSSDownloadManifestRequestDelegate, _MCSSRequestDelegate,
+                        _MCSoftwareUpdateInfo, _MCSoftwareUpdateStatus ]
+    objc-ivars:       [ _MCSSAuthenticationRequestDelegate._authenticatedAccount,
+                        _MCSSPersonalizeOffersDelegate._response, _MCSSDownloadManifestRequestDelegate._response ]
+...

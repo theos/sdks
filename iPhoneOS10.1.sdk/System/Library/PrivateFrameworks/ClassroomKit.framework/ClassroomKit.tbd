@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement,
+                        /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport ]
+    symbols:          [ _CRKClassSessionBrowserSessionFlagsKey,
+                        _CRKClassSessionBrowserTransportKey, _CRKClassSessionServiceType,
+                        _CRKClassroomServicePortNumber, _CRKErrorWithCodeAndUserInfo,
+                        _CRKLogRemoveStateHandler, _ClassroomKitVersionNumber,
+                        _ClassroomKitVersionString, _CRKClassSessionBrowserStateKey,
+                        _CRKClassroomAdvertisementFlags, _CRKLogAddStateHandler,
+                        _CRKLoggingInitialize ]
+    objc-classes:     [ _CRKBookmark,
+                        _CRKClassSession, _CRKClassSessionBeacon,
+                        _CRKClassSessionBrowser, _CRKDevice,
+                        _CRKFetchActiveControlGroupIdentifierRequest, _CRKFetchClassroomConfigurationRequest,
+                        _CRKFetchDevicesRequest, _CRKFetchInstructorEndpointRequest,
+                        _CRKFetchResourceRequest, _CRKFetchSafariBookmarksRequest,
+                        _CRKFetchStudentDaemonStateRequest, _CRKInstructorExtensionContext,
+                        _CRKNetworkPowerAssertion, _CRKSetActiveControlGroupRequest,
+                        __CRKErrorHelper, _CRKBrowseForNearbyDevicesRequest,
+                        _CRKClassSessionBeaconBrowser, _CRKEmptyRequest,
+                        _CRKFetchClassroomConfigurationResultObject, _CRKFetchInstructorEndpointResultObject,
+                        _CRKFetchSafariBookmarksResultObject, _CRKKeychainUtility,
+                        _CRKStudentDaemonProxy ]
+...

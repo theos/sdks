@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AirPlayForCarDisplaySim.framework/AirPlayForCarDisplaySim
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AirPlayCreateModesDictionary,
+                        _AirPlayReceiverServerCreate, _AirPlayReceiverServerSetDelegate,
+                        _AirPlayReceiverSessionChangeModes, _AirPlayReceiverSessionMakeModeStateFromDictionary,
+                        _AirPlayReceiverSessionRequestUI, _AirPlayReceiverSessionSendCommand_b,
+                        _AirPlayReceiverSessionSetDelegate, _AirPlayReceiverSessionSetNightMode,
+                        _CarPlayControlClientConnect, _CarPlayControlClientCreateWithServer,
+                        _CarPlayControlClientGetTypeID, _CarPlayControlClientStartTrackingController,
+                        _CarPlayControlClientStopTrackingController, _CarPlayControllerCopySourceVersion,
+                        _CarPlayControllerGetTypeID, _AirPlayReceiverServerControl,
+                        _AirPlayReceiverServerSetProperty, _AirPlayReceiverSessionRequestSiriAction,
+                        _AirPlayReceiverSessionSendiAPMessage, _AirPlayReceiverSessionUpdateVehicleInformation,
+                        _CarPlayControlClientDisconnect, _CarPlayControlClientStop,
+                        _CarPlayControllerGetBluetoothMacAddress ]
+...

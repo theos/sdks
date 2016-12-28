@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VUSocialUpload.framework/VUSocialUpload
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _EncodedStringForParameterDictionary,
+                        _FlickrResponseErrorDomain, _FlickrUploadDomain,
+                        _FlickrUploadPhotoSetTitle, _VULog,
+                        _kVUPowerAssertionDuration, _FlickrPostErrorDomain,
+                        _FlickrUploadPhotoSetID, _VimeoPublishPostErrorDomain ]
+    objc-classes:     [ _FlickrAudienceController,
+                        _FlickrPhotoSet, _FlickrPhotoSetManager,
+                        _FlickrPost, _FlickrResponse,
+                        _VUDataReader, _VimeoComposeViewController,
+                        _VimeoPost, _VimeoUploadSession,
+                        _FlickrComposeViewController, _FlickrPhotoSetResponse,
+                        _FlickrUploadSession, _VimeoDetailsController ]
+    objc-ivars:       [ _FlickrResponse._partialPhotoIDString,
+                        _VimeoPost._canUploadOverCellular, _VimeoPost._countOfBytesStored,
+                        _VimeoPost._ticketID, _VimeoPost._uploadState,
+                        _VimeoPost._videoID, _VimeoPost._baseURL,
+                        _VimeoPost._retryCount, _VimeoPost._uploadEndpoint ]
+...

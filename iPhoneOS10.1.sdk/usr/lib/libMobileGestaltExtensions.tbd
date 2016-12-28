@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 5BC8C8B6-9758-325A-8ADA-ED0CDEDEAA71', 'armv7s: 2D9ED1F9-D735-3783-A1CD-3F62E71F10B5', 
+                   'arm64: 7C6DB681-6BBA-3FE5-85DD-3DCA7C8180BD' ]
+platform:        ios
+install-name:    /usr/lib/libMobileGestaltExtensions.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __MGSCopyLocalizedString, __MGSSetLazyFuncs ]
+...

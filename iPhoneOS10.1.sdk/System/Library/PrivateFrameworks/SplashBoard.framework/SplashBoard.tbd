@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SplashBoardSubsystem,
+                        _SplashBoardVersionString, _XBApplicationLaunchImageServiceName,
+                        _XBApplicationSnapshotContentTypeMaskDescription, _XBCachedNSHomeDirectory,
+                        _XBCachesPathForSandboxPath, _XBEnsureDirectoryExistsAtPath,
+                        _XBEnumerateStatusBarStatesMatchingMask, _XBImageOrientationForInterfaceOrientation,
+                        _XBImageOrientationForRotationDegrees, _XBInterfaceOrientationForString,
+                        _XBInterfaceOrientationMaskForInterfaceOrientationPair, _XBInvalidContextId,
+                        _XBLaunchImageProviderMessageKeyCompatibilityInfo, _XBLaunchImageProviderMessageKeyMessageType,
+                        _XBLaunchImageProviderMessageKeyWrapperContextID, _XBLaunchStoryboardClientBundleIdentifierKey,
+                        _XBLaunchStoryboardErrorDomain, _XBLaunchStoryboardIdentifierKey,
+                        _XBLaunchStoryboardsKey, _XBLogSnapshot,
+                        _XBNextClockwiseInterfaceOrientation, _XBRecentLocalePreferenceKey,
+                        _XBRotationDegreesForImageOrientation, _XBSnapshotPathForBundleIdentifierWithSandboxPath,
+                        _XBStatusBarStateDescription, _XBStatusBarStateMaskForStatusBarState,
+                        _XBStatusBarStateMatchesSettings, _XBURLToLaunchStoryboardAssociationsKey,
+                        __XBPreparedLaunchInterfaceForCapture, _SplashBoardVersionNumber,
+                        _XBApplicationSnapshotContentTypeDescription, _XBCachesPathForApplicationInfo,
+                        _XBEnumerateStatusBarStates, _XBImageOrientationForInterfaceOrientationRotation,
+                        _XBInterfaceOrientationMaskForInterfaceOrientation, _XBIsSymbolicLinkAtPath,
+                        _XBLaunchImageProviderMessageKeySnapshotFrame, _XBLaunchStoryboardDefinitionsKey,
+                        _XBLaunchStoryboardNameKey, _XBModificationDateForPath,
+                        _XBRecentScreenSizePreferenceKey, _XBSnapshotPathForNonSandboxedSystemApplications,
+                        _XBStatusBarStateMaskMatchesSettings, __IOSurfacePropertyDictionaryForSize ]
+    objc-classes:     [ _XBApplicationController,
+                        _XBApplicationLaunchCompatibilityInfo, _XBApplicationSnapshotFetchRequest,
+                        _XBApplicationSnapshotGroup, _XBApplicationSnapshotManifest,
+                        _XBApplicationSnapshotPredicate, _XBDisplaySnapshot,
+                        _XBLaunchImage, _XBLaunchImageProvider,
+                        _XBLaunchInterface, _XBMutableStatusBarSettings,
+                        _XBSnapshotDataProviderContext, _XBStatusBarSettings,
+                        _XBApplicationDataStore, _XBApplicationSnapshotGenerationContext,
+                        _XBApplicationSnapshotManifestImpl, _XBDisplaySnapshotLayer,
+                        _XBLaunchImageProviderClient, _XBSnapshotContainerIdentity,
+                        _XBSnapshotManifestIdentity ]
+    objc-ivars:       [ _XBStatusBarSettings._settings ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 1DCDF81C-C234-3596-8CFA-7C90FF9776C2', 'armv7s: FDC5A804-7954-37A5-B634-139440FC1718', 
+                   'arm64: 0E49222F-7FF8-32BA-BF21-12ED12667DAC' ]
+platform:        ios
+install-name:    /usr/lib/libPCITransport.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__114default_deleteIN3pci5event8ListenerEEE, __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _TelephonyBasebandPCITransportCreate, _TelephonyBasebandPCITransportInitParameters, 
+                       __ZN3pci5event8Listener4initEv, __ZN3pci5event8Listener6createEN8dispatch5blockIU13block_pointerFvNS0_4typeEONSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjEEEP11__CFRunLoop, 
+                       __ZN3pci5event8Listener6notifyE12abpErrorTypePvS3_, __ZN3pci5event8Listener9notifyPDPE17abpPDPMessageTypePv, 
+                       __ZN3pci5event8ListenerC1EN8dispatch5blockIU13block_pointerFvNS0_4typeEONSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjEEEP11__CFRunLoop, 
+                       __ZN3pci5event8ListenerC2EN8dispatch5blockIU13block_pointerFvNS0_4typeEONSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjEEEP11__CFRunLoop, 
+                       __ZN3pci5event8ListenerD1Ev, __ZN3pci5event8ListenerD2Ev ]
+...

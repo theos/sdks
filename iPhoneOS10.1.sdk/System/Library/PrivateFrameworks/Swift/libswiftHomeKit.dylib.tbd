@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftHomeKit.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TTWOSC11HMErrorCode10Foundation15_BridgedNSError7HomeKitZFS1_g14_nsErrorDomainSS,
+                        __TTWOSC11HMErrorCode10Foundation34_ObjectiveCBridgeableErrorProtocol7HomeKitFS1_CfT15_bridgedNSErrorCSo7NSError_GSqx_, __TTWOSC11HMErrorCodes13ErrorProtocol7HomeKitFS0_g7_domainSS,
+                        __TTWOSC11HMErrorCodes16RawRepresentable7HomeKitFS0_g8rawValuewx8RawValue, __TTWOSC11HMErrorCodes9Equatable7HomeKitZFS0_oi2eefTxx_Sb,
+                        __TWPOSC11HMErrorCode10Foundation16__BridgedNSError7HomeKit, __TWPOSC11HMErrorCodes13ErrorProtocol7HomeKit,
+                        __TWPOSC11HMErrorCodes8Hashable7HomeKit, __TWaOSC11HMErrorCode10Foundation15_BridgedNSError7HomeKit,
+                        __TWaOSC11HMErrorCode10Foundation34_ObjectiveCBridgeableErrorProtocol7HomeKit, __TWaOSC11HMErrorCodes16RawRepresentable7HomeKit,
+                        __TWaOSC11HMErrorCodes9Equatable7HomeKit, __swift_FORCE_LOAD_$_swiftHomeKit,
+                        __TTWOSC11HMErrorCode10Foundation16__BridgedNSError7HomeKitZFS1_g14_nsErrorDomainSS, __TTWOSC11HMErrorCodes16RawRepresentable7HomeKitFS0_CfT8rawValuewx8RawValue_GSqx_,
+                        __TWPOSC11HMErrorCode10Foundation15_BridgedNSError7HomeKit, __TWPOSC11HMErrorCodes16RawRepresentable7HomeKit,
+                        __TWaOSC11HMErrorCode10Foundation16__BridgedNSError7HomeKit, __TWaOSC11HMErrorCodes8Hashable7HomeKit,
+                        __TZFE7HomeKitOSC11HMErrorCodeg14_nsErrorDomainSS ]
+...

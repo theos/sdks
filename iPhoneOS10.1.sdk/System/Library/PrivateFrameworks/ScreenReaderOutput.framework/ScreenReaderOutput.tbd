@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput
+current-version: 390.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SCROSerializeWrapper,
+                        _kSCROAlertAttribute, _kSCROAlertTimeoutAttribute,
+                        _kSCROBrailleDisplayBluetoothAddress, _kSCROBrailleDisplayBrailleInputMode,
+                        _kSCROBrailleDisplayDriverIdentifier, _kSCROBrailleDisplayMainSize,
+                        _kSCROBrailleDisplayModelIdentifier, _kSCROBrailleDisplayState,
+                        _kSCROBrailleDisplayToken, _kSCROBrailleDriverAutoDetectDictionaries,
+                        _kSCROBrailleDriverBluetoothDeviceClasses, _kSCROBrailleDriverBluetoothSPDUUID16ServiceClass,
+                        _kSCROBrailleDriverMainDisplaySize, _kSCROBrailleDriverStatusDisplaySize,
+                        _kSCROBrailleIBeamLocationAttribute, _kSCROBrailleInputMemorizeNowInterval,
+                        _kSCROBrailleKeyboardKeyModifierCommand, _kSCROBrailleKeyboardKeyModifierNull,
+                        _kSCROBrailleKeyboardKeyModifierSecondaryFn, _kSCROBrailleOffsetAttribute,
+                        _kSCROBrailleOverrideStringAttribute, _kSCROBrailleRouterKeyLocation,
+                        _kSCROBrailleSizeAttribute, _kSCROBrailleStatusAttribute,
+                        _kSCROBrailleUnicodeCharacterDot7, _kSCROBrailleUnicodeCharacterDot8,
+                        _kSCROCursorAttribute, _kSCROLanguageAttribute,
+                        _kSCROSelectionAttribute, _kSCROStatusAttribute,
+                        _kSCROStatusAttributeCellTitle, _kSCROTechnicalContextAttribute,
+                        _kSCROTokenAttribute, _SCROUnserializeWrapper,
+                        _kSCROAppTokenAttribute, _kSCROBrailleDisplayConnectedNotification,
+                        _kSCROBrailleDisplayModeAttribute, _kSCROBrailleDisplayStatusSize,
+                        _kSCROBrailleDriverBluetoothConnectionIsIncoming, _kSCROBrailleDriverBluetoothSearchDictionary,
+                        _kSCROBrailleDriverType, _kSCROBrailleInputMemorizePulseInterval,
+                        _kSCROBrailleKeyboardKeyModifierOption, _kSCROBrailleOriginalStringAttribute,
+                        _kSCROBrailleRouterKeyToken, _kSCROBrailleUnicodeCharacterBase,
+                        _kSCROBrailleUnicodeCharacterSpace, _kSCROLineFocusAttribute,
+                        _kSCROStatusAttributeCellIndex, _kSCROStatusAttributeDotText ]
+    objc-classes:     [ _SCROBrailleClient,
+                        _SCROBrailleKey, _SCROCallback,
+                        _SCROIOElement, _SCROIOUSBElement,
+                        _SCROMobileBrailleDisplayInputManager, _SCROWeakReferenceContainer,
+                        _SCROBrailleDisplayAutoDetector, _SCROEvent,
+                        _SCROIOUSBHIDElement, _SCROScriptClient ]
+    objc-ivars:       [ _SCROBrailleClient._aggregatedStatusCache,
+                        _SCROBrailleClient._connection, _SCROBrailleClient._delegate,
+                        _SCROBrailleClient._displayDescriptorCallbackEnabled, _SCROBrailleClient._keepConnectionAlive,
+                        _SCROBrailleClient._mainStringCache, _SCROBrailleClient._needsDisplay,
+                        _SCROBrailleClient._wantsDisplayConfigurationChanged, _SCROBrailleDisplayAutoDetector._isDetectingDisplays,
+                        _SCROBrailleDisplayAutoDetector._notificationPort, _SCROBrailleKey._displayMode,
+                        _SCROBrailleKey._hasRouterInfo, _SCROBrailleKey._maskArray,
+                        _SCROBrailleKey._routerLocation, _SCROBrailleKeyboardKey._keyString,
+                        _SCROCallback._isAtomic, _SCROCallback._object,
+                        _SCROEvent._callbacks, _SCROEvent._handlerType,
+                        _SCROEvent._setDictionary, _SCROIOElement._ioObject,
+                        _SCROMobileBrailleDisplayInputManager._brailleKeys, _SCROMobileBrailleDisplayInputManager._displayInfoDict,
+                        _SCROMobileBrailleDisplayInputManager._sixDotCommands, _SCROScriptClient._isReady,
+                        _SCROScriptClient._timer, _SCROWeakReferenceContainer._weakReference,
+                        _SCROBrailleClient._aggregatedStatusPending, _SCROBrailleClient._delegateWantsKeypresses,
+                        _SCROBrailleClient._lock, _SCROBrailleClient._wantsDisconnectMessage,
+                        _SCROBrailleDisplayAutoDetector._iteratorDict, _SCROBrailleKey._displayToken,
+                        _SCROBrailleKey._routerIndex, _SCROBrailleKeyboardKey._modifiers,
+                        _SCROEvent._actions, _SCROEvent._readOnly,
+                        _SCROIOHIDElement._hidDevice, _SCROMobileBrailleDisplayInputManager._eightDotCommands,
+                        _SCROScriptClient._lock ]
+...

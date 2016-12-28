@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Frameworks/PhotosGraph.framework/Frameworks/PipelineKit.framework/PipelineKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PIErrorDomain,
+                        _PipelineKitVersionString, _kPIReachabilityChangedNotification,
+                        _PipelineKitVersionNumber ]
+    objc-classes:     [ _PICLGeocoderOperation,
+                        _PIError, _PILogging,
+                        _PIOperation, _PIPipeline,
+                        _PISLRequestOperation, _PIURLDataOperation,
+                        _PIURLSessionOperationSubclass, _PIEKEventStoreOperation,
+                        _PIMKLocalSearchOperation, _PIReachability,
+                        _PIURLDownloadOperation ]
+...

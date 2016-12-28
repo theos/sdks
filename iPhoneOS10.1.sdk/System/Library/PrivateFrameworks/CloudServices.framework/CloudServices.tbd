@@ -1,0 +1,58 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudServices.framework/CloudServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SecureBackupBackOffDateWithInfo,
+                        _SecureBackupEnableWithInfo, _SecureBackupRecoverWithInfo,
+                        _SecureBackupUpdateMetadataWithInfo, _kCloudServicesRetryAfterKey,
+                        _kSecureBackupAlliCDPRecordsKey, _kSecureBackupAuthenticationAuthToken,
+                        _kSecureBackupAuthenticationEscrowProxyURL, _kSecureBackupAuthenticationiCloudEnvironment,
+                        _kSecureBackupCFAlliCDPRecordsKey, _kSecureBackupCFAuthenticationAuthToken,
+                        _kSecureBackupCFAuthenticationEscrowProxyURL, _kSecureBackupCFAuthenticationiCloudEnvironment,
+                        _kSecureBackupCFClientMetadataKey, _kSecureBackupCFContainsiCDPDataKey,
+                        _kSecureBackupCFCoolOffEndKey, _kSecureBackupCFEMCSManagedCredentialKey,
+                        _kSecureBackupCFEscrowDateKey, _kSecureBackupCFEscrowTimestampKey,
+                        _kSecureBackupCFIDMSRecoveryKey, _kSecureBackupCFMetadataKey,
+                        _kSecureBackupCFPeerInfoDataKey, _kSecureBackupCFRecordIDKey,
+                        _kSecureBackupCFRecoveryStatusKey, _kSecureBackupCFSilentRecoveryAttemptKey,
+                        _kSecureBackupCFStingrayEscrowTimestampKey, _kSecureBackupCFStingrayMetadataKey,
+                        _kSecureBackupCFUsesMultipleiCSCKey, _kSecureBackupCFiCloudDataProtectionDeleteAllRecordsKey,
+                        _kSecureBackupCFiCloudIdentityDataKey, _kSecureBackupChallengeDeviceAreaDialCodeKey,
+                        _kSecureBackupChallengeDeviceIDKey, _kSecureBackupChallengeDeviceTypeKey,
+                        _kSecureBackupComplexPassphraseKey, _kSecureBackupContainsiCDPDataKey,
+                        _kSecureBackupCoolOffEndKey, _kSecureBackupCountryDialCodeKey,
+                        _kSecureBackupEMCSIDMSDictKey, _kSecureBackupEMCSOldManagedCredentialKey,
+                        _kSecureBackupEscrowDateKey, _kSecureBackupEscrowTimestampKey,
+                        _kSecureBackupIDMSDataKey, _kSecureBackupIsEnabledKey,
+                        _kSecureBackupLastBackupTimestampKey, _kSecureBackupNewPassphraseKey,
+                        _kSecureBackupNumericPassphraseLengthKey, _kSecureBackupPeerInfoDataKey,
+                        _kSecureBackupRecordIDKey, _kSecureBackupRecordStatusInvalid,
+                        _kSecureBackupRecordStatusValid, _kSecureBackupRecoveryStatusKey,
+                        _kSecureBackupRemainingAttemptsKey, _kSecureBackupSMSTargetKey,
+                        _kSecureBackupServiceAccountInfoKey, _kSecureBackupStingrayEscrowDigestKey,
+                        _kSecureBackupStingrayMetadataHashKey, _kSecureBackupSynchronizeKey,
+                        _kSecureBackupUseCachedPassphraseKey, _kSecureBackupUsesMultipleiCSCKey,
+                        _kSecureBackupUsesRandomPassphraseKey, _kSecureBackupiCDPRecordsKey,
+                        _kSecureBackupiCloudDataProtectionEnabledKey, _kSecureBackupiCloudIdentityPublicDataKey,
+                        _SecureBackupDisableWithInfo, _SecureBackupSetBackOffDateWithInfo,
+                        _kSecureBackupAccountIsHighSecurityKey, _kSecureBackupAuthenticationDSID,
+                        _kSecureBackupBackOffDateKey, _kSecureBackupCFAuthenticationDSID,
+                        _kSecureBackupCFBackOffDateKey, _kSecureBackupCFContainsiCloudIdentityKey,
+                        _kSecureBackupCFEMCSOldManagedCredentialKey, _kSecureBackupCFIDMSDataKey,
+                        _kSecureBackupCFPassphraseKey, _kSecureBackupCFRecordLabelKey,
+                        _kSecureBackupCFStingrayEscrowDigestKey, _kSecureBackupCFTriggerUpdateKey,
+                        _kSecureBackupCFiCloudDataProtectionEnabledKey, _kSecureBackupChallengeDeviceCountryDialCodeKey,
+                        _kSecureBackupClientMetadataKey, _kSecureBackupContainsiCloudIdentityKey,
+                        _kSecureBackupCountrySMSCodesKey, _kSecureBackupErrorDomain,
+                        _kSecureBackupEscrowTrustStatusKey, _kSecureBackupLastBackupDateKey,
+                        _kSecureBackupNotificationKey, _kSecureBackupPeerInfoSerialNumberKey,
+                        _kSecureBackupRecordStatusKey, _kSecureBackupRecoveryVerificationTokenLengthKey,
+                        _kSecureBackupSMSTargetPhoneNumberKey, _kSecureBackupStingrayEscrowTimestampKey,
+                        _kSecureBackupTriggerUpdateKey, _kSecureBackupUsesNumericPassphraseKey,
+                        _kSecureBackupiCloudDataProtectionDeleteAllRecordsKey, _kSecureBackupiCloudIdentityDataKey ]
+    objc-classes:     [ _SecureBackup ]
+...

@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/QueryPredictionInternal.framework/QueryPredictionInternal
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _QueryPredictionInternalVersionNumber,
+                        _kDaySeconds, _kLookupIdentifier,
+                        _kQueryDeleteDataNotification, _kSpotlightIdentifier,
+                        _shortAggdCodeForInteractionType, _shortAggdCodeForReasonType,
+                        _stringForInteractionType, _stringForReason,
+                        _stringForSuggestionType, _QueryPredictionInternalVersionString,
+                        _kQueryDatabaseChangeNotification, _kWeekSeconds,
+                        _shortAggdCodeForSuggestionType, _stringForReasonType ]
+    objc-classes:     [ __QPExpertParameters,
+                        __QPQueryFilter, __QPQueryRankScore,
+                        __QPQueryRankerConfiguration, __QPSearchFeedbackListener,
+                        __WeightedString, __QPParameters,
+                        __QPQueryRanker, __QPSearchFeedbackListenerParameters ]
+...

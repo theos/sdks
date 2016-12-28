@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaSocial.framework/MediaSocial
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSCLAccountEntityPropertyAuthenticationSecret,
+                        _MSCLAccountEntityPropertyAuthorIdentity, _MSCLAccountEntityPropertyEnabled,
+                        _MSCLAccountEntityPropertyPreferredPageIdentifier, _MSCLAccountEntityPropertyServiceIdentifier,
+                        _MSCLAccountEntityPropertyUserName, _MSCLAccountPropertyAuthenticationToken,
+                        _MSCLAccountPropertyFullName, _MSCLAccountPropertyPreferredPageIdentifier,
+                        _MSCLAccountPropertyUserId, _MSCLAccountStoreDidChangeNotification,
+                        _MSCLCameraKitFramework, _MSCLFacebookReadPermissions,
+                        _MSCLLinearValueForDecibels, _MSCLServiceIdentifierTwitter,
+                        _MSCLTemporaryAssetsDirectoryPath, _MSCLWeakLinkedClassForString,
+                        _MediaSocialVersionNumber, __BagKeyForServiceIdentifier,
+                        __QueryKeyForAuthorType, _MSCLAccountEntityPropertyAuthenticationToken,
+                        _MSCLAccountEntityPropertyFullName, _MSCLAccountEntityPropertyUserIdentifier,
+                        _MSCLAccountPropertyEnabled, _MSCLAccountPropertyServiceIdentifier,
+                        _MSCLAssetsLibraryFramework, _MSCLFacebookWritePermissions,
+                        _MSCLStringsTablePostComposition, _MSCLWeakLinkedSymbolForString,
+                        _MediaSocialVersionString ]
+    objc-classes:     [ _MSCLAccount,
+                        _MSCLAccountEntity, _MSCLAccountStore,
+                        _MSCLAccountTokenRegisterOperation, _MSCLAttachment,
+                        _MSCLAttachmentDownloadOperation, _MSCLAttachmentPropertiesTableViewSection,
+                        _MSCLAttributionSelectionViewController, _MSCLAudioCoverImageSelectionTableViewCell,
+                        _MSCLAudioPickerMediaLibraryViewController, _MSCLAudioPickerSourcesViewController,
+                        _MSCLAudioPickerVoiceMemoTableViewCell, _MSCLAudioPlayer,
+                        _MSCLAudioPlayerStatus, _MSCLAuthorSelectionAlertController,
+                        _MSCLComposeImagePickerController, _MSCLComposePostView,
+                        _MSCLCompositionContainerViewController, _MSCLDurationFormatter,
+                        _MSCLFacebookLoadImageOperation, _MSCLFacebookPageSelectionHeaderView,
+                        _MSCLFacebookPageTableViewCell, _MSCLImageAttachmentPreviewView,
+                        _MSCLLoadConfigurationOperation, _MSCLLockupView,
+                        _MSCLManageAccountViewController, _MSCLPhotoPickerCollectionViewLayout,
+                        _MSCLPreparePostDescriptionOperation, _MSCLSettingsTableHeaderView,
+                        _MSCLSettingsTextFieldTableViewCell, _MSCLSetupAccountViewController,
+                        _MSCLSocialServiceSetupTableViewSection, _MSCLSoundBiteView,
+                        _MSCLSoundBiteViewController, _MSCLStoreItemArtworkRequest,
+                        _MSCLTagDataConsumer, _MSCLTagListViewController,
+                        _MSCLTagTokenView, _MSCLTokenTextAttachmentView,
+                        _MSCLTokenTextViewTableAssistant, _MSCLTwitterServiceSetupTableViewSection,
+                        _MSCLVideoAttachmentPreviewView, _MSCLVideoScrubberControl,
+                        _MSCLWaveformImageProducer, _MSCLAccountDatabase,
+                        _MSCLAccountTokenRefreshOperation, _MSCLAttachmentAlertController,
+                        _MSCLAttachmentPropertiesViewController, _MSCLAudioPickerMediaItemTableViewCell,
+                        _MSCLAudioPickerViewController, _MSCLAudioPlayerManager,
+                        _MSCLAuthorView, _MSCLComposePostViewController,
+                        _MSCLFacebookAccountsRequest, _MSCLFacebookPageSelectionViewController,
+                        _MSCLLoadAuthorAlbumsOperation, _MSCLMPArtworkCatalogResourceOperation,
+                        _MSCLPhotoPickerShelfViewController, _MSCLSettingsTableViewCell,
+                        _MSCLSocialService, _MSCLSoundBiteViewButton,
+                        _MSCLTag, _MSCLTagTokenTextAttachment,
+                        _MSCLTokenTextView, _MSCLValueTableViewController,
+                        _MSCLVoiceRecorder ]
+    objc-ivars:       [ _MSCLSocialServiceSetupTableViewSection._accountStore,
+                        _MSCLSocialServiceSetupTableViewSection._facebookPages, _MSCLSocialServiceSetupTableViewSection._service,
+                        _MSCLSocialServiceSetupTableViewSection._clientContext, _MSCLSocialServiceSetupTableViewSection._image ]
+...

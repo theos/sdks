@@ -1,0 +1,53 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BPSAccessoryColor,
+                        _BPSActivationLockCapabilityKey, _BPSAlertGroupID,
+                        _BPSApplyStyleToNavBar, _BPSBackgroundColor,
+                        _BPSBacklightAwakeExtendKey, _BPSBreatheAppCapabilityKey,
+                        _BPSBridgePreferencesVersionString, _BPSBulletinBoardAppsSettingsDomain,
+                        _BPSCarrierDirectCallingCapabilityKey, _BPSCustomMailRepliesCapabilityKey,
+                        _BPSDeprecateFriendsSettingsCapabilityKey, _BPSDetailTextColor,
+                        _BPSDeviceAssetString, _BPSDeviceHasCapabilityForString,
+                        _BPSEditablePlaceholderColor, _BPSFontWithSize,
+                        _BPSForegroundColor, _BPSGPSNavigationCapabilityKey,
+                        _BPSHomeAppCapabilityKey, _BPSIntroducedInVersionKey,
+                        _BPSLocalizedNameForMaterial, _BPSLocalizedVariantSizeForProductType,
+                        _BPSMirrorDNDKey, _BPSMirrorGroupID,
+                        _BPSMirrorSwitchID, _BPSMuteFitnessCoachingCapabilityKey,
+                        _BPSNanoBulletinShowsAlerts, _BPSNanoBulletinShowsPreview,
+                        _BPSNanoBulletinSubsections, _BPSNavBarBackgroundPointImage,
+                        _BPSNewGlanceModelCapabilityKey, _BPSPBMaterialForMGMaterial,
+                        _BPSPresentGizmoUnreachableAlertWithDismissalHandler, _BPSProgressBarStalledTintColor,
+                        _BPSProgressBarTrackTintColor, _BPSRemoveCapabilityIncompatibleSpecifiersFromArray,
+                        _BPSReorderableCustomRepliesCapabilityKey, _BPSSOSCapabilityKey,
+                        _BPSSeparatorColorWhiteLevel, _BPSSetupTintColor,
+                        _BPSShowAlertsID, _BPSShowPreviewID,
+                        _BPSSystemAppIsRemoved, _BPSTableTextSize,
+                        _BPSThirdPartyComplicationsCapabilityKey, _BPSUserControlledButtonChordKey,
+                        _BPSVibrationGroupID, _BPSWatchViewStyleDescription,
+                        __BPSIsPairingCompatible, __BPSOverrideDeviceCompatibleVersions,
+                        _BPSAccessoryHighlightColor, _BPSAppStickinessBehaviorCapabilityKey,
+                        _BPSBackgroundColorWhiteLevel, _BPSBridgePreferencesVersionNumber,
+                        _BPSBulletinDistributorBBSectionsDidChangeNotification, _BPSDNDDomainKey,
+                        _BPSDeviceAssetDirectoryPath, _BPSDeviceRemoteAssetString,
+                        _BPSForbiddenWatchCapabilitiesKey, _BPSHasNTKCustomizationCapabilityKey,
+                        _BPSIsDeviceCompatibleWithVersions, _BPSMGMaterialForPBMaterial,
+                        _BPSMirrorSwitchCustomID, _BPSNanoBulletinSectionId,
+                        _BPSNanoBulletinSubsectionId, _BPSNavBarShadowPointImage,
+                        _BPSPaceViewIsDeprecatedCapabilityKey, _BPSProgressBarTintColor,
+                        _BPSRemoveVersionIncompatibleSpecifiersFromArray, _BPSSeparatorColor,
+                        _BPSShortLocalizedVariantSizeForProductType, _BPSStringForProductType,
+                        _BPSTextColor, _BPSVariantSizeForProductType,
+                        _BPSWorkoutAutoPauseCapabilityKey ]
+    objc-classes:     [ _BPSAppGlanceManager,
+                        _BPSInternalGlanceManager, _BPSNTKFacesViewController,
+                        _BPSRemoteImageView, _BPSSetupMiniFlowController,
+                        _BPSWatchView, _BPSApplePayLocallyStoredValueManager,
+                        _BPSNotificationAppController, _BPSThumbnailGenerator ]
+...

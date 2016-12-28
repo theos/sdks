@@ -1,0 +1,57 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CryptoTokenKit.framework/CryptoTokenKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TKACLOperationReadData,
+                        _TKDistributedNotificationNameNewToken, _TKErrorDomain,
+                        _TKProtocolSlotClientName, _TKProtocolWatcherClientName,
+                        _TKSlotTypeSmartCard, _TKSmartCardSessionProtocol,
+                        _TKSmartCardSlotATR, _TKSmartCardSlotMaxOutputLength,
+                        _TKSmartCardSlotPreviousStateKey, _TKSmartCardSlotSecurePINVerificationSupportedKey,
+                        _TKSmartCardSlotStateKey, _TKTokenClassDriverApplicationIDKey,
+                        _TKTokenClassDriverClassNameKey, _TKTransportSlotName,
+                        _deserializeError, _kAKSKeyAccessGroups,
+                        _kAKSKeyAclConstraintAccessGroups, _kAKSKeyAclConstraintKofN,
+                        _kAKSKeyAclConstraintPolicy, _kAKSKeyAclParamCredentialMaxAge,
+                        _kAKSKeyAclParamRequirePasscode, _kAKSKeyData,
+                        _kAKSKeyFlags, _kAKSKeyKeybagClass,
+                        _kAKSKeyOpAttest, _kAKSKeyOpCreate,
+                        _kAKSKeyOpDefaultAcl, _kAKSKeyOpEncrpyt,
+                        _kAKSKeyOpSetKeyClass, _kAKSKeyOpSync,
+                        _kAKSKeyOpWrap, _kAKSKeyPad,
+                        _kAKSKeyProtectedData, _kAKSKeyRefKey,
+                        _kAKSKeySalt, _kAKSKeyType,
+                        _kAKSKeyVersion, _serializeError,
+                        _TKDistributedNotificationGroup, _TKNotifyNameFirstSlot,
+                        _TKRegisterOptionRemoveObjects, _TKSmartCardSessionSensitive,
+                        _TKSmartCardSlotPowerStateKey, _TKSmartCardSlotShareStateKey,
+                        _TKTokenClassDriverClassIDKey, _cfStringToCString,
+                        _kAKSKeyAcl, _kAKSKeyAclConstraintOpBool,
+                        _kAKSKeyAclParamKofN, _kAKSKeyExternalData,
+                        _kAKSKeyKeybagHandle, _kAKSKeyOpDecrypt,
+                        _kAKSKeyOpEncrypt, _kAKSKeyOpUnwrap,
+                        _kAKSKeyPasscode, _kAKSKeyRefKeyMac,
+                        _kAKSKeyUUID, _kAKSKeyWrappedKey ]
+    objc-classes:     [ _TKBERTLVRecord,
+                        _TKDataSource, _TKSimpleTLVRecord,
+                        _TKSmartCardATR, _TKSmartCardPINFormat,
+                        _TKSmartCardSessionRequest, _TKSmartCardSlotEngine,
+                        _TKSmartCardSlotProxy, _TKSmartCardTokenDriver,
+                        _TKSmartCardUserInteraction, _TKSmartCardUserInteractionForPINOperation,
+                        _TKSmartCardUserInteractionForSecurePINVerification, _TKSmartCardWithError,
+                        _TKToken, _TKTokenDriver,
+                        _TKTokenDriverRequest, _TKTokenKeyAlgorithm,
+                        _TKTokenKeychainCertificate, _TKTokenKeychainItem,
+                        _TKTokenPasswordAuthOperation, _TKTokenSession,
+                        _TKTokenWatcher, __TKSmartCardSlotReservation,
+                        _TKCompactTLVRecord, _TKSmartCard,
+                        _TKSmartCardSessionEngine, _TKSmartCardSlotManager,
+                        _TKSmartCardTokenSession, _TKSmartCardUserInteractionForSecurePINChange,
+                        _TKTLVRecord, _TKTokenDriverContext,
+                        _TKTokenKeyExchangeParameters, _TKTokenKeychainKey,
+                        _TKTokenSmartCardPINAuthOperation, _TKTokenWatcherProxy ]
+...

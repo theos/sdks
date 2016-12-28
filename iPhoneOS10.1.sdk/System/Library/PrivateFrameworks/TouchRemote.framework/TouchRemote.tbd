@@ -1,0 +1,45 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/TouchRemote.framework/TouchRemote
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _StringFromTRAccountService,
+                        _TRDeviceSetupAuthenticationKeyAccountID, _TRDeviceSetupAuthenticationKeyAttemptCount,
+                        _TRDeviceSetupInfoKeyCountryCode, _TRDeviceSetupInfoKeyHomeSharingAppleID,
+                        _TRDeviceSetupInfoKeyLanguage, _TRGetCurrentWiFiNetwork,
+                        _TRLogHandle, _TRNearbyDeviceErrorDomain,
+                        _TRStringFromSetupAccountType, __TRDeviceSetupLegacySetupKeyParams,
+                        __TRLogVerboseEnabled, _TRCanPerformSetupGetConfig,
+                        _TRDeviceSetupErrorDomain, _TRDeviceSetupInfoKeyHomeSharingGroupID,
+                        _TRGetNetworkConfigurationForIPv4, _TRStringFromDeviceSetupError,
+                        __TRLogEnabled ]
+    objc-classes:     [ _TRAccountManager,
+                        _TRAnisetteDataHandler, _TRClientConnection,
+                        _TRDeviceSetupAction, _TRDeviceSetupBrowser,
+                        _TRDeviceSetupConnectAction, _TRDeviceSetupGeneralSetupAction,
+                        _TRDeviceSetupLegacyAuthenticationAction, _TRDeviceSetupLegacyFinishAction,
+                        _TRDeviceSetupLegacySetupActionAuthInfo, _TRDeviceSetupServer,
+                        _TREraseAnisetteDataResponse, _TREventMessage,
+                        _TRFetchAnisetteDataResponse, _TRHandshakeResponse,
+                        _TRHeartbeatResponse, _TRLegacyAnisetteDataResponse,
+                        _TRMessageDecoder, _TRNearbyDevice,
+                        _TRNearbyDeviceScanner, _TRProvisionAnisetteDataRequest,
+                        _TRRequestMessage, _TRServerConnection,
+                        _TRSetupActivationRequest, _TRSetupAuthenticationResponse,
+                        _TRSetupCompletionRequest, _TRSetupConfigurationRequest,
+                        _TRSetupNetworkRequest, _TRSetupProxyAuthenticationRequest,
+                        _TRSetupProxyDeviceResponse, _TRSyncAnisetteDataResponse,
+                        _TRTransferServer, __TRUserNotification,
+                        _TRAccountsManager, _TRConnection,
+                        _TRDeviceSetupCancelAction, _TRDeviceSetupLegacyAction,
+                        _TRDeviceSetupLegacySetupAction, _TREraseAnisetteDataRequest,
+                        _TRFetchAnisetteDataRequest, _TRHeartbeatRequest,
+                        _TRMessage, _TRNearbyDeviceAdvertiser,
+                        _TRProvisionAnisetteDataResponse, _TRSession,
+                        _TRSetupCompanionAuthenticationRequest, _TRSetupConfigurationResponse,
+                        _TRSetupProxyDeviceRequest, _TRTransferBrowser,
+                        _TRUserNotificationManager ]
+...

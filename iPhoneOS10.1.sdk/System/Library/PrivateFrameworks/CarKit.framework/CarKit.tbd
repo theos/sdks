@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CarKit.framework/CarKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CRAggregateAddValueForScalarKey,
+                        _CRAggregateReconnectionEnableWiFiDeclinedKey, _CRAggregateReconnectionSuccessCountKey,
+                        _CRAggregateVehicleCountKey, _CRAggregateWiredDeclinedKey,
+                        _CRAggregateWiredToWirelessDeclinedKey, _CRAggregateWirelessDeclinedKey,
+                        _CRCollectCarPlayDiagnosticsWithScreenshots, _CRGenerateCarPlayDiagnosticsFolder,
+                        _CRLocalizedStringForKey, _CRMapsLightLevelChangeNotification,
+                        _CRPreferencesEnableWirelessDomain, _CRPreferencesLoggingChangedNotification,
+                        _CRPreferencesNotMigratedDomain, _CRSaveAirPlayDiagnosticsToDestinationFolder,
+                        _CRSettingsDebugUIEnabled, _CRVehicleInformationVehicleAmbientBrightnessChangedNotification,
+                        _CarKitVersionNumber, _CarKitVersionString,
+                        _CRAggregateReconnectionEnableWiFiAcceptedKey, _CRAggregateSetValueForScalarKey,
+                        _CRAggregateWiredToWirelessAcceptedKey, _CRCarPlayAppPolicyChangedNotification,
+                        _CRIsAnyPairedVehicleAttached, _CRPairedVehiclesDidChangeNotification,
+                        _CRPreferencesLoggingKey, _CRSaveScreenshotsToDestinationFolder,
+                        _CarGeneralLogging ]
+    objc-classes:     [ _CRCarKitServiceClient,
+                        _CRCarPlayAppDeclaration, _CRCarPlayAppPolicyEvaluator,
+                        _CRPairedVehicleManager, _CRVehicle,
+                        _CRVehicleAccessoryManager, _CRVehiclePolicyMonitor,
+                        _CRCarPlayAppBlacklist, _CRCarPlayPreferences,
+                        _CRVehicleAccessory, _CRVehicleInformation ]
+...

@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/APFS.framework/APFS
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _APFSContainerGetFreespaceInfo,
+                        _APFSContainerResize, _APFSVolumeDelete,
+                        _kAPFSContainerBlocksizeKey, _kAPFSContainerExtentLengthKey,
+                        _kAPFSContainerFSTypeKey, _kAPFSContainerTidemarkKey,
+                        _APFSContainerGetSpaceInfo, _APFSVolumeGetSpaceInfo,
+                        _kAPFSContainerExtentsListKey, _kAPFSContainerSizeKey ]
+...

@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PersonaUI.framework/PersonaUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CGSizeFromPRLikenessCacheSize,
+                        _NSStringFromPRLikenessCacheSize, _PRImageCreateWithImageInRect,
+                        _PRLikenessCacheSizeClosestToSize, _PRLikenessSnapshotOptionCircular,
+                        _PRRectGetMaxLength, _PRRectScale,
+                        _PersonaUIVersionString, __InvalidPRLikenessCacheSize,
+                        _NSStringFromMD5, _PRImageForceDecompress,
+                        _PRLikenessSnapshotOptionForceDecode, _PersonaUIVersionNumber ]
+    objc-classes:     [ _PRImageView,
+                        _PRLikenessCacheContext, _PRLocalization,
+                        _PRMonogramView, __PRMonogramFontSpec,
+                        _PRLikenessCache, _PRMonogram ]
+...

@@ -1,0 +1,36 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CRAddressKindEmail,
+                        _CRAddressKindInstantMessage, _CRAddressKindPhoneNumber,
+                        _CRIsInternalDevice, _CRRecentContactMetadataEventTime,
+                        _CRRecentContactMetadataFromAddress, _CRRecentContactMetadataFromDisplayName,
+                        _CRRecentContactMetadataSubject, _CRRecentContactsErrorDomain,
+                        _CRRecentContactsSyncKeyDictAddressKey, _CRRecentContactsSyncKeyDictMembersKey,
+                        _CRRecentWeightMailReceivedTrustedAddress, _CRRecentWeightMailViewedAddress,
+                        _CRRecentWeightMessagesRespondedAddress, _CRRecentWeightPassbookShippingAddress,
+                        _CRRecentsDomainCalendar, _CRRecentsDomainMail,
+                        _CRRecentsDomainMessages, _CRRecentsDomainRemindersLocation,
+                        __CRAddressArchiveKey, __CRDisplayNameArchiveKey,
+                        __CRGroupNameArchiveKey, __CRLastSendingAddressArchiveKey,
+                        __CRLogV, __CRMembersArchiveKey,
+                        __CROriginalSourceArchiveKey, __CRRecentDatesArchiveKey,
+                        __CRRecentsDomainArchiveKey, _kCRLogFacilitySync,
+                        _sCRRecentRecentIdentifier, _sCRSQLite3MPrintTransform,
+                        _CRAddressKindGroup, _CRAddressKindURL,
+                        _CRRecentContactMetadataFrom, _CRRecentContactMetadataReferenceURL,
+                        _CRRecentContactsSyncKeyDict, _CRRecentWeightMailReceivedAddress,
+                        _CRRecentWeightMessagesReceivedAddress, _CRRecentsAgentMachServiceName,
+                        _CRRecentsDomainMaps, _CRiCloudAccountChangedNotification,
+                        __CRGroupKindArchiveKey, __CRLog,
+                        __CRMetadataArchiveKey, __CRRecentIDArchiveKey,
+                        _kCRRecentContactMaxDateEvents, _sCRRecentSyncKeyDict ]
+    objc-classes:     [ _CRDRecentContactsLibraryInterface,
+                        _CRRecentContactsLibrary, _CRSearchQuery,
+                        _CRRecentContact, _CRSQLRow ]
+...

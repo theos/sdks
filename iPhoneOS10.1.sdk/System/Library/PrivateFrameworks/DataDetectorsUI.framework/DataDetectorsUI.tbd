@@ -1,0 +1,34 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataDetectorsUI.framework/DataDetectorsUI
+current-version: 280.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DDContextAttributeName,
+                        _DDDetectionControllerWillPresentActionNotification, _DDMapAddressFromURL,
+                        __ddui_parsec_xpcInterface, _kDataDetectorsCoreRecentsMetadataDictionaryKey,
+                        _kDataDetectorsEventComponentsKey, _kDataDetectorsGestureKey,
+                        _kDataDetectorsPresenterKey, _kDataDetectorsSelectedTextKey,
+                        _kDataDetectorsTextStorageKey, _kDataDetectorsTrailingText,
+                        _DDDetectionControllerDidDismissActionNotification, _DDUIEventForResults,
+                        _kDataDetectorsCoreSpotlightUniqueIdentifier, _kDataDetectorsLeadingText,
+                        _kDataDetectorsSpecialURLKey ]
+    objc-classes:     [ _DDAction,
+                        _DDActionSuggestionsContext, _DDAddToContactsViewController,
+                        _DDCreateEventAction, _DDEventComponents,
+                        _DDParsecLoadingViewController, _DDPreviewAction,
+                        _DDRemoteActionViewControllerProvider, _DDActionNaturalLanguageContext,
+                        _DDAddressAction, _DDParsecCollectionViewController,
+                        _DDParsecNoDataViewController ]
+    objc-ivars:       [ _DDAction._associatedResults,
+                        _DDAction._cachedCoalescedResult, _DDAction._companion,
+                        _DDAction._delegate, _DDAction._result,
+                        _DDAddToContactsViewController._action, _DDAddToContactsViewController._proxy,
+                        _DDDetectionController._containerToContextsTable, _DDDetectionController._containerToResultsTable,
+                        _DDDetectionController._fullScannerQueue, _DDDetectionController._urlScannerQueue,
+                        _DDAction._cachedAssociatedResults, _DDAction._context,
+                        _DDAction._url, _DDDetectionController._actionController,
+                        _DDDetectionController._delegate, _DDDetectionController._protectQueue ]
+...

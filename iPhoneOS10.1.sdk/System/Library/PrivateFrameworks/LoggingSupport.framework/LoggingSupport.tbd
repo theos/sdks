@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
+current-version: 518.20.8
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _OSLogArchiveAddSections,
+                        _OSLogCaptureInflightBuffersToFile, _OSLogCreateArchive,
+                        _OSLogCreateArchiveWithDictionary, _OSLogInstallProfilePayload,
+                        _OSLogSetOptions, _OSLogValidateProfilePayload,
+                        _OTRCreateActivityStreamForPID, _OTRGetActivityImagePath,
+                        _OTRGetLogMessageCategory, _OTRGetLogMessageSubsystem,
+                        _OTRGetUserActionName, ___LoggingSupportVersionNumber,
+                        __chunk_support_context_clear, __chunk_support_convert_tracepoint,
+                        __developerPath, __os_state_decode_library,
+                        __state_support_create_message, __time_interval_for_timestamp,
+                        _kOSLogPersistenceKeyActivityCreationCount, _kOSLogPersistenceKeyLogPrivateSize,
+                        _kOSLogPersistenceKeyPath, _kOSLogPersistenceKeyPerSenderStatistics,
+                        _kOSLogPersistenceKeyTotalProcessPublicSize, _kOSLogPersistenceKeyTracePublicSize,
+                        _kOSLogPersistenceKeyUserActionCount, _logarchive_key_base_time,
+                        _logarchive_key_fe_size, _logarchive_key_livedata,
+                        _logarchive_key_ttl_size, _logdev_copy_device_info,
+                        _logdev_message_callback, _logdev_stop_streaming_events,
+                        _logdev_stream_events, _watchForSims,
+                        _OSLogCaptureInflightBuffers, _OSLogCreateArchiveSubdirectory,
+                        _OSLogRemoveProfilePayload, _OTRCancelAndFreeActivityStream,
+                        _OTRGetActivityProcImagePath, _OTRGetTraceMessageFormattedContent,
+                        ___LoggingSupportVersionString, __chunk_support_traceid_resolve,
+                        __os_state_decode_nscf, __xcodeAppPath,
+                        _kOSLogPersistenceKeyLogPublicSize, _kOSLogPersistenceKeyTotalProcessPrivateSize,
+                        _kOSLogPersistenceKeyUUID, _logarchive_key_eventlog,
+                        _logarchive_key_path, _logdev_establish_trust,
+                        _logdev_stop_watching_for_devices, _logdev_watch_for_devices ]
+    objc-classes:     [ _OSActivityCreateEvent,
+                        _OSActivityEventMessage, _OSActivityLogMessageEvent,
+                        _OSActivityStatedumpEvent, _OSActivityTraceMessageEvent,
+                        _OSActivityUserActionEvent, _OSLogPersistence,
+                        _OSLogPreferencesManager, _OSLogPreferencesSubsystem,
+                        _OSActivityEvent, _OSActivitySignPostEvent,
+                        _OSActivityTransitionEvent, _OSLogPreferencesCategory,
+                        _OSLogPreferencesProcess ]
+...

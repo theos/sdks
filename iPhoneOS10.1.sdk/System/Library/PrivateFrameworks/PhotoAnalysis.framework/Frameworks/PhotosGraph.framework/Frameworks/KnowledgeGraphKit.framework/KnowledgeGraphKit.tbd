@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Frameworks/PhotosGraph.framework/Frameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _KnowledgeGraphKitVersionNumber,
+                        _MABenchmarkGetAppMallocMemory, _MABenchmarkGetHostMemory,
+                        _kMADatabaseModelPropertyTypeEdge, _kMAElementDefaultDomain,
+                        _kMAElementIgnoreDomain, _kMAElementInvalidIdentifier,
+                        _kMAElementLabelNone, _kMAGraphMLExtension,
+                        _kMAGraphPersistentStoreExtension, _KnowledgeGraphKitVersionString,
+                        _MAErrorDomain, _kMAElementDefaultWeight,
+                        _kMAElementLabelAny, _kMAGraphDataExtension ]
+    objc-classes:     [ _MAAbstractEdge,
+                        _MAAbstractNode, _MAEdge,
+                        _MAError, _MALogging,
+                        _MAModelEdge, _MAModelElement,
+                        _MAModelNode, _MAModelProperty,
+                        _MAPath, _MAStatisticsElapsedTime,
+                        _MASubGraph, _MAAbstractGraph,
+                        _MAElement, _MAMemoryFootprint,
+                        _MAModelGraph, _MANode,
+                        _MAPaths ]
+...

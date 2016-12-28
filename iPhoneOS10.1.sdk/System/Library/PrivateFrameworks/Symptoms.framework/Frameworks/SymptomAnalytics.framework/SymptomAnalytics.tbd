@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SymptomAnalyticsFrameworkDidSaveNotification,
+                        _analyticsVerbose, _kProcessKeyTypeBundleName,
+                        _kSymptomAnalyticsModelTrainServiceEndpoint, _kSymptomAnalyticsNetworkAdvisoryDefiniteNotUse,
+                        _kSymptomAnalyticsNetworkAdvisoryError, _kSymptomAnalyticsNetworkAdvisoryInterfaceNotReady,
+                        _kSymptomAnalyticsNetworkAdvisoryNoImprovement, _kSymptomAnalyticsNetworkAdvisoryWeakImprovement,
+                        _kSymptomAnalyticsNetworkAdvisoryWeakUse, _kSymptomAnalyticsServiceCalendarUsageToggle,
+                        _kSymptomAnalyticsServiceCurrentCellAttachment, _kSymptomAnalyticsServiceCurrentWiFiAttachment,
+                        _kSymptomAnalyticsServiceEndpoint, _kSymptomAnalyticsServiceFlowHistorical,
+                        _kSymptomAnalyticsServiceFlowTag, _kSymptomAnalyticsServiceFlowTagIKE,
+                        _kSymptomAnalyticsServiceNOICanUseOnAlternate, _kSymptomAnalyticsServiceNOICanUseOnAlternateReasons,
+                        _kSymptomAnalyticsServiceNOIEstTransferTimeDLSecs, _kSymptomAnalyticsServiceNOIFetchDayOfWeekGrouping,
+                        _kSymptomAnalyticsServiceNOIFetchForegroundActivity, _kSymptomAnalyticsServiceNOIFetchL2ThroughputMetrics,
+                        _kSymptomAnalyticsServiceNOIFetchPredictionsError, _kSymptomAnalyticsServiceNOIFetchThroughputPredictions,
+                        _kSymptomAnalyticsServiceNOIFetchTrainingProgress, _kSymptomAnalyticsServiceNOIPayloadInfoULKB,
+                        _kSymptomAnalyticsServiceNOIRRCIdleDLThroughputKbps, _kSymptomAnalyticsServiceNameChain,
+                        _kSymptomAnalyticsServiceNetworkAttachmentHistorical, _kSymptomAnalyticsServiceNetworkAttachmentPerformance,
+                        _kSymptomAnalyticsServicePostProcessComposeAdvisory, _kSymptomAnalyticsServiceRefreshUsage,
+                        _kSymptomAnalyticsServiceTypicalUsageToggle, _kSymptomAnalyticsServiceWatchpointKey,
+                        _kSymptomAnalyticsServiceWatchpointValue, _kSymptomAnalyticsTypeProcessName,
+                        _prefs_add_logger, _analyticsHandle,
+                        _kProcessKeyTypeProcName, _kSymptomAnalyticsNetworkAdvisoryDefiniteUse,
+                        _kSymptomAnalyticsNetworkAdvisoryKey, _kSymptomAnalyticsNetworkAdvisoryWeakNotUse,
+                        _kSymptomAnalyticsServiceCopyRelationship, _kSymptomAnalyticsServiceCurrentWiredAttachment,
+                        _kSymptomAnalyticsServiceFlowInstant, _kSymptomAnalyticsServiceNOIArg1,
+                        _kSymptomAnalyticsServiceNOIEstTransferTimeConfidence, _kSymptomAnalyticsServiceNOIFetchEstTransferTime,
+                        _kSymptomAnalyticsServiceNOIFetchPredictions, _kSymptomAnalyticsServiceNOIFetchTrafficInvitesHourlyDistribution,
+                        _kSymptomAnalyticsServiceNOIPredictions24hrs, _kSymptomAnalyticsServiceNetworkAttachmentCurrent,
+                        _kSymptomAnalyticsServicePostProcess, _kSymptomAnalyticsServiceSweepUsage,
+                        _kSymptomAnalyticsServiceWatchpointTarget, _kSymptomAnalyticsWorkspacePersistenceOptionPersistentKey ]
+    objc-classes:     [ _AnalyticsWorkspace,
+                        _AppAnalytics, _AppRun,
+                        _CheckUpEvent, _DiagnosticCaseStorage,
+                        _DiagnosticCaseUsage, _Event,
+                        _Flow, _LiveRoutePerf,
+                        _NetworkAttachment, _ObjectAnalytics,
+                        _Process, _ProvisioningData,
+                        _UsageAnalytics, _WiFiData,
+                        _App, _AppTypicalUsage,
+                        _DiagnosticCaseStorageAnalytics, _EventScene,
+                        _LiveUsage, _Peer,
+                        _TshootingData ]
+...

@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/MobileAccessoryUpdater
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FUDError,
+                        _FudLogCopyMessages, _FudLogSetMode,
+                        _MAUError, _archivedKeyedData,
+                        _getOperationNameFromCode, _kMAU_STEP_APPLY,
+                        _kMAU_STEP_COMPLETE_INFO_KEY_NEXT_STEP, _kMAU_STEP_DOWNLOAD,
+                        _kMAU_STEP_FIND, _kMAU_STEP_PREPARE,
+                        _objectFromXpcDictionary, _sendMessageToInternalClient,
+                        _sendReplyMessageToExternalClient, _unarchivedKeyedObject,
+                        _FudLog, _FudLogv,
+                        _dumpXPCObject, _kMAU_STEP_BOOTSTRAP,
+                        _kMAU_STEP_END, _objectFinalizer,
+                        _sendReplyMessageToClient, _sendReplyMessageToInternalClient ]
+    objc-classes:     [ _FudInternalConnection,
+                        _FudXPCConnection, _MobileAccessoryUpdater,
+                        _FudProgressWeights ]
+    objc-ivars:       [ _FudInternalConnection.clientIdentifier,
+                        _FudInternalConnection.handlerQueue, _FudInternalConnection.pendingRequests,
+                        _FudProgressWeights.finishWeight, _FudXPCConnection.clientIdentifier,
+                        _FudXPCConnection.connectionQueue, _FudXPCConnection.messageHandler,
+                        _FudXPCConnection.replyQueue, _FudXPCConnection.sessionQueue,
+                        _FudInternalConnection.didStop, _FudProgressWeights.applyWeight,
+                        _FudXPCConnection.connection, _FudXPCConnection.notifyToken ]
+...

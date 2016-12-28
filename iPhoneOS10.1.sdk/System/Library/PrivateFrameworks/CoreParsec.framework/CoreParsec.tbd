@@ -1,0 +1,38 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CoreParsecVersionNumber,
+                        _PARSTSAppBundleIdentifier, _kPARAutofillTLDWhitelist,
+                        _kPARCrowdsourcingBlacklist, _kPARErrorDomain,
+                        _kPARLookupClient, _kPARLookupHintsWeekly,
+                        _kPARNotifyEnabled, _kPARQIFeatures,
+                        _kPARSpotlightClient, _kPARWebsiteCategoryLabels,
+                        _CoreParsecVersionString, _kPARCorrectionDict,
+                        _kPARInstalledAppWhitelist, _kPARNotifyDisabled,
+                        _kPARSafariClient, _kPARSpotlightModels ]
+    objc-classes:     [ _PARAsyncCard,
+                        _PARBag, _PARCardRequest,
+                        _PARDefaultFactory, _PARFlight,
+                        _PARFlightLeg, _PARFlightResponse,
+                        _PARFuture, _PARImage,
+                        _PARLookupStartNetworkSearchFeedback, _PARMoreResultsRequest,
+                        _PARPromise, _PARRanker,
+                        _PARRankerCentroidWeightsParameters, _PARRankerParameters,
+                        _PARRankerUpdateModelParameters, _PARRankingLogic,
+                        _PARReRankingRules, _PARRequest,
+                        _PARSearchClient, _PARSearchResult,
+                        _PARSession, _PARSkipSearchFeedback,
+                        _PARTask, _PARURLToTopicsMaps,
+                        _PARZeroKeywordRequest, _PARAsyncMoreResults,
+                        _PARCustomSearchResult, _PARFlightAirport,
+                        _PARFlightSearchRequest, _PARLookupRequest,
+                        _PARPersonalizationParameters, _PARRankerCentroidParameters,
+                        _PARRankerSearchRequestParameters, _PARRankingThresholds,
+                        _PARResponse, _PARSearchSuggestion,
+                        _PARSyncCard, _PARTopicScore ]
+...

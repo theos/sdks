@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MAEActivateDeviceWithError,
+                        _MAECopyActivationRecordWithError, _MAECopyRegulatoryImagesWithError,
+                        _MAECreateActivationInfo, _MAECreateActivationRequestWithError,
+                        _MAECreateReCertInfoWithError, _MAECreateReCertRequestWithError,
+                        _MAECreateSessionRequestWithError, _MAEDeactivateDevice,
+                        _MAEGetActivationBuild, _MAEGetActivationStateWithError,
+                        _MAEGetActivationURLFromStorebagWithError, _MAEGetReCertURLFromStorebag,
+                        _MAEHandleActivationInfo, _MAEHandleRecertInfoWithError,
+                        _MAERecertifyDevice, _MAETryActivate,
+                        _MAETryReCertWithError, _MAGetActivationState,
+                        _MAUnbrickDevice, _kMAActivationStateFactoryActivated,
+                        _kMANotificationIdentityChanged, _kMAOptionsFactoryActivationRequest,
+                        _kNotificationBrickStateChanged, _talkToServerWithError,
+                        _MAECopyActivationRecord, _MAECopyUCRTToken,
+                        _MAECreateReCertInfo, _MAECreateRecertStorebagRequest,
+                        _MAEDeactivateDeviceWithError, _MAEGetActivationURLFromStorebag,
+                        _MAEGetReCertURLFromStorebagWithError, _MAEIssueClientCertificate,
+                        _MAETryReCert, _MARequestReactivation,
+                        _kMAActivationStateUnactivated, _kNotificationActivationStateChanged ]
+...

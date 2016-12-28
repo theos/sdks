@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXBrokenHomeButtonAlreadyRebootedOnce,
+                        _AXSBLockScreenViewController, _AXSBUIControllerSharedInstance,
+                        _AXSpringBoardGlueSBLockScreenControllerInstance, _AXSpringBoardServerInstanceDidInitializeNotification,
+                        _SBAXLocalizedString, _SBMediaNowPlayingChangedNotification,
+                        _SBWorkspaceEntitySideSwitcherIdentifier, __UIActionSheetDismissDuration,
+                        _AXSBFaceTimeStateChangedNotification, _AXSpringBoardGlueLockScreenViewControllerInstance,
+                        _SBAXBacklightControllerInstance, _SBOrientationLockChangedNotification,
+                        __UIAXLoadVisualAlertsBundle ]
+    objc-classes:     [ _AXAlertAction,
+                        _AXSBAssistantController, _AXSBHearingAidDeviceController,
+                        _AXSBLockScreenManager, _AXSBReachabilityManagerAccessibility,
+                        _AXSBServerHelperBulletinWindowController, _AXSBServerHelperSBNotificationCenterController,
+                        _AXSBServerUIApplication, _AXSBUIWindow,
+                        _AXSBVoiceOverSwipeDetectorView, _AXSB_SBSceneResizeSnakebiteGestureRecognizerSafeCategory,
+                        _AXSB_UIAlertControllerSafeCategory, _AXSecureWindow,
+                        _AXSpringBoardServerSideAppManager, _AXTripleClickTableViewCell,
+                        ___AXSBAssistantController_super, ___AXSBHomeHardwareButtonActions_super,
+                        ___AXSBMainDisplaySceneManagerAccessibility_super, ___AXSBScreenshotManagerAccessibility_super,
+                        ___AXSBServerHelperSBControlCenterController_super, ___AXSBServerSBHUDController_super,
+                        ___AXSBServerVolumeControl_super, ___AXSB_SBApplicationSafeCategory_super,
+                        ___AXSB_UIAlertControllerActionViewSafeCategory_super, ___AXSB_UIGestureRecognizerSafeCategory_super,
+                        ___AXSpringBoardServerSideAppManager, _AXAssertionIdentifierTypePair,
+                        _AXSBHomeHardwareButtonActions, _AXSBScreenshotManagerAccessibility,
+                        _AXSBServerSBHUDController, _AXSBVoiceOverShakeMessage,
+                        _AXSB_UIAlertControllerActionViewSafeCategory, _AXSpringBoardServerHelper,
+                        __AXSpringBoardServerInstance, ___AXSBLockScreenManager_super,
+                        ___AXSBServerHelperBulletinWindowController_super, ___AXSBServerUIApplication_super,
+                        ___AXSB_SBSceneResizeSnakebiteGestureRecognizerSafeCategory_super, ___AXSB_UIAlertControllerSafeCategory_super ]
+    objc-ivars:       [ _AXTripleClickTableViewCell._bottomLine,
+                        _AXTripleClickTableViewCell._topLine ]
+...

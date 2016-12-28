@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/InternationalTextSearch.framework/InternationalTextSearch
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ITSCollationContextFreeContextForDatabaseHandle,
+                        _ITSCopyFTSTableCreateStatementWithLanguageAndCollator, _ITSCopyUserLanguage,
+                        _ITSCreateCollatorWithPreferredLocale, _ITSFTSIsEnabled,
+                        _ITSSetCollatorOverrideForDatabaseConnectionHandle, _ITSTokenListCopyEscapedTokenAtIndex,
+                        _ITSTokenListDestroy, _ITSTokenListGetTokenAtIndex,
+                        _ITSTokenListGetTokenCollationKeyLengthAtIndex, _ITSTokenListGetTokenRangeAtIndex,
+                        _ITSTokenListPopulateFromString, _InternationalTextSearchVersionNumber,
+                        _InternationalTextSearchVersionString, _ITSCopyFTSTableCreateStatementUsingCurrentLanguage,
+                        _ITSCreateCollator, _ITSRegisterSQLiteICUTokenizer,
+                        _ITSTokenListCreate, _ITSTokenListGetTokenCollationKeyAtIndex,
+                        _ITSTokenListGetTokenStartByteOffsetAtIndex, _ITSTokenListRemoveAllTokens ]
+...

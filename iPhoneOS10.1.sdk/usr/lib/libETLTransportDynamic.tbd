@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: F5DF8B92-8E72-3AC9-8E13-555638DB464A', 'armv7s: 184AE9C3-C4DE-3849-BD89-A3696B6895DA', 
+                   'arm64: 94D6932F-A114-301B-88EA-928BD3A423BC' ]
+platform:        ios
+install-name:    /usr/lib/libETLTransportDynamic.dylib
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ETLBulkUSBTransportCreate, _ETLBulkUSBTransportCreateForLocation, 
+                       _ETLBulkUSBTransportCreateWithParameters, _ETLBulkUSBTransportGetState, 
+                       _ETLBulkUSBTransportIsEmergencyDownload, _ETLBulkUSBTransportParametersInit, 
+                       __ETLBulkUSBTransportQueue ]
+...

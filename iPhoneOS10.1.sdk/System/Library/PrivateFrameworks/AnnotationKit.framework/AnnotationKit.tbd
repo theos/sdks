@@ -1,0 +1,34 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AKAdornmentZPositionOffset,
+                        _AKContentScrollViewVisibleRectChangeNotification, _AKLog,
+                        _AKPointOfInterestRadius_Handle_Alternate, _AKPointOfInterestSize_LargestHandleSize,
+                        _AKQuadrilateralMakeWithDictionaryRepresentation, _AKZeroQuadrilateral,
+                        _AKChildAnnotationUUIDAssociatedObjectKey, _AKParentAnnotationUUIDAssociatedObjectKey,
+                        _AKQuadrilateralCreateDictionaryRepresentation, _AKRawDataForCoder ]
+    objc-classes:     [ _AKActionController,
+                        _AKAnnotationEventHandler, _AKAnnotationRenderer,
+                        _AKArrowShapeAnnotation, _AKBorderMaskAnnotation,
+                        _AKControllerForTesting, _AKDoodleAnnotation,
+                        _AKHeartAnnotation, _AKImageAnnotation,
+                        _AKLoupeAnnotation, _AKModelController,
+                        _AKOvalAnnotation, _AKPageController,
+                        _AKPageModelController, _AKRectAnnotation,
+                        _AKSecureSerializationHelper, _AKSignature,
+                        _AKSignatureView, _AKStarAnnotation,
+                        _AKStrokedAnnotation, _AKTextBoxAnnotation,
+                        _AKThoughtBubbleAnnotation, _AKTriangleAnnotation,
+                        _AKUndoController, _AKAnnotation,
+                        _AKArrowAnnotation, _AKController,
+                        _AKGeometryHelper, _AKLayerPresentationManager,
+                        _AKNoteAnnotation, _AKPageControllerForTesting,
+                        _AKRectangularShapeAnnotation, _AKSignatureAnnotation,
+                        _AKStarAnnotationRenderer, _AKTextFieldAnnotation,
+                        _AKToolbarViewController ]
+...

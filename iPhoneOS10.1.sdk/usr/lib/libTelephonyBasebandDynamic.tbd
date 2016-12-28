@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: AEF7E3A5-B879-3051-8634-2C559D875817', 'armv7s: 4B502375-F17C-3D6E-9378-456DC3F928EA', 
+                   'arm64: 9773BB05-31FC-3749-97E2-64E24D0E6931' ]
+platform:        ios
+install-name:    /usr/lib/libTelephonyBasebandDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    weak-def-symbols: [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _TelephonyBasebandAPTimeSync, _TelephonyBasebandAddFreqList, 
+                       _TelephonyBasebandClearFreqList, _TelephonyBasebandCreateController, 
+                       _TelephonyBasebandCreateControllerWithParams, _TelephonyBasebandEnableModemHSICHostReadyWithDuration, 
+                       _TelephonyBasebandEnableModemHSICPort, _TelephonyBasebandEnableModemMux, 
+                       _TelephonyBasebandEnableModemSleepWithVoter, _TelephonyBasebandEnableModemUSBEnumerationWithAP, 
+                       _TelephonyBasebandEnableModemVBUS, _TelephonyBasebandForceResetModem, 
+                       _TelephonyBasebandGetDiagReady, _TelephonyBasebandGetFSEraseDone, 
+                       _TelephonyBasebandGetHSICPortStatistics, _TelephonyBasebandGetHSICUnexpectedPortDisableCount, 
+                       _TelephonyBasebandGetMaximumBootupTime, _TelephonyBasebandGetMaximumRecoveryTime, 
+                       _TelephonyBasebandGetModemHSICDeviceReady, _TelephonyBasebandGetModemHSICHostReady, 
+                       _TelephonyBasebandGetPMUExtOn, _TelephonyBasebandGetPowercycleDelay, 
+                       _TelephonyBasebandGetRadioOnDelay, _TelephonyBasebandGetReset, 
+                       _TelephonyBasebandGetResetAssertHoldTime, _TelephonyBasebandGetResetDeassertDelay, 
+                       _TelephonyBasebandGetResetReq, _TelephonyBasebandGetUsbDischargeTime, 
+                       _TelephonyBasebandHSICResumeOperation, _TelephonyBasebandPollGPIO, 
+                       _TelephonyBasebandPowerOnModem, _TelephonyBasebandPowercycleModem, 
+                       _TelephonyBasebandPreUpdateResetModem, _TelephonyBasebandRegisterForHSICNotifications, 
+                       _TelephonyBasebandRegisterForReset, _TelephonyBasebandRemoveFreqList, 
+                       _TelephonyBasebandResetModem, _TelephonyBasebandResetModemOnLowPower, 
+                       _TelephonyBasebandSelectVinyl, _TelephonyBasebandSetGPIO, 
+                       _TelephonyBasebandSetHSICIdleDisconnectTimeout, _TelephonyBasebandSetHSICReady, 
+                       _TelephonyBasebandSetModemCoredumpGPIO, _TelephonyBasebandSupportsRadio, 
+                       _TelephonyBasebandSuspendModemHSICPort, _TelephonyBasebandVoteDeviceWake ]
+...

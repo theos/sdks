@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 95A42FD1-F46E-3959-AFF9-8BA5709892FF', 'armv7s: C9DB4CC9-8344-3B59-AE77-A80646EBA048', 
+                   'arm64: 48C63C8E-22E8-3A04-855C-0AF589C85D64' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/IntentsUI.framework/IntentsUI
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _INUIRemoteViewControllerErrorDomain, _IntentsUIVersionNumber, 
+                       _IntentsUIVersionString ]
+    objc-classes:    [ _INUIImageServiceConnection, _INUIRemoteViewController, __INUIExtensionContext, 
+                       __INUIExtensionHostContext, __INUIServiceViewController ]
+...

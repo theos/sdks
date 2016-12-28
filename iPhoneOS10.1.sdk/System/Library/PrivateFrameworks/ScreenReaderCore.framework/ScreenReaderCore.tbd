@@ -1,0 +1,65 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ScreenReaderCore.framework/ScreenReaderCore
+current-version: 390.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SCRCArgumentParserRunWithClassName,
+                        _SCRCDoubleAlmostEqual, _SCRCFloatAlmostEqual,
+                        _SCRCFormatFloatWithPercentage, _SCRCFormatNumber,
+                        _SCRCGestureStateToString, _SCRCIsUInt32BitSafe,
+                        _SCRCLogMaskThread, _SCRCMathClearAverage,
+                        _SCRCMathGetDistanceBetweenPoints, _SCRCMathUpdateAngleAverage,
+                        _kSCRCMathExpressionKeyBaseObject, _kSCRCMathExpressionKeyCloseOperator,
+                        _kSCRCMathExpressionKeyDenominatorObject, _kSCRCMathExpressionKeyLineThickness,
+                        _kSCRCMathExpressionKeyOpenOperator, _kSCRCMathExpressionKeyOverObject,
+                        _kSCRCMathExpressionKeyRootIndexObject, _kSCRCMathExpressionKeySuperscriptObject,
+                        _kSCRCMathExpressionKeyUnderObject, _kSCRCMathExpressionTermKeyPrefix,
+                        _kSCRCMathFontStyleItalic, _kSCRCMathStringAttributeSpeakLiteralCharacters,
+                        _kSCRCMathStringAttributeTreePosition, _kSCRCMathTypeFraction,
+                        _kSCRCMathTypeLongDivision, _kSCRCMathTypeOperator,
+                        _kSCRCMathTypeRow, _kSCRCMathTypeSubSuperscript,
+                        _kSCRCMathTypeTableCell, _kSCRCMathTypeText,
+                        _kSCRCThreadNoWait, _kSCRCThreadWaitLong,
+                        _kSCRCThreadWaitShort, _SCRCCGFloatAlmostEqual,
+                        _SCRCFormatFloat, _SCRCFormatUnsignedInteger,
+                        _SCRCLogMaskUIElement, _SCRCMathGetVectorAndDistanceForPoints,
+                        _kSCRCMathExpressionKeyChildren, _kSCRCMathExpressionKeyFontStyle,
+                        _kSCRCMathExpressionKeyOperator, _kSCRCMathExpressionKeySubscriptObject,
+                        _kSCRCMathExpressionKeyUnichar, _kSCRCMathStringAttributeIsNonTechnicalText,
+                        _kSCRCMathTypeFenced, _kSCRCMathTypeNumber,
+                        _kSCRCMathTypeSpace, _kSCRCMathTypeTableRow,
+                        _kSCRCThreadWaitForever, _kSCRCThreadWaitMedium ]
+    objc-classes:     [ _SCRCArgumentParser,
+                        _SCRCGestureEvent, _SCRCGestureFinger,
+                        _SCRCMathExpression, _SCRCPhotoEvaluatorPersonFeature,
+                        _SCRCRegularExpression, _SCRCTargetSelector,
+                        _SCRCThread, _SCRCThreadedWeakLinkedObject,
+                        _SCRCArgumentSubcommand, _SCRCIndexMap,
+                        _SCRCPhotoEvaluatorResultPeople, _SCRCTargetSelectorTimer ]
+    objc-ivars:       [ _SCRCArgumentParser._appName,
+                        _SCRCArgumentParser._argumentArray, _SCRCArgumentParser._isLaunchedAtLogin,
+                        _SCRCArgumentParser._subcommandArray, _SCRCArgumentSubcommand._subcommandName,
+                        _SCRCGestureEvent._deviceIdentifier, _SCRCGestureEvent._fingerCount,
+                        _SCRCGestureFinger._identifier, _SCRCGestureFinger._orbValue,
+                        _SCRCPhotoEvaluatorPersonFeature._faceLocation, _SCRCPhotoEvaluatorPersonFeature._faceSize,
+                        _SCRCPhotoEvaluatorPersonFeature._mouthRect, _SCRCPhotoEvaluatorPersonFeature._shirtColor,
+                        _SCRCPhotoEvaluatorResultPeople._people, _SCRCStackQueue._firstNode,
+                        _SCRCTargetSelector._selector, _SCRCTargetSelectorTimer._createdTimer,
+                        _SCRCTargetSelectorTimer._isPending, _SCRCTargetSelectorTimer._lock,
+                        _SCRCTargetSelectorTimer._timer, _SCRCThread._descriptionChanged,
+                        _SCRCThread._isRegistered, _SCRCThread._isWaitingForStoppingThread,
+                        _SCRCThread._lastStartTime, _SCRCThread._queue,
+                        _SCRCThread._runLoop, _SCRCThread._source,
+                        _SCRCThreadedWeakLinkedObject._calledDealloc, _SCRCThreadedWeakLinkedObject._releaseLock,
+                        _SCRCArgumentParser._argc, _SCRCArgumentParser._subcommand,
+                        _SCRCGestureEvent._averageLocation, _SCRCGestureEvent._time,
+                        _SCRCIndexMap._map, _SCRCPhotoEvaluatorPersonFeature._leftEyeRect,
+                        _SCRCPhotoEvaluatorResultPeople._imageSize, _SCRCStackQueue._lastNode,
+                        _SCRCTargetSelectorTimer._isCanceled, _SCRCTargetSelectorTimer._object,
+                        _SCRCThread._isInvalid, _SCRCThread._key,
+                        _SCRCThread._queueLock, _SCRCThread._waitingQueue,
+                        _SCRCThreadedWeakLinkedObject._referenceCount ]
+...

@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WebUI.framework/WebUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/SafariShared.framework/SafariShared ]
+    symbols:          [ _WBUABAddressKey,
+                        _WBUAutoFillClearDataClasses, _WBUAutoFillDisableDataClasses,
+                        _WBUAutoFillProtectionSpacesEligibleForPasswordChange, _WBUFeatureManagerParsecITunesResultsAvailabilityDidChangeNotification,
+                        _WBUWebClipMetadataFetcherIdentifier, _kCertificateContextAuthenticationChallengeKey,
+                        _kCertificateContextReasonChallenge, _kCertificateContextRequestKey,
+                        _kCertificateContextWebFrameKey, _kContextControllerToPlugInPageControllerAssociationKey,
+                        _webuiCookieAcceptPolicyPreferencesKey, _WBUABStreetKey,
+                        _WBUAutoFillGetEnabledDataClasses, _WBUFormAutoFillPasswordGenerationAssistanceBecameAvailableNotification,
+                        _kCertificateContextCompletionHandlerKey, _kCertificateContextTrustKey,
+                        _kWBUCertificateContextUseOnlyAvailableIdentityWithoutPrompting ]
+    objc-classes:     [ _WBUAutoFillDisplayData,
+                        _WBUContactAutoFillPropertyValues, _WBUContactAutoFillValue,
+                        _WBUCreditCardCaptureViewController, _WBUFeatureManager,
+                        _WBUFormAutoCompleteStateWK1, _WBUFormAutoFillFrameHandle,
+                        _WBUFormAutoFillFrameWK2, _WBUFormAutoFillNodeWK1,
+                        _WBUFormAutoFillPasswordAlertAction, _WBUFormAutoFillWebView,
+                        _WBUFormAutocompleteStateWK2, _WBUFormDataControllerWK1,
+                        _WBUFormMetadataControllerWK1, _WBUFormsMetadataProviderWK1,
+                        _WBUHistory, _WBUPasswordPickerViewController,
+                        _WBUPrintPageRenderer, _WBUTextSuggestion,
+                        _WBUWebProcessPlugIn, _WBUWebProcessPlugInPageController,
+                        _WebUIAlert, _WebUICertificateError,
+                        __WBUCertificateUtilities, __WBUPasswordAlertActionView,
+                        __WBUPasswordDetailViewController, __WBUPolicyDecisionListener,
+                        _WBUContactAutoFillDetailViewController, _WBUContactAutoFillViewController,
+                        _WBUFormAutoCompleteState, _WBUFormAutoFillFrameWK1,
+                        _WBUFormAutoFillNodeWK2, _WBUFormAutoFillWhiteList,
+                        _WBUFormDataControllerWK2, _WBUFormsMetadataProviderWK2,
+                        _WBUPolicyDelegate, _WBUWebClipMetadataFetcher,
+                        _WBUWebsiteDataUtilities, _WebUIDownloadManager,
+                        __WBUPasswordAlertActionViewController, __WBUPasswordPicker ]
+    objc-ivars:       [ _WebUIDownloadManager._delegate,
+                        _WebUIDownloadManager._downloadPath, _WebUIDownloadManager._download ]
+...

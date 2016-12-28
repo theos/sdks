@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserFS.framework/PlugIns/msdosfs.dylib
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _buffer_bytes,
+                        _buffer_offset, _cache_flush,
+                        _cache_get_buffer, _cache_invalidate,
+                        _content_buffer_bytes, _device_mutex,
+                        _populate_content_buffer_cache, _userfs_plugin_init,
+                        _buffer_mark_dirty, _cache_flush_buffer,
+                        _cache_release_buffer, _device_name,
+                        _stream_increment_threadCount ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 558186E2-FC1F-37C1-8B46-84175A203DD1', 'armv7s: 59F51821-DCF9-3428-9322-F60EC7E7F98C', 
+                   'arm64: 378DD969-9BA5-37F1-B32B-F8EBE1633DF9' ]
+platform:        ios
+install-name:    /usr/lib/libsystemstats.dylib
+current-version: 293.20.4
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __systemstats_copy_cookie_path, __systemstats_get_system_version, 
+                       __systemstats_read_uuid, __systemstats_save_current_boot_uuid, 
+                       __systemstats_stream_create, __systemstats_writers, _absolute_time_to_absolute_milliseconds, 
+                       _get_microstackshots_from_files, _now_in_absolute_milliseconds, 
+                       _now_in_wall_milliseconds, _systemstats_create_record, _systemstats_dispose_record, 
+                       _systemstats_foreach_micro, _systemstats_get_microstackshots, 
+                       _systemstats_insert_and_dispose_subrecord, _systemstats_stream_delete, 
+                       _systemstats_stream_flush, _systemstats_write_and_dispose_record, 
+                       _systemstats_write_microstackshot ]
+...

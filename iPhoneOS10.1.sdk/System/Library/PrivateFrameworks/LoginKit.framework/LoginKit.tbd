@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/LoginKit.framework/LoginKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _LKCourseDescriptionKey,
+                        _LKCourseGroupNameKey, _LKCourseIDKey,
+                        _LKCourseInstructorIdentifiersKey, _LKCoursesKey,
+                        _LKErrorPasscodeBackOffInterval, _LKLogSubsystem,
+                        _LKLoginDaemonClientServiceName, _LKLoginDaemonLoginUIServiceName,
+                        _LKPayloadCertificatePersistentID, _LKUserAppleIDKey,
+                        _LKUserFullNameKey, _LKUserIdentifierKey,
+                        _LKUserMediumImageURLKey, _LKUsersKey,
+                        _LKCourseEnrolledStudentIdentifiersKey, _LKCourseIDsKey,
+                        _LKErrorDomain, _LKLoginDaemonClientEntitlement,
+                        _LKOrganizationDisplayNameKey, _LKUserFamilyNameKey,
+                        _LKUserLargeImageURLKey, _LKUserPasswordTypeKey ]
+    objc-classes:     [ _LKClass,
+                        _LKClassGroup, _LKError,
+                        _LKNamingSimilarity, _LKUsers,
+                        _LKClassConfiguration, _LKLoginController,
+                        _LKUser ]
+...

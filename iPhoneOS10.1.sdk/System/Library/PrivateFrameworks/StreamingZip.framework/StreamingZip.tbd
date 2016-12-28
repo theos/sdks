@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SZArchiverConvertZipArchiveToStreamable,
+                        _SZArchiverCopyStatsKeys, _SZArchiverExtractFile,
+                        _SZExtractorErrorDomain, _SZExtractorFunctionNameErrorKey,
+                        _SZExtractorHashTypeMD2, _SZExtractorHashTypeMD5,
+                        _SZExtractorHashTypeSHA224, _SZExtractorHashTypeSHA384,
+                        _SZExtractorOptionsDenyInvalidSymlinks, _SZExtractorOptionsHashedChunkSize,
+                        _SZExtractorSourceFileLineErrorKey, __SZLog,
+                        _gSZLogPrefix, _kSZArchiverCompressionMethodDEFLATE,
+                        _kSZArchiverCompressionMethodLZMA, _kSZArchiverCompressionOptionPreserveCompression,
+                        _kSZArchiverHashTypeMD2, _kSZArchiverHashTypeMD5,
+                        _kSZArchiverHashTypeSHA224, _kSZArchiverHashTypeSHA384,
+                        _kSZArchiverOptionCommandLineString, _kSZArchiverOptionCompressionOptions,
+                        _kSZArchiverOptionHashType, _kSZArchiverOptionNoCache,
+                        _kSZArchiverOptionNoSeekOutput, _kSZArchiverOptionUncompressBloatedFiles,
+                        _kSZArchiverPreflightTargetPathMode, _kSZArchiverPreflightTotalFileSize,
+                        _kSZArchiverStatsCountCompressMethodDeflated, _kSZArchiverStatsCountCompressMethodLZMA,
+                        _kSZArchiverStatsCountCompressMethodStored, _kSZArchiverStatsCountRegularFiles,
+                        _kSZArchiverStatsCountZeroByteFiles, _kSZArchiverStatsExpectedStreamStopOffset,
+                        _kSZArchiverStatsItemsConvertedToUncompressed, _kSZArchiverStatsMaxCompressedSize,
+                        _kSZArchiverStatsNonStandardPermsItemCount, _kSZArchiverStatsResultSizeDeltaBytes,
+                        _kSZArchiverStatsTotalBytesRecovered, _kSZArchiverStatsTotalExtractedSize,
+                        _kSZArchiverStatsTotalUncompressedSize, _SZArchiverCopyStatsDescriptions,
+                        _SZExtractorActualHashValueErrorKey, _SZExtractorHashChunkIndexErrorKey,
+                        _SZExtractorHashTypeSHA1, _SZExtractorHashTypeSHA512,
+                        _SZExtractorOptionsHashesArray, _gSZDefaultLogLevel,
+                        _kSZArchiverCompressionMethodLZFSE, _kSZArchiverCompressionOptionTryRecompress,
+                        _kSZArchiverHashTypeSHA1, _kSZArchiverHashTypeSHA512,
+                        _kSZArchiverOptionExecutableUUID, _kSZArchiverOptionNoCentralDirectory,
+                        _kSZArchiverOptionZlibCompressionLevel, _kSZArchiverStatsCentralDirectorySize,
+                        _kSZArchiverStatsCountCompressMethodOther, _kSZArchiverStatsCountSymlinks,
+                        _kSZArchiverStatsItemCount, _kSZArchiverStatsMaxUncompressedSize,
+                        _kSZArchiverStatsResultSizeDeltaPercent, _kSZArchiverStatsTotalFileSize ]
+    objc-classes:     [ _SZExtractor,
+                        _StreamingUnzipper ]
+...

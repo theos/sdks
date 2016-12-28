@@ -1,0 +1,40 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ControlCenterUI.framework/ControlCenterUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CCUICalculatorBundleIdentifier,
+                        _CCUIClockBundleIdentifier, _CCUITapToRadarBundleIdentifier,
+                        _CCUITapToRadarScheme, _ControlCenterUIVersionNumber,
+                        _SBControlCenterControlDidActivateNotification, _SBControlCenterControlNotificationKeyName,
+                        _kCCUIPlatterCornerRadius, _CCUICameraBundleIdentifier,
+                        _CCUITapToRadarNewPath, _ControlCenterUIVersionString,
+                        _SBControlCenterControlDidDeactivateNotification ]
+    objc-classes:     [ _CCUIAirStuffSectionController,
+                        _CCUIArtraceShortcut, _CCUIBluetoothSetting,
+                        _CCUIBrightnessSectionController, _CCUIButtonLikeSectionSplitView,
+                        _CCUIButtonModuleUnavailableAlertItem, _CCUIButtonStack,
+                        _CCUICalculatorShortcut, _CCUICellularDataSetting,
+                        _CCUIControlCenterContainerView, _CCUIControlCenterPageContainerViewController,
+                        _CCUIControlCenterPagePlatterView, _CCUIControlCenterPushButtonSettings,
+                        _CCUIControlCenterSectionView, _CCUIControlCenterSettings,
+                        _CCUIControlCenterShortcutButtonSettings, _CCUIControlCenterStatusUpdate,
+                        _CCUIControlCenterViewController, _CCUIExternalBluetoothDefaults,
+                        _CCUIFlashlightSetting, _CCUILowPowerModeSetting,
+                        _CCUIMuteSetting, _CCUINightShiftSectionController,
+                        _CCUIPersonalHotspotSetting, _CCUIRecordScreenShortcut,
+                        _CCUISettingModule, _CCUIShortcutButtonController,
+                        _CCUISystemControlsPageViewController, _CCUITimerShortcut,
+                        _SBControlCenterSettingButtonSettings, _CCUIAirplaneModeSetting,
+                        _CCUIBrightnessContentView, _CCUIButtonModule,
+                        _CCUIButtonStackPagingView, _CCUIControlCenterButtonSectionSettings,
+                        _CCUIControlCenterPageControl, _CCUIControlCenterRootView,
+                        _CCUIControlCenterSettingsSectionSettings, _CCUIControlCenterStatusView,
+                        _CCUIFirstUsePanelViewController, _CCUIMagnifierModule,
+                        _CCUIOrientationLockSetting, _CCUISettingButtonController,
+                        _CCUIShortcutModule, _CCUIWiFiSetting ]
+    objc-ivars:       [ _CCUIBrightnessContentView._usesCompactHeight ]
+...

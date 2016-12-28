@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Netrb.framework/Netrb
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NETRBClientSendNotification,
+                        _NETRBEndPointCleanup, _NETRBInfoLog,
+                        _NETRBNoticeLog, _NETRBXPCCreate,
+                        _NETRBXPCSetupAndSend, _NetrbVersionString,
+                        __NETRBClientCopyFixtureForwardedPorts, __NETRBClientDestroy,
+                        __NETRBClientGetExtName, __NETRBClientGetHostCount,
+                        __NETRBClientRemoveHost, __NETRBClientSetGlobalServiceState,
+                        __NETRBClientStartService, _netrbClientAnyExternal,
+                        _netrbClientDns64Prefix, _netrbClientForwardedLowPort,
+                        _netrbClientInterfaceInstance, _netrbClientInterfaceName,
+                        _netrbClientInterfaceSpeed, _netrbClientNat64Param,
+                        _netrbClientNotificationKey, _netrbClientRaPrefix,
+                        _NETRBDebugLog, _NETRBLogCreate,
+                        _NETRBXPCEndPointCreate, __NETRBClientAddHost,
+                        __NETRBClientGetDynamicStoreKey, __NETRBClientIsAllowedMoreHost,
+                        __NETRBClientSetHostCount, _netrbClientDeviceType,
+                        _netrbClientInterfaceEndAddress, _netrbClientInterfaceNetworkMask,
+                        _netrbClientNatType ]
+...

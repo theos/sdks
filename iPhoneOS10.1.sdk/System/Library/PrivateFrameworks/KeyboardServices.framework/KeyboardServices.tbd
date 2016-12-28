@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/KeyboardServices.framework/KeyboardServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _KSCloudKitAccountDidChange,
+                        _KSTextReplacementDidChangeNotification, _KeyboardServicesVersionString,
+                        __KSDevicesMigrationStateDidChange, __KSTRCKStoreDidReceiveChangesNotification,
+                        __KSTRLegacyStoreDidImportUbiquitousChanges, __KSTextReplacementDeleteDidFailEntriesKey,
+                        __KSTextReplacementEntryDidFailErrorKey, __KSTextReplacementServerInterface,
+                        __KSTextReplacementUpdateDidFailErrorsKey, _kKSApplePreferencesDomain,
+                        _kMaxOperationRetryCount, _kTextReplacementEntitlement,
+                        _KSDeviceProtectionClassDidChange, _TIBuddySetupFinishedNotification_Private,
+                        __KSTRLegacyStoreDidImportChangesNotification, __KSTextReplacementDeleteDidFailErrorsKey,
+                        __KSTextReplacementUpdateDidFailEntriesKey, _kKeyboardServicesCloudKitContainerID,
+                        _kRetryWaitInSeconds ]
+    objc-classes:     [ _ArraySlice,
+                        __KSAggdLogger, __KSCloudKitManager,
+                        __KSDeviceStateMonitor, __KSTIUserDictionaryEntryValue,
+                        __KSTRClient, __KSTextReplacementCKStore,
+                        __KSTextReplacementCoreDataStore, __KSTextReplacementHelper,
+                        __KSTextReplacementManagedObject, __KSTextReplacementServer,
+                        __KSUtilities, __KSiCloudDeviceListMonitor,
+                        _ArraySlicer, __KSDeviceInfo,
+                        __KSTIUserDictionaryTransaction, __KSTextReplacementClientStore,
+                        __KSTextReplacementLegacyStore, __KSTextReplacementServerConnection ]
+...

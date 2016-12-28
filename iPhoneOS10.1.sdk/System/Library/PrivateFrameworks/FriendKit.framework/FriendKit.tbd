@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FriendKit.framework/FriendKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DigitalTouchDomain,
+                        _FKDidNormalizeFriendListDestinationsKey, _FKFriendGroupTitleChangedExternallyNotification,
+                        _FKFriendGroupTitleChangedNotification, _FKFriendsChangedExternallyNotification,
+                        _FKFriendsManagerChangedNotification, _FKFriendsManagerDestinationStatusUpdatedNotification,
+                        _FKFriendsManagerPersonAdded, _FKFriendsManagerPersonMoved,
+                        _FKGroupSizeKey, _FKMaxGroupCountKey,
+                        _FKPersonUnlinkedFromAddressBookNotification, _FKRefreshAgainstContactsOnInitEnabledKey,
+                        _FriendKitBundle, _FriendKitVersionString,
+                        __FKGetLogSystem, _FKDeduplicateFriendListEnabledKey,
+                        _FKFriendGroupTitleChangedExternallyNotificationKey, _FKFriendsChangedExternallyNotificationKey,
+                        _FKFriendsManagerGroupListChanged, _FKFriendsManagerPersonUpdated,
+                        _FKPersonUnlinkedABGUIDKey, _FKRemoveDestinationlessFriendsEnabledKey,
+                        _FriendKitVersionNumber ]
+    objc-classes:     [ _FKDelayedOperation,
+                        _FKFriendsManager, _FKUtility,
+                        _FKFriendGroup, _FKPerson ]
+...

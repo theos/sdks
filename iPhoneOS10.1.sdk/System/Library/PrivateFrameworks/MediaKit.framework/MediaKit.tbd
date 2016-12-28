@@ -1,0 +1,58 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaKit.framework/MediaKit
+current-version: 840.0.0
+compatibility-version: 302.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ApplyToHFSPlusCatalogRecords,
+                        _CFArrayDictionarySearch, _GPTuuidHuman2Type,
+                        _IOEngineDeinitialize, _IOJobCopyInfo,
+                        _IOJobDispose, _IOJobSetup,
+                        _MKAccessLibrary, _MKBSDCreateDeviceInfo,
+                        _MKBSDMountpoint, _MKBlockChecksum,
+                        _MKCFCheckBootDevice, _MKCFCreateFSInfo,
+                        _MKCFCreateMap, _MKCFCreateMedia,
+                        _MKCFCreatePartitions, _MKCFDisposeMedia,
+                        _MKCFPrepareBootDevice, _MKCFSetBootcode,
+                        _MKCFUpdateMedia, _MKCFWriteMedia,
+                        _MKCFWriteScheme, _MKCreateMediaDeviceRefcon,
+                        _MKFATFSCreateProperties, _MKFSIdentity,
+                        _MKFileSystemDetect, _MKGetPartitionRequisites,
+                        _MKHFSPlusMapFileBlock, _MKHumanToType,
+                        _MKLoadDB, _MKMediaCopyProperty,
+                        _MKMediaCreateWithFileDescriptor, _MKMediaCreateWithSubRange,
+                        _MKMediaDeviceIO, _MKMediaDeviceOpenExtended,
+                        _MKMediaEraseSectors, _MKMediaLayout,
+                        _MKMediaReadBlocks, _MKMediaSetProperty,
+                        _MKMediaUpdateProperties, _MKMediaWriteMultipleSectors,
+                        _MKReadHFSMDBVHB, _MKRecordFSRuns,
+                        _MKShowMedia, _MKTypeClassify,
+                        _MKWriteHFSMDBVHB, _PMCategorize,
+                        _PMCodeSearch, _PMDescriptorSearch,
+                        _PMDrvrIdentify, _PMIndexCompare,
+                        _PMNewPartitionExtended, _PMPSearchBlock,
+                        _PMPtchDescriptor_BtoN, _PMRationalise,
+                        _PMSchemeSearch, _PMSearchBlock,
+                        _PMSetDriver, _PMSlice2Index,
+                        _PMSpecificIndex, _PMWriteDriver,
+                        _kMKMediaBlockDeviceVector, _kMKMediaFileVector,
+                        _pwriteoffline, _ApplyToHFSPlusExtentRecords,
+                        _GPTuuidType2Human, _IOJobCopySingleInfo,
+                        _IOJobWait, _MKBSDMountinfo,
+                        _MKCFBuildPartition, _MKCFCreateHFSInfo,
+                        _MKCFCreateNTFSInfo, _MKCFPartitionAttributes,
+                        _MKCFSetPartitionGroupStatus, _MKCFWriteMediaContent,
+                        _MKDetectISO, _MKFetchMediaSetup,
+                        _MKHFSGetResizeLimits, _MKImageChecksum,
+                        _MKMediaCreate, _MKMediaDeviceClose,
+                        _MKMediaEraseBlocks, _MKMediaListCreate,
+                        _MKMediaUpdateExtended, _MKMediaWriteSectors,
+                        _MKReportMedia, _MKTypeToHuman,
+                        _PMChecksumExtended, _PMDisposePartitionRecord,
+                        _PMMediaWrite, _PMPSpecificIndex,
+                        _PMRemovePartition, _PMSetBootPartition,
+                        _PMSortMapII, _VRebuildFreespace,
+                        _kMKMediaSubRangeVector ]
+...

@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppLaunchStats.framework/AppLaunchStats
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _KeepAppsUpToDateEnabledChangedNotification,
+                        _cmpAscendingHistElementKey, _kAPLSStateAppsAliveInLSTDict,
+                        _kAPLSStateDailyDataBGBudgetSlots, _kAPLSStateDailyDataNDISCSlots,
+                        _kAPLSStateDailyPowerNDISCSlots, _kAPLSStateFireDates,
+                        _kAPLSStates, _kAppLaunchStatsDelayLaunchList,
+                        _kAppLaunchStatsDelayLaunchTimeInterval, _kAppLaunchStatsSBMonitorState,
+                        _kAppLaunchStatsStatisticsApps, _kAppLaunchStatsUninstallApps,
+                        _kDuetDefaultsMultiTaskingDomainPlist, _kDuetFetch,
+                        _kDuetNewsStand, _kDuetRemoteNotification,
+                        _kDuetSaveAndRestoreState, _kDuetSaveAndRestoreVersion,
+                        _kDuetTriggerDispatchQueue, _kDuetUIKitDomain,
+                        _kMGQueryIsDeviceTypePhone, _kMTDiagnosticDate,
+                        _kNotifyLowPriorityRSReqClientToServer, _kSiriViewServiceBundle,
+                        _sharedAppLaunchStats, _cmpAscendingHistElementCount,
+                        _kAPLSStateDailyAppForecastSlots, _kAPLSStateDailyPowerFetchBudgetSlots,
+                        _kAPLSStateHasTransitionedToCoreDuet, _kAppLaunchStatsDelayLaunchState,
+                        _kAppLaunchStatsSaveState, _kDuetCarrierBundleChangedNotification,
+                        _kDuetLowPriorityRSRequest, _kDuetSaveAndRestoreRevision,
+                        _kDuetSettingsBlacklist, _kDuetWhiteList,
+                        _kNotifyLowPriorityPushRetry, _kNotifyMainAPLSWithLowPriorityPushList ]
+    objc-classes:     [ _APLSBinnedGlanceHistory,
+                        _AppLaunchStats, _AppLaunchStatsComputation,
+                        _AppLaunchStatsDiag, _AppLaunchStatsLaunchQueue,
+                        _AppLaunchStatsREventHandler, _AppLaunchStatsSBMonitor,
+                        _AppLaunchStatsSaveAndRestore, _AppLaunchStatsState,
+                        _AppLaunchStatsStateHandlerQueue, _AppLaunchStatsWhiteListManager,
+                        _RankElement, _ReservationStationObject,
+                        _AppEntry, _AppLaunchStatsDelayLaunch,
+                        _AppLaunchStatsLogFormater, _AppLaunchStatsSBSettings,
+                        _AppLaunchStatsStateHandler, _HistogramElement ]
+    objc-ivars:       [ _RankElement.score,
+                        _RankElement.timeIndex ]
+...

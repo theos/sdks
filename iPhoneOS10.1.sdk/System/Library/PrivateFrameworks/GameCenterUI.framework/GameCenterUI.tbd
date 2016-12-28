@@ -1,0 +1,68 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _GKAuthenticateExtensionBundleIdentifier,
+                        _GKDashboardExtensionBundleIdentifier, _GKExtensionErrorDomain,
+                        _GKExtensionItemChallengeInternalKey, _GKExtensionItemDashboardLeaderboardID,
+                        _GKExtensionItemDashboardTimeScope, _GKExtensionItemForcePickerKey,
+                        _GKExtensionItemFriendRequestRecipientPlayerInternals, _GKExtensionItemLocalPlayerKey,
+                        _GKExtensionItemMatchesAcceptedInviteInternal, _GKExtensionItemMatchesMatchRequestInternal,
+                        _GKExtensionItemMatchesShowPlayForMatch, _GKExtensionItemMessageKey,
+                        _GKExtensionItemRTLKey, _GKFriendRequestExtensionBundleIdentifier,
+                        _GKGameCenterExtensionPointName, _GKGetNotificationCenterEnabled,
+                        _GKHostedAuthenticateViewControllerMode, _GKMaxPhotoHeight,
+                        _GKPingDaemon, _GKRectEnforceMinimumHeight,
+                        _GKRectsCenterYInRect, _GKSentFriendRequestPlayerListKey,
+                        _GKSetNotificationsEnabled, _GKTurnBasedMatchmakerExtensionBundleIdentifier,
+                        _GKViewServiceCurrentGameKey, _GKViewServiceLocalPlayerKey,
+                        _IntegralPositionForBounds, __GKIsClientAppUsingRTL,
+                        __GKIsRemoteUIUsingPadIdiom, _GKChallengeIssueExtensionBundleIdentifier,
+                        _GKExtensionItemAuthenticateModeKey, _GKExtensionItemDashboardShowPlayForChallenge,
+                        _GKExtensionItemFriendRequestRecipientEmails, _GKExtensionItemLocalizationsKey,
+                        _GKExtensionItemMatchesShowExistingMatches, _GKExtensionItemPlayerInternalsKey,
+                        _GKGameCenterExtensionIsValidEntitlement, _GKHostedAuthenticateModeKey,
+                        _GKMaxPhotoWidth, _GKRectsCenterXInRect,
+                        _GKSetNotificationCenterEnabled, _GKUISetRemote,
+                        _GKViewServiceStatusBarHeightKey, __GKIsRemoteUI ]
+    objc-classes:     [ _GKAbbreviatedNumberFormatter,
+                        _GKAchievementViewController, _GKAuthenticateExtensionHostContext,
+                        _GKBackgroundTileImageView, _GKBrush,
+                        _GKButton, _GKChallengeIssueExtensionHostContext,
+                        _GKCircleImageBrush, _GKComposedImageBrush,
+                        _GKConstraintLeadingInfo, _GKContiguousContainerView,
+                        _GKDashboardExtensionHostContext, _GKDebugHighlightView,
+                        _GKFacebookLikeButton, _GKFriendRequestComposeViewController,
+                        _GKFriendRequestHostViewController, _GKGameSharingInfo,
+                        _GKHostedAuthenticateViewController, _GKHostedViewController,
+                        _GKImageColorPalette, _GKImageKey,
+                        _GKInGameColorPalette, _GKLeaderboardViewController,
+                        _GKLoginAlertView, _GKMatchmakerExtensionHostContext,
+                        _GKMatchmakerViewController, _GKNetworkImageSource,
+                        _GKNotificationBannerView, _GKNotificationBannerWindow,
+                        _GKPlayerMultiPhotoView, _GKPlayerPhotoView,
+                        _GKRootlessActivityViewController, _GKScoreSharingInfo,
+                        _GKTextField, _GKTextStyleFocus,
+                        _GKTextStylePhone, _GKThemeBrush,
+                        _GKTurnBasedMatchmakerExtensionHostContext, _GKTurnBasedMatchmakerViewController,
+                        _GKUITheme, _GKiOSAppIconBrush,
+                        _SortHueEntry, _GKAchievementSharingInfo,
+                        _GKAuthenticateHostViewController, _GKBrushList,
+                        _GKChallengeIssueHostViewController, _GKConditionBrush,
+                        _GKContiguousContainerWithLeadingView, _GKExtensionHostContext,
+                        _GKFriendRequestExtensionHostContext, _GKGradient,
+                        _GKImageBrush, _GKImageSource,
+                        _GKLocalImageSource, _GKMatchmakerHostViewController,
+                        _GKNotificationBanner, _GKOpenGraphNode,
+                        _GKRemoteViewController, _GKScreenConfigurationController,
+                        _GKTextStylePad, _GKThreadsafeImageCache,
+                        _GKUIRemoteViewController, _GKiOSAppIconBrushShare ]
+    objc-ivars:       [ _GKLoginAlertView._passwordFieldIndex,
+                        _GKOpenGraphNode._error, _GKOpenGraphNode._numberOfFriendLikes,
+                        _GKOpenGraphNode._url, _GKUITheme._resourceCache,
+                        _GKLoginAlertView._username, _GKOpenGraphNode._numberOfLikes ]
+...

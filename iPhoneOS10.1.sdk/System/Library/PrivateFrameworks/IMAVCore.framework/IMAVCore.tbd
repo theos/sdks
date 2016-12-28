@@ -1,0 +1,47 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IMAVCore.framework/IMAVCore
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMAVCallManagerCallStateChangedNotification,
+                        _IMAVCallManagerPreviousCallStateKey, _IMAVChatCameraAspectRatioKey,
+                        _IMAVChatCameraOrientationKey, _IMAVChatCameraWillChangeKey,
+                        _IMAVChatConferenceMetadataUpdatedNotification, _IMAVChatLocalVideoAttributesChangedNotification,
+                        _IMAVChatMediaPropertiesChangedNotification, _IMAVChatMuteStateKey,
+                        _IMAVChatParticipantAddedNotification, _IMAVChatParticipantCallInfoChangedNotification,
+                        _IMAVChatParticipantCameraOrientationChangedNotification, _IMAVChatParticipantContentRectChangedNotification,
+                        _IMAVChatParticipantInvitationDeliveredNotification, _IMAVChatParticipantMediaPropertiesChangedNotification,
+                        _IMAVChatParticipantMuteChangedNotification, _IMAVChatParticipantOutFrequencyChangedNotification,
+                        _IMAVChatParticipantPreviousStateKey, _IMAVChatParticipantScreenPropertiesChangedNotification,
+                        _IMAVChatParticipantStateKey, _IMAVChatParticipantWasRemovedNotification,
+                        _IMAVChatParticipantsWillBeRemovedNotification, _IMAVChatSendingAudioChangedNotification,
+                        _IMAVChatStateIsActive, _IMAVChatVideoDegradedKey,
+                        _IMAVControllerPendingACInvitationRequestComplete, _IMAVControllerVideoClientBundleIdentifier,
+                        _IMAVCurrentMicrophoneChangedNotification, _IMAVInterfaceReadyNotification,
+                        _IMAVLocalPreviewClientCameraAvailableCameraKey, _IMAVLocalPreviewClientCameraErrorCameraKey,
+                        _IMAVLocalPreviewClientCameraErrorNotification, _IMAVLocalPreviewClientFirstFrameCameraKey,
+                        _IMAVMicrophonesChangedNotification, _IMGKErrorDomain,
+                        _ShouldAutoAcceptInvitations, __IMAVCallManagerCallStateChangedNotification,
+                        __NSStringDescriptionForIMAVChatEndedReason, __NSStringDescriptionForIMAVChatParticipantState,
+                        __NSStringDescriptionForIMAVResponse, _IMAVCallManagerCallStateKey,
+                        _IMAVChatCameraContentRectKey, _IMAVChatConferenceIDChangedNotification,
+                        _IMAVChatMayRequireBreakBeforeMakeChangedNotification, _IMAVChatNetworkStalledKey,
+                        _IMAVChatParticipantCameraDidChangeNotification, _IMAVChatParticipantInFrequencyChangedNotification,
+                        _IMAVChatParticipantMediaStalledChangedNotification, _IMAVChatParticipantPauseChangedNotification,
+                        _IMAVChatParticipantStateChangedNotification, _IMAVChatParticipantsToBeRemovedKey,
+                        _IMAVChatStateChangedNotification, _IMAVControllerAudioClientBundleIdentifier,
+                        _IMAVCurrentCameraChangedNotification, _IMAVLocalIPChangeNewBlobKey,
+                        _IMAVLocalPreviewClientCameraErrorErrorKey, _IMAVLocalPreviewClientFirstFrameNotification,
+                        _IsIMAVChatEndedReasonACallFailure, __IMAVCallManagerCallTypeKey,
+                        __NSStringDescriptionForIMAVChatState ]
+    objc-classes:     [ _IMAVCallManager,
+                        _IMAVCameraController, _IMAVChatParticipant,
+                        _IMAVDaemonController, _IMAVLocalPreviewClient,
+                        _IMAVMicrophoneController, _IMAVTelephonyManager,
+                        _IMAVCamera, _IMAVController,
+                        _IMAVMicrophone ]
+    objc-ivars:       [ _IMAVInterface._delegate ]
+...

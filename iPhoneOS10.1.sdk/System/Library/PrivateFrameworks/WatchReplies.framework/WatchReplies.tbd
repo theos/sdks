@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WatchReplies.framework/WatchReplies
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _WRBundle,
+                        _WRLocalizedCategoryString, _WRSmartRepliesMarker,
+                        _WatchRepliesVersionString, __WRCannedRepliesStore_handleStoreChange,
+                        _WRDeviceLanguage, _WatchRepliesVersionNumber ]
+    objc-classes:     [ _WRCalendarReplyStoreInfo,
+                        _WRCannedRepliesViewController, _WRMailReplyStoreInfo,
+                        _WRPhoneReplyStoreInfo, _WRThirdPartyReplyStoreInfo,
+                        _WRCannedRepliesStore, _WRMessagesReplyStoreInfo,
+                        _WRReplyStoreInfo ]
+...

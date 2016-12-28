@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
+current-version: 182.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CORETIME_DATA_FACILITY,
+                        _CoreTimeVersionNumber, _TMAirplaneModeChanged,
+                        _TMCFNotificationCenterAddObserver, _TMCommandNameFromCmd,
+                        _TMCommonCFTimeIntervalToTimeval, _TMCommonCalculateMachTimeIntervalInSeconds,
+                        _TMCommonElapsedIntervalInSeconds, _TMCommonGetKernelMonotonicClockResolution,
+                        _TMCommonIsValidNetworkOffset, _TMCommonPropagateError,
+                        _TMCommonPropagateSourceTime, _TMConfirmTimeZone,
+                        _TMIsAutomaticTimeEnabled, _TMIsBBTimeActive,
+                        _TMIsTimeZoneConfirmed, _TMLogMachKey,
+                        _TMLogSourceKey, _TMLogUTCSecondsKey,
+                        _TMProvideBBTime, _TMSetAutomaticTimeEnabled,
+                        _TMSetReferenceUnreliable, _TMSetSourceTime,
+                        _TMSetSourceUnavailable, _TMSetupTimeZone,
+                        _TMSourceBBTimeTransfer, _TMSourceCdma,
+                        _TMSourceFilesystemTimestamp, _TMSourceGnssValidPos,
+                        _TMSourceHarvestServer, _TMSourceLocationAndNetwork,
+                        _TMSourceMobileLockdown, _TMSourceNitz,
+                        _TMSourceNtpLowConfidence, _TMSourceTMLSSourceComputed,
+                        _TMSourceTMLSSourceUser, _TMSourceiTunesServer,
+                        _TMTimeZoneConfirmedNotification, __TMCommonKernelMonotonicClockOffset,
+                        __TMConnectionQueue, __TMGetReferenceSource,
+                        __TMReleaseConnection, __TMSetSimulatedMcc,
+                        _kProviderTiered, _kSourceAbsoluteNanoTimeKey,
+                        _kSourceBBTimeTagging, _kSourceBBUnknown,
+                        _kSourceComputed, _kSourceErrorKey,
+                        _kSourceGnss, _kSourceGps,
+                        _kSourceIdentifierKey, _kSourceLocationAndNetwork,
+                        _kSourceLocationServer, _kSourceMachTimeKey,
+                        _kSourceMobileLockdown, _kSourceNanoErrorKey,
+                        _kSourceNitz, _kSourceNtpLowConfidence,
+                        _kSourceRTCConversionErrorKey, _kSourceResetKey,
+                        _kSourceSfErrorKey, _kSourceTMLSSourceComputed,
+                        _kSourceTMLSSourceUser, _kSourceTimeZoneKey,
+                        _kSourceUnknown, _kSystemTimeNotification,
+                        _kTMMonotonicClockDrift, _kTimedResetNotification,
+                        _CORETIME_TEXT_FACILITY, _TMBBTimeActiveNotification,
+                        _TMCommonCFAbsoluteTimeToTimeval, _TMCommonConvertTicksToSeconds,
+                        _TMCommonIsValidMcc, _TMCommonPropagateSourceError,
+                        _TMGetReferenceTime, _TMIsLocationTimeZoneActive,
+                        _TMLogRTCSecondsKey, _TMLogUncertaintySecondsKey,
+                        _TMSetAutomaticTimeZoneEnabled, _TMSetSourceTimeZone,
+                        _TMSourceBBTimeTagging, _TMSourceComputed,
+                        _TMSourceGps, _TMSourceLocationServer,
+                        _TMSourceNtp, _TMSourceTMLSSourceDevice,
+                        _TMSrcFromName, __TMCommonSyncKernelMonotonicClock,
+                        __TMGetSystemSource, _kProviderFiltered,
+                        _kSourceAvailabilityKey, _kSourceCdma,
+                        _kSourceFilesystemTimestamp, _kSourceHarvestServer,
+                        _kSourceLocationContributionKey, _kSourceMccKey,
+                        _kSourceNetworkContributionKey, _kSourceNtpPacket,
+                        _kSourceRtcKey, _kSourceTMLSSourceDevice,
+                        _kSourceTimeZoneOffsetKey, _kSystemTimeZoneNotification ]
+    objc-classes:     [ __TMBlockDebugger ]
+...

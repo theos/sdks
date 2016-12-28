@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SAML.framework/SAML
+current-version: 106.2.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SAMLAttributePropertyNameAccountProviderID,
+                        _SAMLAttributePropertyNameChannelIDs, _SAMLAttributePropertyNameHouseholdID,
+                        _SAMLAttributePropertyNameMaxMPAAContentRating, _SAMLAttributePropertyNamePostalCodes,
+                        _SAMLAttributePropertyNameUserID, _SAMLParserDetailedErrorsKey,
+                        _SAMLParserErrorDomain, _SAMLAttributePropertyNameAuthenticationTTL,
+                        _SAMLAttributePropertyNameLanguage, _SAMLAttributePropertyNameTransientID,
+                        _SAMLAuthZDecisionQueryActionPlay ]
+    objc-classes:     [ _SAMLAttributeQuery,
+                        _SAMLAuthZDecisionQuery, _SAMLParserController,
+                        _XMLWrapperDoc, _SAMLAuthNRequest,
+                        _SAMLResponse ]
+...

@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreIndoor.framework/CoreIndoor
+current-version: 0.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ZTIN5boost16bad_lexical_castE,
+                        __ZTIN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, __ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE,
+                        __ZTSN5boost16bad_lexical_castE, __ZTSN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE,
+                        __ZTSNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, __ZTSNSt3__121__basic_string_commonILb1EEE ]
+    objc-classes:     [ _CLGpsPosition,
+                        _CLIndoorCommonHooks, _CLIndoorMaintenance,
+                        _CLIndoorSettings, _CLPrefetchFloorRequest,
+                        _ENUCoordinate, _GeographicCoordinate,
+                        _CLGpsSignalQuality, _CLIndoorPositionProvider,
+                        _ECEFCoordinate ]
+...

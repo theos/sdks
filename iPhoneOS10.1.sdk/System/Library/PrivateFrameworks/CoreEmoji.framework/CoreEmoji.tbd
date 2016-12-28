@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
+current-version: 39.1.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CEMCopyEmojiTokens,
+                        _CEMCreateEmojiLocaleData, _CEMEmojiLocaleDataCreateEmojiTokensForString,
+                        _CEMEmojiLocaleDataGetLocaleIdentifier, _CEMEmojiTokenCopyRelatedEmoji,
+                        _CEMEmojiTokenCreatePresentationVariant, _CEMEmojiTokenCreateWithIndex,
+                        _CEMEmojiTokenCreateWithString, _CEMEmojiTokenGetLocaleData,
+                        _CEMEmojiTokenGetSkinTone, _CEMEmojiTokenIsCommon,
+                        _CEMEmojiTokenSupportsPresentationStyle, _CEMEmojiTokensAreEquivalent,
+                        _CEMEnumerateEmojiTokensInStringWithLocaleAndBlock, _CEMStringContainsEmoji,
+                        _CEMStringIsSingleEmoji, _CEMCreateEmojiCharacterSet,
+                        _CEMEmojiLocaleDataEnumerateSearchResultsInStringWithBlock, _CEMEmojiTokenCreateCopyRemovingModifiers,
+                        _CEMEmojiTokenCreateWithLongCharacter, _CEMEmojiTokenGetPresentationStyle,
+                        _CEMEmojiTokenIsSupportedForLocaleAndSearchMode, _CEMEnumerateEmojiTokensInStringWithBlock,
+                        _CEMLongCharacterIsEmoji ]
+...

@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUI.framework/AccessibilityUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AXUIErrorDomainCommunication,
+                        _AXUIErrorDomainServiceEntitlementMismatch, _AXUIErrorDomainServiceMessageHandling,
+                        __AXUIMessageReplyKeyClientRegistrationWithServerDidSucceed, __AXUIMessageReplyKeyErrorDescription,
+                        __AXUIServiceDescription, __AXUIServiceMessageKeyInitializationMessage,
+                        __AXUIServiceMessageKeyMessageWasEmpty, __AXUIServiceName,
+                        _AXUIErrorDomainProtocol, _AXUIErrorDomainValidation,
+                        __AXUIMessageReplyKeyErrorDomain, __AXUIServiceMessageKeyMessageIdentifier,
+                        __AXUIServiceMessageKeyServiceBundleName ]
+    objc-classes:     [ _AXUIClient,
+                        _AXUIMessageContext, _AXUIMessageSender,
+                        _AXUIUtilities, _AXUIClientConnection,
+                        _AXUIMessageReplyHandler ]
+...

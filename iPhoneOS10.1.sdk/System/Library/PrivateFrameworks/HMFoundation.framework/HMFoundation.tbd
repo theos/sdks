@@ -1,0 +1,66 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _HMFDispatchQueueName,
+                        _HMFGetLogCategory, _HMFHTTPHostHeaderFieldKey,
+                        _HMFHTTPMessageHeaderFieldContentTypeKey, _HMFHTTPMessageHeaderFieldTransferEncodingKey,
+                        _HMFLogCategoryDefault, _HMFNetServiceDidStartMonitoringInternalNotification,
+                        _HMFPowerManagerBatteryLevelDidChangeNotification, _HMFProductClassFromString,
+                        _HMFProductInfoBlowfishOSVersion, _HMFProductInfoBugleOSVersion,
+                        _HMFProductInfoCoralOSVersion, _HMFProductInfoDonnerTideOSVersion,
+                        _HMFProductInfoMonarchOSVersion, _HMFProductInfoUnionOSVersion,
+                        _HMFProductPlatformFromString, _HMFSystemInfoNameNotificationKey,
+                        _HMFoundationVersionNumber, _NSOperatingSystemVersionToString,
+                        _kDumpStateAccessoryCategoryKey, _kDumpStateAccessoryProfileKey,
+                        _kDumpStateActionSetKey, _kDumpStateBridgeAccessoryKey,
+                        _kDumpStateBridgedAccessoryKey, _kDumpStateBulletinNotificationGroupKey,
+                        _kDumpStateBulletinNotificationKey, _kDumpStateCurrentUser,
+                        _kDumpStateHomeDaemonVersionKey, _kDumpStateHomeManagerKey,
+                        _kDumpStateIncomingInvitesKey, _kDumpStateKeychainItemKey,
+                        _kDumpStateLocationKey, _kDumpStateMetadataKey,
+                        _kDumpStatePredicateKey, _kDumpStateRemovedUserKey,
+                        _kDumpStateRoomKey, _kDumpStateServiceGroupKey,
+                        _kDumpStateStateKey, _kDumpStateTimerTriggerKey,
+                        _kDumpStateUserKey, _kDumpStateZoneKey,
+                        _milliseconds, _tagFromUUID,
+                        _HMFErrorDomain, _HMFHTTPMessageHeaderFieldContentLengthKey,
+                        _HMFHTTPServerDefaultConnectionIdleTimeout, _HMFOperatingSystemVersionCompare,
+                        _HMFProductClassToString, _HMFProductInfoButlerOSVersion,
+                        _HMFProductInfoEagleOSVersion, _HMFProductInfoWhitetailOSVersion,
+                        _HMFSystemInfoNameUpdatedNotification, __HMFBridgeTransferIfType,
+                        _kDumpStateAccessoryTransportKey, _kDumpStateBridgeableAccessoryKey,
+                        _kDumpStateBulletinNotificationGroupServicesKey, _kDumpStateEventKey,
+                        _kDumpStateHomeNotificationRegistrationsKey, _kDumpStateKeychainKey,
+                        _kDumpStateOutgoingInvitesKey, _kDumpStateResidentKey,
+                        _kDumpStateServiceKey, _kDumpStateTriggerKey,
+                        _kIndentLevel, _randomDataWithLength ]
+    objc-classes:     [ _HMFBlockOperation,
+                        _HMFExponentialBackoffTimer, _HMFHTTPClientConnection,
+                        _HMFHTTPRequestHandler, _HMFHTTPResponse,
+                        _HMFHTTPServer, _HMFMemoryMonitor,
+                        _HMFMessageDestination, _HMFMessageInternal,
+                        _HMFMutableHTTPRequest, _HMFMutableMessage,
+                        _HMFNetAddress, _HMFNetManager,
+                        _HMFNetService, _HMFPowerLogger,
+                        _HMFProductInfo, _HMFTimedBlockedOperation,
+                        _HMFWeakObject, _HMMsgHandler,
+                        __HMFCFHTTPMessage, __HMFCFHTTPServerConnection,
+                        __HMFCFHTTPServerResponse, __HMFNetAddressIPV4,
+                        __HMFNetManagerWoWAssertion, __HMFNetServiceMonitor,
+                        _HMFDumpCategory, _HMFHTTPRequest,
+                        _HMFHTTPResponseInternal, _HMFMessage,
+                        _HMFMessageTransport, _HMFMutableNetService,
+                        _HMFNetMonitor, _HMFPowerManager,
+                        _HMFTimer, _HMUIndent,
+                        __HMFCFHTTPServerRequest, __HMFNetAddressIPV6 ]
+    objc-ivars:       [ _HMFMutableNetService._port,
+                        _HMFNetService._addresses, _HMFNetService._internal,
+                        _HMFNetService._port, _HMFTimer._leeway,
+                        _HMFTimer._timeInterval, _HMFNetService._TXTRecord,
+                        _HMFNetService._name, _HMFNetService._type ]
+...

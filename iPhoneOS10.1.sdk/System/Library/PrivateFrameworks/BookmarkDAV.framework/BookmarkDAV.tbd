@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BookmarkDAV.framework/BookmarkDAV
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BABookmarkCopyURL_Safe,
+                        _cdXBELBookmark, _cdXBELHref,
+                        _cdXBELMetaData, _cdXBELMetaDataOwner,
+                        _cdXBELTitle, _cdXBELXbel,
+                        _cdXMLBookmarkDAVBookmarkData, _cdXMLBookmarkDAVBookmarkHomeSet,
+                        _cdXMLBookmarkDAVGetPTag, _cdXMLBookmarkDAVRootCTag,
+                        _cdXMLMMeBookmarkDAVURI, _safeStringFromError,
+                        _bookmarkSyncLog, _cdXBELInfo,
+                        _cdXBELPosition, _cdXMLBookmarkDAVBookmarkBarFolder,
+                        _cdXMLBookmarkDAVBookmarkMenuFolder, _cdXMLBookmarkDAVRootSyncToken,
+                        _formatStringStrippedOfVisibilitySpecifiers ]
+    objc-classes:     [ _BookmarkDAVBookmark,
+                        _BookmarkDAVFolder, _BookmarkDAVGetAccountPropertiesTaskGroup,
+                        _BookmarkDAVRecursiveContainerSyncTaskGroup, _BookmarkDAVSyncDriver,
+                        _BookmarkDAVBulkPostTask, _BookmarkDAVMultiGetTask,
+                        _BookmarkDAVSyncData ]
+    objc-ivars:       [ _BookmarkDAVBookmark._appleAttributeString,
+                        _BookmarkDAVBookmark._bookmarkURL, _BookmarkDAVBookmark._ignoreLevel,
+                        _BookmarkDAVBookmark._parseState, _BookmarkDAVBookmark._syncKey,
+                        _BookmarkDAVBulkPostTask._checkCTagURL, _BookmarkDAVBulkPostTask._nextRootCTag,
+                        _BookmarkDAVBulkPostTask._parsedBookmarks, _BookmarkDAVBulkPostTask._parsedFolders,
+                        _BookmarkDAVFolder._appleAttributes, _BookmarkDAVFolder._bulkParsedPTag,
+                        _BookmarkDAVFolder._childrenOrder, _BookmarkDAVSyncDriver._changeToken,
+                        _BookmarkDAVSyncDriver._forceSafariOrdering, _BookmarkDAVSyncDriver._getAccountPropertiesHandler,
+                        _BookmarkDAVSyncDriver._homeURL, _BookmarkDAVSyncDriver._outstandingTaskGroups,
+                        _BookmarkDAVSyncDriver._pushTransport, _BookmarkDAVSyncDriver._saveDBBlock,
+                        _BookmarkDAVSyncDriver._taskManager, _BookmarkDAVSyncDriver._topLevelSyncData,
+                        _BookmarkDAVBookmark._appleAttributes, _BookmarkDAVBookmark._name,
+                        _BookmarkDAVBulkPostTask._checkCTag, _BookmarkDAVBulkPostTask._nextRootSyncToken,
+                        _BookmarkDAVBulkPostTask._parsedFoldersByURL, _BookmarkDAVFolder._bulkUploadErrorItem,
+                        _BookmarkDAVSyncDriver._closeDBBlock, _BookmarkDAVSyncDriver._getDBBlock,
+                        _BookmarkDAVSyncDriver._pushKey, _BookmarkDAVSyncDriver._syncHandler ]
+...

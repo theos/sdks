@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 121B8CD0-7C3A-3D40-B27B-2470D87332F6', 'armv7s: 846AF18E-29DA-3511-89F6-65B4C6615AF1', 
+                   'arm64: 7B7F3D61-A7EB-3DEC-8111-05FFF3DD5395' ]
+platform:        ios
+install-name:    /usr/lib/libipconfig.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _IPConfigurationServiceCopyInformation, _IPConfigurationServiceCreate, 
+                       _IPConfigurationServiceGetNotificationKey, _IPConfigurationServiceRefreshConfiguration, 
+                       _ipconfigVersionNumber, _ipconfigVersionString, _kIPConfigurationServiceOptionEnableDAD, 
+                       _kIPConfigurationServiceOptionIPv6Entity, _kIPConfigurationServiceOptionIPv6LinkLocalAddress, 
+                       _kIPConfigurationServiceOptionMTU, _kIPConfigurationServiceOptionPerformNUD, 
+                       _my_CFStringAppendBytesAsHex, _my_CFStringCreateWithIPAddress, 
+                       _my_CFStringCreateWithIPv6Address, _my_CFStringToCString ]
+...

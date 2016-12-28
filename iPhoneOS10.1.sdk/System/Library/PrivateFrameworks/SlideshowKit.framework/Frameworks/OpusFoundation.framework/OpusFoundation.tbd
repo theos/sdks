@@ -1,0 +1,68 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusFoundation.framework/OpusFoundation
+current-version: 0.0.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CLLocationCoordinate2DFromString,
+                        _NSIndexPath2DFromString, _NSStringFromMKCoordinateRegion,
+                        _NSStringFromUIColor, _OFABRecordMobileMeUsernames,
+                        _OFAVAssetTranscode, _OFBenchmarkGetMemory,
+                        _OFCGImageCreateThumbnailWithURL, _OFCGImageCreateWithURL,
+                        _OFCGImageJPEGRepresentation, _OFCGImageSaveJPEGToURL,
+                        _OFCGImageSizeWithURL, _OFCGRectMakeFitSizeInRect,
+                        _OFCreateMultiplyColorFilter, _OFErrorDomain,
+                        _OFLinearInterpolationBetweenTwoValues, _OFLoggerSetLevel,
+                        _OFMainScreenSizeWithScaleFactor, _OFUIWindowDraggingBeganNotificationName,
+                        _OFUIWindowDraggingNotificationDraggingSessionUserInfoKey, _OFUTTypePreferredIdentifier,
+                        _OpusFoundationVersionString, _UIPageViewControllerOptionInterPageSpacingKey,
+                        __OFAVAssetTranscodeCreateSession, __ParseNumbers,
+                        _kCGImageSourceUseHardwareAcceleration, _kOFReachabilityChangedNotification,
+                        _kOFTextBackroundColorID, _kOFTextFontFamilyID,
+                        _kOFTextFontSizeID, _kOFTextFontStyleID,
+                        _kOFTextForegroundColorID, _kOFTextKernID,
+                        _kOFTextShadowBlurRadiusID, _kOFTextShadowID,
+                        _kOFTextStrikethroughID, _kOFTextStrokeWidthID,
+                        _kOFTextTextID, _kOFTextUnderlineColorID,
+                        _kOFTextUnderlinePatternID, _kUIPageViewControllerNavigationDirectionUndetermined,
+                        _MKCoordinateRegionFromString, _NSStringFromNSIndexPath2D,
+                        _OFAVAssetCreateThumbnailWithURL, _OFCGImageCreateThumbnailWithData,
+                        _OFCGImageDecompressImage, _OFCGImageSavePNGToURL,
+                        _OFCenterBetweenTwoPoints, _OFLinearInterpolationBetweenTwoPoints,
+                        _OFMainScreenSize, _OFUIWindowDraggingEndedNotificationName,
+                        _OpusFoundationVersionNumber, _UIPageViewControllerOptionSpineLocationKey,
+                        __mobileMeUsernameFromAddress, _kOFTextAlignmentID,
+                        _kOFTextFontNameID, _kOFTextFontWeightID,
+                        _kOFTextLigatureID, _kOFTextShadowOffsetID,
+                        _kOFTextSuperscriptID, _kOFTextUnderlineID,
+                        _kOFTextUnderlineThicknessID ]
+    objc-classes:     [ _OFAudioCaptureManager,
+                        _OFCLGeocoderOperation, _OFEmitterView,
+                        _OFImageCache, _OFKeychainInternetAccount,
+                        _OFLayoutStep, _OFLocationCache,
+                        _OFMediaMetadataCache, _OFMediaMetadataDatabaseCacheEntry,
+                        _OFMetadataFileCache, _OFNSOperation,
+                        _OFNSURLValueTransformer, _OFPropertyAnimation,
+                        _OFReachability, _OFRescaler,
+                        _OFUIButton, _OFUICircularPagingViewController,
+                        _OFUIDismissalView, _OFUIGridViewCell,
+                        _OFUIGridViewItem, _OFUIPagingView,
+                        _OFUIScrollView, _OFUITableViewController,
+                        _OFUITrackingPinchView, _OFUIViewController,
+                        _OFUIWindowDraggingAutoscroll, _OFUIWindowDraggingItem,
+                        _OFViewProxy, __OFPageViewControllerContentView,
+                        __OFViewControllerTransitionContext, _OFAudioRecorder,
+                        _OFError, _OFLRUCache,
+                        _OFLogger, _OFMetadataCache,
+                        _OFNSOperationQueue, _OFPropertyAnimationLayer,
+                        _OFTextConversion, _OFUICollectionFlowView,
+                        _OFUIGridViewController, _OFUIPagingViewController,
+                        _OFUITrackingPinchGestureRecognizer, _OFUIWindow,
+                        _OFUIWindowDraggingSession, __OFPageViewControllerContentViewLayer ]
+    objc-ivars:       [ _OFRescalableSegment._compressibility,
+                        _OFRescalableSegment._expandability, _OFRescalableSegment._minimumDuration,
+                        _OFUICircularPagingView._gapBetweenPages, _OFRescalableSegment._defaultDuration,
+                        _OFRescalableSegment._maximumDuration ]
+...

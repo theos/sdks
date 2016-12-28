@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MCMErrorDomain,
+                        _MCMPathArgumentErrorKey, _MCMSourceFileLineErrorKey,
+                        _MCMFunctionNameErrorKey ]
+    objc-classes:     [ _MCMAppContainer,
+                        _MCMContainer, _MCMDataContainer,
+                        _MCMInternalDaemonDataContainer, _MCMPluginKitPluginDataContainer,
+                        _MCMSharedSystemDataContainer, _MCMTempDirDataContainer,
+                        _MCMVPNPluginDataContainer, _MCMXPCServiceDataContainer,
+                        _MCMAppDataContainer, _MCMFrameworkContainer,
+                        _MCMSharedDataContainer, _MCMVPNPluginContainer ]
+...

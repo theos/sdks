@@ -1,0 +1,47 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SearchUI.framework/SearchUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/SearchUIFoundation.framework/SearchUIFoundation ]
+    symbols:          [ _SearchUIAlignmentCenter,
+                        _SearchUIAlignmentRight, _SearchUICardSectionTypeKeyValueData,
+                        _SearchUICardSectionTypeNowPlaying, _SearchUICardSectionTypeRow,
+                        _SearchUICardSectionTypeSpacer, _SearchUICardSectionTypeTitle,
+                        _SearchUICardSectionTypeTwitter, _SearchUIStyleIsVibrant,
+                        _SearchUIVersionString, _SearchUIAlignmentLeft,
+                        _SearchUICardSectionTypeMovie, _SearchUICardSectionTypeScoreSummary,
+                        _SearchUICardSectionTypeTrailers, _SearchUIVersionNumber ]
+    objc-classes:     [ _NUIContainerStackView,
+                        _NUIDummyClass, _SearchUIAccessoryViewController,
+                        _SearchUIAppIconImageCache, _SearchUIAppStoreButtonViewController,
+                        _SearchUIAuxiliaryTextViewController, _SearchUICalendarStore,
+                        _SearchUICardSectionFormatter, _SearchUICardViewController,
+                        _SearchUIChevronViewController, _SearchUIContactStore,
+                        _SearchUIContactsThumbnailView, _SearchUIDescriptionCardSectionView,
+                        _SearchUIDirectionsButtonViewController, _SearchUIFirstTimeExperienceViewController,
+                        _SearchUIFormatter, _SearchUIIconViewContainer,
+                        _SearchUIInlineCardSectionsTableViewCell, _SearchUIKeyboardableTableViewController,
+                        _SearchUIMediaPlayerViewController, _SearchUIMovieCardSectionView,
+                        _SearchUINowPlayingLabelContainer, _SearchUIPeekViewController,
+                        _SearchUIPlayButtonViewController, _SearchUIRichTextField,
+                        _SearchUIRowCardSectionView, _SearchUIScoreSummaryCardSectionView,
+                        _SearchUISingleResultTableViewCell, _SearchUITableHeaderCardSectionView,
+                        _SearchUITableRowCardSectionView, _SearchUITableRowHeaderCardSectionView,
+                        _SearchUITableViewCell, _SearchUITextAreaView,
+                        _SearchUITitleCardSectionView, _SearchUITrailerView,
+                        _SearchUITwitterCardSectionView, _SearchUIVibrantLabel,
+                        _SearchUIWebClipIconImage, _NUIContainerView,
+                        _SearchUIAppIconButton, _SearchUIAutoLayout,
+                        _SearchUICardDetailsView, _SearchUICenteredResultTableViewCell,
+                        _SearchUIContactViewController, _SearchUIDirectionsButton,
+                        _SearchUIForceTouchGestureRecognizer, _SearchUIImageView,
+                        _SearchUILocalMediaController, _SearchUINowPlayingCardSectionView,
+                        _SearchUIPlayButton, _SearchUIRichTitleCardSectionView,
+                        _SearchUISimpleMultiResultTableViewCell, _SearchUITableLayoutInfo,
+                        _SearchUITableView, _SearchUIThumbnailView,
+                        _SearchUITrailersCardSectionView, _SearchUIVibrantView ]
+...

@@ -1,0 +1,62 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AirTraffic.framework/AirTraffic
+current-version: 116.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ATCrashReportInternalLogs,
+                        _ATDataRestoreCompleteNotification, _ATDriveCommandCopyItems,
+                        _ATDriveCommandDirectoryContents, _ATDriveCommandFreeSpace,
+                        _ATDriveCommandParamsCount, _ATDriveCommandParamsPaths,
+                        _ATDriveCommandParamsResults, _ATDriveCommandProgress,
+                        _ATDriveCommandUploadFile, _ATDriveDataClass,
+                        _ATGetDiskUsageForPath, _ATGetPhysicalSizeForLogicalSize,
+                        _ATInitiateDownloadSessionsNotification, _ATLogLevel,
+                        _ATMachDownloadObserverServiceName, _ATMachServiceName,
+                        _ATOutputLevel, _ATSessionTypeDeviceSync,
+                        _ATSessionTypeRestore, _ATSessionsDidChangeNotification,
+                        _ATSetLogOutputLevel, _ATStartupCompleteNotification,
+                        __ATLog, _alloc_path,
+                        _count_thing, _kATLogFacilityDataMigrator,
+                        _kATLogFacilityHost, _kATLogFacilityWaker,
+                        _kATReportingAssetCancelledKey, _kATReportingAssetStoreDownloadAttemptKey,
+                        _kATReportingAssetStoreDownloadCancelledKey, _kATReportingAssetStoreDownloadDurationKey,
+                        _kATReportingAssetStoreDownloadSuccessKey, _kATReportingDeviceSyncAssetTotalCount,
+                        _kATReportingDeviceSyncAttemptsKey, _kATReportingDeviceSyncInitTimeKey,
+                        _kATReportingDeviceSyncLargeAssetRate, _kATReportingDeviceSyncSmallAssetRate,
+                        _kATReportingDeviceSyncSuccessKey, _kATReportingIDSWakeupDeliveryTimeKey,
+                        _kATReportingIDSWakeupTimeoutsKey, _kATReportingITunesSyncFailuresKey,
+                        _kATReportingITunesSyncSuccessKey, _safe_free,
+                        _ATDataMigrationCompleteNotification, _ATDriveCommandCreateDirectory,
+                        _ATDriveCommandMoveItems, _ATDriveCommandParamsPercentage,
+                        _ATDriveCommandRemoveItems, _ATDumpDebugInformationNotification,
+                        _ATGetUsageForPath, _ATLogV,
+                        _ATMachSessionServiceName, _ATSessionTypeDownload,
+                        _ATSetLogLevel, _ATStringWithArray,
+                        _count_directory, _kATLogFacilityFramework,
+                        _kATReportingAssetAttemptKey, _kATReportingAssetStoreDownloadAuthFailureKey,
+                        _kATReportingAssetStoreDownloadFailureKey, _kATReportingDeviceSyncAssetTotalSize,
+                        _kATReportingDeviceSyncInitialSyncDelayKey, _kATReportingDeviceSyncSmallReconcileRate,
+                        _kATReportingIDSWakeupFailuresKey, _kATReportingITunesSyncInterruptionsKey ]
+    objc-classes:     [ _ATAirlock,
+                        _ATCodableStream, _ATFileBuffer,
+                        _ATLegacyMessage, _ATMessageLink,
+                        _ATRemoteFileManager, _ATResponse,
+                        _ATService, _ATSession,
+                        _ATStatus, _ATStoreInfo,
+                        _ATXPCMessage, _ATXPCServer,
+                        _ATAsset, _ATFileBufferedPipe,
+                        _ATMessageLinkProxy, _ATRollableLog,
+                        _ATSessionTask, _ATXPCConnection ]
+    objc-ivars:       [ _ATLegacyMessage._dataClass,
+                        _ATLegacyMessage._messageType, _ATLegacyMessage._params,
+                        _ATLegacyMessage._result, _ATLegacyMessage._sig,
+                        _ATRollableLog._baseFilename, _ATRollableLog._fdWatcher,
+                        _ATRollableLog._generationalFilenameFormat, _ATRollableLog._logQueue,
+                        _ATStoreInfo._assetDictionary, _ATStoreInfo._downloadDictionary,
+                        _ATLegacyMessage._messageId, _ATLegacyMessage._payload,
+                        _ATLegacyMessage._timestamp, _ATRollableLog._fh,
+                        _ATRollableLog._logRequestQueue ]
+...

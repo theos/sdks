@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleSerialMultiplexer.framework/AppleSerialMultiplexer
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ZN12ASMInterface21hasFatalErrorOccurredEv,
+                        __ZN12ASMInterfaceC2Ev, __ZN12ASMInterfaceD1Ev,
+                        __ZN13ASMParametersC1E7ASMMode9ASMSubsetthhhhh, __ZN13ASMParametersC2E7ASMMode9ASMSubsetthhhhh,
+                        __ZN16ASMChannelBypass6createERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE, __ZN16ASMChannelBypassD0Ev,
+                        __ZN16ASMChannelBypassD2Ev, __ZN16ASMDLCIInterfaceD0Ev,
+                        __ZN16ASMDLCIInterfaceD2Ev, __ZN23ASMNotificationListener10initializeEP11__CFRunLoop,
+                        __ZN23ASMNotificationListener19setDormancyIntervalEjj, __ZN23ASMNotificationListener20setLinkQualityMetricEi,
+                        __ZN23ASMNotificationListener23registerHandlerInternalEPNS_7HandlerE, __ZN23ASMNotificationListener7connectEv,
+                        __ZN23ASMNotificationListenerC1Ev, __ZN23ASMNotificationListenerD1Ev,
+                        __ZN8ASMUtils14setWaterLevelsEi12ASMDirectionjj, __ZN8ASMUtils7getDLCIEiPj,
+                        __ZTI16ASMChannelBypass, __ZTS12ASMInterface,
+                        __ZTS16ASMDLCIInterface, __ZTV16ASMChannelBypass,
+                        __ZTV16ASMDLCIInterface, __ZN12ASMInterface6createERK13ASMParameters,
+                        __ZN12ASMInterfaceD2Ev, __ZN13ASMParametersC2ERKS_,
+                        __ZN16ASMChannelBypassD1Ev, __ZN16ASMDLCIInterfaceD1Ev,
+                        __ZN23ASMNotificationListener15getDormancyTimeEv, __ZN23ASMNotificationListener22getUplinkTransferStatsEjPyS0_,
+                        __ZN23ASMNotificationListener8callbackEPvjjS0_, __ZN23ASMNotificationListenerD2Ev,
+                        __ZTI12ASMInterface, __ZTS16ASMChannelBypass,
+                        __ZTV12ASMInterface ]
+...

@@ -1,0 +1,46 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CDGetLogHandle,
+                        _CacheDeleteAutoPurgeAllowed, _CacheDeleteCancelPurge,
+                        _CacheDeleteCopyItemizedPurgeableSpace, _CacheDeleteCopyPurgeableSpaceWithInfo,
+                        _CacheDeleteCurrentCacheableSpaceForVolume, _CacheDeleteDoNotAutoPurge,
+                        _CacheDeletePerformOperation, _CacheDeletePurgeSpace,
+                        _CacheDeletePurgeSpaceWithInfoSync, _CacheDeleteRegister,
+                        _CacheDeleteRegisterCallbacks, _CacheDeleteRegisterExtensionCallbacks,
+                        _CacheDeleteRegisterInfoCallbacks, _CacheDeleteServiceRequest,
+                        _CacheDeleteUpdatePurgeable, _CacheManagementObjectEnumerate,
+                        _CallCacheD, _cacheSizeForVolume,
+                        _clearSampleServiceCache, _copySampleServiceCachePath,
+                        _enumerateSampleCacheFiles, _evaluateBoolProperty,
+                        _evaluateStringProperty, _getAllVolumes,
+                        _getFunc, _getRootVolume,
+                        _lowSpaceVolumes, _paddingForVolume,
+                        _populateSampleServiceCache, _quotaVolumes,
+                        _sampleServiceCacheSubPath, _thresholdsForVolume,
+                        _validateTimestamp, _volumeFreespace,
+                        _volumeSize, _CacheDeleteAllowAutoPurge,
+                        _CacheDeleteCopyDemotableApps, _CacheDeleteCurrentCacheableSpace,
+                        _CacheDeleteErrorDomain, _CacheDeletePurgeSpaceWithInfo,
+                        _CacheDeleteRegisterCallback, _CacheDeleteRegisterForProcess,
+                        _CacheDeleteSetCacheable, _CacheManagementRemove,
+                        _clearAllSampleServiceCache, _createCacheDeleteToken,
+                        _evaluateNumberProperty, _getCacheDeleteXattr,
+                        _log_user_defaults, _persistPath,
+                        _readRecentInfoFile, _truncFile,
+                        _validateVolume ]
+    objc-classes:     [ _CDAnonymousXPCService,
+                        _CDNamedXPCService, _CDXPCService,
+                        _CacheDeleteListener, _CacheDeleteRecentInfo,
+                        _CacheDeleteRecentVolumeInfo, _CacheDeleteServiceInfo,
+                        _CacheDeleteServiceListener, _CDAppExtensionService,
+                        _CacheDeleteHostExtensionContext, _CacheDeleteRecentServiceInfo,
+                        _CacheDeleteRemoteExtensionContext ]
+    objc-ivars:       [ _CacheDeleteRecentServiceInfo.diagnostics,
+                        _CacheDeleteRecentServiceInfo.urgencies ]
+...

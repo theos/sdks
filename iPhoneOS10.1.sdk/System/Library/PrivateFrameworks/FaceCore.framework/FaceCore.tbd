@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FaceCore.framework/FaceCore
+current-version: 3.1.9
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FCRDetectionParamDetectionRegion,
+                        _FCRDetectionParamInitialAngle, _FCRExtractionParamEnhancedEyesAndMouthLocalization,
+                        _FCRExtractionParamExtractFaceprint, _FCRExtractionParamExtractSmile,
+                        _FCRFaceBlurScore, _FCRFaceDetectionParameters,
+                        _FCRFaceExpressionLeftEyeClosed, _FCRFaceExpressionRightEyeClosed,
+                        _FCRFaceExpressionSmile, _FCRFaceLandmarkContour,
+                        _FCRFaceLandmarkEyeRight, _FCRFaceLandmarkEyebrowRight,
+                        _FCRFaceLandmarkLipUpper, _FCRFaceLandmarkNose,
+                        _FCRFaceLandmarkNoseTip, _FCRKeypointTrackingParameters,
+                        _FCRSetupParamDetectProfiles, _FCRSetupParamDetectorTypeFaceDetection,
+                        _FCRSetupParamDetectorTypePreciseFaceDetection, _FCRSetupParamNumberOfAngles,
+                        _FCRSetupParamTrackingTypeKeypoints, _FCRSetupParamTrackingTypeStandard,
+                        _FCRStandardTrackingParameters, _FCRDetectionParamEnhancedEyesAndMouthLocalization,
+                        _FCRExtractionParamExtractBlink, _FCRExtractionParamInitialAngle,
+                        _FCRFaceDetectorErrorDomain, _FCRFaceExpressionRightEyeClosedScore,
+                        _FCRFaceLandmarkEyeLeft, _FCRFaceLandmarkLipLower,
+                        _FCRFaceLandmarkNoseCenter, _FCRPreciseDetectionParameters,
+                        _FCRSetupParamDetectorTypeFastFaceDetection, _FCRSetupParamTrackingType,
+                        _FCRSetupParamTrackingTypeNone ]
+    objc-classes:     [ _FCRFace,
+                        _FCRImage, _FCRLandmark,
+                        _FCRFaceDetector ]
+...

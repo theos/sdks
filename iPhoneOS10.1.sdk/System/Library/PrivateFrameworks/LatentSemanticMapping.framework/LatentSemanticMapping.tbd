@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/LatentSemanticMapping.framework/LatentSemanticMapping
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _LSMMapAddCategory,
+                        _LSMMapAddTextWithWeight, _LSMMapCompile,
+                        _LSMMapCopyToken, _LSMMapCreate,
+                        _LSMMapCreateFromURL, _LSMMapCreateTextLanguageModel,
+                        _LSMMapFindToken, _LSMMapGetCategoryCount,
+                        _LSMMapGetProperties, _LSMMapGetTypeID,
+                        _LSMMapSetStopWords, _LSMMapWriteToStream,
+                        _LSMResultCopyToken, _LSMResultCopyWord,
+                        _LSMResultCreate, _LSMResultGetCount,
+                        _LSMResultGetTypeID, _LSMTextAddWord,
+                        _LSMTextCreate, _LSMTextGetTypeID,
+                        _LSMMapAddText, _LSMMapCompileWithBlock,
+                        _LSMMapCreateClusters, _LSMMapCreateWordArray,
+                        _LSMMapGetIndexingPower, _LSMMapSetProperties,
+                        _LSMMapWriteToURL, _LSMResultCopyWordCluster,
+                        _LSMResultGetScore, _LSMTextAddWords ]
+...

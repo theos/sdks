@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FTClientServices.framework/FTClientServices
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FTCLogPrefix,
+                        _FTCServiceAvailabilityDidChangeNotification, _FTCServiceNameCalling,
+                        _FTCServiceNameForServiceType, _FTCServiceNameiMessage,
+                        _FTCServiceTypeForServiceName, _FTCServiceAvailabilityAvailabilityKey,
+                        _FTCServiceNameFaceTime, _FTCServiceNameMadrid ]
+    objc-classes:     [ _FTCServiceAvailabilityCenter ]
+...

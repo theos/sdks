@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/HelpKit.framework/HelpKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _HelpKitVersionNumber,
+                        _gHLPHelpTopicViewSpacerWidth, _kHLPReachabilityChangedNotification,
+                        _HelpKitVersionString, _kHLPHelpTopicViewControllerLastTopicHistoryItem ]
+    objc-classes:     [ _HLPHelpBookController,
+                        _HLPHelpLoadingView, _HLPHelpLocaleController,
+                        _HLPHelpSearchResult, _HLPHelpSectionItem,
+                        _HLPHelpTableOfContentViewController, _HLPHelpTopicItem,
+                        _HLPHelpUsageController, _HLPReachability,
+                        _HLPRemoteDataController, _HLPURLDataCacheController,
+                        _HLPURLSession, _HLPURLSessionTaskHandlers,
+                        _HLPHelpItem, _HLPHelpSearchIndexController,
+                        _HLPHelpTableOfContentCell, _HLPHelpTopicViewController,
+                        _HLPReachabilityManager, _HLPURLImageCacheController ]
+...

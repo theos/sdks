@@ -1,0 +1,55 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PacketFilter.framework/PacketFilter
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PFCheckNATRule,
+                        _PFManagerAddUser, _PFManagerCreate,
+                        _PFManagerErrorLog, _PFManagerInfoLog,
+                        _PFManagerNoticeLog, _PFManagerReleaseUser,
+                        _PFUserAddRule, _PFUserClearRules,
+                        _PFUserCommitRules, _PFUserCreate,
+                        _PFUserDeleteRules, _PFUserInsertRule,
+                        _PFUserNATLook, _PFUserRelease,
+                        _PFXPCGetResponse, _PacketFilterVersionNumber,
+                        _kPFAction, _kPFAirDrop,
+                        _kPFAny, _kPFBase,
+                        _kPFBase_v4, _kPFBytesIn,
+                        _kPFCustomFirewall, _kPFDirection,
+                        _kPFExtFilter, _kPFFTPProxy,
+                        _kPFFlags, _kPFGroup,
+                        _kPFHost_v6, _kPFInterface,
+                        _kPFKeepState, _kPFMDNS,
+                        _kPFNATDest, _kPFNATRDRAddress,
+                        _kPFNLC, _kPFPacketsOut,
+                        _kPFProtocol, _kPFRTableID,
+                        _kPFRuleID, _kPFServerFirewall,
+                        _kPFShared_v6, _kPFSubAddressLabel,
+                        _kPFSubDummyNetPipeType, _kPFSubGroupName,
+                        _kPFSubHighGroupID, _kPFSubHighUserID,
+                        _kPFSubICMPType, _kPFSubLogTo,
+                        _kPFSubLowPort, _kPFSubNegated,
+                        _kPFSubPortOperator, _kPFSubReturnICMPCode,
+                        _kPFSubReturnType, _kPFSubScrubMaxMSS,
+                        _kPFSubTag, _kPFSubUserName,
+                        _kPFTagDict, _kPFUnknown,
+                        _kPFVPN, _PFCheckRule,
+                        _PFManagerDebugLog, _PFManagerLogOpen,
+                        _PFManagerSendMessage, _PFUserClearStates,
+                        _PFUserDeleteRule, _PFUserInsertRule_S,
+                        _PFXPCCleanup, _PacketFilterVersionString,
+                        _kPFAllowOpts, _kPFBase_nat64,
+                        _kPFBytesOut, _kPFDummyNet,
+                        _kPFFamily, _kPFHost_v4,
+                        _kPFInternetSharing, _kPFMaxStates,
+                        _kPFNATSrc, _kPFPortMapping,
+                        _kPFReturnOptions, _kPFShared_v4,
+                        _kPFSubDummyNetPipe, _kPFSubGroupOperator,
+                        _kPFSubICMPCode, _kPFSubLowGroupID,
+                        _kPFSubNotTagged, _kPFSubReturnTTL,
+                        _kPFSubScrubMinTTL, _kPFSubUserOperator,
+                        _kPFUser ]
+...

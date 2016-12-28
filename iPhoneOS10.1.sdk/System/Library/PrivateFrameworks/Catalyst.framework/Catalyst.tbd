@@ -1,0 +1,36 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Catalyst.framework/Catalyst
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CATAssertIsNotQueue,
+                        _CATErrorDomain, _CATErrorWithDomainCodeAndUserInfo,
+                        _CATGetCatalystQueue, _CATSetCatalystQueue,
+                        _CatalystVersionNumber, __CATTaskSessionOperationRemoteUUID,
+                        _CATAssertIsQueue, _CATFormattedStringForKey,
+                        _CATUnlocalizedKey, _CatalystVersionString ]
+    objc-classes:     [ _CATAddress,
+                        _CATBlockOperationObserver, _CATEndPoint,
+                        _CATHTTPMessageParser, _CATMessage,
+                        _CATNetworkReachability, _CATOperation,
+                        _CATProperty, _CATRemoteConnectionSocketOptions,
+                        _CATRemoteTransport, _CATSessionMessage,
+                        _CATSessionMessageInvalidate, _CATSessionMessageResumed,
+                        _CATState, _CATTaskClient,
+                        _CATTaskMessageCancel, _CATTaskMessageFetchProgress,
+                        _CATTaskMessageProgressUpdate, _CATTaskOperation,
+                        _CATTaskRequest, _CATTaskServer,
+                        _CATTransition, _CATXPCTransport,
+                        __CATObserverManager, __CATRemoteConnectionSendDataContext,
+                        __CATRemoteTransportSendMessageOperation, __CATXPCTransportSendMessageOperation,
+                        _CATBatchRemoteTaskOperation, _CATEvent,
+                        _CATMutableTaskProgress, _CATOperationQueue,
+                        _CATRemoteTaskOperation, _CATSessionMessageDidInvalidate,
+                        _CATSocket, _CATTaskMessage,
+                        _CATTaskMessageIncrementalProgress, _CATTaskProgress,
+                        _CATTaskSession, __CATErrorBundleHelper,
+                        __CATRemoteConnectionStreamEventContext, __CATTransportDidSendMessageOperation ]
+...

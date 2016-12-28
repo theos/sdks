@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Message.framework/MailServices/POP.framework/POP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MFDeletePOPMessagesCompleted,
+                        _MF_POPAccountDeleteMessagesAfterIntervalKey, _MF_POPAccountDeleteMessagesRightAwayKey,
+                        _MF_POPAccountDeletionPolicy, __addValuesToMutableArray,
+                        _MFDeletePOPMessagesStarted, _MF_POPAccountDeleteMessagesWhenTransferredOutOfInboxKey,
+                        _MF_POPAccountNeverDeleteMessagesKey ]
+    objc-classes:     [ _MFAPOPAuthScheme,
+                        _MFLibraryPOPStore, _MFPOP3Fetcher,
+                        _MFPOPMessage, _POPAccount,
+                        _MFAPOPConnection, _MFPOPDownloadQueue ]
+    objc-ivars:       [ _MFLibraryPOPStore._connection,
+                        _MFPOP3Connection._apopTimeStamp, _MFPOP3Connection._listResults,
+                        _MFPOP3Connection._numberOfMessagesAvailable, _MFPOP3Connection._sendBuffer,
+                        _MFPOPDownloadQueue._library, _MFPOPDownloadQueue._uidStore,
+                        _MFPOPMessage._accountURL, _MFPOPMessage._messageDataIsComplete,
+                        _MFPOPMessage._messageNumber, _POPAccount._connection,
+                        _POPAccount._connectionTimeout, _POPAccount._currentUIDs,
+                        _POPAccount._fetcherNeedsReset, _POPAccount._newestMessageUID,
+                        _POPAccount._oldestMessageUID, _POPAccount._shouldAttemptAPOP,
+                        _MFPOP3Connection._accountURL, _MFPOP3Connection._messageIdsByNumber,
+                        _MFPOP3Connection._state, _MFPOPDownloadQueue.startDate,
+                        _MFPOPMessage._messageID, _POPAccount._connectionActivityLock,
+                        _POPAccount._fetchMonitor, _POPAccount._numberOfKnownUIDs,
+                        _POPAccount._sharedConnectionCondition ]
+...

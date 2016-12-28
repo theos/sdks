@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftCoreAudio.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TFE9CoreAudioSRCfVSC11AudioBufferGSRx_,
+                        __TFE9CoreAudioVSC11AudioBufferCurfTGSrx_16numberOfChannelsSi_S0_, __TFFV9CoreAudio35UnsafeMutableAudioBufferListPointerm9subscriptFSiVSC11AudioBufferU_T_,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerCfGSqGSpVSC15AudioBufferList__GSqS0__, __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerg13unsafePointerGSPVSC15AudioBufferList_,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerg5countSi, __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerg9subscriptFSiVSC11AudioBuffer,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerm5countSi, __TFV9CoreAudio35UnsafeMutableAudioBufferListPointers20unsafeMutablePointerGSpVSC15AudioBufferList_,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointers9subscriptFSiVSC11AudioBuffer, __TMaV9CoreAudio35UnsafeMutableAudioBufferListPointer,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_12makeIteratorfT_wx8Iterator, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_6prefixfT4upTowx5Index_wx11SubSequence,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_6suffixfT4fromwx5Index_wx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_g5firstGSqWx8Iterator7Element__,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_g9subscriptFGVs5Rangewx5Index_wx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers16MutableIndexableS_FS1_g10startIndexwx5Index,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers16MutableIndexableS_FS1_g9subscriptFwx5Indexwx8_Element, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers16MutableIndexableS_FS1_s9subscriptFwx5Indexwx8_Element,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FS1_42_withUnsafeMutableBufferPointerIfSupportedurfzFzTGSpWx8Iterator7Element__Si_qd__GSqqd___, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FS1_g9subscriptFwx5IndexWx8Iterator7Element_,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FS1_m9subscriptFwx5IndexWx8Iterator7Element_, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FS1_s9subscriptFwx5IndexWx8Iterator7Element_,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_13_copyContentsfT12initializingGSpWx8Iterator7Element___GSpWxS2_S3___, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_24_copyToNativeArrayBufferfT_GVs22_ContiguousArrayBufferWx8Iterator7Element__,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_3mapurfzFzWx8Iterator7Element_qd__GSaqd___, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_6filterfzFzWx8Iterator7Element_SbGSaWxS2_S3___,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_6suffixfSiwx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_8dropLastfSiwx11SubSequence,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_g19underestimatedCountSi, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers9IndexableS_FS1_g8endIndexwx5Index,
+                        __TWPV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_, __TWPV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_,
+                        __TWPV9CoreAudio35UnsafeMutableAudioBufferListPointers9IndexableS_, __TWaV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_,
+                        __TWaV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_, __TWaV9CoreAudio35UnsafeMutableAudioBufferListPointers9IndexableS_,
+                        __TZFE9CoreAudioVSC15AudioBufferList8allocatefT14maximumBuffersSi_VS_35UnsafeMutableAudioBufferListPointer, __swift_FORCE_LOAD_$_swiftCoreAudio,
+                        __TFE9CoreAudioSrCfVSC11AudioBufferGSrx_, __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerCfGSpVSC15AudioBufferList_S0_,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerg20unsafeMutablePointerGSpVSC15AudioBufferList_, __TFV9CoreAudio35UnsafeMutableAudioBufferListPointerm20unsafeMutablePointerGSpVSC15AudioBufferList_,
+                        __TFV9CoreAudio35UnsafeMutableAudioBufferListPointers5countSi, __TMnV9CoreAudio35UnsafeMutableAudioBufferListPointer,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_6prefixfT7throughwx5Index_wx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers10CollectionS_FS1_g7isEmptySb,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers16MutableIndexableS_FS1_g8endIndexwx5Index, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FFS1_m9subscriptFGVs5Rangewx5Index_wx11SubSequenceU_T_,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers17MutableCollectionS_FS1_m9subscriptFGVs5Rangewx5Index_wx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_12makeIteratorfT_wx8Iterator,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_31_customContainsEquatableElementfWx8Iterator7Element_GSqSb_, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_6prefixfSiwx11SubSequence,
+                        __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_FS1_9dropFirstfSiwx11SubSequence, __TTWV9CoreAudio35UnsafeMutableAudioBufferListPointers9IndexableS_FS1_g9subscriptFwx5Indexwx8_Element,
+                        __TWPV9CoreAudio35UnsafeMutableAudioBufferListPointers8SequenceS_, __TWaV9CoreAudio35UnsafeMutableAudioBufferListPointers16MutableIndexableS_,
+                        __TZFE9CoreAudioVSC15AudioBufferList11sizeInBytesfT14maximumBuffersSi_Si ]
+...

@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DALDAP.framework/DALDAP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kLDAPScopeBase,
+                        _kLDAPScopeSubtree, _kLDAPSearchContextSearchBaseKey,
+                        _kLDAPSearchContextSearchDescriptionKey, _kLDAPScopeOneLevel,
+                        _kLDAPSearchContextScopeKey ]
+    objc-classes:     [ _LDAPAccount,
+                        _LDAPLocalDBHelper, _LDAPSearchTask,
+                        _LDAPTask, _LDAPGetDefaultSearchBaseTask,
+                        _LDAPSearchSettings ]
+...

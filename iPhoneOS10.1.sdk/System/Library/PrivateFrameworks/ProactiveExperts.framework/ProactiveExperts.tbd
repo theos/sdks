@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ProactiveExperts.framework/ProactiveExperts
+current-version: 0.0.0
+compatibility-version: 0.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PEXCollapseWhitespaceAndStrip,
+                        _PEXKeysToFetchPeople, _ProactiveExpertsVersionNumber,
+                        __kPEXMetricsConnectionsConsumerMaps, __kPEXMetricsConnectionsConsumerSpotlight,
+                        __kPEXMetricsConnectionsFeatureId, __kPEXMetricsConnectionsSourceAppDonation,
+                        __kPEXMetricsConnectionsSourceKey, __kPEXMetricsConnectionsSourceSchemaOrg,
+                        __kPEXMetricsConnectionsTriggerLinguisticAddress, __kPEXMetricsConnectionsTriggerLinguisticPhone,
+                        __kPEXMetricsConnectionsUnknownValue, _isClassCLocked,
+                        _kPEXMetricsFrameworkContacts, _kPEXMetricsFrameworkCoreDuet,
+                        _kPEXMetricsFrameworkCoreSuggestions, _kPEXMetricsFrameworkDuetExpertCenter,
+                        _kPEXMetricsFrameworkMapKit, _nextMidnight,
+                        _removePhoneExtensionAndNonDigits, _sharedCNContactStore,
+                        _PEXKeysToFetchNames, _ProactiveExpertsVersionString,
+                        __kPEXMetricsConnectionsConsumerSpringBoard, __kPEXMetricsConnectionsSourceCalendar,
+                        __kPEXMetricsConnectionsSourceSiri, __kPEXMetricsConnectionsTriggerSemantic,
+                        _kPEXFeatureIdentifier, _kPEXMetricsFrameworkCoreSpotlight,
+                        _kPEXMetricsFrameworkEventKit, _predictionForContacts,
+                        _runBlockWhenDeviceIsClassCUnlocked ]
+    objc-classes:     [ _PEXAutocompleteContext,
+                        _PEXBroker, _PEXConnectionsAddressFormatter,
+                        _PEXConnectionsDuetSource, _PEXConnectionsLocation,
+                        _PEXConnectionsParameters, _PEXConnectionsSource,
+                        _PEXContact, _PEXContactSuggester,
+                        _PEXDataDetectors, _PEXEvent,
+                        _PEXEventCacheEvictionManager, _PEXFormatter,
+                        _PEXLabelStrengthSets, _PEXLinguistics,
+                        _PEXMetricsLogging, _PEXNameItemMerger,
+                        _PEXPeopleSuggester, _PEXServant,
+                        _PEXAutocompleteDelegate, _PEXConnectionsCalendarSource,
+                        _PEXConnectionsMetricsTracker, _PEXConnectionsUtils,
+                        _PEXContactsExpertServant, _PEXEventCache,
+                        _PEXLabelMatcher, _PEXMergedNameItem,
+                        _PEXPasteboardLocationItem, _PEXQuickTypeBroker ]
+...

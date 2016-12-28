@@ -1,0 +1,36 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleSRP.framework/AppleSRP
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BigIntegerAdd,
+                        _BigIntegerBitLen, _BigIntegerCmp,
+                        _BigIntegerDivInt, _BigIntegerFromBytes,
+                        _BigIntegerLShift, _BigIntegerModExp,
+                        _BigIntegerModMul, _BigIntegerMulInt,
+                        _BigIntegerSubInt, _BigIntegerToCstr,
+                        _SRP6_server_method, _SRP6a_server_method,
+                        _SRP_CLIENT_default_param_verify_cb, _SRP_RFC2945_server_method,
+                        _SRP_SERVER_LOOKUP_new, _SRP_add_ex_data,
+                        _SRP_finalize_library, _SRP_gen_pub,
+                        _SRP_get_secret_bits, _SRP_new,
+                        _SRP_set_auth_password, _SRP_set_authenticator,
+                        _SRP_set_modulus_min_bits, _SRP_set_secret_bits_cb,
+                        _SRP_set_user_raw, _SRP_use_engine,
+                        _cstr_appendn, _cstr_free,
+                        _cstr_set_length, _t_closepw,
+                        _t_getpwbyname, _t_newpw,
+                        _t_sessionkey, _t_tohex,
+                        _BigIntegerAddInt, _BigIntegerCmpInt,
+                        _BigIntegerFromInt, _BigIntegerModInt,
+                        _BigIntegerSub, _BigIntegerToString,
+                        _SRP_CLIENT_builtin_param_verify_cb, _SRP_SERVER_LOOKUP_free,
+                        _SRP_compute_key, _SRP_get_modulus_min_bits,
+                        _SRP_respond, _SRP_set_client_param_verify_cb,
+                        _SRP_set_server_lookup, _SRP_verify,
+                        _cstr_new, _t_cstrfromb64,
+                        _t_random, _t_tob64cstr ]
+...

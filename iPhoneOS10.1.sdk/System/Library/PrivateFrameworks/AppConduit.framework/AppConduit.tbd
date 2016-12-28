@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ACXApplicationBundleIdentiferKey,
+                        _ACXApplicationTeamID, _ACXApplicationsUpdatedDarwinNotification,
+                        _ACXArrayifyThing, _ACXBetaAppKey,
+                        _ACXComplicationsPrincipalClass, _ACXCopyDataDirectory,
+                        _ACXCopyStagingDirectory, _ACXDictionaryContainsOnlyClasses,
+                        _ACXFunctionNameErrorKey, _ACXInitializeDiskLogging,
+                        _ACXIntentsSupportedAggregateKey, _ACXPluginBundleIdKey,
+                        _ACXServerStatusKey, _ACXShowAppOnWatchKey,
+                        _ACXShowInstallationUnavailableNotice, _ACXShowUntrustedAppNotice,
+                        _ACXSourceFileLineErrorKey, _ACXSupportedComplicationFamilies,
+                        _ACXWatchKitVersion, _AppConduitVersionNumber,
+                        __CreateAndLogError, __CreateError,
+                        _kAlwaysInstallKey, _kApplicationStateVersion,
+                        _kNPSDomainName, _kNeedsReunionSync,
+                        _ACXApplicationNameKey, _ACXArrayContainsOnlyClass,
+                        _ACXBooleanValue, _ACXCopyLogDirectory,
+                        _ACXErrorDomain, _ACXIntentsRestrictedWhileLockedAggregateKey,
+                        _ACXRandomDirWithTemplateURL, _ACXShowCapabilitiesMismatchNotice,
+                        _ACXShowUserNoticeWithTapToRadarButton, _ACXWatchAppBundleURLKey,
+                        _AppConduitVersionString, _gLogHandle,
+                        _kInitiallyInstallAllExistingApps ]
+    objc-classes:     [ _ACXDeviceConnection ]
+...

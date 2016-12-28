@@ -1,0 +1,28 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 2DD12856-70C5-3EF0-BA7B-B3D45E39DD35', 'armv7s: 240F7992-7F61-3E4F-BE81-6D0558DD73BA', 
+                   'arm64: A13ECB56-73E7-33EE-9D50-364E5F64368F' ]
+platform:        ios
+install-name:    /usr/lib/libETLDLOADDynamic.dylib
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ETLDLOADCommandCopyDebugDataField, _ETLDLOADCommandCreateChipIDRequest, 
+                       _ETLDLOADCommandCreateGoRequest, _ETLDLOADCommandCreateMemoryDebugFastReadRequest, 
+                       _ETLDLOADCommandCreateMemoryDebugInfoRequest, _ETLDLOADCommandCreateMemoryDebugReadRequest, 
+                       _ETLDLOADCommandCreateMemoryDebugReadRequestPrivate, _ETLDLOADCommandCreateParametersRequest, 
+                       _ETLDLOADCommandCreatePkHashRequest, _ETLDLOADCommandCreateSerialNumberRequest, 
+                       _ETLDLOADCommandCreateVersionRequest, _ETLDLOADCommandCreateWriteRequest, 
+                       _ETLDLOADCommandDumpCommand, _ETLDLOADCommandParseACKNAKResponse, 
+                       _ETLDLOADCommandParseChipIDResponse, _ETLDLOADCommandParseMemoryDebugInfoResponse, 
+                       _ETLDLOADCommandParseMemoryDebugReadResponse, _ETLDLOADCommandParseParametersResponse, 
+                       _ETLDLOADCommandParsePkHashResponse, _ETLDLOADCommandParseSerialNumberResponse, 
+                       _ETLDLOADCommandParseVersionResponse, _ETLDLOADCommandPowerCreatePowerDownRequest, 
+                       _ETLDLOADCommandPowerCreateResetRequest, _ETLDLOADCommandReadMemoryDebugFastReadResponse, 
+                       _ETLDLOADCommandReceiveSmallWithFlags, _ETLDLOADCommandReceiveWithBufferAndFlags, 
+                       _ETLDLOADCommandSend, _ETLDLOADCreateCommandForSend, _ETLDLOADDetectProtocolVersion, 
+                       _ETLDLOADExpectCommandType, _ETLDLOADGetNAKReasonAsString, 
+                       _ETLDLOADGetProtocolVersion ]
+...

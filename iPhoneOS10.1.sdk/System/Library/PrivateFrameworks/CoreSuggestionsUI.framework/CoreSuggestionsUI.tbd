@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CoreSuggestionsUIVersionNumber,
+                        _LogCategorySGSuggestionsService, _SameDayDates,
+                        _CoreSuggestionsUIVersionString ]
+    objc-classes:     [ _SGUIAddAllTableViewCell,
+                        _SGUIBannerView, _SGUIDateFormatting,
+                        _SGUIEventsAndContactsTableViewController, _SGUIBannerStringGenerator,
+                        _SGUIEventSuggestionTableViewCell ]
+...

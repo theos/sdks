@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaServices.framework/MediaServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MSVArrayEqualsArray,
+                        _MSVBundleIDForPID, _MSVCLIPrintErr,
+                        _MSVCLIStartMainRunLoop, _MSVCopyDeviceName,
+                        _MSVCopyLocalizedModelName, _MSVCreateTemporaryFileHandle,
+                        _MSVCryptoDigestForContentsOfInputStream, _MSVCryptoDigestForString,
+                        _MSVDataEqualsData, _MSVDevicePPTTestsAreInProgress,
+                        _MSVGzipCompressData, _MSVGzipDecompressData,
+                        _MSVImageUtilitiesAddImageToDestination, _MSVImageUtilitiesAddSourceImageToDestination,
+                        _MSVImageUtilitiesCopyUTTypeForImage, _MSVImageUtilitiesCreateDataImageDestination,
+                        _MSVImageUtilitiesCreateImageFromSource, _MSVImageUtilitiesImageFormatSupportsTransparency,
+                        _MSVImageUtilitiesResizeSourceImageToJPEGDestination, _MSVKeychainSetKeychainValue,
+                        _MSVLocalizedString, _MSVLoggingConfigurationDidChangeNotifyName,
+                        _MSVLoggingRegisterConfiguration, _MSVMediaLoggingDirectory,
+                        _MSVMobileHomeDirectory, _MSVProcessIsRunning,
+                        _MSVSetEqualsSet, _MSVStreamWriterErrorDomain,
+                        _MSVSystemRootDirectory, _MSVWeakLinkStringConstant,
+                        __MSVLogInternal, _MSVArtworkServiceErrorDomain,
+                        _MSVCLIPrompt, _MSVCopyDeviceUniqueIdentifier,
+                        _MSVCryptoDigestForContentsOfFile, _MSVCryptoUtilitiesHexStringFromDigest,
+                        _MSVFrameworkExists, _MSVGzipDecompressFile,
+                        _MSVImageUtilitiesAddSourceImageToJPEGDestination, _MSVImageUtilitiesCreateFileImageDestination,
+                        _MSVImageUtilitiesResizeSourceImageToDestination, _MSVLaunchApplication,
+                        _MSVLoggingDefaultLogFileName, _MSVMediaServicesBundle,
+                        _MSVProcessNameForPID, _MSVStringEqualsString,
+                        _MSVWeakLinkSymbol ]
+    objc-classes:     [ _MSVArtworkService,
+                        _MSVArtworkServiceOperation, _MSVArtworkServiceResizeRequest,
+                        _MSVCLICommand, _MSVCPLoggingController,
+                        _MSVDistributedNotificationObserver, _MSVMessageParser,
+                        _MSVPropertyListEncoder, _MSVStreamWriter,
+                        _MSVSystemDialogOptions, _MSVSystemDialogTextField,
+                        _MSVWatchdog, _MSVXPCTransaction,
+                        _MSVArtworkServiceConversionRequest, _MSVArtworkServiceResizeRequestDestination,
+                        _MSVCallback, _MSVMultiCallback,
+                        _MSVSystemDialog, _MSVThreadSafeMultiCallback ]
+...

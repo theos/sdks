@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RTCReportingFetchStatesWithUserInfo,
+                        _RTCReportingFlushMessagesWithCompletion, _RTCReportingInitWithSessionInfoDict,
+                        _RTCReportingSendMessageWithError, _RTCReportingSetLogMsgBlock,
+                        _RTCReportingSetServer, _RTCReportingSetUserInfoDict,
+                        _RTCReportingUploadLogWithArray, _aslMsg,
+                        _kRTCReportingBackendDashboard, _kRTCReportingBackendHTTPPost2,
+                        _kRTCReportingBackendUploadServer, _kRTCReportingDefaultsKeyUUIDOverrideDNU,
+                        _kRTCReportingErrorDomain, _kRTCReportingLogDataEndTime,
+                        _kRTCReportingMessageParametersCategory, _kRTCReportingMessageParametersPayload,
+                        _kRTCReportingSessionInfoBatchEvent, _kRTCReportingSessionInfoClientVersion,
+                        _kRTCReportingSessionInfoRequireUserInfo, _kRTCReportingUserInfoClientName,
+                        _validateMessageWithCategory, _validateSessionInfo,
+                        _RTCReportingFlushMessages, _RTCReportingSendMessageWithDictionary,
+                        _RTCReportingSetMessageBlock, _RTCReportingStartConfiguration,
+                        _kRTCReportingBackendAWD, _kRTCReportingBackendPowerlog,
+                        _kRTCReportingDefaultsKeyUUIDRespectDNU, _kRTCReportingLogDataStartTime,
+                        _kRTCReportingMessageParametersType, _kRTCReportingSessionInfoEnableFlag,
+                        _kRTCReportingUserInfoServiceName, _validateMessageWithDictionary ]
+    objc-classes:     [ _RTCReporting,
+                        _RTCReportingLogging, _UpdateAndReportServices,
+                        _RTCReportingAggregationObject ]
+    objc-ivars:       [ _RTCReportingAggregationObject._aggregationBlock,
+                        _UpdateAndReportServices._report, _UpdateAndReportServices._update,
+                        _UpdateAndReportServices._block ]
+...

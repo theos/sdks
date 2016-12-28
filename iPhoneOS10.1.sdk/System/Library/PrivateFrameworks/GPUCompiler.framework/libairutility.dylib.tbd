@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GPUCompiler.framework/libairutility.dylib
+current-version: 702.2.42
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MTLAddAIRFunctionArgOptPass,
+                        _MTLAddAIRVerifierPass, _MTLAddPipelineLevelPasses,
+                        _MTLGetArgumentFunctionConstants, _MTLLinkUberFunctionConstants,
+                        _MTLUpgradeAIRModule, __ZN5clang7metalfe13getAIRVersionERKNS_11LangOptionsERKN4llvm6TripleE,
+                        __ZN5clang7metalfe15ResourceTracker3setEjj, __ZN5clang7metalfe29createPostTessellationOptPassEv,
+                        __ZN5clang7metalfe32AIRDiagnosticInfoTooManySamplers2DKE, __ZN5clang7metalfe39AIRDiagnosticInfoIllegalFunctionContext2DKE,
+                        __ZN5clang7metalfe51AIRDiagnosticInfoVertexFunctionWritesToGlobalMemory2DKE, _MTLAddAIRMetadataPrunerPass,
+                        _MTLAddUberFunctionConstantsRequiredPass, _MTLRemoveUnusedFunctionConstantsFromUsedList,
+                        __ZN5clang7metalfe15ResourceTracker3getEj, __ZN5clang7metalfe30createCallGraphInfoWrapperPassEv,
+                        __ZN5clang7metalfe34AIRDiagnosticInfoRecursiveFunction2DKE ]
+...

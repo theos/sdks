@@ -1,0 +1,34 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+current-version: 276.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __CFURLBookmarkDataCopyDescription,
+                        __CFURLCompareBookmarkData, __CFURLCreateBookmarkDataFromAliasRecord,
+                        __CFURLCreateByResolvingBookmarkData, __CFURLCreateResourcePropertyForKeyFromBookmarkData,
+                        __CFURLStartAccessingSecurityScopedResource, __CFURLWriteBookmarkDataToFile,
+                        __FSCreatePathForFileID, __FSURLBeginResourcePropertyCacheAccess,
+                        __FSURLCacheResourcePropertyForKey, __FSURLCopyResourcePropertiesForKeys,
+                        __FSURLCopyResourcePropertyForKey, __FSURLCopyResourcePropertyValuesAndFlags,
+                        __FSURLCreateStandardError, __FSURLGetCatalogInfo,
+                        __FSURLGetObjectInformationNoIO, __FSURLGetVolumePropertyFlags,
+                        __FSURLSetPermanentResourcePropertyForKey, __FSURLSetResourcePropertyForKey,
+                        __FileCacheClearPropertyValueForKey, __FileCacheGetBinding,
+                        __FileCacheGetName, __FileCacheGetTypeID,
+                        __FileCacheSetFlags, __FileURLCreateDisplayPathComponentsArray,
+                        __RegisterFilePropertyWithOptions, __URLCopySecurityScopeFromFileURL,
+                        __URLEnumeratorCreateForDirectoryURL, __URLEnumeratorGetDescendentLevel,
+                        __URLEnumeratorGetSourceDidChange, __URLEnumeratorGetURLsBulk,
+                        __URLReplaceObject, __CFURLBookmarkToAliasHandle,
+                        __CFURLCreateBookmarkDataFromFile, __CFURLCreateWithVolumeURLAndResourceID,
+                        __FSCreateFileReferenceURLFromIDs, __FSURLCacheResourcePropertiesForKeys,
+                        __FSURLCopyResourcePropertiesForKeysFromCache, __FSURLCreateFileReferenceURLFromFSRef,
+                        __FSURLGetFSRef, __FSURLResourceIsReachable,
+                        __FSVolumeIdentifierGetVolumeRefNum, __FileCacheGetFlags,
+                        __FileCacheSetBinding, __RegisterFilePropertyProvider,
+                        __URLCreateByResolvingAliasFile, __URLEnumeratorGetNextURL,
+                        __URLEnumeratorSkipDescendents ]
+...

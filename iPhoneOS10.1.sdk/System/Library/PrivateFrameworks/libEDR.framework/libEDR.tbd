@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/libEDR.framework/libEDR
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _EDREnable,
+                        _EDRGetDisplayHeadroom, _EDRIsEnabled,
+                        _EDRNotificationPostNotification, _EDRNotificationPostSynchronousNotification,
+                        _EDRNotificationRegisterCallbackBlockOnQueue, _EDRNotificationRegisterCallbackFunctionOnQueue,
+                        _EDRNotificationRegisterHandlerBlockOnQueue, _EDRNotificationSendRequest,
+                        _EDRNotificationStartService, _EDRNotificationUnregisterCallback,
+                        _EDRNotificationUnregisterCallbackFunction, _EDRNotificationUnregisterHandlerBlock,
+                        _EDRRegisterCallbackBlock, _EDRServerEnable,
+                        _EDRServerGetDisplayBrightness, _EDRServerSetDisplayBrightness,
+                        _EDRServerStart, __Z28GetCurrentTimeInMillisecondsv,
+                        __Z7WaitFord, __ZN10EDRDisplay10InitializeEfff,
+                        __ZN10EDRDisplay11UpdateEDROnEv, __ZN10EDRDisplay12SetEnableEDREb,
+                        __ZN10EDRDisplay12TimeStepImplEv, __ZN10EDRDisplay16TargetBrightnessEv,
+                        __ZN10EDRDisplay20TargetBrightnessImplEv, __ZN10EDRDisplay23ScheduleSetBrightnessInEdU13block_pointerFvPviE,
+                        __ZN10EDRDisplay8TimeStepEv, __ZN10EDRDisplayC1Ej,
+                        __ZN17EDRDisplayManager10AddDisplayEj, __ZN17EDRDisplayManager12SetXRPresentEb,
+                        __ZN17EDRDisplayManager25RegisterNotificationBlockEU13block_pointerFvPviE, __ZN17EDRDisplayManager28ScheduleNextBrightnessUpdateEv,
+                        __ZN17EDRDisplayManager7DisplayEjfff, __ZN17EDRDisplayManagerC2Ev,
+                        __ZN17EDRDisplayManagerD2Ev, __ZN22EDRBrightnessAnimation11ValueAtTimeEd,
+                        __ZN22EDRBrightnessAnimation17SetAnimationCurveEPFffffE, __ZN22EDRBrightnessAnimation20SetCurrentBrightnessEf,
+                        __ZN22EDRBrightnessAnimation33UpdateTransitionAnimationDurationEv, __ZN22EDRBrightnessAnimation5StartEv,
+                        __ZN22EDRBrightnessAnimation9CompletedEv, __ZN22EDRBrightnessAnimationC2Ev,
+                        _libEDRVersionString, _EDRGetDisplayBrightness,
+                        _EDRNotificationPostLocalNotification, _EDRNotificationRegisterCallbackBlock,
+                        _EDRNotificationRegisterHandlerBlock, _EDRNotificationSendSynchronousRequest,
+                        _EDRNotificationUnregisterCallbackBlock, _EDRNotificationUnregisterHandlerFunction,
+                        _EDRServerGetCurrentDisplayProperties, _EDRServerSetInitialBrightness,
+                        __Z38EDRNotificationRegisterHandlerFunctionP16dispatch_queue_s21EDRNotificationType_tPFviPviPiS2_S3_S2_ES2_, __ZN10EDRDisplay11InitializedEv,
+                        __ZN10EDRDisplay12SetXRPresentEb, __ZN10EDRDisplay17CurrentBrightnessEv,
+                        __ZN10EDRDisplay27ScheduleSetBrightnessInImplEdU13block_pointerFvPviE, __ZN10EDRDisplayC2Ej,
+                        __ZN17EDRDisplayManager13RemoveDisplayEj, __ZN17EDRDisplayManager7DisplayEj,
+                        __ZN17EDRDisplayManagerD1Ev, __ZN22EDRBrightnessAnimation12SetEndpointsEff,
+                        __ZN22EDRBrightnessAnimation24SetEndpointsWithDurationEffd, __ZN22EDRBrightnessAnimation8TimeStepEv,
+                        _libEDRVersionNumber ]
+...

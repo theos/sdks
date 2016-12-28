@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Conference.framework/Conference
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CNFBundle ]
+    objc-classes:     [ _CNFConferenceController,
+                        _CNFInternalAccountViewController, _CNFInternalSettingsUtilities,
+                        _CNFUIUtilities, _CNFInternalAccountListViewController,
+                        _CNFInternalProcessListController ]
+    objc-ivars:       [ _CNFInternalAccountListViewController._connectionHandler,
+                        _CNFInternalAccountListViewController._service ]
+...

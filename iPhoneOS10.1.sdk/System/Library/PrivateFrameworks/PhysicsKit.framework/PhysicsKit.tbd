@@ -1,0 +1,59 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PKArrayFromB2ChainShape,
+                        _PKArrayFromCGPath, _PKCGPathCreateFromArray,
+                        _PKGet_PTM_RATIO, _PKPathCreateFromCGPathWithOptions,
+                        _PKSet_PTM_Ratio, __ZN12QuadTreeNode4findEffRPS_,
+                        __ZN12QuadTreeNodeC1Efffff, __ZN12QuadTreeNodeD1Ev,
+                        __ZN6PKPath10createPathEv, __ZN6PKPathC1EPK6CGPath,
+                        __ZN7PKCGrid11setGridSizeEiii, __ZN7PKCGrid12calcQuadTreeERK6CGRect,
+                        __ZN7PKCGrid13setVectorDataEPKhii, __ZN7PKCGrid28physicsBodyFromMarchingCubesERK6CGRect,
+                        __ZN7PKCGrid37pathFromOutlineWithSmoothingThresholdEfffff, __ZN7PKCGrid8traverseERiS0_i,
+                        __ZN7PKCGrid9printGridEv, __ZN7PKCGridC2Ev,
+                        __ZN8QuadTree14intersectPointEffRP12QuadTreeNode, __ZN8QuadTree3addEffa,
+                        __ZN8QuadTree6boundsERfS0_S0_S0_, __ZN8QuadTreeC1Efffff,
+                        __ZN8QuadTreeD1Ev, __ZN9PKCAether15removeAllFieldsEv,
+                        __ZN9PKCAether9EvaluatorC2EPKS_, __ZN9PKCAetherC2Ev,
+                        __ZN9PKCAetherD2Ev, __ZNK12QuadTreeNode9leafCountEv,
+                        __ZNK9PKCAether10fieldCountEv, __ZNK9PKCAether9Evaluator14evalFieldsVec2EP17PKFieldSampleVec2i,
+                        _fieldRepresentedObject, _setRegionOnField,
+                        _snoise1, _snoise3,
+                        _srdnoise2, _srdnoise3,
+                        _srdnoise3_sincos_vector, _PKArrayFromB2PolygonShape,
+                        _PKGet_INV_PTM_RATIO, _PKPathCreateFromSimplifiedCGPath,
+                        __ZN12QuadTreeNode7addLineEffffa, __ZN12QuadTreeNodeD2Ev,
+                        __ZN6PKPathC2EPK6CGPath, __ZN7PKCGrid12tagPixelDataEfPKhii,
+                        __ZN7PKCGrid30physicsBodyFromSmoothedOutlineEfRK6CGSize, __ZN7PKCGrid9labelGridEv,
+                        __ZN8QuadTree12intersectRayEffffRP12QuadTreeNode, __ZN8QuadTree4findEffRP12QuadTreeNode,
+                        __ZN8QuadTreeC2Efffff, __ZN9PKCAether9EvaluatorC1EPKS_,
+                        __ZN9PKCAetherD1Ev, __ZNK8QuadTree9leafCountEv,
+                        __ZNK9PKCAether9Evaluator9evalForceEjfDv3_fS1_ffd, _setRepresentedObjectOnField,
+                        _snoise4, _srdnoise3_sincos ]
+    objc-classes:     [ _PKPhysicsBody,
+                        _PKPhysicsField, _PKPhysicsFieldDrag,
+                        _PKPhysicsFieldLinearGravity, _PKPhysicsFieldNoise,
+                        _PKPhysicsFieldSpring, _PKPhysicsFieldVelocity,
+                        _PKPhysicsGrid, _PKPhysicsJointDistance,
+                        _PKPhysicsJointRevolute, _PKPhysicsJointWeld,
+                        _PKRegion, _PKPhysicsContact,
+                        _PKPhysicsFieldElectric, _PKPhysicsFieldRadialGravity,
+                        _PKPhysicsFieldVortex, _PKPhysicsJointPrismatic,
+                        _PKPhysicsWorld ]
+    objc-ivars:       [ _PKPhysicsBody._edgeRadius,
+                        _PKPhysicsBody._p0, _PKPhysicsBody._pathPtr,
+                        _PKPhysicsBody._radius, _PKPhysicsBody._size,
+                        _PKPhysicsField._position, _PKPhysicsField._rotation,
+                        _PKPhysicsFieldCustomBlock._batchBlock, _PKPhysicsWorld._accumulatedDt,
+                        _PKPhysicsWorld._contactListener, _PKPhysicsWorld._gravity,
+                        _PKPhysicsWorld._postStepBlocks, _PKPhysicsWorld._world,
+                        _PKPhysicsWorld.drawPacket, _PKPhysicsBody._mask,
+                        _PKPhysicsBody._quadTree, _PKPhysicsField._field,
+                        _PKPhysicsField._scale, _PKPhysicsWorld._bodies,
+                        _PKPhysicsWorld._joints, _PKPhysicsWorld._speed ]
+...

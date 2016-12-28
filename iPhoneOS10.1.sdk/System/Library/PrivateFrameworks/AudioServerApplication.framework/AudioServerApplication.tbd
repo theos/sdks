@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AudioServerApplication.framework/AudioServerApplication
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    objc-classes:     [ _ASAAudioDevice,
+                        _ASABooleanControl, _ASAClockDevice,
+                        _ASACoreAudio, _ASAObject,
+                        _ASAPlugin, _ASAStream,
+                        _ASAAudioFormat, _ASAControl,
+                        _ASAPlaythrough, _ASASelectorControl ]
+...

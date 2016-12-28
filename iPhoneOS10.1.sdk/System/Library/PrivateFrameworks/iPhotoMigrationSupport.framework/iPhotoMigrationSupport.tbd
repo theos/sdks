@@ -1,0 +1,38 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iPhotoMigrationSupport.framework/iPhotoMigrationSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BLConvertRectToScreen,
+                        _BLCropInfoDefault, _BLCropInfoFromString,
+                        _BLEdgeInsetsScale, _BLEffectKeyAnalysisData,
+                        _BLFloatEqualToFloat, _BLMultiplyPointScalar,
+                        _BLMultiplySizeScalar, _BLNormalizedPointWithStandardizedPointAndSize,
+                        _BLPointIntegral, _BLRectBleed,
+                        _BLRectCenteredIntegralRect, _BLRectCenteredYInRect,
+                        _BLRectFloorIntegral, _BLRectGetAspectRatio,
+                        _BLRectGetCorners, _BLRectInset,
+                        _BLRectIntegralOuterRect, _BLRectMakeWithPoints,
+                        _BLRectMapPoint, _BLRectOuterRectWithAspectRatio,
+                        _BLRectPoint, _BLRectScaleCentered,
+                        _BLRectScaleSizeCenteredToFillRect, _BLRoundedRectForMainScreen,
+                        _BLSizeEqualToSizeWithTolerance, _BLSizeGetAspectRatio,
+                        _BLStandardizedRectWithNormalizedRectAndSize, _NSStringFromBLCropInfo,
+                        _commonInit, _kBLActivityAlertDefaultDelay,
+                        _BLConvertRectToWindow, _BLCropInfoMake,
+                        _BLEvenSizedRect, _BLMultiplyRectScalar,
+                        _BLNormalizedRectWithSize, _BLRectCenteredAboutPoint,
+                        _BLRectEnclosingRectWithAspectRatio, _BLRectGetCenter,
+                        _BLRectInsetEdges, _BLRectMakeWithSize,
+                        _BLRectOutset, _BLRectScaleCenteredToFit,
+                        _BLRoundedRectForScale, _BLStandardizedPointWithNormalizedPointAndSize,
+                        __IPMSLog ]
+    objc-classes:     [ _BLActivityAlert,
+                        _BLAlertAction, _BLModalPresenter,
+                        _iPhotoMigrationSupport, _BLAlert,
+                        _BLModalPresenterRootViewController ]
+    objc-ivars:       [ _BLModalPresenterRootViewController._background ]
+...

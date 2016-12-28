@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
+current-version: 78.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NLLanguageIdentifierConsumeCharacters,
+                        _NLLanguageIdentifierCreate, _NLLanguageIdentifierGetTopHypothesis,
+                        _NLLanguageIdentifierGetTopLanguages, _NLLanguageIdentifierReset,
+                        _NLLanguageIdentifierSetLanguageHints, _NLStringTokenizerCopyBestStringLanguage,
+                        _NLStringTokenizerCopyCurrentTokenAttribute, _NLStringTokenizerGetCurrentSubTokens,
+                        _NLStringTokenizerGetTypeID, _NLStringTokenizerSetString,
+                        __NLSTEvaluatorAddString, __NLSTEvaluatorCreateWithModelFile,
+                        __NLSTEvaluatorRelease, __NLSTFeatureCounterCreate,
+                        __NLSTTrainerAddString, __NLSTTrainerRelease,
+                        __NLStringTokenizerCopyPossibleStringLanguages, __NLStringTokenizerCreateNamePartsArrayWithStringAsCompositeName,
+                        __NLStringTokenizerGetDerivedTokens, __NLStringTokenizerGetTokenizerAttribute,
+                        __NLStringTokenizerSetTokenizerAttribute, __NLStringTokenizerTokenizeCompoundWord,
+                        __NLStringTokenizerTokenizeWithTranscriptions, _NLLanguageIdentifierConsumeString,
+                        _NLLanguageIdentifierGetTopLanguage, _NLLanguageIdentifierSetLanguageConstraints,
+                        _NLStringTokenizerCopyBestStringLanguageWithHints, _NLStringTokenizerGetCurrentTokenRange,
+                        _NLStringTokenizerSetStringWithOptions, __NLSTEvaluatorFinalize,
+                        __NLSTFeatureCounterRelease, __NLSTTrainerTrainAndWriteModelToFile,
+                        __NLStringTokenizerCreatePossibleNamePartsArrayWithStringAsCompositeName, __NLStringTokenizerSetLocale,
+                        __NLStringTokenizerTokenize ]
+...

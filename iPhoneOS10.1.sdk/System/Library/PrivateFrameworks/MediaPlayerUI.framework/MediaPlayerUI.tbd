@@ -1,0 +1,54 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaPlayerUI.framework/MediaPlayerUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    re-exports:       [ /System/Library/PrivateFrameworks/MPUFoundation.framework/MPUFoundation ]
+    symbols:          [ _MPUApplicationDefaultsDidChangeNotification,
+                        _MPUFeedbackCommandPresentationStyleFromMediaPlayerFeedbackCommandPresentationStyle, _MPULayoutPriorityHigh,
+                        _MPUMediaEntityLikedStateFromMediaPlayerLikedState, _MPUMediaRemoteDefaults,
+                        _MPURepeatTypeFromMediaPlayerRepeatType, _MPUShuffleTypeFromMediaPlayerShuffleType,
+                        _MPUSkipLimitEqualToSkipLimit, _MPUSkipLimitToMediaPlayerSkipLimit,
+                        _MPUSpringboardCachedImage, _MPUStoreFrontURLForMediaType,
+                        _MPUViewControllerAttributeConfigurationClassKey, _MPUViewControllerAttributeDataSourceClassKey,
+                        _MPUViewControllerAttributeLocalizedNavigationItemTitleKeyKey, _MPUViewControllerAttributeLocalizedTitleKeyKey,
+                        _MPUViewControllerAttributeResourceBundleKey, _MPUViewControllerAttributeViewControllerClassKey,
+                        _NSStringFromMPUMediaControlsStyle, ___connectionQueue,
+                        _MPUCreateSystemControlSliderTrackImage, _MPUMediaControlsStyleIsNewSystemStyle,
+                        _MPUMediaRemoteSupportedCommandsIncludesScrubbing, _MPUShuffleTypeToMediaPlayerShuffleType,
+                        _MPUSpringboardCachedFlatImage, _MPUViewControllerAttributeAggregateStatisticDisplayCountKeyKey,
+                        _MPUViewControllerAttributeEntityTypeKey, _MPUViewControllerAttributeNavigationControllerClassKey,
+                        _MPUViewControllerAttributeViewControllerTypeKey ]
+    objc-classes:     [ _MPMediaCollectionDownloadObserver,
+                        _MPUAVRouteHeaderView, _MPUAirTrafficMediaDownloadObserver,
+                        _MPUApplicationDefaults, _MPUAutolayoutTableViewCell,
+                        _MPUCollectionViewController, _MPUCompletionQueryDataSource,
+                        _MPUControlCenterMediaControlsView, _MPUControlCenterMetadataView,
+                        _MPUControlCenterTransportButton, _MPUGradientView,
+                        _MPUInsetProxyScrollView, _MPULockScreenMediaControlsView,
+                        _MPULockScreenVolumeSlider, _MPUMediaControlsControlCenterTitlesView,
+                        _MPUMediaControlsVolumeView, _MPUMediaRemoteControlsView,
+                        _MPUMoreListController, _MPUNavigationController,
+                        _MPUNowPlayingController, _MPUNowPlayingMetadataView,
+                        _MPUPlaybackAlertController, _MPURemoteApplicationActivity,
+                        _MPUSharedLibrariesViewController, _MPUStandardTransportButton,
+                        _MPUSystemBuyButtonConfiguration, _MPUSystemMediaControlsViewController,
+                        _MPUTapLabel, _MPUTheme,
+                        _MPUTransportControlMediaRemoteController, _MPUVignetteBackgroundView,
+                        _MPUVolumeHUDSystemController, __MPUSharedLibrariesViewController,
+                        __MPUViewControllerRestoration, _MPUAVRouteHeaderLabel,
+                        _MPUAnimationStep, _MPUChronologicalProgressView,
+                        _MPUControlCenterCrossFadeComponent, _MPUControlCenterTimeView,
+                        _MPUIndeterminateProgressIndicatorView, _MPULockScreenMediaControlsViewController,
+                        _MPUMediaControlsTitlesView, _MPUMediaRemoteViewController,
+                        _MPUNowPlayingArtworkView, _MPUNowPlayingTitlesView,
+                        _MPURemoteApplicationActivityController, _MPUSupportedRemoteControls,
+                        _MPUTabBarController, _MPUTimeFormatter,
+                        _MPUVolumeHUDController, __MPUViewControllerCreationInformation ]
+    objc-ivars:       [ _MPUMediaDownloadObserver._hasPendingProgressHandlerExecution,
+                        _MPUMediaDownloadObserver._pid, _MPUMediaDownloadObserver._queue,
+                        _MPUMediaDownloadObserver._invalidated, _MPUMediaDownloadObserver._progressHandler ]
+...

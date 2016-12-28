@@ -1,0 +1,48 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _EARCCCommandTaggingResultGetCommandTaggings,
+                        _EARCCommandTaggerCreateCommandTaggingResults, _EARCCommandTaggerGetParameterTagForIndex,
+                        _EARCCommandTaggerIsParameterTag, _EARCCommandTaggingGetTagSequence,
+                        _EARCSpeechRecognitionAudioBufferAddAudioSampleData, _EARCSpeechRecognitionAudioBufferCancelRecognition,
+                        _EARCSpeechRecognitionGetTokens, _EARCSpeechRecognitionTokenGetEnd,
+                        _EARCSpeechRecognitionTokenGetStart, _EARCSpeechRecognitionTokenHasSpaceAfter,
+                        _EARCSpeechRecognizerCreateRecognitionBuffer, _EARCSpeechRecognizerSetUserProfileData,
+                        _EARCUserProfileAddWord, _EARCUserProfileCopyPronunciationsForOrthography,
+                        _EARCUserProfileCreate, _EARCUserProfileRemoveAllWords,
+                        _EARCWordPartGetFrequency, _EARCWordPartGetPronunciations,
+                        _EARErrorDomain, _EARRecognitionStatisticAcousticProfileLoadingTime,
+                        _EARRecognitionStatisticFirstPassCpuTime, _EARRecognitionStatisticProcessEmittingCpuTime,
+                        _EARRecognitionStatisticProcessNonemittingCpuTime, _EARRecognitionStatisticPruneActiveTokensCpuTime,
+                        _EARRecognitionStatisticRecogCpuTime, _EARRecognitionStatisticSecondPassCpuTime,
+                        _EARCCommandTaggerCreate, _EARCCommandTaggerIsCommandPhraseTag,
+                        _EARCCommandTaggingTokensForTag, _EARCSpeechRecognitionAudioBufferEndAudio,
+                        _EARCSpeechRecognitionTokenGetSilenceStart, _EARCSpeechRecognizerCreate,
+                        _EARCSpeechRecognizerUpdateUserProfileData, _EARCUserProfileCopySanitizedString,
+                        _EARCWordPartCreate, _EARCWordPartGetTagName,
+                        _EARRecognitionStatisticAverageActiveTokensPerFrame, _EARRecognitionStatisticProcessEmittingWallTime,
+                        _EARRecognitionStatisticPruneActiveTokensWallTime, __ZTIN5boost16bad_lexical_castE,
+                        __ZTIN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, __ZTIN5boost16exception_detail19error_info_injectorISt12length_errorEE,
+                        __ZTIN5boost9exceptionE, __ZTINSt3__113basic_filebufIcNS_11char_traitsIcEEEE,
+                        __ZTINSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, __ZTINSt3__117bad_function_callE,
+                        __ZTINSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, __ZTINSt3__121__basic_string_commonILb1EEE,
+                        __ZTSA58_c, __ZTSN5boost16bad_lexical_castE,
+                        __ZTSN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, __ZTSN5boost16exception_detail19error_info_injectorISt12length_errorEE,
+                        __ZTSN5boost9exceptionE, __ZTSNSt3__113basic_filebufIcNS_11char_traitsIcEEEE,
+                        __ZTSNSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE,
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE,
+                        __ZTSNSt3__15dequeIiNS_9allocatorIiEEEE ]
+    objc-classes:     [ __EARCombinedResult,
+                        __EARCommandTagging, __EARFormatter,
+                        __EARLanguageModel, __EARSpeechExperiment,
+                        __EARSpeechRecognitionAudioBuffer, __EARSpeechRecognitionToken,
+                        __EARSystemResult, __EARWordPart,
+                        __EARCommandTagger, __EARLMLanguageModel,
+                        __EARSpeechModelInfo, __EARSpeechRecognizer,
+                        __EARUserProfile ]
+...

@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SPFastApplicationsGet,
+                        _SpotlightUIVersionNumber, ___PPTAppPredictionsDidUpdateResult,
+                        ___PPTSearchTableDidUpdateResult, _zkwExpandedPreference,
+                        _SPUITableViewSectionCornerRadius, ___PPTQueryPredictionsDidUpdateResult,
+                        _suiteName ]
+    objc-classes:     [ _DECConsumerHelper,
+                        _SPUICloudDocumentImage, _SPUIHeaderBlurView,
+                        _SPUIMediaArtworkImage, _SPUIPeekDelegate,
+                        _SPUIReplicatorView, _SPUISearchHeader,
+                        _SPUISearchResultHandler, _SPUISearchViewController,
+                        _SPUITextField, _SPZKWSearchQuery,
+                        _SPApplication, _SPUILockScreenFooterView,
+                        _SPUIPeekViewController, _SPUISearchModel,
+                        _SPUITableViewController ]
+    objc-ivars:       [ _SPUISearchModel._cacheResultLock,
+                        _SPUISearchModel._cachedResultImages, _SPUISearchModel._isDeferredQUeryComplete,
+                        _SPUISearchModel._prefetchOperationQueue, _SPUISearchModel._waitOperation,
+                        _SPUISearchModel._cachedConsumer, _SPUISearchModel._loadOperationQueue ]
+...

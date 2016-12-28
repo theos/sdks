@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppPredictionInternal.framework/AppPredictionInternal
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AppPredictionInternalVersionNumber,
+                        __ATXAppPredictionExpertIdentifier, __ATXDataStoreBackupRestoreStartedNotification,
+                        __ATXInspectionInterface, __ATXInternalNotificationsUninstallNotificationData,
+                        _dayZeroScore, _kInspectionInterfaceMachServiceName,
+                        _maxDate, _shouldPredictBundle,
+                        _AppPredictionInternalVersionString, __ATXDomain,
+                        __ATXScoreNotSet, _kMaximumStorageTimeSeconds,
+                        _newPredictionItem ]
+    objc-classes:     [ __ATXAggregateLogger,
+                        __ATXAppInfo, __ATXAppInstallMonitor,
+                        __ATXAppLaunchHistogram, __ATXAppLaunchHistogramWithPersistentBackup,
+                        __ATXAppLaunchMonitor, __ATXAppLaunchSequenceManager,
+                        __ATXAppPredictorJSONScoreLogger, __ATXDataStore,
+                        __ATXDuetHelper, __ATXGlobals,
+                        __ATXInspectionClient, __ATXInspectionServerPredictionScoreLogger,
+                        __ATXInternalUninstallNotification, __ATXNeuralNetwork,
+                        __ATXObjectLogger, __ATXPredictionModelDetails,
+                        __ATXScoreInterpreter, __ATXScoreTypes,
+                        __ATXTimeHistogram, __ATXAppIconState,
+                        __ATXAppLaunch, __ATXAppLaunchLocation,
+                        __ATXAppPredictor, __ATXDataStoreMigrations,
+                        __ATXIconLocation, __ATXInternalInstallNotification,
+                        __ATXNeuralNetworkBuilder, __ATXRecentInstallCache,
+                        __ATXScoreInterpreterCtx ]
+    objc-ivars:       [ __ATXFeedback._asset,
+                        __ATXFeedback._baseBeta, __ATXFeedback._priorAlpha,
+                        __ATXFeedback._priorMean, __ATXFeedback._uninstallNotificationListener,
+                        __ATXScoreInterpreterCtx.stack, __ATXScoreInterpreterCtx.subscores,
+                        __ATXFeedback._baseAlpha, __ATXFeedback._priorBeta,
+                        __ATXScoreInterpreterCtx.inputScores, __ATXScoreInterpreterCtx.stackLen ]
+...

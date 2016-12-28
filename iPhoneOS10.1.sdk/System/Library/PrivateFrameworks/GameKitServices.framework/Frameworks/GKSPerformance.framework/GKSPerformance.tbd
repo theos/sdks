@@ -1,0 +1,53 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/GKSPerformance.framework/GKSPerformance
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AWDGCKSubmitLinkStatusMetric,
+                        _GKSSubmitAWDMetricsFromGameD ]
+    objc-classes:     [ _AWDAdaptor,
+                        _AWDStats ]
+    objc-ivars:       [ _AWDAdaptor._RTStatsReceived,
+                        _AWDAdaptor._callStarted, _AWDAdaptor._jitterBufferResidencyTimeArray,
+                        _AWDAdaptor._rtpPacketLossRateArray, _AWDStats.ActualRxBitrateHistogram,
+                        _AWDStats.PLICounter, _AWDStats.RTCPSendInterval,
+                        _AWDStats.RecommendedRxBitrateHistogram, _AWDStats.audioPauseTime,
+                        _AWDStats.avgFrameRateSampleCount, _AWDStats.avgInterarrivalTime,
+                        _AWDStats.avgJitterBufferSize, _AWDStats.avgLossRate,
+                        _AWDStats.avgRate, _AWDStats.basebandCount,
+                        _AWDStats.callAvgRxRate, _AWDStats.callAvgTxRate,
+                        _AWDStats.callDuration, _AWDStats.callNonce,
+                        _AWDStats.currentCellTechDuration, _AWDStats.currentInterface,
+                        _AWDStats.currentPrimaryInterfaceIsCell, _AWDStats.downlinkEstimateAvg,
+                        _AWDStats.duplicationPercent, _AWDStats.handoverCellCount,
+                        _AWDStats.handoverWifiCount, _AWDStats.handoverWithoutDuplicationCount,
+                        _AWDStats.initialPrimaryInterfaceFound, _AWDStats.isRoaming,
+                        _AWDStats.keyframeCounter, _AWDStats.localVideoDegradeTime,
+                        _AWDStats.minFrameRate, _AWDStats.operatingMode,
+                        _AWDStats.pipRunningSince, _AWDStats.previousInterface,
+                        _AWDStats.remoteInterfaceName, _AWDStats.rxExcessICEBytes,
+                        _AWDStats.rxFrameRateAvg, _AWDStats.rxFrameRateMax,
+                        _AWDStats.rxHeight, _AWDStats.silenceCompressionRatio,
+                        _AWDStats.submitQueue, _AWDStats.targetJitterBufferSize,
+                        _AWDStats.terminationReason, _AWDStats.timeSinceLastVRA,
+                        _AWDStats.transportType, _AWDStats.txExcessRTPBytes,
+                        _AWDStats.txFrameRateAvgCount, _AWDStats.txFrameRateMin,
+                        _AWDStats.txWidth, _AWDStats.uplinkEstimateAvgCount,
+                        _AWDStats.videoPauseTime, _AWDStats.videoStallDuration,
+                        _AWDAdaptor._awdstat, _AWDAdaptor._jitterBufferUnderflowRateArray,
+                        _AWDStats.OWRDHistogram, _AWDStats.RTTHistogram,
+                        _AWDStats.audioTiers, _AWDStats.avgInterarrivalTimeCount,
+                        _AWDStats.avgLossRateCount, _AWDStats.bytesSaved,
+                        _AWDStats.callAvgTxRateCount, _AWDStats.connectionType,
+                        _AWDStats.currentInterfaceOUI, _AWDStats.downlinkEstimateAvgCount,
+                        _AWDStats.handoverDuringDuplication, _AWDStats.histogramDict,
+                        _AWDStats.isSender, _AWDStats.maxFrameRate,
+                        _AWDStats.pipDuration, _AWDStats.relayType,
+                        _AWDStats.rxExcessRTPBytes, _AWDStats.rxFrameRateMin,
+                        _AWDStats.startTime, _AWDStats.targetJitterBufferSizeCount,
+                        _AWDStats.timingDict, _AWDStats.txFrameRateAvg,
+                        _AWDStats.txHeight, _AWDStats.videoFlush ]
+...

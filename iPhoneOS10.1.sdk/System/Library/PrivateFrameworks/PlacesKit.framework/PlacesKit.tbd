@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PlacesKit.framework/PlacesKit
+current-version: 222.2.13
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PXMapStoreDefaultCapacityPerNode,
+                        _PXMapStoreStoreItemsInLeafNodesOnly, _PXQuadTreeNodeExtendCapacity,
+                        _PXQuadTreeNodeFree, _PXQuadTreeNodeInsertItem,
+                        _PXQuadTreeNodeMoveItemsToChildNodes, _PXQuadTreeNodeRemoveItem,
+                        _PXQuadTreeNodeSubdivide, _PlacesKitVersionString,
+                        _cornerRadius, _kPKExtendedTraitCollectionChangedNotification,
+                        _kPXPlacesAlbumImageCachedFilename, _mapPointComparator,
+                        _minCountLabelWidth, _stringForCoordinate,
+                        _stringForDiffEntryType, _PXMapStoreMinimumRectWidth,
+                        _PXQuadTreeNodeFindItemsInRect, _PXQuadTreeNodeMake,
+                        _PXQuadTreeNodeRunCollector, _assetCountChangedTimerDelay,
+                        _kPKExtendedTraitCollectionKey, _minCountLabelHeight,
+                        _pk_dispatch_on_main_queue ]
+    objc-classes:     [ _PKExtendedTraitCollection,
+                        _PXPlacesImageCache, _PXPlacesMapCircleAnnotationView,
+                        _PXPlacesMapController, _PXPlacesMapDefaultUpdatePlan,
+                        _PXPlacesMapDotsOverlay, _PXPlacesMapDotsRenderer,
+                        _PXPlacesMapFetchResultController, _PXPlacesMapInPlaceLayoutDiffer,
+                        _PXPlacesMapLayout, _PXPlacesMapLayoutDiffer,
+                        _PXPlacesMapLayoutResultImpl, _PXPlacesMapPinRenderer,
+                        _PXPlacesMapPipelineExecutionContext, _PXPlacesMapPointAnnotation,
+                        _PXPlacesMapSmallCircleAnnotationView, _PXPlacesMapThumbnailAnnotationView,
+                        _PXPlacesMapThumbnailRenderer, _PXPlacesMapView,
+                        _PXPlacesPhotoAssetsStore, _PXPlacesPopoverImageFactory,
+                        _PXPlacesSnapshotOptions, _PXPlacesTestDataGenerator,
+                        __PXMapStoreChange, ___PKObject,
+                        _PXPlacesGeotaggableSortDescriptor, _PXPlacesMapCircleRenderer,
+                        _PXPlacesMapDotsLayout, _PXPlacesMapDotsUpdatePlan,
+                        _PXPlacesMapInPlaceUpdatePlan, _PXPlacesMapLayoutItemImpl,
+                        _PXPlacesMapPipeline, _PXPlacesMapRadiusSelectionHandler,
+                        _PXPlacesMapThumbnailClusterLayout, _PXPlacesMapViewPort,
+                        _PXPlacesSnapshotFactory, _PXPlacesTestDataPoint,
+                        __PXPlacesImageCacheKey ]
+...

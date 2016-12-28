@@ -1,0 +1,47 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine
+current-version: 413.0.3
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _RTErrorDomain,
+                        _RTLogFacilityAction, _RTLogFacilityAsset,
+                        _RTLogFacilityBattery, _RTLogFacilityCallHistory,
+                        _RTLogFacilityConnection, _RTLogFacilityCoreRecents,
+                        _RTLogFacilityDataProvider, _RTLogFacilityDefaults,
+                        _RTLogFacilityEvent, _RTLogFacilityFeatureExtractor,
+                        _RTLogFacilityGeneral, _RTLogFacilityKeychain,
+                        _RTLogFacilityLocation, _RTLogFacilityLocationStore,
+                        _RTLogFacilityMapsSupport, _RTLogFacilityMetric,
+                        _RTLogFacilityMotionActivity, _RTLogFacilityPurge,
+                        _RTLogFacilityRoom, _RTLogFacilityScenarioTrigger,
+                        _RTLogFacilityStark, _RTLogFacilitySync,
+                        _RTLogFacilityVehicleLocation, _RTLogFacilityWallet,
+                        _RTLogFacilityWiFi, _RTLocationsOfInterestDidChangeNotification,
+                        _RTLogFacilityAuthorization, _RTLogFacilityClient,
+                        _RTLogFacilityDataProtection, _RTLogFacilityDeviceLocationPredictor,
+                        _RTLogFacilityFramework, _RTLogFacilityLifeCycle,
+                        _RTLogFacilityLocationTagging, _RTLogFacilityMigration,
+                        _RTLogFacilityReachability, _RTLogFacilitySettings,
+                        _RTLogFacilityTrafficConditions, _RTLogFacilityVisit ]
+    objc-classes:     [ _RTAction,
+                        _RTApplication, _RTLocationOfInterest,
+                        _RTLogger, _RTPredicateValidator,
+                        _RTPredictedDate, _RTPredictedRoom,
+                        _RTReceiptEventKit, _RTScenarioTrigger,
+                        _RTScenarioTriggerAtFamiliarLocation, _RTScenarioTriggerDisconnectedFromCar,
+                        _RTScenarioTriggerFirstTimeInCity, _RTScenarioTriggerHeadedToHome,
+                        _RTScenarioTriggerLastTimeAtLocation, _RTScenarioTriggerStayedLate,
+                        _RTSourceAudio, _RTSourceCoreLocationPredictedApplication,
+                        _RTSourceCoreRoutineLearnedLocation, _RTSourceEventKit,
+                        _RTSourceMapsSupport, _RTSourceMapsSupportHistoryEntry,
+                        _RTSourceMapsSupportHistoryEntryRoute, _RTVehicleEvent,
+                        _RTActionCondition, _RTLocationOfInterestVisit,
+                        _RTPredictedApplication, _RTReceipt,
+                        _RTScenarioTriggerArrivedEarly, _RTScenarioTriggerFirstTimeAtLocation,
+                        _RTScenarioTriggerHeadedToWork, _RTSource,
+                        _RTSourceCoreRoutine, _RTSourceLocationVisit,
+                        _RTSourceMapsSupportHistoryEntryPlaceDisplay ]
+...

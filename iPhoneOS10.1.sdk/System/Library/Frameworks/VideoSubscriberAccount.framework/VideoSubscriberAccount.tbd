@@ -1,0 +1,65 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: E4CE15DF-0F4D-3CFE-88EE-2F02D1C5F4A2', 'armv7s: 0A7AAA49-7EBF-34D6-B910-7F5CF57E7781', 
+                   'arm64: B0613108-A267-3BFC-B870-261E871858CD' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
+current-version: 106.2
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _VSAccountStoreDidChangeNotification, _VSAlertForError, _VSBulletinServiceInterface, 
+                       _VSBundleURLForProcessIdentifier, _VSCheckAccessOptionPrompt, 
+                       _VSCheckEntitlementForTask, _VSDeletedKeychainItemsKey, _VSDeveloperServiceDidChangeNotification, 
+                       _VSDeveloperServiceInterface, _VSDisplayNameForBundleWithIdentifier, 
+                       _VSErrorDestructiveRecoveryOptionIndexSet, _VSErrorDomain, 
+                       _VSErrorInfoKeySAMLResponse, _VSErrorInfoKeySAMLResponseStatus, 
+                       _VSErrorInfoKeyUnsupportedProviderIdentifier, _VSErrorIsPrivateError, 
+                       _VSErrorIsPublicError, _VSIconForBundleWithIdentifier, _VSIdentityProviderAvailabilityDidChangeNotification, 
+                       _VSInsertedKeychainItemsKey, _VSInvalidVerificationTokenError, 
+                       _VSIsValidAuthenticationToken, _VSJSErrorDomain, _VSKeychainAffectedItemsKey, 
+                       _VSKeychainDetailedErrorsKey, _VSKeychainEditingContextDidSaveNotification, 
+                       _VSKeychainEditingContextWillSaveNotification, _VSKeychainErrorDomain, 
+                       _VSKeychainItemCreatorCode, _VSKeychainItemKindGenericPassword, 
+                       _VSNumberForFourCharCode, _VSOpenURL, _VSPrivacyServiceInterface, 
+                       _VSPrivacyUsageInfoPlistKey, _VSPrivateAccessUsageDescriptionMissing, 
+                       _VSPrivateAccountDeletionErrorWithRecoveryHandler, _VSPrivateAccountLoadingErrorWithRecoveryHandler, 
+                       _VSPrivateAccountValidationErrorWithRecoveryHandler, _VSPrivateError, 
+                       _VSPrivateViewServiceCrashedErrorWithRecoveryHandler, _VSPublicError, 
+                       _VSPublicProviderRejectedError, _VSPublicServiceTemporarilyUnavailableError, 
+                       _VSPublicUnsupportedProviderError, _VSRequireKeyedCoder, _VSRequireMainThread, 
+                       _VSSharedDataCompressionValueTransformer, _VSSharedURLStringValueTransformer, 
+                       _VSStoreURLBagKeyIdentityProviders, _VSStoreURLBagKeyVerificationStateReset, 
+                       _VSUpdatedKeychainItemsKey, _VSUserInfoForErrorRecoveryOptions, 
+                       _VSWaitForDebugger, _VSWaitForDebuggerUntilDate ]
+    objc-classes:    [ _VSAccount, _VSAccountAuthentication, _VSAccountManager, _VSAccountManagerResult, 
+                       _VSAccountMetadata, _VSAccountMetadataRequest, _VSAccountStore, 
+                       _VSAppDescriptionFetchOperation, _VSApplication, _VSApplicationController, 
+                       _VSApplicationControllerRequest, _VSApplicationControllerRequestFactory, 
+                       _VSApplicationControllerResponse, _VSApplicationControllerResponseHandler, 
+                       _VSAsyncOperation, _VSAutoAuthenticationViewModel, _VSBulletinService, 
+                       _VSBundlePrivacyInfo, _VSCompoundValueTransformer, _VSCredentialEntryField, 
+                       _VSCredentialEntryViewModel, _VSDelayOperation, _VSDeveloperIdentityProvider, 
+                       _VSDeveloperIdentityProviderChangeOperation, _VSDeveloperIdentityProviderFetchAllOperation, 
+                       _VSDeveloperIdentityProviderStore, _VSDeveloperService, _VSDevice, 
+                       _VSErrorRecoveryOption, _VSErrorViewController, _VSFailable, 
+                       _VSIdentityProvider, _VSIdentityProviderAvailabilityInfoCenter, 
+                       _VSIdentityProviderController, _VSIdentityProviderControllerFactory, 
+                       _VSIdentityProviderFetchAllFromStoreOperation, _VSIdentityProviderFetchAllOperation, 
+                       _VSIdentityProviderFetchOperation, _VSIdentityProviderFilter, 
+                       _VSIdentityProviderRequest, _VSIdentityProviderRequestManager, 
+                       _VSIdentityProviderRequestOperation, _VSIdentityProviderResponse, 
+                       _VSJSError, _VSJSSAMLResponse, _VSKeychainEditingContext, 
+                       _VSKeychainFetchRequest, _VSKeychainGenericPassword, _VSKeychainItem, 
+                       _VSKeychainItemAttribute, _VSKeychainItemKind, _VSLoadingViewController_iOS, 
+                       _VSPersistentContainer, _VSPreferences, _VSPrivacyFacade, 
+                       _VSPrivacyInfoCenter, _VSPrivacyService, _VSRemoteNotifier, 
+                       _VSReverseValueTransformer, _VSSAMLRequestFactory, _VSSecurityTask, 
+                       _VSServiceListener, _VSStoreURLBag, _VSTimeoutOperation, _VSUserNotificationOperation, 
+                       _VSVerificationStateResetOperation, _VSViewControllerFactory, 
+                       _VSViewControllerPresentationStack, _VSViewModel, _VSViewServiceApplication, 
+                       _VSViewServiceHostViewController, _VSViewServiceRemoteViewController, 
+                       _VSViewServiceRequest, _VSViewServiceRequestCenter, _VSViewServiceRequestOperation, 
+                       _VSViewServiceRequestPreparationOperation, _VSViewServiceResponse, 
+                       _VSViewServiceXPCInterface ]
+...

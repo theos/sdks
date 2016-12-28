@@ -1,0 +1,35 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/ManagedEvent.framework/ManagedEvent
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kSymptomConfigKeyChangeTarget,
+                        _kSymptomConfigKeyConditionPresenceTime, _kSymptomConfigKeyConditionSymptom2Counts,
+                        _kSymptomConfigKeyDNSPresenceTime, _kSymptomConfigKeyNotificationDampening,
+                        _kSymptomConfigKeyTriggerRefuterMode, _kSymptomConfigValNotificationCombinationDemo,
+                        _kSymptomConfigValNotificationDNS, _kSymptomConfigValNotificationPassthroughDemo,
+                        _kSymptomManagedEventARPAliveNotification, _kSymptomManagedEventCaptivityNotification,
+                        _kSymptomManagedEventDNSAliveNotification, _kSymptomManagedEventKeyAWDARPFailureCount,
+                        _kSymptomManagedEventKeyAWDTrafficWatchDuration, _kSymptomManagedEventKeyAWDTrafficWatchTimeSince,
+                        _kSymptomManagedEventKeyAWDWiFiDNSImpactedServers, _kSymptomManagedEventKeyBundleDetails,
+                        _kSymptomManagedEventKeyFlowScoreDetails, _kSymptomManagedEventKeyNumReportingProcesses,
+                        _kSymptomManagedEventKeyTriggerAWDInfo, _kSymptomManagedEventKeyTriggerDNSState,
+                        _kSymptomManagedEventKeyTriggerElapsedSinceClose, _kSymptomManagedEventKeyTriggerImpact,
+                        _kSymptomManagedEventKeyTriggerImpactReasons, _kSymptomManagedEventKeyTriggerNetScore,
+                        _kSymptomManagedEventKeyTriggerPollFlowState, _kSymptomManagedEventKeyTriggerScore,
+                        _kSymptomManagedEventKeyTriggerTCP3WHSStuck, _kSymptomManagedEventKeyTriggerTCPReadStuck,
+                        _kSymptomManagedEventWiFiDNSTriggerNotification, _kSymptomManagedEventWiFiTriggerDisconnectNotification,
+                        _managed_event_fetch_series, _managed_event_param_change_multiple,
+                        _managed_event_param_read_multiple, _kSymptomConfigKeyConditionDNS,
+                        _kSymptomConfigKeyConditionThreshold, _kSymptomConfigKeyTriggerDampening,
+                        _kSymptomConfigValNotificationConnectionFailures, _kSymptomConfigValNotificationThroughputDrop,
+                        _kSymptomManagedEventCellWhileWiFiNotification, _kSymptomManagedEventKeyAWDGateOpenDuration,
+                        _kSymptomManagedEventKeyAWDValidState, _kSymptomManagedEventKeyDefRouteRTTVals,
+                        _kSymptomManagedEventKeyTriggerARPState, _kSymptomManagedEventKeyTriggerDetails,
+                        _kSymptomManagedEventKeyTriggerImpactFlags, _kSymptomManagedEventKeyTriggerNetScoreReasons,
+                        _kSymptomManagedEventKeyTriggerScoreInfo, _kSymptomManagedEventKeyTriggerTCPWriteStuck,
+                        _managed_event_fetch, _managed_event_param_read ]
+...

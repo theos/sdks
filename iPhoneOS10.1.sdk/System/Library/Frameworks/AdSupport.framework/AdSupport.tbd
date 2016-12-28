@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: A2E0FFD7-68A9-3B40-A5B8-63AF0044C525', 'armv7s: 08AC998D-EE3A-36F0-8CE8-8DCCD870F193', 
+                   'arm64: 28226E5A-1452-3142-8F33-E4583B1CEF4C' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AdSupport.framework/AdSupport
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _ASIdentifierManager ]
+...

@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IMTranscoderAgent.framework/IMTranscoderAgent
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMTranscodeErrorDomain,
+                        __IMTranscoderLinkFile ]
+    objc-classes:     [ _IMEmbeddedHardwareJPEGTranscoder,
+                        _IMTranscoder, _IMTranscoder_Image,
+                        _IMTranscodingAgentController, _IMFallbackTranscoder,
+                        _IMTranscoder_AV ]
+    objc-ivars:       [ _IMEmbeddedHardwareJPEGTranscoder._canHardwareScaleImage,
+                        _IMEmbeddedHardwareJPEGTranscoder._imageProperties, _IMTranscodingAgentController._fallbackTranscoders,
+                        _IMTranscodingAgentController._transcoders, _IMEmbeddedHardwareJPEGTranscoder._imageData,
+                        _IMTranscodingAgentController._queue ]
+...

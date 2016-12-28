@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreCaptureControl.framework/CoreCaptureControl
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CoreCaptureControlCapture,
+                        _CoreCaptureControlConfigureProfile, _CoreCaptureControlCreate,
+                        _CoreCaptureControlStart, _CoreCaptureControlStop,
+                        _CoreCaptureControlConfigurePipe, _CoreCaptureControlGetTypeID ]
+...

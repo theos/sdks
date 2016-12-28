@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SFSanitizeObject,
+                        _SearchFoundationVersionString, _kSFIdentifierMapsSearch,
+                        _kSFIdentifierWebSearch, _SearchFoundationVersionNumber,
+                        _kSFIdentifierAppStoreSearch ]
+    objc-classes:     [ _SFActionItem,
+                        _SFAppLinkCardSection, _SFCardSection,
+                        _SFCardSectionFeedback, _SFClearInputFeedback,
+                        _SFCustomFeedback, _SFDidGoToSiteFeedback,
+                        _SFEndNetworkSearchFeedback, _SFErrorFeedback,
+                        _SFFormattedText, _SFImage,
+                        _SFKeyValueTuple, _SFMapsCardSectionEngagementFeedback,
+                        _SFMediaInfoCardSection, _SFMediaOffer,
+                        _SFMetaInfoCardSection, _SFNowPlayingCardSection,
+                        _SFRankingFeedback, _SFResultFeedback,
+                        _SFResultSection, _SFRichText,
+                        _SFRowCardSection, _SFSearchResult,
+                        _SFSearchViewAppearFeedback, _SFSectionEngagementFeedback,
+                        _SFSocialMediaPostCardSection, _SFStartLocalSearchFeedback,
+                        _SFStartSearchFeedback, _SFStoreCardSectionEngagementFeedback,
+                        _SFTableAlignmentSchema, _SFTableHeaderRowCardSection,
+                        _SFText, _SFTextColumnSection,
+                        _SFTitleCardSection, _SFTrackListCardSection,
+                        _SFVisibleSectionHeaderFeedback, _SFVisibleSuggestionsFeedback,
+                        _SFAppLink, _SFCardSectionEngagementFeedback,
+                        _SFCustom, _SFEndLocalSearchFeedback,
+                        _SFFeedback, _SFKeyValueDataCardSection,
+                        _SFMediaDetail, _SFMediaPlayerCardSection,
+                        _SFPunchout, _SFResultRankingFeedback,
+                        _SFRichTitleCardSection, _SFSearchSuggestion,
+                        _SFSectionRankingFeedback, _SFStartNetworkSearchFeedback,
+                        _SFSuggestionEngagementFeedback, _SFTableRowCardSection,
+                        _SFTextColumnsCardSection, _SFVisibleResultsFeedback ]
+    objc-ivars:       [ _SFFeedback._timestamp ]
+...

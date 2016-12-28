@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BKSAppWatchdogServerPort,
+                        _BKSApplicationStateActivationReasonKey, _BKSApplicationStateAppIsFrontmostKey,
+                        _BKSApplicationStateExitCodeKey, _BKSApplicationStateExtensionKey,
+                        _BKSApplicationStateKey, _BKSApplicationStateMessageContent,
+                        _BKSApplicationStateMessageInterestedBundleIDs, _BKSApplicationStateMessageKeyToRetrieve,
+                        _BKSApplicationStateMessageType, _BKSApplicationStateProcessIDKey,
+                        _BKSApplicationStateRunningReasonAssertionReasonKey, _BKSApplicationStateServerRegisteredNotifyKey,
+                        _BKSProcessAssertionMessageTypeKey, _BKSProcessAssertionSetExpirationHandler,
+                        _BKSProcessInfoServiceMessageKeyArray, _BKSProcessInfoServiceMessageKeyBundlePath,
+                        _BKSProcessInfoServiceMessageKeyMessageType, _BKSProcessInfoServiceMessageKeyString,
+                        _BKSProcessInfoServiceName, _BKSWatchdogAssertionGetTypeID,
+                        __BKSAppWatchdogAddAssertionForProcess, _BKSApplicationNotificationStateChanged,
+                        _BKSApplicationStateDisplayIDKey, _BKSApplicationStateHostPIDKey,
+                        _BKSApplicationStateMessageElevatedPriority, _BKSApplicationStateMessageProcessID,
+                        _BKSApplicationStateRunningReasonAssertionIdentifierKey, _BKSProcessAssertionEventKey,
+                        _BKSProcessExtensionPropertyBundleID, _BKSProcessInfoServiceMessageKeyInt,
+                        _BKSProcessInfoServiceMessageKeyVisibility, _BKSWatchdogAssertionCreateForPID ]
+    objc-classes:     [ _BKSApplicationStateMonitor,
+                        _BKSProcessAssertion, _BKSProcessAssertionCreateEvent,
+                        _BKSProcessAssertionDestroyEvent, _BKSProcessAssertionUpdateEvent,
+                        _BKSProcess, _BKSProcessAssertionCreateResponseEvent,
+                        _BKSProcessAssertionEvent ]
+    objc-ivars:       [ _BKSProcess._bundlePath,
+                        _BKSProcess._pid, _BKSProcess._clientQueue ]
+...

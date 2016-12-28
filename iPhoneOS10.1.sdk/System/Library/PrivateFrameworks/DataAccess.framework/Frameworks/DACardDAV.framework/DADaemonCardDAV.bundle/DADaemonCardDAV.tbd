@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DADaemonCardDAV.bundle/DADaemonCardDAV
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    objc-classes:     [ _CardDAVAgent,
+                        _CardDAVFacebookDaemonAccount, _CardDAVVCardItem,
+                        _CardDAViCloudGetAccountPropertiesTaskGroup, _CardDAVDaemonAccount,
+                        _CardDAViCloudDaemonAccount ]
+    objc-ivars:       [ _CardDAVAgent._bulkUploadHREFBlacklist,
+                        _CardDAVAgent._containerPushKeys, _CardDAVAgent._folderItemSyncRequestLock,
+                        _CardDAVAgent._folderURLToSyncInfo, _CardDAVAgent._matchMode,
+                        _CardDAVAgent._outstandingFolderRequests, _CardDAVAgent._testRecord,
+                        _CardDAVSyncInfo._uuidToPersonCache, _CardDAVAgent._bulkUploadUUIDBlacklist,
+                        _CardDAVAgent._folderURLToHeldAsideGroups, _CardDAVAgent._matchedRecord,
+                        _CardDAVSyncInfo._startedWithNoContacts ]
+...

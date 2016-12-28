@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MailboxPrediction.framework/MailboxPrediction
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MPErrorCodeToString,
+                        _MailboxPredictionVersionString, _kMPAnySelectedAcceleration,
+                        _kMPCcMatrixSecureCodingKey, _kMPCount,
+                        _kMPDomain, _kMPLabelCountsSecureCodingKey,
+                        _kMPMailboxModelSecureCodingKey, _kMPModelSecureCodingKey,
+                        _kMPRecommendationMade, _kMPSenderFeatureKey,
+                        _kMPSendersSecureCodingKey, _kMPSmoothingSecureCodingKey,
+                        _kMPSubjectMatrixSecureCodingKey, _kMPToFeatureKey,
+                        _kMPToSecureCodingKey, _kMPTopSelectedAcceleration,
+                        _kMPTrainedSecureCodingKey, _MailboxPredictionVersionNumber,
+                        _kMPCcFeatureKey, _kMPCountedSetSecureCodingKey,
+                        _kMPLabelsSecureCodingKey, _kMPNonRecommendedSelected,
+                        _kMPSenderMatrixSecureCodingKey, _kMPSubjectFeatureKey,
+                        _kMPToMatrixSecureCodingKey, _kMPTopSelected ]
+    objc-classes:     [ _MPAccount,
+                        _MPErrorUtilities, _MPMailbox,
+                        _MPMessage, _MPNaiveBayesRecommender,
+                        _MPRecommendation, _MPSmoothingParameters,
+                        _MPSparseNaiveBayesRecommender, _MPActionLogger,
+                        _MPMailboxModel, _MPPerson,
+                        _MPRecommender ]
+...

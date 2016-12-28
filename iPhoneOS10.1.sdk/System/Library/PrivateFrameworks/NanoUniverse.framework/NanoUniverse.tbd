@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoUniverse.framework/NanoUniverse
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _NUMapFile,
+                        _NUProgramValidate, _NanoUniverseVersionNumber,
+                        __Z10UMQuatMakeDv3_f, __Z10UMQuatMakefff,
+                        __Z11UMTranspose8float3x3, __Z13NULoadTexturePK9NUMemFile,
+                        __Z14UMFloat3x3MakeDv3_fS_S_, __Z19UMFloat4x4MakeScaleDv3_f,
+                        __Z20UMFloat4x4MakeLookAtDv3_fS_S_, __Z21UMFloat4x4MakeRotateZf,
+                        __Z23UMFloat4x4MakeTranslateDv3_f, __Z5UMMul6UMQuatS_,
+                        __Z5UMMul8float3x3S_, __Z5UMMul8float4x4S_,
+                        __Z8UMNegate8float3x3, _kUMFloat4x4Identity,
+                        _kUMFloat4x4Zero, _NUProgramInit,
+                        _NanoUniverseVersionString, __Z11UMTranslate8float4x4Dv3_f,
+                        __Z14UMFloat3x3Make6UMQuat, __Z19UMFloat4x4MakeScalef,
+                        __Z23NULoadTextureFromMemoryPKhj, __Z5UMMul8float3x3Dv3_f,
+                        __Z7UMSlerp6UMQuatS_f, ___NUCheckGLError ]
+    objc-classes:     [ _NUAnimation,
+                        _NURenderer, _NUSpheroid,
+                        _NUView, _NUPortal,
+                        _NUScene ]
+...

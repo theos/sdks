@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SDAPI.framework/SDAPI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SDApi_HasErrored,
+                        _SDParamSetHolder_Delete, _SDParamSetParam_GetHandle,
+                        _SDParamSetParam_SetBoolValue, _SDParamSetParam_SetEnumValue,
+                        _SDParamSetParam_SetStringValue, _SDRecog_GuessPronsNonAcoustic,
+                        _SDState_GetHandle, _SDVoc_GetCollationName,
+                        _SDVoc_GetInfo, _SDVoc_SetAllowedWordCollations,
+                        _SDWord_GetHumanReadableProns, _TPApi_Initialize,
+                        _TPItn_DeleteResult, _TPItn_GetResultText,
+                        _TPItn_WordSequenceToResult, _TPLexicon_GetHeadClone,
+                        _TPLexicon_Open, _TPToken_DeleteResult,
+                        _TPToken_GetResultInfo, _TPToken_Tokenize,
+                        _SDApi_Initialize, _SDParamSetParam_GetType,
+                        _SDParamSetParam_SetIntValue, _SDState_GetAllowedWordCollations,
+                        _SDVoc_GetColls, _SDWord_DeleteList,
+                        _TPItn_Close, _TPItn_Open,
+                        _TPLexicon_GetInfo, _TPToken_GetResultData,
+                        _TPToken_Open ]
+...

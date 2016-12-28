@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAEAS.framework/DADaemonEAS.bundle/DADaemonEAS
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __ASSyncTaskPreservedActionsFromActions,
+                        __DASyncableActionsFromDAActions ]
+    objc-classes:     [ _ASAgent,
+                        _ASContactDataHandler, _ASDaemonPolicyManager,
+                        _ASEventDataHandler, _ASNoteDataHandler,
+                        _ASToDoDataHandler, _ASAgentFolderHierarchyContext,
+                        _ASDataHandler, _ASFolderChangedHistory ]
+    objc-ivars:       [ _ASDaemonAccount._attachmentManager,
+                        _ASDaemonAccount._curReplyMethod, _ASDaemonAccount._eventsNumberOfPastDaysToSync,
+                        _ASDaemonAccount._folderIdsWithUnacknowledgedPings, _ASDaemonAccount._hasScheduledWake,
+                        _ASDaemonAccount._invitationActionsInFlight, _ASDaemonAccount._isTearingDown,
+                        _ASDaemonAccount._lastPingHeartBeat, _ASDaemonAccount._pcManager,
+                        _ASDaemonAccount._pingHistoryBlacklistFolderIds, _ASDaemonAccount._safeToPing,
+                        _ASDaemonAccount._busyFolderIds, _ASDaemonAccount._folderChangeHistory,
+                        _ASDaemonAccount._hierarchyChangeHistory, _ASDaemonAccount._lastPingFolders,
+                        _ASDaemonAccount._pingBlacklistFolderIds, _ASDaemonAccount._pingTask ]
+...

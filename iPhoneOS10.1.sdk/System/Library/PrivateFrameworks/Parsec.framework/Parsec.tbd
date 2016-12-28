@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Parsec.framework/Parsec
+current-version: 1066.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PRSLogCategoryDefault,
+                        _PRSLogInit, _PRSParsecVersionString,
+                        _gPRSLogDebugAsDefault, _gPRSLogLevel,
+                        _json_parse, _locationLock,
+                        _PRSLogCategoryRanking, _gExtraParam,
+                        _json_char_table, _json_utf8_string ]
+    objc-classes:     [ _PRSBagHandler,
+                        _PRSCoreDuet, _PRSDictationQueryTask,
+                        _PRSFeedbackProxy, _PRSParsecResultSetPattern,
+                        _PRSRankingKnobs, _PRSRankingPolicyManager,
+                        _PRSRankingUtilities, _PRSSearchSession,
+                        _PRSCEPData, _PRSFTETask,
+                        _PRSQueryTask, _PRSRankingProperties ]
+    objc-ivars:       [ _PRSBagHandler._bagQueue,
+                        _PRSSearchSession._lastQueryTime, _PRSSearchSession._sqfData,
+                        _PRSSearchSession._userAgent, _PRSSearchSession._client,
+                        _PRSSearchSession._queryLanguage ]
+...

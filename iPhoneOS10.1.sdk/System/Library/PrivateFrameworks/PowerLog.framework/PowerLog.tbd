@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PLABCUIQuery,
+                        _PLBatteryGaugeGetSnapshot, _PLBatteryGaugePauseTracingForBundleId,
+                        _PLBatteryGaugePauseTracingForProcessName, _PLBatteryGaugeResumeTracingForBundleId,
+                        _PLBatteryGaugeResumeTracingForProcessName, _PLBatteryGaugeStartTracingForBundleId,
+                        _PLBatteryGaugeStartTracingForProcessName, _PLBatteryGaugeStopTracingForBundleId,
+                        _PLBatteryGaugeStopTracingForProcessName, _PLBatteryLifeMonitorGenericDuetQuery,
+                        _PLBatteryLifeMonitorLogCoreDuetEvent, _PLBatteryLifeMonitorLogCoreDuetPredictionEvents,
+                        _PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet, _PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet,
+                        _PLBatteryLifeMonitorReportEnergyDuet, _PLBatteryUsageUIQuery,
+                        _PLForceBatching, _PLLogRegisteredEvent,
+                        _PLMovePowerlogsToCR, _PLQueryRegistered,
+                        _PLShouldLogRegisteredEvent, _queryPowerlog,
+                        _PLBatchDropMessages, _PLBatteryGaugePauseTracingForPid,
+                        _PLBatteryGaugeResumeTracingForPid, _PLBatteryGaugeStartTracingForPid,
+                        _PLBatteryGaugeStopTracingForPid, _PLBatteryLifeMonitorLogCoreDuetAdmissionEvent,
+                        _PLBatteryLifeMonitorLogDuetEvent, _PLBatteryLifeMonitorReportEnergyCoreDuet,
+                        _PLFDefaultsValueForKey, _PLLogTimeSensitiveRegisteredEvent,
+                        _PLShouldLogEvent, _PLTalkToPowerlogHelper ]
+    objc-classes:     [ _PLClientLogger,
+                        _PLCoreDuetEventInterval, _PLModelingUtilities,
+                        _PLCoreDuetEvent ]
+...

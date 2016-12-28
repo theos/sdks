@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/EasyConfig.framework/EasyConfig
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _EasyConfigDeviceProgressNotification,
+                        _EasyConfigKey_AdminPassword, _EasyConfigKey_BundleSeedID,
+                        _EasyConfigKey_FirmwareRevision, _EasyConfigKey_HardwareRevision,
+                        _EasyConfigKey_MFiProtocols, _EasyConfigKey_Model,
+                        _EasyConfigKey_PlayPassword, _EasyConfigKey_ReasonError,
+                        _EasyConfigKey_SerialNumber, _EasyConfigKey_WiFiSSID,
+                        _EasyConfigLogControl, _EasyConfigDeviceStoppedNotification,
+                        _EasyConfigKey_DeviceID, _EasyConfigKey_Language,
+                        _EasyConfigKey_Name, _EasyConfigKey_Response,
+                        _EasyConfigKey_WiFiPSK ]
+    objc-classes:     [ _EasyConfigDevice ]
+...

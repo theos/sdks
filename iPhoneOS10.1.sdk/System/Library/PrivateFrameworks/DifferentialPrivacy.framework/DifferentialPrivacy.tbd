@@ -1,0 +1,57 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DifferentialPrivacy.framework/DifferentialPrivacy
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DifferentialPrivacyVersionNumber,
+                        __DPDaemonInterface, _areEqualTimeIntervals,
+                        _isEqualToOne, _kDPAPServerAlgorithmString,
+                        _kDPAPobhSequenceDimensionality, _kDPFragmentCount,
+                        _kDPKNPropertyName, _kDPKPAlgorithmParameters,
+                        _kDPKPDataAlgorithm, _kDPKPKeyPatternsAllowed,
+                        _kDPKPPrivacyParameter, _kDPKPPropertiesName,
+                        _kDPKPTransport, _kDPKPValueMaximumTrimmed,
+                        _kDPKPValueMinimumTrimmed, _kDPSessionSeconds,
+                        _kDPTCommandKey, _kDPTCommandRecordNumbers,
+                        _kDPTCommandRecordWords, _kDPTDataBaseDirectoryPath,
+                        _kDPTRecordKey, _kDefaultDimensionality,
+                        _kSecondsIn18Hours, _kSecondsIn3Day,
+                        _kSecondsInOneDay, _DifferentialPrivacyVersionString,
+                        _epsilonMAX, _kDPAPobhDimensionality,
+                        _kDPKNKeyName, _kDPKPBudgetKeyName,
+                        _kDPKPNoiseDistribution, _kDPKPServerAlgorithmString,
+                        _kDPKPValueMinimumPossible, _kDPTArgumentsCVSKey,
+                        _kDPTCommandRecordStrings, _kDPTReadWriteAccessKey,
+                        _kSecondsIn12Hours, _kSecondsIn7Day ]
+    objc-classes:     [ __DPAlgorithmParameters,
+                        __DPBlacklist, __DPCMSRecord,
+                        __DPCMSRecordMOConverter, __DPCMSSequenceMO,
+                        __DPCMSWordMO, __DPCoreDataStorage,
+                        __DPDataProtectionMaster, __DPDataRecorder,
+                        __DPDeviceInfo, __DPErrorUtilities,
+                        __DPJSONOutputHelper, __DPKeyNames,
+                        __DPLaplaceNoiseGenerator, __DPModelInfoRecord,
+                        __DPModelInfoRecordMOConverter, __DPNumericDataRecord,
+                        __DPNumericDataRecordMOConverter, __DPOBHFragmentMO,
+                        __DPOBHRandomizer, __DPOBHRecordMO,
+                        __DPOBHSequenceMO, __DPParsecUploadHelper,
+                        __DPPeriodicTaskManager, __DPPrivacyBudgetManager,
+                        __DPPrivacyBudgetRecord, __DPPrivacyBudgetRecordMOConverter,
+                        __DPRandomBitPositionGenerator, __DPRecordQueryPredicates,
+                        __DPReportGenerator, __DPStorage,
+                        __DPStringRecorder, __DPToolArguments,
+                        __DPUniformNoiseGenerator, __DPValueRange,
+                        __DPWordRecorder, __DPXPCRecorder,
+                        __DPBiasedCoin, __DPCMSRecordMO,
+                        __DPCMSSequenceRecord, __DPDaemonConnection,
+                        __DPDatabaseRecorder, __DPInputHelper,
+                        __DPKeyProperties, __DPModelInfoRecordMO,
+                        __DPNumericDataRecordMO, __DPOBHFragmentRecord,
+                        __DPOBHRecordMOConverter, __DPPeriodicTask,
+                        __DPPrivacyBudgetProperties, __DPPuzzleBox,
+                        __DPReportFileManager, __DPStringRandomizer,
+                        __DPToolCommand, __DPWordRecord ]
+...

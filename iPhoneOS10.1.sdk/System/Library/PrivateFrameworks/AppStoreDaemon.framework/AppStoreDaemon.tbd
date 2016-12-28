@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ASDDebugFileLevel,
+                        _ASDDebugLog, _ASDError,
+                        _ASDErrorDomain, _ASDErrorWithUnderlyingError,
+                        _ASDLookupPropertyBundleIdentifier, _ASDLookupPropertyExternalVersionIdentifier,
+                        _ASDSoftwareUpdateHistoryInterval, _ASDStoreItemMetadataPropertyBundleIdentifier,
+                        _AppStoreDaemonVersionNumber, _kASDUserDefaultsIdentifier,
+                        _ASDDebugLevel, _ASDErrorBySettingUserInfoValue,
+                        _ASDErrorWithUnderlyingErrorAndInfo, _ASDLookupPropertyItemIdentifier,
+                        _ASDStoreItemMetadataPropertyItemIdentifier, _AppStoreDaemonVersionString ]
+    objc-classes:     [ _ASDBaseClient,
+                        _ASDCheckQueueRequestOptions, _ASDClaimApplicationsRequestOptions,
+                        _ASDDownloadQueueRequestOptions, _ASDInstallManifestRequestOptions,
+                        _ASDJob, _ASDJobAsset,
+                        _ASDJobManagerClientConnection, _ASDJobManifest,
+                        _ASDJobResult, _ASDManagedApplicationRequest,
+                        _ASDMigrationRequest, _ASDRegisterListenerOptions,
+                        _ASDRepairApplicationRequestOptions, _ASDRequestOptions,
+                        _ASDResetRequest, _ASDRestoreDemotedApplicationsRequest,
+                        _ASDRollableLog, _ASDSoftwareUpdatesStore,
+                        _ASDStoreItemMetadata, _ASDCheckQueueRequest,
+                        _ASDCoding, _ASDInstallManifestRequestResponse,
+                        _ASDJobManager, _ASDJobOptions,
+                        _ASDManagedApplicationRequestOptions, _ASDRepairApplicationRequest,
+                        _ASDRequestResponse, _ASDRestoreDemotedApplicationsRequestOptions,
+                        _ASDSoftwareUpdate ]
+    objc-ivars:       [ _ASDLogFileOptions._directoryPath,
+                        _ASDLogFileOptions._maxNumberOfLogFiles, _ASDRollableLog._dispatchQueue,
+                        _ASDRollableLog._fileObserverSource, _ASDRollableLog._options,
+                        _ASDLogFileOptions._fileName, _ASDRollableLog._fileHandle,
+                        _ASDRollableLog._lastFileStatTime ]
+...

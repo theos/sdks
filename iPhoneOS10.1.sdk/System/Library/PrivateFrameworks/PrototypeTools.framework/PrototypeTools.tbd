@@ -1,0 +1,56 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PTGetRingerVolume,
+                        _PTIconImageHeight, _PTIconLabelHeight,
+                        _PTIconWidth, _PTPreferencesBoolForKey,
+                        _PTPrototypeImagesDirectory, _PTSConcreteStringForIndex,
+                        _PTSHUDDidShowNotification, _PTSHUDSaveSettingsGroupReasonMove,
+                        _PTSHUDSaveSettingsGroupReasonSave, _PTSHUDWillHideNotification,
+                        _PTScreenBounds, _PTSetRingerSilentChangedHandler,
+                        _PTSetRingerVolumeChangedHandler, _PTTTLIsExpired,
+                        __UIViewBreadthFirstViewSort, _pt_time_elapsed_capture,
+                        _pt_time_mark, _PTIconHeight,
+                        _PTIconLabelOrigin, _PTPrototypeDirectory,
+                        _PTSHUDDidHideNotification, _PTSHUDSaveSettingsGroupReasonRemove,
+                        _PTSHUDWillShowNotification, _PTSetRingerVolume,
+                        _PTTTLMake, _pt_time_elapsed_msg ]
+    objc-classes:     [ _PT2DGraphAxisStyle,
+                        _PT2DGraphDotView, _PTIcon,
+                        _PTLegibleTextAssistant, _PTLegibleTextAssistantSettingsForDarkText,
+                        _PTSAddGroupSettingsRowAction, _PTSButtonCell,
+                        _PTSButtonRowTableViewCell, _PTSChoiceRow,
+                        _PTSChoiceViewController, _PTSDrillDownRowAction,
+                        _PTSDuplicateRowsActivity, _PTSEditFloatRowTableViewCell,
+                        _PTSEditStringRow, _PTSGraphView,
+                        _PTSHUDRow, _PTSImagePickerViewController,
+                        _PTSImagePreviewRow, _PTSImageSettings,
+                        _PTSLoadingCell, _PTSModuleController,
+                        _PTSPresentViewControllerRowAction, _PTSPushViewControllerRowAction,
+                        _PTSRow, _PTSRowTableViewCell,
+                        _PTSSavedModeTableView, _PTSSection,
+                        _PTSSliderRow, _PTSStaticBOOLRow,
+                        _PTSStaticRow, _PTSSwitch,
+                        _PTSSwitchRowTableViewCell, _PTSettingsController,
+                        _PTSliderIncrementButton, _PTVolumeChangeNotifier,
+                        _PTXMotionWindow, _PTXParallaxEngineSettings,
+                        _PTXParallaxReferenceFrame, _PTXParallaxView,
+                        __PTSAppearanceCondition, _PT2DGraphDatum,
+                        _PTIconSettings, _PTLegibleTextAssistantSettingsForLightText,
+                        _PTSButtonRow, _PTSChoiceRowTableViewCell,
+                        _PTSDrillDownRowTableViewCell, _PTSEditRowTableViewCell,
+                        _PTSHUD, _PTSImagePreviewCell,
+                        _PTSInfoLabel, _PTSPicker,
+                        _PTSRestoreDefaultSettingsRowAction, _PTSSavedModeTableHUDRow,
+                        _PTSSlider, _PTSStaticBOOLRowTableViewCell,
+                        _PTSSwitchRow, _PTSlider,
+                        _PTXLiveView, _PTXParallaxImageView,
+                        _PTXParallaxSettings ]
+    objc-ivars:       [ _PTVolumeChangeNotifier.ringerSilentChangedHandlers,
+                        _PTVolumeChangeNotifier.ringerVolumeChangedHandlers ]
+...

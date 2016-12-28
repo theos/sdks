@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DADaemonSupport.framework/DADaemonSupport
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DADAgentsStoppedNotification,
+                        ___RootDomainConnect, _gDADHighAvailabilityQueue,
+                        _handleSignal, _DADRequestClientStatusDumpNotification,
+                        _gDADOperationQueue ]
+    objc-classes:     [ _DAAgent,
+                        _DADAccessManager, _DADClient,
+                        _DADClientAttachmentDownloadDelegate, _DADClientCalendarDirectorySearchResponseDelegate,
+                        _DADClientDelegate, _DADClientShareResponseDelegate,
+                        _DADStatusReportAggregator, _DAFolderSyncRequest,
+                        _DARefreshWrapper, _DATokenRegistrationRequest,
+                        _DACoreDAVAgent, _DADClientAccountTimers,
+                        _DADClientContactsSearchDelegate, _DADMain,
+                        _DARefreshManager ]
+    objc-ivars:       [ _DADStatusReportAggregator._completionBlock,
+                        _DADStatusReportAggregator._numOutstandingReports, _DADStatusReportAggregator._persistentUUIDToStatusReport,
+                        _DADStatusReportAggregator._finished ]
+...

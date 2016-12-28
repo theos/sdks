@@ -1,0 +1,49 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _BlurFilterKey,
+                        _ISBlurFilterName, _ISCircularEaseOut,
+                        _ISExifOrientationFromImageOrientation, _ISKDebugIsEnabled,
+                        _ISLayerBlurRadiusKeyPath, _ISLivePhotoPlayerObservableContext,
+                        _ISObservableChangeDepthLimit, _ISPlayerObservationContext,
+                        _ISPointSubtract, _ISQuarticEaseOut,
+                        _ISRectGetCenter, _ISRectWithAspectRatioFittingRect,
+                        _ISStringFromPlaybackState, _PhotosPlayerErrorDomain,
+                        _PhotosPlayerVersionString, _is_dispatch_on_main_queue,
+                        _CMTimeMod, _ISCubicEaseOut,
+                        _ISKDebugTrace, _ISLivePhotoShouldRenderAtPlaybackTime,
+                        _ISPointAdd, _ISQuinticEaseOut,
+                        _ISSineEaseOut, _PhotosPlayerVersionNumber ]
+    objc-classes:     [ _ISAVPlayer,
+                        _ISAVPlayerUIView, _ISBasePlayer,
+                        _ISBehavior, _ISCrossfadeChefA2Operation,
+                        _ISCrossfadeItem, _ISCrossfadeUIView,
+                        _ISDeferredDealloc, _ISDynamicValueFilter,
+                        _ISExportDestination, _ISFrameProcessingRequest,
+                        _ISLivePhotoAutoplayVitalityFilter, _ISLivePhotoPlaybackBehavior,
+                        _ISLivePhotoPlayer, _ISLivePhotoUIView,
+                        _ISLivePhotoVitalityFilter, _ISLiveWallpaperUIView,
+                        _ISObservable, _ISPlaybackSettings,
+                        _ISPlayerContent, _ISPlayerItemChef,
+                        _ISPlayerOutputTransitionOptions, _ISPlayerState,
+                        _ISReuseQueue, _ISScrollViewVitalityController,
+                        _ISTouchLivePhotoPlaybackFilter, _ISTransitionApplier,
+                        _ISUIVisibilityOffsetHelper, _ISVideoAnalyzerFrameTimesOperation,
+                        _ISVisibilityOffsetHelper, _ISVitalityAutoplayFilter,
+                        _ISVitalityFilter, _ISVitalitySimpleFilter,
+                        _ISWrappedAVPlayer, __ISPlayerItemChefOperation,
+                        _ISAVPlayerLayer, _ISBasePlayerUIView,
+                        _ISCrossfadeChefOperation, _ISDefaultBehavior,
+                        _ISEditSession, _ISLayerPlayer,
+                        _ISLivePhotoPlaybackFilter, _ISLivePhotoVitalityBehavior,
+                        _ISLongPressForceGestureRecognizer, _ISPlaybackSpec,
+                        _ISPlayerOutputContent, _ISPlayerView,
+                        _ISSettings, _ISUIScrollViewVitalityController,
+                        _ISVideoPlayerUIView, _ISVitalityConstantFilter,
+                        _ISVitalitySpecificSettings, __ISCrossfadeFrameLayer ]
+...

@@ -1,0 +1,67 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+current-version: 639.2.1
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CKClientContextAccountDidChangeNotification,
+                        _CKDPNotificationSyncResponsePushMessageReadFrom, _CKDPRecordChainParentReadFrom,
+                        _CKDPRecordFieldReadFrom, _CKDPRecordReadFrom,
+                        _CKDPRecordStableUrlReadFrom, _CKDPResponseOperationResultErrorClientReadFrom,
+                        _CKDPResponseOperationResultErrorReadFrom, _CKDPResponseOperationResultReadFrom,
+                        _CKIsRunningInSyncBubble, _CKVerifyFilters,
+                        _compareVersionStrings, _gSystemUnlockedGlobalCallback,
+                        _CKDAssetCacheDbSchema, _CKDPRecordFieldIdentifierReadFrom,
+                        _CKDPRecordReferenceReadFrom, _CKDPResponseOperationResultErrorExtensionReadFrom,
+                        _CKDRecordCacheSchema, __isOperationAllowedIndependentlyInSyncBubble ]
+    objc-classes:     [ _CKDAccountNotifier,
+                        _CKDAssetHandle, _CKDClientContext,
+                        _CKDCloudDatabaseServer, _CKDDiscoverAllUserIdentitiesOperation,
+                        _CKDFetchShareParticipantsOperation, _CKDMetadataCache,
+                        _CKDOperationInfoMetadata, _CKDPNotificationSyncResponsePushMessage,
+                        _CKDPRecordChainParent, _CKDPRecordFieldIdentifier,
+                        _CKDPRecordReference, _CKDPRecordType,
+                        _CKDPResponseOperationResultError, _CKDPResponseOperationResultErrorExtension,
+                        _CKDPackageDirectoryPurger, _CKDPrivacyManager,
+                        _CKDPushConnection, _CKDResponseBodyParser,
+                        _CKDTokenRegistrationScheduler, _CKDVolumeManager,
+                        _CKDAssetCache, _CKDClientProxy,
+                        _CKDDiscoverUserIdentitiesOperation, _CKDOperationInfoCache,
+                        _CKDPRecord, _CKDPRecordFieldValue,
+                        _CKDPResponseOperationResult, _CKDPResponseOperationResultErrorServer,
+                        _CKDProtobufResponseBodyParser, _CKDSystemAvailabilityMonitor,
+                        _CKDURLSessionPool ]
+    objc-ivars:       [ _CKDPNotificationSyncResponse._changeID,
+                        _CKDPNotificationSyncResponse._moreAvailable, _CKDPNotificationSyncResponsePushMessage._badgeCount,
+                        _CKDPNotificationSyncResponsePushMessage._dialog, _CKDPNotificationSyncResponsePushMessage._isRead,
+                        _CKDPNotificationSyncResponsePushMessage._sound, _CKDPNotificationSyncResponsePushMessage._uuid,
+                        _CKDPRecord._chainPrivateKey, _CKDPRecord._conflictLoserEtags,
+                        _CKDPRecord._etag, _CKDPRecord._has,
+                        _CKDPRecord._modifiedByDevice, _CKDPRecord._pluginFields,
+                        _CKDPRecord._recordIdentifier, _CKDPRecord._shareInfo,
+                        _CKDPRecord._timeStatistics, _CKDPRecord._type,
+                        _CKDPRecordChainParent._reference, _CKDPRecordField._value,
+                        _CKDPRecordFieldValue._assetValue, _CKDPRecordFieldValue._dateValue,
+                        _CKDPRecordFieldValue._has, _CKDPRecordFieldValue._locationValue,
+                        _CKDPRecordFieldValue._referenceValue, _CKDPRecordFieldValue._stringValue,
+                        _CKDPRecordReference._has, _CKDPRecordReference._type,
+                        _CKDPRecordStableUrl._protectedFullToken, _CKDPRecordStableUrl._shortTokenHash,
+                        _CKDPResponseOperationResult._code, _CKDPResponseOperationResult._has,
+                        _CKDPResponseOperationResultError._errorDescription, _CKDPResponseOperationResultError._errorKey,
+                        _CKDPResponseOperationResultError._has, _CKDPResponseOperationResultError._serverError,
+                        _CKDPResponseOperationResultErrorClient._oplockFailure, _CKDPResponseOperationResultErrorClient._uniqueFieldFailure,
+                        _CKDPResponseOperationResultErrorExtension._extensionPayload, _CKDPResponseOperationResultErrorExtension._typeCode,
+                        _CKDPResponseOperationResultErrorServer._type, _CKDPNotificationSyncResponse._has,
+                        _CKDPNotificationSyncResponsePushMessage._category, _CKDPNotificationSyncResponsePushMessage._payload,
+                        _CKDPRecord._chainParent, _CKDPRecord._createdBy,
+                        _CKDPRecord._modifiedBy, _CKDPRecord._protectionInfo,
+                        _CKDPRecord._stableUrl, _CKDPRecordChainParent._publicKeyID,
+                        _CKDPRecordFieldIdentifier._name, _CKDPRecordFieldValue._doubleValue,
+                        _CKDPRecordFieldValue._packageValue, _CKDPRecordFieldValue._type,
+                        _CKDPRecordStableUrl._encryptedPublicSharingKey, _CKDPRecordType._name,
+                        _CKDPResponseOperationResultError._clientError, _CKDPResponseOperationResultError._extensionError,
+                        _CKDPResponseOperationResultErrorClient._has, _CKDPResponseOperationResultErrorExtension._extensionName,
+                        _CKDPResponseOperationResultErrorServer._has ]
+...

@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoMediaRemote.framework/NanoMediaRemote
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IDSMessagePriorityFromNMRIDSMessagePriority,
+                        _NMRAggDPushElapsedTimeValueForDistributionKey, _NMRAggDSendCommandFailedToSendKey,
+                        _NMRAggDSendCommandUIRoundTripDelayKey, _NMRAugmentedNowPlayingInfoArtworkDataDigest,
+                        _NMRCommandResultCodesKey, _NMRCompanionCloudAvailabilityDidChangeNotification,
+                        _NMRCompanionSpecializedQueueInfoDidChangeNotification, _NMRDigestEqual,
+                        _NMRFetchCompanionSpecializedQueueInfo, _NMRGetArtworkDataDigest,
+                        _NMRMediaRemoteStateMessageTimeout, _NMRNowPlayingInfoToProtobuf,
+                        _NMRPlaybackQueueDefaultObservedRange, _NMRPrewarmSystemMusicAppMessageTimeout,
+                        _NMRServiceEntitlement, _NMRShortCircuitedMediaRemoteSendCommandToApp,
+                        _NMRSpecializedQueueInfoFromProtobuf, _NMRSpecializedQueueInfoToProtobuf,
+                        _NMRSupportedCommandsToProtobuf, _NSStringFromNMRIDSMessageType,
+                        _NMRAggDAddValueForScalarKey, _NMRAggDSendCommandFailedWithTimeoutKey,
+                        _NMRAugmentedNowPlayingInfoCompanionItemPersistentID, _NMRCompanionNowPlayingApplicationIconDidChangeNotification,
+                        _NMRFetchCompanionCloudAvailability, _NMRMediaRemoteCommandMessageTimeout,
+                        _NMRNowPlayingInfoWhitelistedKeys, _NMRRefreshMediaRemoteStateIfNecessary,
+                        _NMRShortCircuitedMediaRemoteSetAppPlaybackQueue, _NMRSupportedCommandsFromProtobuf ]
+    objc-classes:     [ _NMRCloudAvailabilityMessage,
+                        _NMRMediaRemoteGetArtworkMessage, _NMRMediaRemoteGetStateMessage,
+                        _NMRMediaRemoteSetIconMessage, _NMRNowPlayingApplicationInfo,
+                        _NMRProtobufSerialization, _NMRSendCommandResultMessage,
+                        _NMRIDSMessageCenter, _NMRMediaRemoteSetArtworkMessage,
+                        _NMRPlaybackQueue, _NMRSendCommandMessage ]
+...

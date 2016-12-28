@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DiskImages.framework/DiskImages
+current-version: 444.20.3
+compatibility-version: 1.0.8
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _DIAddPermission,
+                        _DIBackingStoreCloseResourceFile, _DIBackingStoreGetRsrcForkLength,
+                        _DIBackingStoreGetURLArray, _DIBackingStoreOpenDataFork,
+                        _DIBackingStoreReadDataFork, _DIChecksumGetShortName,
+                        _DIChecksumGetValueString, _DIDeinitialize,
+                        _DIDiskImageCopyChecksumReportString, _DIDiskImageCopyImageInformation,
+                        _DIDiskImageGetBackingStore, _DIDiskImageGetSectorCount,
+                        _DIDiskImageIsKernelCompatible, _DIDiskImageObjectGetProperty,
+                        _DIDiskImageObjectRelease, _DIDiskImageObjectSetDIProgressCallBackProcPtr,
+                        _DIDiskImageReadSectors, _DIDiskImageValidateChecksumWithFlags,
+                        _DIGetBundleRef, _DIGetDriverVersion,
+                        _DIGetPluginPropertyDicts, _DIHLDiskImageProbeURL,
+                        _DIIsPotentiallyValidDiskImage, _DIMediaKitCreateMKMediaRef,
+                        _DIMediaKitVectorProcWithOffset, _DIResolvePathsToDiskImageWithOptions,
+                        _DIResolveURLToDiskImage, _DIResourceFileChangedResource,
+                        _DIResourceFileReleaseResource, _DISetDebugLevel,
+                        _DIShadowedDiskImageCopyDefaultShadowFileURL, _DIUDIFDiskImageGetBLKXStartingAt,
+                        _DIUDIFFileAccessDelete, _DIUDIFFileAccessNewWithCFURL,
+                        _DIUDIFFileAccessWriteResourceFile, _DI_kextExists,
+                        _DIBackingStoreCloseDataFork, _DIBackingStoreGetURL,
+                        _DIBackingStoreOpenResourceFile, _DIChecksumGetValue,
+                        _DIDiskImageCallProgressMessageProc, _DIDiskImageDelete,
+                        _DIDiskImageHasChecksum, _DIDiskImageObjectGetRefCon,
+                        _DIDiskImageObjectSetRefCon, _DIDiskImageWriteSectors,
+                        _DIGetFrameworkVersion, _DIInitialize,
+                        _DIMediaKitVectorProc, _DIResolveURLToBackingStore,
+                        _DIResourceFileGetResource, _DISetVerboseLevel,
+                        _DIUDIFFileAccessCloseFile, _DIUDIFFileAccessOpenFile ]
+...

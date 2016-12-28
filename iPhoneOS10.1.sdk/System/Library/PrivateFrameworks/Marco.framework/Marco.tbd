@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Marco.framework/Marco
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _MarcoAction,
+                        _MarcoAddCallMetric, _MarcoAddCallMetric_Float,
+                        _MarcoAddCallMetric_Short, _MarcoBeginSession,
+                        _MarcoCanLogMadridMessageBodiesCF, _MarcoDiconnect,
+                        _MarcoEvent, _MarcoLogCallInfo,
+                        _MarcoLogLocalPreviewEvent, _MarcoLogMadridCF,
+                        _MarcoLogMadridEvent, _MarcoLogMadridEventCF_V,
+                        _MarcoLogMadridLevelCF_V, _MarcoLoggingStringForMessageData,
+                        _MarcoNoteCheckpoint, _MarcoPerformSnapshot,
+                        _MarcoSetFailureReason, _MarcoSetRecipient,
+                        _MarcoShouldLogCallMetric, _MarcoShouldLogLocalPreview,
+                        _MarcoShouldLogMadridCF, _MarcoShouldLogMadridEventCF,
+                        _MarcoShouldLogMadridLevelCF, _MarcoShouldLogRegistration,
+                        _MarcoSyncLoggingsPreferences, _MarcoWarnMadrid,
+                        _MarcoWarnMadridCF_V, _MarcoWarnRegistration,
+                        _MarcoActionWithUserInfo, _MarcoAddCallMetric_Int,
+                        _MarcoCanLogMadridMessageBodies, _MarcoEndSession,
+                        _MarcoLogLocalPreview, _MarcoLogMadridCF_V,
+                        _MarcoLogMadridLevel, _MarcoMadridLogLevel,
+                        _MarcoPulse, _MarcoShouldLog,
+                        _MarcoShouldLogMadrid, _MarcoShouldLogMadridLevel,
+                        _MarcoStartPing, _MarcoWarnMadridCF ]
+...

@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport
+current-version: 69.20.1
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AppleIDAuthSupportAuthenticate,
+                        _AppleIDAuthSupportCopyAppToken, _AppleIDAuthSupportCopyAppTokensOptions,
+                        _AppleIDAuthSupportCopyProvidedData, _AppleIDAuthSupportCopyString,
+                        _AppleIDAuthSupportCreate, _AppleIDAuthSupportDeterministicRandomCreate,
+                        _AppleIDAuthSupportGSCopyNewIdentityToken, _AppleIDAuthSupportGSGetID,
+                        _AppleIDAuthSupportGSRPC, _AppleIDAuthSupportGetOption,
+                        _AppleIDAuthSupportGetTypeID, _AppleIDAuthSupportServerSetCallback,
+                        _AppleIDAuthSupportSetOption, _AppleIDAuthSupportSuccess,
+                        _AppleIDAuthSupportTokenCreateWithExternalizedVersion, __AppleIDAuthSupportCreateDecryptedData,
+                        __AppleIDAuthSupportCreateToken, _kAppleIDAuthSupportActionData,
+                        _kAppleIDAuthSupportApplication, _kAppleIDAuthSupportClientInfo,
+                        _kAppleIDAuthSupportCompanionClientInfo, _kAppleIDAuthSupportData,
+                        _kAppleIDAuthSupportDuration, _kAppleIDAuthSupportErrorActionRestartInSeconds,
+                        _kAppleIDAuthSupportErrorOverrideValue, _kAppleIDAuthSupportGsIdmsSessionKey,
+                        _kAppleIDAuthSupportMaybeSkipEncrypt, _kAppleIDAuthSupportPBKDFIterations,
+                        _kAppleIDAuthSupportPassword, _kAppleIDAuthSupportProtocolSRPGROUP2048SHA256PBKDF,
+                        _kAppleIDAuthSupportProtocolSRPGROUP4096SHA256PBKDF, _kAppleIDAuthSupportSRP2KVerifier,
+                        _kAppleIDAuthSupportSRPRandomSource, _kAppleIDAuthSupportStatus,
+                        _kAppleIDAuthSupportUsername, _AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute,
+                        _AppleIDAuthSupportCopyContextAppTokens, _AppleIDAuthSupportCopyToken,
+                        _AppleIDAuthSupportGSCopyAppTokens, _AppleIDAuthSupportGSOperation,
+                        _AppleIDAuthSupportGetStatus, _AppleIDAuthSupportServerSetServerDataCallback,
+                        _AppleIDAuthSupportTokenCopyExternalizedVersion, __AppleIDAuthSupportCreateEncryptedData,
+                        _kAppleIDAuthSupportAlternateDSID, _kAppleIDAuthSupportClientProvidedData,
+                        _kAppleIDAuthSupportDisregardChannelBindings, _kAppleIDAuthSupportErrorOverrideAction,
+                        _kAppleIDAuthSupportGsIdmsToken, _kAppleIDAuthSupportPBKDFSalt,
+                        _kAppleIDAuthSupportProtocolSRPGROUP2048SHA256PBKDFLegacy, _kAppleIDAuthSupportSRP4KVerifier,
+                        _kAppleIDAuthSupportToken ]
+...

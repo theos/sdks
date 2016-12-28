@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SuggestionsSpotlightMetrics.framework/SuggestionsSpotlightMetrics
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _SGMBannerDisplayAppMail,
+                        _SGMBannerDisplayAppOther, _SGMBannerExtractionTypePhrase,
+                        _SGMBannerExtractionTypeSigPhrase, _SGMContactDetailTypeEmail,
+                        _SGMContactDetailTypePhone, _SGMContactDetailUsedAppMail,
+                        _SGMContactDetailUsedAppOther, _SGMDetailExtractionTypeInteraction,
+                        _SGMDetailExtractionTypePhrase, _SGMDetailExtractionTypeSigPhrase,
+                        _SGMEventCategoryCar, _SGMEventCategoryFood,
+                        _SGMEventCategoryMovie, _SGMEventCategorySocial,
+                        _SGMEventCategoryTrain, _SGMEventDateAdjAddTime2h,
+                        _SGMEventDateAdjChangedDay, _SGMEventDateAdjConfirmed,
+                        _SGMEventDateAdjSubTime1h, _SGMEventDateAdjSubTime2hPlus,
+                        _SGMEventDurationAdj30To60Min, _SGMEventDurationAdjLessThan30Min,
+                        _SGMEventDurationAdjNA, _SGMEventExtractionTypeTemplate,
+                        _SGMEventStateNew, _SGMEventStringAdjConfirmed,
+                        _SGMEventStringAdjPrefixAdded, _SGMEventStringAdjSuffixAdded,
+                        _SGMInteractionIgnoredReasonNilInterIdent, _SGMNLEventExtractionNone,
+                        _SGMNLEventLinkInteractionResultCancel, _SGMNLEventLinkInteractionResultDismiss,
+                        _SGMSINameClassificationMaybeName, _SGMSINameClassificationNotName,
+                        _SGMSIPatternTypeSelfIdRequest, _SGMTypeSafeBoolTrue,
+                        _SuggestionsSpotlightMetricsVersionString, _SGMBannerDisplayAppMessages,
+                        _SGMBannerExtractionTypeSig, _SGMContactDetailTypeOther,
+                        _SGMContactDetailUsedAppMessages, _SGMDetailExtractionTypeOther,
+                        _SGMEventCategoryBus, _SGMEventCategoryHotel,
+                        _SGMEventCategoryTicket, _SGMEventDateAdjAddTime2hPlus,
+                        _SGMEventDateAdjNA, _SGMEventDurationAdj1To2Hours,
+                        _SGMEventDurationAdjMoreThan2Hours, _SGMEventStateCancel,
+                        _SGMEventStringAdjNA, _SGMInteractionIgnoredReasonNilBundleId,
+                        _SGMNLEventExtractionType, _SGMNLEventLinkInteractionResultOther,
+                        _SGMSIPatternTypeSelfId, _SuggestionsSpotlightMetricsVersionNumber ]
+    objc-classes:     [ _SGMBadInteractionIgnored,
+                        _SGMContactDetailConfirmed, _SGMContactDetailUsed,
+                        _SGMContactOpportunityInSpotlight, _SGMContactResultInSpotlight,
+                        _SGMDDLinkClicked, _SGMEventBannerConfirmed,
+                        _SGMEventInBanner, _SGMEventResultInSpotlight,
+                        _SGMMaybeInformationShown, _SGMNLEventBannerRejected,
+                        _SGMNoResultSelectedInSpotlight, _SGMSelfIdPatternMatched,
+                        _SGMUnknownContactInformationShown, _SGSMutableSearchState,
+                        _SGMContactConfirmed, _SGMContactInBanner,
+                        _SGMContactResultSelectedInSpotlight, _SGMEventBannerRejected,
+                        _SGMEventResultSelectedInSpotlight, _SGMNLEventInBanner,
+                        _SGMSqliteErrors, _SGSMFeedbackListener ]
+...

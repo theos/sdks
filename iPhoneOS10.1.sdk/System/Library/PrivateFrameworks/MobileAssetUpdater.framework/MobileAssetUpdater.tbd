@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileAssetUpdater.framework/MobileAssetUpdater
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _kMobileAssetUpdaterErrorDomain ]
+    objc-classes:     [ _MobileAssetUpdater ]
+    objc-ivars:       [ _MobileAssetUpdater._asset,
+                        _MobileAssetUpdater._assetType, _MobileAssetUpdater._overrideFile,
+                        _MobileAssetUpdater._query, _MobileAssetUpdater._requireAssetMetadata,
+                        _MobileAssetUpdater._assetDownloaded, _MobileAssetUpdater._purgeOverrideFile ]
+...

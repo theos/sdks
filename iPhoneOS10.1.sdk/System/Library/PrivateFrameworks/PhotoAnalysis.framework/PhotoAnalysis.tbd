@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis
+current-version: 173.2.6
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _PHAAssetLocalIdentifiersFromUUIDs,
+                        _PHAIsAppleInternal, _PHAVisionServiceWorkerAnalysisAttributeAssetResourceType,
+                        _PHAVisionServiceWorkerAnalysisAttributeMostPreferredAssetResource, _PHAVisionServiceWorkerImageMaximumMegapixelAreaKey,
+                        _PHAVisionServiceWorkerJobResultInformationJobResult, _PhotoAnalysisEnabledKey,
+                        _PhotoAnalysisGraphBackgroundGraphRebuildJobTimeInterval, _PhotoAnalysisGraphDisabledKey,
+                        _PhotoAnalysisGraphLastBackgroundMemoryGenerationJobDateKey, _PhotoAnalysisVersionNumber,
+                        _PhotoAnalysisVisionFacesDisabledKey, ___PXLog_automationOSLog,
+                        ___PXLog_automationSetupOSLog, ___PXLog_genericOnceToken,
+                        ___PXLoggraph_monitoringOSLog, ___PXLoggraph_monitoringSetupOSLog,
+                        ___PXLoggraph_workerOnceToken, ___PXLogjob_activityOSLog,
+                        ___PXLogjob_activitySetupOSLog, ___PXLogjob_coordinatorOnceToken,
+                        ___PXLogjob_dataloaderOSLog, ___PXLogjob_dataloaderSetupOSLog,
+                        ___PXLogvision_workerOnceToken, _kMaxFaceTileSize,
+                        _kVeryWideAspectRatio, _PHABoolValueForStringAtIndex,
+                        _PHAVisionServiceWorkerAnalysisAttributeAssetResourceWasDownloaded, _PHAVisionServiceWorkerJobResultInformationJobError,
+                        _PhotoAnalysisGraphBackgroundActivitiesDisabledKey, _PhotoAnalysisGraphLastBackgroundGraphRebuildJobDateKey,
+                        _PhotoAnalysisVersionString, ___PXLog_automationOnceToken,
+                        ___PXLog_genericSetupOSLog, ___PXLoggraph_workerOSLog,
+                        ___PXLogjob_activityOnceToken, ___PXLogjob_coordinatorSetupOSLog,
+                        ___PXLogvision_workerOSLog, _kVeryTallAspectRatio ]
+    objc-classes:     [ _PHAAcknowledgeDeletionsWorkerJob,
+                        _PHAAnalysisProgress, _PHAAnalysisWorkerJob,
+                        _PHAAssetResourceDataLoader, _PHAAssetResourceDownloadRequestManager,
+                        _PHACoalescerActivityToken, _PHADirtyChangeBuffer,
+                        _PHAExecutive, _PHAGraphServiceWorkerGraphUpdateJob,
+                        _PHAJobCoalescer, _PHAJobConstraintsObserver,
+                        _PHAJobGenerator, _PHAJobWorkInfoReader,
+                        _PHALibraryChangeDetails, _PHAManager,
+                        _PHAMonitoringProcessInfo, _PHAPendingRequestReference,
+                        _PHAPhotoLibraryReference, _PHAPredicateValidator,
+                        _PHAServiceClientHandler, _PHASleepWakeMonitor,
+                        _PHAVisionServiceAssetsAnalyzingOperation, _PHAVisionServicePersistenceDelegate,
+                        _PHAVisionServiceSceneClassificationWorker, _PHAVisionServiceWorker,
+                        _PHAWorkerHealthMonitor, _PHAWorkerJob,
+                        __PHAVisionServiceFaceProcessingWorkerFaceClusteringJob, __PHAVisionServiceWorkerAssetProcessingOperation,
+                        _PHAActivityGovernor, _PHAAssetProcessingJob,
+                        _PHACoalescer, _PHADirtyChangeCoalescer,
+                        _PHAGraphWorkerGraphUpdateDetails, _PHAJobCoordinator,
+                        _PHALibraryChangeBuffer, _PHAMonitoring,
+                        _PHAPhotoLibraryList, _PHAServiceCancelableOperation,
+                        _PHASwizzling, _PHAVisionServicePersistenceDelegateFaceGroupFacesCache,
+                        _PHAWorker, _PHAWorkerWarmer,
+                        __PHAVisionServiceFaceProcessingWorkerJobKeepAlive ]
+...

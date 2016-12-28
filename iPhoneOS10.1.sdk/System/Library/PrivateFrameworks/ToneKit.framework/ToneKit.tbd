@@ -1,0 +1,24 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ToneKit.framework/ToneKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _TKDisplayLinkManagerDefaultFrameInterval ]
+    objc-classes:     [ _TKDisplayLinkManager,
+                        _TKLabelContainerView, _TKPickerDividerTableViewCell,
+                        _TKPickerRowItem, _TKPickerSelectableItem,
+                        _TKStyleProvider, _TKToneClassicsTableViewController,
+                        _TKTonePickerItem, _TKTonePickerTableView,
+                        _TKTonePickerViewController, _TKVibrationPickerTableViewCell,
+                        _TKVibrationRecorderContentViewController, _TKVibrationRecorderProgressView,
+                        _TKVibrationRecorderRippleTouchContext, _TKVibrationRecorderTouchSurface,
+                        _TKVibrationRecorderView, _TKVibratorController,
+                        _TKDisplayLinkManagerObserver, _TKPickerItem,
+                        _TKPickerTableViewCell, _TKTonePickerController,
+                        _TKTonePickerTableViewCellLayoutManager, _TKVibrationPickerViewController,
+                        _TKVibrationRecorderRippleRingLayer, _TKVibrationRecorderTouchSurfaceRecordedDataWrapper,
+                        _TKVibrationRecorderViewController ]
+...

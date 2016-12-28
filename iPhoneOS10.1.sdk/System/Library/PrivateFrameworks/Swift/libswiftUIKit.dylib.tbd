@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftUIKit.dylib
+current-version: 800.2.18
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ __TF5UIKit29UIDeviceOrientationIsPortraitFOSC19UIDeviceOrientationSb,
+                        __TF5UIKit32UIInterfaceOrientationIsPortraitFOSC22UIInterfaceOrientationSb, __TF5UIKit46UIDeviceOrientationIsValidInterfaceOrientationFOSC19UIDeviceOrientationSb,
+                        __TFE5UIKitCSo11UIAlertViewcft5titleSS7messageSS8delegateGSqPSo19UIAlertViewDelegate__17cancelButtonTitleGSqSS_17otherButtonTitlesSSGSaSS__S0_, __TFE5UIKitCSo13UIActionSheetcft5titleGSqSS_8delegateGSqPSo21UIActionSheetDelegate__17cancelButtonTitleGSqSS_22destructiveButtonTitleGSqSS_17otherButtonTitlesSSGSaSS__S0_,
+                        __TFE5UIKitCSo7UIColorCfT15colorLiteralRedSf5greenSf4blueSf5alphaSf_S0_, __TFE5UIKitCSo7UIImageCfT12imageLiteralSS_S0_,
+                        __TFE5UIKitOSC19UIDeviceOrientationg10isPortraitSb, __TFE5UIKitOSC19UIDeviceOrientationg27isValidInterfaceOrientationSb,
+                        __TFE5UIKitOSC22UIInterfaceOrientationg10isPortraitSb, __TTSf4n_n_n_n_s_n_n___TFE5UIKitCSo13UIActionSheetcft5titleGSqSS_8delegateGSqPSo21UIActionSheetDelegate__17cancelButtonTitleGSqSS_22destructiveButtonTitleGSqSS_17otherButtonTitlesSSGSaSS__S0_,
+                        __TTWCSo6UIViews29CustomPlaygroundQuickLookable5UIKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, __TTWCSo7UIImages24_ImageLiteralConvertible5UIKitFS0_CfT12imageLiteralSS_x,
+                        __TTWVSC8UIOffsets9Equatable5UIKitZFS0_oi2eefTxx_Sb, __TWPCSo7UIColors24_ColorLiteralConvertible5UIKit,
+                        __TWPVSC12UIEdgeInsetss9Equatable5UIKit, __TWaCSo6UIViews29CustomPlaygroundQuickLookable5UIKit,
+                        __TWaCSo7UIImages24_ImageLiteralConvertible5UIKit, __TWaVSC8UIOffsets9Equatable5UIKit,
+                        __TZF5UIKitoi2eeFTVSC8UIOffsetS0__Sb, __TZFE5UIKitVSC8UIOffsetg4zeroS0_,
+                        __swift_FORCE_LOAD_$_swiftUIKit, __TF5UIKit30UIDeviceOrientationIsLandscapeFOSC19UIDeviceOrientationSb,
+                        __TFE5UIKitCSo11UIAlertViewCft5titleSS7messageSS8delegateGSqPSo19UIAlertViewDelegate__17cancelButtonTitleGSqSS_17otherButtonTitlesSSGSaSS__S0_, __TFE5UIKitCSo6UIViewg25customPlaygroundQuickLookOs19PlaygroundQuickLook,
+                        __TFE5UIKitCSo7UIImagecfT12imageLiteralSS_S0_, __TFE5UIKitOSC19UIDeviceOrientationg6isFlatSb,
+                        __TTSf4s_s_n_n_s_n_n___TFE5UIKitCSo11UIAlertViewcft5titleSS7messageSS8delegateGSqPSo19UIAlertViewDelegate__17cancelButtonTitleGSqSS_17otherButtonTitlesSSGSaSS__S0_, __TTWVSC12UIEdgeInsetss9Equatable5UIKitZFS0_oi2eefTxx_Sb,
+                        __TWPCSo7UIImages24_ImageLiteralConvertible5UIKit, __TWaCSo7UIColors24_ColorLiteralConvertible5UIKit,
+                        __TZF5UIKitoi2eeFTVSC12UIEdgeInsetsS0__Sb, __TZFE5UIKitVSC12UIEdgeInsetsg4zeroS0_ ]
+...

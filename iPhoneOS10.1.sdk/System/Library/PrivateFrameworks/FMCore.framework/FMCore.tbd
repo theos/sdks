@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMCore.framework/FMCore
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _FMCommandHTTPMethodDelete,
+                        _FMCommandHTTPMethodPost, _FMCommandRedirectedNotification,
+                        _FMDataClassFMFAppHostNameKey, _FMDistanceCalculatorMeasurementSystemChangedNotification,
+                        _FMLocalNetworkStatusKey, _kFMReachabilityChangedNotification,
+                        _FMCommandHTTPMethodGet, _FMDataClassFMF,
+                        _FMLocalNetworkStatusChangedNotification ]
+    objc-classes:     [ _FMAPSHandler,
+                        _FMCommandBase, _FMDispatchTimer,
+                        _FMJSONCommand, _FMLocationShifter,
+                        _FMNanoIDSManager, _FMOwnerAccount,
+                        _FMRelativeDateFormatter, _FMStopwatch,
+                        _FMSystemVersionNumber, _FMXPCNotificationsUtil,
+                        _FMXPCTransactionManager, _FMAlertManager,
+                        _FMDistanceCalculator, _FMLocationShifterItem,
+                        _FMReachability, _FMSystemInfo,
+                        _FMWeakWrapper ]
+...

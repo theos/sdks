@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CSFieldNameMap,
+                        _SpotlightDaemonVersionNumber, _startAllAgents,
+                        _startIndexAgent, _CSFieldNameMapSize,
+                        _SpotlightDaemonVersionString ]
+    objc-classes:     [ _DummyObject,
+                        _MDAgentDelegate, _MDIndexAgent,
+                        _MDSearchableIndexService, _SpotlightSender,
+                        _MDAgent, _MDSearchAgent,
+                        _SpotlightReceiverConnection ]
+...

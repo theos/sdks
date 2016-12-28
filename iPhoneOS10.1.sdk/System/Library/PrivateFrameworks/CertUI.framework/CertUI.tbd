@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CertUI.framework/CertUI
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _CertUILog,
+                        _kCertUIMessagingCenterRelayName, _kCertUIServiceTypeHTTPS,
+                        _kCertUIServiceTypeLDAP, _kCertUIServiceTypePOP3,
+                        _kCertUIServiceTypeSSH, _kCertUITrustDigestKey,
+                        _kCertUITrustHostnameKey, _kCertUITrustIssuerKey,
+                        _kCertUITrustPromptOptionsAllowCertificateTrustKey, _kCertUITrustPromptOptionsShowContinueKey,
+                        _kCertUITrustPurposeKey, _kCertUITrustShowCertificateDetailsKey,
+                        _kCertUITrustSubtitleKey, _kCertUITrustTitleKey,
+                        _kCertUIMessagingCenterActualName, _kCertUIServiceTypeIMAP,
+                        _kCertUIServiceTypeSMTP, _kCertUITrustExpirationKey,
+                        _kCertUITrustLocalizedProcessNameKey, _kCertUITrustPropertiesKey,
+                        _kCertUITrustShowContinueKey ]
+    objc-classes:     [ _CertUIConnectionDelegate,
+                        _CertUITrustManager, _CertUIPrompt ]
+    objc-ivars:       [ _CertUIConnectionDelegate._connectionDisplayName,
+                        _CertUIConnectionDelegate._forwardingDelegate, _CertUIPrompt._connectionDisplayName,
+                        _CertUIPrompt._responseBlock, _CertUIPrompt._trust,
+                        _CertUITrustManager._access, _CertUIConnectionDelegate._delegateRespondsTo,
+                        _CertUIPrompt._host, _CertUIPrompt._service ]
+...

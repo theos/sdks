@@ -1,0 +1,40 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IMDaemonCore.framework/IMDaemonCore
+current-version: 800.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _IMCreateIMDChatFromIMDChatRecordRef,
+                        _IMDAttachmentRecordRefFromIMFileTransfer, _IMDFileTransferAcceptedNotification,
+                        _IMDFileTransferArchiveSucceededNotification, _IMDFileTransferRemovedNotification,
+                        _IMDInconsistencyResolved, _IMDMessageStoreHandleCanonicalIDKey,
+                        _IMDMessageStoreHandleUnformattedIDKey, _IMDReplayControllerErrorDomain,
+                        _IMDSetInconsistencyHandler, _IMDaemonCoreBundle,
+                        _IMFileTransferFromIMDAttachmentRecordRef, _kPictureCacheDataKey,
+                        _kPictureCacheNameChangedNotification, _kPictureCacheNameKey,
+                        _IMCreateIMDChatRecordRefWithIMDChat, _IMDFileTransferArchiveFailedNotification,
+                        _IMDFileTransferStoppedNotification, _IMDMessageStoreHandleCountryCodeKey,
+                        _IMDReplayMessageStorageControllerErrorDomain, _IMDaemonWillShutdownNotification,
+                        _kPictureCacheHashKey ]
+    objc-classes:     [ _IMDAccount,
+                        _IMDAppleServiceSession, _IMDChat,
+                        _IMDChatStore, _IMDHandle,
+                        _IMDIDSService, _IMDLegactDTController,
+                        _IMDMessageStore, _IMDReplayController,
+                        _IMDReplayStorageIterationContext, _IMDServiceController,
+                        _IMDSpotlightIndexDelegate, _IMTunesController,
+                        _IMDAccountController, _IMDChatRegistry,
+                        _IMDIDSAccount, _IMDLocationSharingController,
+                        _IMDReplayStorageController, _IMDServiceSession,
+                        _IMDStickerRegistry ]
+    objc-ivars:       [ _IMDChatStore._lastModificationStamp,
+                        _IMDMessageStore._cachedLastFailedMessageID, _IMDMessageStore._modificationStamp,
+                        _IMDMessageStore._suppressedUpdates, _IMDServiceSession._buddies,
+                        _IMDServiceSession._proxyAccount, _IMDServiceSession._proxyPassword,
+                        _IMDServiceSession._proxyType, _IMDServiceSession._serverPort,
+                        _IMDServiceSession._useSSL, _IMDLocationSharingController._session,
+                        _IMDMessageStore._pendingDBUpdatePost, _IMDServiceSession._password,
+                        _IMDServiceSession._proxyPort, _IMDServiceSession._service ]
+...

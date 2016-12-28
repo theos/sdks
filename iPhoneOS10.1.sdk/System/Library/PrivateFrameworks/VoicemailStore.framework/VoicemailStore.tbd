@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/VoicemailStore.framework/VoicemailStore
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _VMStoreAddRecord,
+                        _VMStoreChangedExternallyNotification, _VMStoreCopyGreetingPath,
+                        _VMStoreCopyMailboxUsage, _VMStoreCopyOfAllRecordsWithFlagsInRemoteUIDRange,
+                        _VMStoreCopyOfAllRemoteUIDsWithTrashState, _VMStoreCopyRecordWithIdentifier,
+                        _VMStoreCopyToken, _VMStoreCountOfRecordsWithFlags,
+                        _VMStoreGetRecordWithRemoteUID, _VMStoreGetTimestampForTokenWithKey,
+                        _VMStoreInitialize, _VMStoreInvalidateCaches,
+                        _VMStoreRecordChangedFlagsKey, _VMStoreRecordCopyDataPath,
+                        _VMStoreRecordCopyToken, _VMStoreRecordFlagsChangedNotification,
+                        _VMStoreRecordFlagsWillChangeNotification, _VMStoreRecordGetDate,
+                        _VMStoreRecordGetExpirationDate, _VMStoreRecordGetIdentifier,
+                        _VMStoreRecordGetSender, _VMStoreRecordGetTrashedDate,
+                        _VMStoreRecordOldFlagsKey, _VMStoreRecordSetData,
+                        _VMStoreRecordSetExpirationDate, _VMStoreRecordSetFlags,
+                        _VMStoreRecordSetRemoteUID, _VMStoreRecordSetTrashed,
+                        _VMStoreRemoveRecord, _VMStoreRemovedRecordsNotification,
+                        _VMStoreServiceIsSubscribed, _VMStoreSetSaveHandler,
+                        _VMStoreSetToken, _VMStoreSetUIDValidity,
+                        __VMCreateDirectoriesToPath, __VMStoreCopyTokenForKey,
+                        __VMStoreGetMobileUID, __VMStoreRemoveAllRecords,
+                        __VMStoreSetTokenForKey, _vm_default_log,
+                        _vm_ui_log, _vm_vmstore_log,
+                        _vm_vmtool_log, _VMStoreChangedExternally,
+                        _VMStoreCopyKeyedTokens, _VMStoreCopyOfAllRemoteUIDsAndIdentifiers,
+                        _VMStoreCopyRecordWithRemoteUID, _VMStoreDestroy,
+                        _VMStoreGetUIDValidity, _VMStoreRecordChangedFlagsFromServerKey,
+                        _VMStoreRecordCopySender, _VMStoreRecordFlagsDidChangeNotification,
+                        _VMStoreRecordGetDuration, _VMStoreRecordGetRemoteUID,
+                        _VMStoreRecordNewFlagsKey, _VMStoreRecordSetDuration,
+                        _VMStoreRecordSetFlagsFromServer, _VMStoreRemoveAllRecords,
+                        _VMStoreSave, _VMStoreSetTimestampForTokenWithKey,
+                        __CFStringGetOrCreateCString, __VMStoreGetMobileGID,
+                        __VMStoreSetToken, _vm_imap_log,
+                        _vm_vmd_log ]
+...

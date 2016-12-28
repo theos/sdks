@@ -1,0 +1,40 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _ApplyScopeDictionaryForID,
+                        _ApplyScopeListForIDC, _CFDataCreateWithRandomBytes,
+                        _CFDictionaryCopySuperCompactDescription, _CFStringArrayPerfromWithDescription,
+                        _CFStringPerformWithCString, _CFStringPerformWithUTF8CFData,
+                        _CopyCurrentScopePlist, _GetShortDateFormatter,
+                        _IsScopeActive, _KCJoiningErrorCreate,
+                        _KeychainCircleVersionString, _PerformWithBuffer,
+                        _RequirementError, _SecCopyURLForFileInKeychainDirectory,
+                        _SecCopyURLForFileInPreferencesDirectory, _SecGetDebugDescriptionFormatOptions,
+                        _SetCustomHomeURL, _WithPathInKeychainDirectory,
+                        _api_trace, _decode_seq_data_data,
+                        _encode_initialmessage, _encode_seq_string_data,
+                        _kAPIScope, _kStringAll,
+                        _kcder_decode_data, _kcder_decode_string,
+                        _kcder_encode_data_optional, _kcder_encode_string,
+                        _kcder_sizeof_string, _secLogDisable,
+                        _secLogEnabled, _sizeof_seq_data_data,
+                        _withStringOfAbsoluteTime, _ApplyScopeListForID,
+                        _CFDictionaryCopyCompactDescription, _CFStringCompareSafe,
+                        _CFStringSetPerformWithDescription, _GetShortDateFormatterQueue,
+                        _KeychainCircleVersionNumber, _PerformWithBufferAndClear,
+                        _SecCopyURLForFileInManagedPreferencesDirectory, _SecLogAPICreate,
+                        ___security_debug_init, _decode_seq_string_data,
+                        _extractStartFromInitialMessage, _kStringNegate,
+                        _kcder_encode_data, _kcder_sizeof_data,
+                        _secLogEnable, _sizeof_seq_string_data ]
+    objc-classes:     [ _KCAESGCMDuplexSession,
+                        _KCJoiningAcceptSession, _KCJoiningRequestAccountCircleDelegate,
+                        _KCJoiningRequestSecretSession, _KCSRPContext,
+                        _KCSRPServerContext, _KCJoiningAcceptAccountCircleDelegate,
+                        _KCJoiningRequestCircleSession, _KCSRPClientContext ]
+...

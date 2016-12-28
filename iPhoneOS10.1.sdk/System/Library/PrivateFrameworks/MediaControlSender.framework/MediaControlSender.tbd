@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MediaControlSender.framework/MediaControlSender
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _AirPlayAudioSessionEndedOnClient,
+                        _AirPlayAudioSessionStartedOnClient, _AirPlayControlNowPlaying,
+                        _AirPlayGetEventQueue, _AirPlayGlobalRoute_CopyInfo,
+                        _AirPlayGlobalRoute_SetDestination, _AirPlayGlobalRoute_SetPassword,
+                        _AirPlayPhotoSessionStartedOnServer, _AirPlayScreenSessionEndedOnServer,
+                        _AirPlayScreenSessionStartedOnServer, _AirPlaySettings_CopyKeys,
+                        _AirPlaySettings_CopyValueEx, _AirPlaySettings_GetDouble,
+                        _AirPlaySettings_RemoveValue, _AirPlaySettings_SetDouble,
+                        _AirPlaySettings_SetNumber, _AirPlaySettings_Synchronize,
+                        _AirPlaySlideshowSessionStartedOnServer, _AirPlayVideoSessionStartedOnServer,
+                        _Fqbh1vZGfV6J, _GvMGlTNs,
+                        _KUY675K4ryxHGzD5GVD, _MediaControlClient_CopyPlaybackInfo,
+                        _MediaControlClient_Create, _MediaControlClient_DoAction,
+                        _MediaControlClient_DoInsertPlaylistItem, _MediaControlClient_DoPlayRemote,
+                        _MediaControlClient_DoRemovePlaylistItem, _MediaControlClient_DoScrubSet,
+                        _MediaControlClient_EnsureConnected, _MediaControlClient_Invalidate,
+                        _MediaControlClient_IsConnectedOnP2PInterface, _MediaControlClient_SetDispatchQueue,
+                        _MediaControlClient_SetHost, _MediaControlClient_SetPassword,
+                        _MediaControlPlayParamsToStreamType, _MediaControlSenderLogControlCF,
+                        _PCFdAVst, _SrtySZG0,
+                        _XoN3GgjZNCvkN1T8I3, _gQblcfSzZBQsYCCV,
+                        _h4BvW7X, _o4IBrWf,
+                        _tGvVBtfGSsOH67XQ, _xOvZekdnwD6,
+                        _AirPlayAudioSessionEndedOnServer, _AirPlayCreateModesDictionary,
+                        _AirPlayGlobalRoute_CopyPassword, _AirPlayPhotoSessionEndedOnServer,
+                        _AirPlayScreenSessionStartedOnClient, _AirPlaySettings_CopyValue,
+                        _AirPlaySettings_GetInt64, _AirPlaySettings_SetInt64,
+                        _AirPlaySlideshowSessionEndedOnServer, _Dk7hjUuq,
+                        _IsAirPlayScreenSupported, _MediaControlClient_CopyProperty,
+                        _MediaControlClient_DoAuthorize, _MediaControlClient_DoRate,
+                        _MediaControlClient_DoStop, _MediaControlClient_IsConnected,
+                        _MediaControlClient_SetEventHandler, _MediaControlClient_SetProperty,
+                        _MediaControlSenderLogShow, _VBAEFt,
+                        _gVideoPlugin_SetPropertyFunc, _rJPl3sdBfc0E3yB ]
+    objc-classes:     [ _AirPlayController,
+                        _MediaControlClient, _AirPlayRemoteSlideshow ]
+    objc-ivars:       [ _AirPlayRemoteSlideshow._client,
+                        _AirPlayRemoteSlideshow._internalQueue, _AirPlayRemoteSlideshow._started,
+                        _MediaControlClient._client, _MediaControlClient._eventHandlerQueue,
+                        _MediaControlClient._queue, _AirPlayRemoteSlideshow._delegate,
+                        _AirPlayRemoteSlideshow._userQueue, _MediaControlClient._eventHandlerBlock ]
+...

@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/XPCKit.framework/XPCKit
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - archs:            [ armv7, armv7s, arm64 ]
+    symbols:          [ _XPCSetLogBlocks,
+                        __XPCShouldLog, _kXPCSequenceKey,
+                        __XPCLog ]
+    objc-classes:     [ _XPCClientConnection,
+                        _XPCNSRequest, _XPCNSServiceListener,
+                        _XPCServiceConnection, _XPCServiceListener,
+                        _XPCNSClientConnection, _XPCRequest ]
+...

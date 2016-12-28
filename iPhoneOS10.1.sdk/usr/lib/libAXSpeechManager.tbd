@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: DA6189AB-5215-3D89-A25A-97F3D0F3F36E', 'armv7s: 2A82AEC2-035A-3D01-843D-206CD4FBBDAB', 
+                   'arm64: 63AE981A-D15A-3E6F-BA25-38A99399B852' ]
+platform:        ios
+install-name:    /usr/lib/libAXSpeechManager.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AXAVSpeechSynthesisVoiceFromTTSSpeechVoice, _AXAVVoiceQualityFromTTSFootprint, 
+                       _AXAlexVoiceIdentifier, _AXLanguageCanonicalFormToGeneralLanguage, 
+                       _AXRemapLanguageCodeForSpeech, _AXSiriFemaleVoiceIdentifier, 
+                       _AXSiriMaleVoiceIdentifier, _AXSpeechLanguageCanonicalFormToGeneralLanguage, 
+                       _AXSpeechTransformText, _AXSpeechTransformTextWithLanguage, 
+                       _VOTBundle, __AXSpeechReplaceEmoticons, _isSpeakableEmojiString ]
+    objc-classes:    [ _AXEmojiUtilities, _AXSpeechAction, _AXSpeechManager, _AXSpeechThread ]
+...
