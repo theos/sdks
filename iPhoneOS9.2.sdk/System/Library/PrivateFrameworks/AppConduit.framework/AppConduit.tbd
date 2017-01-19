@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ACXArrayContainsOnlyClass, _ACXArrayifyThing, _ACXBooleanValue, 
+                       _ACXCopyStagingDirectory, _ACXCopyStagingDirectoryPath, 
+                       _ACXErrorDomain, _ACXFunctionNameErrorKey, _ACXGetPOSIXError, 
+                       _ACXRandomDirWithTemplateURL, _ACXSourceFileLineErrorKey, 
+                       _ACXStringifyObject, _AppConduitVersionNumber, _AppConduitVersionString, 
+                       __CreateAndLogError, __CreateAndLogErrorV, __CreateError, 
+                       _gLogHandle ]
+    objc-classes:    [ _ACXIDSSocketManager, _ACXInstallOperation, _ACXSocket, 
+                       _ACXStreamingZipSocketSender ]
+...

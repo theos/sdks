@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MAECopyActivationRecord, _MAECopyRegulatoryImages, 
+                       _MAECreateActivationInfo, _MAECreateActivationRequest, 
+                       _MAECreateReCertInfo, _MAECreateReCertRequest, _MAECreateRecertStorebagRequest, 
+                       _MAECreateStorebagRequest, _MAEDeactivateDevice, 
+                       _MAEGetActivationBuild, _MAEGetActivationState, 
+                       _MAEGetActivationURLFromStorebag, _MAEGetBrickState, 
+                       _MAEGetReCertURLFromStorebag, _MAEHandleActivationInfo, 
+                       _MAEHandleRecertInfo, _MAERecertifyDevice, _MAETryActivate, 
+                       _MAETryReCert, _MAGetActivationState, _MARequestReactivation, 
+                       _MAUnbrickDevice, _activateThroughMAD, _copyActivationRecord, 
+                       _copyRegulatoryImages, _createActivationInfo, _createActivationRequestFromMAD, 
+                       _createActivationRequestXP, _createReCertRequestFromMAD, 
+                       _createRecertInfo, _deactivateDevice, _getActivationBuild, 
+                       _getActivationState, _getBrickState, _handleActivationInfo, 
+                       _handleRecertInfo, _reCertThroughMAD, _reactivateDevice, 
+                       _recertifyDevice, _unbrickDevice ]
+    objc-classes:    [ _MASessionEngine, _MadGate, _MobileActivationError, 
+                       _MobileActivationNSXMLParserDelegate ]
+    objc-ivars:      [ _MobileActivationNSXMLParserDelegate._activationTicket, 
+                       _MobileActivationNSXMLParserDelegate._currentPlist, 
+                       _MobileActivationNSXMLParserDelegate._recertifying, 
+                       _MobileActivationNSXMLParserDelegate._renderHTML, 
+                       _MobileActivationNSXMLParserDelegate._state ]
+...

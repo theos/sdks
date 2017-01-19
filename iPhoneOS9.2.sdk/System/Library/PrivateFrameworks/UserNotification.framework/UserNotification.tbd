@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserNotification.framework/UserNotification
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _UNApplicationDataStoreLocalNotificationsKey, _UNApplicationDataStoreLocalNotificationsLastFireDateKey, 
+                       _UNBundleIdentifierKey, _UNClearNotificationsForBundleIdentifier, 
+                       _UNEnabledTypesForPushSettings, _UNFormatNetworkString, 
+                       _UNIsAuthorizedForRegionMonitoring, _UNLocalNotificationDidFireNotification, 
+                       _UNLocalNotificationLoggingLevel, _UNLocalNotificationLoggingPreferenceKey, 
+                       _UNLocalNotificationsDidChangeNotification, _UNLocalNotificationsKey, 
+                       _UNLocalNotificationsSchedulingProxyEntitlement, 
+                       _UNNotificationBundleIdentifierKey, _UNNotificationEnabledKey, 
+                       _UNNotificationLocalNotificationDataKey, _UNNotificationLocalizedString, 
+                       _UNNotificationSettingsDidChangeNotification, _UNNotificationStoreActionTextKey, 
+                       _UNNotificationStoreBadgeNumberKey, _UNNotificationStoreCategoryKey, 
+                       _UNNotificationStoreCreationDateKey, _UNNotificationStoreImageURLKey, 
+                       _UNNotificationStoreLaunchImageKey, _UNNotificationStoreLocalNotificationDataKey, 
+                       _UNNotificationStoreMessageKey, _UNNotificationStoreNotificationTypeKey, 
+                       _UNNotificationStoreSoundIsRingtoneKey, _UNNotificationStoreSoundKey, 
+                       _UNNotificationStoreTitleKey, _UNNotificationStoreUserInfoKey, 
+                       _UNRemoteNotificationLoggingLevel, _UNRemoteNotificationLoggingPreferenceKey, 
+                       _UNRemoteNotificationsEnvironmentEntitlement, _UNRemoteNotificationsPreferencesEntitlement, 
+                       _UNShowNotificationAuthorizationAlert, _UNSupportedTypesForPushSettings, 
+                       _UNSystemDidSetBadgeForBundleIdentifier, _UNTriggerLocationArrow, 
+                       _UNUserNotificationServerStart, _UserNotificationVersionNumber, 
+                       _UserNotificationVersionString, __SBSAppNotificationStoreDirectory, 
+                       _kUNNotificationAuthorizationAlertBundleIdentifierKey, 
+                       _kUNNotificationStoreNotificationTypeLocal, _kUNNotificationStoreNotificationTypeRemote, 
+                       _kUNNotificationStoreSoundDefault ]
+    objc-classes:    [ _UNDefaultDataProvider, _UNDefaultDataProviderFactory, 
+                       _UNLocalNotificationClient, _UNLocalNotificationLogger, 
+                       _UNLocalNotificationService, _UNLocationMonitor, 
+                       _UNNotificationAuthorizationAlertController, _UNNotificationRegistrarConnectionListener, 
+                       _UNNotificationSchedulerConnectionListener, _UNNotificationSettingsService, 
+                       _UNNotificationStore, _UNRemoteNotificationClient, 
+                       _UNRemoteNotificationLogger, _UNRemoteNotificationServer, 
+                       _UNUserNotificationServer ]
+    objc-ivars:      [ _UNDefaultDataProvider._displayName, _UNDefaultDataProvider._proxy, 
+                       _UNDefaultDataProvider._publisherBulletinIDs, _UNDefaultDataProvider._queue, 
+                       _UNDefaultDataProvider._sectionID, _UNNotificationStore._notificationsQueue, 
+                       _UNNotificationStore._observersByBundleID, _UNNotificationStore._settingsQueue, 
+                       _UNRemoteNotificationClient._backgroundDeliveryDisabled, 
+                       _UNRemoteNotificationClient._bundleIdentifier, _UNRemoteNotificationClient._dailyCountOfNewsstandPushes, 
+                       _UNRemoteNotificationClient._dayOfLastNewsstandPush, 
+                       _UNRemoteNotificationClient._environment, _UNRemoteNotificationClient._lastKnownDeviceToken, 
+                       _UNRemoteNotificationClient._missingDate, _UNRemoteNotificationClient._tokenIdentifier, 
+                       _UNUserNotificationServer._registrarConnectionListener, 
+                       _UNUserNotificationServer._schedulerConnectionListener ]
+...

@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NANO_CUSTOM_MONOGRAM_KEY, _NANO_CUSTOM_WORLD_CITIES_DICT_KEY, 
+                       _NANO_NOTIFICATIONS_INDICATOR_ENABLED_KEY, _NANO_PREFS_CHANGED_KEY, 
+                       _NANO_TIME_KIT_DOMAIN, _NTKClockStatusBarSettingsDidChangeNotification, 
+                       _NTKCustomMonogramChangedNotification, _NTKCustomWorldCityAbbreviationsChangedNotification, 
+                       _WorldCityAbbreviationMaxLength, _WorldCityAbbreviationMinLength, 
+                       __NTKClockStatusBarSettings_HandleSettingsChanged, 
+                       __NTKCustomMonogramStore_HandleStoreChanged, __NTKCustomWorldCityAbbreviationsStore_HandleStoreChanged, 
+                       __initialsForPerson, __isRomanName ]
+    objc-classes:    [ _NTKClockStatusBarSettings, _NTKCustomMonogramStore, 
+                       _NTKCustomWorldCityAbbreviationsStore, _NTKMonogram ]
+...

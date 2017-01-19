@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SUICGetSiriUILanguageCode, _SUICPluginSiriDisambiguationDomainsKey, 
+                       _SUICPluginSiriDomainsKey, _SUICPluginSiriProviderDomainsKey, 
+                       _SUICPurgeCachedLocalizedStrings, _SUICSetSiriUILanguageCode, 
+                       _SUICSiriLanguageIsRTL, _SiriUICoreVersionNumber, 
+                       _SiriUICoreVersionString ]
+    objc-classes:    [ _FlameGroup, _SUICAudioLevelSmoother, _SUICFlamesView, 
+                       _SUICPluginBundle, _SUICPluginManager, _SUICSiriLanguage, 
+                       _SUICSuggestions ]
+...

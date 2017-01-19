@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WeatherUI.framework/WeatherUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AlternativeFontColorAlpha, _ClearGraphicQuality, 
+                       _CreateWeatherLabel, _DayOfYear, _DegreesFromRadians, 
+                       _GraphicQuality, _HairlineThickness, _HourAngle, 
+                       _RadiansFromDegrees, _RoundToPixel, _SunHeight, 
+                       _WAGrayColor, _WAPrecipitationColor, _WAShadowColor, 
+                       _WATealColor, _WATextColor, _WAWeatherMathResetForTimeChange, 
+                       _WatchSystemTealColor, _WeatherUIFrameworkBundle, 
+                       _WeatherUIVersionNumber, _WeatherUIVersionString, 
+                       _blizzardDay, _blowingSnowDay, _clearDay, _clearNight, 
+                       _cloudyDay, _cloudyNight, _crossfadeDuration, _drizzleDay, 
+                       _drizzleNight, _dustDay, _dustNight, _flurriesDay, 
+                       _flurriesNight, _fogDay, _fogNight, _frigidDay, 
+                       _hailDay, _hazeDay, _hazeNight, _heavyRainDay, _hotDay, 
+                       _hurricaneDay, _hurricaneNight, _inclementDay, _inclementNight, 
+                       _mostlyClearNight, _mostlyCloudyDay, _mostlyCloudyNight, 
+                       _partlyCloudyDay, _partlyCloudyNight, _rainDay, 
+                       _rainSleetDay, _rainSnowDay, _scatteredShowersDay, 
+                       _scatteredSnowDay, _scatteredThunderstormDay, _showerDay, 
+                       _sleetDay, _smokeDay, _smokeNight, _snowDay, _stormDay, 
+                       _stormNight, _sunnyDay, _sunset, _thunderstormsNight, 
+                       _timeStep, _tornadoDay, _tornadoNight, _tropicalStormDay, 
+                       _windyDay, _winteryMixDayMini ]
+    objc-classes:    [ _WUIAsynchronousAssetLoader, _WUIDynamicWeatherBackground, 
+                       _WUIDynamicWeatherBackgroundInteractiveTransaction, 
+                       _WUIGradientLayer, _WUIWeatherCondition, _WUIWeatherConditionBackgroundView ]
+...

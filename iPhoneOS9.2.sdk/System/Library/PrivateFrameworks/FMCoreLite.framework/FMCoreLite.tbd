@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _FMAlertCategoryNone, ___activeFMLogLevel, _kFMSynchronizerTimeoutNever ]
+    objc-classes:    [ _FMAlert, _FMConcurrentMutableArray, _FMConcurrentMutableDictionary, 
+                       _FMLogger, _FMPreferencesUtil, _FMReadWriteLock, 
+                       _FMSynchronizer ]
+...

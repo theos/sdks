@@ -1,0 +1,12 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ServerAccounts.framework/ServerAccounts
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SVAccountComputerModelName, _SVAccountComputerName, 
+                       _SVAccountErrorDomain, _SVAccountManuallyEnteredHostName, 
+                       _SVAccountUserTrustedCertificate, _SVAccountVPNConfigurationIdentifier, 
+                       _ServerAccountsVersionNumber, _ServerAccountsVersionString ]
+    objc-classes:    [ _SVATrustHandler, _SVAVPNUtility, _SVAVerifier ]
+...

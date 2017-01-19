@@ -1,0 +1,29 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserActivity.framework/UserActivity
+current-version: 25.3
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _GetAuditSessionIDFromToken, _GetEGIDFromToken, 
+                       _GetGIDFromToken, _GetPIDFromToken, _GetPIDVersionFromToken, 
+                       _GetUIDFromToken, _UAAlwaysAdvertise, _UAContinuityErrorDomain, 
+                       _UAUserActivityAdvertisePriority, _UAUserActivityAlwaysEligibleKey, 
+                       _UAUserActivityAlwaysPickKey, _UAUserActivityEligibleEvenWhenInBackgroundKey, 
+                       _UAUserActivityHasWebPageURLOptionKey, _UAUserActivityIsForPairedDeviceOptionKey, 
+                       _UAUserActivityIsHighPriorityOptionKey, _UAUserActivityIsNotificationOptionKey, 
+                       _UAUserActivityManagerActivityContinuationIsEnabledChangedNotification, 
+                       _UAUserActivityTypeNowPlaying, _UAUserActivityTypeSiri, 
+                       _UAUserActivityTypeTeamIDOverideKey, __LSUserActivityContainsFileProviderURLKey, 
+                       __LSUserActivityContainsUnsynchronizedCloudDocsKey, 
+                       __LSUserActivityOptionInvalidateAfterFetchKey, __UACopyBundleIdentifierForAuditToken, 
+                       __UACopyCodeSigningIdentifierForAuditToken, __UACopyPackedDataForObject, 
+                       __UACopyPackedDataForObjectWithSubstitution, __UACopyUnpackedObjectFromData, 
+                       __UACopyUnpackedObjectFromDataWithSubstitution, 
+                       __UAGetEUIDFromToken, __UAIsAuditTokenSandboxed, 
+                       _kUACanModifyAnySuggestedActionEntitlement, _kUAIsDefaultFrontmostAppEntitlement ]
+    objc-classes:    [ _UABestAppSuggestion, _UABestAppSuggestionManager, 
+                       _UAPingResults, _UAResumableActivitiesControlManager, 
+                       _UAUserActivity, _UAUserActivityDebuggingManager, 
+                       _UAUserActivityInfo, _UAUserActivityManager ]
+...

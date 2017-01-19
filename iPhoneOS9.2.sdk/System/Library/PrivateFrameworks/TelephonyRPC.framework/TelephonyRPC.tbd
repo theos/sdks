@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/TelephonyRPC.framework/TelephonyRPC
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DELTA_SYNC_MAX_VOICEMAIL_COUNT, _FULL_SYNC_CHUNK_SIZE, 
+                       _NANOPHONE_APPLICATION_BUNDLE_ID, _NANOPHONE_LOG_FACILITY, 
+                       _NPHAudioInterruptionControllerInterruptionStatusWillChangeNotification, 
+                       _NPHAudioInterruptionControllerWillInterruptKey, 
+                       _NPHDeriveProgramName, _NPHDeviceOSIsInternalInstall, 
+                       _NPHIsDebugBuild, _NPHIsWalkaboutEnabled, _NPHLog, 
+                       _NPHSharedUtilitiesAppendBuildVersion, _NPHSharedUtilitiesLocaleHaptic, 
+                       _NPHSharedUtilitiesLocaleHapticDucked, _NPHSharedUtilitiesRecordDuetAnsweredCallEventFrom, 
+                       _NPHSharedUtilitiesRecordDuetDeclinedCallEventFrom, 
+                       _NPHSharedUtilitiesRecordDuetRemindMeEventFrom, 
+                       _NPHSharedUtilitiesRecordDuetSmartReplyEventFrom, 
+                       _NanoPhoneVoicemailBodyReadFrom, _NanoPhoneVoicemailMetaReadFrom, 
+                       _SYNC_MAX_VOICEMAIL_COUNT, _SYNC_MAX_VOICEMAIL_TOTAL_SIZE_BYTES, 
+                       _URLToDial, __NPHNumberOfCannedReplies, __NPHPhoneNumberActiveCountryCodeKey, 
+                       __NPHPhoneNumberHomeCountryCodeKey, __NPHPhoneNumberNetworkCountryCodeKey, 
+                       __TUReplyWithMessageStoreChangedKey, __TUReplyWithMessageStoreReplyArrayKey, 
+                       __createCoreDuetSession, _isTrashToInboxForVMDNotification, 
+                       _kCarrierInfoCarrierDomain, _kCarrierInfoIsVisualVoicemailServiceSubscribedKey, 
+                       _kCarrierInfoVMShouldHideVoicemailUI, _kNPHIsVisualVoicemailServiceSubscribedDidChangeNotification, 
+                       _mach_time_elapsed_to_seconds, _nph_ensure_on_main_queue, 
+                       _syncOperationForVMDNotification ]
+    objc-classes:    [ _NPHCarrierInfoCompanionReplication, _NPHCountryCodeCompanionReplication, 
+                       _NPHNanoRespondWithTextStore, _NPHNanoRespondWithTextStoreCompanionReplication, 
+                       _NanoPhoneVoicemailBody, _NanoPhoneVoicemailMeta, 
+                       _VoicemailCompanionReplication ]
+    objc-ivars:      [ _NanoPhoneVoicemailBody._voicemailNumber, _NanoPhoneVoicemailBody._voicemailRecording, 
+                       _NanoPhoneVoicemailMeta._callbackNumber, _NanoPhoneVoicemailMeta._dataPath, 
+                       _NanoPhoneVoicemailMeta._date, _NanoPhoneVoicemailMeta._duration, 
+                       _NanoPhoneVoicemailMeta._flags, _NanoPhoneVoicemailMeta._has, 
+                       _NanoPhoneVoicemailMeta._identifier, _NanoPhoneVoicemailMeta._remoteUID, 
+                       _NanoPhoneVoicemailMeta._sender, _NanoPhoneVoicemailMeta._voicemailBody, 
+                       _NanoPhoneVoicemailMeta._voicemailNumber ]
+...

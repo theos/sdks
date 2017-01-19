@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Parsec.framework/Parsec
+current-version: 960.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PRSFairPlayErrorDomain, _PRSLog, _PRSParsecVersionNumber, 
+                       _PRSParsecVersionString, _PRSSetLoggingBlock, _gConnectionChangedBlocks, 
+                       _gExtraParam, _gPRSLogLevel, _kHTTPHeaderXAppleActionSignature, 
+                       _locationLock, _main, _printByteArrayAsInt, _prs_compress, 
+                       _prs_encodeRun, _prs_expand, _prs_getRunLength, 
+                       _prs_saveRun, _reachabilityCallback ]
+    objc-classes:    [ _PRSAbandonmentFeedback, _PRSBagHandler, _PRSCache, 
+                       _PRSCalendarImage, _PRSCoreDuet, _PRSDecoder, _PRSDictationQueryTask, 
+                       _PRSEngagementFeedback, _PRSFTETask, _PRSFairPlaySAPSession, 
+                       _PRSFakeQueryTask, _PRSFeedback, _PRSFeedbackContext, 
+                       _PRSFeedbackSpeechResult, _PRSImage, _PRSMLManager, 
+                       _PRSMapsEngagementFeedback, _PRSMapsSearchCategoryImage, 
+                       _PRSParsecResultSetPattern, _PRSPreviewFeedback, 
+                       _PRSQueryTask, _PRSRankingManager, _PRSRealQueryTask, 
+                       _PRSRenderFeedback, _PRSSearchCompletionResultSet, 
+                       _PRSSearchFeedback, _PRSSearchResponse, _PRSSearchSession, 
+                       _PRSSharedParsecSession, _PRSSharedPredictionService, 
+                       _PRSSpriteImage, _PRSStateTask, _PRSVoiceSearchFeedback, 
+                       _PRSiTunesEngagementFeedback ]
+...

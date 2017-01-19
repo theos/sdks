@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PLBatchDropMessages, _PLBatteryGaugeGetSnapshot, 
+                       _PLBatteryGaugePauseTracing, _PLBatteryGaugePauseTracingForBundleId, 
+                       _PLBatteryGaugePauseTracingForPid, _PLBatteryGaugePauseTracingForProcessName, 
+                       _PLBatteryGaugeResumeTracing, _PLBatteryGaugeResumeTracingForBundleId, 
+                       _PLBatteryGaugeResumeTracingForPid, _PLBatteryGaugeResumeTracingForProcessName, 
+                       _PLBatteryGaugeStartTracing, _PLBatteryGaugeStartTracingForBundleId, 
+                       _PLBatteryGaugeStartTracingForPid, _PLBatteryGaugeStartTracingForProcessName, 
+                       _PLBatteryGaugeStopTracing, _PLBatteryGaugeStopTracingForBundleId, 
+                       _PLBatteryGaugeStopTracingForPid, _PLBatteryGaugeStopTracingForProcessName, 
+                       _PLBatteryGaugeVersion, _PLBatteryLifeMonitorGenericDuetQuery, 
+                       _PLBatteryLifeMonitorLogCoreDuetAdmissionEvent, 
+                       _PLBatteryLifeMonitorLogCoreDuetEvent, _PLBatteryLifeMonitorLogCoreDuetEventsAggregate, 
+                       _PLBatteryLifeMonitorLogCoreDuetPredictionEvents, 
+                       _PLBatteryLifeMonitorLogDuetEvent, _PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet, 
+                       _PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet, 
+                       _PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet, 
+                       _PLBatteryLifeMonitorReportEnergyCoreDuet, _PLBatteryLifeMonitorReportEnergyDuet, 
+                       _PLBatteryLifeMonitorStopAllDuetEvents, _PLBatteryUsageUIQuery, 
+                       _PLFDefaultsValueForKey, _PLForceBatching, _PLLogEvent, 
+                       _PLLogRegisteredEvent, _PLQuery, _PLQueryRegistered, 
+                       _PLShouldLogEvent, _PLShouldLogRegisteredEvent, 
+                       _PLTalkToPowerlogHelper, _queryPowerlog ]
+    objc-classes:    [ _PLClientLogger, _PLCoreDuetEvent, _PLCoreDuetEventInterval, 
+                       _PLModelingUtilities ]
+...

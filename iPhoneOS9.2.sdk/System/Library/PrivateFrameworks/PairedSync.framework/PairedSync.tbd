@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PairedSync.framework/PairedSync
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NSStringFromPSYDeviceSyncState, _PSYActivityProgressXPCInterface, 
+                       _PSYActivityXPCInterface, _PSYConnectionXPCInterface, 
+                       _PSYDeviceSyncDidCompleteDarwinNotification, _PSYErrorDomain, 
+                       _PSYErrorForCode, _PSYGetClientListDirectory, _PSYGetPreferredActivityOrdering, 
+                       _PSYLogInitIfNeeded, _PSYProgressClientXPCInterface, 
+                       _PSYProgressServerXPCInterface, _PSYSetDeviceSyncState, 
+                       _PSYToolInterfaceXPCInterface, _kPSYDeviceSyncStateMachServiceName, 
+                       _kPSYDeviceSyncStateNotifcation, _kPSYDeviceSyncStateRequestKey, 
+                       _kPSYDeviceSyncStateValueKey, _kPSYLoggingFacility, 
+                       _kPSYRequestDeviceSyncStateMessage ]
+    objc-classes:    [ _PSProgressClient, _PSYActivityInfo, _PSYConnection, 
+                       _PSYDeviceSyncStateProvider, _PSYOptions, _PSYProgressObserver, 
+                       _PSYSyncCoordinator, _PSYSyncOptions, _PSYSyncRestrictionProvider, 
+                       _PSYTestInput ]
+    objc-ivars:      [ _PSProgressClient._progressObserver, _PSProgressClient._queue ]
+...

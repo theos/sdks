@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUIService.framework/AccessibilityUIService
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AXUIAlertDefaultDelayBetweenSubsequentAlerts, _AXUIAlertDisplayTimeDefaultForAlerts, 
+                       _AXUIAlertDisplayTimeDefaultForBanners, _AXUIAlertDisplayTimeForever, 
+                       _AXUIAlertSizeMetricFillingContainer, _AXUIAlertSizeMetricFitting, 
+                       _AXUIErrorDomainCommunication_ServiceFramework, 
+                       _AXUIErrorDomainProtocol_ServiceFramework, _AXUIErrorDomainServiceEntitlementMismatch_ServiceFramework, 
+                       _AXUIErrorDomainServiceInitialization_ServiceFramework, 
+                       _AXUIErrorDomainServiceMessageHandling_ServiceFramework, 
+                       _AXUIErrorDomainValidation_ServiceFramework, __AXUIMessageReplyKeyClientRegistrationWithServerDidSucceed_ServiceFramework, 
+                       __AXUIMessageReplyKeyDidSucceed_ServiceFramework, 
+                       __AXUIMessageReplyKeyErrorDescription_ServiceFramework, 
+                       __AXUIMessageReplyKeyErrorDomain_ServiceFramework, 
+                       __AXUIServiceDescription_ServiceFramework, __AXUIServiceMessageKeyClientIdentifier_ServiceFramework, 
+                       __AXUIServiceMessageKeyInitializationMessage_ServiceFramework, 
+                       __AXUIServiceMessageKeyMessageIdentifier_ServiceFramework, 
+                       __AXUIServiceMessageKeyMessageWasEmpty_ServiceFramework, 
+                       __AXUIServiceMessageKeyServiceBundleName_ServiceFramework, 
+                       __AXUIServiceName_ServiceFramework ]
+    objc-classes:    [ _AXStaticFrameView, _AXUIActiveWindow, _AXUIAlert, 
+                       _AXUIAlertContext, _AXUIAlertStyleProvider, _AXUIClientMessenger, 
+                       _AXUIDisplayManager, _AXUIMessageContext_ServiceFramework, 
+                       _AXUIMessageReplyHandler_ServiceFramework, _AXUIMessageSender_ServiceFramework, 
+                       _AXUINSBundleOverride, _AXUINubbitContext, _AXUIPassiveWindow, 
+                       _AXUIRootViewController, _AXUIServiceContext, _AXUIServiceEntitlementChecker, 
+                       _AXUIServiceManager, _AXUIUtilities_ServiceFramework, 
+                       _AXUIWindow, ___AXUINSBundleOverride_super ]
+...

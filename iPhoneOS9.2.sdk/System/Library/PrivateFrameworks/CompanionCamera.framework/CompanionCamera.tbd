@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CompanionCamera.framework/CompanionCamera
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NCFileLog, _NCFileLoggingEnabled, _NCLoggingEnabled, 
+                       _NCPerfLoggingEnabled, _NCPrefsResyncNotification ]
+    objc-classes:    [ _CCCameraConnection, _CCCameraConnectionInternal ]
+...

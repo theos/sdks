@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CDPKeychainSyncSecurityCodePeerApprovalResult, 
+                       _CDPKeychainSyncSecurityCodeResetKeychainResult, 
+                       _CoreCDPUIVersionNumber, _CoreCDPUIVersionString ]
+    objc-classes:    [ _CDPDevicePickerViewController, _CDPLocalSecretEntryPane, 
+                       _CDPLocalSecretEntryViewController, _CDPPaneHeaderView, 
+                       _CDPPassphraseEntryPane, _CDPPassphraseEntryViewController, 
+                       _CDPRemoteSecretEntryPane, _CDPRemoteSecretEntryViewController, 
+                       _CDPSingleICSCEntryPane, _CDPSingleICSCEntryViewController, 
+                       _CDPTableViewController, _CDPUIController, _CDPWaitingApprovalViewController ]
+    objc-ivars:      [ _CDPPassphraseEntryPane._headerView ]
+...

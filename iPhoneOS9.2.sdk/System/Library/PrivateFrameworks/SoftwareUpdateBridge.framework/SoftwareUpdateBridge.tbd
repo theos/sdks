@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SoftwareUpdateBridge.framework/SoftwareUpdateBridge
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SUBArchive, _SUBCompatibilityVersion, _SUBDuetDenialDomain, 
+                       _SUBError, _SUBErrorDomain, _SUBErrorUserInfo, _SUBErrorUserInfoChargerConnected, 
+                       _SUBErrorUserInfoDenialReasons, _SUBIPCClientIsEntitled, 
+                       _SUBIPCDecodeObjectForKey, _SUBIPCDictionaryToXPC, 
+                       _SUBIPCEncodeObject, _SUBIPCXPCToDictionary, _SUBMachServiceName, 
+                       _SUBMessageCanProceedWithInstallationKey, _SUBMessageCompanionLockState, 
+                       _SUBMessageCreateStashBagResponseKey, _SUBMessageCreatedStashBagResponse, 
+                       _SUBMessageDescriptorKey, _SUBMessageDocumentationKey, 
+                       _SUBMessageDownloadKey, _SUBMessageErrorKey, _SUBMessageManagerStateKey, 
+                       _SUBMessagePairedUnlockNotSupported, _SUBMessageRequiredDiskSpaceKey, 
+                       _SUBMessageSsoTokenKey, _SUBMessageTypeAddClient, 
+                       _SUBMessageTypeBadgeBridgeApp, _SUBMessageTypeCreateStashBag, 
+                       _SUBMessageTypeDownloadProgress, _SUBMessageTypeFetchDocumentation, 
+                       _SUBMessageTypeGetCompanionLockState, _SUBMessageTypeGizmoOSVersionDidChange, 
+                       _SUBMessageTypeInstallResult, _SUBMessageTypeInstallUpdate, 
+                       _SUBMessageTypeInstallationCanProceed, _SUBMessageTypeInstallationWillProceed, 
+                       _SUBMessageTypeKey, _SUBMessageTypePerformMigration, 
+                       _SUBMessageTypePurgeUpdate, _SUBMessageTypeQueryManagerState, 
+                       _SUBMessageTypeRetrieveSsoToken, _SUBMessageTypeScanForUpdates, 
+                       _SUBMessageTypeScanResult, _SUBMessageTypeShowDownloadandPrepareError, 
+                       _SUBMessageTypeShowDuetConditions, _SUBMessageTypeShowInstallError, 
+                       _SUBMessageTypeShowUpdateAvailable, _SUBMessageTypeStartDownload, 
+                       _SUBMessageTypeUnlockCompanion, _SUBMessageTypeUserDidAcceptTermsAndConditions, 
+                       _SUBNSURLSessionProxyDenialDomain, _SUBPhaseDownloading, 
+                       _SUBPhasePreparingUpdate, _SUBPhaseStalled, _SUBPhaseWaitingForAdmissionControl, 
+                       _SUBResultTypeForMessageType, _SUBStringForManagerState, 
+                       _SUBTCPConnectionDenialDomain, _SUBUnarchive, ___SoftwareUpdateBridgeVersionNumber, 
+                       ___SoftwareUpdateBridgeVersionString, _chargerConnected ]
+    objc-classes:    [ _SUBDescriptor, _SUBDocumentation, _SUBDownload, 
+                       _SUBLogger, _SUBManager, _SUBMessageEndpoint, _SUBProgress ]
+...

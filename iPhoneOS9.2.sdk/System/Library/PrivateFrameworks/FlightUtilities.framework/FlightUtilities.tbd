@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FlightUtilities.framework/FlightUtilities
+current-version: 56.4
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _FUAirline, _FUAirport, _FUFlight, _FUFlightFactory, 
+                       _FUFlightLeg, _FUFlightViewController ]
+...

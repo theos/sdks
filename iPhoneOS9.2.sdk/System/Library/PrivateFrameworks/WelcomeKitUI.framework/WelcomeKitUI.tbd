@@ -1,0 +1,12 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WelcomeKitUI.framework/WelcomeKitUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WelcomeKitUIVersionNumber, _WelcomeKitUIVersionString ]
+    objc-classes:    [ _WLAvailabilitySessionDelegate, _WLIntroViewController, 
+                       _WLMigrationCompletedViewController, _WLMigrationProgressViewController, 
+                       _WLPairingViewController, _WLWelcomeGroupViewController, 
+                       _WLWelcomeViewController, _WLWelcomeViewControllerMetrics ]
+...

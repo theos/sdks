@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AirTrafficDevice.framework/AirTrafficDevice
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ATAssetSessionTaskGroupingKey, _ATDeviceIDSServiceName, 
+                       _ATDeviceServiceDomain, _ATDeviceServiceName, _ATDeviceServiceType, 
+                       _ATDeviceSettingDataClassesNeedingSyncKey, _ATDeviceSettingDataMigratedKey, 
+                       _ATDeviceSettingHostInfoKey, _ATDeviceSettingLastSyncTimesKey, 
+                       _ATDeviceSettingPairingSyncCompletionTime, _ATDeviceSettingRestoreTypeKey, 
+                       _ATDeviceSettingSyncStateKey, _ATDeviceSettingsDomain, 
+                       _ATDeviceSettingsEndpointInfoKey, _ATDeviceSettingsFairPlayEnabledKey, 
+                       _ATDeviceSettingsGrappaEnabledKey, _ATDeviceSettingsInterfaceNameKey, 
+                       _ATDeviceSettingsIsClientKey, _ATDeviceSettingsLibraryIdentifierKey, 
+                       _ATDeviceSettingsServiceDomain, _ATDeviceSettingsServiceName, 
+                       _ATDeviceSettingsServiceType, _ATDeviceSettingsUseNetServicesConnectionNameKey, 
+                       _ATDeviceSyncSessionAssetTaskGroupingKey, _ATDeviceSyncSessionSyncTaskGroupingKey, 
+                       _ATDisplayErrorForAppInstall, _ATDisplayErrorForAssets, 
+                       _ATDisplaySyncAlert, _ATGetDisabledAssetTypes, _ATGrappaDeviceDestroy, 
+                       _ATGrappaDeviceInfo, _ATGrappaEstablishSession, 
+                       _ATHasCompletedMigrationNotificationName, _ATIsInternalInstall, 
+                       _ATLegacyAssetLinkErrorIsVisibleKey, _ATLegacySyncSessionTaskGroupingKey, 
+                       _ATWaitForSpringBoard, __CFNotificationCallback, 
+                       _dispatch_client_async ]
+    objc-classes:    [ _ATAssetManager, _ATAssetSessionTask, _ATClientController, 
+                       _ATDeviceDiskUsageProvider, _ATDeviceMessageLink, 
+                       _ATDevicePairedSyncManager, _ATDeviceProvisioningHandler, 
+                       _ATDeviceService, _ATDeviceSettings, _ATDeviceState, 
+                       _ATDeviceSyncManager, _ATDeviceSyncSessionAssetTask, 
+                       _ATDeviceSyncSessionSyncTask, _ATDeviceSyncSessionTask, 
+                       _ATGrappaSession, _ATGrappaSignatureProvider, _ATIDSConnectionInfo, 
+                       _ATIDSService, _ATIDSSocket, _ATLegacyAssetLink, 
+                       _ATLegacyDeviceSyncManager, _ATLegacyMessageLink, 
+                       _ATLegacySyncSessionTask, _ATLockdownListener, _ATLockdownMessageLink, 
+                       _ATLockdownSocket, _ATMD5SignatureProvider, _ATRestoreAssetLink, 
+                       _ATRestoreManager, _ATStoreAssetLink, _ATUserDefaults, 
+                       _ATWakeupCall, _ATWorkspaceObserver, _ATXPCListener ]
+    objc-ivars:      [ _ATWakeupCall._browser, _ATWakeupCall._completion, 
+                       _ATWakeupCall._hostLibraryIdentifiers, _ATWakeupCall._hostsToResolve, 
+                       _ATWakeupCall._resolvedLibraryIdentifiers, _ATWakeupCall._resolvedLibraryServices, 
+                       _ATWakeupCall._resolving, _ATWakeupCall._resolvingHosts, 
+                       _ATWakeupCall._searching, _ATWakeupCall._wakeThread ]
+...

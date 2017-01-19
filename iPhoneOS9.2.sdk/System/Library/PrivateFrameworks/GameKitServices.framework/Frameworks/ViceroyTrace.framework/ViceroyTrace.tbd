@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AWDFacetimeSubmitMetric, _AWDGCKSubmitLinkStatusMetric, 
+                       _GKSSubmitAWDMetricsFromGameD, _OpenGKSPerformanceHandle, 
+                       _VCMarcoAction, _VCMarcoAddCallMetric_Double, _VCMarcoAddCallMetric_Int, 
+                       _VCMarcoAddLogFile, _VCMarcoBegin, _VCMarcoEnd, 
+                       _VCMarcoLog, _VCMarcoNoteCheckpoint, _VCMarcoPerformSnapshot, 
+                       _VCMarcoShouldLog, _VRTraceCheckpoint_, _VRTraceDebugBreak, 
+                       _VRTraceErrorLogLevelFromCSTR, _VRTraceErrorLogLevelToCSTR, 
+                       _VRTraceFlush, _VRTraceGetErrorLogLevelForModule, 
+                       _VRTraceGetSessionLogging, _VRTraceGetUseASL, _VRTraceGetUseCFLog, 
+                       _VRTraceIsInternalOSInstalled, _VRTracePrintLoggingInfo, 
+                       _VRTracePrint_, _VRTraceReset, _VRTraceSetErrorLogLevel, 
+                       _VRTraceSetErrorLogLevelForModule, _VRTraceSetLogFile, 
+                       _VRTraceSetMonitorNSLog, _VRTraceSetSessionLogging, 
+                       _VRTraceSetStandardLogStream, _VRTraceSetStreamOutputFormat, 
+                       _VRTraceSetUseASL, _VRTraceSetUseCFLog, _VRTraceSetUseMarcoLogging, 
+                       _VRTraceVariable_, _connectingGKLog, _gVRTraceErrorLogLevel, 
+                       _gVRTraceModuleFilterEnabled, _perfTimerStart, _perfTimerStop, 
+                       _reportingAWDCallStart, _reportingClassSendMsgToServer, 
+                       _reportingConnected, _reportingConnecting, _reportingConnectionEstablishment, 
+                       _reportingConnectionType, _reportingConnectionUpdate, 
+                       _reportingCreateAgent, _reportingDisconnected, _reportingGKAppInfo, 
+                       _reportingGKCreateAgent, _reportingGKLog, _reportingGKPerfTimes, 
+                       _reportingGetDefaults, _reportingGetUploadFlag, 
+                       _reportingHandoverResult, _reportingLocalAndRemoteInterface, 
+                       _reportingLog, _reportingPerfTimes, _reportingRegisterPeriodicTask, 
+                       _reportingRegisterSystemStats, _reportingReleaseObject, 
+                       _reportingRemoteFrameSize, _reportingStartTimer, 
+                       _reportingStopTimer, _reportingThermal, _reportingTierLog, 
+                       _reportingUnregisterPeriodicTask, _reportingUploadFileWithName, 
+                       _reportingVideoPaused, _reportingVideoProp, _reportingVisualRectangle, 
+                       _reportingWiFiCallingLogCallEnd, _reportingWiFiCallingLogCallStart, 
+                       _reportingWiFiCallingLogMetricSample ]
+    objc-classes:    [ _TimingCollection ]
+    objc-ivars:      [ _TimingCollection.queue, _TimingCollection.timings ]
+...

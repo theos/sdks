@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ABLEModel.framework/ABLEModel
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ABLEDataHygiene_notNaN, _ceilDate, _floorDate ]
+    objc-classes:    [ _ABLEApprox, _ABLEArrayDictWriter, _ABLEBONDirect, 
+                       _ABLEBONDrain, _ABLEBONPostAdjust, _ABLEBONPrediction, 
+                       _ABLEBatteryLevelGenerators, _ABLEBucketer, _ABLEDataHygiene, 
+                       _ABLEDateArrayRoundTrim, _ABLEDateSeq, _ABLEDateSorter, 
+                       _ABLEDateValueQueue, _ABLEDiff, _ABLEFilterKernelGenerator, 
+                       _ABLEGradient, _ABLELagExtractor, _ABLESmoother, 
+                       _ABLEStaticMap, _ABLEStaticMapInclusiveDomainVectorRange, 
+                       _ABLESummary, _ABLETimeSeriesModel, _ABLEVectorModel, 
+                       _ABLEVectorSumSquare, _ABLEWindow, _ABLEZeroAvoid ]
+...

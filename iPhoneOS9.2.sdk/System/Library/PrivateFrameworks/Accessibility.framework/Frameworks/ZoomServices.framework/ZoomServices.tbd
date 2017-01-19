@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/ZoomServices.framework/ZoomServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ZOTDeviceRotation, _ZOTDisplayMainScreenSize, _ZOTMainScreenRect, 
+                       _ZOTMainScreenSize, _ZOTRotateFromScreen, _ZOTRotateToScreen, 
+                       _ZOTTimeUnset, _ZOTWindowServerDisplay, _ZoomServicesPrimaryZoomWindowClientIdentifier ]
+    objc-classes:    [ _AXZoomListenerContainer, _ZoomServices ]
+...

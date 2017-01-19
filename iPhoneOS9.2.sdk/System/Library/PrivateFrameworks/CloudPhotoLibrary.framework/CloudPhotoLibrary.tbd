@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CPLErrorDomain, _CPLErrorRecordIdentifiersWithMissingResourcesKey, 
+                       _CPLErrorRejectedRecordIdentifiersKey, _CPLErrorResetReason, 
+                       _CPLErrorRetryAfterDateKey, _CPLSyncProgressCountOfPulledAssetsKey, 
+                       _CPLSyncProgressStateKey, __CPLAbort, __CPLConfigurationDidChangeNotification, 
+                       __CPLDefaultValueBOOLNO, __CPLDefaultValueNSINTEGER0, 
+                       __CPLDefaultValueObjectNil, __CPLExit, __CPLLogSectionBegin, 
+                       __CPLLogSectionEnd, __CPLLogSectionsClear, __CPLLogSectionsInherit, 
+                       __CPLLogSectionsSet, __CPLLogSetSilent, __CPLLogShouldBeSynchronous, 
+                       __CPLStatusDidChangeNotification, ___CPLEngineLogDomain, 
+                       ___CPLEngineStoreSetFakeUserIdentifier, ___CPLEnvironmentDictionary, 
+                       ___CPLGenericLogDomain, ___CPLLogDispatchOnce, ___CPLLogEverything, 
+                       ___CPLLog_base, ___CPLLog_basev, ___CPLShouldLog, 
+                       ___CPLStoreLogDomain, ___CPLVersion, ___SBSSetStatusBarShowsActivityForApplication ]
+    objc-classes:    [ _CPLAdjustmentFingerprinting, _CPLAdjustments, _CPLAlbumChange, 
+                       _CPLArchiver, _CPLAssetChange, _CPLAssetKeywordSortDescriptor, 
+                       _CPLBackgroundDownloadsTask, _CPLBackgroundUploadsTask, 
+                       _CPLBatteryMonitor, _CPLChangeBatch, _CPLChangeSession, 
+                       _CPLCodingPropertyEntry, _CPLConfiguration, _CPLContainerChange, 
+                       _CPLContainerRelation, _CPLContainerRelationChange, 
+                       _CPLDateFormatter, _CPLDownloadOriginalsTask, _CPLEngineChangePipe, 
+                       _CPLEngineClientCache, _CPLEngineCloudCache, _CPLEngineComponentEnumerator, 
+                       _CPLEngineFileStorage, _CPLEngineIDMapping, _CPLEngineLibrary, 
+                       _CPLEngineQuarantinedRecords, _CPLEngineRemappedDeletes, 
+                       _CPLEngineResourceDownloadQueue, _CPLEngineResourceDownloadTask, 
+                       _CPLEngineResourceDownloadTaskGroup, _CPLEngineResourceStorage, 
+                       _CPLEngineResourceUploadQueue, _CPLEngineResourceUploadTask, 
+                       _CPLEngineScheduler, _CPLEngineStorage, _CPLEngineStore, 
+                       _CPLEngineStoreTransaction, _CPLEngineSyncEmergencyTask, 
+                       _CPLEngineSyncManager, _CPLEngineSyncTask, _CPLEngineSystemMonitor, 
+                       _CPLEngineTransientRepository, _CPLEngineTransport, 
+                       _CPLErrors, _CPLFileStorageItem, _CPLFileWatcher, 
+                       _CPLGetAssetCountsTask, _CPLIDMapping, _CPLItemChange, 
+                       _CPLLibraryManager, _CPLMasterChange, _CPLMinglePulledChangesTask, 
+                       _CPLNetworkIndicator, _CPLNetworkWatcher, _CPLPersonChange, 
+                       _CPLPersonReference, _CPLPlaceAnnotation, _CPLPlatform, 
+                       _CPLPlatformObject, _CPLPowerAssertion, _CPLProxyLibraryManager, 
+                       _CPLProxyLibraryManagerOutstandingInvocation, _CPLProxyPullSession, 
+                       _CPLProxyPushSession, _CPLProxyResourceTransferTask, 
+                       _CPLProxySession, _CPLPullChangeSession, _CPLPullFromTransportTask, 
+                       _CPLPushChangeSession, _CPLPushToTransportTask, 
+                       _CPLRecordChange, _CPLRemoveCloudLibraryTask, _CPLResource, 
+                       _CPLResourceIdentity, _CPLResourceIdentityImplementation, 
+                       _CPLResourceTransferTask, _CPLStatistics, _CPLStatus, 
+                       _CPLSyncIndicator, _CPLTransaction, __CPLEngineStoreBatchedTransaction ]
+...

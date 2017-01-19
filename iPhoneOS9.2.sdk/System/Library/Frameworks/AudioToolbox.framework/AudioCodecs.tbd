@@ -1,0 +1,8 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AudioToolbox.framework/AudioCodecs
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _RegisterExternalAudioCodecs ]
+...

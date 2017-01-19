@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /usr/lib/libGestureServer.dylib
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _kUIGestureServerResetTimeoutDuration ]
+    objc-classes:    [ __UIGestureRecognizerContextState, __UIGestureRecognizerServer ]
+    objc-ivars:      [ __UIGestureRecognizerContextState._ancestorContextId, 
+                       __UIGestureRecognizerContextState._ancestorDidReset, 
+                       __UIGestureRecognizerContextState._ancestorGestureRecognizerState, 
+                       __UIGestureRecognizerContextState._contextId, __UIGestureRecognizerContextState._didReset, 
+                       __UIGestureRecognizerContextState._gestureRecognizerState, 
+                       __UIGestureRecognizerContextState._initialTouchTimestamp, 
+                       __UIGestureRecognizerContextState._lastAncestorTouchTimestamp, 
+                       __UIGestureRecognizerContextState._lastTouchTimestamp ]
+...

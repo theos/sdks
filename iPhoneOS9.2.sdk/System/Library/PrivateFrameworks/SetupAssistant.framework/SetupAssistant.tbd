@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BYAssistantScreenShouldBeShownInSetupAssistant, 
+                       _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPHSOfferedKey, 
+                       _BYBuddyAssistantPresentedKey, _BYBuddyCurrentVersion, 
+                       _BYBuddyDoneKey, _BYBuddyFinishedInitialRunKey, 
+                       _BYBuddyLastExitKey, _BYBuddyMachService, _BYBuddyNotBackedUpIdentifier, 
+                       _BYBuddyRunDiagnosticsMiniBuddy, _BYBuddyRunKeychainSyncMiniBuddy, 
+                       _BYBuddyRunMesaMiniBuddy, _BYBuddyRunPaymentMiniBuddy, 
+                       _BYBuddyVersionKey, _BYClearLaunchSentinel, _BYLog, 
+                       _BYLogDebug, _BYLogInfo, _BYLogPublic, _BYLoggingEnabled, 
+                       _BYProcessNameForPID, _BYRestrictionsEnabled, _BYSetLaunchSentinel, 
+                       _BYSetupAssistantBundleIdentifier, _BYSetupAssistantFinishedDarwinNotification, 
+                       _BYSetupAssistantHasCompletedInitialRun, _BYSetupAssistantLaunchedDarwinNotification, 
+                       _BYSetupAssistantNeedsToRun, _BYSetupAssistantPrepareLaunchSentinel, 
+                       _Daemon_BYSetupAssistantNeedsToRun ]
+    objc-classes:    [ _BYBuddyClientInterface, _BYBuddyDaemonInterface ]
+...

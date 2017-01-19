@@ -1,0 +1,49 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MICROPHONE_BUTTON_SIZE, _SPUIMapsBundleIdentifier, 
+                       _SPUIMusicBundleIdentifier, _SPUIPerfMetricsTestBegin, 
+                       _SPUIPerfMetricsTestCacheDuetQueries, _SPUIPerfMetricsTestDisableRecycling, 
+                       _SPUIPerfMetricsTestEnd, _SPUIPerfMetricsTestTableReload, 
+                       _SPUIPerfMetricsTestTableReset, _SPUISpringBoardBundleIdentifier, 
+                       _SPUISymbolicTraitAttributeName, _SPUITextStyleAttributeName, 
+                       _SearchResultDidLoadNotification, _SpotlightUIPrefsDomain, 
+                       _SpotlightUIVersionNumber, _SpotlightUIVersionString, 
+                       _kSPUISearchDictationCircleWhiteAlpha, _kSPUISearchHeaderHeight, 
+                       _kSPUISearchPlaceholderWhiteAlpha ]
+    objc-classes:    [ _SPUIAutoLayoutUtils, _SPUIBaselineBoundLayoutConstraint, 
+                       _SPUIBoundLayoutConstraint, _SPUIMicrophoneButton, 
+                       _SPUINavigationBar, _SPUINavigationController, _SPUIObservingLabel, 
+                       _SPUIReplicatorView, _SPUISearchBackdropView, _SPUISearchContactButtonsView, 
+                       _SPUISearchDetailsViewControllerContainerViewController, 
+                       _SPUISearchDictationView, _SPUISearchField, _SPUISearchFirstTimeViewController, 
+                       _SPUISearchHeader, _SPUISearchImageCell, _SPUISearchMailCell, 
+                       _SPUISearchModel, _SPUISearchMovie, _SPUISearchMovieCell, 
+                       _SPUISearchMovieTextView, _SPUISearchMoviesViewController, 
+                       _SPUISearchParsecCell, _SPUISearchParsecMapsCell, 
+                       _SPUISearchParsecSimpleCell, _SPUISearchParsecSimpleChevronCell, 
+                       _SPUISearchParsecSimpleMultiIconsCell, _SPUISearchParsecSimpleTitleGlyphCell, 
+                       _SPUISearchParseciTunesCell, _SPUISearchPlaceViewController, 
+                       _SPUISearchPlayButton, _SPUISearchResultView, _SPUISearchResultsAction, 
+                       _SPUISearchResultsActionManager, _SPUISearchResultsAppSearchAction, 
+                       _SPUISearchResultsApplicationAction, _SPUISearchResultsCloudDocumentAction, 
+                       _SPUISearchResultsDefaultAction, _SPUISearchResultsDetailsViewControllerAction, 
+                       _SPUISearchResultsMapsAction, _SPUISearchResultsModalViewControllerAction, 
+                       _SPUISearchResultsMoviesAction, _SPUISearchResultsViewControllerAction, 
+                       _SPUISearchResultsWikipediaAction, _SPUISearchResultsiTunesAction, 
+                       _SPUISearchStandardCell, _SPUISearchStoreProductViewController, 
+                       _SPUISearchTableHeaderView, _SPUISearchTableView, 
+                       _SPUISearchTableViewCell, _SPUISearchUICardViewControllerAction, 
+                       _SPUISearchViewController, _SPUISearchWikiMainContentCell, 
+                       _SPUISearchWikiRowCell, _SPUISearchWikiRowImageCell, 
+                       _SPUISearchWikiRowSingleCell, _SPUISearchWikiTitleCell, 
+                       _SPUISearchWikipediaViewController, __SPUINullBarBackgroundView ]
+    objc-ivars:      [ _SPUISearchDictationView._endpointButton, _SPUISearchDictationView._endpointButtonLandscape, 
+                       _SPUISearchDictationView._flamesView, _SPUISearchModel._cacheResultLock, 
+                       _SPUISearchModel._cachedResultImages, _SPUISearchModel._deferredResults, 
+                       _SPUISearchModel._isDeferredQUeryComplete, _SPUISearchModel._loadOperationQueue, 
+                       _SPUISearchModel._prefetchOperationQueue, _SPUISearchModel._waitOperation ]
+...

@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoMediaRemote.framework/NanoMediaRemote
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _IDSMessagePriorityFromNMRIDSMessagePriority, _NMRAggDAddValueForScalarKey, 
+                       _NMRAggDPushElapsedTimeValueForDistributionKey, 
+                       _NMRAggDPushValueForDistributionKey, _NMRAggDSendCommandFailedToSendKey, 
+                       _NMRAggDSendCommandFailedWithTimeoutKey, _NMRAggDSendCommandUIRoundTripDelayKey, 
+                       _NMRAugmentedNowPlayingInfoAlbumPersistentID, _NMRAugmentedNowPlayingInfoArtworkDataDigest, 
+                       _NMRAugmentedNowPlayingInfoCompanionItemPersistentID, 
+                       _NMRCommandResultCodesKey, _NMRCommandResultErrorKey, 
+                       _NMRCompanionCloudAvailabilityDidChangeNotification, 
+                       _NMRCompanionSpecializedQueueInfoDidChangeNotification, 
+                       _NMRCreateDigestForData, _NMRDigestEqual, _NMRFetchCompanionCloudAvailability, 
+                       _NMRFetchCompanionSpecializedQueueInfo, _NMRGetArtworkDataDigest, 
+                       _NMRMediaRemoteCommandMessageTimeout, _NMRMediaRemoteStateMessageTimeout, 
+                       _NMRNowPlayingInfoFromProtobuf, _NMRNowPlayingInfoToProtobuf, 
+                       _NMRNowPlayingInfoWhitelistedKeys, _NMRPrewarmCompanionSystemMusicApp, 
+                       _NMRPrewarmSystemMusicAppMessageTimeout, _NMRRefreshMediaRemoteStateIfNecessary, 
+                       _NMRServiceEntitlement, _NMRServiceName, _NMRShortCircuitedMediaRemoteSendCommandToApp, 
+                       _NMRShortCircuitedMediaRemoteSetAppPlaybackQueue, 
+                       _NMRSpecializedQueueInfoFromProtobuf, _NMRSpecializedQueueInfoFromSupportedCommands, 
+                       _NMRSpecializedQueueInfoToProtobuf, _NMRSupportedCommandsFromProtobuf, 
+                       _NMRSupportedCommandsToProtobuf, _NSStringFromNMRIDSMessageType, 
+                       ___NMRLogInitialize ]
+    objc-classes:    [ _NMRCloudAvailabilityMessage, _NMRIDSMessageCenter, 
+                       _NMRMediaRemoteGetArtworkMessage, _NMRMediaRemoteGetStateMessage, 
+                       _NMRMediaRemoteSetArtworkMessage, _NMRMediaRemoteSetStateMessage, 
+                       _NMRNowPlayingApplicationInfo, _NMRProtobufSerialization, 
+                       _NMRSendCommandMessage, _NMRSendCommandResultMessage ]
+...

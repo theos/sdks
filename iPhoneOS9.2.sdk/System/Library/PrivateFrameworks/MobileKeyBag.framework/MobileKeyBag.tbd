@@ -1,0 +1,40 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MKBBackupActualFileSize, _MKBBackupClose, _MKBBackupCopyBackupKeyUUID, 
+                       _MKBBackupCopyKey, _MKBBackupCreateFromFileDescriptors, 
+                       _MKBBackupDecryptInPlace, _MKBBackupGetFileDescriptors, 
+                       _MKBBackupOpen, _MKBBackupPread, _MKBBackupSize, 
+                       _MKBBackupValidateBackupKeyWithUUID, _MKBBackupValidateKey, 
+                       _MKBBackupValidateKeyUUID, _MKBDeviceFormattedForContentProtection, 
+                       _MKBDeviceGetGracePeriod, _MKBDeviceLockAssertion, 
+                       _MKBDeviceObliterateClassDKey, _MKBDeviceSetGracePeriod, 
+                       _MKBDeviceSupportsContentProtection, _MKBDeviceUnlockedSinceBoot, 
+                       _MKBFileClose, _MKBFileCopyWrappedKey, _MKBFileCreateForRestore, 
+                       _MKBFileEncryptedBlockSize, _MKBFileGetFD, _MKBFileOpenForBackup, 
+                       _MKBFileRead, _MKBFileValidateWrappedKey, _MKBFileWrite, 
+                       _MKBGetDeviceConfigurations, _MKBGetDeviceLockState, 
+                       _MKBGetDeviceLockStateInfo, _MKBKeyBagChangeSecret, 
+                       _MKBKeyBagChangeSystemGeneration, _MKBKeyBagChangeSystemSecret, 
+                       _MKBKeyBagChangeSystemSecretWithEscrow, _MKBKeyBagCopyData, 
+                       _MKBKeyBagCopySytemSecretBlob, _MKBKeyBagCopyUUID, 
+                       _MKBKeyBagCreateBackup, _MKBKeyBagCreateEscrow, 
+                       _MKBKeyBagCreateOTABackup, _MKBKeyBagCreateSystem, 
+                       _MKBKeyBagCreateSystemUnwrapped, _MKBKeyBagCreateWithData, 
+                       _MKBKeyBagGetSystemGeneration, _MKBKeyBagIsKeyRolling, 
+                       _MKBKeyBagKeyStashCommit, _MKBKeyBagKeyStashCreate, 
+                       _MKBKeyBagKeyStashCreateWithMode, _MKBKeyBagKeyStashDestroy, 
+                       _MKBKeyBagKeyStashEnable, _MKBKeyBagKeyStashLoad, 
+                       _MKBKeyBagKeyStashPersist, _MKBKeyBagKeyStashVerify, 
+                       _MKBKeyBagLock, _MKBKeyBagMigrateFS, _MKBKeyBagRegisterOTABackup, 
+                       _MKBKeyBagRelease, _MKBKeyBagUnlock, _MKBLockDevice, 
+                       _MKBLockDeviceNow, _MKBOTABackupKeyBag, _MKBOTABackupStart, 
+                       _MKBOTABackupStop, _MKBSetDeviceConfigurations, 
+                       _MKBSetLogFunction, _MKBUnlockDevice, __MKBKeyBagChangeSystemSecretDirect, 
+                       _kMKBConfigGracePeriod, _kMKBConfigMaxUnlockAttempts, 
+                       _kMKBInfoBackOff, _kMKBInfoFailedAttempts, _kMKBInfoLockState, 
+                       _kMobileKeyBagLockStatusNotification, _kMobileKeyBagLockStatusNotifyToken ]
+...

@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CharlieKit.framework/CharlieKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CHDaemonInterface, _CHLog, _CharlieKitVersionNumber, 
+                       _CharlieKitVersionString, _kCHHTTPEventCONNECTRequestReceived, 
+                       _kCHHTTPEventCertificateGenerationDidFinish, _kCHHTTPEventCertificateGenerationDidStart, 
+                       _kCHHTTPEventClientConnectionAccepted, _kCHHTTPEventClientConnectionReceived, 
+                       _kCHHTTPEventClientSSLHandshakeDidFinish, _kCHHTTPEventClientSSLHandshakeDidStart, 
+                       _kCHHTTPEventDNSLookupDidFinish, _kCHHTTPEventDNSLookupDidStart, 
+                       _kCHHTTPEventHostConnectionDidFinish, _kCHHTTPEventHostConnectionDidStart, 
+                       _kCHHTTPEventHostSSLHandshakeDidFinish, _kCHHTTPEventHostSSLHandshakeDidStart, 
+                       _kCHHTTPEventReadResponseDidFinish, _kCHHTTPEventReadResponseDidStart, 
+                       _kCHHTTPEventRelayRequestDidFinish, _kCHHTTPEventRelayRequestDidStart, 
+                       _kCHHTTPEventRelayResponseDidFinish, _kCHHTTPEventRelayResponseDidStart, 
+                       _kCHHTTPEventRequestReceived ]
+    objc-classes:    [ _CHDaemonStatus, _CHHTTPTransaction, _CHHTTPTransactionEvent, 
+                       _CHLogController, _CHProxyController, _CHURL, _DeviceConfigPreference ]
+...

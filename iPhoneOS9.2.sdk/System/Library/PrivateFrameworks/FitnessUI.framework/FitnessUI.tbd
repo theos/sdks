@@ -1,0 +1,53 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CreateArcLayerPath, _CreateArcMaskLayerPath, _FIUIAssetsBundle, 
+                       _FIUIBundle, _FIUICMSessionTypeForActivityType, 
+                       _FIUICopyUserFirstNameFromAddressBook, _FIUIDeviceScale, 
+                       _FIUIImageInBundle, _FIUIIsFitnessTrackingEnabled, 
+                       _FIUIIsHeartRateEnabled, _FIUIIsPowerSavingModeEnabled, 
+                       _FIUIIsProSettingEnabled, _FIUILocalizationKeyEnergyString, 
+                       _FIUIPreferenceBaseKeyForDataTypeIdentifier, _FIUIResumeAnimationsNotification, 
+                       _FIUIRingGroupAnimationDurationSetCenterTransition, 
+                       _FIUIRingPercentageValueNoRing, _FIUIRingRotateInAnimationDuration, 
+                       _FIUIShowFakeDataForDataTypeIdentifier, _FIUISuspendAnimationsNotification, 
+                       _FIUIWeatherCurrentConditionsStringKey, _FIUIWeeklyGoalChangedNotification, 
+                       _FUActivityContinuityKey, _FUBundle, _FUChartAbsolutePositionForXPlaneValue, 
+                       _FUChartAbsolutePositionForYPlaneValue, _FUChartRelativePosition, 
+                       _FUChartRelativePositionForXPlaneValue, _FUChartRelativePositionForYPlaneValue, 
+                       _FUChartXAxisFloatValue, _FUDistanceTypeForActivityType, 
+                       _FUDistanceUnitForHKUnit, _FUDistanceUnitIsValid, 
+                       _FUGlanceContinuityKey, _FUHKUnitForDistanceUnit, 
+                       _FULocalizedInstanceNameForActivityTypeInPhrase, 
+                       _FULocalizedNameForActivityType, _kFIUIFitnessUnitPreferencesDidChangeNotification, 
+                       _kFUWheelSpacing, _kNLSessionTrackerAppKeyEnablePowerSavingMode, 
+                       _kNLSessionTrackerAppKeyEnableProSetting, _kNLSessionTrackerAppPreferencesChangedNotification, 
+                       _kNLSessionTrackerAppPreferencesDomain ]
+    objc-classes:    [ _FIUIAchievementBadgeCache, _FIUIAchievementsModel, 
+                       _FIUIAnimatableObject, _FIUIBadge, _FIUIBadgeAssetGenerator, 
+                       _FIUIBadgeModelLoader, _FIUIBadgeViewController, 
+                       _FIUICGPointPropertyAnimation, _FIUIClientToken, 
+                       _FIUIDiscreteSizingLabel, _FIUIFitnessTrackingDisabledViewController, 
+                       _FIUIFloatPropertyAnimation, _FIUIGLViewController, 
+                       _FIUIHeartRateStatusView, _FIUIMetricColors, _FIUIModel, 
+                       _FIUIPropertyAnimation, _FIUIPushyLabelCharacter, 
+                       _FIUIPushyLabelView, _FIUIRingGroupController, _FIUIRingImageFactory, 
+                       _FIUIRingsViewController, _FIUISharingBadgeAssetGenerator, 
+                       _FIUITransactionCommitCoordinator, _FIUIUnitManager, 
+                       _FIUIWeeklyGoalModel, _FIUIWorkoutSplit, _FUAxisLabel, 
+                       _FUBarSeries, _FUBaselinedBarSeries, _FUChart, _FUChartBackgroundView, 
+                       _FUChartColor, _FUChartDataGroup, _FUChartDataSet, 
+                       _FUChartPointNumeric, _FUChartPointView, _FUChartSeries, 
+                       _FUCrossFadeZoomTransitionAnimator, _FUDashedBackgroundView, 
+                       _FUDateAnchorRule, _FUDatePicker, _FUGradientObject, 
+                       _FUGradientView, _FUHourlySedentaryActivityInfo, 
+                       _FULineSeries, _FUMultiDashedBackgroundView, _FUNavigationController, 
+                       _FUScrollWheel, _FUShapeView, _FUTimeAxisDescriptor, 
+                       _FUUniformBarSeries, _NLArcLayer, _NLArcMaskLayer, 
+                       _NLArcSegmentLayer, _NLArcView, _StocksTapDragGestureRecognizer, 
+                       __FIUIAnimatableProperty, __FIUIFakeStatistics, 
+                       __FIUIFakeStatisticsCollection, __FIUIIcon, __FIUIRing ]
+...

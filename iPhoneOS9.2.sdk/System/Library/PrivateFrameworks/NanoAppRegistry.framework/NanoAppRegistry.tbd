@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoAppRegistry.framework/NanoAppRegistry
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NARItemNameKey, _NARLogInitIfNeeded, _NARSyncedInfoPlistKeys, 
+                       _NARSyncedLocalizedInfoPlistKeys, _NARSyncediTunesPlistKeys, 
+                       _NARVendorNameKey, _NARWorkspaceServiceInterface, 
+                       _kNARLoggingFacility ]
+    objc-classes:    [ _NARApplication, _NARApplicationWorkspace, _NARGlance, 
+                       _NARWorkspaceInfo ]
+...

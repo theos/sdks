@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager
+current-version: 0.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CTCellularPlanConnectionPropertiesKey, _CTCellularPlanErrorDomain, 
+                       _CTCellularPlanInfoDidChangeNotification, _CTCellularPlanItemIdentifierHomePlan, 
+                       _CTCellularPlanItemIdentifierHomePlanWithRoaming, 
+                       _CTCellularPlanLaunchOptionsFlowTypeIsSequoiaKey, 
+                       _CTCellularPlanLaunchOptionsIccidKey, _CTCellularPlanLaunchOptionsParametersKey, 
+                       _CTCellularPlanLaunchOptionsUseBootstrapRoamingInternetBypassKey, 
+                       _CTCellularPlanProxyKey, _CTCellularPlanRequestUrlsKey, 
+                       _CTCellularPlanSocketTimeoutKey, _CTCellularPlanSubscriptionDidUpdateNotification, 
+                       _CTCellularPlanSubscriptionKey, _CTCellularPlanXpcWhitelistSet, 
+                       _kCTDaemonReadyNotification, _kCellularPlanDaemonService ]
+    objc-classes:    [ _CTCellularPlan, _CTCellularPlanArrayValidator, 
+                       _CTCellularPlanBoolValidator, _CTCellularPlanDateParser, 
+                       _CTCellularPlanDictionaryValidator, _CTCellularPlanError, 
+                       _CTCellularPlanItem, _CTCellularPlanJsonResponseParser, 
+                       _CTCellularPlanLogger, _CTCellularPlanManager, _CTCellularPlanNumberValidator, 
+                       _CTCellularPlanProfile, _CTCellularPlanRequest, 
+                       _CTCellularPlanStringValidator, _CTCellularPlanSubscription, 
+                       _CTCellularPlanSubscriptionDataUsage, _CTCellularPlanSubscriptionParser ]
+...

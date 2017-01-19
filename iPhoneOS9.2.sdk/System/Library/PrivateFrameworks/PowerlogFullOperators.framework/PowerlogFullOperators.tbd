@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerlogFullOperators.framework/PowerlogFullOperators
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ArmUtilityThreshold, _BBAggregatedARMUtil, _BBArmUtilBucket, 
+                       _BBArmUtilCount, _BBPAPExclusion, _BBPIsContinuous, 
+                       _BBPerepherialMax, _BBPowerArmUtil, _BBPowerName, 
+                       _BBPowerToolCause, _BBPowerToolDuration, _BBPowerToolPointCause, 
+                       _BBPowerToolPointHelper, _BBPowerToolTimeStamp, 
+                       _BBPowerValue, _EVENT_CODE, _MAV_REPORT_ACTION, 
+                       _MAV_REPORT_CLIENT, _MagicDeltaThreshold, _RAT_NAME, 
+                       _STATE, _causeBackground, _causeMarginalCoverage, 
+                       _causeOOS, _causeRachFail, _causeStruckInDCH, _causeTcXO, 
+                       _causeUnknown, _kPLPMUAgentSensors, _kPLPersistentConnectionAgentCache, 
+                       _kPLPersistentConnectionAgentConfig, _kPLScheduledWakeAgentEventForwardNameScheduledEvent, 
+                       _kPLSmartPLServiceEventPointSample, _kPLSmartPLServiceEventPointSmartTrigger, 
+                       _kPLSyslogAgentLogLine, _lteRRCState, _nameCampedRat, 
+                       _namePrachCount, _nameStrength, _oosDuration, _rrcDisconnected, 
+                       _umtsRRCState ]
+    objc-classes:    [ _BBSmartPL, _PLBBPowerToolService, _PLPMUAgent, 
+                       _PLPersistentConnectionAgent, _PLScheduledWakeAgent, 
+                       _PLSmartPLService, _PLSyslogAgent, _SmartPLMemoryTracking ]
+...

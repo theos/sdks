@@ -1,0 +1,8 @@
+---
+archs:           [ arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _BiometricKitUI, _BiometricKitUIEnrollViewController ]
+...

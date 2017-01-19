@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition
+exports:         
+  - archs:           [ armv7, armv7s ]
+    weak-def-symbols: [ __ZTIN5boost10filesystem16filesystem_errorE, __ZTIN5boost16bad_lexical_castE, 
+                        __ZTIN5boost16exception_detail10clone_baseE, __ZTIN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, 
+                        __ZTIN5boost16exception_detail19error_info_injectorINS_6system12system_errorEEE, 
+                        __ZTIN5boost6system12system_errorE, __ZTIN5boost9exceptionE, 
+                        __ZTINSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__113basic_filebufIcNS_11char_traitsIcEEEE, 
+                        __ZTINSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTINSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTINSt3__121__basic_string_commonILb1EEE, __ZTINSt3__15dequeIiNS_9allocatorIiEEEE, 
+                        __ZTSN5boost10filesystem16filesystem_errorE, __ZTSN5boost16bad_lexical_castE, 
+                        __ZTSN5boost16exception_detail10clone_baseE, __ZTSN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEEE, 
+                        __ZTSN5boost16exception_detail19error_info_injectorINS_6system12system_errorEEE, 
+                        __ZTSN5boost6system12system_errorE, __ZTSN5boost9exceptionE, 
+                        __ZTSNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__113basic_filebufIcNS_11char_traitsIcEEEE, 
+                        __ZTSNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTSNSt3__114basic_ofstreamIcNS_11char_traitsIcEEEE, 
+                        __ZTSNSt3__114default_deleteIcEE, __ZTSNSt3__114default_deleteIjEE, 
+                        __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                        __ZTSNSt3__121__basic_string_commonILb1EEE, __ZTSNSt3__15dequeIiNS_9allocatorIiEEEE ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _EARErrorDomain ]
+    objc-classes:    [ __EARFormatter, __EARLMLanguageModel, __EARLanguageModel, 
+                       __EARSpeechExperiment, __EARSpeechModelInfo, __EARSpeechRecognitionAudioBuffer, 
+                       __EARSpeechRecognizer, __EARUserProfile, __EARWordPart ]
+...

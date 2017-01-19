@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BFFCountryScanCompletedNotification ]
+    objc-classes:    [ _BFFCapabilities, _BFFLocaleDataSource, _BFFLocationController, 
+                       _BFFNavigationController, _BFFNonceController, _BFFPaneHeaderView, 
+                       _BFFPreferencesController, _BFFStyle ]
+    objc-ivars:      [ _BFFLocationController._aliasDict, _BFFLocationController._guessedCountries, 
+                       _BFFLocationController._guessedCountryFromTelephony, 
+                       _BFFLocationController._validCountries, _BFFLocationController.fWifiDevice, 
+                       _BFFLocationController.fWifiManager ]
+...

@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreActivity.framework/CoreActivity
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AccelStartDataProcessing, _StepAlgo_StepCallback, 
+                       _average, _calcMaximum, _calcMinimum, _comp, _freeBuffers, 
+                       _getCurrentWorkoutType, _getEmpedlessWorkOutInformation, 
+                       _gtCalibrationData, _handleAccData, _initFeature, 
+                       _initStepDetection, _isCalibrated, _kiss_fft, _kiss_fft_alloc, 
+                       _kiss_fft_cleanup, _kiss_fft_next_fast_size, _kiss_fft_stride, 
+                       _kiss_fftr, _kiss_fftr_alloc, _kiss_fftri, _modulusXYZ, 
+                       _printCalibrationData, _readCalibrationFile, _resetCalibration, 
+                       _resetStateMachine, _setCalibrationDistance, _stepEnableListener, 
+                       _stepGetEnableState, _stepListeners, _stepRegisterListener, 
+                       _stepStartingWorkoutType, _stepUnregister, _unused_parameters, 
+                       _updateAndAccumulateFeatures, _updateCurrentSlidingWindowFeatures, 
+                       _variance, _writeCalibrationFile ]
+    objc-classes:    [ _ActivityCounts, _CoreActivity, _StepHandler ]
+...

@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _IOSurfaceAcceleratorAbortCaptures, _IOSurfaceAcceleratorAbortTransfers, 
+                       _IOSurfaceAcceleratorBlitSurface, _IOSurfaceAcceleratorBlitSurfaceWithSwap, 
+                       _IOSurfaceAcceleratorCaptureSurface, _IOSurfaceAcceleratorConditionalTransferSurfaceWithSwap, 
+                       _IOSurfaceAcceleratorConfigurePerformanceStats, 
+                       _IOSurfaceAcceleratorCreate, _IOSurfaceAcceleratorGetID, 
+                       _IOSurfaceAcceleratorGetRunLoopSource, _IOSurfaceAcceleratorGetServiceObject, 
+                       _IOSurfaceAcceleratorGetStatistics, _IOSurfaceAcceleratorGetTypeID, 
+                       _IOSurfaceAcceleratorK2KTests, _IOSurfaceAcceleratorSetCustomFilter, 
+                       _IOSurfaceAcceleratorSetFilterCoefficients, _IOSurfaceAcceleratorTransferSurface, 
+                       _IOSurfaceAcceleratorTransferSurfaceWithSwap, _IOSurfaceAcceleratorTransformSurface, 
+                       _kDisplayColorRemapModeKey, _kIOSurfaceAcceleratorAlphaOverride, 
+                       _kIOSurfaceAcceleratorBorderFillAlpha, _kIOSurfaceAcceleratorBorderFillBlueCr, 
+                       _kIOSurfaceAcceleratorBorderFillGreenCb, _kIOSurfaceAcceleratorBorderFillHeight, 
+                       _kIOSurfaceAcceleratorBorderFillRedY, _kIOSurfaceAcceleratorBorderFillWidth, 
+                       _kIOSurfaceAcceleratorBorderFillX, _kIOSurfaceAcceleratorBorderFillY, 
+                       _kIOSurfaceAcceleratorColorManagerEnable, _kIOSurfaceAcceleratorDitherControl, 
+                       _kIOSurfaceAcceleratorFixUpscaling, _kIOSurfaceAcceleratorForceMaxSpeedKey, 
+                       _kIOSurfaceAcceleratorHistogramBinMode, _kIOSurfaceAcceleratorHistogramHeight, 
+                       _kIOSurfaceAcceleratorHistogramMaxPixelValue, _kIOSurfaceAcceleratorHistogramOffsetX, 
+                       _kIOSurfaceAcceleratorHistogramOffsetY, _kIOSurfaceAcceleratorHistogramPixelBins, 
+                       _kIOSurfaceAcceleratorHistogramWidth, _kIOSurfaceAcceleratorLockInScaler, 
+                       _kIOSurfaceAcceleratorOptOutBlitClip, _kIOSurfaceAcceleratorSkipAsyncCallback, 
+                       _kIOSurfaceAcceleratorSymmetricTransformKey, _kIOSurfaceAcceleratorUseCustomFilter, 
+                       _kIOSurfaceAcceleratorUseNearestFilter, _kIOSurfaceAcceleratorZeroFill, 
+                       _prepareCustomFilter, _prepareTransformBuffersAndOptions, 
+                       _prepareTransformRectangles ]
+...

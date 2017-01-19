@@ -1,0 +1,35 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BKSAppWatchdogServerPort, _BKSApplicationNotificationStateChanged, 
+                       _BKSApplicationStateActivationReasonKey, _BKSApplicationStateAll, 
+                       _BKSApplicationStateAppIsFrontmostKey, _BKSApplicationStateDisplayIDKey, 
+                       _BKSApplicationStateExitCodeKey, _BKSApplicationStateExitReasonKey, 
+                       _BKSApplicationStateExtensionKey, _BKSApplicationStateHostPIDKey, 
+                       _BKSApplicationStateKey, _BKSApplicationStateMessageBundleID, 
+                       _BKSApplicationStateMessageContent, _BKSApplicationStateMessageInterestedBundleIDs, 
+                       _BKSApplicationStateMessageInterestedStates, _BKSApplicationStateMessageKeyToRetrieve, 
+                       _BKSApplicationStateMessageProcessID, _BKSApplicationStateMessageType, 
+                       _BKSApplicationStateMostElevatedStateForProcessIDKey, 
+                       _BKSApplicationStateProcessIDKey, _BKSApplicationStateRunningReasonAssertionIdentifierKey, 
+                       _BKSApplicationStateRunningReasonAssertionReasonKey, 
+                       _BKSApplicationStateRunningReasonsKey, _BKSApplicationStateServerRegisteredNotifyKey, 
+                       _BKSProcessAssertionEventKey, _BKSProcessAssertionMessageTypeKey, 
+                       _BKSProcessAssertionServiceName, _BKSProcessAssertionSetExpirationHandler, 
+                       _BKSProcessExtensionPropertyBundleID, _BKSProcessInfoServiceMessageKeyArray, 
+                       _BKSProcessInfoServiceMessageKeyBool, _BKSProcessInfoServiceMessageKeyBundlePath, 
+                       _BKSProcessInfoServiceMessageKeyInt, _BKSProcessInfoServiceMessageKeyMessageType, 
+                       _BKSProcessInfoServiceMessageKeyPID, _BKSProcessInfoServiceMessageKeyString, 
+                       _BKSProcessInfoServiceMessageKeyVisibility, _BKSProcessInfoServiceName, 
+                       _BKSWatchdogAssertionCreateForPID, _BKSWatchdogAssertionGetTypeID, 
+                       __BKSAppWatchdogAddAssertionForProcess ]
+    objc-classes:    [ _BKSApplicationStateMonitor, _BKSProcess, _BKSProcessAssertion, 
+                       _BKSProcessAssertionClient, _BKSProcessAssertionCreateEvent, 
+                       _BKSProcessAssertionCreateResponseEvent, _BKSProcessAssertionDestroyEvent, 
+                       _BKSProcessAssertionEvent, _BKSProcessAssertionUpdateEvent ]
+    objc-ivars:      [ _BKSProcess._bundlePath, _BKSProcess._clientQueue, 
+                       _BKSProcess._pid ]
+...

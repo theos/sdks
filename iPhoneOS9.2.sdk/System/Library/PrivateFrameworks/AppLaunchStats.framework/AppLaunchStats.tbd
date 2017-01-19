@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppLaunchStats.framework/AppLaunchStats
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _KeepAppsUpToDateEnabledChangedNotification, _cmpAscendingHistElementCount, 
+                       _cmpAscendingHistElementKey, _cmpDescendingHistElementProbability, 
+                       _kAPLSStateAppsAliveInLSTDict, _kAPLSStateDailyAppForecastSlots, 
+                       _kAPLSStateDailyDataBGBudgetSlots, _kAPLSStateDailyDataBudgetSlots, 
+                       _kAPLSStateDailyDataNDISCSlots, _kAPLSStateDailyPowerFetchBudgetSlots, 
+                       _kAPLSStateDailyPowerNDISCSlots, _kAPLSStateDailyPowerPushBudgetSlots, 
+                       _kAPLSStateFireDates, _kAPLSStateHasTransitionedToCoreDuet, 
+                       _kAPLSStates, _kAppLaunchStatsAppWorkSpaceState, 
+                       _kAppLaunchStatsDelayLaunchList, _kAppLaunchStatsDelayLaunchState, 
+                       _kAppLaunchStatsDelayLaunchTimeInterval, _kAppLaunchStatsSBMonitorBlacklisted, 
+                       _kAppLaunchStatsSBMonitorState, _kAppLaunchStatsSaveState, 
+                       _kAppLaunchStatsStatisticsApps, _kAppLaunchStatsStatisticsState, 
+                       _kAppLaunchStatsUninstallApps, _kDuetCarrierBundleChangedNotification, 
+                       _kDuetDefaultsMultiTaskingDomainPlist, _kDuetDefaultsPlist, 
+                       _kDuetFetch, _kDuetLowPriorityRSRequest, _kDuetNewsStand, 
+                       _kDuetNotifiyUpdateWhiteList, _kDuetRemoteNotification, 
+                       _kDuetSaveAndRestoreRevision, _kDuetSaveAndRestoreState, 
+                       _kDuetSaveAndRestoreTStamp, _kDuetSaveAndRestoreVersion, 
+                       _kDuetSettingsBlacklist, _kDuetTriggerDispatchQueue, 
+                       _kDuetUIFakeFgDTransitionForBkGFetch, _kDuetUIKitDomain, 
+                       _kDuetWhiteList, _kMGQueryIsDeviceTypePhone, _kMGQueryhas, 
+                       _kMTDiagnosticDate, _kNotifyLowPriorityPushRetry, 
+                       _kNotifyLowPriorityRSReqClientToServer, _kNotifyMainAPLSWithLowPriorityPushList, 
+                       _kSiriViewServiceBundle, _sharedAppLaunchStats ]
+    objc-classes:    [ _APLSBinnedGlanceHistory, _AppEntry, _AppLaunchStats, 
+                       _AppLaunchStatsAppWorkSpace, _AppLaunchStatsComputation, 
+                       _AppLaunchStatsDelayLaunch, _AppLaunchStatsDiag, 
+                       _AppLaunchStatsLaunchObject, _AppLaunchStatsLaunchQueue, 
+                       _AppLaunchStatsLogFormater, _AppLaunchStatsREventHandler, 
+                       _AppLaunchStatsRetryTracker, _AppLaunchStatsSBMonitor, 
+                       _AppLaunchStatsSBSettings, _AppLaunchStatsSaveAndRestore, 
+                       _AppLaunchStatsScheduler, _AppLaunchStatsState, 
+                       _AppLaunchStatsStateHandler, _AppLaunchStatsStateHandlerQueue, 
+                       _AppLaunchStatsStatistics, _AppLaunchStatsWhiteListManager, 
+                       _HistogramElement, _RankElement, _ReservationStationObject ]
+    objc-ivars:      [ _RankElement.score, _RankElement.timeIndex ]
+...

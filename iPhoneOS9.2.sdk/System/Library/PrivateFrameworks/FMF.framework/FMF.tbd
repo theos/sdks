@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMF.framework/FMF
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _FMFErrorDomain, _FMFGroupIdGroup, _FMFGroupIdOneToOne, 
+                       _FMFLogFacilityFMFSession, _FMFLogInitialize, _FMFLogSetLogLevel, 
+                       _activeFMFLogLevel ]
+    objc-classes:    [ _FMFAppAccountInfo, _FMFAppSession, _FMFDevice, 
+                       _FMFFriendshipRequest, _FMFHandle, _FMFLocation, 
+                       _FMFLogger, _FMFSession, _FMFSynchronizer ]
+...

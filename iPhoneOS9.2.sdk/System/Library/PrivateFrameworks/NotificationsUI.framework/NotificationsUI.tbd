@@ -1,0 +1,26 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NotificationsUI.framework/NotificationsUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NCDateLabelNeedsUpdateNotification, _NCInteractiveNotificationActionContextLaunchURLKey, 
+                       _NCInteractiveNotificationServiceXPCInterface, _NCNotificationsUIFrameworkBundle ]
+    objc-classes:    [ _NCBannerAccessoryHostViewController, _NCBannerAccessoryViewController, 
+                       _NCContentHostViewController, _NCContentViewController, 
+                       _NCDefaultDateLabel, _NCInteractiveNotificationHostViewController, 
+                       _NCInteractiveNotificationViewController, _NCNotificationActionTextInputViewController, 
+                       _NCNotificationDateLabelFactory, _NCRelativeDateLabel, 
+                       _NCRelativeDateTimer, _NCViewServiceDescriptor ]
+    objc-ivars:      [ _NCDefaultDateLabel._allDay, _NCDefaultDateLabel._effectiveAllDay, 
+                       _NCDefaultDateLabel._effectiveAllDayEndDate, _NCDefaultDateLabel._effectiveAllDayLastValidDate, 
+                       _NCDefaultDateLabel._effectiveAllDayStartDate, _NCDefaultDateLabel._isCoalescingUpdates, 
+                       _NCDefaultDateLabel._isTimestamp, _NCDefaultDateLabel._needsUpdateFromCoalesce, 
+                       _NCDefaultDateLabel._timeZoneRelativeEndDate, _NCDefaultDateLabel._timeZoneRelativeStartDate, 
+                       _NCDefaultDateLabel._updateTimer, _NCNotificationDateLabelFactory._recycledLabelsByStyle, 
+                       _NCRelativeDateLabel._comparedToNow, _NCRelativeDateLabel._relativeDateTimer, 
+                       _NCRelativeDateLabel._resolution, _NCRelativeDateLabel._value, 
+                       _NCRelativeDateTimer._currResolution, _NCRelativeDateTimer._currValue, 
+                       _NCRelativeDateTimer._date, _NCRelativeDateTimer._delegate, 
+                       _NCRelativeDateTimer._gregorian, _NCRelativeDateTimer._timer ]
+...

@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoComplicationSettings.framework/NanoComplicationSettings
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ApplicationsChanged, _ComplicationSettingsChanged, 
+                       _NCSActiveKey, _NCSAppBundleIdentifierKey, _NCSComplicationBundleIdentifierKey, 
+                       _NCSComplicationDefinitionsKey, _NCSComplicationNameKey, 
+                       _NCSDomainKey, _NCSInstallStateKey, _NCSMaxActiveComplicationCount, 
+                       _NCSNanoComplicationSettingsVersionNumber, _NCSNanoComplicationSettingsVersionString, 
+                       _NCSSelectedComplicationIdentifierKey, _NCSSettingsChangedNotification, 
+                       _NCSSockPuppetAppIdentifierKey, _NCSSockPuppetBundleIdentifier, 
+                       _SPApplicationsChanged ]
+    objc-classes:    [ _NCSComplication, _NCSInternalSettingsManager, _NCSSettingsManager ]
+...

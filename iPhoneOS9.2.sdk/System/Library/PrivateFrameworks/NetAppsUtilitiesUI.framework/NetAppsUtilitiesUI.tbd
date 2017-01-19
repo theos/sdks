@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NetAppsUtilitiesUI.framework/NetAppsUtilitiesUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NAUICurrentContentSizeCategoryIsLargerThanOrEqualToCategory, 
+                       _NAUIEnumerateContentSizeCategoriesInIncreasingOrder, 
+                       _NAUIIsCJKCharacter, _NAUILayoutMetricsForUIEdgeInsetsNamed, 
+                       _NAUILayoutSizeNoDimension, _NAUIShortDescriptionFromUIContentSizeCategory, 
+                       _NAUIStringDescriptionOfConstrainedItem, _NAUIStringFromLayoutAttribute, 
+                       _NAUIStringFromLayoutRelation, _NAUITextAlignmentReverseNatural, 
+                       _NSStringFromUIInterfaceOrientation, _NSStringFromUIInterfaceOrientationMask, 
+                       _NetAppsUtilitiesUIVersionNumber, _NetAppsUtilitiesUIVersionString, 
+                       __NAUIDictionaryOfMetrics ]
+    objc-classes:    [ _NAUIContentSizeLayoutConstraint, _NAUIDeviceUtilities, 
+                       _NAUITextStyleDescriptor, _NAUIUIViewControllerNoticationObserver, 
+                       _NAUIUsageStatistics, _NAUIWeakRef, __NAUIAmbigousLayoutView, 
+                       __NAUIAutoUpdatingFontObserver, __NAUIKeyValueObserverProxy, 
+                       __NAUINamedViewConstraints, __NAUINotificationObserverProxy, 
+                       __NAUIObserverProxy ]
+...

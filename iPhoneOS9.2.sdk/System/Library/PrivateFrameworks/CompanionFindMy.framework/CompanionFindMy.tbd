@@ -1,0 +1,8 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CompanionFindMy.framework/CompanionFindMy
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NFMIsDebugBuild, _NFMIsLoggingEnabled, _NFMLog ]
+...

@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DuetExpertCenter.framework/DuetExpertCenter
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DECMusicContainerCodingKeybundleId, _DECMusicContainerCodingKeypauseTime, 
+                       _DECMusicContainerCodingKeyplayTime, _DECMusicContainerCodingKeytrackIdentifier, 
+                       _DECMusicStateProcessorCarPlayConnectedPredicate, 
+                       _DECMusicStateProcessorCarPlayDisconnectedPredicate, 
+                       _DECMusicStateProcessorNowPlayingPredicatePaused, 
+                       _DECMusicStateProcessorNowPlayingPredicatePlayed, 
+                       _DECMusicStateProcessorUserDefaultinCar, _DECMusicStateProcessorUserDefaultlastPlayed, 
+                       _DECMusicStateProcessorUserDefaultlastPlayedInCar, 
+                       _DECNowPlayingConsumerAggregateDictionaryAbandonedKey, 
+                       _DECNowPlayingConsumerAggregateDictionaryEngagedKey, 
+                       _DECNowPlayingConsumerAggregateDictionaryPredictedItemsKey, 
+                       _DECNowPlayingConsumerAggregateDictionaryShownKey, 
+                       _DuetExpertCenterVersionNumber, _DuetExpertCenterVersionString, 
+                       __DECAggregateDictionaryKey, __DECConsumerInterface, 
+                       __DECExpertInterface, __DECItemExpertScores, __DECMachServiceName, 
+                       __DECNowPlayingRecommendationEnded, __DECNowPlayingRecommendationStarted, 
+                       __DECPredictionReasonBluetoothDeviceName, __DECPredictionReasonLocationOfInterestType, 
+                       __DECResultDidChangeNotification, __DECSchedulerActivityIdentifier, 
+                       __DECServerInterface, __DECShouldPrewarmNotification, 
+                       __kDECFeedbackMetadataConsumerSubType, __kDECFeedbackMetadataItemsShownCount, 
+                       __kDECFeedbackMetadataLaunchSource, __kDECFeedbackMetadataQueryString, 
+                       _kDECNowPlayingConsumerExpirationTimeIntervalDefault, 
+                       _kDECNowPlayingConsumerMinimumDurationForConversionTimeIntervalDefault, 
+                       _kDECNowPlayingConsumerScreenLockNotification, _onLockStateChange, 
+                       _onNowPlayingChange ]
+    objc-classes:    [ __DECABHelper, __DECAggregateKeys, __DECAggregateLogger, 
+                       __DECAppDeeplinkItem, __DECAppItem, __DECAsset, 
+                       __DECBackupHelper, __DECConsumer, __DECContextHelper, 
+                       __DECDaemon, __DECDailyTrainingScheduler, __DECDataProtectionMonitor, 
+                       __DECDeviceInfo, __DECExpert, __DECExpertManager, 
+                       __DECFeedback, __DECFeedbackBuilder, __DECFeedbackLoggerManager, 
+                       __DECFeedbackProvider, __DECFilterManager, __DECInternalConsumer, 
+                       __DECInternalConsumerManager, __DECItem, __DECLaunchInfo, 
+                       __DECLogging, __DECMusicContainer, __DECMusicStateProcessor, 
+                       __DECNowPlayingConsumer, __DECNowPlayingFeedbackProvider, 
+                       __DECPersonItem, __DECPrediction, __DECPredictionCache, 
+                       __DECPredictionCacheResult, __DECPredictionExpiry, 
+                       __DECPredictionItem, __DECPredictionSet, __DECPrewarmManager, 
+                       __DECRankBuilder, __DECResult, __DECResultNotificationReceiver, 
+                       __DECResultNotifier, __DECRules, __DECScheduler, 
+                       __DECServer, __DECServerResponder, __DECSpotlightItem, 
+                       __DECTypes, __DECXPCObjectFactory, __DKExpertConsumerCategory, 
+                       __DKExpertFeedbackMetadataKey ]
+...

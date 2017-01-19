@@ -1,0 +1,40 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CMTimeMod, _ISBlurFilterName, _ISBlurKeyPath, _ISCircularEaseOut, 
+                       _ISCubicEaseOut, _ISDefaultLiveSwipeDuration, _ISExifOrientationFromImageOrientation, 
+                       _ISInvalidTransitionRequestID, _ISKDebugIsEnabled, 
+                       _ISKDebugTrace, _ISPlayerDebugInfoDidChangeNotification, 
+                       _ISPlayerViewVideoLayerReadyForDisplayContext, _ISQuadraticEaseOut, 
+                       _ISQuarticEaseOut, _ISQuinticEaseOut, _ISRectWithAspectRatioFillingRect, 
+                       _ISRectWithAspectRatioFittingRect, _ISSineEaseOut, 
+                       _ISStringFromInputType, _ISStringFromPlaybackState, 
+                       _ISStringFromPlayerItemLoadingTarget, _ISStringFromPlayerStatus, 
+                       _PhotosPlayerErrorDomain, _PhotosPlayerVersionNumber, 
+                       _PhotosPlayerVersionString, _deviceIsGlutenFree, 
+                       _is_dispatch_on_main_queue ]
+    objc-classes:    [ _ISAVPlayer, _ISAVPlayerController, _ISAsset, _ISCrossfadeChef, 
+                       _ISCrossfadeChefA2Operation, _ISCrossfadeChefOperation, 
+                       _ISCrossfadeItem, _ISCrossfadeLayer, _ISDeferredDealloc, 
+                       _ISDisplayLink, _ISDynamicValueFilter, _ISFilteredAVPlayer, 
+                       _ISForcePlayrateInput, _ISForcePressPlaybackInput, 
+                       _ISForceScrubInput, _ISGestureInput, _ISHoldGestureRecognizer, 
+                       _ISInput, _ISInputController, _ISLongPressForceGestureRecognizer, 
+                       _ISLongPressPlaybackInput, _ISManualPlaybackInput, 
+                       _ISMutedAudioInput, _ISOrbVolumeInput, _ISPerformanceDiagnosticsSettings, 
+                       _ISPlaybackController, _ISPlaybackSpec, _ISPlaybackStateTransitionManager, 
+                       _ISPlayer, _ISPlayerItem, _ISPlayerItemChef, _ISPlayerLayer, 
+                       _ISPlayerSettings, _ISPlayerView, _ISReuseQueue, 
+                       _ISRootSettings, _ISScrollViewVitalityController, 
+                       _ISSettings, _ISTimeScrubber, _ISVideoVolumeController, 
+                       _ISVisibilityOffsetHelper, _ISVitalityAdaptiveFilter, 
+                       _ISVitalityAutoplayFilter, _ISVitalityConstantFilter, 
+                       _ISVitalityFilter, _ISVitalityInput, _ISVitalitySettings, 
+                       _ISVitalitySimpleFilter, _ISVitalitySpecificSettings, 
+                       _IrisAVPlayerLayer, __ISAVPlayerView, __ISCrossfadeFrameLayer, 
+                       __ISCrossfadeView, __ISPlayerDebugView, __ISPlayerItemChefOperation, 
+                       __ISTargetView ]
+...

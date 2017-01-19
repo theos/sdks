@@ -1,0 +1,53 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ManagedConfiguration.framework/MDM.framework/MDM
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __performBlockOnMainThread, _kIdentifierKey, _kMCAPMPromptingStatusDidChangeNotification, 
+                       _kMCMAMRejectionReasonAlreadyInstalled, _kMCMAMRejectionReasonAlreadyQueued, 
+                       _kMCMAMRejectionReasonCouldNotVerify, _kMCMAMRejectionReasonLicenseNotFound, 
+                       _kMCMAMRejectionReasonNotAnApp, _kMCMAMRejectionReasonSystemApp, 
+                       _kMCMAMRejectionReasonUserRejected, _kMCMDMPCommandKey, 
+                       _kMCMDMPCommandUUIDKey, _kMCMDMPErrorChainKey, _kMCMDMPPushMagicKey, 
+                       _kMCMDMPRequestTypeActivationLockBypassCode, _kMCMDMPRequestTypeApplyRedemptionCode, 
+                       _kMCMDMPRequestTypeAvailableOSUpdates, _kMCMDMPRequestTypeCertificateList, 
+                       _kMCMDMPRequestTypeClearActivationLockBypassCode, 
+                       _kMCMDMPRequestTypeClearPasscode, _kMCMDMPRequestTypeClearRestrictionsPassword, 
+                       _kMCMDMPRequestTypeDeviceConfigured, _kMCMDMPRequestTypeDeviceInformation, 
+                       _kMCMDMPRequestTypeDeviceLock, _kMCMDMPRequestTypeEraseDevice, 
+                       _kMCMDMPRequestTypeInstallApplication, _kMCMDMPRequestTypeInstallMedia, 
+                       _kMCMDMPRequestTypeInstallProfile, _kMCMDMPRequestTypeInstallProfileSilent, 
+                       _kMCMDMPRequestTypeInstallProvisioningProfile, _kMCMDMPRequestTypeInstalledApplicationList, 
+                       _kMCMDMPRequestTypeInviteToProgram, _kMCMDMPRequestTypeManagedApplicationAttributes, 
+                       _kMCMDMPRequestTypeManagedApplicationConfiguration, 
+                       _kMCMDMPRequestTypeManagedApplicationFeedback, _kMCMDMPRequestTypeManagedApplicationsList, 
+                       _kMCMDMPRequestTypeManagedMediaList, _kMCMDMPRequestTypeOSUpdateStatus, 
+                       _kMCMDMPRequestTypeProfileList, _kMCMDMPRequestTypeProvisioningProfileList, 
+                       _kMCMDMPRequestTypeRemoveApplication, _kMCMDMPRequestTypeRemoveMedia, 
+                       _kMCMDMPRequestTypeRemoveProfile, _kMCMDMPRequestTypeRemoveProvisioningProfile, 
+                       _kMCMDMPRequestTypeRequestMirroring, _kMCMDMPRequestTypeRequestUnlockToken, 
+                       _kMCMDMPRequestTypeRestrictions, _kMCMDMPRequestTypeScheduleOSUpdate, 
+                       _kMCMDMPRequestTypeScheduleOSUpdateScan, _kMCMDMPRequestTypeSecurityInfo, 
+                       _kMCMDMPRequestTypeSettings, _kMCMDMPRequestTypeStopMirroring, 
+                       _kMCMDMPRequestTypeValidateApplications, _kMCMDMPSettingsSettingsAppAttributes, 
+                       _kMCMDMPSettingsSettingsAppConfig, _kMCMDMPSettingsSettingsDataRoaming, 
+                       _kMCMDMPSettingsSettingsDeviceName, _kMCMDMPSettingsSettingsPersonalHotspot, 
+                       _kMCMDMPSettingsSettingsVoiceRoaming, _kMCMDMPSettingsSettingsWallpaper, 
+                       _kMCMDMPSettingsStatusKey, _kMCMDMPStatusIdle, _kMCMDMPStatusNotNow, 
+                       _kMCMDMPStatusNotPermitted, _kMCMDMPTokenKey, _kMCMDMPTopicKey, 
+                       _kMCMDMPUnlockTokenKey ]
+    objc-classes:    [ _MCAirPlayManager, _MCAppleAccountUtilities, _MCMDMParser, 
+                       _MCMDMUtilities, _MCManagedAppManager, _MCManagedAssetManager, 
+                       _MCManagedMediaManager, _MCSSAuthenticationRequestDelegate, 
+                       _MCSSDownloadManifestRequestDelegate, _MCSSItemLookupRequestDelegate, 
+                       _MCSSPersonalizeOffersDelegate, _MCSSPurchaseRequestDelegate, 
+                       _MCSSRequestDelegate, _MCSoftwareUpdateActionResult, 
+                       _MCSoftwareUpdateController, _MCSoftwareUpdateDownloadOptions, 
+                       _MCSoftwareUpdateInfo, _MCSoftwareUpdateInstallOptions, 
+                       _MCSoftwareUpdateInternalOptions, _MCSoftwareUpdateManager, 
+                       _MCSoftwareUpdateStatus ]
+    objc-ivars:      [ _MCSSAuthenticationRequestDelegate._authenticatedAccount, 
+                       _MCSSDownloadManifestRequestDelegate._response, 
+                       _MCSSPersonalizeOffersDelegate._response ]
+...
