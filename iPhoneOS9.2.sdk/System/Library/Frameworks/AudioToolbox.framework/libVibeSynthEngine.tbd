@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/AudioToolbox.framework/libVibeSynthEngine.dylib
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _VibeSynthEngineCancel, _VibeSynthEngineCancelWithOptions, 
+                       _VibeSynthEngineHasHardwareSupport, _VibeSynthEngineInitialize, 
+                       _VibeSynthEnginePlay, _VibeSynthEnginePlayAtTime, 
+                       _VibeSynthEngineStartPrewarm, _VibeSynthEngineStopPrewarm ]
+...

@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WelcomeKitCore.framework/WelcomeKitCore
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WLErrorDomain, _WelcomeKitCoreVersionNumber, _WelcomeKitCoreVersionString, 
+                       ___deviceClientStopNetworkCallback, ___startNetworkCallback ]
+    objc-classes:    [ _WLAppMigrator, _WLAppWishlistController, _WLAuthenticationCredentials, 
+                       _WLAuthenticator, _WLBookmarksMigrator, _WLCalendarMigrator, 
+                       _WLCameraPhotosMigrator, _WLCameraVideosMigrator, 
+                       _WLContactsMigrator, _WLCredentialStore, _WLDeviceDiscoveryController, 
+                       _WLDeviceDiscoverySocketHandler, _WLFileMigrationWebService, 
+                       _WLGroupMessageInfo, _WLMFAccountValidator, _WLMailAccountMigrator, 
+                       _WLMessage, _WLMessageAttachment, _WLMessageParty, 
+                       _WLMessageSMILContext, _WLMessageSMILPart, _WLMessagesMigrator, 
+                       _WLMigrationWebService, _WLMigrator, _WLPhotosMigrator, 
+                       _WLProgressWebService, _WLSQLController, _WLSocketHandler, 
+                       _WLSourceDeviceAccount, _WLSourceDeviceMigrationMetadata, 
+                       _WLSourceDeviceRecordSummary, _WLStatistics, _WLURLSessionController, 
+                       _WLVideosMigrator, _WLWiFiController ]
+...

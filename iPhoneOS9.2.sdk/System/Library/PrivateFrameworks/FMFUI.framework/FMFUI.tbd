@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FMFUI.framework/FMFUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _FMAnnotationView, _FMFActiveDeviceSelectionViewController, 
+                       _FMFHandleMonogramPackage, _FMFLocationSharingViewController, 
+                       _FMFMapViewController, _FMFUISession ]
+...

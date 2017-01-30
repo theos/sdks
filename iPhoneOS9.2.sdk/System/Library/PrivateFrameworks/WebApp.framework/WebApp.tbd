@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WebApp.framework/WebApp
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WebAppLocalizableStringsBundle, _WebAppMainEntry ]
+    objc-classes:    [ _WAWebApplication, _WAWebViewController, _WebAppController, 
+                       _WebAppViewController, _WebApplication ]
+    objc-ivars:      [ _WebAppController._alerts, _WebAppController._authenticationManager, 
+                       _WebAppController._connectionProperties, _WebAppController._downloadManager, 
+                       _WebAppController._fallbackURLs, _WebAppController._inputViewScreenBoundsAfterRotation, 
+                       _WebAppController._isSuspended, _WebAppController._loadingView, 
+                       _WebAppController._orientation, _WebAppController._rotationEdgePin, 
+                       _WebAppController._rotationRect, _WebAppController._sheetController, 
+                       _WebAppController._window, _WebAppController.snapshotHideTimeHasExpired, 
+                       _WebAppController.snapshotHideTimer, _WebAppController.webClip, 
+                       _WebAppController.webView, _WebAppController.webViewDidLayout, 
+                       _WebAppController.webViewHasFinishedLoading, _WebAppViewController._setupRootViewColor ]
+...

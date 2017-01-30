@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BTLEAudioController.framework/BTLEAudioController
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _BTLEAudioControllerServerDestroy, _BTLEAudioControllerServerGetInstance, 
+                       _BTLEAudioControllerServerInit, _BTLEAudioControllerServerStart, 
+                       _BTLEAudioControllerServerStop ]
+...

@@ -1,0 +1,38 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AirPlayReceiver.framework/AirPlayReceiver
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _APAdvertiserCopyProperty, _APAdvertiserCreate, 
+                       _APAdvertiserGetMode, _APAdvertiserGetTypeID, _APAdvertiserInfoCopy, 
+                       _APAdvertiserInfoCopyAirPlayData, _APAdvertiserInfoCopyProperty, 
+                       _APAdvertiserInfoCopyRAOPData, _APAdvertiserInfoCreate, 
+                       _APAdvertiserInfoCreateAirPlayServiceName, _APAdvertiserInfoCreateRAOPServiceName, 
+                       _APAdvertiserInfoCreateWithRAOPAndAirPlayDataAndDeviceName, 
+                       _APAdvertiserInfoGetTypeID, _APAdvertiserInfoSetProperty, 
+                       _APAdvertiserInvalidate, _APAdvertiserSetMode, _APAdvertiserSetProperty, 
+                       _APAdvertiserUpdatePreferences, _AirPlayCreateModesDictionary, 
+                       _AirPlayReceiverServerControl, _AirPlayReceiverServerCopyProperty, 
+                       _AirPlayReceiverServerCreate, _AirPlayReceiverServerGetDispatchQueue, 
+                       _AirPlayReceiverServerGetTypeID, _AirPlayReceiverServerSetDelegate, 
+                       _AirPlayReceiverServerSetProperty, _AirPlayReceiverSessionChangeAppState, 
+                       _AirPlayReceiverSessionChangeModes, _AirPlayReceiverSessionChangeResourceMode, 
+                       _AirPlayReceiverSessionControl, _AirPlayReceiverSessionCopyProperty, 
+                       _AirPlayReceiverSessionForceKeyFrame, _AirPlayReceiverSessionMakeModeStateFromDictionary, 
+                       _AirPlayReceiverSessionRequestSiriAction, _AirPlayReceiverSessionRequestUI, 
+                       _AirPlayReceiverSessionSendCommand, _AirPlayReceiverSessionSendCommand_b, 
+                       _AirPlayReceiverSessionSetDelegate, _AirPlayReceiverSessionSetProperty, 
+                       _AirPlaySettings_CopyKeys, _AirPlaySettings_CopyValue, 
+                       _AirPlaySettings_CopyValueEx, _AirPlaySettings_GetCString, 
+                       _AirPlaySettings_GetDouble, _AirPlaySettings_GetInt64, 
+                       _AirPlaySettings_RemoveValue, _AirPlaySettings_SetCString, 
+                       _AirPlaySettings_SetDouble, _AirPlaySettings_SetInt64, 
+                       _AirPlaySettings_SetNumber, _AirPlaySettings_SetValue, 
+                       _AirPlaySettings_Synchronize, _kAPAdvertiserProperty_AdvertiserInfo, 
+                       _kAPAdvertiserProperty_EnforceSolo, _kAPAdvertiserProperty_InterfaceIndex, 
+                       _kAPAdvertiserProperty_ListeningPort ]
+    objc-classes:    [ _AirPlayControllerServer, _MediaControlServer ]
+    objc-ivars:      [ _MediaControlServer._connectionsServer, _MediaControlServer._dispatchQueue, 
+                       _MediaControlServer._lastActivity, _MediaControlServer._slideshow ]
+...

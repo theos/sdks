@@ -1,0 +1,22 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
+current-version: 39.3
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MPSGetTemporaryBufferFromCommandBufferCache, _MPSGetTemporaryTextureFromCommandBufferCache, 
+                       _MPSRectNoClip, _MPSReturnTemporaryBufferToCommandBufferCache, 
+                       _MPSReturnTemporaryTextureToCommandBufferCache, 
+                       _MPSSupportsMTLDevice ]
+    objc-classes:    [ _MPSBinaryImageKernel, _MPSImageAreaMax, _MPSImageAreaMin, 
+                       _MPSImageBox, _MPSImageConvolution, _MPSImageDilate, 
+                       _MPSImageErode, _MPSImageGaussianBlur, _MPSImageHistogram, 
+                       _MPSImageHistogramEqualization, _MPSImageHistogramSpecification, 
+                       _MPSImageIntegral, _MPSImageIntegralOfSquares, _MPSImageLanczosScale, 
+                       _MPSImageMedian, _MPSImageSobel, _MPSImageTent, 
+                       _MPSImageThresholdBinary, _MPSImageThresholdBinaryInverse, 
+                       _MPSImageThresholdToZero, _MPSImageThresholdToZeroInverse, 
+                       _MPSImageThresholdTruncate, _MPSImageTranspose, 
+                       _MPSKernel, _MPSUnaryImageKernel ]
+...

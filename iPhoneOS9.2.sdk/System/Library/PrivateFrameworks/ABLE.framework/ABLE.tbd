@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ABLE.framework/ABLE
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ABLEDataHygiene_notNaN, _ablemsg, _file, _initialiseLog, 
+                       _kABLECoreDuetController, _kPredictionDayOffsets, 
+                       _kPredictionEnabled, _kPredictionLifetime, _kPredictionMinCorr, 
+                       _kPredictionMinRSquared, _kPredictionPredictabilityOffsetDays, 
+                       _kPredictionRejectionThresholdMissingData, _kPredictionSoftLanding, 
+                       _kPredictionSoftLandingDecayRate, _kPredictionSoftLandingMax, 
+                       _kPredictionSoftLandingMin ]
+    objc-classes:    [ _ABLEBONAdjustFromLevelController, _ABLEBSMBatteryPrediction, 
+                       _ABLEBSMPluginMonitor, _ABLEBSMPredictor, _ABLEBSMRoutineMonitor, 
+                       _ABLEBattery, _ABLECDNotificationResponse, _ABLECDPredictedEvents, 
+                       _ABLECDPrediction, _ABLEConstantModelController, 
+                       _ABLEController, _ABLECoreData, _ABLECoreDuetController, 
+                       _ABLECoreDuetUtils, _ABLEDirectModelController, 
+                       _ABLEGradientModelController, _ABLEMockCDAttribute, 
+                       _ABLEMockCDAttributePatternGenerator, _ABLEMockCDAttributeWithData, 
+                       _ABLEMockCDAttributeWithDevice, _ABLEModelController, 
+                       _ABLEPredictabilityController, _ABLEPredictionController, 
+                       _ABLEPredictionModelController ]
+...

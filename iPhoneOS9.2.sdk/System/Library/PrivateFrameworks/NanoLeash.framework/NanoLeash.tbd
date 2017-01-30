@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoLeash.framework/NanoLeash
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ApplyGaussianFilter, _AvgRssi, _CreateDeviceGrayColor, 
+                       _CreateDeviceRGBColor, _DrawGridlines, _GrayColor, 
+                       _GreenColor, _NFMAccelLogger, _NFMFindGizmoIdentifier, 
+                       _NFMFindLocalDeviceEntitlementName, _NFMFindLocalDeviceServerName, 
+                       _NFMHotterColderIdentifier, _NFMIsDebugBuild, _NFMIsLoggingEnabled, 
+                       _NFMLDErr, _NFMLDSetupLog, _NFMLDSetupLogger, _NFMLDWarn, 
+                       _NFMLeashIdentifier, _NFMLeashLogger, _NFMLeashManagerLeashWarningCloseValue, 
+                       _NFMLeashManagerLeashWarningFarValue, _NFMLeashManagerLeashWarningImmediateValue, 
+                       _NFMLeashManagerLeashWarningInsaneDistanceValue, 
+                       _NFMLog, _NFMMotionActivityLogger, _NFMPEPLog, _NFMProtoDidPlaySoundAndFlashLEDResponseReadFrom, 
+                       _NFMProtoDidPlaySoundResponseReadFrom, _NFMProtoPlaySoundAndFlashLEDRequestReadFrom, 
+                       _NFMProtoPlaySoundRequestReadFrom, _NFMProtoSend, 
+                       _NFMRSSILogger, _NFMUnlockIdentifier, _NFMUserResponseLogger, 
+                       _RadiansFromDegrees, __LogTransport, __NFMLDLog, 
+                       __ShouldLogTransport, _balanceValues, _count, _graphBackgroundColor, 
+                       _graphLineColor, _graphXColor, _graphYColor, _graphZColor, 
+                       _miniBalanceValues ]
+    objc-classes:    [ _GraphTextView, _GraphView, _GraphViewSegment, _NFMDataLogger, 
+                       _NFMHotterColderView, _NFMIDSMessageInstance, _NFMIDSServiceDelegate, 
+                       _NFMLeashManager, _NFMProtoDidPlaySoundAndFlashLEDResponse, 
+                       _NFMProtoDidPlaySoundResponse, _NFMProtoPlaySoundAndFlashLEDRequest, 
+                       _NFMProtoPlaySoundRequest, _NFMWhereIsMyCompanionConnection, 
+                       _NFMWiFiManager ]
+    objc-ivars:      [ _GraphViewSegment.avghistory, _GraphViewSegment.index, 
+                       _GraphViewSegment.rssihistory, _NFMLeashManager._proximityChangeHandler ]
+...

@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleVXD375Framework.framework/AppleVXD375Framework
+exports:         
+  - archs:           [ armv7, armv7s ]
+    symbols:         [ _AppleVXD375CheckPlatform, _AppleVXD375CloseConnection, 
+                       _AppleVXD375DecodeFrame, _AppleVXD375GetParameter, 
+                       _AppleVXD375InitializeDecoder, _AppleVXD375OpenConnection, 
+                       _AppleVXD375SetParameter, _AppleVXD375TerminateDecoder ]
+...

@@ -1,0 +1,38 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/iAd.framework/iAd
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ADAdSpaceContext_ModalInterstitial, _ADBannerContentSizeIdentifier320x50, 
+                       _ADBannerContentSizeIdentifier480x32, _ADBannerContentSizeIdentifierLandscape, 
+                       _ADBannerContentSizeIdentifierPortrait, _ADCanStealControllerForCreativeType, 
+                       _ADClampedBannerSize, _ADClassicMode, _ADClearLocationPermissionCache, 
+                       _ADClientErrorDomain, _ADConvertScreenRectToUIOrientation, 
+                       _ADCreateScreenImageWithOrientation, _ADCreativeTypeHasView, 
+                       _ADCreativeTypeShouldCycle, _ADCreativeTypeSkipsVisibilityCheck, 
+                       _ADDeviceDescription, _ADErrorDomain, _ADFrameForInterstitialWithClampedSize, 
+                       _ADLandscapeBannerSize, _ADMakeRectilinear, _ADMaximumControllersForCreativeType, 
+                       _ADPortraitBannerSize, _ADPresentingViewControllerForView, 
+                       _ADRectIsValidForPopoverPresentation, _ADSanitizedErrorForError, 
+                       _ADViewControllerForView, __ADInternalAdTypeForPublicAdType, 
+                       __ADPaddedImageFromImage, _kADPolicyEngineAddChannelNotification, 
+                       _kADPolicyEngineHeartbeatTokenChangedNotification, 
+                       _kADPolicyEngineHideAdViewNotification, _kADPolicyEngineNoActionRequiredNotification, 
+                       _kADPolicyEnginePlayVideoAdNotification, _kADPolicyEngineScheduleAudioAdNotification, 
+                       _kADPolicyEngineSongBeganResponseNotification, _kADPolicyEngineSongBreakAdKey, 
+                       _kADPolicyEngineSongSkipAdKey, _kADPolicyEngineStationEntryResponseNotification, 
+                       _kADPolicyEngineTestStationDescriptionsComputedNotification, 
+                       _kADPolicyEngineTrackDataKey, _kADSponsoredChannelIDKey ]
+    objc-classes:    [ _ADAdActionPublicAttributes, _ADAdImpressionPublicAttributes, 
+                       _ADAdSlot, _ADAdSpace, _ADAdSpaceConfiguration, 
+                       _ADAdSpaceRemoteViewController, _ADBannerView, _ADClient, 
+                       _ADCountdownButton, _ADDimmerView, _ADInterstitialAd, 
+                       _ADInterstitialAdPresentationViewController, _ADInterstitialView, 
+                       _ADOptInManager, _ADPlayer, _ADPolicyEngine, _ADPrerollBottomBar, 
+                       _ADPrerollButton, _ADPrerollController, _ADPrerollSlider, 
+                       _ADPrerollTopBar, _ADPrerollView, _ADProgressView, 
+                       _ADSession, _ADSoftLinking, _ADTapGestureRecognizer, 
+                       _ADVolumeSlider, __ADPolicyEngineEvent, __ADRemoteViewController, 
+                       __ADUIViewControllerAdController ]
+...

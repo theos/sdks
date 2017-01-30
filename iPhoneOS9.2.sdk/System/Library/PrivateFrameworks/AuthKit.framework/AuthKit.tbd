@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AKAnisetteErrorDomain, _AKAnisetteProvisioningMachService, 
+                       _AKAppleIDAuthenticationErrorDomain, _AKAppleIDAuthenticationMachService, 
+                       _AKAuthenticationAlternateDSIDKey, _AKAuthenticationDSIDKey, 
+                       _AKAuthenticationDidShowServerUIKey, _AKAuthenticationIDMSTokenKey, 
+                       _AKAuthenticationIsHSA2Key, _AKAuthenticationNewAppleIDSetupInfoKey, 
+                       _AKAuthenticationPasswordKey, _AKAuthenticationRawPasswordKey, 
+                       _AKAuthenticationRememberPasswordKey, _AKAuthenticationUsernameKey, 
+                       _AKExtensionItemContextKey, _AKExtensionItemLocationSignInAlertKey, 
+                       _AKExtensionItemSecondFactorAlertKey, _AKExtensionItemSecondFactorEntryAlertKey, 
+                       _AKGetFileLoggingEnabled, _AKLoginCodeNotificationCreate, 
+                       _AKSetFileLoggingEnabled, _AKUnregisterAllAppleIDs, 
+                       _AuthKitVersionNumber, _AuthKitVersionString, __AKAppleIDLoginCodeKey, 
+                       __AKAppleIDLoginCodeWasEnteredNotification, __AKLogInternal, 
+                       __AKLogInternalV, __AKLogTrafficInternal ]
+    objc-classes:    [ _AKAbsintheSigner, _AKAnisetteData, _AKAnisetteProvisioningController, 
+                       _AKAnisetteProvisioningDaemonInterface, _AKAppleIDAuthenticationClientInterface, 
+                       _AKAppleIDAuthenticationContext, _AKAppleIDAuthenticationController, 
+                       _AKAppleIDAuthenticationDaemonInterface, _AKAppleIDServerResourceLoadDelegate, 
+                       _AKAppleIDSession, _AKCertificatePinning, _AKConfiguration, 
+                       _AKDevice, _AKURLBag, _AKURLDataTask, _AKURLSession, 
+                       __AKAppleIDAuthenticationContextManager ]
+...

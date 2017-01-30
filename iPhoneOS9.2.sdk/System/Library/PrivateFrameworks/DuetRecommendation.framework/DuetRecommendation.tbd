@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DuetRecommendation.framework/DuetRecommendation
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DuetRecommendationVersionNumber, _DuetRecommendationVersionString ]
+    objc-classes:    [ __DRInMemoryTopicInterestModel, __DRTopicActionEntry, 
+                       __DRTopicEnumerationQuery, __DRTopicInterestModel, 
+                       __DRTopicInterestSummary, __DRTopicStatisticsQuery ]
+...

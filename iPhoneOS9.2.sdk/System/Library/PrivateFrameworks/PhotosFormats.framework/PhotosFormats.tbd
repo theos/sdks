@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PFAssetAdjustmentsBaseVersionKey, _PFAssetAdjustmentsDataBlobKey, 
+                       _PFAssetAdjustmentsFormatIdentifierKey, _PFAssetAdjustmentsFormatVersionKey, 
+                       _PFReadImageDisplayTimeFromVideoFileAtPath, _PFReadMetadataFromVideoAtPath, 
+                       _PFReadPairingIdentifierFromImageAtPath, _PFReadPairingIdentifierFromImageProperties, 
+                       _PFReadPairingIdentifierFromVideoAtPath, _PFReadVideoDurationFromVideoFileAtPath, 
+                       _PFVideoComplementFileExtension, _PFVideoComplementImagePathKey, 
+                       _PFVideoComplementMetadataKey, _PFVideoComplementMetadataPairingIdentifierKey, 
+                       _PFVideoComplementMetadataTimingInfoKey, _PFVideoComplementMetadataVersionKey, 
+                       _PFVideoComplementVideoPathKey ]
+    objc-classes:    [ _PFAssetAdjustments, _PFSlowMotionConfiguration, 
+                       _PFSlowMotionRampConfiguration, _PFSlowMotionTimeRangeMapper, 
+                       _PFSlowMotionTimeRangeMapperScaledRegion, _PFSlowMotionUtilities, 
+                       _PFVideoAVObjectBuilder, _PFVideoAdjustments, _PFVideoComplement ]
+...

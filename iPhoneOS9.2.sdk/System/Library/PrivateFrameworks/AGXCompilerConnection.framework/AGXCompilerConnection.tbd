@@ -1,0 +1,24 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AGXCompilerConnection.framework/AGXCompilerConnection
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __Z21CompilerFSCacheCreateRP15CompilerFSCache, __Z22CompilerFSCacheDestroyRP15CompilerFSCache, 
+                       __Z24CompilerConnectionCreatej, __Z25CompilerConnectionDestroyRP18CompilerConnection, 
+                       __ZN15CompilerFSCache10AddElementEPhPPKvPm, __ZN15CompilerFSCache10GetElementEPhU13block_pointerFvPKvmE, 
+                       __ZN15CompilerFSCache12FlushElementEP17fscache_element_s, 
+                       __ZN15CompilerFSCache12GenerateHashEPKvmPh, __ZN15CompilerFSCache12GenerateHashEPU27objcproto16OS_dispatch_data8NSObjectS2_Ph, 
+                       __ZN15CompilerFSCacheC1Ej, __ZN15CompilerFSCacheC2Ej, 
+                       __ZN15CompilerFSCacheD1Ev, __ZN15CompilerFSCacheD2Ev, 
+                       __ZN18CompilerConnection10LogFailureEPU27objcproto16OS_dispatch_data8NSObjectS2_PU24objcproto13OS_xpc_objectS0_, 
+                       __ZN18CompilerConnectionC2E23CompilerConnectionStatej, 
+                       __ZN18CompilerConnectionD0Ev, __ZN18CompilerConnectionD1Ev, 
+                       __ZN18CompilerConnectionD2Ev, __ZN21XPCCompilerConnection12BuildRequestEPU27objcproto16OS_dispatch_data8NSObjectS2_U13block_pointerFvPKvmE, 
+                       __ZN21XPCCompilerConnection15resetConnectionEv, 
+                       __ZN21XPCCompilerConnection22connectionErrorHandlerEPU24objcproto13OS_xpc_object8NSObject, 
+                       __ZN21XPCCompilerConnectionC1Ej, __ZN21XPCCompilerConnectionC2Ej, 
+                       __ZN21XPCCompilerConnectionD0Ev, __ZN21XPCCompilerConnectionD1Ev, 
+                       __ZN21XPCCompilerConnectionD2Ev, __ZNK15CompilerFSCache18GetShaderCacheKeysEv, 
+                       __ZTV18CompilerConnection, __ZTV21XPCCompilerConnection ]
+...

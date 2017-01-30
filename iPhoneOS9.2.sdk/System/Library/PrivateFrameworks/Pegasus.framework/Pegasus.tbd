@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Pegasus.framework/Pegasus
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PGActivateApplicationWithProcessIdentifier, _PGBundle, 
+                       _PGBundleIdentifierForProcessIdentifier, _PGIsPictureInPictureSupported, 
+                       _PGLocalizedString, _PGLocalizedStringFromTable, 
+                       _PGLoggingReloadDefaults, _PGMachServiceName, _PGPegasusErrorDomain, 
+                       _PGPictureInPictureExportedInterface, _PGPictureInPictureProxyPictureInPictureActiveChangedNotification, 
+                       _PGPictureInPictureRemoteObjectInterface, _PGSizeIsEmpty, 
+                       _PGSizeIsInvalid, _PGSizeIsValid, _PGSizeIsZero, 
+                       _PGWaitForNotificationWithTimeout, _PG_dispatch_async_with_timeout, 
+                       __PGLog, __PGLogMethodProem, __PGLoggingSetEnabled, 
+                       __PGLogv, __UIHostedWindowDidRegisterScrollToTopViewNotificationName, 
+                       __UIHostedWindowDidUnregisterScrollToTopViewNotificationName, 
+                       __UIHostedWindowDidUpdateCurrentTintViewNotificationName, 
+                       __UIHostedWindowScrollToTopNotificationViewKey, 
+                       ___PGLoggingEnabledPrivate ]
+    objc-classes:    [ _PGBackdropView, _PGChevronView, _PGHostedWindow, 
+                       _PGHostedWindowHostingHandle, _PGLayerHostView, 
+                       _PGLoadingIndicatorView, _PGPictureInPictureApplication, 
+                       _PGPictureInPictureController, _PGPictureInPictureControlsViewController, 
+                       _PGPictureInPictureProxy, _PGPictureInPictureRemoteObject, 
+                       _PGPictureInPictureViewController, _PGPlaybackProgressIndicator, 
+                       _PGStashedView, _PGTimer, __PGBundle, __PGPictureInPictureConnectionExportedObject, 
+                       __PGPlaybackProgressIndicatorMaskView, __PGPlaybackProgressIndicatorMaskedView, 
+                       ___PGButton, ___PGView ]
+...

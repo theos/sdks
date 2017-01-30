@@ -1,0 +1,46 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+current-version: 371.4
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CSIEqualMetrics, _CSIIllegalMetrics, _CUIBlendModeDescriptionFromCGBlendMode, 
+                       _CUIBlendModeLSRDescriptionFromCGBlendMode, _CUICGBlendModeFromLSRDescription, 
+                       _CUICGImageGetAlphaInfo, _CUICalcNonAlphaAreaOfImage, 
+                       _CUICalculateExtrusionMaskOfImage, _CUICompareRenditionKey, 
+                       _CUIConvertCGImageFormat, _CUICurrentPlatform, _CUIDefaultThemeRenditionKeyFormat, 
+                       _CUIDrawExtrudedImageInContext, _CUIEdgeInsetsEqualToEdgeInsets, 
+                       _CUIEdgeInsetsFromCGRect, _CUIEdgeInsetsInsetRect, 
+                       _CUIEdgeInsetsInvalid, _CUIEdgeInsetsMake, _CUIEdgeInsetsOutsetRect, 
+                       _CUIEdgeInsetsToCGRect, _CUIEdgeInsetsValid, _CUIEdgeInsetsZero, 
+                       _CUIEqualRenditionKeysIgnoringAttribute, _CUIFillCARKeyArrayForRenditionKey, 
+                       _CUIImageIsMonochrome, _CUIMaxScaleForTargetPlatform, 
+                       _CUIRenditionKeyCopy, _CUIRenditionKeyHasIdentifier, 
+                       _CUIRenditionKeySetValueForAttribute, _CUIRenditionKeyStandardize, 
+                       _CUIRenditionKeyTokenCount, _CUIRenditionKeyValueForAttribute, 
+                       _CUISystemThemeRenditionKeyFormat, _CUIThemeInfoVersion, 
+                       _gArtworkDraftTypes, _gColorStatuses, _gColors, 
+                       _gEffectParameterTypes, _gEffectTypes, _gMetafontSelectors, 
+                       _gMetafontSizes, _gRenditionSubtypes, _gRenditionTypes, 
+                       _gThemeDirections, _gThemeDrawingLayers, _gThemeElements, 
+                       _gThemeGraphicsFeatureSetClasses, _gThemeIdioms, 
+                       _gThemeLooks, _gThemeMemoryPerformanceClasses, _gThemeParts, 
+                       _gThemePresentationStates, _gThemeSizes, _gThemeStates, 
+                       _gThemeTemplateRenderingModes, _gThemeUISizeClasses, 
+                       _gThemeValues, _gZeroCodeArtworkInfo ]
+    objc-classes:    [ _CSIBitmapWrapper, _CSIGenerator, _CUICatalog, _CUIColor, 
+                       _CUIImage, _CUIMutableCatalog, _CUIMutableCommonAssetStorage, 
+                       _CUINamedData, _CUINamedExternalLink, _CUINamedImage, 
+                       _CUINamedImageAtlas, _CUINamedImageDescription, 
+                       _CUINamedLayerImage, _CUINamedLayerStack, _CUIPSDImageRef, 
+                       _CUIPSDLayerEffectBevelEmboss, _CUIPSDLayerEffectColorOverlay, 
+                       _CUIPSDLayerEffectDropShadow, _CUIPSDLayerEffectGradientOverlay, 
+                       _CUIPSDLayerEffectInnerGlow, _CUIPSDLayerEffectInnerShadow, 
+                       _CUIPSDLayerEffectOuterGlow, _CUIPSDLayerEffects, 
+                       _CUIPSLayerEffectsPreset, _CUIRenditionKey, _CUIRenditionLayerReference, 
+                       _CUIShapeEffectPreset, _CUIShapeEffectStack, _CUISingleNamedAssetCreator, 
+                       _CUIStructuredThemeStore, _CUIStyleEffectConfiguration, 
+                       _CUIThemeSchema, _CUIThemeSchemaPSDLayerGroup, _CUIThemeSchemaPSDRenditionLayer, 
+                       _CUIThemeSchemaRenditionGroup ]
+...

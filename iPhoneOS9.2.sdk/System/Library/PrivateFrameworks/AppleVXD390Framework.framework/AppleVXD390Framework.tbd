@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleVXD390Framework.framework/AppleVXD390Framework
+exports:         
+  - archs:           [ armv7, armv7s ]
+    symbols:         [ _AppleVXD390CheckPlatform, _AppleVXD390CloseConnection, 
+                       _AppleVXD390DecodeFrame, _AppleVXD390GetParameter, 
+                       _AppleVXD390InitializeDecoder, _AppleVXD390OpenConnection, 
+                       _AppleVXD390SetParameter, _AppleVXD390TerminateDecoder ]
+...

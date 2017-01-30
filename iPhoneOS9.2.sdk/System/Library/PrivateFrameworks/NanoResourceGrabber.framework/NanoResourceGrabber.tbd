@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NRGLogGetTheTime, _NRGLogModuleDaemon, _NRGLogModuleFramework, 
+                       _NRGLogShouldLogSyslog, _NRGLogWarnBroken, _NRGResourcePropertyFilePathSuffix, 
+                       _NRGResourcePropertyIconVariant, __NRGLogTransport, 
+                       __NRGLogTransport_V, __NRGShouldLogTransport, _mapLIIconVariantToNRG, 
+                       _mapNRGIconVariantToLI ]
+    objc-classes:    [ _NanoResourceGrabber ]
+...

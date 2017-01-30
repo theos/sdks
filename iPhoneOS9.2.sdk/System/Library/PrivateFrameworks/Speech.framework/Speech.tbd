@@ -1,0 +1,14 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Speech.framework/Speech
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SpeechVersionNumber, _SpeechVersionString ]
+    objc-classes:    [ _SFSpeechAudioBufferRecognitionRequest, _SFSpeechRecognitionRequest, 
+                       _SFSpeechRecognitionResult, _SFSpeechRecognitionTask, 
+                       _SFSpeechRecognizer, _SFSpeechRecordingRecognitionRequest, 
+                       _SFSpeechURLRecognitionRequest, _SFTranscription, 
+                       _SFTranscriptionSegment, __SFSearchRequest, __SFSearchResult, 
+                       __SFSpeechRecognitionBlockTask, __SFSpeechRecognitionDelegateTask ]
+...

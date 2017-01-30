@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MessageSupport.framework/MessageSupport
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MFCarrierPreferenceDomain, _MFCompositionServiceDomain, 
+                       _MFDeviceSupportsNanoCompanion, _MFImageScaleSelectionUserDefaultsKey, 
+                       _MFIsInternalDevice, _MFIsMobileMail, _MFIsSeedBuild, 
+                       _MFLogFacilityAPSPush, _MFLogFacilityCompositionServices, 
+                       _MFLogFacilityMailBulletins, _MFLogFacilityMailServices, 
+                       _MFLogFacilityMessageBodyParsing, _MFLogFacilityPowerActivity, 
+                       _MFLogFacilitySync, _MFMailAccountsExtendedPropertiesDomain, 
+                       _MFMailActivityContinuationBrowseMailboxFocusedMessageIDKey, 
+                       _MFMailActivityContinuationBrowseMailboxRemoteMailboxURLKey, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeAllInboxes, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeKey, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeVIP, 
+                       _MFMailActivityContinuationCommonTypeIdentifierBundle, 
+                       _MFMailActivityContinuationComposeMessageDataKey, 
+                       _MFMailActivityContinuationComposePartialMessageIDKey, 
+                       _MFMailActivityContinuationDebugComposeDataPath, 
+                       _MFMailActivityContinuationDebugSimulateFailureBoolKey, 
+                       _MFMailActivityContinuationDisplayMessageFocalNodePathKey, 
+                       _MFMailActivityContinuationDisplayMessageURLKey, 
+                       _MFMailActivityContinuationTypeBrowseMailbox, _MFMailActivityContinuationTypeComposeSansStreams, 
+                       _MFMailActivityContinuationTypeComposeWithStreams, 
+                       _MFMailActivityContinuationTypeDisplayMessage, _MFMailActivityContinuationTypeKey, 
+                       _MFMessagePreferencesDomain, _MFMobileMailContainerPath, 
+                       _MFMobileMailPreferenceDomain, _MFMobileMailTemporaryDirectoryPath, 
+                       _MFStackshotWriteWithReason, _MFStackshotWriteWithReasonIncludingStack, 
+                       _MFSuggestionsPreferenceDomain, _MessageSupportVersionNumber, 
+                       _MessageSupportVersionString, __MFLogging, __MFLoggingShouldLog, 
+                       __mfLogFlags, _kMFLoggingDefaultsChangedDomain, 
+                       _kMFMailAccountsChangedNotification, _kMFMobileMailBundleIdentifier, 
+                       _kMFProfileListChangedDomain, _mf_isFeatureEnabled ]
+    objc-classes:    [ _MFDebugTimer ]
+    objc-ivars:      [ _MFDebugTimer._timer_base, _MFDebugTimer._timer_end, 
+                       _MFDebugTimer._timer_nsecs, _MFDebugTimer._timer_start, 
+                       _MFDebugTimer._timer_ticks ]
+...

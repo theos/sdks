@@ -1,0 +1,14 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NPSEnableLogging, _NPSHasCompletedInitialSync, 
+                       _NPSManagedConfigurationClientID, _kNPSInitialSyncCompletionDarwinNotification, 
+                       _kNPSInitialSyncKey, _kNPSLogFacility, _kNPSPathComponentsToBackupFolderWithinPairingDataStore, 
+                       _kNanoPreferencesSyncDomain ]
+    objc-classes:    [ _NPSDomainAccessor, _NPSDomainAccessorFilePresenter, 
+                       _NPSDomainAccessorInternal, _NPSDomainAccessorUtils, 
+                       _NPSManager ]
+...

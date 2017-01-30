@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreFollowUpUI.framework/CoreFollowUpUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CoreFollowUpUIVersionNumber, _CoreFollowUpUIVersionString ]
+    objc-classes:    [ _FLPreferencesController, _FLPreferencesFollowUpItemDetailViewController, 
+                       _FLPreferencesFollowUpItemListViewController ]
+...

@@ -1,0 +1,17 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DMChangeGraphicalProgressVisibility, _DMClearContext, 
+                       _DMCopyContext, _DMCopyContextValue, _DMCopyCurrentBuildVersion, 
+                       _DMCopyOrderedPluginIndentifiers, _DMForceMigrationOnNextReboot, 
+                       _DMGatherLogs, _DMIsMigrationNeeded, _DMPerformMigration, 
+                       _DMPerformMigrationIfNeeded, _DMSetContext, _DMSetContextValue, 
+                       _DMTestMigrationUI, __DMLog ]
+    objc-classes:    [ _DMConnection, _DMLogGatherer, _DMXPCConnection, 
+                       _DataClassMigrator ]
+    objc-ivars:      [ _DMXPCConnection._connection, _DMXPCConnection._queue, 
+                       _DMXPCConnection._replyQueue, _DataClassMigrator._context ]
+...

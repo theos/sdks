@@ -1,0 +1,24 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/MetalKit.framework/MetalKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MTKMetalVertexDescriptorFromModelIO, _MTKMetalVertexFormatFromModelIO, 
+                       _MTKModelErrorDomain, _MTKModelErrorKey, _MTKModelIOVertexDescriptorFromMetal, 
+                       _MTKModelIOVertexFormatFromMetal, _MTKTextureLoaderErrorDomain, 
+                       _MTKTextureLoaderErrorKey, _MTKTextureLoaderOptionAllocateMipmaps, 
+                       _MTKTextureLoaderOptionSRGB, _MTKTextureLoaderOptionTextureCPUCacheMode, 
+                       _MTKTextureLoaderOptionTextureUsage, _MetalKitVersionNumber, 
+                       _MetalKitVersionString, __MTKModelErrorWithCode, 
+                       __MTKModelErrorWithCodeAndErrorString, __MTKModelErrorWithCodeAndUserInfo, 
+                       __newMTKTextureErrorWithCode, __newMTKTextureErrorWithCodeAndErrorString, 
+                       __newMTKTextureErrorWithCodeAndUserInfo, _gCGColorSpaceModelString, 
+                       _gCGImageAlphaString, _gCGImageBitmapByteOrder, 
+                       _gCGImageComponentTypeString, _gKTXFileIdentifier, 
+                       _printIndices16, _printIndices32, _reflectImage ]
+    objc-classes:    [ _MTKMesh, _MTKMeshBuffer, _MTKMeshBufferAllocator, 
+                       _MTKMeshBufferHolder, _MTKMeshBufferZone, _MTKSubmesh, 
+                       _MTKTextureLoader, _MTKTextureLoaderData, _MTKTextureLoaderImageIO, 
+                       _MTKTextureLoaderKTX, _MTKTextureLoaderPVR, _MTKView ]
+...

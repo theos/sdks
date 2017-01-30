@@ -1,0 +1,18 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WelcomeKit.framework/WelcomeKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WLDaemonExportedInterface, _WLDataMigrationDelegateInterface, 
+                       _WLDataMigratorInterface, _WLDefaultsApplicationID, 
+                       _WLDefaultsChangedNotification, _WLDefaultsStartedNetworkSSIDKey, 
+                       _WLDefaultsUseInfrastructureWiFiKey, _WLDeviceAuthenticationDelegateInterface, 
+                       _WLDeviceAuthenticatorInterface, _WLLocalizedString, 
+                       _WLLog, _WLLoggingEnabled, _WLSourceDevicesChangedNotification, 
+                       _WelcomeKitVersionNumber, _WelcomeKitVersionString ]
+    objc-classes:    [ _WLDaemonController, _WLDataMigrationController, 
+                       _WLDeviceAuthentication, _WLDeviceAuthenticationController, 
+                       _WLLogController, _WLSourceDevice, _WLSourceDevicesController, 
+                       _WLUtilities ]
+...

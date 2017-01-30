@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/DataDetectorsNaturalLanguage
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DataDetectorsNaturalLanguageVersionNumber, _DataDetectorsNaturalLanguageVersionString, 
+                       _IPFeatureDataContextDateTimeIsTenseDependent, _IPFeatureDataContextEventEndDate, 
+                       _IPFeatureDataContextEventEndDateTimeZone, _IPFeatureDataContextEventIsAllDay, 
+                       _IPFeatureDataContextEventPlacemark, _IPFeatureDataContextEventStartDateTimeZone, 
+                       _IPFeatureDataContextExtractedFromSubject, _IPFeatureDataContextIsDateTimeComplement, 
+                       _IPFeatureDataContextTimeIsApproximate, _IPFeatureExtractorContextDataDetectorsFeatures, 
+                       _IPFeatureExtractorDetectedDateInSubject, _ipsos_isDateTimeTenseDependentKey, 
+                       _ipsos_isTimeApproximateKey ]
+    objc-classes:    [ _IPDDFeatureExtractor, _IPDDGeoFeatureExtractor, 
+                       _IPFeature, _IPFeatureData, _IPFeatureExtractor, 
+                       _IPFeatureManager, _IPFeatureSentence, _IPLTFeatureExtractor, 
+                       _IPMessage, _IPMessageThread, _IPMessageUnit, _IPPerson, 
+                       _IPQuoteParser, _IPSentenceFeatureExtractor, _IPTenseDetector ]
+...

@@ -1,0 +1,10 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AITTarget.framework/AITTarget
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AITFireProbe, _AITFireProbeWithBlock, _AITFireProbeWithCFArgumentsAndKeys, 
+                       _AITProbeBarrier, _AITProbeIsEnabled ]
+    objc-classes:    [ _AITTarget, _AITTargetObserverRecord, _AITXPCConnection ]
+...

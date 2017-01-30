@@ -1,0 +1,37 @@
+---
+archs:           [ arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AppendCommentToPGM, _ComponentSetInit, _ComponentSetRelease, 
+                       _ComponentSetUpdate, _ConvertTransToNodeArea, _ConvertVectorForGUI, 
+                       _FindRectangleForComponent, _GenerateEnrollProgressInfo, 
+                       _GenerateMatchTemplateTopology, _GenerateTemplateTopology, 
+                       _GenerateTemplateTopologyInfo, _LoadRawImageAsPGM, 
+                       _RIESAdd, _RIESClear, _RIESDelete, _RIESInit, _RIESLoad, 
+                       _RIESSave, _RIESUpdate, _SaveRawImageAsPGM, _absoluteToMiliseconds, 
+                       _absoluteToNanoseconds, _crc32ansi, _dictionaryGetBool, 
+                       _dictionaryGetInteger, _kBiometricKitEnrollProgressDetailExtendedComponentID, 
+                       _kBiometricKitEnrollProgressDetailMergedInComponents, 
+                       _kBiometricKitEnrollProgressDetailNewComponentID, 
+                       _kBiometricKitEnrollProgressDetailNewNodeCoordinates, 
+                       _kBiometricKitEnrollProgressDetailNewNodeID, _kBiometricKitEnrollProgressDetailReason, 
+                       _kBiometricKitEnrollProgressDetailRedundantNode, 
+                       _kBiometricKitEnrollProgressDetailRemovedComponentID, 
+                       _kBiometricKitEnrollProgressDetailRemovedNodeID, 
+                       _kBiometricKitEnrollProgressDetailResultComponentID, 
+                       _kBiometricKitIdentityAttributeKey, _kBiometricKitIdentityCreationTimeKey, 
+                       _kBiometricKitIdentityEntityKey, _kBiometricKitIdentityMatchCountKey, 
+                       _kBiometricKitIdentityNameKey, _kBiometricKitIdentityTypeKey, 
+                       _kBiometricKitIdentityUUIDKey, _kBiometricKitIdentityUpdateCountKey, 
+                       _kBiometricKitTemplateDetailLargestComponentArea, 
+                       _kBiometricKitTemplateDetailLargestComponentNodes, 
+                       _kBiometricKitTemplateDetailTotalArea, _kBiometricKitTemplateDetailTotalNodes, 
+                       _kBiometricKitTemplateUpdated, _rotateBitmap90Data16, 
+                       _rotateBitmap90Data8, _roundMostSignificant, _xpcTimeout ]
+    objc-classes:    [ _BiometricKit, _BiometricKitEnrollProgressCoordinates, 
+                       _BiometricKitEnrollProgressInfo, _BiometricKitEnrollProgressMergedComponent, 
+                       _BiometricKitIdentity, _BiometricKitMatchInfo, _BiometricKitStatistics, 
+                       _BiometricKitTemplateInfo, _BiometricKitXPCClient ]
+...

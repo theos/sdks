@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CDPBackupMetadataDeviceColorKey, _CDPBackupMetadataDeviceEnclosureColorKey, 
+                       _CDPBackupMetadataDeviceModelClassKey, _CDPBackupMetadataDeviceModelKey, 
+                       _CDPBackupMetadataDeviceModelVersionKey, _CDPBackupMetadataDeviceNameKey, 
+                       _CDPBackupMetadataDevicePlatformKey, _CDPTelemetryDidChangeLocalSecretKey, 
+                       _CDPTelemetryDidLockAccount, _CDPTelemetryDidRemoveLocalSecretKey, 
+                       _CDPTelemetryDidUnlockAccount, _CDPTelemetryPCSAlreadyMigrated, 
+                       _CDPTelemetryPCSMigrationFailed, _CDPTelemetryPCSMigrationSucceeded, 
+                       _CDPTelemetryPCSRollbackFailed, _CDPTelemetryPCSRollbackSucceeded, 
+                       _CDPTelemetrySignInFailedAccountLocked, _CDPTelemetrySignInFailedIncorrectICSCAttempts, 
+                       _CDPTelemetrySignInSucceededCount, _CDPTelemetrySignInSucceededIncorrectICSCAttempts, 
+                       _CDPTelemetrySignInSucceededRemoteApproval, _CDPTelemetryStateMachineStartedFromBuddy, 
+                       _CDPTelemetryStateMachineStartedFromSettings, _CoreCDPInternalVersionNumber, 
+                       _CoreCDPInternalVersionString, _kOfflineLocalSecretChangeItemIdentifier ]
+    objc-classes:    [ _CDPDAccount, _CDPDCircleController, _CDPDCircleStateObserver, 
+                       _CDPDClientHandler, _CDPDFollowUpController, _CDPDKeychainSync, 
+                       _CDPDLocalDevice, _CDPDLocalDeviceSecretHandler, 
+                       _CDPDLocalSecretController, _CDPDNetworkObserver, 
+                       _CDPDNetworkObserverClient, _CDPDPCSController, 
+                       _CDPDRemoteDeviceSecretValidator, _CDPDSecureBackupController, 
+                       _CDPDSentinel, _CDPDStateMachine, _CDPDTelemetryController, 
+                       _CDPDXPCListener ]
+...

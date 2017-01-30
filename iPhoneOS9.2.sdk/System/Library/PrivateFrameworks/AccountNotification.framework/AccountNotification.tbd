@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AccountNotification.framework/AccountNotification
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ANAccountNotificationClientEntitlement, _ANAccountNotificationManagerEntitlement, 
+                       _ANDaemonMachServiceName, _ANGetFileLoggingEnabled, 
+                       _ANGetSyslogOutputLevel, _ANSetFileLoggingEnabled, 
+                       _ANSetSyslogOutputLevel, _AccountNotificationVersionNumber, 
+                       _AccountNotificationVersionString, __ANLogInternal, 
+                       __ANLogInternalV ]
+    objc-classes:    [ _ANAccountNotification, _ANAccountNotifier, _ANClientCallbackInterface, 
+                       _ANDaemonInterface, _ANManagedAccountNotification, 
+                       _ANManagedNotificationAction, _ANNotificationAction ]
+...

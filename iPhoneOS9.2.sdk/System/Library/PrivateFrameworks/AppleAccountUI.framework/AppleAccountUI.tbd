@@ -1,0 +1,33 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AAUIBeginUsingAddressBookSingleton, _AAUICopyCompositeName, 
+                       _AAUIDeviceLocatorStateDidChangeNotification, _AAUIEndUsingAddressBookSingleton, 
+                       _AAUIFamilyDetailsCacheDidChangeNotification, _AAUIProfilePictureStoreDidChangeNotification, 
+                       _AAUISignInErrorDomain ]
+    objc-classes:    [ _AAUIAcceptChildTransferRequest, _AAUIAcceptFamilyInviteRequest, 
+                       _AAUIAccountCreationRemoteUI, _AAUIAccountRepairRemoteUI, 
+                       _AAUIAccountValidationController, _AAUIAddPhotoView, 
+                       _AAUIAlertView, _AAUIBaseSignInViewController, _AAUIBleachedNavigationController, 
+                       _AAUICDPDeviceListViewController, _AAUICDPRemoteApprovalViewController, 
+                       _AAUIChildAccountCreationController, _AAUICloudSyncServicesController, 
+                       _AAUIConfirmIdentityViewController, _AAUIContactsSearchController, 
+                       _AAUICredentialRecoveryController, _AAUIDeclineChildTransferRequest, 
+                       _AAUIDeclineFamilyInviteRequest, _AAUIDeviceLocatorConfirmationUtilities, 
+                       _AAUIDeviceLocatorService, _AAUIExplainAppleIDViewController, 
+                       _AAUIFamilyCreditCard, _AAUIFamilyDetailsCache, 
+                       _AAUIFamilyInvitationAcceptanceViewController, _AAUIFamilyMemberPhotoRequest, 
+                       _AAUIFamilyPaymentCardUIRequest, _AAUIFamilyPaymentInfoRequest, 
+                       _AAUIFamilyPaymentInfoResponse, _AAUIFamilySetupBuddyMLRequest, 
+                       _AAUIFamilySetupGetStartedViewController, _AAUIFamilySetupOrganizerViewController, 
+                       _AAUIFamilySetupPrompter, _AAUIFamilySetupViewController, 
+                       _AAUIFamilySharingFeaturesView, _AAUIGenericTermsRemoteUI, 
+                       _AAUIMyPhotoRequest, _AAUIPhotoResponse, _AAUIPickInviteeViewController, 
+                       _AAUIProfilePictureStore, _AAUIRemotePage, _AAUIRemoteUIController, 
+                       _AAUIRemoteUIRepairFlow, _AAUIServerSuppliedProfilePictureCache, 
+                       _AAUIServerSuppliedProfilePictureCacheEntry, _AAUISignInFlowController, 
+                       _AAUIUpdateMyPhotoRequest ]
+...

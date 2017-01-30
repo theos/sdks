@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MarkupUI.framework/MarkupUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MUAnimationIconImage, _MUAnimationMaskRect, _MUAnimationSourceRect, 
+                       _MUAnimationTargetRect, _MUAnnotationIndexAssociatedObjectKey, 
+                       _MUFileDisplayName, _MUPDFViewControllerCurrentPageDidChangeNotification, 
+                       _MUPDFViewReadyForSnapshotNotification, _kMetadataNamespaceAnnotationKit, 
+                       _kMetadataPrefixAnnotationKit ]
+    objc-classes:    [ _MUCGPDFWriter, _MUCorePDFAnnotationReader, _MUImageContentViewController, 
+                       _MUImageDownsamplingUtilities, _MUImageReader, _MUImageWriter, 
+                       _MUPDFAnnotationAdaptorHelper, _MUPDFContentViewController, 
+                       _MUPDFNumberFormatter, _MUPDFPageLabelView, _MUPDFUtilities, 
+                       _MUPDFView, _MUPDFViewController, _MUPDFViewPlaceholder, 
+                       _MUPayloadEncryption, _MURemoteViewController, _MUUIPDFAnnotationAdaptor, 
+                       _MUUIPDFCircleAnnotationAdaptor, _MUUIPDFFreeTextAnnotationAdaptor, 
+                       _MUUIPDFLineAnnotationAdaptor, _MUUIPDFSquareAnnotationAdaptor, 
+                       _MUUIPDFStampAnnotationAdaptor, _MarkupViewController ]
+...

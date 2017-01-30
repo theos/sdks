@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NCLaunchStats.framework/NCLaunchStats
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _KeepAppsUpToDateEnabledChangedNotification, _kMGQueryhas, 
+                       _kNCLaunchesCold, _kNCLaunchesHot, _kNCLaunchesWarm, 
+                       _kNCWidgetPrewarmRepeats, _kNCWidgetRefreshes ]
+    objc-classes:    [ _NCLaunchStats ]
+...

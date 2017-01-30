@@ -1,0 +1,29 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CacheDeleteAllowAutoPurge, _CacheDeleteAutoPurgeAllowed, 
+                       _CacheDeleteCacheable, _CacheDeleteCancelPurge, 
+                       _CacheDeleteCopyDemotableApps, _CacheDeleteCopyItemizedPurgeableSpace, 
+                       _CacheDeleteCopyItemizedPurgeableSpaceWithInfo, 
+                       _CacheDeleteCopyPurgeableSpaceWithInfo, _CacheDeleteCurrentCacheableSpace, 
+                       _CacheDeleteDemoteApps, _CacheDeleteDoNotAutoPurge, 
+                       _CacheDeletePurgeAsync, _CacheDeletePurgeSpace, 
+                       _CacheDeletePurgeSpaceWithInfo, _CacheDeletePurgeableSpace, 
+                       _CacheDeleteRegister, _CacheDeleteRegisterCallback, 
+                       _CacheDeleteRegisterCallbacks, _CacheDeleteRegisterCallbacksForProcess, 
+                       _CacheDeleteRegisterForProcess, _CacheDeleteRegisterInfoCallbacks, 
+                       _CacheDeleteRegisterInfoCallbacksForProcess, _CacheDeleteServiceRequest, 
+                       _CacheDeleteSetCacheable, _CallCacheD, _CallService, 
+                       _CallServiceAsync, _addDistributionStat, _addReportStat, 
+                       _amountPurged, _connectionIsEntitled, _createCacheDeleteToken, 
+                       _gMOLogWrite, _getCacheDeleteXattr, _getLocalVolumes, 
+                       _getLogHandle, _getRootVolume, _log_user_defaults, 
+                       _lowSpaceVolumes, _normalizeUserMountpoint, _pretty_user_defaults, 
+                       _setReportStat, _validateVolume, _volumeFreespace ]
+    objc-classes:    [ _CDService, _CacheDeleteListener, _CacheDeleteRecentInfo, 
+                       _CacheDeleteRecentServiceInfo, _CacheDeleteRecentVolumeInfo, 
+                       _CacheDeleteServiceListener ]
+...

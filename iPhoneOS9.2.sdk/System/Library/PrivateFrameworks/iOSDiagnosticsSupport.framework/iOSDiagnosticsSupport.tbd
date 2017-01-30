@@ -1,0 +1,9 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iOSDiagnosticsSupport.framework/iOSDiagnosticsSupport
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _kMBErrorCodes, _kMBErrorDomain ]
+    objc-classes:    [ _MBSDevice, _MBSError, _MBSStockholm ]
+...

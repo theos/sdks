@@ -1,0 +1,12 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Spotlight.framework/Spotlight
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _kSPContentAuxiliarySubtitleKey, _kSPContentAuxiliaryTitleKey, 
+                       _kSPContentCategoryKey, _kSPContentContentKey, _kSPContentExternalIDKey, 
+                       _kSPContentSubtitleKey, _kSPContentSummaryKey, _kSPContentTitleKey ]
+    objc-classes:    [ _SPSpotlightManager ]
+    objc-ivars:      [ _SPSpotlightManager._displayID ]
+...

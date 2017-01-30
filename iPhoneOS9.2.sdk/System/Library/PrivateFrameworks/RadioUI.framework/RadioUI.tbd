@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RadioUI.framework/RadioUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _RUJingleReportingPlayEventCollectionFromReportingEvents, 
+                       _RUPreviewSessionDefaultFadeDuration, _RURadioAVItemAlbumBuyButtonInfoDidChangeNotification, 
+                       _RURadioAVItemIsInWishListDidChangeNotification, 
+                       _RURadioAdObserverHeartbeatDidChangeNotification, 
+                       _RURadioAdSlotAdTracksDidChangeNotification, _RURadioAdTrackActionDidFinishNotification, 
+                       _RURadioAdTrackActionWillBeginNotification, _RURadioAdTrackDidFailToLoadNotification, 
+                       _RURadioAdTrackUserInfoKeyWillLeaveApplication, 
+                       _RURadioDataSourceDidInvalidateNotification, _RURadioOperationErrorDomain, 
+                       _RURadioQueueFeederExplicitTracksEnabledDidChangeNotification, 
+                       _RURadioQueueFeederUserDefaultExplicitTracksEnabledDidChangeNotification, 
+                       _RURadioStationPlaybackMetadataCreateStationInModel, 
+                       _RURadioStreamTrackAVItemDidReceiveTimedMetadataPingsNotification, 
+                       _RURadioStreamTrackAVItemPingsUserInfoKey, __RURadioAVItemInternalIsInWishListDidChangeNotification ]
+    objc-classes:    [ _RUAddStationEpilogueContext, _RUJingleTiltReportingController, 
+                       _RUMutableRadioStationPlaybackMetadata, _RUNetworkPlaybackController, 
+                       _RUNowPlayingObserver, _RUPlaybackTimeoutInfoController, 
+                       _RUPrepareRadioPlaybackOperation, _RUPreviewSession, 
+                       _RURTCReportingController, _RURadioAVItem, _RURadioAVPlayer, 
+                       _RURadioAdAVItem, _RURadioAdArtworkDataSource, _RURadioAdObserver, 
+                       _RURadioAdSlot, _RURadioAdTrack, _RURadioAudioClipAVItem, 
+                       _RURadioDataSource, _RURadioGetTracksOperation, 
+                       _RURadioOperationQueue, _RURadioPlaybackContext, 
+                       _RURadioPlaybackCoordinator, _RURadioQueueFeeder, 
+                       _RURadioStationPlaybackMetadata, _RURadioStationPreparationContext, 
+                       _RURadioStreamPing, _RURadioStreamTrackAVItem, _RURadioTrackAVItem, 
+                       _RURadioTrackPreviewAVItem, _RUStoreProductViewController, 
+                       _RUTrackDownloadView, __MPRadioStreamMetadata ]
+    objc-ivars:      [ _RURadioStationPlaybackMetadata._artworkCollection, 
+                       _RURadioStationPlaybackMetadata._hasSetArtworkCollection, 
+                       _RURadioStationPlaybackMetadata._hasSetStationHash, 
+                       _RURadioStationPlaybackMetadata._hasSetStationID, 
+                       _RURadioStationPlaybackMetadata._hasSetStationName, 
+                       _RURadioStationPlaybackMetadata._hasSetStationStringID, 
+                       _RURadioStationPlaybackMetadata._hasValidRadioStation, 
+                       _RURadioStationPlaybackMetadata._station, _RURadioStationPlaybackMetadata._stationHash, 
+                       _RURadioStationPlaybackMetadata._stationID, _RURadioStationPlaybackMetadata._stationName, 
+                       _RURadioStationPlaybackMetadata._stationStringID ]
+...

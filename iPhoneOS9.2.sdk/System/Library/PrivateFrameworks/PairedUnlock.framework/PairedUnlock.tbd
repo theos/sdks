@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PairedUnlock.framework/PairedUnlock
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PUDefaultsDomain, _PUDefaultsKeyIsUnlockOnly, _PUDefaultsKeyShouldDisableOnlyRemoteUnlock, 
+                       _PUKeyStoreAccessGroup, _PUKeyStoreServiceName, 
+                       _PUKeyStoreUnlockOnlyPasscodeLabel, _PULoggingReloadDefaults, 
+                       _PUPasscodeActionServerMachServiceName, _PUPeerKeyPairIdentifier, 
+                       _PUPeerKeyToken, _PUPeerKeyTokenKey, _PUProtoDidGetPasscodeStateReadFrom, 
+                       _PUProtoDidUnlockReadFrom, _PUProtoGetPasscodeStateReadFrom, 
+                       _PUProtoRemoveLockoutReadFrom, _PUProtoRequestCompletedReadFrom, 
+                       _PUProtoRequestDisableOnlyRemoteUnlockReadFrom, 
+                       _PUProtoSetShouldNotifyNextUnlockReadFrom, _PUProtoStartPasscodeActionReadFrom, 
+                       _PUUnlockingErrorDomain, __PUFlushLog, __PULog, 
+                       ___PULoggingCPLogIsEnabled, ___PULoggingIsEnabled, 
+                       ___PULoggingNSLogIsEnabled, ___isInternalInstall, 
+                       __copyNamedKeyOrData, _copyNamedKey, _copyNamedKeyData, 
+                       _createAndStoreKeyWithData, _deleteNamedKey, _encryptOrDecryptDataWithKey, 
+                       _generateAndStoreKeyPairWithName, _kPUDidRemoveLockoutNotification, 
+                       _verifyAccessGroup ]
+    objc-classes:    [ _PUConnection, _PUKeyStore, _PUPeer, _PUProtoDidGetPasscodeState, 
+                       _PUProtoDidUnlock, _PUProtoGetPasscodeState, _PUProtoRemoveLockout, 
+                       _PUProtoRequestCompleted, _PUProtoRequestDisableOnlyRemoteUnlock, 
+                       _PUProtoSetShouldNotifyNextUnlock, _PUProtoStartPasscodeAction ]
+...

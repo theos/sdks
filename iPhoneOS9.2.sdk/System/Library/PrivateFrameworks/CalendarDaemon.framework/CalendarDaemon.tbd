@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CADCopyEntity, _CADDeleteEntity, _CADEKPersistentEventDefaultPropertiesToLoad, 
+                       _CADEntityGetObjectID, _CADEntityIsInRestrictedStore, 
+                       _CADExitStatusCode_Normal, _CADExitStatusCode_UnexpectedCompletionOfMainFunction, 
+                       _CADLogFlush, _CADLogInitIfNeeded, _CALACCESSD_SERVICE, 
+                       _CALACCESSD_UNITTEST_SERVICE, _CalEntityCopyDictionaryOfProperties, 
+                       _CalEntityCopyProperty, _CalEntitySetProperty, _GetSharedXPCInterfaceForCADClientInterface, 
+                       _GetSharedXPCInterfaceForCADInterface, __CADDaemonStartedNotification, 
+                       ___GetCalaccessdDatabaseInitOptions, ___GetCalaccessdDatabasePath, 
+                       ___GetCalaccessdServiceName, ___GetCalaccessdUnitTestListenerEndpoint, 
+                       ___IsCalaccessdUnitTesting, ___SetCalaccessdDatabaseInitOptions, 
+                       ___SetCalaccessdDatabasePath, ___SetCalaccessdIsUnitTesting, 
+                       ___SetCalaccessdUnitTestListenerEndpoint, _kCADLogFacility, 
+                       _kCADNullObjectID ]
+    objc-classes:    [ _CADCalendarItemsWithExternalIdentifierPredicate, 
+                       _CADEntityWrapper, _CADEventCreatedFromSuggestionPredicate, 
+                       _CADEventEntityWrapper, _CADEventPredicate, _CADNotifiableEventsPredicate, 
+                       _CADNotificationCenterVisibleEventsPredicate, _CADPredicate, 
+                       _CADRespondedEventsPredicate, _CADServer, _CADTravelEventsPredicate, 
+                       _CADUnacknowledgedEventsPredicate, _CADUnalertedEventsPredicate, 
+                       _CADUpcomingEventsPredicate, _CADXPCProxyHelper, 
+                       _ClientConnection, _EKAlarmOccurrence, _EKMasterEventsPredicate, 
+                       _EKPredicate, _EKReminderPredicate, _EKScheduledReminderPredicate ]
+    objc-ivars:      [ _EKPredicate._shouldLoadDefaultProperties, _EKPredicate._timeZone, 
+                       _EKPredicate._uuid ]
+...

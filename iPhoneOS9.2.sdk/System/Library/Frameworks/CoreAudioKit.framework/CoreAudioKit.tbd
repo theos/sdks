@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/Frameworks/CoreAudioKit.framework/CoreAudioKit
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    objc-classes:    [ _AUAudioUnitRemoteViewController, _AUAudioUnitViewService, 
+                       _AUViewController, _CABTMIDICentralViewController, 
+                       _CABTMIDILocalPeripheralViewController, _CAInterAppAudioSwitcherView, 
+                       _CAInterAppAudioTransportView ]
+...
