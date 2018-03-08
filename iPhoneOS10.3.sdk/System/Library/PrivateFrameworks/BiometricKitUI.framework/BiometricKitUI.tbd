@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _biometric_kit_ui_log, '+[BiometricKitUI sharedInstance]', 
+                       '-[BiometricKitUI _createEnrollUIViewController:]', 
+                       '-[BiometricKitUI _getDefaultEnrollUIViewController:bundleNames:]', 
+                       '-[BiometricKitUI getEnrollUIBundlesNames:]', '-[BiometricKitUI getEnrollUIViewController:bundleName:]', 
+                       '-[BiometricKitUI systemDefaultEnrollUIBundleName:]', 
+                       '-[BiometricKitUIEnrollViewController .cxx_destruct]', 
+                       '-[BiometricKitUIEnrollViewController biometricKit]', 
+                       '-[BiometricKitUIEnrollViewController delegate]', 
+                       '-[BiometricKitUIEnrollViewController propertyForKey:]', 
+                       '-[BiometricKitUIEnrollViewController restartEnroll]', 
+                       '-[BiometricKitUIEnrollViewController setBiometricKit:]', 
+                       '-[BiometricKitUIEnrollViewController setDelegate:]', 
+                       '-[BiometricKitUIEnrollViewController setProperty:forKey:]', 
+                       '___32+[BiometricKitUI sharedInstance]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_literal_global, 
+                       _sharedInstance.creation, _sharedInstance.sharedInstance ]
+    objc-classes:    [ _BiometricKitUI, _BiometricKitUIEnrollViewController ]
+    objc-ivars:      [ _BiometricKitUIEnrollViewController._properties, 
+                       _BiometricKitUIEnrollViewController._biometricKit, 
+                       _BiometricKitUIEnrollViewController._delegate ]
+...

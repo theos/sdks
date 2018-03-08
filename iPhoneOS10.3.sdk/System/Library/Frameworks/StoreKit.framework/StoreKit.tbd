@@ -1,0 +1,40 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: BAF87985-D787-3B31-AEBE-5827D5BA1BBF', 'armv7s: ABDAE6BA-5EDF-3E8E-B035-93327BA299E4', 
+                   'arm64: A314500E-4188-364A-A26B-78A243D7A535' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/StoreKit.framework/StoreKit
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SKCloudServiceCapabilitiesDidChangeNotification, _SKCloudServiceSetupActionSubscribe, 
+                       _SKCloudServiceSetupOptionsActionKey, _SKCloudServiceSetupOptionsAffiliateTokenKey, 
+                       _SKCloudServiceSetupOptionsCampaignTokenKey, _SKCloudServiceSetupOptionsITunesItemIdentifierKey, 
+                       _SKDownloadTimeRemainingUnknown, _SKErrorDomain, _SKGetDataForError, 
+                       _SKGetErrorForData, _SKGetRatingStarsImage, _SKReceiptPropertyIsExpired, 
+                       _SKReceiptPropertyIsRevoked, _SKReceiptPropertyIsVolumePurchase, 
+                       _SKStoreProductAppleCampaignParsec, _SKStoreProductParameterAdvertisingPartnerToken, 
+                       _SKStoreProductParameterAffiliateToken, _SKStoreProductParameterAppleCampaignIdentifier, 
+                       _SKStoreProductParameterCampaignIdentifier, _SKStoreProductParameterCampaignToken, 
+                       _SKStoreProductParameterHighlightedITunesItemIdentifier, _SKStoreProductParameterITunesItemIdentifier, 
+                       _SKStoreProductParameterProviderToken, _SKStoreProductParameterQToken, 
+                       _SKStorefrontIdentifierDidChangeNotification, _SKTerminateForInvalidReceipt, 
+                       _SKUIServiceReviewSandboxMode, _SKXPCCreateCFObjectFromXPCObject, 
+                       _SKXPCCreateXPCObjectFromCFObject, _SKXPCDictionaryCopyCFObject, 
+                       _SKXPCDictionaryCopyCFObjectWithClass, _SKXPCDictionarySetCFObject ]
+    objc-classes:    [ _SKAccountPageViewController, _SKCloudServiceController, _SKCloudServiceSetupConfiguration, 
+                       _SKCloudServiceSetupExtension, _SKCloudServiceSetupReloadContext, 
+                       _SKCloudServiceSetupRemoteViewController, _SKCloudServiceSetupViewController, 
+                       _SKComposeReviewViewController, _SKDownload, _SKDownloadChangeset, 
+                       _SKHandleInvalidReceiptRequest, _SKMutablePayment, _SKPayment, 
+                       _SKPaymentInternal, _SKPaymentQueue, _SKPaymentQueueClient, 
+                       _SKPaymentQueueInternal, _SKPaymentTransaction, _SKPaymentTransactionInternal, 
+                       _SKPrivacyController, _SKProduct, _SKProductInternal, _SKProductsRequest, 
+                       _SKProductsRequestInternal, _SKProductsResponse, _SKProductsResponseInternal, 
+                       _SKReceiptRefreshRequest, _SKRequest, _SKRequestInternal, 
+                       _SKStarRatingAlertController, _SKStarRatingControl, _SKStorePageRequest, 
+                       _SKStorePageViewController, _SKStoreProductActivityViewController, 
+                       _SKStoreProductViewController, _SKStoreReviewController, _SKStoreReviewPresentationWindow, 
+                       _SKStoreReviewViewController, _SKTermsPageViewController, 
+                       __SKStoreProductActivityAnimationController ]
+...

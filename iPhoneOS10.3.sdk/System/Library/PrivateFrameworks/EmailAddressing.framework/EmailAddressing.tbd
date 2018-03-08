@@ -1,0 +1,53 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing
+current-version: 3032.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _EmailAddressingVersionNumber, '+[EAEmailAddressGenerator formattedAddressWithName:email:useQuotes:]', 
+                       '+[EAEmailAddressGenerator stringByTrimmingCommasSpacesQuotesFromString:]', 
+                       '+[EAEmailAddressLists addressDisplayStringWithMaxNumberOfAddresses:fromAddressList:]', 
+                       '+[EAEmailAddressLists addressListFromAddressString:]', 
+                       '+[EAEmailAddressLists addressListFromHeaderValue:]', 
+                       '+[EAEmailAddressLists addressStringFromAddressList:]', 
+                       '+[EAEmailAddressLists componentsSeparatedByCharactersRespectingQuotesAndParens:forString:]', 
+                       '+[EAEmailAddressLists componentsSeparatedByCommaRespectingQuotesAndParensForString:]', 
+                       '+[EAEmailAddressLists displayNameFromAddressList:]', 
+                       '+[EAEmailAddressLists rawAddressListFromFullAddressList:]', 
+                       '+[EAEmailAddressParser _componentsForFullAddress:rawAddress:localPart:domain:]', 
+                       '+[EAEmailAddressParser addressDomainFromAddress:]', 
+                       '+[EAEmailAddressParser addressIsEmptyGroup:]', 
+                       '+[EAEmailAddressParser displayNameFromAddress:]', 
+                       '+[EAEmailAddressParser isLegalEmailAddress:]', 
+                       '+[EAEmailAddressParser localPartFromAddress:]', 
+                       '+[EAEmailAddressParser rawAddressFromFullAddress:]', 
+                       '+[EAEmailAddressParser rawAddressRespectingGroupsFromFullAddress:]', 
+                       '+[EAEmailAddressParser unsafeAddressLocalPartCharacterSet]', 
+                       '+[EmailAddressingFramework bundle]', GCC_except_table10, 
+                       GCC_except_table4, _EmailAddressingVersionString, 
+                       '___34+[EmailAddressingFramework bundle]_block_invoke', 
+                       '___47+[EAEmailAddressParser displayNameFromAddress:]_block_invoke', 
+                       '___50+[EAEmailAddressLists addressListFromHeaderValue:]_block_invoke', 
+                       '___50+[EAEmailAddressParser rawAddressFromFullAddress:]_block_invoke', 
+                       '___58+[EAEmailAddressParser unsafeAddressLocalPartCharacterSet]_block_invoke', 
+                       '___68+[EAEmailAddressGenerator formattedAddressWithName:email:useQuotes:]_block_invoke', 
+                       '___84+[EAEmailAddressLists addressDisplayStringWithMaxNumberOfAddresses:fromAddressList:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.122, ___block_descriptor_tmp.52, 
+                       ___block_descriptor_tmp.75, ___block_literal_global, 
+                       ___block_literal_global, ___block_literal_global, 
+                       ___block_literal_global.53, ___block_literal_global.76, 
+                       ___copy_helper_block_, ___copy_helper_block_, ___destroy_helper_block_, 
+                       ___destroy_helper_block_, '_addressListFromHeaderValue:.nameExtensions', 
+                       '_addressListFromHeaderValue:.onceToken', _bundle.emailAddressingFrameworkBundle, 
+                       _bundle.onceToken, '_componentsSeparatedByCommaRespectingQuotesAndParensForString:.addressCharacterSet', 
+                       '_displayNameFromAddress:.displayNames', '_displayNameFromAddress:.onceToken', 
+                       '_formattedAddressWithName:email:useQuotes:.onceToken', 
+                       '_formattedAddressWithName:email:useQuotes:.requiresQuotes', 
+                       '_rawAddressFromFullAddress:.onceToken', '_rawAddressFromFullAddress:.rawAddresses', 
+                       _unsafeAddressLocalPartCharacterSet.onceToken, _unsafeAddressLocalPartCharacterSet.unsafeAddressLocalPartCharacterSet ]
+    objc-classes:    [ _EAEmailAddressGenerator, _EAEmailAddressLists, 
+                       _EAEmailAddressParser, _EmailAddressingFramework ]
+...

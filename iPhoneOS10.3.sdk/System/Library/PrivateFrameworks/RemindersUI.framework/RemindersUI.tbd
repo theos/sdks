@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RemindersUI.framework/RemindersUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _addRightPaddingToImage, '+[RMUIImageUtilities flatUncompletedCircleWithColor:]', 
+                       '+[RemindersColor colorDotForListColor:]', '+[RemindersColor colorNameForListColor:]', 
+                       '+[RemindersColor colorWellForListColor:]', '+[RemindersColor displayColorArray]', 
+                       '+[RemindersColor displayColorForCalendarColor:]', 
+                       '+[RemindersColor displayColorForListColor:]', '+[RemindersColor filledLetterpressedCircleWithOutlineOfColor:]', 
+                       '+[RemindersColor filledPressedLetterpressedCircleWithOutlineOfColor:]', 
+                       '+[RemindersColor keyColor]', '+[RemindersColor listColorForCalendarColor:]', 
+                       '+[RemindersColor overdueRedColor]', '+[RemindersColor tableCellSelectedGrayColor]', 
+                       '+[RemindersColor tableChevronColor]', '+[RemindersColor tableChevronSelectedColor]', 
+                       '+[RemindersColor tableOutlineColor]', '-[RMUIDetailEditorViewController attachCurrentUserActivity]', 
+                       '-[RMUIDetailEditorViewController init]', '-[RMUIDetailEditorViewController setInitialNotes:]', 
+                       '-[RMUIDetailEditorViewController setInitialTitle:]', 
+                       '-[RMUIDetailEditorViewController setInitialURL:]', 
+                       '-[RMUIUpNextCell .cxx_destruct]', '-[RMUIUpNextCell contentView]', 
+                       '-[RMUIUpNextCell initWithReminder:showRowSeparator:]', 
+                       '-[RMUIUpNextCell leftMarginForTimeViewWidth:]', 
+                       '-[RMUIUpNextCell priorityImageForLevel:withColor:]', 
+                       '-[RMUIUpNextCell rightMarginForTimeViewWidth:]', 
+                       '-[RMUIUpNextCell setFrame:]', '-[RMUIUpNextCell setupConstraints]', 
+                       '-[RMUIUpNextCell timeViewWidth]', '-[RMUIUpNextCell titleStringForReminder:]', 
+                       '-[RMUIUpNextCell updateMaxLayoutWidth]', '-[RMUIUpNextLabel tintColorDidChange]', 
+                       '-[RMUIUpNextRowSeparator tintColorDidChange]', 
+                       GCC_except_table4, '___59-[RMUIDetailEditorViewController attachCurrentUserActivity]_block_invoke', 
+                       '___59-[RMUIDetailEditorViewController attachCurrentUserActivity]_block_invoke.55', 
+                       ___Block_byref_object_copy_, ___Block_byref_object_dispose_, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.61, 
+                       ___copy_helper_block_, ___copy_helper_block_.58, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.59, 
+                       '_colorDotForListColor:._colorDotImages', '_colorNameForListColor:.names', 
+                       '_colorWellForListColor:._colorWellImages', _defaultPriorityForPriorityLevel, 
+                       '_filledLetterpressedCircleWithOutlineOfColor:._images', 
+                       '_filledPressedLetterpressedCircleWithOutlineOfColor:._pressedImages', 
+                       _kNewSpecialColors, _kOldSpecialColors, _kWidgetDisplayColors, 
+                       _priorityLevelForPriority, _priorityLevelForReminderInList, 
+                       _uncoloredPriorityImageForLevelInBundle ]
+    objc-classes:    [ _RMUIDetailEditorViewController, _RMUIImageUtilities, 
+                       _RMUIUpNextCell, _RMUIUpNextLabel, _RMUIUpNextRowSeparator, 
+                       _RemindersColor ]
+    objc-ivars:      [ _RMUIUpNextCell._primaryVibrantView, _RMUIUpNextCell._circleImageView, 
+                       _RMUIUpNextCell._contentView, _RMUIUpNextCell._locationLabel, 
+                       _RMUIUpNextCell._rowSeparator, _RMUIUpNextCell._secondaryVibrantView, 
+                       _RMUIUpNextCell._tertiaryVibrantView, _RMUIUpNextCell._timeLabel, 
+                       _RMUIUpNextCell._titleLabel ]
+...

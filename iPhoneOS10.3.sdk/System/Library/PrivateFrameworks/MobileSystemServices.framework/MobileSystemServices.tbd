@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MOCreateCFTypeFromSerializedBuffer, _MOCreateSerializedData, 
+                       _MOLogClose, _MOLogEnableDiskLogging, _MOLogGetLogLevel, 
+                       _MOLogOpen, _MOLogSetLogLevel, _MOLogWrite, _MOLogWriteV, 
+                       _MOXPCTransportClose, _MOXPCTransportOpen, _MOXPCTransportReceiveMessage, 
+                       _MOXPCTransportResume, _MOXPCTransportRunTransactionalTask, 
+                       _MOXPCTransportSendMessage, _MOXPCTransportSendMessageOnConnection, 
+                       _MOXPCTransportSetConnectionAuthHandler, _MOXPCTransportSetMessageHandler, 
+                       __HandleIncomingMessage, __MOLogGetPreferenceIntValue, 
+                       ___MOLogEnableDiskLogging_block_invoke, ___MOLogOpen_block_invoke, 
+                       ___MOLogWriteV_block_invoke, ___MOXPCTransportClose_block_invoke, 
+                       ___MOXPCTransportOpen_block_invoke, ___MOXPCTransportOpen_block_invoke_2, 
+                       ____HandleIncomingMessage_block_invoke, ____HandleListenerConnection_block_invoke, 
+                       ____HandleListenerConnection_block_invoke.33, ____MOLogLoadPreferences_block_invoke, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.11, ___block_descriptor_tmp.15, 
+                       ___block_descriptor_tmp.15, ___block_descriptor_tmp.26, 
+                       ___block_descriptor_tmp.32, ___block_descriptor_tmp.33, 
+                       ___block_descriptor_tmp.36, ___block_descriptor_tmp.41, 
+                       ___block_literal_global, ___copy_helper_block_, 
+                       ___destroy_helper_block_, _levelNames, _transactionRunner ]
+...

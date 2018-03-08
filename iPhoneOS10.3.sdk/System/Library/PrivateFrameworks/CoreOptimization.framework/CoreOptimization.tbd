@@ -1,0 +1,31 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreOptimization.framework/CoreOptimization
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CoreOptimizationVersionNumber, GCC_except_table0, 
+                       GCC_except_table0, GCC_except_table1, GCC_except_table10, 
+                       GCC_except_table11, GCC_except_table14, GCC_except_table15, 
+                       GCC_except_table2, GCC_except_table4, GCC_except_table4, 
+                       GCC_except_table6, GCC_except_table7, GCC_except_table8, 
+                       GCC_except_table9, _CoreOptimizationVersionString, 
+                       __Z15GradientDescentRNSt3__18valarrayIdEEN16CoreOptimization17ObjectiveFunctionEi, 
+                       __Z4normRKN16CoreOptimization10gradient_tE, __ZN16CoreOptimization4BFGS11GetSolutionEv, 
+                       __ZN16CoreOptimization4BFGS13UpdateHessianERNS_9hessian_tERKNSt3__18valarrayIdEES7_, 
+                       __ZN16CoreOptimization4BFGS16UpdateHessianInvERNS_9hessian_tERKNSt3__18valarrayIdEES7_, 
+                       __ZN16CoreOptimization4BFGS19GoldenSectionSearchERKNSt3__18valarrayIdEES5_b, 
+                       __ZN16CoreOptimization4BFGS20GoldenSectionSearch0ERKNSt3__18valarrayIdEES5_b, 
+                       __ZN16CoreOptimization4BFGS21GoldenSectionSearch_rEddddRKNSt3__18valarrayIdEES5_, 
+                       __ZN16CoreOptimization4BFGS5SolveERKNS_9hessian_tERKNS_10gradient_tERNSt3__18valarrayIdEEb, 
+                       __ZN16CoreOptimization4BFGS8OptimizeEv, __ZN16CoreOptimization4BFGS9Optimize0Ev, 
+                       __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKN16CoreOptimization10gradient_tE, 
+                       __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKN16CoreOptimization9hessian_tE, 
+                       __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKNS_6vectorIdNS_9allocatorIdEEEE, 
+                       __ZlsRNSt3__113basic_ostreamIcNS_11char_traitsIcEEEERKNS_8valarrayIdEE ]
+    weak-def-symbols: [ __ZNSt3__18valarrayIdE6resizeEmd, __ZN16CoreOptimization10gradient_tC2Ei, 
+                        __ZNKSt3__110__val_exprINS_9_BinaryOpINS_4plusIdEENS_8valarrayIdEENS0_INS1_INS_10multipliesIdEES5_NS_13__scalar_exprIdEEEEEEEEEcvS5_Ev, 
+                        __ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_, 
+                        __ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m, 
+                        __ZNSt3__18valarrayIdEC2ERKS1_, ___clang_call_terminate ]
+...

@@ -1,0 +1,55 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXElementInteraction.framework/AXElementInteraction
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AXAXElementInteractionVersionNumber, '+[AXElementInteractionManager sharedManager]', 
+                       '-[AXElementInteractionManager _allowDelegateToDecideElement:]', 
+                       '-[AXElementInteractionManager _clientIdentifier]', 
+                       '-[AXElementInteractionManager _client]', '-[AXElementInteractionManager _handleLayoutChange]', 
+                       '-[AXElementInteractionManager _handleScreenChange]', 
+                       '-[AXElementInteractionManager _highlightElement:]', 
+                       '-[AXElementInteractionManager _initializeAXObserver]', 
+                       '-[AXElementInteractionManager _moveFocusByHitTesting:]', 
+                       '-[AXElementInteractionManager _moveToElement:]', 
+                       '-[AXElementInteractionManager _registerForAXNotifications:]', 
+                       '-[AXElementInteractionManager _sendMessage:withIdentifier:errorHandler:]', 
+                       '-[AXElementInteractionManager _sendMessageWithIdentifier:errorHandler:]', 
+                       '-[AXElementInteractionManager dealloc]', '-[AXElementInteractionManager delegate]', 
+                       '-[AXElementInteractionManager displayCursor]', 
+                       '-[AXElementInteractionManager endInteractionMode]', 
+                       '-[AXElementInteractionManager focusedElement]', 
+                       '-[AXElementInteractionManager init]', '-[AXElementInteractionManager initializeFocus]', 
+                       '-[AXElementInteractionManager performActivate]', 
+                       '-[AXElementInteractionManager performDirectionalNavigation:]', 
+                       '-[AXElementInteractionManager setDelegate:]', '-[AXElementInteractionManager setDisplayCursor:]', 
+                       '-[AXElementInteractionManager startInteractionMode]', 
+                       GCC_except_table9, _AXAXElementInteractionVersionString, 
+                       '___44+[AXElementInteractionManager sharedManager]_block_invoke', 
+                       '___46-[AXElementInteractionManager initializeFocus]_block_invoke', 
+                       '___48-[AXElementInteractionManager setDisplayCursor:]_block_invoke', 
+                       '___49-[AXElementInteractionManager _highlightElement:]_block_invoke', 
+                       '___49-[AXElementInteractionManager endInteractionMode]_block_invoke', 
+                       '___50-[AXElementInteractionManager _handleScreenChange]_block_invoke', 
+                       '___51-[AXElementInteractionManager startInteractionMode]_block_invoke', 
+                       '___54-[AXElementInteractionManager _moveFocusByHitTesting:]_block_invoke', 
+                       '___72-[AXElementInteractionManager _sendMessage:withIdentifier:errorHandler:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.112, 
+                       ___block_descriptor_tmp.13, ___block_descriptor_tmp.154, 
+                       ___block_descriptor_tmp.31, ___block_descriptor_tmp.35, 
+                       ___block_descriptor_tmp.43, ___block_descriptor_tmp.67, 
+                       ___block_descriptor_tmp.89, ___block_literal_global, 
+                       ___block_literal_global.32, ___block_literal_global.36, 
+                       ___block_literal_global.90, ___copy_helper_block_, 
+                       ___copy_helper_block_.109, ___copy_helper_block_.151, 
+                       ___copy_helper_block_.41, ___copy_helper_block_.65, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.110, 
+                       ___destroy_helper_block_.152, ___destroy_helper_block_.42, 
+                       ___destroy_helper_block_.66, __axEventHandler, _sharedManager.Manager, 
+                       _sharedManager.onceToken ]
+    objc-classes:    [ _AXElementInteractionManager ]
+    objc-ivars:      [ _AXElementInteractionManager._focusedElement, _AXElementInteractionManager._axEventObserver, 
+                       _AXElementInteractionManager._client, _AXElementInteractionManager._delegate, 
+                       _AXElementInteractionManager._displayCursor, _AXElementInteractionManager._interactionEnabled ]
+...

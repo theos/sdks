@@ -1,0 +1,15 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WirelessCoexManager.framework/WirelessCoexManager
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WCMEnabled, '-[WCMSetting WCMAvailable]', '-[WCMSetting registerServices:]', 
+                       _WirelessRadioManagerDumpLog, _WirelessRadioManagerSetLogToFile, 
+                       _WirelessRadioManagerSetLogToFile.kLogInfo, _WirelessRadioManagerSetLogToFile.kWirelessRadioManagerDomain, 
+                       _WirelessRadioManagerSetLogToFile.kWirelessRadioManagerLogInfoKeys, 
+                       _WirelessRadioManagerSetLogToFile.kWirelessRadioManagerLogInfoValuesDisable, 
+                       _WirelessRadioManagerSetLogToFile.kWirelessRadioManagerLogInfoValuesEnable, 
+                       _WirelessRadioManagerSetLogToFile.kWirelessRadioManagerPrefChangeNotification ]
+    objc-classes:    [ _WCMSetting ]
+...

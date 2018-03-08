@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/HangTracer.framework/HangTracer
+current-version: 24.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _HTAllowAnyThread, _HTAppActivationEnd, _HTAppActivationEvent, 
+                       _HTAppActivationEvent.__once, _HTAppActivationGenerateAppIdentifier, 
+                       _HTEnabledStateChangedNotification, _HTEnabledUserInfoKey, 
+                       _HTHangEventCreate, _HTIsAppActivationLoggingEnabled, 
+                       _HTIsAppActivationLoggingEnabled.onceToken, _HTResumeHangTracing, 
+                       _HTStartHangTracing, _HTSuspendHangTracing, _HTUpdateHangTracing, 
+                       _HangTracerVersionNumber, _HangTracerVersionString, 
+                       ___HTAppActivationBegin_block_invoke, ___HTAppActivationEnd_block_invoke, 
+                       ___HTAppActivationEvent_block_invoke, ___HTHangEventCreate_block_invoke, 
+                       ___HTIsAppActivationLoggingEnabled_block_invoke, 
+                       ___HTIsAppActivationLoggingEnabled_block_invoke_2, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.114, 
+                       ___block_descriptor_tmp.122, ___block_descriptor_tmp.124, 
+                       ___block_descriptor_tmp.132, ___block_descriptor_tmp.140, 
+                       ___block_descriptor_tmp.142, ___block_descriptor_tmp.156, 
+                       ___block_descriptor_tmp.159, ___block_descriptor_tmp.39, 
+                       ___block_descriptor_tmp.83, ___block_descriptor_tmp.85, 
+                       ___block_literal_global, ___block_literal_global.115, 
+                       ___block_literal_global.123, ___block_literal_global.125, 
+                       ___block_literal_global.141, ___block_literal_global.143, 
+                       ___block_literal_global.84, ___block_literal_global.86, 
+                       ___checkForHang_block_invoke, ___checkPreferences_block_invoke, 
+                       ___checkPreferences_block_invoke_2, ___connectToHangTracer_block_invoke, 
+                       ___connectToHangTracer_block_invoke_2, ___connectToHangTracer_block_invoke_3, 
+                       ___logLevel, _activeActivations, _checkForHang, 
+                       _checkPreferences.onceToken, _connectToHangTracer, 
+                       _connectToHangTracer.onceToken, _defaultThresholdMs, 
+                       _frameworkLock, _hangTracerConnection, _htConnectionQueue, 
+                       _isAppActivationLoggingTaskedOff, _isEnabled, _isEnabledAppActivationLogging, 
+                       _kHTAppActivationFailureReasonWatchdog, _kHTAppActivationKeyBundleID, 
+                       _kHTAppActivationKeyEventToken, _kHTAppActivationKeyFailureReason, 
+                       _kHTAppActivationKeyPID, _kHTAppActivationKeyState, 
+                       _notifyToken, _refreshPreferences, _sharedPage, 
+                       _timebaseConversion ]
+...

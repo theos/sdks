@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerlogControl.framework/PowerlogControl
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PowerlogControlDefaultsChanged, _PowerlogControlEnablePowerLog, 
+                       ___block_descriptor_tmp, ___block_literal_global, 
+                       ___containerPath_block_invoke, __defaultsSetValueForKey, 
+                       _containerPath, _containerPath.containerPath, _containerPath.onceToken ]
+...

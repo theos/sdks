@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 85BE8877-47E7-34C6-88BE-26367AC37ED4', 'armv7s: 1B8764BB-09E7-352F-AA06-E7108ADC0425', 
+                   'arm64: A7A451C4-932F-3441-8080-4A8E536C0000' ]
+platform:        ios
+install-name:    /usr/lib/libAXSafeCategoryBundle.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AXSetUIAXReportSenderErrorLoggerFunction, _AXSetValidationErrorLoggingFunction, 
+                       _UIAccessibilityInstallSafeCategories, _UIAccessibilityInstallSafeCategory ]
+    objc-classes:    [ _UIAccessibilitySafeCategory ]
+...

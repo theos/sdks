@@ -1,0 +1,42 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomReporter.framework/SymptomReporter
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __symptoms_globals_init, ____symptoms_is_daemon_fallback_blacklisted_block_invoke, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.58, 
+                       ___block_descriptor_tmp.69, ___block_literal_global, 
+                       ___block_literal_global, ___ensure_symptom_framework_connect_block_invoke, 
+                       ___framework_creation_queue_block_invoke, ___obtain_symptom_framework_block_invoke, 
+                       ___symptom_transport_connect_block_invoke, __basic_symptom_create, 
+                       __block_invoke.kBlacklistedProcessNameList, __symptoms_is_daemon_fallback_blacklisted, 
+                       __symptoms_is_daemon_fallback_blacklisted.is_fallback_blacklisted, 
+                       __symptoms_is_daemon_fallback_blacklisted.is_media_play, 
+                       __symptoms_is_daemon_fallback_blacklisted.onceToken, 
+                       _connect_symptom_framework, _dump_active_idents, 
+                       _dump_basic_symptom, _dump_creation_filter, _dump_ident, 
+                       _dump_idents, _dump_status, _dump_symptom, _dump_symptom_framework, 
+                       _dump_symptom_state, _dump_system_reporter, _ensure_alert, 
+                       _ensure_sym_ctrl_is_queued, _ensure_symptom_framework_connect, 
+                       _find_symptom_reporter_by_name, _framework_creation_queue.pred, 
+                       _framework_creation_queue.serialization_q, _get_symptom_ctrl, 
+                       _get_symptom_qual_count, _get_symptom_qual_size, 
+                       _handle_symptom, _is_valid_symptom, _is_valid_symptom_ctrl, 
+                       _is_valid_symptom_reporter, _obtain_symptom_framework, 
+                       _read_current_status, _read_symptom, _read_symptoms, 
+                       _reevaluate_sr_symptoms, _send_current, _service_names, 
+                       _set_symptom_verbosity, _set_symtrans_verbosity, 
+                       _sr_log, _sr_log_status_send, _sr_log_symptom, _sr_log_symptom_action, 
+                       _sr_log_xpc_event, _sym_ctrl_dequeue, _symptom_create, 
+                       _symptom_framework_init, _symptom_framework_set_version, 
+                       _symptom_framework_stats, _symptom_free, _symptom_new, 
+                       _symptom_post, _symptom_send, _symptom_send_immediate, 
+                       _symptom_set_additional_digest, _symptom_set_additional_qualifier, 
+                       _symptom_set_qualifier, _symptom_transport_connect, 
+                       _symptom_transport_send, _symptoms_go_multithreaded, 
+                       _symptoms_incoming_message, _symptoms_transport_dropped, 
+                       _symptoms_transport_fastdrop, _update_filter_values, 
+                       _update_globals_for_symptom_removal ]
+...

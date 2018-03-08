@@ -1,0 +1,34 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/InternationalTextSearch.framework/InternationalTextSearch
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ITSCollationContextFreeContextForDatabaseHandle, 
+                       _ITSCopyFTSTableCreateStatementUsingCurrentLanguage, 
+                       _ITSCopyFTSTableCreateStatementWithLanguageAndCollator, 
+                       _ITSCopySearchCollatorForLanguage, _ITSCopyUserLanguage, 
+                       _ITSCreateCollator, _ITSCreateCollatorWithPreferredLocale, 
+                       _ITSCreateSortKey, _ITSFTSIsEnabled, _ITSGetCollationContextDictionary.collalationContextDict, 
+                       _ITSGetCollationContextDictionary.predicate, _ITSGetCollationContextForDatabaseConnectionHandle, 
+                       _ITSRegisterSQLiteICUTokenizer, _ITSSetCollationContextForDatabaseConnectionHandle, 
+                       _ITSSetCollatorOverrideForDatabaseConnectionHandle, 
+                       _ITSSetLocaleOverrideForDatabaseConnectionHandle, 
+                       _ITSTokenListCopyEscapedTokenAtIndex, _ITSTokenListCreate, 
+                       _ITSTokenListCreate.onceToken, _ITSTokenListCreate.sharedSubtokenRegex, 
+                       _ITSTokenListDestroy, _ITSTokenListGetCount, _ITSTokenListGetTokenAtIndex, 
+                       _ITSTokenListGetTokenCollationKeyAtIndex, _ITSTokenListGetTokenCollationKeyLengthAtIndex, 
+                       _ITSTokenListGetTokenEndByteOffsetAtIndex, _ITSTokenListGetTokenRangeAtIndex, 
+                       _ITSTokenListGetTokenStartByteOffsetAtIndex, _ITSTokenListPopulateFromString, 
+                       _ITSTokenListRegisterClass, _ITSTokenListRegisterClass.kITSTokenListClass, 
+                       _ITSTokenListRemoveAllTokens, _ITSTokenizerClose, 
+                       _ITSTokenizerCreate, _ITSTokenizerDestroy, _ITSTokenizerNext, 
+                       _ITSTokenizerOpen, _InternationalTextSearchVersionNumber, 
+                       _InternationalTextSearchVersionString, __AddTokenListEntryForRangeInString, 
+                       ___ITSGetCollationContextDictionary_block_invoke, 
+                       ___ITSTokenListCreate_block_invoke, ___ITSTokenListPopulateFromString_block_invoke, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.29, 
+                       ___block_descriptor_tmp.36, ___block_literal_global, 
+                       ___block_literal_global.37, _gDictionaryMutex, _kITSTokenListRegisterClass, 
+                       _kITSTokenListTypeID ]
+...

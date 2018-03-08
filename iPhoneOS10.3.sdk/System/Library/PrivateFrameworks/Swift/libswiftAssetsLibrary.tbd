@@ -1,0 +1,20 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftAssetsLibrary.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TFE13AssetsLibraryCSo15ALAssetsLibrary24enumerateGroupsWithTypesfTVs6UInt3210usingBlockGSQFTGSqCSo13ALAssetsGroup_GSqGSpV10ObjectiveC8ObjCBool___T__12failureBlockGSQFGSqPs5Error__T___T_, 
+                       '__swift_FORCE_LOAD_$_swiftAssetsLibrary', _block_copy_helper, 
+                       _block_copy_helper.1, _block_descriptor, _block_descriptor.3, 
+                       _block_destroy_helper, _block_destroy_helper.2 ]
+    weak-def-symbols: [ _swift_rt_swift_release, __TTRXFo_oGSqCSo13ALAssetsGroup_dGSqGSpV10ObjectiveC8ObjCBool____XFdCb_dGSqS__dGSqGSpS1_____, 
+                        __TTRXFo_oGSqPs5Error____XFdCb_dGSqCSo7NSError___, 
+                        ___swift_reflection_version, '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_AssetsLibrary', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_AssetsLibrary', 
+                        '__swift_FORCE_LOAD_$_swiftDispatch_$_AssetsLibrary', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_AssetsLibrary', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_AssetsLibrary', 
+                        _swift_rt_swift_retain ]
+...

@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreDuetDebugLogging.framework/CoreDuetDebugLogging
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[CDDebug init]', '-[CDDebug error:]', '-[CDDebug initWithVerboseMode:]', 
+                       '-[CDDebug log:]', _CDDebugErrorStrings ]
+    objc-classes:    [ _CDDebug ]
+    objc-ivars:      [ _CDDebug.verboseMode ]
+...

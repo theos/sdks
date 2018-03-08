@@ -1,0 +1,11 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/FontServices.framework/FontServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _XTCopyAvailableFontURLs, _XTCopyFontWithName, __ZL10GatherURLsPKvS0_Pv, 
+                       __ZL15XTFontURLCreatePK10__CFStringS1_PK14__CFDictionary, 
+                       __ZL21append_escaped_stringP10__CFStringPKS_, __ZZ23XTCopyAvailableFontURLsE10gFontsURLs, 
+                       __ZZ23XTCopyAvailableFontURLsE11gGeneration ]
+...

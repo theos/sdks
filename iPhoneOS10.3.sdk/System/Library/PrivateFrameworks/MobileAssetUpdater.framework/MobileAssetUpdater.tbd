@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileAssetUpdater.framework/MobileAssetUpdater
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _kMobileAssetUpdaterErrorDomain, '-[MobileAssetUpdater assetAvailable]', 
+                       '-[MobileAssetUpdater assetDownloaded]', '-[MobileAssetUpdater assetType]', 
+                       '-[MobileAssetUpdater assetWithMaxVersion:]', '-[MobileAssetUpdater asset]', 
+                       '-[MobileAssetUpdater dealloc]', '-[MobileAssetUpdater doneWithAsset]', 
+                       '-[MobileAssetUpdater downloadAsset:]', '-[MobileAssetUpdater downloadComplete:completion:]', 
+                       '-[MobileAssetUpdater downloadProgress:error:completion:]', 
+                       '-[MobileAssetUpdater filterAsset:osBuild:osVersion:]', 
+                       '-[MobileAssetUpdater filterFoundAssets:]', '-[MobileAssetUpdater findAsset:completion:]', 
+                       '-[MobileAssetUpdater initWithAssetType:]', '-[MobileAssetUpdater log:format:]', 
+                       '-[MobileAssetUpdater logger]', '-[MobileAssetUpdater overrideFile]', 
+                       '-[MobileAssetUpdater overrideQueryPredicateFromDict:]', 
+                       '-[MobileAssetUpdater purgeOverrideFile]', '-[MobileAssetUpdater queryComplete:remote:error:completion:]', 
+                       '-[MobileAssetUpdater queryPredicate]', '-[MobileAssetUpdater query]', 
+                       '-[MobileAssetUpdater requireAssetMetadata]', '-[MobileAssetUpdater setAsset:]', 
+                       '-[MobileAssetUpdater setAssetType:]', '-[MobileAssetUpdater setLogger:]', 
+                       '-[MobileAssetUpdater setOverrideFile:]', '-[MobileAssetUpdater setPurgeOverrideFile:]', 
+                       '-[MobileAssetUpdater setQuery:]', '-[MobileAssetUpdater setRequireAssetMetadata:]', 
+                       '-[MobileAssetUpdater validateAssetAttributes:]', 
+                       '-[MobileAssetUpdater validateAsset]', _ConstructError, 
+                       '___36-[MobileAssetUpdater downloadAsset:]_block_invoke', 
+                       '___40-[MobileAssetUpdater filterFoundAssets:]_block_invoke', 
+                       '___43-[MobileAssetUpdater findAsset:completion:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.132, 
+                       ___block_descriptor_tmp.150, ___copy_helper_block_, 
+                       ___copy_helper_block_.129, ___copy_helper_block_.147, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.130, 
+                       ___destroy_helper_block_.148 ]
+    objc-classes:    [ _MobileAssetUpdater ]
+    objc-ivars:      [ _MobileAssetUpdater._asset, _MobileAssetUpdater._assetDownloaded, 
+                       _MobileAssetUpdater._assetType, _MobileAssetUpdater._logger, 
+                       _MobileAssetUpdater._overrideFile, _MobileAssetUpdater._purgeOverrideFile, 
+                       _MobileAssetUpdater._query, _MobileAssetUpdater._requireAssetMetadata ]
+...

@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/IOCEC.framework/IOCEC
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _IOCECInterfaceCloseReceiveQueue, _IOCECInterfaceCopyProperty, 
+                       _IOCECInterfaceCreate, _IOCECInterfaceCreateWithService, 
+                       _IOCECInterfaceGetTypeID, _IOCECInterfaceListenerCreate, 
+                       _IOCECInterfaceListenerGetTypeID, _IOCECInterfaceListenerRegisterAddInterfaceCallback, 
+                       _IOCECInterfaceListenerScheduleWithDispatchQueue, 
+                       _IOCECInterfaceListenerUnscheduleFromDispatchQueue, 
+                       _IOCECInterfaceOpenReceiveQueue, _IOCECInterfaceReceiveFrame, 
+                       _IOCECInterfaceReceiveFrameAvailable, _IOCECInterfaceRegisterReceiveCallback, 
+                       _IOCECInterfaceRegisterTerminatedCallback, _IOCECInterfaceScheduleWithDispatchQueue, 
+                       _IOCECInterfaceSendFrame, _IOCECInterfaceSetLogicalAddressMask, 
+                       _IOCECInterfaceUnscheduleFromDispatchQueue, ___IOCECInterfaceClass, 
+                       ___IOCECInterfaceFree, ___IOCECInterfaceGeneralInterestNotification, 
+                       ___IOCECInterfaceListenerClass, ___IOCECInterfaceListenerFree, 
+                       ___IOCECInterfaceListenerPublishNotification, ___IOCECInterfaceListenerRegister, 
+                       ___IOCECInterfaceListenerTypeInit, ___IOCECInterfaceReceiveNotification, 
+                       ___IOCECInterfaceRegister, ___IOCECInterfaceRxDispatchSourceCancelledNotification, 
+                       ___IOCECInterfaceTypeInit, ___kIOCECInterfaceListenerTypeID, 
+                       ___kIOCECInterfaceTypeID ]
+...

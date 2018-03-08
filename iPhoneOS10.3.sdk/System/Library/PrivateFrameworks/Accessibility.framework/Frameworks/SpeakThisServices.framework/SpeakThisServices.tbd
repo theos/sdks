@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/SpeakThisServices.framework/SpeakThisServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _STSErrorDomain, '+[SpeakThisServices sharedInstance]', 
+                       '-[SpeakThisServices .cxx_destruct]', '-[SpeakThisServices _clientIdentifier]', 
+                       '-[SpeakThisServices _client]', '-[SpeakThisServices _descriptionForErrorCode:]', 
+                       '-[SpeakThisServices _descriptionForMessageIdentifier:]', 
+                       '-[SpeakThisServices _sendMessage:withIdentifier:errorHandler:]', 
+                       '-[SpeakThisServices _sendMessageWithIdentifier:errorHandler:]', 
+                       '-[SpeakThisServices connectionWithServiceWasInterruptedForUserInterfaceClient:]', 
+                       '-[SpeakThisServices didCancelSpeakThisErrorHandler:]', 
+                       '-[SpeakThisServices fastForward:]', '-[SpeakThisServices pauseSpeaking:]', 
+                       '-[SpeakThisServices resumeSpeaking:]', '-[SpeakThisServices rewind:]', 
+                       '-[SpeakThisServices speakFaster:]', '-[SpeakThisServices speakSlower:]', 
+                       '-[SpeakThisServices speakThisWithOptions:errorHandler:]', 
+                       '-[SpeakThisServices speakThisWithOptions:useAppAtPoint:errorHandler:]', 
+                       '-[SpeakThisServices toggleSpeaking:]', _STSMessageKeyAppPointX, 
+                       _STSMessageKeyAppPointY, _STSMessageKeyOptions, 
+                       _STSMessageReplyKeyErrorCode, '___35+[SpeakThisServices sharedInstance]_block_invoke', 
+                       '___62-[SpeakThisServices _sendMessage:withIdentifier:errorHandler:]_block_invoke', 
+                       '___79-[SpeakThisServices connectionWithServiceWasInterruptedForUserInterfaceClient:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.29, 
+                       ___block_descriptor_tmp.71, ___block_literal_global, 
+                       ___copy_helper_block_, ___copy_helper_block_.68, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.69, 
+                       _sharedInstance.SharedInstance, _sharedInstance.onceToken ]
+    objc-classes:    [ _SpeakThisServices ]
+    objc-ivars:      [ _SpeakThisServices._client ]
+...

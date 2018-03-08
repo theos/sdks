@@ -1,0 +1,57 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MCMErrorDomain, '+[MCMContainer containerWithIdentifier:createIfNecessary:existed:error:]', 
+                       '+[MCMContainer containerWithIdentifier:error:]', 
+                       '+[MCMContainer temporaryContainerWithIdentifier:existed:error:]', 
+                       '+[MCMContainerManager defaultManager]', '-[MCMContainer .cxx_destruct]', 
+                       '-[MCMContainer containerClass]', '-[MCMContainer description]', 
+                       '-[MCMContainer destroyContainerWithCompletion:]', 
+                       '-[MCMContainer diskUsageWithError:]', '-[MCMContainer hash]', 
+                       '-[MCMContainer identifier]', '-[MCMContainer infoValueForKey:error:]', 
+                       '-[MCMContainer info]', '-[MCMContainer initWithIdentifier:createIfNecessary:existed:temp:error:]', 
+                       '-[MCMContainer init]', '-[MCMContainer isEqual:]', 
+                       '-[MCMContainer isTemporary]', '-[MCMContainer recreateDefaultStructureWithError:]', 
+                       '-[MCMContainer regenerateDirectoryUUIDWithError:]', 
+                       '-[MCMContainer setInfoValue:forKey:error:]', '-[MCMContainer url]', 
+                       '-[MCMContainer uuid]', '-[MCMContainer(Internal) _errorOccurred]', 
+                       '-[MCMContainer(Internal) _getContainerClass]', 
+                       '-[MCMContainer(Internal) dealloc]', '-[MCMContainer(Internal) getLowLevelContainerObject]', 
+                       '-[MCMContainer(Internal) initWithIdentifier:userId:uuid:containerClass:error:]', 
+                       '-[MCMContainer(Internal) markDeleted]', '-[MCMContainerManager containerWithContentClass:identifier:createIfNecessary:existed:error:]', 
+                       '-[MCMContainerManager containerWithContentClass:identifier:error:]', 
+                       '-[MCMContainerManager containersWithClass:error:]', 
+                       '-[MCMContainerManager deleteContainers:withCompletion:]', 
+                       '-[MCMContainerManager init]', '-[MCMContainerManager replaceContainer:withContainer:error:]', 
+                       '-[MCMContainerManager replaceContainer:withContainer:error:withCompletion:]', 
+                       '-[MCMContainerManager temporaryContainerWithContentClass:identifier:existed:error:]', 
+                       '-[MCMContainerManager temporaryContainersWithClass:error:]', 
+                       '-[MCMContainerManager(Internal) _containersWithClass:temporary:error:]', 
+                       '-[MCMDataContainer wipeAllMyContainerContent:]', 
+                       GCC_except_table19, GCC_except_table23, _MCMFunctionNameErrorKey, 
+                       _MCMPathArgumentErrorKey, _MCMSourceFileLineErrorKey, 
+                       '___37+[MCMContainerManager defaultManager]_block_invoke', 
+                       '___55-[MCMContainerManager deleteContainers:withCompletion:]_block_invoke', 
+                       '___75-[MCMContainerManager replaceContainer:withContainer:error:withCompletion:]_block_invoke', 
+                       ___Block_byref_object_copy_, ___Block_byref_object_copy_.85, 
+                       ___Block_byref_object_dispose_, ___Block_byref_object_dispose_.86, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.35, 
+                       ___block_descriptor_tmp.44, ___block_literal_global, 
+                       ___copy_helper_block_, ___copy_helper_block_.42, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.43, 
+                       __containerClassForContentClass, _defaultManager.onceToken, 
+                       _defaultManager.sharedInstance ]
+    objc-classes:    [ _MCMAppContainer, _MCMAppDataContainer, _MCMContainer, 
+                       _MCMContainerManager, _MCMDataContainer, _MCMFrameworkContainer, 
+                       _MCMInternalDaemonDataContainer, _MCMPluginKitPluginContainer, 
+                       _MCMPluginKitPluginDataContainer, _MCMSharedDataContainer, 
+                       _MCMSharedSystemDataContainer, _MCMSystemDataContainer, 
+                       _MCMTempDirDataContainer, _MCMVPNPluginContainer, 
+                       _MCMVPNPluginDataContainer, _MCMXPCServiceDataContainer ]
+    objc-ivars:      [ _MCMContainer._thisContainer, _MCMContainer._containerClass, 
+                       _MCMContainer._identifier, _MCMContainer._userId, 
+                       _MCMContainer._uuid ]
+...

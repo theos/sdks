@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppPreference.framework/AppPreference
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AppPreferenceVersionNumber, '+[APRAppConnectionFilter filter]', 
+                       '+[APRAppPreferenceCompute getRankedBundleIdsForPredictions:withFilter:reply:]', 
+                       '+[APRAppPreferenceExpert sharedInstance]', '+[APRIntentFilter filterByIntent:]', 
+                       '-[APRAppPredictions .cxx_destruct]', '-[APRAppPredictions bundleIds]', 
+                       '-[APRAppPredictions error]', '-[APRAppPredictions init]', 
+                       '-[APRAppPreference .cxx_destruct]', '-[APRAppPreference dealloc]', 
+                       '-[APRAppPreference getAppConnectionAppsInto:]', 
+                       '-[APRAppPreference getAppPredictionsForIntent:reply:]', 
+                       '-[APRAppPreference getFeedbackForIntent:forResponse:forFeedback:]', 
+                       '-[APRAppPreference init]', '-[APRAppPreference listener:shouldAcceptNewConnection:]', 
+                       '-[APRAppPreferenceExpert .cxx_destruct]', '-[APRAppPreferenceExpert init]', 
+                       '-[APRBundleSetFilter .cxx_destruct]', '-[APRBundleSetFilter bundleIds]', 
+                       '-[APRBundleSetFilter error]', '-[APRBundleSetFilter includeBundleId:]', 
+                       '-[APRBundleSetFilter initWithBundleIds:error:]', 
+                       GCC_except_table0, _AppPreferenceVersionString, 
+                       '___25-[APRAppPredictions init]_block_invoke', '___34+[APRIntentFilter filterByIntent:]_block_invoke', 
+                       '___40+[APRAppPreferenceExpert sharedInstance]_block_invoke', 
+                       '___45-[APRAppPreference getAppConnectionAppsInto:]_block_invoke', 
+                       '___45-[APRAppPreference getAppConnectionAppsInto:]_block_invoke_2', 
+                       '___53-[APRAppPreference getAppPredictionsForIntent:reply:]_block_invoke', 
+                       '___53-[APRAppPreference getAppPredictionsForIntent:reply:]_block_invoke_2', 
+                       '___55-[APRAppPreference listener:shouldAcceptNewConnection:]_block_invoke', 
+                       '___55-[APRAppPreference listener:shouldAcceptNewConnection:]_block_invoke_2', 
+                       ___Block_byref_object_copy_, ___Block_byref_object_dispose_, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.31, ___block_descriptor_tmp.46, 
+                       ___block_descriptor_tmp.51, ___block_descriptor_tmp.81, 
+                       ___block_descriptor_tmp.84, ___block_literal_global, 
+                       ___block_literal_global, ___block_literal_global.32, 
+                       ___copy_helper_block_, ___copy_helper_block_, ___copy_helper_block_, 
+                       ___copy_helper_block_.49, ___copy_helper_block_.79, 
+                       ___copy_helper_block_.82, ___destroy_helper_block_, 
+                       ___destroy_helper_block_, ___destroy_helper_block_, 
+                       ___destroy_helper_block_.50, ___destroy_helper_block_.80, 
+                       ___destroy_helper_block_.83, _sharedInstance.instance, 
+                       _sharedInstance.onceToken ]
+    objc-classes:    [ _APRAppConnectionFilter, _APRAppPredictions, _APRAppPreference, 
+                       _APRAppPreferenceCompute, _APRAppPreferenceExpert, 
+                       _APRBundleSetFilter, _APRIntentFilter ]
+    objc-ivars:      [ _APRAppPreference._queue, _APRAppPredictions._bundleIds, 
+                       _APRAppPredictions._decCachedConsumer, _APRAppPredictions._error, 
+                       _APRAppPreference._listener, _APRAppPreferenceExpert._xpcServer, 
+                       _APRBundleSetFilter._bundleIds, _APRBundleSetFilter._error ]
+...

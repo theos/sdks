@@ -1,0 +1,58 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GPUCompiler.framework/libComposeFilters.dylib
+current-version: 702.2.62
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _composeImageFilterFunctionsSPI, __ZNSt3__16__treeINS_12__value_typeIPK34ImageFilterFunctionArgumentInfoSPIPN4llvm8ArgumentEEENS_19__map_value_compareIS4_S8_NS_4lessIS4_EELb1EEENS_9allocatorIS8_EEE16__insert_node_atEPNS_15__tree_end_nodeIPNS_16__tree_node_baseIPvEEEERSK_SK_, 
+                       __ZNSt3__16__treeINS_12__value_typeIPK34ImageFilterFunctionArgumentInfoSPIPN4llvm8ArgumentEEENS_19__map_value_compareIS4_S8_NS_4lessIS4_EELb1EEENS_9allocatorIS8_EEE7destroyEPNS_11__tree_nodeIS8_PvEE, 
+                       __ZNSt3__16vectorIPKN4llvm8ArgumentENS_9allocatorIS4_EEE21__push_back_slow_pathIS4_EEvOT_, 
+                       __ZNSt3__16vectorIPKN4llvm8ArgumentENS_9allocatorIS4_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS4_RS6_EE, 
+                       __ZNSt3__16vectorIPN4llvm5ValueENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEvOT_, 
+                       __ZNSt3__16vectorIPN4llvm5ValueENS_9allocatorIS3_EEE21__push_back_slow_pathIS3_EEvOT_, 
+                       __ZNSt3__16vectorIPN4llvm5ValueENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE, 
+                       __ZNSt3__16vectorIPN4llvm8ArgumentENS_9allocatorIS3_EEE21__push_back_slow_pathIS3_EEvOT_, 
+                       __ZNSt3__16vectorIPN4llvm8ArgumentENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE, 
+                       __ZNSt3__1L19piecewise_constructE, __ZZ30composeImageFilterFunctionsSPIEN18RsrcToKArgIndexMapclEN34ImageFilterFunctionArgumentInfoSPI7ArgTypeEj ]
+    weak-def-symbols: [ __ZNSt3__16vectorIPN4llvm8ArgumentENS_9allocatorIS3_EEE7reserveEm, 
+                        __ZN4llvm11raw_ostreamlsENS_9StringRefE, __ZN4llvm12ConstantExpr16getGetElementPtrEPNS_4TypeEPNS_8ConstantES4_bS2_, 
+                        __ZN4llvm13TrackingMDRef7retrackERS0_, __ZN4llvm13TrackingMDRefaSEOS0_, 
+                        __ZN4llvm13isa_impl_wrapINS_14SequentialTypeEPKNS_4TypeES4_E4doitERKS4_, 
+                        __ZN4llvm17GetElementPtrInst16getGEPReturnTypeEPNS_4TypeEPNS_5ValueENS_8ArrayRefIS4_EE, 
+                        __ZN4llvm17GetElementPtrInst6CreateEPNS_4TypeEPNS_5ValueENS_8ArrayRefIS4_EERKNS_5TwineEPNS_11InstructionE, 
+                        __ZN4llvm17GetElementPtrInstC2EPNS_4TypeEPNS_5ValueENS_8ArrayRefIS4_EEjRKNS_5TwineEPNS_11InstructionE, 
+                        __ZN4llvm17GetElementPtrInstD0Ev, __ZN4llvm17GetElementPtrInstD1Ev, 
+                        __ZN4llvm23SmallVectorTemplateBaseINS_12AttributeSetELb1EE9push_backERKS1_, 
+                        __ZN4llvm23SmallVectorTemplateBaseIPNS_8MetadataELb1EE9push_backERKS2_, 
+                        __ZN4llvm5TwineC2EPKc, __ZN4llvm5TwineC2ERKNS_9StringRefE, 
+                        __ZN4llvm8CallInst6CreateEPNS_12FunctionTypeEPNS_5ValueENS_8ArrayRefIS4_EERKNS_5TwineEPNS_11InstructionE, 
+                        __ZN4llvm8MDString3getERNS_11LLVMContextEPKc, __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE10CreateCallEPNS_12FunctionTypeEPNS_5ValueENS_8ArrayRefIS8_EERKNS_5TwineE, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE10CreateCastENS_11Instruction7CastOpsEPNS_5ValueEPNS_4TypeERKNS_5TwineE, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE10CreateLoadEPNS_5ValueERKNS_5TwineE, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE12CreateCondBrEPNS_5ValueEPNS_10BasicBlockES8_PNS_6MDNodeE, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE13CreateRetVoidEv, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE8CreateBrEPNS_10BasicBlockE, 
+                        __ZN4llvm9IRBuilderILb1ENS_14ConstantFolderENS_24IRBuilderDefaultInserterILb1EEEE9CreateGEPEPNS_4TypeEPNS_5ValueES8_RKNS_5TwineE, 
+                        __ZN4llvm9StringRefC2EPKc, __ZNK4llvm13IRBuilderBase20SetInstDebugLocationEPNS_11InstructionE, 
+                        __ZNK4llvm17GetElementPtrInst7getTypeEv, __ZNK4llvm24IRBuilderDefaultInserterILb1EE12InsertHelperEPNS_11InstructionERKNS_5TwineEPNS_10BasicBlockENS_14ilist_iteratorIS2_EE, 
+                        __ZNK4llvm5Twine7isValidEv, __ZNSt3__113__vector_baseINS_3mapIjjNS_4lessIjEENS_9allocatorINS_4pairIKjjEEEEEENS4_IS9_EEED2Ev, 
+                        __ZNSt3__114__split_bufferINS_3mapIjjNS_4lessIjEENS_9allocatorINS_4pairIKjjEEEEEERNS4_IS9_EEED2Ev, 
+                        __ZNSt3__118__tree_left_rotateIPNS_16__tree_node_baseIPvEEEEvT_, 
+                        __ZNSt3__119__tree_right_rotateIPNS_16__tree_node_baseIPvEEEEvT_, 
+                        __ZNSt3__127__tree_balance_after_insertIPNS_16__tree_node_baseIPvEEEEvT_S5_, 
+                        __ZNSt3__16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EENS_19__map_value_compareIS7_S8_NS_4lessIS7_EELb1EEENS5_IS8_EEE7destroyEPNS_11__tree_nodeIS8_PvEE, 
+                        __ZNSt3__16__treeINS_12__value_typeIPK34ImageFilterFunctionArgumentInfoSPIPN4llvm8ArgumentEEENS_19__map_value_compareIS4_S8_NS_4lessIS4_EELb1EEENS_9allocatorIS8_EEE25__emplace_unique_key_argsIS4_JRKNS_21piecewise_construct_tENS_5tupleIJOS4_EEENSK_IJEEEEEENS_4pairINS_15__tree_iteratorIS8_PNS_11__tree_nodeIS8_PvEElEEbEERKT_DpOT0_, 
+                        __ZNSt3__16__treeINS_12__value_typeIjjEENS_19__map_value_compareIjS2_NS_4lessIjEELb1EEENS_9allocatorIS2_EEE16__insert_node_atEPNS_15__tree_end_nodeIPNS_16__tree_node_baseIPvEEEERSE_SE_, 
+                        __ZNSt3__16__treeINS_12__value_typeIjjEENS_19__map_value_compareIjS2_NS_4lessIjEELb1EEENS_9allocatorIS2_EEE25__emplace_unique_key_argsIjJRKNS_21piecewise_construct_tENS_5tupleIJRKjEEENSE_IJEEEEEENS_4pairINS_15__tree_iteratorIS2_PNS_11__tree_nodeIS2_PvEElEEbEERKT_DpOT0_, 
+                        __ZNSt3__16__treeINS_12__value_typeIjjEENS_19__map_value_compareIjS2_NS_4lessIjEELb1EEENS_9allocatorIS2_EEE4findIjEENS_15__tree_iteratorIS2_PNS_11__tree_nodeIS2_PvEElEERKT_, 
+                        __ZNSt3__16__treeINS_12__value_typeIjjEENS_19__map_value_compareIjS2_NS_4lessIjEELb1EEENS_9allocatorIS2_EEE7destroyEPNS_11__tree_nodeIS2_PvEE, 
+                        __ZNSt3__16vectorINS_3mapIjjNS_4lessIjEENS_9allocatorINS_4pairIKjjEEEEEENS4_IS9_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS9_RSA_EE, 
+                        __ZNSt3__16vectorINS_3mapIjjNS_4lessIjEENS_9allocatorINS_4pairIKjjEEEEEENS4_IS9_EEE6resizeEm, 
+                        __ZNSt3__16vectorINS_3mapIjjNS_4lessIjEENS_9allocatorINS_4pairIKjjEEEEEENS4_IS9_EEE8__appendEm, 
+                        __ZNSt3__16vectorIPN4llvm4TypeENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEvOT_, 
+                        __ZNSt3__16vectorIPN4llvm4TypeENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE, 
+                        __ZNSt3__16vectorIPN4llvm5ValueENS_9allocatorIS3_EEE8allocateEm, 
+                        __ZNSt3__16vectorIPN4llvm5ValueENS_9allocatorIS3_EEEC2EmRKS3_, 
+                        __ZTVN4llvm17GetElementPtrInstE ]
+...

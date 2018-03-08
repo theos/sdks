@@ -1,0 +1,58 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CPMLBestShim.framework/CPMLBestShim
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _kCPMLAppTitle, '+[CPMLBestAppShim bestShimWithDBPath:withModelPath:withPListPath:]', 
+                       '+[CPMLBestAppShim bestShim]', '+[CPMLBestBadgeShim bestShimWithDBPath:withModelPath:withPListPath:]', 
+                       '+[CPMLBestBadgeShim bestShim]', '+[CPMLBestShim bestShimWithDBPath:withModelPath:withPListPath:]', 
+                       '+[CPMLBestShim bestShim]', '-[CPMLBestAppShim feedback:withItemsVisited:]', 
+                       '-[CPMLBestAppShim rankItems:withMetaInfo:withNumOfRankItem:]', 
+                       '-[CPMLBestBadgeShim .cxx_destruct]', '-[CPMLBestBadgeShim cdBundleIdAttribute]', 
+                       '-[CPMLBestBadgeShim cdSession]', '-[CPMLBestBadgeShim configPList]', 
+                       '-[CPMLBestBadgeShim feedback:withItemsVisited:]', 
+                       '-[CPMLBestBadgeShim hysteresis]', '-[CPMLBestBadgeShim learnedWeights]', 
+                       '-[CPMLBestBadgeShim rankItems:withMetaInfo:withNumOfRankItem:]', 
+                       '-[CPMLBestBadgeShim setCdBundleIdAttribute:]', 
+                       '-[CPMLBestBadgeShim setCdSession:]', '-[CPMLBestBadgeShim setConfigPList:]', 
+                       '-[CPMLBestBadgeShim setHysteresis:]', '-[CPMLBestBadgeShim setLearnedWeights:]', 
+                       '-[CPMLBestBadgeShim setWeightsPath:]', '-[CPMLBestBadgeShim weightsPath]', 
+                       '-[CPMLBestShim feedback:withItemsVisited:]', '-[CPMLBestShim rankItems:withMetaInfo:withNumOfRankItem:]', 
+                       '-[CPMLBestShimContext .cxx_destruct]', '-[CPMLBestShimContext orderedSuggestions]', 
+                       '-[CPMLBestShimContext setOrderedSuggestions:]', 
+                       GCC_except_table1, GCC_except_table2, GCC_except_table21, 
+                       GCC_except_table22, GCC_except_table5, GCC_except_table6, 
+                       GCC_except_table7, __ZL11__CDSession, __ZL16utileForProposalP12NSDictionaryP7NSArray, 
+                       __ZL17mathematicalModelP7NSArrayP14NSMutableArrayS0_P19NSMutableDictionaryS4_, 
+                       __ZL18__CDDHistoryWindow, '__ZZ68+[CPMLBestBadgeShim bestShimWithDBPath:withModelPath:withPListPath:]E5token', 
+                       '__ZZ68+[CPMLBestBadgeShim bestShimWithDBPath:withModelPath:withPListPath:]E8instance', 
+                       '___60-[CPMLBestAppShim rankItems:withMetaInfo:withNumOfRankItem:]_block_invoke', 
+                       '___66+[CPMLBestAppShim bestShimWithDBPath:withModelPath:withPListPath:]_block_invoke', 
+                       '___68+[CPMLBestBadgeShim bestShimWithDBPath:withModelPath:withPListPath:]_block_invoke', 
+                       ____ZL17mathematicalModelP7NSArrayP14NSMutableArrayS0_P19NSMutableDictionaryS4__block_invoke, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.12, ___block_descriptor_tmp.189, 
+                       ___block_literal_global, ___block_literal_global.13, 
+                       ___copy_helper_block_, ___copy_helper_block_.186, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.187, 
+                       '_bestShimWithDBPath:withModelPath:withPListPath:.instance', 
+                       '_bestShimWithDBPath:withModelPath:withPListPath:.token', 
+                       _kCPMLAppType, _kCPMLAppUsageTime, _kCPMLBTCondition, 
+                       _kCPMLBundleID, _kCPMLChangeCount, _kCPMLCondfidence, 
+                       _kCPMLConfidence, _kCPMLConnectStatus, _kCPMLDeviceType, 
+                       _kCPMLEmergenceHalfLife, _kCPMLEmergenceTime, _kCPMLEventSunrise, 
+                       _kCPMLEventSunset, _kCPMLEventTime, _kCPMLExpertProposal, 
+                       _kCPMLExpertProposalMoot, _kCPMLExpertProposalNoDetail, 
+                       _kCPMLExpertType, _kCPMLExpertTypeByEmergence, _kCPMLExpertTypeByEventTime, 
+                       _kCPMLExpertTypeByPrediction, _kCPMLExpertUniqueX1, 
+                       _kCPMLExpertUniqueX2, _kCPMLExpertUniqueX3, _kCPMLLastModifiedDate, 
+                       _kCPMLRadioCondition, _kCPMLTimeSinceLastUsed, _kCPMLUUID, 
+                       _kCPMLWifiCondition ]
+    objc-classes:    [ _CPMLBestAppShim, _CPMLBestBadgeShim, _CPMLBestShim, 
+                       _CPMLBestShimContext ]
+    objc-ivars:      [ _CPMLBestShimContext.orderedSuggestions, _CPMLBestBadgeShim.cdBundleIdAttribute, 
+                       _CPMLBestBadgeShim.cdSession, _CPMLBestBadgeShim.configPList, 
+                       _CPMLBestBadgeShim.hysteresis, _CPMLBestBadgeShim.learnedWeights, 
+                       _CPMLBestBadgeShim.weightsPath ]
+...

@@ -1,0 +1,12 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/NanoPhonePerfTesting.framework/NanoPhonePerfTesting
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _NanoPhonePerfTestingVersionNumber, '+[NPHPerfTestingUtil LogDictionary:forKey:]', 
+                       _NanoPhonePerfTestingVersionString, ___block_descriptor_tmp, 
+                       ___block_literal_global, ___nph_general_log_block_invoke, 
+                       _nph_general_log, _nph_general_log.__logger, _nph_general_log.onceToken ]
+    objc-classes:    [ _NPHPerfTestingUtil ]
+...

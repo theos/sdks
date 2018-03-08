@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: EA4F40A5-6EE3-3C0D-A5BB-0475A1574D4C', 'armv7s: 2DF28607-B518-3C70-A7E9-A730F199B2E2', 
+                   'arm64: 9D246A63-12AA-308B-A7CC-313C69DD6243' ]
+platform:        ios
+install-name:    /usr/lib/libCTLogHelper.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __ZN21CTLogHelperController13dumpLogs_syncEbb, __ZN21CTLogHelperController13enableLoggingEb, 
+                       __ZN21CTLogHelperController14initilize_syncEv, __ZN21CTLogHelperController18enableLogging_syncEb, 
+                       __ZN21CTLogHelperController18enableLogging_syncEv, __ZN21CTLogHelperController19capabilitiesChangedEv, 
+                       __ZN21CTLogHelperController19disableLogging_syncEv, __ZN21CTLogHelperController23disableWifiLogging_syncEv, 
+                       __ZN21CTLogHelperController24capabilitiesChanged_syncEv, __ZN21CTLogHelperController25readPreferenceForKey_syncEPK10__CFString, 
+                       __ZN21CTLogHelperController26disableThumperLogging_syncEv, 
+                       __ZN21CTLogHelperController26writePreferenceForKey_syncEPK10__CFStringb, 
+                       __ZN21CTLogHelperController6createEv, __ZN21CTLogHelperController8dumpLogsEbb, 
+                       __ZN21CTLogHelperControllerC1Ev, __ZN21CTLogHelperControllerC2Ev, 
+                       __ZN21CTLogHelperControllerD1Ev, __ZN21CTLogHelperControllerD2Ev, 
+                       __ZNK21CTLogHelperController20isWifiLoggingEnabledEv, __ZNK21CTLogHelperController23isThumperLoggingEnabledEv ]
+    objc-classes:    [ _CTLogHelperControllerObjc ]
+...

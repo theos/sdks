@@ -1,0 +1,23 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftPhotos.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TFE6PhotosCSo8PHChange13changeDetailsuRxCSo8PHObjectrfT3forGCSo13PHFetchResultx__GSqGCSo26PHFetchResultChangeDetailsx__, 
+                       __TFE6PhotosCSo8PHChange13changeDetailsuRxCSo8PHObjectrfT3forx_GSqGCSo21PHObjectChangeDetailsx__, 
+                       '__swift_FORCE_LOAD_$_swiftPhotos' ]
+    weak-def-symbols: [ _swift_rt_swift_getInitializedObjCClass, ___swift_reflection_version, 
+                        '__swift_FORCE_LOAD_$_swiftAVFoundation_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftCoreAudio_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftCoreImage_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftCoreLocation_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftCoreMedia_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_Photos', '__swift_FORCE_LOAD_$_swiftDispatch_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftQuartzCore_$_Photos', 
+                        '__swift_FORCE_LOAD_$_swiftUIKit_$_Photos' ]
+...

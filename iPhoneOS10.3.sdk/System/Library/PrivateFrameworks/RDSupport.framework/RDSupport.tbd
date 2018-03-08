@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/RDSupport.framework/RDSupport
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _RDDefaultsAbsolutePath, '-[RDGizmoCommands resetBrightnessToDefaultValue]', 
+                       '-[RDGizmoCommands resetFontSizeToDefaultValue]', 
+                       '-[RDGizmoCommands resetHeySiri]', '-[RDGizmoCommands resetStopwatch]', 
+                       '-[RDGizmoCommands resetStoreDemoData]', _RDStartPlayingDemoMovie, 
+                       _RDStartPlayingDemoMovieNotification, _RDStopPlayingDemoMovie, 
+                       _RDStopPlayingDemoMovieNotification, _RDSupportVersionNumber, 
+                       _RDSupportVersionString, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.10, 
+                       ___block_literal_global, ___block_literal_global, 
+                       ___copy_helper_block_, ___destroy_helper_block_, 
+                       ___forcedBrightnessValue_block_invoke, ___isRunningInF5DemoMode_block_invoke, 
+                       ___shouldAllowForcedBrightness_block_invoke, _forcedBrightnessValue, 
+                       _forcedBrightnessValue.__onceToken, _forcedBrightnessValue._forcedBrightnessValue, 
+                       _isRunningInF5DemoMode, _isRunningInF5DemoMode.__onceToken, 
+                       _isRunningInF5DemoMode._demoModeEnabled, _killProcessNamed, 
+                       _shouldAllowForcedBrightness, _shouldAllowForcedBrightness.__onceToken, 
+                       _shouldAllowForcedBrightness._allowForcedBrightness ]
+    objc-classes:    [ _RDGizmoCommands ]
+...

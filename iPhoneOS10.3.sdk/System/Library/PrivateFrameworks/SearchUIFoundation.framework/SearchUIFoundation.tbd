@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/SearchUIFoundation.framework/SearchUIFoundation
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SearchUIFoundationVersionNumber, '+[SearchUIAppIconImage supportsSecureCoding]', 
+                       '+[SearchUICalendarIconImage supportsSecureCoding]', 
+                       '+[SearchUIURLImage supportsSecureCoding]', '-[SearchUIAppIconImage .cxx_destruct]', 
+                       '-[SearchUIAppIconImage bundleID]', '-[SearchUIAppIconImage encodeWithCoder:]', 
+                       '-[SearchUIAppIconImage initWithBundleID:variant:]', 
+                       '-[SearchUIAppIconImage initWithCoder:]', '-[SearchUIAppIconImage setBundleID:]', 
+                       '-[SearchUIAppIconImage setSize]', '-[SearchUIAppIconImage setVariant:]', 
+                       '-[SearchUIAppIconImage variant]', '-[SearchUICalendarIconImage .cxx_destruct]', 
+                       '-[SearchUICalendarIconImage date]', '-[SearchUICalendarIconImage encodeWithCoder:]', 
+                       '-[SearchUICalendarIconImage initWithCoder:]', '-[SearchUICalendarIconImage initWithDate:variant:]', 
+                       '-[SearchUICalendarIconImage setDate:]', '-[SearchUISFImage .cxx_destruct]', 
+                       '-[SearchUISFImage setUiImage:]', '-[SearchUISFImage uiImage]', 
+                       '-[SearchUIURLImage .cxx_destruct]', '-[SearchUIURLImage encodeWithCoder:]', 
+                       '-[SearchUIURLImage initWithCoder:]', '-[SearchUIURLImage initWithURL:]', 
+                       '-[SearchUIURLImage prepare]', '-[SearchUIURLImage url]', 
+                       _SearchUIFoundationVersionString ]
+    objc-classes:    [ _SearchUIAppIconImage, _SearchUICalendarIconImage, 
+                       _SearchUISFImage, _SearchUIURLImage ]
+    objc-ivars:      [ _SearchUISFImage._uiImage, _SearchUIAppIconImage._bundleID, 
+                       _SearchUIAppIconImage._variant, _SearchUICalendarIconImage._date, 
+                       _SearchUIURLImage._url ]
+...

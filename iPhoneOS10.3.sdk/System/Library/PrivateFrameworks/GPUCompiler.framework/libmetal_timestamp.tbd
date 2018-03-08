@@ -1,0 +1,9 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GPUCompiler.framework/libmetal_timestamp.dylib
+current-version: 702.2.62
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _getMetalTimeStamp ]
+...

@@ -1,0 +1,63 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 2FEE9859-F6F3-3ECA-9D71-ECCE7D84E493', 'armv7s: 0C853894-9C37-3560-9C1C-0A8FA6F55088', 
+                   'arm64: 2637BB1D-0CEE-3C31-A844-3CF02596EEE7' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/UserNotifications.framework/UserNotifications
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _UNDoubleIsZero, _UNEqualBools, _UNEqualDoubles, _UNEqualFloats, 
+                       _UNEqualIntegers, _UNEqualObjects, _UNEqualStrings, _UNErrorDomain, 
+                       _UNFloatIsZero, _UNFormatLocalizedString, _UNFormatLocalizedStringInBundleWithDefaultValue, 
+                       _UNLegacyNotificationTriggerInfiniteRepeatCount, _UNLogAppLaunching, 
+                       _UNLogAttachmentsRepository, _UNLogAttachmentsService, _UNLogDataProvider, 
+                       _UNLogDataProviderFactory, _UNLogDataStore, _UNLogLocalNotifications, 
+                       _UNLogMigration, _UNLogRemoteNotifications, _UNLogSubsystem, 
+                       _UNNotificationActionTextInputButtonTitleKey, _UNNotificationActionTextInputPlaceholderKey, 
+                       _UNNotificationAttachmentFamilyFromTypeIdentifier, _UNNotificationAttachmentFamilyMaximumSize, 
+                       _UNNotificationAttachmentFamilyToString, _UNNotificationAttachmentOptionsThumbnailClippingRectKey, 
+                       _UNNotificationAttachmentOptionsThumbnailHiddenKey, _UNNotificationAttachmentOptionsThumbnailTimeKey, 
+                       _UNNotificationAttachmentOptionsTypeHintKey, _UNNotificationAttachmentOptionsUnitRect, 
+                       _UNNotificationDefaultActionIdentifier, _UNNotificationDismissActionIdentifier, 
+                       _UNNotificationSilenceActionIdentifier, _UNRegisterUserNotificationsLogging, 
+                       _UNSafeCast, _UNSafeCastAny, _UNSafeConforms, _UNUserNotificationServiceName, 
+                       _kUNBulletinContextArchivedUserNotificationKey ]
+    objc-classes:    [ _UNAudioNotificationAttachmentOptions, _UNCalendarNotificationTrigger, 
+                       _UNImageNotificationAttachmentOptions, _UNLegacyNotificationTrigger, 
+                       _UNLocalizedString, _UNLocalizedStringFactory, _UNLocationNotificationTrigger, 
+                       _UNMovieNotificationAttachmentOptions, _UNMutableNotificationContent, 
+                       _UNMutableNotificationSound, _UNNotification, _UNNotificationAction, 
+                       _UNNotificationAttachment, _UNNotificationAttachmentOptions, 
+                       _UNNotificationCategory, _UNNotificationContent, _UNNotificationRequest, 
+                       _UNNotificationResponse, _UNNotificationServiceExtension, 
+                       _UNNotificationSettings, _UNNotificationSound, _UNNotificationTrigger, 
+                       _UNPushNotificationRequestBuilder, _UNPushNotificationTrigger, 
+                       _UNRemoteNotificationRegistrar, _UNSecurityScopedURL, _UNTextInputNotificationAction, 
+                       _UNTextInputNotificationResponse, _UNTimeIntervalNotificationTrigger, 
+                       _UNUserNotificationCenter, _UNUserNotificationService, _UNUserNotificationServiceConnection, 
+                       __UNNotificationServiceExtensionContext, __UNNotificationServiceExtensionHostContext, 
+                       __UNNotificationServiceExtensionRemoteContext ]
+    objc-ivars:      [ _UNNotificationAction._identifier, _UNNotificationAction._options, 
+                       _UNNotificationAction._title, _UNNotificationCategory._actions, 
+                       _UNNotificationCategory._identifier, _UNNotificationCategory._intentIdentifiers, 
+                       _UNNotificationCategory._minimalActions, _UNNotificationCategory._options, 
+                       _UNNotificationContent._attachments, _UNNotificationContent._badge, 
+                       _UNNotificationContent._body, _UNNotificationContent._categoryIdentifier, 
+                       _UNNotificationContent._darwinNotificationName, _UNNotificationContent._darwinSnoozedNotificationName, 
+                       _UNNotificationContent._defaultActionTitle, _UNNotificationContent._fromSnooze, 
+                       _UNNotificationContent._hasDefautAction, _UNNotificationContent._launchImageName, 
+                       _UNNotificationContent._peopleIdentifiers, _UNNotificationContent._shouldAddToNotificationsList, 
+                       _UNNotificationContent._shouldAlwaysAlertWhileAppIsForeground, 
+                       _UNNotificationContent._shouldLockDevice, _UNNotificationContent._shouldPauseMedia, 
+                       _UNNotificationContent._snoozeable, _UNNotificationContent._sound, 
+                       _UNNotificationContent._subtitle, _UNNotificationContent._threadIdentifier, 
+                       _UNNotificationContent._title, _UNNotificationContent._userInfo, 
+                       _UNNotificationRequest._content, _UNNotificationRequest._trigger, 
+                       _UNNotificationSound._alertTopic, _UNNotificationSound._alertType, 
+                       _UNNotificationSound._audioCategory, _UNNotificationSound._audioVolume, 
+                       _UNNotificationSound._maximumDuration, _UNNotificationSound._shouldIgnoreRingerSwitch, 
+                       _UNNotificationSound._shouldRepeat, _UNNotificationSound._toneFileName, 
+                       _UNNotificationSound._toneIdentifier, _UNNotificationSound._toneMediaLibraryItemIdentifier, 
+                       _UNNotificationSound._vibrationIdentifier, _UNNotificationSound._vibrationPattern ]
+...

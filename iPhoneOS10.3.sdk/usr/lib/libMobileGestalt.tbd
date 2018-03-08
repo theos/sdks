@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 55CEE781-256B-3277-B7FB-4FEEC7E44EED', 'armv7s: B60A82EA-FB46-328F-B925-7F5873C69BB6', 
+                   'arm64: 648FED3B-F8AF-3CCD-BD24-E5C65E81CEB5' ]
+platform:        ios
+install-name:    /usr/lib/libMobileGestalt.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MGCancelNotifications, _MGCopyAnswer, _MGCopyAnswerWithError, 
+                       _MGCopyMultipleAnswers, _MGGetBoolAnswer, _MGGetFloat32Answer, 
+                       _MGGetProductType, _MGGetSInt32Answer, _MGGetSInt64Answer, 
+                       _MGGetStringAnswer, _MGIsDeviceOfType, _MGIsDeviceOneOfType, 
+                       _MGIsQuestionValid, _MGRegisterForBulkUpdates, _MGRegisterForUpdates, 
+                       _MGSetAnswer, _MGSetLogHandler, __MGCacheValid, __MGClearInProcessCache, 
+                       __MGCopyDeviceDescription, __MGCopyIteratedDeviceDescription, 
+                       __MGIterateDevices, __MGLog, __MGPrintIteratedDeviceDescription, 
+                       __MGServerCopyAnswerWithError, __MGSetServer, __MGWaitForDevices, 
+                       __MGWriteCache, _kMGQDiskUsageAmountDataAvailable, _kMGQDiskUsageAmountDataReserved, 
+                       _kMGQDiskUsageAmountRestoreAvailable, _kMGQDiskUsageTotalDataAvailable, 
+                       _kMGQDiskUsageTotalDataCapacity, _kMGQDiskUsageTotalDiskCapacity, 
+                       _kMGQDiskUsageTotalSystemAvailable, _kMGQDiskUsageTotalSystemCapacity ]
+...

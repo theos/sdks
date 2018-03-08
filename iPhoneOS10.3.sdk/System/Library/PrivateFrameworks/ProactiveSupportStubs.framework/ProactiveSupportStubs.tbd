@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ProactiveSupportStubs.framework/ProactiveSupportStubs
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ProactiveSupportStubsVersionNumber, '+[_PASDeviceStateStub blockUntilFirstUnlock]', 
+                       '+[_PASDeviceStateStub currentOsBuild]', '+[_PASDeviceStateStub isClassCLocked]', 
+                       '+[_PASDeviceStateStub isConstrainedDevice]', '+[_PASDeviceStateStub isDeviceFormattedForProtection]', 
+                       '+[_PASDeviceStateStub isUnlocked]', '+[_PASDeviceStateStub lockState]', 
+                       '+[_PASDeviceStateStub registerForLockStateChangeNotifications:]', 
+                       '+[_PASDeviceStateStub runBlockWhenDeviceIsClassCUnlocked:]', 
+                       '+[_PASDeviceStateStub runLockStateChangeBlocks]', 
+                       '+[_PASDeviceStateStub setClassCLocked:]', '+[_PASDeviceStateStub setCurrentOsBuild:]', 
+                       '+[_PASDeviceStateStub setDeviceFormattedForProtection:]', 
+                       '+[_PASDeviceStateStub setIsConstrainedDevice:]', 
+                       '+[_PASDeviceStateStub setLockState:]', '+[_PASDeviceStateStub unregisterForLockStateChangeNotifications:]', 
+                       _ProactiveSupportStubsVersionString, '___32+[_PASDeviceStateStub lockState]_block_invoke', 
+                       '___39+[_PASDeviceStateStub setClassCLocked:]_block_invoke', 
+                       '___44+[_PASDeviceStateStub blockUntilFirstUnlock]_block_invoke', 
+                       '___53+[_PASDeviceStateStub isDeviceFormattedForProtection]_block_invoke', 
+                       '___58+[_PASDeviceStateStub runBlockWhenDeviceIsClassCUnlocked:]_block_invoke', 
+                       '___63+[_PASDeviceStateStub registerForLockStateChangeNotifications:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.1, 
+                       ___block_descriptor_tmp.12, ___block_descriptor_tmp.16, 
+                       ___block_descriptor_tmp.3, ___block_descriptor_tmp.32, 
+                       ___block_literal_global, ___block_literal_global.17, 
+                       ___block_literal_global.2, ___block_literal_global.33, 
+                       ___block_literal_global.4, ___copy_helper_block_, 
+                       ___destroy_helper_block_, __callbackMap, __classCLocked, 
+                       __constrainedDevice, __currentOsBuild, __deviceFormattedForProtection, 
+                       __lockState, _isDeviceFormattedForProtection.onceToken, 
+                       _lockState.onceToken, '_registerForLockStateChangeNotifications:.onceToken', 
+                       '_runBlockWhenDeviceIsClassCUnlocked:.allBlocks', 
+                       '_runBlockWhenDeviceIsClassCUnlocked:.onceToken' ]
+    objc-classes:    [ __PASDeviceStateStub ]
+...

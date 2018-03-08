@@ -1,0 +1,38 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftQuartzCore.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TFE10QuartzCoreVSC13CATransform3D19_bridgeToObjectiveCfT_CSo7NSValue, 
+                       __TMRaVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCore, 
+                       __TTSf4g_d___TZFE10QuartzCoreVSC13CATransform3D36_unconditionallyBridgeFromObjectiveCfGSqCSo7NSValue_S0_, 
+                       __TTSf4g_n_d___TZFE10QuartzCoreVSC13CATransform3D34_conditionallyBridgeFromObjectiveCfTCSo7NSValue6resultRGSqS0___Sb, 
+                       __TTWVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCoreFS0_19_bridgeToObjectiveCfT_wx15_ObjectiveCType, 
+                       __TTWVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCoreZFS0_26_forceBridgeFromObjectiveCfTwx15_ObjectiveCType6resultRGSqx__T_, 
+                       __TTWVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCoreZFS0_34_conditionallyBridgeFromObjectiveCfTwx15_ObjectiveCType6resultRGSqx__Sb, 
+                       __TTWVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCoreZFS0_36_unconditionallyBridgeFromObjectiveCfGSqwx15_ObjectiveCType_x, 
+                       __TWPVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCore, 
+                       __TWaVSC13CATransform3Ds21_ObjectiveCBridgeable10QuartzCore, 
+                       __TZFE10QuartzCoreVSC13CATransform3D26_forceBridgeFromObjectiveCfTCSo7NSValue6resultRGSqS0___T_, 
+                       __TZFE10QuartzCoreVSC13CATransform3D34_conditionallyBridgeFromObjectiveCfTCSo7NSValue6resultRGSqS0___Sb, 
+                       __TZFE10QuartzCoreVSC13CATransform3D36_unconditionallyBridgeFromObjectiveCfGSqCSo7NSValue_S0_, 
+                       '__swift_FORCE_LOAD_$_swiftQuartzCore' ]
+    weak-def-symbols: [ __TwXXVSC13CATransform3D, __TMLCSo7NSValue, __TMRfCSo7NSValue, 
+                        __TMRsCSo7NSValue, __TMVSC13CATransform3D, __TMaCSo7NSValue, 
+                        __TMnVSC13CATransform3D, __TWVVSC13CATransform3D, 
+                        __TwCPVSC13CATransform3D, __TwCpVSC13CATransform3D, 
+                        __TwTkVSC13CATransform3D, __TwalVSC13CATransform3D, 
+                        __TwdeVSC13CATransform3D, __TwprVSC13CATransform3D, 
+                        ___swift_copy_outline_pointer, ___swift_memcpy128_8, 
+                        ___swift_memcpy_array128_8, ___swift_memmove_array128_8, 
+                        ___swift_noop_void_return, ___swift_reflection_version, 
+                        '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_QuartzCore', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_QuartzCore', 
+                        '__swift_FORCE_LOAD_$_swiftDispatch_$_QuartzCore', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_QuartzCore', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_QuartzCore', 
+                        _swift_rt_swift_getInitializedObjCClass, _swift_rt_swift_slowAlloc, 
+                        _swift_rt_swift_slowDealloc ]
+...
