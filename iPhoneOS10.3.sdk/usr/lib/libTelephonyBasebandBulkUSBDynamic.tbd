@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 5395068D-0439-3181-940B-B251BEA6C336', 'armv7s: 79987F5A-F4E6-35F5-B805-9896A2D26DA5', 
+                   'arm64: 11FBB736-6D7C-3BBA-AD8F-598DE35BDFBF' ]
+platform:        ios
+install-name:    /usr/lib/libTelephonyBasebandBulkUSBDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _TelephonyBasebandBulkUSBTransportCreate, _TelephonyBasebandBulkUSBTransportGetCookies, 
+                       _TelephonyBasebandBulkUSBTransportGetDeviceName, _TelephonyBasebandBulkUSBTransportGetInterface, 
+                       _TelephonyBasebandBulkUSBTransportGetMaxWritePacketSize, _TelephonyBasebandBulkUSBTransportGetReadPipeNumber, 
+                       _TelephonyBasebandBulkUSBTransportGetVendorIDAndProductID, 
+                       _TelephonyBasebandBulkUSBTransportGetWritePipeNumber, _TelephonyBasebandBulkUSBTransportInitParameters, 
+                       _kTransportConfigNoZLP ]
+...

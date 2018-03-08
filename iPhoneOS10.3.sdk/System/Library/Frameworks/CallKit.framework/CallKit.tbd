@@ -1,0 +1,36 @@
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 25700295-D128-3925-BA3B-2F54C44C1F16', 'armv7s: 2C3EFE14-332C-3115-93B4-67FEBB1B727C', 
+                   'arm64: 856F64D2-DFC5-399E-9C01-A9B7CEA8560F' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/CallKit.framework/CallKit
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CXCallDirectoryDefaultHostBundleIdentifier, _CXCallDirectoryDefaultHostServiceName, 
+                       _CXCallDirectoryMaintenanceHostBundleIdentifier, _CXCallDirectoryMaintenanceHostServiceName, 
+                       _CXCallDirectoryManagerIdentificationEntriesChangedNotification, 
+                       _CXCallDirectoryStoreExtensionsChangedNotification, _CXCallDirectoryStoreMigratorLatestSchemaVersion, 
+                       _CXErrorDomain, _CXErrorDomainCallDirectoryManager, _CXErrorDomainCallDirectoryStore, 
+                       _CXErrorDomainIncomingCall, _CXErrorDomainRequestTransaction ]
+    objc-classes:    [ _CXAction, _CXAnswerCallAction, _CXCall, _CXCallAction, _CXCallActionResponse, 
+                       _CXCallController, _CXCallControllerHost, _CXCallDirectoryBlockingEntryData, 
+                       _CXCallDirectoryBlockingEntryMutableData, _CXCallDirectoryEntryData, 
+                       _CXCallDirectoryExtension, _CXCallDirectoryExtensionContext, 
+                       _CXCallDirectoryExtensionManager, _CXCallDirectoryHost, _CXCallDirectoryIdentificationEntry, 
+                       _CXCallDirectoryIdentificationEntryData, _CXCallDirectoryIdentificationEntryMutableData, 
+                       _CXCallDirectoryManager, _CXCallDirectoryNSExtensionManager, 
+                       _CXCallDirectoryProvider, _CXCallDirectorySanitizer, _CXCallDirectoryStore, 
+                       _CXCallDirectoryStoreExtension, _CXCallDirectoryStoreIdentificationEntry, 
+                       _CXCallDirectoryStoreMigrationResult, _CXCallDirectoryStoreMigrator, 
+                       _CXCallFailureContext, _CXCallObserver, _CXCallSource, _CXCallSourceManager, 
+                       _CXCallUpdate, _CXEndCallAction, _CXExtensionCallSource, _CXExtensionProvider, 
+                       _CXHandle, _CXHandoffContext, _CXInProcessCallSource, _CXInProcessProvider, 
+                       _CXLabeledHandle, _CXPlayDTMFCallAction, _CXProvider, _CXProviderConfiguration, 
+                       _CXProviderExtensionContext, _CXProviderExtensionHostContext, 
+                       _CXProviderExtensionVendorContext, _CXPullCallAction, _CXSendMMIOrUSSDCodeAction, 
+                       _CXSetGroupCallAction, _CXSetHeldCallAction, _CXSetMutedCallAction, 
+                       _CXSetRelayingCallAction, _CXSetSendingVideoCallAction, _CXSetVideoPresentationSizeCallAction, 
+                       _CXSetVideoPresentationStateCallAction, _CXStartCallAction, 
+                       _CXTransaction, _CXTransactionGroup, _CXXPCCallSource, _CXXPCProvider ]
+...
