@@ -1,0 +1,56 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserNotificationServices.framework/UserNotificationServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[UNSNotificationScheduler init]', '-[UNSNotificationScheduler .cxx_destruct]', 
+                       '-[UNSNotificationScheduler _addScheduledLocalNotifications:withCompletion:]', 
+                       '-[UNSNotificationScheduler _cancelScheduledLocalNotifications:withCompletion:]', 
+                       '-[UNSNotificationScheduler addScheduledLocalNotifications:]', 
+                       '-[UNSNotificationScheduler addScheduledLocalNotifications:waitUntilDone:]', 
+                       '-[UNSNotificationScheduler bundleIdentifier]', 
+                       '-[UNSNotificationScheduler cancelAllScheduledLocalNotifications]', 
+                       '-[UNSNotificationScheduler cancelScheduledLocalNotifications:]', 
+                       '-[UNSNotificationScheduler cancelScheduledLocalNotifications:waitUntilDone:]', 
+                       '-[UNSNotificationScheduler dealloc]', '-[UNSNotificationScheduler delegate]', 
+                       '-[UNSNotificationScheduler initWithBundleIdentifier:]', 
+                       '-[UNSNotificationScheduler scheduledLocalNotificationsWithResult:]', 
+                       '-[UNSNotificationScheduler scheduledLocalNotifications]', 
+                       '-[UNSNotificationScheduler setBundleIdentifier:]', 
+                       '-[UNSNotificationScheduler setDelegate:]', '-[UNSNotificationScheduler setScheduledLocalNotifications:]', 
+                       '-[UNSNotificationScheduler setUserNotificationCenter:]', 
+                       '-[UNSNotificationScheduler snoozeScheduledLocalNotifications:]', 
+                       '-[UNSNotificationScheduler snoozeScheduledLocalNotifications:withCompletion:]', 
+                       '-[UNSNotificationScheduler userNotificationCenter:didChangePendingNotificationRequests:]', 
+                       '-[UNSNotificationScheduler userNotificationCenter:didDeliverNotifications:]', 
+                       '-[UNSNotificationScheduler userNotificationCenter]', 
+                       GCC_except_table7, '___55-[UNSNotificationScheduler scheduledLocalNotifications]_block_invoke', 
+                       '___55-[UNSNotificationScheduler scheduledLocalNotifications]_block_invoke_2', 
+                       '___62-[UNSNotificationScheduler snoozeScheduledLocalNotifications:]_block_invoke', 
+                       '___66-[UNSNotificationScheduler scheduledLocalNotificationsWithResult:]_block_invoke', 
+                       '___73-[UNSNotificationScheduler addScheduledLocalNotifications:waitUntilDone:]_block_invoke', 
+                       '___73-[UNSNotificationScheduler addScheduledLocalNotifications:waitUntilDone:]_block_invoke.57', 
+                       '___73-[UNSNotificationScheduler addScheduledLocalNotifications:waitUntilDone:]_block_invoke_2', 
+                       '___76-[UNSNotificationScheduler cancelScheduledLocalNotifications:waitUntilDone:]_block_invoke', 
+                       '___76-[UNSNotificationScheduler cancelScheduledLocalNotifications:waitUntilDone:]_block_invoke.97', 
+                       '___76-[UNSNotificationScheduler cancelScheduledLocalNotifications:waitUntilDone:]_block_invoke_2', 
+                       ___Block_byref_object_copy_, ___Block_byref_object_dispose_, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.37, 
+                       ___block_descriptor_tmp.43, ___block_descriptor_tmp.51, 
+                       ___block_descriptor_tmp.56, ___block_descriptor_tmp.58, 
+                       ___block_descriptor_tmp.61, ___block_descriptor_tmp.91, 
+                       ___block_descriptor_tmp.96, ___block_descriptor_tmp.98, 
+                       ___block_literal_global, ___block_literal_global.62, 
+                       ___block_literal_global.99, ___copy_helper_block_, 
+                       ___copy_helper_block_.35, ___copy_helper_block_.40, 
+                       ___copy_helper_block_.48, ___copy_helper_block_.54, 
+                       ___copy_helper_block_.89, ___copy_helper_block_.94, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.36, 
+                       ___destroy_helper_block_.41, ___destroy_helper_block_.49, 
+                       ___destroy_helper_block_.55, ___destroy_helper_block_.90, 
+                       ___destroy_helper_block_.95 ]
+    objc-classes:    [ _UNSNotificationScheduler ]
+    objc-ivars:      [ _UNSNotificationScheduler._userNotificationCenter, 
+                       _UNSNotificationScheduler._bundleIdentifier, _UNSNotificationScheduler._delegate ]
+...

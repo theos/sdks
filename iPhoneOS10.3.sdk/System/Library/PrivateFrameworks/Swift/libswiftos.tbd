@@ -1,0 +1,51 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftos.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_, 
+                       __TF2osg16OS_LOG_TYPE_INFOVSC9OSLogType, __TF2osg17OS_LOG_TYPE_DEBUGVSC9OSLogType, 
+                       __TF2osg17OS_LOG_TYPE_ERRORVSC9OSLogType, __TF2osg17OS_LOG_TYPE_FAULTVSC9OSLogType, 
+                       __TF2osg19OS_LOG_TYPE_DEFAULTVSC9OSLogType, __TFE2osCSo5OSLogCfT9subsystemSS8categorySS_S0_, 
+                       __TFE2osCSo5OSLogau7defaultS0_, __TFE2osCSo5OSLogau8disabledS0_, 
+                       __TFE2osCSo5OSLogcfT9subsystemSS8categorySS_S0_, 
+                       __TFE2osVSC9OSLogTypeau4infoS0_, __TFE2osVSC9OSLogTypeau5debugS0_, 
+                       __TFE2osVSC9OSLogTypeau5errorS0_, __TFE2osVSC9OSLogTypeau5faultS0_, 
+                       __TFE2osVSC9OSLogTypeau7defaultS0_, __TIF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_A0_, 
+                       __TIF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_A1_, 
+                       __TIF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_A2_, 
+                       __TPA__TFF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_U_FGSRVs5UInt8_T_, 
+                       __TPA__TFF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_U_FGSRVs5UInt8_T_.4, 
+                       __TPA__TFFF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_U_FGSRVs5UInt8_T_U_FVs14CVaListPointerT_, 
+                       __TTSf4g__TIF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_A1_, 
+                       __TTSf4n_n_g_n_g___TF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_, 
+                       __TZvE2osCSo5OSLog7defaultS0_, __TZvE2osCSo5OSLog8disabledS0_, 
+                       __TZvE2osVSC9OSLogType4infoS0_, __TZvE2osVSC9OSLogType5debugS0_, 
+                       __TZvE2osVSC9OSLogType5errorS0_, __TZvE2osVSC9OSLogType5faultS0_, 
+                       __TZvE2osVSC9OSLogType7defaultS0_, __os_log_encode_arg, 
+                       __os_trace_temporary_resource_shortage, '__swift_FORCE_LOAD_$_swiftos', 
+                       __swift_os_log, __swift_os_log_default, __swift_os_log_reportError, 
+                       _globalinit_33_FFAFA1212782D465D30AF9C9B227C796_func5, 
+                       _globalinit_33_FFAFA1212782D465D30AF9C9B227C796_func6, 
+                       _globalinit_33_FFAFA1212782D465D30AF9C9B227C796_token5, 
+                       _globalinit_33_FFAFA1212782D465D30AF9C9B227C796_token6, 
+                       _os_trace_blob_add_slow, _os_trace_blob_destroy_slow, 
+                       _os_trace_blob_detach, _os_trace_blob_grow ]
+    weak-def-symbols: [ __TTSf1n_cl39_TTRXFo_dGSRVs5UInt8___XFo_dGSRS___iT__XFo_dGSRVs5UInt8____n___TTSg5T____TFVs12StaticString14withUTF8BufferurfFGSRVs5UInt8_xx, 
+                        __TFF2os6os_logFtVs12StaticString3dsoGSqSV_3logCSo5OSLog4typeVSC9OSLogTypeGSaPs7CVarArg___T_U_FGSRVs5UInt8_T_, 
+                        __TMLGCs23_ContiguousArrayStorageVs4Int8_, __TMRbVSC9OSLogType, 
+                        __TMRfCSo5OSLog, __TMRsCSo5OSLog, __TTSf1n_n_cl41_TTRXFo_dVs14CVaListPointer__XFo_dS__iT__XFo_dVs14CVaListPointer_____TTSg5T____TFs10withVaListurFTGSaPs7CVarArg__FVs14CVaListPointerx_x, 
+                        __TTSfq4n_n_d___TTSgq5Vs4Int8___TFVs22_ContiguousArrayBufferCfT19_uninitializedCountSi15minimumCapacitySi_GS_x_, 
+                        __TTSfq4n_n_n_d_n___TTSgq5GVs22_ContiguousArrayBufferVs4Int8_GS_S0__s20_ArrayBufferProtocols_GVs14_IgnorePointerS0__GS2_S0__s16_PointerFunctions___TFEsPs20_ArrayBufferProtocol22_arrayOutOfPlaceUpdateuRd__s16_PointerFunctionwx7Elementzwd__7ElementrfTRGVs22_ContiguousArrayBufferwxS1__SiSiqd___T_, 
+                        __TTSfq4s___TFSSg11utf8CStringGVs15ContiguousArrayVs4Int8_, 
+                        __TTSfq4s_s_n___TTSgq5VSS8UTF8ViewS_s10_Indexables___TFEsPs10_Indexable8distancefT4fromwx5Index2towxS0__wx13IndexDistance, 
+                        __TTSgq5GVs22_ContiguousArrayBufferVs4Int8_GS_S0__s20_ArrayBufferProtocols___TFEsPs20_ArrayBufferProtocol31_forceCreateUniqueMutableBufferfT17countForNewBufferSi14minNewCapacitySi_GVs22_ContiguousArrayBufferwx7Element_, 
+                        __TTSgq5Vs4Int8___TFVs15ContiguousArray16_copyToNewBufferfT8oldCountSi_T_, 
+                        ___swift_reflection_version, '__swift_FORCE_LOAD_$_swiftDarwin_$_os', 
+                        '__swift_FORCE_LOAD_$_swiftDispatch_$_os', '__swift_FORCE_LOAD_$_swiftObjectiveC_$_os', 
+                        _swift_rt_swift_allocObject, _swift_rt_swift_deallocObject, 
+                        _swift_rt_swift_isUniquelyReferenced_nonNull_native, 
+                        _swift_rt_swift_release, _swift_rt_swift_retain ]
+...

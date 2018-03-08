@@ -1,0 +1,37 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DABookmarkDAV.framework/DABookmarkDAV
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[BookmarkDAVAccount initWithBackingAccountInfo:]', 
+                       '+[BookmarkDAVLocalDBHelper sharedInstance]', '-[BookmarkDAVAccount .cxx_destruct]', 
+                       '-[BookmarkDAVAccount _validationErrorFromRawError:]', 
+                       '-[BookmarkDAVAccount bookmarkDAVAccountVersion]', 
+                       '-[BookmarkDAVAccount checkValidityTaskGroup]', 
+                       '-[BookmarkDAVAccount coreDAVLogDiagnosticMessage:atLevel:]', 
+                       '-[BookmarkDAVAccount coreDAVLogLevel]', '-[BookmarkDAVAccount coreDAVLogTransmittedDataPartial:]', 
+                       '-[BookmarkDAVAccount coreDAVOutputLevel]', '-[BookmarkDAVAccount coreDAVTransmittedDataFinished]', 
+                       '-[BookmarkDAVAccount curLogger]', '-[BookmarkDAVAccount dealloc]', 
+                       '-[BookmarkDAVAccount discoverInitialPropertiesWithConsumer:]', 
+                       '-[BookmarkDAVAccount discoveryTask:gotAccountInfo:error:]', 
+                       '-[BookmarkDAVAccount handleTrustChallenge:]', '-[BookmarkDAVAccount isEqualToAccount:]', 
+                       '-[BookmarkDAVAccount localizedIdenticalAccountFailureMessage]', 
+                       '-[BookmarkDAVAccount localizedInvalidPasswordMessage]', 
+                       '-[BookmarkDAVAccount noteHomeSetOnDifferentHost:]', 
+                       '-[BookmarkDAVAccount onBehalfOfBundleIdentifier]', 
+                       '-[BookmarkDAVAccount promptUserForNewCoreDAVPasswordWithCompletionBlock:]', 
+                       '-[BookmarkDAVAccount serverComplianceClasses]', 
+                       '-[BookmarkDAVAccount serverRoot]', '-[BookmarkDAVAccount setCheckValidityTaskGroup:]', 
+                       '-[BookmarkDAVAccount setCurLogger:]', '-[BookmarkDAVAccount setServerComplianceClasses:]', 
+                       '-[BookmarkDAVAccount shouldLogTransmittedData]', 
+                       '-[BookmarkDAVAccount spinnerIdentifiers]', '-[BookmarkDAVAccount taskManager]', 
+                       '-[BookmarkDAVAccount triggerOSLogFault]', '-[BookmarkDAVAccount userAgentHeader]', 
+                       '-[BookmarkDAVAccount wellKnownPaths]', '-[DAAccount(BookmarkDAVExtension) isBookmarkDAVAccount]', 
+                       '___73-[BookmarkDAVAccount promptUserForNewCoreDAVPasswordWithCompletionBlock:]_block_invoke', 
+                       ___block_descriptor_tmp, ___copy_helper_block_, 
+                       ___destroy_helper_block_ ]
+    objc-classes:    [ _BookmarkDAVAccount, _BookmarkDAVLocalDBHelper ]
+    objc-ivars:      [ _BookmarkDAVAccount._checkValidityTaskGroup, _BookmarkDAVAccount._bookmarkDAVAccountVersion, 
+                       _BookmarkDAVAccount._curLogger ]
+...

@@ -1,0 +1,16 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/PowerlogDatabaseReader.framework/PowerlogDatabaseReader
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _PowerlogDatabaseReaderVersionNumber, '-[PLDatabaseReader dbConnection]', 
+                       '-[PLDatabaseReader dealloc]', '-[PLDatabaseReader initWithDatabaseFile:]', 
+                       '-[PLDatabaseReader openDatabaseFile:]', '-[PLDatabaseReader performStatement:]', 
+                       '-[PLDatabaseReader prepareStatementAndPerformWithString:]', 
+                       '-[PLDatabaseReader setDbConnection:]', '-[PLDatabaseReader stringValueOfTable:]', 
+                       '-[PLDatabaseReader tableNamesFromDatabase]', GCC_except_table0, 
+                       _PowerlogDatabaseReaderVersionString ]
+    objc-classes:    [ _PLDatabaseReader ]
+    objc-ivars:      [ _PLDatabaseReader._dbConnection ]
+...

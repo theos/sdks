@@ -1,0 +1,21 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileDelete.framework/MobileDelete
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _MRMAllowAutoPurge, _MRMDeleteCancelFreeupBytes, 
+                       _MRMDeleteCopyApproximatePurgeableSpace, _MRMDeleteCouldFreeupBytes, 
+                       _MRMDeleteFreeupBytes, _MRMDoNotAutoPurge, ___MRMDeleteCancelFreeupBytes_block_invoke, 
+                       ___MRMDeleteFreeupBytes_block_invoke, ___MRMDeleteFreeupBytes_block_invoke_2, 
+                       ___MRMDeleteFreeupBytes_block_invoke_3, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.30, 
+                       ___block_descriptor_tmp.31, ___block_descriptor_tmp.32, 
+                       ___block_descriptor_tmp.34, ___block_literal_global, 
+                       ___block_literal_global, ___block_literal_global.35, 
+                       ___getLogHandle_block_invoke, ___getTokenQueue_block_invoke, 
+                       _call_and_response, _cancelPurgeWithToken, _create_dict, 
+                       _gTokens, _getLogHandle, _getLogHandle.gLogHandle, 
+                       _getLogHandle.once, _getTokenQueue.gTokenQueue, 
+                       _getTokenQueue.onceToken, _perform_command ]
+...

@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _AIDAAccountPropertyAltDSID, '-[ACAccount(AppleIDAuthentication) aida_alternateDSID]', 
+                       '-[ACAccount(AppleIDAuthentication) aida_deviceProvisioningInfo]', 
+                       '-[ACAccount(AppleIDAuthentication) aida_dsid]', 
+                       '-[ACAccount(AppleIDAuthentication) aida_tokenForService:]', 
+                       '-[ACAccount(AppleIDAuthentication) aida_tokenWithExpirationCheck]', 
+                       '-[ACAccount(AppleIDAuthentication) aida_tokenWithExpiryCheckForService:]', 
+                       '-[ACAccountStore(AppleIDAuthentication) _primaryiCloudAccount]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_AppleIDAuthenticationAccountType]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_AppleIDAuthenticationAccounts]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_accountForPrimaryiCloudAccount]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_accountForiCloudAccount:]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_iCloudAccountMatchingAppleIDAuthAccount:]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_renewCredentialsForAccount:services:completion:]', 
+                       '-[ACAccountStore(AppleIDAuthentication) aida_renewCredentialsForAccount:services:force:completion:]', 
+                       _AIDAAccountPropertyDSID, _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, 
+                       _AppleIDAuthenticationServicesKey, _AppleIDAuthenticationiCloudSettingsTokenIdentifier, 
+                       _Gg9q7vHg34, __AIDALogSystem, __AIDALogSystem.log, 
+                       __AIDALogSystem.onceToken, ____AIDALogSystem_block_invoke, 
+                       ___block_descriptor_tmp, ___block_literal_global, 
+                       _aslgmuibau, _fm23w5mn5o, _fy34trz2st, _gJa8aF901k, 
+                       _jk24uiwqrg, _jkag7Bg01u, _kDeviceProvisioningMIDKey, 
+                       _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, 
+                       _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey, 
+                       _p435tmhbla, _qi864985u0, _rsegvyrt87, _tn46gtiuhw, 
+                       _uv5t6nhkui ]
+...

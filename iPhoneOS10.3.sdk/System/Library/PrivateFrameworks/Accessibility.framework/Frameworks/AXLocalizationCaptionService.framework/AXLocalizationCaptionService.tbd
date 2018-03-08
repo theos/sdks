@@ -1,0 +1,19 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXLocalizationCaptionService.framework/AXLocalizationCaptionService
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '+[AXLocalizationCaptionService service]', '+[AXLocalizationCaptionService _sendMessage:withIdentifier:errorHandler:]', 
+                       '+[AXLocalizationCaptionService startService]', 
+                       '+[AXLocalizationCaptionService stopService]', '-[AXLocalizationCaptionService .cxx_destruct]', 
+                       '-[AXLocalizationCaptionService _clientIdentifier]', 
+                       '-[AXLocalizationCaptionService client]', '-[AXLocalizationCaptionService connectionWithServiceWasInterruptedForUserInterfaceClient:]', 
+                       '-[AXLocalizationCaptionService setClient:]', '___39+[AXLocalizationCaptionService service]_block_invoke', 
+                       '___73+[AXLocalizationCaptionService _sendMessage:withIdentifier:errorHandler:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.34, 
+                       ___block_literal_global, ___copy_helper_block_, 
+                       ___destroy_helper_block_, _service.Service, _service.onceToken ]
+    objc-classes:    [ _AXLocalizationCaptionService ]
+    objc-ivars:      [ _AXLocalizationCaptionService._client ]
+...

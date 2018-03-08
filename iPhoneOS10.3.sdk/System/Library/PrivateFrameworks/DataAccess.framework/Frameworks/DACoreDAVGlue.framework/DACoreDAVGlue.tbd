@@ -1,0 +1,30 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _coreDAVValidationErrorFromRawError, '+[DACoreDAVLogger registerDefaultLoggerWithCoreDAV]', 
+                       '-[CoreDAVTask(DACoreDAVGlueExtensions) cancelTaskWithReason:underlyingError:]', 
+                       '-[CoreDAVTask(DACoreDAVGlueExtensions) finishWithError:]', 
+                       '-[CoreDAVTask(DACoreDAVGlueExtensions) performTask]', 
+                       '-[DACoreDAVLogger coreDAVLogDiagnosticMessage:atLevel:]', 
+                       '-[DACoreDAVLogger coreDAVLogLevel]', '-[DACoreDAVLogger coreDAVLogTransmittedDataPartial:]', 
+                       '-[DACoreDAVLogger coreDAVOutputLevel]', '-[DACoreDAVLogger coreDAVTransmittedDataFinished]', 
+                       '-[DACoreDAVLogger shouldLogTransmittedData]', '-[DACoreDAVTaskManager .cxx_destruct]', 
+                       '-[DACoreDAVTaskManager _updateSpinner:]', '-[DACoreDAVTaskManager coreDAVTaskDidFinish:]', 
+                       '-[DACoreDAVTaskManager coreDAVTaskEndModal:]', 
+                       '-[DACoreDAVTaskManager coreDAVTaskRequestModal:]', 
+                       '-[DACoreDAVTaskManager dealloc]', '-[DACoreDAVTaskManager initWithAccount:]', 
+                       '-[DACoreDAVTaskManager setWorkRunLoop:]', '-[DACoreDAVTaskManager submitIndependentCoreDAVTask:]', 
+                       '-[DACoreDAVTaskManager submitQueuedCoreDAVTask:]', 
+                       '-[DACoreDAVTaskManager taskManagerDidAddTask:]', 
+                       '-[DACoreDAVTaskManager taskManagerWillRemoveTask:]', 
+                       '-[DACoreDAVTaskManager workRunLoop]', GCC_except_table3, 
+                       GCC_except_table4, '___51+[DACoreDAVLogger registerDefaultLoggerWithCoreDAV]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_literal_global, 
+                       _registerDefaultLoggerWithCoreDAV._genericLogger, 
+                       _registerDefaultLoggerWithCoreDAV.pred ]
+    objc-classes:    [ _DACoreDAVLogger, _DACoreDAVTaskManager ]
+    objc-ivars:      [ _DACoreDAVTaskManager._applicationsShowingActivity ]
+...

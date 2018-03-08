@@ -1,0 +1,43 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __IOSurfacePropertyDictionaryForRect, '+[PUIProgressWindow _usesPreBoardAppearance]', 
+                       '+[PUIProgressWindow setUsesPreBoardAppearance]', 
+                       '-[PUIProgressWindow .cxx_destruct]', '-[PUIProgressWindow _appleTVProductSuffix]', 
+                       '-[PUIProgressWindow _collectDisplayInfo]', '-[PUIProgressWindow _createContext]', 
+                       '-[PUIProgressWindow _createImageWithName:scale:displayHeight:]', 
+                       '-[PUIProgressWindow _createLayer]', '-[PUIProgressWindow _drawPluginNameLayerInContext:]', 
+                       '-[PUIProgressWindow _drawProgressLayerInContext:]', 
+                       '-[PUIProgressWindow _isNano]', '-[PUIProgressWindow _layoutScreen]', 
+                       '-[PUIProgressWindow _nanoDeviceType]', '-[PUIProgressWindow _nanoMaterial]', 
+                       '-[PUIProgressWindow _productSuffix]', '-[PUIProgressWindow _updateIOSurface]', 
+                       '-[PUIProgressWindow dealloc]', '-[PUIProgressWindow drawLayer:inContext:]', 
+                       '-[PUIProgressWindow initWithForceInverted:]', '-[PUIProgressWindow initWithOptions:contextLevel:appearance:]', 
+                       '-[PUIProgressWindow initWithProgressBarVisibility:]', 
+                       '-[PUIProgressWindow initWithProgressBarVisibility:context:]', 
+                       '-[PUIProgressWindow initWithProgressBarVisibility:createContext:contextLevel:appearance:]', 
+                       '-[PUIProgressWindow initWithProgressBarVisibility:level:]', 
+                       '-[PUIProgressWindow initWithProgressBarVisibility:level:forceInverted:]', 
+                       '-[PUIProgressWindow init]', '-[PUIProgressWindow layer]', 
+                       '-[PUIProgressWindow setPluginName:]', '-[PUIProgressWindow setProgressValue:]', 
+                       '-[PUIProgressWindow setVisible:]', '___36-[PUIProgressWindow _nanoDeviceType]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_literal_global, 
+                       __createLayer.black, __createLayer.white, __nanoDeviceType.deviceType, 
+                       __nanoDeviceType.onceToken, _kPUIDefaultContextLevel ]
+    objc-classes:    [ _PUIProgressWindow ]
+    objc-ivars:      [ _PUIProgressWindow._showsProgressBar, _PUIProgressWindow._appleLogo, 
+                       _PUIProgressWindow._context, _PUIProgressWindow._currentProgress, 
+                       _PUIProgressWindow._displayOrientation, _PUIProgressWindow._displayScale, 
+                       _PUIProgressWindow._displaySize, _PUIProgressWindow._forceInverted, 
+                       _PUIProgressWindow._framebufferSize, _PUIProgressWindow._ioSurface, 
+                       _PUIProgressWindow._ioSurfaceLayer, _PUIProgressWindow._layer, 
+                       _PUIProgressWindow._layerPositioningSize, _PUIProgressWindow._pluginName, 
+                       _PUIProgressWindow._pluginNameLayer, _PUIProgressWindow._progressLayer, 
+                       _PUIProgressWindow._progressWidth, _PUIProgressWindow._progressXDelta, 
+                       _PUIProgressWindow._progressYDelta, _PUIProgressWindow._renderWithIOSurface, 
+                       _PUIProgressWindow._showPluginName, _PUIProgressWindow._sideways, 
+                       _PUIProgressWindow._weCreatedTheContext, _PUIProgressWindow._white ]
+...

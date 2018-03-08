@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/OAuth.framework/OAuth
+current-version: 25.0
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _OAAuthTokenKey, '+[OAHMAC_SHA1Signer signatureForText:withKey:]', 
+                       '+[OAPlainTextSigner signatureForText:withKey:]', 
+                       '-[NSString(OAURLEncode) oauth_urlEncodedString]', 
+                       '-[OACredential consumerKey]', '-[OACredential consumerSecret]', 
+                       '-[OACredential dealloc]', '-[OACredential oauthTokenSecret]', 
+                       '-[OACredential oauthToken]', '-[OACredential setConsumerKey:]', 
+                       '-[OACredential setConsumerSecret:]', '-[OACredential setOauthToken:]', 
+                       '-[OACredential setOauthTokenSecret:]', '-[OACredential signingKey]', 
+                       '-[OAURLRequestSigner applyApplicationID:toRequest:containsMultiPartData:]', 
+                       '-[OAURLRequestSigner dealloc]', '-[OAURLRequestSigner initWithCredential:]', 
+                       '-[OAURLRequestSigner oauthAuthorizationHeaderWithSignature:nonce:timestamp:]', 
+                       '-[OAURLRequestSigner oauthNonce]', '-[OAURLRequestSigner oauthParametersWithNonce:timeStamp:]', 
+                       '-[OAURLRequestSigner setSignatureMethod:]', '-[OAURLRequestSigner signatureMethodString]', 
+                       '-[OAURLRequestSigner signatureMethod]', '-[OAURLRequestSigner signedURLRequestWithRequest:]', 
+                       '-[OAURLRequestSigner signedURLRequestWithRequest:applicationID:timestamp:]', 
+                       '-[OAURLRequestSigner signer]', '-[OAURLRequestSigner timestamp:]', 
+                       _OAConsumerKeyKey, _OANonceKey, _OASignatureKey, 
+                       _OASignatureMethodKey, _OATimestampKey, _OAVersionKey, 
+                       _oauth_version ]
+    objc-classes:    [ _OACredential, _OAHMAC_SHA1Signer, _OAPlainTextSigner, 
+                       _OAURLRequestSigner ]
+    objc-ivars:      [ _OACredential._consumerKey, _OACredential._consumerSecret, 
+                       _OACredential._oauthToken, _OACredential._oauthTokenSecret, 
+                       _OAURLRequestSigner._credential, _OAURLRequestSigner._signatureMethod ]
+...

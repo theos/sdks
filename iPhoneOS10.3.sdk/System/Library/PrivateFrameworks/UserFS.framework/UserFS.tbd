@@ -1,0 +1,52 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserFS.framework/UserFS
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[UserFSVolume initWithDeviceName:error:]', '+[UserFSItem _itemWithVolume:path:properties:]', 
+                       '+[UserFSVolume prepareToAccessDeviceName:error:]', 
+                       '+[UserFSVolume volumeWithDeviceName:error:]', '-[UserFSFile isDirectory]', 
+                       '-[UserFSFile openStreamWithOptions:error:]', '-[UserFSFolder _pathForChildNamed:]', 
+                       '-[UserFSFolder childNamed:error:]', '-[UserFSFolder deleteChildNamed:error:]', 
+                       '-[UserFSFolder enumerateChildrenAndReturnError:callback:]', 
+                       '-[UserFSFolder isDirectory]', '-[UserFSItem .cxx_destruct]', 
+                       '-[UserFSItem createdDate]', '-[UserFSItem isDirectory]', 
+                       '-[UserFSItem isLocked]', '-[UserFSItem length]', 
+                       '-[UserFSItem modifiedDate]', '-[UserFSItem name]', 
+                       '-[UserFSItem path]', '-[UserFSItem setCreatedDate:]', 
+                       '-[UserFSItem setIsDirectory:]', '-[UserFSItem setLength:]', 
+                       '-[UserFSItem setLocked:]', '-[UserFSItem setModifiedDate:]', 
+                       '-[UserFSItem setName:]', '-[UserFSItem setPath:]', 
+                       '-[UserFSItem setVolume:]', '-[UserFSItem volume]', 
+                       '-[UserFSStream .cxx_destruct]', '-[UserFSStream _cancelConnection]', 
+                       '-[UserFSStream _readBytesUpToLength:atOffset:toBuffer:error:]', 
+                       '-[UserFSStream closeAndReturnError:]', '-[UserFSStream connection]', 
+                       '-[UserFSStream dealloc]', '-[UserFSStream initWithUserFSItem:length:connection:]', 
+                       '-[UserFSStream item]', '-[UserFSStream length]', 
+                       '-[UserFSStream readBytesOfLength:atOffset:toBuffer:error:]', 
+                       '-[UserFSStream setConnection:]', '-[UserFSStream setItem:]', 
+                       '-[UserFSStream setLength:]', '-[UserFSStream writable]', 
+                       '-[UserFSVolume .cxx_destruct]', '-[UserFSVolume closeAndReturnError:]', 
+                       '-[UserFSVolume connection]', '-[UserFSVolume dealloc]', 
+                       '-[UserFSVolume deleteFiles:error:]', '-[UserFSVolume deviceName]', 
+                       '-[UserFSVolume flushAndReturnError:]', '-[UserFSVolume isLocked]', 
+                       '-[UserFSVolume itemAtPath:error:]', '-[UserFSVolume rootDirectoryAndReturnError:]', 
+                       '-[UserFSVolume setConnection:]', _ReplyOK, '___41-[UserFSVolume initWithDeviceName:error:]_block_invoke', 
+                       '___41-[UserFSVolume initWithDeviceName:error:]_block_invoke_2', 
+                       '___53-[UserFSStream initWithUserFSItem:length:connection:]_block_invoke', 
+                       '___57-[UserFSFolder enumerateChildrenAndReturnError:callback:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.164, 
+                       ___block_descriptor_tmp.20, ___block_descriptor_tmp.212, 
+                       ___block_literal_global, ___block_literal_global.165, 
+                       ___block_literal_global.21, ___copy_helper_block_, 
+                       ___destroy_helper_block_ ]
+    objc-classes:    [ _UserFSFile, _UserFSFolder, _UserFSItem, _UserFSStream, 
+                       _UserFSVolume ]
+    objc-ivars:      [ _UserFSVolume._deviceName, _UserFSItem._createdDate, 
+                       _UserFSItem._isDirectory, _UserFSItem._length, _UserFSItem._locked, 
+                       _UserFSItem._modifiedDate, _UserFSItem._name, _UserFSItem._path, 
+                       _UserFSItem._volume, _UserFSStream._connection, 
+                       _UserFSStream._item, _UserFSStream._length, _UserFSVolume._connection, 
+                       _UserFSVolume._isLocked ]
+...

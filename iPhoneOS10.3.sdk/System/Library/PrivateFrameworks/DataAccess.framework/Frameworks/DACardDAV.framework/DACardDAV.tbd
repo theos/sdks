@@ -1,0 +1,41 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DACardDAV
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '+[CardDAVLocalDBHelper sharedInstance]', '+[CardDAVAccount addressBookConstraintsPlistPath]', 
+                       '+[CardDAVPropertiesHelper _CardDAVSourcePropertiesForABSource:]', 
+                       '+[CardDAVPropertiesHelper maxImageSizeFromSyncDict:]', 
+                       '+[CardDAVPropertiesHelper maxResourceSizeFromSyncDict:]', 
+                       '+[CardDAVPropertiesHelper updateSyncDict:forSource:withContainer:]', 
+                       '-[CardDAVAccount .cxx_destruct]', '-[CardDAVAccount _massageAddedOrModifiedVCard:]', 
+                       '-[CardDAVAccount cardDAVAccountVersion]', '-[CardDAVAccount checkValidityTaskGroup]', 
+                       '-[CardDAVAccount copyImageContentsAtURL:outError:]', 
+                       '-[CardDAVAccount coreDAVLogDiagnosticMessage:atLevel:]', 
+                       '-[CardDAVAccount coreDAVLogLevel]', '-[CardDAVAccount coreDAVLogTransmittedDataPartial:]', 
+                       '-[CardDAVAccount coreDAVOutputLevel]', '-[CardDAVAccount coreDAVTransmittedDataFinished]', 
+                       '-[CardDAVAccount curLogger]', '-[CardDAVAccount dealloc]', 
+                       '-[CardDAVAccount discoverInitialPropertiesWithConsumer:]', 
+                       '-[CardDAVAccount discoveryTask:gotAccountInfo:error:]', 
+                       '-[CardDAVAccount handleTrustChallenge:]', '-[CardDAVAccount initWithBackingAccountInfo:]', 
+                       '-[CardDAVAccount isEqualToAccount:]', '-[CardDAVAccount localizedIdenticalAccountFailureMessage]', 
+                       '-[CardDAVAccount localizedInvalidPasswordMessage]', 
+                       '-[CardDAVAccount noteHomeSetOnDifferentHost:]', 
+                       '-[CardDAVAccount oauthVariant]', '-[CardDAVAccount onBehalfOfBundleIdentifier]', 
+                       '-[CardDAVAccount promptUserForNewCoreDAVPasswordWithCompletionBlock:]', 
+                       '-[CardDAVAccount serverComplianceClasses]', '-[CardDAVAccount serverRoot]', 
+                       '-[CardDAVAccount setCheckValidityTaskGroup:]', 
+                       '-[CardDAVAccount setCurLogger:]', '-[CardDAVAccount setServerComplianceClasses:]', 
+                       '-[CardDAVAccount shouldLogTransmittedData]', '-[CardDAVAccount spinnerIdentifiers]', 
+                       '-[CardDAVAccount taskManager]', '-[CardDAVAccount userAgentHeader]', 
+                       '-[CardDAVAccount wellKnownPaths]', '-[DAAccount(CardDAVExtension) isCardDAVAccount]', 
+                       '-[NSMutableDictionary(CardDAVExtensions) addObjectsAndKeys:]', 
+                       '-[NSString(CardDAVExtensions) prettyStringForDisplayName]', 
+                       '___69-[CardDAVAccount promptUserForNewCoreDAVPasswordWithCompletionBlock:]_block_invoke', 
+                       ___block_descriptor_tmp, ___copy_helper_block_, 
+                       ___destroy_helper_block_ ]
+    objc-classes:    [ _CardDAVAccount, _CardDAVLocalDBHelper, _CardDAVPropertiesHelper ]
+    objc-ivars:      [ _CardDAVAccount._checkValidityTaskGroup, _CardDAVAccount._cardDAVAccountVersion, 
+                       _CardDAVAccount._curLogger ]
+...

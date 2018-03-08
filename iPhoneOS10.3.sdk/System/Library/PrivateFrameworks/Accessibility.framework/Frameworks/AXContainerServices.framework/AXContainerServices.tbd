@@ -1,0 +1,25 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXContainerServices.framework/AXContainerServices
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[AXContainerManager containerServerClient]', '+[AXContainerManager sharedManager]', 
+                       '-[AXContainerManager dealloc]', '-[AXContainerManager deleteFileAtAccessibilityContainerPath:completion:]', 
+                       '-[AXContainerManager readDataForFileAtAccessibilityContainerPath:completion:]', 
+                       '-[AXContainerManager setContainerServerClient:]', 
+                       '-[AXContainerManager writeData:toFileAtAccessibilityContainerPath:completion:]', 
+                       '___35+[AXContainerManager sharedManager]_block_invoke', 
+                       '___72-[AXContainerManager deleteFileAtAccessibilityContainerPath:completion:]_block_invoke', 
+                       '___77-[AXContainerManager readDataForFileAtAccessibilityContainerPath:completion:]_block_invoke', 
+                       '___78-[AXContainerManager writeData:toFileAtAccessibilityContainerPath:completion:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.27, 
+                       ___block_descriptor_tmp.32, ___block_descriptor_tmp.35, 
+                       ___block_literal_global, ___copy_helper_block_, 
+                       ___copy_helper_block_.30, ___copy_helper_block_.33, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.31, 
+                       ___destroy_helper_block_.34, _getErrorCascading, 
+                       _sharedManager.manager, _sharedManager.onceToken ]
+    objc-classes:    [ _AXContainerManager ]
+    objc-ivars:      [ _AXContainerManager._containerServerClient ]
+...

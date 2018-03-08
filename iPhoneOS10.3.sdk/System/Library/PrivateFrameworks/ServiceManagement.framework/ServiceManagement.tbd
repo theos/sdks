@@ -1,0 +1,27 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ServiceManagement.framework/ServiceManagement
+current-version: 972.50.27
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _SMCopyAllJobDictionaries, _CFArrayCreateFromDictionaryValues, 
+                       _CFCreateFromLaunchData, _CFStringJustCopyTheUTF8String, 
+                       _SMJobCopyDictionary, _SMJobIsEnabled, _SMJobRemove, 
+                       _SMJobSetEnabled, _SMJobSubmit, __CFArrayCreateFromLaunchArray, 
+                       __SMLoginItemSetEnabledWithURL, ___ServiceManagementVersionNumber, 
+                       ___ServiceManagementVersionString, ___XPC_IS_CRASHING_AFTER_AN_ATTEMPT_TO_CREATE_A_PROHIBITED_DOMAIN__, 
+                       ____block_until_job_exits_block_invoke, ___block_descriptor_tmp, 
+                       __add_array_value, __block_until_job_exits, __copy_plist_from_fd, 
+                       __create_cferror_from_code, __create_launchd_request, 
+                       __ldval2cf, __waiting4memory, __xpc_api_misuse, 
+                       __xpc_assert_dumping_ground, __xpc_copy_plist, __xpc_domain_routine, 
+                       __xpc_get_embedded_crash_message, __xpc_get_globals, 
+                       __xpc_has_suffix, __xpc_interface_routine, __xpc_malloc, 
+                       __xpc_set_embedded_crash_message, __xpc_strdup, 
+                       _get_enabled_state, _get_job, _kSMDomainLocalLaunchd, 
+                       _kSMDomainSystemLaunchd, _kSMDomainUserLaunchd, 
+                       _kSMErrorDomainFramework, _kSMErrorDomainIPC, _kSMErrorDomainLaunchd, 
+                       _kSMInfoKeyAuthorizedClients, _kSMInfoKeyPrivilegedExecutables, 
+                       _remove_job, _set_enabled_state, _submit_job, _xpc_debugger_api_misuse_info ]
+...

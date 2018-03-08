@@ -1,0 +1,32 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/UserFS.framework/PlugIns/msdosfs.dylib
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _buffer_bytes, ___block_descriptor_tmp, ___block_descriptor_tmp.70, 
+                       ___block_descriptor_tmp.86, ___block_descriptor_tmp.88, 
+                       ___block_literal_global, ___copy_helper_block_, 
+                       ___destroy_helper_block_, ___dir_delete_entries_block_invoke, 
+                       ___dir_enumerate_block_invoke, ___dir_lookup_block_invoke, 
+                       ___msdosfs_dir_enumerate_block_invoke, _buffer_mark_dirty, 
+                       _buffer_offset, _buffer_size, _cache_flush, _cache_flush_buffer, 
+                       _cache_get_buffer, _cache_get_content_buffer, _cache_invalidate, 
+                       _cache_release_buffer, _chain_length, _content_buffer_bytes, 
+                       _contiguous_clusters_in_chain, _cp1252_to_unicode, 
+                       _device_fd, _device_mutex, _device_name, _dir_entry_enumerate, 
+                       _dir_enumerate, _fat12EntryGet, _fat12EntryOffset, 
+                       _fat12EntrySet, _fat16EntryGet, _fat16EntryOffset, 
+                       _fat16EntrySet, _fat32EntryGet, _fat32EntryOffset, 
+                       _fat32EntrySet, _latin1_to_lower, _msdosfs_dir_enumerate, 
+                       _msdosfs_item_delete, _msdosfs_item_get_info, _msdosfs_long_name_offset, 
+                       _msdosfs_stream_close, _msdosfs_stream_get_last_offset_in_cache, 
+                       _msdosfs_stream_get_next_offset_to_cache, _msdosfs_stream_increment_threadCount, 
+                       _msdosfs_stream_length, _msdosfs_stream_name, _msdosfs_stream_open, 
+                       _msdosfs_stream_read, _msdosfs_volume_close, _msdosfs_volume_flush, 
+                       _msdosfs_volume_is_locked, _msdosfs_volume_mark_dirty, 
+                       _msdosfs_volume_open, _populate_content_buffer_cache, 
+                       _stream_get_physical_extent, _stream_increment_threadCount, 
+                       _timestamp_to_nanoseconds, _unistr255_to_utf8, _userfs_plugin_init, 
+                       _volume_create_stream, _volume_lookup ]
+...

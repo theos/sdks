@@ -1,0 +1,50 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/iOSDiagnostics.framework/iOSDiagnostics
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _iOSDiagnosticsVersionNumber, '+[DADiagnosticsRemoteHostViewController exportedInterface]', 
+                       '+[DADiagnosticsRemoteHostViewController requestDiagnosticsRemoteViewControllerWithConnectionHandler:]', 
+                       '+[DADiagnosticsRemoteHostViewController serviceViewControllerInterface]', 
+                       '-[DADiagnosticResponder enableVolumeHUD:]', '-[DADiagnosticResponder setScreenToBrightness:animate:]', 
+                       '-[DADiagnosticsRemoteHostViewController .cxx_destruct]', 
+                       '-[DADiagnosticsRemoteHostViewController _viewServiceInterface]', 
+                       '-[DADiagnosticsRemoteHostViewController delegate]', 
+                       '-[DADiagnosticsRemoteHostViewController disconnect]', 
+                       '-[DADiagnosticsRemoteHostViewController originalScreenBrightness]', 
+                       '-[DADiagnosticsRemoteHostViewController responder]', 
+                       '-[DADiagnosticsRemoteHostViewController setDelegate:]', 
+                       '-[DADiagnosticsRemoteHostViewController setOriginalScreenBrightness:]', 
+                       '-[DADiagnosticsRemoteHostViewController setResponder:]', 
+                       '-[DADiagnosticsRemoteHostViewController viewDidDisappear:]', 
+                       '-[DADiagnosticsRemoteHostViewController viewDidLoad]', 
+                       '-[DADiagnosticsRemoteHostViewController viewServiceDidEnableVolumeHUD:]', 
+                       '-[DADiagnosticsRemoteHostViewController viewServiceDidFinishWithReason:]', 
+                       '-[DADiagnosticsRemoteHostViewController viewServiceDidSetScreenToBrightness:animate:]', 
+                       '-[DADiagnosticsRemoteHostViewController viewServiceDidSuspend]', 
+                       '-[DADiagnosticsRemoteHostViewController viewServiceDidTerminateWithError:]', 
+                       '___41-[DADiagnosticResponder enableVolumeHUD:]_block_invoke', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke_2', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke_3', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke_4', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke_5', 
+                       '___55-[DADiagnosticResponder setScreenToBrightness:animate:]_block_invoke_6', 
+                       '___71-[DADiagnosticsRemoteHostViewController viewServiceDidEnableVolumeHUD:]_block_invoke', 
+                       '___72-[DADiagnosticsRemoteHostViewController viewServiceDidFinishWithReason:]_block_invoke', 
+                       '___85-[DADiagnosticsRemoteHostViewController viewServiceDidSetScreenToBrightness:animate:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.10, ___block_descriptor_tmp.12, 
+                       ___block_descriptor_tmp.14, ___block_descriptor_tmp.16, 
+                       ___block_descriptor_tmp.18, ___block_descriptor_tmp.65, 
+                       ___block_descriptor_tmp.70, ___block_descriptor_tmp.8, 
+                       ___copy_helper_block_, ___copy_helper_block_.63, 
+                       ___copy_helper_block_.68, ___destroy_helper_block_, 
+                       ___destroy_helper_block_.64, ___destroy_helper_block_.69, 
+                       _iOSDiagnosticsVersionString ]
+    objc-classes:    [ _DADiagnosticResponder, _DADiagnosticsRemoteHostViewController ]
+    objc-ivars:      [ _DADiagnosticsRemoteHostViewController._delegate, 
+                       _DADiagnosticsRemoteHostViewController._originalScreenBrightness, 
+                       _DADiagnosticsRemoteHostViewController._responder ]
+...

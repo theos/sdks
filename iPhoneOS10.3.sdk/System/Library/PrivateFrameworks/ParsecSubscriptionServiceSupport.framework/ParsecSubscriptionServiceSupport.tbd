@@ -1,0 +1,34 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/ParsecSubscriptionServiceSupport
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ParsecSubscriptionServiceSupportVersionNumber, 
+                       '-[PSSSSubscriptionManager .cxx_destruct]', '-[PSSSSubscriptionManager init]', 
+                       '-[PSSSSubscriptionManager registerSubscriptionWithInfo:expirationDate:]', 
+                       '-[PSSSSubscriptionManager registrationCenter]', 
+                       '-[PSSSSubscriptionManager setRegistrationCenter:]', 
+                       '-[PSSSSubscriptionManager unregisterAllSubscriptions]', 
+                       '-[PSSSSubscriptionManager unregisterSubscriptionWithInfo:]', 
+                       '-[PSSSSubscriptionManagerInternal .cxx_destruct]', 
+                       '-[PSSSSubscriptionManagerInternal getActiveSubscriptionServicesMatchingBundleIdentifiers:domainIdentifiers:maximumExpirationLimit:completionHandler:]', 
+                       '-[PSSSSubscriptionManagerInternal init]', '-[PSSSSubscriptionManagerInternal registerSubscriptionServiceForURL:withSubscriptionInfo:expirationDate:]', 
+                       '-[PSSSSubscriptionManagerInternal registrationCenter]', 
+                       '-[PSSSSubscriptionManagerInternal removeSubscriptionServiceForURL:]', 
+                       '-[PSSSSubscriptionManagerInternal removeWebSubscriptionServicesCreatedAfterDate:]', 
+                       '-[PSSSSubscriptionManagerInternal setRegistrationCenter:]', 
+                       _ParsecSubscriptionServiceSupportVersionString, 
+                       '___149-[PSSSSubscriptionManagerInternal getActiveSubscriptionServicesMatchingBundleIdentifiers:domainIdentifiers:maximumExpirationLimit:completionHandler:]_block_invoke', 
+                       '___58-[PSSSSubscriptionManager unregisterSubscriptionWithInfo:]_block_invoke', 
+                       '___67-[PSSSSubscriptionManagerInternal removeSubscriptionServiceForURL:]_block_invoke', 
+                       '___81-[PSSSSubscriptionManagerInternal removeWebSubscriptionServicesCreatedAfterDate:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.73, 
+                       ___block_descriptor_tmp.84, ___block_descriptor_tmp.87, 
+                       ___copy_helper_block_, ___copy_helper_block_.71, 
+                       ___copy_helper_block_.82, ___copy_helper_block_.85, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.72, 
+                       ___destroy_helper_block_.83, ___destroy_helper_block_.86 ]
+    objc-classes:    [ _PSSSSubscriptionManager, _PSSSSubscriptionManagerInternal ]
+    objc-ivars:      [ _PSSSSubscriptionManager._registrationCenter, _PSSSSubscriptionManagerInternal._registrationCenter ]
+...

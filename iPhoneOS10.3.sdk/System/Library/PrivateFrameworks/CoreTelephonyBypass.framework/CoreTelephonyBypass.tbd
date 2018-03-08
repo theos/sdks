@@ -1,0 +1,14 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreTelephonyBypass.framework/CoreTelephonyBypass
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CTChannelBypassActivate, _CTChannelBypassSend, 
+                       __CTChannelBypassHandleDestroy, __CTChannelBypassHandleMessageFromServer, 
+                       __CTChannelBypassHandleMessagePortInvalidation, 
+                       __CTChannelBypassHandleTypeID, __CTChannelBypassMap, 
+                       __CTChannelBypassMutex, __CTChannelBypassRegisterClass, 
+                       __CTChannelBypassRegisterClass.kCTChannelBypassHandleClass, 
+                       __CTChannelBypassRegisterClassOnce, __ReleaseAndCleanupMessagePort ]
+...

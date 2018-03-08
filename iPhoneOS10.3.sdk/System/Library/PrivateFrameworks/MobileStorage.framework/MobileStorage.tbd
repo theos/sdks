@@ -1,0 +1,45 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/MobileStorage.framework/MobileStorage
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _DOMDialogIsDisplayed, '+[NSMutableData(MobileStorageMounter) dataWithHexString:]', 
+                       '+[NSString(MobileStorageMounter) hexStringWithData:]', 
+                       '+[PlistProcessor sharedPlistProcessor]', '-[NSMutableData(MobileStorageMounter) initDataWithHexString:]', 
+                       '-[NSString(MobileStorageMounter) initHexStringWithData:]', 
+                       '-[PlistProcessor copyAndFixPlist:forMountPoint:]', 
+                       '-[PlistProcessor scanPlistsAtPath:execBlock:]', 
+                       '-[PlistProcessor verifyPlist:forMountPoint:]', 
+                       GCC_except_table1, GCC_except_table16, GCC_except_table29, 
+                       GCC_except_table9, _DOMDisplayAutoDismissDialog, 
+                       _MobileStorageCopyAndFixPlist, _MobileStorageCopyDevices, 
+                       _MobileStorageMount, _MobileStorageSync, _MobileStorageUnmount, 
+                       '___38+[PlistProcessor sharedPlistProcessor]_block_invoke', 
+                       ___DOMDisplayAutoDismissDialog_block_invoke, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___block_descriptor_tmp.130, ___block_descriptor_tmp.184, 
+                       ___block_descriptor_tmp.200, ___block_literal_global, 
+                       ___block_literal_global, ___block_literal_global, 
+                       ___call_and_response_block_invoke, ___copy_helper_block_, 
+                       ___copy_helper_block_.127, ___copy_helper_block_.181, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.128, 
+                       ___destroy_helper_block_.182, ___dialogs_enabled_block_invoke, 
+                       ___path_contains_links_block_invoke, ___serviceIsAttachedToRemovableDevice_block_invoke, 
+                       __removefile_error_callback, _call_and_response, 
+                       _check_disk_image, _copyProgramArgs, _create_dict, 
+                       _create_map_entry, _determine_filesystem_type, _dialogs_enabled.once, 
+                       _dialogs_enabled.result, _gIONotification, _gIONotifyPort, 
+                       _gNotificationRef, _get_attached_entries, _get_attached_media_entries, 
+                       _get_attached_ptp_entries, _get_mounted_media_entries, 
+                       _image_file_path_name, _io_notification_callback, 
+                       _io_notification_finalize, _iterate_ancestors, _lookup_disk_image_entries, 
+                       _lookup_map_entries, _lookup_mass_storage_entry, 
+                       _lookup_mount_entry, _makePathWithSignature, _mkdir_recursive, 
+                       _normalizePrivateVar, _path_contains_links, _path_is_bad, 
+                       _remove_item_at_path, _serviceIsAttachedToRemovableDevice, 
+                       _setup_io_notification, _sharedPlistProcessor.gPP, 
+                       _sharedPlistProcessor.onceToken, _signatureFromPath, 
+                       _stringForXPCType, _traverse_path, _user_notification_callback ]
+    objc-classes:    [ _PlistProcessor ]
+...

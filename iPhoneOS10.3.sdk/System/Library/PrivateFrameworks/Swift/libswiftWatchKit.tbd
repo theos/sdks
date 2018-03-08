@@ -1,0 +1,39 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftWatchKit.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TFE8WatchKitCSo21WKInterfaceController17presentControllerfGSaT4nameSS7contextPs9AnyObject___T_, 
+                       __TFE8WatchKitCSo21WKInterfaceController17presentControllerfT20withNamesAndContextsGSaT4nameSS7contextPs9AnyObject____T_, 
+                       __TTSf4g_d___TZFE8WatchKitCSo21WKInterfaceController21reloadRootControllersfT20withNamesAndContextsGSaT4nameSS7contextPs9AnyObject____T_, 
+                       __TTSf4g_n___TFE8WatchKitCSo21WKInterfaceController17presentControllerfT20withNamesAndContextsGSaT4nameSS7contextPs9AnyObject____T_, 
+                       __TTSg5P____TFVs15ContiguousArray16_copyToNewBufferfT8oldCountSi_T__merged, 
+                       __TZFE8WatchKitCSo21WKInterfaceController21reloadRootControllersfGSaT4nameSS7contextPs9AnyObject___T_, 
+                       __TZFE8WatchKitCSo21WKInterfaceController21reloadRootControllersfT20withNamesAndContextsGSaT4nameSS7contextPs9AnyObject____T_, 
+                       '__swift_FORCE_LOAD_$_swiftWatchKit' ]
+    weak-def-symbols: [ __TTSg5P____TFVs15ContiguousArray16_copyToNewBufferfT8oldCountSi_T_, 
+                        __TMLGCs23_ContiguousArrayStorageP__, __TMLGCs23_ContiguousArrayStorageSS_, 
+                        __TMLP_, __TMaGCs23_ContiguousArrayStorageSS_, 
+                        __TTSf4n_n_d___TTSg5P____TFVs22_ContiguousArrayBufferCfT19_uninitializedCountSi15minimumCapacitySi_GS_x_, 
+                        __TTSf4n_n_d___TTSg5SS___TFVs22_ContiguousArrayBufferCfT19_uninitializedCountSi15minimumCapacitySi_GS_x_, 
+                        __TTSf4n_n_n_d_n___TTSg5GVs22_ContiguousArrayBufferP__GS_P__s20_ArrayBufferProtocols_GVs14_IgnorePointerP__GS1_P__s16_PointerFunctions___TFEsPs20_ArrayBufferProtocol22_arrayOutOfPlaceUpdateuRd__s16_PointerFunctionwx7Elementzwd__7ElementrfTRGVs22_ContiguousArrayBufferwxS1__SiSiqd___T_, 
+                        __TTSf4n_n_n_d_n___TTSg5GVs22_ContiguousArrayBufferSS_GS_SS_s20_ArrayBufferProtocols_GVs14_IgnorePointerSS_GS1_SS_s16_PointerFunctions___TFEsPs20_ArrayBufferProtocol22_arrayOutOfPlaceUpdateuRd__s16_PointerFunctionwx7Elementzwd__7ElementrfTRGVs22_ContiguousArrayBufferwxS1__SiSiqd___T_, 
+                        __TTSg5GVs22_ContiguousArrayBufferP__GS_P__s20_ArrayBufferProtocols___TFEsPs20_ArrayBufferProtocol31_forceCreateUniqueMutableBufferfT17countForNewBufferSi14minNewCapacitySi_GVs22_ContiguousArrayBufferwx7Element_, 
+                        __TTSg5GVs22_ContiguousArrayBufferSS_GS_SS_s20_ArrayBufferProtocols___TFEsPs20_ArrayBufferProtocol31_forceCreateUniqueMutableBufferfT17countForNewBufferSi14minNewCapacitySi_GVs22_ContiguousArrayBufferwx7Element_, 
+                        __TTSg5SS___TFVs15ContiguousArray16_copyToNewBufferfT8oldCountSi_T_, 
+                        ___swift_reflection_version, '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftCoreImage_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftCoreLocation_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftDispatch_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftMapKit_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftQuartzCore_$_WatchKit', 
+                        '__swift_FORCE_LOAD_$_swiftUIKit_$_WatchKit', _swift_rt_swift_allocObject, 
+                        _swift_rt_swift_getExistentialTypeMetadata, _swift_rt_swift_getInitializedObjCClass, 
+                        _swift_rt_swift_isUniquelyReferenced_nonNull_native, 
+                        _swift_rt_swift_release, _swift_rt_swift_retain ]
+...

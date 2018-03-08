@@ -1,0 +1,28 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/WiFiLogCapture.framework/WiFiLogCapture
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _WiFiLogCaptureVersionNumber, '-[WiFiLogDumpTaker .cxx_destruct]', 
+                       '-[WiFiLogDumpTaker XPCConnection:]', '-[WiFiLogDumpTaker didLastCaptureFallback]', 
+                       '-[WiFiLogDumpTaker handleConnection:]', '-[WiFiLogDumpTaker init]', 
+                       '-[WiFiLogDumpTaker takeWiFiCoreCaptureDumpWithReason:callback:]', 
+                       '-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPath:reason:callback:]', 
+                       '-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPath:reason:shouldTryFallback:callback:]', 
+                       '-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPathAndReason:::]', 
+                       GCC_except_table7, _WiFiLogCaptureVersionString, 
+                       '___34-[WiFiLogDumpTaker XPCConnection:]_block_invoke', 
+                       '___68-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPath:reason:callback:]_block_invoke', 
+                       '___86-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPath:reason:shouldTryFallback:callback:]_block_invoke', 
+                       '___86-[WiFiLogDumpTaker takeWiFiDiagnosticsDumpWithPath:reason:shouldTryFallback:callback:]_block_invoke_2', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.26, 
+                       ___block_descriptor_tmp.30, ___block_descriptor_tmp.35, 
+                       ___copy_helper_block_, ___copy_helper_block_.24, 
+                       ___copy_helper_block_.27, ___copy_helper_block_.33, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.25, 
+                       ___destroy_helper_block_.28, ___destroy_helper_block_.34 ]
+    objc-classes:    [ _WiFiLogDumpTaker ]
+    objc-ivars:      [ _WiFiLogDumpTaker.event_queue, _WiFiLogDumpTaker._didLastCaptureFallback, 
+                       _WiFiLogDumpTaker.xpc_connection ]
+...

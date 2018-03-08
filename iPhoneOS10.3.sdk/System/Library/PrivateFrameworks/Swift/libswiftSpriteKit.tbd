@@ -1,0 +1,55 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftSpriteKit.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TFE9SpriteKitCSo11SKShapeNodeg25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TFC9SpriteKit24_SpriteKitMethodProviderD, __TFC9SpriteKit24_SpriteKitMethodProvidercfT_S0_, 
+                       __TFE9SpriteKitCSo12SKSpriteNodeg25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TFE9SpriteKitCSo14SKTextureAtlasg25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TFE9SpriteKitCSo18SKWarpGeometryGrid26replacingBySourcePositionsfT9positionsGSaV4simd6float2__S0_, 
+                       __TFE9SpriteKitCSo18SKWarpGeometryGrid31replacingByDestinationPositionsfT9positionsGSaV4simd6float2__S0_, 
+                       __TFE9SpriteKitCSo18SKWarpGeometryGridCfT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_, 
+                       __TFE9SpriteKitCSo18SKWarpGeometryGridcfT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_, 
+                       __TFE9SpriteKitCSo9SKTextureg25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TIFE9SpriteKitCSo18SKWarpGeometryGridcFT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_A1_, 
+                       __TIFE9SpriteKitCSo18SKWarpGeometryGridcFT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_A2_, 
+                       __TMC9SpriteKit24_SpriteKitMethodProvider, __TMLC9SpriteKit24_SpriteKitMethodProvider, 
+                       __TMRfC9SpriteKit24_SpriteKitMethodProvider, __TMRsC9SpriteKit24_SpriteKitMethodProvider, 
+                       __TMaC9SpriteKit24_SpriteKitMethodProvider, __TMfC9SpriteKit24_SpriteKitMethodProvider, 
+                       __TMnC9SpriteKit24_SpriteKitMethodProvider, __TTSf4g__TIFE9SpriteKitCSo18SKWarpGeometryGridcFT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_A1_, 
+                       __TTSf4g__TIFE9SpriteKitCSo18SKWarpGeometryGridcFT7columnsSi4rowsSi15sourcePositionsGSaV4simd6float2_20destinationPositionsGSaS2___S0_A2_, 
+                       __TTWCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TTWCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TTWCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TTWCSo9SKTextures29CustomPlaygroundQuickLookable9SpriteKitFS0_g25customPlaygroundQuickLookOs19PlaygroundQuickLook, 
+                       __TToFC9SpriteKit24_SpriteKitMethodProvider14_copyImageDatafT_GSQCSo6NSData_, 
+                       __TToFC9SpriteKit24_SpriteKitMethodProvidercfT_S0_, 
+                       __TWPCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWPCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWPCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWPCSo9SKTextures29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWaCSo11SKShapeNodes29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWaCSo12SKSpriteNodes29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWaCSo14SKTextureAtlass29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWaCSo9SKTextures29CustomPlaygroundQuickLookable9SpriteKit, 
+                       __TWoFC9SpriteKit24_SpriteKitMethodProvider14_copyImageDatafT_GSQCSo6NSData_, 
+                       __TWoFC9SpriteKit24_SpriteKitMethodProviderCfT_S0_, 
+                       '__swift_FORCE_LOAD_$_swiftSpriteKit', _objc_classes ]
+    weak-def-symbols: [ _swift_rt_swift_getInitializedObjCClass, __TMLCSo7UIImage, 
+                        __TMLGSqCSo7UIImage_, ___swift_reflection_version, 
+                        '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftCoreImage_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftDispatch_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftGLKit_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftQuartzCore_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftUIKit_$_SpriteKit', 
+                        '__swift_FORCE_LOAD_$_swiftsimd_$_SpriteKit', _swift_rt_swift_release, 
+                        _swift_rt_swift_slowAlloc, _swift_rt_swift_slowDealloc ]
+    objc-classes:    [ __TtC9SpriteKit24_SpriteKitMethodProvider ]
+...

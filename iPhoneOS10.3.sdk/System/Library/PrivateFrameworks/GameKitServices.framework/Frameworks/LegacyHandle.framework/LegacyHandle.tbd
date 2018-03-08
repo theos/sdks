@@ -1,0 +1,13 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/LegacyHandle.framework/LegacyHandle
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _CheckInHandle, _CheckOutHandle, _CloseAllHandles, 
+                       _CreateHandle, _FindHandle, _GetNumHandles, _InitAllHandles, 
+                       _InitAllHandles.isInited, _InitHandle, _LegacyHandleVersionNumber, 
+                       _LegacyHandleVersionString, _UninitHandle, _g_acHandles, 
+                       _g_adwHandles, _g_adwHeads, _g_adwNumHandles, _g_adwReaders, 
+                       _g_adwTails, _g_apHObjs, _g_axHandles, _xInit ]
+...

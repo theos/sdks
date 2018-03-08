@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/CoreDuetStatistics.framework/CoreDuetStatistics
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ '-[CDSEngine injestBasisObjects:error:]', '+[CDSEngine canonicalizeBasisObjectSequence:error:]', 
+                       '+[CDSEngine durationStatistic:fromBasisObjects:error:]', 
+                       '+[CDSEngine interArrivalStatistic:fromBasisObjects:error:]', 
+                       '+[CDSEngine valueStatistic:fromBasisObjects:error:]', 
+                       '-[CDSBasisObject .cxx_destruct]', '-[CDSBasisObject attributeId]', 
+                       '-[CDSBasisObject basisDoubleValue]', '-[CDSBasisObject basisUint64Value]', 
+                       '-[CDSBasisObject basisValueString]', '-[CDSBasisObject creationDate]', 
+                       '-[CDSBasisObject duration]', '-[CDSBasisObject fallingEdge]', 
+                       '-[CDSBasisObject initWithLocalTime:creationDate:basisValueString:basisUint64Value:basisDoubleValue:risingEdge:fallingEdge:duration:attributeId:type:]', 
+                       '-[CDSBasisObject localTime]', '-[CDSBasisObject risingEdge]', 
+                       '-[CDSBasisObject setAttributeId:]', '-[CDSBasisObject setBasisDoubleValue:]', 
+                       '-[CDSBasisObject setBasisUint64Value:]', '-[CDSBasisObject setBasisValueString:]', 
+                       '-[CDSBasisObject setCreationDate:]', '-[CDSBasisObject setDuration:]', 
+                       '-[CDSBasisObject setFallingEdge:]', '-[CDSBasisObject setLocalTime:]', 
+                       '-[CDSBasisObject setRisingEdge:]', '-[CDSBasisObject setType:]', 
+                       '-[CDSBasisObject type]', '-[CDSEngine cachedAttributeIds]', 
+                       '-[CDSEngine copyOccurrenceCoevalityCorrelationMatrixWithCoevalityLeewaySeconds:writeAttributeCount:error:]', 
+                       '-[CDSEngine copyOccurrenceOrderingCorrelationMatrixWithOrderingGapLeewaySeconds:writeAttributeCount:error:]', 
+                       '-[CDSEngine copyPrincipalOccurrenceCoevalityComponentsWithCoevalityLeewaySeconds:writeAttributeCount:writeAttributeIds:error:]', 
+                       '-[CDSEngine copyPrincipalOccurrenceOrderingComponentsWithOrderingGapLeewaySeconds:writeAttributeCount:writeAttributeIds:error:]', 
+                       '-[CDSEngine copyPrincipalRangeCoevalityComponentsWithCoevalityLeewaySeconds:writeAttributeCount:writeAttributeIds:writeStatisticTypes:error:]', 
+                       '-[CDSEngine copyPrincipalRangeOrderingComponentsWithOrderingGapLeewaySeconds:writeAttributeCount:writeAttributeIds:writeStatisticTypes:error:]', 
+                       '-[CDSEngine copyRangeCoevalityCorrelationMatrixOfAttributeId:toAttributeId:coevalityLeewaySeconds:error:]', 
+                       '-[CDSEngine copyRangeCoevalityCorrelationMatrixWithCoevalityLeewaySeconds:writeAttributeCount:error:]', 
+                       '-[CDSEngine copyRangeOrderingCorrelationMatrixOfAttributeId:toAttributeId:orderingGapLeewaySeconds:error:]', 
+                       '-[CDSEngine copyRangeOrderingCorrelationMatrixWithOrderingGapLeewaySeconds:writeAttributeCount:error:]', 
+                       '-[CDSEngine durationStatistic:forAttributeId:error:]', 
+                       '-[CDSEngine interArrivalStatistic:forAttributeId:error:]', 
+                       '-[CDSEngine occurrenceCoevalityCorrelationOfAttributeId:toAttributeId:coevalityLeewaySeconds:error:]', 
+                       '-[CDSEngine occurrenceOrderingCorrelationOfAttributeId:toAttributeId:orderingGapLeewaySeconds:error:]', 
+                       '-[CDSEngine valueStatistic:forAttributeId:error:]' ]
+    objc-classes:    [ _CDSBasisObject, _CDSEngine ]
+    objc-ivars:      [ _CDSBasisObject._localTime, _CDSBasisObject._attributeId, 
+                       _CDSBasisObject._basisDoubleValue, _CDSBasisObject._basisUint64Value, 
+                       _CDSBasisObject._basisValueString, _CDSBasisObject._creationDate, 
+                       _CDSBasisObject._duration, _CDSBasisObject._fallingEdge, 
+                       _CDSBasisObject._risingEdge, _CDSBasisObject._type ]
+...

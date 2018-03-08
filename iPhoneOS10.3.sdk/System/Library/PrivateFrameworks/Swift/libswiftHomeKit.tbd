@@ -1,0 +1,44 @@
+---
+archs:           [ armv7, armv7s, arm64 ]
+platform:        ios
+install-name:    /System/Library/PrivateFrameworks/Swift/libswiftHomeKit.dylib
+current-version: 802.2.25
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ __TF7HomeKitau49HMCharacteristicPropertySupportsEventNotificationSS, 
+                       __Tv7HomeKit49HMCharacteristicPropertySupportsEventNotificationSS, 
+                       '__swift_FORCE_LOAD_$_swiftHomeKit', _globalinit_33_2053F5E905889B75BD59876FE24E7111_func0, 
+                       _globalinit_33_2053F5E905889B75BD59876FE24E7111_token0 ]
+    weak-def-symbols: [ __TTWVCSo14NSNotification4Names21_ObjectiveCBridgeable10FoundationFS1_19_bridgeToObjectiveCfT_wx15_ObjectiveCType, 
+                        __TMLCSo14NSNotification, __TMLCSo8NSString, __TMRaVCSo14NSNotification4Names16RawRepresentable10Foundation, 
+                        __TMRaVCSo14NSNotification4Names21_ObjectiveCBridgeable10Foundation, 
+                        __TMRfCSo8NSString, __TMRsCSo8NSString, __TMVCSo14NSNotification4Name, 
+                        __TMaCSo8NSString, __TMnVCSo14NSNotification4Name, 
+                        __TTSf4g_n_d___TTSg5VCSo14NSNotification4NameS0_s20_SwiftNewtypeWrapper10Foundation___TZFesRxs20_SwiftNewtypeWrapperwx8RawValues21_ObjectiveCBridgeablerS_26_forceBridgeFromObjectiveCfTWxS0_15_ObjectiveCType_6resultRGSqx__T_, 
+                        __TTSf4g_n_d___TTSg5VCSo14NSNotification4NameS0_s20_SwiftNewtypeWrapper10Foundation___TZFesRxs20_SwiftNewtypeWrapperwx8RawValues21_ObjectiveCBridgeablerS_34_conditionallyBridgeFromObjectiveCfTWxS0_15_ObjectiveCType_6resultRGSqx__Sb, 
+                        __TTSg5VCSo14NSNotification4NameS0_s20_SwiftNewtypeWrapper10Foundation___TFesRxs20_SwiftNewtypeWrapperwx8RawValues21_ObjectiveCBridgeablerS_19_bridgeToObjectiveCfT_WxS0_15_ObjectiveCType_, 
+                        __TTWVCSo14NSNotification4Names16RawRepresentable10FoundationFS1_CfT8rawValuewx8RawValue_GSqx_, 
+                        __TTWVCSo14NSNotification4Names16RawRepresentable10FoundationFS1_g8rawValuewx8RawValue, 
+                        __TTWVCSo14NSNotification4Names21_ObjectiveCBridgeable10FoundationZFS1_26_forceBridgeFromObjectiveCfTwx15_ObjectiveCType6resultRGSqx__T_, 
+                        __TTWVCSo14NSNotification4Names21_ObjectiveCBridgeable10FoundationZFS1_34_conditionallyBridgeFromObjectiveCfTwx15_ObjectiveCType6resultRGSqx__Sb, 
+                        __TTWVCSo14NSNotification4Names21_ObjectiveCBridgeable10FoundationZFS1_36_unconditionallyBridgeFromObjectiveCfGSqwx15_ObjectiveCType_x, 
+                        __TWPVCSo14NSNotification4Names16RawRepresentable10Foundation, 
+                        __TWPVCSo14NSNotification4Names20_SwiftNewtypeWrapper10Foundation, 
+                        __TWPVCSo14NSNotification4Names21_ObjectiveCBridgeable10Foundation, 
+                        __TWVVCSo14NSNotification4Name, __TwCPVCSo14NSNotification4Name, 
+                        __TwCcVCSo14NSNotification4Name, __TwCpVCSo14NSNotification4Name, 
+                        __TwXXVCSo14NSNotification4Name, __TwXxVCSo14NSNotification4Name, 
+                        __TwcaVCSo14NSNotification4Name, __TwcpVCSo14NSNotification4Name, 
+                        __TwtaVCSo14NSNotification4Name, __TwxgVCSo14NSNotification4Name, 
+                        __TwxsVCSo14NSNotification4Name, __TwxxVCSo14NSNotification4Name, 
+                        ___swift_memcpy8_8, ___swift_memmove_array8_8, 
+                        ___swift_noop_self_return, ___swift_noop_void_return, 
+                        ___swift_reflection_version, '__swift_FORCE_LOAD_$_swiftCoreGraphics_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftCoreImage_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftDarwin_$_HomeKit', '__swift_FORCE_LOAD_$_swiftDispatch_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftFoundation_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftObjectiveC_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftQuartzCore_$_HomeKit', 
+                        '__swift_FORCE_LOAD_$_swiftUIKit_$_HomeKit', _swift_rt_swift_getInitializedObjCClass, 
+                        _swift_rt_swift_slowAlloc, _swift_rt_swift_slowDealloc ]
+...
