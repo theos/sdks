@@ -1,38 +1,32 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities
-current-version: 800.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities
+current-version:       800
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _CUTAuditTokenTaskHasEntitlement,
-                        _CUTCreateXPCObjectFromDictionary, _CUTDataForPropertyList,
-                        _CUTGetMainBundleIdentifier, _CUTGetXPCConnectionContext,
-                        _CUTGetXPCDoubleFromDictionary, _CUTGetXPCStringFromDictionary,
-                        _CUTInsertDatasToXPCDictionary, _CUTInsertIntsToXPCDictionary,
-                        _CUTLogBacktrace, _CUTPrintf,
-                        _CUTPropertyListFromNSData, _CUTSetXPCConnectionContext,
-                        _CUTWeakLinkClass, _CUTWiFiManagerMaxMeasurementErrorKey,
-                        _CUTWiFiManagerSSIDKey, _CUTXPCAlert,
-                        _CUTXPCConfigureConnection, _CUTXPCCreateConnectionForService,
-                        _CUTXPCCreateServerConnection, __CUTLog,
-                        __CUTLogForceEnable, __CUTLogForceEnableEverything,
-                        __CUTLogLevel, __CUTSyncLoggingSettings,
-                        __CUTWillLog, _CUTCreateDictionaryFromXPCObject,
-                        _CUTGetMainBundle, _CUTGetXPCDataFromDictionary,
-                        _CUTInsertBoolsToXPCDictionary, _CUTInsertNSStringsToXPCDictionary,
-                        _CUTProcessNameForPid, _CUTTemporaryPath,
-                        _CUTWiFiManagerPMDurationKey, _CUTXPCAlertv,
-                        _CUTXPCCreateConnectionForServiceWithQueue, __CUTLogCategoryFromMessage,
-                        __CUTLogForceWriteToStdout, __CUTWarn ]
-    objc-classes:     [ _CUTFileCopier,
-                        _CUTPowerAssertion, _CUTReachability,
-                        _CUTWeakReference, _CUTWiFiManager,
-                        _CUTNetworkInterfaceListener, _CUTTelephonyManager ]
-    objc-ivars:       [ _CUTNetworkInterfaceListener._IPv4Addresses,
-                        _CUTNetworkInterfaceListener._cellState, _CUTNetworkInterfaceListener._delegateQueue,
-                        _CUTNetworkInterfaceListener._wifiState, _CUTPowerAssertion._identifier,
-                        _CUTPowerAssertion._stack, _CUTNetworkInterfaceListener._IPv6Addresses,
-                        _CUTNetworkInterfaceListener._dynamicStore, _CUTPowerAssertion._assertion ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _CUTAuditTokenTaskHasEntitlement, _CUTCreateDictionaryFromXPCObject, _CUTCreateXPCObjectFromDictionary,
+                          _CUTCurrentBacktraceHasSelector, _CUTDataForPropertyList, _CUTGetMainBundle,
+                          _CUTGetMainBundleIdentifier, _CUTGetXPCBoolFromDictionary, _CUTGetXPCConnectionContext,
+                          _CUTGetXPCDataFromDictionary, _CUTGetXPCDoubleFromDictionary, _CUTGetXPCIntFromDictionary,
+                          _CUTGetXPCStringFromDictionary, _CUTInsertBoolsToXPCDictionary, _CUTInsertDatasToXPCDictionary,
+                          _CUTInsertDoublesToXPCDictionary, _CUTInsertIntsToXPCDictionary, _CUTInsertNSStringsToXPCDictionary,
+                          _CUTLogBacktrace, _CUTLogBacktraceToDepth, _CUTPrintf, _CUTProcessNameForPid,
+                          _CUTPropertyListFromNSData, _CUTSafeArrayOfStrings, _CUTSetXPCConnectionContext, _CUTTemporaryPath,
+                          _CUTWeakLinkClass, _CUTWeakLinkSymbol, _CUTWiFiManagerMaxMeasurementErrorKey,
+                          _CUTWiFiManagerPMDurationKey, _CUTWiFiManagerSSIDKey, _CUTWiFiManagerTotalDurationKey, _CUTXPCAlert,
+                          _CUTXPCAlertv, _CUTXPCConfigureConnection, _CUTXPCConnectionSetEventHandlers,
+                          _CUTXPCCreateConnectionForService, _CUTXPCCreateConnectionForServiceWithQueue,
+                          _CUTXPCCreateServerConnection, __CUTAlwaysLog, __CUTLog, __CUTLogCategoryFromMessage,
+                          __CUTLogForceEnable, __CUTLogForceEnableCategory, __CUTLogForceEnableEverything,
+                          __CUTLogForceWriteToStdout, __CUTLogLevel, __CUTLogMessageFromMessage, __CUTSyncLoggingSettings,
+                          __CUTWarn, __CUTWillLog ]
+    objc-classes:       [ _CUTFileCopier, _CUTNetworkInterfaceListener, _CUTPowerAssertion, _CUTPowerMonitor, _CUTReachability,
+                          _CUTTelephonyManager, _CUTWeakReference, _CUTWiFiManager ]
+    objc-ivars:         [ _CUTNetworkInterfaceListener._IPv4Addresses, _CUTNetworkInterfaceListener._IPv6Addresses,
+                          _CUTNetworkInterfaceListener._cellState, _CUTNetworkInterfaceListener._delegateMap,
+                          _CUTNetworkInterfaceListener._delegateQueue, _CUTNetworkInterfaceListener._dynamicStore,
+                          _CUTNetworkInterfaceListener._wifiState, _CUTPowerAssertion._assertion, _CUTPowerAssertion._identifier,
+                          _CUTPowerAssertion._stack ]
 ...

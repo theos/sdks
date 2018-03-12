@@ -1,21 +1,17 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _DMChangeGraphicalProgressVisibility,
-                        _DMCopyContext, _DMCopyCurrentBuildVersion,
-                        _DMForceMigrationOnNextReboot, _DMPerformMigration,
-                        _DMSetContext, _DMTestMigrationUI,
-                        __DMPerformMigration, _DMClearContext,
-                        _DMCopyOrderedPluginIndentifiers, _DMPerformMigrationIfNeeded,
-                        __DMLog ]
-    objc-classes:     [ _DMConnection,
-                        _DataClassMigrator, _DMXPCConnection ]
-    objc-ivars:       [ _DMXPCConnection._connection,
-                        _DMXPCConnection._replyQueue, _DataClassMigrator._context,
-                        _DMXPCConnection._queue ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _DMChangeGraphicalProgressVisibility, _DMClearContext, _DMCopyContext, _DMCopyContextValue,
+                          _DMCopyCurrentBuildVersion, _DMCopyOrderedPluginIndentifiers, _DMForceMigrationOnNextReboot,
+                          _DMIsMigrationNeeded, _DMPerformMigration, _DMPerformMigrationIfNeeded, _DMSetContext,
+                          _DMSetContextValue, _DMTestMigrationUI, __DMLog, __DMPerformMigration ]
+    objc-classes:       [ _DMConnection, _DMXPCConnection, _DataClassMigrator ]
+    objc-ivars:         [ _DMConnection._lastPlugin, _DMXPCConnection._connection, _DMXPCConnection._interruptionHandler,
+                          _DMXPCConnection._invalidationHandler, _DMXPCConnection._queue, _DMXPCConnection._replyQueue,
+                          _DataClassMigrator._context, _DataClassMigrator._didUpgrade ]
 ...

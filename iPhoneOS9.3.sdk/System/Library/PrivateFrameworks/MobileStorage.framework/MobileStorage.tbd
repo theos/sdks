@@ -1,19 +1,15 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/MobileStorage.framework/MobileStorage
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/MobileStorage.framework/MobileStorage
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _DOMDialogIsDisplayed,
-                        _MobileStorageCopyAndFixPlist, _MobileStorageMount,
-                        _MobileStorageSync, _dmlog,
-                        _makePathWithSignature, _path_contains_links,
-                        _remove_item_at_path, _signatureFromPath,
-                        _strFromData, _traverse_path,
-                        _DOMDisplayAutoDismissDialog, _MobileStorageOpenUserFSNode,
-                        _hexSignatureFromPath, _path_is_bad,
-                        _signatureMatchesPath, _stringForXPCType ]
-    objc-classes:     [ _PlistProcessor ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _DOMDialogIsDisplayed, _DOMDisplayAutoDismissDialog, _MobileStorageCopyAndFixPlist,
+                          _MobileStorageCopyDevices, _MobileStorageMount, _MobileStorageOpenUserFSNode, _MobileStorageSync,
+                          _MobileStorageUnmount, _dmlog, _hexSignatureFromPath, _makePathWithSignature, _mkdir_recursive,
+                          _path_contains_links, _path_is_bad, _remove_item_at_path, _serviceIsAttachedToRemovableDevice,
+                          _signatureFromPath, _signatureMatchesPath, _strFromData, _stringForXPCType, _traverse_path ]
+    objc-classes:       [ _PlistProcessor ]
 ...

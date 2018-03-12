@@ -1,13 +1,14 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/GameCenter.framework/GameCenter
-current-version: 367.255.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/GameCenter.framework/GameCenter
+current-version:       367.255
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    re-exports:       [ /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation,
-                        /System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit, /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI ]
-    symbols:          [ _GKGameCenterUmbrellaFrameworkStub,
-                        _kGameCenterGameCenterVersionString, _kGameCenterGameCenterVersionNumber ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation,
+                          /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI,
+                          /System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit ]
+    symbols:            [ _GKGameCenterUmbrellaFrameworkStub, _kGameCenterGameCenterVersionNumber,
+                          _kGameCenterGameCenterVersionString ]
 ...

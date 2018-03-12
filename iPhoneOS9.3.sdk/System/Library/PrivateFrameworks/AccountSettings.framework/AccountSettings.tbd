@@ -1,46 +1,40 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/AccountSettings.framework/AccountSettings
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AccountSettings.framework/AccountSettings
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _ASLog,
-                        _daAccountPath, _kASChangeAccountChangeTypeKey,
-                        _kASChangeAccountOriginallyEnabledDataclassesKey, _kAccountCalendarsWereMigrated,
-                        _kAccountClass, _kAccountDataclassBookmarks,
-                        _kAccountDataclassContacts, _kAccountDataclassDeviceLocator,
-                        _kAccountDataclassMail, _kAccountDataclassNotes,
-                        _kAccountDataclassSharedStreams, _kAccountDataclassUbiquity,
-                        _kAccountDeleteActionMergeData, _kAccountEnabledDataclasses,
-                        _kAccountMigrationLockFilename, _kAccountProvisionedDataclasses,
-                        _kAccountSupportedDataclasses, _kAccountType,
-                        _kAccountUsername, _kAppleAccountType,
-                        _kCalDAVAccountType, _kCardDAVAccountType,
-                        _kDataclassDisplaySwitch, _kDataclassSupportsMultipleStores,
-                        _kDataclassToggleActionDeleteSyncData, _kDataclassToggleActionMergeLocalData,
-                        _kDataclassToggleActionNone, _kGmailAccountType,
-                        _kLDAPAccountType, _kMobileMeAccountType,
-                        _kPlistAccountsKey, _kPropertiesDeleteAccountActions,
-                        _kPropertiesEnableDataclassActions, _kPropertiesSupportedDataclasses,
-                        _kSubscribedCalendarAccountType, _mailAccountsPath,
-                        _reportMailAccountClassFound, _accountSettingsAccountsPath,
-                        _kASChangeAccountIdentifierKey, _kAccountChildAccounts,
-                        _kAccountDataclassCalendars, _kAccountDataclassKeyValue,
-                        _kAccountDataclassReminders, _kAccountDeleteActionDeleteData,
-                        _kAccountIdentifier, _kAccountShortTypeString,
-                        _kAccountTypeString, _kBookmarkDAVAccountType,
-                        _kCastleIMAPAccountType, _kDataclassToggleActionDeleteLocalData,
-                        _kDataclassToggleActionMergeSyncData, _kIMAPNotesAccountType,
-                        _kOnMyDeviceAccountType, _kPropertiesDisableDataclassActions,
-                        _kSMTPAccountType, _kYahooAccountType ]
-    objc-classes:     [ _ASRuntimeFixMailAccount,
-                        _BasicAccount, _DeviceLocalAccount,
-                        _AccountsManager ]
-    objc-ivars:       [ _ASRuntimeFixMailAccount._shouldNotifyMobileMail,
-                        _AccountsManager._childAccountIDToParentAccountID, _AccountsManager._orderedTopLevelAccounts,
-                        _BasicAccount._fullAccount, _BasicAccount._parentAccount,
-                        _BasicAccount._syncAccount, _ASRuntimeFixMailAccount._supportedMailClasses,
-                        _AccountsManager._topLevelAccountsByID, _BasicAccount._properties ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _ASLog, _accountSettingsAccountsPath, _daAccountPath, _getASLoggingEnabled,
+                          _kASChangeAccountChangeTypeKey, _kASChangeAccountIdentifierKey,
+                          _kASChangeAccountOriginallyEnabledDataclassesKey, _kASChangeAccountTypeKey,
+                          _kAccountCalendarsWereMigrated, _kAccountChildAccounts, _kAccountClass, _kAccountDataclassBackup,
+                          _kAccountDataclassBookmarks, _kAccountDataclassCalendars, _kAccountDataclassContacts,
+                          _kAccountDataclassContactsSearch, _kAccountDataclassDeviceLocator, _kAccountDataclassKeyValue,
+                          _kAccountDataclassMail, _kAccountDataclassMediaStream, _kAccountDataclassNotes,
+                          _kAccountDataclassReminders, _kAccountDataclassSharedStreams, _kAccountDataclassShoebox,
+                          _kAccountDataclassUbiquity, _kAccountDeleteActionDeleteData, _kAccountDeleteActionMergeData,
+                          _kAccountDisplayName, _kAccountEnabledDataclasses, _kAccountIdentifier, _kAccountMigrationLockFilename,
+                          _kAccountPreventRecentsSyncing, _kAccountProvisionedDataclasses, _kAccountShortTypeString,
+                          _kAccountSupportedDataclasses, _kAccountSyncIdentifier, _kAccountType, _kAccountTypeString,
+                          _kAccountUsername, _kAccountsFilename, _kAppleAccountType, _kBookmarkDAVAccountType,
+                          _kCalDAVAccountType, _kCalendarsAccountSubscribedCalendars, _kCardDAVAccountType,
+                          _kCastleIMAPAccountType, _kDataclassDisplaySwitch, _kDataclassRequiresUserConfirmation,
+                          _kDataclassSupportsMultipleStores, _kDataclassToggleActionDeleteLocalData,
+                          _kDataclassToggleActionDeleteSyncData, _kDataclassToggleActionKeepLocalData,
+                          _kDataclassToggleActionMergeLocalData, _kDataclassToggleActionMergeSyncData,
+                          _kDataclassToggleActionNone, _kExchangeAccountType, _kGmailAccountType, _kIMAPNotesAccountType,
+                          _kLDAPAccountType, _kMailAccountType, _kMobileMeAccountType, _kOnMyDeviceAccountType,
+                          _kPlistAccountsKey, _kPlistVersionKey, _kPropertiesDeleteAccountActions,
+                          _kPropertiesDisableDataclassActions, _kPropertiesEnableDataclassActions,
+                          _kPropertiesShowRemindersSeparately, _kPropertiesSupportedDataclasses, _kSMTPAccountType,
+                          _kSubscribedCalendarAccountType, _kYahooAccountType, _mailAccountsPath, _reportMailAccountClassFound ]
+    objc-classes:       [ _ASRuntimeFixMailAccount, _AccountsManager, _BasicAccount, _DeviceLocalAccount ]
+    objc-ivars:         [ _ASRuntimeFixMailAccount._shouldNotifyMobileMail, _ASRuntimeFixMailAccount._supportedMailClasses,
+                          _AccountsManager._childAccountIDToParentAccountID, _AccountsManager._childAccountsByID,
+                          _AccountsManager._dataVersion, _AccountsManager._orderedTopLevelAccounts,
+                          _AccountsManager._originalAccountsByID, _AccountsManager._runtimeFixers,
+                          _AccountsManager._topLevelAccountsByID, _BasicAccount._fullAccount, _BasicAccount._originalProperties,
+                          _BasicAccount._parentAccount, _BasicAccount._properties, _BasicAccount._syncAccount ]
 ...

@@ -1,14 +1,13 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _CSCoderArrayCount,
-                        _SpotlightReceiverRegister, _SpotlightReceiverVersionString,
-                        _SpotlightSenderEntitlement, _SpotlightReceiverEntitlement,
-                        _SpotlightReceiverVersionNumber ]
-    objc-classes:     [ _SpotlightReceiverDelegate ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _CSCoderArrayCount, _SpotlightReceiverEntitlement, _SpotlightReceiverRegister,
+                          _SpotlightReceiverVersionNumber, _SpotlightReceiverVersionString, _SpotlightSenderEntitlement ]
+    objc-classes:       [ _SpotlightReceiverDelegate ]
+    objc-ivars:         [ _SpotlightReceiverDelegate._connections, _SpotlightReceiverDelegate._receiver ]
 ...

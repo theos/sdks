@@ -1,28 +1,30 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _BYAssistantFixUpVoiceTriggerStateIfNeeded,
-                        _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPresentedKey,
-                        _BYBuddyDoneKey, _BYBuddyLastExitKey,
-                        _BYBuddyNotBackedUpIdentifier, _BYBuddyRunHSA2MiniBuddy,
-                        _BYBuddyRunMesaMiniBuddy, _BYBuddyVersionKey,
-                        _BYLog, _BYLogInfo,
-                        _BYLoggingEnabled, _BYRestrictionsEnabled,
-                        _BYSetupAssistantBundleIdentifier, _BYSetupAssistantFinishedDarwinNotification,
-                        _BYSetupAssistantIsRunningSilentTokenUpgrade, _BYSetupAssistantNeedsToRun,
-                        _BYSetupAssistantSilentTokenUpgradeCompletedNotification, _Daemon_BYSetupAssistantNeedsToRun,
-                        _BYAssistantScreenShouldBeShownInSetupAssistant, _BYBuddyCurrentVersion,
-                        _BYBuddyMachService, _BYBuddyRunKeychainSyncMiniBuddy,
-                        _BYClearLaunchSentinel, _BYLogPublic,
-                        _BYSetLaunchSentinel, _BYSetupAssistantHasCompletedInitialRun,
-                        _BYSetupAssistantPrepareLaunchSentinel, _BYSetupAssistantSilentTokenUpgradeInProgressKey ]
-    objc-classes:     [ _BYAppleIDAccountsManager,
-                        _BYBuddyDaemonInterface, _BYManagedAppleIDBootstrap,
-                        _BYNetworkMonitor, _BYBuddyClientInterface,
-                        _BYLicenseAgreement ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _BYAssistantFixUpVoiceTriggerStateIfNeeded, _BYAssistantScreenShouldBeShownInSetupAssistant,
+                          _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPHSOfferedKey,
+                          _BYBuddyAssistantPresentedKey, _BYBuddyCurrentVersion, _BYBuddyDoneKey, _BYBuddyFinishedInitialRunKey,
+                          _BYBuddyLastExitKey, _BYBuddyMachService, _BYBuddyNotBackedUpIdentifier,
+                          _BYBuddyRunDiagnosticsMiniBuddy, _BYBuddyRunHSA2MiniBuddy, _BYBuddyRunKeychainSyncMiniBuddy,
+                          _BYBuddyRunMesaMiniBuddy, _BYBuddyRunPaymentMiniBuddy, _BYBuddyVersionKey, _BYClearLaunchSentinel,
+                          _BYLog, _BYLogDebug, _BYLogInfo, _BYLogPublic, _BYLoggingEnabled, _BYProcessNameForPID,
+                          _BYRestrictionsEnabled, _BYSetLaunchSentinel, _BYSetupAssistantBundleIdentifier,
+                          _BYSetupAssistantExitedDarwinNotification, _BYSetupAssistantFinishedDarwinNotification,
+                          _BYSetupAssistantHasCompletedInitialRun, _BYSetupAssistantIsRunningSilentTokenUpgrade,
+                          _BYSetupAssistantLaunchedDarwinNotification, _BYSetupAssistantNeedsToRun,
+                          _BYSetupAssistantPrepareLaunchSentinel, _BYSetupAssistantSilentTokenUpgradeCompletedNotification,
+                          _BYSetupAssistantSilentTokenUpgradeInProgressKey, _Daemon_BYSetupAssistantNeedsToRun ]
+    objc-classes:       [ _BYAppleIDAccountsManager, _BYBuddyClientInterface, _BYBuddyDaemonController, _BYBuddyDaemonInterface,
+                          _BYLicenseAgreement, _BYManagedAppleIDBootstrap, _BYNetworkMonitor ]
+    objc-ivars:         [ _BYAppleIDAccountsManager._aaService, _BYAppleIDAccountsManager._appleIDLoginPluginManager,
+                          _BYBuddyDaemonController._connection, _BYBuddyDaemonController._connectionLock,
+                          _BYManagedAppleIDBootstrap._authContext, _BYManagedAppleIDBootstrap._userSwitchContext,
+                          _BYNetworkMonitor._currentNetworkType, _BYNetworkMonitor._networkTypeBlocks,
+                          _BYNetworkMonitor._networkTypeQueue, _BYNetworkMonitor._observers, _BYNetworkMonitor._reachability,
+                          _BYNetworkMonitor._roaming ]
 ...

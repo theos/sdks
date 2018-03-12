@@ -1,45 +1,36 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary
-current-version: 167.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary
+current-version:       167
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _CKBeginImport,
-                        _CKCalculateFileSignatureWithFlags, _CKCheckChunkStoreDB,
-                        _CKChunkCoderFinish, _CKChunkCoderUpdate,
-                        _CKChunkCryptorRelease, _CKChunkEncryptionKeySize,
-                        _CKChunkSchemeAndEncryptionKeySize, _CKChunkSchemeSignatureAndKeySize,
-                        _CKChunkSignatureSize, _CKChunkStoreCreate,
-                        _CKChunkStoreCreateAtFilesystemPathWithTmpDir, _CKChunkStoreRelease,
-                        _CKCommitChunkedFile, _CKCompactStorage,
-                        _CKCopyChunkCache, _CKCreateRegisteredChunk,
-                        _CKDecryptData, _CKEndImport,
-                        _CKExportChunks, _CKFileSignatureCopy,
-                        _CKFileSignatureGeneratorFinish, _CKFileSignatureSize,
-                        _CKFixupChunkCacheAfterExchangeData, _CKGetLocationOfChunkInStorage,
-                        _CKGetRegisteredChunks, _CKGetRegisteredFileItemID,
-                        _CKGetRegisteredFileSignature, _CKImportChunks,
-                        _CKLockChunkStore, _CKLongReadUnlockChunkStore,
-                        _CKRegisterChunk, _CKRegisterChunksForItem,
-                        _CKRegisterItemAndChunks, _CKRegisterTemporaryChunk,
-                        _CKRegisteredChunkAtIndex, _CKRegisteredChunkLength,
-                        _CKRemoveStoredFile, _CKSchemeAndSignatureSize,
-                        _CKSignatureSize, _CKUnregisterChunksForItem,
-                        _CKUnregisterTemporaryChunk, _CKUnregisterTemporaryNChunk,
-                        _CKUpdateRegisteredFile, _kCKChunkListCacheXattrName,
-                        _kCKFileSignatureCacheMinFileSize, _kCKFileSignatureCacheXattrName,
-                        _CKCalculateFileSignature, _CKChunkCoderCreate,
-                        _CKChunkCryptorCreate, _CKChunkRefsForToken,
-                        _CKChunkSignatureAndKeySize, _CKChunkStoreCreateAtFilesystemPath,
-                        _CKCleanChunkStoreDBForInode, _CKConvertTemporaryChunks,
-                        _CKCreateStoredFile, _CKExportChunklist,
-                        _CKFileSignatureGeneratorCreate, _CKFileSignaturesEqual,
-                        _CKGetRegisteredChunk, _CKGetRegisteredFileItemIDs,
-                        _CKKeyForRegisteredChunk, _CKReadLockChunkStore,
-                        _CKRegisterFile, _CKRegisterTemporaryChunks,
-                        _CKRelocateTemporaryChunk, _CKSetCacheBlobFd,
-                        _CKUnregisterFile, _CKUnregisterTemporaryTChunk,
-                        _kCKCustomFixedChunkFileTypeHint ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _CKBeginImport, _CKCalculateFileSignature, _CKCalculateFileSignatureWithFlags,
+                          _CKCalculateItemSignature, _CKCheckChunkStoreDB, _CKChunkCoderCreate, _CKChunkCoderFinish,
+                          _CKChunkCoderRelease, _CKChunkCoderUpdate, _CKChunkCryptorCreate, _CKChunkCryptorRelease,
+                          _CKChunkCryptorUpdate, _CKChunkEncryptionKeySize, _CKChunkRefsForToken,
+                          _CKChunkSchemeAndEncryptionKeySize, _CKChunkSchemeAndSignatureSize, _CKChunkSchemeSignatureAndKeySize,
+                          _CKChunkSignatureAndKeySize, _CKChunkSignatureSize, _CKChunkSignaturesEqual, _CKChunkStoreCreate,
+                          _CKChunkStoreCreateAtFilesystemPath, _CKChunkStoreCreateAtFilesystemPathWithTmpDir,
+                          _CKChunkStoreInvalidate, _CKChunkStoreRelease, _CKCleanChunkStoreDBForInode, _CKCommitChunkedFile,
+                          _CKCommitDatabaseTransactions, _CKCompactStorage, _CKConvertTemporaryChunks, _CKCopyChunkCache,
+                          _CKCopyChunkListForStoredFileToken, _CKCreateRegisteredChunk, _CKCreateStoredFile, _CKDecryptData,
+                          _CKEncryptData, _CKEndImport, _CKExportChunklist, _CKExportChunks, _CKFileSchemeAndSignatureSize,
+                          _CKFileSignatureCopy, _CKFileSignatureGeneratorCreate, _CKFileSignatureGeneratorFinish,
+                          _CKFileSignatureGeneratorUpdate, _CKFileSignatureSize, _CKFileSignaturesEqual,
+                          _CKFixupChunkCacheAfterExchangeData, _CKGetCacheBlobFd, _CKGetLocationOfChunkInStorage,
+                          _CKGetRegisteredChunk, _CKGetRegisteredChunks, _CKGetRegisteredChunksForItemID,
+                          _CKGetRegisteredFileItemID, _CKGetRegisteredFileItemIDs, _CKGetRegisteredFileSignature,
+                          _CKImportChunklist, _CKImportChunks, _CKKeyForRegisteredChunk, _CKLockChunkStore,
+                          _CKLongReadLockChunkStore, _CKLongReadUnlockChunkStore, _CKReadLockChunkStore, _CKRegisterChunk,
+                          _CKRegisterChunksForFileWithHint, _CKRegisterChunksForItem, _CKRegisterFile, _CKRegisterItemAndChunks,
+                          _CKRegisterNeededChunk, _CKRegisterTemporaryChunk, _CKRegisterTemporaryChunks,
+                          _CKRegisteredChunkAtIndex, _CKRegisteredChunkKey, _CKRegisteredChunkLength, _CKRelocateTemporaryChunk,
+                          _CKRemoveStoredFile, _CKSchemeAndEncryptionKeySize, _CKSchemeAndSignatureSize, _CKSetCacheBlobFd,
+                          _CKSignatureSize, _CKUnlockChunkStore, _CKUnregisterChunksForItem, _CKUnregisterFile,
+                          _CKUnregisterTemporaryChunk, _CKUnregisterTemporaryChunks, _CKUnregisterTemporaryNChunk,
+                          _CKUnregisterTemporaryTChunk, _CKUpdateRegisteredFile, _CKValidateSignature,
+                          _kCKChunkListCacheXattrName, _kCKCustomFixedChunkFileTypeHint, _kCKFileSignatureCacheMinFileSize,
+                          _kCKFileSignatureCacheXattrName ]
 ...

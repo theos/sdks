@@ -1,32 +1,28 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
-current-version: 191.2.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
+current-version:       191.2
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _GetNSFriendlySeparator,
-                        _IPLoadAssistantServicesFramework, _IPNameOrderFamilyNameFirstKey,
-                        _IPNameOrderKey, _IPPreferNicknamesDisabled,
-                        _IPPreferNicknamesKey, _IPShortNameFormatFamilyNameGivenInitialKey,
-                        _IPShortNameFormatGivenNameFamilyInitialKey, _IPShortNameFormatKey,
-                        _IPShortNamesDisabled, _IPUIKeyboardCanonicalInputModeName,
-                        _IPUIKeyboardInputModeGetBaseLanguage, _IPUIKeyboardInputModeGetLanguageWithRegion,
-                        _IPUIKeyboardInputMode_Intl, _IUIntlPreferencesVersionNumber,
-                        _IntlPreferencesValue, _NSPersonNameDefaultDisplayNameOrderKey,
-                        _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShouldPreferNicknamesKey,
-                        _NSPersonNamePreferencesDidChangeNotification, _IPAFPreferences,
-                        _IPNameOrderGivenNameFirstKey, _IPPreferNicknamesEnabled,
-                        _IPShortNameFormatFamilyOnlyKey, _IPShortNameFormatUnsetKey,
-                        _IPUIKeyboardInputModeController, _IPUIKeyboardInputModeGetNormalizedIdentifier,
-                        _IUIntlPreferencesVersionString, _NSPersonNameDefaultNamePreferencesDomain,
-                        _NSPersonNameDefaultShortNameFormatKey ]
-    objc-classes:     [ _IPFoundationNamePreferenceInfoProvider,
-                        _IPiOSABNamePreferenceInfoProvider, _NSPersonNameComponentsFormatterPreferences,
-                        _IPOSXABNamePreferenceInfoProvider, _IntlUtility ]
-    objc-ivars:       [ _IntlUtility.mBidiLanguagesArray,
-                        _IntlUtility.mDisplayLanguageCachePtr, _IntlUtility.mLanguageList,
-                        _IntlUtility.mLocalizedLanguageList, _IntlUtility.mBidiTestedLanguagesArray,
-                        _IntlUtility.mDisplayLanguageCacheUsed ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _GetNSFriendlySeparator, _IPAFPreferences, _IPLoadAssistantServicesFramework, _IPLoadUIKitFramework,
+                          _IPNameOrderFamilyNameFirstKey, _IPNameOrderGivenNameFirstKey, _IPNameOrderKey, _IPNameOrderUnsetKey,
+                          _IPPreferNicknamesDisabled, _IPPreferNicknamesEnabled, _IPPreferNicknamesKey, _IPShortNameEnabledKey,
+                          _IPShortNameFormatFamilyNameGivenInitialKey, _IPShortNameFormatFamilyOnlyKey,
+                          _IPShortNameFormatGivenNameFamilyInitialKey, _IPShortNameFormatGivenOnlyKey, _IPShortNameFormatKey,
+                          _IPShortNameFormatUnsetKey, _IPShortNamesDisabled, _IPShortNamesEnabled,
+                          _IPUIKeyboardCanonicalInputModeName, _IPUIKeyboardInputModeController,
+                          _IPUIKeyboardInputModeGetBaseLanguage, _IPUIKeyboardInputModeGetIdentifierWithKeyboardLayouts,
+                          _IPUIKeyboardInputModeGetLanguageWithRegion, _IPUIKeyboardInputModeGetNormalizedIdentifier,
+                          _IPUIKeyboardInputMode_Intl, _IPUIKeyboardPreferencesController, _IUIntlPreferencesVersionNumber,
+                          _IUIntlPreferencesVersionString, _IntlPreferencesValue, _IntlSetPreferencesValue,
+                          _NSPersonNameDefaultDisplayNameOrderKey, _NSPersonNameDefaultNamePreferencesDomain,
+                          _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShortNameFormatKey,
+                          _NSPersonNameDefaultShouldPreferNicknamesKey, _NSPersonNamePreferencesDidChangeNotification ]
+    objc-classes:       [ _IPFoundationNamePreferenceInfoProvider, _IPOSXABNamePreferenceInfoProvider,
+                          _IPiOSABNamePreferenceInfoProvider, _IntlUtility, _NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:         [ _IntlUtility.mBidiLanguagesArray, _IntlUtility.mBidiTestedLanguagesArray,
+                          _IntlUtility.mDisplayLanguageCachePtr, _IntlUtility.mDisplayLanguageCacheUsed,
+                          _IntlUtility.mLanguageList, _IntlUtility.mLocalizedLanguageList ]
 ...

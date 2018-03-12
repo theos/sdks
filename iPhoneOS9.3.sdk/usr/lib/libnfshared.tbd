@@ -1,9 +1,9 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
+archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:        ios
 install-name:    /usr/lib/libnfshared.dylib
 exports:         
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
     symbols:         [ _NFCreateRootQueue, _NFDataAsHexString, _NFDataCreateWithBytes, 
                        _NFDataCreateWithBytesNoCopy, _NFDataCreateWithFile, 
                        _NFDataCreateWithHexString, _NFDataCreateWithLength, 

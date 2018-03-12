@@ -1,44 +1,40 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/VoicemailStore.framework/VoicemailStore
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/VoicemailStore.framework/VoicemailStore
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _VMStoreAddRecord,
-                        _VMStoreChangedExternallyNotification, _VMStoreCopyGreetingPath,
-                        _VMStoreCopyMailboxUsage, _VMStoreCopyOfAllRecordsWithFlagsInRemoteUIDRange,
-                        _VMStoreCopyOfAllRemoteUIDsWithTrashState, _VMStoreCopyRecordWithIdentifier,
-                        _VMStoreCopyToken, _VMStoreCountOfRecordsWithFlags,
-                        _VMStoreGetRecordWithRemoteUID, _VMStoreGetTimestampForTokenWithKey,
-                        _VMStoreInitialize, _VMStoreInvalidateCaches,
-                        _VMStoreRecordChangedFlagsKey, _VMStoreRecordCopyDataPath,
-                        _VMStoreRecordCopyToken, _VMStoreRecordFlagsDidChangeNotification,
-                        _VMStoreRecordGetCallbackNumber, _VMStoreRecordGetDuration,
-                        _VMStoreRecordGetFlags, _VMStoreRecordGetRemoteUID,
-                        _VMStoreRecordGetToken, _VMStoreRecordNewFlagsKey,
-                        _VMStoreRecordRelease, _VMStoreRecordSetDuration,
-                        _VMStoreRecordSetFlag, _VMStoreRecordSetFlagsFromServer,
-                        _VMStoreRecordSetToken, _VMStoreRemoveAllRecords,
-                        _VMStoreRemovedAllRecordsNotification, _VMStoreSave,
-                        _VMStoreSetMailboxUsage, _VMStoreSetTimestampForTokenWithKey,
-                        _VMStoreSetTokenForKey, _VMStoreXPCCopyTokenForKeyMethod,
-                        _VMStoreXPCMachServiceName, _VMStoreXPCMessageMethodKey,
-                        _VMStoreXPCRemoveAllRecordsMethod, _VMStoreXPCSetTokenMethod,
-                        __VMCreateDirectoriesToPath, __VMStoreCopyTokenForKey,
-                        __VMStoreCreateVMDConnection, __VMStoreGetMobileUID,
-                        __VMStoreRemoveAllRecords, __VMStoreSetTokenForKey,
-                        __VMStoreUtilitiesInitialize, _VMStoreChangedExternally,
-                        _VMStoreCopyKeyedTokens, _VMStoreCopyOfAllRemoteUIDsAndIdentifiers,
-                        _VMStoreCopyRecordWithRemoteUID, _VMStoreDestroy,
-                        _VMStoreGetUIDValidity, _VMStoreRecordChangedFlagsFromServerKey,
-                        _VMStoreRecordCopySender, _VMStoreRecordFlagsWillChangeNotification,
-                        _VMStoreRecordGetExpirationDate, _VMStoreRecordGetSender,
-                        _VMStoreRecordOldFlagsKey, _VMStoreRecordSetExpirationDate,
-                        _VMStoreRecordSetRemoteUID, _VMStoreRemoveRecord,
-                        _VMStoreServiceIsSubscribed, _VMStoreSetToken,
-                        _VMStoreXPCCopyTokenMethod, _VMStoreXPCMessageTokenKey,
-                        __CFStringGetOrCreateCString, __VMStoreCreateMessage,
-                        __VMStoreGetMobileUserDirectory, __VMStoreSetToken ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _VMStoreAddRecord, _VMStoreChangedExternally, _VMStoreChangedExternallyNotification,
+                          _VMStoreCleanBackingFiles, _VMStoreCopyGreetingPath, _VMStoreCopyKeyedTokens, _VMStoreCopyMailboxUsage,
+                          _VMStoreCopyOfAllRecordsWithFlags, _VMStoreCopyOfAllRecordsWithFlagsInRemoteUIDRange,
+                          _VMStoreCopyOfAllRemoteUIDsAndIdentifiers, _VMStoreCopyOfAllRemoteUIDsWithTrashState,
+                          _VMStoreCopyOfAllUnreadRecordsSinceRowID, _VMStoreCopyRecordWithIdentifier,
+                          _VMStoreCopyRecordWithRemoteUID, _VMStoreCopyToken, _VMStoreCopyTokenForKey,
+                          _VMStoreCountOfRecordsWithFlags, _VMStoreDestroy, _VMStoreGetRecordWithRemoteUID,
+                          _VMStoreGetRowIDOfLastInsert, _VMStoreGetTimestampForTokenWithKey, _VMStoreGetUIDValidity,
+                          _VMStoreInitialize, _VMStoreInitializeLocked, _VMStoreInvalidateCaches,
+                          _VMStoreRecordChangedFlagsFromServerKey, _VMStoreRecordChangedFlagsKey,
+                          _VMStoreRecordCopyCallbackNumber, _VMStoreRecordCopyDataPath, _VMStoreRecordCopySender,
+                          _VMStoreRecordCopyToken, _VMStoreRecordFlagsChangedNotification,
+                          _VMStoreRecordFlagsDidChangeNotification, _VMStoreRecordFlagsWillChangeNotification,
+                          _VMStoreRecordGetCallbackNumber, _VMStoreRecordGetDate, _VMStoreRecordGetDuration,
+                          _VMStoreRecordGetExpirationDate, _VMStoreRecordGetFlags, _VMStoreRecordGetIdentifier,
+                          _VMStoreRecordGetRemoteUID, _VMStoreRecordGetSender, _VMStoreRecordGetToken,
+                          _VMStoreRecordGetTrashedDate, _VMStoreRecordNewFlagsKey, _VMStoreRecordOldFlagsKey,
+                          _VMStoreRecordRelease, _VMStoreRecordSetData, _VMStoreRecordSetDuration,
+                          _VMStoreRecordSetExpirationDate, _VMStoreRecordSetFlag, _VMStoreRecordSetFlags,
+                          _VMStoreRecordSetFlagsFromServer, _VMStoreRecordSetRemoteUID, _VMStoreRecordSetToken,
+                          _VMStoreRecordSetTrashed, _VMStoreRemoveAllRecords, _VMStoreRemoveRecord,
+                          _VMStoreRemovedAllRecordsNotification, _VMStoreRemovedRecordsNotification, _VMStoreSave,
+                          _VMStoreServiceIsSubscribed, _VMStoreSetMailboxUsage, _VMStoreSetSaveHandler,
+                          _VMStoreSetTimestampForTokenWithKey, _VMStoreSetToken, _VMStoreSetTokenForKey, _VMStoreSetUIDValidity,
+                          _VMStoreXPCCopyTokenForKeyMethod, _VMStoreXPCCopyTokenMethod, _VMStoreXPCMachServiceName,
+                          _VMStoreXPCMessageKey, _VMStoreXPCMessageMethodKey, _VMStoreXPCMessageTokenKey,
+                          _VMStoreXPCRemoveAllRecordsMethod, _VMStoreXPCSetTokenForKeyMethod, _VMStoreXPCSetTokenMethod,
+                          __CFStringGetOrCreateCString, __VMCreateDirectoriesToPath, __VMStoreCopyToken,
+                          __VMStoreCopyTokenForKey, __VMStoreCreateMessage, __VMStoreCreateVMDConnection, __VMStoreGetMobileGID,
+                          __VMStoreGetMobileUID, __VMStoreGetMobileUserDirectory, __VMStoreRemoveAllRecords, __VMStoreSetToken,
+                          __VMStoreSetTokenForKey, __VMStoreUtilitiesInitialize ]
 ...

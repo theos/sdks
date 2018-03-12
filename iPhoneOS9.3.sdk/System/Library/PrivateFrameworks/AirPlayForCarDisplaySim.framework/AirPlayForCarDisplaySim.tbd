@@ -1,23 +1,25 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/AirPlayForCarDisplaySim.framework/AirPlayForCarDisplaySim
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AirPlayForCarDisplaySim.framework/AirPlayForCarDisplaySim
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _AirPlayCreateModesDictionary,
-                        _AirPlayReceiverServerCreate, _AirPlayReceiverServerSetDelegate,
-                        _AirPlayReceiverSessionChangeModes, _AirPlayReceiverSessionMakeModeStateFromDictionary,
-                        _AirPlayReceiverSessionRequestUI, _AirPlayReceiverSessionSendCommand_b,
-                        _AirPlayReceiverSessionSetDelegate, _AirPlayReceiverSessionSetNightMode,
-                        _CarPlayControlClientConnect, _CarPlayControlClientCreateWithServer,
-                        _CarPlayControlClientGetTypeID, _CarPlayControlClientStartTrackingController,
-                        _CarPlayControlClientStopTrackingController, _CarPlayControllerCopySourceVersion,
-                        _CarPlayControllerGetBluetoothMacAddress, _CarPlayControllerHasActiveServices,
-                        _AirPlayReceiverServerControl, _AirPlayReceiverServerSetProperty,
-                        _AirPlayReceiverSessionRequestSiriAction, _AirPlayReceiverSessionSendiAPMessage,
-                        _AirPlayReceiverSessionUpdateVehicleInformation, _CarPlayControlClientDisconnect,
-                        _CarPlayControlClientStop, _CarPlayControllerForgetInactiveServices,
-                        _CarPlayControllerGetTypeID ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _AirPlayCreateModesDictionary, _AirPlayReceiverServerControl, _AirPlayReceiverServerCreate,
+                          _AirPlayReceiverServerCreateWithConfigFilePath, _AirPlayReceiverServerSetDelegate,
+                          _AirPlayReceiverServerSetProperty, _AirPlayReceiverSessionChangeModes,
+                          _AirPlayReceiverSessionCopyProperty, _AirPlayReceiverSessionMakeModeStateFromDictionary,
+                          _AirPlayReceiverSessionRequestSiriAction, _AirPlayReceiverSessionRequestUI,
+                          _AirPlayReceiverSessionSendCommand, _AirPlayReceiverSessionSendCommand_b,
+                          _AirPlayReceiverSessionSendiAPMessage, _AirPlayReceiverSessionSetDelegate,
+                          _AirPlayReceiverSessionSetLimitedUI, _AirPlayReceiverSessionSetNightMode,
+                          _AirPlayReceiverSessionUpdateVehicleInformation, _CarPlayControlClientConnect,
+                          _CarPlayControlClientCreate, _CarPlayControlClientCreateWithServer, _CarPlayControlClientDisconnect,
+                          _CarPlayControlClientGetTypeID, _CarPlayControlClientStart,
+                          _CarPlayControlClientStartTrackingController, _CarPlayControlClientStop,
+                          _CarPlayControlClientStopTrackingController, _CarPlayControllerCopyName,
+                          _CarPlayControllerCopySourceVersion, _CarPlayControllerForgetInactiveServices,
+                          _CarPlayControllerGetBluetoothMacAddress, _CarPlayControllerGetTypeID,
+                          _CarPlayControllerHasActiveServices ]
 ...

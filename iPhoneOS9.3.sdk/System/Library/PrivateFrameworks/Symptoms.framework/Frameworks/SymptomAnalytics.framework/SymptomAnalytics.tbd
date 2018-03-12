@@ -1,44 +1,53 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics
-current-version: 1.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics
+current-version:       1
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _SymptomAnalyticsFrameworkDidSaveNotification,
-                        _init_symptom_analytics_logging, _kProcessKeyTypeProcName,
-                        _kSymptomAnalyticsNetworkAdvisoryDefiniteImprovement, _kSymptomAnalyticsNetworkAdvisoryDefiniteUse,
-                        _kSymptomAnalyticsNetworkAdvisoryInconclusive, _kSymptomAnalyticsNetworkAdvisoryKey,
-                        _kSymptomAnalyticsNetworkAdvisoryNotSupported, _kSymptomAnalyticsNetworkAdvisoryWeakNotUse,
-                        _kSymptomAnalyticsRootDefaultDirectory, _kSymptomAnalyticsServiceCopyRelationship,
-                        _kSymptomAnalyticsServiceCurrentWiFiAttachment, _kSymptomAnalyticsServiceEndpoint,
-                        _kSymptomAnalyticsServiceFlowHistorical, _kSymptomAnalyticsServiceFlowTag,
-                        _kSymptomAnalyticsServiceFlowTagIKE, _kSymptomAnalyticsServiceNOICanUseOnAlternate,
-                        _kSymptomAnalyticsServiceNOICanUseOnAlternateReasons, _kSymptomAnalyticsServiceNOIFetchForegroundActivity,
-                        _kSymptomAnalyticsServiceNOIFetchL2ThroughputMetrics, _kSymptomAnalyticsServiceNOIFetchPredictionsError,
-                        _kSymptomAnalyticsServiceNOIFetchTrafficInvitesHourlyDistribution, _kSymptomAnalyticsServiceNOIPredictions24hrs,
-                        _kSymptomAnalyticsServiceNetworkAttachmentCurrent, _kSymptomAnalyticsServiceNetworkAttachmentInstant,
-                        _kSymptomAnalyticsServicePostProcess, _kSymptomAnalyticsServiceProcessWithGeneration,
-                        _kSymptomAnalyticsServiceSweepUsage, _kSymptomAnalyticsServiceUsage,
-                        _kSymptomAnalyticsServiceWatchpointTarget, _kSymptomAnalyticsTypeBundleIdentifier,
-                        _prefs_add_logger, _analyticsVerbose,
-                        _kSymptomAnalyticsModelTrainServiceEndpoint, _kSymptomAnalyticsNetworkAdvisoryError,
-                        _kSymptomAnalyticsNetworkAdvisoryNoImprovement, _kSymptomAnalyticsNetworkAdvisoryWeakUse,
-                        _kSymptomAnalyticsServiceCurrentCellAttachment, _kSymptomAnalyticsServiceFlowCurrent,
-                        _kSymptomAnalyticsServiceFlowTagAll, _kSymptomAnalyticsServiceNOICanUseOnAlternateCodes,
-                        _kSymptomAnalyticsServiceNOIFetchInstantQuality, _kSymptomAnalyticsServiceNOIFetchPredictionsGenerationDate,
-                        _kSymptomAnalyticsServiceNameChain, _kSymptomAnalyticsServiceNetworkAttachmentPerformance,
-                        _kSymptomAnalyticsServiceRefreshUsage, _kSymptomAnalyticsServiceWatchpointKey,
-                        _kSymptomAnalyticsTypeProcessName ]
-    objc-classes:     [ _AnalyticsWorkspace,
-                        _AppAnalytics, _AppRun,
-                        _CheckUpEvent, _Event,
-                        _Flow, _LiveRoutePerf,
-                        _NetworkAttachment, _ObjectAnalytics,
-                        _Process, _ProvisioningData,
-                        _UsageAnalytics, _WiFiData,
-                        _App, _AppTypicalUsage,
-                        _EventScene, _LiveUsage,
-                        _Peer, _TshootingData ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _SymptomAnalyticsFrameworkDidSaveNotification, _analyticsVerbose, _init_symptom_analytics_logging,
+                          _kProcessKeyTypeBundleName, _kProcessKeyTypeProcName, _kSymptomAnalyticsModelTrainServiceEndpoint,
+                          _kSymptomAnalyticsNetworkAdvisoryDefiniteImprovement, _kSymptomAnalyticsNetworkAdvisoryDefiniteNotUse,
+                          _kSymptomAnalyticsNetworkAdvisoryDefiniteUse, _kSymptomAnalyticsNetworkAdvisoryError,
+                          _kSymptomAnalyticsNetworkAdvisoryInconclusive, _kSymptomAnalyticsNetworkAdvisoryInterfaceNotReady,
+                          _kSymptomAnalyticsNetworkAdvisoryKey, _kSymptomAnalyticsNetworkAdvisoryNoImprovement,
+                          _kSymptomAnalyticsNetworkAdvisoryNotSupported, _kSymptomAnalyticsNetworkAdvisoryWeakImprovement,
+                          _kSymptomAnalyticsNetworkAdvisoryWeakNotUse, _kSymptomAnalyticsNetworkAdvisoryWeakUse,
+                          _kSymptomAnalyticsRootDefaultDirectory, _kSymptomAnalyticsServiceCalendarUsageToggle,
+                          _kSymptomAnalyticsServiceCopyRelationship, _kSymptomAnalyticsServiceCurrentCellAttachment,
+                          _kSymptomAnalyticsServiceCurrentWiFiAttachment, _kSymptomAnalyticsServiceCurrentWiredAttachment,
+                          _kSymptomAnalyticsServiceEndpoint, _kSymptomAnalyticsServiceFlowCurrent,
+                          _kSymptomAnalyticsServiceFlowHistorical, _kSymptomAnalyticsServiceFlowInstant,
+                          _kSymptomAnalyticsServiceFlowTag, _kSymptomAnalyticsServiceFlowTagAll,
+                          _kSymptomAnalyticsServiceFlowTagIKE, _kSymptomAnalyticsServiceNOIArg1,
+                          _kSymptomAnalyticsServiceNOICanUseOnAlternate, _kSymptomAnalyticsServiceNOICanUseOnAlternateCodes,
+                          _kSymptomAnalyticsServiceNOICanUseOnAlternateReasons,
+                          _kSymptomAnalyticsServiceNOIFetchDayOfWeekGrouping,
+                          _kSymptomAnalyticsServiceNOIFetchForegroundActivity, _kSymptomAnalyticsServiceNOIFetchInstantQuality,
+                          _kSymptomAnalyticsServiceNOIFetchL2ThroughputMetrics, _kSymptomAnalyticsServiceNOIFetchPredictions,
+                          _kSymptomAnalyticsServiceNOIFetchPredictionsError,
+                          _kSymptomAnalyticsServiceNOIFetchPredictionsGenerationDate,
+                          _kSymptomAnalyticsServiceNOIFetchTrafficInvitesHourlyDistribution,
+                          _kSymptomAnalyticsServiceNOIFetchTrainingProgress, _kSymptomAnalyticsServiceNOIPredictions24hrs,
+                          _kSymptomAnalyticsServiceNameChain, _kSymptomAnalyticsServiceNetworkAttachmentCurrent,
+                          _kSymptomAnalyticsServiceNetworkAttachmentHistorical,
+                          _kSymptomAnalyticsServiceNetworkAttachmentInstant,
+                          _kSymptomAnalyticsServiceNetworkAttachmentPerformance, _kSymptomAnalyticsServicePostProcess,
+                          _kSymptomAnalyticsServicePostProcessComposeAdvisory, _kSymptomAnalyticsServiceProcessWithGeneration,
+                          _kSymptomAnalyticsServiceRefreshUsage, _kSymptomAnalyticsServiceSweepUsage,
+                          _kSymptomAnalyticsServiceTypicalUsageToggle, _kSymptomAnalyticsServiceUsage,
+                          _kSymptomAnalyticsServiceWatchpointKey, _kSymptomAnalyticsServiceWatchpointTarget,
+                          _kSymptomAnalyticsServiceWatchpointValue, _kSymptomAnalyticsTypeBundleIdentifier,
+                          _kSymptomAnalyticsTypeProcessName, _prefs_add_logger ]
+    objc-classes:       [ _AnalyticsWorkspace, _App, _AppAnalytics, _AppCalendarUsage, _AppRun, _AppTypicalUsage, _CheckUpEvent,
+                          _DemoLiveUsage, _Event, _EventScene, _Flow, _LiveFlowPerf, _LiveRoutePerf, _LiveUsage,
+                          _NetworkAttachment, _NetworkAttachmentAnalytics, _ObjectAnalytics, _Peer, _Process, _ProcessAnalytics,
+                          _ProvisioningData, _TshootingData, _UsageAnalytics, _WiFiData ]
+    objc-ivars:         [ _AnalyticsWorkspace.__connection, _AnalyticsWorkspace.__mainObjectContext,
+                          _AnalyticsWorkspace.__objectModel, _AnalyticsWorkspace.__persistentStoreCoordinator,
+                          _AnalyticsWorkspace.__resetCompletionBlock, _AnalyticsWorkspace.backingStore,
+                          _AnalyticsWorkspace.pathKnownToFail, _AnalyticsWorkspace.readOnly, _AnalyticsWorkspace.revision,
+                          _AnalyticsWorkspace.storeKind, _AnalyticsWorkspace.storeProt, _ObjectAnalytics.entityName,
+                          _ObjectAnalytics.managedCache, _ObjectAnalytics.wspace ]
 ...

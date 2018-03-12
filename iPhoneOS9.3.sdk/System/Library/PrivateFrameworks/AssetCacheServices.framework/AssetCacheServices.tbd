@@ -1,18 +1,16 @@
 ---
-archs:           [ armv7, armv7s, arm64 ]
-platform:        ios
-install-name:    /System/Library/PrivateFrameworks/AssetCacheServices.framework/AssetCacheServices
-current-version: 14.0.0
-compatibility-version: 1.0.0
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AssetCacheServices.framework/AssetCacheServices
+current-version:       14
+compatibility-version: 1
 exports:
-  - archs:            [ armv7, armv7s, arm64 ]
-    symbols:          [ _ACSImportFileIntoCachingServer,
-                        _ACSMightCurrentNetworkHaveCachingServer, _AssetCacheServicesVersionString,
-                        _kACSAdviceValidUntilKey, _kACSOptionCapabilityImport,
-                        _kACSOptionCapabilityPersonalCaching, _kACSOptionImportStrategyCopy,
-                        _kACSOptionImportStrategyRename, _kACSOptionQuickMissKey,
-                        _kACSOptionSourceLengthKey, _kACSOptionSourceOffsetKey,
-                        _ACSLocateCachingServer, _kACSAdviceConnectTimeoutKey,
-                        _kACSOptionCapabilityNamespaces, _kACSOptionImportStrategyHardLink,
-                        _kACSOptionSizeHintKey ]
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:            [ _ACSImportFileIntoCachingServer, _ACSLocateCachingServer, _ACSMightCurrentNetworkHaveCachingServer,
+                          _AssetCacheServicesVersionNumber, _AssetCacheServicesVersionString, _kACSAdviceConnectTimeoutKey,
+                          _kACSAdviceValidUntilKey, _kACSOptionCapabilitiesKey, _kACSOptionCapabilityImport,
+                          _kACSOptionCapabilityNamespaces, _kACSOptionCapabilityPersonalCaching, _kACSOptionImportStrategiesKey,
+                          _kACSOptionImportStrategyCopy, _kACSOptionImportStrategyHardLink, _kACSOptionImportStrategyRename,
+                          _kACSOptionImportStrategySymbolicLink, _kACSOptionQuickMissKey, _kACSOptionSizeHintKey,
+                          _kACSOptionSourceLengthKey, _kACSOptionSourceOffsetKey ]
 ...
