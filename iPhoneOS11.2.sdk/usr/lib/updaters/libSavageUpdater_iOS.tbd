@@ -1,0 +1,35 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /usr/lib/updaters/libSavageUpdater_iOS.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ _GetRelevantMeasurementTags, _SavageUpdaterCreate, _SavageUpdaterExecCommand, _SavageUpdaterIsDone,
+                          _SavageUpdaterSupported, __ZN12SavageDevice10myInstanceE, __ZN12SavageDevice11SetupDeviceEv,
+                          __ZN12SavageDevice11getInstanceEv, __ZN12SavageDevice14PrePersonalizeEj,
+                          __ZN12SavageDevice15destroyInstanceEv, __ZN12SavageDevice16SavageDeviceOpenEv,
+                          __ZN12SavageDevice17SavageDeviceCloseEv,
+                          __ZN12SavageDevice18CreateCertInfoBlobEP25SavageToBeCertifiedBlob_t,
+                          __ZN12SavageDevice18CreateNGIDProvBlobEP20SavageNGIDProvBlob_t,
+                          __ZN12SavageDevice20CreateDeviceInfoDictEP14__CFDictionary, __ZN12SavageDevice6FusingEjPKhj,
+                          __ZN12SavageDevice9PreFusingEj, __ZN12SavageDeviceC1Ev, __ZN12SavageDeviceC2Ev, __ZN12SavageDeviceD1Ev,
+                          __ZN12SavageDeviceD2Ev, __ZN22SavageUpdateController10myInstanceE,
+                          __ZN22SavageUpdateController11execCommandEPK10__CFStringPK14__CFDictionaryPS5_,
+                          __ZN22SavageUpdateController11getFirmwareEv, __ZN22SavageUpdateController11getInstanceEv,
+                          __ZN22SavageUpdateController14getTSSResponseEv, __ZN22SavageUpdateController15destroyInstanceEv,
+                          __ZN22SavageUpdateController17eventCmdQueryInfoEv,
+                          __ZN22SavageUpdateController20formatAndStitchFilesEv,
+                          __ZN22SavageUpdateController20getSignedCertificateEPKhj,
+                          __ZN22SavageUpdateController20validateSignatureLenEPhPj,
+                          __ZN22SavageUpdateController22writeFilesToFileSystemEv,
+                          __ZN22SavageUpdateController24eventCmdPerformNextStageEv,
+                          __ZN22SavageUpdateController5startEPK14__CFDictionaryPP9__CFError,
+                          __ZN22SavageUpdateController9SavageLogEPKcz, __ZN22SavageUpdateControllerC1Ev,
+                          __ZN22SavageUpdateControllerC2Ev, __ZN22SavageUpdateControllerD1Ev, __ZN22SavageUpdateControllerD2Ev,
+                          ___osLogPearlLib, ___osLogPearlLibTrace, __hexStringToBytes, _checkSavageProvisioning,
+                          _checkSavagePublicKeyMatches, _decompressReferenceFrames, _decryptFDRData, _encryptFDRData,
+                          _getSavageProvisioningData, _kSavageCmdPerformNextStage, _kSavageCmdQueryInfo, _kSavageErrorDomain,
+                          _makeCFError, _overridePCECalibration, _prewarmCamera, _verifyFDRData ]
+...

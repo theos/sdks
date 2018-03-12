@@ -1,0 +1,20 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /usr/lib/libAudioStatistics.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ _CAReportingClientCreateReporterID, _CAReportingClientDestroyReporterID,
+                          _CAReportingClientGetAudioServiceType, _CAReportingClientSendMessage,
+                          _CAReportingClientSendSingleMessage, _CAReportingClientSetAudioServiceType,
+                          _CAReportingClientStartReporter, _CAReportingClientStopReporter, _CreateSharedCAReportingClient ]
+    objc-classes:       [ _CAReporter, _CAReporter, _CAReportingClient,
+                          _CAReportingClient ]
+    objc-ivars:         [ _CAReporter._removedByClient, _CAReporter._reporterID,
+                          _CAReporter._serviceType, _CAReporter._startDate,
+                          _CAReportingClient._clientReporters, _CAReportingClient._connection,
+                          _CAReportingClient._serverDelegateAsync,
+                          _CAReportingClient._serverDelegateSync ]
+...

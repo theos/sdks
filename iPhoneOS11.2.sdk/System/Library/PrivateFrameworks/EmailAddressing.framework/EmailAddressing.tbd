@@ -1,0 +1,19 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing
+current-version:       3445.5.101
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ _EmailAddressingVersionNumber, _EmailAddressingVersionString ]
+    objc-classes:       [ _EAEmailAddressGenerator, _EAEmailAddressGenerator,
+                          _EAEmailAddressLists, _EAEmailAddressLists,
+                          _EAEmailAddressParser, _EAEmailAddressParser,
+                          _EAEmailAddressSet, _EAEmailAddressSet,
+                          _EmailAddressingFramework, _EmailAddressingFramework,
+                          __EAEmailAddress, __EAEmailAddress,
+                          __EAEmailAddressSetEnumerator, __EAEmailAddressSetEnumerator ]
+    objc-ivars:         [ _EAEmailAddressSet._internalSet, __EAEmailAddress._emailAddress,
+                          __EAEmailAddressSetEnumerator._set, __EAEmailAddressSetEnumerator._state ]
+...

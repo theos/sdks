@@ -1,0 +1,19 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/SoundBoardAccessibility.framework/SoundBoardAccessibility
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ _accessibilityLocalizedString, _localizedString ]
+    objc-classes:       [ _AXSBUIIvarEncodingDummy, _AXSBUIIvarEncodingDummy,
+                          _AXSoundBoard, _AXSoundBoard, _AXSoundBoardManager,
+                          _AXSoundBoardManager, _SBHIDInterfaceAccessibility,
+                          _SBHIDInterfaceAccessibility, _SBUIControllerAccessibility,
+                          _SBUIControllerAccessibility, ___SBHIDInterfaceAccessibility_super,
+                          ___SBHIDInterfaceAccessibility_super, ___SBUIControllerAccessibility,
+                          ___SBUIControllerAccessibility, ___SBUIControllerAccessibility_super,
+                          ___SBUIControllerAccessibility_super ]
+    objc-ivars:         [ _AXSBUIIvarEncodingDummy._state ]
+...

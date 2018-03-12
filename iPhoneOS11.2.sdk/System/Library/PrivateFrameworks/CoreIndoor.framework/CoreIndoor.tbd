@@ -1,0 +1,21 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/CoreIndoor.framework/CoreIndoor
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    objc-classes:       [ _CLGpsPosition, _CLGpsPosition, _CLGpsSignalQuality,
+                          _CLGpsSignalQuality, _CLIndoorCommonHooks,
+                          _CLIndoorCommonHooks, _CLIndoorLocation,
+                          _CLIndoorLocation, _CLIndoorMaintenance,
+                          _CLIndoorMaintenance, _CLIndoorPositionProvider,
+                          _CLIndoorPositionProvider, _CLIndoorSettings,
+                          _CLIndoorSettings, _CLLocationContextUtil,
+                          _CLLocationContextUtil, _CLLocationGroup,
+                          _CLLocationGroup, _CLPrefetchFloorRequest,
+                          _CLPrefetchFloorRequest, _ECEFCoordinate,
+                          _ECEFCoordinate, _ENUCoordinate, _ENUCoordinate,
+                          _GeographicCoordinate, _GeographicCoordinate ]
+...

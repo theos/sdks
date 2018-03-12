@@ -1,0 +1,29 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix
+current-version:       90.3
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ __Z21MPSDecrementReadCountP18MPSTemporaryMatrix, __Z21MPSDecrementReadCountP18MPSTemporaryVector ]
+    objc-classes:       [ _MPSMatrix, _MPSMatrix, _MPSMatrixBinaryKernel,
+                          _MPSMatrixBinaryKernel, _MPSMatrixCopy, _MPSMatrixCopy,
+                          _MPSMatrixCopyDescriptor, _MPSMatrixCopyDescriptor,
+                          _MPSMatrixDecompositionCholesky, _MPSMatrixDecompositionCholesky,
+                          _MPSMatrixDecompositionLU, _MPSMatrixDecompositionLU,
+                          _MPSMatrixDescriptor, _MPSMatrixDescriptor,
+                          _MPSMatrixFindTopK, _MPSMatrixFindTopK,
+                          _MPSMatrixLogSoftMax, _MPSMatrixLogSoftMax,
+                          _MPSMatrixMultiplication, _MPSMatrixMultiplication,
+                          _MPSMatrixSoftMax, _MPSMatrixSoftMax,
+                          _MPSMatrixSolveCholesky, _MPSMatrixSolveCholesky,
+                          _MPSMatrixSolveLU, _MPSMatrixSolveLU,
+                          _MPSMatrixSolveTriangular, _MPSMatrixSolveTriangular,
+                          _MPSMatrixUnaryKernel, _MPSMatrixUnaryKernel,
+                          _MPSMatrixVectorMultiplication, _MPSMatrixVectorMultiplication,
+                          _MPSTemporaryMatrix, _MPSTemporaryMatrix,
+                          _MPSTemporaryVector, _MPSTemporaryVector, _MPSVector,
+                          _MPSVector, _MPSVectorDescriptor, _MPSVectorDescriptor ]
+    objc-ivars:         [ _MPSMatrix._buffer, _MPSVector._buffer ]
+...

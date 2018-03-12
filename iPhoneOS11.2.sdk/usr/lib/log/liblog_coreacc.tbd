@@ -1,0 +1,13 @@
+---
+archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+platform:              ios
+install-name:          /usr/lib/log/liblog_coreacc.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+    symbols:            [ _NSObjectIfNotNull, _OSLogCopyFormattedString, _classImplementsMethodsInProtocol,
+                          _convertNSDataToNSString, _convertNSStringToNSData, _isNSObjectEqual, _isNSObjectNull,
+                          _kACCConnection_Type_Strings, _kACCEndpoint_Protocol_Strings, _kACCEndpoint_TransportType_Strings,
+                          _trimBidirectionalUnicodeCharacters ]
+...
