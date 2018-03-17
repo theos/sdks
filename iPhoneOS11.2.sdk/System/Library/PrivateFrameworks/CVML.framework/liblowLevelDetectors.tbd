@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CVML.framework/liblowLevelDetectors.dylib
 current-version:       1.72
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AdjacentContourHeal, _AnnealAllContours, _AnnealContours, _BresenhamCoords, _BresenhamLength,
                           _CCRectLowLevel, _CanonicalizeQuads, _ConnectedComponents, _Contours2Quads, _GenerateSegments,
                           _Grad_Mag, _InitializeEndpointsImage, _Logical2Gray, _Lsq2Leq, _MergeContours, _NonMaximumSuppression,

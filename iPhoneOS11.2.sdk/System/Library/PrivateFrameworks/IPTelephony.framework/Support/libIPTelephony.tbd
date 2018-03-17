@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IPTelephony.framework/Support/libIPTelephony.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _IMSClientEventToString, _InitializeIPTelephony, __Z10IMSEndCallPN3ims12ClientHandleEhbb,
                           __Z10IMSSendSMSPN3ims12ClientHandleERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_RKNS2_6vectorIhNS6_IhEEEESA_,
                           __Z11IMSPullCallPN3ims12ClientHandleERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEPK14__CFDictionary,
@@ -384,21 +384,15 @@ exports:
                           _kIMSIsEmergencyMediaManager, _kIMSPreferredMediaStackAP, _kIMSPreferredMediaStackBaseband,
                           _kIMSPreferredMediaStackKey, _kIMSQOSInfoPortList, _kIMSTextStreamToken, _kIMSThumperDialogId,
                           _kIMSVocoderCodec, _kIMSVocoderSampleRate, _shouldSuppressLoggingOfEvent ]
-    objc-classes:       [ _AVCRTPAudioSessionDelegate, _AVCRTPAudioSessionDelegate,
-                          _AVCRTPTextSessionDelegate, _AVCRTPTextSessionDelegate,
-                          _E911LocationManager, _E911LocationManager,
-                          _KeepAliveManager, _KeepAliveManager ]
+    objc-classes:       [ _AVCRTPAudioSessionDelegate, _AVCRTPTextSessionDelegate, _E911LocationManager, _KeepAliveManager ]
     objc-ivars:         [ _AVCRTPAudioSessionDelegate.owner, _AVCRTPAudioSessionDelegate.stackController,
                           _AVCRTPTextSessionDelegate.owner, _AVCRTPTextSessionDelegate.stackController,
                           _E911LocationManager._delegate, _E911LocationManager._desiredIntegrity,
-                          _E911LocationManager._desiredLocationAccuracy,
-                          _E911LocationManager._goodEnoughLocation, _E911LocationManager._location,
-                          _E911LocationManager._locationAvailable,
-                          _E911LocationManager._locationRequested,
-                          _E911LocationManager._locationServiceAuthorized,
-                          _E911LocationManager._locationServiceDenied,
-                          _E911LocationManager._locationServicesAssertion, _E911LocationManager._manager,
-                          _KeepAliveManager._delegate, _KeepAliveManager._enableWakeUpOnWifi,
-                          _KeepAliveManager._keepAliveId, _KeepAliveManager._keepAliveStarted,
-                          _KeepAliveManager._manager, _KeepAliveManager._wifiManagerRef ]
+                          _E911LocationManager._desiredLocationAccuracy, _E911LocationManager._goodEnoughLocation,
+                          _E911LocationManager._location, _E911LocationManager._locationAvailable,
+                          _E911LocationManager._locationRequested, _E911LocationManager._locationServiceAuthorized,
+                          _E911LocationManager._locationServiceDenied, _E911LocationManager._locationServicesAssertion,
+                          _E911LocationManager._manager, _KeepAliveManager._delegate, _KeepAliveManager._enableWakeUpOnWifi,
+                          _KeepAliveManager._keepAliveId, _KeepAliveManager._keepAliveStarted, _KeepAliveManager._manager,
+                          _KeepAliveManager._wifiManagerRef ]
 ...

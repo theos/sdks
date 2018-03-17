@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IAP.framework/IAP
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _Generate32BitConnectionID, _GetConnectionToIAP2Daemon, _GetConnectionToIAPDaemon,
                           _GetConnectionToIAPDaemonByCheckingConnectionID, _GetConnectionToIAPDaemonOwningPhysicalConnector,
                           _GetConnectionToIAPDaemonWithConnectionID, _GetConnectionToIAPTransportDaemon,
@@ -249,34 +249,25 @@ exports:
                           _kXPCTransportListContainsItemsStr, _kXPCTransportStr, _kXPCUSBDeviceIDStr,
                           _kXPCUSBHostHIDComponentInfoStr, _kXPCUUIDDStr, _kXPCUserInfoStr, _kXPCVehicleStatusDictionaryStr,
                           _kXPCVehicleStatusGetDataStr, _kXPCVoiceOverStr, _kXPCWaitSendDoneStr ]
-    objc-classes:       [ _IAPAudioCallbackInfo, _IAPAudioCallbackInfo,
-                          _IAPClientPort, _IAPClientPort, _IAPClientPortManager,
-                          _IAPClientPortManager, _IAPNavigation, _IAPNavigation,
-                          _IAPNavigationAccessory, _IAPNavigationAccessory,
-                          _IAPNavigationAccessoryComponent, _IAPNavigationAccessoryComponent ]
-    objc-ivars:         [ _IAPAudioCallbackInfo._deviceStateChangedCallback,
-                          _IAPAudioCallbackInfo._deviceStateChangedContext,
+    objc-classes:       [ _IAPAudioCallbackInfo, _IAPClientPort, _IAPClientPortManager, _IAPNavigation, _IAPNavigationAccessory,
+                          _IAPNavigationAccessoryComponent ]
+    objc-ivars:         [ _IAPAudioCallbackInfo._deviceStateChangedCallback, _IAPAudioCallbackInfo._deviceStateChangedContext,
                           _IAPAudioCallbackInfo._dnCenter, _IAPAudioCallbackInfo._dnCenterRunLoop,
                           _IAPAudioCallbackInfo._dnCenteriAP2, _IAPAudioCallbackInfo._lock,
                           _IAPAudioCallbackInfo._pauseOnHeadphoneDisconnectChangedCallback,
                           _IAPAudioCallbackInfo._pauseOnHeadphoneDisconnectChangedContext,
-                          _IAPAudioCallbackInfo._volumeChangedCallback,
-                          _IAPAudioCallbackInfo._volumeChangedContext,
+                          _IAPAudioCallbackInfo._volumeChangedCallback, _IAPAudioCallbackInfo._volumeChangedContext,
                           _IAPAudioCallbackInfo._volumeControlSupportChangedCallback,
-                          _IAPAudioCallbackInfo._volumeControlSupportChangedContext,
-                          _IAPClientPort._clientPortEventQueue, _IAPClientPort._sendDataHandler,
-                          _IAPClientPort._sendDataHandlerQueue, _IAPClientPort._uuid,
-                          _IAPClientPortManager._iaptransportdIsRunning,
-                          _IAPClientPortManager._iaptransportdXPCConnection,
+                          _IAPAudioCallbackInfo._volumeControlSupportChangedContext, _IAPClientPort._clientPortEventQueue,
+                          _IAPClientPort._sendDataHandler, _IAPClientPort._sendDataHandlerQueue, _IAPClientPort._uuid,
+                          _IAPClientPortManager._iaptransportdIsRunning, _IAPClientPortManager._iaptransportdXPCConnection,
                           _IAPClientPortManager._portList, _IAPClientPortManager._portListQueue,
                           _IAPNavigation._availableAccessories, _IAPNavigation._connected,
-                          _IAPNavigation._darwinNotificationCenter, _IAPNavigation._delegate,
-                          _IAPNavigation._iap2d_connection, _IAPNavigation._localNotificationCenter,
-                          _IAPNavigation._processingQ, _IAPNavigationAccessory.__wasFoundInLastUpdate,
-                          _IAPNavigationAccessory._components, _IAPNavigationAccessory._identifier,
-                          _IAPNavigationAccessoryComponent.__enabledModified,
-                          _IAPNavigationAccessoryComponent._identifier,
-                          _IAPNavigationAccessoryComponent._isEnabled,
+                          _IAPNavigation._darwinNotificationCenter, _IAPNavigation._delegate, _IAPNavigation._iap2d_connection,
+                          _IAPNavigation._localNotificationCenter, _IAPNavigation._processingQ,
+                          _IAPNavigationAccessory.__wasFoundInLastUpdate, _IAPNavigationAccessory._components,
+                          _IAPNavigationAccessory._identifier, _IAPNavigationAccessoryComponent.__enabledModified,
+                          _IAPNavigationAccessoryComponent._identifier, _IAPNavigationAccessoryComponent._isEnabled,
                           _IAPNavigationAccessoryComponent._maxCapacity_GuidanceManeuver,
                           _IAPNavigationAccessoryComponent._maxLength_CurrentRoadName,
                           _IAPNavigationAccessoryComponent._maxLength_DestinationRoadName,

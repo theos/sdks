@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: BEBC4565-E9B4-393F-9F26-8F54D55F29D1', 'armv7s: D3F9ABEB-27BE-3945-8B7F-EF960AC09684', 
                    'arm64: 748BC050-4BC4-314B-A891-BD97CA511F0C' ]
 platform:        ios
@@ -51,7 +51,7 @@ exports:
                        _UITwoSidedAlertController._delegate, _UITwoSidedAlertController._front ]
   - archs:           [ arm64 ]
     re-exports:      [ /System/Library/Frameworks/FileProvider.framework/FileProvider ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$add$os10.0$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$add$os10.0$_OBJC_METACLASS_$_NSFileProviderExtension', 
                        '$ld$add$os10.1$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$add$os10.1$_OBJC_METACLASS_$_NSFileProviderExtension', 
                        '$ld$add$os10.2$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$add$os10.2$_OBJC_METACLASS_$_NSFileProviderExtension', 

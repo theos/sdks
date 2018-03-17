@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryCommunications.framework/AccessoryCommunications
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AccessoryCommunicationsVersionNumber, _AccessoryCommunicationsVersionString,
                           _kACCCommunications_CallStateUpdate_AddressBookID, _kACCCommunications_CallStateUpdate_CallUUID,
                           _kACCCommunications_CallStateUpdate_ConferenceGroup, _kACCCommunications_CallStateUpdate_Direction,
@@ -58,13 +58,9 @@ exports:
                           _kCFACCCommunications_SubscriberList_CallStateUpdates,
                           _kCFACCCommunications_SubscriberList_CommunicationsUpdates,
                           _kCFACCCommunications_SubscriberList_ListUpdates ]
-    objc-classes:       [ _ACCCommunicationsCenter, _ACCCommunicationsCenter ]
-    objc-ivars:         [ _ACCCommunicationsCenter._cachedCommStatus,
-                          _ACCCommunicationsCenter._callControlsDelegate,
-                          _ACCCommunicationsCenter._callStateDelegate,
-                          _ACCCommunicationsCenter._communicationsDelegate,
-                          _ACCCommunicationsCenter._listUpdatesDelegate,
-                          _ACCCommunicationsCenter._remoteObject,
-                          _ACCCommunicationsCenter._serverConnection,
-                          _ACCCommunicationsCenter._subscriberList ]
+    objc-classes:       [ _ACCCommunicationsCenter ]
+    objc-ivars:         [ _ACCCommunicationsCenter._cachedCommStatus, _ACCCommunicationsCenter._callControlsDelegate,
+                          _ACCCommunicationsCenter._callStateDelegate, _ACCCommunicationsCenter._communicationsDelegate,
+                          _ACCCommunicationsCenter._listUpdatesDelegate, _ACCCommunicationsCenter._remoteObject,
+                          _ACCCommunicationsCenter._serverConnection, _ACCCommunicationsCenter._subscriberList ]
 ...

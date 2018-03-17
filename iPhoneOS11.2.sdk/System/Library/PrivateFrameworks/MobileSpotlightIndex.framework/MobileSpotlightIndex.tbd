@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex
 current-version:       1190
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MDPlistArrayGetCount, _MDPlistArrayGetPlistObjectAtIndex, _MDPlistArrayIterate,
                           _MDPlistBooleanGetValue, _MDPlistBytesAddBoolean, _MDPlistBytesAddCString, _MDPlistBytesAddData,
                           _MDPlistBytesAddDate, _MDPlistBytesAddInteger, _MDPlistBytesAddInternedCString, _MDPlistBytesAddNull,
@@ -98,18 +98,13 @@ exports:
                           _icu_ctx_release, _icu_ctx_retain, _icu_word_matcher_count, _icu_word_matcher_create,
                           _icu_word_matcher_matches, _icu_word_matcher_matches_string, _kIndexOptionReadOnly,
                           _kMDPlistBytesDeserializationCallbacks, _qsort_oids, _resolve_transcriptions_for_locale ]
-    objc-classes:       [ __MDMutablePlistBytes, __MDMutablePlistBytes,
-                          __MDPlistBytes, __MDPlistBytes ]
-    objc-ivars:         [ __MDMutablePlistBytes._curContainer, __MDMutablePlistBytes._currentUID,
-                          __MDMutablePlistBytes._fillPtr, __MDMutablePlistBytes._limitPtr,
-                          __MDMutablePlistBytes._parentCount, __MDMutablePlistBytes._parentSize,
-                          __MDMutablePlistBytes._parentUIDs, __MDMutablePlistBytes._ptrUIDMap,
-                          __MDMutablePlistBytes._rleTagPtr, __MDPlistBytes._byteVector,
-                          __MDPlistBytes._byteVectorCapacity, __MDPlistBytes._byteVectorCnt,
-                          __MDPlistBytes._deallocator, __MDPlistBytes._didFinalize,
-                          __MDPlistBytes._isBad, __MDPlistBytes._isMutable,
-                          __MDPlistBytes._isMutating, __MDPlistBytes._rleQueue,
-                          __MDPlistBytes._uidCapacity, __MDPlistBytes._uidCount,
-                          __MDPlistBytes._uidVector, __MDPlistBytes._useMalloc,
-                          __MDPlistBytes._wrapperPtr ]
+    objc-classes:       [ __MDMutablePlistBytes, __MDPlistBytes ]
+    objc-ivars:         [ __MDMutablePlistBytes._curContainer, __MDMutablePlistBytes._currentUID, __MDMutablePlistBytes._fillPtr,
+                          __MDMutablePlistBytes._limitPtr, __MDMutablePlistBytes._parentCount, __MDMutablePlistBytes._parentSize,
+                          __MDMutablePlistBytes._parentUIDs, __MDMutablePlistBytes._ptrUIDMap, __MDMutablePlistBytes._rleTagPtr,
+                          __MDPlistBytes._byteVector, __MDPlistBytes._byteVectorCapacity, __MDPlistBytes._byteVectorCnt,
+                          __MDPlistBytes._deallocator, __MDPlistBytes._didFinalize, __MDPlistBytes._isBad,
+                          __MDPlistBytes._isMutable, __MDPlistBytes._isMutating, __MDPlistBytes._rleQueue,
+                          __MDPlistBytes._uidCapacity, __MDPlistBytes._uidCount, __MDPlistBytes._uidVector,
+                          __MDPlistBytes._useMalloc, __MDPlistBytes._wrapperPtr ]
 ...

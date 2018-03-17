@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: B6F4E522-7956-34D4-8047-067CE1E1BD49', 'armv7s: 109619F5-15BD-344E-A6F1-B94ECC8EA6A2', 
                    'arm64: 1ACC9BC7-55AE-3370-8AD7-A5EEADF6B8EC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/UserNotifications.framework/UserNotifications
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _UNDoubleIsZero, _UNEqualBools, _UNEqualDoubles, _UNEqualFloats, 
                        _UNEqualIntegers, _UNEqualObjects, _UNEqualStrings, _UNErrorDomain, 
                        _UNFloatIsZero, _UNFormatLocalizedString, _UNFormatLocalizedStringInBundleWithDefaultValue, 

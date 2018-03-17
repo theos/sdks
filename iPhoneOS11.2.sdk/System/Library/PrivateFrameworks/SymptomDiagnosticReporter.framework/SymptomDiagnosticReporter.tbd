@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SymptomDiagnosticReporter.framework/SymptomDiagnosticReporter
 current-version:       820.30.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _kDebuggabilityPath, _kDiagnosticCaseSummaryKeyAttachments, _kDiagnosticCaseSummaryKeyCaseIdentifier,
                           _kDiagnosticCaseSummaryKeyCaseStatus, _kDiagnosticCaseSummaryKeyCaseStatusCaseClosedTime,
                           _kDiagnosticCaseSummaryKeyCaseStatusCaseClosedTimestamp,
@@ -67,7 +67,6 @@ exports:
                           _kSymptomDiagnosticSignatureType, _kSymptomDiagnosticSignatureUUID, _kSymptomDiagnosticTypeEnergy,
                           _kSymptomDiagnosticTypeFunctional, _kSymptomDiagnosticTypeOperational,
                           _kSymptomDiagnosticTypePerformance, _logHandle ]
-    objc-classes:       [ _SDRDiagnosticReporter, _SDRDiagnosticReporter ]
-    objc-ivars:         [ _SDRDiagnosticReporter._connection, _SDRDiagnosticReporter._delegate,
-                          _SDRDiagnosticReporter._queue ]
+    objc-classes:       [ _SDRDiagnosticReporter ]
+    objc-ivars:         [ _SDRDiagnosticReporter._connection, _SDRDiagnosticReporter._delegate, _SDRDiagnosticReporter._queue ]
 ...

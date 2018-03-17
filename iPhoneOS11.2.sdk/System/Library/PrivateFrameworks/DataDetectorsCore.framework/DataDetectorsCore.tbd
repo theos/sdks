@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore
 current-version:       590.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _DDAddressResultCanBeMergedWith, _DDApplyOptions, _DDBinderAIMOrEmailKey,
                           _DDBinderAddressBookContactNameKey, _DDBinderAirlineCodeKey, _DDBinderApproxTimeKey,
                           _DDBinderBonjourAddressKey, _DDBinderCityKey, _DDBinderClientSourceKey, _DDBinderCompanyNameKey,
@@ -76,32 +76,20 @@ exports:
                           _kDDInstantMessageServiceJabber, _kDDInstantMessageServiceMSN, _kDDInstantMessageServiceQQ,
                           _kDDInstantMessageServiceSkype, _kDDInstantMessageServiceYahoo, _kDDMainLabel, _kDDMobileLabel,
                           _kDDOtherLabel, _kDDPagerLabel, _kDDWorkFAXLabel, _kDDWorkLabel, _kDDiPhoneLabel ]
-    objc-classes:       [ _DDCompilationNote, _DDCompilationNote, _DDLocation,
-                          _DDLocation, _DDMessageCache, _DDMessageCache,
-                          _DDMessageCacheElement, _DDMessageCacheElement,
-                          _DDScanServer, _DDScanServer, _DDScanServerDispatcher,
-                          _DDScanServerDispatcher, _DDScannerList, _DDScannerList,
-                          _DDScannerObject, _DDScannerObject, _DDScannerResult,
-                          _DDScannerResult, _DDURLMatch, _DDURLMatch,
-                          _DDURLifier, _DDURLifier, _DataDetectorsSourceAccess,
+    objc-classes:       [ _DDCompilationNote, _DDLocation, _DDMessageCache, _DDMessageCacheElement, _DDScanServer,
+                          _DDScanServerDispatcher, _DDScannerList, _DDScannerObject, _DDScannerResult, _DDURLMatch, _DDURLifier,
                           _DataDetectorsSourceAccess ]
-    objc-ivars:         [ _DDCompilationNote._level, _DDCompilationNote._message,
-                          _DDLocation._fileName, _DDLocation._firstColumn,
-                          _DDLocation._firstLine, _DDLocation._lastColumn,
-                          _DDLocation._lastLine, _DDMessageCache._cache,
-                          _DDMessageCache._indexLRU, _DDMessageCache._memoryWarningSource,
-                          _DDMessageCache._queue, _DDMessageCacheElement._date,
-                          _DDMessageCacheElement._text, _DDScanServer._options,
-                          _DDScanServer._timeout, _DDScanServerDispatcher._scannerQueue,
+    objc-ivars:         [ _DDCompilationNote._level, _DDCompilationNote._message, _DDLocation._fileName,
+                          _DDLocation._firstColumn, _DDLocation._firstLine, _DDLocation._lastColumn, _DDLocation._lastLine,
+                          _DDMessageCache._cache, _DDMessageCache._indexLRU, _DDMessageCache._memoryWarningSource,
+                          _DDMessageCache._queue, _DDMessageCacheElement._date, _DDMessageCacheElement._text,
+                          _DDScanServer._options, _DDScanServer._timeout, _DDScanServerDispatcher._scannerQueue,
                           _DDScanServerDispatcher._scanners, _DDScanServerDispatcher._tearDownRequested,
-                          _DDScanServerDispatcher._workQueue, _DDScannerList._activeScanners,
-                          _DDScannerList._scannerCache, _DDScannerList._type,
-                          _DDScannerList._waitQueue, _DDScannerObject._scanner,
-                          _DDScannerObject._type, _DDScannerResult._coreResult,
-                          _DDScannerResult._subResultsCache, _DDURLMatch._range,
-                          _DDURLMatch._url, _DataDetectorsSourceAccess._auditToken,
-                          _DataDetectorsSourceAccess._clientpid, _DataDetectorsSourceAccess._clientuid,
-                          _DataDetectorsSourceAccess._privacySystemWriteEntitled,
+                          _DDScanServerDispatcher._workQueue, _DDScannerList._activeScanners, _DDScannerList._scannerCache,
+                          _DDScannerList._type, _DDScannerList._waitQueue, _DDScannerObject._scanner, _DDScannerObject._type,
+                          _DDScannerResult._coreResult, _DDScannerResult._subResultsCache, _DDURLMatch._range, _DDURLMatch._url,
+                          _DataDetectorsSourceAccess._auditToken, _DataDetectorsSourceAccess._clientpid,
+                          _DataDetectorsSourceAccess._clientuid, _DataDetectorsSourceAccess._privacySystemWriteEntitled,
                           _DataDetectorsSourceAccess._privacySystemWriteEntitlementChecked,
                           _DataDetectorsSourceAccess._privacyUserReadEntitled,
                           _DataDetectorsSourceAccess._privacyUserReadEntitlementChecked,

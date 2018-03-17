@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: B1D6DC57-7B16-338F-82E9-42FC04E8ABA2', 'armv7s: 19B9AF27-E186-38DA-BE31-8D03C232993C', 
                    'arm64: E760BD26-B008-3393-A297-F155E7FDA434' ]
 platform:        ios
@@ -11,7 +11,7 @@ exports:
     weak-def-symbols: [ __ZTI13AGPSetElement, __ZTI20AGPReceiveSetElement, __ZTI20AGPSendingSetElement, 
                         __ZTI24AGPAssociationSetElement, __ZTS13AGPSetElement, __ZTS20AGPReceiveSetElement, 
                         __ZTS20AGPSendingSetElement, __ZTS24AGPAssociationSetElement ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AGPSessionCopyDetailedDescription, _AGPSessionCreate, _AGPSessionEvent, 
                        _AGPSessionMaximumSegmentSize, _AGPSessionRelease, _AGPSessionSendTo, 
                        _AGPSessionStatistics, _AWDMultipeerSessionMaxPeersInfoReadFrom, 

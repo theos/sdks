@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 4479A1DB-1663-35BA-B576-83B7ADB8DD51', 'armv7s: 25F60C7C-430A-38C5-8D24-62C745A4F3A2', 
                    'arm64: 7AF526F1-7BD5-323A-8A2C-0445A6D0649E' ]
 platform:        ios
@@ -111,7 +111,7 @@ exports:
                        __ZNK17SKCParticleSystem8getSliceERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE, 
                        __ZTI20SKCVideoBackdropNode, __ZTS20SKCVideoBackdropNode, 
                        __ZTV20SKCVideoBackdropNode ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _Color_fsh, _Color_vsh, _DiscardRect_fsh, _Discard_fsh, _Discard_vsh, 
                        _FastSingleRect_fsh, _FastSingleRect_vsh, _FastSingleWithVertexTransform_vsh, 
                        _FastSingle_fsh, _FastSingle_vsh, _Mask_Inverted_fsh, _Mask_fsh, 

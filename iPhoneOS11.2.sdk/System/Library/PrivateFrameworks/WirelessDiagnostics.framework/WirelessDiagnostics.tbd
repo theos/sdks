@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics
 current-version:       757
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     re-exports:         [ /usr/lib/libAWDSupportFramework.dylib ]
     symbols:            [ _AWDPostMetric, _AWDPostSimpleMetric, _AWDPostSimpleMetricWithBool, _AWDPostSimpleMetricWithInteger,
                           _AWDPostSimpleMetricWithString, _AWDPostSimpleMetricWithUnsignedInteger,
@@ -758,7 +758,5 @@ exports:
                           __ZTVN3awd7profile3LogE, __ZTVN3awd7profile6MetricE, __ZTVN3awd7profile7ProfileE,
                           __ZTVN3awd7profile9ConditionE, __ZTVN3awd7profile9TimerSpecE, _kAWDObserverEventKey,
                           _kAwdDiagnosticsFileArray, _kAwdLoggingSystemName ]
-    objc-classes:       [ _AWDMetricContainer, _AWDMetricContainer, _AWDMetricManager,
-                          _AWDMetricManager, _AWDObserver, _AWDObserver,
-                          _AWDServerConnection, _AWDServerConnection ]
+    objc-classes:       [ _AWDMetricContainer, _AWDMetricManager, _AWDObserver, _AWDServerConnection ]
 ...

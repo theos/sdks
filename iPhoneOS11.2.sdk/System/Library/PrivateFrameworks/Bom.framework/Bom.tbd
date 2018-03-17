@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Bom.framework/Bom
 current-version:       194
 compatibility-version: 2
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _BOMAppleDoubleADPathToPath, _BOMAppleDoubleCopyHeader, _BOMAppleDoubleIsADFile,
                           _BOMAppleDoublePathToADPath, _BOMAppleDoubleReadHeader, _BOMAppleDoubleSize,
                           _BOMAppleDoubleWriteHeader, _BOMArchFlagForFile, _BOMArchFlagForFileWithSys, _BOMArchFlagForHeader,

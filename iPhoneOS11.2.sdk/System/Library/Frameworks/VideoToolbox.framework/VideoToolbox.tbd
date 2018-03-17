@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: BA29D457-3E4F-37D5-A8B2-EEC7BC39E1ED', 'armv7s: C0F49639-BE96-39C0-8AE3-EDE7F0C42E41', 
                    'arm64: F5145552-CEE0-3964-8C7E-5691CA45BD42' ]
 platform:        ios
@@ -9,7 +9,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ _FigGetPixelFormatsForIOSurfaceOutput, _vtFrameSiloBlockFunctionCallback, 
                        _vtPreprocessingSessionEnsureResolutionIsPartOfSession, _vtPreprocessingSessionResolutionReleaseCallBack ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _FigCreateIOSurfaceBackedCVPixelBuffer, _FigCreateIOSurfaceBackedCVPixelBufferWithAttributes, 
                        _FigCreateIOSurfacePropertiesDictionary, _FigCreateIOSurfacePropertiesDictionaryWithCacheMode, 
                        _FigCreatePixelBufferAttributesWithIOSurfaceSupport, _FigCreatePixelBufferCacheModeArray, 

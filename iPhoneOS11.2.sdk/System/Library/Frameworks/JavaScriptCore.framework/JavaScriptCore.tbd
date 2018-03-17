@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 106A107E-8662-3CF1-85DF-F1A4FD0225FD', 'armv7s: 3421B127-2686-3D81-B222-582ED8AFA09C', 
                    'arm64: F8CCF929-4355-34C7-BAFA-70746E9B95F9' ]
 platform:        ios
@@ -707,7 +707,7 @@ exports:
                        __ZThn24_N9Inspector28InspectorScriptProfilerAgent18willEvaluateScriptEv, 
                        __ZThn24_N9Inspector28InspectorScriptProfilerAgentD0Ev, __ZThn24_N9Inspector28InspectorScriptProfilerAgentD1Ev, 
                        __ZThn24_NK9Inspector28InspectorScriptProfilerAgent18isAlreadyProfilingEv ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$install_name$os4.3$/System/Library/PrivateFrameworks/JavaScriptCore.framework/JavaScriptCore', 
                        '$ld$install_name$os5.0$/System/Library/PrivateFrameworks/JavaScriptCore.framework/JavaScriptCore', 
                        '$ld$install_name$os5.1$/System/Library/PrivateFrameworks/JavaScriptCore.framework/JavaScriptCore', 

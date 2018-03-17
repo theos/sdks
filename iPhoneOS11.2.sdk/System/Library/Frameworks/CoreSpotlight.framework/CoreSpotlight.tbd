@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: C649DB42-6CD5-34F5-97EC-F665FB8C664C', 'armv7s: A88E8C87-0EA7-3AB3-8C1B-6110229754CF', 
                    'arm64: 1D631A5F-5B88-34C4-8D67-19D79B772BC8' ]
 platform:        ios
@@ -10,7 +10,7 @@ exports:
     symbols:         [ _CSGetProtectionClassFromConnection, _MDItem, _MurmurHash3_128, 
                        _fmix32, _fmix64, _getblock32, _getblock64 ]
     objc-classes:    [ _CSSearchableIndexXPCProxy ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CSAccountTypeExchangeActiveSync, _CSAccountTypeExchangeWebServices, 
                        _CSAccountTypeIMAP, _CSAccountTypeLocal, _CSAccountTypePOP, 
                        _CSAccountTypeUnknown, _CSCoderClassNameForObject, _CSDecodeObject, 

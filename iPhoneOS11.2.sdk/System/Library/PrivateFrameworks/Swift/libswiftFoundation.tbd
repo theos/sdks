@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftFoundation.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T010Foundation10CocoaErrorV010formattingC0AC4CodeVfgZ,
                           __T010Foundation10CocoaErrorV011fileLockingC0AC4CodeVfgZ,
                           __T010Foundation10CocoaErrorV012isExecutableC0Sbfg, __T010Foundation10CocoaErrorV012isFormattingC0Sbfg,
@@ -2812,9 +2812,6 @@ exports:
                           ___NSIndexSetRangeCount, '__swift_FORCE_LOAD_$_swiftFoundation',
                           _swift_Foundation_getErrorDefaultUserInfo, _swift_convertErrorToNSError, _swift_convertNSErrorToError,
                           _swift_convertStringToNSString, _swift_stdlib_bridgeNSErrorToError ]
-    objc-classes:       [ __TtC10Foundation12_NSSwiftData, __TtC10Foundation12_NSSwiftData,
-                          __TtC10Foundation21NSKeyValueObservation,
-                          __TtC10Foundation21NSKeyValueObservation,
-                          __TtC10FoundationP33_6DA0945A07226B3278459E9368612FF426_KVOKeyPathBridgeMachinery,
+    objc-classes:       [ __TtC10Foundation12_NSSwiftData, __TtC10Foundation21NSKeyValueObservation,
                           __TtC10FoundationP33_6DA0945A07226B3278459E9368612FF426_KVOKeyPathBridgeMachinery ]
 ...

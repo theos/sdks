@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/oncrpc.framework/oncrpc
 current-version:       38
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __newrpclib___rpc_createerr, __newrpclib___xdrrec_getrec, __newrpclib___xdrrec_setnonblock,
                           __newrpclib__authenticate, __newrpclib__null_auth, __newrpclib__rpc_dtablesize,
                           __newrpclib__seterr_reply, __newrpclib_authnone_create, __newrpclib_authunix_create,

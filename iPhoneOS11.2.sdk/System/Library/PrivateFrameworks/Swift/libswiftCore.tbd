@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCore.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T036swift_stdlib_getErrorEmbeddedNSErrorTfq4g_n,
                           __T043_swift_bridgeNonVerbatimFromObjectiveCToAnyTfq4gn_n, __T0BBN, __T0BON, __T0BOSgXwWV, __T0BOWV,
                           __T0BOXoWV, __T0BbN, __T0BbWV, __T0Bi128_N, __T0Bi128_WV, __T0Bi16_N, __T0Bi16_WV, __T0Bi256_N,
@@ -6266,36 +6266,17 @@ exports:
                           _swift_unownedRetain_n, _swift_unpin, _swift_verifyEndOfLifetime, _swift_weakAssign,
                           _swift_weakCopyAssign, _swift_weakCopyInit, _swift_weakDestroy, _swift_weakInit, _swift_weakLoadStrong,
                           _swift_weakTakeAssign, _swift_weakTakeInit, _swift_weakTakeStrong, _swift_willThrow ]
-    objc-classes:       [ _SwiftObject, _SwiftObject, __SwiftNativeNSArrayBase,
-                          __SwiftNativeNSArrayBase, __SwiftNativeNSDataBase,
-                          __SwiftNativeNSDataBase, __SwiftNativeNSDictionaryBase,
-                          __SwiftNativeNSDictionaryBase, __SwiftNativeNSEnumeratorBase,
-                          __SwiftNativeNSEnumeratorBase, __SwiftNativeNSError,
-                          __SwiftNativeNSError, __SwiftNativeNSIndexSetBase,
-                          __SwiftNativeNSIndexSetBase, __SwiftNativeNSSetBase,
-                          __SwiftNativeNSSetBase, __SwiftNativeNSStringBase,
-                          __SwiftNativeNSStringBase, __SwiftNull, __SwiftNull,
-                          __SwiftValue, __SwiftValue, __TtCs17_SwiftNativeNSSet,
-                          __TtCs17_SwiftNativeNSSet, __TtCs18_EmptyArrayStorage,
-                          __TtCs18_EmptyArrayStorage, __TtCs18_SwiftNativeNSData,
-                          __TtCs18_SwiftNativeNSData, __TtCs19_NSContiguousString,
-                          __TtCs19_NSContiguousString, __TtCs19_SwiftNativeNSArray,
-                          __TtCs19_SwiftNativeNSArray, __TtCs20_RawNativeSetStorage,
-                          __TtCs20_RawNativeSetStorage, __TtCs20_SwiftNativeNSString,
-                          __TtCs20_SwiftNativeNSString, __TtCs21_SwiftDeferredNSArray,
-                          __TtCs21_SwiftDeferredNSArray, __TtCs24_SwiftNativeNSDictionary,
-                          __TtCs24_SwiftNativeNSDictionary, __TtCs24_SwiftNativeNSEnumerator,
+    objc-classes:       [ _SwiftObject, __SwiftNativeNSArrayBase, __SwiftNativeNSDataBase, __SwiftNativeNSDictionaryBase,
+                          __SwiftNativeNSEnumeratorBase, __SwiftNativeNSError, __SwiftNativeNSIndexSetBase,
+                          __SwiftNativeNSSetBase, __SwiftNativeNSStringBase, __SwiftNull, __SwiftValue,
+                          __TtCs17_SwiftNativeNSSet, __TtCs18_EmptyArrayStorage, __TtCs18_SwiftNativeNSData,
+                          __TtCs19_NSContiguousString, __TtCs19_SwiftNativeNSArray, __TtCs20_RawNativeSetStorage,
+                          __TtCs20_SwiftNativeNSString, __TtCs21_SwiftDeferredNSArray, __TtCs24_SwiftNativeNSDictionary,
                           __TtCs24_SwiftNativeNSEnumerator, __TtCs27_ContiguousArrayStorageBase,
-                          __TtCs27_ContiguousArrayStorageBase, __TtCs27_RawNativeDictionaryStorage,
-                          __TtCs27_RawNativeDictionaryStorage,
-                          __TtCs31_stdlib_ReturnAutoreleasedDummy,
-                          __TtCs31_stdlib_ReturnAutoreleasedDummy,
-                          __TtCs40_SwiftNativeNSArrayWithContiguousStorage,
+                          __TtCs27_RawNativeDictionaryStorage, __TtCs31_stdlib_ReturnAutoreleasedDummy,
                           __TtCs40_SwiftNativeNSArrayWithContiguousStorage ]
-    objc-ivars:         [ _SwiftObject.isa, _SwiftObject.refCounts,
-                          __SwiftNativeNSArrayBase.refCounts, __SwiftNativeNSDataBase.refCounts,
-                          __SwiftNativeNSDictionaryBase.refCounts,
+    objc-ivars:         [ _SwiftObject.isa, _SwiftObject.refCounts, __SwiftNativeNSArrayBase.refCounts,
+                          __SwiftNativeNSDataBase.refCounts, __SwiftNativeNSDictionaryBase.refCounts,
                           __SwiftNativeNSEnumeratorBase.refCounts, __SwiftNativeNSIndexSetBase.refCounts,
-                          __SwiftNativeNSSetBase.refCounts, __SwiftNativeNSStringBase.refCounts,
-                          __SwiftNull.depth ]
+                          __SwiftNativeNSSetBase.refCounts, __SwiftNativeNSStringBase.refCounts, __SwiftNull.depth ]
 ...

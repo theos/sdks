@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 9FC5E0DF-8C91-3101-BA4E-767F492B42E7', 'armv7s: D2C6E744-B440-3E97-BFF7-DF391BE479E5', 
                    'arm64: B4DAF422-0DAB-32ED-A95C-29BD12B8A37F' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/StoreKit.framework/StoreKit
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _SKAccountPageAccountURLString, _SKAccountPageCharityURLString, 
                        _SKAccountPageCustomURLString, _SKAccountPageGiftURLString, 
                        _SKAccountPageRedeemURLString, _SKCloudServiceCapabilitiesDidChangeNotification, 

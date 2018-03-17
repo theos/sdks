@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: A4258C2D-78C3-30C4-825E-A7152E3402F0', 'armv7s: 9F6656E9-E258-3D5A-8884-80B53780B79C', 
                    'arm64: 5B810AC6-C9A0-3E8B-B2D7-30BED5A63DE5' ]
 platform:        ios
@@ -14,7 +14,7 @@ exports:
                        __CFNetworkUnitTestSchemeUpgradeLoadOtherHSTSURL, __CFNetworkUnitTestSchemeUpgradeLoadOtherHSTSURLAndForbidInsecureLoad, 
                        __CFNetworkUnitTestSchemeUpgradeLoadOtherURL, __CFNetworkUnitTestSchemeUpgradeRedirect, 
                        __CFNetworkUnitTestTunnelProxyBasicBadPassword, __CFNetworkUnitTestTunnelProxyNTLMBadPassword ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$hide$os4.3$_NSHTTPCookieComment', '$ld$hide$os4.3$_NSHTTPCookieCommentURL', 
                        '$ld$hide$os4.3$_NSHTTPCookieDiscard', '$ld$hide$os4.3$_NSHTTPCookieDomain', 
                        '$ld$hide$os4.3$_NSHTTPCookieExpires', '$ld$hide$os4.3$_NSHTTPCookieLocationHeader', 

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 5A8F74BB-B55A-3D0B-9B51-B2F33A2501CF', 'armv7s: B71CC36D-7619-32EA-A424-86DEEFB4C776', 
                    'arm64: 39131C5B-25F3-3207-829D-786EA5D2837E' ]
 platform:        ios
@@ -9,7 +9,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ _decode_NegotiationToken, _decode_NegotiationTokenWin, _free_NegotiationToken, 
                        _free_NegotiationTokenWin ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _GSSCheckNTLMReflection, _GSSCreateCredentialFromUUID, _GSSCreateError, 
                        _GSSCreateName, _GSSCredCopyName, _GSSCredGetLifetime, _GSSCredentialCopyName, 
                        _GSSCredentialCopyUUID, _GSSCredentialGetLifetime, _GSSItemAdd, 

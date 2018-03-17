@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftSwiftOnoneSupport.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T017SwiftOnoneSupport14_PrespecializeVMa, __T017SwiftOnoneSupport14_PrespecializeVMn,
                           __T017SwiftOnoneSupport14_PrespecializeVN,
                           __T0S2Sx26stringInterpolationSegment_tclufCSS13CharacterViewV_Tgq5,

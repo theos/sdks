@@ -1,46 +1,22 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
 current-version:       90.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ MetalPerformanceShaders ]
     symbols:            [ _MPSSubTileEncode ]
-    objc-classes:       [ _MPSBinaryImageKernel, _MPSBinaryImageKernel, _MPSImageAdd,
-                          _MPSImageAdd, _MPSImageAreaMax, _MPSImageAreaMax,
-                          _MPSImageAreaMin, _MPSImageAreaMin, _MPSImageArithmetic,
-                          _MPSImageArithmetic, _MPSImageBilinearScale,
-                          _MPSImageBilinearScale, _MPSImageBox, _MPSImageBox,
-                          _MPSImageConversion, _MPSImageConversion,
-                          _MPSImageConvolution, _MPSImageConvolution,
-                          _MPSImageCopyToMatrix, _MPSImageCopyToMatrix,
-                          _MPSImageDilate, _MPSImageDilate, _MPSImageDivide,
-                          _MPSImageDivide, _MPSImageErode, _MPSImageErode,
-                          _MPSImageFindKeypoints, _MPSImageFindKeypoints,
-                          _MPSImageGaussianBlur, _MPSImageGaussianBlur,
-                          _MPSImageGaussianPyramid, _MPSImageGaussianPyramid,
-                          _MPSImageHistogram, _MPSImageHistogram,
-                          _MPSImageHistogramEqualization, _MPSImageHistogramEqualization,
-                          _MPSImageHistogramSpecification, _MPSImageHistogramSpecification,
-                          _MPSImageIntegral, _MPSImageIntegral,
-                          _MPSImageIntegralOfSquares, _MPSImageIntegralOfSquares,
-                          _MPSImageLanczosScale, _MPSImageLanczosScale,
-                          _MPSImageLaplacian, _MPSImageLaplacian, _MPSImageMedian,
-                          _MPSImageMedian, _MPSImageMultiply, _MPSImageMultiply,
-                          _MPSImageSobel, _MPSImageSobel, _MPSImageStatisticsMean,
-                          _MPSImageStatisticsMean, _MPSImageStatisticsMeanAndVariance,
-                          _MPSImageStatisticsMeanAndVariance, _MPSImageStatisticsMinAndMax,
-                          _MPSImageStatisticsMinAndMax, _MPSImageSubtract,
-                          _MPSImageSubtract, _MPSImageTent, _MPSImageTent,
-                          _MPSImageThresholdBinary, _MPSImageThresholdBinary,
-                          _MPSImageThresholdBinaryInverse, _MPSImageThresholdBinaryInverse,
-                          _MPSImageThresholdToZero, _MPSImageThresholdToZero,
-                          _MPSImageThresholdToZeroInverse, _MPSImageThresholdToZeroInverse,
-                          _MPSImageThresholdTruncate, _MPSImageThresholdTruncate,
-                          _MPSImageTranspose, _MPSImageTranspose,
-                          _MPSUnaryImageKernel, _MPSUnaryImageKernel ]
-    objc-ivars:         [ _MPSBinaryImageKernel._encode, _MPSBinaryImageKernel._encodeData,
-                          _MPSUnaryImageKernel._encode, _MPSUnaryImageKernel._encodeData,
-                          _MPSUnaryImageKernel._getPreferredTileSize ]
+    objc-classes:       [ _MPSBinaryImageKernel, _MPSImageAdd, _MPSImageAreaMax, _MPSImageAreaMin, _MPSImageArithmetic,
+                          _MPSImageBilinearScale, _MPSImageBox, _MPSImageConversion, _MPSImageConvolution, _MPSImageCopyToMatrix,
+                          _MPSImageDilate, _MPSImageDivide, _MPSImageErode, _MPSImageFindKeypoints, _MPSImageGaussianBlur,
+                          _MPSImageGaussianPyramid, _MPSImageHistogram, _MPSImageHistogramEqualization,
+                          _MPSImageHistogramSpecification, _MPSImageIntegral, _MPSImageIntegralOfSquares, _MPSImageLanczosScale,
+                          _MPSImageLaplacian, _MPSImageMedian, _MPSImageMultiply, _MPSImageSobel, _MPSImageStatisticsMean,
+                          _MPSImageStatisticsMeanAndVariance, _MPSImageStatisticsMinAndMax, _MPSImageSubtract, _MPSImageTent,
+                          _MPSImageThresholdBinary, _MPSImageThresholdBinaryInverse, _MPSImageThresholdToZero,
+                          _MPSImageThresholdToZeroInverse, _MPSImageThresholdTruncate, _MPSImageTranspose, _MPSUnaryImageKernel ]
+    objc-ivars:         [ _MPSBinaryImageKernel._encode, _MPSBinaryImageKernel._encodeData, _MPSUnaryImageKernel._encode,
+                          _MPSUnaryImageKernel._encodeData, _MPSUnaryImageKernel._getPreferredTileSize ]
 ...

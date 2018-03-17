@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _APAudioEngineBufferedCreate, _APAudioEngineGetCMBaseObject, _APAudioFormatToASBD, _APAudioFormatToPCM,
                           _APAudioSinkByteReorderingCreate, _APAudioSinkJitterBufferCreate, _APAudioSourceConduitCreate,
                           _APAudioZeroTimeStampProviderCreate, _APAudioZeroTimeStampProviderGetHighAccuracySupport,
@@ -285,12 +285,9 @@ exports:
                           _kAPSenderSessionTransportStreamOption_StreamPriority, _kAPSenderSessionTransportStreamOption_Type,
                           _kAPSenderSession_UserAgent, _kAPSenderSession_UserName, _kAPVirtualDisplaySinkType,
                           _kEnqueueLogIntervalPacketCount ]
-    objc-classes:       [ _APCarPlayPolicyMonitor, _APCarPlayPolicyMonitor,
-                          _APCarPlayPreferences, _APCarPlayPreferences,
-                          _APEndpointManagerCarPlayDelegate, _APEndpointManagerCarPlayDelegate ]
+    objc-classes:       [ _APCarPlayPolicyMonitor, _APCarPlayPreferences, _APEndpointManagerCarPlayDelegate ]
     objc-ivars:         [ _APCarPlayPolicyMonitor._delegate, _APCarPlayPolicyMonitor._monitor,
                           _APCarPlayPolicyMonitor._observedEndpoint, _APCarPlayPolicyMonitor._queue,
                           _APCarPlayPolicyMonitor._weakEndpoint, _APCarPlayPreferences._delegate,
-                          _APCarPlayPreferences._preferences,
-                          _APEndpointManagerCarPlayDelegate._weakManager ]
+                          _APCarPlayPreferences._preferences, _APEndpointManagerCarPlayDelegate._weakManager ]
 ...

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MessageSupport.framework/MessageSupport
 current-version:       3445.5.101
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MFCarrierPreferenceDomain, _MFCompositionServiceDomain, _MFDeviceSupportsForceTouch,
                           _MFDeviceSupportsNanoCompanion, _MFDeviceSupportsPerseus, _MFImageScaleSelectionUserDefaultsKey,
                           _MFIsInternalDevice, _MFIsMobileMail, _MFIsSeedBuild, _MFLogGeneral, _MFLogNetwork,

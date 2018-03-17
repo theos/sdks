@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: AB80F09A-89D6-3F7E-BC4F-E826405454B1', 'armv7s: 5088F091-394D-3590-814E-259190FDBB51', 
                    'arm64: 8133D7AA-F846-3776-AC65-9515BB8556EA' ]
 platform:        ios
@@ -18,7 +18,7 @@ exports:
                        _TentativeImage, _kCalendarDetachAlertTag, _kCalendarDetachFutureAlertTag ]
     objc-classes:    [ _EKDeclinedCalendarItemInfo, _EKUILocationSearchABSearchMatchProcessor ]
     objc-ivars:      [ _EKLegacyUIOccurrenceListItem._isFacebook ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AdjustedColorForBackgroundColor, _AdjustedColorForColor, 
                        _AllDayBottomPadding, _BirthdayImage, _BirthdayMonthCalendarColor, 
                        _BirthdayPadDayViewImage, _BirthdayPadMonthViewImage, _BirthdayPadWeekViewImage, 

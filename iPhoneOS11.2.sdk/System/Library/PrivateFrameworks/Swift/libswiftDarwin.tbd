@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftDarwin.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T06Darwin014_convertBoolToA7BooleanAA0aE0VSbF, __T06Darwin08_convertA13BooleanToBoolSbAA0aC0VF,
                           __T06Darwin0A7BooleanV11descriptionSSfg, __T06Darwin0A7BooleanV12customMirrors0D0Vfg,
                           __T06Darwin0A7BooleanV9boolValueSbfg, __T06Darwin0A7BooleanVACSbcfC, __T06Darwin0A7BooleanVMa,

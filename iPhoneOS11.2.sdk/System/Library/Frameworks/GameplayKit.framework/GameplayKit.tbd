@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: D9C0E2AA-A355-3469-84B3-F46A157AD4C8', 'armv7s: 364700DD-E95E-3DFE-9F78-7FDB52CDA315', 
                    'arm64: 69A90895-14F0-376B-9574-F2B76D8480DD' ]
 platform:        ios
@@ -33,7 +33,7 @@ exports:
                        __ZTv0_n24_N10ClipperLib7ClipperD1Ev, __ZTv0_n24_N9OpenSteer15PolylinePathway14mapPointToPathERKNS_4Vec3ERS1_Rf, 
                        __ZTv0_n32_N9OpenSteer15PolylinePathway22mapPathDistanceToPointEf, 
                        __ZTv0_n40_N10ClipperLib7Clipper5ResetEv, __ZTv0_n40_N9OpenSteer15PolylinePathway22mapPointToPathDistanceERKNS_4Vec3E ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _GKClosestPointsBetweenLineSegments, _GKDoesCircleIntersectLine, 
                        _GKDoesCircleIntersectLineSegment, _GKDoesCircleIntersectPolygon, 
                        _GKGetCircleToLineIntersectionPoints, _GKGetCircleToLineSegmentIntersectionPoints, 

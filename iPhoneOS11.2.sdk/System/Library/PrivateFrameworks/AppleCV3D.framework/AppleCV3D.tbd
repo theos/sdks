@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleCV3D.framework/AppleCV3D
 current-version:       1.5.3
 compatibility-version: 1.5.3
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CV3DGetVersionInfo, _CV3DVIOAddCameraCalibrationToDictionary, _CV3DVIOAddIMUCalibrationToDictionary,
                           _CV3DVIOCreate, _CV3DVIOGetCameraCalibration, _CV3DVIOGetPose, _CV3DVIOInitialize,
                           _CV3DVIOIsDeviceSupported, _CV3DVIOPushAccel, _CV3DVIOPushFrame, _CV3DVIOPushGyro, _CV3DVIORelease,

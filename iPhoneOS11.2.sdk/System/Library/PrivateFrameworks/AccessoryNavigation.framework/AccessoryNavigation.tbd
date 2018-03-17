@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryNavigation.framework/AccessoryNavigation
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ACCNav_DispComp_ComponentID, _ACCNav_DispComp_MaxAfterManeuverRoadNameLength,
                           _ACCNav_DispComp_MaxCurRoadNameLength, _ACCNav_DispComp_MaxDestinationNameLength,
                           _ACCNav_DispComp_MaxLaneGuidanceStorageCapacity, _ACCNav_DispComp_MaxMGuidanceManeuverCapacity,
@@ -31,30 +31,20 @@ exports:
                           _ACCNav_RGUpdate_RouteGuidanceManeuverCurrentList, _ACCNav_RGUpdate_RouteGuidanceState,
                           _ACCNav_RGUpdate_TimeRemainingToDestination, _AccessoryNavigationVersionNumber,
                           _AccessoryNavigationVersionString ]
-    objc-classes:       [ _ACCNavigationAccessory, _ACCNavigationAccessory,
-                          _ACCNavigationAccessoryComponent, _ACCNavigationAccessoryComponent,
-                          _ACCNavigationLaneGuidanceInfo, _ACCNavigationLaneGuidanceInfo,
-                          _ACCNavigationLaneGuidanceLaneInfo, _ACCNavigationLaneGuidanceLaneInfo,
-                          _ACCNavigationManeuverUpdateInfo, _ACCNavigationManeuverUpdateInfo,
-                          _ACCNavigationProvider, _ACCNavigationProvider,
-                          _ACCNavigationRouteGuidanceUpdateInfo,
+    objc-classes:       [ _ACCNavigationAccessory, _ACCNavigationAccessoryComponent, _ACCNavigationLaneGuidanceInfo,
+                          _ACCNavigationLaneGuidanceLaneInfo, _ACCNavigationManeuverUpdateInfo, _ACCNavigationProvider,
                           _ACCNavigationRouteGuidanceUpdateInfo ]
-    objc-ivars:         [ _ACCNavigationAccessory._accessoryUID,
-                          _ACCNavigationAccessory._componentListInternal,
-                          _ACCNavigationAccessory._provider,
-                          _ACCNavigationAccessoryComponent._identifier,
+    objc-ivars:         [ _ACCNavigationAccessory._accessoryUID, _ACCNavigationAccessory._componentListInternal,
+                          _ACCNavigationAccessory._provider, _ACCNavigationAccessoryComponent._identifier,
                           _ACCNavigationAccessoryComponent._isEnabled,
                           _ACCNavigationAccessoryComponent._maxCapacity_GuidanceManeuver,
                           _ACCNavigationAccessoryComponent._maxLength_CurrentRoadName,
                           _ACCNavigationAccessoryComponent._maxLength_DestinationRoadName,
                           _ACCNavigationAccessoryComponent._maxLength_ManeuverDescription,
                           _ACCNavigationAccessoryComponent._maxLength_PostManeuverRoadName,
-                          _ACCNavigationAccessoryComponent._name,
-                          _ACCNavigationLaneGuidanceInfo._infoDict,
-                          _ACCNavigationLaneGuidanceLaneInfo._infoDict,
-                          _ACCNavigationManeuverUpdateInfo._infoDict,
+                          _ACCNavigationAccessoryComponent._name, _ACCNavigationLaneGuidanceInfo._infoDict,
+                          _ACCNavigationLaneGuidanceLaneInfo._infoDict, _ACCNavigationManeuverUpdateInfo._infoDict,
                           _ACCNavigationProvider._accessories, _ACCNavigationProvider._delegate,
                           _ACCNavigationProvider._providerUID, _ACCNavigationProvider._remoteObject,
-                          _ACCNavigationProvider._serverConnection,
-                          _ACCNavigationRouteGuidanceUpdateInfo._infoDict ]
+                          _ACCNavigationProvider._serverConnection, _ACCNavigationRouteGuidanceUpdateInfo._infoDict ]
 ...

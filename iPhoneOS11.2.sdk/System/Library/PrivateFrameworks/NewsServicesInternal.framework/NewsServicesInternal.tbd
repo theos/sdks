@@ -1,11 +1,13 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NewsServicesInternal.framework/NewsServicesInternal
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ NewsServices, NewsToday, News, ArticleNotificationExtension, ArticleNotificationServiceExtension,
+                          OpenInNews, Feldspar Tests, NewsInternalSettings, NewsSettings, NewsUI, newsd, com.apple.news ]
     symbols:            [ _NSSBundleInternal, _NSSCampaignIdentifierPathComponent, _NSSDestroyDataContainersWithItems,
                           _NSSDestroyUserDefaultsDataWithItems, _NSSHTTPSURLScheme, _NSSHTTPURLLongNewsHostName,
                           _NSSHTTPURLScheme, _NSSHTTPURLShortNewsHostName, _NSSNTPBAnalyticsAppBuildValue,
@@ -37,55 +39,37 @@ exports:
                           _NTPBEventDateToTimestamp, _NewsServicesInternalVersionNumber, _NewsServicesInternalVersionString,
                           _applicationRegisteredAndUnregisteredNotificationCallback, _applicationStateNotificationCallback,
                           _kCustomAppBuildPrefix ]
-    objc-classes:       [ _NSSArticleInternal, _NSSArticleInternal, _NSSArticleView,
-                          _NSSArticleView, _NSSArticleViewControllerInternal,
-                          _NSSArticleViewControllerInternal, _NSSBundleInternalLookupClass,
-                          _NSSBundleInternalLookupClass, _NSSDataContainerDataDestructionItem,
-                          _NSSDataContainerDataDestructionItem,
-                          _NSSExternalAnalyticsPaneldentifierProvider,
-                          _NSSExternalAnalyticsPaneldentifierProvider,
-                          _NSSExternalAnalyticsRequest, _NSSExternalAnalyticsRequest,
-                          _NSSExternalAnalyticsRequestMetadata,
-                          _NSSExternalAnalyticsRequestMetadata, _NSSNewsAnalyticsEnvelopeTracker,
-                          _NSSNewsAnalyticsEnvelopeTracker, _NSSNewsAnalyticsEventAnnotator,
+    objc-classes:       [ _NSSArticleInternal, _NSSArticleView, _NSSArticleViewControllerInternal, _NSSBundleInternalLookupClass,
+                          _NSSDataContainerDataDestructionItem, _NSSExternalAnalyticsPaneldentifierProvider,
+                          _NSSExternalAnalyticsRequest, _NSSExternalAnalyticsRequestMetadata, _NSSNewsAnalyticsEnvelopeTracker,
                           _NSSNewsAnalyticsEventAnnotator, _NSSNewsAnalyticsSessionAnnotator,
-                          _NSSNewsAnalyticsSessionAnnotator,
-                          _NSSNewsAnalyticsSubmitEnvelopesOperation,
-                          _NSSNewsAnalyticsSubmitEnvelopesOperation, _NSSNewsAvailabilityMonitor,
-                          _NSSNewsAvailabilityMonitor, _NSSNewsTerminationItem,
-                          _NSSNewsTerminationItem, _NSSUserDefaultsDataDestructionItem,
+                          _NSSNewsAnalyticsSubmitEnvelopesOperation, _NSSNewsAvailabilityMonitor, _NSSNewsTerminationItem,
                           _NSSUserDefaultsDataDestructionItem ]
     objc-ivars:         [ _NSSArticleInternal._publishDate, _NSSArticleInternal._publisherLogoImage,
                           _NSSArticleInternal._publisherName, _NSSArticleInternal._shortExcerpt,
-                          _NSSArticleInternal._thumbnailImage, _NSSArticleInternal._title,
-                          _NSSArticleView._article, _NSSArticleView._dateLabel,
-                          _NSSArticleView._excerptLabel, _NSSArticleView._preferredSize,
+                          _NSSArticleInternal._thumbnailImage, _NSSArticleInternal._title, _NSSArticleView._article,
+                          _NSSArticleView._dateLabel, _NSSArticleView._excerptLabel, _NSSArticleView._preferredSize,
                           _NSSArticleView._publisherLabel, _NSSArticleView._publisherLogoImageView,
                           _NSSArticleView._thumbnailContainerView, _NSSArticleView._thumbnailImageView,
                           _NSSArticleView._titleLabel, _NSSArticleViewControllerInternal._article,
-                          _NSSArticleViewControllerInternal._articleLoading,
-                          _NSSArticleViewControllerInternal._articleView,
-                          _NSSArticleViewControllerInternal._spinner,
-                          _NSSDataContainerDataDestructionItem._containerClass,
+                          _NSSArticleViewControllerInternal._articleLoading, _NSSArticleViewControllerInternal._articleView,
+                          _NSSArticleViewControllerInternal._spinner, _NSSDataContainerDataDestructionItem._containerClass,
                           _NSSDataContainerDataDestructionItem._identifier,
                           _NSSExternalAnalyticsPaneldentifierProvider._hostNames,
-                          _NSSExternalAnalyticsPaneldentifierProvider._panelIdentifier,
-                          _NSSExternalAnalyticsRequest._URL, _NSSExternalAnalyticsRequest._metadata,
+                          _NSSExternalAnalyticsPaneldentifierProvider._panelIdentifier, _NSSExternalAnalyticsRequest._URL,
+                          _NSSExternalAnalyticsRequest._metadata,
                           _NSSExternalAnalyticsRequestMetadata._appConfigTreatmentIdentifier,
                           _NSSExternalAnalyticsRequestMetadata._articleIdentifier,
                           _NSSExternalAnalyticsRequestMetadata._clientIdentifier,
                           _NSSExternalAnalyticsRequestMetadata._eventType,
                           _NSSExternalAnalyticsRequestMetadata._publisherIdentifier,
-                          _NSSExternalAnalyticsRequestMetadata._requestIdentifier,
-                          _NSSExternalAnalyticsRequestMetadata._session,
+                          _NSSExternalAnalyticsRequestMetadata._requestIdentifier, _NSSExternalAnalyticsRequestMetadata._session,
                           _NSSExternalAnalyticsRequestMetadata._userIdentifier,
                           _NSSNewsAnalyticsSubmitEnvelopesOperation._envelopes,
                           _NSSNewsAnalyticsSubmitEnvelopesOperation._submissionCompletion,
-                          _NSSNewsAvailabilityMonitor._NewsIsAvailable,
-                          _NSSNewsAvailabilityMonitor._applicationProxy,
+                          _NSSNewsAvailabilityMonitor._NewsIsAvailable, _NSSNewsAvailabilityMonitor._applicationProxy,
                           _NSSNewsAvailabilityMonitor._blocks, _NSSNewsAvailabilityMonitor._queue,
                           _NSSNewsTerminationItem._bundleID, _NSSNewsTerminationItem._processType,
-                          _NSSUserDefaultsDataDestructionItem._domainName,
-                          _NSSUserDefaultsDataDestructionItem._stickyKeys,
+                          _NSSUserDefaultsDataDestructionItem._domainName, _NSSUserDefaultsDataDestructionItem._stickyKeys,
                           _NSSUserDefaultsDataDestructionItem._userDefaults ]
 ...

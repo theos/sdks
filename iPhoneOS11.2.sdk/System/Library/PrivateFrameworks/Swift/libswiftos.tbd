@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftos.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4typeSays7CVarArg_pGdtF,
                           __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4typeSays7CVarArg_pGdtFfA1_,
                           __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4typeSays7CVarArg_pGdtFfA2_,

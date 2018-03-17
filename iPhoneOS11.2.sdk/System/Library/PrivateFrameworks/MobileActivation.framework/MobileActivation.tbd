@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MAEActivateDeviceWithError, _MAECopyActivationRecordWithError, _MAECopyPCRTToken, _MAECopyUCRTToken,
                           _MAECreateActivationInfo, _MAECreateActivationRequest, _MAECreateActivationRequestWithError,
                           _MAECreateReCertInfo, _MAECreateReCertInfoWithError, _MAECreateReCertRequest,
@@ -24,6 +24,6 @@ exports:
                           _kMAOptionsActivationLockInfo, _kMAOptionsActivationResponseHeaders,
                           _kMAOptionsAllowInvalidNetworkCertificates, _kMAOptionsFactoryActivationRequest,
                           _kNotificationActivationStateChanged, _kNotificationBrickStateChanged ]
-    objc-classes:       [ _MadGate, _MadGate ]
+    objc-classes:       [ _MadGate ]
     objc-ivars:         [ _MadGate._connection ]
 ...

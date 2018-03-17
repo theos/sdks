@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: B90FCB75-BF17-3A5C-9344-F6C6CBC24064', 'armv7s: EF3F2F5B-69B1-3684-A36A-CD3D347EF187', 
                    'arm64: 6B231009-0F9B-37F5-BAF0-378866EC978D' ]
 platform:        ios
@@ -8,7 +8,7 @@ current-version: 1.5
 compatibility-version: 1.2
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CVBufferDumpToQTES, _CVBufferGetAttachment, _CVBufferGetAttachments, 
                        _CVBufferPropagateAttachments, _CVBufferRelease, _CVBufferRemoveAllAttachments, 
                        _CVBufferRemoveAttachment, _CVBufferRetain, _CVBufferSetAttachment, 

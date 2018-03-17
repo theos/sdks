@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 307697F0-EB61-3D84-A53E-9FD79725C054', 'armv7s: 81D87FF2-B0C5-34CF-B61E-441C5417391A', 
                    'arm64: 0084B961-2435-327A-BA71-161BA7BA1254' ]
 platform:        ios
@@ -20,7 +20,7 @@ exports:
                        _EKCalendarResourceChangeNotification._locationChanged, _EKCalendarResourceChangeNotification._startDate, 
                        _EKCalendarResourceChangeNotification._timeChanged, _EKCalendarResourceChangeNotification._titleChanged, 
                        _EKCalendarResourceChangeNotification._updateCount, _EKPersistentEvent._cachedDurationUnits ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CalAttendeeStatusToEKParticipantStatus, _CurrentLocaleExpectsMultipleFamilyNames, 
                        _CurrentLocaleExpectsSurnameFirst, _DisplayNameStringForIdentityWithProperties, 
                        _EKAlarmLocationBundlePath, _EKAutoCommentPrefix, _EKAvailabilitySpanTypeAsString, 

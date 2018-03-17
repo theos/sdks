@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VideoProcessing.framework/VideoProcessing
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MediaAnalysisActivityLevelResultsKey, _MediaAnalysisAdjustedFingerprintKey,
                           _MediaAnalysisAnalysisTypesKey, _MediaAnalysisBlacklistAgeOutInterval,
                           _MediaAnalysisBlacklistThreshold, _MediaAnalysisBlurResultsKey, _MediaAnalysisCameraMotionResultsKey,
@@ -64,9 +64,7 @@ exports:
                           _VCPReadHEVCSliceHeader, _VCPRegisterDecoders, _VCPSessionCopyProperty, _VCPSessionCreate,
                           _VCPSessionCreateDefaultBufferProperties, _VCPSessionExecute, _VCPSessionGetTypeID,
                           _VCPSessionSetProperty, _VPModuleInitialize ]
-    objc-classes:       [ _VCPContentAnalysis, _VCPFingerprint, _VCPImageConverter,
-                          _VCPImageDescriptor, _VCPImageManager, _VCPInterAssetAnalyzer,
-                          _VCPLogManager, _VCPMediaAnalysisService, _VCPMediaAnalyzer,
-                          _VCPMovieAnalyzer, _VCPPhotoAnalyzer, _VCPProtoAssetAnalysis,
-                          _VCPRealTimeAnalysisService, _VCPSceneTaxonomy ]
+    objc-classes:       [ _VCPContentAnalysis, _VCPFingerprint, _VCPImageConverter, _VCPImageDescriptor, _VCPImageManager,
+                          _VCPInterAssetAnalyzer, _VCPLogManager, _VCPMediaAnalysisService, _VCPMediaAnalyzer, _VCPMovieAnalyzer,
+                          _VCPPhotoAnalyzer, _VCPProtoAssetAnalysis, _VCPRealTimeAnalysisService, _VCPSceneTaxonomy ]
 ...

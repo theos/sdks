@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 1C5C5C58-BFCF-3C99-83ED-B4851E3A8BA4', 'armv7s: 3D439D0E-75CC-3DFF-9EAA-5891ED69A175', 
                    'arm64: D4E50E15-FED8-3C6C-8910-B3F176FB9D75' ]
 platform:        ios
@@ -14,7 +14,7 @@ exports:
     objc-classes:    [ _CMLiftManager, _CMLiftMotion ]
   - archs:           [ arm64 ]
     symbols:         [ __ZN2cl6chrono19CFAbsoluteTimeClock9to_time_tERKNSt3__16chrono10time_pointIS1_NS3_8durationIeNS2_5ratioILl1ELl1EEEEEEE ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AKSC_Decomp8975, _AKSC_InitDecomp8975, _AKSC_SetHDOELevel, 
                        _AKSC_abs16, _AKSC_angRng, _AKSC_atan2, _AKSC_buffer, _AKSC_cholDc, 
                        _AKSC_cholSl, _AKSC_cos, _AKSC_div16, _AKSC_div16f, _AKSC_div32, 

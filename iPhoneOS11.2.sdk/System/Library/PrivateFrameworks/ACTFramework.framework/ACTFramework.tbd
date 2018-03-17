@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ACTFramework.framework/ACTFramework
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ABRegComputeShift, _ABRegDisposeContext, _ABRegInitContext, _ABRegRegisterSlices,
                           _ABRegRegisterSlicesRobust, _ABRegUpdateIntegralImage, _ACTAddCSVMetadata,
                           _ACTAttachRegistrationMetadata, _ACTFinalThreadedNoiseReduction, _ACTLogAddListener, _ACTLogMessageImp,
@@ -187,22 +187,14 @@ exports:
                           _signatureLineRegressionQuality, _smoothSignature, _timeElapsedSinceInit, _timestampToSeconds,
                           _updateACTNoiseReductionContext, _updateBandPassNoiseReductionCropRect,
                           _updateMultiBandNoiseReductionCropRect, _updateMultiBandNoiseReductionMetadata, _vmdLog ]
-    objc-classes:       [ _ACTGLBase, _ACTGLBase, _ACTSlowmoResults,
-                          _ACTSlowmoResults, _ACTVideoMotionDetector,
-                          _ACTVideoMotionDetector, _ACTVideoProcessor,
-                          _ACTVideoProcessor, _ACTVideoUtilities,
-                          _ACTVideoUtilities ]
-    objc-ivars:         [ _ACTGLBase.mFramebuffer, _ACTGLBase.mGLBackupContext,
-                          _ACTGLBase.mGLContext, _ACTGLBase.mTextureArray,
+    objc-classes:       [ _ACTGLBase, _ACTSlowmoResults, _ACTVideoMotionDetector, _ACTVideoProcessor, _ACTVideoUtilities ]
+    objc-ivars:         [ _ACTGLBase.mFramebuffer, _ACTGLBase.mGLBackupContext, _ACTGLBase.mGLContext, _ACTGLBase.mTextureArray,
                           _ACTSlowmoResults._results, _ACTVideoMotionDetector._colGradient,
                           _ACTVideoMotionDetector._curProjIndex, _ACTVideoMotionDetector._frameCount,
-                          _ACTVideoMotionDetector._lastFrameTimestamp,
-                          _ACTVideoMotionDetector._outputRawMarkers,
-                          _ACTVideoMotionDetector._processedFrameCount,
-                          _ACTVideoMotionDetector._projections, _ACTVideoMotionDetector._result,
-                          _ACTVideoMotionDetector._results, _ACTVideoMotionDetector._rowGradient,
-                          _ACTVideoMotionDetector._singleTimeRange,
-                          _ACTVideoMotionDetector._skipSecondPass,
-                          _ACTVideoMotionDetector._startTimestamp, _ACTVideoMotionDetector._url,
-                          _ACTVideoMotionDetector._verbose ]
+                          _ACTVideoMotionDetector._lastFrameTimestamp, _ACTVideoMotionDetector._outputRawMarkers,
+                          _ACTVideoMotionDetector._processedFrameCount, _ACTVideoMotionDetector._projections,
+                          _ACTVideoMotionDetector._result, _ACTVideoMotionDetector._results,
+                          _ACTVideoMotionDetector._rowGradient, _ACTVideoMotionDetector._singleTimeRange,
+                          _ACTVideoMotionDetector._skipSecondPass, _ACTVideoMotionDetector._startTimestamp,
+                          _ACTVideoMotionDetector._url, _ACTVideoMotionDetector._verbose ]
 ...

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 54177D03-8C9C-32F1-BF9F-44BE19894FC8', 'armv7s: 8C4BE24A-BC98-33DA-AF13-23804834544A', 
                    'arm64: 060A2845-3359-344A-85A6-EF78520B759E' ]
 platform:        ios
@@ -15,7 +15,7 @@ exports:
                        _SPInterfaceLabel, _SPInterfaceList, _SPInterfaceMapView, 
                        _SPInterfaceObject, _SPInterfaceSlider, _SPInterfaceSwitch, 
                        _SPLogs, _SPUtils ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AccessibilityHintPropertyKey, _AccessibilityIdentifierPropertyKey, 
                        _AccessibilityIsElementPropertyKey, _AccessibilityLabelPropertyKey, 
                        _AccessibilityRegionsPropertyKey, _AccessibilityTraitsPropertyKey, 

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DiskImages.framework/DiskImages
 current-version:       480.30.2
 compatibility-version: 1.0.8
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _DIAddPermission, _DIBackingStoreCloseDataFork, _DIBackingStoreCloseResourceFile,
                           _DIBackingStoreGetDataForkLength, _DIBackingStoreGetRsrcForkLength, _DIBackingStoreGetURL,
                           _DIBackingStoreGetURLArray, _DIBackingStoreNewWithCFURL, _DIBackingStoreOpenDataFork,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 9A77BD72-58E7-3463-9D1B-6A8CCA77215D', 'armv7s: 5D95DC7F-0B21-3129-BC8D-4EACB5910469', 
                    'arm64: AB5DBBC4-8A64-3894-87F5-572F13867857' ]
 platform:        ios
@@ -9,7 +9,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     symbols:         [ _CGImagePoisoningSetCallback ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CGCopyBasicPropertiesOfImageAtPath, _CGImageConvertExtendedSRGBToColorspace, 
                        _CGImageCopyFileWithGPSInformation, _CGImageCopyFileWithParameters, 
                        _CGImageCopyJPEGData, _CGImageCopyJPEGDataAndColorSpace, _CGImageCopySourceData, 

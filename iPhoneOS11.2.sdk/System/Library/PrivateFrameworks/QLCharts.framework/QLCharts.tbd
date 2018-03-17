@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/QLCharts.framework/QLCharts
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _DummyValueCallbacks, _OIAXisGetDrawMajorGridlines, _OIAxisAreLabelsCentered,
                           _OIAxisConvertValueToLocal, _OIAxisCreateWithLabelCount, _OIAxisCreateWithRange,
                           _OIAxisDictionaryValueCallbacks, _OIAxisGetCustomNumberFormatter, _OIAxisGetICUFormating,
@@ -121,8 +121,6 @@ exports:
                           _kOIChartStackedLineType, _kOIChartStockType, _kOIChartStrokeColorKey, _kOIChartStrokeWidthKey,
                           _kOIChartSurfaceType, _kOIChartTextColorKey, _kOIChartTitleAreaKey, _kOIChartTitleKey,
                           _kOIChartUseShadowsKey, _kOIChartXYType ]
-    objc-classes:       [ _OIPieChartRenderer, _OIPieChartRenderer,
-                          _OIPieSliceCGRenderer, _OIPieSliceCGRenderer ]
-    objc-ivars:         [ _OIPieChartRenderer._chart, _OIPieChartRenderer._sliceRenderer,
-                          _OIPieSliceCGRenderer._chart ]
+    objc-classes:       [ _OIPieChartRenderer, _OIPieSliceCGRenderer ]
+    objc-ivars:         [ _OIPieChartRenderer._chart, _OIPieChartRenderer._sliceRenderer, _OIPieSliceCGRenderer._chart ]
 ...

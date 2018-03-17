@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MultitouchSupport.framework/MultitouchSupport
 current-version:       1201.11
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _IOReportAddChannelDescription, _IOReportArrayGetValueAtIndex, _IOReportChannelCopyDescription,
                           _IOReportChannelGetCategories, _IOReportChannelGetChannelID, _IOReportChannelGetChannelName,
                           _IOReportChannelGetDriverID, _IOReportChannelGetDriverName, _IOReportChannelGetFormat,

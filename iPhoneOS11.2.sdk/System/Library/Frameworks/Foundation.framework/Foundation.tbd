@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: DEA2F438-8531-392F-85B1-73240DD2A2EC', 'armv7s: A50A77BF-6473-3BBB-B0D1-92E3240D79DC', 
                    'arm64: B0F8DF97-77EC-3600-8A9F-35035B889EFD' ]
 platform:        ios
@@ -27,7 +27,7 @@ exports:
                        __NSConcreteDateInterval._duration, __NSConcreteDateInterval._startDate ]
   - archs:           [ arm64 ]
     objc-ivars:      [ _NSPredicate.reserved ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     re-exports:      [ /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation, 
                        /usr/lib/libobjc.A.dylib ]
     symbols:         [ '$ld$add$os4.3$_NSHTTPCookieComment', '$ld$add$os4.3$_NSHTTPCookieCommentURL', 

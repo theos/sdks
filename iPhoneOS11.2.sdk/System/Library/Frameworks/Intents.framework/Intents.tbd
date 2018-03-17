@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 4B837D79-AB45-3313-A2F9-6C2C9EAEFCF8', 'armv7s: FF5BC191-04EE-3ACB-A61E-011EAC73571F', 
                    'arm64: 46498204-3F21-3C9A-9B6E-863C59FE30D2' ]
 platform:        ios
@@ -13,7 +13,7 @@ exports:
                        __INIntentSlotValueTransformToLocationValue, __INVocabularyStringTypeFromString ]
     objc-classes:    [ _INCacheableObjectManager, _INImageCache ]
     objc-ivars:      [ __INPBSearchCallHistoryIntentResponse._unknownFields ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _INAccountTypeGetBackingType, _INAccountTypeGetFacadeType, 
                        _INAccountTypeGetName, _INAccountTypeHasBackingType, _INActivateCarSignalIntentResponseCodeGetName, 
                        _INAddTasksIntentResponseCodeGetName, _INAmountTypeGetBackingType, 

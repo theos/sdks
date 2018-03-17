@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 9B9A2306-9EF9-3F2C-9CDF-EA07DDE69FEC', 'armv7s: EF8BC870-AC61-3CB7-99DF-62524ACE99F2', 
                    'arm64: 75CB9B10-1C89-36D0-A49C-CF229B36BC00' ]
 platform:        ios
@@ -8,7 +8,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     symbols:         [ _NEIPSecIKEInitiateMOBIKE ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CFARRAY_TYPE, _CFBOOLEAN_TYPE, _CFDATA_TYPE, _CFDICTIONARY_TYPE, 
                        _CFNUMBER_TYPE, _CFSTRING_TYPE, _NEAddAddressToDictionary, 
                        _NEAddDataToDictionary, _NEAddDateToDictionary, _NEAddInt64ToDictionary, 

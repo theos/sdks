@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: F2FF5092-78F3-39B3-A66A-B38482B7BDBF', 'armv7s: E5BA9754-B4B5-377F-8DEE-2BDAB7A9EBBF', 
                    'arm64: 1E79604E-357E-36CF-81A5-4C4F420B7B6C' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/MetalKit.framework/MetalKit
 current-version: 98.3
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MTKMetalVertexDescriptorFromModelIO, _MTKMetalVertexDescriptorFromModelIOWithError, 
                        _MTKMetalVertexFormatFromModelIO, _MTKModelErrorDomain, _MTKModelErrorKey, 
                        _MTKModelIOVertexDescriptorFromMetal, _MTKModelIOVertexDescriptorFromMetalWithError, 

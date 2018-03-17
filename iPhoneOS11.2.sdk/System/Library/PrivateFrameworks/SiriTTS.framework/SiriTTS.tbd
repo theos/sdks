@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _gryphon_AnalysisDumpAnalysis, _gryphon_AnalysisSetEnabled, _gryphon_GetCurrentCompatibilityVersion,
                           _gryphon_GetMinCompatibilityVersion, _gryphon_InitWithInstallPath, _gryphon_ReportSubstitution,
                           _gryphon_SetDisablePrompts, _gryphon_SetForceProsody, _gryphon_SetGlobalWhisper,

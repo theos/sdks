@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 1A1F8A03-9E49-3CCD-A373-AD0E9E554E85', 'armv7s: FEEAE780-8331-353F-A4EA-31FDDE63D0F3', 
                    'arm64: DBAB0541-0DA4-3017-82AD-6922D55546A0' ]
 platform:        ios
@@ -10,7 +10,7 @@ exports:
     symbols:         [ _CTFontCreateForCSS, _CTFontCreatePhysicalFontDescriptorForCharactersWithLanguage, 
                        _CTFontCreatePhysicalFontForCharactersWithLanguage, _kFOComponentLeadingOverride, 
                        _kFOOpticalSize ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CTCopyDescriptionDictionary, _CTFontCollectionCreateCopyWithFontDescriptors, 
                        _CTFontCollectionCreateFromAvailableFonts, _CTFontCollectionCreateMatchingFontDescriptors, 
                        _CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback, 

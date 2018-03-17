@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DAAPKit.framework/DAAPKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __ZN4DAAP11MakeElementINSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEENS1_10shared_ptrINS_7ElementEEEjT_,
                           __ZN4DAAP11MakeElementIPKcEENSt3__110shared_ptrINS_7ElementEEEjT_,
                           __ZN4DAAP14DocumentWriter13writeElementsENSt3__16vectorINS1_10shared_ptrINS_7ElementEEENS1_9allocatorIS5_EEEE,

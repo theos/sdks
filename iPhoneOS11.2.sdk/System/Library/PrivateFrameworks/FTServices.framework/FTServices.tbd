@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FTServices.framework/FTServices
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _FTCTRegistrationStatusCanRegisterKey, _FTCTRegistrationStatusChangedNotification,
                           _FTCTRegistrationStatusIMSIKey, _FTCTRegistrationStatusPLMNKey, _FTCTRegistrationStatusPhoneNumberKey,
                           _FTEntitlementStatusChangedNotification, _FTErrorDomain, _FTRegionListFinishedLoadingNotification,
@@ -18,39 +18,21 @@ exports:
                           __AuthenticationDictionaryFromParameters, __BindingsArrayFromURIs, __DeviceCapabilitiesFromParameters,
                           __FTAreIDsEquivalent, __FTIDSFlagsNumber, __FTProfileVersionNumber, __FZErrorTypeFromNSError,
                           __FZErrorTypeFromResponseCodeAndError, __GenerateDigestForSigning, __GenerateNonceAndSignature ]
-    objc-classes:       [ _FTDeviceSupport, _FTDeviceSupport, _FTEntitlementSupport,
-                          _FTEntitlementSupport, _FTIDSMessage, _FTIDSMessage,
-                          _FTMessageDelivery, _FTMessageDelivery,
-                          _FTMessageDelivery_APS, _FTMessageDelivery_APS,
-                          _FTMessageDelivery_DualMode, _FTMessageDelivery_DualMode,
-                          _FTMessageDelivery_HTTP, _FTMessageDelivery_HTTP,
-                          _FTMessageQueue, _FTMessageQueue, _FTNetworkSupport,
-                          _FTNetworkSupport, _FTPasswordManager,
-                          _FTPasswordManager, _FTRegion, _FTRegion,
-                          _FTRegionSupport, _FTRegionSupport, _FTServerBag,
-                          _FTServerBag, _FTURLRequestMessage,
-                          _FTURLRequestMessage, _FTUserConfiguration,
-                          _FTUserConfiguration, _FTiMessageStatus,
-                          _FTiMessageStatus, _IDSWebTunnelRequestMessage,
-                          _IDSWebTunnelRequestMessage ]
+    objc-classes:       [ _FTDeviceSupport, _FTEntitlementSupport, _FTIDSMessage, _FTMessageDelivery, _FTMessageDelivery_APS,
+                          _FTMessageDelivery_DualMode, _FTMessageDelivery_HTTP, _FTMessageQueue, _FTNetworkSupport,
+                          _FTPasswordManager, _FTRegion, _FTRegionSupport, _FTServerBag, _FTURLRequestMessage,
+                          _FTUserConfiguration, _FTiMessageStatus, _IDSWebTunnelRequestMessage ]
     objc-ivars:         [ _FTMessageDelivery._retries, _FTMessageDelivery_DualMode._apsDelivery,
-                          _FTMessageDelivery_DualMode._dualModeQueue,
-                          _FTMessageDelivery_DualMode._httpDelivery,
+                          _FTMessageDelivery_DualMode._dualModeQueue, _FTMessageDelivery_DualMode._httpDelivery,
                           _FTMessageDelivery_DualMode._userAgentString, _FTPasswordManager._accountStore,
                           _FTPasswordManager._runningQueries, _FTPasswordManager._userNotificationCenter,
                           _FTiMessageStatus._blockPost, _FTiMessageStatus._iMessageAllowedToken,
-                          _FTiMessageStatus._supportsiMessage,
-                          _IDSWebTunnelRequestMessage._disableIDSTranslation,
-                          _IDSWebTunnelRequestMessage._maximumResponseSize,
-                          _IDSWebTunnelRequestMessage._messageHeaders,
+                          _FTiMessageStatus._supportsiMessage, _IDSWebTunnelRequestMessage._disableIDSTranslation,
+                          _IDSWebTunnelRequestMessage._maximumResponseSize, _IDSWebTunnelRequestMessage._messageHeaders,
                           _IDSWebTunnelRequestMessage._messageRequestBodyData,
                           _IDSWebTunnelRequestMessage._messageRequestBodyDictionary,
-                          _IDSWebTunnelRequestMessage._messageRequestUUID,
-                          _IDSWebTunnelRequestMessage._messageURL,
-                          _IDSWebTunnelRequestMessage._responseBodyData,
-                          _IDSWebTunnelRequestMessage._responseBodyDictionary,
-                          _IDSWebTunnelRequestMessage._responseCode,
-                          _IDSWebTunnelRequestMessage._responseHeaders,
-                          _IDSWebTunnelRequestMessage._responseStatus,
-                          _IDSWebTunnelRequestMessage._userAgentOverride ]
+                          _IDSWebTunnelRequestMessage._messageRequestUUID, _IDSWebTunnelRequestMessage._messageURL,
+                          _IDSWebTunnelRequestMessage._responseBodyData, _IDSWebTunnelRequestMessage._responseBodyDictionary,
+                          _IDSWebTunnelRequestMessage._responseCode, _IDSWebTunnelRequestMessage._responseHeaders,
+                          _IDSWebTunnelRequestMessage._responseStatus, _IDSWebTunnelRequestMessage._userAgentOverride ]
 ...

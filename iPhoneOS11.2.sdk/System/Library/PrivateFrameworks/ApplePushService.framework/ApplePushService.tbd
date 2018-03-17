@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _APSAlert, _APSBundleIdentifier, _APSCachedIPKey, _APSCarrierNameKey,
                           _APSClientIdentityUpdatedNotification, _APSConnectionInterruptedHandlerBlock,
                           _APSConnectionInvalidationHandlerBlock, _APSCopyOperatorBundleValueForKey, _APSCopyValueForKey,
@@ -43,25 +43,17 @@ exports:
                           _APSXPCCreateConnectionForServiceWithQueue, _APSXPCCreateServerConnection, _APSXPCMessageTypeKey,
                           _ConnectionDeliver_server, _ConnectionDeliver_server_routine, __APSConnectionDeliver_subsystem,
                           __APSJWStringToCharPtr, __APSPingClient, _aps_connection_event_handler, _isAudioAccessory ]
-    objc-classes:       [ _APSConnection, _APSConnection, _APSIncomingMessage,
-                          _APSIncomingMessage, _APSLog, _APSLog,
-                          _APSMessage, _APSMessage, _APSMultiUserFS,
-                          _APSMultiUserFS, _APSMultiUserMode, _APSMultiUserMode,
-                          _APSOutgoingMessage, _APSOutgoingMessage ]
-    objc-ivars:         [ _APSConnection._connection, _APSConnection._connectionPort,
-                          _APSConnection._connectionPortName, _APSConnection._delegateQueue,
-                          _APSConnection._delegateReference, _APSConnection._enableCriticalReliability,
-                          _APSConnection._enableStatusNotifications, _APSConnection._enabledTopics,
-                          _APSConnection._environmentName, _APSConnection._everHadDelegate,
-                          _APSConnection._idsToOutgoingMessages, _APSConnection._ignoredTopics,
-                          _APSConnection._isConnected, _APSConnection._ivarQueue,
-                          _APSConnection._largeMessageSize, _APSConnection._machQueue,
-                          _APSConnection._mach_source, _APSConnection._messageSize,
-                          _APSConnection._nextOutgoingMessageID, _APSConnection._opportunisticTopics,
-                          _APSConnection._portNameIsBundleId, _APSConnection._publicToken,
-                          _APSConnection._queuedDelegateBlocks, _APSConnection._usesAppLaunchStats,
-                          _APSMessage._ivarQueue, _APSMessage._plist,
-                          _APSMessage._properties, _APSMessage._xpcMessage,
-                          _APSMultiUserFS._isMultiUser, _APSMultiUserFS._systemPathCache,
-                          _APSMultiUserMode._isLoggedInUser, _APSMultiUserMode._isMultiUser ]
+    objc-classes:       [ _APSConnection, _APSIncomingMessage, _APSLog, _APSMessage, _APSMultiUserFS, _APSMultiUserMode,
+                          _APSOutgoingMessage ]
+    objc-ivars:         [ _APSConnection._connection, _APSConnection._connectionPort, _APSConnection._connectionPortName,
+                          _APSConnection._delegateQueue, _APSConnection._delegateReference,
+                          _APSConnection._enableCriticalReliability, _APSConnection._enableStatusNotifications,
+                          _APSConnection._enabledTopics, _APSConnection._environmentName, _APSConnection._everHadDelegate,
+                          _APSConnection._idsToOutgoingMessages, _APSConnection._ignoredTopics, _APSConnection._isConnected,
+                          _APSConnection._ivarQueue, _APSConnection._largeMessageSize, _APSConnection._machQueue,
+                          _APSConnection._mach_source, _APSConnection._messageSize, _APSConnection._nextOutgoingMessageID,
+                          _APSConnection._opportunisticTopics, _APSConnection._portNameIsBundleId, _APSConnection._publicToken,
+                          _APSConnection._queuedDelegateBlocks, _APSConnection._usesAppLaunchStats, _APSMessage._ivarQueue,
+                          _APSMessage._plist, _APSMessage._properties, _APSMessage._xpcMessage, _APSMultiUserFS._isMultiUser,
+                          _APSMultiUserFS._systemPathCache, _APSMultiUserMode._isLoggedInUser, _APSMultiUserMode._isMultiUser ]
 ...

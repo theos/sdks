@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 8823BF6F-ECFB-3793-A584-C110CAA5CFF0', 'armv7s: 96343EC6-14DB-3D8B-BA7B-909F30D0491D', 
                    'arm64: AC4B6D77-3914-3B2D-8307-894E34660108' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/OpenAL.framework/OpenAL
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _alBuffer3f, _alBuffer3i, _alBufferData, _alBufferf, _alBufferfv, 
                        _alBufferi, _alBufferiv, _alDeleteBuffers, _alDeleteSources, 
                        _alDisable, _alDistanceModel, _alDopplerFactor, _alDopplerVelocity, 

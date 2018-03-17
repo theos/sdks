@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 28BA75ED-9E90-3D1B-ADE1-BF6DFAE5CDF2', 'armv7s: 05F6A76A-ECF5-36A2-BF4E-F9CD365E1674', 
                    'arm64: 733E7542-E92B-34BD-9403-762135AD5014' ]
 platform:        ios
@@ -20,7 +20,7 @@ exports:
                        __CFBigNumInitWithUInt128, __CFStringInitializeTaggedStrings, 
                        ___CFTaggedStringClass ]
     objc-classes:    [ _NSTaggedPointerString ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$add$os2.0$_OBJC_CLASS_$_NSObject', '$ld$add$os2.0$_OBJC_METACLASS_$_NSObject', 
                        '$ld$add$os2.1$_OBJC_CLASS_$_NSObject', '$ld$add$os2.1$_OBJC_METACLASS_$_NSObject', 
                        '$ld$add$os2.2$_OBJC_CLASS_$_NSObject', '$ld$add$os2.2$_OBJC_METACLASS_$_NSObject', 

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: A3ED655B-727E-391A-A741-7B73B4939695', 'armv7s: E3657660-EFCF-3278-A7EF-6C52F5DF55C8', 
                    'arm64: 968C8D86-50A6-345E-99C1-1A24D4908A14' ]
 platform:        ios
@@ -44,7 +44,7 @@ exports:
                        __ZN9MPSDevice22GetMPSLibrary_DoNotUseEPK14MPSLibraryInfo, 
                        __ZN9MPSDevice8GetQueueEv, __ZN9MPSDeviceC2EPU19objcproto9MTLDevice11objc_object, 
                        __ZN9MPSDeviceD0Ev, __ZN9MPSDeviceD1Ev, __ZN9MPSDeviceD2Ev ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MPSConvertFloatToHalf, _MPSConvertHalfToFloat, _MPSCopyToFromNetworkByteOrder16, 
                        _MPSCopyToFromNetworkByteOrder32, _MPSEncodeCopyTexture, _MPSGetEffectiveFeatureChannelsCount, 
                        _MPSGetLinearTextureSize2D, _MPSGetTemporaryBufferFromCommandBufferCache, 

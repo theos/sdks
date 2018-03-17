@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
 current-version:       69.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CEMCopyEmojiTokens, _CEMCreateEmojiCharacterSet, _CEMCreateEmojiLocaleData,
                           _CEMEmojiLocaleDataCopyCommonEmojiTokens, _CEMEmojiLocaleDataCreateEmojiTokensForString,
                           _CEMEmojiLocaleDataEnumerateSearchResultsInStringWithBlock, _CEMEmojiLocaleDataGetLocaleIdentifier,

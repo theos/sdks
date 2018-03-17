@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterBase.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CSIErrorString, _CSIEventString, __Z10CSIGetTimeR7CSIDate,
                           __Z10createPLMNRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_, __Z10createPLMNii,
                           __Z10createPLMNiib, __Z11getCSIError22ERROR_3GPP_END_REASONS, __Z11getDSReason22ERROR_3GPP_END_REASONS,

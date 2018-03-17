@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ScreenReaderBrailleDriver.framework/ScreenReaderBrailleDriver
 current-version:       390
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _SCRDAdvanceBufferToPacketStart, _SCRDAlva6SeriesAppendKeyEvent, _SCRDAppendFullKeystrokeFromEvent,
                           _SCRDBaum2SendDetectDevicesRequest, _SCRDBaum2SendDeviceArrivalAck, _SCRDBaum2SendDeviceResetRequest,
                           _SCRDBaumAppendEventsFromBrailleAndFrontPanelPacket, _SCRDBaumAppendEventsFromDirectionalPadPacket,
@@ -87,13 +87,10 @@ exports:
                           _kSCRDNPHB2GDeviceIdentifier, _kSCRDNinepointSystemsNinepointBluetoothName,
                           _kSCRDOrbitReader20DeviceIdentifier, _kSCRDSeikaNotetakerBluetoothNameRegExPattern,
                           _kSCRDUSBDeviceDisconnectNotification, _kSCRODBaumVario340DeviceIdentifier ]
-    objc-classes:       [ _SCRDFileReader, _SCRDFileReader, _SCRDKGSPacket,
-                          _SCRDKGSPacket, _SCRDUSBDevice, _SCRDUSBDevice ]
-    objc-ivars:         [ _SCRDFileReader._delegate, _SCRDFileReader._fileHandle,
-                          _SCRDFileReader._readerThread, _SCRDFileReader._threadStartCount,
-                          _SCRDKGSPacket._command, _SCRDKGSPacket._data,
-                          _SCRDKGSPacket._subCommand, _SCRDUSBDevice._device,
-                          _SCRDUSBDevice._interface, _SCRDUSBDevice._isConfigured,
-                          _SCRDUSBDevice._isOpen, _SCRDUSBDevice._notification,
+    objc-classes:       [ _SCRDFileReader, _SCRDKGSPacket, _SCRDUSBDevice ]
+    objc-ivars:         [ _SCRDFileReader._delegate, _SCRDFileReader._fileHandle, _SCRDFileReader._readerThread,
+                          _SCRDFileReader._threadStartCount, _SCRDKGSPacket._command, _SCRDKGSPacket._data,
+                          _SCRDKGSPacket._subCommand, _SCRDUSBDevice._device, _SCRDUSBDevice._interface,
+                          _SCRDUSBDevice._isConfigured, _SCRDUSBDevice._isOpen, _SCRDUSBDevice._notification,
                           _SCRDUSBDevice._notificationPort, _SCRDUSBDevice._privateRunLoopMode ]
 ...

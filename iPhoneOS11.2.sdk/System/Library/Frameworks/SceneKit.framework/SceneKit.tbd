@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 1ABA0806-20F4-3D22-BF04-FCB9001DC9F3', 'armv7s: DFE649ED-4041-33A2-9F37-76690FCEAD9D', 
                    'arm64: 8BB3E77B-4C80-3A8F-965A-8D23498ED108' ]
 platform:        ios
@@ -9,7 +9,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     objc-classes:    [ _SCN3DDisplayRenderingTechnique, _SCNHeadMountedDisplayRenderingTechnique ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _C3DAnimationManagerContainsSceneTimeBasedAnimation, _C3DAnimationManagerIsEmpty, 
                        _C3DConvertGLSLShaderToMetal, _C3DCopyInstanceVariables, _C3DCreateDataWithContentOfURL, 
                        _C3DCreateImageSourceWithURL, _C3DEngineContextSetRenderingOptionForKey, 

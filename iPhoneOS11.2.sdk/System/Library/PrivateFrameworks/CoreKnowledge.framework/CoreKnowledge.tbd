@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CKLogContextDaemon, _CKLogContextFramework, _CKLogInit, _CKLoggingSubsystem,
                           _CoreKnowledgeVersionNumber, _CoreKnowledgeVersionString, _handle_statement, _kCKLogContextDaemon,
                           _kCKLogContextFramework, _kCKLogFacilityCoreKnowledge, _librdf_alloc_memory, _librdf_basename,
@@ -658,38 +658,14 @@ exports:
                           _yajl_lex_peek, _yajl_parse, _yajl_parse_integer, _yajl_render_error_string,
                           _yajl_set_default_alloc_funcs, _yajl_status_to_string, _yajl_string_decode, _yajl_string_encode,
                           _yajl_string_validate_utf8 ]
-    objc-classes:       [ _CKAbstractBackingStore, _CKAbstractBackingStore,
-                          _CKAppInteractionsContext, _CKAppInteractionsContext,
-                          _CKClosure, _CKClosure, _CKCoreDuetHandler,
-                          _CKCoreDuetHandler, _CKDeviceActivityStore,
-                          _CKDeviceActivityStore, _CKEntity, _CKEntity,
-                          _CKEphemeralEventSequence, _CKEphemeralEventSequence,
-                          _CKEvent, _CKEvent, _CKGenericCondition,
-                          _CKGenericCondition, _CKHistoricEvent, _CKHistoricEvent,
-                          _CKJSONLDGraph, _CKJSONLDGraph, _CKKnowledgeStore,
-                          _CKKnowledgeStore, _CKKnowledgeStoreUtils,
-                          _CKKnowledgeStoreUtils, _CKLogic, _CKLogic,
-                          _CKPermanentEventStore, _CKPermanentEventStore,
-                          _CKPersistentStoreHandler, _CKPersistentStoreHandler,
-                          _CKSPARQLEndpoint, _CKSPARQLEndpoint, _CKTriple,
-                          _CKTriple, _CKTripleCondition, _CKTripleCondition,
-                          __TtC13CoreKnowledge14CKCustomLogger,
-                          __TtC13CoreKnowledge14CKCustomLogger,
-                          __TtC13CoreKnowledge15CKSQLConnection,
-                          __TtC13CoreKnowledge15CKSQLConnection,
-                          __TtC13CoreKnowledge17CKSQLBackingStore,
-                          __TtC13CoreKnowledge17CKSQLBackingStore,
-                          __TtC13CoreKnowledge21CoreKnowledgeXPCUtils,
-                          __TtC13CoreKnowledge21CoreKnowledgeXPCUtils,
-                          __TtC13CoreKnowledge22CKCloudKitBackingStore,
-                          __TtC13CoreKnowledge22CKCloudKitBackingStore,
-                          __TtC13CoreKnowledge22CKDeviceKnowledgeStore,
-                          __TtC13CoreKnowledge22CKDeviceKnowledgeStore,
-                          __TtC13CoreKnowledge22CKInMemoryBackingStore,
-                          __TtC13CoreKnowledge22CKInMemoryBackingStore,
-                          __TtC13CoreKnowledge26CKUserDefaultsBackingStore,
-                          __TtC13CoreKnowledge26CKUserDefaultsBackingStore ]
-    objc-ivars:         [ _CKAbstractBackingStore._connection, _CKEvent._endDate,
-                          _CKEvent._identifier, _CKEvent._metadata, _CKEvent._startDate,
-                          _CKSPARQLEndpoint._knowledgeStore ]
+    objc-classes:       [ _CKAbstractBackingStore, _CKAppInteractionsContext, _CKClosure, _CKCoreDuetHandler,
+                          _CKDeviceActivityStore, _CKEntity, _CKEphemeralEventSequence, _CKEvent, _CKGenericCondition,
+                          _CKHistoricEvent, _CKJSONLDGraph, _CKKnowledgeStore, _CKKnowledgeStoreUtils, _CKLogic,
+                          _CKPermanentEventStore, _CKPersistentStoreHandler, _CKSPARQLEndpoint, _CKTriple, _CKTripleCondition,
+                          __TtC13CoreKnowledge14CKCustomLogger, __TtC13CoreKnowledge15CKSQLConnection,
+                          __TtC13CoreKnowledge17CKSQLBackingStore, __TtC13CoreKnowledge21CoreKnowledgeXPCUtils,
+                          __TtC13CoreKnowledge22CKCloudKitBackingStore, __TtC13CoreKnowledge22CKDeviceKnowledgeStore,
+                          __TtC13CoreKnowledge22CKInMemoryBackingStore, __TtC13CoreKnowledge26CKUserDefaultsBackingStore ]
+    objc-ivars:         [ _CKAbstractBackingStore._connection, _CKEvent._endDate, _CKEvent._identifier, _CKEvent._metadata,
+                          _CKEvent._startDate, _CKSPARQLEndpoint._knowledgeStore ]
 ...

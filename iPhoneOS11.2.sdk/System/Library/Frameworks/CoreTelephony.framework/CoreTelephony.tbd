@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: F64DB6FA-85D2-3A83-A876-41ECA002750E', 'armv7s: 2E877539-6D33-3F34-85C6-A5E807896919', 
                    'arm64: B96CE755-F62C-395C-BB93-E90DBF128892' ]
 platform:        ios
@@ -55,7 +55,7 @@ exports:
                         __ZTSPFvPN3xpc4dictEE ]
   - archs:           [ arm64 ]
     symbols:         [ __Z12createCFPLMNRK3MCCRK3MNC, __ZNK14CSIPhoneNumber17hasSameBaseNumberERKS_ ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CTCallAddressBlocked, _CTCallAnswer, _CTCallAnswerEndingActive, 
                        _CTCallAnswerEndingActiveWithSourceIdentifier, _CTCallAnswerEndingHeld, 
                        _CTCallAnswerWithOptions, _CTCallAnswerWithSourceIdentifier, 

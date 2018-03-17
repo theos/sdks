@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IDS.framework/IDS
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     re-exports:         [ /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation ]
     symbols:            [ _ACAccountForIDSAccount, _IDSAddPairedDevice, _IDSAppleCareSetDaemonDisconnectedBlock,
                           _IDSAppleCareSignIDSIn, _IDSAppleCareSignIDSOut, _IDSCheckiMessageUnknownSender, _IDSConfigureDemoMode,
@@ -95,37 +95,18 @@ exports:
                           _IDSTriggerFinalDeregister, _IDSWarn, _IDSWillLog, _IDSiCloudModify, _IDSiCloudSignIn,
                           _IDSiCloudSignInHack, _IDSiCloudSignOut, _IDSiCloudSignOutHack, _IDSiCloudUpdate, _IDSiTunesSignIn,
                           _IDSiTunesSignOut, __IDSDaemonDidConnectNotification ]
-    objc-classes:       [ _IDSAccount, _IDSAccount, _IDSAccountController,
-                          _IDSAccountController, _IDSBatchIDQueryController,
-                          _IDSBatchIDQueryController, _IDSConnection,
-                          _IDSConnection, _IDSContinuity, _IDSContinuity,
-                          _IDSDaemonController, _IDSDaemonController,
-                          _IDSDataChannelLinkContext, _IDSDataChannelLinkContext,
-                          _IDSDatagramChannel, _IDSDatagramChannel, _IDSDevice,
-                          _IDSDevice, _IDSDeviceConnection, _IDSDeviceConnection,
-                          _IDSGroupSession, _IDSGroupSession, _IDSGroupStatusNotifier,
-                          _IDSGroupStatusNotifier, _IDSIDQueryController,
-                          _IDSIDQueryController, _IDSPairedDeviceManager,
-                          _IDSPairedDeviceManager, _IDSService, _IDSService,
-                          _IDSServiceAvailabilityController, _IDSServiceAvailabilityController,
-                          _IDSSession, _IDSSession, _IDSSignInController,
-                          _IDSSignInController, _IDSTransactionLogDataMessage,
-                          _IDSTransactionLogDataMessage, _IDSTransactionLogDictionaryMessage,
-                          _IDSTransactionLogDictionaryMessage, _IDSTransactionLogMessage,
-                          _IDSTransactionLogMessage, _IDSTransactionLogSyncTask,
-                          _IDSTransactionLogSyncTask, _IDSTransactionLogTask,
-                          _IDSTransactionLogTask ]
+    objc-classes:       [ _IDSAccount, _IDSAccountController, _IDSBatchIDQueryController, _IDSConnection, _IDSContinuity,
+                          _IDSDaemonController, _IDSDataChannelLinkContext, _IDSDatagramChannel, _IDSDevice,
+                          _IDSDeviceConnection, _IDSGroupSession, _IDSGroupStatusNotifier, _IDSIDQueryController,
+                          _IDSPairedDeviceManager, _IDSService, _IDSServiceAvailabilityController, _IDSSession,
+                          _IDSSignInController, _IDSTransactionLogDataMessage, _IDSTransactionLogDictionaryMessage,
+                          _IDSTransactionLogMessage, _IDSTransactionLogSyncTask, _IDSTransactionLogTask ]
     objc-ivars:         [ _IDSDataChannelLinkContext._internal, _IDSDatagramChannel._internal,
-                          _IDSPairedDeviceManager._allowedTrafficClassifiers,
-                          _IDSPairedDeviceManager._deleteCompletion,
-                          _IDSPairedDeviceManager._deliveryStatsCompletion,
-                          _IDSPairedDeviceManager._localCompletion,
-                          _IDSPairedDeviceManager._pairedCompletion,
-                          _IDSTransactionLogDataMessage._dataValue,
-                          _IDSTransactionLogDictionaryMessage._dictionaryValue,
-                          _IDSTransactionLogMessage._accountUniqueID, _IDSTransactionLogMessage._fromID,
-                          _IDSTransactionLogMessage._loginID, _IDSTransactionLogMessage._serviceName,
-                          _IDSTransactionLogSyncTask._batchProcessingBlock,
-                          _IDSTransactionLogSyncTask._knownRecordIDsFromList,
-                          _IDSTransactionLogTask._completionBlock ]
+                          _IDSPairedDeviceManager._allowedTrafficClassifiers, _IDSPairedDeviceManager._deleteCompletion,
+                          _IDSPairedDeviceManager._deliveryStatsCompletion, _IDSPairedDeviceManager._localCompletion,
+                          _IDSPairedDeviceManager._pairedCompletion, _IDSTransactionLogDataMessage._dataValue,
+                          _IDSTransactionLogDictionaryMessage._dictionaryValue, _IDSTransactionLogMessage._accountUniqueID,
+                          _IDSTransactionLogMessage._fromID, _IDSTransactionLogMessage._loginID,
+                          _IDSTransactionLogMessage._serviceName, _IDSTransactionLogSyncTask._batchProcessingBlock,
+                          _IDSTransactionLogSyncTask._knownRecordIDsFromList, _IDSTransactionLogTask._completionBlock ]
 ...

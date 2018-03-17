@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: 51BED1FF-6324-308E-9A00-902EAF3CB020' ]
 platform:        ios
 install-name:    /usr/lib/libBKDM2.dylib
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AWDBiometricKitAttentionCheckReadFrom, _AWDBiometricKitDailyUpdateReadFrom, 
                        _AWDBiometricKitEnrollAttemptReadFrom, _AWDBiometricKitFaceDetectAttemptReadFrom, 
                        _AWDBiometricKitMatchAttemptReadFrom, _AWDBiometricKitPassCodeChallengeAttemptReadFrom, 

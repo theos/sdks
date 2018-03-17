@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AppAnalyticsEnabled, _AppleSupportContainerLocation, _BundleName, _CRCreateDirectoryStructure,
                           _CRDateString, _CRDisableCrashReporting, _CRDumpAllOldStructuredDataLogs, _CREnableCrashReporting,
                           _CRGetReporterKey, _CRIsAppleInternal, _CRLogStructuredData, _CRParseStackShotDictionary,
@@ -68,14 +68,10 @@ exports:
                           _logForAppleCare, _logLineForAppleCare, _parseGlobalBinaryImages, _parseMemoryData, _parseMemoryPages,
                           _parseMemoryPressure, _parseProcess, _parseProcessData, _parseThermalData, _parseThread,
                           _rollAppleCareLogs, _safeLog, _setDiagnosticLogSubmission, _sortNumerically ]
-    objc-classes:       [ _AppleErrorReport, _AppleErrorReport, _LogCounterObject,
-                          _LogCounterObject, _OTATaskingAgentClient,
-                          _OTATaskingAgentClient, _StructuredDataReport,
-                          _StructuredDataReport ]
-    objc-ivars:         [ _AppleErrorReport._capture_time, _AppleErrorReport._incidentID,
-                          _AppleErrorReport._logType, _AppleErrorReport._logWritingOptions,
-                          _AppleErrorReport._logfile, _AppleErrorReport._notes,
+    objc-classes:       [ _AppleErrorReport, _LogCounterObject, _OTATaskingAgentClient, _StructuredDataReport ]
+    objc-ivars:         [ _AppleErrorReport._capture_time, _AppleErrorReport._incidentID, _AppleErrorReport._logType,
+                          _AppleErrorReport._logWritingOptions, _AppleErrorReport._logfile, _AppleErrorReport._notes,
                           _LogCounterObject._count, _OTATaskingAgentClient._connection,
-                          _OTATaskingAgentClient._synchRemoteObjectProxy,
-                          _StructuredDataReport._log_type, _StructuredDataReport._raw_logfile ]
+                          _OTATaskingAgentClient._synchRemoteObjectProxy, _StructuredDataReport._log_type,
+                          _StructuredDataReport._raw_logfile ]
 ...

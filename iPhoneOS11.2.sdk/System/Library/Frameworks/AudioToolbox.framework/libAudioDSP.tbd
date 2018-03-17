@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _EndpointDetectorInterface_registerAUForOSXDevelopment, _GetAudioDSPManager,
                           _PListReaderInterface_GetSerializedFloat32DataFromDict,
                           _PListReaderInterface_GetSerializedFloat32DataFromDict_II, _PListReaderInterface_GetValueFromDict,
@@ -23,12 +23,10 @@ exports:
                           _VAD3ConfigurationInterface_GetNumCategories, _VAD3ConfigurationInterface_GetNumCategoryValues,
                           _VAD3ConfigurationInterface_GetTimingDimensions, _VAD3ConfigurationInterface_GetTimingModelOrder,
                           _VAD3ConfigurationInterface_IsInitialized ]
-    objc-classes:       [ _CLMClickEvent, _CLMClickEvent, _CLMClickEventMonitor,
-                          _CLMClickEventMonitor, _CLMClickMitigator,
-                          _CLMClickMitigator ]
-    objc-ivars:         [ _CLMClickEvent._absoluteTime, _CLMClickEvent._eventType,
-                          _CLMClickEventMonitor._events, _CLMClickEventMonitor._hidEventMonitor,
-                          _CLMClickMitigator._externalFormat, _CLMClickMitigator._inputConverter,
-                          _CLMClickMitigator._outputConverter, _CLMClickMitigator._processingFormat,
-                          _CLMClickMitigator._tuningPath, _CLMClickMitigator._upstreamLatency ]
+    objc-classes:       [ _CLMClickEvent, _CLMClickEventMonitor, _CLMClickMitigator ]
+    objc-ivars:         [ _CLMClickEvent._absoluteTime, _CLMClickEvent._eventType, _CLMClickEventMonitor._events,
+                          _CLMClickEventMonitor._hidEventMonitor, _CLMClickMitigator._externalFormat,
+                          _CLMClickMitigator._inputConverter, _CLMClickMitigator._outputConverter,
+                          _CLMClickMitigator._processingFormat, _CLMClickMitigator._tuningPath,
+                          _CLMClickMitigator._upstreamLatency ]
 ...

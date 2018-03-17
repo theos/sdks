@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 2BE283FD-53AB-3656-B35A-989EC24768A0', 'armv7s: 067DAA50-59E0-3021-9D7C-9B7E03540627', 
                    'arm64: B159FE59-2A27-3823-897C-1700C7A9A619' ]
 platform:        ios
@@ -19,7 +19,7 @@ exports:
                        __MXExtensionViewController ]
     objc-ivars:      [ _MKMapView._defaultLocationTimer, _MKPlaceHeaderBackgroundView._backgroundType, 
                        _MKPlaceHeaderBackgroundView._mapItem, _MKUserLocationView._marker ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _ImageForShieldDataSourceTypeShouldBeFlipped, _MKAddressDictionaryFromCLPlacemark, 
                        _MKAddressDictionaryFromContactsDictionary, _MKAddressDictionaryFromPostalAddress, 
                        _MKAddressStringForAddressDictionary, _MKAnnotationCalloutInfoDidChangeNotification, 

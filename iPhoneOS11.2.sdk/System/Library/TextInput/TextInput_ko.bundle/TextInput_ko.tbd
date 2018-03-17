@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/TextInput/TextInput_ko.bundle/TextInput_ko
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __Z13__composeJamoPK10__CFStringP18Hangul2SetAutomata,
                           __Z21SearchForJamoCompoundttPK15DoubleCharValuei, __ZN14HangulSyllable10CanComposeEv,
                           __ZN14HangulSyllable10DoubleJongEtt, __ZN14HangulSyllable10DoubleJungEtt,
@@ -28,7 +28,6 @@ exports:
                           __ZN18Hangul2SetAutomata20AppendComposedHangulEP10__CFString, __ZN18Hangul2SetAutomata5ResetEv,
                           __ZN18Hangul2SetAutomataC1Ev, __ZN18Hangul2SetAutomataC2Ev, __ZN18Hangul2SetAutomataD1Ev,
                           __ZN18Hangul2SetAutomataD2Ev, __ZNK17TIInputManager_ko8is_10keyEv, __ZTV17TIInputManager_ko ]
-    objc-classes:       [ _TIKeyboardInputManager_ko, _TIKeyboardInputManager_ko ]
-    objc-ivars:         [ _TIKeyboardInputManager_ko._batchConverter,
-                          _TIKeyboardInputManager_ko._deleteSyllable ]
+    objc-classes:       [ _TIKeyboardInputManager_ko ]
+    objc-ivars:         [ _TIKeyboardInputManager_ko._batchConverter, _TIKeyboardInputManager_ko._deleteSyllable ]
 ...

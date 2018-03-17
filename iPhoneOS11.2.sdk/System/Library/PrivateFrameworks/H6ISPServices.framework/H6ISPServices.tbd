@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/H6ISPServices.framework/H6ISPServices
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __Z13GetNamedValueP9__CFArrayi, __Z16AppendNamedValueP9__CFArrayPK14__CFDictionary,
                           __Z16ClearNamedValuesP9__CFArray, __Z16CountNamedValuesP9__CFArray,
                           __Z16CreateNamedValuePKcS0_P9__CFArray, __Z17CreateNamedValuesv,

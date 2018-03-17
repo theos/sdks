@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/APTransport.framework/APTransport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _APAdvertiserInfoCopy, _APAdvertiserInfoCopyAirPlayData, _APAdvertiserInfoCopyProperty,
                           _APAdvertiserInfoCopyRAOPData, _APAdvertiserInfoCreate, _APAdvertiserInfoCreateAirPlayServiceName,
                           _APAdvertiserInfoCreateData, _APAdvertiserInfoCreateRAOPServiceName,
@@ -203,39 +203,28 @@ exports:
                           _kAPTransportWifiManagerClientWifiStatistic_InfrastructureSNR,
                           _kAPTransportWifiManagerClientWifiStatistic_PeerToPeerCCA,
                           _session_sendEventRemoteWantsNewStreamCallback, _setChannelType, _updateKernelBuffer ]
-    objc-classes:       [ _APBluetoothClient, _APBluetoothClient,
-                          _APBrowserBTLEManager, _APBrowserBTLEManager,
-                          _APDBrowserBluetoothHelper, _APDBrowserBluetoothHelper,
-                          _APTargetBTLEDevice, _APTargetBTLEDevice ]
+    objc-classes:       [ _APBluetoothClient, _APBrowserBTLEManager, _APDBrowserBluetoothHelper, _APTargetBTLEDevice ]
     objc-ivars:         [ _APBluetoothClient._delegate, _APBluetoothClient._isFirstCycle,
-                          _APBluetoothClient._isSourcePresenceAdvertising,
-                          _APBluetoothClient._isStartAdvertisingPending,
-                          _APBluetoothClient._isStopAdvertisingPending,
-                          _APBluetoothClient._nearbyDevices, _APBluetoothClient._queue,
-                          _APBluetoothClient._sourcePresenceAdvertisingData,
-                          _APBluetoothClient._sourcePresenceAdvertisingTimer,
-                          _APBluetoothClient._sourcePresenceWaitingTimer,
+                          _APBluetoothClient._isSourcePresenceAdvertising, _APBluetoothClient._isStartAdvertisingPending,
+                          _APBluetoothClient._isStopAdvertisingPending, _APBluetoothClient._nearbyDevices,
+                          _APBluetoothClient._queue, _APBluetoothClient._sourcePresenceAdvertisingData,
+                          _APBluetoothClient._sourcePresenceAdvertisingTimer, _APBluetoothClient._sourcePresenceWaitingTimer,
                           _APBluetoothClient._wpAirPlaySolo, _APBrowserBTLEManager._btleClient,
                           _APBrowserBTLEManager._btleDevices, _APBrowserBTLEManager._btleMode,
-                          _APBrowserBTLEManager._eventHandlerContext,
-                          _APBrowserBTLEManager._eventHandlerFunc, _APBrowserBTLEManager._eventQueue,
-                          _APBrowserBTLEManager._isAdvertising, _APBrowserBTLEManager._isEnabled,
-                          _APBrowserBTLEManager._isInvalidated, _APBrowserBTLEManager._isScanning,
-                          _APBrowserBTLEManager._isSoloBeaconDisabled, _APBrowserBTLEManager._managerRef,
-                          _APBrowserBTLEManager._p2pSoloSupported,
-                          _APBrowserBTLEManager._p2pSoloSupportedIsSet,
-                          _APBrowserBTLEManager._preferencesUpdated, _APBrowserBTLEManager._queue,
-                          _APBrowserBTLEManager._staleDevicesTimer,
+                          _APBrowserBTLEManager._eventHandlerContext, _APBrowserBTLEManager._eventHandlerFunc,
+                          _APBrowserBTLEManager._eventQueue, _APBrowserBTLEManager._isAdvertising,
+                          _APBrowserBTLEManager._isEnabled, _APBrowserBTLEManager._isInvalidated,
+                          _APBrowserBTLEManager._isScanning, _APBrowserBTLEManager._isSoloBeaconDisabled,
+                          _APBrowserBTLEManager._managerRef, _APBrowserBTLEManager._p2pSoloSupported,
+                          _APBrowserBTLEManager._p2pSoloSupportedIsSet, _APBrowserBTLEManager._preferencesUpdated,
+                          _APBrowserBTLEManager._queue, _APBrowserBTLEManager._staleDevicesTimer,
                           _APBrowserBTLEManager._trackingEnabled,
                           _APDBrowserBluetoothHelper._bluetoothPowerChangedListeningStarted,
-                          _APDBrowserBluetoothHelper._eventHandlerContext,
-                          _APDBrowserBluetoothHelper._eventHandlerFunc,
+                          _APDBrowserBluetoothHelper._eventHandlerContext, _APDBrowserBluetoothHelper._eventHandlerFunc,
                           _APDBrowserBluetoothHelper._eventQueue, _APDBrowserBluetoothHelper._helperRef,
-                          _APDBrowserBluetoothHelper._isBluetoothPoweredOn,
-                          _APDBrowserBluetoothHelper._isInvalidated, _APDBrowserBluetoothHelper._queue,
-                          _APTargetBTLEDevice._deviceID, _APTargetBTLEDevice._isFirmwareTracked,
-                          _APTargetBTLEDevice._isSoloCapable, _APTargetBTLEDevice._lastBeaconTicks,
-                          _APTargetBTLEDevice._lastData, _APTargetBTLEDevice._lastRSSI,
-                          _APTargetBTLEDevice._requestedTracking,
-                          _APTargetBTLEDevice._supportsMediaControlPort ]
+                          _APDBrowserBluetoothHelper._isBluetoothPoweredOn, _APDBrowserBluetoothHelper._isInvalidated,
+                          _APDBrowserBluetoothHelper._queue, _APTargetBTLEDevice._deviceID,
+                          _APTargetBTLEDevice._isFirmwareTracked, _APTargetBTLEDevice._isSoloCapable,
+                          _APTargetBTLEDevice._lastBeaconTicks, _APTargetBTLEDevice._lastData, _APTargetBTLEDevice._lastRSSI,
+                          _APTargetBTLEDevice._requestedTracking, _APTargetBTLEDevice._supportsMediaControlPort ]
 ...

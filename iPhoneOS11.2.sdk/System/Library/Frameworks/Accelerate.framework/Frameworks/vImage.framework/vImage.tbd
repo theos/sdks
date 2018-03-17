@@ -1,14 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
 current-version:       417
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
-    re-exports:         [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage,
-                          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib,
-                          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _Init_vImage, _SetvImageThreadCount, _SetvImageThreadState, _SetvImageVectorAvailable,
                           __vImage_TempBuffer_Enable_Legacy, _kvImageConstDecodeArray0, _kvImageDecodeArray_16Q12Format,
                           _kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4, _kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2,

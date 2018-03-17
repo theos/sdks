@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ExtractURLQueries, _FZAVErrorDomain, _FZRelayParameter_ConnectionID, _FZRelayParameter_PeerBlob,
                           _FZRelayParameter_PeerID, _FZRelayParameter_PeerNatIP, _FZRelayParameter_PeerNatType,
                           _FZRelayParameter_PeerRelayIP, _FZRelayParameter_PeerRelayNatIP, _FZRelayParameter_PeerRelayNatPort,
@@ -283,56 +283,24 @@ exports:
                           _kFZiMessageDefaultsDomain, _kHFSFileFlags, _kHFSResourceForkSize, _kIMDDContextConversationIDKey,
                           _kIMDDContextIsGroupChatKey, _kIMDDContextServiceNameKey, _kPersistentAVChatCachePath,
                           _kPictureCachePath, _kiChatCachePath, _sProfilingEnabled ]
-    objc-classes:       [ _IMAllocTracking, _IMAllocTracking, _IMCallMonitor,
-                          _IMCallMonitor, _IMConnectionMonitor,
-                          _IMConnectionMonitor, _IMDesktopNetworkManager,
-                          _IMDesktopNetworkManager, _IMDeviceSupport,
-                          _IMDeviceSupport, _IMDoubleLinkedList,
-                          _IMDoubleLinkedList, _IMDoubleLinkedListNode,
-                          _IMDoubleLinkedListNode, _IMFileCopier, _IMFileCopier,
-                          _IMFileManager, _IMFileManager, _IMIDSLog,
-                          _IMIDSLog, _IMInvocationQueue, _IMInvocationQueue,
-                          _IMLocalObject, _IMLocalObject, _IMLockdownManager,
-                          _IMLockdownManager, _IMLogging, _IMLogging,
-                          _IMManualUpdater, _IMManualUpdater, _IMMessageContext,
-                          _IMMessageContext, _IMMobileNetworkManager,
-                          _IMMobileNetworkManager, _IMMockURLResponse,
-                          _IMMockURLResponse, _IMMultiDict, _IMMultiDict,
-                          _IMMultiQueue, _IMMultiQueue, _IMNetworkAvailability,
-                          _IMNetworkAvailability, _IMNetworkConnectionMonitor,
-                          _IMNetworkConnectionMonitor, _IMNetworkManager,
-                          _IMNetworkManager, _IMOrderedMutableDictionary,
-                          _IMOrderedMutableDictionary, _IMPair, _IMPair,
-                          _IMPingStatistics, _IMPingStatistics, _IMPingTest,
-                          _IMPingTest, _IMPowerAssertion, _IMPowerAssertion,
-                          _IMRGLog, _IMRGLog, _IMReachability,
-                          _IMReachability, _IMRemoteObject, _IMRemoteObject,
-                          _IMRemoteObjectBroadcaster, _IMRemoteObjectBroadcaster,
-                          _IMRemoteURLConnection, _IMRemoteURLConnection,
-                          _IMRemoteURLConnectionMockScheduler, _IMRemoteURLConnectionMockScheduler,
-                          _IMScheduledUpdater, _IMScheduledUpdater, _IMSystemMonitor,
-                          _IMSystemMonitor, _IMSystemProxySettingsFetcher,
-                          _IMSystemProxySettingsFetcher, _IMTimer, _IMTimer,
-                          _IMTimingCollection, _IMTimingCollection, _IMUserDefaults,
-                          _IMUserDefaults, _IMUserNotification,
-                          _IMUserNotification, _IMUserNotificationCenter,
-                          _IMUserNotificationCenter, _IMWeakObjectCache,
-                          _IMWeakObjectCache, _IMWeakReference, _IMWeakReference,
-                          _NetworkChangeNotifier, _NetworkChangeNotifier,
-                          _OSLogHandleManager, _OSLogHandleManager ]
-    objc-ivars:         [ _IMLocalObject._internal, _IMManualUpdater._action,
-                          _IMManualUpdater._needsUpdate, _IMManualUpdater._target,
-                          _IMMessageContext._boost, _IMMessageContext._context,
-                          _IMMessageContext._localObject, _IMMessageContext._voucher,
-                          _IMMessageContext._xpcMessage, _IMMultiDict._count,
-                          _IMMultiDict._dictionary, _IMMultiQueue._queue,
-                          _IMMultiQueue._queueMap, _IMNetworkAvailability._completionBlock,
-                          _IMNetworkAvailability._context, _IMNetworkAvailability._flags,
-                          _IMNetworkAvailability._guid, _IMNetworkAvailability._options,
-                          _IMNetworkAvailability._startTime, _IMNetworkAvailability._timeout,
-                          _IMNetworkAvailability._timer, _IMNetworkAvailability._wifiTimeout,
-                          _IMPowerAssertion._assertion, _IMPowerAssertion._identifier,
-                          _IMRemoteObject._internal, _IMRemoteObjectBroadcaster._queue,
-                          _IMScheduledUpdater._holdingUpdatesKeys, _IMUserNotification._reserved,
-                          _IMWeakReference._object, _IMWeakReference._objectAddress ]
+    objc-classes:       [ _IMAllocTracking, _IMCallMonitor, _IMConnectionMonitor, _IMDesktopNetworkManager, _IMDeviceSupport,
+                          _IMDoubleLinkedList, _IMDoubleLinkedListNode, _IMFileCopier, _IMFileManager, _IMIDSLog,
+                          _IMInvocationQueue, _IMLocalObject, _IMLockdownManager, _IMLogging, _IMManualUpdater,
+                          _IMMessageContext, _IMMobileNetworkManager, _IMMockURLResponse, _IMMultiDict, _IMMultiQueue,
+                          _IMNetworkAvailability, _IMNetworkConnectionMonitor, _IMNetworkManager, _IMOrderedMutableDictionary,
+                          _IMPair, _IMPingStatistics, _IMPingTest, _IMPowerAssertion, _IMRGLog, _IMReachability, _IMRemoteObject,
+                          _IMRemoteObjectBroadcaster, _IMRemoteURLConnection, _IMRemoteURLConnectionMockScheduler,
+                          _IMScheduledUpdater, _IMSystemMonitor, _IMSystemProxySettingsFetcher, _IMTimer, _IMTimingCollection,
+                          _IMUserDefaults, _IMUserNotification, _IMUserNotificationCenter, _IMWeakObjectCache, _IMWeakReference,
+                          _NetworkChangeNotifier, _OSLogHandleManager ]
+    objc-ivars:         [ _IMLocalObject._internal, _IMManualUpdater._action, _IMManualUpdater._needsUpdate,
+                          _IMManualUpdater._target, _IMMessageContext._boost, _IMMessageContext._context,
+                          _IMMessageContext._localObject, _IMMessageContext._voucher, _IMMessageContext._xpcMessage,
+                          _IMMultiDict._count, _IMMultiDict._dictionary, _IMMultiQueue._queue, _IMMultiQueue._queueMap,
+                          _IMNetworkAvailability._completionBlock, _IMNetworkAvailability._context,
+                          _IMNetworkAvailability._flags, _IMNetworkAvailability._guid, _IMNetworkAvailability._options,
+                          _IMNetworkAvailability._startTime, _IMNetworkAvailability._timeout, _IMNetworkAvailability._timer,
+                          _IMNetworkAvailability._wifiTimeout, _IMPowerAssertion._assertion, _IMPowerAssertion._identifier,
+                          _IMRemoteObject._internal, _IMRemoteObjectBroadcaster._queue, _IMScheduledUpdater._holdingUpdatesKeys,
+                          _IMUserNotification._reserved, _IMWeakReference._object, _IMWeakReference._objectAddress ]
 ...

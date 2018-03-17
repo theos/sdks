@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 351F3CBC-522F-3042-9E51-BA2452A8EB31', 'armv7s: F96E3729-D788-3359-8A6A-A0093C7554B5', 
                    'arm64: C5554E70-0ACF-38D5-8CDF-E448135184C5' ]
 platform:        ios
@@ -24,7 +24,7 @@ exports:
                        _IOAudio2_DictionaryFromASBD, _IOStreamAudioBufferGetControlBuffer, 
                        _IOStreamAudioBufferGetControlBufferLength, _IOStreamAudioBufferGetDataBuffer, 
                        _IOStreamAudioBufferGetDataBufferCapacity, _IOStreamAudioBufferGetDataBufferLength ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AudioConvertHostTimeToNanos, _AudioConvertNanosToHostTime, 
                        _AudioDeviceAddIOProc, _AudioDeviceAddPropertyListener, _AudioDeviceCreateIOProcID, 
                        _AudioDeviceCreateIOProcIDWithBlock, _AudioDeviceCreateIOProcIDWithClockedBlock, 

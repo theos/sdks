@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
 current-version:       14
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _FontTraitsGetGSFontTraits, _FontTraitsHasColorGlyphs, _FontTraitsIsBold, _FontTraitsIsItalic,
                           _GSApplicationSetUsesLegacyUI, _GSApplicationUsesLegacyUI, _GSColorCreateColorWithDeviceRGBA,
                           _GSColorCreateColorWithDeviceRGBAInfo, _GSColorCreateWithDeviceWhite, _GSColorGetRGBAComponents,
@@ -115,10 +115,9 @@ exports:
                           _kGSVideoStillsCapability, _kGSVoiceControlCapability, _kGSVolumeButtonCapability, _kGSWAPICapability,
                           _kGSWiFiCapability, _kGSYouTubeCapability, _kGSYouTubePluginCapability, _kGSiPadCapability,
                           _kXTFontTraitSlant, _kXTFontTraitSymbolic, _kXTFontTraitWeight, _kXTFontTraitWidth, _strtolower ]
-    objc-classes:       [ __UIFontExtraData, __UIFontExtraData ]
-    objc-ivars:         [ __UIFontExtraData._ascender, __UIFontExtraData._coveredCharacterSet,
-                          __UIFontExtraData._descender, __UIFontExtraData._fFlags,
-                          __UIFontExtraData._lineGap, __UIFontExtraData._lineHeight,
-                          __UIFontExtraData._maximumPointSizeAfterScaling,
-                          __UIFontExtraData._pointSizeForScaling, __UIFontExtraData._textStyleForScaling ]
+    objc-classes:       [ __UIFontExtraData ]
+    objc-ivars:         [ __UIFontExtraData._ascender, __UIFontExtraData._coveredCharacterSet, __UIFontExtraData._descender,
+                          __UIFontExtraData._fFlags, __UIFontExtraData._lineGap, __UIFontExtraData._lineHeight,
+                          __UIFontExtraData._maximumPointSizeAfterScaling, __UIFontExtraData._pointSizeForScaling,
+                          __UIFontExtraData._textStyleForScaling ]
 ...

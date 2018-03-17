@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 14084CCC-7BCA-3FF5-A413-98E3FE33A728', 'armv7s: 74AD1314-46E5-3B45-9A54-814C63D27378', 
                    'arm64: 5856A9CA-D5AD-3F88-AE48-A2C580DCCC0C' ]
 platform:        ios
@@ -9,7 +9,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     symbols:         [ _kAudioAnalysis_ISOLoudnessBox, _kLoudnessInfoDictionary_DialogueAnchorParameters ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AQMEGetDeviceStreamFormats, _AQMESetDeviceStreamFormat, _AQOfflineMixerConnectAudioQueue, 
                        _AQOfflineMixerDisconnectAudioQueue, _AQOfflineMixerDispose, 
                        _AQOfflineMixerGetProperty, _AQOfflineMixerGetPropertySize, 

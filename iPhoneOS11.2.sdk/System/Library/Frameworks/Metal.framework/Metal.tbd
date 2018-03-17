@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 4605D843-6010-3F9D-A4AE-45C4DCBBB05E', 'armv7s: 20051C55-19EE-3ACE-A75F-4CA7F07F4D7B', 
                    'arm64: EF4FBBBC-FA2B-3892-8F3C-8EC471C8CDE6' ]
 platform:        ios
@@ -12,7 +12,7 @@ exports:
   - archs:           [ arm64 ]
     symbols:         [ __Z18MTLDataTypeGetSize11MTLDataType, __Z23MTLDataTypeGetAlignment11MTLDataType, 
                        __Z47_MTLCompatibleTextureDataTypeAndPixelFormatInfo11MTLDataTypePK18MTLPixelFormatInfo ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MTLAddDevice, _MTLAddDeviceClass, _MTLCPUCacheModeString, 
                        _MTLCaptureEnabled, _MTLCommandBufferCommitTime, _MTLCommandBufferCompletionHandlerEnqueueTime, 
                        _MTLCommandBufferCompletionHandlerExecutionTime, _MTLCommandBufferCreationTime, 

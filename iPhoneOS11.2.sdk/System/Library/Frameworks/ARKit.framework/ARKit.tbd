@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: BD14F9DE-5138-3E6C-84F3-4A0314DDCF19' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ARKit.framework/ARKit
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _ARAdjustIntrincisForOrientation, _ARAdjustIntrinsicsForViewportSize, 
                        _ARBackFacingImageSensorExposureDurationUserDefaultsKey, _ARBackFacingImageSensorFrameRateUserDefaultsKey, 
                        _ARBackFacingImageSensorISOUserDefaultsKey, _ARBackFacingImageSensorLensPositionUserDefaultsKey, 

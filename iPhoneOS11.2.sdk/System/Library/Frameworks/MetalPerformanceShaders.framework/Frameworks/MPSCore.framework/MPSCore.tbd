@@ -1,11 +1,12 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore
 current-version:       90.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ MetalPerformanceShaders ]
     symbols:            [ _MPSConvertFloatToHalf, _MPSConvertHalfToFloat, _MPSCopyToFromNetworkByteOrder16,
                           _MPSCopyToFromNetworkByteOrder32, _MPSEncodeCopyTexture, _MPSGetEffectiveFeatureChannelsCount,
                           _MPSGetLinearTextureSize2D, _MPSGetTemporaryBufferFromCommandBufferCache,
@@ -50,18 +51,12 @@ exports:
                           __ZN9MPSDevice22GetMPSLibrary_DoNotUseEPK14MPSLibraryInfo, __ZN9MPSDevice8GetQueueEv,
                           __ZN9MPSDeviceC2EPU19objcproto9MTLDevice11objc_object, __ZN9MPSDeviceD0Ev, __ZN9MPSDeviceD1Ev,
                           __ZN9MPSDeviceD2Ev, _kMPSEmptyLibraryInfo ]
-    objc-classes:       [ _MPSExternalPluginBase, _MPSExternalPluginBase, _MPSImage,
-                          _MPSImage, _MPSImageDescriptor, _MPSImageDescriptor,
-                          _MPSKernel, _MPSKernel, _MPSState,
-                          _MPSState, _MPSTemporaryImage, _MPSTemporaryImage,
-                          _MPSVirtualImage, _MPSVirtualImage ]
-    objc-ivars:         [ _MPSImage._featureChannels, _MPSImage._featureChannelsLayout,
-                          _MPSImage._height, _MPSImage._numberOfImages, _MPSImage._pixelInfo,
-                          _MPSImage._texture, _MPSImage._textureType, _MPSImage._width,
-                          _MPSImageDescriptor._featureChannels, _MPSImageDescriptor._height,
-                          _MPSImageDescriptor._width, _MPSKernel._allowedOptions,
-                          _MPSKernel._device, _MPSKernel._fileVersion, _MPSKernel._label,
-                          _MPSKernel._library, _MPSKernel._options,
-                          _MPSKernel._privateOptions, _MPSState._cache, _MPSState._readCount,
-                          _MPSState._resource, _MPSTemporaryImage._readCount ]
+    objc-classes:       [ _MPSExternalPluginBase, _MPSImage, _MPSImageDescriptor, _MPSKernel, _MPSState, _MPSTemporaryImage,
+                          _MPSVirtualImage ]
+    objc-ivars:         [ _MPSImage._featureChannels, _MPSImage._featureChannelsLayout, _MPSImage._height,
+                          _MPSImage._numberOfImages, _MPSImage._pixelInfo, _MPSImage._texture, _MPSImage._textureType,
+                          _MPSImage._width, _MPSImageDescriptor._featureChannels, _MPSImageDescriptor._height,
+                          _MPSImageDescriptor._width, _MPSKernel._allowedOptions, _MPSKernel._device, _MPSKernel._fileVersion,
+                          _MPSKernel._label, _MPSKernel._library, _MPSKernel._options, _MPSKernel._privateOptions,
+                          _MPSState._cache, _MPSState._readCount, _MPSState._resource, _MPSTemporaryImage._readCount ]
 ...

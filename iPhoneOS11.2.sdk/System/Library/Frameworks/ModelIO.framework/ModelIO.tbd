@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 69348675-B65B-3D32-903C-1FA8611B0EA2', 'armv7s: 3BAAB38B-10E2-3E0B-BF54-6F305A957B0A', 
                    'arm64: 02F8AC41-A280-3C87-BD1B-F631F57205BC' ]
 platform:        ios
@@ -50,7 +50,7 @@ exports:
                         __ZTSNSt3__16vectorItNS_9allocatorItEEEE, __ZTSNSt3__16vectorIxNS_9allocatorIxEEEE, 
                         __ZTSNSt3__16vectorIyNS_9allocatorIyEEEE, __ZTSPFvRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEE, 
                         __ZTSPFvRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_E ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MDLCopyAttributeBytes, _MDLCopyAttributeData, _MDLFormatVertexData, 
                        _MDLInitializeAttributeData, _MDLVertexAttributeAOCoord, _MDLVertexAttributeAnisotropy, 
                        _MDLVertexAttributeBinormal, _MDLVertexAttributeBitangent, 

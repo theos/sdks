@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 75570633-A6F1-34E8-8B2F-460AAA018007', 'armv7s: 85AFE37B-A011-31F7-8DED-28DE8D2BF3B2', 
                    'arm64: 69566404-C835-3249-B967-B5FB5A3359A6' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/WatchConnectivity.framework/WatchCon
 current-version: 159
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _LZ4_compress, _LZ4_compressBound, _LZ4_compress_continue, 
                        _LZ4_compress_default, _LZ4_compress_destSize, _LZ4_compress_fast, 
                        _LZ4_compress_fast_continue, _LZ4_compress_fast_extState, 

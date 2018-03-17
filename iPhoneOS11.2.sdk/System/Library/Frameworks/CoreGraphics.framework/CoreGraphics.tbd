@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 5AF045C8-8DF7-3724-9447-B8C01BB052E6', 'armv7s: 2D6CEB26-E037-38C6-9294-014A120683DA', 
                    'arm64: 84200292-E237-3B96-BDE7-5A022C9EEACF' ]
 platform:        ios
@@ -27,7 +27,7 @@ exports:
                        _CGRegionCreateWithRect, _CGRegionCreateWithRects, _CGRegionEqualToRegion, 
                        _CGRegionGetBoundingBox, _CGRegionIntersectsRect, _CGRegionIntersectsRegion, 
                        _CGRegionIsEmpty, _CGRegionIsRect ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CFTypeCreateWithCGPDFObject, _CGAccessSessionCreate, _CGAccessSessionGetBytePointer, 
                        _CGAccessSessionGetBytes, _CGAccessSessionGetChunks, _CGAccessSessionRelease, 
                        _CGAccessSessionRewind, _CGAccessSessionSkipForward, _CGAffineTransformConcat, 

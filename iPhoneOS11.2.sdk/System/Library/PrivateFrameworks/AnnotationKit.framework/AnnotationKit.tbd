@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AKAdornmentZPositionOffset, _AKAnnotationChangeObjectKey, _AKAnnotationLayerSetupCompleteNotification,
                           _AKAnnotationPropertiesChangedNotification, _AKAnnotationsAddedOrRemovedNotification,
                           _AKAttributeControllerInkDidChangeNotification, _AKChildAnnotationUUIDAssociatedObjectKey,
@@ -18,50 +18,16 @@ exports:
                           _AKRawDataForCoder, _AKSelectionChangedNotification, _AKSelectionChangedPageModelControllerKey,
                           _AKStatisticsDocumentTypeImage, _AKStatisticsDocumentTypePDF,
                           _AKWillBeginEditingTextAnnotationNotification, _AKZeroQuadrilateral ]
-    objc-classes:       [ _AKActionController, _AKActionController, _AKAnnotation,
-                          _AKAnnotation, _AKAnnotationEventHandler,
-                          _AKAnnotationEventHandler, _AKAnnotationPointOfInterestHelper,
-                          _AKAnnotationPointOfInterestHelper, _AKAnnotationRenderer,
-                          _AKAnnotationRenderer, _AKArrowAnnotation,
-                          _AKArrowAnnotation, _AKArrowShapeAnnotation,
-                          _AKArrowShapeAnnotation, _AKAttributeController,
-                          _AKAttributeController, _AKBorderMaskAnnotation,
-                          _AKBorderMaskAnnotation, _AKController, _AKController,
-                          _AKControllerForTesting, _AKControllerForTesting,
-                          _AKCropAnnotation, _AKCropAnnotation, _AKDoodleAnnotation,
-                          _AKDoodleAnnotation, _AKGeometryHelper,
-                          _AKGeometryHelper, _AKHeartAnnotation,
-                          _AKHeartAnnotation, _AKHighlightAnnotation,
-                          _AKHighlightAnnotation, _AKImageAnnotation,
-                          _AKImageAnnotation, _AKInkAnnotation, _AKInkAnnotation,
-                          _AKInkSignatureView, _AKInkSignatureView,
-                          _AKLayerPresentationManager, _AKLayerPresentationManager,
-                          _AKLoupeAnnotation, _AKLoupeAnnotation, _AKMainEventHandler,
-                          _AKMainEventHandler, _AKModelController,
-                          _AKModelController, _AKNoteAnnotation,
-                          _AKNoteAnnotation, _AKOvalAnnotation, _AKOvalAnnotation,
-                          _AKOverlayView, _AKOverlayView, _AKPageController,
-                          _AKPageController, _AKPageControllerForTesting,
-                          _AKPageControllerForTesting, _AKPageModelController,
-                          _AKPageModelController, _AKPolygonAnnotation,
-                          _AKPolygonAnnotation, _AKPopupAnnotation,
-                          _AKPopupAnnotation, _AKRectAnnotation,
-                          _AKRectAnnotation, _AKRectangularShapeAnnotation,
-                          _AKRectangularShapeAnnotation, _AKSecureSerializationHelper,
-                          _AKSecureSerializationHelper, _AKShapeAnnotation,
-                          _AKShapeAnnotation, _AKSignature, _AKSignature,
-                          _AKSignatureAnnotation, _AKSignatureAnnotation,
-                          _AKSignatureView, _AKSignatureView,
-                          _AKSpeechBubbleAnnotation, _AKSpeechBubbleAnnotation,
-                          _AKStarAnnotation, _AKStarAnnotation,
-                          _AKStarAnnotationRenderer, _AKStarAnnotationRenderer,
-                          _AKStrokedAnnotation, _AKStrokedAnnotation,
-                          _AKTextAnnotationAttributeHelper, _AKTextAnnotationAttributeHelper,
-                          _AKTextBoxAnnotation, _AKTextBoxAnnotation,
-                          _AKTextFieldAnnotation, _AKTextFieldAnnotation,
-                          _AKThoughtBubbleAnnotation, _AKThoughtBubbleAnnotation,
-                          _AKToolbarView, _AKToolbarView, _AKToolbarViewController,
-                          _AKToolbarViewController, _AKTriangleAnnotation,
-                          _AKTriangleAnnotation, _AKUndoController,
-                          _AKUndoController ]
+    objc-classes:       [ _AKActionController, _AKAnnotation, _AKAnnotationEventHandler, _AKAnnotationPointOfInterestHelper,
+                          _AKAnnotationRenderer, _AKArrowAnnotation, _AKArrowShapeAnnotation, _AKAttributeController,
+                          _AKBorderMaskAnnotation, _AKController, _AKControllerForTesting, _AKCropAnnotation,
+                          _AKDoodleAnnotation, _AKGeometryHelper, _AKHeartAnnotation, _AKHighlightAnnotation, _AKImageAnnotation,
+                          _AKInkAnnotation, _AKInkSignatureView, _AKLayerPresentationManager, _AKLoupeAnnotation,
+                          _AKMainEventHandler, _AKModelController, _AKNoteAnnotation, _AKOvalAnnotation, _AKOverlayView,
+                          _AKPageController, _AKPageControllerForTesting, _AKPageModelController, _AKPolygonAnnotation,
+                          _AKPopupAnnotation, _AKRectAnnotation, _AKRectangularShapeAnnotation, _AKSecureSerializationHelper,
+                          _AKShapeAnnotation, _AKSignature, _AKSignatureAnnotation, _AKSignatureView, _AKSpeechBubbleAnnotation,
+                          _AKStarAnnotation, _AKStarAnnotationRenderer, _AKStrokedAnnotation, _AKTextAnnotationAttributeHelper,
+                          _AKTextBoxAnnotation, _AKTextFieldAnnotation, _AKThoughtBubbleAnnotation, _AKToolbarView,
+                          _AKToolbarViewController, _AKTriangleAnnotation, _AKUndoController ]
 ...

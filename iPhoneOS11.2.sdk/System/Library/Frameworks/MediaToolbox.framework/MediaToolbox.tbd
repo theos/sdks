@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 902B7CB6-A2DF-3912-8913-00EEA5ECE1E3', 'armv7s: 18DFB31A-5446-37B2-81EA-6C1A8E70E222', 
                    'arm64: 47DF3E17-8298-3A2B-ABDA-38FCAF1539AC' ]
 platform:        ios
@@ -171,7 +171,7 @@ exports:
                        _kFigSpeakerContextXPCMsgParam_Role, _kFigTransformedPlaylistProperty_LoopDescendants, 
                        _kFigTransformedPlaylistProperty_OriginalPlaylist, _kMTCacheManagementContentType_DownloadedAsset, 
                        _kkFigSalPlayerNotification_ServerDied, _kkFigSecondaryRendererNotification_ServerDied ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AVIFormatReaderCreateFromStream, _AudioMentorDispose, _AudioMentorInvalidate, 
                        _AudioMentorNew, _AudioMentorSetClientPID, _AudioMentorSetModeToDoNothing, 
                        _AudioMentorSetModeToEmptyEdit, _AudioMentorSetModeToForwardPlayback, 

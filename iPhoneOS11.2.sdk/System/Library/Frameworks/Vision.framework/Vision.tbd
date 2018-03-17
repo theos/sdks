@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: 04911680-0F63-3780-B604-8E89309AE58A' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/Vision.framework/Vision
 current-version: 1.2.1
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CCRectLowLevel, _VNBarcodeSymbologyAztec, _VNBarcodeSymbologyCODE128, 
                        _VNBarcodeSymbologyCODE39, _VNBarcodeSymbologyCODE39Checksum, 
                        _VNBarcodeSymbologyCODE39FullASCII, _VNBarcodeSymbologyCODE39FullASCIIChecksum, 

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileWiFi.framework/MobileWiFi
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MobileWiFiContainsDriver, _MobileWiFiContainsRadio, _WiFiCreatePoliciesFromRecords,
                           _WiFiCreateRecordsFromPolicies, _WiFiDeviceClientAssociateAsync, _WiFiDeviceClientAssociateCancel,
                           _WiFiDeviceClientCopyCurrentNetwork, _WiFiDeviceClientCopyCurrentNetworkAsync,
@@ -273,8 +273,7 @@ exports:
                           _wifi_manager_stop_browsing_for_service, _wifi_manager_stop_resolving_service,
                           _wifi_manager_submit_queryable_metric, _wifi_manager_unschedule_unused_network_geotags_removal_test,
                           _wifi_manager_update_network ]
-    objc-classes:       [ _WiFiPasswordSharingSimulator, _WiFiPasswordSharingSimulator ]
-    objc-ivars:         [ _WiFiPasswordSharingSimulator._queue,
-                          _WiFiPasswordSharingSimulator._replyHandler,
+    objc-classes:       [ _WiFiPasswordSharingSimulator ]
+    objc-ivars:         [ _WiFiPasswordSharingSimulator._queue, _WiFiPasswordSharingSimulator._replyHandler,
                           _WiFiPasswordSharingSimulator._service ]
 ...

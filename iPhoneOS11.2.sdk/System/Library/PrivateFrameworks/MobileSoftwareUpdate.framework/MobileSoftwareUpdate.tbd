@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/MobileSoftwareUpdate
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MSUApplyUpdate, _MSUAssetCalculateApplySize, _MSUAssetCalculateInstallationSize,
                           _MSUAssetCalculatePrepareSize, _MSUBrainIsLoadable, _MSUCheckInstallationSize,
                           _MSUCheckPreparationSize, _MSUCloseUpdateHandle, _MSUIsFirstBootAfterUpdate, _MSUPreflightUpdate,
@@ -29,7 +29,6 @@ exports:
                           _kMSUStatusKeyTotalBytesWritten, _kMSUStatusKeyTotalMsRead, _kMSUStatusKeyTotalMsWritten,
                           _kMSUStatusKeyUpdateAttributes, _kMSUStatusValueMessageTypeFoundUpdate,
                           _kMSUUpdateAttributesDictionaryKey ]
-    objc-classes:       [ _MSUUpdateBrainAssetLoader, _MSUUpdateBrainAssetLoader,
-                          _MSUUpdateBrainLoader, _MSUUpdateBrainLoader ]
+    objc-classes:       [ _MSUUpdateBrainAssetLoader, _MSUUpdateBrainLoader ]
     objc-ivars:         [ _MSUUpdateBrainAssetLoader._updateAsset, _MSUUpdateBrainLoader._attributesDict ]
 ...

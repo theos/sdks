@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CSDBSharedRecordStore, _IMAttachmentClassGIFOrSticker, _IMAttachmentClassOther,
                           _IMAttachmentClassPhoto, _IMAttachmentClassVideo, _IMDAreAllAliasesUnknown,
                           _IMDAttachmentCopyAttachmentWithStickerPath, _IMDAttachmentCopyRecordIDsToDeleteWithLimit,
@@ -274,17 +274,9 @@ exports:
                           __IMDUpdateSequenceNumberWithConnection, ___IMDPersistenceIPCServer_command_dispatcher,
                           ___IMDPersistenceIPCServer_peer_event_handler, _kIMDSMSServiceIdentifier,
                           _kIMDiMessageServiceIdentifier, _printToLogFile ]
-    objc-classes:       [ _IMAbstractDatabaseArchiver, _IMAbstractDatabaseArchiver,
-                          _IMAbstractDatabaseTrimmer, _IMAbstractDatabaseTrimmer,
-                          _IMDAbstractDatabaseDowngrader, _IMDAbstractDatabaseDowngrader,
-                          _IMDDatabaseDowngradeHelper, _IMDDatabaseDowngradeHelper,
-                          _IMDMessageAutomaticHistoryDeletion, _IMDMessageAutomaticHistoryDeletion,
-                          _IMDPersistentAttachmentController, _IMDPersistentAttachmentController,
-                          _IMDSqlQuery, _IMDSqlQuery, _IMDSqlSelectQuery,
-                          _IMDSqlSelectQuery, _IMDSuggestions, _IMDSuggestions,
-                          _IMDWhitetailToCoralDowngradeHelper, _IMDWhitetailToCoralDowngradeHelper,
-                          _IMDWhitetailToCoralDowngrader, _IMDWhitetailToCoralDowngrader,
-                          _IMDatabaseAnonymizer, _IMDatabaseAnonymizer,
-                          _IMTrimDatabaseToDays, _IMTrimDatabaseToDays,
-                          _IMTrimDatabaseToMessageCount, _IMTrimDatabaseToMessageCount ]
+    objc-classes:       [ _IMAbstractDatabaseArchiver, _IMAbstractDatabaseTrimmer, _IMDAbstractDatabaseDowngrader,
+                          _IMDDatabaseDowngradeHelper, _IMDMessageAutomaticHistoryDeletion, _IMDPersistentAttachmentController,
+                          _IMDSqlQuery, _IMDSqlSelectQuery, _IMDSuggestions, _IMDWhitetailToCoralDowngradeHelper,
+                          _IMDWhitetailToCoralDowngrader, _IMDatabaseAnonymizer, _IMTrimDatabaseToDays,
+                          _IMTrimDatabaseToMessageCount ]
 ...

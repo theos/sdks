@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleCVA.framework/AppleCVA
 current-version:       3.21.1
 compatibility-version: 3.21
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CVAFaceKitClearCache, _CVAFaceKitCopySemantics, _CVAFaceKitCreate, _CVAFaceKitGetTypeID,
                           _CVAFaceKitPostProcessRecording, _CVAFaceKitProcess, _CVANetPipeAddNetwork,
                           _CVANetPipeAllocateResources, _CVANetPipeCopyProperty, _CVANetPipeCreate, _CVANetPipeFreeResources,

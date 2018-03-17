@@ -1,34 +1,15 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreDuetDataModel.framework/CoreDuetDataModel
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
-    objc-classes:       [ _CDDMAirplaneModeEvent, _CDDMAirplaneModeEvent,
-                          _CDDMAppNameMapper, _CDDMAppNameMapper,
-                          _CDDMAppStateChangeEvent, _CDDMAppStateChangeEvent,
-                          _CDDMAttributeNameMapper, _CDDMAttributeNameMapper,
-                          _CDDMBacklightEvent, _CDDMBacklightEvent, _CDDMBatteryEvent,
-                          _CDDMBatteryEvent, _CDDMBookkeeping, _CDDMBookkeeping,
-                          _CDDMBootOrShutdownEvent, _CDDMBootOrShutdownEvent,
-                          _CDDMDeviceEvent, _CDDMDeviceEvent, _CDDMDeviceMapper,
-                          _CDDMDeviceMapper, _CDDMForecast, _CDDMForecast,
-                          _CDDMForecastInteger, _CDDMForecastInteger,
-                          _CDDMForecastReal, _CDDMForecastReal, _CDDMForecastScore,
-                          _CDDMForecastScore, _CDDMForecastString,
-                          _CDDMForecastString, _CDDMIntegerAttribute,
-                          _CDDMIntegerAttribute, _CDDMPluginEvent,
-                          _CDDMPluginEvent, _CDDMPool, _CDDMPool,
-                          _CDDMPoolNameMapper, _CDDMPoolNameMapper,
-                          _CDDMRealAttribute, _CDDMRealAttribute,
-                          _CDDMScreenLockEvent, _CDDMScreenLockEvent,
-                          _CDDMSleepOrWakeEvent, _CDDMSleepOrWakeEvent,
-                          _CDDMStatisticInteger, _CDDMStatisticInteger,
-                          _CDDMStatisticReal, _CDDMStatisticReal,
-                          _CDDMStatisticString, _CDDMStatisticString,
-                          _CDDMStringAttribute, _CDDMStringAttribute,
-                          _CDDMThermalEvent, _CDDMThermalEvent,
-                          _CDDMWakednessEvent, _CDDMWakednessEvent ]
+  - archs:              [ armv7, armv7s, arm64 ]
+    objc-classes:       [ _CDDMAirplaneModeEvent, _CDDMAppNameMapper, _CDDMAppStateChangeEvent, _CDDMAttributeNameMapper,
+                          _CDDMBacklightEvent, _CDDMBatteryEvent, _CDDMBookkeeping, _CDDMBootOrShutdownEvent, _CDDMDeviceEvent,
+                          _CDDMDeviceMapper, _CDDMForecast, _CDDMForecastInteger, _CDDMForecastReal, _CDDMForecastScore,
+                          _CDDMForecastString, _CDDMIntegerAttribute, _CDDMPluginEvent, _CDDMPool, _CDDMPoolNameMapper,
+                          _CDDMRealAttribute, _CDDMScreenLockEvent, _CDDMSleepOrWakeEvent, _CDDMStatisticInteger,
+                          _CDDMStatisticReal, _CDDMStatisticString, _CDDMStringAttribute, _CDDMThermalEvent, _CDDMWakednessEvent ]
 ...

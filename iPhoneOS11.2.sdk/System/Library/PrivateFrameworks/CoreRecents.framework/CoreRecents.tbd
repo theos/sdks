@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CRAddressKindEmail, _CRAddressKindGroup, _CRAddressKindInstantMessage, _CRAddressKindMapLocation,
                           _CRAddressKindPhoneNumber, _CRAddressKindURL, _CRIsInternalDevice,
                           _CRRecentContactMetadataCreationTime, _CRRecentContactMetadataEventTime, _CRRecentContactMetadataFrom,
@@ -28,22 +28,15 @@ exports:
                           __CRRecentDatesArchiveKey, __CRRecentIDArchiveKey, __CRRecentsDomainArchiveKey, __CRWeightArchiveKey,
                           _kCRLogFacilitySync, _kCRRecentContactMaxDateEvents, _sCRRecentRecentIdentifier, _sCRRecentSyncKeyDict,
                           _sCRSQLite3MPrintTransform ]
-    objc-classes:       [ _CRDRecentContactsLibraryInterface, _CRDRecentContactsLibraryInterface,
-                          _CRRecentContact, _CRRecentContact,
-                          _CRRecentContactsLibrary, _CRRecentContactsLibrary,
-                          _CRSQLRow, _CRSQLRow, _CRSearchQuery,
+    objc-classes:       [ _CRDRecentContactsLibraryInterface, _CRRecentContact, _CRRecentContactsLibrary, _CRSQLRow,
                           _CRSearchQuery ]
-    objc-ivars:         [ _CRRecentContact._address, _CRRecentContact._contactID,
-                          _CRRecentContact._decayedWeight, _CRRecentContact._displayName,
-                          _CRRecentContact._groupKind, _CRRecentContact._groupName,
-                          _CRRecentContact._kind, _CRRecentContact._lastSendingAddress,
-                          _CRRecentContact._members, _CRRecentContact._metadata,
-                          _CRRecentContact._originalSource, _CRRecentContact._rawAddress,
-                          _CRRecentContact._recentDates, _CRRecentContact._recentID,
-                          _CRRecentContact._recentsDomain, _CRRecentContact._weight,
-                          _CRRecentContactsLibrary._connection, _CRRecentContactsLibrary._replyQueue,
-                          _CRSQLRow._stmt, _CRSearchQuery._comparator,
-                          _CRSearchQuery._domains, _CRSearchQuery._implicitGroupThreshold,
-                          _CRSearchQuery._options, _CRSearchQuery._predicate,
+    objc-ivars:         [ _CRRecentContact._address, _CRRecentContact._contactID, _CRRecentContact._decayedWeight,
+                          _CRRecentContact._displayName, _CRRecentContact._groupKind, _CRRecentContact._groupName,
+                          _CRRecentContact._kind, _CRRecentContact._lastSendingAddress, _CRRecentContact._members,
+                          _CRRecentContact._metadata, _CRRecentContact._originalSource, _CRRecentContact._rawAddress,
+                          _CRRecentContact._recentDates, _CRRecentContact._recentID, _CRRecentContact._recentsDomain,
+                          _CRRecentContact._weight, _CRRecentContactsLibrary._connection, _CRRecentContactsLibrary._replyQueue,
+                          _CRSQLRow._stmt, _CRSearchQuery._comparator, _CRSearchQuery._domains,
+                          _CRSearchQuery._implicitGroupThreshold, _CRSearchQuery._options, _CRSearchQuery._predicate,
                           _CRSearchQuery._weightDecayer ]
 ...

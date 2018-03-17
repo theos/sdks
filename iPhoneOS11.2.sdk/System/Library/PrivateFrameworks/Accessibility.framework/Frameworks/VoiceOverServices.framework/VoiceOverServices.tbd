@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/VoiceOverServices.framework/VoiceOverServices
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _DiscoveryAgentCallbacks, _LocalDeviceCallbacks, _PairingAgentCallbacks, _SessionCallbacks,
                           _VOSAddressForBTDevice, _VOSBluetoothAvailabilityChangedNotification,
                           _VOSBluetoothConnectabilityChangedNotification, _VOSBluetoothConnectionStatusChangedNotification,
@@ -114,17 +114,11 @@ exports:
                           _kVOTEventCommandWatchWakeTripleTap, _pairingAgentAuthorizationCallback,
                           _pairingAgentPassKeyDisplayCallback, _pairingAgentPincodeCallback, _pairingAgentStatusEventCallback,
                           _pairingAgentUserConfirmationCallback ]
-    objc-classes:       [ _VOSBluetoothDevice, _VOSBluetoothDevice,
-                          _VOSBluetoothManager, _VOSBluetoothManager,
-                          _VOSBluetoothSSPPairingRequest, _VOSBluetoothSSPPairingRequest,
-                          _VOSVoiceOverCommandHelp, _VOSVoiceOverCommandHelp,
-                          _VOSVoiceOverCommandInfo, _VOSVoiceOverCommandInfo,
-                          _VOSVoiceOverHelpItem, _VOSVoiceOverHelpItem,
-                          _VOSVoiceOverHelpSection, _VOSVoiceOverHelpSection ]
-    objc-ivars:         [ _VOSBluetoothDevice._address, _VOSBluetoothDevice._device,
-                          _VOSBluetoothDevice._name, _VOSBluetoothManager._audioConnected,
-                          _VOSBluetoothManager._authorizedServices, _VOSBluetoothManager._available,
-                          _VOSBluetoothManager._btAddrDict, _VOSBluetoothManager._btDeviceDict,
+    objc-classes:       [ _VOSBluetoothDevice, _VOSBluetoothManager, _VOSBluetoothSSPPairingRequest, _VOSVoiceOverCommandHelp,
+                          _VOSVoiceOverCommandInfo, _VOSVoiceOverHelpItem, _VOSVoiceOverHelpSection ]
+    objc-ivars:         [ _VOSBluetoothDevice._address, _VOSBluetoothDevice._device, _VOSBluetoothDevice._name,
+                          _VOSBluetoothManager._audioConnected, _VOSBluetoothManager._authorizedServices,
+                          _VOSBluetoothManager._available, _VOSBluetoothManager._btAddrDict, _VOSBluetoothManager._btDeviceDict,
                           _VOSBluetoothManager._discoveryAgent, _VOSBluetoothManager._localDevice,
                           _VOSBluetoothManager._pairingAgent, _VOSBluetoothManager._scanningEnabled,
                           _VOSBluetoothManager._session, _VOSBluetoothManager._wantsDiscoveryEnabled,

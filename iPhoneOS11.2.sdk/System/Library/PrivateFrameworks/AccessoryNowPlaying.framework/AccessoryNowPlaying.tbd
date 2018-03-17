@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryNowPlaying.framework/AccessoryNowPlaying
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AccessoryNowPlayingVersionNumber, _AccessoryNowPlayingVersionString,
                           _kACCNowPlaying_NowPlayingUpdate_MediaItemAttributes,
                           _kACCNowPlaying_NowPlayingUpdate_MediaItemAttributes_AlbumDiscCount,
@@ -108,9 +108,8 @@ exports:
                           _kCFACCNowPlaying_SubscriberList_MediaItemAttributes,
                           _kCFACCNowPlaying_SubscriberList_PlaybackAttributes,
                           _kCFACCNowPlaying_SubscriberList_PlaybackQueueList ]
-    objc-classes:       [ _AccessoryNowPlayingClient, _AccessoryNowPlayingClient ]
+    objc-classes:       [ _AccessoryNowPlayingClient ]
     objc-ivars:         [ _AccessoryNowPlayingClient._delegate, _AccessoryNowPlayingClient._remoteObject,
-                          _AccessoryNowPlayingClient._serverConnection,
-                          _AccessoryNowPlayingClient._shouldSendArtwork,
+                          _AccessoryNowPlayingClient._serverConnection, _AccessoryNowPlayingClient._shouldSendArtwork,
                           _AccessoryNowPlayingClient._subscriberList ]
 ...

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 1A5B184C-E441-3F49-BD5F-91ECEB01A39E', 'armv7s: 91F5277B-49B4-3D57-827B-3B4DBE495A7B', 
                    'arm64: 66977459-F63F-39AC-9681-3AEF68FF0EAF' ]
 platform:        ios
@@ -13,7 +13,7 @@ exports:
                        _CARenderServerCaptureDisplayExcludeList, _CARenderServerRenderClient, 
                        _CARenderServerRenderClientList, _CARenderServerRenderDisplayExcludeList, 
                        _CARenderServerRenderLayerWithTransformTimeOffsetAndFlags ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CAAtomGetString, _CABackingStoreBeginUpdate, _CABackingStoreCollect, 
                        _CABackingStoreCollectBlocking, _CABackingStoreCopyCGImage, 
                        _CABackingStoreCreate, _CABackingStoreEndUpdate, _CABackingStoreGetTypeID, 

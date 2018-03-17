@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: D667D54F-3911-373D-A73E-3E128FE64292', 'armv7s: E8CF9CB4-3214-336B-8006-D3FB73AFC0F8', 
                    'arm64: 56698B67-EEFE-3758-877E-4E078596A3CC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _EAAccessoryAccessibilityActionKey, _EAAccessoryAccessibilityContextKey, 
                        _EAAccessoryAccessibilityHeightKey, _EAAccessoryAccessibilityItemPropertyKey, 
                        _EAAccessoryAccessibilityPointXKey, _EAAccessoryAccessibilityPointYKey, 

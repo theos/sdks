@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 8C17EC58-2BD7-38F0-9D8C-4168F09E021D', 'armv7s: BB12F56E-B9B6-3F46-95F0-2EAC0D5A89BA', 
                    'arm64: 253AC6E7-C511-3FEB-AD9B-A4C671E22809' ]
 platform:        ios
@@ -51,7 +51,7 @@ exports:
   - archs:           [ arm64 ]
     symbols:         [ __Z21PKCreateBitmapContext6CGSizebd, __Z21PKCreateBitmapContext6CGSizebdb, 
                        __Z27PKGetImageFromBitmapContextP9CGContext, __Z27PKGetImageFromBitmapContextP9CGContextd ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _PDAssertionCoordinatorInterface, _PDBasicError, _PDBasicErrorDomain, 
                        _PDBeginDelayingExit, _PDBoundingBoxForRegion, _PDCardEntitlements, 
                        _PDCardOnFilePaymentEntitlement, _PDCloudStoreServiceInterface, 

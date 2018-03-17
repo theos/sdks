@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftModelIO.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T0So16MDLAnimatedValueC7ModelIOE5timesSaySdGfg,
                           __T0So17MDLAnimatedScalarC7ModelIOE10floatArraySaySfGfg,
                           __T0So17MDLAnimatedScalarC7ModelIOE11doubleArraySaySdGfg,

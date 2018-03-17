@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Jet.framework/Jet
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _JetVersionNumber, _JetVersionString, __Z10jet_assertbP8NSString, __Z13xglCheckErrorv,
                           __Z13xglPrintErrorv, __Z13xglPrintFloatPKcj, __Z13xglPrintStatev, __Z14jet_util_isPOTjj,
                           __Z14xglLinkProgramj, __Z15xglPrintBooleanPKcj, __Z15xglPrintIntegerPKcj, __Z16floatToHalfFloatf,
@@ -224,10 +224,9 @@ exports:
                           __ZTV11jet_program, __ZTV11jet_sampler, __ZTV11jet_texture, __ZTV12jet_constant,
                           __ZTV15jet_buffer_pool, __ZTV15jet_framebuffer, __ZTV15jet_render_mode, __ZTV16jet_stencil_mode,
                           __ZTV17jet_context_Metal, __ZTV18jet_context_OpenGL, __ZTV22jet_depth_stencil_mode, __ZTV9jet_fence ]
-    objc-classes:       [ _JetView, _JetView ]
-    objc-ivars:         [ _JetView._beginTime, _JetView._colorRenderBuffer, _JetView._ctx,
-                          _JetView._device, _JetView._didRunOnce, _JetView._drawTimer,
-                          _JetView._eaglLayer, _JetView._frameBufferColorTexture,
-                          _JetView._frameBufferDepthStencilTexture, _JetView._framebuffer,
-                          _JetView._glContext, _JetView._metalLayer, _JetView._renderFence ]
+    objc-classes:       [ _JetView ]
+    objc-ivars:         [ _JetView._beginTime, _JetView._colorRenderBuffer, _JetView._ctx, _JetView._device,
+                          _JetView._didRunOnce, _JetView._drawTimer, _JetView._eaglLayer, _JetView._frameBufferColorTexture,
+                          _JetView._frameBufferDepthStencilTexture, _JetView._framebuffer, _JetView._glContext,
+                          _JetView._metalLayer, _JetView._renderFence ]
 ...

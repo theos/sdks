@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: C05FB620-2BFE-3A14-91DF-3AFD383E55BC' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/PDFKit.framework/PDFKit
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _PDFAnnotationHighlightingModeInvert, _PDFAnnotationHighlightingModeNone, 
                        _PDFAnnotationHighlightingModeOutline, _PDFAnnotationHighlightingModePush, 
                        _PDFAnnotationKeyAction, _PDFAnnotationKeyAdditionalActions, 

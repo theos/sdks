@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 3EE52000-A32A-3066-B968-A2A16A053F00', 'armv7s: 6441EF00-D3E4-3073-B47C-F903D9F01852', 
                    'arm64: DCDC6786-8D5A-3701-85E0-242A11A54054' ]
 platform:        ios
@@ -14,7 +14,7 @@ exports:
     objc-classes:    [ _LSBestAppSuggestion, _LSBestAppSuggestionManager, _LSPingResults, 
                        _LSResumableActivitiesControlManager, _LSUserActivity, _LSUserActivityDebuggingManager, 
                        _LSUserActivityInfo, _LSUserActivityManager ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CSIdentityAuthorityCopyLocalizedName, _CSIdentityAuthorityGetTypeID, 
                        _CSIdentityCreateCopy, _CSIdentityCreatePersistentReference, 
                        _CSIdentityGetAuthority, _CSIdentityGetClass, _CSIdentityGetFullName, 

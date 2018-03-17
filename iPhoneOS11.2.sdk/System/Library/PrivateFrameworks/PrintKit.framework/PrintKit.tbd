@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PrintKit.framework/PrintKit
 current-version:       239.2
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _PKAllowNonTLSConnection, _PKAnnotationsImagedKey, _PKCancelAlert, _PKCancelJobs,
                           _PKCertUISynchronization, _PKCheckAlert, _PKCopiesKey, _PKCopyLocalizedPrinterStateReasons,
                           _PKCopyLocalizedString, _PKDisplayAlert, _PKDisplayNotice, _PKDisplayQuotaAlert, _PKDisplayRetry,
@@ -36,50 +36,31 @@ exports:
                           _transferair, _trayFromString, _traysFromAttrs, _txtSupportsPDL, _txtToDict, _urfDelete,
                           _urfErrorString, _urfGetLineSize, _urfNew, _urfReadLine, _urfReadPage, _urfReadStart, _urfWriteLine,
                           _urfWritePage, _urfWriteStart ]
-    objc-classes:       [ _PKDefaults, _PKDefaults, _PKJob, _PKJob,
-                          _PKMediaName, _PKMediaName, _PKPaper,
-                          _PKPaper, _PKPaperList, _PKPaperList,
-                          _PKPrintSettings, _PKPrintSettings, _PKPrinter,
-                          _PKPrinter, _PKPrinterBrowser, _PKPrinterBrowser,
-                          _PKSupply, _PKSupply, _PKTray, _PKTray ]
-    objc-ivars:         [ _PKJob._PIN, _PKJob._printerURI, _PKJob.mediaProgress,
-                          _PKJob.mediaSheets, _PKJob.mediaSheetsCompleted, _PKJob.number,
-                          _PKJob.printerDisplayName, _PKJob.printerKind,
-                          _PKJob.printerLocation, _PKJob.remoteJobId, _PKJob.settings,
-                          _PKJob.state, _PKJob.thumbnailImage, _PKJob.timeAtCompleted,
-                          _PKJob.timeAtCreation, _PKJob.timeAtProcessing,
-                          _PKMediaName._baseName, _PKMediaName._conversionFactor,
-                          _PKMediaName._heightInUnits, _PKMediaName._mediaClass,
-                          _PKMediaName._mediaName, _PKMediaName._units,
-                          _PKMediaName._widthInUnits, _PKMediaName._widthStr,
-                          _PKPaper._baseName, _PKPaper._isTransverse, _PKPaper.bottomMargin,
-                          _PKPaper.height, _PKPaper.leftMargin, _PKPaper.mediaInfo,
-                          _PKPaper.name, _PKPaper.rightMargin, _PKPaper.topMargin,
-                          _PKPaper.width, _PKPaperList._duplexPapers,
-                          _PKPaperList._hasMediaReady, _PKPaperList._papers,
-                          _PKPaperList._photoPapers, _PKPaperList._rolls,
-                          _PKPaperList._simplexPapers, _PKPrintSettings._dict,
-                          _PKPrintSettings.paper, _PKPrinter._jobAccountIDSupport,
-                          _PKPrinter._jpegFeaturesSupported, _PKPrinter._paperList,
-                          _PKPrinter._trays, _PKPrinter.accessState,
-                          _PKPrinter.btleMeasuredPower, _PKPrinter.btleUUID,
+    objc-classes:       [ _PKDefaults, _PKJob, _PKMediaName, _PKPaper, _PKPaperList, _PKPrintSettings, _PKPrinter,
+                          _PKPrinterBrowser, _PKSupply, _PKTray ]
+    objc-ivars:         [ _PKJob._PIN, _PKJob._printerURI, _PKJob.mediaProgress, _PKJob.mediaSheets, _PKJob.mediaSheetsCompleted,
+                          _PKJob.number, _PKJob.printerDisplayName, _PKJob.printerKind, _PKJob.printerLocation,
+                          _PKJob.remoteJobId, _PKJob.settings, _PKJob.state, _PKJob.thumbnailImage, _PKJob.timeAtCompleted,
+                          _PKJob.timeAtCreation, _PKJob.timeAtProcessing, _PKMediaName._baseName, _PKMediaName._conversionFactor,
+                          _PKMediaName._heightInUnits, _PKMediaName._mediaClass, _PKMediaName._mediaName, _PKMediaName._units,
+                          _PKMediaName._widthInUnits, _PKMediaName._widthStr, _PKPaper._baseName, _PKPaper._isTransverse,
+                          _PKPaper.bottomMargin, _PKPaper.height, _PKPaper.leftMargin, _PKPaper.mediaInfo, _PKPaper.name,
+                          _PKPaper.rightMargin, _PKPaper.topMargin, _PKPaper.width, _PKPaperList._duplexPapers,
+                          _PKPaperList._hasMediaReady, _PKPaperList._papers, _PKPaperList._photoPapers, _PKPaperList._rolls,
+                          _PKPaperList._simplexPapers, _PKPrintSettings._dict, _PKPrintSettings.paper,
+                          _PKPrinter._jobAccountIDSupport, _PKPrinter._jpegFeaturesSupported, _PKPrinter._paperList,
+                          _PKPrinter._trays, _PKPrinter.accessState, _PKPrinter.btleMeasuredPower, _PKPrinter.btleUUID,
                           _PKPrinter.connectionShouldNotBeTrusted, _PKPrinter.hasIdentifyPrinterOp,
-                          _PKPrinter.identifyActionsSupported, _PKPrinter.isFromMCProfile,
-                          _PKPrinter.isLocal, _PKPrinter.job_http, _PKPrinter.kind,
-                          _PKPrinter.mandatoryJobAttributes, _PKPrinter.maxCopies,
-                          _PKPrinter.maxDocumentPasswordLength, _PKPrinter.maxJPEGKBytes,
-                          _PKPrinter.maxJPEGXDimension, _PKPrinter.maxJPEGYDimension,
-                          _PKPrinter.maxPDFKBytes, _PKPrinter.name,
-                          _PKPrinter.preferred_landscape, _PKPrinter.printInfoSupported,
-                          _PKPrinter.printScalingSupported, _PKPrinter.printerStateReasons,
-                          _PKPrinter.privateData, _PKPrinter.proximity,
-                          _PKPrinter.quotaManagementURL, _PKPrinter.recentRssiValues,
-                          _PKPrinter.specialFeedOrientation, _PKPrinter.type,
+                          _PKPrinter.identifyActionsSupported, _PKPrinter.isFromMCProfile, _PKPrinter.isLocal,
+                          _PKPrinter.job_http, _PKPrinter.kind, _PKPrinter.mandatoryJobAttributes, _PKPrinter.maxCopies,
+                          _PKPrinter.maxDocumentPasswordLength, _PKPrinter.maxJPEGKBytes, _PKPrinter.maxJPEGXDimension,
+                          _PKPrinter.maxJPEGYDimension, _PKPrinter.maxPDFKBytes, _PKPrinter.name, _PKPrinter.preferred_landscape,
+                          _PKPrinter.printInfoSupported, _PKPrinter.printScalingSupported, _PKPrinter.printerStateReasons,
+                          _PKPrinter.privateData, _PKPrinter.proximity, _PKPrinter.quotaManagementURL,
+                          _PKPrinter.recentRssiValues, _PKPrinter.specialFeedOrientation, _PKPrinter.type,
                           _PKPrinterBrowser._btDevices, _PKPrinterBrowser._delegate,
-                          _PKPrinterBrowser._delegateRespondsToProximityUpdate,
-                          _PKPrinterBrowser._originalCellFlag, _PKPrinterBrowser._originalWifiFlag,
-                          _PKPrinterBrowser._pkBrowseConnection, _PKPrinterBrowser._printers,
-                          _PKSupply._colors, _PKSupply._highLevel, _PKSupply._level,
-                          _PKSupply._lowLevel, _PKSupply._markerType, _PKSupply._name,
-                          _PKSupply._supplyType, _PKTray._trayDict ]
+                          _PKPrinterBrowser._delegateRespondsToProximityUpdate, _PKPrinterBrowser._originalCellFlag,
+                          _PKPrinterBrowser._originalWifiFlag, _PKPrinterBrowser._pkBrowseConnection,
+                          _PKPrinterBrowser._printers, _PKSupply._colors, _PKSupply._highLevel, _PKSupply._level,
+                          _PKSupply._lowLevel, _PKSupply._markerType, _PKSupply._name, _PKSupply._supplyType, _PKTray._trayDict ]
 ...

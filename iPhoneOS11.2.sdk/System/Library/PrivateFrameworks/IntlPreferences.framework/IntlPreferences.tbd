@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
 current-version:       227
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _GetNSFriendlySeparator, _IPLoadUIKitFramework, _IPNameOrderFamilyNameFirstKey,
                           _IPNameOrderGivenNameFirstKey, _IPNameOrderKey, _IPNameOrderUnsetKey, _IPPreferNicknamesDisabled,
                           _IPPreferNicknamesEnabled, _IPPreferNicknamesKey, _IPShortNameEnabledKey,
@@ -20,15 +20,10 @@ exports:
                           _NSPersonNameDefaultDisplayNameOrderKey, _NSPersonNameDefaultNamePreferencesDomain,
                           _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShortNameFormatKey,
                           _NSPersonNameDefaultShouldPreferNicknamesKey, _NSPersonNamePreferencesDidChangeNotification ]
-    objc-classes:       [ _IPFoundationNamePreferenceInfoProvider,
-                          _IPFoundationNamePreferenceInfoProvider,
-                          _IPOSXABNamePreferenceInfoProvider, _IPOSXABNamePreferenceInfoProvider,
-                          _IPiOSABNamePreferenceInfoProvider, _IPiOSABNamePreferenceInfoProvider,
-                          _ISMigrator, _ISMigrator, _IntlUtility,
-                          _IntlUtility, _NSPersonNameComponentsFormatterPreferences,
+    objc-classes:       [ _IPFoundationNamePreferenceInfoProvider, _IPOSXABNamePreferenceInfoProvider,
+                          _IPiOSABNamePreferenceInfoProvider, _ISMigrator, _IntlUtility,
                           _NSPersonNameComponentsFormatterPreferences ]
-    objc-ivars:         [ _ISMigrator._currentVersion, _ISMigrator._platform,
-                          _ISMigrator._preferencesAfterMigration,
+    objc-ivars:         [ _ISMigrator._currentVersion, _ISMigrator._platform, _ISMigrator._preferencesAfterMigration,
                           _ISMigrator._preferencesBeforeMigration, _ISMigrator._previousVersion,
                           _IntlUtility.mBidiLanguagesArray, _IntlUtility.mBidiTestedLanguagesArray,
                           _IntlUtility.mDisplayLanguageCachePtr, _IntlUtility.mDisplayLanguageCacheUsed ]

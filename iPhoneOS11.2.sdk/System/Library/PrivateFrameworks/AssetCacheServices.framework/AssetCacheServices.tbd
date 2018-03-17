@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AssetCacheServices.framework/AssetCacheServices
 current-version:       46
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ACSImportFileIntoCachingServer, _ACSLocateCachingServer, _ACSMightCurrentNetworkHaveCachingServer,
                           _A_CALLBACK_BLOCK_RELEASED_AN_OBJECT_IT_DID_NOT_OWN, _AssetCacheServicesVersionNumber,
                           _AssetCacheServicesVersionString, __ACSIntrospect, __ACSLocateAllCachingServers, __ACSSetTestFlags,

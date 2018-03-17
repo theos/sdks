@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AppendFieldDataToData, _AppendNumberToData, _BuildWordBreakTable, _CFDebugLog, _CompareLanguageCode,
                           _ContainsLatinAlphabets, _CopyFileObjectIdentifierAtURL, _CopyPreferredEnglishLanguage,
                           _CopySimplifiedTextFromWikipediaResult, _CopyTransformedTextFromXML, _CopyXPathElementsArray,
@@ -329,6 +329,6 @@ exports:
                           _kLinguisticDataAssetCompatibilityVersion, _kLinguisticDataAssetLanguage, _kLinguisticDataAssetLocale,
                           _kLinguisticDataAssetType, _mtrie_build, _mtrie_close, _mtrie_data, _mtrie_exact_match_search,
                           _mtrie_open ]
-    objc-classes:       [ _DCSDictionaryAssetQuery, _DCSDictionaryAssetQuery ]
+    objc-classes:       [ _DCSDictionaryAssetQuery ]
     objc-ivars:         [ _DCSDictionaryAssetQuery._locale ]
 ...

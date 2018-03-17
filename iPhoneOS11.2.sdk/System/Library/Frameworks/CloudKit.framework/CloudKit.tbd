@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: FFF97FBD-E0F9-33FF-BCD6-D893A968F77F', 'armv7s: 2BDDF427-B957-31D0-A2D5-5AC238068657', 
                    'arm64: B6E98437-C800-397B-B600-258E4876EFF5' ]
 platform:        ios
@@ -11,7 +11,7 @@ exports:
     symbols:         [ __CKOSStatusReportFromStatusReportArray, _ck_log_facility_traffic, 
                        _kCKAllowAccessBeforeFirstUnlockSinceBootKey, _kCKUseSystemPublicTokenEntitlementKey ]
     objc-classes:    [ _CKSQLiteStatement ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CKAPSEnvironmentEntitlementString, _CKAcceptablePredicateValueClasses, 
                        _CKAcceptableValueClasses, _CKAccountChangedNotification, 
                        _CKActivitySharingContainerIdentifier, _CKAllClientEntitlementKeys, 

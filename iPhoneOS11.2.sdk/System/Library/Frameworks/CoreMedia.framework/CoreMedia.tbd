@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: F90FDBC0-60D2-3222-B217-B5F2C7A0DC2E', 'armv7s: 16F45978-E681-3C10-AEF5-CAB3DA4044DF', 
                    'arm64: 7D2C0D08-B883-3096-BEB8-562460382A8D' ]
 platform:        ios
@@ -62,7 +62,7 @@ exports:
                        _kPVMNotificationKey_CurrentPreferredVolumeChanged_Reason, 
                        _kPVMNotificationKey_CurrentPreferredVolumeChanged_RefCon, 
                        _kPVMNotification_CurrentPreferredVolumeChanged ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AudioToolbox_AudioConverterDispose, _AudioToolbox_AudioConverterGetProperty, 
                        _AudioToolbox_AudioConverterNew, _AudioToolbox_AudioConverterSetProperty, 
                        _AudioToolbox_AudioFormatGetProperty, _AudioToolbox_AudioFormatGetPropertyInfo, 

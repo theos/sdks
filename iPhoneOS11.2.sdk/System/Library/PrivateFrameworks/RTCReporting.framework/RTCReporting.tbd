@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _RTCReportingCreateHierarchyTokenFromParentToken, _RTCReportingFetchStatesWithUserInfo,
                           _RTCReportingFlushMessages, _RTCReportingFlushMessagesWithCompletion, _RTCReportingInitWithSessionInfo,
                           _RTCReportingInitWithSessionInfoDict, _RTCReportingNewHierarchyTokenFromParentToken,
@@ -25,18 +25,12 @@ exports:
                           _kRTCReportingSessionInfoRequireUserInfo, _kRTCReportingSessionInfoSessionID,
                           _kRTCReportingUserInfoClientName, _kRTCReportingUserInfoServiceName, _validateMessageWithCategory,
                           _validateMessageWithDictionary, _validateSessionInfo ]
-    objc-classes:       [ _RTCReporting, _RTCReporting,
-                          _RTCReportingAggregationObject, _RTCReportingAggregationObject,
-                          _RTCReportingDeallocNotifier, _RTCReportingDeallocNotifier,
-                          _RTCReportingLogging, _RTCReportingLogging,
-                          _UpdateAndReportServices, _UpdateAndReportServices ]
-    objc-ivars:         [ _RTCReporting._connection, _RTCReporting._counter,
-                          _RTCReporting._enabledBackendNames, _RTCReporting._intervalMultiplier,
-                          _RTCReporting._loggingBlock, _RTCReporting._periodicServiceDict,
-                          _RTCReporting._reportingQueue, _RTCReporting._strongDeallocNotifier,
-                          _RTCReporting._timer, _RTCReporting._weakDeallocNotifier,
-                          _RTCReporting._weakMessageSentDelegate,
-                          _RTCReportingAggregationObject._aggregationBlock,
-                          _RTCReportingDeallocNotifier._delegate, _UpdateAndReportServices._block,
-                          _UpdateAndReportServices._report, _UpdateAndReportServices._update ]
+    objc-classes:       [ _RTCReporting, _RTCReportingAggregationObject, _RTCReportingDeallocNotifier, _RTCReportingLogging,
+                          _UpdateAndReportServices ]
+    objc-ivars:         [ _RTCReporting._connection, _RTCReporting._counter, _RTCReporting._enabledBackendNames,
+                          _RTCReporting._intervalMultiplier, _RTCReporting._loggingBlock, _RTCReporting._periodicServiceDict,
+                          _RTCReporting._reportingQueue, _RTCReporting._strongDeallocNotifier, _RTCReporting._timer,
+                          _RTCReporting._weakDeallocNotifier, _RTCReporting._weakMessageSentDelegate,
+                          _RTCReportingAggregationObject._aggregationBlock, _RTCReportingDeallocNotifier._delegate,
+                          _UpdateAndReportServices._block, _UpdateAndReportServices._report, _UpdateAndReportServices._update ]
 ...

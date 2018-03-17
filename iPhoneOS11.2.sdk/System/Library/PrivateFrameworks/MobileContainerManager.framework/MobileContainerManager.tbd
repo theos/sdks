@@ -1,28 +1,17 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MCMErrorDomain, _MCMFunctionNameErrorKey, _MCMPathArgumentErrorKey, _MCMSourceFileLineErrorKey ]
-    objc-classes:       [ _MCMAppContainer, _MCMAppContainer, _MCMAppDataContainer,
-                          _MCMAppDataContainer, _MCMContainer, _MCMContainer,
-                          _MCMContainerManager, _MCMContainerManager,
-                          _MCMDataContainer, _MCMDataContainer,
-                          _MCMFrameworkContainer, _MCMFrameworkContainer,
-                          _MCMInternalDaemonDataContainer, _MCMInternalDaemonDataContainer,
-                          _MCMPluginKitPluginContainer, _MCMPluginKitPluginContainer,
-                          _MCMPluginKitPluginDataContainer, _MCMPluginKitPluginDataContainer,
-                          _MCMSharedDataContainer, _MCMSharedDataContainer,
-                          _MCMSharedSystemDataContainer, _MCMSharedSystemDataContainer,
-                          _MCMSystemDataContainer, _MCMSystemDataContainer,
-                          _MCMTempDirDataContainer, _MCMTempDirDataContainer,
-                          _MCMVPNPluginContainer, _MCMVPNPluginContainer,
-                          _MCMVPNPluginDataContainer, _MCMVPNPluginDataContainer,
-                          _MCMXPCServiceDataContainer, _MCMXPCServiceDataContainer ]
-    objc-ivars:         [ _MCMContainer._containerClass, _MCMContainer._identifier,
-                          _MCMContainer._thisContainer, _MCMContainer._userId,
-                          _MCMContainer._uuid ]
+    objc-classes:       [ _MCMAppContainer, _MCMAppDataContainer, _MCMContainer, _MCMContainerManager, _MCMDataContainer,
+                          _MCMFrameworkContainer, _MCMInternalDaemonDataContainer, _MCMPluginKitPluginContainer,
+                          _MCMPluginKitPluginDataContainer, _MCMSharedDataContainer, _MCMSharedSystemDataContainer,
+                          _MCMSystemDataContainer, _MCMTempDirDataContainer, _MCMVPNPluginContainer, _MCMVPNPluginDataContainer,
+                          _MCMXPCServiceDataContainer ]
+    objc-ivars:         [ _MCMContainer._containerClass, _MCMContainer._identifier, _MCMContainer._thisContainer,
+                          _MCMContainer._userId, _MCMContainer._uuid ]
 ...

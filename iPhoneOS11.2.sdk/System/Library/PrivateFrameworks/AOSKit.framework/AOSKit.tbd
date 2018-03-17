@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AOSKit.framework/AOSKit
 current-version:       125.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AOSAccountCopyAuthInfo, _AOSAccountCreate, _AOSAccountGetAppleID, _AOSAccountGetPassword,
                           _AOSAccountGetProperties, _AOSAccountGetUser, _AOSLaunchAuthThread, _AOSTransactionCancel,
                           _AOSTransactionCreate, _AOSTransactionGetCallbackBlock, _AOSTransactionGetCallbackFunction,
@@ -31,14 +31,10 @@ exports:
                           _kAOSPrimaryEmailVerifiedKey, _kAOSProtocolKey, _kAOSQuotaKey, _kAOSRelayHostKey, _kAOSRelayPortKey,
                           _kAOSRelaySecretNameKey, _kAOSRelaySecretValueKey, _kAOSRequestBodyKey, _kAOSRequestHeadersKey,
                           _kAOSRequestMethodKey, _kAOSRequestURLKey, _kAOSTokenAuth, _kAOSTokensKey, _kAOSURLKey ]
-    objc-classes:       [ _AOSContext, _AOSContext, _AOSThreadManager,
-                          _AOSThreadManager, _AOSTransaction, _AOSTransaction ]
-    objc-ivars:         [ _AOSContext._account, _AOSContext._callback,
-                          _AOSContext._callbackThread, _AOSContext._info,
-                          _AOSContext._transaction, _AOSTransaction.callbackBlock,
-                          _AOSTransaction.callbackFunction, _AOSTransaction.callbackQueue,
-                          _AOSTransaction.context, _AOSTransaction.contextRelease,
-                          _AOSTransaction.contextRetain, _AOSTransaction.didFinish,
-                          _AOSTransaction.didSucceed, _AOSTransaction.error,
-                          _AOSTransaction.result, _AOSTransaction.waitLock ]
+    objc-classes:       [ _AOSContext, _AOSThreadManager, _AOSTransaction ]
+    objc-ivars:         [ _AOSContext._account, _AOSContext._callback, _AOSContext._callbackThread, _AOSContext._info,
+                          _AOSContext._transaction, _AOSTransaction.callbackBlock, _AOSTransaction.callbackFunction,
+                          _AOSTransaction.callbackQueue, _AOSTransaction.context, _AOSTransaction.contextRelease,
+                          _AOSTransaction.contextRetain, _AOSTransaction.didFinish, _AOSTransaction.didSucceed,
+                          _AOSTransaction.error, _AOSTransaction.result, _AOSTransaction.waitLock ]
 ...

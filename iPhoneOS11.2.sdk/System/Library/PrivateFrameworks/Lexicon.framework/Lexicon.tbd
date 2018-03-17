@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Lexicon.framework/Lexicon
 current-version:       33.2
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _LXCompileUnigramsFile, _LXCreateCompositeLexicon, _LXCursorConditionalProbability,
                           _LXCursorCopyFirstEntry, _LXCursorCopyTraversedCharacters, _LXCursorCreateByAdvancing,
                           _LXCursorCreateByAdvancingWithCharacters, _LXCursorEnumerateChildren, _LXCursorEnumerateEntries,

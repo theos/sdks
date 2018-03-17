@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCoreMedia.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T09CoreMedia15CMTIME_IS_VALIDSbSC6CMTimeVF, __T09CoreMedia17CMTIME_IS_INVALIDSbSC6CMTimeVF,
                           __T09CoreMedia17CMTIME_IS_NUMERICSbSC6CMTimeVF, __T09CoreMedia1goiSbSC6CMTimeV_ADtF,
                           __T09CoreMedia1loiSbSC6CMTimeV_ADtF, __T09CoreMedia1poiSC6CMTimeVAD_ADtF,

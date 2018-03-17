@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftUIKit.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T010Foundation17URLResourceValuesV5UIKitE19thumbnailDictionarys0F0VySC012URLThumbnailF4ItemVSo7UIImageCGSgfg,
                           __T010Foundation9IndexPathV5UIKitE3rowSifg, __T010Foundation9IndexPathV5UIKitE3rowSifs,
                           __T010Foundation9IndexPathV5UIKitE4itemSifg, __T010Foundation9IndexPathV5UIKitE4itemSifs,

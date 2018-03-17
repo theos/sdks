@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: BD23F5CF-3083-3A2E-B16C-64D805C9879A', 'armv7s: 130B8EED-1C40-3BCC-9E39-D150FF05728D', 
                    'arm64: 9E81333D-12BD-3D06-BFDC-AA867F2035DA' ]
 platform:        ios
@@ -51,7 +51,7 @@ exports:
                        _io_service_match_property_table_ool, _io_service_open_extended, 
                        _io_service_request_probe, _io_service_set_authorization_id, 
                        _io_service_wait_quiet ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _IOAVAudioFormatTypeString, _IOAVAudioGetChannelAllocation, 
                        _IOAVAudioGetChannelAllocationDefault, _IOAVAudioGetChannelLayoutData, 
                        _IOAVAudioGetSpeakerAllocationMask, _IOAVAudioInterfaceCopyChannelLayoutElements, 

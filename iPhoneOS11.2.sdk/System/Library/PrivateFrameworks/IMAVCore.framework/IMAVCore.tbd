@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IMAVCore.framework/IMAVCore
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _IMAVCallManagerCallStateChangedNotification, _IMAVCallManagerCallStateKey,
                           _IMAVCallManagerPreviousCallStateKey, _IMAVCamerasChangedNotification, _IMAVChatCameraAspectRatioKey,
                           _IMAVChatCameraContentRectKey, _IMAVChatCameraOrientationKey, _IMAVChatCameraTypeKey,
@@ -39,15 +39,8 @@ exports:
                           __IMAVCallManagerCallTypeKey, __NSStringDescriptionForIMAVChatEndedReason,
                           __NSStringDescriptionForIMAVChatError, __NSStringDescriptionForIMAVChatParticipantState,
                           __NSStringDescriptionForIMAVChatState, __NSStringDescriptionForIMAVResponse ]
-    objc-classes:       [ _IMAVCallManager, _IMAVCallManager, _IMAVCamera,
-                          _IMAVCamera, _IMAVCameraController,
-                          _IMAVCameraController, _IMAVChat, _IMAVChat,
-                          _IMAVChatParticipant, _IMAVChatParticipant, _IMAVController,
-                          _IMAVController, _IMAVDaemonController,
-                          _IMAVDaemonController, _IMAVInterface, _IMAVInterface,
-                          _IMAVLocalPreviewClient, _IMAVLocalPreviewClient,
-                          _IMAVMicrophone, _IMAVMicrophone, _IMAVMicrophoneController,
-                          _IMAVMicrophoneController, _IMAVTelephonyManager,
-                          _IMAVTelephonyManager ]
+    objc-classes:       [ _IMAVCallManager, _IMAVCamera, _IMAVCameraController, _IMAVChat, _IMAVChatParticipant, _IMAVController,
+                          _IMAVDaemonController, _IMAVInterface, _IMAVLocalPreviewClient, _IMAVMicrophone,
+                          _IMAVMicrophoneController, _IMAVTelephonyManager ]
     objc-ivars:         [ _IMAVInterface._delegate ]
 ...

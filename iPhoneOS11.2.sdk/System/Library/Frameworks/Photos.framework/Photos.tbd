@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: FE9D11A6-DFF3-3664-9DEE-8C9C7B3937D2', 'armv7s: 007059D2-04E0-3263-81B2-177E248EC4B0', 
                    'arm64: 5D1FBB8E-E40F-3992-8A8E-4BFAE7091A53' ]
 platform:        ios
@@ -11,7 +11,7 @@ exports:
                        _sharedJPEGDecodeSession ]
     objc-classes:    [ _PHAssetMomentProperties, _PHFaceCollection, _PHTransientFaceCollection ]
     objc-ivars:      [ _PHChangeRequestHelper._didRequestUUID ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _PHAdjustmentDataKey, _PHAdjustmentDataOpaqueFormatIdentifier, 
                        _PHAssertPredicateContainsNoManagedObjects, _PHAssetAddressCityKey, 
                        _PHAssetAddressCountryCodeKey, _PHAssetAddressCountryKey, 

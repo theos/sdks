@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AggregateDictionaryHistory.framework/AggregateDictionaryHistory
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ADContainerPath, _ADGetDBSize, _ADHistoryCalculateSummaryStatistics, _ADHistoryGetLinearHistogram,
                           _ADHistoryGetLogHistogram, _ADIsInternalDevice, _ADMachAbsoluteTimeIntervalToCFTimeInterval,
                           _ADReapDatabaseCorruption, _ADRecordDatabaseCorruption, _ADTimeBlock,
@@ -27,8 +27,6 @@ exports:
                           __ZN2AD8Database27performMigrationIfNecessaryEv, __ZN2AD8Database29deleteAllValuesOnOrBeforeDateEi,
                           __ZN2AD8Database4initEPKcb, __ZN2AD8Database9isCorruptEv, __ZN2AD8DatabaseC1Ev, __ZN2AD8DatabaseC2Ev,
                           __ZN2AD8DatabaseD1Ev, __ZN2AD8DatabaseD2Ev ]
-    objc-classes:       [ _ADHistory, _ADHistory, _ADHistoryDistributionEnumerator,
-                          _ADHistoryDistributionEnumerator ]
-    objc-ivars:         [ _ADHistory._database, _ADHistory._path,
-                          _ADHistoryDistributionEnumerator._iterator ]
+    objc-classes:       [ _ADHistory, _ADHistoryDistributionEnumerator ]
+    objc-ivars:         [ _ADHistory._database, _ADHistory._path, _ADHistoryDistributionEnumerator._iterator ]
 ...

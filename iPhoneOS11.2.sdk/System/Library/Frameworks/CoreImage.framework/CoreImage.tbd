@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: CC9A2FAC-4CAA-379E-A959-C6AAACA0856F', 'armv7s: A9A0339C-7FB8-30B2-A540-4D65B5DB0FBE', 
                    'arm64: FB0038DA-9F39-3BE4-BF10-A072D87F06FA' ]
 platform:        ios
@@ -21,7 +21,7 @@ exports:
                        _xy_to_tempTint, _xy_to_xy_matrix, _xyz_to_adobe_rgb_matrix, 
                        _xyz_to_rgb_matrix ]
     objc-ivars:      [ _CIQRCodeFeature.messageString ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CIDetectorAccuracy, _CIDetectorAccuracyHigh, _CIDetectorAccuracyLow, 
                        _CIDetectorAspectRatio, _CIDetectorBetterEyeLocs, _CIDetectorDetectDiacritics, 
                        _CIDetectorExtraCharacters, _CIDetectorEyeBlink, _CIDetectorFocalLength, 

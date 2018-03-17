@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: D52AEF14-E42E-3B77-8A09-4779A6902A4B', 'armv7s: C345C65B-7473-327D-8E30-739B61C15FB5', 
                    'arm64: 23796925-8F32-3F1E-B256-2D4DD4F95AEF' ]
 platform:        ios
@@ -62,7 +62,7 @@ exports:
                        _AVPlaylistLeafNodeEnumeratorInternal.figPlaylist, _AVPlaylistLeafNodeEnumeratorInternal.firstNode, 
                        _AVPlaylistLeafNodeEnumeratorInternal.maximumNodeCount, _AVPlaylistLeafNodeEnumeratorInternal.notificationDispatcher, 
                        _AVPlaylistLeafNodeEnumeratorInternal.perItemBlock, _AVPlaylistLeafNodeEnumeratorInternal.weakSelf ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _AVAppleMakerNote_AssetIdentifier, _AVAppleMakerNote_ImageGroupIdentifier, 
                        _AVAppleMakerNote_LuminanceNoiseAmplitude, _AVAppleMakerNote_OriginatingAppID, 
                        _AVAppleMakerNote_PhotoProcessingFlags, _AVAppleMakerNote_PhotosAppFeatureFlags, 

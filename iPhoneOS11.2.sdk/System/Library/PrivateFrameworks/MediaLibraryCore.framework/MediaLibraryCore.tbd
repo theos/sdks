@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AddStringToStringCache, _AppendCStringMax, _AppendNestedSearchCriteriaList,
                           _AppendNumericSearchCriterion, _AppendSearchCriterion, _AppendUStringSearchCriterion,
                           _AppendValueRangeSearchCriterion, _ChapterData_CopyProperty, _ChapterData_Create,

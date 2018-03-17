@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 7AEB1816-9E85-3E07-B17F-BBB1EACB8CBB', 'armv7s: 605EB1BC-73EF-3574-8A59-95A53659C9A0', 
                    'arm64: 9CD31595-87C4-334C-B1B0-C1D9000647F3' ]
 platform:        ios
@@ -65,7 +65,7 @@ exports:
                        _UIMoviePlayerController._timeWhenResignedActive, _UIMoviePlayerController._topViewController, 
                        _UIMoviePlayerController._transitionCount, _UIMoviePlayerController._unmodifiedDisplayableParts, 
                        _UIMoviePlayerController._videoView, _UIMoviePlayerController._youTubeVideoID ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CGRectNormalizedRectFromSubRect, _CGRectSubRectWithNormalizedRect, 
                        _CopyProgressStringForSeconds, _HomeSharingML3DataProviderCredentialsDidChangeNotification, 
                        _MPAVControllerArtworkTimeMarkerParameter, _MPAVControllerAvailableRoutesChangedNotification, 

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/CoreTelephony.framework/Support/libCommCenterKCommandDrivers.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __Z13convertIbiRatPKN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE6UtaRat19UtaRatInfoExtension,
                           __Z16parseIbiCellInfoRN13ServingSystem9GSMSystemEPKN3ctu10LoggerBaseINSt3__110shared_ptrINS2_9LogServerEEEEE6UtaRat19UtaRatInfoExtensionjjj7UtaPlmn,
                           __Z16parseIbiDataModePKN3ctu10LoggerBaseINSt3__110shared_ptrINS_9LogServerEEEEE6UtaRat19UtaRatInfoExtensionbbbb,

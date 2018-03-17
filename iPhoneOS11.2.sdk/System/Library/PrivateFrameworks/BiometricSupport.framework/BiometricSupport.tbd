@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AppendCommentToPGM, _BiometricSupportVersionNumber, _BiometricSupportVersionString, _ComponentSetInit,
                           _ComponentSetRelease, _ComponentSetUpdate, _ConvertTransToNodeArea, _ConvertVectorForGUI,
                           _FindRectangleForComponent, _GenerateMatchTemplateTopology, _GenerateTemplateTopology,
@@ -20,30 +20,19 @@ exports:
                           _kBiometricKitIdentityTypeKey, _kBiometricKitIdentityUUIDKey, _kBiometricKitIdentityUpdateCountKey,
                           _kBiometricKitIdentityUserIDKey, _localizeAbsolute, _nanosecondsToAbsolute, _rotateBitmap90Data16,
                           _rotateBitmap90Data8, _roundMostSignificant ]
-    objc-classes:       [ _BKCatacomb, _BKCatacomb, _BKLocalization,
-                          _BKLocalization, _BiometricKitIdentity,
-                          _BiometricKitIdentity, _BiometricKitXPCExportedClientObject,
-                          _BiometricKitXPCExportedClientObject, _BiometricKitXPCExportedObject,
-                          _BiometricKitXPCExportedObject, _BiometricKitXPCServer,
-                          _BiometricKitXPCServer, _BiometricOperation,
-                          _BiometricOperation, _BiometricSupportUserNotification,
+    objc-classes:       [ _BKCatacomb, _BKLocalization, _BiometricKitIdentity, _BiometricKitXPCExportedClientObject,
+                          _BiometricKitXPCExportedObject, _BiometricKitXPCServer, _BiometricOperation,
                           _BiometricSupportUserNotification ]
-    objc-ivars:         [ _BKCatacomb._catacombDir, _BiometricKitIdentity._attribute,
-                          _BiometricKitIdentity._creationTime, _BiometricKitIdentity._entity,
-                          _BiometricKitIdentity._matchCount, _BiometricKitIdentity._name,
-                          _BiometricKitIdentity._type, _BiometricKitIdentity._updateCount,
-                          _BiometricKitIdentity._userID, _BiometricKitIdentity._uuid,
-                          _BiometricKitXPCExportedClientObject._clientAppIsBackground,
+    objc-ivars:         [ _BKCatacomb._catacombDir, _BiometricKitIdentity._attribute, _BiometricKitIdentity._creationTime,
+                          _BiometricKitIdentity._entity, _BiometricKitIdentity._matchCount, _BiometricKitIdentity._name,
+                          _BiometricKitIdentity._type, _BiometricKitIdentity._updateCount, _BiometricKitIdentity._userID,
+                          _BiometricKitIdentity._uuid, _BiometricKitXPCExportedClientObject._clientAppIsBackground,
                           _BiometricKitXPCExportedClientObject._clientAppIsInactive,
-                          _BiometricKitXPCExportedClientObject._clientID,
-                          _BiometricKitXPCExportedClientObject._clientInfo,
+                          _BiometricKitXPCExportedClientObject._clientID, _BiometricKitXPCExportedClientObject._clientInfo,
                           _BiometricKitXPCExportedClientObject._delegateRegistered,
-                          _BiometricKitXPCExportedClientObject._exportedObject,
-                          _BiometricKitXPCExportedObject._clients,
-                          _BiometricKitXPCExportedObject._connection,
-                          _BiometricKitXPCExportedObject._server,
+                          _BiometricKitXPCExportedClientObject._exportedObject, _BiometricKitXPCExportedObject._clients,
+                          _BiometricKitXPCExportedObject._connection, _BiometricKitXPCExportedObject._server,
                           _BiometricKitXPCServer._cmdDispatchQueue, _BiometricOperation._absoluteTime,
                           _BiometricOperation._client, _BiometricOperation._operationPriority,
-                          _BiometricOperation._operationStatus, _BiometricOperation._operationType,
-                          _BiometricOperation._params ]
+                          _BiometricOperation._operationStatus, _BiometricOperation._operationType, _BiometricOperation._params ]
 ...

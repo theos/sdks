@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftsimd.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T04simd12matrix_equalSbSC0A10_double2x2V_ADtF, __T04simd12matrix_equalSbSC0A10_double2x3V_ADtF,
                           __T04simd12matrix_equalSbSC0A10_double2x4V_ADtF, __T04simd12matrix_equalSbSC0A10_double3x2V_ADtF,
                           __T04simd12matrix_equalSbSC0A10_double3x3V_ADtF, __T04simd12matrix_equalSbSC0A10_double3x4V_ADtF,

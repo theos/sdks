@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftDispatch.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T08Dispatch024dispatch_io_create_with_C0So0A2IOCSu_ADSo0A5QueueCys5Int32VctF,
                           __T08Dispatch0A11SpecificKeyCACyxGycfC, __T08Dispatch0A11SpecificKeyCACyxGycfc,
                           __T08Dispatch0A11SpecificKeyCMa, __T08Dispatch0A11SpecificKeyCMn, __T08Dispatch0A11SpecificKeyCfD,

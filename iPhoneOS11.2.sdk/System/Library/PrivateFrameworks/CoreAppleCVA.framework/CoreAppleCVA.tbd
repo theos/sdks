@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreAppleCVA.framework/CoreAppleCVA
 current-version:       1.4.1
 compatibility-version: 1.4
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __Z14CVAGetMPSImagePN3cva3mtl11CVAMPSImageE, __Z17CVACreateMPSImageP8MPSImage,
                           __Z17CVAGetMetalBufferPN3cva3mtl11MetalBufferE, __Z17CVAGetMetalDevicePN3cva3mtl12MetalContextE,
                           __Z18CVAGetMPSCNNKernelPN3cva3mtl15CVAMPSCNNKernelE,

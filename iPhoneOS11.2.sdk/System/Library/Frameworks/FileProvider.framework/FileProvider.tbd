@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: 29753C5B-5F3E-32B2-881F-8C44DDCF4CD9' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/FileProvider.framework/FileProvider
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$hide$os10.0$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$hide$os10.0$_OBJC_METACLASS_$_NSFileProviderExtension', 
                        '$ld$hide$os10.1$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$hide$os10.1$_OBJC_METACLASS_$_NSFileProviderExtension', 
                        '$ld$hide$os10.2$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$hide$os10.2$_OBJC_METACLASS_$_NSFileProviderExtension', 

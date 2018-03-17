@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 2CE3FDA2-67A0-3264-941A-619EC2039CF3', 'armv7s: 7E092984-DABF-3722-80B7-EB4B0E908A00', 
                    'arm64: AA73021E-6D06-3FFC-A7E6-CC100476442E' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
 current-version: 69
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MIDIClientCreate, _MIDIClientCreateWithBlock, _MIDIClientDispose, 
                        _MIDIConfigCheckVirginState, _MIDIConfigDelete, _MIDIConfigDuplicate, 
                        _MIDIConfigExists, _MIDIConfigGetCurrent, _MIDIConfigGetList, 

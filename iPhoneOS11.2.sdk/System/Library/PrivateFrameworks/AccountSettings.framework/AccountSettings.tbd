@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccountSettings.framework/AccountSettings
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __ASLogSystem, _accountSettingsAccountsPath, _daAccountPath, _kASChangeAccountChangeTypeKey,
                           _kASChangeAccountIdentifierKey, _kASChangeAccountOriginallyEnabledDataclassesKey,
                           _kASChangeAccountTypeKey, _kAccountCalendarsWereMigrated, _kAccountChildAccounts, _kAccountClass,
@@ -30,16 +30,11 @@ exports:
                           _kPropertiesEnableDataclassActions, _kPropertiesShowRemindersSeparately,
                           _kPropertiesSupportedDataclasses, _kSMTPAccountType, _kSubscribedCalendarAccountType,
                           _kYahooAccountType, _mailAccountsPath, _reportMailAccountClassFound ]
-    objc-classes:       [ _ASRuntimeFixMailAccount, _ASRuntimeFixMailAccount,
-                          _AccountsManager, _AccountsManager, _BasicAccount,
-                          _BasicAccount, _DeviceLocalAccount, _DeviceLocalAccount ]
-    objc-ivars:         [ _ASRuntimeFixMailAccount._shouldNotifyMobileMail,
-                          _ASRuntimeFixMailAccount._supportedMailClasses,
-                          _AccountsManager._childAccountIDToParentAccountID,
-                          _AccountsManager._childAccountsByID, _AccountsManager._dataVersion,
-                          _AccountsManager._orderedTopLevelAccounts,
+    objc-classes:       [ _ASRuntimeFixMailAccount, _AccountsManager, _BasicAccount, _DeviceLocalAccount ]
+    objc-ivars:         [ _ASRuntimeFixMailAccount._shouldNotifyMobileMail, _ASRuntimeFixMailAccount._supportedMailClasses,
+                          _AccountsManager._childAccountIDToParentAccountID, _AccountsManager._childAccountsByID,
+                          _AccountsManager._dataVersion, _AccountsManager._orderedTopLevelAccounts,
                           _AccountsManager._originalAccountsByID, _AccountsManager._runtimeFixers,
-                          _AccountsManager._topLevelAccountsByID, _BasicAccount._fullAccount,
-                          _BasicAccount._originalProperties, _BasicAccount._parentAccount,
-                          _BasicAccount._properties, _BasicAccount._syncAccount ]
+                          _AccountsManager._topLevelAccountsByID, _BasicAccount._fullAccount, _BasicAccount._originalProperties,
+                          _BasicAccount._parentAccount, _BasicAccount._properties, _BasicAccount._syncAccount ]
 ...

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
                    'arm64: B630BBA1-75AE-3C72-9369-18F0FE48FF2B' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreML.framework/CoreML
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MLModelAuthorKey, _MLModelCreatorDefinedKey, _MLModelDescriptionKey, 
                        _MLModelErrorDomain, _MLModelLicenseKey, _MLModelVersionStringKey, 
                        _libsvm_version, _svm_check_parameter, _svm_check_probability_model, 

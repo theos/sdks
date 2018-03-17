@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: B74878DA-C236-3353-A766-F28F1BC97FB1', 'armv7s: 455F53AD-7A7F-3A51-BD40-3C216A26FACC', 
                    'arm64: 01D515C3-376C-3327-99F1-4694934ED70B' ]
 platform:        ios
@@ -9,7 +9,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     symbols:         [ _appleblas_i16gemm, _appleblas_i8gemm ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _APL_dgemm, _APL_dgemm_LU, _APL_dgemm_QR, _APL_dtrsm, _APL_sgemm, 
                        _APL_sgemm_LU, _APL_sgemm_QR, _APL_strsm, _APPLE_NTHREADS, 
                        _ATLU_DestroyThreadMemory, _BNNSApplyVectorActivationLayer, 

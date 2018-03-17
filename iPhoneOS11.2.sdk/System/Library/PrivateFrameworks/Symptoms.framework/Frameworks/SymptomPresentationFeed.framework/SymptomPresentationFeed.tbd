@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomPresentationFeed.framework/SymptomPresentationFeed
 current-version:       820.30.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _NSTargetObjectUserInfoKey, _NSUnknownKeyException, _NSUnknownUserInfoKey, _advisoryToString,
                           _kDarwinNotificationHasAlternateAdvice, _kDarwinNotificationMaterialLinkQualityChange, _kDeltaOnly,
                           _kEstTransferTimeConfidence, _kEstTransferTimeDLSecs, _kEstTransferTimeULSecs,
@@ -43,37 +43,26 @@ exports:
                           _kUsageNetworkWiredInBytes_var, _kUsageNetworkWiredOutBytes, _kUsageNetworkWiredOutBytes_mean,
                           _kUsageNetworkWiredOutBytes_var, _kUsageNetworkWiredSampleCount, _kUsageProcessBundleName,
                           _kUsageProcessDataKey, _kUsageProcessProcName, _kUsageSinceTime, _stringToAdvisory ]
-    objc-classes:       [ _NWNetworkOfInterest, _NWNetworkOfInterest,
-                          _NWNetworkOfInterestManager, _NWNetworkOfInterestManager,
-                          _NWNetworkPredictions, _NWNetworkPredictions,
-                          _NetworkInterfaceUtils, _NetworkInterfaceUtils,
-                          _NetworkPerformanceFeed, _NetworkPerformanceFeed,
-                          _ProcessNetStatsIndividualEntity, _ProcessNetStatsIndividualEntity,
-                          _UsageFeed, _UsageFeed ]
+    objc-classes:       [ _NWNetworkOfInterest, _NWNetworkOfInterestManager, _NWNetworkPredictions, _NetworkInterfaceUtils,
+                          _NetworkPerformanceFeed, _ProcessNetStatsIndividualEntity, _UsageFeed ]
     objc-ivars:         [ _NWNetworkOfInterest._considerAlternate, _NWNetworkOfInterest._customSignature,
                           _NWNetworkOfInterest._discretionaryTrafficInvited, _NWNetworkOfInterest._flags,
-                          _NWNetworkOfInterest._interface, _NWNetworkOfInterest._isAny,
-                          _NWNetworkOfInterest._isBuiltin, _NWNetworkOfInterest._isTrafficEligible,
-                          _NWNetworkOfInterest._linkQuality, _NWNetworkOfInterest._powerCostDL,
-                          _NWNetworkOfInterest._powerCostUL, _NWNetworkOfInterest._predictions,
-                          _NWNetworkOfInterest._predictionsGeneratedAt,
+                          _NWNetworkOfInterest._interface, _NWNetworkOfInterest._isAny, _NWNetworkOfInterest._isBuiltin,
+                          _NWNetworkOfInterest._isTrafficEligible, _NWNetworkOfInterest._linkQuality,
+                          _NWNetworkOfInterest._powerCostDL, _NWNetworkOfInterest._powerCostUL,
+                          _NWNetworkOfInterest._predictions, _NWNetworkOfInterest._predictionsGeneratedAt,
                           _NWNetworkOfInterest._scopedToLOI, _NWNetworkOfInterest._version,
-                          _NWNetworkOfInterest._willGetDiscretionaryTrafficInvites,
-                          _NWNetworkOfInterestManager._callerQueue,
+                          _NWNetworkOfInterest._willGetDiscretionaryTrafficInvites, _NWNetworkOfInterestManager._callerQueue,
                           _NWNetworkOfInterestManager._connection, _NWNetworkOfInterestManager._delegate,
                           _NWNetworkOfInterestManager._service,
                           _NWNetworkOfInterestManager.activeDaemonRegardlessPrimaryInterface,
-                          _NWNetworkOfInterestManager.closing,
-                          _NWNetworkOfInterestManager.hasPrimaryInterface,
-                          _NWNetworkOfInterestManager.notifyToken,
-                          _NWNetworkOfInterestManager.registryNOI, _NWNetworkOfInterestManager.workspace,
-                          _NWNetworkPredictions._changePointAt, _NWNetworkPredictions._confidence,
-                          _NWNetworkPredictions._resolutionSeconds, _NWNetworkPredictions._toQuality,
-                          _NetworkInterfaceUtils._hasPrimaryInterface, _NetworkPerformanceFeed._delegate,
-                          _NetworkPerformanceFeed.activeDaemonRegardlessPrimaryInterface,
+                          _NWNetworkOfInterestManager.closing, _NWNetworkOfInterestManager.hasPrimaryInterface,
+                          _NWNetworkOfInterestManager.notifyToken, _NWNetworkOfInterestManager.registryNOI,
+                          _NWNetworkOfInterestManager.workspace, _NWNetworkPredictions._changePointAt,
+                          _NWNetworkPredictions._confidence, _NWNetworkPredictions._resolutionSeconds,
+                          _NWNetworkPredictions._toQuality, _NetworkInterfaceUtils._hasPrimaryInterface,
+                          _NetworkPerformanceFeed._delegate, _NetworkPerformanceFeed.activeDaemonRegardlessPrimaryInterface,
                           _NetworkPerformanceFeed.callerQueue, _NetworkPerformanceFeed.concQueue,
-                          _NetworkPerformanceFeed.networkInterfaceUtils,
-                          _NetworkPerformanceFeed.workspace, _UsageFeed._delegate,
-                          _UsageFeed._processFeedData, _UsageFeed.handleAnalytics,
-                          _UsageFeed.workspace ]
+                          _NetworkPerformanceFeed.networkInterfaceUtils, _NetworkPerformanceFeed.workspace, _UsageFeed._delegate,
+                          _UsageFeed._processFeedData, _UsageFeed.handleAnalytics, _UsageFeed.workspace ]
 ...

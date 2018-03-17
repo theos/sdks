@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _sparse_commit, _sparse_elementwise_norm_double, _sparse_elementwise_norm_float,
                           _sparse_extract_block_double, _sparse_extract_block_float, _sparse_extract_sparse_column_double,
                           _sparse_extract_sparse_column_float, _sparse_extract_sparse_row_double,

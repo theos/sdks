@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 1260046C-9A56-331C-A01D-765D19015DE1', 'armv7s: C67BB7EA-FF5E-343F-BEC9-FD055D488744', 
                    'arm64: 13D55604-FDE6-3C2E-96DF-89E8D6E84FE6' ]
 platform:        ios
@@ -10,7 +10,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ _SCLOG, _SCLoggerCreate, _SCLoggerGetFlags, _SCLoggerLog, 
                        _SCLoggerSetFlags, _SCLoggerVLog, __SCNetworkInterfaceIsModemV92 ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CNCopyCurrentNetworkInfo, _CNCopySupportedInterfaces, _CNMarkPortalOffline, 
                        _CNMarkPortalOnline, _CNSetSupportedSSIDs, _DHCPClientPreferencesCopyApplicationOptions, 
                        _DHCPClientPreferencesSetApplicationOptions, _DHCPInfoGetLeaseExpirationTime, 

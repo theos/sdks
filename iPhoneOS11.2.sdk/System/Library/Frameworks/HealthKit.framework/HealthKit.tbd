@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 34F6ADCE-0D59-3EB4-85C7-1F09916A597C', 'armv7s: 2FF9D575-B71F-30F8-A537-3C0F3548C4B8', 
                    'arm64: 4D73559E-4DBD-344E-983C-D9CE342E3676' ]
 platform:        ios
@@ -36,7 +36,7 @@ exports:
                        __HKFitnessFriend, __HKFitnessFriendContact, __HKFitnessFriendsQuery, 
                        __HKFitnessFriendsRelationship, __HKFitnessFriendsRelationshipEvent, 
                        __HKSeriesType ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _HDCloudSyncServerInterface, _HDHealthServicesServerInterface, 
                        _HDHealthStoreEndpointInterface, _HDHealthStoreMachServiceName, 
                        _HDHealthStoreServerInterface, _HDMedicalIDServerInterface, 

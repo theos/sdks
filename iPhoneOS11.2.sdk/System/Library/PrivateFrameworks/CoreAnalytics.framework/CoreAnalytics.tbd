@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AnalyticsIsEventUsed, _AnalyticsSendEvent, _AnalyticsSetCallbackForQueriedEvent,
                           _AnalyticsSetCallbackForQueriedEventWithQueue,
                           __Z19analytics_tool_dumpNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE,
@@ -61,12 +61,9 @@ exports:
                           _analytics_send_queried_awd_metric, _analytics_send_queried_awd_trigger,
                           _analytics_set_awd_query_callback, _analytics_set_callback_for_queried_event,
                           _analytics_set_callback_for_queried_event_with_queue ]
-    objc-classes:       [ _AnalyticsConfigurationObserver, _AnalyticsConfigurationObserver,
-                          _AnalyticsEventObserver, _AnalyticsEventObserver ]
-    objc-ivars:         [ _AnalyticsConfigurationObserver._delegate,
-                          _AnalyticsConfigurationObserver._delegateQueue,
-                          _AnalyticsConfigurationObserver._queue,
-                          _AnalyticsConfigurationObserver.observer, _AnalyticsEventObserver._delegate,
-                          _AnalyticsEventObserver._delegateQueue, _AnalyticsEventObserver._queue,
-                          _AnalyticsEventObserver.observer ]
+    objc-classes:       [ _AnalyticsConfigurationObserver, _AnalyticsEventObserver ]
+    objc-ivars:         [ _AnalyticsConfigurationObserver._delegate, _AnalyticsConfigurationObserver._delegateQueue,
+                          _AnalyticsConfigurationObserver._queue, _AnalyticsConfigurationObserver.observer,
+                          _AnalyticsEventObserver._delegate, _AnalyticsEventObserver._delegateQueue,
+                          _AnalyticsEventObserver._queue, _AnalyticsEventObserver.observer ]
 ...

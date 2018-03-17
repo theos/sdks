@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib
 current-version:       604.5.6
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __ZN3rtc10LogMessage10LogToDebugENS_15LoggingSeverityE, __ZN3rtc12FatalMessage4InitEPKci,
                           __ZN3rtc12FatalMessageC1EPKci,
                           __ZN3rtc12FatalMessageC1EPKciPNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE,

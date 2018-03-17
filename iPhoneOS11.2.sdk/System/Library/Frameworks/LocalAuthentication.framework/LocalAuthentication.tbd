@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 35640E39-77A7-3716-81B7-DAFB5831F4D8', 'armv7s: 51D5EE04-E42B-3559-B3FC-C3A9CF5BF4B4', 
                    'arm64: 35045763-0F01-3272-9A02-A1AD396D68E0' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/LocalAuthentication.framework/LocalA
 current-version: 425.30.30
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _LAAvailableMechanisms, _LAContextCreate, _LAContextGetTypeID, 
                        _LACopyACMContext, _LACopyCurrentContext, _LACopyExternalizedContext, 
                        _LACopyResultOfPolicyEvaluation, _LACreateNewContextWithACMContext, 

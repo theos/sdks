@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: C7E7DC6F-DAB5-3EE8-8DF5-2D696BF0BA1E', 'armv7s: 197910B6-3639-3F30-8A99-5ADD6ED35AFB', 
                    'arm64: AAE8AC5F-A43C-3204-BEB1-568C7564AD31' ]
 platform:        ios
@@ -15,7 +15,7 @@ exports:
                        _findInThreadSafeArrayCollectionByUUID, _findInThreadSafeArrayCollectionByUniqueIdentifier, 
                        _milliseconds ]
     objc-classes:    [ _HMHAPMetadataUnit ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CODER_RemoteLoginMessage_Error, _CODER_RemoteLoginMessage_SessionID, 
                        _HMAccessControlUserCodingKey, _HMAccessoryAssociationOptionsCodingKey, 
                        _HMAccessoryCategoryTypeAirConditioner, _HMAccessoryCategoryTypeAirDehumidifier, 

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: C37DD09C-2E1A-3314-ACCC-42B23F221718', 'armv7s: 6C74925D-2B4F-3045-8482-C9283BABAEF6', 
                    'arm64: C70A25DE-2EE5-3F36-BBD7-192CC8F878EF' ]
 platform:        ios
 install-name:    /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CBATTErrorDomain, _CBAdvertisementAppleMfgTypeKey, _CBAdvertisementDataAppleBeaconKey, 
                        _CBAdvertisementDataAppleMfgData, _CBAdvertisementDataChannel, 
                        _CBAdvertisementDataDeviceAddress, _CBAdvertisementDataIsConnectable, 

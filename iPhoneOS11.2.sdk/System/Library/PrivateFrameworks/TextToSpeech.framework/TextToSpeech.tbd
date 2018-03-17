@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AXSpeechReplaceJapaneseElongationCharactersIfNeeded, _Logger, _LoggingOnceToken, _LoggingQueue,
                           _TTSAssetKeyCustomVoiceCompatibilityVersion, _TTSAssetKeyCustomVoiceFootprint,
                           _TTSAssetKeyCustomVoiceGender, _TTSAssetKeyCustomVoiceLanguages,
@@ -54,17 +54,8 @@ exports:
                           _kTTSVocalizerResourceAssetInstalledNotification, _kTTSVocalizerVoiceFormatKey,
                           _kTTSVocalizerVoiceNameKey, _kVSLogContextGeneral, _kVSLogContextSpeech, _kVSLogFacilityVoiceServices,
                           _kVSPreferencesLoggingLogLevelKey, _kVSPreferencesLoggingOutputLevelKey ]
-    objc-classes:       [ _TTSAssetBase, _TTSAssetBase, _TTSAudioSession,
-                          _TTSAudioSession, _TTSAudioSessionChannel,
-                          _TTSAudioSessionChannel, _TTSFormatArgument,
-                          _TTSFormatArgument, _TTSSpeechChannel,
-                          _TTSSpeechChannel, _TTSSpeechRequest, _TTSSpeechRequest,
-                          _TTSSpeechRequestOwner, _TTSSpeechRequestOwner,
-                          _TTSSpeechSynthesizer, _TTSSpeechSynthesizer,
-                          _TTSSpeechVoice, _TTSSpeechVoice, _TTSSubstitution,
-                          _TTSSubstitution, _TTSVoiceAsset, _TTSVoiceAsset,
-                          _TTSVoiceAssetManager, _TTSVoiceAssetManager,
-                          _TTSVoiceResourceAsset, _TTSVoiceResourceAsset ]
-    objc-ivars:         [ _TTSFormatArgument.attributes, _TTSFormatArgument.formatSpecifier,
-                          _TTSFormatArgument.formattedArg ]
+    objc-classes:       [ _TTSAssetBase, _TTSAudioSession, _TTSAudioSessionChannel, _TTSFormatArgument, _TTSSpeechChannel,
+                          _TTSSpeechRequest, _TTSSpeechRequestOwner, _TTSSpeechSynthesizer, _TTSSpeechVoice, _TTSSubstitution,
+                          _TTSVoiceAsset, _TTSVoiceAssetManager, _TTSVoiceResourceAsset ]
+    objc-ivars:         [ _TTSFormatArgument.attributes, _TTSFormatArgument.formatSpecifier, _TTSFormatArgument.formattedArg ]
 ...

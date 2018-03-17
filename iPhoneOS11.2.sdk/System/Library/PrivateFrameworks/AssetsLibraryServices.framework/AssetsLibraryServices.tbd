@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ALCleanupModelForDataMigration, _ALDataMigrationWillFinish, _ALEstimatedOutputFileLength,
                           _ALGetLibrarySizes, _ALGetPhotosAndVideosCount, _ALPhotosAndVideosCountNotificationName,
                           _ALRegisterForPhotosAndVideosCount, _ALRepairPotentialModelCorruption, _ALSecondsNeededToMigrateStore,
@@ -187,50 +187,29 @@ exports:
                           _pl_dispatch_group_async, _pl_dispatch_group_notify, _pl_dispatch_once,
                           _pl_dispatch_source_set_event_handler, _pl_dispatch_sync, _pl_notify_register_dispatch,
                           _pl_result_with_autoreleasepool ]
-    objc-classes:       [ _PLAssetsdClientServiceReceiver, _PLAssetsdClientServiceReceiver,
-                          _PLAssetsdClientServiceSender, _PLAssetsdClientServiceSender,
-                          _PLBuildVersion, _PLBuildVersion, _PLCIFilterUtilities,
-                          _PLCIFilterUtilities, _PLCPLDownloadContext,
-                          _PLCPLDownloadContext, _PLDiskController,
-                          _PLDiskController, _PLFileSystemPersistence,
-                          _PLFileSystemPersistence, _PLFileSystemPersistenceAttributes,
-                          _PLFileSystemPersistenceAttributes, _PLFileSystemPersistenceBatchItem,
-                          _PLFileSystemPersistenceBatchItem, _PLGatekeeperClient,
-                          _PLGatekeeperClient, _PLImageDataInfo, _PLImageDataInfo,
-                          _PLLocationOfInterest, _PLLocationOfInterest, _PLPrivacy,
-                          _PLPrivacy, _PLSandboxedURL, _PLSandboxedURL,
-                          _PLSecurity, _PLSecurity, _PLUUIDString,
-                          _PLUUIDString, _PLXPCData, _PLXPCData,
-                          _PLXPCShMemData, _PLXPCShMemData, _PLXPCTransaction,
+    objc-classes:       [ _PLAssetsdClientServiceReceiver, _PLAssetsdClientServiceSender, _PLBuildVersion, _PLCIFilterUtilities,
+                          _PLCPLDownloadContext, _PLDiskController, _PLFileSystemPersistence, _PLFileSystemPersistenceAttributes,
+                          _PLFileSystemPersistenceBatchItem, _PLGatekeeperClient, _PLImageDataInfo, _PLLocationOfInterest,
+                          _PLPrivacy, _PLSandboxedURL, _PLSecurity, _PLUUIDString, _PLXPCData, _PLXPCShMemData,
                           _PLXPCTransaction ]
-    objc-ivars:         [ _PLAssetsdClientServiceReceiver._weakClientService,
-                          _PLAssetsdClientServiceSender._connection,
+    objc-ivars:         [ _PLAssetsdClientServiceReceiver._weakClientService, _PLAssetsdClientServiceSender._connection,
                           _PLBuildVersion._majorBuildLetterString, _PLBuildVersion._majorBuildNumber,
                           _PLBuildVersion._minorBuildLetterString, _PLBuildVersion._minorBuildNumber,
-                          _PLBuildVersion._stringRepresentation, _PLCPLDownloadContext._completed,
-                          _PLCPLDownloadContext._error, _PLCPLDownloadContext._progress,
-                          _PLCPLDownloadContext._resourceTypeDescription,
-                          _PLCPLDownloadContext._taskIdentifier,
-                          _PLCPLDownloadContext._updateLastQueuedTime,
-                          _PLDiskController._bytesRequiredForPhoto, _PLDiskController._flags,
-                          _PLDiskController._lastFSCheck, _PLFileSystemPersistence._writerQueue,
-                          _PLFileSystemPersistenceAttributes._attributes,
-                          _PLFileSystemPersistenceBatchItem._attributes,
-                          _PLFileSystemPersistenceBatchItem._fileURL,
-                          _PLGatekeeperClient._clientServiceReceiver,
-                          _PLGatekeeperClient._previewAssetLocalIdentifiers,
-                          _PLGatekeeperClient._previewRenderedContentURLs,
-                          _PLGatekeeperClient._serialReplyQueue, _PLGatekeeperClient.connection,
-                          _PLImageDataInfo._EXIFOrientation, _PLImageDataInfo._URL,
-                          _PLImageDataInfo._UTI, _PLImageDataInfo._canDownloadFromCloud,
-                          _PLImageDataInfo._deliveredFormat, _PLImageDataInfo._deliveredPlaceholder,
-                          _PLImageDataInfo._sandboxExtensionToken, _PLLocationOfInterest._location,
-                          _PLLocationOfInterest._radius, _PLLocationOfInterest._type,
-                          _PLPrivacy._authStatusFullAccess, _PLPrivacy._authStatusSaveOnly,
-                          _PLPrivacy._callbackQueue, _PLPrivacy._isolationQueue,
-                          _PLSandboxedURL._sandboxExtensionHandle,
-                          _PLSandboxedURL._sandboxExtensionToken, _PLUUIDString._uuid,
-                          _PLUUIDString._uuidString, _PLXPCData._data,
-                          _PLXPCShMemData._buffer, _PLXPCShMemData._bufferLength,
-                          _PLXPCShMemData._dataLength, _PLXPCTransaction._identifier ]
+                          _PLBuildVersion._stringRepresentation, _PLCPLDownloadContext._completed, _PLCPLDownloadContext._error,
+                          _PLCPLDownloadContext._progress, _PLCPLDownloadContext._resourceTypeDescription,
+                          _PLCPLDownloadContext._taskIdentifier, _PLCPLDownloadContext._updateLastQueuedTime,
+                          _PLDiskController._bytesRequiredForPhoto, _PLDiskController._flags, _PLDiskController._lastFSCheck,
+                          _PLFileSystemPersistence._writerQueue, _PLFileSystemPersistenceAttributes._attributes,
+                          _PLFileSystemPersistenceBatchItem._attributes, _PLFileSystemPersistenceBatchItem._fileURL,
+                          _PLGatekeeperClient._clientServiceReceiver, _PLGatekeeperClient._previewAssetLocalIdentifiers,
+                          _PLGatekeeperClient._previewRenderedContentURLs, _PLGatekeeperClient._serialReplyQueue,
+                          _PLGatekeeperClient.connection, _PLImageDataInfo._EXIFOrientation, _PLImageDataInfo._URL,
+                          _PLImageDataInfo._UTI, _PLImageDataInfo._canDownloadFromCloud, _PLImageDataInfo._deliveredFormat,
+                          _PLImageDataInfo._deliveredPlaceholder, _PLImageDataInfo._sandboxExtensionToken,
+                          _PLLocationOfInterest._location, _PLLocationOfInterest._radius, _PLLocationOfInterest._type,
+                          _PLPrivacy._authStatusFullAccess, _PLPrivacy._authStatusSaveOnly, _PLPrivacy._callbackQueue,
+                          _PLPrivacy._isolationQueue, _PLSandboxedURL._sandboxExtensionHandle,
+                          _PLSandboxedURL._sandboxExtensionToken, _PLUUIDString._uuid, _PLUUIDString._uuidString,
+                          _PLXPCData._data, _PLXPCShMemData._buffer, _PLXPCShMemData._bufferLength, _PLXPCShMemData._dataLength,
+                          _PLXPCTransaction._identifier ]
 ...

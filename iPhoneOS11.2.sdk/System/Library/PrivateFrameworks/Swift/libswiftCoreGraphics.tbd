@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCoreGraphics.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T012CoreGraphics024CGAffineTransformEqualToD0SbSC0cD0V_ADtF,
                           __T012CoreGraphics11CGFLOAT_MAXAA7CGFloatVfg, __T012CoreGraphics11CGFLOAT_MINAA7CGFloatVfg,
                           __T012CoreGraphics12CGPathAddArcySo13CGMutablePathCSg_SPySC17CGAffineTransformVGAA7CGFloatVA4JSbtF,

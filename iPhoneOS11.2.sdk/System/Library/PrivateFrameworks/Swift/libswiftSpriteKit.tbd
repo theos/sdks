@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftSpriteKit.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T0So11SKShapeNodeC9SpriteKitE25customPlaygroundQuickLooks0fgH0Ofg,
                           __T0So11SKShapeNodeCs29CustomPlaygroundQuickLookable9SpriteKitWP,
                           __T0So11SKShapeNodeCs29CustomPlaygroundQuickLookable9SpriteKitWa,
@@ -24,6 +24,5 @@ exports:
                           __T0So9SKTextureC9SpriteKitE25customPlaygroundQuickLooks0efG0Ofg,
                           __T0So9SKTextureCs29CustomPlaygroundQuickLookable9SpriteKitWP,
                           __T0So9SKTextureCs29CustomPlaygroundQuickLookable9SpriteKitWa, '__swift_FORCE_LOAD_$_swiftSpriteKit' ]
-    objc-classes:       [ __TtC9SpriteKit24_SpriteKitMethodProvider,
-                          __TtC9SpriteKit24_SpriteKitMethodProvider ]
+    objc-classes:       [ __TtC9SpriteKit24_SpriteKitMethodProvider ]
 ...

@@ -1,27 +1,19 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CFStringHashNSString, _GetDataName, _TypeNameForClassOfObject, __NSConstantDictionaryKeyHash,
                           _codeString, _gArrayDictionary, _gDataDictionary, _gDateDictionary, _gDictDictionary,
                           _gNumberDictionary, _gStringDictionary, _main, _normalizedStringForString, _objectCount, _parseElement,
                           _referenceElement, _usage ]
-    objc-classes:       [ __NSConstantArray, __NSConstantArray,
-                          __NSConstantArrayEnumerator, __NSConstantArrayEnumerator,
-                          __NSConstantData, __NSConstantData, __NSConstantDate,
-                          __NSConstantDate, __NSConstantDictionary,
-                          __NSConstantDictionary, __NSConstantDictionaryEnumerator,
-                          __NSConstantDictionaryEnumerator, __NSConstantNumber,
-                          __NSConstantNumber, __NSConstantNumberBool,
-                          __NSConstantNumberBool, __NSConstantNumberFloat,
-                          __NSConstantNumberFloat, __NSConstantNumberInt,
-                          __NSConstantNumberInt ]
+    objc-classes:       [ __NSConstantArray, __NSConstantArrayEnumerator, __NSConstantData, __NSConstantDate,
+                          __NSConstantDictionary, __NSConstantDictionaryEnumerator, __NSConstantNumber, __NSConstantNumberBool,
+                          __NSConstantNumberFloat, __NSConstantNumberInt ]
     objc-ivars:         [ __NSConstantArrayEnumerator.capacity, __NSConstantArrayEnumerator.index,
                           __NSConstantArrayEnumerator.objects, __NSConstantDictionaryEnumerator.capacity,
-                          __NSConstantDictionaryEnumerator.currentKey,
-                          __NSConstantDictionaryEnumerator.keyIndex ]
+                          __NSConstantDictionaryEnumerator.currentKey, __NSConstantDictionaryEnumerator.keyIndex ]
 ...

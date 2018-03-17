@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: C60100E9-78EE-392E-87D0-BF8FF98C9EB3', 'armv7s: 994C3982-C291-3030-A476-8571D786EA50', 
                    'arm64: FC6F0493-A7A7-3784-A059-3E97683DD7E6' ]
 platform:        ios
@@ -17,7 +17,7 @@ exports:
     objc-classes:    [ _PULoggingSettings, _PUPhotoEditIrisModel, _PUPhotoEditIrisModelChange, 
                        _PUPhotoEditViewController, _PUResourceDownloadRequest, _PUSettings, 
                        _PUVideoEditViewController ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _PHDisplayVelocityZero, _PHViewControllerTransitionInfoSourceRectKey, 
                        _PHViewControllerTransitionInfoTransitioningFromSourceToReceiverKey, 
                        _PLActivityTypeAlbumStream, _PLActivityTypeAssignToContact, 

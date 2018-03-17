@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _MKBBackupActualFileSize, _MKBBackupClose, _MKBBackupCopyBackupKeyUUID, _MKBBackupCopyKey,
                           _MKBBackupCreateFromFileDescriptors, _MKBBackupDecryptInPlace, _MKBBackupGetFileDescriptors,
                           _MKBBackupOpen, _MKBBackupPread, _MKBBackupSetKeyEncryptionModeToXTS, _MKBBackupSize,
@@ -68,5 +68,5 @@ exports:
                           _kMKBUserSwitchTaskReasonKey, _kMKBUserSwitchTaskUUIDKey, _kMKBUserTypeEphemeral, _kMKBUserTypeKey,
                           _kMKBUserTypePermanent, _kMobileKeyBagLockStatusNotification, _kMobileKeyBagLockStatusNotifyToken,
                           _kMobileKeyBagUserChangedNotificationToken, _kMobileKeyBagUserStartedNotificationToken ]
-    objc-classes:       [ _MKBKeyStoreDevice, _MKBKeyStoreDevice ]
+    objc-classes:       [ _MKBKeyStoreDevice ]
 ...

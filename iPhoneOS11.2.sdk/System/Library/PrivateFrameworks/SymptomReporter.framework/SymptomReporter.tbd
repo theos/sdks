@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SymptomReporter.framework/SymptomReporter
 current-version:       820.30.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __symptoms_daemon_fallback_initial_disposition, __symptoms_daemon_fallback_subseq_disposition,
                           __symptoms_globals_init, __symptoms_is_daemon_fallback_blacklisted, _set_symptom_verbosity,
                           _symptom_create, _symptom_framework_init, _symptom_framework_set_version, _symptom_framework_stats,

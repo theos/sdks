@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MediaKit.framework/MediaKit
 current-version:       864
 compatibility-version: 302
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _ApplyToHFSPlusCatalogRecords, _ApplyToHFSPlusExtentRecords, _CFArrayDictionarySearch,
                           _CFArrayDictionarySearchWithIndexOptions, _GPTuuidHuman2Type, _GPTuuidType2Human,
                           _IOEngineDeinitialize, _IOEngineInitialize, _IOJobCopyInfo, _IOJobCopySingleInfo, _IOJobDispose,

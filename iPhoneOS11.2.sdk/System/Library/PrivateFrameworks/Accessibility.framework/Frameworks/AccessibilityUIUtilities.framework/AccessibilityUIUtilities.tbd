@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AXColorDescriptionFromAttributeDescriptions, _AXColorGetApproximateDescription,
                           _AXColorGetLightnessDescription, _AXColorGetLuma, _AXColorGetNameForHue,
                           _AXColorGetSaturationDescription, _AXColorStringForColor, _AXColorsProbablyEqual,
@@ -26,46 +26,25 @@ exports:
                           _AXUISettingsSpeakingRateFastImage, _AXUISettingsSpeakingRateSlowImage, _LabelPad,
                           _MaxNameTextFieldWidth, __AXAssistiveTouchBundle, __AXInvertColorForColor, __AXUIMakeTouch,
                           __AXUISettingsAccessibilityBundle, _textIndent, _topIndent ]
-    objc-classes:       [ _AXATVUtils, _AXATVUtils, _AXDragEndpointClient,
-                          _AXDragEndpointClient, _AXDragEndpointRequestSatisfier,
-                          _AXDragEndpointRequestSatisfier, _AXDragEndpointVendor,
-                          _AXDragEndpointVendor, _AXDragManager, _AXDragManager,
-                          _AXDragSession, _AXDragSession, _AXHapticFeedbackManager,
-                          _AXHapticFeedbackManager, _AXITMLUtilities,
-                          _AXITMLUtilities, _AXProgramaticUITapGestureRecognizer,
+    objc-classes:       [ _AXATVUtils, _AXDragEndpointClient, _AXDragEndpointRequestSatisfier, _AXDragEndpointVendor,
+                          _AXDragManager, _AXDragSession, _AXHapticFeedbackManager, _AXITMLUtilities,
                           _AXProgramaticUITapGestureRecognizer, _AXUIReachabilityHelper,
-                          _AXUIReachabilityHelper, _AXUISettingsEditableTableCellWithStepper,
                           _AXUISettingsEditableTableCellWithStepper, _AXUISettingsEditableTextCell,
-                          _AXUISettingsEditableTextCell, _AXUISettingsInstructionsView,
-                          _AXUISettingsInstructionsView, _AXUISettingsLabeledSliderCell,
-                          _AXUISettingsLabeledSliderCell, _AXUISettingsLeftRightSliderCell,
-                          _AXUISettingsLeftRightSliderCell, _AXUISettingsTickMarkSlider,
-                          _AXUISettingsTickMarkSlider, _AXUISettingsZoomLabeledSliderCell,
-                          _AXUISettingsZoomLabeledSliderCell, _AXWeatherUtilities,
-                          _AXWeatherUtilities ]
+                          _AXUISettingsInstructionsView, _AXUISettingsLabeledSliderCell, _AXUISettingsLeftRightSliderCell,
+                          _AXUISettingsTickMarkSlider, _AXUISettingsZoomLabeledSliderCell, _AXWeatherUtilities ]
     objc-ivars:         [ _AXDragEndpointClient._connection, _AXDragEndpointRequestSatisfier._connection,
-                          _AXDragEndpointRequestSatisfier._delegate,
-                          _AXDragEndpointVendor._activeConnections, _AXDragEndpointVendor._delegate,
-                          _AXDragEndpointVendor._listener, _AXDragManager._activeSessions,
-                          _AXDragManager._delegate, _AXDragManager._endpointListener,
-                          _AXDragManager._vendor, _AXDragSession._aborted,
-                          _AXDragSession._connection, _AXDragSession._delegate,
-                          _AXDragSession._manager, _AXDragSession._resumed,
-                          _AXProgramaticUITapGestureRecognizer._axProgramaticState,
+                          _AXDragEndpointRequestSatisfier._delegate, _AXDragEndpointVendor._activeConnections,
+                          _AXDragEndpointVendor._delegate, _AXDragEndpointVendor._listener, _AXDragManager._activeSessions,
+                          _AXDragManager._delegate, _AXDragManager._endpointListener, _AXDragManager._vendor,
+                          _AXDragSession._aborted, _AXDragSession._connection, _AXDragSession._delegate, _AXDragSession._manager,
+                          _AXDragSession._resumed, _AXProgramaticUITapGestureRecognizer._axProgramaticState,
                           _AXUISettingsEditableTableCellWithStepper._delegate,
                           _AXUISettingsEditableTableCellWithStepper._secondsLabel,
-                          _AXUISettingsEditableTableCellWithStepper._stepper,
-                          _AXUISettingsEditableTextCell._nameTextField,
-                          _AXUISettingsEditableTextCell._shouldAllowSelection,
-                          _AXUISettingsInstructionsView._contentLabels,
-                          _AXUISettingsInstructionsView._headerLabel,
-                          _AXUISettingsInstructionsView._marginConstraints,
-                          _AXUISettingsInstructionsView._specifier,
-                          _AXUISettingsLabeledSliderCell._leftView,
-                          _AXUISettingsLabeledSliderCell._rightLabel,
-                          _AXUISettingsLabeledSliderCell._rightView,
-                          _AXUISettingsLabeledSliderCell._segmented,
-                          _AXUISettingsLabeledSliderCell._sliderView,
-                          _AXUISettingsLeftRightSliderCell._leftLabel,
-                          _AXUISettingsLeftRightSliderCell._rightLabel ]
+                          _AXUISettingsEditableTableCellWithStepper._stepper, _AXUISettingsEditableTextCell._nameTextField,
+                          _AXUISettingsEditableTextCell._shouldAllowSelection, _AXUISettingsInstructionsView._contentLabels,
+                          _AXUISettingsInstructionsView._headerLabel, _AXUISettingsInstructionsView._marginConstraints,
+                          _AXUISettingsInstructionsView._specifier, _AXUISettingsLabeledSliderCell._leftView,
+                          _AXUISettingsLabeledSliderCell._rightLabel, _AXUISettingsLabeledSliderCell._rightView,
+                          _AXUISettingsLabeledSliderCell._segmented, _AXUISettingsLabeledSliderCell._sliderView,
+                          _AXUISettingsLeftRightSliderCell._leftLabel, _AXUISettingsLeftRightSliderCell._rightLabel ]
 ...

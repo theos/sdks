@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ktrace.framework/ktrace
 current-version:       218.30.6
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CFDictionaryApplierTrampoline, _CFSetApplierTrampoline, _aasprintf, _cfaasprintf, _clear_events,
                           _code_map_active, _config_init_v1_0, _config_init_v1_1, _context_kind_name, _create_dict,
                           _current_system_is_64_bit, _decompress_32, _decompress_64, _dict_bool, _dict_data, _dict_int,

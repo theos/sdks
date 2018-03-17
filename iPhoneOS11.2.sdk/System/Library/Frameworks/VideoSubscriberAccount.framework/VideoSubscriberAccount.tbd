@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: EF039D34-68F0-34F8-918E-D1EE9A3300E5', 'armv7s: 7E17A1E2-DF00-346C-9700-36C35FB22283', 
                    'arm64: 44E832D1-212F-39E2-B1C7-83AA72EA3E5F' ]
 platform:        ios
@@ -10,7 +10,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ _VSStoreProviderResponseKeyAppStoreIdentifier, _VSSubscriptionFetchOptionIncludeUninstalledApps ]
     objc-classes:    [ _VSBundlePrivacyInfo, _VSCookieServer, _VSDemoProviderServer ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _VSAccountProviderAuthenticationSchemeSAML, _VSAccountStoreDidChangeNotification, 
                        _VSActiveSubscriptionsDidChangeNotification, _VSAllKnownTemplateElements, 
                        _VSBundleURLForProcessIdentifier, _VSCheckAccessOptionPrompt, 

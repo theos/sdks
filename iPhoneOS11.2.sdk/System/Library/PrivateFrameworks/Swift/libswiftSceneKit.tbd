@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftSceneKit.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T04simd6float3V8SceneKitEACSC10SCNVector3VcfC, __T04simd6float4V8SceneKitEACSC10SCNVector4VcfC,
                           __T04simd7double3V8SceneKitEACSC10SCNVector3VcfC, __T04simd7double4V8SceneKitEACSC10SCNVector4VcfC,
                           __T0SC10SCNMatrix4V8SceneKitE19_bridgeToObjectiveCSo7NSValueCyF,

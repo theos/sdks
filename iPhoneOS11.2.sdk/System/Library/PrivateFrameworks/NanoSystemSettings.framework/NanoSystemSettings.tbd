@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _NSSLoggingDaemonObjectInit, _NSSLoggingFrameworkObjectInit, _kNSSAboutAppsKey,
                           _kNSSAboutAvailableStorageKey, _kNSSAboutBatteryCurrentCapacityKey, _kNSSAboutBatteryIsChargingKey,
                           _kNSSAboutPhotosKey, _kNSSAboutSongsKey, _kNSSAccountAltDSIDKey, _kNSSAccountDSIDKey,
@@ -25,16 +25,11 @@ exports:
                           _kNSSUsageUsageKey, _kNSSUsageUsedStorageKey, _kNSSUsageVideoCoursesKey, _kNSSUsageVideoPodcastsKey,
                           _kNSSiCloudAccountsKey, _kNSSiCloudIdentifierKey, _kNSSiCloudIsAuthenticatedKey,
                           _kNSSiCloudPersonIDKey, _kNSSiCloudUsernameKey, _nss_daemon_log, _nss_framework_log ]
-    objc-classes:       [ _NSSManager, _NSSManager, _NSSUsageApp,
-                          _NSSUsageApp, _NSSUsageBundle, _NSSUsageBundle,
-                          _NSSUsageBundleCategory, _NSSUsageBundleCategory ]
-    objc-ivars:         [ _NSSManager._externalQueue, _NSSManager._internalQueue,
-                          _NSSManager._xpcConnection, _NSSUsageApp._bundleIdentifier,
-                          _NSSUsageApp._bundleVersion, _NSSUsageApp._dataSize,
-                          _NSSUsageApp._dynamicSize, _NSSUsageApp._name,
-                          _NSSUsageApp._sharedSize, _NSSUsageApp._staticSize,
-                          _NSSUsageApp._totalSize, _NSSUsageBundle._bundleIdentifier,
-                          _NSSUsageBundle._categories, _NSSUsageBundle._name,
-                          _NSSUsageBundle._purgeable, _NSSUsageBundle._totalSize,
+    objc-classes:       [ _NSSManager, _NSSUsageApp, _NSSUsageBundle, _NSSUsageBundleCategory ]
+    objc-ivars:         [ _NSSManager._externalQueue, _NSSManager._internalQueue, _NSSManager._xpcConnection,
+                          _NSSUsageApp._bundleIdentifier, _NSSUsageApp._bundleVersion, _NSSUsageApp._dataSize,
+                          _NSSUsageApp._dynamicSize, _NSSUsageApp._name, _NSSUsageApp._sharedSize, _NSSUsageApp._staticSize,
+                          _NSSUsageApp._totalSize, _NSSUsageBundle._bundleIdentifier, _NSSUsageBundle._categories,
+                          _NSSUsageBundle._name, _NSSUsageBundle._purgeable, _NSSUsageBundle._totalSize,
                           _NSSUsageBundleCategory._name, _NSSUsageBundleCategory._size ]
 ...

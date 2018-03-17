@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 2612E5E1-238B-3B20-81A4-A7FE859F9B57', 'armv7s: 5F2018AF-9930-3ED5-A229-65A43D01DBBC', 
                    'arm64: 78F4363E-EA97-3314-9588-5CFADDD39D12' ]
 platform:        ios
@@ -7,7 +7,7 @@ install-name:    /System/Library/Frameworks/MediaAccessibility.framework/MediaAc
 current-version: 62
 objc-constraint: none
 exports:         
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _MAAudibleMediaCopyPreferredCharacteristics, _MAAudibleMediaPrefCopyPreferDescriptiveVideo, 
                        _MAAudibleMediaPrefResetAll, _MAAudibleMediaPrefSetPreferDescriptiveVideo, 
                        _MACaptionAppearanceAddPreferredLanguage, _MACaptionAppearanceAddSelectedLanguage, 

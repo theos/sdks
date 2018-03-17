@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/kperfdata.framework/kperfdata
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _kpdecode_cursor_clearchunk, _kpdecode_cursor_create, _kpdecode_cursor_flush, _kpdecode_cursor_free,
                           _kpdecode_cursor_get_stats, _kpdecode_cursor_next_record, _kpdecode_cursor_set_option,
                           _kpdecode_cursor_setchunk, _kpdecode_record_free, _kpep_config_add_event,

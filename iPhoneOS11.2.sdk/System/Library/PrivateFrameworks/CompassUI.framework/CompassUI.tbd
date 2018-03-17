@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CompassUI.framework/CompassUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _CGPointRoundToPixel, _CompassHeadingFormatterKey, _CompassUIVersionNumber, _CompassUIVersionString,
                           _ConvertDecimalDegreesToDMS, _ConvertDegreeSignToString, _CoordinateOffset,
                           _CreateCoordinateComponentString, _DegreesInACircle, _RoundHeading, _StringWithLocationDirection,
@@ -15,12 +15,6 @@ exports:
                           _generateHorizontalLine, _generateTic, _generateVerticalLine, _kCompassHeadingFilterKey,
                           _kCompassNoBearing, _kCompassPageKey, _kConsoleEnabledKey, _kLevelZeroRange, _kUseTrueNorthKey, _lerp,
                           _normalizedRotation, _northTriangleRadius, _sharedHeadingFormatter, _smallCrosshairWidth ]
-    objc-classes:       [ _CUICalibration, _CUICalibration, _CalibrationBallView,
-                          _CalibrationBallView, _CalibrationViewController,
-                          _CalibrationViewController, _CompassAtlas,
-                          _CompassAtlas, _CompassAtlasManifest,
-                          _CompassAtlasManifest, _CompassBackgroundView,
-                          _CompassBackgroundView, _CompassImageNode,
-                          _CompassImageNode, _CompassRotatingView,
-                          _CompassRotatingView, _CompassShader, _CompassShader ]
+    objc-classes:       [ _CUICalibration, _CalibrationBallView, _CalibrationViewController, _CompassAtlas,
+                          _CompassAtlasManifest, _CompassBackgroundView, _CompassImageNode, _CompassRotatingView, _CompassShader ]
 ...

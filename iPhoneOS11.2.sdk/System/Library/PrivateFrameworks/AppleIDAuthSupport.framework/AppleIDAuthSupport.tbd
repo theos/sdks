@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport
 current-version:       73
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AppleIDAuthSupportAuthenticate, _AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute,
                           _AppleIDAuthSupportCopyAppToken, _AppleIDAuthSupportCopyAppTokens,
                           _AppleIDAuthSupportCopyAppTokensOptions, _AppleIDAuthSupportCopyContextAppTokens,
@@ -37,11 +37,8 @@ exports:
                           _kAppleIDAuthSupportSRP2KVerifier, _kAppleIDAuthSupportSRP4KVerifier,
                           _kAppleIDAuthSupportSRPRandomSource, _kAppleIDAuthSupportServerCertificate, _kAppleIDAuthSupportStatus,
                           _kAppleIDAuthSupportToken, _kAppleIDAuthSupportUsername ]
-    objc-classes:       [ _AIASRequest, _AIASRequest, _AIASSession,
-                          _AIASSession ]
-    objc-ivars:         [ _AIASRequest._URLRequest, _AIASRequest._context,
-                          _AIASRequest._data, _AIASRequest._done, _AIASRequest._error,
-                          _AIASRequest._sema, _AIASRequest._session, _AIASRequest._success,
-                          _AIASRequest._task, _AIASSession._URLSession,
-                          _AIASSession._taskMap ]
+    objc-classes:       [ _AIASRequest, _AIASSession ]
+    objc-ivars:         [ _AIASRequest._URLRequest, _AIASRequest._context, _AIASRequest._data, _AIASRequest._done,
+                          _AIASRequest._error, _AIASRequest._sema, _AIASRequest._session, _AIASRequest._success,
+                          _AIASRequest._task, _AIASSession._URLSession, _AIASSession._taskMap ]
 ...

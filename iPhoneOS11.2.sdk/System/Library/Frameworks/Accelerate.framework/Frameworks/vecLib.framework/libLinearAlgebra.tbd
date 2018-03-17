@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _la_add_attributes, _la_diagonal_matrix_from_vector, _la_difference, _la_elementwise_product,
                           _la_identity_matrix, _la_inner_product, _la_matrix_cols, _la_matrix_from_double_buffer,
                           _la_matrix_from_double_buffer_nocopy, _la_matrix_from_float_buffer,
@@ -17,5 +17,5 @@ exports:
                           _la_sum, _la_transpose, _la_vector_from_matrix_col, _la_vector_from_matrix_diagonal,
                           _la_vector_from_matrix_row, _la_vector_from_splat, _la_vector_length, _la_vector_slice,
                           _la_vector_to_double_buffer, _la_vector_to_float_buffer ]
-    objc-classes:       [ _OS_la_object, _OS_la_object ]
+    objc-classes:       [ _OS_la_object ]
 ...

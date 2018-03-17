@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 6C2020BF-07CC-35CD-92FC-F3492622173B', 'armv7s: 6887059D-FDAD-3DD8-A8AE-E6AA7BA3259F', 
                    'arm64: 6BF7A3AE-474D-3D32-BC8F-7BAB92E4E544' ]
 platform:        ios
@@ -489,7 +489,7 @@ exports:
                        _ABVCardParser._cropRectX, _ABVCardParser._cropRectY, _ABVCardParser._valueSetter, 
                        _ABVCardPersonValueSetter._person, _ABVCardPersonValueSetter._properties, 
                        _ABVCardRecord._properties, _ABVCardRecord._record ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _ABAddressBookAddRecord, _ABAddressBookCopyArrayOfAllGroups, 
                        _ABAddressBookCopyArrayOfAllGroupsInSource, _ABAddressBookCopyArrayOfAllPeople, 
                        _ABAddressBookCopyArrayOfAllPeopleInSource, _ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering, 

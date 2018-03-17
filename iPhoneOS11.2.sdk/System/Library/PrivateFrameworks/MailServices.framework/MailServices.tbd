@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MailServices.framework/MailServices
 current-version:       3445.5.101
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ _AccountKey, _AuthSchemeKey, _BCCSelfKey, _BlockRemoteImagesKey, _CollapseReadConversationMessagesKey,
                           _ConversationViewExcludesRelatedMessagesKey, _ConversationViewShowsNewestAtTop, _DecelerationKey,
                           _DisableQuoteIncrease, _DisableThreadingKey, _FlagStyleColor, _FlagStyleKey, _FlagStyleShape,
@@ -65,36 +65,22 @@ exports:
                           __MSResultsKeyPredictiveModelSummary, __MSResultsKeyPublisherBulletinID, __MSResultsKeyRFC822Data,
                           __MSResultsKeySuppressionContexts, _kVIPDisplayNameKey, _kVIPEmailAddressesKey, _kVIPURLKey,
                           _kVIPUniqueIdentifierKey, _kVIPUnreadCountKey ]
-    objc-classes:       [ _MSAccounts, _MSAccounts, _MSAutosave,
-                          _MSAutosave, _MSCriterion, _MSCriterion,
-                          _MSEmailModel, _MSEmailModel, _MSKeyValueStore,
-                          _MSKeyValueStore, _MSMailDefaultService,
-                          _MSMailDefaultService, _MSPushRegistration,
-                          _MSPushRegistration, _MSSaveEmail, _MSSaveEmail,
-                          _MSSearch, _MSSearch, _MSSendEmail,
-                          _MSSendEmail, _MSService, _MSService,
-                          _MSXPCConnection, _MSXPCConnection, _MSXPCEndpoint,
-                          _MSXPCEndpoint, _MSXPCService, _MSXPCService,
-                          __MSXPCRemoteProxy, __MSXPCRemoteProxy ]
-    objc-ivars:         [ _MSCriterion._criteria, _MSCriterion._qualifier,
-                          _MSCriterion._type, _MSEmailModel._bcc, _MSEmailModel._body,
-                          _MSEmailModel._cc, _MSEmailModel._reference,
-                          _MSEmailModel._subject, _MSEmailModel._to, _MSEmailModel._type,
-                          _MSMailDefaultService._shouldLaunch, _MSPushRegistration._accountIdentifier,
-                          _MSPushRegistration._bundleIdentifier, _MSPushRegistration._mailboxNames,
-                          _MSPushRegistration._notificationNamePrefix, _MSSearch._delegate,
-                          _MSService._canceled, _MSService._connection,
-                          _MSService._connectionQueue, _MSService._replyQueue,
-                          _MSService._responseHandler, _MSService._responseListener,
-                          _MSXPCConnection._connectionPromise, _MSXPCConnection._exportedInterface,
-                          _MSXPCConnection._exportedObject, _MSXPCConnection._interruptionHandler,
-                          _MSXPCConnection._invalidationHandler, _MSXPCConnection._lock,
-                          _MSXPCConnection._protocol, _MSXPCConnection._queue,
-                          _MSXPCConnection._remoteObjectInterface, _MSXPCConnection._resumeCount,
-                          _MSXPCConnection._shouldLaunchMobileMail, _MSXPCConnection._state,
-                          _MSXPCService._connection, _MSXPCService._lock,
-                          _MSXPCService._remoteObjectInterface, _MSXPCService._shouldLaunchMobileMail,
-                          __MSXPCRemoteProxy.____nsxpc_remoteObjectProxy, __MSXPCRemoteProxy._connection,
-                          __MSXPCRemoteProxy._errorHandler, __MSXPCRemoteProxy._knownSelectors,
+    objc-classes:       [ _MSAccounts, _MSAutosave, _MSCriterion, _MSEmailModel, _MSKeyValueStore, _MSMailDefaultService,
+                          _MSPushRegistration, _MSSaveEmail, _MSSearch, _MSSendEmail, _MSService, _MSXPCConnection,
+                          _MSXPCEndpoint, _MSXPCService, __MSXPCRemoteProxy ]
+    objc-ivars:         [ _MSCriterion._criteria, _MSCriterion._qualifier, _MSCriterion._type, _MSEmailModel._bcc,
+                          _MSEmailModel._body, _MSEmailModel._cc, _MSEmailModel._reference, _MSEmailModel._subject,
+                          _MSEmailModel._to, _MSEmailModel._type, _MSMailDefaultService._shouldLaunch,
+                          _MSPushRegistration._accountIdentifier, _MSPushRegistration._bundleIdentifier,
+                          _MSPushRegistration._mailboxNames, _MSPushRegistration._notificationNamePrefix, _MSSearch._delegate,
+                          _MSService._canceled, _MSService._connection, _MSService._connectionQueue, _MSService._replyQueue,
+                          _MSService._responseHandler, _MSService._responseListener, _MSXPCConnection._connectionPromise,
+                          _MSXPCConnection._exportedInterface, _MSXPCConnection._exportedObject,
+                          _MSXPCConnection._interruptionHandler, _MSXPCConnection._invalidationHandler, _MSXPCConnection._lock,
+                          _MSXPCConnection._protocol, _MSXPCConnection._queue, _MSXPCConnection._remoteObjectInterface,
+                          _MSXPCConnection._resumeCount, _MSXPCConnection._shouldLaunchMobileMail, _MSXPCConnection._state,
+                          _MSXPCService._connection, _MSXPCService._lock, _MSXPCService._remoteObjectInterface,
+                          _MSXPCService._shouldLaunchMobileMail, __MSXPCRemoteProxy.____nsxpc_remoteObjectProxy,
+                          __MSXPCRemoteProxy._connection, __MSXPCRemoteProxy._errorHandler, __MSXPCRemoteProxy._knownSelectors,
                           __MSXPCRemoteProxy._remoteInterface, __MSXPCRemoteProxy._selectorLock ]
 ...

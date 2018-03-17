@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: E3EF8E7B-1082-3CA6-A25B-F04E5313B51B', 'armv7s: 589871E0-A5F8-3B7D-86EA-89621B96006A', 
                    'arm64: 4DF1D316-C217-33FE-BE1B-F87C069DAFB4' ]
 platform:        ios
@@ -225,7 +225,7 @@ exports:
                         __ZTv0_n24_NSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev, 
                         __ZTv0_n24_NSt19basic_ostringstreamIwSt11char_traitsIwESaIwEED0Ev, 
                         __ZTv0_n24_NSt19basic_ostringstreamIwSt11char_traitsIwESaIwEED1Ev ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ __ZN11__gnu_debug19_Safe_iterator_base12_M_get_mutexEv, __ZN11__gnu_debug19_Safe_iterator_base16_M_attach_singleEPNS_19_Safe_sequence_baseEb, 
                        __ZN11__gnu_debug19_Safe_iterator_base16_M_detach_singleEv, 
                        __ZN11__gnu_debug19_Safe_iterator_base9_M_attachEPNS_19_Safe_sequence_baseEb, 

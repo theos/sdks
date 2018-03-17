@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 3DC31F48-413E-34B1-A12F-D0EB1BCEB4C9', 'armv7s: 8DB7A18D-7D7E-341D-8A41-C3D7532BE433', 
                    'arm64: F4180C8C-BABE-3CFD-BF22-0D43739C4AC9' ]
 platform:        ios
@@ -8,7 +8,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     symbols:         [ __UIApplicationHasNewsClientEntitlement, _kADPolicyEngineHeartbeatTokenChangedNotification ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _ADBannerContentSizeIdentifier320x50, _ADBannerContentSizeIdentifier480x32, 
                        _ADBannerContentSizeIdentifierLandscape, _ADBannerContentSizeIdentifierPortrait, 
                        _ADCanStealControllerForCreativeType, _ADClampedBannerSize, 

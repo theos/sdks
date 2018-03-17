@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+archs:                 [ armv7, armv7s, arm64 ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCoreAudio.dylib
 current-version:       900.2.49
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64, i386, x86_64 ]
+  - archs:              [ armv7, armv7s, arm64 ]
     symbols:            [ __T09CoreAudio013UnsafeMutableB17BufferListPointerV06unsafeG0SPySC0beF0VGfg,
                           __T09CoreAudio013UnsafeMutableB17BufferListPointerV10startIndexSifg,
                           __T09CoreAudio013UnsafeMutableB17BufferListPointerV5countSifg,

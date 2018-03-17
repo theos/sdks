@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: D54C70C3-E405-307F-A3DF-F77BCAD86DAF', 'armv7s: 84D01D33-899F-3E07-B29D-09C33C084D9F', 
                    'arm64: F8097C91-A862-3FBD-A138-A402B6151CA2' ]
 platform:        ios
@@ -20,7 +20,7 @@ exports:
                        _SecCertificatePathSetSelfIssued, _SecCertificatePathVerify, 
                        __SecItemMakePersistentRef, __SecTokenItemCopyValueData, _kSecTrustInfoCertificateTransparencyWhiteListKey, 
                        _logObjForScope ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _CFArrayOfSOSPeerInfosSortByID, _CFPropertyListCreateDERData, 
                        _CFPropertyListCreateWithDERData, _CFSetCreateMutableForSOSPeerInfosByID, 
                        _CKKSSetupControlProtocol, _CMSDecoderCopyAllCerts, _CMSDecoderCopyContent, 

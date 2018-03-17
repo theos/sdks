@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 98BA2E67-03BF-3CFF-B72A-865E77BCBC04', 'armv7s: 12C3C4AA-B1B7-33F6-BBF1-5180CCEC3E07', 
                    'arm64: 8DB1CF7A-6115-3ACF-8930-085673DC45EE' ]
 platform:        ios
@@ -9,7 +9,7 @@ objc-constraint: none
 exports:         
   - archs:           [ armv7, armv7s ]
     objc-classes:    [ _CNContactActionsViewController ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ _ABAddressBookBundle, _ABAddressBookGetDefaultRotationContentSettings, 
                        _ABAddressBookSetAutorotationEnabled, _ABAddressBookShouldAllowAutorotation, 
                        _ABCapabilitiesConferenceHistoryChanged, _ABHilightedColorAttributeName, 

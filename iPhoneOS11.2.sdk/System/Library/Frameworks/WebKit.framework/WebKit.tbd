@@ -1,5 +1,5 @@
 --- !tapi-tbd-v2
-archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+archs:           [ armv7, armv7s, arm64 ]
 uuids:           [ 'armv7: 810BDE41-A7AC-341F-B833-AD162BD6F54A', 'armv7s: 3D3DF682-A8AC-302E-B28C-A65D4A17F575', 
                    'arm64: 78B19DEA-3057-3176-A37E-E0092E22B716' ]
 platform:        ios
@@ -19,7 +19,7 @@ exports:
                        _WKDOMTextIterator._upconvertedText ]
   - archs:           [ arm64 ]
     symbols:         [ __ZN6WebKit13MemoryMeasure18m_isLoggingEnabledE, __ZN6WebKit20EnvironmentUtilities27stripValuesEndingWithStringEPKcS2_ ]
-  - archs:           [ armv7, armv7s, arm64, i386, x86_64 ]
+  - archs:           [ armv7, armv7s, arm64 ]
     symbols:         [ '$ld$install_name$os4.3$/System/Library/PrivateFrameworks/WebKit.framework/WebKit', 
                        '$ld$install_name$os5.0$/System/Library/PrivateFrameworks/WebKit.framework/WebKit', 
                        '$ld$install_name$os5.1$/System/Library/PrivateFrameworks/WebKit.framework/WebKit', 
