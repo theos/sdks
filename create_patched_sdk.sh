@@ -30,14 +30,9 @@ fi
 
 version="v1"
 
-archs_option=("--replace-archs" armv7 armv7s arm64)
+archs_option=("--archs" armv7 armv7s arm64)
 tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
 write_options=("--maintain-directories" "--replace-path-extension")
-
-no_overwrite="--no-overwrite"
-if [ $# -gt 2 ] && [ "$3" != '-' ]; then
-    no_overwrite=""
-fi
 
 no_warnings=""
 if [ $# -gt 3 ] && [ "$4" != '-' ]; then
@@ -142,7 +137,7 @@ if [ -d "$device_support_dir" ] && [ "$use_simulator" == "-" ]; then
         cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
         "$tbd_tool" -p -r "$symbols_actual_path" \
-                    -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
+                    -o "${write_options[@]}" "$sdks_output_path_single_sdk_path/System" \
                     $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
 
         if [ $? -ne 0 ]; then
