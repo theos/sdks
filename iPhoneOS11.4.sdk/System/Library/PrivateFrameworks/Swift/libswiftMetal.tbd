@@ -1,0 +1,40 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftMetal.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T0So10MTLTextureP5MetalE15makeTextureViewSoAA_pSgSC14MTLPixelFormatO05pixelG0_SC0A4TypeO07textureI0s5RangeVySiG6levelsAN6slicestF,
+                          __T0So18MTLArgumentEncoderP5MetalE10setBuffersySaySo9MTLBuffer_pSgG_SaySiG7offsetss5RangeVySiG5rangetF,
+                          __T0So18MTLArgumentEncoderP5MetalE11setTexturesySaySo10MTLTexture_pSgG_s5RangeVySiG5rangetF,
+                          __T0So18MTLArgumentEncoderP5MetalE16setSamplerStatesySaySo15MTLSamplerState_pSgG_s5RangeVySiG5rangetF,
+                          __T0So21MTLBlitCommandEncoderP5MetalE4fillySo9MTLBuffer_p6buffer_s5RangeVySiG5ranges5UInt8V5valuetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE12useResourcesySaySo11MTLResource_pG_SC0G5UsageV5usagetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE14setTileBuffersySaySo9MTLBuffer_pSgG_SaySiG7offsetss5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE15setTileTexturesySaySo10MTLTexture_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE16setVertexBuffersySaySo9MTLBuffer_pSgG_SaySiG7offsetss5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE17setVertexTexturesySaySo10MTLTexture_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE18setFragmentBuffersySaySo9MTLBuffer_pSgG_SaySiG7offsetss5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE19setFragmentTexturesySaySo10MTLTexture_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE20setTileSamplerStatesySaySo15MTLSamplerState_pSgG_SaySfG12lodMinClampsAH0k3MaxM0s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE20setTileSamplerStatesySaySo15MTLSamplerState_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE22setVertexSamplerStatesySaySo15MTLSamplerState_pSgG_SaySfG12lodMinClampsAH0k3MaxM0s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE22setVertexSamplerStatesySaySo15MTLSamplerState_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE24setFragmentSamplerStatesySaySo15MTLSamplerState_pSgG_SaySfG12lodMinClampsAH0k3MaxM0s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE24setFragmentSamplerStatesySaySo15MTLSamplerState_pSgG_s5RangeVySiG5rangetF,
+                          __T0So23MTLRenderCommandEncoderP5MetalE8useHeapsySaySo7MTLHeap_pGF,
+                          __T0So23MTLRenderPassDescriptorC5MetalE18getSamplePositionsSaySC17MTLSamplePositionVGyF,
+                          __T0So23MTLRenderPassDescriptorC5MetalE18setSamplePositionsySaySC17MTLSamplePositionVGF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE10setBuffersySaySo9MTLBuffer_pSgG_SaySiG7offsetss5RangeVySiG5rangetF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE11setTexturesySaySo10MTLTexture_pSgG_s5RangeVySiG5rangetF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE12useResourcesySaySo11MTLResource_pG_SC0G5UsageV5usagetF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE16setSamplerStatesySaySo15MTLSamplerState_pSgG_SaySfG12lodMinClampsAH0j3MaxL0s5RangeVySiG5rangetF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE16setSamplerStatesySaySo15MTLSamplerState_pSgG_s5RangeVySiG5rangetF,
+                          __T0So24MTLComputeCommandEncoderP5MetalE8useHeapsySaySo7MTLHeap_pGF,
+                          __T0So25MTLFunctionConstantValuesC5MetalE03setbC0ySV_SC11MTLDataTypeO4types5RangeVySiG5rangetF,
+                          __T0So9MTLBufferP5MetalE14addDebugMarkerySS_s5RangeVySiG5rangetF,
+                          __T0So9MTLDeviceP5MetalE25getDefaultSamplePositionsSaySC17MTLSamplePositionVGSi11sampleCount_tF,
+                          '__swift_FORCE_LOAD_$_swiftMetal' ]
+...

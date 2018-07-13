@@ -1,0 +1,48 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftXCTest.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T06XCTest12XCTAssertNilyypSgyKXK_SSyXKs12StaticStringV4fileSu4linetF,
+                          __T06XCTest12XCTAssertNilyypSgyKXK_SSyXKs12StaticStringV4fileSu4linetFfA0_,
+                          __T06XCTest13XCTAssertTrueySbyKXK_SSyXKs12StaticStringV4fileSu4linetF,
+                          __T06XCTest13XCTAssertTrueySbyKXK_SSyXKs12StaticStringV4fileSu4linetFfA0_,
+                          __T06XCTest14XCTAssertEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets9EquatableRzlF,
+                          __T06XCTest14XCTAssertEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets9EquatableRzlFfA1_,
+                          __T06XCTest14XCTAssertEqualyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlF,
+                          __T06XCTest14XCTAssertEqualyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlFfA2_,
+                          __T06XCTest14XCTAssertFalseySbyKXK_SSyXKs12StaticStringV4fileSu4linetF,
+                          __T06XCTest14XCTAssertFalseySbyKXK_SSyXKs12StaticStringV4fileSu4linetFfA0_,
+                          __T06XCTest15XCTAssertNotNilyypSgyKXK_SSyXKs12StaticStringV4fileSu4linetF,
+                          __T06XCTest15XCTAssertNotNilyypSgyKXK_SSyXKs12StaticStringV4fileSu4linetFfA0_,
+                          __T06XCTest16XCTAssertNoThrowyxyKXK_SSyXKs12StaticStringV4fileSu4linetlF,
+                          __T06XCTest16XCTAssertNoThrowyxyKXK_SSyXKs12StaticStringV4fileSu4linetlFfA0_,
+                          __T06XCTest17XCTAssertLessThanyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlF,
+                          __T06XCTest17XCTAssertLessThanyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlFfA1_,
+                          __T06XCTest17XCTAssertNotEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets9EquatableRzlF,
+                          __T06XCTest17XCTAssertNotEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets9EquatableRzlFfA1_,
+                          __T06XCTest17XCTAssertNotEqualyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlF,
+                          __T06XCTest17XCTAssertNotEqualyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlFfA2_,
+                          __T06XCTest20XCTAssertGreaterThanyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlF,
+                          __T06XCTest20XCTAssertGreaterThanyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlFfA1_,
+                          __T06XCTest20XCTAssertThrowsErroryxyKXK_SSyXKs12StaticStringV4fileSu4lineys0D0_pctlF,
+                          __T06XCTest20XCTAssertThrowsErroryxyKXK_SSyXKs12StaticStringV4fileSu4lineys0D0_pctlFfA0_,
+                          __T06XCTest20XCTAssertThrowsErroryxyKXK_SSyXKs12StaticStringV4fileSu4lineys0D0_pctlFfA3_,
+                          __T06XCTest24XCTAssertLessThanOrEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlF,
+                          __T06XCTest24XCTAssertLessThanOrEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlFfA1_,
+                          __T06XCTest26XCTAssertEqualWithAccuracyyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlF,
+                          __T06XCTest26XCTAssertEqualWithAccuracyyxyKXK_xyKXKx8accuracySSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlFfA2_,
+                          __T06XCTest27XCTAssertGreaterThanOrEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlF,
+                          __T06XCTest27XCTAssertGreaterThanOrEqualyxyKXK_xyKXKSSyXKs12StaticStringV4fileSu4linets10ComparableRzlFfA1_,
+                          __T06XCTest29XCTAssertNotEqualWithAccuracyyxyKXK_xyKXKxSSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlF,
+                          __T06XCTest29XCTAssertNotEqualWithAccuracyyxyKXK_xyKXKxSSyXKs12StaticStringV4fileSu4linets13FloatingPointRzlFfA2_,
+                          __T06XCTest7XCTFailySS_s12StaticStringV4fileSu4linetF,
+                          __T06XCTest7XCTFailySS_s12StaticStringV4fileSu4linetFfA_,
+                          __T06XCTest9XCTAssertySbyKXK_SSyXKs12StaticStringV4fileSu4linetF,
+                          __T06XCTest9XCTAssertySbyKXK_SSyXKs12StaticStringV4fileSu4linetFfA0_,
+                          __T0So10XCTContextC6XCTestE11runActivityxSS5named_xSo11XCTActivity_pKc5blocktKlFZ,
+                          __XCTRunThrowableBlockBridge, '__swift_FORCE_LOAD_$_swiftXCTest' ]
+...

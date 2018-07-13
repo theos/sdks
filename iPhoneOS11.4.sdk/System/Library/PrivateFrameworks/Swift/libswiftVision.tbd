@@ -1,0 +1,12 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftVision.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T0So22VNFaceLandmarkRegion2DC6VisionE13pointsInImageSaySC7CGPointVGSC6CGSizeV9imageSize_tF,
+                          __T0So22VNFaceLandmarkRegion2DC6VisionE16normalizedPointsSaySC7CGPointVGvg,
+                          '__swift_FORCE_LOAD_$_swiftVision' ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: F49FD4FF-6F8B-3F9A-8BAC-1F03AFD59F12' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/IdentityLookup.framework/IdentityLookup
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
+                       _ILMessageFilterPrivateErrorDomain ]
+    objc-classes:    [ ILMessageFilter, ILMessageFilterExtension, ILMessageFilterExtensionContext, 
+                       ILMessageFilterExtensionHostContext, ILMessageFilterQueryRequest, 
+                       ILMessageFilterQueryResponse, ILMessageFilterReportRequest, 
+                       ILNetworkResponse ]
+...

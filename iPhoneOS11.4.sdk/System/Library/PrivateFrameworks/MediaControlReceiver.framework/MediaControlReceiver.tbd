@@ -1,0 +1,23 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/MediaControlReceiver.framework/MediaControlReceiver
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _APReceiverMediaRemoteXPCClient_CopyProperty, _APReceiverMediaRemoteXPCClient_SetDelegate,
+                          _APReceiverMediaRemoteXPCClient_SetupReverseRemoteCommunicationChannel,
+                          _APReceiverMediaRemoteXPCClient_TeardownReverseRemoteCommunicationChannel,
+                          _AirPlayReceiverXPCClient_PostEvent, _AirPlayReceiverXPCClient_SetDelegate,
+                          _AirPlayReceiverXPCClient_SetDelegateWithQueue, _AirPlaySettings_CopyKeys, _AirPlaySettings_CopyValue,
+                          _AirPlaySettings_CopyValueEx, _AirPlaySettings_GetCString, _AirPlaySettings_GetDouble,
+                          _AirPlaySettings_GetInt64, _AirPlaySettings_RemoveValue, _AirPlaySettings_SetCString,
+                          _AirPlaySettings_SetDouble, _AirPlaySettings_SetInt64, _AirPlaySettings_SetNumber,
+                          _AirPlaySettings_SetValue, _AirPlaySettings_Synchronize, _MediaControlReceiverCopyIdentity ]
+    objc-classes:       [ _APReceiverMediaRemoteCommunicationChannel, _APReceiverMediaRemoteCommunicationChannelInternal ]
+    objc-ivars:         [ _APReceiverMediaRemoteCommunicationChannel._commChannel,
+                          _APReceiverMediaRemoteCommunicationChannelInternal.invalidated,
+                          _APReceiverMediaRemoteCommunicationChannelInternal.objectID,
+                          _APReceiverMediaRemoteCommunicationChannelInternal.uuid ]
+...

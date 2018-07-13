@@ -1,0 +1,15 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCloudKit.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T0SC7CKErrorV8CloudKitE12clientRecordSo8CKRecordCSgvg,
+                          __T0SC7CKErrorV8CloudKitE12serverRecordSo8CKRecordCSgvg,
+                          __T0SC7CKErrorV8CloudKitE14ancestorRecordSo8CKRecordCSgvg,
+                          __T0SC7CKErrorV8CloudKitE17retryAfterSecondsSdSgvg,
+                          __T0SC7CKErrorV8CloudKitE21partialErrorsByItemIDs10DictionaryVys11AnyHashableVs5Error_pGSgvg,
+                          '__swift_FORCE_LOAD_$_swiftCloudKit' ]
+...

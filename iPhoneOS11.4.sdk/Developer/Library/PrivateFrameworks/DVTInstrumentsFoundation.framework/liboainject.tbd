@@ -1,0 +1,13 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /Developer/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/liboainject.dylib
+current-version:       64068
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __OAAllocateKeyFrameArray, __OAAttachAndInitialize, __OAFreeKeyFrame, __OAGenerateDeltaEvent,
+                          __OAIsReEntrantCall, __OARecordAllocationEvent, __OARecordReferenceEvent,
+                          __OASetLastAllocationEventName, ___OASharedMemoryAddress, ___keyFrameEventHorizon, ___keyframe_key,
+                          _oainjectVersionNumber, _oainjectVersionString ]
+...

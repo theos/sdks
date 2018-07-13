@@ -1,0 +1,20 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/CaptiveNetwork.framework/CaptiveNetwork
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CNNetworkCopyPluginNames, _CNNetworkGetBSSID, _CNNetworkGetInterfaceName, _CNNetworkGetPassword,
+                          _CNNetworkGetPluginBundleID, _CNNetworkGetSSID, _CNNetworkGetSSIDString, _CNNetworkGetSignalStrength,
+                          _CNNetworkGetTypeID, _CNNetworkIsChosenPlugin, _CNNetworkIsProtected, _CNNetworkSetCaptive,
+                          _CNNetworkSetConfidence, _CNNetworkSetPassword, _CNNetworkWasAutoJoined, _CNNetworkWasJustJoined,
+                          _CNPluginCommandBindReadStream, _CNPluginCommandCopyCurrentNetwork, _CNPluginCommandCopyNetworkList,
+                          _CNPluginCommandGetInterfaceName, _CNPluginCommandGetType, _CNPluginCommandGetTypeID,
+                          _CNPluginCopySupportedInterfaces, _CNPluginLogoffNetwork, _CNPluginMonitorStart, _CNPluginMonitorStop,
+                          _CNPluginRegister, _CNPluginResponseCreate, _CNPluginResponseDeliver, _CNPluginResponseGetTypeID,
+                          _CNPluginResponseSetNetwork, _CNPluginResponseSetNetworkList, _CNScanListFilterStart,
+                          _CNScanListFilterStop, _CaptiveNetworkVersionNumber, _CaptiveNetworkVersionString,
+                          _S_captive_os_log_categories, _kCNPluginOptionDisplayName ]
+...

@@ -1,0 +1,14 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /Developer/Library/PrivateFrameworks/DTDDISupport.framework/libViewDebuggerSupport.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _DBGMaximumPixelsToRender, _DebugHierarchyCALayerGroupingID, _DebugHierarchyUIDeviceGroupingID,
+                          _DebugHierarchyUILayoutGuideGroupingID, _DebugHierarchyUIScreenGroupingID,
+                          _DebugHierarchyUIViewControllerGroupingID, _DebugHierarchyUIViewGroupingID,
+                          _DebugHierarchyUIWindowsGroupingID, ___library_initializer ]
+    objc-classes:       [ _DBGViewDebuggerSupport, _DBGViewDebuggerSupport_iOS, _UIKitDebugHierarchyMetaDataProvider ]
+...

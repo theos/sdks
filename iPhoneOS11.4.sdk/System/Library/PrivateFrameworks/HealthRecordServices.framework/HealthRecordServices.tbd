@@ -1,0 +1,32 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _HDHRSClinicalItemPropertyKeyExtractionFailureInfo, _HDHealthRecordsXPCServiceInterface,
+                          _HealthRecordServicesVersionNumber, _HealthRecordServicesVersionString ]
+    objc-classes:       [ _HDClinicalDataCollectionExtractionResult, _HDExtractionRequest, _HDExtractionResult,
+                          _HDFHIRJSONObject, _HDFHIRResourceData, _HDFHIRResourceLastSeenObject, _HDFHIRResourceObject,
+                          _HDHRSExtractionFailureInfo, _HDHRSExtractionFailureRecord, _HDHealthRecordsXPCServiceClient,
+                          _HDRedactedFHIRResourceObject, _HDReferenceExtractionRequest, _HDReferenceExtractionResult,
+                          _HDUnresolvedReferenceSet ]
+    objc-ivars:         [ _HDClinicalDataCollectionExtractionResult._redactedResources,
+                          _HDClinicalDataCollectionExtractionResult._rulesVersion, _HDExtractionRequest._resources,
+                          _HDExtractionResult._medicalRecords, _HDFHIRJSONObject._FHIRVersion, _HDFHIRJSONObject._JSONObject,
+                          _HDFHIRJSONObject._sourceURL, _HDFHIRResourceData._FHIRVersion, _HDFHIRResourceData._data,
+                          _HDFHIRResourceData._sourceURL, _HDFHIRResourceLastSeenObject._lastSeenDate,
+                          _HDFHIRResourceLastSeenObject._resourceIdentifier, _HDFHIRResourceLastSeenObject._sourceURL,
+                          _HDFHIRResourceObject._extractionHints, _HDFHIRResourceObject._identifier,
+                          _HDFHIRResourceObject._receivedDate, _HDHRSExtractionFailureInfo._failureRecords,
+                          _HDHRSExtractionFailureRecord._failureCode, _HDHRSExtractionFailureRecord._propertyName,
+                          _HDHRSExtractionFailureRecord._resourceKeyPath, _HDHealthRecordsXPCServiceClient._clientQueue,
+                          _HDHealthRecordsXPCServiceClient._connection, _HDRedactedFHIRResourceObject._resourceType,
+                          _HDReferenceExtractionRequest._FHIRResourceData, _HDReferenceExtractionRequest._resources,
+                          _HDReferenceExtractionRequest._serverBaseURL, _HDReferenceExtractionResult._completeResources,
+                          _HDReferenceExtractionResult._incompleteResources, _HDReferenceExtractionResult._nextSearchResultURL,
+                          _HDReferenceExtractionResult._rulesVersion, _HDReferenceExtractionResult._unresolvableReferences,
+                          _HDUnresolvedReferenceSet._references, _HDUnresolvedReferenceSet._resource ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: F0C3D2FF-AB25-3563-A6C3-8B4FF6DE3174' ]
+platform:        ios
+install-name:    /usr/lib/libPPMDataModel.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64 ]
+    symbols:         [ _OTABMUResReadFrom, _OTAParam3RCRDataReadFrom, _OTAParam3RCReadFrom ]
+    objc-classes:    [ OTABMURes, OTAParam3RC, OTAParam3RCRData ]
+    objc-ivars:      [ OTABMURes._has, OTABMURes._rDownstream, OTABMURes._rSystem, 
+                       OTABMURes._rTrace25c, OTABMURes._rTraceTempco, OTAParam3RC._chemID, 
+                       OTAParam3RC._oCVGrids2ds, OTAParam3RC._r0, OTAParam3RC._r0UpdateCoefs, 
+                       OTAParam3RC._r0Val25cBases, OTAParam3RC._r1, OTAParam3RC._r1Base, 
+                       OTAParam3RC._r1TempCoUpdateCoefs, OTAParam3RC._r1UpdateCoefs, 
+                       OTAParam3RC._r2, OTAParam3RC._r2Base, OTAParam3RC._r2TempCoUpdateCoefs, 
+                       OTAParam3RC._r2UpdateCoefs, OTAParam3RC._r3PctBases, OTAParam3RC._rBMU, 
+                       OTAParam3RC._rCfreq1, OTAParam3RC._rCfreq2, OTAParam3RC._rCfreq3, 
+                       OTAParam3RC._rdcBases, OTAParam3RCRData._tempCos, OTAParam3RCRData._val25cs ]
+...

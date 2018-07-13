@@ -1,0 +1,35 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/InternalPreferences.framework/InternalPreferences
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _ClearLogFileContents, ___cancelLogging, ___finishedLogging, ___logFileContents ]
+    objc-classes:       [ _BandwidthTestController, _CPUActivityPane, _DeadlockMakerController, _GeneralLocationController,
+                          _HangTracerController, _LiveTraceController, _LocationDefaults, _LocationInternalListController,
+                          _LoggingDetailController, _LoggingPane, _PropertyListPane ]
+    objc-ivars:         [ _BandwidthTestController._downloadTestFile, _BandwidthTestController._resultsSpecifier,
+                          _BandwidthTestController._statusSpecifier, _BandwidthTestController._testName, _CPUActivityPane._buf1,
+                          _CPUActivityPane._buf2, _CPUActivityPane._readBuffer, _CPUActivityPane._textView,
+                          _CPUActivityPane._worker, _CPUActivityPane._writeBuffer, _DeadlockMakerController._connection,
+                          _DeadlockMakerController._enabled, _DeadlockMakerController._priority,
+                          _DeadlockMakerController._priorityLabel, _DeadlockMakerController._prioritySlider,
+                          _DeadlockMakerController._runDuration, _DeadlockMakerController._runDurationLabel,
+                          _DeadlockMakerController._runDurationSlider, _DeadlockMakerController._runDurationText,
+                          _DeadlockMakerController._startNowButton, _DeadlockMakerController._textSpec,
+                          _HangTracerController._enabled, _HangTracerController._launchDuration,
+                          _HangTracerController._launchDurationLabel, _HangTracerController._launchDurationSlider,
+                          _HangTracerController._launchDurationText, _HangTracerController._logLevel,
+                          _HangTracerController._logLevelLabel, _HangTracerController._logLevelSlider,
+                          _HangTracerController._logLevelText, _HangTracerController._runloopDuration,
+                          _HangTracerController._runloopDurationLabel, _HangTracerController._runloopDurationSlider,
+                          _HangTracerController._textSpec, _LiveTraceController._enabledTracer,
+                          _LiveTraceController._enabledTrigger, _LoggingPane._dontScroll, _LoggingPane._fileError,
+                          _LoggingPane._lock, _LoggingPane._mailComposeController, _LoggingPane._output,
+                          _LoggingPane._rootController, _LoggingPane._sendingEmailCount, _LoggingPane._textView,
+                          _LoggingPane._threadRunning, _LoggingPane._timeout, _LoggingPane._timer,
+                          _PropertyListPane._emailButton, _PropertyListPane._mailComposeController,
+                          _PropertyListPane._rootController ]
+...

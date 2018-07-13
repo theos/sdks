@@ -1,0 +1,10 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          Do not use or link with this private dylib.
+current-version:       64026
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _Create, _Dispose, _Handler, _Initialize ]
+...
