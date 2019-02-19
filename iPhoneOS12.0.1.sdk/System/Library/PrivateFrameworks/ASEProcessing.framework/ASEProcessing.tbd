@@ -1,0 +1,36 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ASEProcessing.framework/ASEProcessing
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _ASEProcessingVersionNumber, _ASEProcessingVersionString, _FixedSettingDigitalZoom,
+                          _FixedSettingDigitalZoom_FullEnh, _FixedSettingDigitalZoom_NoEnh, _FixedSettingDigitalZoom_strong02,
+                          _FixedSettingDigitalZoom_strong05, _FixedSettingDigitalZoom_strong06,
+                          _FixedSettingDigitalZoom_strong08, _FixedSettingDigitalZoom_strong10,
+                          _FixedSettingDigitalZoom_strong12, _FixedSettingDigitalZoom_strong15,
+                          _FixedSettingDigitalZoom_strong18, _FixedSettingDigitalZoom_strong2, _FixedSettingDigitalZoom_weak00,
+                          _FixedSettingDigitalZoom_weak01, _FixedSettingDigitalZoom_weak02, _FixedSettingDigitalZoom_weak05,
+                          _FixedSettingDigitalZoom_weak08, _FixedSettingDigitalZoom_weak10, _FixedSettingDigitalZoom_weak12,
+                          _FixedSettingDigitalZoom_weak15, _FixedSettingDigitalZoom_weak18, _FixedSettingGraphics,
+                          _FixedSettingLivePhoto, _InitialSettingVideo, _InitialSettingVideo_LargeRatio, _SettingVideo_Heavy_FG,
+                          _SettingVideo_Heavy_FG_LargeRatio, _SettingVideo_Heavy_FG_mix, _SettingVideo_Heavy_FG_mix_LargeRatio,
+                          _SettingVideo_NFG, _SettingVideo_NFG_LargeRatio, _SettingVideo_level1_FG,
+                          _SettingVideo_level1_FG_LargeRatio, _SettingVideo_level1_FG_mix,
+                          _SettingVideo_level1_FG_mix_LargeRatio, _SettingVideo_level2_FG, _SettingVideo_level2_FG_LargeRatio,
+                          _SettingVideo_level2_FG_mix, _SettingVideo_level2_FG_mix_LargeRatio, _SettingVideo_level3_FG,
+                          _SettingVideo_level3_FG_LargeRatio, _SettingVideo_level3_FG_mix,
+                          _SettingVideo_level3_FG_mix_LargeRatio, _SettingVideo_light_FG, _SettingVideo_light_FG_LargeRatio,
+                          _SettingVideo_light_FG_mix, _SettingVideo_light_FG_mix_LargeRatio, _calculate_control_setting ]
+    objc-classes:       [ _ASEProcessing ]
+    objc-ivars:         [ _ASEProcessing._FD_state, _ASEProcessing._FG_count, _ASEProcessing._NFG_count,
+                          _ASEProcessing._aseFrameProcessing, _ASEProcessing._aseProcessingType,
+                          _ASEProcessing._aseProcessingVersion, _ASEProcessing._completionQueue,
+                          _ASEProcessing._enhancementStrength, _ASEProcessing._inputHeight, _ASEProcessing._inputWidth,
+                          _ASEProcessing._noiseMeterStepSize, _ASEProcessing._numberOfProcessedFrames,
+                          _ASEProcessing._numberOfRequestedFrames, _ASEProcessing._numberOfScheduledFrames,
+                          _ASEProcessing._prev_H1_7, _ASEProcessing._prev_V1_7, _ASEProcessing._prev_ratio_2D_1D,
+                          _ASEProcessing._scheduleQueue, _ASEProcessing._scheduleSemaphone ]
+...
