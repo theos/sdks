@@ -70,7 +70,7 @@ if [ $# -lt 1 ]; then
     use_simulator="-"
 fi
 
-xcode_developer_path="$6/Contents/Developer"
+xcode_developer_path="$6Contents/Developer"
 if [ $# -lt 6 ] || [ "$xcode_developer_path" == "/Contents/Developer" ]; then
     xcode_developer_path=$(xcode-select -p)
 fi
