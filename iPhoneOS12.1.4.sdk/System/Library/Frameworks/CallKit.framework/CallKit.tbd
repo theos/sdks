@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 595BB19F-2457-3F7B-BDB3-65C080222F51', 'armv7s: F15157EC-BA22-350F-9397-AF1CFC0B3EE5', 
+                   'arm64: 3D731DEE-F5C3-3229-AEEC-9B87CB05DF03', 'arm64e: 36DBFE57-9815-341F-8016-F11888A4C1BB' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/CallKit.framework/CallKit
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    objc-classes:    [ CXCallActionResponse, CXCallDirectoryBlockingEntryData, CXCallDirectoryBlockingEntryMutableData, 
+                       CXCallDirectoryEntryData, CXCallDirectoryIdentificationEntryData, 
+                       CXCallDirectoryIdentificationEntryMutableData ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _CXCallDirectoryDefaultHostBundleIdentifier, _CXCallDirectoryDefaultHostServiceName, 
+                       _CXCallDirectoryMaintenanceHostBundleIdentifier, _CXCallDirectoryMaintenanceHostServiceName, 
+                       _CXCallDirectoryManagerIdentificationEntriesChangedNotification, 
+                       _CXCallDirectoryStoreExtensionsChangedNotification, _CXCallDirectoryStoreMigratorLatestSchemaVersion, 
+                       _CXErrorDomain, _CXErrorDomainCallDirectoryManager, _CXErrorDomainCallDirectoryStore, 
+                       _CXErrorDomainIncomingCall, _CXErrorDomainRequestTransaction ]
+    objc-classes:    [ CXAccount, CXAction, CXAnswerCallAction, CXCall, CXCallAction, 
+                       CXCallController, CXCallControllerHost, CXCallDirectoryExtension, 
+                       CXCallDirectoryExtensionContext, CXCallDirectoryExtensionManager, 
+                       CXCallDirectoryHost, CXCallDirectoryIdentificationEntry, CXCallDirectoryLabeledPhoneNumberEntryData, 
+                       CXCallDirectoryManager, CXCallDirectoryMutableLabeledPhoneNumberEntryData, 
+                       CXCallDirectoryMutablePhoneNumberEntryData, CXCallDirectoryNSExtensionManager, 
+                       CXCallDirectoryPhoneNumberEntryData, CXCallDirectoryProvider, 
+                       CXCallDirectorySanitizer, CXCallDirectoryStore, CXCallDirectoryStoreExtension, 
+                       CXCallDirectoryStoreIdentificationEntry, CXCallDirectoryStoreMigrationResult, 
+                       CXCallDirectoryStoreMigrator, CXCallFailureContext, CXCallObserver, 
+                       CXCallSource, CXCallSourceManager, CXCallUpdate, CXEndCallAction, 
+                       CXExtensionCallSource, CXExtensionProvider, CXHandle, CXHandoffContext, 
+                       CXInProcessCallSource, CXInProcessProvider, CXJoinCallAction, 
+                       CXLabeledHandle, CXPlayDTMFCallAction, CXProvider, CXProviderConfiguration, 
+                       CXProviderExtensionContext, CXProviderExtensionHostContext, 
+                       CXProviderExtensionVendorContext, CXPullCallAction, CXSendMMIOrUSSDCodeAction, 
+                       CXSenderIdentity, CXSetGroupCallAction, CXSetHeldCallAction, 
+                       CXSetMutedCallAction, CXSetRelayingCallAction, CXSetSendingVideoCallAction, 
+                       CXSetTTYTypeCallAction, CXSetVideoPresentationSizeCallAction, 
+                       CXSetVideoPresentationStateCallAction, CXStartCallAction, 
+                       CXTransaction, CXTransactionGroup, CXTransactionManager, CXXPCCallSource, 
+                       CXXPCProvider ]
+...

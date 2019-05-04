@@ -1,0 +1,13 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/SocialServices.framework/SocialServices
+current-version:       87
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    objc-classes:       [ _SLGoogleAuthController, _SLWebTokenHandlerController ]
+    objc-ivars:         [ _SLGoogleAuthController._account, _SLGoogleAuthController._accountStore,
+                          _SLGoogleAuthController._authenticationSession, _SLGoogleAuthController._presentationBlock,
+                          _SLWebTokenHandlerController._webClient, _SLWebTokenHandlerController._webClientQueue ]
+...

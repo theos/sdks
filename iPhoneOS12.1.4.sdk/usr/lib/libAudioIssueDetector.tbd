@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: B44405B5-D361-37A5-8AFF-E0D12A6BA9E7', 'arm64e: C9CB2DA5-931D-3B1C-B796-AE5C511434B2' ]
+platform:        ios
+install-name:    /usr/lib/libAudioIssueDetector.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _AudioIssueDetectorAnalyzeBuffer, _AudioIssueDetectorCreate, 
+                       _AudioIssueDetectorDispose, _AudioIssueDetectorInitialize, 
+                       _AudioIssueDetectorRemoveNode, _AudioIssueDetectorReset, _AudioIssueDetectorSetDownlinkVolume, 
+                       _AudioIssueDetectorSetNodeFormat, _AudioIssueDetectorSetNodeFormatWithDirection, 
+                       _AudioIssueDetectorSetRouteSpecificDownlinkGainAdjustment, 
+                       _AudioIssueDetectorSetUplinkMute, _AudioIssueDetectorUpdateReportingSessions ]
+...

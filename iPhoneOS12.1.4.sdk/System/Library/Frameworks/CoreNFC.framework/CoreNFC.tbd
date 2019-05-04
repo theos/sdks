@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 5CA005F3-B5F9-3F2C-A9BC-2872A6CA3C20', 'arm64e: 1B5898CE-B0BF-330D-B6A9-0AB69958DF5E' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/CoreNFC.framework/CoreNFC
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _NFCErrorDomain, _NFCISO15693TagResponseErrorKey ]
+    objc-classes:    [ NFCISO15693CustomCommandConfiguration, NFCISO15693ReadMultipleBlocksConfiguration, 
+                       NFCISO15693ReaderSession, NFCNDEFMessage, NFCNDEFPayload, 
+                       NFCNDEFReaderSession, NFCReaderSession, NFCTagCommandConfiguration ]
+...
