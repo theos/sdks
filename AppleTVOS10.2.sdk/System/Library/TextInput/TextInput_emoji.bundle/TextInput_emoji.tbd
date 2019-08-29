@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D305FC14-2F64-39CB-B666-D6621BC99FAB' ]
+platform:        tvos
+install-name:    /System/Library/TextInput/TextInput_emoji.bundle/TextInput_emoji
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _TIKeyboardInputManager_emoji ]
+...

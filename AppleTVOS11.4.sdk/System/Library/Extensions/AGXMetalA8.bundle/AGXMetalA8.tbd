@@ -1,0 +1,7 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Extensions/AGXMetalA8.bundle/AGXMetalA8
+current-version:       1
+compatibility-version: 1
+...

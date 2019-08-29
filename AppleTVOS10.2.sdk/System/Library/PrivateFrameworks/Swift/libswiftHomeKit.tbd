@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftHomeKit.dylib
+current-version:       802.9.25
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ __TF7HomeKitau49HMCharacteristicPropertySupportsEventNotificationSS,
+                          __Tv7HomeKit49HMCharacteristicPropertySupportsEventNotificationSS, __swift_FORCE_LOAD_$_swiftHomeKit ]
+...

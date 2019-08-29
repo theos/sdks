@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/Support/DaemonUtils.framework/DaemonUtils
+current-version:       425.255.3
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _LANVRAMNamespaceStartupManager ]
+    objc-classes:       [ _DaemonUtils, _InstalledAppsCache, _LANVRAM ]
+    objc-ivars:         [ _DaemonUtils._serverQueue, _InstalledAppsCache._appCache, _InstalledAppsCache._nameCache ]
+...

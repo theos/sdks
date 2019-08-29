@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 7059584D-770B-34FA-9FBA-384A013A3DC5' ]
+platform:        tvos
+install-name:    /usr/lib/libParallelCompression.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _BXDiff5, _BXPatch5, _BXPatch5InPlace, _BXPatchFile, _CachePatch, 
+                       _DirectoryDiff, _DirectoryPatch, _ISparseArchiveStreamCreate, 
+                       _ISparseArchiveStreamDestroy, _ISparseArchiveStreamRead, _PCompressFilter, 
+                       _PackagePatch, _ParallelArchiveExtract, _ParallelArchiveGenerateBOM, 
+                       _ParallelArchiveGenerateMSUBOM, _ParallelArchiveGetPayloadSize, 
+                       _ParallelArchiveOLDWriterAddEntry, _ParallelArchiveOLDWriterCreate, 
+                       _ParallelArchiveOLDWriterDestroy, _ParallelArchiveRead, _ParallelArchiveReadMetadata, 
+                       _ParallelArchiveSearch, _ParallelArchiveSort, _ParallelArchiveVerifyDir, 
+                       _ParallelArchiveWriteDirContents, _ParallelArchiveWriteEntryData, 
+                       _ParallelArchiveWriteEntryHeader, _ParallelArchiveWriterCreate, 
+                       _ParallelArchiveWriterDestroy, _ParallelCompressionDecode, 
+                       _ParallelCompressionEncode, _ParallelCompressionEnterThreadErrorContext, 
+                       _ParallelCompressionFileClose, _ParallelCompressionFileOpen, 
+                       _ParallelCompressionFileRead, _ParallelCompressionFileSeek, 
+                       _ParallelCompressionFileWrite, _ParallelCompressionIStreamAbort, 
+                       _ParallelCompressionIStreamCreate, _ParallelCompressionIStreamDestroy, 
+                       _ParallelCompressionIStreamRead, _ParallelCompressionLeaveThreadErrorContext, 
+                       _ParallelCompressionOStreamAbort, _ParallelCompressionOStreamCreate, 
+                       _ParallelCompressionOStreamDestroy, _ParallelCompressionOStreamWrite, 
+                       _ParallelCompressionUpdateThreadErrorContext ]
+...

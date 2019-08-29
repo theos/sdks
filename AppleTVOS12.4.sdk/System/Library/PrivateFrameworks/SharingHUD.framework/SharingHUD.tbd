@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD
+current-version:       1288.62
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SharingHUDVersionNumber, _SharingHUDVersionString ]
+...

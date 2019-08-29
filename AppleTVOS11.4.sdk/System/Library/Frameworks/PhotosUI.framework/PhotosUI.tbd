@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 660D4D84-4BD7-36D3-AF1C-9D10CAEE71BF' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/PhotosUI.framework/PhotosUI
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _PHLivePhotoView ]
+...

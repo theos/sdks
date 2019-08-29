@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/AccessibilityBundles/AXSpeechImplementation.bundle/AXSpeechImplementation
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXPublicSpeechLanguageCanonicalFormToGeneralLanguage ]
+    objc-classes:       [ _AXSpeechActionPublicImplementation, _AXSpeechPublicInterface, ___AXSpeechActionPublicImplementation_super ]
+...

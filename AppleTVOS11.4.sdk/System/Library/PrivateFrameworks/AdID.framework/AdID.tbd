@@ -1,0 +1,25 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AdID.framework/AdID
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _ADSimulatedCrashKillCode_InternalInconsistency, _AdIDVersionNumber, _AdIDVersionString ]
+    objc-classes:       [ _ADAdTrackingSchedulingManager, _ADClientDPIDManager, _ADIDManagerService, _ADJingleOptOutRequest,
+                          _ADJingleRequest, _ADJingleRequestManager, _ADJingleSegmentRequest, _ADLATStatusManager, _ADOptInStatusService,
+                          _ADSegmentDataManager ]
+    objc-ivars:         [ _ADAdTrackingSchedulingManager._cloudKitNotifyToken,
+                          _ADAdTrackingSchedulingManager._isConfigRequestInFlight, _ADAdTrackingSchedulingManager._pushConnection,
+                          _ADAdTrackingSchedulingManager._storeFrontNotifyToken, _ADClientDPIDManager._backupFlowQueue,
+                          _ADClientDPIDManager._isTest, _ADIDManagerService._forceReconcileQueue, _ADIDManagerService._listener,
+                          _ADIDManagerService._reconcileArray, _ADJingleRequest._DSID, _ADJingleRequest._bagKey,
+                          _ADJingleRequest._completionHandler, _ADJingleRequest._error, _ADJingleRequest._requestBody,
+                          _ADJingleRequest._requestHeaders, _ADJingleRequest._responseBody, _ADJingleRequest._responseHeaders,
+                          _ADJingleRequest._statusCode, _ADJingleRequest._token, _ADJingleRequestManager._jingleRequestInProgress,
+                          _ADJingleRequestManager._pendingJingleRequests, _ADLATStatusManager._pendingJingleRequestToken,
+                          _ADLATStatusManager._sendingLATToAdPlatforms, _ADLATStatusManager._sendingLATToJingle,
+                          _ADOptInStatusService._listener, _ADOptInStatusService._requestInFlight,
+                          _ADSegmentDataManager._pendingJingleRequestToken, _ADSegmentDataManager._segmentUpdateInProgress ]
+...

@@ -1,0 +1,9 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 0430E68C-8A90-3D0B-82ED-035B3CE2C06A' ]
+platform:        tvos
+install-name:    /usr/lib/libapple_crypto.dylib
+current-version: 0
+compatibility-version: 0
+objc-constraint: none
+...

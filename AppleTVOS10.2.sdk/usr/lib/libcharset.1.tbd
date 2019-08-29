@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: AE1A3768-3D76-3260-9E4C-38F3C4A6F1AD' ]
+platform:        tvos
+install-name:    /usr/lib/libcharset.1.dylib
+current-version: 2.0
+compatibility-version: 2.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___charset_1VersionNumber, ___charset_1VersionString, _libcharset_relocate, 
+                       _libcharset_set_relocation_prefix, _locale_charset ]
+...

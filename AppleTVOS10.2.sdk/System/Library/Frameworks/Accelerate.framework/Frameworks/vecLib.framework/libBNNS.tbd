@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _BNNSFilterApply, _BNNSFilterApplyBatch, _BNNSFilterCreateConvolutionLayer,
+                          _BNNSFilterCreateFullyConnectedLayer, _BNNSFilterCreatePoolingLayer, _BNNSFilterDestroy ]
+...

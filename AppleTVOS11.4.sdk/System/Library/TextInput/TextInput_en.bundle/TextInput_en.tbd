@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/TextInput/TextInput_en.bundle/TextInput_en
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ _TIKeyboardFeatureSpecialization_en_JP ]
+...

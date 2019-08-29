@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: C1D8E2F5-741F-38D1-A0D0-F4BDDB9EF5A8' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libArabicConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetArabicConverterDefinition ]
+...

@@ -1,0 +1,14 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXElementInteraction.framework/AXElementInteraction
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXAXElementInteractionVersionNumber, _AXAXElementInteractionVersionString ]
+    objc-classes:       [ _AXElementInteractionManager ]
+    objc-ivars:         [ _AXElementInteractionManager._axEventObserver, _AXElementInteractionManager._client,
+                          _AXElementInteractionManager._delegate, _AXElementInteractionManager._displayCursor,
+                          _AXElementInteractionManager._focusedElement, _AXElementInteractionManager._interactionEnabled ]
+...

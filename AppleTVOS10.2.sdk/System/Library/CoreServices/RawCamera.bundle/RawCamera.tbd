@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 4692817E-B3AE-3F89-AEF5-D1CB5F0D2939' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/RawCamera.bundle/RawCamera
+current-version: 0.0
+compatibility-version: 0.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _CreateListOfSupportedCamerasAndVersions, _GetRawPluginsInfo, 
+                       _RCCopyMethodsArrayForIdentifier, _RCCreateCIImageFromBufferAndProperties, 
+                       _RawCameraTP, _ReadMakerNoteProps ]
+...

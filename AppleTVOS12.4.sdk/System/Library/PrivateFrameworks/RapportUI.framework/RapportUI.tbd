@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/RapportUI.framework/RapportUI
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _RPImageForDeviceModel, _RPUILocalizedString, _RPUILocalizedStringF, _RPUILocalizedStringV ]
+    objc-classes:       [ _RPHighlightButton, _RPPairingManagerUIController, _RPPairingUIController ]
+    objc-ivars:         [ _RPPairingManagerUIController._allowManualIP, _RPPairingManagerUIController._dispatchQueue,
+                          _RPPairingManagerUIController._invalidationHandler, _RPPairingManagerUIController._runInProcess,
+                          _RPPairingManagerUIController._serviceType, _RPPairingUIController._invalidationHandler,
+                          _RPPairingUIController._retryHandler, _RPPairingUIController._tryPINHandler ]
+...

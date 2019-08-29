@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AVConference.framework/Frameworks/snatmap.framework/snatmap
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _GetSNATMAPServer, _MakeSNATMAPRequest, _ProcessSNATMAPResponse ]
+...

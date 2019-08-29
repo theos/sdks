@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: B0580CAA-535F-3C82-A617-00A8D023A3EE' ]
+platform:        tvos
+install-name:    /System/Library/TextInput/TextInput_chr.bundle/TextInput_chr
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _TIKeyboardInputManager_chr ]
+...

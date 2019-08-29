@@ -1,0 +1,18 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/AccessibilityBundles/AccessibilitySettingsLoader.bundle/AccessibilitySettingsLoader
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MPAVRoutingControllerDidPickRouteNotification ]
+    objc-classes:       [ _AXInvertColorsController, _AccessibilitySettingsLoader, _AssistiveTouchHelper, _GuidedAccessManager,
+                          _ZoomServicesUI, _ZoomUI_PHSOSViewController, _ZoomUI_SBDashBoardViewControllerOverride,
+                          _ZoomUI_SBReachabilitySettingsOverride, _ZoomUI_SpringBoardOverride, _ZoomUI_UIAlertControllerOverride,
+                          _ZoomUI_UIFocusScrollAnimatorOverride, ___ZoomUI_PHSOSViewController_super,
+                          ___ZoomUI_SBDashBoardViewControllerOverride_super, ___ZoomUI_SBReachabilitySettingsOverride_super,
+                          ___ZoomUI_SpringBoardOverride_super, ___ZoomUI_UIAlertControllerOverride_super,
+                          ___ZoomUI_UIFocusScrollAnimatorOverride_super ]
+    objc-ivars:         [ _GuidedAccessManager._notificationToken, _ZoomServicesUI._registeredForAppNotifications ]
+...

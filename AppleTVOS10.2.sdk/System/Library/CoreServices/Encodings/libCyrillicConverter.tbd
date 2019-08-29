@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: F0911120-048A-3F7D-9A74-471434C8C802' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libCyrillicConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetCyrillicConverterDefinition ]
+...

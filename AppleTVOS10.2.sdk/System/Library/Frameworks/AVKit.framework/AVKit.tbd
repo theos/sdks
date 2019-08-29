@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 7B9CB28C-2CF5-31A5-9881-3F42490F3FF4' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/AVKit.framework/AVKit
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AVKitMetadataIdentifierEpisodeNumber, _AVKitMetadataIdentifierExternalContentIdentifier, 
+                       _AVKitMetadataIdentifierExternalUserProfileIdentifier, _AVKitMetadataIdentifierPlaybackProgress, 
+                       _AVKitMetadataIdentifierReleaseDate, _AVKitMetadataIdentifierRottenTomatoesFreshness, 
+                       _AVKitMetadataIdentifierRottenTomatoesRating, _AVKitMetadataIdentifierSeasonNumber, 
+                       _AVKitMetadataIdentifierTotalTrackCount, _AVKitMetadataIdentifieriTunesStoreID, 
+                       _AVNowPlayingInfoMetadataIdentifierExternalContentIdentifier ]
+    objc-classes:    [ _AVChapter, _AVContentProposal, _AVContentProposalViewController, 
+                       _AVInterstitialTimeRange, _AVNavigationMarkersGroup, _AVPictureInPictureController, 
+                       _AVPlayerController, _AVPlayerViewController, _AVTransportBarViewController ]
+...

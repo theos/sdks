@@ -1,0 +1,19 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVHAPAccessory.framework/TVHAPAccessory
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVHAPAccessoryVersionNumber, _TVHAPAccessoryVersionString, _TVHAPButtonEventInfoState,
+                          _TVHAPButtonEventInfoTimestamp, _TVHAPButtonEventInfoType ]
+    objc-classes:       [ _TVHAPController, _TVHAPPeripheralAgentService, _TVHAPPeripheralUserNotification ]
+    objc-ivars:         [ _TVHAPController._controllerName, _TVHAPController._convertRatio, _TVHAPController._hidSystemClient,
+                          _TVHAPController._identifier, _TVHAPController._lastServerTimestamp, _TVHAPController._lastTimestampDelta,
+                          _TVHAPController._reachable, _TVHAPController._resetTimestampDelta, _TVHAPController._selected,
+                          _TVHAPPeripheralAgentService._bulletin, _TVHAPPeripheralAgentService._bulletinService,
+                          _TVHAPPeripheralUserNotification._bulletinImageType, _TVHAPPeripheralUserNotification._subtitle,
+                          _TVHAPPeripheralUserNotification._timeout, _TVHAPPeripheralUserNotification._title,
+                          _TVHAPPeripheralUserNotification._type ]
+...

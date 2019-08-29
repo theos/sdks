@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: A2BF6395-087D-35A6-AB8C-9546BA51C23A' ]
+platform:        tvos
+install-name:    /usr/lib/libsysdiagnose.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _extractDiagnosticID, _metricCompression, _metricGetLogCopying, 
+                       _metricGetLogGeneration, _metricGetOSLogArchive, _metricGetTimeSensitive, 
+                       _metricLogCopying, _metricLogGeneration, _metricOSLogarchiveGeneration, 
+                       _metricStartToTar, _metricTimeSensitive ]
+    objc-classes:    [ _Libsysdiagnose ]
+...

@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/libsrc2module.dylib
+current-version:       702.2.62
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _cl2module, _metal2module ]
+...

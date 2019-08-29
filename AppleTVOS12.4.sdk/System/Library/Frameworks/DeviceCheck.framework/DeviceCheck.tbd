@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 6CE97E93-C784-3586-BBB4-0030D3ABCD13' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/DeviceCheck.framework/DeviceCheck
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _DCErrorDomain, __DCLogSystem ]
+    objc-classes:    [ DCContext, DCDevice, DCDeviceMetadataInterface ]
+...

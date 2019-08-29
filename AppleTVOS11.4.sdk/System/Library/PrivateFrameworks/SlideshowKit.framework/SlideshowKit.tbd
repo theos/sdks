@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SlideshowKit.framework/SlideshowKit
+current-version:       1613
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusFoundation.framework/OpusFoundation,
+                          /System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusKit.framework/OpusKit ]
+    symbols:            [ _SlideshowKitUmbrellaString, _SlideshowKitVersionNumber, _SlideshowKitVersionString ]
+    objc-classes:       [ _SlideshowKit ]
+...

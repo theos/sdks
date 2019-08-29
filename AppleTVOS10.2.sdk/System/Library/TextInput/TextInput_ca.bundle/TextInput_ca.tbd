@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 131BB4EF-3978-37AB-8484-5BA077A1E6AC' ]
+platform:        tvos
+install-name:    /System/Library/TextInput/TextInput_ca.bundle/TextInput_ca
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _TIKeyboardFeatureSpecialization_ca ]
+...

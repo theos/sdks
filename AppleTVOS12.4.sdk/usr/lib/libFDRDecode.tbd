@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: CDC92BDE-6A92-3A17-8C13-FE7D7227E566' ]
+platform:        tvos
+install-name:    /usr/lib/libFDRDecode.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AMFDRDecodeCertificate, _AMFDRDecodeCheckCertRevocation, 
+                       _AMFDRDecodeCheckProducerIDRevocation, _AMFDRDecodeCombined, 
+                       _AMFDRDecodeEvaluateTrust, _AMFDRDecodeEvaluateTrustCombined, 
+                       _AMFDRDecodeEvaluateTrustCombinedWithSik, _AMFDRDecodeEvaluateTrustOffline, 
+                       _AMFDRDecodeEvaluateTrustWithSik, _AMFDRDecodeFDR2Data, _AMFDRDecodeGetImg4Manifest, 
+                       _AMFDRDecodeGetImg4RawData, _AMFDRDecodeIterateCertChainBegin, 
+                       _AMFDRDecodeIterateCertChainNext, _AMFDRDecodeIterateProducerIDBegin, 
+                       _AMFDRDecodeIterateProducerIDNext, _AMFDRDecodeIterateTrustObjectRevokedBegin, 
+                       _AMFDRDecodeIterateTrustObjectRevokedNext, _AMFDRDecodeIterateTrustObjectSslRootBegin, 
+                       _AMFDRDecodeIterateTrustObjectSslRootNext, _AMFDRDecodeIterateTrustObjectTrustedBegin, 
+                       _AMFDRDecodeIterateTrustObjectTrustedNext, _AMFDRDecodeManifestBody, 
+                       _AMFDRDecodeManifestBodyDestroy, _AMFDRDecodeManifestBodyNext, 
+                       _AMFDRDecodeMetadata, _AMFDRDecodeMultiResponse, _AMFDRDecodeOfflineBlob, 
+                       _AMFDRDecodeParseDERLengthFromBuffer, _AMFDRDecodeSealingRequest, 
+                       _AMFDRDecodeTrustEvaluation, _AMFDRDecodeTrustObject, _AMFDRDecodeVerifyCertIssuer, 
+                       _AMFDRDecodeVerifySealingManifest, _AMFDRDecodeVerifySealingRequest ]
+...

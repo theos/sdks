@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D60E473E-2535-316B-9F07-4A998043A235' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/Network.framework/Network
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    re-exports:      [ /usr/lib/libnetwork.dylib ]
+    symbols:         [ _NWCreateDispatchDataFromNSData, _NWCreateNSDataFromDispatchData, 
+                       _NWMonitorStatusToString, _NWNetworkAgentStartOptionClientUUID, 
+                       _NWNetworkAgentStartOptionFromKernel, _NWNetworkAgentStartOptionFromUser, 
+                       _NWNetworkAgentStartOptionPID, _NWNetworkAgentStartOptionProcessUUID, 
+                       _NWPathEvaluatorErrorDomain, _NWPrivilegedHelperHandleEvent, 
+                       _NWPrivilegedHelperStart, _NWUtilsCreateNSStringFromSockaddr, 
+                       _NWUtilsStringMatchesPattern, __NWConnectionWriteCompletionIdempotent, 
+                       _updateOSLogPlistFromLevel ]
+    objc-classes:    [ NWActivityEpilogueStatistics, NWActivityStatistics, NWAddressEndpoint, 
+                       NWBonjourBrowseDescriptor, NWBonjourServiceEndpoint, NWBrowseDescriptor, 
+                       NWBrowser, NWConnection, NWConnectionStatistics, NWDatagramConnection, 
+                       NWEndpoint, NWGenericNetworkAgent, NWHostEndpoint, NWInboundMessage, 
+                       NWInterface, NWMessage, NWMessageConnection, NWMonitor, NWNetworkAgentRegistration, 
+                       NWNetworkDescription, NWOutboundMessage, NWParameters, NWPath, 
+                       NWPathEvaluator, NWProtocolTransform, NWRemoteConnectionActor, 
+                       NWRemoteConnectionDirector, NWRemotePacketProxy, NWResolver, 
+                       NWStreamConnection, NWSystemPathMonitor, NWTCPConnection, 
+                       NWTCPListener, NWUDPListener, NWUDPSession ]
+...

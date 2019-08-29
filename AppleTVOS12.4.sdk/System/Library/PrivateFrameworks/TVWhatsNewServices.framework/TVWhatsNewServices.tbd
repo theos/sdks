@@ -1,0 +1,16 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVWhatsNewServices.framework/TVWhatsNewServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVWNServiceErrorDomain, _TVWNServiceOptionRequestTimeoutInSecondsKey,
+                          _TVWNServiceOptionShouldDismissOnMenuEventKey, _TVWNServiceOptionShouldShowWallpaperKey,
+                          _TVWNServiceOptionUserInterfaceStyleKey, _TVWNShouldShowWhatsNewKey, _TVWhatsNewServicesVersionNumber,
+                          _TVWhatsNewServicesVersionString ]
+    objc-classes:       [ _TVWNService, __TVWNViewController ]
+    objc-ivars:         [ __TVWNViewController._dismissResultHandler, __TVWNViewController._dismissalInProgressFlag,
+                          __TVWNViewController._pendingDismissalCompletionBlocks, __TVWNViewController._terminationHandler ]
+...

@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferServices
+current-version:       800
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _IMTransferServicesErrorDomain ]
+    objc-classes:       [ _IMTransferServicesCompressionController, _IMTransferServicesController ]
+    objc-ivars:         [ _IMTransferServicesCompressionController._blockMap ]
+...

@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: A9678BAE-A279-3755-8CDB-4299753E8F84' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libTraditionalChineseConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetTraditionalChineseConverterDefinition ]
+...

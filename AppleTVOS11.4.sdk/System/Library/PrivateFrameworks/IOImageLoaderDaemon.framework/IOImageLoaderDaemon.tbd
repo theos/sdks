@@ -1,0 +1,7 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IOImageLoaderDaemon.framework/IOImageLoaderDaemon
+current-version:       1
+compatibility-version: 1
+...

@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: DAFEA4AA-8D58-33E4-B391-DF024D20D2B2' ]
+platform:        tvos
+install-name:    /usr/lib/libspindump.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _SPCachePort, _SPGenerateSpindump, _SPReportCPUUsageResource, 
+                       _SPReportCPUWakeupsResource, _SPReportDiskWritesResource ]
+...

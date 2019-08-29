@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 8818975C-F365-3D37-ABC9-F379550DAEF1' ]
+platform:        tvos
+install-name:    /usr/lib/libipconfig.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _IPConfigurationServiceCopyInformation, _IPConfigurationServiceCreate, 
+                       _IPConfigurationServiceGetNotificationKey, _IPConfigurationServiceRefreshConfiguration, 
+                       _ipconfigVersionNumber, _ipconfigVersionString, _kIPConfigurationServiceOptionEnableDAD, 
+                       _kIPConfigurationServiceOptionIPv6Entity, _kIPConfigurationServiceOptionIPv6LinkLocalAddress, 
+                       _kIPConfigurationServiceOptionMTU, _kIPConfigurationServiceOptionPerformNUD, 
+                       _my_CFStringAppendBytesAsHex, _my_CFStringCreateWithIPAddress, 
+                       _my_CFStringCreateWithIPv6Address, _my_CFStringToCString ]
+...

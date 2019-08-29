@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 437118B8-8127-35D2-BF7E-25E3ADB9EAAE' ]
+platform:        tvos
+install-name:    /usr/lib/libAudioIssueDetector.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AudioIssueDetectorAnalyzeBuffer, _AudioIssueDetectorCreate, 
+                       _AudioIssueDetectorDispose, _AudioIssueDetectorInitialize, 
+                       _AudioIssueDetectorRemoveNode, _AudioIssueDetectorReset, _AudioIssueDetectorSetNodeFormat, 
+                       _AudioIssueDetectorSetNodeFormatWithDirection, _AudioIssueDetectorSetUplinkMute, 
+                       _AudioIssueDetectorUpdateReportingSessions ]
+...

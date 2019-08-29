@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: B661D969-CDB0-3C62-A177-D49E8C422D75' ]
+platform:        tvos
+install-name:    /usr/lib/libprequelite.dylib
+current-version: 76
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _PQLSqliteErrorDomain, _pql_sqlite3_bind_pointer, _pql_sqlite3_value_object, 
+                       _pql_sqlite3_value_pointer ]
+    objc-classes:    [ _PQLConnection, _PQLFormatInjection, _PQLNameInjection, _PQLRawInjection, 
+                       _PQLResultSet ]
+...

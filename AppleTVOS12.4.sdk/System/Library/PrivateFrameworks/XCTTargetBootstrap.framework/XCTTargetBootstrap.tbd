@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/XCTTargetBootstrap.framework/XCTTargetBootstrap
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _XCTDispatchAssertQueue, _XCTDispatchAssertQueueNot, _XCTSetSharedDaemonConnectionProvider,
+                          _XCTSharedDaemonConnectionProvider, _XCTTargetBootstrap, _XCTTargetBootstrapVersionNumber,
+                          _XCTTargetBootstrapVersionString, _XCTUnderlyingErrorsKey ]
+    objc-classes:       [ _XCTDaemonConnectionProvider, _XCTTargetSession ]
+    objc-ivars:         [ _XCTTargetSession._clientListener, _XCTTargetSession._connectionHandler,
+                          _XCTTargetSession._daemonConnection, _XCTTargetSession._queue ]
+...

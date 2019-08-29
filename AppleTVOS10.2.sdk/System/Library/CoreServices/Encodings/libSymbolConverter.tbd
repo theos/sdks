@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: F8349BA9-D253-3D0E-84DC-4258773C9374' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libSymbolConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetSymbolConverterDefinition ]
+...

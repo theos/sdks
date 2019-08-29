@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: A4CA4F7C-A63A-37D8-8AB5-2A9FB9907CFA' ]
+platform:        tvos
+install-name:    /usr/lib/libAXSpeechManager.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AXAVSpeechSynthesisVoiceFromTTSSpeechVoice, _AXAVVoiceQualityFromTTSFootprint, 
+                       _AXAlexVoiceIdentifier, _AXLanguageCanonicalFormToGeneralLanguage, 
+                       _AXRemapLanguageCodeForSpeech, _AXSiriFemaleVoiceIdentifier, 
+                       _AXSiriMaleVoiceIdentifier, _AXSpeechLanguageCanonicalFormToGeneralLanguage, 
+                       _AXSpeechTransformText, _AXSpeechTransformTextWithLanguage, 
+                       _VOTBundle, __AXSpeechReplaceEmoticons, _isSpeakableEmojiString ]
+    objc-classes:    [ _AXEmojiUtilities, _AXSpeechAction, _AXSpeechManager, _AXSpeechThread ]
+...

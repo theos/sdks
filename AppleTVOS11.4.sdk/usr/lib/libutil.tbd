@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: B43B616A-B929-3B7A-B8EB-87817222243B' ]
+platform:        tvos
+install-name:    /usr/lib/libutil.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _freemntopts, _getmnt_silent, _getmntoptnum, _getmntopts, 
+                       _getmntoptstr, _humanize_number, _pidfile_close, _pidfile_open, 
+                       _pidfile_remove, _pidfile_write, _realhostname, _realhostname_sa, 
+                       _reexec_to_match_kernel, _reexec_to_match_lp64ness, _tzlink, 
+                       _wipefs_alloc, _wipefs_except_blocks, _wipefs_free, _wipefs_include_blocks, 
+                       _wipefs_wipe ]
+...

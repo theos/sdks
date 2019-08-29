@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PhoneNumbers.framework/PhoneNumbers
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers ]
+    symbols:            [ _PhoneNumbersVersionNumber, _PhoneNumbersVersionString, _pn_default_log ]
+...

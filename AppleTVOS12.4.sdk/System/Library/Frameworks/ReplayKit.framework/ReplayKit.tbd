@@ -1,0 +1,39 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 5E261C82-3917-3D21-A2CF-F5EE2710FC55' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/ReplayKit.framework/ReplayKit
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _RPApplicationInfoBundleIdentifierKey, _RPBroadcastPickerExtensionBundleIdentifierKey, 
+                       _RPBroadcastPickerExtensionMicrophoneButtonKey, _RPButtonInset, 
+                       _RPRecordingErrorDomain, _RPScreenRecorderRequiredFreeSpace, 
+                       _RPScreenRecorderTempDirectory, _RPStoreInfoAppNameKey, _RPStoreInfoAuthorKey, 
+                       _RPStoreInfoBundleIDKey, _RPStoreInfoCategoriesKey, _RPStoreInfoItemURLKey, 
+                       _RPVideoEditorExtensionAppNameKey, _RPVideoEditorExtensionBundleIdentifierKey, 
+                       _RPVideoEditorExtensionFileAttachmentKey, _RPVideoEditorExtensionMoviePathKey, 
+                       _RPVideoEditorExtensionOverrideShareMessageKey, _RPVideoEditorExtensionOverrideTintColorKey, 
+                       _RPVideoOverlayBackgroundMaskImageName, _RPVideoOverlayDefaultGlyphAlpha, 
+                       _RPVideoOverlayFlatBackgroundAlpha, _RPVideoOverlayFlatBackgroundWhite, 
+                       _RPVideoOverlayGlyphMaskImageName, _RPVideoOverlayHighlightedGlyphAlpha, 
+                       _RPVideoSampleOrientationKey, _ReplayKitVersionNumber, _ReplayKitVersionString, 
+                       __broadcastURL ]
+    objc-classes:    [ RPBroadcastActivityExtensionHostContext, RPBroadcastActivityHostViewController, 
+                       RPBroadcastActivityViewController, RPBroadcastConfiguration, 
+                       RPBroadcastController, RPBroadcastExtensionContext, RPBroadcastExtensionHostContext, 
+                       RPBroadcastExtensionProxy, RPBroadcastExtensionViewController, 
+                       RPBroadcastHandler, RPBroadcastHostViewController, RPBroadcastIndicatorWindow, 
+                       RPBroadcastMP4ClipHandler, RPBroadcastPickerExtensionHostContext, 
+                       RPBroadcastPickerHostViewController, RPBroadcastPickerStandaloneViewController, 
+                       RPBroadcastSampleHandler, RPBroadcastViewController, RPDaemonProxy, 
+                       RPExtensionContext, RPExtensionHostContext, RPFlatVideoOverlayButton, 
+                       RPHighFidelityVideoOverlayButton, RPIOSurfaceObject, RPModalPresentationWindow, 
+                       RPPassThroughView, RPPictureInPictureController, RPPictureInPictureViewController, 
+                       RPPictureInPictureWindow, RPPipView, RPPipViewController, 
+                       RPPreviewViewController, RPScreenRecorder, RPSharedConstants, 
+                       RPStoreInfo, RPStoreManager, RPSystemBroadcastPickerView, 
+                       RPSystemBroadcastPickerViewController, RPSystemRecordingIndicatorWindow, 
+                       RPTouchPassthroughView, RPVideoEditorExtensionHostContext, 
+                       RPVideoEditorHostViewController, RPYouTubeActivityProgressOverlay ]
+...

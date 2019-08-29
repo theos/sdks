@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libmetal_timestamp.dylib
+current-version:       802.4
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _getMetalTimeStamp ]
+...

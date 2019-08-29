@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/Vision.framework/liblowLevelDetectors.dylib
+current-version:       2.0.70
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CCRectLowLevel, _createPerMeshForFFTSIZE, _horizonDetectionFFT, _initializePerMesh ]
+...

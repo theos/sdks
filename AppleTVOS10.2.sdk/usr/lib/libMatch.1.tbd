@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 74BC7076-1181-3D1F-83F7-48AFCC5985B8' ]
+platform:        tvos
+install-name:    /usr/lib/libMatch.1.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _matchCombine, _matchCompile, _matchDiagram, _matchDup, _matchExec, 
+                       _matchFree, _matchInit, _matchOptimize, _matchPack, _matchPrintNodes, 
+                       _matchSetOption, _matchUnpack, _matchValidate, _nfaFree, _nodeModPtrRefs, 
+                       _printGraphNode, _printRunNode ]
+...

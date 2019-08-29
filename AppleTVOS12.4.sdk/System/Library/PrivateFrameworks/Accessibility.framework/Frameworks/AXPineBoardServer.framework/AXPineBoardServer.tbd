@@ -1,0 +1,19 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXPineBoardServer.framework/AXPineBoardServer
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXIPCMessageKeySystemAppDismissSiri, _AXIPCMessageKeySystemAppIsAppSwitcherVisible,
+                          _AXIPCMessageKeySystemAppIsMediaPlaying, _AXIPCMessageKeySystemAppIsNowPlayingUIVisible,
+                          _AXIPCMessageKeySystemAppIsReceivingAirPlay, _AXIPCMessageKeySystemAppIsScreenSaverVisible,
+                          _AXIPCMessageKeySystemAppIsSiriTalkingOrListening, _AXIPCMessageKeySystemAppIsSiriVisible,
+                          _AXIPCMessageKeySystemAppIsSoftwareUpdateUIVisible, _AXIPCMessageKeySystemAppIsSystemSleeping,
+                          _AXIPCMessageKeySystemAppOpenSiri, _AXIPCMessageKeySystemAppPID, _AXIPCMessageKeySystemAppRebootDevice,
+                          _AXIPCMessageKeySystemAppWakeUpDeviceIfNecessary, _AXIPCPayloadKeyBoolResult, _AXPineBoardServerServiceName,
+                          _AXPineBoardServerVersionNumber, _AXPineBoardServerVersionString ]
+    objc-classes:       [ _AXPineBoardServer ]
+    objc-ivars:         [ _AXPineBoardServer._localServiceProvider ]
+...

@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: DDB3C412-A44F-3D42-A77A-86E5D2C814D9' ]
+platform:        tvos
+install-name:    /usr/lib/libassertion_launchd.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _assertion_set_process_state ]
+...

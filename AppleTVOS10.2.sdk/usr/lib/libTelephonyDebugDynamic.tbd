@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: DF5E0368-68B9-3201-A5D5-E150EB1D115A' ]
+platform:        tvos
+install-name:    /usr/lib/libTelephonyDebugDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _TelephonyBasebandWatchdogStart, _TelephonyBasebandWatchdogStartWithStackshot, 
+                       _TelephonyBasebandWatchdogStop ]
+...

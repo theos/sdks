@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CloudKitCode.framework/CloudKitCode
+current-version:       736.235
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    allowed-clients:    [ CloudKitCodeProtobufTests, ckcodetest, cloudphotod ]
+...

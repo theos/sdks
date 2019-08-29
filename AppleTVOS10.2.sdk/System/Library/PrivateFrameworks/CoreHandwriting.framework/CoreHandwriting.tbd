@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CHRecognitionOptionTextBefore ]
+    objc-classes:       [ _CHBoxcarFilterPointFIFO, _CHDrawing, _CHPointFIFO, _CHPointStrokeFIFO, _CHQuadCurvePointFIFO,
+                          _CHRecognitionResult, _CHRecognizer ]
+...

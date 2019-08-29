@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D8F344F3-B7EE-3546-A359-2F181B2291DC' ]
+platform:        tvos
+install-name:    /usr/lib/libnetworkextension.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _ne_filter_connection_queue, _ne_filter_copy_connection, _ne_filter_protocol_identifier, 
+                       _ne_filter_request_connection, _ne_filter_send_message ]
+...

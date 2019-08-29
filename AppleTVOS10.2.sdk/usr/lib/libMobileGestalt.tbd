@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: A0CA922D-59F1-34BB-B266-3BDFFB16631B' ]
+platform:        tvos
+install-name:    /usr/lib/libMobileGestalt.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _MGCancelNotifications, _MGCopyAnswer, _MGCopyAnswerWithError, 
+                       _MGCopyMultipleAnswers, _MGGetBoolAnswer, _MGGetFloat32Answer, 
+                       _MGGetProductType, _MGGetSInt32Answer, _MGGetSInt64Answer, 
+                       _MGGetStringAnswer, _MGIsDeviceOfType, _MGIsDeviceOneOfType, 
+                       _MGIsQuestionValid, _MGRegisterForBulkUpdates, _MGRegisterForUpdates, 
+                       _MGSetAnswer, _MGSetLogHandler, __MGCacheValid, __MGClearInProcessCache, 
+                       __MGCopyDeviceDescription, __MGCopyIteratedDeviceDescription, 
+                       __MGIterateDevices, __MGLog, __MGPrintIteratedDeviceDescription, 
+                       __MGServerCopyAnswerWithError, __MGSetServer, __MGWaitForDevices, 
+                       __MGWriteCache, _kMGQDiskUsageAmountDataAvailable, _kMGQDiskUsageAmountDataReserved, 
+                       _kMGQDiskUsageTotalDataAvailable, _kMGQDiskUsageTotalDataCapacity, 
+                       _kMGQDiskUsageTotalDiskCapacity, _kMGQDiskUsageTotalSystemAvailable, 
+                       _kMGQDiskUsageTotalSystemCapacity ]
+...

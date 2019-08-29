@@ -1,0 +1,19 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 8EC84A18-FBD8-372A-8C3F-7741FD12F1AD' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount
+current-version: 107.15
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _VSAccountProviderAuthenticationSchemeSAML, _VSAccountStoreDidChangeNotification, 
+                       _VSCheckAccessOptionPrompt, _VSErrorDomain, _VSErrorInfoKeyAccountProviderResponse, 
+                       _VSErrorInfoKeySAMLResponse, _VSErrorInfoKeySAMLResponseStatus, 
+                       _VSErrorInfoKeyUnsupportedProviderIdentifier, _VSIdentifierHashFromSubscriptionInfo, 
+                       _VSIdentityProviderAvailabilityDidChangeNotification ]
+    objc-classes:    [ _TVSettingsVideoSubscriberAccountViewController, _VSAccount, 
+                       _VSAccountManager, _VSAccountManagerResult, _VSAccountMetadata, 
+                       _VSAccountMetadataRequest, _VSAccountProviderResponse, _VSAccountStore, 
+                       _VSDeveloperSettingsViewController_tvOS, _VSIdentityProviderAvailabilityInfoCenter ]
+...
