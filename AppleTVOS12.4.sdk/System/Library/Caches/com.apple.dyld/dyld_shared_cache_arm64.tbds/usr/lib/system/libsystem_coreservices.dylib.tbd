@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/system/libsystem_coreservices.dylib
+current-version:       65
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NSGetNextSearchPathEnumeration, _NSStartSearchPathEnumeration, _NSStartSearchPathEnumerationPrivate,
+                          ___user_local_dirname, __dirhelper, __get_user_dir_suffix, __libcoreservices_fork_child, __set_user_dir_suffix,
+                          _sysdir_get_next_search_path_enumeration, _sysdir_start_search_path_enumeration,
+                          _sysdir_start_search_path_enumeration_private ]
+...

@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libktrace.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/ktrace.framework/ktrace ]
+    symbols:            [ ___ktraceVersionNumber, ___ktraceVersionString ]
+...

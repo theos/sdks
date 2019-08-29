@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppleServiceToolkit.framework/AppleServiceToolkit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ASTActionKey, _ASTErrorDomain, _ASTImageNameKey, _ASTLogHandleForCategory, _ASTPropertyItemsKey,
+                          _ASTSuiteNameKey, _ASTTestSuiteCompleteAction, _ASTTestSuiteImageAction, _ASTTestSuiteStartingAction,
+                          _ASTViewTitleKey, _AppleServiceToolkitVersionNumber, _AppleServiceToolkitVersionString, _kASTHostEntitlement ]
+    objc-classes:       [ _ASTAssetConnection, _ASTClientStatusConnection, _ASTConnectionManager, _ASTConnectionUtilities,
+                          _ASTEnrollConnection, _ASTErrorStatus, _ASTFileManagement, _ASTFileUploadConnection, _ASTIdentity,
+                          _ASTLocalization, _ASTNetworkObject, _ASTNetworking, _ASTProfileConnection, _ASTRequest, _ASTResponse,
+                          _ASTSendPropertiesErrorStatus, _ASTSession, _ASTSessionExistsConnection, _ASTTestAttributes, _ASTTestAutomation,
+                          _ASTTestResult, _ASTTestResultsConnection ]
+...

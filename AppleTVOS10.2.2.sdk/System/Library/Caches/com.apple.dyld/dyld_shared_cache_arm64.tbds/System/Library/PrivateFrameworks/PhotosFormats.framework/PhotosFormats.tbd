@@ -1,0 +1,24 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PFAssetAdjustmentsBaseVersionKey, _PFAssetAdjustmentsDataBlobKey, _PFAssetAdjustmentsEditorBundleIDKey,
+                          _PFAssetAdjustmentsFormatIdentifierKey, _PFAssetAdjustmentsFormatVersionKey,
+                          _PFMetadataOriginatingSignature, _PFReadImageDisplayTimeFromVideoFileAtPath,
+                          _PFReadMetadataFromVideoAVAsset, _PFReadMetadataFromVideoAtPath,
+                          _PFReadPairingIdentifierFromCGImageProperties, _PFReadPairingIdentifierFromImageAtPath,
+                          _PFReadPairingIdentifierFromVideoAtPath, _PFReadVideoDurationFromVideoFileAtPath,
+                          _PFRemovePairingIdentifierFromCGImageProperties, _PFVideoComplementFileExtension,
+                          _PFVideoComplementImagePathKey, _PFVideoComplementMetadataKey,
+                          _PFVideoComplementMetadataPairingIdentifierKey, _PFVideoComplementMetadataTimingInfoKey,
+                          _PFVideoComplementMetadataVersionKey, _PFVideoComplementVideoPathKey ]
+    objc-classes:       [ _PFAVReaderWriter, _PFAssetAdjustments, _PFColorConverter, _PFImageMetadata, _PFPhotoSharingOperation,
+                          _PFRWSampleBufferChannel, _PFSharingRemaker, _PFSharingRemakerOperation, _PFSharingRemakerOptions,
+                          _PFSharingUtilities, _PFSlowMotionConfiguration, _PFSlowMotionRampConfiguration, _PFSlowMotionTimeRangeMapper,
+                          _PFSlowMotionTimeRangeMapperScaledRegion, _PFSlowMotionUtilities, _PFVideoAVObjectBuilder,
+                          _PFVideoAdjustments, _PFVideoComplement, _PFVideoMetadata, _PFVideoSharingOperation ]
+...

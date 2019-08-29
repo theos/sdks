@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID, _AppleIDAuthenticationAppleIDSettingsTokenIdentifier,
+                          _AppleIDAuthenticationServicesKey, _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem,
+                          _kDeviceProvisioningMIDKey, _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, _kiCloudPersonIDKey,
+                          _kiCloudPrimaryAccountKey ]
+...

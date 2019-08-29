@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/UIKit.framework/UIKit
+current-version:       61000
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore ]
+...

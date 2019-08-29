@@ -1,0 +1,41 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/Catalyst.framework/Catalyst ]
+    symbols:            [ _DMFBundleIdentifierErrorKey, _DMFDeviceActiveAirPlayRouteKey, _DMFDeviceAppLockedKey,
+                          _DMFDeviceAvailableAirPlayRoutesKey, _DMFDeviceAvailableBytesKey, _DMFDeviceBatteryLevelKey,
+                          _DMFDeviceBuildVersionKey, _DMFDeviceChargingStateKey, _DMFDeviceDeviceOrientationKey,
+                          _DMFDeviceIdentifierKey, _DMFDeviceInstalledApplicationsKey, _DMFDeviceInterfaceOrientationKey,
+                          _DMFDeviceIsEphemeralMultiUserKey, _DMFDeviceIsSupervisedKey, _DMFDeviceLockStateKey,
+                          _DMFDeviceManagementLockPasscodeKey, _DMFDeviceModelKey, _DMFDeviceNameKey, _DMFDeviceOrientationLockedKey,
+                          _DMFDevicePasscodeEnabledKey, _DMFDevicePlatformKey, _DMFDevicePrimaryOpenApplicationKey,
+                          _DMFDevicePropertiesDidChangeNotificationName, _DMFDeviceScreenStateKey,
+                          _DMFDeviceSecondaryOpenApplicationKey, _DMFDeviceSerialNumberKey, _DMFDeviceSystemNameKey,
+                          _DMFDeviceSystemVersionKey, _DMFDeviceUserDisplayNameKey, _DMFDeviceUserFamilyNameKey,
+                          _DMFDeviceUserGivenNameKey, _DMFDeviceUserIdentifierKey, _DMFDeviceUserImageURLKey,
+                          _DMFDeviceUserLoginStateKey, _DMFDeviceVolumeKey, _DMFErrorDomain, _DMFErrorWithCodeAndUserInfo,
+                          _DMFIdentifierErrorKey, _DMFInterfaceOrientationIsValid, _DMFInvalidParameterErrorKey,
+                          _DMFInvalidPropertyErrorKey, _DMFItemNameErrorKey, _DMFItemPathErrorKey, _DMFMachServiceName,
+                          _DMFProfileIdentifierErrorKey, _DMFURLStringErrorKey, _DeviceManagementVersionNumber,
+                          _DeviceManagementVersionString ]
+    objc-classes:       [ _DMFAssignUserRequest, _DMFConnection, _DMFControlGroupIdentifier, _DMFControlSessionIdentifier,
+                          _DMFDevicePropertiesResultObject, _DMFDevicePropertyNotificationSubscriptionRequest,
+                          _DMFDownloadAndApplyCloudConfigurationRequest, _DMFEraseRequest, _DMFFetchCloudConfigurationRequest,
+                          _DMFFetchCloudConfigurationResultObject, _DMFFetchControlGroupIdentifiersRequest,
+                          _DMFFetchControlGroupIdentifiersResultObject, _DMFFetchDevicePropertiesRequest,
+                          _DMFFetchInstalledApplicationsRequest, _DMFFetchInstalledApplicationsResultObject,
+                          _DMFFetchInstalledProfilesRequest, _DMFFetchInstalledProfilesResultObject, _DMFFetchLastLoginDateRequest,
+                          _DMFFetchLastLoginDateResultObject, _DMFFetchScreenshotRequest, _DMFFetchScreenshotResultObject,
+                          _DMFInstallApplicationRequest, _DMFInstallProfileRequest, _DMFInstalledApplication,
+                          _DMFInstalledApplicationInstallProgress, _DMFInstalledPayload, _DMFInstalledProfile,
+                          _DMFJoinControlGroupRequest, _DMFLeaveControlGroupRequest, _DMFLogoutUserRequest, _DMFManagementLockRequest,
+                          _DMFManagementUnlockRequest, _DMFOpenAppRequest, _DMFOpenURLRequest, _DMFRemoveProfileRequest,
+                          _DMFSetAirPlayRouteRequest, _DMFSetCloudConfigurationRequest, _DMFSetInterfaceOrientationRequest,
+                          _DMFSetVolumeRequest, _DMFStartAppLockRequest, _DMFStopAppLockRequest, _DMFUpdatePickableAirPlayRoutesRequest,
+                          __DMFErrorBundleHelper ]
+...

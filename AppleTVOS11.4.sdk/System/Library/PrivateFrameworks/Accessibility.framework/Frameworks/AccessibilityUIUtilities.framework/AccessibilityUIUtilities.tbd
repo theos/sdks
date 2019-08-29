@@ -1,0 +1,32 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXColorDescriptionFromAttributeDescriptions, _AXColorGetApproximateDescription,
+                          _AXColorGetLightnessDescription, _AXColorGetLuma, _AXColorGetNameForHue, _AXColorGetSaturationDescription,
+                          _AXColorStringForColor, _AXColorsProbablyEqual, _AXInvertColorForColor, _AXInvertColorForColorPreservingAlpha,
+                          _AXLayoutPriorityIgnored, _AXPreferredContentSizeCategoryIsAccessibilityCategory,
+                          _AXResistAllCompressingAndStretching, _AXSlightlyDarkerColorForColor, _AXUIAllKeyboardWindows,
+                          _AXUIAssistiveTouchImageForName, _AXUIAssistiveTouchImageNameForName, _AXUIAssistiveTouchStringForName,
+                          _AXUIConvertPointFromContextToScreenSpace, _AXUIConvertPointFromScreenToContextSpace,
+                          _AXUIConvertRectFromContextToScreenSpace, _AXUIConvertRectFromScreenToContextSpace, _AXUIKeyboardIsOnScreen,
+                          _AXUIKeyboardScreenFrame, _AXUIKeyboardScreenFrameExcludingInputAccessoryIfFirstResponderInside,
+                          _AXUIKeyboardWindow, _AXUILocalizedStringForKey, _AXUILocalizedTitleForDockPosition,
+                          _AXUILocalizedTitleForZoomLensEffect, _AXUILocalizedTitleForZoomLensMode, _AXUIMakeTouchForTouchesBegan,
+                          _AXUIMakeTouchForTouchesBeganAtLocation, _AXUIMakeTouchForTouchesCancelled,
+                          _AXUIMakeTouchForTouchesCancelledAtLocation, _AXUIMakeTouchForTouchesEnded,
+                          _AXUIMakeTouchForTouchesEndedAtLocation, _AXUIMakeTouchForTouchesMoved,
+                          _AXUIMakeTouchForTouchesMovedAtLocation, _AXUISentenceTextRangeForInput, _AXUISettingsSpeakingRateFastImage,
+                          _AXUISettingsSpeakingRateSlowImage, __AXAssistiveTouchBundle, __AXInvertColorForColor, __AXUIMakeTouch,
+                          __AXUISettingsAccessibilityBundle ]
+    objc-classes:       [ _AXATVUtils, _AXDragEndpointClient, _AXDragEndpointRequestSatisfier, _AXDragEndpointVendor, _AXITMLUtilities,
+                          _AXProgramaticUITapGestureRecognizer, _AXUIReachabilityHelper, _AXWeatherUtilities ]
+    objc-ivars:         [ _AXDragEndpointClient._connection, _AXDragEndpointRequestSatisfier._connection,
+                          _AXDragEndpointRequestSatisfier._delegate, _AXDragEndpointVendor._activeConnections,
+                          _AXDragEndpointVendor._delegate, _AXDragEndpointVendor._listener,
+                          _AXProgramaticUITapGestureRecognizer._axProgramaticState ]
+...

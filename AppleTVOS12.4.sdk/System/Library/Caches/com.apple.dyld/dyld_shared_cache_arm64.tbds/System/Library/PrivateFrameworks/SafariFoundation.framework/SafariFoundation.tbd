@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation
+current-version:       607.3.9
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SFAutoFillFromAddressBookPreferenceKey, _maximumNumberOfWebCredentialEntriesToReturnForAppID ]
+    objc-classes:       [ _SFAutoFillFeatureManager, _SFDomainAssociationUtilities, _SFSafariCredential, _SFSafariCredentialStore,
+                          _SFSharedWebCredentialsDatabaseEntry ]
+...

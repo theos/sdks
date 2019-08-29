@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IMTranscoding.framework/IMTranscoding
+current-version:       800
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _IMTranscodeContextResponseDuration, _IMTranscodeErrorDomain ]
+    objc-classes:       [ _IMTranscodeController ]
+...

@@ -1,0 +1,26 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVSearchServices.framework/TVSearchServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVSSActionServerInterface, _TVSSLogComponent, _TVSSSearchAppServiceProviderType,
+                          _TVSearchServicesErrorDomain, _TVSearchServicesVersionNumber, _TVSearchServicesVersionString ]
+    objc-classes:       [ _TVSSContentItem, _TVSSPlaybackActionOperation, _TVSSPlaybackActionOperationRequest,
+                          _TVSSPlaybackActionOperationResult, _TVSSRelatedContentQuery, _TVSSSearchAppService,
+                          _TVSSSearchAppServiceConnection, _TVSSSearchAppServiceInterface, _TVSSSearchResult, _TVSSSearchResultBatch ]
+    objc-ivars:         [ _TVSSContentItem._URLFormatString, _TVSSContentItem._UTSContentType, _TVSSContentItem._imageHeight,
+                          _TVSSContentItem._imageWidth, _TVSSContentItem._imagesJSONContentPayload, _TVSSContentItem._isEvod,
+                          _TVSSContentItem._subtitle, _TVSSPlaybackActionOperation._connection, _TVSSPlaybackActionOperation._error,
+                          _TVSSPlaybackActionOperation._executing, _TVSSPlaybackActionOperation._finished,
+                          _TVSSPlaybackActionOperation._request, _TVSSPlaybackActionOperation._requestID,
+                          _TVSSPlaybackActionOperation._results, _TVSSPlaybackActionOperationRequest._canonicalID,
+                          _TVSSPlaybackActionOperationRequest._contentType, _TVSSPlaybackActionOperationResult._appBundleID,
+                          _TVSSPlaybackActionOperationResult._playbackURL, _TVSSRelatedContentQuery._URL,
+                          _TVSSRelatedContentQuery._title, _TVSSSearchAppServiceConnection._connection,
+                          _TVSSSearchAppServiceConnection._processAssertion, _TVSSSearchResult._initialBatch,
+                          _TVSSSearchResult._queryURL, _TVSSSearchResult._relatedContentQueries, _TVSSSearchResult._showBrowseResults,
+                          _TVSSSearchResult._title, _TVSSSearchResultBatch._contentItems, _TVSSSearchResultBatch._finalBatch ]
+...

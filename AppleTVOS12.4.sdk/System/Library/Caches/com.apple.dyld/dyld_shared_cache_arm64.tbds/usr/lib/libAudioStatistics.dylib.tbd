@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libAudioStatistics.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CAReportingClientCreateReporterID, _CAReportingClientDestroyReporterID,
+                          _CAReportingClientGetAudioServiceType, _CAReportingClientSendMessage, _CAReportingClientSendSingleMessage,
+                          _CAReportingClientSetAudioServiceType, _CAReportingClientStartReporter, _CAReportingClientStopReporter,
+                          _CreateSharedCAReportingClient ]
+    objc-classes:       [ _CAReporter ]
+...

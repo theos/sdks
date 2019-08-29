@@ -1,0 +1,44 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AFUICreateAssistantResourcesDirectoryURL, _AFUICreateDebugController, _AFUICreateGizmoLogController,
+                          _AFUICreateInternalDebugController, _AFUIDebugErrorDomain, _AFUIDebugOverrideDictionary,
+                          _AFUIDefaultFluidDismissalBackgroundDamping, _AFUIDefaultFluidDismissalBackgroundStiffness,
+                          _AFUIDefaultFluidDismissalContentAlphaDamping, _AFUIDefaultFluidDismissalContentAlphaStiffness,
+                          _AFUIDidShowEmergencyCallViewNotification, _AFUIDisplayStringForVersionAndAccount,
+                          _AFUIFileURLForConversationWithIdentifier, _AFUIGetLanguageCode,
+                          _AFUIGuideCacheManagerCacheAppInstallGracePeriod, _AFUIGuideCacheManagerCacheDurationMax,
+                          _AFUIHasUnlockedSinceBoot, _AFUILanguageCodeDidChangeNotification, _AFUIPathForDebugOverridePlist,
+                          _AFUIPresentationPropertiesRequestSourceKey, _AFUIPresentationPropertiesSupportsTouchKey,
+                          _AFUIPreviousConversationIdentifier, _AFUIRequestSourceGetName, _AFUIScreenSupportsKnobInteraction,
+                          _AFUIScreenSupportsTouchInteraction, _AFUISetLanguageCode, _AFUIShowServerVersionOnUI,
+                          _AFUISiriBringupCarPlayButtonToSpeechRecordingWithoutPrewarmTestName,
+                          _AFUISiriBringupCarPlayListeningStateTestName, _AFUISiriBringupCarPlayPresentTestNamePrefix,
+                          _AFUISiriBringupImmediateToSpeechRecordingTestFinishedNotification,
+                          _AFUISiriBringupImmediateToSpeechRecordingTestName, _AFUISiriBringupInjectAudioTestNamePrefix,
+                          _AFUISiriBringupListeningStateTestName, _AFUISiriBringupNetworkEnabledStocksUserWaitTimeTestName,
+                          _AFUISiriBringupNetworkEnabledTestNamePrefix, _AFUISiriBringupNetworkEnabledTestStartedNotification,
+                          _AFUISiriBringupPresentTestNamePrefix, _AFUISiriBringupScrollSnippetTestName,
+                          _AFUISiriBringupScrollTranscriptTestName, _AFUISiriBringupSirilandTransitionTestName,
+                          _AFUISiriBringupSyntheticButtonToSpeechRecordingTestName,
+                          _AFUISiriBringupTVSyntheticSpeechCapturedToSnippetResultsTestName,
+                          _AFUISiriBringupTVSyntheticSpeechCapturedToSpeechRecordingTestName,
+                          _AFUISiriBringupToConversationMainTestName, _AFUISiriBringupToConversationTestFinishedNotification,
+                          _AFUISiriBringupToConversationTestName, _AFUISiriPPTTestNameKey, _AFUISiriPPTTestStartedTimestamp,
+                          _AFUISpeechSynthesisQueueDidEmptyNotification, _AFUISpeechSynthesisResultGetName,
+                          _AFUIStarkDirectActionStringForRequestOptions, _AFUIWillLeaveEmergencyCallViewNotification,
+                          _AssistantUIBundle, _MobileSMSBundleID, _PhoneBundleID, _appLaunchOptionsForAceAppLaunchOptions ]
+    objc-classes:       [ _AFUIAudioMessagePlayer, _AFUIAudioPlayer, _AFUICloudStorageViewController, _AFUIDebugCrashMoverService,
+                          _AFUIDebugError, _AFUIDebugLog, _AFUIDebugLogManager, _AFUIDelayedActionCommandCache,
+                          _AFUIDisambiguationAnalyticsManager, _AFUIGuideCacheManager, _AFUIImageResource, _AFUIModalTextViewController,
+                          _AFUIPreferences, _AFUIRequestOptions, _AFUIRequestTrigger, _AFUISiriLanguage, _AFUISiriPPTManager,
+                          _AFUISiriRemoteContainerView, _AFUISiriRemoteViewController, _AFUISiriSession, _AFUISiriSessionInfo,
+                          _AFUISiriSetupViewController, _AFUISiriTestingConstants, _AFUISiriView, _AFUISiriViewController,
+                          _AFUISpeechSynthesis, _AFUISpeechSynthesisElement, _AFUIStateMachine, _AFUITestInput, _AFUIUtilities,
+                          _AFUIVoicemailPlayer, __AFUIAssertingDelayedActionCommand, __AFUIDataStoringShim ]
+...

@@ -1,0 +1,45 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NetworkServiceProxyEnableForSessionTask, _NetworkServiceProxyEnableInParameters,
+                          _NetworkServiceProxyGetStatus, _NetworkServiceProxyIsEnabled, _NetworkServiceProxySetCurrentConfiguration,
+                          _NetworkServiceProxySetCurrentLocation, _NetworkServiceProxySetFallbackTimeout,
+                          _NetworkServiceProxySetServiceNameForConnection, _NetworkServiceProxySetServiceNameInParameters,
+                          _NetworkServiceProxyStart, _NetworkServiceProxyVersionNumber, _NetworkServiceProxyVersionString,
+                          __ZN13NPFrameStream14amountToBeReadEv, __ZN13NPFrameStream14handleReadDataEP6NSData,
+                          __ZN13NPFrameStream17takeCurrentPacketEv, __ZN13NPFrameStream25handleConnectionConnectedEv,
+                          __ZN13NPFrameStream5flushER3AIO, __ZN13NPFrameStream7disposeEPKcb, __ZN13NPFrameStream7open_nwEv,
+                          __ZN13NPFrameStreamC2ER3LogR6SocketR10BufferPoolj, __ZN6Crypto7Session6sipkeyE, __ZTI13NPFrameStream,
+                          __ZTS13NPFrameStream, __ZTV13NPFrameStream, _copyOSReleaseString, _copyOSTypeString, _copyOSVersionString,
+                          _copyProductTypeString, _createHTTPRequestData, _createMetadataFromProperties, _createPropertiesFromMetaData,
+                          _dataToDictionary, _dictionaryToData, _geohashToLatitudeLongitude, _getRTTFromFrame, _getServerConnection,
+                          _getServerConnectionForSelector, _getSigningIdentifier, _getWaldoURLQueryParameters, _hchacha,
+                          _kEdgeSelectionServiceAlpha, _kEdgeSelectionServiceFairness, _kEdgeSelectionServiceGoodness,
+                          _kEdgeSelectionServiceIsSelected, _kEdgeSelectionServiceLastUsedTimestamp, _kEdgeSelectionServiceNoRTTCount,
+                          _kEdgeSelectionServicePolicyMetric, _kEdgeSelectionServiceRTT, _kEdgeSelectionServiceRTTSamples,
+                          _kEdgeSelectionServiceRank, _kEdgeSelectionServiceRewardSampleMean, _kEdgeSelectionServiceRewardSamples,
+                          _kEdgeSelectionServiceSelectedEdgeLabel, _kEdgeSelectionServiceSelectionCount,
+                          _kEdgeSelectionServiceTrialCount, _kEdgeSelectionServiceWindowSize, _latitudeLongitudeToGeohash,
+                          _logHTTPRequestData, _myIsEqual, _nplog_app_proxy_obj, _nplog_fw_obj, _nplog_server_obj, _nplog_uea_obj,
+                          _serviceNameToID, _tuscanyClientCreate, _tuscanyClientDestroy, _tuscanyClientGetAmountToRead,
+                          _tuscanyClientGetDataSize, _tuscanyClientGetDayPassSessionCount, _tuscanyClientGetHeaderSize,
+                          _tuscanyClientGetInitialWindowSize, _tuscanyClientGetMaxDataSendSize, _tuscanyClientGetMaximumFrameSize,
+                          _tuscanyClientHandleConnectionConnected, _tuscanyClientHandleReadData, _tuscanyClientSendAcknowledge,
+                          _tuscanyClientSendClose, _tuscanyClientSendData, _tuscanyClientSendException, _tuscanyClientSendPing,
+                          _tuscanyClientSetDayPassSessionCount, _tuscanyLoopbackClientCreate, _tuscanyWindowAddCredits,
+                          _tuscanyWindowCreate, _tuscanyWindowDestroy, _tuscanyWindowGetAmountToAck, _tuscanyWindowGetCredits ]
+    objc-classes:       [ _EdgeSelection, _NPAverage, _NPEdgeLatency, _NPEdgeSelection, _NPKey, _NPKeyBag, _NPLocation, _NPNetworkInfo, _NPTunnel,
+                          _NPTunnelFlow, _NPTunnelFlowDNS, _NPTunnelFlowHTTP, _NPTunnelFlowMetrics, _NPTunnelFlowProtocol, _NPTunnelFlowTCP,
+                          _NPTunnelFlowTelemetry, _NPTunnelFlowUDP, _NPTunnelNSURLSessionDelegate, _NPTunnelTuscany,
+                          _NPTunnelTuscanyEndpoint, _NPTunnelTuscanyLoopback, _NPTuscanyEdge, _NPTuscanyOnRamp, _NPUtilities, _NPWaldo,
+                          _NSPAppRule, _NSPByteParser, _NSPConfiguration, _NSPConnectionInfo, _NSPControlConnection, _NSPDNSPacket,
+                          _NSPDNSQuery, _NSPDNSResourceRecord, _NSPFlowDivert, _NSPFlowDivertProvider, _NSPKeyNetworkAgent, _NSPManager,
+                          _NSPNetworkAgent, _NSPServerClient, _NetworkServiceProxyConnectionStats,
+                          _NetworkServiceProxyControlRequestStats, _NetworkServiceProxyDurationBuckets,
+                          _NetworkServiceProxyRequestStats, _NetworkServiceProxyRespTimeBuckets, _NetworkServiceProxyStats ]
+...

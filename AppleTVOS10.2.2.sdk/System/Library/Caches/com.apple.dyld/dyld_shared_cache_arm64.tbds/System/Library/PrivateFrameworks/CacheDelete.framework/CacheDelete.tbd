@@ -1,0 +1,33 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CDGetLogHandle, _CacheDeleteAllowAutoPurge, _CacheDeleteAutoPurgeAllowed, _CacheDeleteCacheable,
+                          _CacheDeleteCancelPurge, _CacheDeleteCopyDemotableApps, _CacheDeleteCopyItemizedPurgeableSpace,
+                          _CacheDeleteCopyItemizedPurgeableSpaceWithInfo, _CacheDeleteCopyPurgeableSpaceWithInfo,
+                          _CacheDeleteCurrentCacheableSpace, _CacheDeleteCurrentCacheableSpaceForVolume, _CacheDeleteDemoteApps,
+                          _CacheDeleteDoNotAutoPurge, _CacheDeleteErrorDomain, _CacheDeletePerformOperation, _CacheDeletePurgeAsync,
+                          _CacheDeletePurgeSpace, _CacheDeletePurgeSpaceWithInfo, _CacheDeletePurgeSpaceWithInfoSync,
+                          _CacheDeletePurgeableSpace, _CacheDeleteRegister, _CacheDeleteRegisterCallback, _CacheDeleteRegisterCallbacks,
+                          _CacheDeleteRegisterCallbacksForProcess, _CacheDeleteRegisterExtensionCallbacks,
+                          _CacheDeleteRegisterForProcess, _CacheDeleteRegisterInfoCallbacks,
+                          _CacheDeleteRegisterInfoCallbacksForProcess, _CacheDeleteServiceRequest, _CacheDeleteSetCacheable,
+                          _CacheDeleteUpdatePurgeable, _CacheManagementAdd, _CacheManagementObjectEnumerate, _CacheManagementRemove,
+                          _CallCacheD, _amountPurged, _cacheSizeForVolume, _clearAllSampleServiceCache, _clearSampleServiceCache,
+                          _connectionIsEntitled, _copySampleServiceCachePath, _createCacheDeleteToken, _enumerateSampleCacheFiles,
+                          _enumerateSampleCacheSubDirs, _evaluateBoolProperty, _evaluateNumberProperty, _evaluateStringProperty,
+                          _evaluateUrgency, _getAllVolumes, _getCacheDeleteXattr, _getFunc, _getLocalVolumes, _getRootVolume,
+                          _log_user_defaults, _lowSpaceVolumes, _normalizeUserMountpoint, _paddingForVolume, _persistPath,
+                          _populateSampleServiceCache, _pretty_user_defaults, _quotaVolumes, _readRecentInfoFile,
+                          _sampleServiceCacheSubPath, _statusForVolume, _thresholdsForVolume, _truncFile, _validateTimestamp,
+                          _validateVolume, _volumeFreespace, _volumeSize ]
+    objc-classes:       [ _CDAnonymousXPCService, _CDAppExtensionService, _CDNamedXPCService, _CDService, _CDXPCService,
+                          _CacheDeleteHostExtensionContext, _CacheDeleteListener, _CacheDeleteRecent, _CacheDeleteRecentInfo,
+                          _CacheDeleteRecentServiceInfo, _CacheDeleteRecentVolumeInfo, _CacheDeleteRemoteExtensionContext,
+                          _CacheDeleteServiceInfo, _CacheDeleteServiceListener ]
+    objc-ivars:         [ _CacheDeleteRecentServiceInfo.diagnostics, _CacheDeleteRecentServiceInfo.urgencies ]
+...

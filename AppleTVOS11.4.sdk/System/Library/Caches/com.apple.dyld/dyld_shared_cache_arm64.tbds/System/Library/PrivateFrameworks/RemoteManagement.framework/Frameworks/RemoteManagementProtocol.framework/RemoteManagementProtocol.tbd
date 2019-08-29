@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementProtocol.framework/RemoteManagementProtocol
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RemoteManagementProtocolVersionNumber, _RemoteManagementProtocolVersionString ]
+    objc-classes:       [ _RMPChangeRequest, _RMPCheckInProtocolAuthenticateRequest, _RMPCheckInProtocolCapabilitiesRequest,
+                          _RMPCheckInProtocolCheckOutRequest, _RMPCheckInProtocolTokenUpdateRequest, _RMPCommandsRequest,
+                          _RMPErrorResponse, _RMPRemoteManagementRequest, _RMPRemoteManagementResponse, _RMPSetRequest, _RMPStatusRequest ]
+...

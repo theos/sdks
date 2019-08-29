@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+current-version:       947
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/Frameworks/CoreServices.framework/CoreServices ]
+    symbols:            [ _MobileCoreServicesVersionNumber, _MobileCoreServicesVersionString ]
+...

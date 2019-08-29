@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/system/libsystem_darwin.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ ___darwinVersionNumber, ___darwinVersionString, ___libdarwin_init, __dirstat_fileid_set_add,
+                          __dirstat_fileid_set_create, __dirstat_fileid_set_destroy, _dirstat_np, _dirstatat_np,
+                          _os_variant_allows_internal_security_policies, _os_variant_has_internal_content,
+                          _os_variant_has_internal_diagnostics, _os_variant_has_internal_ui ]
+...

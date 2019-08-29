@@ -1,0 +1,37 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 6B7368BA-784F-3E9C-8C0E-33386F10C51F' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/StoreKit.framework/StoreKit
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _SKCloudServiceCapabilitiesDidChangeNotification, _SKCloudServiceSetupActionSubscribe, 
+                       _SKCloudServiceSetupOptionsActionKey, _SKCloudServiceSetupOptionsITunesItemIdentifierKey, 
+                       _SKDownloadTimeRemainingUnknown, _SKErrorDomain, _SKGetDataForError, 
+                       _SKGetErrorForData, _SKGetRatingStarsImage, _SKReceiptPropertyIsExpired, 
+                       _SKReceiptPropertyIsRevoked, _SKReceiptPropertyIsVolumePurchase, 
+                       _SKStoreProductAppleCampaignParsec, _SKStoreProductParameterAdvertisingPartnerToken, 
+                       _SKStoreProductParameterAffiliateToken, _SKStoreProductParameterAppleCampaignIdentifier, 
+                       _SKStoreProductParameterCampaignIdentifier, _SKStoreProductParameterCampaignToken, 
+                       _SKStoreProductParameterHighlightedITunesItemIdentifier, _SKStoreProductParameterITunesItemIdentifier, 
+                       _SKStoreProductParameterProviderToken, _SKStoreProductParameterQToken, 
+                       _SKStorefrontIdentifierDidChangeNotification, _SKTerminateForInvalidReceipt, 
+                       _SKXPCCreateCFObjectFromXPCObject, _SKXPCCreateXPCObjectFromCFObject, 
+                       _SKXPCDictionaryCopyCFObject, _SKXPCDictionaryCopyCFObjectWithClass, 
+                       _SKXPCDictionarySetCFObject ]
+    objc-classes:    [ _SKAccountPageViewController, _SKCloudServiceController, _SKCloudServiceSetupConfiguration, 
+                       _SKCloudServiceSetupExtension, _SKCloudServiceSetupReloadContext, 
+                       _SKCloudServiceSetupRemoteViewController, _SKCloudServiceSetupViewController, 
+                       _SKComposeReviewViewController, _SKDownload, _SKDownloadChangeset, 
+                       _SKHandleInvalidReceiptRequest, _SKMutablePayment, _SKPayment, 
+                       _SKPaymentInternal, _SKPaymentQueue, _SKPaymentQueueClient, 
+                       _SKPaymentQueueInternal, _SKPaymentTransaction, _SKPaymentTransactionInternal, 
+                       _SKPrivacyController, _SKProduct, _SKProductInternal, _SKProductsRequest, 
+                       _SKProductsRequestInternal, _SKProductsResponse, _SKProductsResponseInternal, 
+                       _SKReceiptRefreshRequest, _SKRequest, _SKRequestInternal, 
+                       _SKStarRatingAlertView, _SKStarRatingAlertViewDelegate, _SKStarRatingControl, 
+                       _SKStorePageRequest, _SKStorePageViewController, _SKStoreProductActivityViewController, 
+                       _SKStoreProductViewController, _SKTermsPageViewController, 
+                       __SKStoreProductActivityAnimationController ]
+...

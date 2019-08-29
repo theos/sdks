@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __FALogSystem, _kFAServicePasswordOption, _kFAServiceUsernameOption ]
+    objc-classes:       [ _FAAddFamilyMemberRequest, _FAClearFamilyCircleCacheRequest, _FADispatchFamilyPushRequest, _FAFamilyCircle,
+                          _FAFamilyCircleRequest, _FAFamilyCloudKitProperties, _FAFamilyMember, _FAFamilySettings,
+                          _FAFetchFamilyCircleRequest, _FAFetchFamilyPhotoRequest, _FAHandleFamilyEventPushNotificationRequest,
+                          _FAPushNotificationHandler, _FARegisterPushTokenRequest, _FARemoveFamilyMemberRequest ]
+...

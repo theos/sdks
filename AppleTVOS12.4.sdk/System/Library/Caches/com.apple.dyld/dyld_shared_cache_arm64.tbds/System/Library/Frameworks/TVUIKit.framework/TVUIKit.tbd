@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/TVUIKit.framework/TVUIKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ _TVCaptionButtonView, _TVCardView, _TVDigitEntryViewController, _TVLockupHeaderFooterView, _TVLockupView,
+                          _TVMonogramView, _TVPosterView, __TVCarouselView, __TVFullScreenBrowserTransitionLayoutAttributes,
+                          __TVFullScreenBrowserView, __TVFullScreenBrowserViewCell, __TVRibbonCell, __TVRibbonCellMaskingParameters,
+                          __TVRibbonView, __TVStackedMediaDocument, __TVStackedMediaView, __TVStackedVideoPlayerView ]
+...

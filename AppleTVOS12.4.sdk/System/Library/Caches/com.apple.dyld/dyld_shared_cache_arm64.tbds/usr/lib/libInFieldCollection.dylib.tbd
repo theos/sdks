@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libInFieldCollection.dylib
+current-version:       8.9
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NAAP, _ZshgJnRaSlwn, _vsPHbdGf ]
+...

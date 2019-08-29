@@ -1,0 +1,49 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriCore.framework/SiriCore
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SiriCoreAceSerializationErrorDomain, _SiriCoreAceSerializationErrorUserInfoBytesAvailableKey,
+                          _SiriCoreAceSerializationErrorUserInfoBytesNeededKey, _SiriCoreAceSerializationErrorUserInfoPlistKey,
+                          _SiriCoreConnectionTechnologyGetDescription, _SiriCoreCorrectionPronunciationReadFrom,
+                          _SiriCoreDataCompressorErrorDomain, _SiriCoreHeartbeatInterval, _SiriCoreHeartbeatTolerance,
+                          _SiriCoreLocalSpeechRecognizerInstanceUUIDBackground,
+                          _SiriCoreLocalSpeechRecognizerInstanceUUIDInteractive, _SiriCoreLocalSpeechRecognizerTaskDictation,
+                          _SiriCoreLocalSpeechRecognizerTaskSearchOrMessaging, _SiriCoreLocalSpeechRecognizerTaskTshot,
+                          _SiriCoreLocalSpeechRecognizerTaskVoiceMail, _SiriCoreNetworkQuality, _SiriCoreSQLiteAPIErrorDomain,
+                          _SiriCoreSQLiteDatabaseErrorDomain, _SiriCoreSQLiteDatabaseErrorKey,
+                          _SiriCoreSQLiteDatabaseIsErrorUnrecoverable, _SiriCoreSQLiteQueryCreateColumnDefinition,
+                          _SiriCoreSQLiteQueryCreateCriterionExpression, _SiriCoreSQLiteQueryCreateEscapedAndCommaSeparatedString,
+                          _SiriCoreSQLiteQueryCreateOrderExpression, _SiriCoreSQLiteQueryCreateParametrizedAndCommaSeparatedString,
+                          _SiriCoreSQLiteQueryCreateRangeExpression, _SiriCoreSiriConnectionErrorDomain,
+                          _SiriCoreSiriConnectionHTTPErrorStatusCodeKey, _SiriCoreSiriConnectionHTTPRedirectValueKey,
+                          _SiriCoreSiriConnectionShouldSkipIDSOnNextAttemptKey,
+                          _SiriCoreSiriConnectionShouldSkipTuscanyOnNextAttemptKey, _SiriCoreUUIDStringCreate,
+                          _SiriCoreUserAgentStringCreate, _SiriCoreUserCorrectionsProfileEntryReadFrom ]
+    objc-classes:       [ _SASetRestrictionsThunk, _SiriCoreAceConnectionAnalysisInfo, _SiriCoreAceSerialization,
+                          _SiriCoreConnectionMetrics, _SiriCoreConnectionQueueMonitor, _SiriCoreConnectionTCPInfoMetrics,
+                          _SiriCoreConnectionType, _SiriCoreCorrectionPronunciation, _SiriCoreDataCompressor, _SiriCoreDataDecompressor,
+                          _SiriCoreErrorInfo, _SiriCoreLinkRecommendationInfo, _SiriCoreLocalSpeechRecognizer, _SiriCoreNWConnection,
+                          _SiriCoreNWContext, _SiriCoreNetworkActivity, _SiriCoreNetworkActivityTracing, _SiriCoreNetworkManager,
+                          _SiriCoreNetworkQualityReport, _SiriCoreNetworkSessionProvider, _SiriCorePingInfo,
+                          _SiriCoreSQLiteColumnConstraint, _SiriCoreSQLiteColumnDescription, _SiriCoreSQLiteDatabase,
+                          _SiriCoreSQLiteIndexDescription, _SiriCoreSQLiteQuery, _SiriCoreSQLiteQueryCriterion,
+                          _SiriCoreSQLiteQueryOrder, _SiriCoreSQLiteQueryRange, _SiriCoreSQLiteQueryResult, _SiriCoreSQLiteStatement,
+                          _SiriCoreSQLiteTableConstraint, _SiriCoreSQLiteTableDescription, _SiriCoreSiriBackgroundConnection,
+                          _SiriCoreSiriConnection, _SiriCoreSiriConnectionInfo, _SiriCoreSpeechPacket, _SiriCoreSymptomsReporter,
+                          _SiriCoreUserCorrectionsProfileEntry, _SiriCoreWiFiManagerClient, _SiriCoreZlibDataCompressor,
+                          _SiriCoreZlibDataDecompressor, __SAMetricsSendCompletionsProxy, __SiriCoreSQLiteColumnInfo,
+                          __SiriCoreSQLiteIndexInfo, __SiriCoreSQLiteTableInfo ]
+    objc-ivars:         [ _SiriCoreCorrectionPronunciation._apgId, _SiriCoreCorrectionPronunciation._asrPronunciationData,
+                          _SiriCoreCorrectionPronunciation._has, _SiriCoreCorrectionPronunciation._language,
+                          _SiriCoreCorrectionPronunciation._orthography, _SiriCoreCorrectionPronunciation._tokenOffset,
+                          _SiriCoreCorrectionPronunciation._ttsPronunciations, _SiriCoreCorrectionPronunciation._ttsVersion,
+                          _SiriCoreUserCorrectionsProfileEntry._alternativesCorrectionsCount,
+                          _SiriCoreUserCorrectionsProfileEntry._correctedText, _SiriCoreUserCorrectionsProfileEntry._has,
+                          _SiriCoreUserCorrectionsProfileEntry._pronunciationData,
+                          _SiriCoreUserCorrectionsProfileEntry._spellingCorrectionsCount,
+                          _SiriCoreUserCorrectionsProfileEntry._tap2editCorrectionsCount, __SAMetricsSendCompletionsProxy._blocks ]
+...

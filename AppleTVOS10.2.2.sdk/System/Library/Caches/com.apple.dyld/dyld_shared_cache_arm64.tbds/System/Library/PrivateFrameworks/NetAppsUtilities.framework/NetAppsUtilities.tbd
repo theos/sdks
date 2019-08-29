@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NACancelableCancel, _NAEmptyResult, _NAErrorDomain, _NAFutureCallbackStack, _NetAppsUtilitiesVersionNumber,
+                          _NetAppsUtilitiesVersionString, __NABlockDescriptor, __NADictionaryOfMetrics, __NAFutureDidPerformCallback,
+                          __NAFutureWillPerformCallback, __NAPopScopedDescriptor, __NAPushScopedDescriptor, __NAScopedDescriptor ]
+    objc-classes:       [ _NACancelationToken, _NAFuture, _NAPair, _NAPromise, _NAQueue, _NAScheduler, _NAValueThrottler,
+                          __NABoundedQueueingStrategy, __NADefaultQueueingStrategy, __NAImmediateScheduler, __NAKeyValueObserverProxy,
+                          __NALazyFuture, __NAMainThreadScheduler, __NANotificationObserverProxy, __NAObserverProxy,
+                          __NAOperationQueueScheduler, __NAPriorityQueueingStrategy, __NAQueueScheduler ]
+    objc-ivars:         [ __NAOperationQueueScheduler._queue, __NAQueueScheduler._queue ]
+...

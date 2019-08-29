@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IOAccelMemoryInfo.framework/IOAccelMemoryInfo
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _IOAccelMemoryInfoErrorDomain, _IOAccelMemoryInfoIOKitDriverKey, _IOAccelMemoryInfoProcessIDKey ]
+    objc-classes:       [ _IOAccelMemoryInfo, _IOAccelMemoryMapInfo, _IOAccelMemoryOpenCLInfo, _IOAccelMemoryOpenGLInfo ]
+...

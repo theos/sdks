@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CardServices.framework/CardServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CardServicesVersionNumber, _CardServicesVersionString ]
+    objc-classes:       [ _CRSCardRequest, _CRSCardResponse, _CRSIdentifiedServiceRegistry, _CRSRequest, _CRSResponse,
+                          __CRSCardServiceBundle, __CRSCardServiceBundleManager, __CRSPassthroughService, __CRSServiceBundle,
+                          __CRSServiceBundleManager ]
+...

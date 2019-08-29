@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libAXSafeCategoryBundle.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXSetUIAXReportSenderErrorLoggerFunction, _AXSetValidationErrorLoggingFunction,
+                          _UIAccessibilityInstallSafeCategories, _UIAccessibilityInstallSafeCategory ]
+    objc-classes:       [ _UIAccessibilitySafeCategory ]
+...

@@ -1,0 +1,35 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AssistantUI.framework/AssistantUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AFUICreateAssistantResourcesDirectoryURL, _AFUICreateDebugController, _AFUICreateGizmoLogController,
+                          _AFUICreateInternalDebugController, _AFUIDebugErrorDomain, _AFUIDebugOverrideDictionary,
+                          _AFUIDidShowEmergencyCallViewNotification, _AFUIDisplayStringForVersionAndAccount,
+                          _AFUIFileURLForConversationWithIdentifier, _AFUIGetLanguageCode,
+                          _AFUIGuideCacheManagerCacheAppInstallGracePeriod, _AFUIGuideCacheManagerCacheDurationMax,
+                          _AFUIPathForDebugOverridePlist, _AFUIPresentationPropertiesRequestSourceKey,
+                          _AFUIPresentationPropertiesSupportsTouchKey, _AFUIPreviousConversationIdentifier,
+                          _AFUIRelativeStringFromDate, _AFUIRequestSourceGetName, _AFUIScreenSupportsKnobInteraction,
+                          _AFUIScreenSupportsTouchInteraction, _AFUISetLanguageCode,
+                          _AFUISiriBringupImmediateToSpeechRecordingTestFinishedNotification,
+                          _AFUISiriBringupImmediateToSpeechRecordingTestName, _AFUISiriBringupListeningStateTestName,
+                          _AFUISiriBringupPresentTestNamePrefix, _AFUISiriBringupScrollSnippetTestName,
+                          _AFUISiriBringupScrollTranscriptTestName, _AFUISiriBringupSirilandTransitionTestName,
+                          _AFUISiriBringupToConversationMainTestName, _AFUISiriBringupToConversationTestFinishedNotification,
+                          _AFUISiriBringupToConversationTestName, _AFUISpeechSynthesisQueueDidEmptyNotification,
+                          _AFUIStarkDirectActionStringForRequestOptions, _AFUIWillLeaveEmergencyCallViewNotification,
+                          _AssistantUIBundle, _MobileSMSBundleID, _PhoneBundleID, _appLaunchOptionsForAceAppLaunchOptions,
+                          _kAFUIAppIntentDelivererAssertionTimeout, _kAFUIAppIntentDelivererRequestTimeout ]
+    objc-classes:       [ _AFUIAppIntentDeliverer, _AFUIAudioMessagePlayer, _AFUIAudioPlayer, _AFUICloudStorageViewController,
+                          _AFUIDebugCrashMoverService, _AFUIDebugError, _AFUIDebugLog, _AFUIDebugLogManager,
+                          _AFUIDelayedActionCommandCache, _AFUIDisambiguationAnalyticsManager, _AFUIGuideCacheManager,
+                          _AFUIImageResource, _AFUIModalTextViewController, _AFUIPreferences, _AFUIRequestOptions, _AFUIRequestTrigger,
+                          _AFUISiriLanguage, _AFUISiriRemoteContainerView, _AFUISiriRemoteViewController, _AFUISiriSession,
+                          _AFUISiriSessionInfo, _AFUISiriSetupViewController, _AFUISiriView, _AFUISiriViewController,
+                          _AFUISpeechSynthesis, _AFUISpeechSynthesisElement, _AFUIStateMachine, _AFUITestInput, _AFUIVoicemailPlayer,
+                          __AFUIAssertingDelayedActionCommand, __AFUIDataStoringShim ]
+...

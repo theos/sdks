@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __UIArbiterLog, __UIKeyboardArbiter_SceneIdentifier ]
+    objc-classes:       [ __UIKeyboardArbiter ]
+...

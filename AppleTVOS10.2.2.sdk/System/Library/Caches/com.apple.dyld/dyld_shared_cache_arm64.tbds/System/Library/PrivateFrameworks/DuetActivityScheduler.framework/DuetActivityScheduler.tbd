@@ -1,0 +1,21 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DuetActivitySchedulerVersionNumber, _DuetActivitySchedulerVersionString, __DASActivityDurationInterminable,
+                          __DASActivityDurationLong, __DASActivityDurationModerate, __DASActivityDurationShort,
+                          __DASActivityDurationVeryLong, __DASActivityDurationVeryShort, __DASActivityTransferSizeGigantic,
+                          __DASActivityTransferSizeLarge, __DASActivityTransferSizeModerate, __DASActivityTransferSizeSmall,
+                          __DASActivityTransferSizeVeryLarge, __DASActivityTransferSizeVerySmall, __DASBudgetDictionaryKey,
+                          __DASDaemonServiceName, __DASLaunchOptionsNSURLSession, __DASLaunchReasonApplicationSnapshot,
+                          __DASLaunchReasonNSURLSessionAuthorizationRequired, __DASLaunchReasonNSURLSessionComplete,
+                          __DASLaunchReasonWatchConnectivityPendingData, __DASSchedulingPriorityBackground,
+                          __DASSchedulingPriorityDefault, __DASSchedulingPriorityMaintenance, __DASSchedulingPriorityUserInitiated,
+                          __DASSchedulingPriorityUserInitiatedOvercommit, __DASSchedulingPriorityUtility, _kNWEndpointKey,
+                          _kNWParametersKey ]
+    objc-classes:       [ __DASActivity, __DASActivityGroup, __DASFileProtection, __DASScheduler, __DASStrings, __DASSubmissionRateLimiter ]
+...

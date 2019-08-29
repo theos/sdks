@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/VideoSubscriberAccountUI
+current-version:       260.53
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _VSAlertForError, _VSAppSettingsFacadeAppsDidChangeNotification, _VSIconForBundleWithIdentifier ]
+    objc-classes:       [ _VSAppDescriptionFetchOperation, _VSAppSettingsFacade, _VSAppSettingsViewModel, _VSBindableSwitch,
+                          _VSErrorViewController, _VSFontCenter, _VSIdentityProviderFetchAllOperation,
+                          _VSIdentityProviderFetchOperation, _VSIdentityProviderFilter, _VSIdentityProviderRequest,
+                          _VSIdentityProviderRequestManager, _VSIdentityProviderViewController, _VSImageLoadOperation,
+                          _VSMaximumWidthMultilineButton, _VSMaximumWidthTintedBackgroundButton, _VSMultilineButton,
+                          _VSOnboardingInfoCenter, _VSSetupFlowController, _VSSetupView, _VSSupportedAppsViewController,
+                          _VSTintedBackgroundButton, _VSTopShelfPurgingAccountStore, _VSViewControllerFactory ]
+...

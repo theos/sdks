@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 8EC16308-FADF-357B-B04E-284A66D00A08' ]
+platform:        tvos
+install-name:    /usr/lib/libTelephonyBasebandDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _TelephonyBasebandAPTimeSync, _TelephonyBasebandAddFreqList, 
+                       _TelephonyBasebandClearFreqList, _TelephonyBasebandCreateController, 
+                       _TelephonyBasebandCreateControllerWithParams, _TelephonyBasebandEnableModemHSICHostReadyWithDuration, 
+                       _TelephonyBasebandEnableModemHSICPort, _TelephonyBasebandEnableModemMux, 
+                       _TelephonyBasebandEnableModemSleepWithVoter, _TelephonyBasebandEnableModemUSBEnumerationWithAP, 
+                       _TelephonyBasebandEnableModemVBUS, _TelephonyBasebandForceResetModem, 
+                       _TelephonyBasebandGetDiagReady, _TelephonyBasebandGetFSEraseDone, 
+                       _TelephonyBasebandGetHSICPortStatistics, _TelephonyBasebandGetHSICUnexpectedPortDisableCount, 
+                       _TelephonyBasebandGetMaximumBootupTime, _TelephonyBasebandGetMaximumRecoveryTime, 
+                       _TelephonyBasebandGetModemHSICDeviceReady, _TelephonyBasebandGetModemHSICHostReady, 
+                       _TelephonyBasebandGetPMUExtOn, _TelephonyBasebandGetPowercycleDelay, 
+                       _TelephonyBasebandGetRadioOnDelay, _TelephonyBasebandGetReset, 
+                       _TelephonyBasebandGetResetAssertHoldTime, _TelephonyBasebandGetResetDeassertDelay, 
+                       _TelephonyBasebandGetResetReq, _TelephonyBasebandGetUsbDischargeTime, 
+                       _TelephonyBasebandHSICResumeOperation, _TelephonyBasebandPollGPIO, 
+                       _TelephonyBasebandPowerOnModem, _TelephonyBasebandPowercycleModem, 
+                       _TelephonyBasebandPreUpdateResetModem, _TelephonyBasebandRegisterForHSICNotifications, 
+                       _TelephonyBasebandRegisterForReset, _TelephonyBasebandRemoveFreqList, 
+                       _TelephonyBasebandResetModem, _TelephonyBasebandResetModemOnLowPower, 
+                       _TelephonyBasebandSelectVinyl, _TelephonyBasebandSetGPIO, 
+                       _TelephonyBasebandSetHSICIdleDisconnectTimeout, _TelephonyBasebandSetHSICReady, 
+                       _TelephonyBasebandSetModemCoredumpGPIO, _TelephonyBasebandSupportsRadio, 
+                       _TelephonyBasebandSuspendModemHSICPort, _TelephonyBasebandVoteDeviceWake ]
+...

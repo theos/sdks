@@ -1,0 +1,27 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CADCopyEntity, _CADDeleteEntity, _CADEKPersistentEventDefaultPropertiesToLoad, _CADEntityCopyObjectID,
+                          _CADEntityCopyObjectIDUnlocked, _CADEntityExistsAndIsAccessible, _CADEntityIsInManagedStore,
+                          _CADEntityIsInRestrictedStore, _CADExitStatusCode_Normal,
+                          _CADExitStatusCode_UnexpectedCompletionOfMainFunction, _CADLogHandle, _CADLogInitIfNeeded,
+                          _CADStatsCollectSignificantEvents, _CalEntityCopyProperty, _CalEntityCopyPropertyValues,
+                          _CalEntitySetProperty, _GetSharedXPCInterfaceForCADClientInterface, _GetSharedXPCInterfaceForCADInterface,
+                          __CADDaemonStartedNotification ]
+    objc-classes:       [ _BirthdayCalendarUpdater, _CADCalendarItemsWithExternalIdentifierPredicate, _CADCompoundFilter,
+                          _CADContactEventsPredicate, _CADDatabaseInitializationOptions, _CADEntityWrapper,
+                          _CADEventCreatedFromSuggestionPredicate, _CADEventEntityWrapper, _CADEventPredicate,
+                          _CADEventTimeWindowPredicate, _CADEventsForAssistantSearchPredicate, _CADFilter,
+                          _CADIdleChangeTrackingCleanupInfo, _CADNaturalLanguageSuggestedEventsSearchPredicate,
+                          _CADNotifiableEventsPredicate, _CADNotificationCenterVisibleEventsPredicate, _CADPredicate,
+                          _CADPropertyFilter, _CADPropertySearchPredicate, _CADRespondedEventsPredicate, _CADServer,
+                          _CADTravelEventsPredicate, _CADUnacknowledgedEventsPredicate, _CADUnalertedEventsPredicate,
+                          _CADUpNextEventsPredicate, _CADUpcomingEventsPredicate, _CADXPCProxyHelper, _ClientConnection,
+                          _EKAlarmOccurrence, _EKMasterEventsPredicate, _EKPredicate, _EKReminderPredicate, _EKScheduledReminderPredicate ]
+    objc-ivars:         [ _EKPredicate._timeZone, _EKPredicate._uuid ]
+...

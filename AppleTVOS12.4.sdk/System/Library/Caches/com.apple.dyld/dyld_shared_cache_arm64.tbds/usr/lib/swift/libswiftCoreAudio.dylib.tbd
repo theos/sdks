@@ -1,0 +1,39 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/swift/libswiftCoreAudio.dylib
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafeG0SPySo0beF0VGvg,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafeG0SPySo0beF0VGvpMV,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafedG0SpySo0beF0VGvM,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafedG0SpySo0beF0VGvg,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafedG0SpySo0beF0VGvpMV,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV06unsafedG0SpySo0beF0VGvs,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV10startIndexSivg,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV10startIndexSivpMV,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV5countSivM,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV5countSivg,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV5countSivpMV,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV5countSivs,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV8endIndexSivg,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerV8endIndexSivpMV,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVMa,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVMn, _$s9CoreAudio013UnsafeMutableB17BufferListPointerVN,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVSKAAMc,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVSMAAMc,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVSTAAMc,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVSkAAMc,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVSlAAMc,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVyACSgSpySo0beF0VGSgcfC,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVyACSpySo0beF0VGcfC,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVySo0bE0VSiciM,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVySo0bE0VSicir,
+                          _$s9CoreAudio013UnsafeMutableB17BufferListPointerVySo0bE0VSicis, _$sSR9CoreAudioEySRyxGSo0B6BufferVcfC,
+                          _$sSo11AudioBufferV04CoreA0E_16numberOfChannelsABSryxG_SitclufC,
+                          _$sSo15AudioBufferListV04CoreA0E11sizeInBytes14maximumBuffersS2i_tFZ,
+                          _$sSo15AudioBufferListV04CoreA0E8allocate14maximumBuffersAC013UnsafeMutableabC7PointerVSi_tFZ,
+                          _$sSr9CoreAudioEySryxGSo0B6BufferVcfC, __swift_FORCE_LOAD_$_swiftCoreAudio ]
+...

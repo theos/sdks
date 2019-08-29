@@ -1,0 +1,23 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 4F52BDB4-7EB5-3CCB-B7C2-ACE2EA51518F' ]
+platform:        tvos
+install-name:    /usr/lib/libTelephonyUSBDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _TelephonyUSBAddConfigurationValueMatching, _TelephonyUSBAddDeviceClassMatching, 
+                       _TelephonyUSBAddDeviceSubClassMatching, _TelephonyUSBAddInterfaceClassMatching, 
+                       _TelephonyUSBAddInterfaceNumberMatching, _TelephonyUSBAddInterfaceSubClassMatching, 
+                       _TelephonyUSBAddProductIDMatching, _TelephonyUSBAddVendorIDMatching, 
+                       _TelephonyUSBDeviceCreateInterface, _TelephonyUSBDeviceCreateInterfaceWithAllocator, 
+                       _TelephonyUSBDeviceCreateServiceMatchingDictionary, _TelephonyUSBDeviceGetDeviceInterface, 
+                       _TelephonyUSBDeviceGetLocationID, _TelephonyUSBDeviceGetProductID, 
+                       _TelephonyUSBDeviceGetVendorID, _TelephonyUSBDeviceIsValid, 
+                       _TelephonyUSBDeviceRegisterForGeneralInterest, _TelephonyUSBInterfaceCreateInterface, 
+                       _TelephonyUSBInterfaceCreateInterfaceWithAllocator, _TelephonyUSBInterfaceCreateServiceMatchingDictionary, 
+                       _TelephonyUSBInterfaceGetInterfaceInterface, _TelephonyUSBInterfaceGetProductID, 
+                       _TelephonyUSBInterfaceGetVendorID, _TelephonyUSBInterfaceIsValid, 
+                       _TelephonyUSBInterfaceOpen, _TelephonyUSBIterateIterator, 
+                       _TelephonyUSBRegisterForDevicesWithAllocator, _TelephonyUSBRegisterForInterfacesWithAllocator ]
+...

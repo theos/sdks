@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ _BrightnessSystem, _BrightnessSystemClient, _BrightnessSystemClientInternal, _CBAdaptationClient,
+                          _CBBlueLightClient, _CBClient ]
+...

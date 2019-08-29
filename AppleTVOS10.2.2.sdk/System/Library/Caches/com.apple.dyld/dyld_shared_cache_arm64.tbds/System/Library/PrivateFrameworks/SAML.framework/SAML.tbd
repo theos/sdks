@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SAML.framework/SAML
+current-version:       110.200
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SAMLAttributePropertyNameAccountProviderID, _SAMLAttributePropertyNameAuthenticationTTL,
+                          _SAMLAttributePropertyNameChannelIDs, _SAMLAttributePropertyNameHBAStatus,
+                          _SAMLAttributePropertyNameHouseholdID, _SAMLAttributePropertyNameLanguage,
+                          _SAMLAttributePropertyNameMaxMPAAContentRating, _SAMLAttributePropertyNameMaxVCHIPContentRating,
+                          _SAMLAttributePropertyNamePostalCodes, _SAMLAttributePropertyNameTransientID,
+                          _SAMLAttributePropertyNameUserID, _SAMLAuthZDecisionQueryActionPlay, _SAMLParserDetailedErrorsKey,
+                          _SAMLParserErrorDomain ]
+    objc-classes:       [ _SAMLAttributeQuery, _SAMLAuthNRequest, _SAMLAuthZDecisionQuery, _SAMLLogoutRequest, _SAMLParserController,
+                          _SAMLResponse, _XMLWrapperDoc ]
+...

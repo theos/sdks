@@ -1,0 +1,33 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultDirectionalInsets,
+                          _NUIContainerViewDefaultInsets, _NUIContainerViewDefaultSize, _NUIContainerViewSystemDimension,
+                          __NUIIsDebuggerAttached, __ZN18_NUIBoxArrangement12measureCellsEb6CGSize,
+                          __ZN18_NUIBoxArrangement13positionCellsE6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS0_E,
+                          __ZN18_NUIBoxArrangement19resetForMeasurementEb, __ZN18_NUIBoxArrangementC1Ev, __ZN18_NUIBoxArrangementC2Ev,
+                          __ZN19_NUIGridArrangement12measureCellsEb6CGSizePb,
+                          __ZN19_NUIGridArrangement13positionCellsE6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS0_E,
+                          __ZN19_NUIGridArrangement14enumerateCellsEU13block_pointerFvRK23_NUIGridArrangementCellE,
+                          __ZN19_NUIGridArrangement19positionSubsetCellsE8_NSRangeS0_6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS1_E,
+                          __ZN19_NUIGridArrangement19resetForMeasurementEb,
+                          __ZN19_NUIGridArrangement22frameForColumnsAndRowsE8_NSRangeS0_6CGRect,
+                          __ZN19_NUIGridArrangement24unionFrameForSubsetCellsE8_NSRangeS0_6CGRect, __ZN19_NUIGridArrangementC1Ev,
+                          __ZN19_NUIGridArrangementC2Ev,
+                          __ZN22_NUIBoxArrangementCellC1EPU29objcproto18NUIArrangementItem11objc_object21NUIContainerAlignmentS2_,
+                          __ZN22_NUIBoxArrangementCellC2EPU29objcproto18NUIArrangementItem11objc_object21NUIContainerAlignmentS2_,
+                          __ZN23_NUIGridArrangementCellC1EPU29objcproto18NUIArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN23_NUIGridArrangementCellC2EPU29objcproto18NUIArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN28_NUIGridArrangementDimensionC1Emd, __ZN28_NUIGridArrangementDimensionC2Emd ]
+    objc-classes:       [ _NUIBoxArrangement, _NUIContainerBoxView, _NUIContainerGridView, _NUIContainerStackView, _NUIContainerView,
+                          _NUIContentScrollView, _NUIGridArrangement, _NUISizeCache, _NUIWidgetGridView, _NUIWidgetGridViewCell,
+                          _NUIWidgetGridViewEmptyCell, __NUIViewContainerViewInfo ]
+    objc-ivars:         [ __NUIViewContainerViewInfo._customAlignmentInsets, __NUIViewContainerViewInfo._customBottomBaseline,
+                          __NUIViewContainerViewInfo._customTopBaseline, __NUIViewContainerViewInfo._flags,
+                          __NUIViewContainerViewInfo._sizeCache ]
+...

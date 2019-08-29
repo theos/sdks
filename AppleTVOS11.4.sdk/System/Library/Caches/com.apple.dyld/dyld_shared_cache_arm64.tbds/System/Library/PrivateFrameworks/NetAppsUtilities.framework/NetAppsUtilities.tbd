@@ -1,0 +1,23 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NACancelableCancel, _NAEmptyResult, _NAEqualObjects, _NAErrorDomain, _NAFutureCallbackStack, _NAStringFromBOOL,
+                          _NetAppsUtilitiesVersionNumber, _NetAppsUtilitiesVersionString, __NABlockDescriptor, __NADictionaryOfMetrics,
+                          __NAPopScopedDescriptor, __NAPushScopedDescriptor, __NAScopedDescriptor,
+                          _kNAIdentityBuilderDefaultComparisonBlock, _kNAIdentityBuilderDefaultDoubleComparisionBlock,
+                          _kNAIdentityBuilderDefaultFloatComparisionBlock, _kNAIdentityBuilderDefaultHashBlock,
+                          _kNAIdentityBuilderDefaultNSNumberComparisonBlock, _kNAIdentityBuilderPointerComparisonBlock,
+                          _kNAIdentityBuilderPointerHashBlock ]
+    objc-classes:       [ _NACancelationToken, _NADeallocationSentinel, _NADeallocationTracer, _NADecayingTimer, _NADescriptionBuilder,
+                          _NAFilterEnumerator, _NAFlatMapEnumerator, _NAFuture, _NAIdentity, _NAIdentityBuilder, _NAIdentityCharacteristic,
+                          _NAMutableTreeNode, _NAPair, _NAPromise, _NAQueue, _NAScheduler, _NATreeNode, _NATreeNodeDeepNodeEnumerator,
+                          _NAValueThrottler, __NABoundedQueueingStrategy, __NADefaultQueueingStrategy, __NAImmediateScheduler,
+                          __NAKeyValueObserverProxy, __NALazyFuture, __NAMainThreadScheduler, __NANotificationObserverProxy,
+                          __NAObserverProxy, __NAOperationQueueScheduler, __NAPriorityQueueingStrategy, __NAQueueScheduler ]
+    objc-ivars:         [ __NAOperationQueueScheduler._queue, __NAQueueScheduler._queue ]
+...

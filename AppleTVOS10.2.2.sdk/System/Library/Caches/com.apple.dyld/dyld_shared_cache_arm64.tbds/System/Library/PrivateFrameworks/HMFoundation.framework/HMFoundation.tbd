@@ -1,0 +1,50 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _HMFDispatchQueueName, _HMFErrorDomain, _HMFGetLogCategory, _HMFGetLogIdentifier, _HMFHTTPHostHeaderFieldKey,
+                          _HMFHTTPMessageHeaderFieldContentLengthKey, _HMFHTTPMessageHeaderFieldContentTypeKey,
+                          _HMFHTTPMessageHeaderFieldDateKey, _HMFHTTPMessageHeaderFieldTransferEncodingKey,
+                          _HMFHTTPServerDefaultConnectionIdleTimeout, _HMFLogCategoryDefault, _HMFLogCategoryDumpState,
+                          _HMFNetServiceDidStartMonitoringInternalNotification, _HMFOperatingSystemVersionCompare,
+                          _HMFPowerManagerBatteryLevelDidChangeNotification, _HMFPowerManagerBatteryStateDidChangeNotification,
+                          _HMFProductClassFromString, _HMFProductClassToString, _HMFProductInfoBlowfishOSVersion,
+                          _HMFProductInfoBondiOSVersion, _HMFProductInfoBugleOSVersion, _HMFProductInfoButlerOSVersion,
+                          _HMFProductInfoCoralOSVersion, _HMFProductInfoDaytonaOSVersion, _HMFProductInfoDonnerTideOSVersion,
+                          _HMFProductInfoEagleOSVersion, _HMFProductInfoElectricOSVersion, _HMFProductInfoEmeraldOSVersion,
+                          _HMFProductInfoErieOSVersion, _HMFProductInfoMonarchOSVersion, _HMFProductInfoTildenOSVersion,
+                          _HMFProductInfoUnionOSVersion, _HMFProductInfoWhitetailOSVersion, _HMFProductPlatformFromString,
+                          _HMFProductPlatformToString, _HMFSystemInfoNameNotificationKey, _HMFSystemInfoNameUpdatedNotification,
+                          _HMFoundationVersionNumber, _HMFoundationVersionString, _NSOperatingSystemVersionToString,
+                          __HMFBridgeTransferIfType, _kDumpStateAccessoryCategoryKey, _kDumpStateAccessoryKey,
+                          _kDumpStateAccessoryProfileKey, _kDumpStateAccessoryTransportKey, _kDumpStateActionSetKey,
+                          _kDumpStateApplicationDataKey, _kDumpStateBridgeAccessoryKey, _kDumpStateBridgeableAccessoryKey,
+                          _kDumpStateBridgedAccessoryKey, _kDumpStateBulletinNotificationGroupCamerasKey,
+                          _kDumpStateBulletinNotificationGroupKey, _kDumpStateBulletinNotificationGroupServicesKey,
+                          _kDumpStateBulletinNotificationKey, _kDumpStateCharacteristicKey, _kDumpStateCurrentUser, _kDumpStateEventKey,
+                          _kDumpStateHomeDaemonVersionKey, _kDumpStateHomeKey, _kDumpStateHomeManagerKey,
+                          _kDumpStateHomeNotificationRegistrationsKey, _kDumpStateIncomingInvitesKey, _kDumpStateInvitesKey,
+                          _kDumpStateKeychainItemKey, _kDumpStateKeychainKey, _kDumpStateLocationKey, _kDumpStateMeshKey,
+                          _kDumpStateMetadataKey, _kDumpStateOutgoingInvitesKey, _kDumpStatePredicateKey, _kDumpStateRecurrenceKey,
+                          _kDumpStateRemovedUserKey, _kDumpStateResidentKey, _kDumpStateRoomKey, _kDumpStateSecondaryAccessoryKey,
+                          _kDumpStateServiceGroupKey, _kDumpStateServiceKey, _kDumpStateStateKey, _kDumpStateSyncManagerKey,
+                          _kDumpStateTimerTriggerKey, _kDumpStateTriggerKey, _kDumpStateUserKey, _kDumpStateWriteActionKey,
+                          _kDumpStateZoneKey, _kIndentLevel, _milliseconds, _randomDataWithLength, _tagFromUUID ]
+    objc-classes:       [ _HMFBlockOperation, _HMFDumpCategory, _HMFExponentialBackoffTimer, _HMFHTTPClient, _HMFHTTPClientConnection,
+                          _HMFHTTPRequest, _HMFHTTPRequestHandler, _HMFHTTPRequestInternal, _HMFHTTPResponse, _HMFHTTPResponseInternal,
+                          _HMFHTTPServer, _HMFLogCategory, _HMFMemoryMonitor, _HMFMessage, _HMFMessageDestination, _HMFMessageDispatcher,
+                          _HMFMessageInternal, _HMFMessageTransport, _HMFMutableHTTPRequest, _HMFMutableHTTPResponse, _HMFMutableMessage,
+                          _HMFMutableNetService, _HMFNetAddress, _HMFNetAddressInternal, _HMFNetManager, _HMFNetMonitor, _HMFNetService,
+                          _HMFNetServiceBrowser, _HMFObjectObserver, _HMFPowerLogger, _HMFPowerManager, _HMFProductInfo, _HMFSystemInfo,
+                          _HMFTimedBlockedOperation, _HMFTimer, _HMFVersion, _HMFWeakObject, _HMFWiFiManager, _HMMsgHandler, _HMUIndent,
+                          __HMFCFHTTPMessage, __HMFCFHTTPServer, __HMFCFHTTPServerConnection, __HMFCFHTTPServerRequest,
+                          __HMFCFHTTPServerResponse, __HMFNetAddressHostname, __HMFNetAddressIPV4, __HMFNetAddressIPV6,
+                          __HMFNetManagerWoWAssertion, __HMFNetServiceMonitor, __HMFObjectObserverInternal ]
+    objc-ivars:         [ _HMFMutableNetService._port, _HMFNetService._TXTRecord, _HMFNetService._addresses, _HMFNetService._domain,
+                          _HMFNetService._internal, _HMFNetService._name, _HMFNetService._port, _HMFNetService._type, _HMFTimer._leeway,
+                          _HMFTimer._timeInterval ]
+...

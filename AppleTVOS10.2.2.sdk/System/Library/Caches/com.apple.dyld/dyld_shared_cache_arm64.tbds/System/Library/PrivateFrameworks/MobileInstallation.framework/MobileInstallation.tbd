@@ -1,0 +1,30 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MIFunctionNameErrorKey, _MIInstallerErrorDomain, _MILibMISErrorNumberKey, _MIPathArgumentErrorKey,
+                          _MISourceFileLineErrorKey, _MobileInstallationCheckCapabilitiesMatch, _MobileInstallationClearUninstalled,
+                          _MobileInstallationCopyDiskUsageForLaunchServices, _MobileInstallationCopyInstalledAppsForLaunchServices,
+                          _MobileInstallationCopyInstalledDeveloperAppsForLaunchServices, _MobileInstallationCopySafeHarbors,
+                          _MobileInstallationCopySafeHarborsForContainerType,
+                          _MobileInstallationEnumerateAllInstalledItemDictionaries, _MobileInstallationInstallForLaunchServices,
+                          _MobileInstallationInstallForLaunchServicesWithError, _MobileInstallationKillInstalld,
+                          _MobileInstallationLookupUninstalled, _MobileInstallationProcessRestoredContainer,
+                          _MobileInstallationProcessRestoredContainerWithIdentifierOfType, _MobileInstallationRegisterSafeHarbor,
+                          _MobileInstallationRegisterSafeHarborForContainerType, _MobileInstallationRemoveSafeHarbor,
+                          _MobileInstallationRemoveSafeHarborForContainerType, _MobileInstallationUninstallForLaunchServices,
+                          _MobileInstallationUninstallForLaunchServicesWithError,
+                          _MobileInstallationUpdateContainerDataProtectionForMigratorOnly,
+                          _MobileInstallationUpdateSinfForLaunchServices, _MobileInstallationUpdateiTunesMetadataForLaunchServices,
+                          _MobileInstallationWatchKitInstallerShouldSkipInstall, _MobileInstallationWatchKitInstallerSnapshotWKApp,
+                          _kMICallbackPercentCompleteKey, _kMIDemotionCompleteErrorOccurredKey, _kMIDemotionCompleteNotificationName,
+                          _kMIInstallResultInstalledAppInfoArrayKey, _kMIUninstallParallelPlaceholderKey,
+                          _kMIUninstallResultRemovedAppInfoArrayKey, _kMIUpdateSystemAppDataContainerDataProtection,
+                          _kMIWatchKitSnapshotInfoDiskUsageBytes, _kMIWatchKitSnapshotOptionCreatePlaceholder,
+                          _kMIWatchKitSnapshotOptionMaxWKAppVersion ]
+    objc-classes:       [ _AITransactionLog ]
+...

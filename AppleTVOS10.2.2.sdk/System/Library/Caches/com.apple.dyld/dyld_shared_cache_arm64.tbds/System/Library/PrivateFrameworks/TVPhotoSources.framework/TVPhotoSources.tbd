@@ -1,0 +1,19 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVPhotoSources.framework/TVPhotoSources
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PBSAppProviderTypeScreenSaver, _PBScreensaverProvidesSettingsUI, _PBScreensaverSettingsURLScheme,
+                          _PBScreensaverShowInSettings, _PBScreensaverStyle, _PBScreensaverTitleKey, _TVPhotoCacheManagerErrorCode,
+                          _TVPhotoServiceOptionsCacheFolderKey, _TVPhotoServiceOptionsMaxAssetsKey,
+                          _TVPhotoServiceOptionsMaxSizeInMBKey, _TVPhotoServiceOptionsUnrestrictedAssetFetchDurationKey,
+                          _TVPhotoSourceAppProviderIdentifier, _TVPhotoSourceManagerSourcesUpdatedNotification,
+                          _TVPhotoSourcesImageCacheUpdatedNotification, _TVPhotoSourcesVersionNumber, _TVPhotoSourcesVersionString ]
+    objc-classes:       [ _TVMutablePhotoAsset, _TVMutablePhotoCollection, _TVPhotoAsset, _TVPhotoCollection, _TVPhotoScreenSaverCache,
+                          _TVPhotoSource, _TVPhotoSourceAppProvider, _TVPhotoSourceExtensionContext, _TVPhotoSourceExtensionHostContext,
+                          _TVPhotoSourceManager, _TVPhotoSourceProvider, _TVPhotoSourceService, _TVPhotoStreamClient,
+                          _TVScreenSaverProvider, _TVServiceProviderUtil, __TVCachedAssetInfo, __TVServiceProviderConnection ]
+...

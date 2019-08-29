@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/VideoDecoders/MP4VH6.videodecoder
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MP4VH6Register ]
+...

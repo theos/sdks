@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ _GVEdge, _GVGraph, _GVInternalRenderer, _GVLayout, _GVNode ]
+    objc-ivars:         [ _GVNode.h, _GVNode.inNodes, _GVNode.inPriority, _GVNode.index, _GVNode.next, _GVNode.outNodes, _GVNode.outPriority,
+                          _GVNode.prev, _GVNode.rank, _GVNode.w, _GVNode.x, _GVNode.y ]
+...

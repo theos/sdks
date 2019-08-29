@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/PushKit.framework/PushKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PKPushTypeComplication, _PKPushTypeFileProvider, _PKPushTypeVoIP, _PushKitVersionNumber, _PushKitVersionString ]
+    objc-classes:       [ _PKPushCredentials, _PKPushPayload, _PKPushRegistry ]
+...

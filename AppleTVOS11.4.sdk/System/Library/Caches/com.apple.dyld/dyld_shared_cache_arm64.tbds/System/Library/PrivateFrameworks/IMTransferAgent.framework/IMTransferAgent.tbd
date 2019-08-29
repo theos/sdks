@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IMTransferAgent.framework/IMTransferAgent
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _IMOptOutOfOptimizedMadridAttachmentDownloadPath, _IMOptOutOfOptimizedMadridAttachmentUploadPath,
+                          _IMSetOptOutOfOptimizedMadridAttachmentDownloadPath, _IMSetOptOutOfOptimizedMadridAttachmentUploadPath ]
+    objc-classes:       [ _FTiMessageRequestMMCSDownloadToken, _FTiMessageRequestMMCSUploadToken, _IMTransferAgentController,
+                          _IMTransferAgentDeliveryController, _IMTransferAgentIDSInterface, _IMTransferEncryptionController,
+                          _IMTransferEncryptionHelpers ]
+...

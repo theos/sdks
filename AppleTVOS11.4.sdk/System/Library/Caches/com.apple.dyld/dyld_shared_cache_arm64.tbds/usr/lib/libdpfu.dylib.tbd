@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libdpfu.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DPFUGetDeviceModeString, _DPFUGetDeviceStatusString, _DPFUSessionCreate, _DPFUSessionEnterUpdateMode,
+                          _DPFUSessionGetDeviceInfo, _DPFUSessionGetTypeID, _DPFUSessionInstallFilePayload,
+                          _DPFUSessionInstallMemoryPayload, _DPFUSessionLeaveUpdateMode,
+                          _DPFUSessionSetExpectDeviceTerminationUponRestart, _DPFUSessionSetLogLevel, _DPFUSessionSetProgressCallback,
+                          _DPFUSessionSetRestartAfterUpdate, _dpfuUpdateDeviceWithContentsOfFile ]
+...

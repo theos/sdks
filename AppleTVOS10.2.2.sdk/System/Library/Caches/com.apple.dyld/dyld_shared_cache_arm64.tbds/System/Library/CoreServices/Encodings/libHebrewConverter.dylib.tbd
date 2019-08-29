@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/CoreServices/Encodings/libHebrewConverter.dylib
+current-version:       69
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ ___CFStringEncodingGetHebrewConverterDefinition ]
+...

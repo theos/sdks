@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: A570BBED-CB99-30B2-B2F8-7066218107F1' ]
+platform:        tvos
+install-name:    /usr/lib/libWAPI.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _WAPIEnabled, _WAPIStart, _WAPIStatus, _WAPIStop, __WCwapic_start, 
+                       __WCwapic_status, __WCwapic_stop, _isChinaRegion ]
+...

@@ -1,0 +1,65 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Radio.framework/Radio
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RAD264455_107, _RAD264455_108, _RAD264455_112, _RAD264455_114, _RadioAddStationRequestShareURLDictionaryKey,
+                          _RadioArtworkDictionaryHeightKey, _RadioArtworkDictionaryURLKey, _RadioArtworkDictionaryWidthKey,
+                          _RadioAvailabilityControllerRadioAvailableDidChangeNotification, _RadioDataEqualsData,
+                          _RadioDialogActionKindGetTracks, _RadioDialogAdditionalDataKey, _RadioFairPlayErrorDomain,
+                          _RadioGetArtworkURLFromVariantsForSize, _RadioGetServerApplicationInstanceFromHTTPHeaderFields,
+                          _RadioGetServerTimingFromHTTPHeaderFields, _RadioHistoryItemTypeIsAdType, _RadioLogInitialize,
+                          _RadioModelCurrentDatabaseVersion, _RadioModelWasDeletedNotification,
+                          _RadioNetworkObserverIsCellularNetworkingAllowedDidChangeNotification,
+                          _RadioNetworkObserverIsUsingNetworkDidChangeNotification,
+                          _RadioPlaybackTimeoutInfoControllerCurrentTimeoutInfoDidChangeNotification,
+                          _RadioRecentStationsControllerStationsDidChangeNotification, _RadioRequestErrorCodeIsUserLockoutError,
+                          _RadioRequestResponseKeyRetryIntervalInMilliseconds, _RadioSearchHighlightRangeFromDictionary,
+                          _RadioSearchResultCategoryKeyHasMoreResults, _RadioSearchResultCategoryKeyName,
+                          _RadioSearchResultCategoryKeyStationResults, _RadioSearchResultCategoryKeyStations,
+                          _RadioSearchResultCategoryKeyType, _RadioSearchResultStationResultsKeyHighlightRanges,
+                          _RadioSearchResultStationResultsKeyStation, _RadioStationMatchLibraryTrackMetadataKindMusicVideo,
+                          _RadioStationMatchLibraryTrackMetadataKindSong, _RadioStationMatchLibraryTrackMetadataKindUploadedAudio,
+                          _RadioStationMatchLibraryTrackMetadataKindUploadedVideo,
+                          _RadioStationSkipControllerNumberOfAvailableSkipsDidChangeNotification, _RadioStoreBagDidLoadNotification,
+                          __RadioLogEnabled, __RadioRequestErrorCodeForErrorDictionary, __RadioRequestStatusForHTTPStatusCode ]
+    objc-classes:       [ _RadioAddStationRequest, _RadioAddToWishListRequest, _RadioArtwork, _RadioArtworkCollection, _RadioAudioClip,
+                          _RadioAvailabilityController, _RadioClearPlayHistoryRequest, _RadioContentLookupRequest,
+                          _RadioDeleteStationRequest, _RadioFairPlayKBSyncManager, _RadioFetchMetadataRequest, _RadioGenresRequest,
+                          _RadioGetFeaturedStationsRequest, _RadioGetGenreTreeNodesRequest, _RadioGetHistoryRequest,
+                          _RadioGetLikesRequest, _RadioGetStationsRequest, _RadioGetStreamingStationsRequest,
+                          _RadioGetTrackEventsRequest, _RadioGetTracksRequest, _RadioGetTracksResponse, _RadioGetWishListRequest,
+                          _RadioHistoryCategory, _RadioHistoryItem, _RadioImageCache, _RadioLikeBanItem, _RadioLikeRequest,
+                          _RadioLoadStoreBagRequest, _RadioManagedSkipHistory, _RadioManagedStation, _RadioModel,
+                          _RadioMutableHistoryCategory, _RadioMutableHistoryItem, _RadioMutableLikeBanItem, _RadioMutablePlayEvent,
+                          _RadioMutablePlayEventCollection, _RadioMutablePlaybackContext, _RadioMutablePlaybackTimeoutInfo,
+                          _RadioMutableRecentStationsGroup, _RadioMutableSearchResultCategory, _RadioMutableSeedMetadata,
+                          _RadioMutableStationTreeNode, _RadioMutableTrackHistorySectionInfo, _RadioMutableTrackPlaybackDescriptor,
+                          _RadioNetworkObserver, _RadioOptInRequest, _RadioPlayEvent, _RadioPlayEventCollection, _RadioPlayEventsRequest,
+                          _RadioPlaybackContext, _RadioPlaybackTimeoutInfo, _RadioPlaybackTimeoutInfoController,
+                          _RadioPushNotificationController, _RadioRecentStationsController, _RadioRecentStationsGroup,
+                          _RadioRecentStationsRequest, _RadioRecentStationsResponse, _RadioRecentStationsResponseStationGroup,
+                          _RadioRemoveAllFromWishListRequest, _RadioReportIssueRequest, _RadioRequest, _RadioRequestContext,
+                          _RadioRevision, _RadioSearchRequest, _RadioSearchResultAccessedRequest, _RadioSearchResultCategory,
+                          _RadioSearchStationResult, _RadioSeedMetadata, _RadioShareInfoRequest, _RadioShareInformation,
+                          _RadioShareStationRequest, _RadioSkipHistory, _RadioStation, _RadioStationMatchContext,
+                          _RadioStationMatchLibraryAlbumMetadata, _RadioStationMatchLibraryArtistMetadata,
+                          _RadioStationMatchLibraryTrackMetadata, _RadioStationMatchMetadata, _RadioStationMatchRequest,
+                          _RadioStationMatchStoreMetadata, _RadioStationSkipController, _RadioStationTreeNode, _RadioStoreBag,
+                          _RadioStreamTrack, _RadioSyncRequest, _RadioTermsCheckRequest, _RadioTrack, _RadioTrackAdInfo, _RadioTrackAsset,
+                          _RadioTrackHistorySectionInfo, _RadioTrackPlaybackDescriptor, _RadioURLConnectionRequest,
+                          _RadioUpdateSortOrderRequest, _RadioUpdateStationRequest, __RadioPlayEventStationInformation ]
+    objc-ivars:         [ _RadioHistoryCategory._categoryDescription, _RadioHistoryCategory._items, _RadioHistoryCategory._name,
+                          _RadioHistoryCategory._stationHash, _RadioHistoryCategory._stationID, _RadioHistoryCategory._type,
+                          _RadioHistoryItem._datePlayed, _RadioHistoryItem._externalIdentifier, _RadioHistoryItem._track,
+                          _RadioHistoryItem._type, _RadioPlayEvent._datePlayed, _RadioPlayEvent._endReason,
+                          _RadioPlayEvent._endTimeInTrack, _RadioPlayEvent._externalIdentifier, _RadioPlayEvent._startTimeInTrack,
+                          _RadioPlayEvent._storeID, _RadioPlayEvent._timedMetadata, _RadioPlayEvent._trackInfo, _RadioPlayEvent._type,
+                          _RadioRecentStationsGroup._active, _RadioRecentStationsGroup._localizedTitle,
+                          _RadioRecentStationsGroup._stations, _RadioSearchResultCategory._categoryType,
+                          _RadioSearchResultCategory._hasMoreResults, _RadioSearchResultCategory._name,
+                          _RadioSearchResultCategory._responseDictionary, _RadioSearchResultCategory._stationResults ]
+...

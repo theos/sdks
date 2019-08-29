@@ -1,0 +1,28 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CloudPhotoServices.framework/CloudPhotoServices
+current-version:       3463.1.110
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CPLIsWideGamutDisplay, _CloudPhotoServicesOptionBakeInOrientationKey,
+                          _CloudPhotoServicesOptionColorOutputKey, _CloudPhotoServicesOptionExportPresetKey,
+                          _CloudPhotoServicesOptionIsPassthroughConversionKey,
+                          _CloudPhotoServicesOptionLivePhotoPairingIdentifierKey, _CloudPhotoServicesOptionMaximumPixelCountKey,
+                          _CloudPhotoServicesOptionOriginatingSignatureKey, _CloudPhotoServicesOptionOutputFileTypeKey,
+                          _CloudPhotoServicesOptionRenderOriginatingSignatureKey, _CloudPhotoServicesOptionTargetFileSizeKey,
+                          _CloudPhotoServicesRetryCount, _CloudPhotoServicesRetryDelay, _CloudPhotoServicesVersionNumber,
+                          _CloudPhotoServicesVersionString, _CloudPhotoServicesVideoConversionPowerEfficiencyKey,
+                          _CloudPhotoServicesVideoConversionPowerEfficiencyMinimumDurationKey,
+                          _CloudPhotoServicesVideoConversionPowerEfficiencyOverrideUserDefaultsKey,
+                          _PHMediaFormatConversionErrorDomain, _PHMediaFormatConversionUnknownFutureIdentifierPlaceholder ]
+    objc-classes:       [ _CloudPhotoServices, _CloudPhotoServicesUtilities, _PHMediaFormatChainedConversionRequest,
+                          _PHMediaFormatConversionCompositeRequest, _PHMediaFormatConversionContent,
+                          _PHMediaFormatConversionDestination, _PHMediaFormatConversionJob,
+                          _PHMediaFormatConversionLivePhotoBundleSource, _PHMediaFormatConversionManager,
+                          _PHMediaFormatConversionRequest, _PHMediaFormatConversionSource,
+                          _PHMediaFormatLivePhotoBundleConversionRequest, _PHMediaFormatLivePhotoConversionRequest ]
+    objc-ivars:         [ _PHMediaFormatConversionContent._fileSignature, _PHMediaFormatConversionContent._fileURL,
+                          _PHMediaFormatConversionContent._length ]
+...

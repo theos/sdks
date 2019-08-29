@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
+current-version:       425.255.3
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _LAAvailableMechanisms, _LACopyExternalizedContext, _LAErrorDomain, _LAErrorSubcodeKey ]
+    objc-classes:       [ _LAContext ]
+...

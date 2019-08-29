@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXPineBoardServerInstance.framework/AXPineBoardServerInstance
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXPineBoardServerInstanceVersionNumber, _AXPineBoardServerInstanceVersionString ]
+    objc-classes:       [ _AXPineBoardServerInstance, _AXPineBoardServiceProvider ]
+...

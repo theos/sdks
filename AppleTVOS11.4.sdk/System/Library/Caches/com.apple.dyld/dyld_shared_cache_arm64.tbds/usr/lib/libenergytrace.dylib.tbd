@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libenergytrace.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _entr_act_associate, _entr_act_begin, _entr_act_end, _entr_act_modify, _entr_act_set, _entr_act_setd, _entr_event,
+                          _entr_shouldtrace ]
+...

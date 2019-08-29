@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/ParsecModel.framework/ParsecModel
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ParsecModelVersionNumber, _ParsecModelVersionString ]
+    objc-classes:       [ _PARCategory, _PARCollectionStartEvent, _PARDeviceContext, _PAREvent, _PARFlushEvent, _PARUsageEvent ]
+...

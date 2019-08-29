@@ -1,0 +1,37 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ASDDebugFileLevel, _ASDDebugLevel, _ASDDebugLog, _ASDDebugLogV, _ASDDebugSetFileLoggingOptions, _ASDError,
+                          _ASDErrorBySettingUserInfoValue, _ASDErrorDomain, _ASDErrorIsEqual, _ASDErrorWithUnderlyingError,
+                          _ASDErrorWithUnderlyingErrorAndInfo, _ASDLookupPropertyBundleIdentifier, _ASDLookupPropertyBuyParams,
+                          _ASDLookupPropertyContentRating, _ASDLookupPropertyDisplayVersion,
+                          _ASDLookupPropertyExternalVersionIdentifier, _ASDLookupPropertyFileSize, _ASDLookupPropertyItemIdentifier,
+                          _ASDPurchaseBuyParameterVendorID, _ASDSoftwareUpdateHistoryInterval,
+                          _ASDSoftwareUpdatesStoreDidChangeNotification, _ASDStoreItemMetadataPropertyBundleIdentifier,
+                          _ASDStoreItemMetadataPropertyItemIdentifier, _AppStoreDaemonVersionNumber, _AppStoreDaemonVersionString,
+                          _kASDUserDefaultsIdentifier ]
+    objc-classes:       [ _ASDApplicationMetadata, _ASDBaseClient, _ASDCheckQueueRequest, _ASDCheckQueueRequestOptions,
+                          _ASDClaimApplicationsRequest, _ASDClaimApplicationsRequestOptions, _ASDCoding, _ASDCreatePlaceholdersRequest,
+                          _ASDCreatePlaceholdersRequestOptions, _ASDCreatePlaceholdersRequestResponse,
+                          _ASDDownloadQueueRequestOptions, _ASDGatherLogsRequest, _ASDGatherLogsRequestOptions,
+                          _ASDInstallManifestRequest, _ASDInstallManifestRequestOptions, _ASDInstallManifestRequestResponse, _ASDJob,
+                          _ASDJobActivity, _ASDJobAsset, _ASDJobManager, _ASDJobManagerOptions, _ASDJobManifest, _ASDJobOptions,
+                          _ASDJobResult, _ASDJobSchedulerJobMetadata, _ASDJobSchedulerRequest, _ASDJobSchedulerRequestOptions,
+                          _ASDJobSchedulerResponse, _ASDLogFileOptions, _ASDManagedApplicationRequest,
+                          _ASDManagedApplicationRequestOptions, _ASDMigrationRequest, _ASDMigrationRequestOptions, _ASDPurchase,
+                          _ASDPurchaseRequest, _ASDPurchaseRequestOptions, _ASDPurchaseResponse, _ASDPurchaseResponseItem,
+                          _ASDRegisterListenerOptions, _ASDRepairApplicationRequest, _ASDRepairApplicationRequestOptions, _ASDRequest,
+                          _ASDRequestOptions, _ASDRequestResponse, _ASDResetRequest, _ASDResetRequestOptions,
+                          _ASDRestoreApplicationsRequest, _ASDRestoreApplicationsRequestOptions,
+                          _ASDRestoreApplicationsRequestResponse, _ASDRestoreDemotedApplicationsRequest,
+                          _ASDRestoreDemotedApplicationsRequestOptions, _ASDRollableLog, _ASDSoftwareUpdate, _ASDSoftwareUpdatesStore,
+                          _ASDStoreItemMetadata ]
+    objc-ivars:         [ _ASDLogFileOptions._directoryPath, _ASDLogFileOptions._fileName, _ASDLogFileOptions._maxNumberOfLogFiles,
+                          _ASDLogFileOptions._maxSizeInBytes, _ASDRollableLog._dispatchQueue, _ASDRollableLog._fileHandle,
+                          _ASDRollableLog._fileObserverSource, _ASDRollableLog._lastFileStatTime, _ASDRollableLog._options ]
+...

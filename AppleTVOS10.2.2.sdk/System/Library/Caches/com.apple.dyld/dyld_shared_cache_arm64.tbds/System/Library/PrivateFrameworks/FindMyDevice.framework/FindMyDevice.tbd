@@ -1,0 +1,19 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _XPC_ERROR_DOMAIN, _fmdFMIPLastOperationResult, _kAccessoriesChangedNotification,
+                          _kActivationLockAllowedMayHaveChangedNotification, _kActivationLockStateDidChangeNotification,
+                          _kFMDErrorDomain, _kFMDFMIPAccountNameKey, _kFMDFMIPAccountPersonIDKey,
+                          _kFMDLogPrefsChangedDarwinNotification, _kFMDNotBackedUpPrefDomain, _kFMDPlaySoundStartedDarwinNotification,
+                          _kFMDPlaySoundStoppedDarwinNotification, _kFMDPostWipePrefDomain, _kFMDPrefDomain,
+                          _kFMDPublicNotBackedUpPrefDomain, _kFMDUAXPCServiceName, _kFMDWatchNotBackedUpPrefDomain,
+                          _kFMDWatchPrefDomain, _kFMDXPCServiceName, _kFMDXPCServiceNameUAServices, _kFMIPAppBundleIdentifier,
+                          _kFMIPLowBatteryLocateStateDidChangeNotification, _kFMIPStateDidChangeNotification,
+                          _kFMWEnabledNotification, _kLostModeChangedNotification, _kStopLostModeAlarmNotification ]
+    objc-classes:       [ _FMDBatteryInfo, _FMDFMIPManager, _FMDGenericAccessory, _FMDLostModeInfo ]
+...

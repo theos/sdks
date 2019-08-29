@@ -1,0 +1,30 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 6723155E-0EE3-3CBD-B85E-B39D1DBEC89F' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/ReplayKit.framework/ReplayKit
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _RPRecordingErrorDomain, _RPScreenRecorderRequiredFreeSpace, 
+                       _RPScreenRecorderTempDirectory, _RPStoreInfoAppNameKey, _RPStoreInfoAuthorKey, 
+                       _RPStoreInfoBundleIDKey, _RPStoreInfoCategoriesKey, _RPStoreInfoItemURLKey, 
+                       _RPVideoEditorExtensionAppNameKey, _RPVideoEditorExtensionBundleIdentifierKey, 
+                       _RPVideoEditorExtensionFileAttachmentKey, _RPVideoEditorExtensionMoviePathKey, 
+                       _RPVideoEditorExtensionOverrideShareMessageKey, _RPVideoEditorExtensionOverrideTintColorKey, 
+                       _RPVideoOverlayBackgroundMaskImageName, _RPVideoOverlayDefaultGlyphAlpha, 
+                       _RPVideoOverlayFlatBackgroundAlpha, _RPVideoOverlayFlatBackgroundWhite, 
+                       _RPVideoOverlayGlyphMaskImageName, _RPVideoOverlayHighlightedGlyphAlpha, 
+                       _ReplayKitVersionNumber, _ReplayKitVersionString ]
+    objc-classes:    [ _RPBroadcastActivityExtensionHostContext, _RPBroadcastActivityHostViewController, 
+                       _RPBroadcastActivityViewController, _RPBroadcastConfiguration, 
+                       _RPBroadcastController, _RPBroadcastExtensionProxy, _RPBroadcastHandler, 
+                       _RPBroadcastMP4ClipHandler, _RPBroadcastSampleHandler, _RPDaemonProxy, 
+                       _RPFlatVideoOverlayButton, _RPHighFidelityVideoOverlayButton, 
+                       _RPIOSurfaceObject, _RPPassThroughView, _RPPictureInPictureController, 
+                       _RPPictureInPictureViewController, _RPPictureInPictureWindow, 
+                       _RPPipView, _RPPipViewController, _RPPreviewViewController, 
+                       _RPScreenRecorder, _RPSharedConstants, _RPStoreInfo, _RPStoreManager, 
+                       _RPSystemRecordingIndicatorWindow, _RPVideoEditorExtensionHostContext, 
+                       _RPVideoEditorHostViewController, _RPYouTubeActivityProgressOverlay ]
+...

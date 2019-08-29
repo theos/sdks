@@ -1,0 +1,30 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DiagnosticExtensionsDaemon.framework/DiagnosticExtensionsDaemon
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DEDBugSessionKeyClientTransportType, _DEDBugSessionKeyConfiguration, _DEDBugSessionKeyDeviceIdentifier,
+                          _DEDBugSessionKeyFinisher, _DEDBugSessionKeyIdentifier, _DEDBugSessionKeyPendingOperations,
+                          _DEDBugSessionKeyWorkerTransportType, _DEDBugSessionOpId, _DEDBugSessionOpOptions, _DEDBugSessionOpType,
+                          _DEDBugSessionOperationCancelIdentifier, _DEDBugSessionOperationFinishIdentifier, _DEDDeviceKeyAddress,
+                          _DEDDeviceKeyBuild, _DEDDeviceKeyColor, _DEDDeviceKeyDeviceClass, _DEDDeviceKeyEnclosureColor,
+                          _DEDDeviceKeyIdentifier, _DEDDeviceKeyModel, _DEDDeviceKeyName, _DEDDeviceKeyProductType,
+                          _DEDDeviceKeyRemoteTransport, _DEDDeviceKeyStatus, _DEDDeviceKeyTransport, _DEDDevicePlatform,
+                          _DEDDevicePlatformHomePod, _DEDDevicePlatformMac, _DEDDevicePlatformTV, _DEDDevicePlatformUnspecified,
+                          _DEDDevicePlatformWatch, _DEDDevicePlatformiOS, _DEDErrorDomain, _DEDKeyAllowsCellularUpload,
+                          _DEDKeyFinishingMove, _DEDKeyRadarAuthToken, _DEDKeyRadarProblemID, _DEDKeySeedingDeviceToken,
+                          _DEDKeySeedingEnvironment, _DEDKeySeedingHost, _DEDKeySeedingSubmissionID, _DEDKeySeedingSubmissionType,
+                          _DEDSeedingFileClerkFilename, _DEDSeedingFilerErrorDomain, _DEDSeedingFinisherKeyPromises,
+                          _DiagnosticExtensionsDaemonVersionNumber, _DiagnosticExtensionsDaemonVersionString,
+                          _ResourceLoaderErrorDomain, _ResourceLoaderPayloadDataKey, _ResourceLoaderPayloadErrorKey,
+                          _ResourceLoaderPayloadResponseKey, _argumentsList, _bugSessionIndexKey, _bugSessionIndexKeyFormat, _stringIfNil ]
+    objc-classes:       [ _DEDActivity, _DEDAttachmentGroup, _DEDAttachmentHandler, _DEDAttachmentItem, _DEDBugSession,
+                          _DEDBugSessionConfiguration, _DEDBugSessionOperation, _DEDConfiguration, _DEDConstants, _DEDController,
+                          _DEDDaemon, _DEDDevice, _DEDDiagnosticCollector, _DEDExtension, _DEDIDSConnection, _DEDIDSInbound, _DEDIDSOutbound,
+                          _DEDImageResourceManager, _DEDLocalTransport, _DEDManager, _DEDPersistence, _DEDRadarFinisher, _DEDSeedingClient,
+                          _DEDSeedingFilerToken, _DEDSeedingFinisher, _DEDSeedingUploadItem, _DEDSharingConnection, _DEDSharingInbound,
+                          _DEDSharingOutbound, _DEDUtils, _DEDXPCConnector, _DEDXPCInbound, _DEDXPCOutbound, _ResourceLoader ]
+...

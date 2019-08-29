@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/Accelerate.framework/Accelerate
+current-version:       4
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage,
+                          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib ]
+...

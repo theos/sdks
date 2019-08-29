@@ -1,0 +1,37 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVSemanticContextServices.framework/TVSemanticContextServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVSCDefaultChooseSemanticActionName, _TVSCDefaultConsumeSemanticActionName,
+                          _TVSCDefaultSearchSemanticActionName, _TVSCJSONLinkedDataBaseKey, _TVSCJSONLinkedDataContainerKey,
+                          _TVSCJSONLinkedDataContextKey, _TVSCJSONLinkedDataGraphKey, _TVSCJSONLinkedDataIDKey,
+                          _TVSCJSONLinkedDataIndexKey, _TVSCJSONLinkedDataLanguageKey, _TVSCJSONLinkedDataListKey,
+                          _TVSCJSONLinkedDataReverseKey, _TVSCJSONLinkedDataSetKey, _TVSCJSONLinkedDataTypeKey,
+                          _TVSCJSONLinkedDataValueKey, _TVSCJSONLinkedDataVocabKey, _TVSCSchemaDotOrgNameKey,
+                          _TVSCSchemaDotOrgPotentialActionKey, _TVSCSchemaDotOrgQueryInputKey, _TVSCSchemaDotOrgTargetKey,
+                          _TVSCSchemaDotOrgTypeChooseAction, _TVSCSchemaDotOrgTypeConsumeAction, _TVSCSchemaDotOrgTypeListenAction,
+                          _TVSCSchemaDotOrgTypeMovie, _TVSCSchemaDotOrgTypeMusicAlbum, _TVSCSchemaDotOrgTypeMusicGroup,
+                          _TVSCSchemaDotOrgTypeMusicRecording, _TVSCSchemaDotOrgTypePropertyValueSpecification,
+                          _TVSCSchemaDotOrgTypeRadioStation, _TVSCSchemaDotOrgTypeSearchAction,
+                          _TVSCSchemaDotOrgTypeSoftwareApplication, _TVSCSchemaDotOrgTypeTVEpisode, _TVSCSchemaDotOrgTypeTVSeason,
+                          _TVSCSchemaDotOrgTypeTVShow, _TVSCSchemaDotOrgTypeWatchAction, _TVSCSchemaDotOrgURLKey,
+                          _TVSCSchemaDotOrgValueRequiredKey, _TVSCSchemaDotOrgVocabURL, _TVSCTVSchemaCommandsKey,
+                          _TVSCTVSchemaITunesStoreMetadataKey, _TVSCTVSchemaMainEntityKey, _TVSCTVSchemaTypeITunesStoreItem,
+                          _TVSCTVSchemaTypeITunesUCourse, _TVSCTVSchemaTypeITunesUEpisode, _TVSCTVSchemaTypeMovieGenre,
+                          _TVSCTVSchemaTypeMusicComposer, _TVSCTVSchemaTypeMusicGenre, _TVSCTVSchemaTypePodcast,
+                          _TVSCTVSchemaTypePodcastEpisode, _TVSCTVSchemaTypeSoftwareApplicationCollection,
+                          _TVSCTVSchemaTypeSoftwareApplicationKeyboardKey, _TVSCTVSchemaTypeSoftwareApplicationNavigationCommand,
+                          _TVSCTVSchemaTypeSoftwareApplicationState, _TVSCTVSchemaTypeSoftwareApplicationTextInputField,
+                          _TVSCTVSchemaTypeSoftwareApplicationUIElement, _TVSCTVSchemaViewIdentifierKey, _TVSCTVSchemaVocabURL,
+                          _TVSCTVSchemaVocabURLPrefix, _TVSemanticContextServicesVersionNumber,
+                          _TVSemanticContextServicesVersionString ]
+    objc-classes:       [ _TVSCApplicationStateSemanticContext, _TVSCLinkedDataUtilities, _TVSCSemanticAction,
+                          _TVSCSemanticActionFactory, _TVSCSemanticContext, _TVSCSemanticContextFactory, _TVSCSemanticObject ]
+    objc-ivars:         [ _TVSCApplicationStateSemanticContext._commands, _TVSCApplicationStateSemanticContext._mainEntity,
+                          _TVSCSemanticContext._actions, _TVSCSemanticContext._linkedDataContext, _TVSCSemanticObject._metadata,
+                          _TVSCSemanticObject._type ]
+...

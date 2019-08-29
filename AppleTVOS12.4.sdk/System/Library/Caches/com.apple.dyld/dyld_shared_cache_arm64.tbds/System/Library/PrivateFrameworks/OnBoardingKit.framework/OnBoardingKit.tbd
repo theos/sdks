@@ -1,0 +1,29 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _OBPrivacyActivityIdentifier, _OBPrivacyAdvertisingIdentifier, _OBPrivacyAnalyticsAppIdentifier,
+                          _OBPrivacyAnalyticsDeviceIdentifier, _OBPrivacyAnalyticsiCloudIdentifier, _OBPrivacyAppStoreIdentifier,
+                          _OBPrivacyAppleCardIdentifier, _OBPrivacyAppleIDIdentifier, _OBPrivacyAppleMusicFriendsIdentifier,
+                          _OBPrivacyAppleMusicIdentifier, _OBPrivacyApplePayCashIdentifier, _OBPrivacyApplePayIdentifier,
+                          _OBPrivacyAskSiriIdentifier, _OBPrivacyCloudCallingIdentifier, _OBPrivacyDictationdentifier,
+                          _OBPrivacyEmergencySOSIdentifier, _OBPrivacyFaceIDDiagnosticsIdentifier, _OBPrivacyFaceIDIdentifier,
+                          _OBPrivacyGymKitIdentifier, _OBPrivacyHealthRecordsIdentifier, _OBPrivacyImproveHealthIdentifier,
+                          _OBPrivacyImproveHealthRecordsIdentifier, _OBPrivacyImproveMapsIdentifier,
+                          _OBPrivacyLocationServicesIdentifier, _OBPrivacyMapsRAPIdentifier, _OBPrivacyNewsIdentifier,
+                          _OBPrivacyPodcastsIdentifier, _OBPrivacyPrivacyPaneIdentifier, _OBPrivacyPrivacyPaneMiniIdentifier,
+                          _OBPrivacySafariIdentifier, _OBPrivacySafariSearchIdentifier, _OBPrivacySearchIdentifier,
+                          _OBPrivacySiriIdentifier, _OBPrivacySiriSuggestionsIdentifier, _OBPrivacySpotlightSearchIdentifier,
+                          _OBPrivacySpotlightSuggestionsIdentifier, _OBPrivacyStocksIdentifier, _OBPrivacyTVAppIdentifier,
+                          _OBPrivacyTVProviderIdentifier, _OBPrivacyVideosIdentifier, _OBPrivacyWheelchairIdentifier,
+                          _OBPrivacyiBooksIdentifier, _OBPrivacyiCloudKeychainIdentifier, _OBPrivacyiMessageFaceTimeIdentifier,
+                          _OBPrivacyiTunesStoreIdentifier, _OBPrivacyiTunesUIdentifier, _OBProcessNameForPID, __OBLoggingFacility ]
+    objc-classes:       [ _OBAnalyticsManager, _OBBundle, _OBBundleManager, _OBCapabilities, _OBFlow, _OBPrivacyCombinedController,
+                          _OBPrivacyFlow, _OBPrivacyLinkButton, _OBPrivacyLinkController, _OBPrivacyLinkView,
+                          _OBPrivacyModalNavigationController, _OBPrivacyPresenter, _OBPrivacySplashController, _OBPrivacySplashText,
+                          _OBSplashBullet, _OBSplashContent ]
+...

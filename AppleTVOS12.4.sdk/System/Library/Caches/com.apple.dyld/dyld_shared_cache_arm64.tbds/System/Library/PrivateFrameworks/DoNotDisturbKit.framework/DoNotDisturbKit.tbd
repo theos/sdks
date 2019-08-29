@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DoNotDisturbKit.framework/DoNotDisturbKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    allowed-clients:    [ DoNotDisturbKitTests, DoNotDisturbModule, NanoSettings, NanoSettingsGlance, SpringBoard, "SpringBoard-Tests" ]
+    symbols:            [ _DNDEndOfEventAssertionIdentifier, _DNDKitRegisterLogging, _DNDLogNotifications,
+                          _DNDOneHourLifetimeIdentifier, _DNDUntilEveningAssertionIdentifier, _DNDUntilILeaveAssertionIdentifier,
+                          _DNDUntilMorningAssertionIdentifier, _DoNotDisturbKitVersionNumber, _DoNotDisturbKitVersionString,
+                          _kEventSearchTime, _kLOIHighConfidence ]
+    objc-classes:       [ _DNDAWDMetricsService, _DNDLifetimeDetails, _DNDLifetimeDetailsProvider, _DNDNotificationsService ]
+...

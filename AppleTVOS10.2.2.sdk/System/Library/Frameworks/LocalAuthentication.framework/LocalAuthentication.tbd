@@ -1,0 +1,20 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
+current-version:       240.70.2
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _LAAvailableMechanisms, _LACopyExternalizedContext, _LAErrorDomain, _LAErrorSubcodeKey, _LAFingerDatabaseHash,
+                          _LAPasswordRetryTime, _LATouchIDAuthenticationMaximumAllowableReuseDuration,
+                          _LocalAuthenticationVersionNumber, _LocalAuthenticationVersionString ]
+    objc-classes:       [ _LAClient, _LAContext ]
+    objc-ivars:         [ _LAClient._cachedExternalizedContext, _LAClient._callInvalidationBlocks, _LAClient._existingContext,
+                          _LAClient._permanentError, _LAClient._remoteContext, _LAClient._serverConnection,
+                          _LAClient._shouldRecoverConnection, _LAClient._uiDelegate, _LAClient._uncork_queue,
+                          _LAContext._cancelButtonVisible, _LAContext._client, _LAContext._evaluatedPolicyDomainState,
+                          _LAContext._externalizedContext, _LAContext._fallbackButtonVisible, _LAContext._maxBiometryFailures,
+                          _LAContext._prearmContext, _LAContext._touchIDAuthenticationAllowableReuseDuration,
+                          _LAContext._touchIDAuthenticationRetryLimit ]
+...

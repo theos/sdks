@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D41E468B-BC5C-32C2-ACF5-64B859620C44' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/AdSupport.framework/AdSupport
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _ASIdentifierManager ]
+...

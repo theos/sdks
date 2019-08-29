@@ -1,0 +1,19 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CardKit.framework/CardKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CRKIsLargeDevice, _CRKIsRTL, _CardKitVersionNumber, _CardKitVersionString, __CRKIsRTLWithApp,
+                          __CRKSystemRootDirectory ]
+    objc-classes:       [ _CRKCardPresentation, _CRKCardPresentationConfiguration, _CRKCardSectionViewConfiguration,
+                          _CRKCardSectionViewController, _CRKCardViewController, _CRKComposedStackView, _CRKComposedView,
+                          _CRKContainerCardSectionView, _CRKIdentifiedProviderRegistry, _CRKKeyline, _CRKOverlayButton,
+                          __CRKBuiltInProvider, __CRKBundleIdentifiedCardSectionViewProvider, __CRKBundleManager,
+                          __CRKCardSectionViewControllerFactory, __CRKCardSectionViewControllerRegistry, __CRKCardSectionViewLoader,
+                          __CRKCardViewControllerTransitionAnimator, __CRKCardViewControllerTransitionCoordinator,
+                          __CRKDebugOverlayView, __CRKHitTestPassThroughView, __CRKImageLoader, __CRKProviderBundle,
+                          __CRKProviderBundleManager, __CRKSectionShuffleTransitionAnimator, __CRKSendMessageCardFactory ]
+...

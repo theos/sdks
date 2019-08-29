@@ -1,0 +1,35 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVHomeSharingServices.framework/TVHomeSharingServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVHSBoolLogString, _TVHSDAAPEntityKind, _TVHSDMAPEntityAttributeTypeLogString,
+                          _TVHSDMAPEntityCodeValueTypeLogString, _TVHSDMAPEntityKindForProtocol, _TVHSDMAPEntityResponseTypeLogString,
+                          _TVHSDMAPEntityTypeLogString, _TVHSDMAPMacDateValueTransformerName, _TVHSDMAPProtocolGeneric,
+                          _TVHSDMAPProtocolLogString, _TVHSDMAPRequestTypeLogString, _TVHSDMAPTimeIntervalValueTransformerName,
+                          _TVHSDMAPUTCDateValueTransformerName, _TVHSDPAPEntityKind, _TVHSError, _TVHSErrorCancelled,
+                          _TVHSErrorCancelledWithUnderlyingError, _TVHSErrorInfoKeyDMAPRevisionNumber, _TVHSErrorIsCancelled,
+                          _TVHSErrorIsErrorCode, _TVHSErrorIsErrorDomainAndCode, _TVHSErrorWithDomain, _TVHSFairplayHWInfo,
+                          _TVHSHTTPStatusIsOK, _TVHSHTTPStatusIsSuccess, _TVHSHTTPStatusMaxSuccess, _TVHSHTTPStatusMinSuccess,
+                          _TVHSHTTPStatusOK, _TVHSHTTPStatusServiceUnavailable, _TVHSIsProtocolVersionSupported,
+                          _TVHSLogStringForFourCharCode, _TVHSLogStringForFourCharCodeNumber, _TVHSMIMETypeDMAP, _TVHSMIMETypeImage,
+                          _TVHSMIMETypeJPEG, _TVHSMIMETypeJSON, _TVHSMIMETypePNG, _TVHSMachServiceName, _TVHSMajorProtocolVersion,
+                          _TVHSMediaServerConnectionStateLogString, _TVHSMediaServerDiscoveryModeLogString,
+                          _TVHSMediaServerPhotoLibraryStateLogString, _TVHSMediaServerPhotoLibraryStateWithServerInfo,
+                          _TVHSMediaServerTypeLogString, _TVHSMinorProtocolVersion, _TVHSNumberForFourCharCode, _TVHSProtocolVersion,
+                          _TVHSProtocolVersionString, _TVHSRequireKeyedCoder, _TVHSRequireMainThread,
+                          _TVHSResponseMIMETypeContainsMIMEType, _TVHSRestartMediaServerDiscoveryOptionIfIdle, _TVHSWaitForDebugger,
+                          _TVHSWaitForDebuggerUntilDate, _TVHomeSharingServicesErrorDomain ]
+    objc-classes:       [ _TVHSAsynchronousOperation, _TVHSAsynchronousWorkToken, _TVHSBlockValueTransformer,
+                          _TVHSCompoundValueTransformer, _TVHSDAAPMediaKindItem, _TVHSDAAPMovieInfo, _TVHSDMAPChangeTrackingEntity,
+                          _TVHSDMAPEntity, _TVHSDMAPEntityAttribute, _TVHSDMAPEntityKind, _TVHSDMAPEntityParsedResponse,
+                          _TVHSDMAPEntityResponseParser, _TVHSDMAPParsingUtilities, _TVHSDPAPFace, _TVHSDelayOperation,
+                          _TVHSEntitiesSortedByDateValueTransformer, _TVHSLogObjectManager, _TVHSManager, _TVHSMediaServer,
+                          _TVHSMediaServerContentsChange, _TVHSMediaServerDiscoveryConfiguration, _TVHSMediaServerIdentifier,
+                          _TVHSMediaServerProtocolVersion, _TVHSMediaServerRequest, _TVHSMediaServerResponse,
+                          _TVHSMediaServerSessionState, _TVHSRentalItem, _TVHSReverseValueTransformer, _TVHSServiceClientInterface,
+                          _TVHSServiceConnection, _TVHSServiceInterface, _TVHSSettings, _TVHSSortUtilities, _TVHSURLRequestOperation ]
+...

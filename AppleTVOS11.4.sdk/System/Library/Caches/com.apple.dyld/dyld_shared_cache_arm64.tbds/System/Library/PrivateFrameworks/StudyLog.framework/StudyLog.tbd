@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/StudyLog.framework/StudyLog
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SLGCreateError, _SLGCreateLoggingIsDisabledError, _SLGCreateSessionEndMetadata,
+                          _SLGCreateSessionStartMetadata, _SLGLogDefaultsChangedNotification, _SLGLogDefaultsDomain,
+                          _SLGLogDefaultsEnabledKey, _SLGLogErrorDomain, _SLGLogServiceName, _StudyLogVersionNumber,
+                          _StudyLogVersionString, _slg_general_log ]
+    objc-classes:       [ _SLGLog, _SLGLogXPCClient, _SLGSettingsMonitor ]
+...

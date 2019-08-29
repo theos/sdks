@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport
+current-version:       10.15.6
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _InternationalSupportVersionNumber, _InternationalSupportVersionString ]
+    objc-classes:       [ _ISUtilities ]
+...

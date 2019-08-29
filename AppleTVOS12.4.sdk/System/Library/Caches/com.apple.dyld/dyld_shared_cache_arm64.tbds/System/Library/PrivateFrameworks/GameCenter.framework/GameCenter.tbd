@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GameCenter.framework/GameCenter
+current-version:       577.8
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation,
+                          /System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI ]
+    symbols:            [ _GKGameCenterUmbrellaFrameworkStub, _kGameCenterGameCenterVersionNumber,
+                          _kGameCenterGameCenterVersionString ]
+...

@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 24D54783-468A-3FAE-A0EB-FBF30C1E2E90' ]
+platform:        tvos
+install-name:    /usr/lib/libsysdiagnose.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _Libsysdiagnose ]
+...

@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVSearchServices.framework/TVSearchServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVSSActionServerInterface, _TVSSLogComponent, _TVSSSearchAppServiceProviderType,
+                          _TVSearchServicesErrorDomain, _TVSearchServicesVersionNumber, _TVSearchServicesVersionString ]
+    objc-classes:       [ _TVSSContentItem, _TVSSPlaybackActionOperation, _TVSSPlaybackActionOperationRequest,
+                          _TVSSPlaybackActionOperationResult, _TVSSRelatedContentQuery, _TVSSSearchAppService,
+                          _TVSSSearchAppServiceConnection, _TVSSSearchAppServiceInterface, _TVSSSearchResult, _TVSSSearchResultBatch ]
+...

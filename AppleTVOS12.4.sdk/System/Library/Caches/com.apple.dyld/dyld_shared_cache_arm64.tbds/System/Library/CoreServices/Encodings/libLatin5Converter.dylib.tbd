@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/CoreServices/Encodings/libLatin5Converter.dylib
+current-version:       74
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ ___CFStringEncodingGetLatin5ConverterDefinition ]
+...

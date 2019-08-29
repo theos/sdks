@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompilerImplLazy.dylib
+current-version:       802.4
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ ___clang_metalfe_GPUCompiler_compileFromSourceWrapper, ___clang_metalfe_GPUCompiler_splitModuleWrapper,
+                          _metal2module ]
+...

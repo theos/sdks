@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MobileDelete.framework/MobileDelete
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MRMAllowAutoPurge, _MRMDeleteCancelFreeupBytes, _MRMDeleteCopyApproximatePurgeableSpace,
+                          _MRMDeleteCouldFreeupBytes, _MRMDeleteFreeupBytes, _MRMDoNotAutoPurge ]
+...

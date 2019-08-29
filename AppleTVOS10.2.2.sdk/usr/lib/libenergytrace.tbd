@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 187D5EB2-53D5-3FA3-9AFB-0C40266EEDDA' ]
+platform:        tvos
+install-name:    /usr/lib/libenergytrace.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _entr_act_associate, _entr_act_begin, _entr_act_end, _entr_act_modify, 
+                       _entr_act_set, _entr_act_setd, _entr_event, _entr_shouldtrace ]
+...

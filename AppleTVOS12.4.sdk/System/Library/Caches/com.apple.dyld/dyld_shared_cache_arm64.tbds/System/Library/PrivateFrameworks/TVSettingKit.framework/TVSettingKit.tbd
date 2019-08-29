@@ -1,0 +1,22 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVSettingKit.framework/TVSettingKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TSKAccessibilityVoiceOverPracticeTextDidChangeNotification,
+                          _TSKAccessibilityVoiceOverPracticeUserInfoKeyDescription,
+                          _TSKAccessibilityVoiceOverPracticeUserInfoKeyTitle, _TSKLocStringFromBundleCachingKey,
+                          _TVSettingKitVersionNumber, _TVSettingKitVersionString ]
+    objc-classes:       [ _TSKAggregateSettingGroup, _TSKAppIconPreviewViewController, _TSKBaseTableViewCell, _TSKBoolFormatter,
+                          _TSKBundleLoader, _TSKCollectionChange, _TSKCollectionComparator, _TSKKonamiCode, _TSKListSettingGroup,
+                          _TSKMappingFormatter, _TSKMultiValueViewController, _TSKPieChartItem, _TSKPieChartPreviewViewController,
+                          _TSKPieChartView, _TSKPreferencesFacade, _TSKPreviewViewController, _TSKRadioSettingGroup, _TSKSettingGroup,
+                          _TSKSettingItem, _TSKSettingItemUtilities, _TSKShadowView, _TSKTableView, _TSKTableViewController,
+                          _TSKTableViewHeaderFooterView, _TSKTableViewSectionDividerView, _TSKTableViewSubtitleTextCell,
+                          _TSKTableViewTextCell, _TSKTableViewTextCellActivityIndicatorView, _TSKTextInputSettingItem,
+                          _TSKTextInputViewController, _TSKVibrantImageView, _TSKViewController, __TSKContentContainerView,
+                          __TSKSliceLayer, __TSKSlideAnimator, __TSKSplitViewController, __TSKZoomAnimator ]
+...

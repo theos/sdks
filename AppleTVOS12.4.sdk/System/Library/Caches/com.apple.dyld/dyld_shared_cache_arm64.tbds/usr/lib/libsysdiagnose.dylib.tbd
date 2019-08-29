@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libsysdiagnose.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _extractDiagnosticID, _metricCompression, _metricGetLogCopying, _metricGetLogGeneration, _metricGetOSLogArchive,
+                          _metricGetTimeSensitive, _metricLogCopying, _metricLogGeneration, _metricOSLogarchiveGeneration,
+                          _metricStartToTar, _metricTimeSensitive, _metricTotalSize ]
+    objc-classes:       [ _Libsysdiagnose ]
+...

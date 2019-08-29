@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 49EDDECF-DEC9-3FAC-B2B5-B30F752E37B9' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libLatin5Converter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetLatin5ConverterDefinition ]
+...

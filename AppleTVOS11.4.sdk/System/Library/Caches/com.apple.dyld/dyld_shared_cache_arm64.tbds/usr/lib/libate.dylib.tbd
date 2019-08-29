@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libate.dylib
+current-version:       1.13.1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _at_block_format_to_MTLPixelFormat, _at_encoder_compress_texels, _at_encoder_create,
+                          _at_encoder_decompress_texels, _at_encoder_get_block_address, _at_encoder_get_block_alpha,
+                          _at_encoder_get_block_counts, _at_encoder_get_block_dimensions, _at_encoder_get_block_format,
+                          _at_encoder_get_block_size, _at_encoder_get_texel_alpha, _at_encoder_get_texel_format,
+                          _at_encoder_get_version, _at_encoder_is_compression_monolithic, _at_encoder_is_decompression_monolithic,
+                          _at_encoder_set_capabilities_mask, _at_texel_format_to_MTLPixelFormat ]
+...

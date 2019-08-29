@@ -1,0 +1,28 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Extensions/AGXGLDriver.bundle/AGXGLDriver
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _gldBlitFramebufferData, _gldBuildComputeProgram, _gldChoosePixelFormat, _gldClearFramebufferData,
+                          _gldCompileComputeModule, _gldCopyBufferDataToTextureWithQueue, _gldCopyBufferDataWithQueue,
+                          _gldCopyTextureDataToBufferWithQueue, _gldCopyTextureDataWithQueue, _gldCreateComputeContext,
+                          _gldCreateDevice, _gldCreateDevicePartition, _gldCreateDevicePartitionGroup, _gldCreatePipelineProgram,
+                          _gldCreateQuery, _gldDestroyComputeContext, _gldDestroyDevicePartition, _gldDestroyDevicePartitionGroup,
+                          _gldDestroyPipelineProgram, _gldDestroyPixelFormat, _gldDestroyQuery, _gldDiscardFramebuffer, _gldExecuteKernel,
+                          _gldExecuteNativeKernel, _gldFinishQueue, _gldFlushQueue, _gldGetDevicePartitionInfo, _gldGetDeviceString,
+                          _gldGetFenceProfilingInfo, _gldGetPipelineProgramInfo, _gldGetQueryInfo, _gldGetTextureLevelInfo,
+                          _gldGetVersion, _gldInitializeLibrary, _gldLinkComputeModules, _gldLinkComputeProgram,
+                          _gldModifyPipelineProgram, _gldModifyQuery, _gldPopulateContextDispatch, _gldPresentFramebufferData,
+                          _gldReadTextureData, _gldRestoreTextureData, _gldTerminateLibrary, _gldUnbindPipelineProgram,
+                          _gldUpdateDispatch, _gldWaitForFenceOnQueue, _gldWriteComputeModuleBinary, _gldWriteComputeProgramBinary,
+                          _glrCompBuildProgram, _glrCompCloseDevice, _glrCompCopyStream, _glrCompCreateContext, _glrCompCreateKernel,
+                          _glrCompCreateProgram, _glrCompCreateStream, _glrCompDeleteContext, _glrCompDeleteEvent, _glrCompDeleteKernel,
+                          _glrCompDeleteProgram, _glrCompDeleteStream, _glrCompEnqueueMarker, _glrCompExecuteKernel,
+                          _glrCompExecuteNativeKernel, _glrCompFinish, _glrCompFinishStream, _glrCompFlush, _glrCompGetDeviceConfig,
+                          _glrCompGetEventStatus, _glrCompGetImageFormats, _glrCompGetKernelArgInfo, _glrCompGetKernelInfo,
+                          _glrCompGetKernelNames, _glrCompLoadBinary, _glrCompOpenDevice, _glrCompReadStream,
+                          _glrCompSetContextProperties, _glrCompWaitForEvent, _glrCompWriteStream ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: CE4E3FA8-8F31-3438-9365-25624BC33AFC' ]
+platform:        tvos
+install-name:    /usr/lib/libiconv.2.dylib
+current-version: 7.0
+compatibility-version: 7.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___iconv_2VersionNumber, ___iconv_2VersionString, __libiconv_version, 
+                       _aliases2_lookup, _aliases_lookup, _iconv, _iconv_canonicalize, 
+                       _iconv_close, _iconv_open, _iconvctl, _iconvlist, _libiconv_relocate, 
+                       _libiconv_set_relocation_prefix, _locale_charset, _utf8_decodestr, 
+                       _utf8_encodestr, _utf_extrabytes ]
+...

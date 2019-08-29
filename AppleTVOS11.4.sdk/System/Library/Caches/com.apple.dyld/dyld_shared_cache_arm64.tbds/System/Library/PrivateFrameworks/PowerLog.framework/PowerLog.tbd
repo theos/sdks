@@ -1,0 +1,31 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PLABCUIQuery, _PLBatchDropMessages, _PLBatteryGaugeGetSnapshot, _PLBatteryGaugePauseTracing,
+                          _PLBatteryGaugePauseTracingForBundleId, _PLBatteryGaugePauseTracingForPid,
+                          _PLBatteryGaugePauseTracingForProcessName, _PLBatteryGaugeResumeTracing,
+                          _PLBatteryGaugeResumeTracingForBundleId, _PLBatteryGaugeResumeTracingForPid,
+                          _PLBatteryGaugeResumeTracingForProcessName, _PLBatteryGaugeStartTracing,
+                          _PLBatteryGaugeStartTracingForBundleId, _PLBatteryGaugeStartTracingForPid,
+                          _PLBatteryGaugeStartTracingForProcessName, _PLBatteryGaugeStopTracing,
+                          _PLBatteryGaugeStopTracingForBundleId, _PLBatteryGaugeStopTracingForPid,
+                          _PLBatteryGaugeStopTracingForProcessName, _PLBatteryGaugeVersion, _PLBatteryLifeMonitorGenericDuetQuery,
+                          _PLBatteryLifeMonitorLogCoreDuetAdmissionEvent, _PLBatteryLifeMonitorLogCoreDuetEvent,
+                          _PLBatteryLifeMonitorLogCoreDuetEventsAggregate, _PLBatteryLifeMonitorLogCoreDuetPredictionEvents,
+                          _PLBatteryLifeMonitorLogDuetEvent, _PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet,
+                          _PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet,
+                          _PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet, _PLBatteryLifeMonitorReportEnergyCoreDuet,
+                          _PLBatteryLifeMonitorReportEnergyDuet, _PLBatteryLifeMonitorStopAllDuetEvents, _PLBatteryUsageUIQuery,
+                          _PLBuildEnergyBucket, _PLBuildEnergyBucketTillNow, _PLBuildUsageSnapshot, _PLCopyPowerlog,
+                          _PLCopyPowerlogHybrid, _PLFDefaultsValueForKey, _PLForceBatching, _PLLogEvent, _PLLogRegisteredEvent,
+                          _PLLogTimeSensitiveRegisteredEvent, _PLMovePowerlogsToCR, _PLQuery, _PLQueryRegistered, _PLShouldLogEvent,
+                          _PLShouldLogRegisteredEvent, _PLSysdiagnoseCopyPowerlog, _PLTalkToPowerlogHelper, ___PowerLogVersionNumber,
+                          ___PowerLogVersionString, _containerPath, _dateFormatter, _getContainerPath, _queryPowerlog, _shortUUIDString ]
+    objc-classes:       [ _PLClientLogger, _PLCoreDuetEvent, _PLCoreDuetEventInterval, _PLDuetActivitySchedulerUsageSnapshot,
+                          _PLEnergyBucket, _PLModelingUtilities, _PLUsageSnapshot ]
+...

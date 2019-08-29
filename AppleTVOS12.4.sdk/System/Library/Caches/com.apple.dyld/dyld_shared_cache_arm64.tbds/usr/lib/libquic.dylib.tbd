@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libquic.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _nw_protocol_quic_identifier, _nw_protocol_quic_versions, _nw_quic_copy_certificates, _nw_quic_copy_sectrust,
+                          _nw_quic_delegate_sectrust, _nw_quic_sectrust_result ]
+...

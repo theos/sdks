@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompiler.dylib
+current-version:       902.3.3
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MTLDowngradeAIRModule, _MTLGPUCompilerCompileAndSplitFromSource, _MTLGPUCompilerCompileFromSource,
+                          _MTLGPUCompilerCreate, _MTLGPUCompilerDestroy, _MTLGPUCompilerSpecializeFunction, _MTLUpgradeAIRModule,
+                          _MTLVerifyAIRModule, _MTLWriteAIRBitcodeToMemoryBuffer ]
+...

@@ -1,0 +1,21 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore
+current-version:       282.61.2
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _VUIBoolLogString, _VUIDurationValueTransformerName, _VUIError, _VUIErrorCancelled,
+                          _VUIErrorCancelledWithUnderlyingError, _VUIErrorIsCancelled, _VUIErrorIsErrorCode,
+                          _VUIErrorIsErrorDomainAndCode, _VUIErrorWithDomain,
+                          _VUINetworkReachabilityMonitorNetworkReachabilityDidChangeNotification,
+                          _VUINetworkReachabilityMonitorNetworkReachabilityDidChangeUserInfoKeyNetworkReachable,
+                          _VUIRequireKeyedCoder, _VUIRequireMainThread, _VUIStateMachineContextKey, _VUIStateMachineNewStateKey,
+                          _VUIStateMachineOldStateKey, _VUIStateMachineStateChangedNotification, _VUIWaitForDebugger,
+                          _VUIWaitForDebuggerUntilDate, _VideosUICoreErrorDomain ]
+    objc-classes:       [ _VUIAsynchronousOperation, _VUIAsynchronousWorkToken, _VUICollectionChange, _VUICollectionChangeSet,
+                          _VUICollectionComparator, _VUIDelayOperation, _VUIDurationValueTransformer,
+                          _VUIEntitiesSortedByDateValueTransformer, _VUIMobileGestaltLookup, _VUINetworkReachabilityMonitor,
+                          _VUIRestrictions, _VUISortUtilities, _VUIStateMachine, _VUITitleSortDescriptor, _VUIURLRequestOperation ]
+...

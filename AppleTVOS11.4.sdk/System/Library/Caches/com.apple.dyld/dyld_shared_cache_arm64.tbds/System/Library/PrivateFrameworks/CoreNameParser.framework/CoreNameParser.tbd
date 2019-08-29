@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreNameParser.framework/CoreNameParser
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CoreNameParserVersionNumber, _CoreNameParserVersionString, __NPCollapseWhitespaceAndStrip,
+                          __NPRemoveAppSignature, __NPRemoveEmojis, __NPRemoveParenthesisBracketsAndInside, __NPStripDiatritics,
+                          __NPStripQuotationMarks, __NPTokenizeName, __NPTrimNonLetters, _charSetWithEndpoints ]
+    objc-classes:       [ _NPComponentSequence, _NPHMMClassifier, _NPNameComponentsData, _NPNameParser ]
+...

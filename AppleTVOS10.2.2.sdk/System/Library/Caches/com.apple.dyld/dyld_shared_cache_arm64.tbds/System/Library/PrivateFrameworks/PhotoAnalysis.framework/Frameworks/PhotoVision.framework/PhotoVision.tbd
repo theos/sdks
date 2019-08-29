@@ -1,0 +1,36 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Frameworks/PhotoVision.framework/PhotoVision
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    allowed-clients:    [ MediaMiningKit, PhotoAnalysis, PhotosGraph ]
+    symbols:            [ _PVAnalysisResultDesiredImageMinimumLongDimensionKey, _PVAnalysisResultFacesKey,
+                          _PVAnalysisResultWarningImageTooSmallKey, _PVCVMLIntegrationObject, _PVClustererStatsKeyAddedFacesCount,
+                          _PVClustererStatsKeyEndDate, _PVClustererStatsKeyRemovedFaceClusterSequenceNumbersCount,
+                          _PVClustererStatsKeyStartDate, _PVClusteringStatusClusterRebuildRequiredKey,
+                          _PVClusteringStatusEligibleFacesCountKey, _PVClusteringStatusIsClusteringKey,
+                          _PVClusteringStatusPendingFacesCountKey, _PVDefaultCountRenameFromThreshold,
+                          _PVDefaultCountRenameToThreshold, _PVDefaultFaceAutonamingEnabled, _PVDefaultFaceAutonamingThreshold,
+                          _PVDefaultFaceClusteringDelay, _PVDefaultFaceClusteringLogEnabled, _PVDefaultFaceClusteringPerfLogEnabled,
+                          _PVDefaultFaceClusteringThreshold, _PVDefaultFaceCountToEnableNaming,
+                          _PVDefaultFaceGroupCountToEnableNaming, _PVDefaultFaceMergeFaceOverlapThreshold,
+                          _PVDefaultFaceMergeFaceprintDistanceThreshold, _PVDefaultFacePrimarySuggestionsThreshold,
+                          _PVDefaultFaceRecallThreshold, _PVDefaultMaxFaceCountForClustering,
+                          _PVDefaultMinFaceCountToTriggerClustering, _PVDefaultPercentRenameFromThreshold,
+                          _PVDefaultPercentRenameToThreshold, _PVDefaultPersonMergingEnabled, _PVDefaultSuggestionsLogEnabled,
+                          _PVErrorDomainPhotoVision, _PVErrorDomainVisionKit, _PVFaceCropImageEXIFOrientation,
+                          _PVFaceGetAbsoluteRectForImageSize, _PVFaceGetCenterAndSizeForNormalizedRect, _PVFaceprintVersion,
+                          _PVFacesToDelete, _PVFacesToPersist, _PVNotificationClustererNeedsToBeSyncedWithPhotoLibrary,
+                          _PVNotificationClustererReady, _PVNotificationClusteringFinished, _PVNotificationClusteringStarted,
+                          _PVStartResultClusteringStateRestorationErrorKey, _PVStartResultClusteringStateRestoredKey,
+                          _PVStartResultFailureErrorKey, _PVStartResultSuccessKey, _PVSuggestionUpdateCancelled,
+                          _PVSuggestionUpdateFinished, _PVSuggestionUpdateProgress, _PVSuggestionUpdateStarted, _PVWorkingDirectoryURL,
+                          _PhotoVisionVersionNumber, _PhotoVisionVersionString ]
+    objc-classes:       [ _PVCanceler, _PVClusterer, _PVContext, _PVDataAccessor, _PVFace, _PVFaceCrop, _PVFaceCropAnalyzer,
+                          _PVFaceCropGenerator, _PVFaceCropSourceDescriptor, _PVFaceCropUtils, _PVFaceGroup, _PVFaceprint, _PVGeometryUtils,
+                          _PVImage, _PVImageLoader, _PVNotification, _PVObject, _PVPerson, _PVSceneTaxonomy, _PVSceneTaxonomyNode,
+                          _PVUserDefaults, _PhotoVision ]
+...

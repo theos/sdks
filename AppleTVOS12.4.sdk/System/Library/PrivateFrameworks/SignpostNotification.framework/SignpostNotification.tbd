@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SignpostNotification.framework/SignpostNotification
+current-version:       31.1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _EnableSignpostNotificationGeneration, _SignpostGetNewNotificationConnection,
+                          _SignpostNotificationSendNotificationSubscriptionRequestOnConnection, _SignpostNotificationVersionNumber,
+                          _SignpostNotificationVersionString ]
+...

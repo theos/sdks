@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CloudPhotoServices.framework/CloudPhotoServices
+current-version:       3150.0.200
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CPLIsWideGamutDisplay, _CloudPhotoServicesRetryCount, _CloudPhotoServicesRetryDelay,
+                          _CloudPhotoServicesVersionNumber, _CloudPhotoServicesVersionString ]
+    objc-classes:       [ _CloudPhotoServices, _CloudPhotoServicesUtilities ]
+...

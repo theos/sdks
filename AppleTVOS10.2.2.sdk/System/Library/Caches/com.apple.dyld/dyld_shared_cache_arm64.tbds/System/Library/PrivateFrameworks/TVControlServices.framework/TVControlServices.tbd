@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVControlServices.framework/TVControlServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVCSEndpointServiceMachName, _TVCSLogComponent, _TVControlServicesVersionNumber,
+                          _TVControlServicesVersionString, __TVCSRemoteInputLimitingCenterUnbalancedEndLimitingRemoteInput ]
+    objc-classes:       [ _TVCSEndpoint, _TVCSEndpointManager, _TVCSEndpointServiceClientInterface, _TVCSEndpointServiceConnection,
+                          _TVCSEndpointServiceInterface, _TVCSPairableEndpoint, _TVCSPairedEndpoint, _TVCSRemoteInputLimitingCenter ]
+...

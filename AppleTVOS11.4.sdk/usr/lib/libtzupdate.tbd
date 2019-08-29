@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D1DABDC3-6BFB-3267-B974-4C059B9A3E8E' ]
+platform:        tvos
+install-name:    /usr/lib/libtzupdate.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ _TZUpdate ]
+...

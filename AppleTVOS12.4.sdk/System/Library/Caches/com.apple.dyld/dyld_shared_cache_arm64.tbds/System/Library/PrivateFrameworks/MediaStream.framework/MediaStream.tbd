@@ -1,0 +1,21 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MediaStream.framework/MediaStream
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MSAlbumSharingInitialize, _MSMSLocalizedString, _MSMediaStreamInitialize, __MSASSetDaemon, __MSSetDaemon,
+                          _kMSASConnectionErrorDomain, _kMSASNoWakeServiceName, _kMSASServiceName,
+                          _kMSAuthenticationManagerDidReceiveAuthenticationChangeNotification,
+                          _kMSBatteryPowerMonitorExternalPowerSourceChangedNotification,
+                          _kMSCServerSideConfigurationDidChangeNotification, _kMSCXPCReplyError, _kMSCXPCReplyRetval, _kMSIDSFacility,
+                          _kMSIdleStateDidChangeNotification, _kMSMMCSFacility, _kMSMachServiceName, _kMSNoWakeMachServiceName,
+                          _kMSPerfFacility, _kMSPhotoStreamFacility, _kMSPowerBudgetDidBeginAllowingFileTransferNotification,
+                          _kMSPowerBudgetDidEndAllowingFileTransferNotification, _kMSServerSideConfigurationDidChangeNotification,
+                          _kMSSharedStreamFacility, _kMSmstreamdErrorDomain, _kMSmstreamdFacility ]
+    objc-classes:       [ _MSAMNotificationInfo, _MSASConnection, _MSASPlatformImplementation, _MSAlertManager, _MSAuthenticationManager,
+                          _MSBatteryPowerMonitor, _MSClientSidePauseContext, _MSConnection, _MSMSPlatform, _MSPBTimerContext,
+                          _MSPauseManager, _MSPowerAssertionManager, _MSPowerBudget ]
+...

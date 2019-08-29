@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _coreDAVValidationErrorFromRawError ]
+    objc-classes:       [ _DACoreDAVLogger, _DACoreDAVTaskManager ]
+    objc-ivars:         [ _DACoreDAVTaskManager._applicationsShowingActivity ]
+...

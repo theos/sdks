@@ -1,0 +1,36 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriTVUI.framework/SiriTVUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SiriTVUICollectionViewCellFocusSizeDelta, _SiriTVUICollectionViewLayoutElementKindHeader,
+                          _SiriTVUIGroupViewLayouOffsetDurationActive, _SiriTVUIGroupViewLayouOffsetDurationInactive,
+                          _SiriTVUIMetricDismissModalView, _SiriTVUIMetricExpandShelfToFullScreen,
+                          _SiriTVUIPresentationPreparationTimeout, _SiriTVUIVersionNumber, _SiriTVUIVersionString, _TemplateCellSize,
+                          _TemplateFullScreenCellFocusedSize, _TemplateFullScreenCellSize, __RoundToMainScreenScale,
+                          __SiriTVUIWhiteValueForUserInterfaceStyle ]
+    objc-classes:       [ _SiriTVUIButtonTemplateItem, _SiriTVUIClickRecognizer, _SiriTVUICollectionViewCell,
+                          _SiriTVUICollectionViewCellTemplateItem, _SiriTVUICollectionViewLayout,
+                          _SiriTVUICollectionViewLayoutSection, _SiriTVUICollectionViewTemplateItem, _SiriTVUIGranularAnimator,
+                          _SiriTVUIGroupViewFitInfo, _SiriTVUIGroupViewTemplateItem, _SiriTVUIHighlightGroupViewTemplateItem,
+                          _SiriTVUIImageViewTemplateItem, _SiriTVUIKeylineTemplateItem, _SiriTVUILabelMarqueeView,
+                          _SiriTVUILabelTemplateItem, _SiriTVUIMonogrammer, _SiriTVUISnippetManager, _SiriTVUISnippetView,
+                          _SiriTVUISnippetViewController, _SiriTVUITabularDataCellItem, _SiriTVUITabularDataCollectionView,
+                          _SiriTVUITabularDataColumn, _SiriTVUITabularDataTemplateCellItem, _SiriTVUITabularDataTemplateItem,
+                          _SiriTVUITabularDataTextCellItem, _SiriTVUITemplateButton, _SiriTVUITemplateButtonController,
+                          _SiriTVUITemplateCollectionView, _SiriTVUITemplateCollectionViewController,
+                          _SiriTVUITemplateCollectionViewLayout, _SiriTVUITemplateCollectionViewLayoutAttributes,
+                          _SiriTVUITemplateGroupView, _SiriTVUITemplateGroupViewController, _SiriTVUITemplateHighlightGroupView,
+                          _SiriTVUITemplateHighlightGroupViewController, _SiriTVUITemplateImageView,
+                          _SiriTVUITemplateImageViewController, _SiriTVUITemplateItem, _SiriTVUITemplateItemViewController,
+                          _SiriTVUITemplateKeylineView, _SiriTVUITemplateKeylineViewController, _SiriTVUITemplateLabel,
+                          _SiriTVUITemplateLabelController, _SiriTVUITemplateModelTranslator, _SiriTVUITemplateTabularDataKeyline,
+                          _SiriTVUITemplateTabularDataLayout, _SiriTVUITemplateTabularDataTemplateItemCell,
+                          _SiriTVUITemplateTabularDataTextCell, _SiriTVUITemplateTabularDataView,
+                          _SiriTVUITemplateTabularDataViewController, _SiriTVUITemplatedContainerView, _SiriTVUITemplatedSnippetView,
+                          _SiriTVUITemplatedSnippetViewController, _SiriTVUIVibrantEffectView, _SiriTVUIVibrantLabel,
+                          __SiriTVUIFloatingContentView ]
+...

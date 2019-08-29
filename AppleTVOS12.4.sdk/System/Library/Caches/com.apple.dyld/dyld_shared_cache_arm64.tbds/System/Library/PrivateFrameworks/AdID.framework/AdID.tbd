@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AdID.framework/AdID
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ADSimulatedCrashKillCode_InternalInconsistency, _AdIDVersionNumber, _AdIDVersionString ]
+    objc-classes:       [ _ADAMSBagManager, _ADAdTrackingSchedulingManager, _ADClientDPIDManager, _ADIDManagerService,
+                          _ADJingleOptOutRequest, _ADJingleRequest, _ADJingleRequestManager, _ADJingleSegmentRequest, _ADLATStatusManager,
+                          _ADOptInStatusService, _ADSegmentDataManager ]
+...

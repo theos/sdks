@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/AudioToolbox.framework/libVibeSynthEngine.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _VibeSynthEngineCancelWithOptions, _VibeSynthEngineHasHardwareSupport, _VibeSynthEngineInitialize,
+                          _VibeSynthEnginePlay, _VibeSynthEngineStartPrewarm, _VibeSynthEngineStopPrewarm ]
+...

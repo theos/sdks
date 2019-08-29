@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCoreImage.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ __swift_FORCE_LOAD_$_swiftCoreImage ]
+...

@@ -1,0 +1,22 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport
+current-version:       2.4
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SignpostSerializationErrorDomain, _SignpostSupportDeserializationEnumerateObjectArrayFromData,
+                          _SignpostSupportVersionNumber, _SignpostSupportVersionString, _SignpostSystemTimebaseRatio,
+                          __SignpostSerializeableObjectFromSerializedObjectDictionary,
+                          __SignpostSupportSerializationDataFromObjectArray, __machToNano, __signpost_debug_log,
+                          _kSignpostSupportMachTimeTranslator_UnknownTime ]
+    objc-classes:       [ _SignpostAnimationInterval, _SignpostEvent, _SignpostInterval, _SignpostIntervalBuilder,
+                          _SignpostNotificationEvent, _SignpostObject, _SignpostSupportCompositorInterval, _SignpostSupportLogMessage,
+                          _SignpostSupportMachTimeTranslationRange, _SignpostSupportMachTimeTranslator,
+                          _SignpostSupportMessageArgument, _SignpostSupportMetadataSegment, _SignpostSupportObject,
+                          _SignpostSupportObjectExtractor, _SignpostSupportObjectFilter,
+                          _SignpostSupportSerializabledObjectCollection, _SignpostSupportSubsystemCategoryBlacklist,
+                          _SignpostSupportSubsystemCategoryFilter, _SignpostSupportSubsystemCategoryFilterEntry,
+                          _SignpostSupportSubsystemCategoryWhitelist ]
+...

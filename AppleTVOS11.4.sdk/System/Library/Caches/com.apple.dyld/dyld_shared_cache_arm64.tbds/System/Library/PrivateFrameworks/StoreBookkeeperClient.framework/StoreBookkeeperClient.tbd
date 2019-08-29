@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/StoreBookkeeperClient.framework/StoreBookkeeperClient
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _propertyMonitor ]
+    objc-classes:       [ _SBCClientConfiguration, _SBCMusicLibraryPlaybackPositionDomain, _SBCPlaybackPositionDomain,
+                          _SBCPlaybackPositionEntity, _SBCPlaybackPositionService, _SBCPlaybackPositionServiceInterface,
+                          _SBCPlaybackPositionSyncService, _SBCPlaybackPositionValueService, _SBCXPCService, _SBCXPCServiceInterface ]
+...

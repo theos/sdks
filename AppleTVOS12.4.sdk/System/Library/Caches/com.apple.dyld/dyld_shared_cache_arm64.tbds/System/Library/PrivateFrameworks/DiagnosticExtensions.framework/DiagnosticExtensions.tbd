@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DiagnosticExtensionsVersionNumber, _DiagnosticExtensionsVersionString, _pgrep, _signal_USR2 ]
+    objc-classes:       [ _DEArchive, _DEArchiveReader, _DEArchiver, _DEAttachmentGroup, _DEAttachmentItem, _DEExtension, _DEExtensionContext,
+                          _DEExtensionHostContext, _DEExtensionManager, _DEExtensionProvider, _DELogMover, _DELogging, _DEUtils ]
+...

@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Libraries/libCGInterfaces.dylib
+current-version:       506.20
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _Init_CGInterfaces ]
+...

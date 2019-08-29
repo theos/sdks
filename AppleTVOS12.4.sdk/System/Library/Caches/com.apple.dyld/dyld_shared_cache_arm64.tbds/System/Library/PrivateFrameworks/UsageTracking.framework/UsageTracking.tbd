@@ -1,0 +1,16 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking
+current-version:       51
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    allowed-clients:    [ DeviceManagementTests, PowerlogHelperdOperators, PowerlogLiteOperators, RemoteManagementTests, SafariShared,
+                          UsageTrackingAgent, dmd, remotemanagementd, usagetool ]
+    symbols:            [ _USDuetClientNameUsageTracking, _USErrorDomain, _USNotificationReceivedValue, _USUsageTrackingMachServiceName,
+                          _USUsageTrackingVersionNumber, _USUsageTrackingVersionString ]
+    objc-classes:       [ _USApplicationUsageReport, _USBudget, _USCategoryUsageReport, _USDomainNormalization, _USTrackingAgentProxy,
+                          _USUsageMonitor, _USUsageQuerying, _USUsageReport, _USUsageReporter, _USUsageStorage, _USUsageTrackingBundle,
+                          _USWebHistory, _USWebUsageReport, _USWebpageUsage ]
+...

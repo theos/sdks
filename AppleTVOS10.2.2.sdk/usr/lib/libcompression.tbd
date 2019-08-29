@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 26AE9811-F06B-30B5-B2B0-C394A5295AC1' ]
+platform:        tvos
+install-name:    /usr/lib/libcompression.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _compression_decode_buffer, _compression_decode_scratch_buffer_size, 
+                       _compression_encode_buffer, _compression_encode_scratch_buffer_size, 
+                       _compression_stream_build_shared_dict, _compression_stream_destroy, 
+                       _compression_stream_get_state_size, _compression_stream_identify_algorithm, 
+                       _compression_stream_init, _compression_stream_init_with_options, 
+                       _compression_stream_is_state_valid, _compression_stream_op_data_size, 
+                       _compression_stream_process ]
+...

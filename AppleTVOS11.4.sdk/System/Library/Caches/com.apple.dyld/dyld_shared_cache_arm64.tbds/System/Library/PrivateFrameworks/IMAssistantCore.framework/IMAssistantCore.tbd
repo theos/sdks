@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore
+current-version:       800
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _IMAssistantContinuityChatsKey, _IMAssistantContinuityHandlesKey ]
+    objc-classes:       [ _IMAssistantAudioPlayer, _IMAssistantINMessageConverter, _IMAssistantINPersonConverter,
+                          _IMAssistantIntentHandler, _IMAssistantMessageAttributeOptions, _IMAssistantMessageReadAttributeSanitizer ]
+...

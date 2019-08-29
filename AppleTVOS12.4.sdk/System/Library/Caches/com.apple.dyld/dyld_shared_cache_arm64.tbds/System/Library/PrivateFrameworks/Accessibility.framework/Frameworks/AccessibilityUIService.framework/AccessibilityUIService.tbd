@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUIService.framework/AccessibilityUIService
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXUIAlertDefaultDelayBetweenSubsequentAlerts, _AXUIAlertDisplayTimeDefaultForAlerts,
+                          _AXUIAlertDisplayTimeDefaultForBanners, _AXUIAlertDisplayTimeForever, _AXUIAlertSizeMetricFillingContainer,
+                          _AXUIAlertSizeMetricFitting, _AXUISetMainBundleFakesSystemExtension ]
+    objc-classes:       [ _AXStaticFrameView, _AXStyleProviderUIAlert, _AXTVBulletinUIAlert, _AXUIActiveWindow, _AXUIAlert,
+                          _AXUIAlertContext, _AXUIAlertStyleProvider, _AXUIClientMessenger, _AXUIDisplayManager, _AXUINSBundleOverride,
+                          _AXUINubbitContext, _AXUIPassiveWindow, _AXUIRootViewController, _AXUIServiceContext,
+                          _AXUIServiceEntitlementChecker, _AXUIServiceManager, _AXUIUIScreenOverride, _AXUIWindow,
+                          ___AXUINSBundleOverride_super, ___AXUIUIScreenOverride_super ]
+...

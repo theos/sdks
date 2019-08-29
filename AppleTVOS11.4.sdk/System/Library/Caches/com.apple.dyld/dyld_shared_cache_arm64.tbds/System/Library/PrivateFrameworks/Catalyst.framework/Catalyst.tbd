@@ -1,0 +1,30 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Catalyst.framework/Catalyst
+current-version:       4.3
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CATAssertIsNotQueue, _CATAssertIsQueue, _CATErrorDomain, _CATErrorWithCodeAndUserInfo,
+                          _CATErrorWithDomainCodeAndUserInfo, _CATFormattedStringForKey, _CATGetCatalystQueue, _CATLocalizedKey,
+                          _CATSetCatalystQueue, _CATUnlocalizedKey, _CatalystVersionNumber, _CatalystVersionString,
+                          __CATTaskSessionOperationRemoteUUID ]
+    objc-classes:       [ _CATAddress, _CATArbitrator, _CATBatchRemoteTaskOperation, _CATBlockOperationObserver, _CATCollectionController,
+                          _CATEndPoint, _CATEvent, _CATHTTPMessageParser, _CATLocalizationHelper, _CATMessage, _CATMutableTaskProgress,
+                          _CATNetworkReachability, _CATNotificationMessage, _CATOperation, _CATOperationQueue, _CATProperty,
+                          _CATRemoteConnection, _CATRemoteConnectionSocketOptions, _CATRemoteConnectionTrustDecision,
+                          _CATRemoteTaskOperation, _CATRemoteTransport, _CATSerialOperationQueue, _CATSessionMessage,
+                          _CATSessionMessageDidInvalidate, _CATSessionMessageInvalidate, _CATSessionMessageResume,
+                          _CATSessionMessageResumed, _CATSocket, _CATState, _CATStateMachine, _CATTaskBlockServer, _CATTaskClient,
+                          _CATTaskMessage, _CATTaskMessageCancel, _CATTaskMessageError, _CATTaskMessageFetchProgress,
+                          _CATTaskMessageIncrementalProgress, _CATTaskMessageProgressUpdate, _CATTaskMessageStart, _CATTaskOperation,
+                          _CATTaskProgress, _CATTaskRequest, _CATTaskResultObject, _CATTaskServer, _CATTaskSession, _CATTransition,
+                          _CATTransport, _CATXPCTransport, __CATArbitratorRegistrationEntry, __CATArbitratorResourceProxy,
+                          __CATArbitratorWaitToken, __CATBlockTaskOperation, __CATErrorBundleHelper, __CATLongRunningTaskOperation,
+                          __CATObserverManager, __CATOperationTargetSelectorObserver, __CATProxyWaitToken,
+                          __CATRemoteConnectionSendDataContext, __CATRemoteConnectionSendDataWithStreamContext,
+                          __CATRemoteTransportSendMessageOperation, __CATTransportDidSendMessageOperation, __CATXPCBoostAssertion,
+                          __CATXPCTransportSendMessageOperation ]
+    objc-ivars:         [ __CATBlockTaskOperation.mBlock ]
+...

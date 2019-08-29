@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCoreFoundation.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ __T014CoreFoundation9_CFObjectMp, __T014CoreFoundation9_CFObjectPAAE2eeoiSbx_xtFZ,
+                          __T014CoreFoundation9_CFObjectPAAE9hashValueSivg, __swift_FORCE_LOAD_$_swiftCoreFoundation ]
+...

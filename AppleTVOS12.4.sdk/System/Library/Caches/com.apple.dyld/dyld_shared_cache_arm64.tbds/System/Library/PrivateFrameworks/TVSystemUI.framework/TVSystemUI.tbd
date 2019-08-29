@@ -1,0 +1,30 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVSystemUI.framework/TVSystemUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AppendRect, _TVAppIdentifierKey, _TVPreviousAppIconCacheKey, _TVSUIAppIconImageConfiguration,
+                          _TVSUIAppIconNameDidChangeNotification, _TVSUIBlurRendererRadiusDefault,
+                          _TVSUIContextOptionAnimationWatchdogSecondsLimitKey, _TVSUICornerMaskedImageOfSize, _TVSUISendMessage,
+                          _TVSUIValidateUserInfoForItems, _TVSUIViewServiceErrorDomain, _TVSUIViewServiceSetupHostInterface,
+                          _TVSUIViewServiceSetupRemoteInterface, _stateMachineLog, _viewServiceLog, _viewServiceLogSubsystem ]
+    objc-classes:       [ _TVSUIApplicationProxyIconCacheKey, _TVSUIApplicationProxyLifetimeCacheKey, _TVSUIAssetManagerLifetimeCache,
+                          _TVSUIBlackScreenRecoveryIterator, _TVSUIBlackScreenRecoveryViewController, _TVSUIBlurRenderer,
+                          _TVSUIBulletinView, _TVSUIConferenceRoomDisplaySmallView, _TVSUIDigitEntryViewController,
+                          _TVSUIDigitGroupView, _TVSUIExtensionContext, _TVSUIModalPresentationAnimationFactory,
+                          _TVSUIModalPresentationAnimator, _TVSUIModalPresentationController, _TVSUINamedLayerImage,
+                          _TVSUINamedLayerStack, _TVSUIOSUpdateSlowRebootView, _TVSUIOSUpdateView, _TVSUIOSUpdateViewController,
+                          _TVSUIRemoteContainingViewController, _TVSUIRemoteHostViewController, _TVSUIRemoteViewController,
+                          _TVSUIRestrictionsPasscodeEntryViewController, _TVSUITextAlertButton, _TVSUITextAlertController,
+                          _TVSUITextEntryController, _TVSUITextEntryFooterView, _TVSUITextEntryHeaderView,
+                          _TVSUIViewServiceAnimationMessage, _TVSUIViewServiceContext, _TVSUIViewServiceDismissMessage,
+                          _TVSUIViewServiceHideOrShowMessage, _TVSUIViewServiceProxy, _TVSUIViewServiceRemoteTerminationMessage,
+                          _TVSUIViewServiceViewController, _TVSUIViewServiceWatchdogMessage, _TVSUIVolatileImage,
+                          _TVSUIVolatileNamedLayerStack, _TVSUIWallpaper, __TVButtonSection,
+                          __TVSUIBlackScreenRecoveryImageViewController, __TVSUIOffscreenRenderer, __TVSUIOffscreenRendererFormat,
+                          __TVSUIRenderingUtilities, __TVSUITextAlertButtonCell, __TVSUITextAlertHeaderView, __TVSUITextEntryTextField,
+                          ___TVSUIWallpaperImageView, ___TVSUIWallpaperProxy ]
+...

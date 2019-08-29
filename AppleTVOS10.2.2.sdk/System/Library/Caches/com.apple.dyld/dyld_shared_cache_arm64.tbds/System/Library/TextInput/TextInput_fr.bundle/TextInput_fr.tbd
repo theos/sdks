@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/TextInput/TextInput_fr.bundle/TextInput_fr
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __ZN2KB18CandidateFilter_fr20do_filter_candidatesERNSt3__16vectorINS_9CandidateENS1_9allocatorIS3_EEEERKS3_P10__CFString,
+                          __ZTVN2KB18CandidateFilter_frE ]
+    objc-classes:       [ _TIKeyboardFeatureSpecialization_fr ]
+...

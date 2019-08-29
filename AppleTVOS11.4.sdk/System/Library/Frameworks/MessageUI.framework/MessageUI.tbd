@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/MessageUI.framework/MessageUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    allowed-clients:    [ MessageUI ]
+    objc-classes:       [ _MFMailComposeViewController ]
+...

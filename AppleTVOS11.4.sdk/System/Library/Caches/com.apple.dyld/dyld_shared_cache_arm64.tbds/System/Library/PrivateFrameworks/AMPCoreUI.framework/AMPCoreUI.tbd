@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AMPCoreUI.framework/AMPCoreUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AMPCoreUIVersionNumber, _AMPCoreUIVersionString ]
+    objc-classes:       [ _AMPButton, _AMPOnboardingFeature, _AMPOnboardingFeatureView, _AMPOnboardingHeaderView,
+                          _AMPOnboardingMultiFeatureHeaderView, _AMPOnboardingViewController, _AMPPrivacyAnimatedTransitioning,
+                          _AMPPrivacyPresentationController, _AMPPrivacyViewController, _AMPTintedBackgroundButton ]
+...

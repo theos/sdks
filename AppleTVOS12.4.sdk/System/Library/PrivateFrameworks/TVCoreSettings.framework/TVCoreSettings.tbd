@@ -1,0 +1,18 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVCoreSettings.framework/TVCoreSettings
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVCSHomeConfigurationStateToString, _TVCSHomeLog, _TVCSIsStringAppleTV, _TVCSLocalizedString,
+                          _TVCSStringByRemovingBonjourSuffix, _TVCoreSettingsVersionNumber, _TVCoreSettingsVersionString ]
+    objc-classes:       [ _TVCSAccessory, _TVCSHome, _TVCSHomeKitErrorUtilities, _TVCSHomeManager, _TVCSLockdownUtilities, _TVCSRoom ]
+    objc-ivars:         [ _TVCSAccessory._hmAccessory, _TVCSHome._hmHome, _TVCSHomeManager._accessoryBrowser,
+                          _TVCSHomeManager._advertising, _TVCSHomeManager._browsedCurrentHMAccessory,
+                          _TVCSHomeManager._browsingForAccessory, _TVCSHomeManager._cachedOwnedHomes,
+                          _TVCSHomeManager._configurationInProgress, _TVCSHomeManager._homeConfigurationState,
+                          _TVCSHomeManager._homeManager, _TVCSHomeManager._homeManagerQueue, _TVCSHomeManager._localAccessory,
+                          _TVCSHomeManager._setupService, _TVCSRoom._hmRoom ]
+...

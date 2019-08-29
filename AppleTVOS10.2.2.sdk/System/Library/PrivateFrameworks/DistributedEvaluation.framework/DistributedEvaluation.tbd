@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DESAggregatorLogEvaluation, _DESAggregatorLogRecording, _DESDiagnosticsSubmissionAllowed, _DESGetDeviceType,
+                          _DESIsInternalInstall, _DESServiceGetXPCInterface, _kDESDistributedEvaluationErrorDomain ]
+    objc-classes:       [ _DESJSONPredicate, _DESRecordStore ]
+    objc-ivars:         [ _DESRecordStore._bundleId ]
+...

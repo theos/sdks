@@ -1,0 +1,26 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _BYAssistantFixUpVoiceTriggerStateIfNeeded, _BYAssistantScreenShouldBeShownInSetupAssistant,
+                          _BYAssistantScreenShouldCauseBuddyLaunch, _BYAssistantScreenShouldRunForPHSUpgrade,
+                          _BYBuddyAssistantPHSOfferedKey, _BYBuddyAssistantPresentedKey, _BYBuddyDoneKey, _BYBuddyFinishedInitialRunKey,
+                          _BYBuddyIOSCurrentVersion, _BYBuddyIOSVersionKey, _BYBuddyLastExitKey, _BYBuddyMachService,
+                          _BYBuddyNotBackedUpIdentifier, _BYBuddyRestoredFromBackupkey, _BYBuddyRunDiagnosticsMiniBuddy,
+                          _BYBuddyRunHSA2MiniBuddy, _BYBuddyRunKeychainSyncMiniBuddy, _BYBuddyRunMesaMiniBuddy,
+                          _BYBuddyRunPaymentMiniBuddy, _BYBuddyRunStandardMiniBuddy, _BYBuddyTVOSCurrentVersion, _BYBuddyTVOSVersionKey,
+                          _BYClearLaunchSentinel, _BYProcessNameForPID, _BYRestrictionsEnabled, _BYSetLaunchSentinel,
+                          _BYSetupAssistantBundleIdentifier, _BYSetupAssistantExitedDarwinNotification,
+                          _BYSetupAssistantFinishedDarwinNotification, _BYSetupAssistantHasCompletedInitialRun,
+                          _BYSetupAssistantIsRunningSilentTokenUpgrade, _BYSetupAssistantLaunchedDarwinNotification,
+                          _BYSetupAssistantNeedsToRun, _BYSetupAssistantPrepareLaunchSentinel,
+                          _BYSetupAssistantSilentTokenUpgradeCompletedNotification,
+                          _BYSetupAssistantSilentTokenUpgradeInProgressKey, _Daemon_BYSetupAssistantNeedsToRun, __BYLoggingEnabled,
+                          __BYLoggingFacility ]
+    objc-classes:       [ _BYAppleIDAccountsManager, _BYBuddyClientInterface, _BYBuddyDaemonInterface, _BYLicenseAgreement,
+                          _BYManagedAppleIDBootstrap, _BYNetworkMonitor ]
+...

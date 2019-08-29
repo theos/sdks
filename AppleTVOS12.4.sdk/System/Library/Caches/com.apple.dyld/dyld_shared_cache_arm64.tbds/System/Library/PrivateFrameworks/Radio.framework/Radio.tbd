@@ -1,0 +1,27 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Radio.framework/Radio
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RadioAddStationRequestShareURLDictionaryKey, _RadioArtworkDictionaryHeightKey,
+                          _RadioArtworkDictionaryURLKey, _RadioArtworkDictionaryWidthKey,
+                          _RadioAvailabilityControllerRadioAvailableDidChangeNotification, _RadioGetArtworkURLFromVariantsForSize,
+                          _RadioNetworkObserverIsCellularNetworkingAllowedDidChangeNotification,
+                          _RadioNetworkObserverIsUsingNetworkDidChangeNotification,
+                          _RadioRecentStationsControllerStationsDidChangeNotification, _RadioRequestErrorCodeIsUserLockoutError,
+                          _RadioRequestErrorDomain, _RadioStationMatchLibraryTrackMetadataKindMusicVideo,
+                          _RadioStationMatchLibraryTrackMetadataKindSong, _RadioStationMatchLibraryTrackMetadataKindUploadedAudio,
+                          _RadioStationMatchLibraryTrackMetadataKindUploadedVideo, _RadioStoreBagDidLoadNotification ]
+    objc-classes:       [ _RadioAddStationRequest, _RadioArtwork, _RadioArtworkCollection, _RadioAvailabilityController,
+                          _RadioGetFeaturedStationsRequest, _RadioGetGenreTreeNodesRequest, _RadioImageCache, _RadioLoadStoreBagRequest,
+                          _RadioModel, _RadioMutableRecentStationsGroup, _RadioMutableSeedMetadata, _RadioNetworkObserver,
+                          _RadioPushNotificationController, _RadioRecentStationsController, _RadioRecentStationsGroup,
+                          _RadioRecentStationsRequest, _RadioRecentStationsResponse, _RadioRecentStationsResponseStationGroup,
+                          _RadioRequest, _RadioRequestContext, _RadioSeedMetadata, _RadioStation, _RadioStationMatchContext,
+                          _RadioStationMatchLibraryAlbumMetadata, _RadioStationMatchLibraryArtistMetadata,
+                          _RadioStationMatchLibraryTrackMetadata, _RadioStationMatchMetadata, _RadioStationMatchStoreMetadata,
+                          _RadioStoreBag, _RadioSyncRequest, _RadioTermsCheckRequest ]
+...

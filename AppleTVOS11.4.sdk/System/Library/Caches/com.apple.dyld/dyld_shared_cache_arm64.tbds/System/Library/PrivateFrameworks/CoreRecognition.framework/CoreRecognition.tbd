@@ -1,0 +1,42 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition
+current-version:       112.1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CRAdaptiveThresholdImage, _CRCodeRedeemerInfoCodeKey, _CRCodeRedeemerInfoErrorKey,
+                          _CRInsightsCardImageCutBufferKey, _CRInsightsCardImageCutEmbossedBufferKey,
+                          _CRInsightsCardImageFixedCutLandscape, _CRInsightsCardImageFreeformLandscape,
+                          _CRInsightsCardImageFreeformLandscapeInverted, _CRInsightsCardImageFreeformPortrait,
+                          _CRInsightsCardPointsKey, _CRInsightsCardholderNameKey, _CRInsightsCodeKey,
+                          _CRInsightsContextImageOrientation, _CRInsightsContextImageOrientationLandscape,
+                          _CRInsightsContextImageOrientationLandscapeInverted, _CRInsightsContextImageOrientationPortrait,
+                          _CRInsightsContextImageOrientationPortraitInverted, _CRInsightsContextImagePath,
+                          _CRInsightsContextImagePathFixedCut, _CRInsightsContextImagePathFreeform,
+                          _CRInsightsContextRecognitionTextFeature, _CRInsightsContextRecognitionTextFeatureGroup,
+                          _CRInsightsDateResultsKey, _CRInsightsEmbossedRegionsExpirationDate, _CRInsightsEmbossedRegionsName,
+                          _CRInsightsEmbossedRegionsNumber, _CRInsightsEmbossedResultsFixedCutLandscape,
+                          _CRInsightsEmbossedResultsFreeformLandscape, _CRInsightsEmbossedResultsFreeformLandscapeInverted,
+                          _CRInsightsExpirationKey, _CRInsightsNameResultsKey, _CRInsightsNumberResultsKey,
+                          _CRInsightsRecognitionResultForExpDateEmbossed, _CRInsightsRecognitionResultForNameEmbossed,
+                          _CRInsightsRecognitionResultForNumberEmbossed, _CRInsightsRecognitionResultsForRegion,
+                          _CRInsightsTextDetectorRegionsFixedCutLandscape, _CRInsightsTextDetectorRegionsFreeformLandscape,
+                          _CRInsightsTextDetectorRegionsFreeformLandscapeInverted, _CRInsightsTextDetectorRegionsFreeformPortrait,
+                          _CRInsightsTextDetectorResultsFixedCutLandscape, _CRInsightsTextDetectorResultsFreeformLandscape,
+                          _CRInsightsTextDetectorResultsFreeformLandscapeInverted, _CRInsightsTextDetectorResultsFreeformPortrait,
+                          _CRInsightsTextFeatureRecognitionTime, _CRInsightsTotalRecognitionTime,
+                          _CROutputTypeCreditCardCardholderName, _CROutputTypeCreditCardExpirationDate, _CROutputTypeCreditCardNumber,
+                          _CROutputTypeHomeKitCode, _CROutputTypeIDCardBack, _CROutputTypeIDCardFront, _CROutputTypeQRCode,
+                          _CoreRecognitionVersionNumber, _CoreRecognitionVersionString, __findCodeRectInImage,
+                          __findCodeRectInImageWithModel, __recognizeCodeImages, __segmentCodeImages, _ccMMRectToUnitRectIsPortait,
+                          _checkCardCode, _createCGImageFromFile, _kCROverrideCaptureSessionManager,
+                          _kCROverrideRegionsFreeformLandscape, _kCROverrideRegionsFreeformLandscapeInverted,
+                          _kCROverrideRegionsFreeformPortrait, _kCROverrideShouldRunEmbossedPath, _kCROverrideShouldRunFixedCutPath,
+                          _kCROverrideShouldRunFreeformInvertedPath, _kCROverrideShouldRunFreeformPath,
+                          _kCROverrideShouldRunLandscapeFlatPrintedPath, _kCROverrideShouldRunOffline,
+                          _kCROverrideShouldRunPortraitFlatPrintedPath, _writeBuffer, _writeCGImageToPNG ]
+    objc-classes:       [ _CRCameraReader, _CRCameraReaderOutput, _CRCameraReaderOutputExpirationDate, _CRCodeRedeemerController,
+                          _CRImage, _CRInsights, _CRTextFeature, _CRTextFeatureMultiRegion ]
+...

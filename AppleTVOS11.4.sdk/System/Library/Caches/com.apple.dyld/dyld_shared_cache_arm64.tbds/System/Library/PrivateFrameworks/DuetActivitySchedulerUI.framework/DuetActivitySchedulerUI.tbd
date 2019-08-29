@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DuetActivitySchedulerUI.framework/DuetActivitySchedulerUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DuetActivitySchedulerUIVersionNumber, _DuetActivitySchedulerUIVersionString ]
+    objc-classes:       [ __DASUIFetchContentInBackgroundAction, __DASUIFetchContentInBackgroundActionResponse,
+                          __DASUIHandleRemoteNotificationAction ]
+...

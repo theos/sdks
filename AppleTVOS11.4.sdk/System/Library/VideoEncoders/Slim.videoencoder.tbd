@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/VideoEncoders/Slim.videoencoder
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SLIMEncoderRegister, _SlimEncodeFrame, _StreamNameAttachment, _StreamNameDepth, _StreamNameIR, _chroma,
+                          _createThreadContext, _destroyThreadContext, _encodeFrameThreads, _luma, _prepareEmbTbl ]
+...

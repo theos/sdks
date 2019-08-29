@@ -1,0 +1,34 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CDGetLogHandle, _CDVEnumerationFlagsAll, _CacheDeleteAllowAutoPurge, _CacheDeleteAutoPurgeAllowed,
+                          _CacheDeleteCacheable, _CacheDeleteCancelPurge, _CacheDeleteCopyAvailableSpaceForVolume,
+                          _CacheDeleteCopyDemotableApps, _CacheDeleteCopyItemizedPurgeableSpace,
+                          _CacheDeleteCopyItemizedPurgeableSpaceWithInfo, _CacheDeleteCopyPurgeableSpaceWithInfo,
+                          _CacheDeleteCurrentCacheableSpace, _CacheDeleteCurrentCacheableSpaceForVolume, _CacheDeleteDemoteApps,
+                          _CacheDeleteDoNotAutoPurge, _CacheDeleteDoNotPurgeUserManagedAssets, _CacheDeleteErrorDomain,
+                          _CacheDeleteGetSetting, _CacheDeletePerformOperation, _CacheDeletePurgeAsync, _CacheDeletePurgeSpace,
+                          _CacheDeletePurgeSpaceWithInfo, _CacheDeletePurgeSpaceWithInfoSync, _CacheDeletePurgeUserManagedAssets,
+                          _CacheDeletePurgeableSpace, _CacheDeleteRegister, _CacheDeleteRegisterCallback, _CacheDeleteRegisterCallbacks,
+                          _CacheDeleteRegisterCallbacksForProcess, _CacheDeleteRegisterExtensionCallbacks,
+                          _CacheDeleteRegisterForProcess, _CacheDeleteRegisterInfoCallbacks,
+                          _CacheDeleteRegisterInfoCallbacksForProcess, _CacheDeleteRegisterLowDiskFailure,
+                          _CacheDeleteRequestCacheableSpaceGuidance, _CacheDeleteServiceRequest, _CacheDeleteSetCacheable,
+                          _CacheDeleteUpdatePurgeable, _CacheDeleteUpdatePurgeableSync, _CacheDeleteUpdateSetting,
+                          _CacheDeleteUserManagedAssetsPurgeable, _CacheManagementEnumerateAssets, _CacheManagementErrorDomain,
+                          _CacheManagementRemove, _CallCacheD, _CallCacheDPublic, __CacheDeleteAbortWithMessage, _cacheSizeForVolume,
+                          _clearAllSampleServiceCache, _clearSampleServiceCache, _connectionIsEntitled, _containerUserManagedAssetsPath,
+                          _copySampleServiceCachePath, _createCacheDeleteToken, _diskUsageList, _enumerateSampleCacheFiles,
+                          _enumerateSampleCacheSubDirs, _evaluateBoolProperty, _evaluateNumberProperty, _evaluateStringProperty,
+                          _evaluateUrgency, _flattenedAssetDescription, _gTimebaseConversion, _getAllVolumes, _getCacheDeleteXattr,
+                          _getFunc, _getLocalVolumes, _getRootVolume, _is_first_boot, _lowSpaceVolumes, _paddingForVolume, _persistPath,
+                          _populateSampleServiceCache, _pretty_user_defaults, _quotaVolumes, _sampleServiceCacheSubPath,
+                          _set_first_boot_work_completed, _thresholdsForMountPoint, _traverse_directory, _truncFile, _validateTimestamp ]
+    objc-classes:       [ _CacheDeleteHostExtensionContext, _CacheDeleteListener, _CacheDeleteRemoteExtensionContext,
+                          _CacheDeleteServiceInfo, _CacheDeleteServiceListener, _CacheDeleteVolume, _CacheManagementAsset ]
+...

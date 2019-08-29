@@ -1,0 +1,16 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Seeding.framework/Seeding
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SeedingVersionNumber, _SeedingVersionString ]
+    objc-classes:       [ _SDBetaManager, _SDBetaProgram, _SDBuildInfo, _SDCatalogUtilities, _SDLegalDoc, _SDSeedProgramManager,
+                          _SDSeedProgramMigrator, _SDSeedingLogging ]
+    objc-ivars:         [ _SDBetaManager._cachedPrograms, _SDBetaManager._cachedServerResponse, _SDBetaProgram._catalog,
+                          _SDBetaProgram._legalDocs, _SDBetaProgram._mobileAssetBrain, _SDBetaProgram._mobileAssetUpdate,
+                          _SDBetaProgram._programID, _SDBetaProgram._title, _SDLegalDoc._content, _SDLegalDoc._legal_id,
+                          _SDLegalDoc._title ]
+...

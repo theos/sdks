@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ITIdleTimerStateServiceIdentifier, _ITIdleTimerStateServiceMessageKeyParam1,
+                          _ITIdleTimerStateServiceMessageKeyParam2, _ITLogIdleTimer, _ITLoggingSubsystem,
+                          _IdleTimerServicesVersionNumber, _IdleTimerServicesVersionString ]
+    objc-classes:       [ _ITIdleTimerDisableAssertion, _ITIdleTimerState, _ITIdleTimerStateClient, _ITIdleTimerStateRequestShim,
+                          _ITIdleTimerStateServer, _ITIdleTimerStateService ]
+...

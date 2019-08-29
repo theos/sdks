@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/KnowledgeMonitor.framework/KnowledgeMonitor
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ __DKApplicationMonitor, __DKBacklightMonitor, __DKBatteryMonitor, __DKCPUUsageMonitor,
+                          __DKDeviceActivityLevelMonitor, __DKDoNotDisturbMonitor, __DKMonitor, __DKMonitorManager,
+                          __DKNetworkQualityMonitor, __DKNextAlarmForTopOffProtectionMonitor, __DKPeriod, __DKPluggedInMonitor,
+                          __DKTemporalNumericState, __DKThermalPressureMonitor, __DKWifiNetworkQualityMonitor,
+                          __DKWiredNetworkQualityMonitor ]
+...

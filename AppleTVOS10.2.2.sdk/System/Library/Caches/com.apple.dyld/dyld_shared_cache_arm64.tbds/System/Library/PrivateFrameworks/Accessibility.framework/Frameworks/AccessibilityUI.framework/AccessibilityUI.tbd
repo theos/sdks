@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AccessibilityUI.framework/AccessibilityUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXUIErrorDomainCommunication, _AXUIErrorDomainProtocol, _AXUIErrorDomainServiceEntitlementMismatch,
+                          _AXUIErrorDomainServiceInitialization, _AXUIErrorDomainServiceMessageHandling, _AXUIErrorDomainValidation,
+                          __AXUIMessageReplyKeyClientRegistrationWithServerDidSucceed, __AXUIMessageReplyKeyDidSucceed,
+                          __AXUIMessageReplyKeyErrorDescription, __AXUIMessageReplyKeyErrorDomain, __AXUIServiceDescription,
+                          __AXUIServiceMessageKeyClientIdentifier, __AXUIServiceMessageKeyInitializationMessage,
+                          __AXUIServiceMessageKeyMessageIdentifier, __AXUIServiceMessageKeyMessageWasEmpty,
+                          __AXUIServiceMessageKeyServiceBundleName, __AXUIServiceName ]
+    objc-classes:       [ _AXUIClient, _AXUIClientConnection, _AXUIMessageContext, _AXUIMessageReplyHandler, _AXUIMessageSender,
+                          _AXUIUtilities ]
+...

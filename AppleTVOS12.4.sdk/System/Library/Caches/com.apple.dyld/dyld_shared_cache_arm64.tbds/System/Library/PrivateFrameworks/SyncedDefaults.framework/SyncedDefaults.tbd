@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SYDRemotePreferencesSourceConfigurationDidChangeNotification,
+                          _SYDRemotePreferencesSourceDidChangeNotification ]
+    objc-classes:       [ _SYDRemotePreferencesSource ]
+...

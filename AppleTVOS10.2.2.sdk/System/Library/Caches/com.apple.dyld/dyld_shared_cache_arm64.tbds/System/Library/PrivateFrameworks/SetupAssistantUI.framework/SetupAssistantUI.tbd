@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _BFFCountryScanCompletedNotification, _BFFRoundRectToPixel, __BFFCGFloatByDeviceHeight,
+                          __BFFHeightByDeviceSize, __BFFWidthByDeviceSize ]
+    objc-classes:       [ _BFFCapabilities, _BFFLinkLabelFooterView, _BFFLocaleDataSource, _BFFLocationController,
+                          _BFFNavigationController, _BFFPaneHeaderView, _BFFPaneHeaderView_RemoteUI, _BFFPreferencesController, _BFFStyle,
+                          _BFFWindow ]
+    objc-ivars:         [ _BFFLocationController._aliasDict, _BFFLocationController._guessedCountries,
+                          _BFFLocationController._guessedCountryFromTelephony, _BFFLocationController._validCountries,
+                          _BFFLocationController.fWifiDevice, _BFFLocationController.fWifiManager ]
+...

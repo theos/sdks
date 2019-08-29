@@ -1,0 +1,28 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SIReflectionHydrateProtoFromEventTypeAndData, _SIReflectionInferClassFromEventType,
+                          _SIReflectionInferEventTypeFromClass, _SISchemaAudioFirstBufferRecordedReadFrom,
+                          _SISchemaAudioStopRecordingReadFrom, _SISchemaClientAnyEventReadFrom, _SISchemaClientEventMetadataReadFrom,
+                          _SISchemaClientTransportEventMetadataReadFrom, _SISchemaClientTurnBasedEventReadFrom,
+                          _SISchemaClientTurnContextReadFrom, _SISchemaConversationTraceReadFrom,
+                          _SISchemaDeviceDynamicContextReadFrom, _SISchemaDeviceFixedContextReadFrom,
+                          _SISchemaDictationContextReadFrom, _SISchemaInvocationReadFrom, _SISchemaLocationReadFrom,
+                          _SISchemaPunchOutReadFrom, _SISchemaServerEnvelopeReadFrom, _SISchemaServerEventMetadataReadFrom,
+                          _SISchemaSiriCueReadFrom, _SISchemaSpeechTranscriptionReadFrom, _SISchemaTextToSpeechBeginReadFrom,
+                          _SISchemaTextToSpeechEndReadFrom, _SISchemaTurnInteractionReadFrom, _SISchemaUIStateTransitionReadFrom,
+                          _SISchemaUUFRPresentedReadFrom, _SISchemaUserSpeechDurationReadFrom, _SISchemaViewContainerReadFrom,
+                          _SiriInstrumentationVersionNumber, _SiriInstrumentationVersionString ]
+    objc-classes:       [ _SIEventWrapper, _SISchemaAudioFirstBufferRecorded, _SISchemaAudioStopRecording, _SISchemaClientAnyEvent,
+                          _SISchemaClientEventMetadata, _SISchemaClientTransportEventMetadata, _SISchemaClientTurnBasedEvent,
+                          _SISchemaClientTurnContext, _SISchemaConversationTrace, _SISchemaDeviceDynamicContext,
+                          _SISchemaDeviceFixedContext, _SISchemaDictationContext, _SISchemaInvocation, _SISchemaLocation,
+                          _SISchemaPunchOut, _SISchemaServerEnvelope, _SISchemaServerEventMetadata, _SISchemaSiriCue,
+                          _SISchemaSpeechTranscription, _SISchemaTextToSpeechBegin, _SISchemaTextToSpeechEnd, _SISchemaTurnInteraction,
+                          _SISchemaUIStateTransition, _SISchemaUUFRPresented, _SISchemaUserSpeechDuration, _SISchemaViewContainer ]
+...

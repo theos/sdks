@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DCCryptoErrorDomain, _DCFetchErrorDomain, _DeviceCheckInternalVersionNumber,
+                          _DeviceCheckInternalVersionString, _fallback_server_pubkey ]
+    objc-classes:       [ _DCAsset, _DCAssetFetcher, _DCAssetFetcherContext, _DCCertificateGenerator, _DCCryptoProxyImpl,
+                          _DCDDeviceMetadata, _DCXPCActivityController ]
+...

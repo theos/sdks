@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Futhark.framework/Futhark
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _FKGetBuildAPIVersion, _FKGetBuildGitHash, _FKGetBuildTimestamp, _FKGetFrameworkVersion, _FKGlyphRender,
+                          _FKGlyphSetDerivedProperties, _FKRecognizeGlyph, _FutharkVersionNumber, _FutharkVersionString ]
+    objc-classes:       [ _FKTextDetector, _FKTextFeature ]
+    objc-ivars:         [ _FKTextDetector._roi, _FKTextDetector._sessions, _FKTextDetector._size, _FKTextDetector._timeBinarizer,
+                          _FKTextDetector._timeConcomps, _FKTextDetector._timeDownscale, _FKTextDetector._timeRecognizer,
+                          _FKTextDetector._timeSequences, _FKTextFeature._backingIndex, _FKTextFeature._scale, _FKTextFeature._session ]
+...

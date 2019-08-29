@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AVSpeechSynthesisVoiceIdentifierVictoria, __AXSettingsSortedAssetsFromAssets ]
+    objc-classes:       [ _AXSettingsVoiceAssetManager, _AXSpeechAssetMonitorHelper, _AXSpeechPronunciationHelper,
+                          _AXSpeechPronunciationOptions ]
+...

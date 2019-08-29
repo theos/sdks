@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IconServices.framework/IconServices
+current-version:       377
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ _ISIcon, _ISIconLayer, _ISIconObserver, _ISImageDescriptor ]
+...

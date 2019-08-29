@@ -1,0 +1,33 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PlacesKit.framework/PlacesKit
+current-version:       3273.12.130
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PXMapStoreDefaultCapacityPerNode, _PXMapStoreMinimumRectWidth, _PXMapStoreStoreItemsInLeafNodesOnly,
+                          _PXQuadTreeNodeCanBeSubdivided, _PXQuadTreeNodeExtendCapacity, _PXQuadTreeNodeFindItemsInRect,
+                          _PXQuadTreeNodeFree, _PXQuadTreeNodeHasCapacity, _PXQuadTreeNodeInsertItem, _PXQuadTreeNodeMake,
+                          _PXQuadTreeNodeMoveItemsToChildNodes, _PXQuadTreeNodeOptimize, _PXQuadTreeNodeRemoveItem,
+                          _PXQuadTreeNodeRunCollector, _PXQuadTreeNodeSubdivide, _PlacesKitVersionNumber, _PlacesKitVersionString,
+                          _assetCountChangedTimerDelay, _cornerRadius, _countCores, _kPKExtendedTraitCollectionChangedNotification,
+                          _kPKExtendedTraitCollectionKey, _kPXPlacesAlbumImageCachedFilename,
+                          _kPXPlacesPhotoAssetsStoreImportBatchSize, _mapPointComparator, _minCountLabelHeight, _minCountLabelWidth,
+                          _pk_dispatch_on_main_queue, _stringForCoordinate, _stringForDiffEntryType ]
+    objc-classes:       [ _PKExtendedTraitCollection, _PXPlacesGeotaggableSortDescriptor, _PXPlacesImageCache,
+                          _PXPlacesMapAdaptiveClusterLayout, _PXPlacesMapCircleAnnotationView, _PXPlacesMapCircleRenderer,
+                          _PXPlacesMapController, _PXPlacesMapDefaultLayoutDiffer, _PXPlacesMapDefaultUpdatePlan,
+                          _PXPlacesMapDotsLayout, _PXPlacesMapDotsOverlay, _PXPlacesMapDotsOverlayRenderer, _PXPlacesMapDotsRenderer,
+                          _PXPlacesMapDotsUpdatePlan, _PXPlacesMapFetchResultController, _PXPlacesMapGeometricClusterLayout,
+                          _PXPlacesMapInPlaceLayoutDiffer, _PXPlacesMapInPlaceUpdatePlan, _PXPlacesMapLayout, _PXPlacesMapLayoutChange,
+                          _PXPlacesMapLayoutDiffer, _PXPlacesMapLayoutItemImpl, _PXPlacesMapLayoutResultImpl,
+                          _PXPlacesMapPassthroughSelectionHandler, _PXPlacesMapPinRenderer, _PXPlacesMapPipeline,
+                          _PXPlacesMapPipelineExecutionContext, _PXPlacesMapPipelineFactory, _PXPlacesMapPointAnnotation,
+                          _PXPlacesMapRadiusSelectionHandler, _PXPlacesMapSmallCircleAnnotationView, _PXPlacesMapSmallCircleRenderer,
+                          _PXPlacesMapThumbnailAnnotationView, _PXPlacesMapThumbnailClusterLayout, _PXPlacesMapThumbnailRenderer,
+                          _PXPlacesMapUpdatePlanResultImpl, _PXPlacesMapView, _PXPlacesMapViewPort, _PXPlacesPhotoAssetsStore,
+                          _PXPlacesPinAnnotationView, _PXPlacesPopoverImageFactory, _PXPlacesSnapshotFactory, _PXPlacesSnapshotOptions,
+                          _PXPlacesStore, _PXPlacesTestDataGenerator, _PXPlacesTestDataPoint, __PXMapStoreChange, __PXPlacesImageCacheKey,
+                          ___PKObject ]
+...

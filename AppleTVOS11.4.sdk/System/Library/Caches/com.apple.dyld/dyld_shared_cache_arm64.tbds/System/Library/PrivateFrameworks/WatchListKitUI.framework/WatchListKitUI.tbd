@@ -1,0 +1,66 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/WatchListKitUI.framework/WatchListKitUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _WLKNotificationsOnAction, _WLKUIAccessOptionsAccountKey, _WLKUIAccessOptionsBodyKey,
+                          _WLKUIAccessOptionsFooterKey, _WLKUIAccessOptionsShouldDenyOnCancelKey,
+                          _WLKUIAccessOptionsSuppressWelcomeVideoAddOnOptIn, _WLKUIAccessOptionsTitleKey,
+                          _WLKUIAccountChannelsInterfaceName, _WLKUIAppInstallOptionsBodyKey, _WLKUIAppInstallOptionsContentTitleKey,
+                          _WLKUIAppInstallOptionsContentTypeKey, _WLKUIAppInstallOptionsContentTypeMovie,
+                          _WLKUIAppInstallOptionsContentTypeTVShow, _WLKUIAppInstallOptionsInstallButtonKey,
+                          _WLKUIAppInstallOptionsShowAppStoreLink, _WLKUIAppInstallOptionsTitleKey,
+                          _WLKUIAppInstallOptionsUpdateBodyKey, _WLKUIAppInstallOptionsUpdateTitleKey, _WLKUIAppLibraryInterfaceName,
+                          _WLKUIElementKeyProductSportsBundleTemplate, _WLKUIElementKeySportsOrganizer,
+                          _WLKUIElementKeySportsProductGrid, _WLKUIElementKeySportsScore, _WLKUIElementKeySportsTitle,
+                          _WLKUIElementKeyWatchListSportsCard, _WLKUIElementKeyWatchListSportsFeaturedCard,
+                          _WLKUIElementKeyWatchListSportsLockup, _WLKUILocationInterfaceName, _WLKUILocationRequestKeyAccuracy,
+                          _WLKUILocationRequestKeyDistanceFilter, _WLKUIMediaCategoryHomeVideos, _WLKUIMediaCategoryMovies,
+                          _WLKUIMediaCategoryRentals, _WLKUIMediaCategoryShows, _WLKUIMediaCollectionTypeSeason,
+                          _WLKUIMediaCollectionTypeShow, _WLKUIMediaEntitiesFetchOptionKeyAddedAfterFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyFilters, _WLKUIMediaEntitiesFetchOptionKeyIs4KFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyIsHDRFilter, _WLKUIMediaEntitiesFetchOptionKeyIsLocalFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyIsPurchasedFilter, _WLKUIMediaEntitiesFetchOptionKeyLimit,
+                          _WLKUIMediaEntitiesFetchOptionKeyMediaCategoryFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyMediaCollectionTypeFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyMediaEntityIdentifierFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyPersistentIDFilter, _WLKUIMediaEntitiesFetchOptionKeyPrefetchProperties,
+                          _WLKUIMediaEntitiesFetchOptionKeySeasonIdentifierFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeyShowIdentifierFilter,
+                          _WLKUIMediaEntitiesFetchOptionKeySortDirectionAscending,
+                          _WLKUIMediaEntitiesFetchOptionKeySortDirectionDescending,
+                          _WLKUIMediaEntitiesFetchOptionKeySortDirectionMapping, _WLKUIMediaEntitiesFetchOptionKeySortProperties,
+                          _WLKUIMediaEntitiesFetchOptionKeyStoreIDFilter, _WLKUIMediaEntitySubtypeCollection,
+                          _WLKUIMediaEntitySubtypeItem, _WLKUIMediaPlayerName, _WLKUINetworkInterfaceName,
+                          _WLKUINotificationsInterfaceName, _WLKUIOnboardingInterfaceName, _WLKUISettingsInterfaceName,
+                          _WLKUISharingInterfaceName, _WLKUISportsCellElementKeyAppImage, _WLKUISportsCellElementKeyLiveTextBadge,
+                          _WLKUISportsCellElementKeyLogo, _WLKUISportsCellElementKeyScoreRow, _WLKUISportsCellElementKeyScorecard,
+                          _WLKUISportsCellElementKeyTextBadge, _WatchListKitUIVersionNumber, _WatchListKitUIVersionString ]
+    objc-classes:       [ _SBIconProgressView, _WLKModalTextPresenter, _WLKUIAccessViewController, _WLKUIAccessView_iOS,
+                          _WLKUIAccessView_tvOS, _WLKUIAccountChannels, _WLKUIAppCell, _WLKUIAppInstallerViewController,
+                          _WLKUIAppLibraryInterface, _WLKUIAppsGridViewController, _WLKUIBuyButtonLockup,
+                          _WLKUIDirectScrollCollectionView, _WLKUIElementFactory, _WLKUIFontFactory, _WLKUIImageService, _WLKUIJSObject,
+                          _WLKUILoadingViewController, _WLKUILocationInterface, _WLKUIMediaEntitiesFetchOperation, _WLKUIMediaEntity,
+                          _WLKUIMediaEntityType, _WLKUIMediaPlayer, _WLKUIMediaPlayerImageLoader, _WLKUINetworkInterface,
+                          _WLKUINotificationCenter, _WLKUIOnboardingController, _WLKUIOnboardingInterface, _WLKUIOrderedItemsMap,
+                          _WLKUIProductSportsGridRow, _WLKUIProductSportsGridView, _WLKUIQueryDataSource, _WLKUIScorecardView,
+                          _WLKUISettingsInterface, _WLKUISharingInterface, _WLKUISpinnerView, _WLKUISportsCellView,
+                          _WLKUISportsCollectionViewCell, _WLKUISportsOverlayView, _WLKUITVMLUtilities, _WLKUITextViewElementRenderer,
+                          _WLKUIUIStackView, _WLKUIViewFactory, __SBIconProgressFractionTransition,
+                          __SBIconProgressLoadingNoneStateTransition, __SBIconProgressNoneWaitingStateTransition,
+                          __SBIconProgressPausedTransition, __SBIconProgressTransition, __SBIconProgressWaitingLoadingStateTransition,
+                          __SBInstallProgressStateTransition, __WLKUIAccessViewController, __WLKUIAppInstallConfirmationView,
+                          __WLKUIAppInstallConfirmationViewController, __WLKUIAppInstallLockup, __WLKUIAppInstallView,
+                          __WLKUIMediaPlayerImageLoaderConfiguration, __WLKUIMediaPlayerImageLoaderOperationSet, __WLKUITextBadge ]
+    objc-ivars:         [ __SBInstallProgressStateTransition._fraction, __SBInstallProgressStateTransition._fromState,
+                          __SBInstallProgressStateTransition._toState, __WLKUIAccessViewController._accessView,
+                          __WLKUIAccessViewController._appChannels, __WLKUIAccessViewController._appInfos,
+                          __WLKUIAccessViewController._bundleIDs, __WLKUIAccessViewController._hasCalledCompletion,
+                          __WLKUIAccessViewController._hasOptedIn, __WLKUIAccessViewController._loadingView,
+                          __WLKUIAccessViewController._options, __WLKUIAccessViewController._privacyController,
+                          __WLKUIAccessViewController._shouldDenyOnCancel,
+                          __WLKUIAccessViewController._suppressWelcomeVideoAddOnOptIn ]
+...

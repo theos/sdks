@@ -1,0 +1,21 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVControlServices.framework/TVControlServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVCSEndpointServiceMachName, _TVCSLogComponent, _TVControlServicesVersionNumber,
+                          _TVControlServicesVersionString, __TVCSRemoteInputLimitingCenterUnbalancedEndLimitingRemoteInput ]
+    objc-classes:       [ _TVCSEndpoint, _TVCSEndpointManager, _TVCSEndpointServiceClientInterface, _TVCSEndpointServiceConnection,
+                          _TVCSEndpointServiceInterface, _TVCSPairableEndpoint, _TVCSPairedEndpoint, _TVCSRemoteInputLimitingCenter ]
+    objc-ivars:         [ _TVCSEndpoint._displayName, _TVCSEndpoint._remoteAppName, _TVCSEndpoint._type,
+                          _TVCSEndpointManager._pairableEndpoints, _TVCSEndpointManager._pairedEndpoints,
+                          _TVCSEndpointManager._serviceConnection, _TVCSEndpointManager._startedManagement,
+                          _TVCSEndpointManager._startingManagement, _TVCSEndpointServiceConnection._connection,
+                          _TVCSEndpointServiceConnection._delegate, _TVCSPairableEndpoint._bonjourServiceName,
+                          _TVCSPairableEndpoint._pairingPublicKey, _TVCSPairedEndpoint._pairingIdentifier,
+                          _TVCSRemoteInputLimitingCenter._applicationActive, _TVCSRemoteInputLimitingCenter._connection,
+                          _TVCSRemoteInputLimitingCenter._limitCount, _TVCSRemoteInputLimitingCenter._viewServiceActive ]
+...

@@ -1,0 +1,49 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AudioServerDriver.framework/AudioServerDriver
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ASD_AddDeviceRealTimeOperations, _ASD_AddPlugin, _ASD_AddStreamRealTimeOperations,
+                          _ASD_RemoveDeviceRealTimeOperations, _ASD_RemovePlugin, _ASD_RemoveStreamRealTimeOperations,
+                          __Z10ASD_AddRefPv, __Z10ASD_StopIOPP32AudioServerPlugInDriverInterfacejj, __Z11ASD_ReleasePv,
+                          __Z11ASD_StartIOPP32AudioServerPlugInDriverInterfacejj, __Z11ASD_add_128yy, __Z13ASD_uint64mulyy,
+                          __Z14ASD_InitializePP32AudioServerPlugInDriverInterfacePK30AudioServerPlugInHostInterface,
+                          __Z15ASD_HasPropertyPP32AudioServerPlugInDriverInterfacejiPK26AudioObjectPropertyAddress,
+                          __Z16ASD_CreateDevicePP32AudioServerPlugInDriverInterfacePK14__CFDictionaryPK27AudioServerPlugInClientInfoPj,
+                          __Z17ASD_DestroyDevicePP32AudioServerPlugInDriverInterfacej,
+                          __Z17ASD_DoIOOperationPP32AudioServerPlugInDriverInterfacejjjjjPK28AudioServerPlugInIOCycleInfoPvS5_,
+                          __Z18ASD_EndIOOperationPP32AudioServerPlugInDriverInterfacejjjjPK28AudioServerPlugInIOCycleInfo,
+                          __Z18ASD_QueryInterfacePv11CFUUIDBytesPS_,
+                          __Z19ASD_AddDeviceClientPP32AudioServerPlugInDriverInterfacejPK27AudioServerPlugInClientInfo,
+                          __Z19ASD_GetPropertyDataPP32AudioServerPlugInDriverInterfacejiPK26AudioObjectPropertyAddressjPKvjPjPv,
+                          __Z19ASD_SetPropertyDataPP32AudioServerPlugInDriverInterfacejiPK26AudioObjectPropertyAddressjPKvjS6_,
+                          __Z20ASD_BeginIOOperationPP32AudioServerPlugInDriverInterfacejjjjPK28AudioServerPlugInIOCycleInfo,
+                          __Z20ASD_GetZeroTimeStampPP32AudioServerPlugInDriverInterfacejjPdPyS3_,
+                          __Z21ASD_WillDoIOOperationPP32AudioServerPlugInDriverInterfacejjjPhS2_,
+                          __Z22ASD_IsPropertySettablePP32AudioServerPlugInDriverInterfacejiPK26AudioObjectPropertyAddressPh,
+                          __Z22ASD_RemoveDeviceClientPP32AudioServerPlugInDriverInterfacejPK27AudioServerPlugInClientInfo,
+                          __Z23ASD_GetPropertyDataSizePP32AudioServerPlugInDriverInterfacejiPK26AudioObjectPropertyAddressjPKvPj,
+                          __Z26getPluginHashTableInstancev,
+                          __Z34ASD_AbortDeviceConfigurationChangePP32AudioServerPlugInDriverInterfacejyPv,
+                          __Z36ASD_PerformDeviceConfigurationChangePP32AudioServerPlugInDriverInterfacejyPv,
+                          __ZN17ASDIntervalFilter15newTimePositionE8ASD_U128,
+                          __ZN17ASDIntervalFilter18reInitialiseFilterE8ASD_U128j, __ZN17ASDIntervalFilter20getMultiIntervalTimeEv,
+                          __ZN17ASDIntervalFilterC2E8ASD_U128j, __ZN17ASDIntervalFilterD0Ev, __ZN17ASDIntervalFilterD1Ev,
+                          __ZN17ASDIntervalFilterD2Ev, __ZN20ASDIntervalFilterFIR12setNewFilterEjPKyj,
+                          __ZN20ASDIntervalFilterFIR18reInitialiseFilterE8ASD_U128j,
+                          __ZN20ASDIntervalFilterFIR24calculateNewTimePositionE8ASD_U128,
+                          __ZN20ASDIntervalFilterFIR3FIREP8ASD_U128S0_, __ZN20ASDIntervalFilterFIRC1E8ASD_U128j,
+                          __ZN20ASDIntervalFilterFIRC2E8ASD_U128j, __ZN20ASDIntervalFilterFIRD0Ev, __ZN20ASDIntervalFilterFIRD1Ev,
+                          __ZN20ASDIntervalFilterFIRD2Ev, __ZN20ASDIntervalFilterIIR24calculateNewTimePositionE8ASD_U128,
+                          __ZN20ASDIntervalFilterIIR3IIREP8ASD_U256S0_i, __ZN20ASDIntervalFilterIIRC1E8ASD_U128jt,
+                          __ZN20ASDIntervalFilterIIRC2E8ASD_U128jt, __ZNK8ASD_U128dvERKS_, __ZNK8ASD_U128mlERKS_,
+                          __ZTI17ASDIntervalFilter, __ZTI20ASDIntervalFilterFIR, __ZTI20ASDIntervalFilterIIR, __ZTS17ASDIntervalFilter,
+                          __ZTS20ASDIntervalFilterFIR, __ZTS20ASDIntervalFilterIIR, __ZTV17ASDIntervalFilter,
+                          __ZTV20ASDIntervalFilterFIR, __ZTV20ASDIntervalFilterIIR, __ZmlRK8ASD_U128y, __ZmlyRK8ASD_U128,
+                          _gAudioServerPlugInDriverInterface ]
+    objc-classes:       [ _ASDBooleanControl, _ASDBox, _ASDClockDevice, _ASDControl, _ASDCustomProperty, _ASDDevice, _ASDLevelControl,
+                          _ASDObject, _ASDPlugin, _ASDSelectorControl, _ASDSelectorValue, _ASDStream, _ASDStreamFormat ]
+...

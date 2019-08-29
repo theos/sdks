@@ -1,0 +1,14 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/HeadBoardModel.framework/HeadBoardModel
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _HBAppGridOrderKey, _HBFolderItemsKey, _HBFolderNameKey, _HBModelSerializationDidSerializeNotification,
+                          _HBModelSerializationErrorDomain, _HBRootFolderKey, _HeadBoardModelVersionNumber,
+                          _HeadBoardModelVersionString ]
+    objc-classes:       [ _HBModelSerialization, _HBRawApp, _HBRawFolder, _HBRawRootItem ]
+    objc-ivars:         [ _HBRawApp._applicationIdentifier, _HBRawFolder._items, _HBRawFolder._name ]
+...

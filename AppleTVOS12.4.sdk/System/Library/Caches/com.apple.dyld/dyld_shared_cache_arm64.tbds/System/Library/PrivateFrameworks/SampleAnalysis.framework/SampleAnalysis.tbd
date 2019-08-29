@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SampleAnalysis.framework/SampleAnalysis
+current-version:       218.2
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _EventTypeString, _SABinarySearchArray, _SACFAbsoluteTimeFromTimespec, _SAFormattedBytes,
+                          _SAFormattedBytesDouble, _SAFormattedSignedBytes, _SAMachAbsTimeSecondsGetCurrent,
+                          _SAMachContTimeSecondsGetCurrent, _SAMachTimeFromSecondsMachTimeUsingTimebase,
+                          _SANanosecondsFromMachTimeUsingTimebase, _SASecondsFromMachTimeUsingLiveTimebase,
+                          _SASecondsFromMachTimeUsingTimebase, _TracePointString ]
+    objc-classes:       [ _SAAuxiliaryData, _SABinary, _SABinaryLoadInfo, _SADispatchQueue, _SADispatchQueueState, _SAFanSpeed, _SAFrame,
+                          _SAHIDEvent, _SAHIDStep, _SAInstruction, _SAKernelCache, _SASamplePrintOptions, _SASamplePrinter, _SASampleStore,
+                          _SASharedCache, _SASourceInfo, _SASymbol, _SATask, _SATaskState, _SAThread, _SAThreadState, _SATimeRange, _SATimestamp,
+                          _SAWaitInfo ]
+...

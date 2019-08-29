@@ -1,0 +1,42 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/swift/libswiftCoreMedia.dylib
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _$s9CoreMedia15CMTIME_IS_VALIDySbSo6CMTimeaF, _$s9CoreMedia17CMTIME_IS_INVALIDySbSo6CMTimeaF,
+                          _$s9CoreMedia17CMTIME_IS_NUMERICySbSo6CMTimeaF, _$s9CoreMedia20CMTIMERANGE_IS_EMPTYySbSo11CMTimeRangeaF,
+                          _$s9CoreMedia20CMTIMERANGE_IS_VALIDySbSo11CMTimeRangeaF,
+                          _$s9CoreMedia20CMTIME_IS_INDEFINITEySbSo6CMTimeaF,
+                          _$s9CoreMedia22CMTIMERANGE_IS_INVALIDySbSo11CMTimeRangeaF,
+                          _$s9CoreMedia23CMTIME_HAS_BEEN_ROUNDEDySbSo6CMTimeaF,
+                          _$s9CoreMedia25CMTIMERANGE_IS_INDEFINITEySbSo11CMTimeRangeaF,
+                          _$s9CoreMedia26CMTIME_IS_NEGATIVEINFINITYySbSo6CMTimeaF,
+                          _$s9CoreMedia26CMTIME_IS_POSITIVEINFINITYySbSo6CMTimeaF,
+                          _$sSo11CMTimeRangea9CoreMediaE012containsTimeB0ySbABF,
+                          _$sSo11CMTimeRangea9CoreMediaE12containsTimeySbSo0A0aF, _$sSo11CMTimeRangea9CoreMediaE12intersectionyA2BF,
+                          _$sSo11CMTimeRangea9CoreMediaE12isIndefiniteSbvg, _$sSo11CMTimeRangea9CoreMediaE12isIndefiniteSbvpMV,
+                          _$sSo11CMTimeRangea9CoreMediaE2eeoiySbAB_ABtFZ, _$sSo11CMTimeRangea9CoreMediaE2neoiySbAB_ABtFZ,
+                          _$sSo11CMTimeRangea9CoreMediaE3endSo0A0avg, _$sSo11CMTimeRangea9CoreMediaE3endSo0A0avpMV,
+                          _$sSo11CMTimeRangea9CoreMediaE5start3endABSo0A0a_AGtcfC, _$sSo11CMTimeRangea9CoreMediaE5unionyA2BF,
+                          _$sSo11CMTimeRangea9CoreMediaE7isEmptySbvg, _$sSo11CMTimeRangea9CoreMediaE7isEmptySbvpMV,
+                          _$sSo11CMTimeRangea9CoreMediaE7isValidSbvg, _$sSo11CMTimeRangea9CoreMediaE7isValidSbvpMV,
+                          _$sSo11CMTimeRangeaSQ9CoreMediaMc,
+                          _$sSo6CMTimea9CoreMediaE12convertScale_6methodABs5Int32V_So0A14RoundingMethodVtF,
+                          _$sSo6CMTimea9CoreMediaE12isIndefiniteSbvg, _$sSo6CMTimea9CoreMediaE12isIndefiniteSbvpMV,
+                          _$sSo6CMTimea9CoreMediaE14hasBeenRoundedSbvg, _$sSo6CMTimea9CoreMediaE14hasBeenRoundedSbvpMV,
+                          _$sSo6CMTimea9CoreMediaE18isNegativeInfinitySbvg, _$sSo6CMTimea9CoreMediaE18isNegativeInfinitySbvpMV,
+                          _$sSo6CMTimea9CoreMediaE18isPositiveInfinitySbvg, _$sSo6CMTimea9CoreMediaE18isPositiveInfinitySbvpMV,
+                          _$sSo6CMTimea9CoreMediaE1goiySbAB_ABtFZ, _$sSo6CMTimea9CoreMediaE1loiySbAB_ABtFZ,
+                          _$sSo6CMTimea9CoreMediaE1poiyA2B_ABtFZ, _$sSo6CMTimea9CoreMediaE1soiyA2B_ABtFZ,
+                          _$sSo6CMTimea9CoreMediaE2eeoiySbAB_ABtFZ, _$sSo6CMTimea9CoreMediaE2geoiySbAB_ABtFZ,
+                          _$sSo6CMTimea9CoreMediaE2leoiySbAB_ABtFZ, _$sSo6CMTimea9CoreMediaE2neoiySbAB_ABtFZ,
+                          _$sSo6CMTimea9CoreMediaE5value9timescaleABs5Int64V_s5Int32VtcfC, _$sSo6CMTimea9CoreMediaE7isValidSbvg,
+                          _$sSo6CMTimea9CoreMediaE7isValidSbvpMV,
+                          _$sSo6CMTimea9CoreMediaE7seconds18preferredTimescaleABSd_s5Int32VtcfC,
+                          _$sSo6CMTimea9CoreMediaE7secondsSdvg, _$sSo6CMTimea9CoreMediaE7secondsSdvpMV,
+                          _$sSo6CMTimea9CoreMediaE9isNumericSbvg, _$sSo6CMTimea9CoreMediaE9isNumericSbvpMV,
+                          _$sSo6CMTimeaSL9CoreMediaMc, _$sSo6CMTimeaSQ9CoreMediaMc, __swift_FORCE_LOAD_$_swiftCoreMedia ]
+...

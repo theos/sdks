@@ -1,0 +1,39 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MFAAuthentication.framework/MFAAuthentication
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MFAAAddCertDataEntryToCache, _MFAACanChargeHighVoltage, _MFAACanChargeInductive, _MFAACanUseAccPwrLoV,
+                          _MFAACanUseAccPwrUHPM, _MFAACertificateAuthV2Class, _MFAACertificateAuthVersionNumber,
+                          _MFAACertificateManagerErrorDomain, _MFAACreateAnchorCertificateAuthorityArray, _MFAACreateCapsFromAuthCert,
+                          _MFAACreateCertDataFromSerialNumber, _MFAACreateCertificateCache, _MFAACreateCertificateSerialNumber,
+                          _MFAACreateDeviceDataCertificate, _MFAACreateDeviceNonceSignature, _MFAACreateRandomNonce,
+                          _MFAACreateSecurityCertificateReference, _MFAACreateSecurityCertificateReferenceFromBytes,
+                          _MFAACreateSerialNumberDataFromString, _MFAACreateSerialNumberStringFromData, _MFAACreateSignatureContext,
+                          _MFAADeallocAuthCertCaps, _MFAADeallocCertificateCache, _MFAADeallocSignatureContext, _MFAAErrorDomain,
+                          _MFAAFinalizeDataSignature, _MFAAIsAppleAccessory, _MFAAIsAppleHWModule, _MFAAIsAppleMFiAccessory,
+                          _MFAAIsDesenseBuild, _MFAAIsDeveloperBuild, _MFAAIsDevelopmentHW, _MFAAIsInternalBuild,
+                          _MFAAPrintCertSerialNumber, _MFAAPrintCertSerialNumberBytes, _MFAARemoveCertDataEntryFromCache,
+                          _MFAATokenManagerErrorDomain, _MFAAUpdateDataSignature, _MFAAUserDefaultsDomain,
+                          _MFAAUserDefaultsKey_BypassFairPlaySAPSignatureVerification, _MFAAUserDefaultsKey_CustomServer,
+                          _MFAAUserDefaultsKey_DisableFairPlaySAP, _MFAAUserDefaultsKey_FairPlaySAPServer,
+                          _MFAAUserDefaultsKey_ForceFairPlaySAPFailure, _MFAAUserDefaultsKey_ForceNetworkFailure,
+                          _MFAAUserDefaultsKey_ForceTokenActivationFailure, _MFAAUserDefaultsKey_ForceTokenConfirmationFailure,
+                          _MFAAUserDefaultsKey_Server, _MFAAUserDefaultsKey_SpoofCertificateValidation,
+                          _MFAAUserDefaultsKey_SpoofPPIDMetadata, _MFAAUserDefaultsKey_SpoofTokenActivation,
+                          _MFAAUserDefaultsKey_StaticContentServer, _MFAAUserDefaultsNotification, _MFAAVerifyCertificateSerialNumber,
+                          _MFAAVerifyCertificateSerialNumberBySerialNumber, _MFAAVerifyNonceSignature, _MFAAVerifyPublicCertificate,
+                          _MFAAuthenticationVersionNumber, _MFAAuthenticationVersionString, _errorDescription,
+                          _getNumRevokedAuth3Wafers, _getNumRevokedAuthICBatches, _getRevokedAuth3Wafers, _getRevokedAuthICBatches,
+                          _kAppleRootCA1, _kAppleRootCA1Len, _kAppleRootCA2, _kAppleRootCA2Len, _kAuth3ECSSubCADev, _kAuth3ECSSubCADevLen,
+                          _kAuth3ECSSubCAProd, _kAuth3ECSSubCAProdLen, _kAuth3ECSSubCASimu, _kAuth3ECSSubCASimuLen, _kXPCAuthCertDataStr,
+                          _kXPCAuthFinalSportsStr, _kXPCAuthFinalTaggingStr, _kXPCAuthIsValidStr, _kXPCAuthRequestTypeStr,
+                          _kXPCAuthSignedSportsDataStr, _kXPCAuthSignedTagDataStr, _kXPCAuthSigningContextStr, _kiPodAccessoryCA1,
+                          _kiPodAccessoryCA1Len, _kiPodAccessoryCA2, _kiPodAccessoryCA2Len, _kiPodAccessoryTestAuth3CA,
+                          _kiPodAccessoryTestAuth3CALen, _kiPodAccessoryTestCAProto, _kiPodAccessoryTestCAProtoLen ]
+    objc-classes:       [ _MFAATokenManager ]
+    objc-ivars:         [ _MFAATokenManager._xpcConnection ]
+...

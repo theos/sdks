@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DALDAP.framework/DALDAP
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _kLDAPScopeBase, _kLDAPScopeOneLevel, _kLDAPScopeSubtree, _kLDAPSearchContextScopeKey,
+                          _kLDAPSearchContextSearchBaseKey, _kLDAPSearchContextSearchDescriptionKey ]
+    objc-classes:       [ _LDAPAccount, _LDAPGetDefaultSearchBaseTask, _LDAPLocalDBHelper, _LDAPSearchSettings, _LDAPSearchTask, _LDAPTask ]
+...

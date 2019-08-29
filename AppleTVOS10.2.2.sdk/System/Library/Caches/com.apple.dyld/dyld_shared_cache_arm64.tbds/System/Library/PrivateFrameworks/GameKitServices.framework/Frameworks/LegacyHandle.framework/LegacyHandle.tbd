@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/LegacyHandle.framework/LegacyHandle
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CheckInHandle, _CheckOutHandle, _CloseAllHandles, _CreateHandle, _FindHandle, _GetNumHandles, _InitAllHandles,
+                          _InitHandle, _UninitHandle ]
+...

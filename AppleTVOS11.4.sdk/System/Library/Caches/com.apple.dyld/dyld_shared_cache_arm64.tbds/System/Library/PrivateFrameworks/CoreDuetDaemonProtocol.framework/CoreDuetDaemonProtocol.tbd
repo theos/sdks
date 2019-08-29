@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreDuetDaemonProtocol.framework/CoreDuetDaemonProtocol
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CDAttributeAdmissionBypassUsageHistory, _CDDProtocolMessageXPCFieldBudgetOptions,
+                          _CDDProtocolMessageXPCFieldEndTimestamps, _CDDProtocolMessageXPCFieldStartTimestamps, _CDDSetError,
+                          __CDDComplicationChangeNotificationString, __CDDComplicationChangeOverCloudNotificationString,
+                          __CDDCurrentActiveComplications, __CDDExtensionIdForCompanionBundle ]
+    objc-classes:       [ _CDDClientConnection, _CDDHistoryWindow, _CDDPluginConnection, _CDDPluginResponder, _CDDServerResponder,
+                          _CDDXPCConnection, _CDPClientConnection ]
+...

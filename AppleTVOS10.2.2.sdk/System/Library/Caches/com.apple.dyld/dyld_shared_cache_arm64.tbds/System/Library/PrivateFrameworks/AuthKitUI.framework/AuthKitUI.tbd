@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AKSecondFactorCodeEntryContentViewControllerDidEnterCodeNotification, _AuthKitUIVersionNumber,
+                          _AuthKitUIVersionString ]
+    objc-classes:       [ _AKAppleIDAuthenticationInAppContext, _AKAppleIDAuthenticationTVContext,
+                          _AKAppleIDAuthenticationTVUISurrogateContext, _AKAppleIDAuthenticationUISurrogateContext,
+                          _AKAppleIDServerUIDataHarvester, _AKBasicLoginAlertController, _AKBasicLoginContentViewController,
+                          _AKBasicLoginContentViewControllerContainerView, _AKCodeEntryView, _AKInlineSignInViewController,
+                          _AKSecondFactorCodeEntryContentViewController, _AKTVSecondFactorEntryViewController,
+                          _AKTVSignInViewController, _AKTapToSignInViewController, _AKTextField ]
+...

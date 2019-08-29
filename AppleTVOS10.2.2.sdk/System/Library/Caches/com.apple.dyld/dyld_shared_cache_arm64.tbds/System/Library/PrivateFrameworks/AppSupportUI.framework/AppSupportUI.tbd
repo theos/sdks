@@ -1,0 +1,24 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultInsets, _NUIContainerViewDefaultSize,
+                          __ZN19_NUIGridArrangement12measureCellsEb6CGSize,
+                          __ZN19_NUIGridArrangement13positionCellsE6CGRectU13block_pointerFvPU34objcproto23_NUIGridArrangementItem11objc_objectS0_E,
+                          __ZN19_NUIGridArrangement14enumerateCellsEU13block_pointerFvRK23_NUIGridArrangementCellE,
+                          __ZN19_NUIGridArrangement19positionSubsetCellsE8_NSRangeS0_6CGRectU13block_pointerFvPU34objcproto23_NUIGridArrangementItem11objc_objectS1_E,
+                          __ZN19_NUIGridArrangement19resetForMeasurementEb, __ZN19_NUIGridArrangementC1Ev,
+                          __ZN19_NUIGridArrangementC2Ev,
+                          __ZN23_NUIGridArrangementCellC1EPU34objcproto23_NUIGridArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN23_NUIGridArrangementCellC2EPU34objcproto23_NUIGridArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN28_NUIGridArrangementDimensionC1Emd, __ZN28_NUIGridArrangementDimensionC2Emd ]
+    objc-classes:       [ _NUIContainerBoxView, _NUIContainerGridView, _NUIContainerStackView, _NUIContainerView, _NUIContentScrollView,
+                          _NUIWidgetGridView, _NUIWidgetGridViewCell, _NUIWidgetGridViewEmptyCell, __NUIViewContainerViewInfo ]
+    objc-ivars:         [ __NUIViewContainerViewInfo._allowFastBaselines, __NUIViewContainerViewInfo._baselineRelativeInsets,
+                          __NUIViewContainerViewInfo._customAlignmentInsets, __NUIViewContainerViewInfo._customBottomBaseline,
+                          __NUIViewContainerViewInfo._customTopBaseline ]
+...

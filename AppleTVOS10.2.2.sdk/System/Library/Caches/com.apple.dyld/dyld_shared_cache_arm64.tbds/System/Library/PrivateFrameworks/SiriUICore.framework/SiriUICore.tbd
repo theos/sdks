@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SUICFauxFlamesViewDictationSequenceAttributesCompact,
+                          _SUICFauxFlamesViewDictationSequenceAttributesRegular, _SUICFauxFlamesViewSiriSequenceAttributesCompact,
+                          _SUICFauxFlamesViewSiriSequenceAttributesRegular, _SUICGetSiriUILanguageCode,
+                          _SUICPurgeCachedLocalizedStrings, _SUICSetSiriUILanguageCode, _SUICSiriLanguageIsRTL,
+                          _SiriBulletinBoardNotificationAppIDKey, _SiriBulletinBoardNotificationName,
+                          _SiriBulletinBoardNotificationUserActivityKey, _SiriUICoreVersionNumber, _SiriUICoreVersionString ]
+    objc-classes:       [ _FlameGroup, _SUICApplicationStateHelper, _SUICAudioLevelSmoother, _SUICFauxFlamesImageDataContainer,
+                          _SUICFauxFlamesView, _SUICFlamesView, _SUICSiriLanguage ]
+...

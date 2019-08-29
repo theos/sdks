@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/VideoEncoders/H264H7.videoencoder
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AVE_CreateInstance, _AVE_DEBUG_PrintWhereIAm, _AVE_DEBUG_SetCallback, _AppleAVEVA_DriverCreate,
+                          _AppleAVEVA_DriverDelete, _AppleAVEVA_EnableClocking, _AppleAVEVA_EnableFeature, _AppleAVEVA_EnablePower,
+                          _AppleAVEVA_EnableVerbose, _AppleAVEVA_ForceDeviceType, _AppleAVEVA_ForceSyncFW, _AppleAVEVA_GetDeviceType,
+                          _AppleAVEVA_PowerDown, _AppleAVEVA_PowerUp, _AppleAVEVA_PrintMMU, _AppleAVEVA_PrintWhereIAm,
+                          _AppleAVEVA_ReadRegister, _AppleAVEVA_WriteRegister, _H264H7EncoderRegister,
+                          _createPixelBufferAttributesDictionary ]
+...

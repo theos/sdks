@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 2DB628C8-2CF6-36FB-BDF4-6F95533A7F9A' ]
+platform:        tvos
+install-name:    /usr/lib/libobjc-trampolines.dylib
+current-version: 228
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ __objc_blockTrampolineImpl, __objc_blockTrampolineLast, __objc_blockTrampolineStart ]
+...

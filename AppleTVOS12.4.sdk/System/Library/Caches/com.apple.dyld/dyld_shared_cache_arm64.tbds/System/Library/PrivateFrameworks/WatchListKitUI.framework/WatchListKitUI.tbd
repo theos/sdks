@@ -1,0 +1,21 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/WatchListKitUI.framework/WatchListKitUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _WLKUIAccessOptionsAccountKey, _WLKUIAccessOptionsBodyKey, _WLKUIAccessOptionsFooterKey,
+                          _WLKUIAccessOptionsShouldDenyOnCancelKey, _WLKUIAccessOptionsSuppressWelcomeVideoAddOnOptIn,
+                          _WLKUIAccessOptionsTitleKey, _WatchListKitUIVersionNumber, _WatchListKitUIVersionString ]
+    objc-classes:       [ _WLKModalTextPresenter, _WLKUIAccessViewController, _WLKUIAccessView_iOS, _WLKUIAccessView_tvOS, _WLKUIAppCell,
+                          _WLKUIAppsGridViewController, _WLKUIDirectScrollCollectionView, _WLKUIFontFactory, _WLKUIImageService,
+                          _WLKUIOnboardingController, _WLKUISpinnerView, _WLKUIViewFactory, __WLKUIAccessViewController ]
+    objc-ivars:         [ __WLKUIAccessViewController._accessView, __WLKUIAccessViewController._appChannels,
+                          __WLKUIAccessViewController._appInfos, __WLKUIAccessViewController._bundleIDs,
+                          __WLKUIAccessViewController._hasCalledCompletion, __WLKUIAccessViewController._hasOptedIn,
+                          __WLKUIAccessViewController._loadingView, __WLKUIAccessViewController._options,
+                          __WLKUIAccessViewController._privacyController, __WLKUIAccessViewController._shouldDenyOnCancel,
+                          __WLKUIAccessViewController._suppressWelcomeVideoAddOnOptIn ]
+...

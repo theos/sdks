@@ -1,0 +1,31 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MIFunctionNameErrorKey, _MIInstallerErrorDomain, _MILibMISErrorNumberKey, _MIPathArgumentErrorKey,
+                          _MISourceFileLineErrorKey, _MobileInstallationCheckCapabilitiesMatch, _MobileInstallationClearUninstalled,
+                          _MobileInstallationCopyAppMetadata, _MobileInstallationCopyDiskUsageForLaunchServices,
+                          _MobileInstallationCopyInstalledAppsForLaunchServices,
+                          _MobileInstallationCopyInstalledDeveloperAppsForLaunchServices, _MobileInstallationCopySafeHarbors,
+                          _MobileInstallationCopySafeHarborsForContainerType,
+                          _MobileInstallationEnumerateAllInstalledItemDictionaries, _MobileInstallationInstallForLaunchServices,
+                          _MobileInstallationInstallForLaunchServicesWithError, _MobileInstallationKillHelperService,
+                          _MobileInstallationKillInstalld, _MobileInstallationLookupSystemAppState,
+                          _MobileInstallationLookupUninstalled, _MobileInstallationProcessRestoredContainer,
+                          _MobileInstallationProcessRestoredContainerWithIdentifierOfType, _MobileInstallationRegisterSafeHarbor,
+                          _MobileInstallationRegisterSafeHarborForContainerType, _MobileInstallationRemoveSafeHarbor,
+                          _MobileInstallationRemoveSafeHarborForContainerType, _MobileInstallationUninstallForLaunchServices,
+                          _MobileInstallationUninstallForLaunchServicesWithError, _MobileInstallationUpdatePlaceholderMetadata,
+                          _MobileInstallationUpdateSinfForLaunchServices, _MobileInstallationUpdateSystemAppState,
+                          _MobileInstallationUpdateiTunesMetadataForLaunchServices,
+                          _MobileInstallationWatchKitInstallerShouldSkipInstall, _MobileInstallationWatchKitInstallerSnapshotWKApp,
+                          _kMICallbackPercentCompleteKey, _kMIDemotionCompleteErrorOccurredKey, _kMIDemotionCompleteNotificationName,
+                          _kMIInstallResultInstalledAppInfoArrayKey, _kMIUninstallParallelPlaceholderKey,
+                          _kMIUninstallResultRemovedAppInfoArrayKey, _kMIWatchKitSnapshotInfoDiskUsageBytes,
+                          _kMIWatchKitSnapshotOptionCreatePlaceholder, _kMIWatchKitSnapshotOptionMaxWKAppVersion ]
+    objc-classes:       [ _AITransactionLog, _MIBundleMetadata, _MIFileManager, _MIInstallOptions, _MIStoreMetadata ]
+...

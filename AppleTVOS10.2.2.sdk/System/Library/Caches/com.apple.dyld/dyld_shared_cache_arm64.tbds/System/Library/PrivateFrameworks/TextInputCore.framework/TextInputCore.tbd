@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TextInputCore.framework/TextInputCore
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /System/Library/TextInput/libTextInputCore.dylib ]
+    objc-classes:       [ _TITextInputCore ]
+...

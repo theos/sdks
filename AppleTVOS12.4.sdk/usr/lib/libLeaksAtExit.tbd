@@ -1,0 +1,7 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 5439B407-59EB-3C37-99D8-71FB511029CE' ]
+platform:        tvos
+install-name:    /usr/lib/libLeaksAtExit.dylib
+objc-constraint: none
+...

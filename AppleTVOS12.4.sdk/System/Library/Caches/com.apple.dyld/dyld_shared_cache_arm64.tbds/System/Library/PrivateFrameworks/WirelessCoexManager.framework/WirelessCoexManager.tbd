@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/WirelessCoexManager.framework/WirelessCoexManager
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _WCMEnabled, _WirelessRadioManagerDumpLog, _WirelessRadioManagerSetLogToFile ]
+    objc-classes:       [ _WCMClientProxy, _WCMSetting, _WRMClientInterface, _WRM_iRATInterface, _WRM_iRATProximityRecommendation,
+                          _WRM_iRATProximityRecommendationLogging ]
+...

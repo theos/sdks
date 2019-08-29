@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVIdleScreenServices.framework/TVIdleScreenServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVIdleScreenServicesVersionNumber, _TVIdleScreenServicesVersionString ]
+    objc-classes:       [ _TVIEntryManager ]
+...

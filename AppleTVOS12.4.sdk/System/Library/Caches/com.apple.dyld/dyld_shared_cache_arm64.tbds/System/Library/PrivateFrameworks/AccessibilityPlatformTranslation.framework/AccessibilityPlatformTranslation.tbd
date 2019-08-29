@@ -1,0 +1,16 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/AccessibilityPlatformTranslation
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXPConvertIncomingValue, _AXPCustomActionIdentifier, _AXPCustomActionName, _AXPCustomRotorDirection,
+                          _AXPCustomRotorName, _AXPCustomRotorSystemType, _AXPCustomRotorTargetElement, _AXPCustomRotorTargetRange,
+                          _AXPCustomRotorUUID, _AccessibilityPlatformTranslationVersionNumber,
+                          _AccessibilityPlatformTranslationVersionString, __AXPActionToString, __AXPAttributeToString,
+                          __AXPNotificationToString ]
+    objc-classes:       [ _AXPIOSPlatformElement, _AXPTranslationObject, _AXPTranslator, _AXPTranslatorRequest, _AXPTranslatorResponse,
+                          _AXPTranslator_iOS, _AXPiOSElementData ]
+...

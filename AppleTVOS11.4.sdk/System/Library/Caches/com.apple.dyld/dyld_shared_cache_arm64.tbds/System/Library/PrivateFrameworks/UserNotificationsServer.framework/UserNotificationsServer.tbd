@@ -1,0 +1,58 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/UserNotificationsServer.framework/UserNotificationsServer
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _UILocalNotificationToUNSNotificationRecord, _UIUserNotificationActionToUNSNotificationActionRecord,
+                          _UIUserNotificationCategoryToUNSNotificationCategoryRecord, _UNEnabledAuthorizationOptionsForPushSettings,
+                          _UNNotificationActionToUNSNotificationActionRecord, _UNNotificationAttachmentToUNSAttachmentRecord,
+                          _UNNotificationCategoryToUNSNotificationCategoryRecord, _UNNotificationRequestToNotificationRecord,
+                          _UNNotificationToNotificationRecord, _UNSApplicationDataStoreLocalNotificationsKey,
+                          _UNSApplicationDataStoreLocalNotificationsLastFireDateKey,
+                          _UNSApplicationDataStoreNotificationCategoryRecordsKey, _UNSApplicationDataStorePendingNotificationKey,
+                          _UNSAttachmentMakeImageThumbnailOfSizeUsingOptions, _UNSAttachmentRecordToDictionary,
+                          _UNSAttachmentRecordToUNNotificationAttachment, _UNSBundle, _UNSBundleIdentifierKey,
+                          _UNSDictionaryToAttachmentRecord, _UNSDictionaryToNotificationActionRecord,
+                          _UNSDictionaryToNotificationCategoryRecord, _UNSDictionaryToNotificationRecord,
+                          _UNSKeyedObservableUniversalKey, _UNSLocalizedStringForKey, _UNSNotificationActionRecordToDictionary,
+                          _UNSNotificationBundleIdentifierKey, _UNSNotificationCategoryRecordToDictionary, _UNSNotificationEnabledKey,
+                          _UNSNotificationRecordDictionaryMigration, _UNSNotificationRecordToDictionary,
+                          _UNSNotificationRecordToUILocalNotification, _UNSNotificationRecordToUNNotificationTrigger,
+                          _UNSNotificationRepositoryBundleIdentifierKey, _UNSNotificationRepositoryDidSaveNotification,
+                          _UNSNotificationRepositoryRecordsKey, _UNSNotificationSettingsDidChangeNotification,
+                          _UNSNotificationsRecordsKey, _UNSPendingNotificationRequestsDidChangeNotification,
+                          _UNSPowerLogUserNotificationRequestEvent, _UNSPowerLogUserNotificationTriggerEvent,
+                          _UNSRemoteNotificationsEnvironmentEntitlement, _UNSRemoteNotificationsPreferencesEntitlement, _UNSSafeRect,
+                          _UNSShowNotificationAuthorizationAlert, _UNSTriggerLocationArrow, _UNSUserNotificationServerRun,
+                          _UNSUserNotificationServerStart, _UNSupportedAuthorizationOptionsForPushSettings,
+                          _kUNNotificationActionTypeDefault, _kUNNotificationActionTypeTextInput, _kUNNotificationTriggerTypeCalendar,
+                          _kUNNotificationTriggerTypeLocal, _kUNNotificationTriggerTypeLocation, _kUNNotificationTriggerTypePush,
+                          _kUNNotificationTriggerTypeTimeInterval, _kUNNotificationTypeLocal, _kUNNotificationTypeRemote,
+                          _kUNSNotificationAuthorizationAlertBundleIdentifierKey ]
+    objc-classes:       [ _UNSApplicationDescription, _UNSApplicationLauncher, _UNSApplicationService, _UNSAttachmentData,
+                          _UNSAttachmentRecord, _UNSAttachmentsRepository, _UNSAttachmentsService, _UNSAudioAttachmentData,
+                          _UNSDataStoreReceipt, _UNSDefaultDataProvider, _UNSDefaultDataProviderFactory, _UNSImageAttachmentData,
+                          _UNSKeyedDataStoreRepository, _UNSKeyedObservable, _UNSLocalNotificationClient, _UNSLocationMonitor,
+                          _UNSMovieAttachmentData, _UNSNotificationActionRecord, _UNSNotificationAuthorizationAlertController,
+                          _UNSNotificationCategoryRecord, _UNSNotificationCategoryRecordMapper, _UNSNotificationCategoryRepository,
+                          _UNSNotificationRecord, _UNSNotificationRecordAddUpdate, _UNSNotificationRecordMapper,
+                          _UNSNotificationRecordRemoveUpdate, _UNSNotificationRecordReplaceUpdate, _UNSNotificationRecordUpdate,
+                          _UNSNotificationRepository, _UNSNotificationSchedulingService, _UNSNotificationServiceExtension,
+                          _UNSNotificationServiceExtensionSession, _UNSNotificationSettingsService, _UNSPendingNotificationRepository,
+                          _UNSRemoteNotificationClient, _UNSRemoteNotificationServer, _UNSUserNotificationServer,
+                          _UNSUserNotificationServerConnectionListener, _UNSUtilities ]
+    objc-ivars:         [ _UNSRemoteNotificationClient._environment, _UNSRemoteNotificationClient._lastKnownDeviceToken,
+                          _UNSRemoteNotificationClient._tokenIdentifier, _UNSUserNotificationServer._applicationLauncher,
+                          _UNSUserNotificationServer._applicationService, _UNSUserNotificationServer._applicationStateMonitor,
+                          _UNSUserNotificationServer._attachmentsService, _UNSUserNotificationServer._categoryRepository,
+                          _UNSUserNotificationServer._dataProviderFactory, _UNSUserNotificationServer._locationMonitor,
+                          _UNSUserNotificationServer._notificationRepository,
+                          _UNSUserNotificationServer._notificationSchedulingService,
+                          _UNSUserNotificationServer._notificationSettingsService,
+                          _UNSUserNotificationServer._pendingNotificationRepository,
+                          _UNSUserNotificationServer._remoteNotificationService, _UNSUserNotificationServer._systemService,
+                          _UNSUserNotificationServer._userNotificationServerConnectionListener ]
+...

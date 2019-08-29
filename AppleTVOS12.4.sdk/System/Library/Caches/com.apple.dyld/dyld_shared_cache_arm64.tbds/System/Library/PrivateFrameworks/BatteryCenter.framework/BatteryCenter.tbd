@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/BatteryCenter.framework/BatteryCenter
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _BCLogDeviceController, _BCLogWidget, _kBCBatteryDeviceB188ProductIdentifier,
+                          _kBCBatteryDeviceB222ProductIdentifier, _kBCBatteryDeviceB288ProductIdentifier,
+                          _kBCBatteryDeviceB444ProductIdentifier ]
+    objc-classes:       [ _BCBatteryDevice, _BCBatteryDeviceController, _BCBatteryView ]
+...

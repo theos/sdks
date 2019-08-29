@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AGXCompilerConnection.framework/AGXCompilerConnection
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __Z21CompilerFSCacheCreateRP15CompilerFSCache, __Z22CompilerFSCacheDestroyRP15CompilerFSCache,
+                          __Z24CompilerConnectionCreatej, __Z25CompilerConnectionDestroyRP18CompilerConnection,
+                          __Z33CompilerFSCacheGetShaderCacheKeysPK15CompilerFSCache ]
+...

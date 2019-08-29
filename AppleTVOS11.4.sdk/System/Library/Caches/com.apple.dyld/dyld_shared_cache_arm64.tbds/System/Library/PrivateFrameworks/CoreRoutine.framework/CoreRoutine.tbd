@@ -1,0 +1,26 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine
+current-version:       558.0.10
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RTConflictingItemIdentifierKey, _RTDetailedErrorsKey, _RTErrorDomain,
+                          _RTLocationsOfInterestDidChangeNotification, _RTMachServiceEvent, _RTMachServiceInternal,
+                          _RTMachServiceRegistration ]
+    objc-classes:       [ _RTAction, _RTActionCondition, _RTApplication, _RTEvent, _RTLocation, _RTLocationOfInterest,
+                          _RTLocationOfInterestVisit, _RTMicroLocation, _RTPredictedApplication, _RTPredictedContent, _RTPredictedDate,
+                          _RTPredictedLocationOfInterest, _RTPredictedRoute, _RTReceipt, _RTReceiptEventKit, _RTRoute, _RTRoutineManager,
+                          _RTScenarioTrigger, _RTScenarioTriggerArrivedEarly, _RTScenarioTriggerAtFamiliarLocation,
+                          _RTScenarioTriggerConnectedToCar, _RTScenarioTriggerDisconnectedFromCar,
+                          _RTScenarioTriggerFirstTimeAtLocation, _RTScenarioTriggerFirstTimeInCity,
+                          _RTScenarioTriggerFirstTimeInNeighborhood, _RTScenarioTriggerHeadedToHome, _RTScenarioTriggerHeadedToWork,
+                          _RTScenarioTriggerLastTimeAtLocation, _RTScenarioTriggerSettled, _RTScenarioTriggerStayedLate,
+                          _RTScenarioTriggerUnsettled, _RTSource, _RTSourceAudio, _RTSourceBluetooth,
+                          _RTSourceCoreLocationPredictedApplication, _RTSourceCoreRoutine, _RTSourceCoreRoutineLearnedLocation,
+                          _RTSourceCoreRoutineVehicleEvent, _RTSourceEventKit, _RTSourceLocationVisit, _RTSourceMapsSupport,
+                          _RTSourceMapsSupportFavoritePlace, _RTSourceMapsSupportHistoryEntry,
+                          _RTSourceMapsSupportHistoryEntryPlaceDisplay, _RTSourceMapsSupportHistoryEntryRoute, _RTVehicleEvent,
+                          _RTVisit, _RTWiFiAccessPoint ]
+...

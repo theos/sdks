@@ -1,0 +1,32 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FileProvider.framework/FileProvider
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _FPBookmarkableStringFromDocumentURL, _FPCFCopyAttributeValuesForItem, _FPCFGetAttributeValuesForItem,
+                          _FPCreateBookmarkableStringFromDocumentURL, _FPCreateCrossDeviceItemIDForItemAtURL,
+                          _FPCreateCrossDeviceItemIDForItemID, _FPCreateDocumentURLFromBookmarkableString,
+                          _FPCrossDeviceItemIDForItemAtURL, _FPCrossDeviceItemIDForItemID,
+                          _FPDidUpdateAlternateContentsDocumentForDocumentAtURL, _FPDocumentURLFromBookmarkableString,
+                          _FPDocumentURLFromUniversalBookmarkableString, _FPEvictItem, _FPExtendBookmarkForDocumentURL,
+                          _FPFetchAlternateContentsURLForDocumentURL, _FPGetItemIDFromCrossDeviceItemID,
+                          _FPGetItemURLForCrossDeviceItemID, _FPIsFileProviderBookmark, _FPItemIDFromCrossDeviceItemID,
+                          _FPItemURLForCrossDeviceItemID, _FPMarkAsFileProviderBookmark, _FPRegisterFileProvidersForFileCoordination,
+                          _FPRegisterFileProvidersForUser, _FPRegisterFileProvidersForUserAtURLs,
+                          _FPSetAlternateContentsURLOnDocumentURL, _FPURLIsInFileProvider, _FPURLMightBeInFileProvider,
+                          _FPUniversalBookmarkableStringFromDocumentURL, _FPUpdateLastUsedDate,
+                          _NSFileProviderAllDirectoriesContainerItemIdentifier, _NSFileProviderFavoriteRankUnranked,
+                          _NSFileProviderRootContainerItemIdentifier, _NSFileProviderSearchContainer,
+                          _NSFileProviderTemporaryLocalFolderItemIdentifier, _NSFileProviderWorkingSetContainerItemIdentifier ]
+    objc-classes:       [ _FPDaemonConnection, _FPFrameworkOverridesIterator, _FPLocalization, _FPSandboxingURLWrapper ]
+    objc-ivars:         [ _FPDaemonConnection._connectionQueue, _FPDaemonConnection._connectionQueueConnection,
+                          _FPDaemonConnection._getAttributeConnections,
+                          _FPDaemonConnection._getAttributeConnectionsIdleCleanupTimer, _FPDaemonConnection._user,
+                          _FPFrameworkOverridesIterator._currentIndex, _FPFrameworkOverridesIterator._invocation,
+                          _FPFrameworkOverridesIterator._noSuitableModuleFoundHandler, _FPFrameworkOverridesIterator._overrides,
+                          _FPSandboxingURLWrapper._promiseScope, _FPSandboxingURLWrapper._promiseURL, _FPSandboxingURLWrapper._scope,
+                          _FPSandboxingURLWrapper._url ]
+...

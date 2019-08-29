@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IOAccessoryManager.framework/IOAccessoryManager
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _IOAccessoryManagerVersionNumber, _IOAccessoryManagerVersionString, _IOAccessoryStartVoltageEventMonitor,
+                          _compare ]
+    objc-classes:       [ _HalogenLdcmCalc, _HalogenMeasurement ]
+...

@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/swift/libswiftHomeKit.dylib
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _$s7HomeKit49HMCharacteristicPropertySupportsEventNotificationSSvg, __swift_FORCE_LOAD_$_swiftHomeKit ]
+...

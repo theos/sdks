@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 02AA7D81-FB34-3C74-BD85-DCD0E984C2EA' ]
+platform:        tvos
+install-name:    /usr/lib/libexslt.0.dylib
+current-version: 9.15
+compatibility-version: 9.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _exsltCommonRegister, _exsltDateRegister, _exsltDateXpathCtxtRegister, 
+                       _exsltDynRegister, _exsltFuncRegister, _exsltLibexsltVersion, 
+                       _exsltLibraryVersion, _exsltLibxmlVersion, _exsltLibxsltVersion, 
+                       _exsltMathRegister, _exsltMathXpathCtxtRegister, _exsltRegisterAll, 
+                       _exsltSaxonRegister, _exsltSetsRegister, _exsltSetsXpathCtxtRegister, 
+                       _exsltStrRegister, _exsltStrXpathCtxtRegister ]
+...

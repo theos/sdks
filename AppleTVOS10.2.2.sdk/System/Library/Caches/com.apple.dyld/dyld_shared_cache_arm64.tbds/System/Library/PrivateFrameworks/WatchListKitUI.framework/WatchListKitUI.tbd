@@ -1,0 +1,29 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/WatchListKitUI.framework/WatchListKitUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _WLKUIAccessOptionsAccountKey, _WLKUIAccessOptionsBodyKey, _WLKUIAccessOptionsFooterKey,
+                          _WLKUIAccessOptionsTitleKey, _WLKUIAppLibraryInterfaceName, _WLKUIMediaPlayerName, _WLKUINetworkInterfaceName,
+                          _WLKUIOnboardingInterfaceName, _WLKUISettingsInterfaceName, _WatchListKitUIVersionNumber,
+                          _WatchListKitUIVersionString ]
+    objc-classes:       [ _SBIconProgressView, _WLKModalTextPresenter, _WLKSpinnerView, _WLKUIAccessViewController, _WLKUIAccessView_iOS,
+                          _WLKUIAccessView_tvOS, _WLKUIAppCell, _WLKUIAppInstallerViewController, _WLKUIAppLibraryInterface,
+                          _WLKUIAppsGridViewController, _WLKUIDirectScrollCollectionView, _WLKUIImageService, _WLKUIMediaPlayer,
+                          _WLKUIMediaPlayerImageLoader, _WLKUINetworkInterface, _WLKUIOnboardingController, _WLKUIOnboardingInterface,
+                          _WLKUIOrderedItemsMap, _WLKUIQueryDataSource, _WLKUISettingsInterface, __SBIconProgressFractionTransition,
+                          __SBIconProgressLoadingNoneStateTransition, __SBIconProgressNoneWaitingStateTransition,
+                          __SBIconProgressPausedTransition, __SBIconProgressTransition, __SBIconProgressWaitingLoadingStateTransition,
+                          __SBInstallProgressStateTransition, __WLKUIAccessViewController, __WLKUIAppInstallConfirmationView,
+                          __WLKUIAppInstallConfirmationViewController, __WLKUIAppInstallView, __WLKUIAppInstallViewTV,
+                          __WLKUIMediaPlayerImageLoaderConfiguration, __WLKUIMediaPlayerImageLoaderOperationSet ]
+    objc-ivars:         [ __SBInstallProgressStateTransition._fraction, __SBInstallProgressStateTransition._fromState,
+                          __SBInstallProgressStateTransition._toState, __WLKUIAccessViewController._accessView,
+                          __WLKUIAccessViewController._appChannels, __WLKUIAccessViewController._appInfos,
+                          __WLKUIAccessViewController._bundleIDs, __WLKUIAccessViewController._hasCalledCompletion,
+                          __WLKUIAccessViewController._hasOptedIn, __WLKUIAccessViewController._loadingView,
+                          __WLKUIAccessViewController._options ]
+...

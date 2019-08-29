@@ -1,0 +1,32 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 4A98E933-C12E-338A-8C35-D109664FF4F4' ]
+platform:        tvos
+install-name:    /System/Library/TextInput/TextInput_zh.bundle/TextInput_zh
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _kDefaultLayoutTag, _kFacemarkLookupKey, _kGB18030LookupKey, 
+                       _kHalfWidthPunctuationLayoutTag, _kSeparatorLayoutTag, _kSimplifiedChinese, 
+                       _kTraditionalChinese, _kUnicodeLookupKey ]
+    objc-classes:    [ _CIMCandidateData, _RecognizeDrawingOperation, _RecognizePredictionOperation, 
+                       _TIConversionHistory, _TIConvertedCandidate, _TIInputManagerHandwriting, 
+                       _TIInputManagerHandwritingSimplified, _TIInputManagerHandwritingTraditional, 
+                       _TIKeyboardHandwritingSpecialization, _TIKeyboardInputManagerCangjie, 
+                       _TIKeyboardInputManagerSimplifiedWubi, _TIKeyboardInputManagerTraditionalWubi, 
+                       _TIKeyboardInputManagerWubi, _TIKeyboardInputManager_zh, _TIKeyboardInputManager_zh_Phonetic, 
+                       _TIKeyboardInputManager_zh_Pinyin, _TIKeyboardInputManager_zh_ShapeBased, 
+                       _TIKeyboardInputManager_zh_hans_Pinyin, _TIKeyboardInputManager_zh_hant_Pinyin, 
+                       _TIKeyboardInputManager_zh_hant_Zhuyin, _TIWordSearchCangjie, 
+                       _TIWordSearchPinyin, _TIWordSearchPinyinOperationGetCandidates, 
+                       _TIWordSearchShapeBased, _TIWordSearchWubihua ]
+    objc-ivars:      [ _RecognizeDrawingOperation._candidates, _RecognizeDrawingOperation._history, 
+                       _RecognizeDrawingOperation._recognitionType, _RecognizeDrawingOperation._strokes, 
+                       _TIKeyboardInputManager_zh._isInCompletionMode, _TIKeyboardInputManager_zh._wordSearch, 
+                       _TIKeyboardInputManager_zh_Phonetic._acceptingCandidate, _TIKeyboardInputManager_zh_Phonetic._candidateData, 
+                       _TIKeyboardInputManager_zh_Phonetic._isCandidateSelected, 
+                       _TIKeyboardInputManager_zh_Phonetic._isInAmbiguousMode, _TIKeyboardInputManager_zh_Phonetic._lockingFirstPinyinSyllable, 
+                       _TIKeyboardInputManager_zh_Phonetic._operationQueue, _TIKeyboardInputManager_zh_Phonetic._usesCandidateSelection, 
+                       _TIKeyboardInputManager_zh_ShapeBased._keepRemainingInput, 
+                       _TIKeyboardInputManager_zh_ShapeBased._remainingInput, _TIKeyboardInputManager_zh_ShapeBased._searchString ]
+...

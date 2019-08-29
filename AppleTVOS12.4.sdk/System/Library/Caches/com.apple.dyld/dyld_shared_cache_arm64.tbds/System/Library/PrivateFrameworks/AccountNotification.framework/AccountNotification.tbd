@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AccountNotification.framework/AccountNotification
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ANAccountNotificationClientEntitlement, _ANAccountNotificationManagerEntitlement, _ANDaemonMachServiceName,
+                          _AccountNotificationVersionNumber, _AccountNotificationVersionString, __ANLogSystem ]
+    objc-classes:       [ _ANAccountNotification, _ANAccountNotifier, _ANClientCallbackInterface, _ANDaemonInterface,
+                          _ANManagedAccountNotification, _ANManagedNotificationAction, _ANNotificationAction,
+                          _ANSectionSubtypeDescriptor ]
+...

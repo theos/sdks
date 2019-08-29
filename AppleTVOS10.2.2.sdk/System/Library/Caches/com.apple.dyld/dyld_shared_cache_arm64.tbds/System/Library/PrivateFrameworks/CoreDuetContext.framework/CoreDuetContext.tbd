@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CoreDuetContextVersionNumber, _CoreDuetContextVersionString, __CDContextDataMetadataKey,
+                          __CDContextServiceName, __CDContextTransitionDateMetadataKey, __CDContextualChangeRegistrationEntityName,
+                          __CDContextualKeyPathEntityName ]
+    objc-classes:       [ __CDClientContext, __CDContextMonitorManager, __CDContextPredictionQueries, __CDContextQueries,
+                          __CDContextValue, __CDContextualChangeRegistration, __CDContextualChangeRegistrationMO, __CDContextualKeyPath,
+                          __CDContextualKeyPathAndValue, __CDContextualKeyPathMO, __CDContextualPredicate,
+                          __CDCoreDataContextPersisting, __CDDevice, __CDInMemoryContext, __CDInMemoryUserContext, __CDNetworkContext,
+                          __CDSharedMemoryContextPersisting, __CDUserContextQueries, __CDUserContextServerClient,
+                          __CDUserContextService ]
+...

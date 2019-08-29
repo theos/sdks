@@ -1,0 +1,29 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _IXAlertUserErrorKey, _IXArrayContainsOnlyClass, _IXArrayifyThing, _IXBooleanValue,
+                          _IXCreateUserPresentableError, _IXDictionaryContainsOnlyClasses,
+                          _IXDictionaryContainsOnlyClassesCheckingValueTypes, _IXDisplayUserPresentableErrorForApp,
+                          _IXDisplayUserPresentableErrorForApps, _IXErrorDomain, _IXFunctionNameErrorKey, _IXGetLoggingHandle,
+                          _IXOncePerBootWorkNeeded, _IXPathArgumentErrorKey, _IXRunOncePerBootWork, _IXSetContainsOnlyClass,
+                          _IXSetOncePerBootWorkCompleted, _IXSourceFileLineErrorKey, _IXStringForAppRemovability, _IXStringForClientID,
+                          _IXStringifyObject, _IXUserPresentableErrorCodeIsHardError, _IXUserPresentableErrorDomain,
+                          _InstallCoordinationVersionNumber, _InstallCoordinationVersionString, _LoadInfoPlistFromBundle,
+                          _LoadInfoPlistFromBundleAtURL, __CreateError, __CreateErrorV, _kIXLoggingSubsystem ]
+    objc-classes:       [ _IXAppInstallCoordinator, _IXAppInstallCoordinatorSeed, _IXAppInstallObserver,
+                          _IXAppInstallObserverProtocolInterface, _IXClientDelegateProtocolInterface, _IXClientProtocolInterface,
+                          _IXDataPromise, _IXDataPromiseSeed, _IXFileManager, _IXGlobalConfiguration, _IXInitiatingAppInstallCoordinator,
+                          _IXOpaqueDataPromise, _IXOpaqueDataPromiseSeed, _IXOwnedDataPromise, _IXOwnedDataPromiseSeed, _IXPlaceholder,
+                          _IXPlaceholderAttributes, _IXPlaceholderSeed, _IXPromisedInMemoryData, _IXPromisedInMemoryDataSeed,
+                          _IXPromisedInMemoryDictionary, _IXPromisedInMemoryDictionarySeed, _IXPromisedOutOfBandStreamingZipTransfer,
+                          _IXPromisedOutOfBandStreamingZipTransferSeed, _IXPromisedOutOfBandTransfer,
+                          _IXPromisedOutOfBandTransferSeed, _IXPromisedStreamingZipTransfer, _IXPromisedStreamingZipTransferSeed,
+                          _IXPromisedTransferToPath, _IXPromisedTransferToPathSeed, _IXPromotingAppInstallCoordinator,
+                          _IXRestoringAppInstallCoordinator, _IXRestoringDemotedAppInstallCoordinator, _IXServerConnection,
+                          _IXUpdatingAppInstallCoordinator, __IXSimpleInstallerDelegate ]
+...

@@ -1,0 +1,20 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/NetAppsUtilitiesUI.framework/NetAppsUtilitiesUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NACGFloatByLinearlyInterpolatingFloats, _NACGFloatCeilForScale, _NACGFloatEpsilon, _NACGFloatEqualToFloat,
+                          _NACGFloatGreaterThanFloat, _NACGFloatGreaterThanOrEqualToFloat, _NACGFloatIsOne, _NACGFloatIsZero,
+                          _NACGFloatLessThanFloat, _NACGFloatLessThanOrEqualToFloat, _NACGFloatPowerOf2Ceil, _NADegreesToRadians,
+                          _NARadiansFromCGAffineTransform, _NARadiansToDegrees, _NARectUnit, _NARectWithCGSize, _NAStringFromCGPoint,
+                          _NAStringFromCGRect, _NAStringFromCGSize, _NAUICurrentContentSizeCategoryIsLargerThanOrEqualToCategory,
+                          _NAUIEnumerateContentSizeCategoriesInIncreasingOrder, _NAUILayoutMetricsForUIEdgeInsetsNamed,
+                          _NAUILayoutSizeNoDimension, _NAUIShortDescriptionFromUIContentSizeCategory,
+                          _NSStringFromUIInterfaceOrientation, _NSStringFromUIInterfaceOrientationMask,
+                          _NetAppsUtilitiesUIVersionNumber, _NetAppsUtilitiesUIVersionString ]
+    objc-classes:       [ _NAUIContentSizeLayoutConstraint, _NAUIDeviceUtilities, _NAUILayoutConstraintSet, _NAUITextStyleDescriptor,
+                          _NAUIUsageStatistics, _NAUIWeakRef ]
+...

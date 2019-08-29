@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _INCExtractPreferencesResponseFromMetricsContext, _INCGenerateMetricsContextUsingAppPreferenceResponse,
+                          _IntentsCoreVersionNumber, _IntentsCoreVersionString ]
+    objc-classes:       [ _INCExtensionManager, _INCExtensionRequest, _INCWatchdogTimer ]
+...

@@ -1,0 +1,19 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriUICardKitProviderSupport.framework/SiriUICardKitProviderSupport
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SCKPProviderIdentifier, _SiriUICardKitProviderSupportVersionNumber,
+                          _SiriUICardKitProviderSupportVersionString ]
+    objc-classes:       [ _SCKPCardSectionViewProvider, _SCKPInteractiveCardSectionViewController, _SCKPMediaControlCardSectionView,
+                          _SCKPMediaControlCardSectionViewController, _SCKPProvider ]
+    objc-ivars:         [ _SCKPCardSectionViewProvider._card, _SCKPCardSectionViewProvider._viewConfigurations,
+                          _SCKPMediaControlCardSectionView._contentView,
+                          _SCKPMediaControlCardSectionViewController._assistantSecurityConnection,
+                          _SCKPMediaControlCardSectionViewController._cardSection,
+                          _SCKPMediaControlCardSectionViewController._mediaPlatterViewController,
+                          _SCKPMediaControlCardSectionViewController.cardSectionViewControllingDelegate ]
+...

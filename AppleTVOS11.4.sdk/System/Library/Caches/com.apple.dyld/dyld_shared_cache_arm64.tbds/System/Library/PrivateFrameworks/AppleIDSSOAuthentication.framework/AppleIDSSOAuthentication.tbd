@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID, _AIDAErrorDomain, _AIDAServiceTypeCloud,
+                          _AIDAServiceTypeFaceTime, _AIDAServiceTypeGameCenter, _AIDAServiceTypeMessages, _AIDAServiceTypeStore,
+                          _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, _AppleIDAuthenticationPBTokenIdentifier,
+                          _AppleIDAuthenticationServicesKey, _AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier,
+                          _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem, _kDeviceProvisioningMIDKey,
+                          _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
+    objc-classes:       [ _AIDAMutableServiceContext, _AIDAServiceContext, _AIDAServiceOwnersManager, _MockServiceOwner ]
+    objc-ivars:         [ _AIDAServiceContext._authenticationResults, _AIDAServiceContext._shouldForceOperation,
+                          _AIDAServiceContext._viewController ]
+...

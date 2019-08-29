@@ -1,0 +1,35 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine
+current-version:       414.0.15
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RTErrorDomain, _RTLocationsOfInterestDidChangeNotification, _RTLogFacilityAction,
+                          _RTLogFacilityApplicationPrediction, _RTLogFacilityAsset, _RTLogFacilityAuthorization, _RTLogFacilityBattery,
+                          _RTLogFacilityBluetooth, _RTLogFacilityCallHistory, _RTLogFacilityClient, _RTLogFacilityConnection,
+                          _RTLogFacilityContacts, _RTLogFacilityCoreRecents, _RTLogFacilityDataProtection, _RTLogFacilityDataProvider,
+                          _RTLogFacilityDatabase, _RTLogFacilityDefaults, _RTLogFacilityDeviceLocationPredictor, _RTLogFacilityEvent,
+                          _RTLogFacilityEventModel, _RTLogFacilityFeatureExtractor, _RTLogFacilityFramework, _RTLogFacilityGeneral,
+                          _RTLogFacilityHint, _RTLogFacilityKeychain, _RTLogFacilityLifeCycle, _RTLogFacilityLocation,
+                          _RTLogFacilityLocationAwareness, _RTLogFacilityLocationStore, _RTLogFacilityLocationTagging,
+                          _RTLogFacilityMapsSupport, _RTLogFacilityMediaRemote, _RTLogFacilityMetric, _RTLogFacilityMigration,
+                          _RTLogFacilityMotionActivity, _RTLogFacilityNavigation, _RTLogFacilityPurge, _RTLogFacilityReachability,
+                          _RTLogFacilityRoom, _RTLogFacilityRoomPrediction, _RTLogFacilityScenarioTrigger, _RTLogFacilitySettings,
+                          _RTLogFacilityStark, _RTLogFacilityStateModel, _RTLogFacilitySync, _RTLogFacilityTrafficConditions,
+                          _RTLogFacilityVehicleLocation, _RTLogFacilityVisit, _RTLogFacilityWallet, _RTLogFacilityWiFi ]
+    objc-classes:       [ _RTAction, _RTActionCondition, _RTApplication, _RTLocation, _RTLocationOfInterest, _RTLocationOfInterestVisit,
+                          _RTLogger, _RTMicroLocation, _RTPredicateValidator, _RTPredictedApplication, _RTPredictedDate,
+                          _RTPredictedLocationOfInterest, _RTPredictedRoom, _RTReceipt, _RTReceiptEventKit, _RTRoutineManager,
+                          _RTScenarioTrigger, _RTScenarioTriggerArrivedEarly, _RTScenarioTriggerAtFamiliarLocation,
+                          _RTScenarioTriggerConnectedToCar, _RTScenarioTriggerDisconnectedFromCar,
+                          _RTScenarioTriggerFirstTimeAtLocation, _RTScenarioTriggerFirstTimeInCity,
+                          _RTScenarioTriggerFirstTimeInNeighborhood, _RTScenarioTriggerHeadedToHome, _RTScenarioTriggerHeadedToWork,
+                          _RTScenarioTriggerLastTimeAtLocation, _RTScenarioTriggerSettled, _RTScenarioTriggerStayedLate, _RTSource,
+                          _RTSourceAudio, _RTSourceBluetooth, _RTSourceCoreLocationPredictedApplication, _RTSourceCoreRoutine,
+                          _RTSourceCoreRoutineLearnedLocation, _RTSourceCoreRoutineVehicleEvent, _RTSourceEventKit,
+                          _RTSourceLocationVisit, _RTSourceMapsSupport, _RTSourceMapsSupportFavoritePlace,
+                          _RTSourceMapsSupportHistoryEntry, _RTSourceMapsSupportHistoryEntryPlaceDisplay,
+                          _RTSourceMapsSupportHistoryEntryRoute, _RTVehicleEvent ]
+...

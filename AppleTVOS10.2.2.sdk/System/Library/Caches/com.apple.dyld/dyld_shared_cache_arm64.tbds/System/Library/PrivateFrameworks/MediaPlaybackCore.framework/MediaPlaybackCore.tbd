@@ -1,0 +1,59 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MAX_SOFT_QUEUE_RADIO_ITEMS, _MPCAVItemContentItemIdentifierCollectionDidChangeNotification,
+                          _MPCAVItemReportingJingleTimedMetadataDidChangeNotification,
+                          _MPCAVPlaylistManagerDisableQueueModificationsDidChange,
+                          _MPCContentItemTypeFromMPMediaPlaybackItemContentType, _MPCContentItemTypeIsContainerType, _MPCErrorDomain,
+                          _MPCJinglePlayActivityReportingControllerDidFlushEventsNotification,
+                          _MPCJinglePlayActivityReportingControllerHasProperAccountStatusForAggregateTimePlayActivityEventReporting,
+                          _MPCJinglePlayActivityReportingControllerHasSBEnabledAccountStatus,
+                          _MPCJinglePlayActivityReportingControllerShouldReportAggregateTimePlayActivityEventsForMatchUsers,
+                          _MPCJinglePlayActivityReportingControllerUserInfoKeyDidIncludeContainerChangeEvent,
+                          _MPCPlayerItemDurationSnapshotGetElapsedTimeForCurrentTime,
+                          _MPCQueueFeederContentItemIdentifierCollectionDidChangeNotification,
+                          _MPCRadioAVItemAlbumBuyButtonInfoDidChangeNotification, _MPCRadioAVItemIsInWishListDidChangeNotification,
+                          _MPCRadioOperationErrorDomain, _MPCRadioQueueFeederErrorDomain,
+                          _MPCRadioQueueFeederExplicitTracksEnabledDidChangeNotification,
+                          _MPCRadioQueueFeederUserDefaultExplicitTracksEnabledDidChangeNotification,
+                          _MPCRadioStationPlaybackMetadataCreateStationInModel,
+                          _MPCRadioStreamTrackAVItemDidReceiveTimedMetadataPingsNotification,
+                          _MPCRadioStreamTrackAVItemPingsUserInfoKey, _MediaPlaybackCoreVersionNumber,
+                          _MediaPlaybackCoreVersionString, __MPCRadioAVItemInternalIsInWishListDidChangeNotification ]
+    objc-classes:       [ _MPCAppleMusicPlaybackIntentDataSource, _MPCAppleMusicPlaybackIntentTracklistToken,
+                          _MPCContentItemIdentifierCollection, _MPCJinglePlayActivityReportingController,
+                          _MPCMediaLibraryPlaybackIntentDataSource, _MPCMediaPlayerLegacyAVController, _MPCMediaPlayerLegacyItem,
+                          _MPCMediaPlayerLegacyItemContainer, _MPCMediaPlayerLegacyNowPlayingObserver, _MPCMediaPlayerLegacyPlayer,
+                          _MPCMediaPlayerLegacyPlayerQueueLazySectionedCollectionDataSource,
+                          _MPCMediaPlayerLegacyPlayerQueueResponse, _MPCMediaPlayerLegacyPlaylistManager,
+                          _MPCMediaPlayerLegacyQueueRequestOperation, _MPCMediaPlayerLegacyReportingController, _MPCMediaRemoteMuxer,
+                          _MPCModelPlaybackIntentDataSource, _MPCModelPlaybackIntentTracklistToken,
+                          _MPCMutableContentItemIdentifierCollection, _MPCMutableRadioStationPlaybackMetadata,
+                          _MPCPlayableContentDelegate, _MPCPlaybackHistoryObserver, _MPCPlaybackHistoryRecordChangeRequest,
+                          _MPCPlaybackHistoryRecordChangeRequestOperation, _MPCPlaybackIntent, _MPCPlaybackTimeoutInfoController,
+                          _MPCPlayer, _MPCPlayerEntity, _MPCPlayerItem, _MPCPlayerItemContainer, _MPCPlayerQueueRequest,
+                          _MPCPlayerQueueResponse, _MPCPrepareRadioPlaybackOperation, _MPCQuickPlayPlaybackIntentDataSource,
+                          _MPCRadioAVItem, _MPCRadioArtworkDataSource, _MPCRadioAudioClipAVItem, _MPCRadioGetTracksController,
+                          _MPCRadioGetTracksOperation, _MPCRadioNetworkingController, _MPCRadioOperationQueue, _MPCRadioPlaybackContext,
+                          _MPCRadioPlaybackCoordinator, _MPCRadioPlaybackIntentDataSource, _MPCRadioPlaybackIntentTracklistToken,
+                          _MPCRadioQueueFeeder, _MPCRadioStationPlaybackMetadata, _MPCRadioStationPreparationContext,
+                          _MPCRadioStreamPing, _MPCRadioStreamTrackAVItem, _MPCRadioTrackAVItem, _MPCRadioTrackPreviewAVItem,
+                          _MPCReportingController, _MPCReportingLyricsViewEvent, _MPCReportingMescalSetupCompletionEvent,
+                          _MPCReportingPlaybackActivityEvent, _MPCReportingPlaybackEventSource, _MPCReportingPlaybackObserver,
+                          _MPCStoreContentMetadataOperation, _MPCStoreContentMetadataResponse, __MPCAVItemSourceContext,
+                          __MPCAVPlaylistIteration, __MPCRadioStreamMetadata ]
+    objc-ivars:         [ _MPCContentItemIdentifierCollection._identifierTypeToIdentifier,
+                          _MPCContentItemIdentifierCollection._itemType, _MPCRadioStationPlaybackMetadata._artworkCollection,
+                          _MPCRadioStationPlaybackMetadata._hasSetArtworkCollection,
+                          _MPCRadioStationPlaybackMetadata._hasSetStationHash, _MPCRadioStationPlaybackMetadata._hasSetStationID,
+                          _MPCRadioStationPlaybackMetadata._hasSetStationName,
+                          _MPCRadioStationPlaybackMetadata._hasSetStationStringID,
+                          _MPCRadioStationPlaybackMetadata._hasValidRadioStation, _MPCRadioStationPlaybackMetadata._station,
+                          _MPCRadioStationPlaybackMetadata._stationHash, _MPCRadioStationPlaybackMetadata._stationID,
+                          _MPCRadioStationPlaybackMetadata._stationName, _MPCRadioStationPlaybackMetadata._stationStringID ]
+...

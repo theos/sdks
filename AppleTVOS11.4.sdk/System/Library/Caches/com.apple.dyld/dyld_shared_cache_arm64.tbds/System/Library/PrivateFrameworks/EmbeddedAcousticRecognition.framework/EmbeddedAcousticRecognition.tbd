@@ -1,0 +1,34 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _EARCCCommandTaggingResultGetCommandTaggings, _EARCCommandTaggerCreate,
+                          _EARCCommandTaggerCreateCommandTaggingResults, _EARCCommandTaggerGetCommandPhraseForIndex,
+                          _EARCCommandTaggerGetParameterTagForIndex, _EARCCommandTaggerIsCommandPhraseTag,
+                          _EARCCommandTaggerIsParameterTag, _EARCCommandTaggingGetCommandId, _EARCCommandTaggingGetTagSequence,
+                          _EARCCommandTaggingTokensForTag, _EARCSpeechRecognitionAudioBufferAddAudioSampleData,
+                          _EARCSpeechRecognitionAudioBufferAddAudioSamples, _EARCSpeechRecognitionAudioBufferCancelRecognition,
+                          _EARCSpeechRecognitionAudioBufferEndAudio, _EARCSpeechRecognitionGetTokens,
+                          _EARCSpeechRecognitionTokenGetConfidence, _EARCSpeechRecognitionTokenGetEnd,
+                          _EARCSpeechRecognitionTokenGetSilenceStart, _EARCSpeechRecognitionTokenGetStart,
+                          _EARCSpeechRecognitionTokenGetTokenName, _EARCSpeechRecognitionTokenHasSpaceAfter,
+                          _EARCSpeechRecognizerCreate, _EARCSpeechRecognizerCreateRecognitionBuffer,
+                          _EARCSpeechRecognizerSetDetectUtterances, _EARCSpeechRecognizerSetUserProfileData,
+                          _EARCSpeechRecognizerUpdateUserProfileData, _EARCUserProfileAddWord, _EARCUserProfileCopyDataProfile,
+                          _EARCUserProfileCopyPronunciationsForOrthography, _EARCUserProfileCopySanitizedString,
+                          _EARCUserProfileCreate, _EARCUserProfileReadDataProfile, _EARCUserProfileRemoveAllWords, _EARCWordPartCreate,
+                          _EARCWordPartGetFrequency, _EARCWordPartGetOrthography, _EARCWordPartGetPronunciations,
+                          _EARCWordPartGetTagName, _EARErrorDomain, _EARRecognitionStatisticAverageActiveTokensPerFrame,
+                          _EARRecognitionStatisticRecogCpuTime ]
+    objc-classes:       [ _EARCaesuraSilencePosteriorGenerator, _EARClientSilenceFeatures, _EARKeywordFinder, _EARKeywordFinderResult,
+                          _EARPSRAudioProcessor, _EARTokenPronounciations, __EARCombinedResult, __EARCommandTagger, __EARCommandTagging,
+                          __EARCommandTaggingResult, __EARDefaultServerEndpointFeatures, __EAREndpointFeatures, __EAREndpointer,
+                          __EARFormatter, __EARLanguageModel, __EARResultCombiner, __EARSpeechModelInfo, __EARSpeechRecognition,
+                          __EARSpeechRecognitionAudioBuffer, __EARSpeechRecognitionResult, __EARSpeechRecognitionResultPackage,
+                          __EARSpeechRecognitionToken, __EARSpeechRecognizer, __EARSystemResult, __EARTransformUtil, __EARUserProfile,
+                          __EARWordPart ]
+...

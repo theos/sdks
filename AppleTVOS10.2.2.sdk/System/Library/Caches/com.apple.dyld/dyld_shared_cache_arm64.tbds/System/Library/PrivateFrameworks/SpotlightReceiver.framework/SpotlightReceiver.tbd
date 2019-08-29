@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SpotlightReceiverEntitlement, _SpotlightReceiverRegister, _SpotlightReceiverVersionNumber,
+                          _SpotlightReceiverVersionString, _SpotlightSenderEntitlement ]
+    objc-classes:       [ _SpotlightReceiverDelegate, _SpotlightReceiverSetupInfo ]
+...

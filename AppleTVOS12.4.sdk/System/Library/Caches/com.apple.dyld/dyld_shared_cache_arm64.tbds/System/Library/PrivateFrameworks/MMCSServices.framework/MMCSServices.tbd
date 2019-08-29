@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MMCSServices.framework/MMCSServices
+current-version:       800
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _failReasonStringForMMCSError, _parseMMCSError ]
+    objc-classes:       [ _MMCSController, _MMCSGetFile, _MMCSPutFile, _MMCSRequestorContext, _MMCSSimpleFile ]
+...

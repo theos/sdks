@@ -1,0 +1,35 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PTGetRingerVolume, _PTIconHeight, _PTIconImageHeight, _PTIconImageWidth, _PTIconLabelHeight, _PTIconLabelOrigin,
+                          _PTIconWidth, _PTImageNamed, _PTPreferencesBoolForKey, _PTPrototypeDirectory, _PTPrototypeImagesDirectory,
+                          _PTRingerIsSilent, _PTSConcreteStringForIndex, _PTSHUDDidHideNotification, _PTSHUDDidShowNotification,
+                          _PTSHUDSaveSettingsGroupReasonAdd, _PTSHUDSaveSettingsGroupReasonMove, _PTSHUDSaveSettingsGroupReasonRemove,
+                          _PTSHUDSaveSettingsGroupReasonSave, _PTSHUDSaveSettingsGroupReasonSilentSave, _PTSHUDWillHideNotification,
+                          _PTSHUDWillShowNotification, _PTScreenBounds, _PTScreenScale, _PTSetRingerSilentChangedHandler,
+                          _PTSetRingerVolume, _PTSetRingerVolumeChangedHandler, _PTTTLIsCurrent, _PTTTLIsExpired, _PTTTLMake,
+                          __UIViewBreadthFirstViewSort, _pt_time_elapsed, _pt_time_elapsed_capture, _pt_time_elapsed_msg, _pt_time_mark ]
+    objc-classes:       [ _PT2DGraphAxisStyle, _PT2DGraphDatum, _PT2DGraphDotView, _PT2DGraphView, _PTIcon, _PTIconSettings,
+                          _PTLegibleTextAssistant, _PTLegibleTextAssistantSettings, _PTLegibleTextAssistantSettingsForDarkText,
+                          _PTLegibleTextAssistantSettingsForLightText, _PTSAddGroupSettingsRowAction, _PTSButton, _PTSButtonCell,
+                          _PTSButtonRow, _PTSButtonRowTableViewCell, _PTSChoiceCell, _PTSChoiceRow, _PTSChoiceRowTableViewCell,
+                          _PTSChoiceViewController, _PTSDrillDownRow, _PTSDrillDownRowAction, _PTSDrillDownRowTableViewCell,
+                          _PTSDuplicateRowsActivity, _PTSEditFloatRow, _PTSEditFloatRowTableViewCell, _PTSEditRowTableViewCell,
+                          _PTSEditStringRow, _PTSEditStringRowTableViewCell, _PTSGraphView, _PTSHUD, _PTSHUDRow, _PTSImageLoader,
+                          _PTSImagePickerViewController, _PTSImagePreviewCell, _PTSImagePreviewRow, _PTSImagePreviewRowTableViewCell,
+                          _PTSImageSettings, _PTSInfoLabel, _PTSLoadingCell, _PTSModule, _PTSModuleController, _PTSPicker,
+                          _PTSPresentViewControllerRowAction, _PTSPushImagePickerRowAction, _PTSPushViewControllerRowAction,
+                          _PTSRestoreDefaultSettingsRowAction, _PTSRow, _PTSRowAction, _PTSRowTableViewCell, _PTSSavedModeTableHUDRow,
+                          _PTSSavedModeTableView, _PTSSavedModeTableViewController, _PTSSection, _PTSSlider, _PTSSliderRow,
+                          _PTSSliderRowTableViewCell, _PTSStaticBOOLRow, _PTSStaticBOOLRowTableViewCell, _PTSStaticRow,
+                          _PTSStaticRowTableViewCell, _PTSSwitch, _PTSSwitchRow, _PTSSwitchRowTableViewCell, _PTSToggleButton,
+                          _PTSettingsController, _PTSlider, _PTSliderIncrementButton, _PTSwitch, _PTVolumeChangeNotifier, _PTXLiveView,
+                          _PTXMotionWindow, _PTXParallaxController, _PTXParallaxEngineSettings, _PTXParallaxImageView,
+                          _PTXParallaxReferenceFrame, _PTXParallaxSettings, _PTXParallaxView, __PTSAppearanceCondition ]
+    objc-ivars:         [ _PTVolumeChangeNotifier.ringerSilentChangedHandlers, _PTVolumeChangeNotifier.ringerVolumeChangedHandlers ]
+...

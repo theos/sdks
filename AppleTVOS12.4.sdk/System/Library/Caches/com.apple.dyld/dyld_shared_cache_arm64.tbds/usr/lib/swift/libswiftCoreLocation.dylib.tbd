@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/swift/libswiftCoreLocation.dylib
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _$sSo22CLLocationCoordinate2DV12CoreLocationE19_bridgeToObjectiveCSo7NSValueCyF,
+                          _$sSo22CLLocationCoordinate2DV12CoreLocationE26_forceBridgeFromObjectiveC_6resultySo7NSValueC_ABSgztFZ,
+                          _$sSo22CLLocationCoordinate2DV12CoreLocationE34_conditionallyBridgeFromObjectiveC_6resultSbSo7NSValueC_ABSgztFZ,
+                          _$sSo22CLLocationCoordinate2DV12CoreLocationE36_unconditionallyBridgeFromObjectiveCyABSo7NSValueCSgFZ,
+                          _$sSo22CLLocationCoordinate2DVs21_ObjectiveCBridgeable12CoreLocationMc,
+                          __swift_FORCE_LOAD_$_swiftCoreLocation ]
+...

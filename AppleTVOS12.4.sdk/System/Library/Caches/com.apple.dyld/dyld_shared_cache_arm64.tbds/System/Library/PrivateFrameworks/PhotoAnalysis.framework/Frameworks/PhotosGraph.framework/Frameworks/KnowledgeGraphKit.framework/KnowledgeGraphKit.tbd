@@ -1,0 +1,25 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Frameworks/PhotosGraph.framework/Frameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    allowed-clients:    [ PhotosGraph ]
+    symbols:            [ _KnowledgeGraphKitVersionNumber, _KnowledgeGraphKitVersionString, _MABenchmarkGetAppMallocMemory,
+                          _MABenchmarkGetAppMemory, _MABenchmarkGetHostMemory, _MAErrorDomain, _edgePrintableSchema,
+                          _isElementMatchingDefinition, _kMADatabaseModelPropertyTypeEdge, _kMADatabaseModelPropertyTypeNode,
+                          _kMADatabaseModelTypeEdge, _kMADatabaseModelTypeNode, _kMADatabaseSchemaVersion, _kMADatabaseSchemaVersionKey,
+                          _kMAElementDefaultDomain, _kMAElementDefaultWeight, _kMAElementIgnoreDomain, _kMAElementInvalidDomain,
+                          _kMAElementInvalidIdentifier, _kMAElementLabelAny, _kMAElementLabelNone, _kMAGraphDataExtension,
+                          _kMAGraphElementAlreadyInUse, _kMAGraphInvalidGraph, _kMAGraphJSONExtension, _kMAGraphMLExtension,
+                          _kMAGraphPersistentStoreExtension, _nodePrintableSchema ]
+    objc-classes:       [ _MAAbstractEdge, _MAAbstractGraph, _MAAbstractNode, _MADatabase, _MAEdge, _MAElement, _MAError, _MAGraph,
+                          _MALoadRegistry, _MALoadRequirement, _MALoadRequirementPart, _MALogging, _MAMemoryFootprint, _MAMemoryUtilities,
+                          _MAModelEdge, _MAModelEdgeProperty, _MAModelElement, _MAModelGraph, _MAModelNode, _MAModelNodeProperty,
+                          _MAModelProperty, _MANode, _MAPath, _MAPaths, _MAPropertyAccessReporter, _MAPropertyAccessTuple,
+                          _MAStatisticsElapsedTime, _MASubGraph ]
+    objc-ivars:         [ _MAPropertyAccessTuple._domain, _MAPropertyAccessTuple._isNode, _MAPropertyAccessTuple._label,
+                          _MAPropertyAccessTuple._propertyKey, _MAPropertyAccessTuple._valueClass ]
+...

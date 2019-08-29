@@ -1,0 +1,22 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _FMDFMIPManagerUnregisterErrorDomain, _fmdFMIPLastOperationResult, _kAccessoriesChangedNotification,
+                          _kActivationLockAllowedMayHaveChangedNotification, _kActivationLockStateDidChangeNotification,
+                          _kFMDAccessoryPlaySoundErrorDomain, _kFMDErrorDomain, _kFMDFMIPAccountNameKey, _kFMDFMIPAccountPersonIDKey,
+                          _kFMDLogPrefsChangedDarwinNotification, _kFMDNotBackedUpPrefDomain, _kFMDPlaySoundStartedDarwinNotification,
+                          _kFMDPlaySoundStoppedDarwinNotification, _kFMDPostWipePrefDomain, _kFMDPrefDomain,
+                          _kFMDPublicNotBackedUpPrefDomain, _kFMDWatchNotBackedUpPrefDomain, _kFMDWatchPrefDomain,
+                          _kFMIPAppBundleIdentifier, _kFMIPLowBatteryLocateStateDidChangeNotification,
+                          _kFMIPStateDidChangeNotification, _kFMWEnabledNotification, _kFindMyDeviceIdentityXPCInterfaceErrorDomain,
+                          _kLostModeChangedNotification, _kStopLostModeAlarmNotification ]
+    objc-classes:       [ _FMDAccessoryIdentifier, _FMDDeviceIdentityFactory, _FMDFMIPManager, _FMDFMIPSharedStateManager,
+                          _FMDGenericAccessory, _FMDGenericMessage, _FMDIdentityAttested, _FMDIdentitySigningRequest,
+                          _FMDInternalIdentityAttested, _FMDLostModeInfo, _FMDVolatileMetaDataRecord, _FMNSXPCConnection,
+                          _FMNSXPCConnectionCache, _FMNSXPCConnectionConfiguration ]
+...

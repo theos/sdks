@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          "/usr/lib/libLLVM-C.dylib"
+current-version:       3902.18.4
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    re-exports:         [ /usr/lib/libLLVM.dylib ]
+...

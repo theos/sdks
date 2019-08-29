@@ -1,0 +1,11 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 8A792734-EF78-39A7-A7EE-CA28BBD447B7' ]
+platform:        tvos
+install-name:    /System/Library/CoreServices/Encodings/libKoreanConverter.dylib
+current-version: 69.0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ ___CFStringEncodingGetKoreanConverterDefinition ]
+...

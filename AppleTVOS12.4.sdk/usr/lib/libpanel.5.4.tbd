@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: C27389EE-FBD0-38E2-B2DB-A25BE1A772CD' ]
+platform:        tvos
+install-name:    /usr/lib/libpanel.5.4.dylib
+current-version: 5.4
+compatibility-version: 5.4
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _bottom_panel, _del_panel, _hide_panel, _move_panel, _new_panel, 
+                       _panel_above, _panel_below, _panel_hidden, _panel_userptr, 
+                       _panel_window, _replace_panel, _set_panel_userptr, _show_panel, 
+                       _top_panel, _update_panels ]
+...

@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVCoreSettings.framework/TVCoreSettings
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVCSHomeConfigurationStateToString, _TVCSHomeLog, _TVCSIsStringAppleTV, _TVCSLocalizedString,
+                          _TVCSStringByRemovingBonjourSuffix, _TVCoreSettingsVersionNumber, _TVCoreSettingsVersionString ]
+    objc-classes:       [ _TVCSAccessory, _TVCSHome, _TVCSHomeKitErrorUtilities, _TVCSHomeManager, _TVCSLockdownUtilities, _TVCSRoom ]
+...

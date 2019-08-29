@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CSIndexAgentMachServiceName, _SDEventMonitorErrorDomain, _SDTraceAdd, _SDTraceDescription,
+                          _SDTransactionCreate, _SDTransactionDone, _SpotlightDaemonVersionNumber, _SpotlightDaemonVersionString,
+                          _isDataMigrationComplete, _kSecEntitlementCSDisableQuota, _sClintServiceDisabledBitMap,
+                          _sSpotlightSenderState, _startAgents, _startAllAgents, _startIndexAgent ]
+    objc-classes:       [ _CSClientConnectionConfiguration, _CSIndexAgent, _CSIndexClientConnection, _CSIndexClientConnectionKey,
+                          _CSRecieverState, _MDAgent, _MDSearchableIndexService, _SDEventMonitor, _SDLockHandler, _SDMigrationMonitor,
+                          _SDSignalHandler, _SDTrace, _SDTraceItem, _SPCoreSpotlightExtensionsTask, _SpotlightReceiverConnection,
+                          _SpotlightSender, _SpotlightSenderState ]
+    objc-ivars:         [ _SDTrace._items ]
+...

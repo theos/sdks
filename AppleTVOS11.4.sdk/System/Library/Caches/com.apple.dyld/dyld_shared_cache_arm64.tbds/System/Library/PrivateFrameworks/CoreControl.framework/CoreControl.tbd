@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreControl.framework/CoreControl
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CoreControlAsset, _CoreControlGetDeviceDatabaseVersion, _CoreControlGetDeviceEDID, _CoreControlPrintDevice,
+                          _CoreControlPrintDeviceEDID, _CoreControlSearchDeviceDatabaseForCECDevice,
+                          _CoreControlSearchDeviceDatabaseForGenericDevice, _CoreControlSearchDeviceDatabaseForSpecificDevice,
+                          _kCoreControlErrorDomain, _kCoreControlInfoAction, _kCoreControlInfoCommand, _kCoreControlInfoError,
+                          _kCoreControlInfoProgress, _kCoreControlInfoStatus, _kCoreControlInfoUUID ]
+    objc-classes:       [ _CoreControl, _CoreControlButton, _CoreControlCECDeviceProvider, _CoreControlCECOverride, _CoreControlHeldChord ]
+...

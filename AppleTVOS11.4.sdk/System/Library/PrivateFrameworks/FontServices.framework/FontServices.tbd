@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FontServices.framework/FontServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _FSInstallFontFiles, _FSUninstallFontFiles, _FontServicesVersionNumber, _FontServicesVersionString,
+                          _XTCopyAvailableFontURLs, _XTCopyFontWithName ]
+...

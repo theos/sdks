@@ -1,0 +1,16 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/RemoteTextInput.framework/RemoteTextInput
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RTICanLogMessageAtLevel, _RTILogFacility, _RTIServiceAnonymousName, _RTIServiceIOSMacName,
+                          _RTIServiceMediaRemoteName, _RTIServiceRapportName, _RTIServiceSharingName, _RTIServiceSharingSafariName,
+                          _RTIServiceTVControlServicesName, _RemoteTextInputVersionNumber, _RemoteTextInputVersionString,
+                          __RTI_NSStringFromCGRect ]
+    objc-classes:       [ _RTIDataPayload, _RTIDocumentState, _RTIDocumentTraits, _RTIInputSystemClient, _RTIInputSystemClientSession,
+                          _RTIInputSystemDataPayload, _RTIInputSystemService, _RTIInputSystemServiceSession, _RTIInputSystemSession,
+                          _RTIInputSystemSourceSession, _RTIStyledIntermediateText, _RTITextOperations, _RTIUtilities ]
+...

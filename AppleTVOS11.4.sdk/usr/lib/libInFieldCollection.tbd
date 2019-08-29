@@ -1,0 +1,13 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 3B82E3E2-FE4E-3EF0-A1A3-0B99FD590D1C' ]
+platform:        tvos
+flags:           [ not_app_extension_safe ]
+install-name:    /usr/lib/libInFieldCollection.dylib
+current-version: 6.21.1
+compatibility-version: 0
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _NAAP, _OMkZ6SHVXM, _ZshgJnRaSlwn, _vsPHbdGf ]
+...

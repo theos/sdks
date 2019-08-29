@@ -1,0 +1,25 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FileProvider.framework/FileProvider
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _FPBookmarkableStringFromDocumentURL, _FPCFGetAttributeValuesForItem,
+                          _FPDidUpdateAlternateContentsDocumentForDocumentAtURL, _FPDocumentURLFromBookmarkableString,
+                          _FPDocumentURLFromUniversalBookmarkableString, _FPEvictItem, _FPExtendBookmarkForDocumentURL,
+                          _FPFetchAlternateContentsURLForDocumentURL, _FPIsFileProviderBookmark, _FPMarkAsFileProviderBookmark,
+                          _FPRegisterFileProvidersForFileCoordination, _FPRegisterFileProvidersForUser,
+                          _FPSetAlternateContentsURLOnDocumentURL, _FPURLIsInFileProvider, _FPURLMightBeInFileProvider,
+                          _FPUniversalBookmarkableStringFromDocumentURL, _FPUpdateLastUsedDate,
+                          _NSFileProviderAllDirectoriesContainerItemIdentifier, _NSFileProviderFavoriteRankUnranked,
+                          _NSFileProviderRootContainerItemIdentifier, _NSFileProviderSearchContainer,
+                          _NSFileProviderTemporaryLocalFolderItemIdentifier, _NSFileProviderWorkingSetContainerItemIdentifier ]
+    objc-classes:       [ _FPDaemonConnection, _FPFrameworkOverridesIterator, _FPLocalization ]
+    objc-ivars:         [ _FPDaemonConnection._connectionQueue, _FPDaemonConnection._connectionQueueConnection,
+                          _FPDaemonConnection._getAttributeConnections,
+                          _FPDaemonConnection._getAttributeConnectionsIdleCleanupTimer, _FPDaemonConnection._user,
+                          _FPFrameworkOverridesIterator._currentIndex, _FPFrameworkOverridesIterator._invocation,
+                          _FPFrameworkOverridesIterator._noSuitableModuleFoundHandler, _FPFrameworkOverridesIterator._overrides ]
+...

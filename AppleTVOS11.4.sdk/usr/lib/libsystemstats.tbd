@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 8657BC4D-A929-3B7D-960C-A75AAA6A62C8' ]
+platform:        tvos
+install-name:    /usr/lib/libsystemstats.dylib
+current-version: 403.1.4
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ __systemstats_boot, __systemstats_copy_cookie_path, __systemstats_enumerate_files, 
+                       __systemstats_get_file_stats, __systemstats_get_system_version, 
+                       __systemstats_read_current_build, __systemstats_read_uuid, 
+                       __systemstats_read_uuid_from_cookie_path, __systemstats_save_current_boot_uuid, 
+                       __systemstats_stream_create, __systemstats_writers, _absolute_time_to_absolute_milliseconds, 
+                       _get_microstackshots_from_files, _now_in_absolute_milliseconds, 
+                       _now_in_continuous_milliseconds, _now_in_wall_milliseconds, 
+                       _systemstats_create_record, _systemstats_dispose_record, _systemstats_foreach_micro, 
+                       _systemstats_get_microstackshots, _systemstats_gettimeofday, 
+                       _systemstats_insert_and_dispose_subrecord, _systemstats_mach_absolute_time, 
+                       _systemstats_mach_continuous_time, _systemstats_stream_delete, 
+                       _systemstats_stream_flush, _systemstats_stream_get_attr, _systemstats_unlink_if_present, 
+                       _systemstats_write_and_dispose_record, _systemstats_write_checkpoint, 
+                       _systemstats_write_microstackshot ]
+...

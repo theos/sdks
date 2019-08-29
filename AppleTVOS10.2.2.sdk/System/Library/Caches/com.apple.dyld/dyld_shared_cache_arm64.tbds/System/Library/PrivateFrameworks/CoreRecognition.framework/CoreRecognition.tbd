@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition
+current-version:       97.1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CRAdaptiveThresholdImage, _CRCodeRedeemerInfoCodeKey, _CRCodeRedeemerInfoErrorKey,
+                          _CROutputTypeCreditCardCardholderName, _CROutputTypeCreditCardExpirationDate, _CROutputTypeCreditCardNumber,
+                          _CROutputTypeHomeKitCode, _CoreRecognitionVersionNumber, _CoreRecognitionVersionString, __findCodeRectInImage,
+                          __findCodeRectInImageWithModel, __recognizeCodeImages, __segmentCodeImages, _createCGImageFromFile,
+                          _writeCGImageToPNG ]
+    objc-classes:       [ _CRCameraReader, _CRCameraReaderOutput, _CRCameraReaderOutputExpirationDate, _CRCodeRedeemerController ]
+...

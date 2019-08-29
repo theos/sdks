@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData
+current-version:       238.26
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _LDCreateSystemLexiconCompatibilityVersion, _LDEnumerateAssetDataItems, _kLDAssetTypeDeltaLexicon,
+                          _kLDAssetTypeEventDetectionModel, _kLDAssetTypeIntentDetectionModel,
+                          _kLDAssetTypeLanguageIdentificationModel, _kLDAssetTypeLanguageModel, _kLDAssetTypeLexicon,
+                          _kLDAssetTypeMorphologicalAnalyzer, _kLDAssetTypeMultilingualModel, _kLDAssetTypeNaturalLanguageSearchModel,
+                          _kLDAssetTypePOSTaggingModel, _kLDAssetTypePolarityModel, _kLDAssetTypeProactiveGrammar,
+                          _kLDAssetTypeSpellcheckerData, _kLDAssetTypeTokenizationModel, _kLDAssetTypeTransliterationModel ]
+...

@@ -1,0 +1,29 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CryptoTokenKit.framework/CryptoTokenKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TKDistributedNotificationGroup, _TKDistributedNotificationNameNewToken,
+                          _TKDistributedNotificationNameUnsupportedToken, _TKEntitlementSlotType, _TKErrorDomain,
+                          _TKNotifyNameFirstSlot, _TKProtocolSlotClientName, _TKProtocolSlotRegistryName, _TKProtocolWatcherClientName,
+                          _TKRegisterOptionRemoveObjects, _TKSlotTypeSmartCard, _TKSmartCardSessionEndPolicyKey,
+                          _TKSmartCardSessionProtocol, _TKSmartCardSessionSensitive, _TKSmartCardSlotATR,
+                          _TKSmartCardSlotMaxInputLength, _TKSmartCardSlotMaxOutputLength, _TKSmartCardSlotPowerStateKey,
+                          _TKSmartCardSlotPreviousStateKey, _TKSmartCardSlotSecurePINChangeSupportedKey,
+                          _TKSmartCardSlotSecurePINVerificationSupportedKey, _TKSmartCardSlotShareStateKey, _TKSmartCardSlotStateKey,
+                          _TKTokenAttributeSlotEndpointKey, _TKTokenClassDriverApplicationIDKey, _TKTokenClassDriverClassIDKey,
+                          _TKTokenClassDriverClassNameKey, _TKTokenTypeKey, _TKTransportSlotName ]
+    objc-classes:       [ _TKBERTLVRecord, _TKCompactTLVRecord, _TKSimpleTLVRecord, _TKSmartCard, _TKSmartCardATR,
+                          _TKSmartCardATRInterfaceGroup, _TKSmartCardPINFormat, _TKSmartCardSlot, _TKSmartCardSlotEngine,
+                          _TKSmartCardSlotManager, _TKSmartCardSlotScreen, _TKSmartCardToken, _TKSmartCardTokenDriver,
+                          _TKSmartCardTokenSession, _TKSmartCardUserInteraction, _TKSmartCardUserInteractionForConfirmation,
+                          _TKSmartCardUserInteractionForPINOperation, _TKSmartCardUserInteractionForSecurePINChange,
+                          _TKSmartCardUserInteractionForSecurePINVerification, _TKSmartCardUserInteractionForStringEntry,
+                          _TKTLVRecord, _TKToken, _TKTokenAuthOperation, _TKTokenDriver, _TKTokenKeyAlgorithm,
+                          _TKTokenKeyExchangeParameters, _TKTokenKeychainCertificate, _TKTokenKeychainContents, _TKTokenKeychainItem,
+                          _TKTokenKeychainKey, _TKTokenPasswordAuthOperation, _TKTokenSession, _TKTokenSmartCardPINAuthOperation,
+                          _TKTokenWatcher ]
+...

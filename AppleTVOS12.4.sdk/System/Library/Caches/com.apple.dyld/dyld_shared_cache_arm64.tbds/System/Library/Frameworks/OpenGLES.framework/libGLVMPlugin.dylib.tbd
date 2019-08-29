@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/OpenGLES.framework/libGLVMPlugin.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _cvmsPluginElementBuild, _cvmsPluginServiceInitialize, _cvmsPluginServiceTerminate,
+                          _oglCodeGenServiceGenerateIR, _oglCodeGenServiceInitialize, _oglCodeGenServiceTerminate ]
+...

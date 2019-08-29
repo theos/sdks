@@ -1,0 +1,10 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: DC9B954A-B783-3CF5-A570-6AD7BC3AA4FB' ]
+platform:        tvos
+install-name:    /usr/lib/libMobileGestaltExtensions.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ __MGSCopyLocalizedString ]
+...

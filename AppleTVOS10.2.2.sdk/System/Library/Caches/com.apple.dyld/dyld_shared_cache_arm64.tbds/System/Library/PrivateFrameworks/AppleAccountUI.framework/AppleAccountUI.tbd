@@ -1,0 +1,37 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppleAccountUI.framework/AppleAccountUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AAUIBeginUsingAddressBookSingleton, _AAUIClientInfoActionCancel, _AAUIClientInfoActionKey,
+                          _AAUICopyCompositeName, _AAUIDeviceLocatorStateDidChangeNotification, _AAUIEndUsingAddressBookSingleton,
+                          _AAUIFamilyDetailsCacheDidChangeNotification, _AAUIForceInlineKey, _AAUIPasscodeValidateKey,
+                          _AAUIProfilePictureStoreDidChangeNotification, _AAUIRecoveryKeyGenerateKey, _AAUISignInErrorDomain,
+                          _AAUIStingrayReauthButton, _AAUIStingrayRepairButton, _AAUIStringrayErrorCodeKey,
+                          _AAUIStringrayErrorDomainKey, _AAUIStringrayReauthBody, _AAUIStringrayReauthDefaultButton,
+                          _AAUIStringrayReauthTitle, _AAUIValidationResponseSuccessKey ]
+    objc-classes:       [ _AAUIAcceptChildTransferRequest, _AAUIAcceptFamilyInviteRequest, _AAUIAccountCreationRemoteUI,
+                          _AAUIAccountRepairRemoteUI, _AAUIAccountValidationController, _AAUIAddPhotoView, _AAUIAlertView,
+                          _AAUIAppleAccountServiceOwner, _AAUIBaseSignInViewController, _AAUIBleachedNavigationController,
+                          _AAUIBuddyView, _AAUICDPHelper, _AAUICDPStingrayController, _AAUICDPStingrayRemoteUIController,
+                          _AAUIChildAccountCreationController, _AAUICloudSyncServicesController, _AAUIConfirmIdentityViewController,
+                          _AAUIContactsSearchController, _AAUICredentialRecoveryController, _AAUIDataclassMergeActionPicker,
+                          _AAUIDataclassOption, _AAUIDataclassPickerViewController, _AAUIDeclineChildTransferRequest,
+                          _AAUIDeclineFamilyInviteRequest, _AAUIDeviceLocatorConfirmationUtilities, _AAUIDeviceLocatorService,
+                          _AAUIExplainAppleIDViewController, _AAUIFamilyCreditCard, _AAUIFamilyDetailsCache,
+                          _AAUIFamilyInvitationAcceptanceViewController, _AAUIFamilyMemberPhotoRequest,
+                          _AAUIFamilyPaymentCardUIRequest, _AAUIFamilyPaymentInfoRequest, _AAUIFamilyPaymentInfoResponse,
+                          _AAUIFamilySetupBuddyMLRequest, _AAUIFamilySetupGetStartedViewController,
+                          _AAUIFamilySetupOrganizerViewController, _AAUIFamilySetupPrompter, _AAUIFamilySetupViewController,
+                          _AAUIFamilySharingFeaturesView, _AAUIGameCenterServiceOwner, _AAUIGenericTermsRemoteUI, _AAUIHeaderView,
+                          _AAUIImageControl, _AAUILabel, _AAUIMyPhotoRequest, _AAUIPhotoResponse, _AAUIPickInviteeViewController,
+                          _AAUIProfilePictureStore, _AAUIRemotePage, _AAUIRemoteUIController, _AAUIRemoteUIRepairFlow,
+                          _AAUIServerSuppliedProfilePictureCache, _AAUIServerSuppliedProfilePictureCacheEntry, _AAUIServiceIconView,
+                          _AAUISignInController, _AAUISignInFlowController, _AAUISignInOperationManager, _AAUISignInViewController,
+                          _AAUISignOutController, _AAUISpinnerViewController, _AAUIStoreAccountServiceOwner, _AAUISwitchTableViewCell,
+                          _AAUITextView, _AAUIUpdateMyPhotoRequest, __AAUIDataclassOptionCache, __AAUIDataclassTableViewCell,
+                          __AAUIRawImageAndCropRectCache, __AAUIRawImageAndCropRectCacheEntry ]
+...

@@ -1,0 +1,13 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/iCloudNotification.framework/iCloudNotification
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _INCreateError, _INCreateErrorWithKeychainError, _INCreateErrorWithMessage, _INDaemonBundleIdentifierKey,
+                          _INDaemonMachServiceName, _INErrorDomain, _INFamilyDidChangeNotification, _INFileLoggingEnabledKey,
+                          _INNextFreshmintRefreshDateKey, _INNextHeartbeatDateKey, _INSyslogOutputLevelKey, __INLogSystem ]
+    objc-classes:       [ _INDaemonConnection, _INDaemonInterface, _INDiagnosticReport, _INManagedDefaults ]
+...

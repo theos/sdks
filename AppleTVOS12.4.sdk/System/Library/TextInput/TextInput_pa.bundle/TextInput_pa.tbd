@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/TextInput/TextInput_pa.bundle/TextInput_pa
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ _TIKeyboardInputManager_pa ]
+    objc-ivars:         [ _TIKeyboardInputManager_pa._isPhoneticLayout ]
+...

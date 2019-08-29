@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libMobileCheckpoint.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MCCopyCheckpoint, _MCCopyCheckpointData, _MCCopyCheckpointValue ]
+...

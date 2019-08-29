@@ -1,0 +1,16 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FileProvider.framework/FileProvider
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _FPBookmarkableStringFromDocumentURL, _FPClientLacksEntitlement, _FPDocumentURLFromBookmarkableString,
+                          _FPExtendBookmarkForDocumentURL, _FPFileProviderVersionNumber, _FPFileProviderVersionString,
+                          _FPInvalidBookmarkableStringError, _FPInvalidParameterError, _FPInvalidURLError, _FPIsFileProviderBookmark,
+                          _FPLoc, _FPMarkAsFileProviderBookmark, _FPNotFoundError, _FPNotFoundErrorURL, _FPNotPermittedError,
+                          _FPPluginOperationFailedError, _FPProxyNotFoundError, _FPRegisterFileProvidersForFileCoordination,
+                          _FPSandboxExtensionFailedError, __FPFileIsBookmarkURLProperty, _fp_default_log ]
+    objc-classes:       [ _FPDaemonConnection, _FPLocalization ]
+...

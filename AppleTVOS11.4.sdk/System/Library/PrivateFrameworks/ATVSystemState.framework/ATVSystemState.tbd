@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/ATVSystemState.framework/ATVSystemState
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ _SSDisplay, _SSILInterface, _SSILInterfaceAOP, _SSILInterfaceMCU, _SSIndicatorLight ]
+    objc-ivars:         [ _SSDisplay._ioavController, _SSDisplay._queue, _SSILInterfaceAOP._device, _SSILInterfaceMCU._client,
+                          _SSILInterfaceMCU._service, _SSIndicatorLight._interface, _SSIndicatorLight._queue ]
+...

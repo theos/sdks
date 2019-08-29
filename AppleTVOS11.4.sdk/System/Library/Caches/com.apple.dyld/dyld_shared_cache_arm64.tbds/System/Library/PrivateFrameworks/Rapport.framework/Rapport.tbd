@@ -1,0 +1,23 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Rapport.framework/Rapport
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _RPAssertionDuckAudio, _RPAssertionImminentUse, _RPAssertionKeepAlive,
+                          _RPBonjourFlagsUpdateWithRPCompanionLinkFlags, _RPCompanionLinkFlagsToShortString,
+                          _RPCompanionLinkFlagsWithUpdateBonjourFlags, _RPDecodeNSError, _RPDestinationIdentifierActiveWatch,
+                          _RPDestinationIdentifierDirectPeer, _RPDestinationIdentifierPersonalCompanion,
+                          _RPDestinationIdentifierSameHome, _RPDestinationIdentifierSameRoom, _RPDestinationIdentifierSelf,
+                          _RPDestinationIdentifierStereoCounterpart, _RPDeviceRoleSolo, _RPDeviceRoleStereoLeft,
+                          _RPDeviceRoleStereoRight, _RPEncodeNSError, _RPErrorDomain, _RPErrorF, _RPEventIDAny, _RPNestedErrorF,
+                          _RPOptionAllowUnauthenticated, _RPOptionEventID, _RPOptionRequestID, _RPOptionSenderID, _RPOptionTimeoutSeconds,
+                          _RPOptionXID, _RPRequestIDAny, _RPRequestIDIdentify, _RPServiceTypeMobileDevice, _RPServiceTypeNearbyAction,
+                          _RPServiceTypeNearbyInfo, _RPServiceTypeProximityPairing, _RPServiceTypeSystem, _RPServiceTypeWACAirPlay,
+                          _RPServiceTypeWACGeneric ]
+    objc-classes:       [ _RPClient, _RPCompanionLinkAssertion, _RPCompanionLinkClient, _RPCompanionLinkDevice, _RPDevice,
+                          _RPDeviceDiscovery, _RPEventRegistration, _RPFileTransferInfo, _RPFileTransferMonitor, _RPFileTransferSession,
+                          _RPMediaControlSession, _RPPeopleDiscovery, _RPPerson, _RPRequestRegistration, _RPService, _RPSession ]
+...

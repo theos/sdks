@@ -1,0 +1,50 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/WiFiKit.framework/WiFiKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NetworkRefIsEqualToNetwork, _OSLogForWFLogLevel, _WFANQPElementsFromBitMask, _WFAllIdentities,
+                          _WFAssociationErrorCodeToString, _WFBase64Encode, _WFCaptiveEventToString, _WFClientAskToJoinNotification,
+                          _WFClientEAPTrustNotification, _WFClientInterfaceAvailableNotification,
+                          _WFClientJoinRecommendationNotification, _WFClientNetworkRestrictionPolicyDidChangeNotification,
+                          _WFClientPowerStateChangedNotification, _WFClientPreferredNetworksDidChangeNotification,
+                          _WFClientServerRestartedNotification, _WFClientUserAutoJoinStateChangedNotification,
+                          _WFCopyProcessIdentifier, _WFCreateSecTrustFromCertificateChain, _WFCurrentDeviceCapability,
+                          _WFCurrentLogLevel, _WFGetCarNameFromCarPlayNetworkUUID, _WFHasWAPICapability,
+                          _WFHealthManagerHealthIssuesDidChangeNotification, _WFIPMonitorStateChangedNotification,
+                          _WFInterfaceHostAPStateChangeNotification, _WFInterfaceLinkQualityChangedNotification,
+                          _WFInterfaceNetworkChangedNotification, _WFIsGreenTeaDevice, _WFIsValidIPv4Address, _WFIsValidIPv6Address,
+                          _WFIsWAPINotAvailable, _WFLogForCategory, _WFNetworkListControllerAssociationDidFinishNotification,
+                          _WFNetworkListControllerAssociationDidStartNotification, _WFNetworkListControllerAssociationErrorKey,
+                          _WFNetworkListControllerAssociationNetworkKey, _WFSSIDIsValid, _WFScaleRSSI,
+                          _WFSecurityModeFromScanDictionary, _WFSecurityModeIsEnterprise, _WFSecurityModeIsEquivalentEAPEncryption,
+                          _WFSecurityModeIsEquivalentWPA, _WFSecurityModeIsWPAEnterprise, _WFSecurityModeIsWPAPersonal,
+                          _WFSecurityModeRequiresPasswordOnly, _WFSetExtraLoggingEnabled, _WFSplitChannelsBetweenBands,
+                          _WFStringFromWFSecurityMode, _WFUserNameFromEnterpriseProfile, _WFValidPasswordForSecurityMode,
+                          _WFWAPICertificateBlobString, _WFWAPIIdentityListCreate, _WFWAPIRootCertificateListCreate,
+                          _WFWiFiNetworkRefIsEnterprise, _WFWiFiSecurityModeFromOtherSecurityMode, _WFWiFiStateMonitorStringForState,
+                          _WiFiKitVersionNumber, _WiFiKitVersionString, _WiFiManagerGasQueryCallback, __WFScanningStateToString,
+                          ___WFAssociationOriginatorToString, ___WFAssociationStateToString, _kWFAssociationCertificateChainKey,
+                          _kWFAssociationPasswordRequiredKey, _kWFAssociationUsernameRequiredKey,
+                          _kWFClientEAPTrustNotificationRequestedDataKey, _kWFClientLinkQualityKey, _kWFClientNotificationIdKey,
+                          _kWFClientNotificationNetworkKey, _kWFClientNotificationNetworkProfileKey, _kWFInterfaceLinkQualityKey,
+                          _kWFInterfaceNetworkChangeReasonKey, _kWFInterfaceNetworkKey, _kWFInterfacePreviousNetworkKey,
+                          _kWiFiKitErrorDomain ]
+    objc-classes:       [ _WFANQPQueryResponse, _WFAssociationContext, _WFCaptiveContext, _WFCaptiveObserver,
+                          _WFCarPlayDisablePromptOperation, _WFCertificateContext, _WFClient, _WFControlCenterStateMonitor,
+                          _WFCredentialsContext, _WFCredentialsProviderController, _WFDetailsContext, _WFEnterpriseJoinOperation,
+                          _WFEnterpriseUserPromptOperation, _WFErrorContext, _WFGasOperation, _WFGasQueryController, _WFGasQueryProxy,
+                          _WFGetSettingsOperation, _WFHealthIssueOverrides, _WFHealthManager, _WFHealthUIEvent, _WFHotspotDevice,
+                          _WFHotspotHelperNetwork, _WFHotspotInterface, _WFHotspotProfile, _WFIPMonitor, _WFInterface, _WFJoinOperation,
+                          _WFJoinProxy, _WFKnownNetworkStore, _WFKnownNetworksListController, _WFLinkQuality,
+                          _WFMISDisablePromptOperation, _WFMetricsManager, _WFMutableNetworkProfile, _WFNetworkListController,
+                          _WFNetworkProfile, _WFNetworkScanRecord, _WFOperation, _WFOtherNetworkContext, _WFPasswordOperation,
+                          _WFProxyKeychainOperation, _WFSaveLogsOperation, _WFSaveSettingsOperation, _WFScanChannel, _WFScanManager,
+                          _WFScanOperation, _WFScanRequest, _WFSettingsController, _WFSettingsDNS, _WFSettingsIPV4, _WFSettingsIPV6,
+                          _WFSettingsProxy, _WFSettingsViewProvider, _WFSetupViewProvider, _WFStubInterface, _WFTrustCertificateOperation,
+                          _WFUnconfiguredJoinOperation, _WFUserConfigureEvent, _WFUserEvent, _WFUserJoinEvent, _WFUserPromptOperation,
+                          _WFUserSuppliedNetwork, _WFWAPICertificatePromptOperation, _WFWiFiStateMonitor ]
+...

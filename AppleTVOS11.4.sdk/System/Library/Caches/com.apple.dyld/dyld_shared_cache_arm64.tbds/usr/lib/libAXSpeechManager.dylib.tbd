@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libAXSpeechManager.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _AXAVSpeechSynthesisVoiceFromTTSSpeechVoice, _AXAVVoiceQualityFromTTSFootprint, _AXAlexVoiceIdentifier,
+                          _AXLanguageCanonicalFormToGeneralLanguage, _AXRemapLanguageCodeForSpeech, _AXSiriFemaleVoiceIdentifier,
+                          _AXSiriMaleVoiceIdentifier, _AXSpeechLanguageCanonicalFormToGeneralLanguage, _AXSpeechTransformText,
+                          _AXSpeechTransformTextWithLanguage, _VOTBundle, __AXSpeechReplaceEmoticons, _isSpeakableEmojiString ]
+    objc-classes:       [ _AXEmojiUtilities, _AXSpeechAction, _AXSpeechManager, _AXSpeechThread ]
+...

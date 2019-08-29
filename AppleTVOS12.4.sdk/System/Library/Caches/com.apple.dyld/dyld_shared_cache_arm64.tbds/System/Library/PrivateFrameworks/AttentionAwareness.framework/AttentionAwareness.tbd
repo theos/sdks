@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness
+current-version:       34.200.9
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __AWAttentionServiceEventFilterFactory ]
+    objc-classes:       [ _AWAttentionAwarenessClient, _AWAttentionAwarenessConfiguration, _AWAttentionEvent, _AWAttentionLostEvent ]
+...

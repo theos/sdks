@@ -1,0 +1,10 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/swift/libswiftSIMDOperators.dylib
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __swift_FORCE_LOAD_$_swiftSIMDOperators ]
+...

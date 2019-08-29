@@ -1,0 +1,22 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CDPKeychainSyncSecurityCodePeerApprovalResult, _CDPKeychainSyncSecurityCodeResetKeychainResult,
+                          _CoreCDPUIVersionNumber, _CoreCDPUIVersionString ]
+    objc-classes:       [ _CDPDevicePickerViewController, _CDPEscapeOption, _CDPExtensionContext, _CDPLocalSecretEntryPane,
+                          _CDPPaneHeaderView, _CDPPassphraseEntryPane, _CDPPassphraseEntryViewController, _CDPRemoteSecretEntryPane,
+                          _CDPRemoteSecretEntryViewController, _CDPRemoteUILocalSecretEntryViewController,
+                          _CDPRemoteValidationEscapeOffer, _CDPServiceViewController, _CDPSingleICSCEntryPane,
+                          _CDPSingleICSCEntryViewController, _CDPTableViewController, _CDPUIAccountRecoveryController,
+                          _CDPUIBaseController, _CDPUIController, _CDPWaitingApprovalViewController, __CDPExtensionHostContext,
+                          __CDPHostViewController ]
+    objc-ivars:         [ _CDPPassphraseEntryPane._containerView, _CDPPassphraseEntryPane._headerView,
+                          _CDPPassphraseEntryPane._keyboardOffset, _CDPUIBaseController._presentingViewController,
+                          _CDPUIController._devicePicker, _CDPUIController._devices, _CDPUIController._navController,
+                          _CDPUIController._remoteSecretValidator ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: B885C866-2D07-3017-9D92-6DE841F224F6' ]
+platform:        tvos
+install-name:    /System/Library/TextInput/TextInput_tr.bundle/TextInput_tr
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ __ZN2KB18CandidateFilter_tr20do_filter_candidatesERNSt3__16vectorINS_9CandidateENS1_9allocatorIS3_EEEERKS3_P10__CFString, 
+                       __ZN2KB18CandidateFilter_trC1Eb, __ZN2KB18CandidateFilter_trC2Eb, 
+                       __ZNK17TIInputManager_tr30create_custom_candidate_filterEN2KB10LookupTypeE, 
+                       __ZTV17TIInputManager_tr, __ZTVN2KB18CandidateFilter_trE ]
+    objc-classes:    [ _TIKeyboardInputManager_tr ]
+...

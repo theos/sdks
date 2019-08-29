@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Accounts/Notification/RPAccountNotificationPlugin.bundle/RPAccountNotificationPlugin
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ _RPAccountNotificationPlugin ]
+...

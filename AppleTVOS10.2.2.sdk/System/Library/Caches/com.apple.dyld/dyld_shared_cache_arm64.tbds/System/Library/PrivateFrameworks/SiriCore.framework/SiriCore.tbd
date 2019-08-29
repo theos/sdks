@@ -1,0 +1,37 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SiriCore.framework/SiriCore
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SiriCoreAceSerializationErrorDomain, _SiriCoreAceSerializationErrorUserInfoBytesAvailableKey,
+                          _SiriCoreAceSerializationErrorUserInfoBytesNeededKey, _SiriCoreAceSerializationErrorUserInfoPlistKey,
+                          _SiriCoreConnectionTechnologyGetDescription, _SiriCoreDataCompressorErrorDomain, _SiriCoreHeartbeatInterval,
+                          _SiriCoreHeartbeatTolerance, _SiriCoreLocalSpeechRecognizerInstanceUUIDBackground,
+                          _SiriCoreLocalSpeechRecognizerInstanceUUIDInteractive, _SiriCoreLocalSpeechRecognizerTaskDictation,
+                          _SiriCoreLocalSpeechRecognizerTaskSearchOrMessaging, _SiriCoreLocalSpeechRecognizerTaskTshot,
+                          _SiriCoreLocalSpeechRecognizerTaskVoiceMail, _SiriCoreSQLiteAPIErrorDomain,
+                          _SiriCoreSQLiteDatabaseErrorDomain, _SiriCoreSQLiteDatabaseErrorKey,
+                          _SiriCoreSQLiteDatabaseIsErrorUnrecoverable, _SiriCoreSQLiteQueryCreateColumnDefinition,
+                          _SiriCoreSQLiteQueryCreateCriterionExpression, _SiriCoreSQLiteQueryCreateEscapedAndCommaSeparatedString,
+                          _SiriCoreSQLiteQueryCreateOrderExpression, _SiriCoreSQLiteQueryCreateParametrizedAndCommaSeparatedString,
+                          _SiriCoreSQLiteQueryCreateRangeExpression, _SiriCoreSiriConnectionErrorDomain,
+                          _SiriCoreSiriConnectionHTTPErrorStatusCodeKey, _SiriCoreSiriConnectionHTTPRedirectValueKey,
+                          _SiriCoreSiriConnectionShouldSkipIDSOnNextAttemptKey,
+                          _SiriCoreSiriConnectionShouldSkipTuscanyOnNextAttemptKey, _SiriCoreUUIDStringCreate ]
+    objc-classes:       [ _SASetRestrictionsThunk, _SiriCoreAceConnectionAnalysisInfo, _SiriCoreAceSerialization,
+                          _SiriCoreConnectionMetrics, _SiriCoreConnectionQueueMonitor, _SiriCoreConnectionTCPInfoMetrics,
+                          _SiriCoreConnectionType, _SiriCoreDESEvaluationSession, _SiriCoreDESPreferences, _SiriCoreDataCompressor,
+                          _SiriCoreDataDecompressor, _SiriCoreErrorInfo, _SiriCoreLocalSpeechDESRecord, _SiriCoreLocalSpeechRecognizer,
+                          _SiriCoreNetworkManager, _SiriCoreNetworkStreamProvider, _SiriCorePingInfo, _SiriCoreSQLiteColumnConstraint,
+                          _SiriCoreSQLiteColumnDescription, _SiriCoreSQLiteDatabase, _SiriCoreSQLiteIndexDescription,
+                          _SiriCoreSQLiteQuery, _SiriCoreSQLiteQueryCriterion, _SiriCoreSQLiteQueryOrder, _SiriCoreSQLiteQueryRange,
+                          _SiriCoreSQLiteQueryResult, _SiriCoreSQLiteStatement, _SiriCoreSQLiteTableConstraint,
+                          _SiriCoreSQLiteTableDescription, _SiriCoreSiriBackgroundConnection, _SiriCoreSiriConnection,
+                          _SiriCoreSiriConnectionInfo, _SiriCoreSpeechPacket, _SiriCoreWiFiManagerClient, _SiriCoreZlibDataCompressor,
+                          _SiriCoreZlibDataDecompressor, __SAMetricsSendCompletionsProxy, __SiriCoreSQLiteColumnInfo,
+                          __SiriCoreSQLiteIndexInfo, __SiriCoreSQLiteTableInfo ]
+    objc-ivars:         [ __SAMetricsSendCompletionsProxy._blocks ]
+...

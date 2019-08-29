@@ -1,0 +1,45 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _CAMUserPreferenceCaptureEncodingBehavior, _CAMUserPreferenceSlomoConfiguration,
+                          _CAMUserPreferenceVideoConfiguration, _IPAMetadataLivePhotoMinimumClientVersion,
+                          _IPAMetadataOriginatingSignature, _IPAMetadataRenderOriginatingSignature, _IPAMetadataVariationIdentifier,
+                          _PFAllPlatformsLivePhotoBundleTypeIdentifiers, _PFAssetAdjustmentsBaseVersionKey,
+                          _PFAssetAdjustmentsDataBlobKey, _PFAssetAdjustmentsEditorBundleIDKey,
+                          _PFAssetAdjustmentsFormatIdentifierKey, _PFAssetAdjustmentsFormatVersionKey,
+                          _PFAssetAdjustmentsRenderTypesKey, _PFAssetAdjustmentsTimestampKey,
+                          _PFCameraAdjustmentsSerializationCurrentVersion, _PFCameraAdjustmentsSerializationErrorDomain,
+                          _PFCameraAdjustmentsSerializationFilterArrayKey, _PFCameraAdjustmentsSerializationPortraitMetadataKey,
+                          _PFCameraAdjustmentsSerializationVersionKey, _PFCreateGIFFromVideoURL,
+                          _PFCurrentPlatformLivePhotoBundleTypeIdentifier, _PFExportGIFRequestErrorDomain, _PFFaceFractionIntercept,
+                          _PFFaceFractionSlope, _PFFigCopyImageDataWithProperties, _PFFigCopyImageFileWithProperties,
+                          _PFFigCreateCGImageFromImageData, _PFFigCreateCVPixelBufferFromImageData, _PFFigJPEGDataFromImage,
+                          _PFFigTranscodeImageDataToJPEG, _PFFigTranscodeImageFileToJPEG, _PFIsLivePhotoBundleTypeIdentifier,
+                          _PFMediaCapabilitiesOptionsSupportsTranscodeChoice, _PFReadImageDisplayTimeFromVideoFileAtPath,
+                          _PFReadMetadataFromVideoAVAsset, _PFReadMetadataFromVideoAtPath,
+                          _PFReadPairingIdentifierFromCGImageProperties, _PFReadPairingIdentifierFromImageAtPath,
+                          _PFReadPairingIdentifierFromVideoAtPath, _PFReadVideoDurationFromVideoFileAtPath,
+                          _PFRemovePairingIdentifierFromCGImageProperties, _PFSharedFigDecodeSession,
+                          _PFSharedFigDecodeSessionDiscardCachedBuffers, _PFVideoComplementFileExtension,
+                          _PFVideoComplementImagePathKey, _PFVideoComplementMetadataKey,
+                          _PFVideoComplementMetadataPairingIdentifierKey, _PFVideoComplementMetadataTimingInfoKey,
+                          _PFVideoComplementMetadataVersionKey, _PFVideoComplementVideoPathKey, _PFVideoExportErrorDomain,
+                          _PFVideoExportErrorStateKey,
+                          _StolenFigCaptureMetadataUtilitiesCreateQuickTimeMovieStillImageTimeSampleBuffer,
+                          __PLFigCreateImageFromImageData, _b, _kUTTypeLivePhotoBundle, _kUTTypeLivePhotoBundleExtension,
+                          _kUTTypeLivePhotoBundlePrivate, _m ]
+    objc-classes:       [ _PFAVReaderWriter, _PFAssetAdjustmentFingerprintData, _PFAssetAdjustments, _PFCameraAdjustmentsSerialization,
+                          _PFColorConverter, _PFExportGIFRequest, _PFImageMetadata, _PFMediaCapabilities, _PFMediaCapabilitiesQuery,
+                          _PFPhotoSharingOperation, _PFPhotosFaceUtilities, _PFProportionalIntegralController, _PFRWSampleBufferChannel,
+                          _PFSharingRemaker, _PFSharingRemakerOperation, _PFSharingRemakerOptions, _PFSharingUtilities,
+                          _PFSinglePassVideoExportItem, _PFSinglePassVideoExportItemStatistics, _PFSlowMotionConfiguration,
+                          _PFSlowMotionRampConfiguration, _PFSlowMotionTimeRangeMapper, _PFSlowMotionTimeRangeMapperScaledRegion,
+                          _PFSlowMotionUtilities, _PFVideoAVObjectBuilder, _PFVideoAdjustments, _PFVideoComplement, _PFVideoEncoding,
+                          _PFVideoExport, _PFVideoExportRangeCoordinator, _PFVideoExportRangeWaitingCaller, _PFVideoMetadata,
+                          _PFVideoSharingOperation, _PFVision ]
+...

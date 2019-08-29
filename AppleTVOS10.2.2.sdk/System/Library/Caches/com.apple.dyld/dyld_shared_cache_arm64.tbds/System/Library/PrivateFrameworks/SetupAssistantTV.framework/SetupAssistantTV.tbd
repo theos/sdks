@@ -1,0 +1,33 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SetupAssistantTV.framework/SetupAssistantTV
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _BuddyLanguageChangeReadyNotification, _SATVIntroAnimatorAnimationKeyClick,
+                          _SATVIntroAnimatorAnimationKeyClickShadow, _SATVIntroAnimatorLayerKeyClick,
+                          _SATVIntroAnimatorLayerKeyClickShadow, _SetupAssistantTVVersionNumber, _SetupAssistantTVVersionString,
+                          __finalOpacityValue, __finalScaleValue, __opacityAnimationWithBeginTime, __scaleAnimationWithBeginTime,
+                          _kBuddyWiFiPane, _kSATVHeaderViewWidth ]
+    objc-classes:       [ _MicaAnimator, _SATVActivationViewController, _SATVActivator, _SATVAnimationViewController,
+                          _SATVAppAnalyticsController, _SATVAuthenticationManager, _SATVBluetoothKeyboardManager,
+                          _SATVBluetoothRemotePairingManager, _SATVButton, _SATVChoiceView, _SATVChoiceViewController,
+                          _SATVChooseSetupMethodController, _SATVChooseSetupMethodView, _SATVCloudConfigUtility,
+                          _SATVCloudConfigViewController, _SATVCloudLoginViewController, _SATVCustomStoreBagUtility,
+                          _SATVCyclingFooterView, _SATVCyclingHeaderView, _SATVDiagnosticsController, _SATVFlowManager,
+                          _SATVFlyoverViewController, _SATVFooterView, _SATVHeaderView, _SATVIPEntryViewController,
+                          _SATVInternationalUtility, _SATVIntroAnimator, _SATVLanguageController, _SATVLanguageHeaderView,
+                          _SATVLayerKitClassSubstitution, _SATVLegalPresentation, _SATVLoadingCloudConfigViewController,
+                          _SATVLocationServicesViewController, _SATVLoginView, _SATVLoginViewController, _SATVNavigationController,
+                          _SATVNetworkConfigurationViewController, _SATVNetworkConfigurationWizardViewController,
+                          _SATVNetworkReachability, _SATVNetworkValidationViewController, _SATVNonFocusableTextField,
+                          _SATVPulsingFooterView, _SATVPulsingHeaderView, _SATVRegionViewController, _SATVRemoteController,
+                          _SATVSiriController, _SATVSiriStoreFrontController, _SATVTableViewController, _SATVTableViewTextCell,
+                          _SATVTapToSetupController, _SATVTermsController, _SATVTermsDetailsController, _SATVTextEntryView,
+                          _SATVTextEntryViewController, _SATVTimeZoneController, _SATVTimeZoneSearchViewController, _SATVTimeZoneView,
+                          _SATVTouchRemoteSetupManager, _SATVViewController, _SATVWiFiController, __SATVChoiceButton,
+                          __SATVChoiceButtonContainerView, __SATVNetworkConfigurationCell, __SATVRegionOtherCountriesContainerView,
+                          __SATVTimeZoneTableViewCell, __SATVTimeZoneTextField, __SATVWifiActivityIndicatorViewController ]
+...

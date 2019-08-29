@@ -1,0 +1,20 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _PTDomainClientInterface, _PTDomainMachService, _PTDomainServerDomainsChangedNotification,
+                          _PTDomainServerInterface, _PTDomainServerTestRecipesChangedNotification, _PTLogObjectForTopic,
+                          _PTPrototypingEnumerateHardwareEventsWithBlock, _PTPrototypingEventAvailable, _PTPrototypingEventName,
+                          _PTPrototypingEventShortName, _PTPrototypingIsActiveDarwinNotification, _PTSettingsIsAppleInternal,
+                          _PTTransactionBegin, _PTTransactionEnd ]
+    objc-classes:       [ _PTButtonRow, _PTChoiceRow, _PTDefaults, _PTDomain, _PTDomainInfo, _PTDomainServer, _PTDoubleTestRecipe,
+                          _PTDrillDownRow, _PTEditFloatRow, _PTEditStringRow, _PTModule, _PTOutlet, _PTPointSettings,
+                          _PTRestoreDefaultSettingsRowAction, _PTRow, _PTRowAction, _PTSButtonRow, _PTSChoiceRow, _PTSDrillDownRow,
+                          _PTSEditFloatRow, _PTSEditStringRow, _PTSModule, _PTSRestoreDefaultSettingsRowAction, _PTSRow, _PTSRowAction,
+                          _PTSSection, _PTSSliderRow, _PTSSwitchRow, _PTSection, _PTSettings, _PTSingleTestRecipe, _PTSizeSettings,
+                          _PTSliderRow, _PTSwitchRow, _PTTestRecipe, _PTTestRecipeInfo, _PTToggleTestRecipe, __PTAppearanceCondition ]
+...

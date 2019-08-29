@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _MCMErrorDomain, _MCMFunctionNameErrorKey, _MCMPathArgumentErrorKey, _MCMSourceFileLineErrorKey ]
+    objc-classes:       [ _MCMAppContainer, _MCMAppDataContainer, _MCMContainer, _MCMContainerManager, _MCMDataContainer,
+                          _MCMFrameworkContainer, _MCMInternalDaemonDataContainer, _MCMPluginKitPluginContainer,
+                          _MCMPluginKitPluginDataContainer, _MCMSharedDataContainer, _MCMSharedSystemDataContainer,
+                          _MCMSystemDataContainer, _MCMTempDirDataContainer, _MCMVPNPluginContainer, _MCMVPNPluginDataContainer,
+                          _MCMXPCServiceDataContainer ]
+...

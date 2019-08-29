@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _SpotlightDaemonVersionNumber, _SpotlightDaemonVersionString, _startAllAgents, _startIndexAgent ]
+    objc-classes:       [ _DummyObject, _MDAgent, _MDAgentDelegate, _MDClient, _MDIndexAgent, _MDSearchAgent, _MDSearchableIndexService,
+                          _SpotlightReceiverConnection, _SpotlightSender ]
+...

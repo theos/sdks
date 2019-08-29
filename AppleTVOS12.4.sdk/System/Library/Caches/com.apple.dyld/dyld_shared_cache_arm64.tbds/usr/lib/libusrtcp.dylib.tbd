@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libusrtcp.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _nw_protocol_sfotcp_identifier, _nw_protocol_tcp_identifier, _nw_tcp_destroy_globals, _nw_tcp_init_globals,
+                          _tcp_next_mtu ]
+...

@@ -1,0 +1,18 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DiagnosticsKit.framework/DiagnosticsKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DKErrorDomain, _DKErrorLocalizedDescriptionForCode, _DiagnosticsKitVersionNumber,
+                          _DiagnosticsKitVersionString, _kDKDiagnosticAttributeFreeSpaceRequiredKey,
+                          _kDKDiagnosticAttributeIdentifierKey, _kDKDiagnosticAttributeNameKey,
+                          _kDKDiagnosticAttributeRequiresUnlockKey, _kDKDiagnosticParametersKey, _kDKDiagnosticPredicatesKey,
+                          _kDKDiagnosticSpecificationsKey, _kDKDiagnosticsRestrictedService, _kDKDiagnosticsRestrictedUIService,
+                          _kDKDiagnosticsService, _kDKDiagnosticsUIService, _kDKExtentionEntitlement ]
+    objc-classes:       [ _DKDiagnosticAttributes, _DKDiagnosticContext, _DKDiagnosticContextMock, _DKDiagnosticController,
+                          _DKDiagnosticControllerMock, _DKDiagnosticViewController, _DKDiagnosticViewControllerMock, _DKHost,
+                          _DKHostContext, _DKHostRequest, _DKMutableResult, _DKResult, _DKUtilities ]
+...

@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultDirectionalInsets,
+                          _NUIContainerViewDefaultInsets, _NUIContainerViewDefaultSize, _NUIContainerViewSystemDimension ]
+    objc-classes:       [ _NUIBoxArrangement, _NUIContainerBoxView, _NUIContainerGridView, _NUIContainerStackView, _NUIContainerView,
+                          _NUIContentScrollView, _NUIGridArrangement, _NUIMultilineSizingHelper, _NUISizeCache, _NUIWidgetGridView,
+                          _NUIWidgetGridViewCell, _NUIWidgetGridViewEmptyCell ]
+...

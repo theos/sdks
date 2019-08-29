@@ -1,0 +1,14 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/Assistant/Plugins/ClientFlowService.assistantBundle/ClientFlowService
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _LastBackgroundActivityDateUserDefaultsKnowledgeStoreKey,
+                          _MinimumWaitInSecondsBeforeNextBackgroundActivityUserDefaultsKnowledgeStoreKey ]
+    objc-classes:       [ _CFBackgroundActionService, _CFFlowCommandHandler, _CFProviderCommandHandler, _CFRemoveScriptCommandHandler,
+                          _CFRequestHandler, _CFServiceConnector, _CFServiceHelper, _CFSignalHandler ]
+    objc-ivars:         [ _CFServiceHelper._isClientLiteHelper, _CFServiceHelper._serviceHelper ]
+...

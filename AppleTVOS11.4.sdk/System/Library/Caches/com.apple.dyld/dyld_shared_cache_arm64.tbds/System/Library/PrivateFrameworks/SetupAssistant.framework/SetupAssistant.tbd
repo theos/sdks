@@ -1,0 +1,34 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _BFFBuddyDidRestoreSafeHavenNotification, _BFFSettingsManagerCurrentVersion,
+                          _BYAssistantFixUpVoiceTriggerStateIfNeeded, _BYAssistantScreenShouldBeShownInSetupAssistant,
+                          _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPHSOfferedKey, _BYBuddyAssistantPresentedKey,
+                          _BYBuddyDoneKey, _BYBuddyFinishedInitialRunKey, _BYBuddyIOSCurrentVersion, _BYBuddyIOSVersionKey,
+                          _BYBuddyLastExitKey, _BYBuddyNotBackedUpIdentifier, _BYBuddyRunDiagnosticsMiniBuddy, _BYBuddyRunHSA2MiniBuddy,
+                          _BYBuddyRunKeychainSyncMiniBuddy, _BYBuddyRunMesaMiniBuddy, _BYBuddyRunPaymentMiniBuddy,
+                          _BYBuddyRunSilentICDPUpgrade, _BYBuddyRunStandardMiniBuddy, _BYBuddyTVOSCurrentVersion,
+                          _BYBuddyTVOSVersionKey, _BYClearLaunchSentinel, _BYDaemonCreateMetadataArchive, _BYDataStashCreate,
+                          _BYDeviceSetupSourceSessionFinishedKey, _BYDeviceSetupSourceSessionPercentCompleteKey,
+                          _BYDeviceSetupSourceSessionPhaseKey, _BYDeviceSetupSourceSessionTimeRemainingKey,
+                          _BYFlowSkipIdentifierAppleID, _BYFlowSkipIdentifierApplePay, _BYFlowSkipIdentifierFaceID,
+                          _BYFlowSkipIdentifierPasscode, _BYFlowSkipIdentifierSiri, _BYFlowSkipIdentifierTouchID, _BYMetadataFromBackup,
+                          _BYMetadataFromDataArchive, _BYObserveFinishSetupTriggers, _BYProcessNameForPID, _BYSetLaunchSentinel,
+                          _BYSetupAssistantBundleIdentifier, _BYSetupAssistantEnsureSilentLoginUpgrade,
+                          _BYSetupAssistantExitedDarwinNotification, _BYSetupAssistantFinishedDarwinNotification,
+                          _BYSetupAssistantHasCompletedInitialRun, _BYSetupAssistantIsRunningSilentTokenUpgrade,
+                          _BYSetupAssistantLaunchedDarwinNotification, _BYSetupAssistantNeedsToRun,
+                          _BYSetupAssistantPrepareLaunchSentinel, _BYSetupAssistantSilentTokenUpgradeCompletedNotification,
+                          _BYSetupAssistantSilentTokenUpgradeInProgressKey, _BYSetupAssistantUISessionNoLongerExclusiveNotification,
+                          _BYTigrisVersion, _Daemon_BYSetupAssistantNeedsToRun, _DiagnosticsShouldSubmitNotification,
+                          __BYIsInternalInstall, __BYLoggingEnabled, __BYLoggingFacility ]
+    objc-classes:       [ _BFFPreferencesController, _BFFSettingsManager, _BYAppleIDAccountsManager, _BYBuddyDaemonCloudSyncClient,
+                          _BYBuddyDaemonProximitySourceClient, _BYBuddyDaemonProximityTargetClient, _BYCapabilities,
+                          _BYDeviceSetupSourceSession, _BYFlowSkipController, _BYLicenseAgreement, _BYManagedAppleIDBootstrap,
+                          _BYNetworkMonitor, _BYOnBoardingDirector, _BYSetupStateManager ]
+...

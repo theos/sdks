@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 39E7DF0A-A5C3-32C4-8618-835E1F7B7515' ]
+platform:        tvos
+install-name:    /usr/lib/libTelephonyBasebandBulkUSBDynamic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _TelephonyBasebandBulkUSBTransportCreate, _TelephonyBasebandBulkUSBTransportGetCookies, 
+                       _TelephonyBasebandBulkUSBTransportGetDeviceName, _TelephonyBasebandBulkUSBTransportGetInterface, 
+                       _TelephonyBasebandBulkUSBTransportGetMaxWritePacketSize, _TelephonyBasebandBulkUSBTransportGetReadPipeNumber, 
+                       _TelephonyBasebandBulkUSBTransportGetVendorIDAndProductID, 
+                       _TelephonyBasebandBulkUSBTransportGetWritePipeNumber, _TelephonyBasebandBulkUSBTransportInitParameters, 
+                       _kTransportConfigNoZLP ]
+...

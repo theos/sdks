@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXPineBoardServerInstance.framework/AXPineBoardServerInstance
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXPineBoardServerInstanceVersionNumber, _AXPineBoardServerInstanceVersionString ]
+    objc-classes:       [ _AXPineBoardServerInstance, _AXPineBoardServiceProvider ]
+    objc-ivars:         [ _AXPineBoardServerInstance._assetMonitor, _AXPineBoardServerInstance._axEnabledNotificationObserverToken,
+                          _AXPineBoardServerInstance._client, _AXPineBoardServerInstance._processWatcher,
+                          _AXPineBoardServerInstance._server, _AXPineBoardServerInstance._serviceProvider,
+                          _AXPineBoardServerInstance._systemAppServerRunning ]
+...

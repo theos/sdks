@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DataDetectorsCore.framework/PlugIns/PhoneNumbers.plugin/PhoneNumbers
+current-version:       539.3
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _GetPrefixInitialState, _GetResultPostprocessor, _GetSuffixInitialState, _GetVersion ]
+...

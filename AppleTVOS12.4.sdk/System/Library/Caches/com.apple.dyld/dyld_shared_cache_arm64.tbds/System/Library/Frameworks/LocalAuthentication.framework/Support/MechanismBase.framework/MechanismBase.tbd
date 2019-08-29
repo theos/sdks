@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismBase.framework/MechanismBase
+current-version:       425.255.3
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    objc-classes:       [ _ACMContextRecord, _MechanismACM, _MechanismBase, _MechanismContext, _MechanismKofN, _MechanismKofNReorganizer,
+                          _RemoteUIManager ]
+...

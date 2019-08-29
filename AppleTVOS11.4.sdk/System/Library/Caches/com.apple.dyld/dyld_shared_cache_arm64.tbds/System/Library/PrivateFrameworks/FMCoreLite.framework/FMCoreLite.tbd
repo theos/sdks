@@ -1,0 +1,15 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _FMAlertCategoryNone, _FMEmptyResult, _FMErrorDomain, _FMFutureCallbackStack, __FMBlockDescriptor,
+                          __FMDictionaryOfMetrics, __FMFutureDidPerformCallback, __FMFutureWillPerformCallback, __FMPopScopedDescriptor,
+                          __FMPushScopedDescriptor, __FMScopedDescriptor, _kFMDataArchiverErrorDomain, _kFMSynchronizerTimeoutNever ]
+    objc-classes:       [ _FMAlert, _FMCancelationToken, _FMConcurrentMutableArray, _FMConcurrentMutableDictionary, _FMDataArchiver,
+                          _FMFuture, _FMInternalFileContainer, _FMPair, _FMPreferencesUtil, _FMPromise, _FMQueue, _FMReadWriteLock,
+                          _FMScheduler, _FMSharedFileContainer, _FMSynchronizer, _FMValueThrottler, __FMLazyFuture ]
+...

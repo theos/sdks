@@ -1,0 +1,11 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libnetworkextension.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ne_filter_connection_queue, _ne_filter_copy_connection, _ne_filter_partial_input_frame_finalizer,
+                          _ne_filter_protocol_identifier, _ne_filter_request_connection, _ne_filter_send_message ]
+...

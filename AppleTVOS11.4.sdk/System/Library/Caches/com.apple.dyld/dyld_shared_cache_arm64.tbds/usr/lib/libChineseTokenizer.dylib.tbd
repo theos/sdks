@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libChineseTokenizer.dylib
+current-version:       28
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _ChineseTokenizerAdvanceToNextToken, _ChineseTokenizerCreate, _ChineseTokenizerGetCurrentTokenRange,
+                          _ChineseTokenizerGoToTokenAtIndex, _ChineseTokenizerRelease, _ChineseTokenizerSetCustomWordCheckBlock,
+                          _ChineseTokenizerSetDynamicLexicon, _ChineseTokenizerSetString ]
+...

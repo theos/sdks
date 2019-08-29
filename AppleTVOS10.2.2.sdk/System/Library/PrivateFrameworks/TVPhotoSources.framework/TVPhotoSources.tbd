@@ -1,0 +1,40 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVPhotoSources.framework/TVPhotoSources
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _PBSAppProviderTypeScreenSaver, _PBScreensaverProvidesSettingsUI, _PBScreensaverSettingsURLScheme,
+                          _PBScreensaverShowInSettings, _PBScreensaverStyle, _PBScreensaverTitleKey, _TVPhotoCacheManagerErrorCode,
+                          _TVPhotoServiceOptionsCacheFolderKey, _TVPhotoServiceOptionsMaxAssetsKey,
+                          _TVPhotoServiceOptionsMaxSizeInMBKey, _TVPhotoServiceOptionsUnrestrictedAssetFetchDurationKey,
+                          _TVPhotoSourceAppProviderIdentifier, _TVPhotoSourceManagerSourcesUpdatedNotification,
+                          _TVPhotoSourcesImageCacheUpdatedNotification, _TVPhotoSourcesVersionNumber, _TVPhotoSourcesVersionString ]
+    objc-classes:       [ _TVMutablePhotoAsset, _TVMutablePhotoCollection, _TVPhotoAsset, _TVPhotoCollection, _TVPhotoScreenSaverCache,
+                          _TVPhotoSource, _TVPhotoSourceAppProvider, _TVPhotoSourceExtensionContext, _TVPhotoSourceExtensionHostContext,
+                          _TVPhotoSourceManager, _TVPhotoSourceProvider, _TVPhotoSourceService, _TVPhotoStreamClient,
+                          _TVScreenSaverProvider, _TVServiceProviderUtil, __TVCachedAssetInfo, __TVServiceProviderConnection ]
+    objc-ivars:         [ _TVPhotoAsset._HTTPHeaderFields, _TVPhotoAsset._assetIdentifier, _TVPhotoAsset._dateCreated,
+                          _TVPhotoAsset._fullResolutionURL, _TVPhotoAsset._isTemporaryFile, _TVPhotoCollection._collectionIdentifier,
+                          _TVPhotoCollection._collectionName, _TVPhotoCollection._hasExternalURLs, _TVPhotoCollection._photoSource,
+                          _TVPhotoCollection._remoteURL, _TVPhotoScreenSaverCache._cachedAssets,
+                          _TVPhotoScreenSaverCache._cachingEnabled, _TVPhotoScreenSaverCache._currentScreenSaverInfo,
+                          _TVPhotoScreenSaverCache._didFinishReceivingPhotoAssets, _TVPhotoScreenSaverCache._group,
+                          _TVPhotoScreenSaverCache._imageProxies, _TVPhotoScreenSaverCache._isCachingSessionInProgress,
+                          _TVPhotoScreenSaverCache._photoAssets, _TVPhotoScreenSaverCache._photoCacheCompletionBlock,
+                          _TVPhotoScreenSaverCache._photoSourceService, _TVPhotoScreenSaverCache._preferencesObserverToken,
+                          _TVPhotoScreenSaverCache._refreshInterval, _TVPhotoScreenSaverCache._screenSaverCollection,
+                          _TVPhotoScreenSaverCache._screenSaverPhotoSource, _TVPhotoScreenSaverCache._screenSaverPrefs,
+                          _TVPhotoScreenSaverCache._serialQueue, _TVPhotoScreenSaverCache._sessionIdentifier,
+                          _TVPhotoScreenSaverCache._timerSource, _TVPhotoScreenSaverCache._xpcActivity, _TVPhotoSource._extension,
+                          _TVPhotoSourceAppProvider._photoSourceService, _TVPhotoSourceExtensionContext._protocolHandler,
+                          _TVPhotoSourceManager._appProviderPhotoSource, _TVPhotoSourceManager._photoSources,
+                          _TVPhotoSourceManager._sourceMatchingContext, _TVPhotoSourceProvider._extensionContext,
+                          _TVPhotoSourceService._photoCacheCompletionBlock, _TVPhotoSourceService._photoServiceDelegate,
+                          _TVPhotoSourceService._sessionID, _TVPhotoStreamClient._connection, _TVScreenSaverProvider._listener,
+                          _TVScreenSaverProvider._serviceProvider, __TVCachedAssetInfo._assetIdentifier,
+                          __TVCachedAssetInfo._assetPath, __TVServiceProviderConnection._connection,
+                          __TVServiceProviderConnection._procAssertion ]
+...

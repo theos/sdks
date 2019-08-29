@@ -1,0 +1,14 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/TVWhatsNewServices.framework/TVWhatsNewServices
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _TVWNServiceErrorDomain, _TVWNServiceOptionRequestTimeoutInSecondsKey,
+                          _TVWNServiceOptionShouldDismissOnMenuEventKey, _TVWNServiceOptionShouldShowWallpaperKey,
+                          _TVWNServiceOptionUserInterfaceStyleKey, _TVWNShouldShowWhatsNewKey, _TVWhatsNewServicesVersionNumber,
+                          _TVWhatsNewServicesVersionString ]
+    objc-classes:       [ _TVWNService, __TVWNViewController ]
+...

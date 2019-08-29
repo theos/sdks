@@ -1,0 +1,17 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/DiagnosticsSupport.framework/DiagnosticsSupport
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _DALogFileName, _DAMobileLogPath, _DARootLogPath, _DSArchiveClose, _DSArchiveOpen, _DSArchiveWrite,
+                          _DSHexErrorDomain, _DiagnosticLogHandleForCategory, _DiagnosticsSupportVersionNumber,
+                          _DiagnosticsSupportVersionString, __buttonHIDEventFilterCallback, _kDADefaultBufferSize,
+                          _kDADefaultStringEncoding, _kDALineBreak, _kDSArchiveErrorDomain, _kDSCallStatsEntitlement,
+                          _kDSHardwareButtonEntitlement ]
+    objc-classes:       [ _DSArchivePath, _DSDateFormatter, _DSEntitlementUtilities, _DSGeneralLogCollector, _DSGeneralLogFile,
+                          _DSHardwareButtonEventHandler, _DSHardwareButtonEventMonitor, _DSLogLine, _DSMutableArchive, _DSShapeView,
+                          _DSTestAutomation, _DSTextFile, _DSThermalLogLine, _DSUsageLogLine ]
+...

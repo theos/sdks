@@ -1,0 +1,20 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /usr/lib/libeasyperf.dylib
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ __printProcHeader, __walkargstr, _abstime_to_msec, _abstime_to_msec_diff, _abstime_to_ns, _copyHardwareModel,
+                          _createCFObjFromEPInfo, _createCFObjFromFile, _createEPInfoTypeFromCFObj, _create_process_info,
+                          _destroy_process_info, _easyperf_compute_diff_info, _easyperf_copy_results_for_test, _easyperf_copy_rusage,
+                          _easyperf_emit_perfdata, _easyperf_fill_rusage, _easyperf_get_baseline, _easyperf_get_results_for_device,
+                          _easyperf_print_metrics, _easyperf_print_metrics_with_baseline, _easyperf_scaled_metrics_from_epi,
+                          _easyperf_update_and_print_metrics, _easyperf_update_baseline, _ep_create_session, _ep_sample_create,
+                          _ep_sample_destroy, _ep_session_begin, _ep_session_config_with_argstr, _ep_session_create, _ep_session_destroy,
+                          _ep_session_end, _ep_session_getopts, _ep_session_process, _ep_session_set_perfdata_file,
+                          _ep_session_set_procname, _ep_session_set_procpid, _ep_session_set_project_baseline, _ep_session_set_testname,
+                          _ep_session_setopts, _excodeForErrnum, _findPIDForProcName, _is_monotonic_active, _printvals, _processArgs,
+                          _run_easyperf, _run_easyperf_for_executable, _run_easyperf_for_pid_and_executable, _usage, _writeCFObjToFile ]
+...

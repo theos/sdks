@@ -1,0 +1,12 @@
+---
+archs:                 [ x86_64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/XPCKit.framework/XPCKit
+current-version:       1
+compatibility-version: 0
+exports:
+  - archs:              [ x86_64 ]
+    symbols:            [ _XPCSetLogBlocks, __XPCLog, __XPCShouldLog, _kXPCSequenceKey ]
+    objc-classes:       [ _XPCClientConnection, _XPCNSClientConnection, _XPCNSRequest, _XPCNSServiceConnection, _XPCNSServiceListener,
+                          _XPCRequest, _XPCServiceConnection, _XPCServiceListener ]
+...

@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64 ]
+platform:              tvos
+install-name:          /System/Library/PrivateFrameworks/UserNotificationServices.framework/UserNotificationServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ _UNSNotificationScheduler ]
+    objc-ivars:         [ _UNSNotificationScheduler._bundleIdentifier, _UNSNotificationScheduler._delegate,
+                          _UNSNotificationScheduler._userNotificationCenter ]
+...
