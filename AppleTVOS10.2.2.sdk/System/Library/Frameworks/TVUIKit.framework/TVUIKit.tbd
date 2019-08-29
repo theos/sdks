@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 19E01986-842D-3C69-963C-B114E48D6109' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/TVUIKit.framework/TVUIKit
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    objc-classes:    [ TVCaptionButtonView, TVCardView, TVDigitEntryViewController, 
+                       TVLockupHeaderFooterView, TVLockupView, TVMonogramView, TVPosterView ]
+...

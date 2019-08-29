@@ -1,0 +1,10 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: DCE8D0B9-F86B-355E-9D09-45C2BFFBDEB1' ]
+platform:        tvos
+install-name:    /usr/lib/libgermantok.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _germantok_tokenize ]
+...

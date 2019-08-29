@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 30BD5211-BD5D-350B-9B54-93E58BB058F8' ]
+platform:        tvos
+install-name:    /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+current-version: 932.2
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    re-exports:      [ /System/Library/Frameworks/CoreServices.framework/CoreServices ]
+    symbols:         [ _MobileCoreServicesVersionNumber, _MobileCoreServicesVersionString ]
+...

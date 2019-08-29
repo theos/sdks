@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 1C9594B3-53F3-3A40-A96C-312BD4706F5D' ]
+platform:        tvos
+install-name:    /usr/lib/libAppleSWDHIDFlashUpdater.dylib
+current-version: 2200.3
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AppleSWDHIDFlashUpdater, _AppleSWDHIDFlashUpdaterGetImageTagForService, 
+                       _AppleSWDHIDFlashUpdaterWithOverrides ]
+...

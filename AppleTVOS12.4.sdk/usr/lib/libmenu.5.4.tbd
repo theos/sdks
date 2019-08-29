@@ -1,0 +1,9 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: ED42FC05-9949-3213-8DED-12143EDECDB6' ]
+platform:        tvos
+install-name:    /usr/lib/libmenu.5.4.dylib
+current-version: 5.4
+compatibility-version: 5.4
+objc-constraint: none
+...

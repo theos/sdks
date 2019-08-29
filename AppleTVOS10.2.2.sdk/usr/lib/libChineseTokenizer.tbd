@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 5A97A8BD-C0E5-3AEC-AC54-7C65AD25357D' ]
+platform:        tvos
+install-name:    /usr/lib/libChineseTokenizer.dylib
+current-version: 28.15.3
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _ChineseTokenizerAdvanceToNextToken, _ChineseTokenizerCreate, 
+                       _ChineseTokenizerGetCurrentTokenRange, _ChineseTokenizerGoToTokenAtIndex, 
+                       _ChineseTokenizerRelease, _ChineseTokenizerSetCustomWordCheckBlock, 
+                       _ChineseTokenizerSetDynamicLexicon, _ChineseTokenizerSetString ]
+...
