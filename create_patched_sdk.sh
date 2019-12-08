@@ -32,7 +32,7 @@ version="v1"
 
 archs_option=("--replace-archs" armv7 armv7s arm64)
 tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
-write_options=("--maintain-directories" "--replace-path-extension")
+write_options=("--preserve-subdirs" "--replace-path-extension")
 
 no_overwrite="--no-overwrite"
 if [ $# -gt 2 ] && [ "$3" != '-' ]; then
