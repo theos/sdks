@@ -39,12 +39,9 @@ if [ $# -gt 2 ] && [ "$3" != '-' ]; then
     no_overwrite=""
 fi
 
-no_warnings=""
-if [ $# -gt 3 ] && [ "$4" != '-' ]; then
-    no_warnings="--dont-print-warnings"
-fi
-
+no_warnings="--ignore-warnings"
 tbd_tool="$5"
+
 if [ $# -lt 5 ] || [ "$tbd_tool" == "-" ]; then
     tbd_tool="tbd"
     tbd_exists=$(command -v $tbd_tool)
@@ -71,7 +68,7 @@ if [ $# -lt 1 ]; then
 fi
 
 xcode_developer_path="$6/Contents/Developer"
-if [ $# -lt 6 ] || [ "$xcode_developer_path" == "/Contents/Developer" ]; then
+if [ $# -lt 6 ] || [ "$6" == "-" ]; then
     xcode_developer_path=$(xcode-select -p)
 fi
 
@@ -86,8 +83,8 @@ xcode_sim_runtime_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Develo
 xcode_default_sdk_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 
 xcode_sdk_paths="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/*"
-
 preferred_xcode_sdk_path=""
+
 for xcode_sdk_path in $xcode_sdk_paths; do
     xcode_sdk_real=$(realpath $xcode_sdk_path)
 
@@ -141,9 +138,9 @@ if [ -d "$device_support_dir" ] && [ "$use_simulator" == "-" ]; then
         mkdir -p "$sdks_output_path_single_sdk_path"
         cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-        "$tbd_tool" -p -r "$symbols_actual_path" \
-                    -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
-                    $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
+        "$tbd_tool" \
+            -p $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version -r all "$symbols_actual_path" \
+            -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
 
         if [ $? -ne 0 ]; then
             printf 'Failed to create tbds from Symbols directory for iOS %s\n' $ios_version
@@ -165,15 +162,15 @@ else
     mkdir -p "$sdks_output_path_single_sdk_path"
     cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-    parse_paths=("-p" "-r" "$xcode_sim_runtime_path/Developer"
-                 "-p" "-r" "$xcode_sim_runtime_path/System"
-                 "-p" "-r" "$xcode_sim_runtime_path/Library")
+    parse_paths=("-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Developer"
+                 "-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/System"
+                 "-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Library")
 
     write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
                  "-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
                  "-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Library")
 
-    "$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
+    "$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}"
 
     if [ $? -ne 0 ]; then
         printf 'Failed to create tbds from iPhoneSimulator runtime for iOS %s\n' $xcode_sdk_ios_version
