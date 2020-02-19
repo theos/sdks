@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import argparse
 import os
+from pathlib import Path
 import shutil
 import subprocess
 import sys
@@ -10,39 +12,12 @@ DIRS = [ "System/Library/Frameworks", "System/Library/PrivateFrameworks" ]
 TARGETS = [ "armv5-ios", "armv6-ios", "armv7-ios", "armv7s-ios", "arm64-ios", "arm64e-ios" ]
 VERSION = "v1"
 
-PATH_OPTIONS = [ "--macho", "-r", "all", "--ignore-undefineds", "--allow-private-objc-symbols", "--ignore-missing-exports" ]
-WRITE_OPTIONS = [ "--preserve-subdirs", "--replace-path-extension" ]
+PATH_OPTIONS = [ "-p", "--macho", "-r", "all", "--ignore-undefineds", "--allow-private-objc-symbols", "--ignore-missing-exports" ]
+WRITE_OPTIONS = [ "-o", "--preserve-subdirs", "--replace-path-extension" ]
 
-TBD_PATH = "/usr/bin/tbd"
+TBD_PATH = Path("/usr/bin/tbd")
 TBD_DOWNLOAD_URL = "https://github.com/inoahdev/tbd/releases"
-XCODE_PATH = "/Applications/Xcode.app"
-
-def print_usage():
-    print("Usage: create_sdk [-p tbd-path] [-o output-path] [-a/--archs archs] [--allow-overwrite] [--no-warnings] [--keep-archs] [--use-simulator]")
-    print("Options:")
-    print("\t-a, --archs,           Provide a replacement archs-list for created .tbd files.")
-    print(f"\t                       Default replacement arch-list is {ARCHS}")
-    print("\t    --dirs,            Provide directory paths (relative to SDK) to parse ")
-    print("\t-h, --help,            Print this message")
-    print("\t    --ignore-warnings, Ignore any warnings when creating sdks")
-    print("\t    --keep-archs,      Don't replace the archs found in the SDK")
-    print("\t    --keep-targets,    Don't replace the targets found in the SDK")
-    print("\t-o, --output-path,     Provide the output-directory path for where the created sdk should be stored.")
-    print("\t                       Default sdk-path is $THEOS/sdks ($THEOS being the \"THEOS\" environment variable)")
-    print("\t    --no-overwrite,    Allow the overwriting of existing sdks and files")
-    print("\t-t, --targets,         Provide a replacement targets-list for created .tbd files.")
-    print("\t    --tbd-path,        Provide path to your local installation of tbd.")
-    print(f"\t                       tbd can be downloaded at {TBD_DOWNLOAD_URL}.")
-    print(f"\t                       Default install location is {TBD_PATH}")
-    print("\t-u, --usage,           Print this message")
-    print("\t    --use-simulator,   Use Simulator SDKs over Xcode's extractions of on-device dyld_shared_cache files")
-    print(f"\t-v, --version,         Provide tbd-version for created .tbd files. Default tbd-version is {VERSION}")
-    print(f"\t-x, --xcode-path,      Provide a path to the local Xcode installation. Default path is {XCODE_PATH}")
-
-def print_missing_tbd_path_error():
-    print("Please provide a path to your local tbd installation.")
-    print(f"tbd can be downloaded at {TBD_DOWNLOAD_URL}")
-    print(f"Default install location is {TBD_PATH}")
+XCODE_PATH = Path("/Applications/Xcode.app")
 
 def should_use_archs(version):
     return version != "v4"
@@ -62,17 +37,6 @@ def convert_binary_to_string(binary):
 def get_list_from_option(tbd_path, option):
     output = subprocess.check_output([tbd_path, option])
     return convert_binary_to_string(output).split('\\n')
-
-def parse_argv_list(i, argv):
-    endIndex = 0
-    for argument in argv:
-        if argument[0] != '-':
-            endIndex += 1
-            continue
-
-        break
-
-    return argv[:endIndex]
 
 def copyDirectory(dest, src):
     try:
@@ -105,176 +69,110 @@ def removeDirectory(dir):
     return True
 
 def main(argv):
-    archs = ARCHS
-    dirs = DIRS
-    targets = TARGETS
-    version = VERSION
-
-    theos_path = os.environ.get("THEOS")
-    if theos_path is None:
-        print("Environment Variable THEOS does not exist.")
-        print("Please export the environment variable and re-rerun this program")
+    home_path_env = os.environ.get("HOME")
+    if home_path_env is None:
+        print("The environment-variable $HOME wasn't found")
+        print("Run 'export HOME=<your home-folder path here>' before running this script")
 
         exit(1)
 
-    output_path = os.path.join(theos_path, "sdks")
+    home_path = Path(home_path_env)
+    if not home_path.exists() or not home_path.is_dir():
+        print("No directory exists at path of environment-variable $HOME")
+        print(f"The path of environment-variable $HOME is {home_path}")
 
-    tbd_path = TBD_PATH
-    xcode_path = XCODE_PATH
-
-    did_provide_archs = False
-    did_provide_targets = False
-    did_provide_version = False
-
-    ignore_requests = False
-    print_warnings = True
-    no_overwrite = False
-    replace_archs = True
-    replace_targets = True
-    use_simulator = False
-
-    i = 1
-    argc = len(sys.argv)
-
-    while (i < argc):
-        arg = sys.argv[i]
-
-        if arg == "-a" or arg == "--archs":
-            if i == argc - 1:
-                print("Please provide a list of architectures")
-                exit(1)
-
-            archs = parse_argv_list(i + 1, sys.argv[i + 1:])
-            did_provide_archs = True
-
-            i += len(archs)
-        elif arg == "--no-overwrite":
-            no_overwrite = True
-        elif arg == "--dirs":
-            if i == argc - 1:
-                print("Please provide a list of directories")
-                exit(1)
-
-            dirs = parse_argv_list(i + 1, sys.argv[i + 1])
-            i += len(dirs)
-        elif arg == "-h" or arg == "--help":
-            if i != 1 or argc != 2:
-                print(f"Option {arg} must be run by itself")
-                exit(1)
-
-            print_usage()
-            exit(0)
-        elif arg == "--ignore-warnings":
-            print_warnings = False
-        elif arg == "--ignore-requests":
-            ignore_requests = True
-        elif arg == "--keep-archs":
-            replace_archs = False
-        elif arg == "--keep-targets":
-            replace_targets = False
-        elif arg == "--use-simulator":
-            use_simulator = True
-        elif arg == "-t" or arg == "--targets":
-            if i == argc - 1:
-                print("Please provide a list of targets")
-                exit(1)
-
-            targets = parse_argv_list(i + 1, sys.argv[i + 1:])
-            did_provide_targets = True
-
-            i += len(targets)
-        elif arg == "-u" or arg == "--usage":
-            print_usage()
-            exit(0)
-        elif arg == "-v" or arg == "--version":
-            if i == argc - 1:
-                print("Please provide a tbd-version")
-                exit(1)
-
-            version = sys.argv[i + 1]
-            did_provide_version = True
-
-            i += 1
-        elif arg == "-o" or arg == "--output-path":
-            if i == argc - 1:
-                print("Please provide an output-path for the created sdk")
-                exit(1)
-
-            output_path = sys.argv[i + 1]
-            i += 1
-        elif arg == "--tbd-path":
-            if i == argc - 1:
-                print_missing_tbd_path_error()
-                exit(1)
-
-            tbd_path = sys.argv[i + 1]
-            i += 1
-        elif arg == "-x" or arg == "--xcode-path":
-            if i == argc - 1:
-                print(f"Please provide a path to your local Xcode installation")
-                exit(1)
-
-            xcode_path = sys.argv[i + 1]
-            i += 1
-        else:
-            print(f"Unrecognized argument: {arg}")
-            exit(1)
-
-        i += 1
-
-    if not os.path.exists(tbd_path):
-        print_missing_tbd_path_error()
         exit(1)
 
-    valid_archs=[]
-    if did_provide_archs or did_provide_targets:
-        valid_archs = get_list_from_option(tbd_path, "--list-architectures")
+    theos_path_env = os.environ.get("THEOS")
+    if theos_path_env is None:
+        print("The path of environment-variable $THEOS doesn't exist.")
+        print("Please run 'export THEOS=<theos path here>' before running this program")
 
-    if did_provide_archs:
-        for arch in archs:
-            if arch in valid_archs:
-                continue
+        exit(1)
 
-            print(f"Architecture {arch} doesn't exist")
-            exit(1)
+    theos_path = Path(theos_path_env)
+    if not theos_path.exists() or not theos_path.is_dir():
+        print("No directory exists at path of environment-variable $THEOS")
+        exit(1)
 
-    if did_provide_targets:
-        valid_platforms = get_list_from_option(tbd_path, "--list-platforms")
-        valid_platforms = [platform.split(' ')[0] for platform in valid_platforms]
+    output_path = Path(theos_path, "sdks")
+    parser = argparse.ArgumentParser(description="Apple Platform SDK Generator Python Script", add_help=True)
 
-        for target in targets:
-            components = target.split('-')
+    parser.add_argument("-a", "--archs", nargs='+', help="A list of archs to replace ones in SDK", required=False)
+    parser.add_argument("--dirs", help='A list of dirs to recurse while parsing inside SDK', default=DIRS, nargs='+', required=False)
+    parser.add_argument("--ignore-warnings", help="Ignore any warnings from tbd", action='store_true', default=False, required=False)
+    parser.add_argument("--ignore-requests", help="Ignore any requests from tbd", action='store_true', default=False, required=False)
+    parser.add_argument("--keep-archs", help="Don't replace archs in SDK with either internal or provided archs", action='store_true', default=False, required=False)
+    parser.add_argument("--keep-targets", help="Don't replace targets in SDK with either internal or provided targets", action='store_true', default=False, required=False)
+    parser.add_argument("-o", "--output-path", help='Path to write SDK', required=False)
+    parser.add_argument("--no-overwrite", help="Don't overwrite any existing SDKs", action='store_true', default=False, required=False)
+    parser.add_argument("-t", "--targets", help='A list of targets to replace ones in SDK', nargs='+', required=False)
+    parser.add_argument("--tbd-path", help=f'Path to local tbd-installation. tbd can be downloaded at {TBD_DOWNLOAD_URL}', required=False)
+    parser.add_argument("--use-simulator", help='Use iOS Simulator binaries instead of the default DeviceSupport binaries', action='store_true', default=False, required=False)
+    parser.add_argument('-v', "--version", help=f'Set version of the .tbd format. Default version is {VERSION}', required=False)
+    parser.add_argument('-x', "--xcode-path", help=f'Path to Xcode-Installation. Default location is {XCODE_PATH}', required=False)
 
-            arch = components[0]
-            platform = components[1]
-            should_exit = False
+    args = parser.parse_args()
+    tbd_path_string = TBD_PATH
 
-            if arch not in valid_archs:
-                print(f"Architecture {arch} doesn't exist")
-                should_exit = True
+    if args.tbd_path is not None:
+        tbd_path_string = args.tbd_path
 
-            if platform not in valid_platforms:
-                print(f"Platform {platform} doesn't exist")
-                should_exit = True
+    tbd_path = Path(tbd_path_string)
+    if not tbd_path.exists():
+        print(f"tbd was not found at location {tbd_path}")
+        print("Please provide a path to your local tbd install with option --tbd-path")
+        print(f"tbd can be downloaded at {TBD_DOWNLOAD_URL}")
 
-            if should_exit:
-                exit(1)
+        exit(1)
 
-    if did_provide_version:
-        valid_versions = get_list_from_option(tbd_path, "--list-tbd-versions")
-        if version not in valid_versions:
-            print(f"tbd-version {version} doesn't exist")
-            exit(1)
+    if not tbd_path.is_file():
+        print("Your tbd path is not a path to a file")
+        print(f"A tbd executable file was expected at {tbd_path}")
 
-    if not replace_archs and did_provide_archs:
-        print("Warning: Replacement architectures have been provided although --keep-archs was also provided")
+        exit(1)
 
-    if not replace_targets and did_provide_targets:
-        print("Warning: Replacement architectures have been provided although --keep-targets was also provided")
+    if not os.access(tbd_path.as_posix(), os.X_OK):
+        print("Your tbd file is not an executable file")
+        print(f"Please run 'chmod +x {tbd_path}'")
+
+        exit(1)
+
+    did_provide_output_path = args.output_path is not None
+    if did_provide_output_path:
+        output_path = Path(args.output_path)
+
+    output_path.mkdir(mode=0o666, parents=False, exist_ok=True)
+
+    did_provide_archs = args.archs is not None
+    did_provide_targets = args.targets is not None
+
+    if args.keep_archs and did_provide_archs:
+        print("Error: Both --keep-archs and --replace-archs were provided")
+        exit(1)
+
+    if args.keep_targets and did_provide_targets:
+        print("Error: Both --keep-targets and --replace-targets were provided")
+        exit(1)
 
     if did_provide_archs and did_provide_targets:
         print("Error: Both --replace-archs and --replace-targets were provided")
         exit(1)
+
+    did_provide_version = args.version is not None
+    version = VERSION
+
+    if did_provide_version:
+        version = args.version
+        valid_versions = get_list_from_option(tbd_path.as_posix(), "--list-tbd-versions")
+
+        if version not in valid_versions:
+            valid_versions_print_list = ', '.join(valid_versions)
+
+            print(f"tbd-version {version} doesn't exist")
+            print(f"Valid Versions: {valid_versions_print_list}")
+
+            exit(1)
 
     if did_provide_targets and should_use_archs(version):
         print("Error: --replace-targets has been provided while tbd-version is not tbd-version v4.")
@@ -282,181 +180,346 @@ def main(argv):
 
         exit(1)
 
-    if not os.path.exists(xcode_path):
-        print(f"No Xcode installation was found at {xcode_path}.")
+    archs = ARCHS
+    targets = TARGETS
+
+    if did_provide_archs or did_provide_targets:
+        valid_archs = get_list_from_option(tbd_path.as_posix(), "--list-architectures")
+
+    if did_provide_archs:
+        archs = args.archs
+        should_exit = False
+        should_print_arch_list = False
+
+        for arch in archs:
+            if arch in valid_archs:
+                continue
+
+            print(f"Architecture '{arch}' doesn't exist")
+
+            should_exit = True
+            should_print_arch_list = True
+
+        if should_exit:
+            if should_print_arch_list:
+                print(f"\nValid Archs:")
+                print(', '.join(valid_archs))
+
+            exit(1)
+
+    if did_provide_targets:
+        valid_platforms = get_list_from_option(tbd_path.as_posix(), "--list-platforms")
+
+        should_exit = False
+        should_print_arch_list = False
+        should_print_platform_list = False
+        targets = args.targets
+
+        for target in targets:
+            components = target.split('-')
+            if len(components) != 2:
+                print(f"Target '{target}' is invalid")
+                should_exit = True
+
+            arch = components[0]
+            platform = components[1]
+
+            if not arch and not platform:
+                print(f"Target '{target}' is missing arch and platform")
+
+                should_print_arch_list = True
+                should_print_platform_list = True
+
+                should_exit = True
+                continue
+
+            if not arch:
+                print(f"Target '{target}' is missing an arch")
+
+                should_print_arch_list = True
+                should_exit = True
+            elif arch not in valid_archs:
+                print(f"Architecture '{arch}' doesn't exist")
+
+                should_print_arch_list = True
+                should_exit = True
+
+            if not platform:
+                print(f"Target '{target}' is missing a platform")
+
+                should_print_platform_list = True
+                should_exit = True
+            elif platform not in valid_platforms:
+                print(f"Platform '{platform}' doesn't exist")
+
+                should_print_platform_list = True
+                should_exit = True
+
+        if should_exit:
+            if should_print_arch_list:
+                print("\nValid Archs:")
+                print(', '.join(valid_archs))
+
+            if should_print_platform_list:
+                print("\nValid Platforms:")
+                print(', '.join(valid_platforms))
+
+            exit(1)
+
+    xcode_path = XCODE_PATH
+    did_provide_xcode_path = args.xcode_path is not None
+
+    if did_provide_xcode_path:
+        xcode_path = Path(args.xcode_path)
+
+    if not xcode_path.exists():
+        print(f"No Xcode installation was found at {xcode_path}")
         print("Please provide a path to your local Xcode installation")
 
-        exit(0)
+        exit(1)
 
-    xcode_developer_path = os.path.join(xcode_path, "Contents/Developer")
-    if not os.path.exists(xcode_developer_path):
-        print("Your Xcode installation is missing its developer directory.")
+    if not xcode_path.is_dir():
+        print("Your Xcode Application Path does not point to a directory")
+        print(f"The Xcode Application Path Directory was expected at {xcode_path}")
+
+        exit(1)
+
+    xcode_developer_path = Path(xcode_path, "Contents", "Developer")
+    if not xcode_developer_path.exists():
+        print("Your Xcode installation is missing its developer directory")
         print(f"The developer directory is supposed to exist at {xcode_developer_path}")
-        exit(1)
-
-    xcode_sdk_dir_path = os.path.join(xcode_developer_path, "Platforms/iPhoneOS.platform/Developer/SDKs/")
-    if not os.path.exists(xcode_sdk_dir_path):
-        print("Your Xcode installation is missing its ios sdks directory")
-        print(f"The sdks directory should be at {xcode_sdk_dir_path}.")
-        print("The iOS sdk from Xcode is needed as a baseline which we add onto")
 
         exit(1)
 
-    xcode_default_sdk_path = os.path.join(xcode_sdk_dir_path, "iPhoneOS.sdk")
-    if not os.path.exists(xcode_sdk_dir_path):
-        print("Your Xcode installation is missing its default ios sdk.")
-        print(f"The default sdk should be at {xcode_default_sdk_path}.")
-        print("The iOS sdk from Xcode is needed as a baseline which we add onto")
+    xcode_sdk_dir_path = Path(xcode_developer_path, "Platforms", "iPhoneOS.platform", "Developer", "SDKs")
+    if not xcode_sdk_dir_path.exists():
+        print("Your Xcode installation is missing its iOS SDKs directory")
+        print(f"The sdks directory should be at {xcode_sdk_dir_path}")
+        print("The iOS SDK from Xcode is needed as a baseline which we add onto")
 
         exit(1)
 
-    xcode_sdk_version = ""
-    encountered_default_dir = False
+    xcode_default_sdk_path = Path(xcode_sdk_dir_path, "iPhoneOS.sdk")
+    if not xcode_sdk_dir_path.exists():
+        print("Your Xcode installation is missing its default iOS SDK.")
+        print(f"The default SDK should be at {xcode_default_sdk_path}")
+        print("The iOS SDK from Xcode is needed as a baseline which we add onto")
 
-    for xcode_sdk_filename in os.listdir(xcode_sdk_dir_path):
-        if not encountered_default_dir and xcode_sdk_filename == "iPhoneOS.sdk":
+        exit(1)
+
+    # Recurse to find the SDK that points to xcode_default_sdk_path
+
+    xcode_sdk_version = ''
+    for dir in xcode_sdk_dir_path.glob("iPhoneOS*.sdk/"):
+        if dir.name == "iPhoneOS.sdk":
             continue
 
-        xcode_sdk_path = os.path.join(xcode_sdk_dir_path, xcode_sdk_filename)
-        xcode_sdk_real_path = os.path.realpath(xcode_sdk_path)
-
-        if not os.path.samefile(xcode_sdk_real_path, xcode_default_sdk_path):
+        resolved_dir = dir.resolve()
+        if resolved_dir != xcode_default_sdk_path:
             continue
 
-        xcode_sdk_version = xcode_sdk_filename[8:] # We remove the 'iPhoneOS' prefix from the sdk name
-        xcode_sdk_version = os.path.splitext(xcode_sdk_version)[0] # We remove the .sdk path-extension
+        xcode_sdk_real_name = dir.stem # Use .stem instead of .name to remove the ".sdk"
+        xcode_sdk_version = xcode_sdk_real_name[8:] # We remove the 'iPhoneOS' prefix from the sdk name
 
         break
 
-    xcode_device_support_path = os.path.join(os.environ["HOME"], "Library/Developer/Xcode/iOS DeviceSupport/")
-    parsed_atleast_one = False
+    if not xcode_sdk_version:
+        print("No SDK pointing to the default SDK was found")
+        print("The default sdk exists at path {xcode_default_sdk_path}")
 
-    tbd_argv = [ tbd_path ]
-    if os.path.exists(xcode_device_support_path) and not use_simulator:
-        for symbols_filename in os.listdir(xcode_device_support_path):
+        exit(1)
+
+    parsed_atleast_one = False
+    xcode_device_support_path = Path(home_path, "Library", "Developer", "Xcode", "iOS DeviceSupport")
+    tbd_argv = [ tbd_path.as_posix() ]
+
+    if xcode_device_support_path.exists() and xcode_device_support_path.is_dir() and not args.use_simulator:
+        for symbols_path in xcode_device_support_path.iterdir():
+            if not symbols_path.is_dir():
+                continue
+
+            # symbols_filename should be the same as the iOS Version, and a build
+            # in the format of "12.4 (16G77)"
+            #
+            # Because iOS Versions use '.', we can't use `symbols_path.stem`, which
+            # takes out the path-extension, by finding a dot.
+
+            symbols_filename = symbols_path.name
             symbols_filename_split = symbols_filename.split()
+
             if len(symbols_filename_split) != 2:
                 continue
 
             symbols_ios_version = symbols_filename_split[0]
             symbols_ios_build = symbols_filename_split[1]
+            symbols_dir_path = Path(xcode_device_support_path, symbols_filename)
 
-            symbols_dir_path = os.path.join(xcode_device_support_path, symbols_filename)
-            symbols_path = os.path.join(symbols_dir_path, "Symbols/System")
-
-            if not os.path.exists(symbols_path):
-                print("Warning: Symbols do not exist. Skipping")
+            if not symbols_dir_path.exists():
+                print("Warning: Symbols directory does not exist. Skipping")
                 print(f"iOS Version {symbols_ios_version}, Build: {symbols_ios_build}")
 
                 continue
 
-            sdk_write_path = os.path.join(output_path, f"iPhoneOS{symbols_ios_version}.sdk/")
-            if os.path.exists(sdk_write_path):
-                if no_overwrite:
+            symbols_path = Path(symbols_dir_path, "Symbols", "System")
+            if not symbols_path.exists():
+                print("Warning: The Symbols directory does not contain a System directory. Skipping")
+                print(f"iOS Version {symbols_ios_version}, Build: {symbols_ios_build}")
+
+                continue
+
+            sdk_write_path = Path(output_path, f"iPhoneOS{symbols_ios_version}.sdk")
+            if sdk_write_path.exists():
+                if args.no_overwrite:
                     print(f"Warning: SDK for iOS {symbols_ios_version} already exists. Skipping")
+                    print(f"SDK for iOS {symbols_ios_version} is at {sdk_write_path}")
+
+                    continue
+
+                if not sdk_write_path.is_dir():
+                    print(f"Warning: A non-directory exists at write-path for SDK for iOS {symbols_ios_version}. Skipping")
+                    print(f"SDK for iOS {symbols_ios_version} is at {sdk_write_path}")
+
                     continue
 
                 if not removeDirectory(sdk_write_path):
                     continue
 
             if xcode_sdk_version != symbols_ios_version:
-                print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version}")
-                print(f"will be used as the base for a SDK for iOS Version {symbols_ios_version}")
+                print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the SDK iOS Version {symbols_ios_version}")
 
-            if not copyDirectory(sdk_write_path, xcode_sdk_path):
-                os.rmdir(sdk_write_path)
+            if not copyDirectory(sdk_write_path, xcode_default_sdk_path):
+                removeDirectory(sdk_write_path)
                 continue
 
+            dirs_that_exist = []
             use_archs = should_use_archs(version)
-            for dir in dirs:
-                tbd_argv.append("-p")
-                tbd_argv += PATH_OPTIONS
 
-                if ignore_requests:
+            for dir in args.dirs:
+                path_from_components = Path(*Path(dir).parts[1:])  # "[1:]" Removes the "System" path-component
+                dir_path = Path(symbols_path, path_from_components.as_posix())
+
+                if not dir_path.exists():
+                    continue
+
+                tbd_argv += PATH_OPTIONS
+                if args.ignore_requests:
                     tbd_argv.append("--ignore-requests")
 
-                if not print_warnings:
+                if args.ignore_warnings:
                     tbd_argv.append("--ignore-warnings")
 
                 tbd_argv.append("-v")
                 tbd_argv.append(version)
 
-                if replace_targets and not use_archs:
+                if not args.keep_targets and not use_archs:
                     tbd_argv.append("--replace-targets")
                     tbd_argv += targets
-                elif replace_archs and use_archs:
+                elif not args.keep_archs and use_archs:
                     tbd_argv.append("--replace-archs")
                     tbd_argv += archs
 
-                dir_path = os.path.join(symbols_path, dir[7:]) #Remove the "System" path-component
-                tbd_argv.append(dir_path)
+                dirs_that_exist.append(dir)
+                tbd_argv.append(dir_path.as_posix())
 
-            for dir in dirs:
-                tbd_argv.append("-o")
+            if not dirs_that_exist:
+                continue
+
+            for dir in args.dirs:
+                if not dir in dirs_that_exist:
+                    continue
+
                 tbd_argv += WRITE_OPTIONS
-
-                if no_overwrite:
+                if args.no_overwrite:
                     tbd_argv.append("--no-overwrite")
 
-                dir_write_path = os.path.join(sdk_write_path, dir)
-                tbd_argv.append(dir_write_path)
+                dir_write_path = Path(sdk_write_path, dir)
+                tbd_argv.append(dir_write_path.as_posix())
 
-            ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.STDOUT)
+            ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.DEVNULL)
             if ret == 0:
                parsed_atleast_one = True
-    else:
-        if not use_simulator:
-            print("No Device Support binaries were found, sdk will now be created by falling back on simulator binaries")
 
-        simulator_path = os.path.join(xcode_developer_path, "Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot")
-        simulator_version_path = os.path.join(simulator_path, "System/Library/CoreServices/SystemVersion.plist")
+    if args.use_simulator or parsed_atleast_one == False:
+        if not args.use_simulator:
+            print("No SDKs were successfully created from DeviceSupport binaries. Falling back to Simulator Binaries")
+
+        simulator_path = Path(xcode_developer_path, "Platforms", "iPhoneOS.platform", "Library", "Developer", "CoreSimulator", "Profiles", "Runtimes", "iOS.simruntime", "Contents", "Resources", "RuntimeRoot")
+        if not simulator_path.exists():
+            print("The iOS Simulator RuntimeRoot directory does not exist. Please install a simulator.")
+            exit(1)
+
+        simulator_version_path = Path(simulator_path, "System", "Library", "CoreServices", "SystemVersion.plist")
+        if not simulator_path.exists():
+            print("The iOS Simulator RuntimeRoot directory does not have a SystemVersion.plist file. Please re-install the simulator")
+            print(f"The iOS Simulator RuntimeRoot directory's SystemVersion.plist file should be at {simulator_version_path}")
+
+            exit(1)
+
+        if not simulator_version_path.is_file():
+            print("The iOS Simulator RuntimeRoot directory's SystemVersion.plist is not a file. Please re-install the simulator")
+            print(f"The iOS Simulator RuntimeRoot directory's SystemVersion.plist is at {simulator_version_path}")
+
+            exit(1)
+
         simulator_version = convert_binary_to_string(subprocess.check_output([ "/usr/bin/defaults", "read", simulator_version_path, "ProductVersion" ]))
-
         if xcode_sdk_version != simulator_version:
-            print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version}")
-            print(f"will be used as the base for a SDK for iOS Version {simulator_version}")
+            print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the SDK for iOS Version {simulator_version}")
 
-        sdk_write_path = os.path.join(output_path, f"iPhoneOS{simulator_version}.sdk")
-        if not os.path.exists(sdk_write_path) or not no_overwrite:
-            if copyDirectory(sdk_write_path, xcode_sdk_path):
-                for dir in dirs:
-                    tbd_argv.append("-p")
+        sdk_write_path = Path(output_path, f"iPhoneOS{simulator_version}.sdk")
+        sdk_write_path_exists = sdk_write_path.exists()
+
+        if not sdk_write_path_exists or not args.no_overwrite:
+            # If sdk write-path exists, we have to remove it so copyDirectory() can work
+            if sdk_write_path_exists:
+                removeDirectory(sdk_write_path)
+
+            if copyDirectory(sdk_write_path, xcode_default_sdk_path):
+                dirs_that_exist = []
+                use_archs = should_use_archs(version)
+
+                for dir in args.dirs:
+                    dir_path = Path(simulator_path, dir)
+                    if not dir_path.exists():
+                        continue
+
                     tbd_argv += PATH_OPTIONS
-
-                    if ignore_requests:
+                    if args.ignore_requests:
                         tbd_argv.append("--ignore-requests")
 
-                    if not print_warnings:
+                    if args.ignore_warnings:
                         tbd_argv.append("--ignore-warnings")
 
                     tbd_argv.append("-v")
                     tbd_argv.append(version)
 
-                    if replace_targets and not use_archs:
+                    if not args.keep_targets and not use_archs:
                         tbd_argv.append("--replace-targets")
                         tbd_argv += targets
-                    elif replace_archs and use_archs:
+                    elif not args.keep_archs and use_archs:
                         tbd_argv.append("--replace-archs")
                         tbd_argv += archs
 
-                    dir_path = os.path.join(simulator_path, dir)
-                    tbd_argv.append(dir_path)
+                    dirs_that_exist.append(dir)
+                    tbd_argv.append(dir_path.as_posix())
 
-                for dir in dirs:
-                    tbd_argv.append("-o")
-                    tbd_argv += WRITE_OPTIONS
+                if dirs_that_exist:
+                    for dir in args.dirs:
+                        if not dir in dirs_that_exist:
+                            continue
 
-                    if no_overwrite:
-                        tbd_argv.append("--no-overwrite")
+                        tbd_argv += WRITE_OPTIONS
+                        if args.no_overwrite:
+                            tbd_argv.append("--no-overwrite")
 
-                    dir_write_path = os.path.join(sdk_write_path, dir)
-                    tbd_argv.append(dir_write_path)
+                        dir_write_path = Path(sdk_write_path, dir)
+                        tbd_argv.append(dir_write_path.as_posix())
 
-                ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.STDOUT)
-                if ret == 0:
-                   parsed_atleast_one = True
+                    ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.DEVNULL)
+                    if ret == 0:
+                        parsed_atleast_one = True
+
             else:
-                os.rmdir(sdk_write_path)
+                removeDirectory(sdk_write_path)
         else:
             print(f"SDK for iOS {simulator_version} already exists")
 
