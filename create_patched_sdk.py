@@ -69,20 +69,6 @@ def removeDirectory(dir):
     return True
 
 def main(argv):
-    home_path_env = os.environ.get("HOME")
-    if home_path_env is None:
-        print("The environment-variable $HOME wasn't found")
-        print("Run 'export HOME=<your home-folder path here>' before running this script")
-
-        exit(1)
-
-    home_path = Path(home_path_env)
-    if not home_path.exists() or not home_path.is_dir():
-        print("No directory exists at path of environment-variable $HOME")
-        print(f"The path of environment-variable $HOME is {home_path}")
-
-        exit(1)
-
     theos_path_env = os.environ.get("THEOS")
     if theos_path_env is None:
         print("The path of environment-variable $THEOS doesn't exist.")
@@ -95,7 +81,7 @@ def main(argv):
         print("No directory exists at path of environment-variable $THEOS")
         exit(1)
 
-    output_path = Path(theos_path, "sdks")
+    output_path = theos_path / "sdks"
     parser = argparse.ArgumentParser(description="Apple Platform SDK Generator Python Script", add_help=True)
 
     parser.add_argument("-a", "--archs", nargs='+', help="A list of archs to replace ones in SDK", required=False)
@@ -221,8 +207,7 @@ def main(argv):
                 print(f"Target '{target}' is invalid")
                 should_exit = True
 
-            arch = components[0]
-            platform = components[1]
+            arch, platform = components
 
             if not arch and not platform:
                 print(f"Target '{target}' is missing arch and platform")
@@ -284,14 +269,14 @@ def main(argv):
 
         exit(1)
 
-    xcode_developer_path = Path(xcode_path, "Contents", "Developer")
+    xcode_developer_path = xcode_path / "Contents" / "Developer"
     if not xcode_developer_path.exists():
         print("Your Xcode installation is missing its developer directory")
         print(f"The developer directory is supposed to exist at {xcode_developer_path}")
 
         exit(1)
 
-    xcode_sdk_dir_path = Path(xcode_developer_path, "Platforms", "iPhoneOS.platform", "Developer", "SDKs")
+    xcode_sdk_dir_path = xcode_developer_path / "Platforms" / "iPhoneOS.platform" / "Developer" / "SDKs"
     if not xcode_sdk_dir_path.exists():
         print("Your Xcode installation is missing its iOS SDKs directory")
         print(f"The sdks directory should be at {xcode_sdk_dir_path}")
@@ -299,7 +284,7 @@ def main(argv):
 
         exit(1)
 
-    xcode_default_sdk_path = Path(xcode_sdk_dir_path, "iPhoneOS.sdk")
+    xcode_default_sdk_path = xcode_sdk_dir_path / "iPhoneOS.sdk"
     if not xcode_sdk_dir_path.exists():
         print("Your Xcode installation is missing its default iOS SDK.")
         print(f"The default SDK should be at {xcode_default_sdk_path}")
@@ -330,7 +315,7 @@ def main(argv):
         exit(1)
 
     parsed_atleast_one = False
-    xcode_device_support_path = Path(home_path, "Library", "Developer", "Xcode", "iOS DeviceSupport")
+    xcode_device_support_path = Path.home() / "Library" / "Developer" / "Xcode" / "iOS DeviceSupport"
     tbd_argv = [ tbd_path.as_posix() ]
 
     if xcode_device_support_path.exists() and xcode_device_support_path.is_dir() and not args.use_simulator:
@@ -352,7 +337,7 @@ def main(argv):
 
             symbols_ios_version = symbols_filename_split[0]
             symbols_ios_build = symbols_filename_split[1]
-            symbols_dir_path = Path(xcode_device_support_path, symbols_filename)
+            symbols_dir_path = xcode_device_support_path / symbols_filename
 
             if not symbols_dir_path.exists():
                 print("Warning: Symbols directory does not exist. Skipping")
@@ -360,14 +345,14 @@ def main(argv):
 
                 continue
 
-            symbols_path = Path(symbols_dir_path, "Symbols", "System")
+            symbols_path = symbols_dir_path / "Symbols" / "System"
             if not symbols_path.exists():
                 print("Warning: The Symbols directory does not contain a System directory. Skipping")
                 print(f"iOS Version {symbols_ios_version}, Build: {symbols_ios_build}")
 
                 continue
 
-            sdk_write_path = Path(output_path, f"iPhoneOS{symbols_ios_version}.sdk")
+            sdk_write_path = output_path / f"iPhoneOS{symbols_ios_version}.sdk"
             if sdk_write_path.exists():
                 if args.no_overwrite:
                     print(f"Warning: SDK for iOS {symbols_ios_version} already exists. Skipping")
@@ -385,7 +370,7 @@ def main(argv):
                     continue
 
             if xcode_sdk_version != symbols_ios_version:
-                print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the SDK iOS Version {symbols_ios_version}")
+                print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the newly-created SDK for iOS Version {symbols_ios_version}")
 
             if not copyDirectory(sdk_write_path, xcode_default_sdk_path):
                 removeDirectory(sdk_write_path)
@@ -396,7 +381,7 @@ def main(argv):
 
             for dir in args.dirs:
                 path_from_components = Path(*Path(dir).parts[1:])  # "[1:]" Removes the "System" path-component
-                dir_path = Path(symbols_path, path_from_components.as_posix())
+                dir_path = symbols_path / path_from_components.as_posix()
 
                 if not dir_path.exists():
                     continue
@@ -432,7 +417,7 @@ def main(argv):
                 if args.no_overwrite:
                     tbd_argv.append("--no-overwrite")
 
-                dir_write_path = Path(sdk_write_path, dir)
+                dir_write_path = sdk_write_path / dir
                 tbd_argv.append(dir_write_path.as_posix())
 
             ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.DEVNULL)
@@ -443,12 +428,12 @@ def main(argv):
         if not args.use_simulator:
             print("No SDKs were successfully created from DeviceSupport binaries. Falling back to Simulator Binaries")
 
-        simulator_path = Path(xcode_developer_path, "Platforms", "iPhoneOS.platform", "Library", "Developer", "CoreSimulator", "Profiles", "Runtimes", "iOS.simruntime", "Contents", "Resources", "RuntimeRoot")
+        simulator_path = xcode_developer_path / "Platforms" / "iPhoneOS.platform" / "Library" / "Developer" / "CoreSimulator" / "Profiles" / "Runtimes" / "iOS.simruntime" / "Contents" / "Resources" / "RuntimeRoot"
         if not simulator_path.exists():
             print("The iOS Simulator RuntimeRoot directory does not exist. Please install a simulator.")
             exit(1)
 
-        simulator_version_path = Path(simulator_path, "System", "Library", "CoreServices", "SystemVersion.plist")
+        simulator_version_path = simulator_path / "System" / "Library" / "CoreServices" / "SystemVersion.plist"
         if not simulator_path.exists():
             print("The iOS Simulator RuntimeRoot directory does not have a SystemVersion.plist file. Please re-install the simulator")
             print(f"The iOS Simulator RuntimeRoot directory's SystemVersion.plist file should be at {simulator_version_path}")
@@ -463,9 +448,9 @@ def main(argv):
 
         simulator_version = convert_binary_to_string(subprocess.check_output([ "/usr/bin/defaults", "read", simulator_version_path, "ProductVersion" ]))
         if xcode_sdk_version != simulator_version:
-            print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the SDK for iOS Version {simulator_version}")
+            print(f"Warning: The official iOS SDK for iOS Version {xcode_sdk_version} will be used as the base for the newly-created SDK for iOS Version {simulator_version}")
 
-        sdk_write_path = Path(output_path, f"iPhoneOS{simulator_version}.sdk")
+        sdk_write_path = output_path / f"iPhoneOS{simulator_version}.sdk"
         sdk_write_path_exists = sdk_write_path.exists()
 
         if not sdk_write_path_exists or not args.no_overwrite:
@@ -478,7 +463,7 @@ def main(argv):
                 use_archs = should_use_archs(version)
 
                 for dir in args.dirs:
-                    dir_path = Path(simulator_path, dir)
+                    dir_path = simulator_path / dir
                     if not dir_path.exists():
                         continue
 
@@ -511,7 +496,7 @@ def main(argv):
                         if args.no_overwrite:
                             tbd_argv.append("--no-overwrite")
 
-                        dir_write_path = Path(sdk_write_path, dir)
+                        dir_write_path = sdk_write_path / dir
                         tbd_argv.append(dir_write_path.as_posix())
 
                     ret = subprocess.call(tbd_argv, stdout=None, stderr=subprocess.DEVNULL)
