@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+:c
 
 import argparse
 import os
@@ -119,7 +119,7 @@ def main(argv):
         exit(1)
 
     if not os.access(tbd_path.as_posix(), os.X_OK):
-        print("Your tbd file is not an executable file")
+        print("Your tbd file is not executable")
         print(f"Please run 'chmod +x {tbd_path}'")
 
         exit(1)
@@ -208,9 +208,8 @@ def main(argv):
                 should_exit = True
 
             arch, platform = components
-
             if not arch and not platform:
-                print(f"Target '{target}' is missing arch and platform")
+                print(f"Target '{target}' is missing an arch and a platform")
 
                 should_print_arch_list = True
                 should_print_platform_list = True
