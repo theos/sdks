@@ -15,7 +15,7 @@ VERSION = "v1"
 PATH_OPTIONS = [ "-p", "--macho", "-r", "all", "--ignore-undefineds", "--allow-private-objc-symbols", "--ignore-missing-exports" ]
 WRITE_OPTIONS = [ "-o", "--preserve-subdirs", "--replace-path-extension" ]
 
-TBD_PATH = Path("/usr/bin/tbd")
+TBD_PATH = Path("/usr/local/bin/tbd")
 TBD_DOWNLOAD_URL = "https://github.com/inoahdev/tbd/releases"
 XCODE_PATH = Path("/Applications/Xcode.app")
 
