@@ -1,0 +1,4 @@
+framework module _AVKit_SwiftUI {
+  header "_AVKit_SwiftUI-Swift.h"
+  requires objc
+}

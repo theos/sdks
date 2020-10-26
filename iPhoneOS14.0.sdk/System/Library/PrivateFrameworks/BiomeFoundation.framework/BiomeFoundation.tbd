@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _BMAbsoluteTimeFromCFAbsoluteTime,
+                            _BMAbsoluteTimeFromContinuousTime,
+                            _BMAbsoluteTimeGetCurrent, _BMAbsoluteTimeGetOffsets,
+                            _BMAbsoluteTimeInitWithSyntheticStart,
+                            _BMAbsoluteTimeSetSyntheticStartFromRemoteTime,
+                            _BMAbsoluteTimeToCFAbsoluteTime,
+                            _BMArbitraryTimestampToCFAbsoluteTime,
+                            _BiomeFoundationVersionNumber,
+                            _BiomeFoundationVersionString, ___biome_log_create,
+                            ___biome_log_create_for_category ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _TMConvertTicksToSeconds, _TMGetKernelMonotonicClock,
+                            __NSConcreteGlobalBlock, _dispatch_once,
+                            _kCFAbsoluteTimeIntervalSince1970,
+                            _mach_continuous_time, _mach_get_times,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _os_log_create, dyld_stub_binder ]
+    objc-classes:         [ NSDate ]
+...
