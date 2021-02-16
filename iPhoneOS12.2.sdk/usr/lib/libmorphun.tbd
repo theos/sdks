@@ -1,0 +1,8 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 0FFE069F-7984-30E0-A875-A892F36AC672', 'arm64e: 74BC398D-77C5-321F-80E3-16B4C396E2BB' ]
+platform:        ios
+install-name:    /usr/lib/libmorphun.dylib
+objc-constraint: none
+...

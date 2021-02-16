@@ -1,0 +1,20 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector
+current-version:       121.4.3
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ MetalPerformanceShaders ]
+    symbols:            [ _MPSAccelerationStructureOptionBatchSize, _MPSAccelerationStructureOptionBinExponent,
+                          _MPSAccelerationStructureOptionComputeStatistics, _MPSAccelerationStructureOptionFragmentCost,
+                          _MPSAccelerationStructureOptionMaxDepth, _MPSAccelerationStructureOptionMaxFragmentsPerLeaf,
+                          _MPSAccelerationStructureOptionMaximumConcurrentNodeSize,
+                          _MPSAccelerationStructureOptionMinFragmentsPerLeaf, _MPSAccelerationStructureOptionMinimumOverlap,
+                          _MPSAccelerationStructureOptionSplitHeuristic, _MPSAccelerationStructureSplitHeuristicBinnedSAH,
+                          _MPSAccelerationStructureSplitHeuristicBinnedSpatialSAH,
+                          _MPSAccelerationStructureSplitHeuristicObjectMedian, _MPSAccelerationStructureSplitHeuristicSAH ]
+    objc-classes:       [ _MPSAccelerationStructure, _MPSAccelerationStructureGroup, _MPSInstanceAccelerationStructure,
+                          _MPSRayIntersector, _MPSTriangleAccelerationStructure ]
+...

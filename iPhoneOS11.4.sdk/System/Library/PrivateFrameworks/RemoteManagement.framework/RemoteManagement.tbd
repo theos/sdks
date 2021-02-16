@@ -1,0 +1,23 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagement
+current-version:       1.26
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _RMConfigurationEntitlement, _RMEnrollmentPlistName, _RMErrorChainFromError, _RMErrorDomain,
+                          _RMErrorHTTPStatusCodeKey, _RMErrorRequestUUIDKey, _RMGetDeviceUUID, _RMIsAppleInternal,
+                          _RMMetadataPath, _RMMetadataPlistName, _RMRootPath, _RMStringForBool, _RMTemporaryDirectoryURLForURL,
+                          _RMToolEntitlement, _RemoteManagementVersionNumber, _RemoteManagementVersionString,
+                          _kRMDeviceIdentitySCRTCapability, _kRMMessageMDMSignatureHeader, _kRMPushDictionaryKey,
+                          _kRMPushMagicMismatchKey, _kRMPushMagicMismatchMaxAge, _kRMPushServiceBootstrapNameDev,
+                          _kRMPushServiceBootstrapNameProd ]
+    objc-classes:       [ _RMConfigurationClient, _RMConfigurationServer, _RMConfigurationServerDelegate, _RMCryptoUtils,
+                          _RMKeychainAccess, _RMLog, _RMMetadataStore, _RMSCRTUtils, _RMToolClient, _RMToolServer,
+                          _RMToolServerDelegate ]
+    objc-ivars:         [ _RMConfigurationClient._connection, _RMConfigurationServer._delegate, _RMConfigurationServer._listener,
+                          _RMConfigurationServerDelegate._target, _RMMetadataStore.__kvStore, _RMMetadataStore._metadataFilePath,
+                          _RMToolClient._connection, _RMToolServer._delegate, _RMToolServer._listener,
+                          _RMToolServerDelegate._target ]
+...

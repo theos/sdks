@@ -1,0 +1,24 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftos.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4types7CVarArg_pdtF,
+                          __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4types7CVarArg_pdtFfA1_,
+                          __T02os0A4_logys12StaticStringV_SVSg3dsoSo5OSLogC0B0SC0F4TypeV4types7CVarArg_pdtFfA2_,
+                          __T02os16OS_LOG_TYPE_INFOSC9OSLogTypeVvg, __T02os17OS_LOG_TYPE_DEBUGSC9OSLogTypeVvg,
+                          __T02os17OS_LOG_TYPE_ERRORSC9OSLogTypeVvg, __T02os17OS_LOG_TYPE_FAULTSC9OSLogTypeVvg,
+                          __T02os19OS_LOG_TYPE_DEFAULTSC9OSLogTypeVvg, __T0SC9OSLogTypeV2osE4infoABvau,
+                          __T0SC9OSLogTypeV2osE4infoABvgZ, __T0SC9OSLogTypeV2osE4infoABvpZ, __T0SC9OSLogTypeV2osE5debugABvau,
+                          __T0SC9OSLogTypeV2osE5debugABvgZ, __T0SC9OSLogTypeV2osE5debugABvpZ, __T0SC9OSLogTypeV2osE5errorABvau,
+                          __T0SC9OSLogTypeV2osE5errorABvgZ, __T0SC9OSLogTypeV2osE5errorABvpZ, __T0SC9OSLogTypeV2osE5faultABvau,
+                          __T0SC9OSLogTypeV2osE5faultABvgZ, __T0SC9OSLogTypeV2osE5faultABvpZ, __T0SC9OSLogTypeV2osE7defaultABvau,
+                          __T0SC9OSLogTypeV2osE7defaultABvgZ, __T0SC9OSLogTypeV2osE7defaultABvpZ, __T0So5OSLogC2osE7defaultABvau,
+                          __T0So5OSLogC2osE7defaultABvgZ, __T0So5OSLogC2osE7defaultABvpZ, __T0So5OSLogC2osE8disabledABvau,
+                          __T0So5OSLogC2osE8disabledABvgZ, __T0So5OSLogC2osE8disabledABvpZ,
+                          __T0So5OSLogC2osEABSS9subsystem_SS8categorytcfC, __T0So5OSLogC2osEABSS9subsystem_SS8categorytcfc,
+                          '__swift_FORCE_LOAD_$_swiftos', __swift_os_log, __swift_os_log_return_address ]
+...

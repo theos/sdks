@@ -1,0 +1,10 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/CloudKitCode.framework/CloudKitCode
+current-version:       736.216
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ CloudKitCodeProtobufTests, cloudphotod, ckcodetest ]
+...

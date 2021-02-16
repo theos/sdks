@@ -1,0 +1,24 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/AccessibilityBundles/PhotosEditUI.axbundle/PhotosEditUI
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _accessibilityPhotosEditUILocalizedString ]
+    objc-classes:       [ _AXPhotosEditUIGlue, _PUAdjustmentsModeBarAccessibility, _PUAdjustmentsModePickerCellAccessibility,
+                          _PUAdjustmentsModeSliderCellAccessibility, _PUAdjustmentsToolControllerAccessibility,
+                          _PUCompactAdjustmentsModeBarAccessibility, _PUCropHandleViewAccessibility,
+                          _PUCropToolControllerAccessibility, _PUFiltersToolControllerAccessibility,
+                          _PUPhotoEditEffectCellAccessibility, _PUPhotoEditViewControllerAccessibility,
+                          _PURegularAdjustmentsModeBarAccessibility, _PUTiltWheelControlAccessibility,
+                          _PUTrimToolControllerAccessibility, _PUVideoEditViewControllerAccessibility,
+                          ___PUAdjustmentsModeBarAccessibility_super, ___PUAdjustmentsModePickerCellAccessibility_super,
+                          ___PUAdjustmentsModeSliderCellAccessibility_super, ___PUAdjustmentsToolControllerAccessibility_super,
+                          ___PUCompactAdjustmentsModeBarAccessibility_super, ___PUCropHandleViewAccessibility_super,
+                          ___PUCropToolControllerAccessibility_super, ___PUFiltersToolControllerAccessibility_super,
+                          ___PUPhotoEditEffectCellAccessibility_super, ___PUPhotoEditViewControllerAccessibility_super,
+                          ___PURegularAdjustmentsModeBarAccessibility_super, ___PUTiltWheelControlAccessibility_super,
+                          ___PUTrimToolControllerAccessibility_super, ___PUVideoEditViewControllerAccessibility_super ]
+...

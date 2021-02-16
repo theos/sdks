@@ -1,0 +1,13 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftCallKit.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T0So23CXProviderConfigurationC7CallKitE20supportedHandleTypess3SetVySo8CXHandleC0F4TypeOGvg,
+                          __T0So23CXProviderConfigurationC7CallKitE20supportedHandleTypess3SetVySo8CXHandleC0F4TypeOGvm,
+                          __T0So23CXProviderConfigurationC7CallKitE20supportedHandleTypess3SetVySo8CXHandleC0F4TypeOGvs,
+                          '__swift_FORCE_LOAD_$_swiftCallKit' ]
+...

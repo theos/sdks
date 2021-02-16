@@ -1,0 +1,11 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /Developer/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/libfsmonitor_interpose.dylib
+current-version:       64068
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _FSM_shared_memory_address, _fsmonitor_interposeVersionNumber, _fsmonitor_interposeVersionString ]
+    objc-classes:       [ _DTFSMonitor ]
+...

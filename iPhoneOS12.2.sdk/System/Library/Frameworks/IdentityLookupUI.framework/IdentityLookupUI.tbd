@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: 77A2BAB0-3E01-3060-86C4-B5E8B580F1AA', 'arm64e: 6B9441A6-CB5E-31FC-87AB-347E78594D88' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/IdentityLookupUI.framework/IdentityLookupUI
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:    [ ILClassificationUIExtensionContext, ILClassificationUIExtensionHostContext, 
+                       ILClassificationUIExtensionHostViewController, ILClassificationUIExtensionViewController ]
+...

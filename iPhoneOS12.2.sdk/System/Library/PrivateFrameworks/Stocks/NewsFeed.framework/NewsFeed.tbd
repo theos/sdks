@@ -1,0 +1,15 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Stocks/NewsFeed.framework/NewsFeed
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    allowed-clients:    [ NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests, Stocks, StocksAnalytics,
+                          StocksAnalyticsTests, StocksCore, StocksCoreTests, StocksTests, StocksToday, StocksUI, StocksUITests ]
+    symbols:            [ _NewsFeedVersionNumber, _NewsFeedVersionString ]
+    objc-classes:       [ _NENewsFeedAssembly, _NERendererAssembly, _NEStylerAssembly, __TtC8NewsFeed14GapOfflineView,
+                          __TtC8NewsFeed17ImageHeadlineView, __TtC8NewsFeed18HeadlineFooterView, __TtC8NewsFeed7GapView,
+                          __TtC8NewsFeed9EmptyView ]
+...

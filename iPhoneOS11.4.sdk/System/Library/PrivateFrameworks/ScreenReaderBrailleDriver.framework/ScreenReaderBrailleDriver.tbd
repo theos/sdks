@@ -1,0 +1,16 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ScreenReaderBrailleDriver.framework/ScreenReaderBrailleDriver
+current-version:       390
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _SCRDAlva6SeriesAppendKeyEvent, _SCRDHandyTechCreateExtendedProtocolRequestPacket,
+                          _SCRDHandyTechDisplaySizeForDeviceID, _SCRDHandyTechDisplayUsesExtendedProtocol,
+                          _SCRDHandyTechExtractEventsFromBuffer, _kSCRDHandyTechBluetoothConfigServiceName,
+                          _kSCRDHandyTechBluetoothHardwareServiceName ]
+    objc-classes:       [ _SCRDFileReader ]
+    objc-ivars:         [ _SCRDFileReader._delegate, _SCRDFileReader._fileHandle, _SCRDFileReader._readerThread,
+                          _SCRDFileReader._threadStartCount ]
+...

@@ -1,0 +1,11 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftHomeKit.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T07HomeKit49HMCharacteristicPropertySupportsEventNotificationSSvau,
+                          __T07HomeKit49HMCharacteristicPropertySupportsEventNotificationSSvp, '__swift_FORCE_LOAD_$_swiftHomeKit' ]
+...

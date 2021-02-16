@@ -1,0 +1,32 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AMPCoreUI.framework/AMPCoreUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _AMPCoreUIVersionNumber, _AMPCoreUIVersionString ]
+    objc-classes:       [ _AMPButton, _AMPOnboardingFeature, _AMPOnboardingFeatureView, _AMPOnboardingHeaderView,
+                          _AMPOnboardingMultiFeatureHeaderView, _AMPOnboardingViewController, _AMPPrivacyAnimatedTransitioning,
+                          _AMPPrivacyPresentationController, _AMPPrivacyViewController, _AMPTintedBackgroundButton ]
+    objc-ivars:         [ _AMPOnboardingFeature._descriptionText, _AMPOnboardingFeature._image, _AMPOnboardingFeature._titleText,
+                          _AMPOnboardingFeatureView._descriptionLabel, _AMPOnboardingFeatureView._imageView,
+                          _AMPOnboardingFeatureView._titleLabel, _AMPOnboardingHeaderView._containerHeight,
+                          _AMPOnboardingHeaderView._descriptionLabel, _AMPOnboardingHeaderView._imageView,
+                          _AMPOnboardingHeaderView._isPresentedInFormSheet, _AMPOnboardingHeaderView._titleLabel,
+                          _AMPOnboardingMultiFeatureHeaderView._containerHeight,
+                          _AMPOnboardingMultiFeatureHeaderView._featureViews,
+                          _AMPOnboardingMultiFeatureHeaderView._isPresentedInFormSheet,
+                          _AMPOnboardingMultiFeatureHeaderView._titleLabel, _AMPOnboardingViewController._backdropView,
+                          _AMPOnboardingViewController._headerView, _AMPOnboardingViewController._metricsQueue,
+                          _AMPOnboardingViewController._multiFeatureHeaderView, _AMPOnboardingViewController._primaryButton,
+                          _AMPOnboardingViewController._primaryButtonCallback,
+                          _AMPOnboardingViewController._privacyLinkController,
+                          _AMPOnboardingViewController._statusBarVisualEffectView, _AMPOnboardingViewController._viewHasAppeared,
+                          _AMPPrivacyAnimatedTransitioning._presentation, _AMPPrivacyAnimatedTransitioning._viewController,
+                          _AMPPrivacyPresentationController._dimmingView, _AMPPrivacyViewController._continueButton,
+                          _AMPPrivacyViewController._identifier, _AMPPrivacyViewController._infoLabel,
+                          _AMPPrivacyViewController._linkController, _AMPPrivacyViewController._scrollView,
+                          _AMPPrivacyViewController._titleLabel, _AMPPrivacyViewController._url ]
+...

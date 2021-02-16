@@ -1,0 +1,13 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Swift/libswiftMetalKit.dylib
+current-version:       0
+compatibility-version: 1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ __T08MetalKit030MTKModelIOVertexDescriptorFromA9WithErrorSo09MDLVertexE0CSo09MTLVertexE0CKF,
+                          __T08MetalKit44MTKMetalVertexDescriptorFromModelIOWithErrorSo09MTLVertexE0CSgSo09MDLVertexE0CKF,
+                          __T0So7MTKMeshC8MetalKitE9newMeshesSaySo7MDLMeshCG13modelIOMeshes_SayABG05metalcE0tSo8MDLAssetC5asset_So9MTLDevice_p6devicetKFZ,
+                          '__swift_FORCE_LOAD_$_swiftMetalKit' ]
+...

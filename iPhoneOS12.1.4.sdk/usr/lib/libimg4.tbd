@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: DE24A3D6-C095-3397-9BDF-B075AE6F86B6', 'arm64e: 36535E25-4517-3EA0-A474-5784A2F891BB' ]
+platform:        ios
+install-name:    /usr/lib/libimg4.dylib
+current-version: 1.250.8
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ __img4_environment_platform, __img4_environment_ppl, __img4_environment_trust_cache, 
+                       __img4_nonce_domain_test, __img4_nonce_domain_trust_cache, 
+                       _img4_destroy, _img4_get_trusted_external_payload, _img4_get_trusted_payload, 
+                       _img4_init, _img4_nonce_domain_copy_nonce, _img4_nonce_domain_roll_nonce, 
+                       _img4_payload_destroy, _img4_payload_init, _img4_set_nonce, 
+                       _img4_set_nonce_domain ]
+...

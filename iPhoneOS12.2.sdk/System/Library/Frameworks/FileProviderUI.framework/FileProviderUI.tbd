@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, armv7s, arm64, arm64e ]
+uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
+                   'arm64: D28A64A5-4D8E-3153-AC36-78CE9D6848AE', 'arm64e: EA1D94D5-C241-37C8-92D4-F7BEAACEB02D' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/FileProviderUI.framework/FileProviderUI
+current-version: 68.100.44
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
+    symbols:         [ _FPUIActionIdentifierAuthenticate, _FPUIActionViewControllerNavigationBarDoneButtonIdentifier, 
+                       _FPUIActionViewControllerNavigationBarIdentifier, _FPUIErrorDomain, 
+                       _FPUIPresentActionButtonIdentifier, _FPUInternalActionCancelButtonIdentifier, 
+                       _FPUInternalActionContentLabelIdentifier, _FPUInternalActionFailButtonIdentifier, 
+                       _FPUInternalActionSucceedButtonIdentifier, _FPUInternalActionTypeLabelIdentifier ]
+    objc-classes:    [ FPUIAction, FPUIActionExtensionContext, FPUIActionExtensionViewController, 
+                       FPUIActionViewController, FPUIManager ]
+...

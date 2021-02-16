@@ -1,0 +1,10 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AppleCV3DModels.framework/AppleCV3DModels
+current-version:       1.23.1
+compatibility-version: 1.23.1
+exports:
+  - archs:              [ armv7, armv7s, arm64 ]
+    symbols:            [ _CV3DModelsCreateSceneUnderstandingModelData, _CV3DModelsGetVersionInfo ]
+...
