@@ -1,0 +1,25 @@
+framework module SensorKit {
+    umbrella header "SensorKit.h"
+    export *
+
+    explicit module AmbientLightSensor {
+        header "SRAmbientLightSample.h"
+        export *
+    }
+
+    explicit module Visits {
+        header "SRVisit.h"
+        export *
+    }
+
+    explicit module DeletionRecord {
+        header "SRDeletionRecord.h"
+        header "SRSensors+SRDeletionRecord.h"
+        export *
+    }
+
+    explicit module WristDetection {
+        header "SRWristDetection.h"
+        export *
+    }
+}

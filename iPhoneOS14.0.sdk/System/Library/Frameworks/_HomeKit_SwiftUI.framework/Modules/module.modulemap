@@ -1,0 +1,11 @@
+framework module _HomeKit_SwiftUI {
+  umbrella header "_HomeKit_SwiftUI.h"
+
+  export *
+  module * { export * }
+}
+
+module _HomeKit_SwiftUI.Swift {
+    header "_HomeKit_SwiftUI-Swift.h"
+    requires objc
+}

@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Health/FeedItemPlugins/HighlightsHeavy.healthplugin/HighlightsHeavy
+current-version:       0
+compatibility-version: 0
+swift-abi-version:     6
+objc-constraint:       retain_release
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ __objc_empty_cache, __swiftEmptyArrayStorage,
+                            _objc_opt_self, _swift_allocObject,
+                            _swift_deallocClassInstance,
+                            _swift_deletedMethodError, _swift_retain,
+                            dyld_stub_binder ]
+    objc-classes:         [ _TtCs12_SwiftObject ]
+...

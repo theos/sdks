@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.2.10.317 clang-1200.0.20.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DeveloperToolsSupport
+import Foundation
+import Swift
+@available(iOS 14.0, OSX 10.16, tvOS 14.0, watchOS 7.0, *)
+public struct LibraryItem {
+  @available(iOS 14.0, OSX 10.16, tvOS 14.0, watchOS 7.0, *)
+  public struct Category {
+    public static let effect: DeveloperToolsSupport.LibraryItem.Category
+    public static let layout: DeveloperToolsSupport.LibraryItem.Category
+    public static let control: DeveloperToolsSupport.LibraryItem.Category
+    public static let other: DeveloperToolsSupport.LibraryItem.Category
+  }
+  public init<SnippetExpressionType>(_ snippet: @autoclosure () -> SnippetExpressionType, visible: Swift.Bool = true, title: Swift.String? = nil, category: DeveloperToolsSupport.LibraryItem.Category = .other, matchingSignature: Swift.String? = nil)
+}
+@available(iOS 14.0, OSX 10.16, tvOS 14.0, watchOS 7.0, *)
+@_functionBuilder public struct LibraryContentBuilder {
+  public static func buildBlock(_ segments: DeveloperToolsSupport.LibraryItem...) -> [DeveloperToolsSupport.LibraryItem]
+}
+@available(iOS 14.0, OSX 10.16, tvOS 14.0, watchOS 7.0, *)
+public protocol LibraryContentProvider {
+  associatedtype ModifierBase = Any
+  var views: [DeveloperToolsSupport.LibraryItem] { get }
+  func modifiers(base: Self.ModifierBase) -> [DeveloperToolsSupport.LibraryItem]
+}
+@available(iOS 14.0, OSX 10.16, tvOS 14.0, watchOS 7.0, *)
+extension LibraryContentProvider {
+  public var views: [DeveloperToolsSupport.LibraryItem] {
+    get
+  }
+  public func modifiers(base: Self.ModifierBase) -> [DeveloperToolsSupport.LibraryItem]
+}

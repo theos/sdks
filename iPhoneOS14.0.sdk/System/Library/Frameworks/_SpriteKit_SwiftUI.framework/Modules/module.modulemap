@@ -1,0 +1,11 @@
+framework module _SpriteKit_SwiftUI {
+  umbrella header "_SpriteKit_SwiftUI.h"
+
+  export *
+  module * { export * }
+}
+
+module _SpriteKit_SwiftUI.Swift {
+    header "_SpriteKit_SwiftUI-Swift.h"
+    requires objc
+}

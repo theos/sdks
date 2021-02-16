@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoProcessors/FPDisparityV2.bundle/FPDisparityV2
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    objc-classes:         [ FigFocusPixelDisparityGenerator ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _CFRelease, _CMGetAttachment,
+                            _CMSampleBufferGetImageBuffer,
+                            _CVPixelBufferGetBaseAddress,
+                            _CVPixelBufferGetBaseAddressOfPlane,
+                            _CVPixelBufferGetBytesPerRow,
+                            _CVPixelBufferGetBytesPerRowOfPlane,
+                            _CVPixelBufferGetHeight,
+                            _CVPixelBufferGetPixelFormatType,
+                            _CVPixelBufferGetWidth,
+                            _CVPixelBufferLockBaseAddress,
+                            _CVPixelBufferUnlockBaseAddress, _CreatePixelBuffer,
+                            _F16toF32, _FigSignalErrorAt2, _NSLog,
+                            _WritePixelBufferToFile, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___assert_rtn,
+                            ___chkstk_darwin, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_pack_fill, __os_log_pack_size, _bzero, _expf,
+                            _fclose, _fig_log_emit, _fig_note_initialize_work,
+                            _fopen, _fprintf, _fputc, _free, _fwrite,
+                            _gGMFigKTraceEnabled,
+                            _kFigCaptureCameraInfoKey_FocalPlaneCharacterizationCoefficients,
+                            _kFigCapturePortType_BackFacingCamera,
+                            _kFigCapturePropertyValue_ModuleSerialNumberString,
+                            _kFigCaptureSampleBufferAttachmentKey_MetadataDictionary,
+                            _kFigCaptureSampleBufferProcessorOption_CameraInfoByPortType,
+                            _kFigCaptureSampleBufferProcessorOption_TuningParameters,
+                            _kFigCaptureStreamProperty_ModuleInfo, _kdebug_trace,
+                            _logf, _malloc, _memcpy, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _powf, dyld_stub_binder ]
+    objc-classes:         [ FigMetalContext, MTLFunctionConstantValues,
+                            MTLRenderPassDescriptor, MTLRenderPipelineDescriptor,
+                            MTLTextureDescriptor, NSArray, NSBundle, NSData,
+                            NSFileManager, NSMutableArray, NSNumber, NSObject,
+                            NSString ]
+...

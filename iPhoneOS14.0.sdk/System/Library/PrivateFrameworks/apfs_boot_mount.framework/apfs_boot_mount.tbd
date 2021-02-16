@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/apfs_boot_mount.framework/apfs_boot_mount
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _perform_mount_phase ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _APFSContainerVolumeGroupGetVolumes,
+                            _APFSGetVolumeGroupID, _APFSVolumeRole,
+                            _APFSVolumeRoleFind, _CFArrayAppendValue,
+                            _CFArrayCreateMutable, _CFArrayGetCount,
+                            _CFArrayGetValueAtIndex, _CFBooleanGetValue,
+                            _CFDictionaryGetTypeID, _CFDictionaryGetValue,
+                            _CFDictionarySetValue, _CFEqual, _CFGetTypeID,
+                            _CFNumberCreate, _CFNumberGetValue, _CFRelease,
+                            _CFStringCreateCopy, _CFStringCreateWithCString,
+                            _CFStringGetCString, _CFStringGetCStringPtr,
+                            _CFStringGetTypeID, _IOBSDNameMatching,
+                            _IOIteratorNext, _IOObjectConformsTo, _IOObjectRelease,
+                            _IOObjectRetain, _IORegistryEntryCreateCFProperty,
+                            _IORegistryEntryGetChildIterator,
+                            _IORegistryEntryGetParentEntry,
+                            _IORegistryEntryGetParentIterator,
+                            _IORegistryEntrySearchCFProperty,
+                            _IOServiceGetMatchingService, _IOServiceMatching,
+                            ___CFConstantStringClassReference, ___assert_rtn,
+                            ___error, ___sprintf_chk, ___stack_chk_fail,
+                            ___stack_chk_guard, ___stderrp, ___strlcpy_chk, _access,
+                            _bzero, _calloc, _fcntl, _fprintf, _free, _fstat, _getmntinfo,
+                            _ioctl, _kCFAllocatorDefault, _kCFBooleanTrue,
+                            _kCFTypeArrayCallBacks, _kIOMasterPortDefault, _malloc,
+                            _memmove, _mkdir, _mount,
+                            _os_variant_has_internal_content, _realloc,
+                            _realpath$DARWIN_EXTSN, _sleep, _snprintf, _sscanf, _stat,
+                            _statfs, _strchr, _strcmp, _strdup, _strerror, _strlcpy,
+                            _strlen, _strncmp, _strndup, _strrchr, _strtoul,
+                            _uuid_is_null, _uuid_parse, _vfprintf, dyld_stub_binder ]
+...

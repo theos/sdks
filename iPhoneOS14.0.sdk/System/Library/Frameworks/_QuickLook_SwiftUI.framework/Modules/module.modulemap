@@ -1,0 +1,11 @@
+framework module _QuickLook_SwiftUI {
+  umbrella header "_QuickLook_SwiftUI.h"
+
+  export *
+  module * { export * }
+}
+
+module _QuickLook_SwiftUI.Swift {
+    header "_QuickLook_SwiftUI-Swift.h"
+    requires objc
+}

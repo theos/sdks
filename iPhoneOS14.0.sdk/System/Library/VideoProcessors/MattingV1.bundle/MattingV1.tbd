@@ -1,0 +1,51 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoProcessors/MattingV1.bundle/MattingV1
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    objc-classes:         [ FigMatting ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _CGRectIsNull, _CGRectNull,
+                            _CVPixelBufferGetBaseAddress,
+                            _CVPixelBufferGetBaseAddressOfPlane,
+                            _CVPixelBufferGetBytesPerRow,
+                            _CVPixelBufferGetBytesPerRowOfPlane,
+                            _CVPixelBufferGetHeight,
+                            _CVPixelBufferGetPixelFormatType,
+                            _CVPixelBufferGetWidth,
+                            _CVPixelBufferLockBaseAddress,
+                            _CVPixelBufferUnlockBaseAddress, _F16toF32,
+                            _FigSignalErrorAt2, _MPSSetHeapCacheDuration, _NSLog,
+                            _WritePixelBufferToFile, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___assert_rtn,
+                            ___chkstk_darwin, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_pack_fill, __os_log_pack_size, _bzero,
+                            _dispatch_once, _fclose, _fig_log_emit,
+                            _fig_note_initialize_work, _fopen, _fprintf, _fputc, _free,
+                            _fwrite,
+                            _kFigCaptureSampleBufferProcessorOption_TuningParameters,
+                            _malloc, _objc_alloc, _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _powf, dyld_stub_binder ]
+    objc-classes:         [ FigMetalContext, MPSImageAreaMin,
+                            MPSImageBilinearScale, MPSImageBox, MPSImageDescriptor,
+                            MPSImageThresholdBinary,
+                            MPSImageThresholdBinaryInverse, MPSTemporaryImage,
+                            MTLTextureDescriptor, NSArray, NSBundle, NSConstantArray,
+                            NSConstantIntegerNumber, NSDictionary, NSFileManager,
+                            NSMutableData, NSNumber, NSObject, NSSet, NSString ]
+...

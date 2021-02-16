@@ -1,0 +1,65 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoProcessors/DepthProcessor.bundle/DepthProcessor
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    objc-classes:         [ FigStillDepthProcessorANE, FigStillDepthProcessorGPU,
+                            FigStreamingDepthProcessorCPU ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _CFRelease, _CGRectZero, _CVPixelBufferGetBaseAddress,
+                            _CVPixelBufferGetBaseAddressOfPlane,
+                            _CVPixelBufferGetBytesPerRow,
+                            _CVPixelBufferGetBytesPerRowOfPlane,
+                            _CVPixelBufferGetHeight, _CVPixelBufferGetIOSurface,
+                            _CVPixelBufferGetPixelFormatType,
+                            _CVPixelBufferGetWidth,
+                            _CVPixelBufferLockBaseAddress, _CVPixelBufferRelease,
+                            _CVPixelBufferUnlockBaseAddress, _CreatePixelBuffer,
+                            _FigCFDictionaryGetBooleanIfPresent,
+                            _FigCFDictionaryGetFloat32IfPresent,
+                            _FigCFDictionaryGetInt32IfPresent, _FigGetUpTime,
+                            _FigSignalErrorAt2, _MGGetBoolAnswer,
+                            __NSConcreteGlobalBlock,
+                            __SparseDestroyOpaqueNumeric_Float,
+                            __SparseFactorSymmetric_Float,
+                            __SparseGetOptionsFromSymbolicFactor,
+                            __SparseSolveOpaque_Float, __SparseTrap,
+                            __Unwind_Resume,
+                            __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv,
+                            __ZSt9terminatev, ___CFConstantStringClassReference,
+                            ___NSDictionary0__struct, ___assert_rtn,
+                            ___chkstk_darwin, ___cxa_begin_catch, ___fpclassifyf,
+                            ___gxx_personality_v0, ___invert_d3, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_log_default, __os_log_error_impl,
+                            __os_log_pack_fill, __os_log_pack_size, _bzero, _calloc,
+                            _dispatch_once, _dlopen, _expf, _fig_log_emit,
+                            _fig_note_initialize_work, _free, _gGMFigKTraceEnabled,
+                            _kFigCapturePortType_FrontFacingInfraredCamera,
+                            _kFigStereoFusionSampleBufferProcessorMetadata_ExifOrientation,
+                            _kdebug_trace, _malloc, _memcpy, _memmove, _memset,
+                            _memset_pattern16, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleasePoolPop, _objc_autoreleasePoolPush,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getClass,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_storeStrong, _os_log_type_enabled, _snprintf,
+                            _vImageConvert_PlanarFtoPlanar8,
+                            _vImageConvolve_PlanarF,
+                            _vImageHistogramCalculation_PlanarF,
+                            _vImageScale_Planar8, dyld_stub_binder ]
+    objc-classes:         [ FigM2MController, FigMetalContext,
+                            MTLFunctionConstantValues, MTLTextureDescriptor,
+                            NSArray, NSBundle, NSDictionary, NSMutableArray, NSNumber,
+                            NSObject, NSString ]
+...

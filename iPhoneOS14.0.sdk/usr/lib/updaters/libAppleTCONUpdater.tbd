@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/updaters/libAppleTCONUpdater.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _AppleTCONUpdaterCreate,
+                            _AppleTCONUpdaterExecCommand,
+                            _AppleTCONUpdaterIsDone ]
+undefineds:
+  - archs:                [ armv7, armv7s, arm64, arm64e, i386, x86_64 ]
+    symbols:              [ _CFDictionaryAddValue, _CFDictionaryCreateMutable,
+                            _CFErrorCreate, _CFGetAllocator, _CFRelease, _CFRetain,
+                            _CFStringCompare, _CFStringCreateWithFormat,
+                            _CFStringGetCStringPtr, __CFRuntimeCreateInstance,
+                            __CFRuntimeRegisterClass, __NSConcreteGlobalBlock,
+                            ___CFConstantStringClassReference, ___chkstk_darwin,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __os_log_default, __os_log_impl, _dispatch_once,
+                            _kCFAllocatorDefault,
+                            _kCFCopyStringDictionaryKeyCallBacks,
+                            _kCFErrorLocalizedDescriptionKey,
+                            _kCFTypeDictionaryValueCallBacks,
+                            _os_log_type_enabled, _vsnprintf, dyld_stub_binder ]
+...
