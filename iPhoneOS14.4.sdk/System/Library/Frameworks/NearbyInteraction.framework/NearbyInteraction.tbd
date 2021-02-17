@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A01F894B-5C5A-35E8-BC2C-0C0C0D94869E
+  - target:          arm64e-ios
+    value:           ACF64110-F29B-379B-A18D-28F300957C9E
+install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable, _NINearbyObjectDirectionNotAvailable, 
+                       _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
+                       _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
+                       _NINearbyObjectQuaternionNotAvailable ]
+    objc-classes:    [ NIConfiguration, NIDiscoveryToken, NIHomeDeviceConfiguration, 
+                       NINearbyObject, NINearbyPeerConfiguration, NIRegionPredicate, 
+                       NISession, _NIWiFiRangingTestConfiguration ]
+...

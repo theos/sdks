@@ -1,0 +1,23 @@
+---
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/DragUI.framework/DragUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _DRLogTarget,
+                            _DRPasteAnnouncementAccessibilityValueKey,
+                            _DRPasteAnnouncementEntitlement,
+                            _DRPasteAnnouncementServiceName ]
+    objc-classes:         [ _DRPasteAnnouncement,
+                            _DRPasteAnnouncementApplicationEndpoint,
+                            _DRPasteAnnouncementContinuityEndpoint,
+                            _DRPasteAnnouncementEndpoint ]
+    objc-ivars:           [ _DRPasteAnnouncement._destination,
+                            _DRPasteAnnouncement._pasteboardUUID,
+                            _DRPasteAnnouncement._source,
+                            _DRPasteAnnouncementApplicationEndpoint._flags,
+                            _DRPasteAnnouncementApplicationEndpoint._persistentIdentifier,
+                            _DRPasteAnnouncementEndpoint._localizedName ]
+...

@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           63CB42F5-53FE-3F1F-9B8D-4AE433779070
+  - target:          armv7s-ios
+    value:           8EAEDBF2-D2FF-3433-9BF1-2CEB3DA89DE7
+  - target:          arm64-ios
+    value:           18FA589F-A808-3E75-8660-7BCFF89DAC75
+  - target:          arm64e-ios
+    value:           AA940236-47E7-3D2F-9A83-ACFA23A5A8F3
+install-name:    '/System/Library/Frameworks/AdSupport.framework/AdSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ASIdentifierManager ]
+...

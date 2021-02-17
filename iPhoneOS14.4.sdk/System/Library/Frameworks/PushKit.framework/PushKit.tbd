@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           312F4D86-E107-3B8C-ACCE-032258DC4C69
+  - target:          armv7s-ios
+    value:           3609F0D4-7838-3E7E-B034-A51BF2CA4FAD
+  - target:          arm64-ios
+    value:           629D513A-FD1D-3994-8E9B-AA7BEF62158C
+  - target:          arm64e-ios
+    value:           EA9B2FF9-825F-30A2-9DC3-8FE3E70FD6DE
+install-name:    '/System/Library/Frameworks/PushKit.framework/PushKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PushKitVersionNumber, _PushKitVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PKPushIncomingCallReportedNotification, _PKPushTypeComplication, 
+                       _PKPushTypeFileProvider, _PKPushTypeUserNotifications, _PKPushTypeVoIP ]
+    objc-classes:    [ PKPushCredentials, PKPushPayload, PKPushRegistry, PKUserNotificationsRemoteNotificationServiceConnection ]
+...
