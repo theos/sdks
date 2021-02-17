@@ -1,5 +1,0 @@
-framework module XCTest [system] {
-    umbrella header "XCTest.h"
-    requires objc
-    export *
-}
