@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Home.framework/Home
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _HFAccessControlValueResultKey, _HFAccessoryInfoDetailsItemPreferredOrderKey,
                           _HFAccessoryInfoTypeNetworkAddressPreferredOrderKey, _HFAccessoryInfoTypeNetworkNamePreferredOrderKey,
                           _HFAccessorySettingAdapterIdentifierDataAnalytics, _HFAccessorySettingAdapterIdentifierDeviceOptions,

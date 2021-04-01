@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SilexText.framework/SilexText
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _STCanvasCreate, _STCanvasCreateWithClass, _SilexTextVersionNumber, _SilexTextVersionString,
                           _THWContainerLayoutMaximumWrapPathElementCount, __Z28UIBezierPathSilexPathApplierPvPK13CGPathElement,
                           ___DDParsecCollectionViewController ]

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement
 current-version:       25.9
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/Catalyst.framework/Catalyst ]
     symbols:            [ _DMFAllConfigurationOrganizationTypes, _DMFAppLog, _DMFBundleIdentifierErrorKey, _DMFCEMReasonCodeBad,
                           _DMFCEMReasonCodeConflict, _DMFCEMReasonCodeCouldNotDecrypt, _DMFCEMReasonCodeInvalidSignature,

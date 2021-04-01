@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Preferences.framework/Preferences
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACMContextAddCredential, _ACMContextAddCredentialWithScope, _ACMContextContainsCredentialType,
                           _ACMContextContainsCredentialTypeEx, _ACMContextContainsPassphraseCredentialWithPurpose,
                           _ACMContextCreate, _ACMContextCreateWithExternalForm, _ACMContextDelete, _ACMContextGetExternalForm,

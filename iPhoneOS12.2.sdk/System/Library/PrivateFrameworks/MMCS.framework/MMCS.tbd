@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MMCS.framework/MMCS
 current-version:       438.212
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _C3BaseRelease, _C3BaseRetain, _IsValidCFDictionary,
                           _MMCSComputeSignatureAndRegisterItemWithDescriptor, _MMCSEngineCancelRequests,
                           _MMCSEngineCopyStatusReport, _MMCSEngineCreate, _MMCSEngineDestroy, _MMCSEngineGetRequestMetrics,

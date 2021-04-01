@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression
 current-version:       125
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AFSCLockFileFd, _AFSCLockFilePath, _AFSCUnlockFile,
                             _CloseStreamCompressor, _CompressFile,
                             _CreateCompressionQueue, _CreateStreamCompressor,

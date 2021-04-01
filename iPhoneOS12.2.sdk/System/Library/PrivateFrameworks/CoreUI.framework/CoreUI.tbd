@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
 current-version:       499.10
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CSIEqualMetrics, _CSIIllegalMetrics, _CUIBlendModeDescriptionFromCGBlendMode,
                           _CUIBlendModeLSRDescriptionFromCGBlendMode, _CUICGBlendModeFromLSRDescription, _CUICGImageGetAlphaInfo,
                           _CUICalcNonAlphaAreaOfImage, _CUICalculateExtrusionMaskOfImage, _CUIColorHistogramARGBIntersection,

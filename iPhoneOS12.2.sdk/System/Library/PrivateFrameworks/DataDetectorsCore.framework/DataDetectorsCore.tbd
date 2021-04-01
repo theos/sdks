@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore
 current-version:       590.25
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DDAddressResultCanBeMergedWith, _DDApplyOptions, _DDBinderAIMOrEmailKey,
                           _DDBinderAddressBookContactNameKey, _DDBinderAirlineCodeKey, _DDBinderApproxTimeKey,
                           _DDBinderAuthCodeKey, _DDBinderBonjourAddressKey, _DDBinderCityKey, _DDBinderClientSourceKey,

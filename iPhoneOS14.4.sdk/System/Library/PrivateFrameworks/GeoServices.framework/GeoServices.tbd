@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
 current-version:       1757.32.10
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AllRequestsKeyPathFragment,
                             _AnalyticsLoggingSubsystem,
                             _AnyRequestKeyPathFragment, _AppKeyPathPrefix,

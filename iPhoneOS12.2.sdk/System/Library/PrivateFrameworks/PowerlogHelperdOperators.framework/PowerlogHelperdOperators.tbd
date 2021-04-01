@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PowerlogHelperdOperators.framework/PowerlogHelperdOperators
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ARSessionDidPauseDarwinNotification, _ARSessionDidRunDarwinNotification,
                           _IOReportAddChannelDescription, _IOReportArrayGetValueAtIndex, _IOReportChannelCopyDescription,
                           _IOReportChannelGetCategories, _IOReportChannelGetChannelID, _IOReportChannelGetChannelName,

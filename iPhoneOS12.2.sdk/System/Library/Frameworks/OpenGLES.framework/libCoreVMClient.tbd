@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __cvmsIsAssert, __cvmsIsMonolithic, _cvms_connection_control, _cvms_connection_create,
                           _cvms_connection_has_service, _cvms_connection_release, _cvms_connection_retain,
                           _cvms_content_get_function_pointer, _cvms_content_get_segment_count, _cvms_content_get_segments,

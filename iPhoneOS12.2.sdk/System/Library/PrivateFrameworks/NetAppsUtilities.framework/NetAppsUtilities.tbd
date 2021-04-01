@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NACancelableCancel, _NAEmptyResult, _NAEqualObjects, _NAErrorDomain, _NAFutureCallbackStack,
                           _NAStringFromBOOL, __NADictionaryOfMetrics, __NAPopScopedDescriptor, __NAPushScopedDescriptor,
                           _kNAIdentityBuilderDefaultComparisonBlock, _kNAIdentityBuilderDefaultDoubleComparisionBlock,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NCLaunchStats.framework/NCLaunchStats
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _KeepAppsUpToDateEnabledChangedNotification, _kMGQueryhas ]
     objc-classes:       [ _NCLaunchStats ]
     objc-ivars:         [ _NCLaunchStats._appUpdateTimes, _NCLaunchStats._appsRequestingRefresh,

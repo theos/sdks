@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ImageCapture.framework/ImageCapture
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _APTPHostToLittle, _APTPLittleToHost, _APTPOperationCommandForProperty,
                           _APTPPropertyForOperationCommand, _APTPReadInformation, _APTPWriteInformation,
                           _CopyArrayOfHandlesFromBuffer, _CopyArrayOfHandlesFromBufferMaxSize,

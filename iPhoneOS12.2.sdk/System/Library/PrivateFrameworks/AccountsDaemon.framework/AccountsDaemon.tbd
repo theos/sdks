@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACAccountSyncClientID, _ACAccountSyncDataclassKeychainExtension, _ACAccountSyncDevices,
                           _ACAccountSyncExchangeKey, _ACAccountSyncExchangeType, _ACAccountSyncHostnameKeychainExtension,
                           _ACAccountSyncKeychainExtension, _ACAccountSyncMailClassKey, _ACAccountSyncMailProtocolKey,

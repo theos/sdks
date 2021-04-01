@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/ManagedEvent.framework/ManagedEvent
 current-version:       820.252.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _kSymptomConfigKeyChangeTarget, _kSymptomConfigKeyConditionDNS,
                           _kSymptomConfigKeyConditionPresenceTime, _kSymptomConfigKeyConditionSymptom1Counts,
                           _kSymptomConfigKeyConditionSymptom2Counts, _kSymptomConfigKeyConditionThreshold,

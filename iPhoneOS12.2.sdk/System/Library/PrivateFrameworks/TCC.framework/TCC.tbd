@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TCC.framework/TCC
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _TCCAccessCheckAuditToken, _TCCAccessCopyBundleIdentifiersDisabledForService,
                           _TCCAccessCopyBundleIdentifiersForService, _TCCAccessCopyInformation,
                           _TCCAccessCopyInformationForBundle, _TCCAccessDeclarePolicy, _TCCAccessGetOverride, _TCCAccessOverride,

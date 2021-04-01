@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ProofReader.framework/ProofReader
 current-version:       430.15.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AltAndWrite, _AltOneToMultiChrCnv, _Alt_Str, _AsciiStrCmp, _BinarySearch, _BuildEntry, _BuildForm,
                           _CMP_TLPOS, _CalExtBytesAfterCnv, _CalculateSize, _CloseInputBitFile, _CloseOutputBitFile,
                           _CloseOutputBuffer, _CloseRamFile, _ConvertAlts, _ConvertString,

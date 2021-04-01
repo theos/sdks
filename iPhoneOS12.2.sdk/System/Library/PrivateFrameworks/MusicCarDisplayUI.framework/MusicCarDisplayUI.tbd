@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MusicCarDisplayUI.framework/MusicCarDisplayUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MCDAlbumDetailFormat, _MCDAlbumPlaceholderImageWithStyle, _MCDAlbumsDetailViewControllerIdentifier,
                           _MCDAlbumsViewControllerIdentifier, _MCDArtistsViewControllerIdentifier,
                           _MCDBarButtonItemForNegativeSpacer, _MCDBrowsableContentNowPlayingIdentifiersUpdatedNotification,

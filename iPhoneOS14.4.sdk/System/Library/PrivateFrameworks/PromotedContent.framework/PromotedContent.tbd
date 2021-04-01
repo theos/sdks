@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/PromotedContent.framework/PromotedContent
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _PromotedContentVersionNumber,
                             _PromotedContentVersionString ]
     objc-classes:         [ _APPCBannerRepresentation, _APPCBaseContext,

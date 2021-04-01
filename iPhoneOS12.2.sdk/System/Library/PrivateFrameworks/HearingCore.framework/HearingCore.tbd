@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/HearingCore.framework/HearingCore
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AXHAMessageKeyIdentifier, _AXHAMessageKeyPayload, _AXHANULL, _AXHearingAidServerName,
                           _HCApplicationGetMainBundleIdentifier, _HCDeviceGetType, _HCHeardBundleName, _HCPerformSafeBlock,
                           _HCPreferencesBundleName, _HearingCoreVersionNumber, _HearingCoreVersionString ]

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Widgets.framework/Widgets
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ SpringBoard, SpringBoardUI, WidgetsTests, 'SpringBoard-Tests' ]
     symbols:            [ _NCBundleIDForPID, _WGApplicationIconForImage, _WGApplicationIdentifierForWidgetWithBundleIdentifier,
                           _WGAvailableWidgetsUpdatedNotification, _WGCachedNSHomeDirectory, _WGCachesPathForSandboxPath,

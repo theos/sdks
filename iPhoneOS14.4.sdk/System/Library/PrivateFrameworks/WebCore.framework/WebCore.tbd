@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/WebCore.framework/WebCore
 current-version:       610.3.7
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ Casablanca, DumpRenderTree, Remote, TVBooks, TestWebKitAPI,
                             WebCoreTestSupport, WebKit, WebKitLegacy,
                             WebKitTestRunner, iTunesU ]

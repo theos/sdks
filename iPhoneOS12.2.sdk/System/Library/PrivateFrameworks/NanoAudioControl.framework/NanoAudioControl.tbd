@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoAudioControl.framework/NanoAudioControl
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     objc-classes:       [ _NACAudioRoute, _NACAudioRouteBuffer, _NACAudioRoutesMessage, _NACCategoryMessage, _NACDaemonServer,
                           _NACEUVolumeLimitMessage, _NACEndpointObserver, _NACEventThrottler, _NACHapticIntensityMessage,
                           _NACHapticStateMessage, _NACIDSClient, _NACIDSServer, _NACMutedMessage, _NACOriginIdentifierMessage,

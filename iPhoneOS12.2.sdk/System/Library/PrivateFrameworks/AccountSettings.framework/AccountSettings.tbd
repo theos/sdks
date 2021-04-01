@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccountSettings.framework/AccountSettings
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ASLogSystem, _accountSettingsAccountsPath, _daAccountPath, _kASChangeAccountChangeTypeKey,
                           _kASChangeAccountIdentifierKey, _kASChangeAccountOriginallyEnabledDataclassesKey,
                           _kASChangeAccountTypeKey, _kAccountCalendarsWereMigrated, _kAccountChildAccounts, _kAccountClass,

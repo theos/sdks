@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ARROW_LAYER_SIZE, _ARROW_LAYER_STROKE_SIZE, _BKUIPearlEnrollErrorDomain, _PSBioKitErrorWrapperDomain,
                           _RAW_ORIENTATION_LOCK_TOKEN_KEY, _RAW_ORIENTATION_TOKEN_KEY, __BKUILoggingFacility,
                           __UIRotationRadiansForDeviceOrientation, __arrowContainerCenter, __degreesToRadians,

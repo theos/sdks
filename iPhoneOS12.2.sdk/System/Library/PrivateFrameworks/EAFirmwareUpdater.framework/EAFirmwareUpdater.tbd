@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/EAFirmwareUpdater.framework/EAFirmwareUpdater
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _payload_length_for_command ]
     objc-classes:       [ _EAFirmwareUpdater, _FirmwareBundle, _HSModel, _iAUPServer ]
     objc-ivars:         [ _EAFirmwareUpdater._accessory, _EAFirmwareUpdater._appProtocol, _EAFirmwareUpdater._applyCompletion,

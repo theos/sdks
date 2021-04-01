@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreSDB.framework/CoreSDB
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CSDBCheckResultWithStatement, _CSDBConfigLookaside, _CSDBCreateDirectoriesToPath,
                           _CSDBCreateDirectoriesToPathWithOwnership, _CSDBCreateThreadedRecordStore,
                           _CSDBCreateThreadedRecordStoreWithQOSClass, _CSDBCreateUTF8StringFromCFString, _CSDBDataMethods,

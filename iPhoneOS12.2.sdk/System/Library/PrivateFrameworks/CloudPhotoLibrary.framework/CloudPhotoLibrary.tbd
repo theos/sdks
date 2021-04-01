@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary
 current-version:       3442.0.240
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CPLAccountFlagsReadFrom, _CPLAnalysisReferenceUnadjustedFingerprint, _CPLCurrentQOS,
                           _CPLDiagnosticsConsentText, _CPLDiagnosticsInProgressPrefix, _CPLDiagnosticsLogsPath,
                           _CPLDiagnosticsName, _CPLDiagnosticsNoDatabases, _CPLDiagnosticsService,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore
 current-version:       3442.11.111
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CGImagePropertyOrientationFromPXImageOrientation, _DefaultDateFormat, _NSStringFromPXEdgeInsets,
                           _NSStringFromPeopleSuggestionsSourceType, _PFMediaVariationFromPXAssetVariation,
                           _PGFeedbackCollectionServerParsingScriptPath, _PGFeedbackCollectionServerURL,

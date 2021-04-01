@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/HearingUI.framework/HearingUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AXHARoundToPixel, _HACCItemEdgeSize, _HearingUIVersionNumber, _HearingUIVersionString,
                           _accessibilityHearingAidImageNamed, _accessibilityHearingUIBundle, _haccEdgeSize ]
     objc-classes:       [ _AXHAStepSlider, _HACCBatteryGroupView, _HACCBatteryView, _HACCChevronView, _HACCConstants,

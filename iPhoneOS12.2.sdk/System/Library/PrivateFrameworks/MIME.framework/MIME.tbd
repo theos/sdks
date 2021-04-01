@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MIME.framework/MIME
 current-version:       3445.104.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _HEADER_DICT_KEY_LABEL, _HEADER_DICT_KEY_ORDERED_KEYS, _HEADER_DICT_KEY_VALUE_LIST,
                           _HEADER_DICT_KEY_VALUE_STRING, _H_APPLEDOUBLE, _H_APPLEFILE, _H_ATTACHMENTS, _H_AUTO_SUBMITTED,
                           _H_CONTENT_BASE, _H_CONTENT_DESCRIPTION, _H_CONTENT_DISPOSITION, _H_CONTENT_ID, _H_CONTENT_LANGUAGE,

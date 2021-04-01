@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotoEditSupport.framework/PhotoEditSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BLConvertRectToScreen, _BLConvertRectToWindow, _BLCreationDateFromMetadata, _BLCropInfoDefault,
                           _BLCropInfoEqual, _BLCropInfoFromString, _BLCropInfoMake, _BLDefaultMaxPixelSize, _BLDeviceIsPhone,
                           _BLDevicePixelSize, _BLDownsampledDataFromData, _BLDownsampledImageFromData, _BLEdgeInsetsScale,

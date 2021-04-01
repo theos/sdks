@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CDPKeychainSyncSecurityCodePeerApprovalResult, _CDPKeychainSyncSecurityCodeResetKeychainResult,
                           _CoreCDPUIVersionNumber, _CoreCDPUIVersionString ]
     objc-classes:       [ _CDPDevicePickerViewController, _CDPEscapeOption, _CDPExtensionContext, _CDPLocalSecretEntryPane,

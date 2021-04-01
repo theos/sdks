@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NewsTransport.framework/NewsTransport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ Health, HealthArticles, HealthArticlesPlugin, HealthArticlesPluginTests, Home, HomeArticles, NewsCore,
                           NewsToday, News, NewsUI, FeldsparCore iOS Tests, Feldspar Tests, NewsFeedLayout, NewsDaemon, newsd,
                           nanonewscd, NewsServicesInternal, NewsAnalyticsTests, NewsTodayTests, StocksCore, StocksUI, Stocks,

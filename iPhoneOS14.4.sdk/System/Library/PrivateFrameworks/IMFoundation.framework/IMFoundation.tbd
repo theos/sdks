@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ExtractURLQueries, _FZAVErrorDomain,
                             _FZRelayParameter_ConnectionID,
                             _FZRelayParameter_PeerBlob, _FZRelayParameter_PeerID,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MediaStream.framework/MediaStream
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MSAlbumSharingInitialize, _MSMSLocalizedString, _MSMediaStreamInitialize, __MSASSetDaemon,
                           __MSSetDaemon, _kMSASConnectionErrorDomain, _kMSASNoWakeServiceName, _kMSASServiceName,
                           _kMSAuthenticationManagerDidReceiveAuthenticationChangeNotification,

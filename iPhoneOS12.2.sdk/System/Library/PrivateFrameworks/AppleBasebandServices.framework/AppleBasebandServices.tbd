@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices
 current-version:       1790
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZGVN3ctu9SingletonINS_18XpcJetsamAssertionES1_NS_23PthreadMutexGuardPolicyIS1_EEE9sInstanceE,
                           __ZN19TraceFileCollection10clear_syncENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE,
                           __ZN19TraceFileCollection10setHistoryEj, __ZN19TraceFileCollection14handleReadDataEPKhj,

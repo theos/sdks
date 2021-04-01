@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IconServices.framework/IconServices
 current-version:       377
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     objc-classes:       [ _ISIcon, _ISIconFactory, _ISIconIOS, _ISIconLayer, _ISIconManager, _ISIconObserver, _ISImage,
                           _ISImageDescriptor ]
     objc-ivars:         [ _ISIconIOS._resourceProxy, _ISIconLayer._backgroundStyle, _ISIconLayer._badgeOptions,

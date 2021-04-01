@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AutoLoop.framework/AutoLoop
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AUTOLOOP_LAR_KEY_ERROR, _AUTOLOOP_LAR_KEY_FRAMETRANSFORM_GAPBRIDGE,
                           _AUTOLOOP_LAR_KEY_FRAMETRANSFORM_HOMOGRAPHY, _AUTOLOOP_LAR_KEY_FRAMETRANSFORM_RAWTIME,
                           _AUTOLOOP_LAR_KEY_MIN_VERSION, _AUTOLOOP_LAR_KEY_NORMSTABILIZE, _AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEDUR,

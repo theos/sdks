@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AXColorMarkerMaximumDistanceHS, _AXColorMarkerMaximumDistanceHSB, _AXMAllEvaluationNodeClasses,
                           _AXMAllSourceNodeClasses, _AXMAspectRatioDefault, _AXMAspectRatioMaximum, _AXMAspectRatioMinimum,
                           _AXMAuditTokenTaskHasEntitlement, _AXMBundleID, _AXMCGRectFromCGPoints, _AXMCameraFocalLengthDefault,

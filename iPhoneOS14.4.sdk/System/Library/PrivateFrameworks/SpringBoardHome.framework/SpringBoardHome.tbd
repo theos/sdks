@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ AppPredictionWidget, CarPlay, CarPlayAppTests, Casa,
                             SearchUI, SpotlightUIInternal, SpringBoard,
                             "SpringBoardFramework-Tests", "SpringBoardHome-Tests",

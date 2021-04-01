@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AvatarKit.framework/AvatarKit
 current-version:       225.27
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ARBlendShapeLocationFromIndex, _ARBlendShapeLocationToAVTMorphTargetName,
                           _ARBlendShapeLocationToIndex, _AVTAnimojiThumbnailCameraKey, _AVTAnimojiThumbnailLargeSizeKey,
                           _AVTAssetUIDFromPackAndAssetID, _AVTAvatarARModeSpecializationAdditionalGeometries,

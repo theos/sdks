@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ToneKit.framework/ToneKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _TKDisplayLinkManagerDefaultFrameInterval, _TKFloatCeilForScale, _TKFloatEqualToFloat,
                           _TKFloatFloorForScale, _TKFloatGetSafeScaleForValue, _TKFloatGreaterThanOrEqualToFloat,
                           _TKFloatLessThanOrEqualToFloat, _TKFloatRoundForScale, _TKLabelContainerViewAutomaticDimension,

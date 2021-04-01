@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/APTransport.framework/APTransport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _APAdvertiserInfoCopy, _APAdvertiserInfoCopyAirPlayData, _APAdvertiserInfoCopyAirPlayP2PData,
                           _APAdvertiserInfoCopyProperty, _APAdvertiserInfoCopyRAOPData, _APAdvertiserInfoCreate,
                           _APAdvertiserInfoCreateAirPlayServiceName, _APAdvertiserInfoCreateData,

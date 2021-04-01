@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Futhark.framework/Futhark
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _FKGetBuildAPIVersion, _FKGetBuildGitHash, _FKGetBuildTimestamp, _FKGetFrameworkVersion,
                           _FKGlyphRender, _FKGlyphSetDerivedProperties, _FKRecognizeGlyph, _FutharkVersionNumber,
                           _FutharkVersionString ]

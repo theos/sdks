@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AddressBookLegacy.framework/AddressBookLegacy
 current-version:       30
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ABAccountAddTypeToCache, _ABAccountCachedTypeForAccountIdentifier, _ABAccountClass,
                           _ABAccountCopyIdentifier, _ABAccountCopyInternalUUID, _ABAccountCreate, _ABAccountNameForProperty,
                           _ABAccountProperties, _ABAccountSetIdentifier, _ABAccountSetInternalUUID,

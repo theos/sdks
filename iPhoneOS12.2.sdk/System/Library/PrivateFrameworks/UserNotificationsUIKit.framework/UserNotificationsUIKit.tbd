@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ SpringBoard, UserNotificationsUIKitTests, UNUIKitTestsHostApp, 'SpringBoard-Tests' ]
     symbols:            [ _NCBulletinDestinationBanner, _NCBulletinDestinationCar, _NCBulletinDestinationCoverSheet,
                           _NCBulletinDestinationLockScreen, _NCBulletinDestinationNotificationCenter,

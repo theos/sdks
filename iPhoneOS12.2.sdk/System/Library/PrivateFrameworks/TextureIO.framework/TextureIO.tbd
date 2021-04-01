@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TextureIO.framework/TextureIO
 current-version:       3.8.4
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     objc-classes:       [ _TXRArrayElement, _TXRAssetCatalogConfig, _TXRAssetCatalogFileAttributes,
                           _TXRAssetCatalogMipFileAttributes, _TXRAssetCatalogParser, _TXRAssetCatalogSet, _TXRDataConverter,
                           _TXRDataScaler, _TXRDefaultBuffer, _TXRDefaultBufferAllocator, _TXRDefaultBufferMap,

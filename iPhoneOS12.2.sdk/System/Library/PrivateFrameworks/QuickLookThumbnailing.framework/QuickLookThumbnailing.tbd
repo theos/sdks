@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _QLCheckAccessForURL, _QLTCreateCGContextWithSize, _QLTInitLogging, _QLThumbnailErrorDomain,
                           _QLThumbnailMetadataContentRectKey, _QLThumbnailMetadataFileNamesDictionaryKey,
                           _QLThumbnailMetadataFileVersionKey, _QLThumbnailMetadataFlavorKey, _QLThumbnailMetadataQLPropertiesKey,

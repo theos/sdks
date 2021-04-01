@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary
 current-version:       201
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CK2CalculateFileSignatureWithFlags, _CK2CalculateItemSignatureWithFlags, _CKBeginImport,
                           _CKCalculateChunkSignatureAndEncryptionKey, _CKCalculateFileSignature, _CKCheckChunkStoreDB,
                           _CKChunkCoderCreate, _CKChunkCoderFinish, _CKChunkCoderUpdate, _CKChunkCryptorCreate,

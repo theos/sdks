@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultDirectionalInsets,
                           _NUIContainerViewDefaultInsets, _NUIContainerViewDefaultSize, _NUIContainerViewSystemDimension ]
     objc-classes:       [ _NUIBoxArrangement, _NUIContainerBoxView, _NUIContainerGridView, _NUIContainerStackView,

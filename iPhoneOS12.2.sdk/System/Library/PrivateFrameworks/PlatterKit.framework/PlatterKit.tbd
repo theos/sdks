@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PlatterKit.framework/PlatterKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ SpringBoard, 'SpringBoard-Tests', UserNotificationsUIKit, Widgets, UserNotificationsUIKitTests,
                           ChargingViewService, Sharing, AppPredictionUI, RecentsAppPopover ]
     symbols:            [ _PLCAMediaTimingFunctionForViewAnimationCurve, _PLLogSubsystem, _PLLogTransition, _PLMainScreenScale,

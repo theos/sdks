@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     objc-classes:       [ _MCActionButton, _MCAppSignerViewController, _MCCertificateDetailsController, _MCCertificatePickerCell,
                           _MCCertificatePickerController, _MCCertificatePropertiesInfo, _MCCertificateSummaryController,
                           _MCConfigurationDetailsController, _MCDetailsDescriptionTableCell, _MCDetailsDescriptionView,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/PubSub.framework/PubSub
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     objc-classes:         [ _PSBroker, _PSBrokerTransportCollection, _PSEvent,
                             _PSEventBlockInvocation, _PSEventSelectorInvocation,
                             _PSLocalSubscription, _PSRemoteSubscription,

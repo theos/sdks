@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AES_CBCFrame_Final, _AES_CBCFrame_Init, _AES_CBCFrame_Update, _AES_CTR_Final, _AES_CTR_Init,
                           _AES_CTR_Update, _AES_GCM_AddAAD, _AES_GCM_Decrypt, _AES_GCM_Encrypt, _AES_GCM_Final,
                           _AES_GCM_FinalizeMessage, _AES_GCM_Init, _AES_GCM_InitEx, _AES_GCM_InitEx2, _AES_GCM_InitMessage,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
 current-version:       760.40.6
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _vDSP_DCT_CreateSetup, _vDSP_DCT_Execute,
                             _vDSP_DFT_CreateSetup, _vDSP_DFT_DestroySetup,
                             _vDSP_DFT_DestroySetupD, _vDSP_DFT_Execute,

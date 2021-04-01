@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CTCellularPlanLocalInfoError, _NPHCameraHitRuntimeError, _SIMSetupSupportVersionNumber,
                           _SIMSetupSupportVersionString ]
     objc-classes:       [ _TSActivationCodeOnlyFlow, _TSActivationFlowWithSimSetupFlow, _TSAddCellularPlanViewController,

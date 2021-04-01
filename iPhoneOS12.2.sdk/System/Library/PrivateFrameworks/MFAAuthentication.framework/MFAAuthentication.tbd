@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MFAAuthentication.framework/MFAAuthentication
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MFAAAddCertDataEntryToCache, _MFAACanChargeHighVoltage, _MFAACanChargeInductive, _MFAACanUseAccPwrLoV,
                           _MFAACanUseAccPwrUHPM, _MFAACertificateAuthV2Class, _MFAACertificateAuthVersionNumber,
                           _MFAACertificateManagerErrorDomain, _MFAACreateAnchorCertificateAuthorityArray,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport
 current-version:       27
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SSCAEventTypeForSignpost, _SSCAIntervalTypeForSignpostInterval, _SSCAIsCAMetadataSubsystemCategory,
                           _SSCAIsCAWindowServerInMemorySubsystemCategory, _SignpostPlatformForDevice, _SignpostPlatformForString,
                           _SignpostSerializationErrorDomain, _SignpostSupportAverageDurationMachContinuousTimeForIntervals,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ICE.framework/ICE
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CelltechToStr, _CompareWithFlippedIP, _DiscardOneRelayBindingWithChannelNumber,
                           _EncodeChannelDataMessage, _FillSockAddrStorage, _FlipIP, _FreeLocalInterfaceList, _FreeSTUNMessage,
                           _GKSRelayParameter_ClientData, _GKSRelayParameter_ConnectionID, _GKSRelayParameter_PeerAddrPointer,

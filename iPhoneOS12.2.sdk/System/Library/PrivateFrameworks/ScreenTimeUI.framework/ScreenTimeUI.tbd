@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI
 current-version:       35
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _STAccessGatedByPasscodeIfPresentKey, _STAllowanceIconKey, _STAppBundleIDKey, _STBagProfile,
                           _STBagProfileVersion, _STBlacklistValueSpecifierKey, _STButtonHiddenKey, _STButtonTextKey,
                           _STCompassAppBundleID, _STCustomRestrictionCellularDataKey, _STCustomRestrictionConfigurationName,

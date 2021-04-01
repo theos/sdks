@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WiFiKit.framework/WiFiKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NETRBClientSendNotification, _NETRBDebugLog, _NETRBEndPointCleanup, _NETRBErrorLog, _NETRBInfoLog,
                           _NETRBLogCreate, _NETRBNoticeLog, _NETRBXPCCleanup, _NETRBXPCCreate, _NETRBXPCEndPointCreate,
                           _NETRBXPCSetupAndSend, _NetworkRefIsEqualToNetwork, _OSLogForWFLogLevel, _WFANQPElementsFromBitMask,

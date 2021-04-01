@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy
 current-version:       607.1.40
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DOMEventException, _DOMException, _DOMRangeException, _DOMXPathException, _WebActionButtonKey,
                           _WebActionElementKey, _WebActionFormKey, _WebActionModifierFlagsKey, _WebActionNavigationTypeKey,
                           _WebActionOriginalURLKey, _WebArchivePboardType, _WebConsoleMessageAppCacheMessageSource,

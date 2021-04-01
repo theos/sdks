@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
 current-version:       671.250.4
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _VVACOS, _VVACOSF, _VVACOSF_, _VVACOSH, _VVACOSHF, _VVACOSHF_, _VVACOSH_, _VVACOS_, _VVASIN, _VVASINF,
                           _VVASINF_, _VVASINH, _VVASINHF, _VVASINHF_, _VVASINH_, _VVASIN_, _VVATAN, _VVATAN2, _VVATAN2F,
                           _VVATAN2F_, _VVATAN2_, _VVATANF, _VVATANF_, _VVATANH, _VVATANHF, _VVATANHF_, _VVATANH_, _VVATAN_,

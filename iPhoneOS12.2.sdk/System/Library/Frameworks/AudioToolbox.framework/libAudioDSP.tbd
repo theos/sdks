@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DNNVAD_CreateInstance, _DNNVAD_DestroyInstance, _DNNVAD_GetSpeechProbabilityHardValue,
                           _DNNVAD_GetSpeechProbabilitySoftValue, _DNNVAD_Initialize, _DNNVAD_IsInitialized, _DNNVAD_Process,
                           _DNNVAD_Uninitialize, _EndpointDetectorInterface_registerAUForOSXDevelopment, _GetAudioDSPManager,

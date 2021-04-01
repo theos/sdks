@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation
 current-version:       607.3.3
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _HMFAreStringsEqualIgnoringCase, _HMFBooleanToString,
                             _HMFDataIsReversed, _HMFDigestAlgorithmFromString,
                             _HMFDigestAlgorithmToString, _HMFDispatchQueueName,

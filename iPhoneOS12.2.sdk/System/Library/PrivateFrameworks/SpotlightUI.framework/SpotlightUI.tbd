@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SPUIPreferencesDomain, _SpotlightScrollSearchResults, _SpotlightShowAndScrollCards,
                           _SpotlightUIVersionNumber, _SpotlightUIVersionString, ___PPTFirstScroll, ___PPTParsecdLaunchTime,
                           ___PPTSearchTableDidReceiveResultSections, ___PPTSearchTableReceivedResultsInfo,

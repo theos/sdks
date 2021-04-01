@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AirPlaySender.framework/AirPlaySender
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _APAudioEngineBufferedCreate, _APAudioEngineGetCMBaseObject, _APAudioFormatToASBD, _APAudioFormatToPCM,
                           _APAudioSinkJitterBufferCreate, _APAudioSinkSharedMemCreate, _APAudioSinkSharedMemRemoteCreate,
                           _APAudioSinkSharedMemRemote_GetObjectID, _APAudioSinkSharedMemRemote_ServerDied,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PencilKit.framework/PencilKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DKDAddPoints, _DKDAddSizes, _DKDAffineTransformForFlips,
                           _DKDAffineTransformNearlyEqualToTransformWithTolerance, _DKDAffineTransformShear, _DKDAliasRound,
                           _DKDAliasRoundedPoint, _DKDAliasRoundedRectForScale, _DKDAngleFromDelta, _DKDAveragePoints,

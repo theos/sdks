@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ApplePDPHelper.framework/ApplePDPHelper
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZN23ApplePDPHelperInterface10callMethodEjPKcPyjPvmS2_PjS3_Pm,
                           __ZN23ApplePDPHelperInterface10cleanup_nlEv,
                           __ZN23ApplePDPHelperInterface10removeFlowE27AppleIPAppenderTrafficClass,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SiriTasks.framework/SiriTasks
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _STStringFromGenericIntentResponseCode, _STWorkoutErrorDomain ]
     objc-classes:       [ _STAlarmAction, _STAlarmModification, _STAlarmShowAlarmAndPerformActionRequest, _STCreateAlarmAction,
                           _STDeleteAlarmAction, _STEmailMessage, _STGenericIntent, _STGenericIntentDateRange,

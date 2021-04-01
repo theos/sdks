@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SKUIAVFoundationFramework, _SKUIAccountsFramework, _SKUIAccountsUIFramework,
                           _SKUIActivityIndicatorReuseIdentifier, _SKUIActivityTypeAddToWishlist, _SKUIActivityTypeGift,
                           _SKUIAllowsLandscapePhone, _SKUIAnimatorDOMFeatureName, _SKUIAppDocumentDidSendMessageNotification,

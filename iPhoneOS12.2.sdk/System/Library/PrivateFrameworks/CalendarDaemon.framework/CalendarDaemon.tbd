@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CADCopyEntity, _CADDeleteEntity, _CADEKPersistentEventDefaultPropertiesToLoad, _CADEntityCopyObjectID,
                           _CADEntityCopyObjectIDUnlocked, _CADEntityExistsAndIsAccessible, _CADEntityIsInManagedStore,
                           _CADEntityIsInRestrictedStore, _CADExitStatusCode_Normal,

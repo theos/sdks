@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _OSAnalyticsVersionNumber, _OSAnalyticsVersionString, _OTALoggingBaseDirectory,
                           _XPCClientHasEntitlement, _kDomainKey, _kKeyKey, _kPreferenceDomainDataAnalysis, _kRemovalKey,
                           _kSamplingKey, _kUserKey, _kValueKey, _killDescription, _legacyCertArr, _osa_scanDir, _processName ]

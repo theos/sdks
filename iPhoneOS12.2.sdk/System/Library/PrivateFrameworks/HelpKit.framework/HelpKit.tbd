@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/HelpKit.framework/HelpKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _HLPLogForCategory, _HelpKitVersionNumber, _HelpKitVersionString, _gHLPHelpTopicViewSpacerWidth,
                           _kHLPHelpBookAssetHostOverride, _kHLPHelpBookLocaleListName, _kHLPHelpBookPreferredLanguageOverride,
                           _kHLPHelpTopicViewControllerLastTopicHistoryItem, _kHLPHyphenationFactorAccessibility,

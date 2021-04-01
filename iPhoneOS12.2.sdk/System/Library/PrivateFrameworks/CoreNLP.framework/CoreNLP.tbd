@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
 current-version:       130.15.22
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NLEmbeddingCopyNeighbors, _NLEmbeddingCopyNeighborsWithDistances, _NLEmbeddingCopyVersion,
                           _NLEmbeddingGetDistance, _NLLanguageIdentifierConsumeCharacters, _NLLanguageIdentifierConsumeString,
                           _NLLanguageIdentifierCreate, _NLLanguageIdentifierGetTopHypotheses,

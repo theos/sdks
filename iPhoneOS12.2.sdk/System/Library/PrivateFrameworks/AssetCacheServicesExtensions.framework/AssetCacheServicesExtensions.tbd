@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/AssetCacheServicesExtensions
 current-version:       83.4
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AssetCacheServicesExtensionsVersionNumber, _AssetCacheServicesExtensionsVersionString,
                           _kACSEAllServersKey, _kACSEMightHaveKey, _kACSEPersonalCachingAndImportKey, _kACSEPersonalCachingKey,
                           _kACSEPublicIPAddressKey, _kACSEPublicIPAddressRangesKey, _kACSEReachabilityKey,

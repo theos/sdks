@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAEAS.framework/DAEAS
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ASCodewordFrequency, _ASCommandStringForCode, _ASDeviceInfo, _ASDeviceWipeThreshold,
                           _ASFilterCodeForNumPastDays, _ASFolderArrayForDAFolderArray, _ASFolderHasUpdate,
                           _ASHTTPConnectionErrorDomain, _ASInboxChangedNotification, _ASInboxSyncingRequest,

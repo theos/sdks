@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/AppStoreFoundation.framework/AppStoreFoundation
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     objc-classes:         [ _ASFAsn1IntegerToken, _ASFAsn1OSToken,
                             _ASFAsn1ReceiptIAPToken, _ASFAsn1ReceiptToken,
                             _ASFAsn1SequenceToken, _ASFAsn1SetToken, _ASFAsn1Token,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AnalyticsIsEventUsed, _AnalyticsSendEvent, _AnalyticsSendEventLazy,
                           _AnalyticsSetCallbackForQueriedEvent, _AnalyticsSetCallbackForQueriedEventWithQueue,
                           __Z19analytics_tool_dumpNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE,

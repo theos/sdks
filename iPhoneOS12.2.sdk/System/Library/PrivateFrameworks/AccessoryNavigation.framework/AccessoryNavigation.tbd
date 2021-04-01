@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryNavigation.framework/AccessoryNavigation
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACCNav_DispComp_ComponentID, _ACCNav_DispComp_MaxAfterManeuverRoadNameLength,
                           _ACCNav_DispComp_MaxCurRoadNameLength, _ACCNav_DispComp_MaxDestinationNameLength,
                           _ACCNav_DispComp_MaxLaneGuidanceDescriptionLength, _ACCNav_DispComp_MaxLaneGuidanceStorageCapacity,

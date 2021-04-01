@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _cbdsqr_, _cgbbrd_, _cgbcon_, _cgbequ_, _cgbequb_, _cgbrfs_, _cgbsv_, _cgbsvx_, _cgbtf2_, _cgbtrf_,
                           _cgbtrs_, _cgebak_, _cgebal_, _cgebd2_, _cgebrd_, _cgecon_, _cgeequ_, _cgeequb_, _cgees_, _cgeesx_,
                           _cgeev_, _cgeevx_, _cgegs_, _cgegv_, _cgehd2_, _cgehrd_, _cgelq2_, _cgelqf_, _cgels_, _cgelsd_,

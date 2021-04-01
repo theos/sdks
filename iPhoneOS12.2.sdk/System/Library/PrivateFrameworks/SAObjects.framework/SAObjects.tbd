@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SAObjects.framework/SAObjects
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AceObjectAceIdPlistKey, _AceObjectAceObjectForSelector, _AceObjectBoolForSelector,
                           _AceObjectClassArrayDictionaryForSelector, _AceObjectClassArrayForSelector,
                           _AceObjectClassDictionaryForSelector, _AceObjectClassPListKey, _AceObjectCopyingObjectForSelector,

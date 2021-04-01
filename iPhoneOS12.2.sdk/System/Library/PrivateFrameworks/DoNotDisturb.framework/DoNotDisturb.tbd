@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DoNotDisturb.framework/DoNotDisturb
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ DoNotDisturbKit, DoNotDisturbServer, dndtool, DoNotDisturbModule, DoNotDisturbSettings,
                           DoNotDisturbTests, DoNotDisturbKitTests, DoNotDisturbServerTests, SpringBoard, 'SpringBoard-Tests',
                           Carousel, CarouselTests, NanoSettings, NanoSettingsGlance, PineBoard, carkitd, CarKitTests,

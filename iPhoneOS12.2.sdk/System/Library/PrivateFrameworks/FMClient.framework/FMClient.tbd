@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FMClient.framework/FMClient
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ FMIPClientXPCService, FindMyiPhoneIntentsExtension, FMIPSiriBackendPlugin, fmclienttool ]
     objc-classes:       [ __TtC8FMClient10HttpClient, __TtC8FMClient11SessionInfo, __TtC8FMClient12SearchFilter,
                           __TtC8FMClient12SearchResult, __TtC8FMClient15PlaySoundDevice, __TtC8FMClient16DiscoveredDevice,

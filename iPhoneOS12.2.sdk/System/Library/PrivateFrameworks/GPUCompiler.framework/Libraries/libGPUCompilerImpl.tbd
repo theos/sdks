@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompilerImpl.dylib
 current-version:       902.3.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __Z14error_categoryv, __Z20createAIRUpgradePassv, __Z22createAIRDowngradePassv,
                           __Z22createAIRLegalizerPassv, __Z30createAIRTargetInfoWrapperPassv,
                           __ZN10llvm_utils17getMangledTypeStrEPN4llvm4TypeE,

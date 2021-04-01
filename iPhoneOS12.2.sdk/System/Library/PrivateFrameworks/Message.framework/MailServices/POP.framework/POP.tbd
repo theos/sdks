@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Message.framework/MailServices/POP.framework/POP
 current-version:       3445.104.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MFDeletePOPMessagesCompleted, _MFDeletePOPMessagesStarted,
                           _MF_POPAccountDeleteMessagesAfterIntervalKey, _MF_POPAccountDeleteMessagesOnServerInterval,
                           _MF_POPAccountDeleteMessagesRightAwayKey, _MF_POPAccountDeleteMessagesWhenTransferredOutOfInboxKey,

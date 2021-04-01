@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NewsFoundation.framework/NewsFoundation
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NFCallbackScopeAny, _NFCallbackScopeName, _NFCallbackScopeNames, _NFDefinitionKey, _NFInternalBuild,
                           _NFLockSync, _NFPoolMakeWeakObjectsPool, _NFPromiseInvokeOnQueue, _NFSeedBuild,
                           _NFStateMachineErrorDomain, _NFStoreDemoMode, _NewsFoundationVersionNumber,

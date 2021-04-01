@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/QuickLookSupport.framework/QuickLookSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _QLCreateCGContextWithSize, _QLCreateCGImageWithData,
                           _QLExtensionHostContextThumbnailOperationErrorDomain, _QLExtensionThumbnailGeneratorErrorDomain,
                           _QLFrameworkBundle, _QLGuessEncodingForTextFileAtURL, _QLGuessEncodingForTextFileFromData,

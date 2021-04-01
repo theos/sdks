@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/AudioPasscode.framework/AudioPasscode
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AudioPasscodeVersionNumber,
                             _AudioPasscodeVersionString ]
     objc-classes:         [ _APCCodecFactory, _APCCodecInfo, _APCDecoderProcessor,

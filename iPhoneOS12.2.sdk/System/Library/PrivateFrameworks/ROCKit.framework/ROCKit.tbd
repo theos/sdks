@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ROCKit.framework/ROCKit
 current-version:       27.6
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ROCKSessionManagerOptionEnableMessageQueueSending, _kROCKDictionaryTypeEntryKey,
                           _rock_NSArrayToXPCObject, _rock_NSBundleToXPCObject, _rock_NSDataToXPCObject, _rock_NSDateToXPCObject,
                           _rock_NSDictionaryToXPCObject, _rock_NSErrorToXPCObject, _rock_NSFileHandleToXPCObject,

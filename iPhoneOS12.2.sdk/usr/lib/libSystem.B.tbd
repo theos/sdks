@@ -1667,7 +1667,7 @@ exports:
                        __set_user_dir_suffix, _sysdir_get_next_search_path_enumeration, 
                        _sysdir_start_search_path_enumeration, _sysdir_start_search_path_enumeration_private ]
 --- !tapi-tbd-v3
-archs:           [ armv7, armv7s, arm64 ]
+archs:           [ armv7, armv7s, arm64, arm64e ]
 uuids:           [ 'armv7: BFA03521-9DDF-3185-850C-68B99E5AD282', 'armv7s: 8F3E9E98-C28A-323A-BB6C-E9704F910863', 
                    'arm64: 32BCF58B-83F5-3F46-8D56-589667C1F766' ]
 platform:        ios
@@ -1676,7 +1676,7 @@ current-version: 121.50.4
 objc-constraint: none
 parent-umbrella: System
 exports:         
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _CipherSuiteCount, _KnownCipherSuites, ___ssl_debug, _sslCipherSuiteGetKeyExchangeMethod, 
                        _sslCipherSuiteGetKeydataSize, _sslCipherSuiteGetMacAlgorithm, 
                        _sslCipherSuiteGetMacSize, _sslCipherSuiteGetMinSupportedTLSVersion, 
@@ -2454,7 +2454,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ ___libsystem_mallocVersionNumber, ___libsystem_mallocVersionString, 
                        _malloc_debug_flags, _szone_error ]
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ '_nanov2_allocate$VARIANT$armv81', '_nanov2_allocate$VARIANT$mp', 
                        '_nanov2_allocate_from_block$VARIANT$armv81', '_nanov2_allocate_from_block$VARIANT$mp', 
                        '_nanov2_batch_free$VARIANT$armv81', '_nanov2_batch_free$VARIANT$mp', 
@@ -2536,7 +2536,7 @@ exports:
                        _szone_check_modulo, _szone_check_start, _turn_off_stack_logging, 
                        _turn_on_stack_logging, _valloc, _vfree, _zeroify_scalable_zone ]
 --- !tapi-tbd-v3
-archs:           [ armv7, armv7s, arm64 ]
+archs:           [ armv7, armv7s, arm64, arm64e ]
 uuids:           [ 'armv7: 3526690F-506A-3750-BE07-9ECBD2501A77', 'armv7s: 7FC17774-2B2C-39EE-883D-617F8EAF5A6B', 
                    'arm64: 772BFAA6-9B18-393E-BDCE-8A9040EC7E9B' ]
 platform:        ios
@@ -2544,7 +2544,7 @@ install-name:    /usr/lib/system/libsystem_network.dylib
 objc-constraint: none
 parent-umbrella: System
 exports:         
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _NETCORE_XPC_TYPE_ANY, ___nw_create_backtrace_string, ___nw_should_simulate_crash, 
                        ___nwlog_debug_c, ___nwlog_default_c, ___nwlog_enable_stderr, 
                        ___nwlog_err_c, ___nwlog_err_set_disable_simulate_crash, ___nwlog_err_simulate_crash_add_description_to_list, 
@@ -3047,7 +3047,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ ___system_pthreadVersionNumber, ___system_pthreadVersionString, 
                        _pthread_workqueue_setdispatch_with_kevent_np ]
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ '_pthread_dependency_fulfill_np$VARIANT$armv81', '_pthread_dependency_fulfill_np$VARIANT$mp', 
                        '_pthread_dependency_wait_np$VARIANT$armv81', '_pthread_dependency_wait_np$VARIANT$mp' ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
@@ -3329,7 +3329,7 @@ exports:
                        __Unwind_GetRegionStart, __Unwind_GetTextRelBase, __Unwind_SetGR, 
                        __Unwind_SetIP, _unw_getcontext ]
 --- !tapi-tbd-v3
-archs:           [ armv7, armv7s, arm64 ]
+archs:           [ armv7, armv7s, arm64, arm64e ]
 uuids:           [ 'armv7: D9A47534-D98D-3DB6-9788-B8E94E71D55A', 'armv7s: 16E29111-BBEC-31FD-95EC-8A6D75EA9B6A', 
                    'arm64: 8F21A496-7AB9-3CB4-96CC-4B32A713B4B3' ]
 platform:        ios
@@ -3339,7 +3339,7 @@ compatibility-version: 0
 objc-constraint: none
 parent-umbrella: System
 exports:         
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ __vminterpose_init ]
 --- !tapi-tbd-v3
 archs:           [ armv7, armv7s, arm64, arm64e ]

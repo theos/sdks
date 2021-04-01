@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
 current-version:       906.250.5
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _OSLogClearOptions, _OSLogConstructArchive, _OSLogConstructHighVolumeAgeLimit,
                           _OSLogConstructHighVolumeSizeLimit, _OSLogConstructPersistAgeLimit, _OSLogConstructPersistSizeLimit,
                           _OSLogConstructSignpostAgeLimit, _OSLogConstructSignpostSizeLimit, _OSLogConstructSpecialAgeLimit,

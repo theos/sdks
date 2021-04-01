@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ABMHelper.framework/ABMHelper
 current-version:       1790
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZGVN3ctu9SingletonINS_18XpcJetsamAssertionES1_NS_23PthreadMutexGuardPolicyIS1_EEE9sInstanceE,
                           __ZN3abm10HelperTask10start_syncEv, __ZN3abm10HelperTask4initEv, __ZN3abm10HelperTask4stopEv,
                           __ZN3abm10HelperTask5getIDEv, __ZN3abm10HelperTask5startEv, __ZN3abm10HelperTask6isBusyEv,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AudioServerDriver.framework/AudioServerDriver
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ASDStereoPanControlCenter, _ASDStereoPanControlFullLeft, _ASDStereoPanControlFullRight,
                           _ASD_AddAudioDeviceRealTimeOperations, _ASD_AddClockDeviceRealTimeOperations, _ASD_AddPlugin,
                           _ASD_AddStreamRealTimeOperations, _ASD_RemoveAudioDeviceRealTimeOperations,

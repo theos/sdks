@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Sharing.framework/Sharing
 current-version:       1288.25.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NSDataFromHexString, _SDAutoUnlockManagerMetricAWDLBringUpKey,
                           _SDAutoUnlockManagerMetricAWDLPeerFoundKey, _SDAutoUnlockManagerMetricAWDLRangingKey,
                           _SDAutoUnlockManagerMetricAttemptTypeKey, _SDAutoUnlockManagerMetricBluetoothAWDLExchangeKey,

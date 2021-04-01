@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreSuggestionsInternals.framework/CoreSuggestionsInternals
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CreateCFBurstTrieFromFilePath, _MIN_PADDING, _SGBytesToHex, _SGCleavePhoneNumberAndExtension,
                           _SGCollapseWhitespaceAndStrip, _SGContactDetailTypeDescription, _SGContactDetailTypeToEntityTypes,
                           _SGConvertUtf8ByteOffsetsToUtf16WordOffsets, _SGDBatteryMonitoringStart, _SGDCKEventReadFrom,

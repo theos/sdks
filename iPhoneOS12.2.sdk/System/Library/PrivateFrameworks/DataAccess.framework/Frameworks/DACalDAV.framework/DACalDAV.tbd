@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACalDAV.framework/DACalDAV
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CalDAVPrincipalResultType_Group, _CalDAVPrincipalResultType_Person,
                           _CalDAVPrincipalResultType_Resource, _CalDAVPrincipalResultType_Room,
                           _CalDAVPrincipalResultType_Unknown, _II_ALL_DAY_KEY, _II_ATTACHMENT_KEY, _II_ATTENDEES_KEY,

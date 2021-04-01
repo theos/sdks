@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomEvaluator.framework/SymptomEvaluator
 current-version:       820.252.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AWDSymptomsAdvisoryAlternateNetworkTypeReadFrom,
                           _AWDSymptomsAdvisoryAppCanUseAlternateNetworkReadFrom, _AWDSymptomsDiagnosticIncidentEventReadFrom,
                           _AWDSymptomsDiagnosticIncidentReportReadFrom, _AWDSymptomsDiagnosticNotificationTokenReadFrom,

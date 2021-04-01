@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/PhotosUIApps.framework/PhotosUIApps
 current-version:       322.0.100
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ PhotosReliveWidget, PhotosUITester ]
     symbols:              [ _$s12PhotosUIApps0A12ReliveWidgetV4bodyQrvg,
                             _$s12PhotosUIApps0A12ReliveWidgetV4bodyQrvpMV,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CDVAbstractMethod, _CDVAppleClientInfoString, _CDVCleanedStringsFromResponseHeaders,
                           _CDVDefaultUserAgent, _CDVExtractValuesFromRedirectString, _CDVHTTPStatusCodeAsStatusString,
                           _CDVHTTPStatusCodeFromStatusLine, _CDVHTTPStatusCodeRepresentsClientError,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/BookDataStore.framework/BookDataStore
 current-version:       4046.3
 compatibility-version: 0
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BCAnnotationRangeReadFrom, _BCAnnotationsProtoBookReadFrom, _BCCloudAssetAnnotationManagerChanged,
                           _BCCloudAssetDetailManagerChanged, _BCCloudAssetReviewManagerChanged,
                           _BCCloudCollectionDetailManagerChanged, _BCCloudCollectionMemberManagerChanged,

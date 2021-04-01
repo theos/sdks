@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex
 current-version:       1191.56
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MDUnicodeConverterConvert, _MDUnicodeConverterGetTypeID, _MDUnicodeConverterIsFinal,
                           _RLEOIDArrayAddOid, _RLEOIDArrayAddOid_locked, _RLEOIDArrayAddOids, _RLEOIDArrayAddSortedOids,
                           _RLEOIDArrayClear, _RLEOIDArrayContainsOid, _RLEOIDArrayContainsOid_locked, _RLEOIDArrayCreate,

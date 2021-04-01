@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _kKBIDBuiltIn, _kKBIDDefault ]
     objc-classes:         [ _AccessoryDetection, _BLControl,
                             _BacklightdExportedObj, _BrightnessSystem,

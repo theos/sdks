@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ UserNotificationsUI, UserNotificationsUIKit, SpringBoard, UserNotificationsKitTests,
                           UserNotificationsUIKitTests, UNUIKitTestsHostApp, 'SpringBoard-Tests' ]
     symbols:            [ _NCIsEqual, _NCIsEqualToArray, _NCIsEqualToDictionary, _NCIsEqualToSet,

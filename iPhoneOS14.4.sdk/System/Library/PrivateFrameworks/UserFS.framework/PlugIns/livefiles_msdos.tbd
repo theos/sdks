@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_msdos.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CONV_DuplicateName, _CONV_GetCurrentTime,
                             _CONV_UTF8ToLowerCase, _CONV_UTF8ToUnistr255,
                             _CONV_Unistr255ToLowerCase, _CONV_Unistr255ToUTF8,

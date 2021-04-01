@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CorePrediction.framework/CorePrediction
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CPMLAnalysisClassify, _CPMLAnalysisRegressionPrediction, _CPMLBetweenssKMeansAnalysis,
                           _CPMLCentersKMeansAnalysis, _CPMLClusterKMeansAnalysis, _CPMLCreateGMMAnalysis,
                           _CPMLCreateKMEANSAnalysis, _CPMLCreateLIBSVMAnalysis, _CPMLCreateLINEARSVMAnalysis,

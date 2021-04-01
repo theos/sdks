@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/zudp.framework/zudp
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _connection_close_acked_callback, _do_fin, _g_packet_size, _g_sendmsg_fail_count,
                           _process_connection_close, _zudpVersionNumber, _zudpVersionString, _zudp_accept,
                           _zudp_accept_connection, _zudp_accept_stream, _zudp_accept_system_fd, _zudp_ack_manager_add,

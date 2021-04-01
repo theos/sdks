@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ PhotoAnalysis, PhotosGraph, contextd ]
     symbols:              [ _$s10Accelerate0A6BufferP17KnowledgeGraphKitSF7ElementRpzrlE18approximatelyEqual2to21maxAbsoluteDifference0j8RelativeL0Sbqd___A2FtAaBRd__AEQyd__AFRSlF,
                             _$s10Accelerate0A6BufferP17KnowledgeGraphKitSF7ElementRpzrlE18approximatelyEqual2toSbqd___tAaBRd__AEQyd__AFRSlF,

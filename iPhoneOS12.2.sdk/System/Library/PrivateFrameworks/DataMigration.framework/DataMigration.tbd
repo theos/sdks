@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DMChangeGraphicalProgressVisibility, _DMCopyContext, _DMCopyCurrentBuildVersion,
                           _DMCopyMigrationPhaseDescription, _DMCopyOrderedPluginIndentifiers, _DMForceMigrationOnNextReboot,
                           _DMGetMigrationPluginResults, _DMGetPreviousBuildVersion, _DMGetUserDataDisposition,

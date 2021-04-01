@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreIndoor.framework/CoreIndoor
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZN5boost10filesystem6detail18utf8_codecvt_facet15get_octet_countEh,
                           __ZN5boost10filesystem6detail18utf8_codecvt_facetC1Em,
                           __ZN5boost10filesystem6detail18utf8_codecvt_facetC2Em,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ConversationKit.framework/ConversationKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ConversationKitVersionNumber, _ConversationKitVersionString, _notifyRegisterDispatch ]
     objc-classes:       [ _CNKBuzzedAnimator, _CNKCrossFadeAnimator, _CNKEffectsLayoutController,
                           _CNKFaceTimeCameraViewController, _CNKFaceTimeConstraintsController,

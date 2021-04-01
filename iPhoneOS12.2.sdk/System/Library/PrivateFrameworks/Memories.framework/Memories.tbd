@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Memories.framework/Memories
 current-version:       4267.0.31
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CGRectFromCenterAndSize, _CGRoundToNearestPixel, _FMEnableCloudKitManager,
                           _FMIdealNaturalDurationPlaylistMultiple, _FMMinimumPlaylistMultiple,
                           _FMPurgeMobileAssetsFollowingFetch, _FMSongArtworkAssetID, _FMSongAssetCompatibilityVersion,

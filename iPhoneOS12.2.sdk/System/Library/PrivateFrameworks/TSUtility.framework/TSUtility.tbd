@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TSUtility.framework/TSUtility
 current-version:       261
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AMOFullMethodName, _DisplayNSStringForTSUFormatType, _FNV_BASE, _FNV_PRIME, _MOFullMethodName,
                           _NSExpandedRange, _NSIntersectionRangeInclusive, _NSInvalidRange, _NSStringForTSUFormatType,
                           _NSStringFromCATransform3D, _NSStringFromMemoryLevel, _NSStringFromTSUError,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/MessageProtection.framework/MessageProtection
 current-version:       224.40.3
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _NGMEncryptedAttributeKTGossipData, _SecExposeStream,
                             _SecMPComputePaddingForStorage,
                             _SecMPCopyProtectedMsgHash,

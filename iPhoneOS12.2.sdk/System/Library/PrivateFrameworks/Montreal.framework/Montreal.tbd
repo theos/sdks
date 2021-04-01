@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Montreal.framework/Montreal
 current-version:       42.15.9
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MRLModelCompile, _MRLModelConvertFlatWeights, _MRLModelCopyFlatWeights,
                           _MRLModelCopyQuantizedSerializedData, _MRLModelCopySerializedData, _MRLModelCreate, _MRLModelEvaluate,
                           _MRLModelGetIOMappings, _MRLModelGetInputSize, _MRLModelGetOutputSize, _MRLModelGetWeights,

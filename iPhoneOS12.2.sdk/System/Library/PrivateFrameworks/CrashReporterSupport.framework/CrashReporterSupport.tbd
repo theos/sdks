@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AppAnalyticsEnabled, _AppleSupportContainerLocation, _BundleName, _CRCreateDirectoryStructure,
                           _CRDateString, _CRDisableCrashReporting, _CRDumpAllOldStructuredDataLogs, _CREnableCrashReporting,
                           _CRGetReporterKey, _CRIsAppleInternal, _CRLogStructuredData, _CRParseStackShotDictionary,

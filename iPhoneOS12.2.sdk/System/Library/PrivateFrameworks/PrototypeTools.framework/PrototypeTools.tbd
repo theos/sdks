@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PTDomainClientInterface, _PTDomainMachService, _PTDomainServerDomainsChangedNotification,
                           _PTDomainServerInterface, _PTDomainServerTestRecipesChangedNotification, _PTLogObjectForTopic,
                           _PTPrototypingEnumerateHardwareEventsWithBlock, _PTPrototypingEventAvailable, _PTPrototypingEventName,

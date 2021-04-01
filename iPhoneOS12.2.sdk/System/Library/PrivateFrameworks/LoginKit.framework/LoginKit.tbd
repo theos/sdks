@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/LoginKit.framework/LoginKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _LKCourseDescriptionKey, _LKCourseEnrolledStudentIdentifiersKey, _LKCourseGroupNameKey,
                           _LKCourseGroupsKey, _LKCourseIDKey, _LKCourseIDsKey, _LKCourseInstructorIdentifiersKey,
                           _LKCourseNameKey, _LKCoursesKey, _LKErrorDomain, _LKErrorPasscodeBackOffInterval, _LKLogParsing,

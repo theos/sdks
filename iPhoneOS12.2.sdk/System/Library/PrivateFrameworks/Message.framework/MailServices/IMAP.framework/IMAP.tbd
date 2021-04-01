@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Message.framework/MailServices/IMAP.framework/IMAP
 current-version:       3445.104.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _GmailPermanentTagAllMail, _GmailPermanentTagSpam, _GmailPermanentTagStarred,
                           _GmailSpecialUseAttributeImportant, _IMAPAccountOfflineOperationQueuedNotification, _IMAPESearchAllKey,
                           _IMAPESearchCountKey, _IMAPESearchMaxKey, _IMAPESearchMinKey, _IMAPESearchTagKey,

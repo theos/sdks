@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/HangTracer.framework/HangTracer
 current-version:       169
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _EPL_STATE_CHANGED_NOTIFICATION, _HANGTRACER_DOMAIN,
                             _HANGTRACER_OTA_TASKING_DOMAIN,
                             _HANGTRACER_PREF_CHANGED_NOTIFICATION,

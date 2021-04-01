@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MetricsKit.framework/MetricsKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AMSBagKeyMetrics, _MTConfigurationError, _MTError, _MTErrorDomain, _MTErrorMetricsDataKey,
                           _MTFieldNameActionContext, _MTFieldNameActionDetails, _MTFieldNameActionType, _MTFieldNameActionUrl,
                           _MTFieldNameApp, _MTFieldNameAppVersion, _MTFieldNameAssetId, _MTFieldNameBaseVersion,

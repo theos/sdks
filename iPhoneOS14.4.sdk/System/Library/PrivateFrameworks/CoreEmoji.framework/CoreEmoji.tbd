@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
 current-version:       128.1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CEMCopyEmojiTokens, _CEMCreateEmojiCharacterSet,
                             _CEMCreateEmojiLocaleData,
                             _CEMEMFSearchEngineCreateBundleForLocaleIdentifier,

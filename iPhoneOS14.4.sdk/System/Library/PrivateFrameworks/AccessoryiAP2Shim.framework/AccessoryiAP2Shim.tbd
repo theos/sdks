@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/AccessoryiAP2Shim.framework/AccessoryiAP2Shim
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ACCUserDefaultsDomain, _ACCUserDefaultsIapdDomain,
                             _ACCUserDefaultsIapdKey_ChargingPowerBehavior,
                             _ACCUserDefaultsIapdKey_ChargingPowerOverride,

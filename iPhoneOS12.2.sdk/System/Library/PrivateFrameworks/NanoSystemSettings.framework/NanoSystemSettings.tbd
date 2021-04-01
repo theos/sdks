@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NSSLoggingDaemonObjectInit, _NSSLoggingFrameworkObjectInit, _kNSSAboutAppsKey,
                           _kNSSAboutAvailableStorageKey, _kNSSAboutBatteryCurrentCapacityKey, _kNSSAboutBatteryIsChargingKey,
                           _kNSSAboutPhotosKey, _kNSSAboutSongsKey, _kNSSAccountAltDSIDKey, _kNSSAccountDSIDKey,

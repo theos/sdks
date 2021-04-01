@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BFFCountryScanCompletedNotification, _BFFFlowSkipIdentifierAppleID, _BFFFlowSkipIdentifierApplePay,
                           _BFFFlowSkipIdentifierMetaOnBoarding, _BFFFlowSkipIdentifierPasscode, _BFFFlowSkipIdentifierSiri,
                           _BFFFlowSkipIdentifierTouchID, _BFFPointImageOfColor, _BFFRoundRectToPixel, _SetupIsInternalInstall,

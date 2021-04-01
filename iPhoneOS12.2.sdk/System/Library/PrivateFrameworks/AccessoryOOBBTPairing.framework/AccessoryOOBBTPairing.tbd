@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryOOBBTPairing.framework/AccessoryOOBBTPairing
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACCOOBBTPairingAccFwVer, _ACCOOBBTPairingAccHwVer, _ACCOOBBTPairingAccManufacturer,
                           _ACCOOBBTPairingAccModel, _ACCOOBBTPairingAccName, _ACCOOBBTPairingAccSerialNum,
                           _ACCOOBBTPairingCarPlaySupported, _ACCOOBBTPairingCertData, _ACCOOBBTPairingCertSerial,

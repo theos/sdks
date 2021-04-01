@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WebCore.framework/WebCore
 current-version:       607.1.40
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ WebCoreTestSupport, WebKitLegacy, WebKit, iTunesU, Casablanca, Remote, TVBooks, DumpRenderTree,
                           WebKitTestRunner, TestWebKitAPI ]
     symbols:            [ _InitWebCoreThreadSystemInterface, _WAKViewDidScrollNotification,

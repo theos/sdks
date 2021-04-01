@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ChatKit.framework/ChatKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CA_NATIVE_FPS, _CKAVURLAssetForURL, _CKAcknowledgmentPickingHoldKey, _CKAlertLocalizedCancelButtonKey,
                           _CKAlertLocalizedTitleKey, _CKAppExtensionDevelopmentTargetBundle, _CKAppStripFavoritesSection,
                           _CKAppStripRecentsSection, _CKAppleMapsURLKnownLocationCoordinateQueryKey,

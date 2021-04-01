@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SafariCore.framework/SafariCore
 current-version:       607.1.40
 compatibility-version: 0
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _WBSABAddressProperty, _WBSABBirthdayProperty, _WBSABEmailProperty, _WBSABInstantMessageProperty,
                           _WBSABOrganizationProperty, _WBSABPhoneProperty, _WBSABPropertyFirstName, _WBSABPropertyLastName,
                           _WBSABPropertyMiddleName, _WBSABProxyPropertyFullName, _WBSAnalyticsCreditCardAutoFillProperty,

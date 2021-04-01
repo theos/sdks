@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CLLocationCoordinate2DFromString, _CLPlacemarkClosestToReferenceLocation, _CloudCityLatitudeKey,
                           _CloudCityLongitudeKey, _CloudCityNameKey, _LegacyWeatherConditionCodeCount,
                           _LegacyWeatherConditionCodeFromWFConditionCode, _NSStringFromCLLocationCoordinate2D,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _TPCreateImageWithDrawing, _TPDefaultLog, _TPDialerSoundControllerDidEndSoundsNotification,
                           _TPDialerSoundControllerWillBeginSoundsNotification,
                           _TPFavoritesControllerFavoritesEntriesDidChangeNotification, _TPFrameworkBundleIdentifier,

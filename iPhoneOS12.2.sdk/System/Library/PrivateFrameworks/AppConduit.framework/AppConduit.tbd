@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppConduit.framework/AppConduit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACXAppShipsWithOS, _ACXApplicationBundleIdentiferKey, _ACXApplicationNameKey, _ACXApplicationTeamID,
                           _ACXApplicationUniqueID, _ACXApplicationsUpdatedDarwinNotification, _ACXArchitectureCompatibilityKey,
                           _ACXArrayContainsOnlyClass, _ACXArrayifyThing, _ACXAsyncTransaction, _ACXBetaAppKey, _ACXBooleanValue,

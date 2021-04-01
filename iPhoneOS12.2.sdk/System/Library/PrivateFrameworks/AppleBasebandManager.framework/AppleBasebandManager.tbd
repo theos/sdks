@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleBasebandManager.framework/AppleBasebandManager
 current-version:       1790
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZN20AppleBasebandManager15setEventHandlerENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN8dispatch8callbackIU13block_pointerFvNS0_10shared_ptrIN3abm6client5EventEEEEEE,
                           __ZN20AppleBasebandManager15setEventHandlerEPK10__CFStringN8dispatch8callbackIU13block_pointerFvNSt3__110shared_ptrIN3abm6client5EventEEEEEE,
                           __ZN20AppleBasebandManager6createERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEN3ctu2cf11CFSharedRefIK14__CFDictionaryEE,

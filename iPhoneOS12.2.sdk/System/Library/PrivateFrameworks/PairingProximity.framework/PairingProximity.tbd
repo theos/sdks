@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PairingProximity.framework/PairingProximity
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PPDeviceWasDiscoveredNotification, _PPDiscoveredDeviceAdvertisingName, _PPDiscoveredDeviceRSSIValue,
                           _PPDiscoveryLimitBridge, _PPNearbyWatchBulletinProviderServiceName, _PairingProximityVersionNumber,
                           _PairingProximityVersionString, _kBridgeDomain, _kGizmoPeripheralService, _pbb_bridge_log,

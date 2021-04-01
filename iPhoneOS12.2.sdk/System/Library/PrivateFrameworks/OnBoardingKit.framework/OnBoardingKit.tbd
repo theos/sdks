@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _OBPrivacyActivityIdentifier, _OBPrivacyAdvertisingIdentifier, _OBPrivacyAnalyticsAppIdentifier,
                           _OBPrivacyAnalyticsDeviceIdentifier, _OBPrivacyAnalyticsiCloudIdentifier, _OBPrivacyAppStoreIdentifier,
                           _OBPrivacyAppleIDIdentifier, _OBPrivacyAppleMusicFriendsIdentifier, _OBPrivacyAppleMusicIdentifier,

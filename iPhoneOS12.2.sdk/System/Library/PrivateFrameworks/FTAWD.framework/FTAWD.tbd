@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FTAWD.framework/FTAWD
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _FTAWDLogCallAcceptReceived, _FTAWDLogCallAcceptSent, _FTAWDLogCallCancelSent, _FTAWDLogCallConnected,
                           _FTAWDLogCallDeclineSent, _FTAWDLogCallEnded, _FTAWDLogCallEndedViceroy, _FTAWDLogCallFailed,
                           _FTAWDLogCallInterruptionBegan, _FTAWDLogCallInterruptionEnded, _FTAWDLogCallInvitationReceived,

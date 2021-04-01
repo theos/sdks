@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Celestial.framework/Celestial
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AVAlternateInfo_AudioFormat, _AVAlternateInfo_ExcludeFromAutoSelection, _AVAlternateInfo_Language,
                           _AVAlternateInfo_Name, _AVAlternateInfo_TrackID, _AVAlternateType_Audio, _AVAlternateType_Subtitle,
                           _AVControllerActionAtEnd_Advance, _AVControllerActionAtEnd_None, _AVControllerActionAtEnd_Stop,

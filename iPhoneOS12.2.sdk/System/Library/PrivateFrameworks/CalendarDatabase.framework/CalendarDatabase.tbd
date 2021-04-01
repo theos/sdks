@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CDBCommonEntityFunctionalityHandlerPropertyMethods, _CDBEntityDestroy,
                           _CDBGetCommonEntityFunctionalityHandler, _CDBLogHandle, _CDBLogInitIfNeeded,
                           _CDBPreferences_Notification_LastConfirmedSplashScreenVersionViewed,

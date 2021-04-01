@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Heimdal.framework/Heimdal
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _HeimCredCopyAttribute, _HeimCredCopyAttributes, _HeimCredCopyFromUUID, _HeimCredCopyQuery,
                           _HeimCredCopyStatus, _HeimCredCreate, _HeimCredDelete, _HeimCredDeleteByUUID, _HeimCredDeleteQuery,
                           _HeimCredGetImpersonateBundle, _HeimCredGetUUID, _HeimCredMove, _HeimCredReleaseTransient,

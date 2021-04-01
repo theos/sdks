@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AKAbsintheErrorDomain, _AKAccountNameHeaderKey, _AKAccountNameTypeHeaderKey, _AKActionButtonKey,
                           _AKActionCancel, _AKActionComplete, _AKActionContinue, _AKActionDelete, _AKActionHeaderKey,
                           _AKActionKey, _AKActionRead, _AKActionStartICSC, _AKActionTeardown, _AKActionValidateMK, _AKAltDSID,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/AppleHIDTransportSupport.framework/AppleHIDTransportSupport
 current-version:       4101.1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     objc-classes:         [ _AHTBootLoader, _AHTDevice, _AHTInterface, _AHTLoader ]
     objc-ivars:           [ _AHTBootLoader._connect, _AHTBootLoader._device,
                             _AHTBootLoader._imageTag, _AHTBootLoader._machPort,

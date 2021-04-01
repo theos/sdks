@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IMDaemonCore.framework/IMDaemonCore
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CKRecordFileTransferAssetKey, _CKRecordFileTransferAttachmentCompressedMetadataKey,
                           _CKRecordFileTransferAttachmentGuidKey, _CKRecordFileTransferAttachmentMetadataKey,
                           _CKRecordFileTransferAttributionInfoKey, _CKRecordFileTransferAuxVideoAssetKey,

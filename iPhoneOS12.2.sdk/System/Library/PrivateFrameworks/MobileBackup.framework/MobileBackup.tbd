@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackup
 current-version:       1658.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BehaviorOptionsAppID, _BehaviorOptionsKey, _CryptoAcceleratorConnect, _CryptoAcceleratorDisconnect,
                           _CryptoAcceleratorEncrypt, _CryptoBufferAllocate, _CryptoBufferDuplicate, _LoggingSubsystem,
                           _MBAbsolutePathFromRootPathWithSnapshot, _MBAbsolutePathFromiCloudSnapshotPath,

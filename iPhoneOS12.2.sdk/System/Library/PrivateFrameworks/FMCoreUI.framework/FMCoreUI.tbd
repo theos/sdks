@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FMCoreUI.framework/FMCoreUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _FMShortcutItemIdentifierKey ]
     objc-classes:       [ _FMAccuracyOverlay, _FMAnnotationView, _FMAppShortcutManager, _FMAttributedStringRenderer,
                           _FMAttributedStringRendererOptions, _FMBlurView, _FMBorderedButton, _FMBorderedField, _FMBorderedView,

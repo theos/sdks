@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis
 current-version:       3442.4.190
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ photoanalysisd ]
     symbols:            [ _PHAAssetLocalIdentifiersFromUUIDs, _PHAAutoloopAnalysisError, _PHAAutoloopAnalysisErrorDomain,
                           _PHAAutoloopAnalysisGatingDescription, _PHAAutoloopAnalysisMatchingScenes,

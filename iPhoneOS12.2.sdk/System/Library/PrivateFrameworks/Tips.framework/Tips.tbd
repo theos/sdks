@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Tips.framework/Tips
 current-version:       431
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _TPSTipsManagerCollectionIdentifierAppleWatch, _TPSTipsManagerCollectionIdentifierHomePod,
                           _TipsVersionNumber, _TipsVersionString ]
     objc-classes:       [ _TPSTipsManager, _TPSWelcomeInformation ]

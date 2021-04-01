@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TVMLKit.framework/TVMLKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _IsPerformanceLoggingEnabled, _TVAnimatedLabelMarqueeLayerContentOriginXAnimationKey,
                           _TVAnimatedLabelMarqueeLayerPositionXAnimationKey, _TVAnimatedLabelMarqueeLayerWidthAnimationKey,
                           _TVAnimatedLabelMarqueeMaskLayerPositionXAnimationKey,

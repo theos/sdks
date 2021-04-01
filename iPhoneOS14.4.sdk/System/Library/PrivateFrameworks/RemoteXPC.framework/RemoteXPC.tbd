@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/RemoteXPC.framework/RemoteXPC
 current-version:       2038.40.38
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _XPC_REMOTE_CONNECTION_PROTOCOL_VERSION_CURRENT,
                             __xpc_type_remote_connection,
                             _xpc_remote_channel_arm_read,

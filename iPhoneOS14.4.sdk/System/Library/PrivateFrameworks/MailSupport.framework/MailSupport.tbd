@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/MailSupport.framework/MailSupport
 current-version:       3654.40
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ EmailFunctionalTests, EmailTests, IMAP, MIME, Mail,
                             MailCompositionService, MailIntentsExtension,
                             MailNotificationContentExtension,

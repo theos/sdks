@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ScreenReaderBrailleDriver.framework/ScreenReaderBrailleDriver
 current-version:       390
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SCRDAdvanceBufferToPacketStart, _SCRDAlva6SeriesAppendKeyEvent, _SCRDAppendFullKeystrokeFromEvent,
                           _SCRDBaum2SendDetectDevicesRequest, _SCRDBaum2SendDeviceArrivalAck, _SCRDBaum2SendDeviceResetRequest,
                           _SCRDBaumAppendEventsFromBrailleAndFrontPanelPacket, _SCRDBaumAppendEventsFromDirectionalPadPacket,

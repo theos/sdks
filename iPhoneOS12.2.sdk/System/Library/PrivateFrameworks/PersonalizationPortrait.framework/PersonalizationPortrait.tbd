@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PersonalizationPortrait.framework/PersonalizationPortrait
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PETPortraitFeatureId, _PPCollapseWhitespaceAndStrip, _PPGetSourceInternPool, _PPGetStringInternPool,
                           _PPIsServerContext, _PPMallocZone, _PPNSZone, _PPStringIsWellFormed,
                           _PersonalizationPortraitVersionNumber, _PersonalizationPortraitVersionString, _kLogSubsystem,

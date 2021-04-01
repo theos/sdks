@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AppendCommentToPGM, _BKErrorDomain, _BKLogCode, _BKLogEvent, _ComponentSetInit, _ComponentSetRelease,
                           _ComponentSetUpdate, _ConvertTransToNodeArea, _ConvertVectorForGUI, _FindRectangleForComponent,
                           _GenerateEnrollProgressInfo, _GenerateMatchTemplateTopology, _GenerateTemplateTopology,

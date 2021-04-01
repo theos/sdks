@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _RUIAlertCancelButtonIndex, _RUIErrorDomain, _RUIHTTPRequestErrorDomain,
                           _RUIHTTPRequestLoadingStatusDidChangeNotification, _RUIHTTPResponseKey,
                           _RUIImageLoaderDidLoadImageNotification, _RUIImageLoaderLoadingStatusDidChangeNotification,

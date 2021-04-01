@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreThemeDefinition.framework/CoreThemeDefinition
 current-version:       348.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AbortDistillKey, _CSIDataKey, _CoreThemeArtworkFormatCAAR, _CoreThemeArtworkFormatPNG,
                           _CoreThemeArtworkFormatPSD, _CoreThemeDefinitionDataModelKey, _CoreThemeDefinitionErrorDomain,
                           _CoreThemeDefinitionVersionNumber, _CoreThemeDefinitionVersionString,

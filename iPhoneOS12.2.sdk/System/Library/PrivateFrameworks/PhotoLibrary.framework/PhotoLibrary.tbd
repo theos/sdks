@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotoLibrary.framework/PhotoLibrary
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices ]
     symbols:            [ _AVAssetExportPresetForRemakerMode, _MetaStateFromState, _PLApplicationWillEnterForegroundNotification,
                           _PLCanSaveVideoToCameraRoll, _PLCleanupForStoreDemoMode, _PLCommentsFontCacheDidChangeNotification,

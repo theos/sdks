@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DocumentManagerUICore.framework/DocumentManagerUICore
 current-version:       68.100.44
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AttrValueString, _DOCBackgroundColorForTagColor, _DOCConstraintWithPriority,
                           _DOCConstraintsToCenterWithSuperview, _DOCConstraintsToResizeViewsWithSuperview,
                           _DOCConstraintsToResizeWithSuperview, _DOCConstraintsToResizeWithSuperviewMargins,

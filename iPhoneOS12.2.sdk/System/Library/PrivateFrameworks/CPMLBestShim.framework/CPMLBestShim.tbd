@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CPMLBestShim.framework/CPMLBestShim
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _kCPMLAppTitle, _kCPMLAppType, _kCPMLAppUsageTime, _kCPMLBTCondition, _kCPMLBundleID,
                           _kCPMLChangeCount, _kCPMLConfidence, _kCPMLConnectStatus, _kCPMLDeviceType, _kCPMLEmergenceHalfLife,
                           _kCPMLEmergenceTime, _kCPMLEventSunrise, _kCPMLEventSunset, _kCPMLEventTime, _kCPMLExpertProposal,

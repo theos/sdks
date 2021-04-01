@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/ClipServices.framework/ClipServices
 current-version:       20.20
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CPSAccountPolicyOverride,
                             _CPSAppClipBundleIdentifierPrefix,
                             _CPSBypassAccountEligibilityCheck,

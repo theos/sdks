@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/TipsCore.framework/TipsCore
 current-version:       566.1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _KTipsEventRetrievedServiceErrorKey,
                             _TPSAnalyticsContentStyleCollection,
                             _TPSAnalyticsContentStyleLandingPage,

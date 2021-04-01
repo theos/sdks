@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices
 current-version:       284.15.2
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AppendFieldDataToData, _AppendNumberToData, _BuildWordBreakTable, _CFDebugLog, _CompareLanguageCode,
                           _ContainsLatinAlphabets, _CopyFileObjectIdentifierAtURL, _CopyPreferredEnglishLanguage,
                           _CopySimplifiedTextFromWikipediaResult, _CopyTransformedTextFromXML, _CopyXPathElementsArray,

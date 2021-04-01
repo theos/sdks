@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppleCV3D.framework/AppleCV3D
 current-version:       1.25.5
 compatibility-version: 1.25.5
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _APL_dgemm_noPack_NN, _APL_dgemm_noPack_NT, _APL_dgemm_noPack_TN, _APL_dgemm_noPack_TT,
                           _APL_dsymm_noPack_LL, _APL_dsymm_noPack_LU, _APL_dsymm_noPack_RL, _APL_dsymm_noPack_RU, _APL_seq_dgemm,
                           _APL_seq_dsymm, _APL_seq_dsyr2k, _APL_seq_dsyrk, _APL_seq_dtrmm, _APL_seq_dtrsm, _APL_seq_sgemm,

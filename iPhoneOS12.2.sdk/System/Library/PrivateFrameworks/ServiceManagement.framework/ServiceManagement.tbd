@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ServiceManagement.framework/ServiceManagement
 current-version:       1336.252.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SMCopyAllJobDictionaries, _SMCopyEnabledLoginItems_4BTM, _SMJobCopyDictionary, _SMJobIsEnabled,
                           _SMJobRemove, _SMJobSetEnabled, _SMJobSubmit, _SMLaunchdPlistSetUserAllowed_4BTM,
                           _SMLoginItemSetUserAllowed_4BTM, __SMLoginItemSetEnabledWithURL, _kSMDomainLocalLaunchd,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          "/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib"
 current-version:       610.3.7
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:      [ WebCore, WebCoreTestSupport ]
     symbols:              [ _ANGLEGetDisplayPlatform, _ANGLEResetDisplayPlatform,
                             _EGL_BindAPI, _EGL_BindTexImage, _EGL_ChooseConfig,

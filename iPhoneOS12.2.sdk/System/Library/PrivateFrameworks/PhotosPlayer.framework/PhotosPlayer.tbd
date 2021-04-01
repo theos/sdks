@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer
 current-version:       3432.8.110
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BlurFilterKey, _CMTimeMod, _ISBlurFilterName, _ISBlurKeyPath, _ISCircularEaseOut, _ISCubicEaseOut,
                           _ISExifOrientationFromImageOrientation, _ISGestureRecognizerViewObservationContext, _ISKDebugIsEnabled,
                           _ISKDebugTrace, _ISLayerBlurRadiusKeyPath, _ISLivePhotoPlaybackFilterObservationContext,

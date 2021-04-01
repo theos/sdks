@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/iCalendar.framework/iCalendar
 current-version:       287
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ICSDecodeBase64, _ICSEncodeBase64, _ICSObscuritySalt, _ICSTravelAdvisoryBehavior_Automatic,
                           _ICSTravelAdvisoryBehavior_Disabled, _ICSTravelAdvisoryBehavior_Enabled, _ICSiCalendarErrorDomain,
                           _SHA256StringOfString, __uniqueSaltForThisMachine, _iCalendarAppendStringToStringWithOptions,

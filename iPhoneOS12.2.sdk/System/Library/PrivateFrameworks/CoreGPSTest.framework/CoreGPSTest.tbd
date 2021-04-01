@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreGPSTest.framework/CoreGPSTest
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CoreGPSTestVersionNumber, _CoreGPSTestVersionString, _GpsdLogObjectDevice, _GpsdLogObjectGeneral,
                           _GpsdLogObjectNmea, _GpsdLogObjectWarning, __Z10deleteFilePKc, __Z12calculateGcdjj,
                           __Z13algorithmName21compression_algorithm, __Z14executeCommandPKc,

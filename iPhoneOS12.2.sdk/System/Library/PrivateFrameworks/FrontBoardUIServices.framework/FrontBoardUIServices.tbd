@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FrontBoardUIServices.framework/FrontBoardUIServices
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices ]
     symbols:            [ _FBUIGetUserAgent, _FBUIGetUserAgentInternal, _FBUISFrontBoardUIServicesVersionNumber,
                           _FBUISFrontBoardUIServicesVersionString, _FBUISceneErrorCodeDescription, _FBUISceneErrorDomain ]

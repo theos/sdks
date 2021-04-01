@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _VCCKRecordTypeVoiceShortcut, _VCChangeTypeDescription, _VCCloudKitSyncServiceID, _VCDataDirectoryPath,
                           _VCIsAppWithIdentifierInstalled, _VCOSTransactionWithName, _VCPBChangeReadFrom,
                           _VCPBIntentDefinitionChangeReadFrom, _VCPBIntentDefinitionFileReadFrom, _VCPBIntentDefinitionReadFrom,

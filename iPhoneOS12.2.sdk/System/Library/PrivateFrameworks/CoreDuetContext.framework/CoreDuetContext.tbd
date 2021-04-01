@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CoreDuetContextVersionNumber, _CoreDuetContextVersionString, __CDContextDataMetadataKey,
                           __CDContextFirstKPValueAfterRebootKey, __CDContextServiceName, __CDContextTransitionDateMetadataKey,
                           __CDContextualChangeRegistrationEntityName, __CDContextualKeyPathEntityName ]

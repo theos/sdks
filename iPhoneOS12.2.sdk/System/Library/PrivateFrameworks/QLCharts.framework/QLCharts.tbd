@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/QLCharts.framework/QLCharts
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DummyValueCallbacks, _OIAXisGetDrawMajorGridlines, _OIAxisAreLabelsCentered,
                           _OIAxisConvertValueToLocal, _OIAxisCreateWithLabelCount, _OIAxisCreateWithRange,
                           _OIAxisDictionaryValueCallbacks, _OIAxisGetCustomNumberFormatter, _OIAxisGetICUFormating,

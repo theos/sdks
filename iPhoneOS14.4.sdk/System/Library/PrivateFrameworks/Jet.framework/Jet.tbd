@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/Jet.framework/Jet
 current-version:       8.19
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z10jet_assertbP8NSString, __Z13xglCheckErrorv,
                             __Z13xglPrintErrorv, __Z13xglPrintFloatPKcj,
                             __Z13xglPrintStatev, __Z14jet_util_isPOTjj,

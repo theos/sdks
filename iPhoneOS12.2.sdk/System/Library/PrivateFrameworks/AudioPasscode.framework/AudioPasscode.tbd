@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AudioPasscode.framework/AudioPasscode
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AudioPasscodeVersionNumber, _AudioPasscodeVersionString, __ZN10BitCounter10initializeEjb,
                           __ZN10BitCounter18kValidBitThresholdE, __ZN10BitCounter5countEj, __ZN10BitCounter5countEv,
                           __ZN10BitCounter5resetEb, __ZN10TSingletonI6RandomE5sOnceE, __ZN10TSingletonI6RandomE9sInstanceE,

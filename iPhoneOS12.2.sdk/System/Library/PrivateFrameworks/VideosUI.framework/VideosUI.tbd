@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VideosUI.framework/VideosUI
 current-version:       26.48
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _VUICollectionViewApplyChangeSetSectionIndexSections,
                           _VUIDeviceMediaLibraryUpdateStateDidChangeNotification,
                           _VUIDeviceMediaLibraryUpdateStateDidChangeUserInfoKeyIsInitialUpdateInProgress,

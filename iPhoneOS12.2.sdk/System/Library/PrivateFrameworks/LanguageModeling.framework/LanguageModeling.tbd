@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling
 current-version:       159.15.15
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _LMEnumerateAssetDataItems, _LMLanguageContextCreate, _LMLanguageContextSetFeatures,
                           _LMLanguageLikelihoodModelAddEvidenceForLanguage, _LMLanguageLikelihoodModelGetEmojiUsageCountForApp,
                           _LMLanguageLikelihoodModelGetLanguagePriorProbabilities,

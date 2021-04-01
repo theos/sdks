@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AVConference.framework/Frameworks/SimpleKeyExchange.framework/SimpleKeyExchange
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PL_ArenaAllocate, _PL_ArenaFinish, _PL_ArenaGrow, _PL_ArenaRelease, _PL_ClearArenaPool,
                           _PL_CompactArenaPool, _PL_FinishArenaPool, _PL_FreeArenaPool, _PL_InitArenaPool, _PORT_Alloc,
                           _PORT_ArenaAlloc, _PORT_ArenaGrow, _PORT_ArenaMark, _PORT_ArenaRelease, _PORT_ArenaStrdup,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DifferentialPrivacy.framework/DifferentialPrivacy
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DifferentialPrivacyVersionNumber, _DifferentialPrivacyVersionString, __DPDaemonInterface,
                           __DPToolSupportedCommands, __kDPMaxRefillAmount, _areEqualTimeIntervals, _epsilonMAX, _isEqualToOne,
                           _isInvalidEpsilon, _isNonZeroPowerOfTwo, _kDPAPAlgorithmParameters, _kDPAPPuzzleCount,

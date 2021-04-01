@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking
 current-version:       51
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ DeviceManagementTests, dmd, PowerlogHelperdOperators, PowerlogLiteOperators, remotemanagementd,
                           RemoteManagementTests, SafariShared, usagetool, UsageTrackingAgent ]
     symbols:            [ _USDuetClientNameUsageTracking, _USErrorDomain, _USNotificationReceivedValue,

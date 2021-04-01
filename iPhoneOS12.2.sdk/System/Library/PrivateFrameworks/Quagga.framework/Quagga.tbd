@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Quagga.framework/Quagga
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACBSConfigCopy, _ACBSConfigCopySymbologiesEnabled, _ACBSConfigCreate, _ACBSConfigFree,
                           _ACBSConfigSetDebuggingEnabled, _ACBSConfigSetFailedLocationsEnabled, _ACBSConfigSetLocateMode,
                           _ACBSConfigSetMaxLinearDecodeScanlines, _ACBSConfigSetMaxLinearDecodeTime,

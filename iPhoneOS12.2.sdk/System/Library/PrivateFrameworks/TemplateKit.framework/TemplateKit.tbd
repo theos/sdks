@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _TLKDefaultDimension, _TLKDefaultSize, _TLKMinimumHorizontalSpacingBetweenImageAndText,
                           _TLKMinimumHorizontalSpacingBetweenSmallImageAndText, _TLKMinimumHorizontalSpacingBetweenText,
                           _TLKMinimumVerticalSpacingBetweenTextBaselineAndImage, _TLKStyleIsDark, _TemplateKitVersionNumber,

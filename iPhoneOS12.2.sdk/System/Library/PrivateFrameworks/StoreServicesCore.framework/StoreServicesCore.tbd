@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/StoreServicesCore.framework/StoreServicesCore
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _StoreServicesCoreVersionNumber, _StoreServicesCoreVersionString,
                           __ZGVZN13mediaplatform9SingletonIN17storeservicescore21ExternalSignalMonitorEE14sharedInstanceEvE15_sharedInstance,
                           __ZGVZN13mediaplatform9SingletonIN17storeservicescore24CFUserNotificationCenterEE14sharedInstanceEvE15_sharedInstance,

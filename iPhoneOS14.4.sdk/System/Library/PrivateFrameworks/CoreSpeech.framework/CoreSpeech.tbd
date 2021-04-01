@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AudioInjectionXPCGetInterface, _CSAudioLogDirectory,
                             _CSCATXPCGetInterface,
                             _CSCopyKeychainBaseQueryDictionary, _CSErrorDomain,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MultitouchSupport.framework/MultitouchSupport
 current-version:       2140.3
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MTAbsoluteTimeGetCurrent, _MTActuatorActuate, _MTActuatorClose, _MTActuatorCreateFromDeviceID,
                           _MTActuatorCreateFromService, _MTActuatorGetDeviceID, _MTActuatorGetMTDevice, _MTActuatorGetReport,
                           _MTActuatorGetService, _MTActuatorGetSystemActuationsEnabled, _MTActuatorGetTransportMethod,

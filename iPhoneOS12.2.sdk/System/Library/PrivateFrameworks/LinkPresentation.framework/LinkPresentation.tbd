@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/LinkPresentation.framework/LinkPresentation
 current-version:       59.42
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting ]
     symbols:            [ _LPErrorDomain, _LPYouTubePlayerErrorDomain ]
     objc-classes:       [ _LPActionDisablingCALayerDelegate, _LPAnimationMaskView, _LPAppLinkPresentationProperties,

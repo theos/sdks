@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CRAddressKindEmail, _CRAddressKindGroup, _CRAddressKindInstantMessage, _CRAddressKindMapLocation,
                           _CRAddressKindPhoneNumber, _CRAddressKindURL, _CRIsInternalDevice,
                           _CRRecentContactMetadataCreationTime, _CRRecentContactMetadataEventTime, _CRRecentContactMetadataFrom,

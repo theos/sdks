@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AVConference.framework/Frameworks/GKSPerformance.framework/GKSPerformance
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AWDGCKSubmitLinkStatusMetric, _GKSSubmitAWDMetricsFromGameD ]
     objc-classes:       [ _AWDAdaptor, _AWDHistogram, _AWDStats, _AudioTier, _AudioTierHistogram ]
     objc-ivars:         [ _AWDAdaptor._RTStatsReceived, _AWDAdaptor._awdstat, _AWDAdaptor._callStarted,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreSpeech.framework/CoreSpeech
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CSAudioLogDirectory, _CSCopyKeychainBaseQueryDictionary, _CSErrorDomain,
                           _CSFidesBorealisTriggerTypeAsString, _CSHasAOP, _CSInternalPreferencesSynchronize, _CSIsBridgeOS,
                           _CSIsEmbedded, _CSIsHorseman, _CSIsIOS, _CSIsIPhone, _CSIsInternalBuild, _CSIsMac, _CSIsOSX,

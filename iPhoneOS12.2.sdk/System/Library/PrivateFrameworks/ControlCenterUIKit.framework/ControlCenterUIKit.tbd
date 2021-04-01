@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ControlCenterUIKit.framework/ControlCenterUIKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CCUIAffineTransformBetweenInterfaceOrientations, _CCUIAppLaunchOriginControlCenter,
                           _CCUICompactModuleContinuousCornerRadius, _CCUIDefaultExpandedContentModuleFullWidth,
                           _CCUIDefaultExpandedContentModuleWidth, _CCUIEdgeInsetsRTLSwap,

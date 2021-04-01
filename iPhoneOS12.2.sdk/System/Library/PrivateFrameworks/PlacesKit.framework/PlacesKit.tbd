@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PlacesKit.framework/PlacesKit
 current-version:       3442.11.111
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PXMapStoreDefaultCapacityPerNode, _PXMapStoreMinimumRectWidth, _PXMapStoreStoreItemsInLeafNodesOnly,
                           _PXQuadTreeNodeCanBeSubdivided, _PXQuadTreeNodeExtendCapacity, _PXQuadTreeNodeFindItemsInRect,
                           _PXQuadTreeNodeFree, _PXQuadTreeNodeHasCapacity, _PXQuadTreeNodeInsertItem, _PXQuadTreeNodeMake,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
 current-version:       29
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers ]
     symbols:            [ _ALCityCountryNameKey, _ALCityCountryOverrideKey, _ALCityIdentifierKey, _ALCityLatitudeKey,
                           _ALCityLocaleCodeKey, _ALCityLongitudeKey, _ALCityNameKey, _ALCityPropertiesCount, _ALCityTimeZoneKey,

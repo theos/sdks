@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices
 current-version:       1191.56
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PRSLogCategoryDefault, _PRSLogInit, _PRSPolicyFieldsPrefixMatch, _PRSRankingAlbumExactPrefixMatch,
                           _PRSRankingAlbumExactWordMatch, _PRSRankingAlbumTokenizedWord, _PRSRankingAlbumWordMatch,
                           _PRSRankingAlternateNameExactMatch, _PRSRankingAlternateNameExactPrefixMatch,

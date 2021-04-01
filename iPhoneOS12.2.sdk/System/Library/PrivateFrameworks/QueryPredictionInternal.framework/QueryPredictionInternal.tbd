@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/QueryPredictionInternal.framework/QueryPredictionInternal
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _QueryPredictionInternalVersionNumber, _QueryPredictionInternalVersionString, _kDaySeconds,
                           _kHourSeconds, _kLookupIdentifier, _kQueryDatabaseChangeNotification, _kQueryDeleteDataNotification,
                           _kQuerySuggestionModelChangedSignificantlyNotification, _kSafariIdentifier, _kSpotlightIdentifier,

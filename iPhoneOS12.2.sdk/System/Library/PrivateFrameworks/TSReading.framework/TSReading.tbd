@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TSReading.framework/TSReading
 current-version:       261
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BOOL_NAME, _CGPointFromIntPoint, _CGPointWithTSDDoublePoint, _CGRectContainsIntPoint,
                           _CGRectEmptyUnitSquare, _CGRectFromIntRect, _DEFAULT_GRADIENT_DIMENSION, _EQKitErrorDomain,
                           _EQKitUtilCFTypeCast, _EQKitUtilDynamicCast, _EQKitUtilGetDeviceColorSpace, _EQKitUtilGetFakeContext,

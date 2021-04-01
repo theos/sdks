@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/CoreHAP.framework/CoreHAP
 current-version:       484.5.26
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _BANDWIDTH_PERCENT_CAP, _CBConnectionsObserverErrorDomain, _CBUUIDCharacteristicValidRange,
                           _HAPAccessoryHasPairings, _HAPAccessoryServerRelayMaximumReachabilityProbeTimeInterval,
                           _HAPAccessoryServerRelayMinimumReachabilityProbeTimeInterval,

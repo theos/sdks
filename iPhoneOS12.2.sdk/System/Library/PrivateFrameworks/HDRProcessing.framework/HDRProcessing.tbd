@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/HDRProcessing.framework/HDRProcessing
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ATFMTLfloat2half_rtz, _ATFMTLhalf2float, _GetRelative_SDR_DOLBY, _GetRelative_YUV_TM,
                           _GetToneMap_SDR_DOLBY, _GetToneMap_YUV_TM, _HDRProcessFrame, _HDRProcessingVersionNumber,
                           _HDRProcessingVersionString, _HDRProcessorCreate, _HDRProcessorGetTypeID, _HDRProcessorImplCreate,

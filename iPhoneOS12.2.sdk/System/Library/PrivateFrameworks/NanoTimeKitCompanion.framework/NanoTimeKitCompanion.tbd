@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AXCharacterVoicePreferencesDomain, _AXCharacterVoiceTapToSpeakKey,
                           _CLKComplicationFamilyComplicationNoContentImageDirectory, _CLKComplicationFamilyNoContentImageArchive,
                           _CLKDeviceIsNRDevicePaired, _ComplicationThrottleDurationInMS, _DynamicFontSizeLarge448h,

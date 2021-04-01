@@ -2368,7 +2368,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ ___libsystem_mallocVersionNumber, ___libsystem_mallocVersionString, 
                        _malloc_debug_flags, _szone_error ]
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ '_nanov2_allocate$VARIANT$armv81', '_nanov2_allocate$VARIANT$mp', 
                        '_nanov2_allocate_from_block$VARIANT$armv81', '_nanov2_allocate_from_block$VARIANT$mp', 
                        '_nanov2_batch_free$VARIANT$armv81', '_nanov2_batch_free$VARIANT$mp', 
@@ -2635,7 +2635,7 @@ exports:
   - archs:           [ armv7, armv7s ]
     symbols:         [ ___system_pthreadVersionNumber, ___system_pthreadVersionString, 
                        _pthread_workqueue_setdispatch_with_kevent_np ]
-  - archs:           [ armv7, armv7s, arm64 ]
+  - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ '_pthread_dependency_fulfill_np$VARIANT$armv81', '_pthread_dependency_fulfill_np$VARIANT$mp', 
                        '_pthread_dependency_wait_np$VARIANT$armv81', '_pthread_dependency_wait_np$VARIANT$mp' ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]

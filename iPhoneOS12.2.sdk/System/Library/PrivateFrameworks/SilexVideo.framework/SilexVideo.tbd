@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SilexVideo.framework/SilexVideo
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SVBundle, _SVContentSizeCategoryIsEqualToContentSizeCategory, _SVDiscoverMoreAccessoryItemIdentifier,
                           _SVMoreFromAccessoryItemIdentifier, _SVNowPlayingAccessoryItemIdentifier,
                           _SVUpNextAccessoryItemIdentifier, _SVVideoErrorDomain, _SVVideoTimeInvalid, _SilexVideoVersionNumber,

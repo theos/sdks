@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Espresso.framework/Espresso
 current-version:       120
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __Z29FaceLandmarkDetectorPointMakeRKfS0_, __ZN8Espresso10fuse_scaleENSt3__110shared_ptrINS_3netEEE,
                           __ZN8Espresso10kern_allocEm, __ZN8Espresso10on_deallocEPv, __ZN8Espresso10solver_sgd4stepEm,
                           __ZN8Espresso10solver_sgdC1ENSt3__110shared_ptrINS_3netEEENS2_INS_20abstract_data_sourceEEERKNS0_7optionsE,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FrontBoard.framework/FrontBoard
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices ]
     symbols:            [ _FBApp, _FBAppLibraryLoggingSubsystem, _FBApplicationBadgeValueAccessEntitlement,
                           _FBApplicationDataStoreRepositoryServerMessageReceivedNotification,

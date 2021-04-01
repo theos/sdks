@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/MobileAccessoryUpdater
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _FUDError, _FudLog, _FudLogCopyMessages, _FudLogInit, _FudLogSetMode, _FudLogv, _MAUError,
                           _addObjectToXpcDictionary, _archivedKeyedData, _copyEntitlementsForPid, _dumpXPCObject,
                           _getOperationNameFromCode, _getProgressWeightsFromPluginInfo, _kMAU_STEP_APPLY, _kMAU_STEP_BOOTSTRAP,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/TelephonyPreferences.framework/TelephonyPreferences
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CTCallingLineIdRestrictionValueForState, _TPSCallingLineIdRestrictionStateForValue,
                           _TPSLocalizedPhoneNumberString, _TPSLog, _TPSNormalizedPhoneNumberString, _TPSResponseErrorDomain,
                           _TPSSpecifierSubscriptionDetailControllerKey, _TPSSpecifierSubscriptionsKey,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PASampling.framework/PASampling
 current-version:       218.2
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CopyDonatingUniqueIds, _CopyMountStatusData, _CountedStateForSampleThread,
                           _CreateDsymSymbolOwnerForUUID, _CreatePAImageInfoArrayFromDyldImageInfos,
                           _CreateSymbolOwnerForUUIDAtPath, _CreateSymbolicatorForLiveProcess, _DescriptionForKCDataType,

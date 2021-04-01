@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _FABackdropStateBase, _FABackdropStateDismiss, _FABackdropStateTimesUp, _FACircleClientNameScreenTime,
                           _FACircleEventTypeAcceptInvitation, _FACircleEventTypeAddChildAccount,
                           _FACircleEventTypeAddFamilyMember, _FACircleEventTypeAddMemberInline,

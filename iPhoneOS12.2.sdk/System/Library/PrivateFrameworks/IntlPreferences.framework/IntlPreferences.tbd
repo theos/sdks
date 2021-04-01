@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
 current-version:       227.17.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _GetNSFriendlySeparator, _IntlPreferencesValue, _IntlSetPreferencesValue,
                           _NSPersonNameDefaultDisplayNameOrderKey, _NSPersonNameDefaultNamePreferencesDomain,
                           _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShortNameFormatKey,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ProVideo.framework/ProVideo
 current-version:       328.6.54
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AffineTransformByDemotingProjectiveTransform, _AppStartupActionPreferenceKey, _BoundingRect,
                           _CGAffineTransformFromPVAnimInfo, _CreatePVLPThrottlingControlParameters, _FiltersLiteVersionNumber,
                           _FiltersLiteVersionString, _FirstFrameNumberPreferenceKey, _FxPlugErrorDomain,

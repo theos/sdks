@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/ClassKitUI.framework/ClassKitUI
 current-version:       146.2
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     objc-classes:         [ _CLSNotificationBanner,
                             _CLSNotificationBannerDisplayManager,
                             _CLSNotificationBannerView,

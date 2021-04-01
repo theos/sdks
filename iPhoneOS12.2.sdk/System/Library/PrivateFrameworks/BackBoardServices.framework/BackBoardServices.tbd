@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     re-exports:         [ /System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices ]
     symbols:            [ _BKAccelerometer_server, _BKAccelerometer_server_routine, _BKCreateMIGServerSource,
                           _BKCreateMIGServerSourceWithContext, _BKDefaultBrightness, _BKDefaultKeyALSEnabled,

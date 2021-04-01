@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VideoProcessing.framework/VideoProcessing
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _MediaAnalysisActivityLevelResultsKey, _MediaAnalysisAdjustedFingerprintKey,
                           _MediaAnalysisAnalysisTypesKey, _MediaAnalysisBlacklistAgeOutInterval,
                           _MediaAnalysisBlacklistThreshold, _MediaAnalysisBlurResultsKey, _MediaAnalysisCameraMotionResultsKey,

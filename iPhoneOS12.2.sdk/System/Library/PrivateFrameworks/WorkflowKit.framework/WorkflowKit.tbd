@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _WFLActionErrorDomain, _WFLErrorDomain, _WFLForceExecutionOnPhoneKey, _WFLHandleIntentActionIdentifier,
                           _WFLIntentDataKey, _WFLLogContext, _WFLLogInitIfNeeded, _WFLOpenUserActivityActionIdentifier,
                           _WFLUnderlyingIntentResponseKey, _WFLWorkflowActionIdentifierKey, _WFLWorkflowActionParametersKey,

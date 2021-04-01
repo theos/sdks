@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ASTLogCommon, _AXAccessibilityBundlesDirectory, _AXAccessibilityPrivateFrameworksDirectory,
                           _AXBackgroundLog, _AXInternalAccessibilityBundlesDirectory, _AXLogAccessories, _AXLogAggregate,
                           _AXLogAppAccessibility, _AXLogAppCompareGeometry, _AXLogAssertions, _AXLogAudioRouting,

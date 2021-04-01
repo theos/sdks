@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     re-exports:           [ /System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard,
                             /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices ]
     symbols:              [ _FBApplicationDataStoreServiceIdentifier,

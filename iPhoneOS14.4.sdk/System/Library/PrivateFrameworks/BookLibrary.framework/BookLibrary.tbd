@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/BookLibrary.framework/BookLibrary
 current-version:       431
 compatibility-version: 0
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BLAudiobookDownloadInBookassetdEnabled,
                             _BLAudiobookMLImporterLog,
                             _BLAudiobookStreamingEnabled, _BLAudiobookSyncLog,

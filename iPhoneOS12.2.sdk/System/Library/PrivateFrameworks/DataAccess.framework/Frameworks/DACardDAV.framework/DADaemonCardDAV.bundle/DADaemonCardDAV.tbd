@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DADaemonCardDAV.bundle/DADaemonCardDAV
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     objc-classes:       [ _CardDAVActionsLogger, _CardDAVAgent, _CardDAVDaemonAccount, _CardDAVFacebookDaemonAccount,
                           _CardDAVSyncInfo, _CardDAVVCardItem, _CardDAViCloudDaemonAccount,
                           _CardDAViCloudGetAccountPropertiesTaskGroup ]

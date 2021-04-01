@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ProactiveML.framework/ProactiveML
 current-version:       126.37
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AWDProactiveModelFittingAvailableSessionsReadFrom, _AWDProactiveModelFittingEvalMetricsReadFrom,
                           _AWDProactiveModelFittingEvaluationReadFrom, _AWDProactiveModelFittingLabelSupportPairReadFrom,
                           _AWDProactiveModelFittingLinRegFeatureMatrixReadFrom,

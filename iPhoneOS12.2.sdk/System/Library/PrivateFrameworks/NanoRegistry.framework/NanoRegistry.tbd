@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NRArchivingDataKey, _NRClassesForPropertiesWithArray, _NRDemoModeNotifyNotification,
                           _NRDeviceDiscoveryControllerDidDiscoverDevice, _NRDevicePropertyAdditionalSEIDs,
                           _NRDevicePropertyAdvertisedName, _NRDevicePropertyBackgroundAtrialFibrillationManufactureDate,

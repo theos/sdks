@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Silex.framework/Silex
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     allowed-clients:    [ NewsUI, NVCDemo, ArticleNotificationExtension, NewsInternalExtras, SilexTests, SilexDebugger,
                           Feldspar Tests, SilexVideoDebugger, SilexVideoWidget, NewsToday, News, NewsUI2, NewsArticles ]
     symbols:            [ _CGSizeAspectFill, _CalculateColumnWidth, _CalculateMargin, _CalculateMinimumColumnWidth,

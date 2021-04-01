@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation
 current-version:       800
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CopyKeychainSearchList, _ExtractURLQueries, _FZAVErrorDomain, _FZRelayParameter_ConnectionID,
                           _FZRelayParameter_PeerBlob, _FZRelayParameter_PeerID, _FZRelayParameter_PeerNatIP,
                           _FZRelayParameter_PeerNatType, _FZRelayParameter_PeerRelayIP, _FZRelayParameter_PeerRelayNatIP,

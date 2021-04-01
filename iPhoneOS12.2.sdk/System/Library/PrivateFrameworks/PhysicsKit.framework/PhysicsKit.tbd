@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _PKArrayFromB2ChainShape, _PKArrayFromB2PolygonShape, _PKArrayFromCGPath, _PKArrayFromPKPath,
                           _PKCGPathCreateFromArray, _PKCGPointFromString, _PKGetLinkedOnOrAfter, _PKGet_INV_PTM_RATIO,
                           _PKGet_PTM_RATIO, _PKPathCreateFromCGPath, _PKPathCreateFromCGPathWithOptions,

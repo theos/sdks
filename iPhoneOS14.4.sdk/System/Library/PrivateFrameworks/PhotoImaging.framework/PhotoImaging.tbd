@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/PhotoImaging.framework/PhotoImaging
 current-version:       322.0.100
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _GUInvertMatrix, _GUMatrixVector,
                             _PIAdjustment_AutoEnhance_Identifier,
                             _PIAdjustment_AutoLoop_Identifier,

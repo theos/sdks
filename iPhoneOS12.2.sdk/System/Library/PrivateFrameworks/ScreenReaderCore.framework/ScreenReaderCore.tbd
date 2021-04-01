@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ScreenReaderCore.framework/ScreenReaderCore
 current-version:       390
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _SCRCAddInformationToCrashTracerLog, _SCRCArgumentParserRunWithClassName, _SCRCCGFloatAlmostEqual,
                           _SCRCCopyStringToUChar32Array, _SCRCCopyStringToUniCharArray, _SCRCDebugPrint, _SCRCDebugPrintToFile,
                           _SCRCDoubleAlmostEqual, _SCRCEnableProcessKeepAlive, _SCRCFileHandleForTempFile, _SCRCFloatAlmostEqual,

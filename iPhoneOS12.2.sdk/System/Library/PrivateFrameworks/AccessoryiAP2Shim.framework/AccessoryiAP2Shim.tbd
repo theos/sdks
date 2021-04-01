@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/AccessoryiAP2Shim.framework/AccessoryiAP2Shim
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _ACCUserDefaultsDomain, _ACCUserDefaultsIapdDomain, _ACCUserDefaultsIapdKey_ChargingPowerOverride,
                           _ACCUserDefaultsIapdNotification, _ACCUserDefaultsKey_BypassTrustDialog,
                           _ACCUserDefaultsKey_DisableWirelessCTA, _ACCUserDefaultsKey_EnableTrustDialog,

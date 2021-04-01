@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/ITMLKit.framework/ITMLKit
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _IKAppCacheErrorDomain, _IKAppDocumentViewAttributeOrientation, _IKAppDocumentViewAttributeResolution,
                           _IKAppDocumentViewAttributeSize, _IKAppPlayerAllTimedMetadataKey, _IKAppReloadUrgencyMinSuspensionTime,
                           _IKButtonTypeForString, _IKDOMDocumentOnAppearCB, _IKDOMDocumentOnDidUpdateCB,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MailServices.framework/MailServices
 current-version:       3445.104.7
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _AccountKey, _AuthSchemeKey, _BCCSelfKey, _CollapseReadConversationMessagesKey,
                           _ConversationViewExcludesRelatedMessagesKey, _ConversationViewShowsNewestAtTop, _DecelerationKey,
                           _DisableQuoteIncrease, _DisableThreadingKey, _FlagStyleColor, _FlagStyleKey, _FlagStyleShape,

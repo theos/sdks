@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Calculate.framework/Calculate
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CalculateExpression, _CalculateExpressionError, _CalculateInternationalExpression,
                           _CalculatePerformExpression ]
     objc-classes:       [ _Converter, _CurrencyCache ]

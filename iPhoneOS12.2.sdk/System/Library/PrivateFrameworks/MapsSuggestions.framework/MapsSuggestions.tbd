@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/MapsSuggestions.framework/MapsSuggestions
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _GEOComposedWaypointFromMapsSuggestionsEntry, _GEOMapItemCityName, _GEOMapItemFromMapsSuggestionsEntry,
                           _GEOMapItemShortAddress, _GEOMapItemStreetName, _MapsSuggestionsBestLocation,
                           _MapsSuggestionsDestinationKey, _MapsSuggestionsEntriesAreBothOfType,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 install-name:          /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
 current-version:       4003.1.101
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     re-exports:           [ /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation ]
     symbols:              [ _CGAffineTransformFromString, _CGPointFromString,
                             _CGRectFromString, _CGSizeFromString,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NPFlowProperty, _NPFlowPropertyFlag, _NPGetInternalQueue, _NetworkServiceProxyEnableForSessionTask,
                           _NetworkServiceProxyEnableInParameters, _NetworkServiceProxyGetStatus, _NetworkServiceProxyIsEnabled,
                           _NetworkServiceProxySetCurrentConfiguration, _NetworkServiceProxySetCurrentLocation,

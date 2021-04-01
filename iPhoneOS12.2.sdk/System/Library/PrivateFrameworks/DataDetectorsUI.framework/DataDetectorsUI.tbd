@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/DataDetectorsUI.framework/DataDetectorsUI
 current-version:       331.18
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _DDBackupAttributeName, _DDClientActionURLScheme, _DDContextAttributeName,
                           _DDDetectionControllerDidDismissActionNotification,
                           _DDDetectionControllerWillPresentActionNotification, _DDExistingLinkAttributeName,

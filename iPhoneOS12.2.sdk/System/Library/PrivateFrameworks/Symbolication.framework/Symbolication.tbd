@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/Symbolication.framework/Symbolication
 current-version:       64490.38.1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _VMUBacktraceIsExcludedMarker, _VMUDirectedGraphCompatibilityVersionNumberInGraphKey,
                           _VMUDirectedGraphToolCompatibilityVersionKey, _VMUEnumerateVMAnnotatedMallocObjectsWithBlock,
                           _VMUGetFlagsForAllVMRegionStatistics, _VMUGraphNodeTypeDescription, _VMUGraphNodeType_IsRoot,

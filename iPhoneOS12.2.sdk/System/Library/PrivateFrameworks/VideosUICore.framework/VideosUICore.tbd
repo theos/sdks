@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore
 current-version:       26.48
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _VUIBoolLogString, _VUIDurationValueTransformerName, _VUIError, _VUIErrorCancelled,
                           _VUIErrorCancelledWithUnderlyingError, _VUIErrorIsCancelled, _VUIErrorIsErrorCode,
                           _VUIErrorIsErrorDomainAndCode, _VUIErrorWithDomain, _VUIRequireKeyedCoder, _VUIRequireMainThread,

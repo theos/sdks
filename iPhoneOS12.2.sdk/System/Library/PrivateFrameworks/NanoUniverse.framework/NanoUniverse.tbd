@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/NanoUniverse.framework/NanoUniverse
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _NULoadTextureFromMemory, _NULoggingObjectForDomain, _NUProgramInit, _NUProgramValidate,
                           _NanoUniverseVersionNumber, _NanoUniverseVersionString, __Z10UMQuatMakeDv3_f, __Z10UMQuatMakeDv3_fS_S_,
                           __Z10UMQuatMakefff, __Z11UMTranslate8float4x4Dv3_f, __Z11UMTranspose8float3x3,

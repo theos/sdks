@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/VectorKit.framework/VectorKit
 current-version:       1360.34.9
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _GEOMapRectEnclosingCameraProperties, _GEOPDCameraPathFrameFromVKCameraFrame,
                           _VKAnimationCurveDefaultCameraSpring, _VKAnimationCurveDefaultSpring, _VKAnimationCurveEaseIn,
                           _VKAnimationCurveEaseInOut, _VKAnimationCurveEaseOut, _VKAnimationCurveExponentialEaseIn,

@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/Frameworks/CoreTelephony.framework/Support/libSystemDetermination.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ __ZN13PhoneServicesD0Ev, __ZN13PhoneServicesD1Ev, __ZN13PhoneServicesD2Ev,
                           __ZN2sd10DCNManager11scheduleDCNERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE,
                           __ZN2sd10DCNManager13handleCallEndEb, __ZN2sd10DCNManager15handleCallStartEb15PhoneNumberType,

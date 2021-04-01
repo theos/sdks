@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 install-name:          /System/Library/PrivateFrameworks/PhotosImagingFoundation.framework/PhotosImagingFoundation
 current-version:       3442.11.230
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64 ]
+  - archs:              [ armv7, armv7s, arm64, arm64e ]
     symbols:            [ _CGAffineTransformDeterminant, _CGAffineTransformDot, _CGAffineTransformFixedPoint,
                           _CGAffineTransformForMappingFromRectToRect, _CGAffineTransformHasRotation, _CGAffineTransformIsValid,
                           _CGAffineTransformMove, _CGAffineTransformRelative, _CGAffineTransformRoot,
