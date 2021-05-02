@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ __IOSurfacePropertyDictionaryForRect,
+                            _kPUIDefaultContextLevel ]
+    objc-classes:         [ _PUIFramebufferSizeChangeNotifier,
+                            _PUIProgressWindow ]
+...

@@ -1,0 +1,16 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ProximityUI.framework/ProximityUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _calculateBearingAngleHorizontalDistanceAndVerticalDistance,
+                            _platformSupportsProximity ]
+    objc-classes:         [ _PRARKitDataRecorder, _PRDataRecorder,
+                            _PRDataRecorderBase, _PRDevicePoseProvider,
+                            _PREstimatorInput, _PRItemLocalizer, _PRPose,
+                            _PRProximity, _PRTargetEstimate,
+                            _PRVIODevicePoseProvider ]
+...

@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/MetricKitCore.framework/MetricKitCore
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _MetricKitCoreVersionNumber,
+                            _MetricKitCoreVersionString ]
+    objc-classes:         [ _MXCore, _MXCorePayloadConstructor, _MXSource ]
+...

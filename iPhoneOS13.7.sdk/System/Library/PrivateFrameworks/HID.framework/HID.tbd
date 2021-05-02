@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/HID.framework/HID
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _HIDVersionNumber, _HIDVersionString,
+                            _kHIDUserDevicePropertyCreateInactiveKey ]
+    objc-classes:         [ _HIDEventSystemClient, _HIDManager, _HIDUserDevice,
+                            _HIDVirtualEventService ]
+...

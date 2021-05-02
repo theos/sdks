@@ -1,0 +1,16 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/FMFUI.framework/FMFUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _ActiveDeviceLinkDetailsKey,
+                            _ActiveDeviceLinkNameKey,
+                            _PSFollowerDetailsTitleTextColorKey ]
+    objc-classes:         [ _ActiveDeviceLinkCell,
+                            _FMFLocationSharingViewController,
+                            _FMFMapViewController, _FMFSpecifierProvider,
+                            _FollowerDetailsLinkCell ]
+...

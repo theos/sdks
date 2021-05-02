@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/FoundInAppsPlugins
+current-version:       1052.34
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _FoundInAppsPluginsVersionNumber,
+                            _FoundInAppsPluginsVersionString ]
+    objc-classes:         [ _FIAPHistoricalDataRequest, _FIAPResult ]
+...

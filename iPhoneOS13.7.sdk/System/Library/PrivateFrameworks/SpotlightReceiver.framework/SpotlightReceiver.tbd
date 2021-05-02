@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _SpotlightReceiverEntitlement,
+                            _SpotlightReceiverRegister,
+                            _SpotlightReceiverVersionNumber,
+                            _SpotlightReceiverVersionString,
+                            _SpotlightSenderEntitlement ]
+    objc-classes:         [ _CSRecieverConnection ]
+...

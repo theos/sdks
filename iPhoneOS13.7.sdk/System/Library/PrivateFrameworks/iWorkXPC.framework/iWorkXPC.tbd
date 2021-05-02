@@ -1,0 +1,10 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/iWorkXPC.framework/iWorkXPC
+current-version:       11
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _iWorkXPCVersionNumber, _iWorkXPCVersionString ]
+...

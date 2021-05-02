@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AudioDataAnalysis.framework/AudioDataAnalysis
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _ADAMEnvConfigKeys,
+                            _AudioDataAnalysisFrameworkVersionNumber,
+                            _AudioDataAnalysisFrameworkVersionString,
+                            _AudioDataAnalysisVersionNumber,
+                            _AudioDataAnalysisVersionString ]
+    objc-classes:         [ _ADAMAudioDataReceiver ]
+...

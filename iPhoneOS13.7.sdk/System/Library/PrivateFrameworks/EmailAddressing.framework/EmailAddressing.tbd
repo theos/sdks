@@ -1,0 +1,13 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing
+current-version:       3608.120
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _EAAddressComment ]
+    objc-classes:         [ _EAEmailAddressGenerator, _EAEmailAddressLists,
+                            _EAEmailAddressParser, _EAEmailAddressSet,
+                            __EAEmailAddress, __EAEmailAddressSetEnumerator ]
+...

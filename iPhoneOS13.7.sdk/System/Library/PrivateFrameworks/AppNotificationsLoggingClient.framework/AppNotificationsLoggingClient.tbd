@@ -1,0 +1,19 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/AppNotificationsLoggingClient.framework/AppNotificationsLoggingClient
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _ATXNEventTypeToString,
+                            _ATXNRTOutcomeToSettingResponse,
+                            _ATXNSettingResponseToNEvent,
+                            _ATXNSettingResponseToString,
+                            _ATXSuggestionTypeToString,
+                            _AppNotificationsLoggingClientVersionNumber,
+                            _AppNotificationsLoggingClientVersionString ]
+    objc-classes:         [ _ATXNotificationsAggregateLogger,
+                            _ATXNotificationsInterface,
+                            _ATXNotificationsLoggingClient ]
+...

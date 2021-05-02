@@ -1,0 +1,12 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/MetricKitServices.framework/MetricKitServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _MetricKitServicesVersionNumber,
+                            _MetricKitServicesVersionString ]
+    objc-classes:         [ _MXPowerlogService, _MXService, _MXUtilities ]
+...

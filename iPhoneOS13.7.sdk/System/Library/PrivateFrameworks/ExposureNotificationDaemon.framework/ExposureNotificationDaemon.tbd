@@ -1,0 +1,65 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/ExposureNotificationDaemon.framework/ExposureNotificationDaemon
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _ENAdvertisementStoreErrorDomain,
+                            _ENBundleIdentifierForURLSessions,
+                            _ENConfigurationManagerErrorDomain,
+                            _ENDownloadManagerDownloadsAvailable,
+                            _ENExposureDetectionDaemonSessionErrorDomain,
+                            _ENNestedTestResultErrorF, _ENReadLinesFromFile,
+                            _ENSQLiteBindFoundationValue, _ENSQLiteColumnAsData,
+                            _ENSQLiteColumnAsDate, _ENSQLiteColumnAsNaturalType,
+                            _ENSQLiteColumnAsString, _ENSQLiteColumnAsUUID,
+                            _ENServerConfigurationReadFrom, _ENTestResultErrorF ]
+    objc-classes:         [ _ENActiveEntity, _ENAdvertisement,
+                            _ENAdvertisementDatabase,
+                            _ENAdvertisementDatabaseQuerySession,
+                            _ENAdvertisementMetadata,
+                            _ENAdvertisementSQLiteStore, _ENConfigurationManager,
+                            _ENConfigurationStore, _ENCoreTelephonyUtility,
+                            _ENDaemon, _ENDeviceIdentityUtility,
+                            _ENDownloadEndpoint, _ENDownloadManager,
+                            _ENDownloadManagerState,
+                            _ENExposureCalculationSession, _ENExposureDatabase,
+                            _ENExposureDetectionDaemonSession,
+                            _ENExposureDetectionManager, _ENLoggingPrefs,
+                            _ENPersistentTemporaryExposureKey, _ENRegionHistory,
+                            _ENRegionHistoryManager, _ENRegionMonitor,
+                            _ENRegionMonitorCoreLocationDataSource,
+                            _ENRegionMonitorTelephonyDataSource,
+                            _ENSQLiteConnection, _ENSecKey,
+                            _ENSecureArchiveFileWrapper, _ENServerConfiguration,
+                            _ENTemporaryExposureKeyManager,
+                            _ENTestResultCertificateRequest,
+                            _ENTestResultManager, _ENTestResultNetworkRequest,
+                            _ENTestResultSession, _ENTestResultUploadRequest,
+                            _ENTestResultVerificationRequest, _ENXPCClient,
+                            _ENXPCTimer ]
+    objc-ivars:           [ _ENServerConfiguration._advertisingIntervalInMilliSec,
+                            _ENServerConfiguration._applicationBackgroundRuntimeIntervalinHours,
+                            _ENServerConfiguration._attenuationMinThreshold,
+                            _ENServerConfiguration._attenuationThresholdForExposureInfo,
+                            _ENServerConfiguration._callbackIntervalInMin,
+                            _ENServerConfiguration._enEnabled,
+                            _ENServerConfiguration._fetchAllRanges,
+                            _ENServerConfiguration._fetchIncrementalRanges,
+                            _ENServerConfiguration._has,
+                            _ENServerConfiguration._maximumFutureDayKeysToPublish,
+                            _ENServerConfiguration._maximumPastDaysKeysToFetchOrPublish,
+                            _ENServerConfiguration._proximityDurationMaxThresholdInSec,
+                            _ENServerConfiguration._proximityDurationMinAPWakeThresholdInSec,
+                            _ENServerConfiguration._proximityDurationMinForceAPWakeThresholdInSec,
+                            _ENServerConfiguration._proximityDurationMinThresholdInSec,
+                            _ENServerConfiguration._proximityDurationScanDurationAudioInSec,
+                            _ENServerConfiguration._proximityDurationScanDurationInSec,
+                            _ENServerConfiguration._proximityDurationScanIntervalAudioInMilliSec,
+                            _ENServerConfiguration._regionIdentifier,
+                            _ENServerConfiguration._rollingIdentifierIntervalInMin,
+                            _ENServerConfiguration._rollingIdentifiersCacheExpiryAgeInSec,
+                            _ENServerConfiguration._serverConfigVersion ]
+...

@@ -1,0 +1,15 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _AVSpeechSynthesisVoiceIdentifierFred,
+                            _AVSpeechSynthesisVoiceIdentifierVictoria ]
+    objc-classes:         [ _AXSettingsVoiceAssetManager,
+                            _AXSpeechAssetMonitorHelper,
+                            _AXSpeechPronunciationHelper,
+                            _AXSpeechPronunciationOptions ]
+...
