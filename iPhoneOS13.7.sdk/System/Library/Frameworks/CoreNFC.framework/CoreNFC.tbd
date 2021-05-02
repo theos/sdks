@@ -1,15 +1,20 @@
---- !tapi-tbd-v3
-archs:           [ arm64, arm64e ]
-uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
-                   'arm64: 2427002C-6F17-3788-844C-68CBC45E884F', 'arm64e: A92C4B63-5635-322B-8198-1113462E0F02' ]
-platform:        ios
-install-name:    '/System/Library/Frameworks/CoreNFC.framework/CoreNFC'
-exports:         
-  - archs:           [ arm64, arm64e ]
-    symbols:         [ _NFCErrorDomain, _NFCISO15693TagResponseErrorKey, _NFCTagResponseUnexpectedLengthErrorKey ]
-    objc-classes:    [ NFCISO15693CustomCommandConfiguration, NFCISO15693ReadMultipleBlocksConfiguration, 
-                       NFCISO15693ReaderSession, NFCISO7816APDU, NFCNDEFMessage, 
-                       NFCNDEFPayload, NFCNDEFReaderSession, NFCReaderSession, NFCTagCommandConfiguration, 
-                       NFCTagReaderSession, NFCVASCommandConfiguration, NFCVASReaderSession, 
-                       NFCVASResponse ]
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/Frameworks/CoreNFC.framework/CoreNFC
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _NFCErrorDomain, _NFCISO15693TagResponseErrorKey,
+                            _NFCTagResponseUnexpectedLengthErrorKey ]
+    objc-classes:         [ _NFCISO15693CustomCommandConfiguration,
+                            _NFCISO15693ReadMultipleBlocksConfiguration,
+                            _NFCISO15693ReaderSession, _NFCISO7816APDU,
+                            _NFCNDEFMessage, _NFCNDEFPayload,
+                            _NFCNDEFReaderSession, _NFCReaderSession,
+                            _NFCTagCommandConfiguration, _NFCTagReaderSession,
+                            _NFCVASCommandConfiguration, _NFCVASReaderSession,
+                            _NFCVASResponse, _NFReaderSessionCallbacks,
+                            _NFReaderSessionInterface ]
 ...

@@ -1,21 +1,45 @@
---- !tapi-tbd-v3
-archs:           [ arm64, arm64e ]
-uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
-                   'arm64: F50363E7-19AC-3BCF-A14B-80E5CD1EEF64', 'arm64e: EF0D56E7-F324-3FD2-B2BD-CD909E1615DE' ]
-platform:        ios
-install-name:    '/System/Library/Frameworks/FileProviderUI.framework/FileProviderUI'
-current-version: 29
-exports:         
-  - archs:           [ arm64, arm64e ]
-    symbols:         [ _FPUIActionIdentifierAuthenticate, _FPUIActionViewControllerErrorDomain, 
-                       _FPUIActionViewControllerNavigationBarDoneButtonIdentifier, 
-                       _FPUIActionViewControllerNavigationBarIdentifier, _FPUIAuthenticationProviderDomainIdentifier, 
-                       _FPUIErrorDomain, _FPUILoc, _FPUIPresentActionButtonIdentifier, 
-                       _FPUInternalActionCancelButtonIdentifier, _FPUInternalActionContentLabelIdentifier, 
-                       _FPUInternalActionFailButtonIdentifier, _FPUInternalActionSucceedButtonIdentifier, 
-                       _FPUInternalActionTypeLabelIdentifier ]
-    objc-classes:    [ FPUIAction, FPUIActionController, FPUIActionExtensionContext, 
-                       FPUIActionExtensionViewController, FPUIActionViewController, 
-                       FPUIAuthenticationCredentialDescriptor, FPUIAuthenticationCredentials, 
-                       FPUIAuthenticationViewController, FPUIManager ]
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /System/Library/Frameworks/FileProviderUI.framework/FileProviderUI
+current-version:       29
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _FPProviderDomainIDToDomainIdentifier,
+                            _FPUIActionIdentifierAuthenticate,
+                            _FPUIActionViewControllerErrorDomain,
+                            _FPUIActionViewControllerNavigationBarDoneButtonIdentifier,
+                            _FPUIActionViewControllerNavigationBarIdentifier,
+                            _FPUIAppLaunchOrigin,
+                            _FPUIAuthenticationProviderDomainIdentifier,
+                            _FPUIErrorDomain, _FPUIInitLogging, _FPUILoc,
+                            _FPUIPresentActionButtonIdentifier,
+                            _FPUInternalActionCancelButtonIdentifier,
+                            _FPUInternalActionContentLabelIdentifier,
+                            _FPUInternalActionFailButtonIdentifier,
+                            _FPUInternalActionSucceedButtonIdentifier,
+                            _FPUInternalActionTypeLabelIdentifier,
+                            _FileProviderUIVersionNumber,
+                            _FileProviderUIVersionString, _fpuiLogHandle ]
+    objc-classes:         [ _FPUIAction, _FPUIActionController,
+                            _FPUIActionExtensionContext,
+                            _FPUIActionExtensionViewController,
+                            _FPUIActionRemoteContext,
+                            _FPUIActionRemoteViewController,
+                            _FPUIActionViewController,
+                            _FPUIAuthenticationButtonLikeCell,
+                            _FPUIAuthenticationCredentialDescriptor,
+                            _FPUIAuthenticationCredentials,
+                            _FPUIAuthenticationCredentialsViewController,
+                            _FPUIAuthenticationLandingViewController,
+                            _FPUIAuthenticationNavigationBarTitleView,
+                            _FPUIAuthenticationRowDescriptor,
+                            _FPUIAuthenticationSectionDescriptor,
+                            _FPUIAuthenticationServerInfoViewController,
+                            _FPUIAuthenticationTableViewController,
+                            _FPUIAuthenticationTextInputCell,
+                            _FPUIAuthenticationViewController,
+                            _FPUIAuthenticationVolumeMountViewController,
+                            _FPUILocalization, _FPUIManager ]
 ...

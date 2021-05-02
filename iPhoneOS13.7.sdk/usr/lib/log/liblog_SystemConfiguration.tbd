@@ -1,0 +1,11 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          /usr/lib/log/liblog_SystemConfiguration.dylib
+current-version:       1061.140.1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _OSLogCopyFormattedString,
+                            _OSStateCreateStringWithData ]
+...
