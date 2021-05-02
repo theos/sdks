@@ -1,7 +1,6 @@
---- !tapi-tbd-v3
+---
 archs:           [ arm64, arm64e ]
-uuids:           [ 'armv7: 00000000-0000-0000-0000-000000000000', 'armv7s: 00000000-0000-0000-0000-000000000000', 
-                   'arm64: C54D12B8-B676-3044-B9CC-2B200CCEB040', 'arm64e: A0AF8D78-8F5D-3B42-988C-1D8986592C4E' ]
+uuids:           [ 'arm64: C54D12B8-B676-3044-B9CC-2B200CCEB040', 'arm64e: A0AF8D78-8F5D-3B42-988C-1D8986592C4E' ]
 platform:        ios
 install-name:    '/usr/lib/AppleConvergedTransport.dylib'
 exports:         
