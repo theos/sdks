@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/system/libmacho.dylib
 current-version:       959.0.1
 compatibility-version: 1
+parent-umbrella:       System
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _NXCombineCpuSubtypes, _NXFindBestFatArch,
@@ -68,4 +70,12 @@ exports:
                             _swap_x86_exception_state64, _swap_x86_float_state,
                             _swap_x86_float_state64, _swap_x86_state_hdr,
                             _swap_x86_thread_state, _swap_x86_thread_state64 ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ __NSGetMachExecuteHeader, ___sprintf_chk,
+                            __dyld_get_image_header, __dyld_get_image_name,
+                            __dyld_get_image_vmaddr_slide, __dyld_image_count,
+                            _free, _host_info, _mach_host_self,
+                            _mach_port_deallocate, _mach_task_self_, _malloc,
+                            _strcmp, _strncmp, _strrchr, dyld_stub_binder ]
 ...

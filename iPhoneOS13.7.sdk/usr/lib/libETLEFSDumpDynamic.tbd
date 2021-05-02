@@ -1,6 +1,7 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libETLEFSDumpDynamic.dylib
 current-version:       1
 compatibility-version: 1
@@ -10,4 +11,9 @@ exports:
                             _ETLEFSDumpCopyCrashHeaderDetails,
                             _ETLEFSDumpCopySoftwareVersion, _ETLEFSDumpInfoFree,
                             _ETLEFSDumpInterpret ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _TelephonyUtilStrlcpy, ___stack_chk_fail,
+                            ___stack_chk_guard, _free, _malloc, _strdup,
+                            dyld_stub_binder ]
 ...

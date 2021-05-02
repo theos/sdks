@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _SIReflectionHydrateProtoFromEventTypeAndData,
@@ -58,35 +60,62 @@ exports:
                             _SISchemaViewContainerReadFrom,
                             _SiriInstrumentationVersionNumber,
                             _SiriInstrumentationVersionString ]
-    objc-classes:         [ _SISchemaAcousticProfile, _SISchemaActiveAudioDevice,
-                            _SISchemaActiveStatus, _SISchemaAnyEvent,
-                            _SISchemaAudioFirstBufferRecorded,
-                            _SISchemaAudioStopRecording, _SISchemaClientEvent,
-                            _SISchemaClientEventMetadata, _SISchemaClientFlow,
-                            _SISchemaClientTransportEventMetadata,
-                            _SISchemaConversationTrace,
-                            _SISchemaDailyDeviceStatus,
-                            _SISchemaDeviceDynamicContext,
-                            _SISchemaDeviceFixedContext, _SISchemaDialogOutput,
-                            _SISchemaDictationAlternativeSelected,
-                            _SISchemaDictationAlternativesPresent,
-                            _SISchemaDictationContext,
-                            _SISchemaDictationEndPointCancel,
-                            _SISchemaDictationEndPointStop,
-                            _SISchemaDictationTranscriptionMetadata,
-                            _SISchemaEnabledStatus, _SISchemaEnrolledUserState,
-                            _SISchemaHardwareInterfaceIdentifier,
-                            _SISchemaInvocation, _SISchemaLanguageProfile,
-                            _SISchemaLocaleIdentifier, _SISchemaLocation,
-                            _SISchemaMultiUserState, _SISchemaPersonalization,
-                            _SISchemaPunchOut, _SISchemaRawSpeechProfileData,
-                            _SISchemaRedactableString, _SISchemaServerEvent,
-                            _SISchemaServerEventMetadata,
-                            _SISchemaServerGeneratedDismissal, _SISchemaSiriCue,
-                            _SISchemaSpeechResultSelected,
-                            _SISchemaSpeechTranscription,
-                            _SISchemaTextToSpeechBegin, _SISchemaTextToSpeechEnd,
-                            _SISchemaTurnInteraction, _SISchemaUIStateTransition,
-                            _SISchemaUUFRPresented, _SISchemaUserDataContainer,
-                            _SISchemaUserSpeechDuration, _SISchemaViewContainer ]
+    objc-classes:         [ SISchemaAcousticProfile, SISchemaActiveAudioDevice,
+                            SISchemaActiveStatus, SISchemaAnyEvent,
+                            SISchemaAudioFirstBufferRecorded,
+                            SISchemaAudioStopRecording, SISchemaClientEvent,
+                            SISchemaClientEventMetadata, SISchemaClientFlow,
+                            SISchemaClientTransportEventMetadata,
+                            SISchemaConversationTrace, SISchemaDailyDeviceStatus,
+                            SISchemaDeviceDynamicContext,
+                            SISchemaDeviceFixedContext, SISchemaDialogOutput,
+                            SISchemaDictationAlternativeSelected,
+                            SISchemaDictationAlternativesPresent,
+                            SISchemaDictationContext,
+                            SISchemaDictationEndPointCancel,
+                            SISchemaDictationEndPointStop,
+                            SISchemaDictationTranscriptionMetadata,
+                            SISchemaEnabledStatus, SISchemaEnrolledUserState,
+                            SISchemaHardwareInterfaceIdentifier,
+                            SISchemaInvocation, SISchemaLanguageProfile,
+                            SISchemaLocaleIdentifier, SISchemaLocation,
+                            SISchemaMultiUserState, SISchemaPersonalization,
+                            SISchemaPunchOut, SISchemaRawSpeechProfileData,
+                            SISchemaRedactableString, SISchemaServerEvent,
+                            SISchemaServerEventMetadata,
+                            SISchemaServerGeneratedDismissal, SISchemaSiriCue,
+                            SISchemaSpeechResultSelected,
+                            SISchemaSpeechTranscription,
+                            SISchemaTextToSpeechBegin, SISchemaTextToSpeechEnd,
+                            SISchemaTurnInteraction, SISchemaUIStateTransition,
+                            SISchemaUUFRPresented, SISchemaUserDataContainer,
+                            SISchemaUserSpeechDuration, SISchemaViewContainer ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _PBDataWriterWriteBOOLField,
+                            _PBDataWriterWriteDataField,
+                            _PBDataWriterWriteDoubleField,
+                            _PBDataWriterWriteFloatField,
+                            _PBDataWriterWriteInt32Field,
+                            _PBDataWriterWriteInt64Field,
+                            _PBDataWriterWriteStringField,
+                            _PBDataWriterWriteSubmessage, _PBReaderPlaceMark,
+                            _PBReaderReadData, _PBReaderReadString,
+                            _PBReaderRecallMark, _PBReaderSkipValueWithTag,
+                            ___CFConstantStringClassReference, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache, _fmod,
+                            _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            dyld_stub_binder ]
+    objc-classes:         [ NSArray, NSData, NSDictionary, NSJSONSerialization,
+                            NSMutableArray, NSMutableDictionary, NSNull, NSNumber,
+                            NSObject, NSString, PBCodable ]
+    objc-ivars:           [ PBDataReader._bytes, PBDataReader._error,
+                            PBDataReader._length, PBDataReader._pos ]
 ...

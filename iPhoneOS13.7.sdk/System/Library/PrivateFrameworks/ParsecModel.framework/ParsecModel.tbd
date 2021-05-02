@@ -1,13 +1,21 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/ParsecModel.framework/ParsecModel
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _ParsecModelVersionNumber, _ParsecModelVersionString ]
-    objc-classes:         [ _PARCategory, _PARCollectionStartEvent, _PAREvent,
-                            _PARFlushEvent, _PARImagesSession, _PARSafariSession,
-                            _PARSpotlightSession, _PARUsageEvent ]
+    objc-classes:         [ PARCategory, PARCollectionStartEvent, PAREvent,
+                            PARFlushEvent, PARImagesSession, PARSafariSession,
+                            PARSpotlightSession, PARUsageEvent ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, _objc_msgSend, _objc_storeStrong,
+                            dyld_stub_binder ]
+    objc-classes:         [ NSFetchRequest, NSManagedObject, NSObject ]
 ...

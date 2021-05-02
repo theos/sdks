@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _HDCIErrorDomain,
@@ -18,17 +20,43 @@ exports:
                             _HealthRecordServicesVersionNumber,
                             _HealthRecordServicesVersionString,
                             _NSStringFromHDClinicalAnalyticsExtractionFailureCode ]
-    objc-classes:         [ _HDClinicalDataCollectionExtractionResult,
-                            _HDExtractionRequest, _HDExtractionResult,
-                            _HDExtractionResultItem, _HDFHIRJSONObject,
-                            _HDFHIRResourceData, _HDFHIRResourceLastSeenObject,
-                            _HDFHIRResourceObject, _HDHRSExtractionFailureInfo,
-                            _HDHRSExtractionFailureRecord,
-                            _HDHRSOriginInformation,
-                            _HDHealthRecordsXPCServiceClient,
-                            _HDOriginalFHIRResourceObject,
-                            _HDRedactedFHIRResourceObject,
-                            _HDReferenceExtractionRequest,
-                            _HDReferenceExtractionResult,
-                            _HDUnresolvedReferenceSet ]
+    objc-classes:         [ HDClinicalDataCollectionExtractionResult,
+                            HDExtractionRequest, HDExtractionResult,
+                            HDExtractionResultItem, HDFHIRJSONObject,
+                            HDFHIRResourceData, HDFHIRResourceLastSeenObject,
+                            HDFHIRResourceObject, HDHRSExtractionFailureInfo,
+                            HDHRSExtractionFailureRecord, HDHRSOriginInformation,
+                            HDHealthRecordsXPCServiceClient,
+                            HDOriginalFHIRResourceObject,
+                            HDRedactedFHIRResourceObject,
+                            HDReferenceExtractionRequest,
+                            HDReferenceExtractionResult,
+                            HDUnresolvedReferenceSet ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _HKCreateSerialDispatchQueue, _HKHTTPErrorDomain,
+                            _HKLogHealthRecords, _HKSafeObject,
+                            _HKSensitiveLogItem, _NSInvalidArgumentException,
+                            _NSLocalizedDescriptionKey, _NSStringFromClass,
+                            _NSStringFromSelector, __Block_object_assign,
+                            __HKInitializeLogging, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_error_impl,
+                            _dispatch_async, _objc_alloc, _objc_alloc_init,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_nonatomic_copy, _objc_storeStrong,
+                            _objc_unsafeClaimAutoreleasedReturnValue,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ HKClinicalRecord, HKFHIRIdentifier, HKMedicalRecord,
+                            NSArray, NSAssertionHandler, NSCharacterSet, NSData,
+                            NSDate, NSDictionary, NSError, NSException,
+                            NSJSONSerialization, NSMutableArray,
+                            NSMutableDictionary, NSNumber, NSObject, NSSet, NSString,
+                            NSURL, NSXPCInterface, _HKXPCConnection ]
 ...

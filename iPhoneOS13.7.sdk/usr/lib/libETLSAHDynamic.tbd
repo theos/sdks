@@ -1,6 +1,7 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libETLSAHDynamic.dylib
 current-version:       1
 compatibility-version: 1
@@ -34,4 +35,17 @@ exports:
                             _ETLSAHGetDebugRecordCount, _ETLSAHGetDebugTable,
                             _ETLSAHGetRecordEx, _ETLSAHModeAsString,
                             _ETLSAHSendReadData ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _CFNumberGetValue, _ETLDLOADGetProtocolVersion,
+                            _TelephonyCapabilitiesRadioGetCoreDumpInterface,
+                            _TelephonyCapabilitiesRadioProgrammerProductID,
+                            _TelephonyUtilRingBufferGetLinearReadRemaining,
+                            _TelephonyUtilRingBufferGetSize,
+                            _TelephonyUtilRingBufferInsertTransport,
+                            _TelephonyUtilRingBufferReset,
+                            _TelephonyUtilRingBufferSkip, __ETLDebugPrint,
+                            __ETLDebugPrintBinary, _free,
+                            _kTelephonyUtilTransportConfigMaxPacketSize, _malloc,
+                            _memcpy, dyld_stub_binder ]
 ...

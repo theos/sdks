@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomPresentationLite.framework/SymptomPresentationLite
 current-version:       1238.120.1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _kPerformanceFlowAvgUsecsEstabTime,
@@ -135,5 +137,16 @@ exports:
                             _kSymptomAnalyticsServiceWatchpointValue,
                             _kSymptomAnalyticsTypeBundleIdentifier,
                             _kSymptomAnalyticsTypeProcessName ]
-    objc-classes:         [ _NetworkPerformanceQuery ]
+    objc-classes:         [ NetworkPerformanceQuery ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _NSPOSIXErrorDomain, __Block_object_assign,
+                            __Block_object_dispose, __NSConcreteStackBlock,
+                            ___CFConstantStringClassReference,
+                            __objc_empty_cache, _dispatch_async, _objc_alloc,
+                            _objc_autorelease, _objc_msgSend, _objc_msgSendSuper2,
+                            _objc_release, _objc_setProperty_nonatomic,
+                            dyld_stub_binder ]
+    objc-classes:         [ NSDictionary, NSError, NSMutableDictionary, NSObject,
+                            NSPredicate, NSXPCConnection, NSXPCInterface ]
 ...

@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/system/libunwind.dylib
 current-version:       128.4
 compatibility-version: 1
+parent-umbrella:       System
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ __Unwind_Backtrace, __Unwind_DeleteException,
@@ -21,4 +23,13 @@ exports:
                             _unw_is_fpreg, _unw_is_signal_frame,
                             _unw_iterate_dwarf_unwind_cache, _unw_regname,
                             _unw_resume, _unw_set_fpreg, _unw_set_reg, _unw_step ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ ___assert_rtn, ___chkstk_darwin, ___stack_chk_fail,
+                            ___stack_chk_guard, ___stderrp,
+                            __dyld_find_unwind_sections,
+                            __dyld_register_func_for_remove_image, _bzero, _dladdr,
+                            _free, _fwrite, _malloc, _memcpy, _pthread_rwlock_rdlock,
+                            _pthread_rwlock_unlock, _pthread_rwlock_wrlock,
+                            _strlcpy, dyld_stub_binder ]
 ...

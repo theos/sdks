@@ -1,11 +1,16 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CameraImagingFramework.framework/CameraImagingFramework
 current-version:       110.1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _CameraImagingVersionNumber,
                             _CameraImagingVersionString ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ dyld_stub_binder ]
 ...

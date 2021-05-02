@@ -1,28 +1,81 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/VoiceShortcutsUI.framework/VoiceShortcutsUI
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _VCLoggingCategory, _VCLoggingSubsystem,
                             _VCUILogContext, _VCUILogInitIfNeeded,
                             _VoiceShortcutsUIVersionNumber,
                             _VoiceShortcutsUIVersionString ]
-    objc-classes:         [ _VCUIActionDonationCell,
-                            _VCUIActionDonationDataSource,
-                            _VCUIActionDonationDetailsViewController,
-                            _VCUIActionDonationsListViewController,
-                            _VCUIActionStatusView,
-                            _VCUIActiveVoiceShortcutsViewController,
-                            _VCUICKPEntryPoint,
-                            _VCUIInteractionDonationDataSource,
-                            _VCUIPerformActionCardProvider,
-                            _VCUIPerformActionCardViewController,
-                            _VCUIProgressCardViewController,
-                            _VCUIUserActivityDonationDataSource,
-                            _VCUIVoiceShortcutCard, _VCUIVoiceShortcutCell,
-                            _VCUIVoiceShortcutsViewController,
-                            __VCUIActionStatusErrorView ]
+    objc-classes:         [ VCUIActionDonationCell, VCUIActionDonationDataSource,
+                            VCUIActionDonationDetailsViewController,
+                            VCUIActionDonationsListViewController,
+                            VCUIActionStatusView,
+                            VCUIActiveVoiceShortcutsViewController,
+                            VCUICKPEntryPoint, VCUIInteractionDonationDataSource,
+                            VCUIPerformActionCardProvider,
+                            VCUIPerformActionCardViewController,
+                            VCUIProgressCardViewController,
+                            VCUIUserActivityDonationDataSource,
+                            VCUIVoiceShortcutCard, VCUIVoiceShortcutCell,
+                            VCUIVoiceShortcutsViewController,
+                            _VCUIActionStatusErrorView ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _CGRectGetHeight, _CGRectGetWidth, _CGRectZero,
+                            _CGSizeZero, _INIntentCreate, _INIntentResponseCreate,
+                            _NSStringFromClass, _UIFontTextStyleFootnote,
+                            _VCVoiceShortcutClientDataDidUpdateNotification,
+                            __Block_object_assign, __Block_object_dispose,
+                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
+                            __Unwind_Resume, ___CFConstantStringClassReference,
+                            ___NSArray0__, ___objc_personality_v0,
+                            ___stack_chk_fail, ___stack_chk_guard,
+                            __dispatch_main_q, __objc_empty_cache,
+                            __os_log_error_impl, __os_log_impl, _dispatch_after,
+                            _dispatch_async, _dispatch_once,
+                            _dispatch_queue_attr_make_with_qos_class,
+                            _dispatch_queue_create, _dispatch_time, _objc_alloc,
+                            _objc_alloc_init, _objc_autoreleaseReturnValue,
+                            _objc_copyWeak, _objc_destroyWeak,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_initWeak, _objc_loadWeakRetained, _objc_msgSend,
+                            _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new,
+                            _objc_opt_respondsToSelector, _objc_release,
+                            _objc_retain, _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
+                            _objc_storeStrong, _objc_storeWeak, _os_log_create,
+                            _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ APUIActionCardRequest, APUIActionCardUtils,
+                            APUIActionCardViewConfig, CRBasicCard,
+                            CRHandleIntentCommand, CRKCardViewController,
+                            CRSCardRequest, CRUpdateProgressCommand,
+                            INCExtensionConnection, INIntentResponse,
+                            INInteraction, INRunVoiceCommandIntent,
+                            INRunVoiceCommandIntentResponse, INSpeakableString,
+                            NSArray, NSAssertionHandler, NSBundle, NSError,
+                            NSIndexPath, NSLayoutConstraint, NSMutableDictionary,
+                            NSNotificationCenter, NSNumber, NSObject, NSOrderedSet,
+                            NSProgress, NSString, SFCardSection,
+                            SUICProgressIndicatorViewController,
+                            SUICProgressStateMachine, UIAlertAction,
+                            UIAlertController, UIBarButtonItem, UIColor, UIFont,
+                            UIImage, UIImageView, UILabel, UINavigationController,
+                            UISearchController, UISegmentedControl,
+                            UITabBarController, UITabBarItem, UITableView,
+                            UITableViewCell, UITableViewController, UITextView,
+                            UIView, UIViewController, VCActionDonationAggregator,
+                            VCInteractionDonationFetcher,
+                            VCUIShortcutViewController,
+                            VCUserActivityDonationFetcher, VCVoiceShortcutClient,
+                            WFDatabase, WFHandleDonatedIntentAction,
+                            WFLWorkflowController, WFOpenUserActivityAction,
+                            WFWorkflow, _INPBIntentMetadata ]
 ...

@@ -1,12 +1,15 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/PodcastsUI.framework/PodcastsUI
 current-version:       1
 compatibility-version: 1
+swift-abi-version:     6
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
-    allowed-clients:      [ AirPodcasts, AppStoreKit, AppStoreKitTests,
+    allowable-clients:    [ AirPodcasts, AppStoreKit, AppStoreKitTests,
                             AppStoreTests, CorePodcasts, IMDebug, IMUIUtil,
                             IntentsExtension, MacPodcastsKit,
                             MacPodcastsStorageExtension, MacQuicklookExtension,
@@ -47,5 +50,24 @@ exports:
                             _$s10PodcastsUI4ZxcvCN, _$s10PodcastsUI4ZxcvCfD,
                             _$s10PodcastsUI4ZxcvCfd, _PodcastsUIVersionNumber,
                             _PodcastsUIVersionString ]
-    objc-classes:         [ _Dvorak ]
+    objc-classes:         [ Dvorak ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ __objc_empty_cache, _objc_msgSend,
+                            _objc_retainAutoreleasedReturnValue,
+                            _swift_allocObject, _swift_deallocClassInstance,
+                            _swift_getInitializedObjCClass,
+                            _swift_lookUpClassMethod, dyld_stub_binder ]
+    objc-classes:         [ NSObject, UIColor, _TtCs12_SwiftObject ]
+    weak-def-symbols:     [ __swift_FORCE_LOAD_$_swiftCoreFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreGraphics,
+                            __swift_FORCE_LOAD_$_swiftCoreImage,
+                            __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftFoundation,
+                            __swift_FORCE_LOAD_$_swiftMetal,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC,
+                            __swift_FORCE_LOAD_$_swiftQuartzCore,
+                            __swift_FORCE_LOAD_$_swiftUIKit,
+                            __swift_FORCE_LOAD_$_swiftos ]
 ...

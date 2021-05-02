@@ -1,6 +1,7 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          "/usr/lib/libheimdal-asn1.dylib"
 current-version:       1
 compatibility-version: 1
@@ -75,4 +76,11 @@ exports:
                             _encode_heim_any_set, _free_heim_any,
                             _free_heim_any_set, _heim_any_cmp, _length_heim_any,
                             _length_heim_any_set ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ ___snprintf_chk, ___toupper, ___vsnprintf_chk, _abort,
+                            _asprintf, _bzero, _calloc, _free, _malloc, _memchr, _memcmp,
+                            _memcpy, _memmove, _qsort, _realloc, _sscanf, _strcasecmp,
+                            _strdup, _strlen, _strtok_r, _strtol, _vasprintf,
+                            dyld_stub_binder ]
 ...

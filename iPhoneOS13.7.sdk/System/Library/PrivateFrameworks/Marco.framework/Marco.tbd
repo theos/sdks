@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/Marco.framework/Marco
 current-version:       800
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _MarcoAction, _MarcoActionWithUserInfo,
@@ -36,4 +38,8 @@ exports:
                             _MarcoWarnLocalPreview, _MarcoWarnMadrid,
                             _MarcoWarnMadridCF, _MarcoWarnMadridCF_V,
                             _MarcoWarnRegistration ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ dyld_stub_binder ]
+    objc-classes:         [ NSDictionary ]
 ...

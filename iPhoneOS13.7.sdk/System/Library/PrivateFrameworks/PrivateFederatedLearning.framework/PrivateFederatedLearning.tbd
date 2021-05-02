@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/PrivateFederatedLearning.framework/PrivateFederatedLearning
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _PFLClientIsAllowedForIdentifier,
@@ -43,8 +45,39 @@ exports:
                             _kPFLPrivatizeIdentifierVocalClassifier,
                             _kPFLPrivatizeTaskIdentifierQuickTypeCNNTextClassification,
                             _kPFLPrivatizeTaskIdentifierQuickTypeLM, _temp ]
-    objc-classes:         [ _PFLDiagnosticReporting, __PFLContinuedFraction,
-                            __PFLGaussianNoiseGenerator, __PFLLog, __PFLMathHelper,
-                            __PFLModelTrainer, __PFLPrivacyParameters,
-                            __PFLRejectionSampling, __PFLVectorPrivatizer ]
+    objc-classes:         [ PFLDiagnosticReporting, _PFLContinuedFraction,
+                            _PFLGaussianNoiseGenerator, _PFLLog, _PFLMathHelper,
+                            _PFLModelTrainer, _PFLPrivacyParameters,
+                            _PFLRejectionSampling, _PFLVectorPrivatizer ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _CFRelease, _NSStringFromClass, _NSStringFromSelector,
+                            _NSURLIsDirectoryKey,
+                            _SecTaskCopyValueForEntitlement,
+                            _SecTaskCreateFromSelf, _SimulateCrash,
+                            __Block_object_assign, __NSConcreteGlobalBlock,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference, ___NSArray0__,
+                            ___NSDictionary0__, ___error, ___gxx_personality_v0,
+                            ___sincos_stret, ___stack_chk_fail, ___stack_chk_guard,
+                            __objc_empty_cache, __os_log_debug_impl,
+                            __os_log_default, __os_log_error_impl, __os_log_impl,
+                            _arc4random, _cos, _dispatch_once, _exp, _getpid,
+                            _kCFBooleanTrue, _lgamma, _log, _malloc, _memcpy,
+                            _objc_alloc, _objc_autorelease,
+                            _objc_autoreleaseReturnValue,
+                            _objc_enumerationMutation, _objc_getProperty,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _objc_opt_new, _objc_release,
+                            _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleaseReturnValue,
+                            _objc_retainAutoreleasedReturnValue,
+                            _objc_setProperty_atomic, _objc_storeStrong,
+                            _os_log_create, _os_log_type_enabled, dyld_stub_binder ]
+    objc-classes:         [ ETDataSourceFromFolderData,
+                            ETImageDescriptorExtractor, ETModelDef, ETModelDefMLP,
+                            ETOptimizerDefSGD, ETTaskClassifier, MLModel, NSArray,
+                            NSBundle, NSData, NSDictionary, NSFileManager,
+                            NSJSONSerialization, NSNumber, NSObject, NSString, NSURL ]
+    weak-def-symbols:     [ __ZdaPv, __ZdlPv, __Znam, __Znwm ]
 ...

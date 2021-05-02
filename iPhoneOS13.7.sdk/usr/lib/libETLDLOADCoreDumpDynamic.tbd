@@ -1,6 +1,7 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libETLDLOADCoreDumpDynamic.dylib
 current-version:       1
 compatibility-version: 1
@@ -8,4 +9,15 @@ exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _ETLDLOADCoreDumpCaptureRecord,
                             _ETLDLOADCoreDumpCaptureRecordFast ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _ETLDLOADCommandCreateMemoryDebugFastReadRequest,
+                            _ETLDLOADCommandCreateMemoryDebugReadRequest,
+                            _ETLDLOADCommandDumpCommand,
+                            _ETLDLOADCommandParseMemoryDebugReadResponse,
+                            _ETLDLOADCommandReadMemoryDebugFastReadResponse,
+                            _ETLDLOADCommandReceiveWithBufferAndFlags,
+                            _ETLDLOADCommandSend, _HDLCFrameFree,
+                            _TelephonyUtilRingBufferInitialize, __ETLDebugPrint,
+                            _free, _malloc, dyld_stub_binder ]
 ...

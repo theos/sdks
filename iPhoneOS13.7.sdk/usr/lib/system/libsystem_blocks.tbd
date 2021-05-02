@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/system/libsystem_blocks.dylib
 current-version:       73
 compatibility-version: 1
+parent-umbrella:       System
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _Block_size, __Block_copy, __Block_extended_layout,
@@ -17,4 +19,8 @@ exports:
                             __NSConcreteWeakBlockVariable,
                             _system_blocksVersionNumber,
                             _system_blocksVersionString ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ __os_assert_log, __os_assumes_log, __os_crash,
+                            __platform_memmove, _free, _malloc, dyld_stub_binder ]
 ...

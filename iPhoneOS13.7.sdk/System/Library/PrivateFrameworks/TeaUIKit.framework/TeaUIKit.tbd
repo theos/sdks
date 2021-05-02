@@ -1,12 +1,13 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/TeaUIKit.framework/TeaUIKit
 current-version:       1
 compatibility-version: 1
 exports:
   - archs:                [ arm64, arm64e ]
-    allowed-clients:      [ ArticleNotificationExtension,
+    allowable-clients:    [ ArticleNotificationExtension,
                             ArticleNotificationServiceExtension, "Feldspar Tests",
                             MarketingNotificationExtension, NVCDemo, News,
                             NewsAnalytics, NewsAnalyticsTests, NewsAnalyticsUpload,
@@ -24,4 +25,7 @@ exports:
                             TeaTemplate, TeaTemplateTests, TeaUI, TeaUITests,
                             com.apple.news, newsd ]
     symbols:              [ _TeaUIKitVersionNumber, _TeaUIKitVersionString ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ dyld_stub_binder ]
 ...

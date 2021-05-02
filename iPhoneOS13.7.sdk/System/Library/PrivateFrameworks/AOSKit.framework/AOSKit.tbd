@@ -1,9 +1,11 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AOSKit.framework/AOSKit
 current-version:       125.2
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _AOSAccountCopyAuthInfo, _AOSAccountCreate,
@@ -60,17 +62,35 @@ exports:
                             _kAOSRequestBodyKey, _kAOSRequestHeadersKey,
                             _kAOSRequestMethodKey, _kAOSRequestURLKey,
                             _kAOSTokenAuth, _kAOSTokensKey, _kAOSURLKey ]
-    objc-classes:         [ _AOSContext, _AOSThreadManager, _AOSTransaction ]
-    objc-ivars:           [ _AOSContext._account, _AOSContext._callback,
-                            _AOSContext._callbackThread, _AOSContext._info,
-                            _AOSContext._transaction,
-                            _AOSTransaction.callbackBlock,
-                            _AOSTransaction.callbackFunction,
-                            _AOSTransaction.callbackQueue,
-                            _AOSTransaction.context,
-                            _AOSTransaction.contextRelease,
-                            _AOSTransaction.contextRetain,
-                            _AOSTransaction.didFinish,
-                            _AOSTransaction.didSucceed, _AOSTransaction.error,
-                            _AOSTransaction.result, _AOSTransaction.waitLock ]
+    objc-classes:         [ AOSContext, AOSThreadManager, AOSTransaction ]
+    objc-ivars:           [ AOSContext._account, AOSContext._callback,
+                            AOSContext._callbackThread, AOSContext._info,
+                            AOSContext._transaction,
+                            AOSTransaction.callbackBlock,
+                            AOSTransaction.callbackFunction,
+                            AOSTransaction.callbackQueue, AOSTransaction.context,
+                            AOSTransaction.contextRelease,
+                            AOSTransaction.contextRetain,
+                            AOSTransaction.didFinish, AOSTransaction.didSucceed,
+                            AOSTransaction.error, AOSTransaction.result,
+                            AOSTransaction.waitLock ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _CFErrorCreate, _CFRelease, _CFRetain, _NSLog,
+                            __Block_object_assign, __Block_object_dispose,
+                            __CFRuntimeCreateInstance, __CFRuntimeRegisterClass,
+                            __NSConcreteStackBlock, __Unwind_Resume,
+                            ___CFConstantStringClassReference,
+                            ___objc_personality_v0, __objc_empty_cache,
+                            _dispatch_async, _dispatch_get_global_queue,
+                            _dispatch_release, _dispatch_retain,
+                            _kCFAllocatorDefault, _objc_alloc, _objc_alloc_init,
+                            _objc_autorelease, _objc_begin_catch, _objc_end_catch,
+                            _objc_msgSend, _objc_msgSendSuper2, _objc_release,
+                            _objc_retain, _objc_sync_enter, _objc_sync_exit,
+                            dyld_stub_binder ]
+    objc-classes:         [ AAAccountManager, NSAutoreleasePool, NSConditionLock,
+                            NSMutableDictionary, NSMutableString, NSNumber, NSObject,
+                            NSString, NSThread ]
+    objc-eh-types:        [ NSException ]
 ...

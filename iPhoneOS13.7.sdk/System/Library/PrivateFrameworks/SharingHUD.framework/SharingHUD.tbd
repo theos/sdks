@@ -1,10 +1,14 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD
 current-version:       1526.37
 compatibility-version: 1
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _SharingHUDVersionNumber, _SharingHUDVersionString ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ dyld_stub_binder ]
 ...

@@ -1,6 +1,7 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libHDLCDynamic.dylib
 current-version:       1
 compatibility-version: 1
@@ -15,4 +16,7 @@ exports:
                             _HDLCFrameInjectUnsignedChar,
                             _HDLCFrameInjectUnsignedInt,
                             _HDLCFrameInjectUnsignedShort ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _free, _malloc, _memcpy, _memset, dyld_stub_binder ]
 ...

@@ -1,10 +1,17 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/TATest.framework/TATest
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
-    objc-classes:         [ _TATestObject ]
+    objc-classes:         [ TATestObject ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ ___CFConstantStringClassReference,
+                            __objc_empty_cache, dyld_stub_binder ]
+    objc-classes:         [ NSObject ]
 ...

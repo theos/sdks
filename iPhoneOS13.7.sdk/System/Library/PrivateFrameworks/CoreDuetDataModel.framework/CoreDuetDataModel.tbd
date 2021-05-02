@@ -1,22 +1,28 @@
----
+--- !tapi-tbd-v3
 archs:                 [ arm64, arm64e ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CoreDuetDataModel.framework/CoreDuetDataModel
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
-    objc-classes:         [ _CDDMAirplaneModeEvent, _CDDMAppNameMapper,
-                            _CDDMAppStateChangeEvent, _CDDMAttributeNameMapper,
-                            _CDDMBacklightEvent, _CDDMBatteryEvent,
-                            _CDDMBookkeeping, _CDDMBootOrShutdownEvent,
-                            _CDDMDeviceEvent, _CDDMDeviceMapper, _CDDMForecast,
-                            _CDDMForecastInteger, _CDDMForecastReal,
-                            _CDDMForecastScore, _CDDMForecastString,
-                            _CDDMIntegerAttribute, _CDDMPluginEvent, _CDDMPool,
-                            _CDDMPoolNameMapper, _CDDMRealAttribute,
-                            _CDDMScreenLockEvent, _CDDMSleepOrWakeEvent,
-                            _CDDMStatisticInteger, _CDDMStatisticReal,
-                            _CDDMStatisticString, _CDDMStringAttribute,
-                            _CDDMThermalEvent, _CDDMWakednessEvent ]
+    objc-classes:         [ CDDMAirplaneModeEvent, CDDMAppNameMapper,
+                            CDDMAppStateChangeEvent, CDDMAttributeNameMapper,
+                            CDDMBacklightEvent, CDDMBatteryEvent, CDDMBookkeeping,
+                            CDDMBootOrShutdownEvent, CDDMDeviceEvent,
+                            CDDMDeviceMapper, CDDMForecast, CDDMForecastInteger,
+                            CDDMForecastReal, CDDMForecastScore,
+                            CDDMForecastString, CDDMIntegerAttribute,
+                            CDDMPluginEvent, CDDMPool, CDDMPoolNameMapper,
+                            CDDMRealAttribute, CDDMScreenLockEvent,
+                            CDDMSleepOrWakeEvent, CDDMStatisticInteger,
+                            CDDMStatisticReal, CDDMStatisticString,
+                            CDDMStringAttribute, CDDMThermalEvent,
+                            CDDMWakednessEvent ]
+undefineds:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ __objc_empty_cache, dyld_stub_binder ]
+    objc-classes:         [ NSManagedObject, NSObject ]
 ...
