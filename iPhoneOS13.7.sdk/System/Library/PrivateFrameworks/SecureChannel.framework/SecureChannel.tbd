@@ -9,16 +9,4 @@ objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     objc-classes:         [ SecureChannelAction, SecureChannelController ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _NSLog, __Block_object_assign, __NSConcreteGlobalBlock,
-                            __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference,
-                            __objc_empty_cache, _dispatch_once, _objc_alloc,
-                            _objc_alloc_init, _objc_getProperty, _objc_msgSend,
-                            _objc_msgSendSuper2, _objc_opt_class, _objc_release,
-                            _objc_retain, _objc_retainAutoreleaseReturnValue,
-                            _objc_retainAutoreleasedReturnValue,
-                            _objc_storeStrong, dyld_stub_binder ]
-    objc-classes:         [ NSObject, NSString, NSURL, NSXPCConnection, NSXPCInterface ]
 ...

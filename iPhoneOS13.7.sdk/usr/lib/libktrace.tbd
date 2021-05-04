@@ -9,7 +9,4 @@ exports:
   - archs:                [ arm64, arm64e ]
     re-exports:           [ /System/Library/PrivateFrameworks/ktrace.framework/ktrace ]
     symbols:              [ ___ktraceVersionNumber, ___ktraceVersionString ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

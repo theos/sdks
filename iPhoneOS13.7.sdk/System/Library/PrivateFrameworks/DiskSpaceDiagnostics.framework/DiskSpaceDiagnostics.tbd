@@ -9,7 +9,4 @@ exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _DiskSpaceDiagnosticsVersionNumber,
                             _DiskSpaceDiagnosticsVersionString ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

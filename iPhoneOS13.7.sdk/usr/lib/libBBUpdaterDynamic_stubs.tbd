@@ -9,9 +9,4 @@ exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _BBUpdaterExecCommand, _BBUpdaterExtremeCreate,
                             _BBUpdaterSetOptions ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __NSConcreteGlobalBlock, ___stderrp, _access,
-                            _dispatch_once, _dlopen, _dlsym, _fprintf, _getprogname,
-                            _syslog, dyld_stub_binder ]
 ...

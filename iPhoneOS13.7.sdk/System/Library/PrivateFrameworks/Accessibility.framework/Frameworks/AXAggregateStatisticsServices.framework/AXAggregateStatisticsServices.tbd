@@ -9,10 +9,4 @@ objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     objc-classes:         [ AXAggregateStatisticsServices ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___CFConstantStringClassReference,
-                            ___NSDictionary0__, __objc_empty_cache, _objc_alloc,
-                            _objc_msgSend, _objc_release, dyld_stub_binder ]
-    objc-classes:         [ AXUIClient, NSObject ]
 ...

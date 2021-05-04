@@ -132,13 +132,4 @@ exports:
                             _tidySetPanicCall, _tidySetReallocCall,
                             _tidySetReportFilter, _tidyStatus, _tidyUngetByte,
                             _tidyWarningCount, _tidy_out ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __DefaultRuneLocale, ___assert_rtn, ___chkstk_darwin,
-                            ___maskrune, ___sprintf_chk, ___stack_chk_fail,
-                            ___stack_chk_guard, ___stderrp, ___stdinp, ___stdoutp,
-                            ___vsnprintf_chk, _access, _atoi, _bzero, _exit, _fclose,
-                            _feof, _fflush, _fgetc, _fileno, _fopen, _fprintf, _fputc, _free,
-                            _fstat, _getenv, _malloc, _memchr, _memcmp, _memcpy, _realloc,
-                            _sscanf, _strstr, _utime, dyld_stub_binder ]
 ...

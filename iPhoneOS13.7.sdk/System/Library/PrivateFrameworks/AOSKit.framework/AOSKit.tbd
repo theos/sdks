@@ -74,23 +74,4 @@ exports:
                             AOSTransaction.didFinish, AOSTransaction.didSucceed,
                             AOSTransaction.error, AOSTransaction.result,
                             AOSTransaction.waitLock ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFErrorCreate, _CFRelease, _CFRetain, _NSLog,
-                            __Block_object_assign, __Block_object_dispose,
-                            __CFRuntimeCreateInstance, __CFRuntimeRegisterClass,
-                            __NSConcreteStackBlock, __Unwind_Resume,
-                            ___CFConstantStringClassReference,
-                            ___objc_personality_v0, __objc_empty_cache,
-                            _dispatch_async, _dispatch_get_global_queue,
-                            _dispatch_release, _dispatch_retain,
-                            _kCFAllocatorDefault, _objc_alloc, _objc_alloc_init,
-                            _objc_autorelease, _objc_begin_catch, _objc_end_catch,
-                            _objc_msgSend, _objc_msgSendSuper2, _objc_release,
-                            _objc_retain, _objc_sync_enter, _objc_sync_exit,
-                            dyld_stub_binder ]
-    objc-classes:         [ AAAccountManager, NSAutoreleasePool, NSConditionLock,
-                            NSMutableDictionary, NSMutableString, NSNumber, NSObject,
-                            NSString, NSThread ]
-    objc-eh-types:        [ NSException ]
 ...

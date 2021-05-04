@@ -99,7 +99,4 @@ exports:
                             _sin, _sinf, _sinh, _sinhf, _sinhl, _sinl, _sqrt, _sqrtf, _sqrtl,
                             _tan, _tanf, _tanh, _tanhf, _tanhl, _tanl, _tgamma, _tgammaf,
                             _tgammal, _trunc, _truncf, _truncl, _y0, _y1, _yn ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___chkstk_darwin, ___muldc3, ___mulsc3, dyld_stub_binder ]
 ...

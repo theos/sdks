@@ -25,20 +25,4 @@ exports:
                             _isThaiBreakChar, _isThaiConsonant, _isThaiEndingChar,
                             _isThaiLeadingChar, _isThaiLeadingCharAtIndex,
                             _isThaiPunct, _isThaiVowel, _isWhiteSpace, _mergeAcronym ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFAllocatorAllocate, _CFAllocatorDeallocate,
-                            _CFArrayAppendArray, _CFArrayAppendValue,
-                            _CFArrayCreateMutable, _CFArrayGetCount,
-                            _CFArrayGetValueAtIndex, _CFBurstTrieContains,
-                            _CFBurstTrieCreateFromFile, _CFBurstTrieRelease,
-                            _CFNumberCreate, _CFNumberGetValue, _CFRelease, _CFShow,
-                            _CFStringAppend, _CFStringCreateMutable,
-                            _CFStringCreateWithCString,
-                            _CFStringCreateWithFormat,
-                            _CFStringCreateWithSubstring,
-                            _CFStringGetCharacterAtIndex, _CFStringGetLength,
-                            ___CFConstantStringClassReference, _calloc, _free,
-                            _getenv, _kCFAllocatorDefault, _kCFTypeArrayCallBacks,
-                            _malloc, dyld_stub_binder ]
 ...

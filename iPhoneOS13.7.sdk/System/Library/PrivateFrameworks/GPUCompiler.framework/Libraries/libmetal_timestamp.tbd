@@ -8,7 +8,4 @@ compatibility-version: 1
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _getMetalTimeStamp ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

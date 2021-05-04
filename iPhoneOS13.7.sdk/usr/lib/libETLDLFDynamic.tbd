@@ -11,20 +11,4 @@ exports:
                             _ETLDLFConversionParametersInit, _ETLDLFConvert,
                             _ETLDLFConvertDebugData, _ETLDLFConvertExt,
                             _ETLDLFConverter, _ETLDLFParse ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _ETLDecompress, _ETLDecompressCheck,
-                            _ETLDecompressProcessNonHDLCData,
-                            _ETLEVENTProcessEventItemTSLength,
-                            _ETLEVENTProcessHeader, _ETLLOGParseLogHeader,
-                            _ETLLOGParseLogRecord, _ETLMESSAGECreateFromQSR,
-                            _ETLMESSAGECreateFromQSR4,
-                            _ETLMESSAGEParseMessageHeader,
-                            _ETLParseLogEventOrMessageExt,
-                            _ETLTimestampFromTimeval, _ETLTimestampGetTimeval,
-                            __ETLDebugPrint, __ETLDebugPrintBinary,
-                            ___chkstk_darwin, ___snprintf_chk, ___stack_chk_fail,
-                            ___stack_chk_guard, ___strlcat_chk, ___strlcpy_chk,
-                            _free, _localtime_r, _malloc, _memcpy, _strlen,
-                            dyld_stub_binder ]
 ...

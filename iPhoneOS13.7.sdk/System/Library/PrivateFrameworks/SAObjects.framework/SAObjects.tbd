@@ -8126,36 +8126,4 @@ exports:
                             SAWristDetectionStatusClientState,
                             SAiCloudGetiCloudInformation,
                             SAiCloudiCloudInformation ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFArrayGetCount, _CFArrayGetTypeID,
-                            _CFDictionaryGetTypeID, _CFGetTypeID,
-                            _CFPropertyListCreateWithData, _CFRelease,
-                            _NSClassFromString, _NSLog, _NSStringFromClass,
-                            _NSStringFromProtocol, __Block_object_assign,
-                            __Block_object_dispose,
-                            __CFPropertyListCreateFiltered,
-                            __CFPropertyListCreateSingleValue,
-                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference, ___assert_rtn,
-                            ___stack_chk_fail, ___stack_chk_guard, ___strlcpy_chk,
-                            ___tolower, __objc_empty_cache,
-                            _class_copyPropertyList, _class_getSuperclass,
-                            _dispatch_once, _dispatch_queue_create, _dispatch_sync,
-                            _free, _mach_absolute_time, _mach_timebase_info,
-                            _objc_alloc, _objc_alloc_init, _objc_autorelease,
-                            _objc_autoreleaseReturnValue,
-                            _objc_enumerationMutation, _objc_getProperty,
-                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
-                            _objc_opt_isKindOfClass, _objc_release, _objc_retain,
-                            _objc_retainAutorelease,
-                            _objc_retainAutoreleaseReturnValue,
-                            _objc_retainAutoreleasedReturnValue,
-                            _objc_storeStrong,
-                            _objc_unsafeClaimAutoreleasedReturnValue,
-                            _object_getClass, _property_getName, _sel_getName,
-                            _strchr, dyld_stub_binder ]
-    objc-classes:         [ NSArray, NSData, NSDate, NSDictionary, NSMutableArray,
-                            NSMutableDictionary, NSMutableSet, NSMutableString,
-                            NSNumber, NSObject, NSSet, NSString, NSURL ]
 ...

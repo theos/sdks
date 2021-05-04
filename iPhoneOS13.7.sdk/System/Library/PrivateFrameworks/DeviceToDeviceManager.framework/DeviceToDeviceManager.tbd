@@ -22,18 +22,4 @@ exports:
                             _D2DStopResolvingPairOnTransport, _D2DTerminate,
                             _DeviceToDeviceManagerVersionNumber,
                             _DeviceToDeviceManagerVersionString ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFArrayGetCount, _CFArrayGetValueAtIndex,
-                            _CFBundleCopyBuiltInPlugInsURL,
-                            _CFBundleCreateBundlesFromDirectory,
-                            _CFBundleGetBundleWithIdentifier,
-                            _CFBundleGetDataPointerForName,
-                            _CFBundleGetInfoDictionary, _CFDataCreate,
-                            _CFDictionaryGetValue, _CFGetTypeID,
-                            _CFNumberGetTypeID, _CFNumberGetValue, _CFRelease,
-                            _CFStringGetTypeID,
-                            ___CFConstantStringClassReference, ___stderrp,
-                            _fprintf, _fwrite, _kCFAllocatorDefault,
-                            dyld_stub_binder ]
 ...

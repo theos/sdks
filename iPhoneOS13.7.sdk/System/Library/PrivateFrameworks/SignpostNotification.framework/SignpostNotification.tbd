@@ -13,7 +13,4 @@ exports:
                             _SignpostNotificationSendNotificationSubscriptionRequestOnConnection,
                             _SignpostNotificationVersionNumber,
                             _SignpostNotificationVersionString ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

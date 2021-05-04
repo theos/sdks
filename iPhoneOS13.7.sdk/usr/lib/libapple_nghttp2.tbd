@@ -138,10 +138,4 @@ exports:
                             _nghttp2_submit_shutdown_notice,
                             _nghttp2_submit_trailer,
                             _nghttp2_submit_window_update, _nghttp2_version ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___assert_rtn, ___chkstk_darwin, ___stack_chk_fail,
-                            ___stack_chk_guard, ___vsnprintf_chk, _bzero, _calloc,
-                            _free, _malloc, _memcmp, _memcpy, _realloc, _strlen,
-                            dyld_stub_binder ]
 ...

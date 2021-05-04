@@ -38,8 +38,4 @@ exports:
                             _MarcoWarnLocalPreview, _MarcoWarnMadrid,
                             _MarcoWarnMadridCF, _MarcoWarnMadridCF_V,
                             _MarcoWarnRegistration ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
-    objc-classes:         [ NSDictionary ]
 ...

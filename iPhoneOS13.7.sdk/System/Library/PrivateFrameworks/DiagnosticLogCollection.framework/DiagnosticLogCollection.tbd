@@ -33,25 +33,4 @@ exports:
                             _DLCWarn, _DLCWarnV, __DLCLogEventWithLevelV,
                             __DLCLogWithLevelFileAndLine, __DLCLogWithLevelV,
                             __DLCWarnV ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFDictionarySetValue, _IMLogCurrentBacktrace_V,
-                            _IMLoggingStringForMessageData, _IMShouldLog,
-                            _IMShouldLogCategory, _IMShouldLogMessageBodies,
-                            _IMSyncLoggingsPreferences, __Block_object_assign,
-                            __Block_object_dispose, __IMLogEventString_V,
-                            __IMLogStringWithFileAndLine_V, __IMLogString_V,
-                            __IMLoggingAction, __IMLoggingActionWithUserInfo,
-                            __IMLoggingAddLogFile, __IMLoggingBeginSession,
-                            __IMLoggingEndSession, __IMLoggingEvent,
-                            __IMLoggingLogCallInfo, __IMLoggingLog_V,
-                            __IMLoggingNoteCheckpoint_V, __IMLoggingPulse,
-                            __IMLoggingSetFailureReason, __IMLoggingSetInitiator,
-                            __IMLoggingSetRecipient, __IMWarnString_V,
-                            __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference, _objc_alloc,
-                            _objc_autorelease, _objc_autoreleasePoolPop,
-                            _objc_autoreleasePoolPush, _objc_msgSend,
-                            _objc_release, dyld_stub_binder ]
-    objc-classes:         [ NSDictionary, NSMutableDictionary, NSNumber ]
 ...

@@ -21,8 +21,4 @@ exports:
                             CDDMStatisticReal, CDDMStatisticString,
                             CDDMStringAttribute, CDDMThermalEvent,
                             CDDMWakednessEvent ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __objc_empty_cache, dyld_stub_binder ]
-    objc-classes:         [ NSManagedObject, NSObject ]
 ...

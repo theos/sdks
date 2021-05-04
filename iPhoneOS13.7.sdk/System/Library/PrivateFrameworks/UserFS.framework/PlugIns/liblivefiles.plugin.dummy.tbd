@@ -8,8 +8,4 @@ compatibility-version: 1
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _dummy_ops, _livefiles_plugin_init, _root_node ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _strcmp, _strncpy,
-                            dyld_stub_binder ]
 ...

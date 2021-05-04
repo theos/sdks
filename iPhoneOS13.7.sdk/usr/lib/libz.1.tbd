@@ -28,10 +28,4 @@ exports:
                             _inflateSetDictionary, _inflateSync, _inflateSyncPoint,
                             _inflateUndermine, _inflateValidate, _uncompress,
                             _uncompress2, _zError, _zlibCompileFlags, _zlibVersion ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___error, ___snprintf_chk, ___stack_chk_fail,
-                            ___stack_chk_guard, ___vsnprintf_chk, _bzero, _close,
-                            _free, _lseek, _malloc, _memchr, _memcpy, _open, _read,
-                            _strerror, _strlen, _write, dyld_stub_binder ]
 ...

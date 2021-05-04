@@ -335,14 +335,4 @@ exports:
                             _cczp_power_fast,
                             _csss_shamir_share_bag_can_recover_secret,
                             _fipspost_post, _fipspost_trace_vtable ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___memcpy_chk, ___memset_chk, ___stack_chk_fail,
-                            ___stack_chk_guard, ___stderrp, ___toupper, __os_once,
-                            _abort, _bzero, _fprintf, _fputc, _free, _fwrite, _getentropy,
-                            _mach_absolute_time, _mach_timebase_info, _malloc,
-                            _memcmp, _memcpy, _memmove, _memset, _memset_s,
-                            _os_unfair_lock_assert_owner, _os_unfair_lock_lock,
-                            _os_unfair_lock_unlock, _printf, _putchar, _strcmp,
-                            _strlen, _strncmp, dyld_stub_binder ]
 ...

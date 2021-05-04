@@ -9,13 +9,4 @@ objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _GSFontCacheGetData, _GSFontCacheGetDictionary ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___CFConstantStringClassReference, _objc_msgSend,
-                            dyld_stub_binder ]
-    objc-classes:         [ NSConstantArray, NSConstantDictionary,
-                            NSConstantIntegerNumber, _NSConstantArray,
-                            _NSConstantData, _NSConstantDictionary,
-                            _NSConstantNumberBool, _NSConstantNumberFloat,
-                            _NSConstantNumberInt ]
 ...

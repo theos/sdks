@@ -36,27 +36,4 @@ exports:
     objc-classes:         [ MTLSAnimatablePathCollection, MTLSArc, MTLSCircle,
                             MTLSCorner, MTLSPath, MTLSPathBufferData, MTLSPathUnion,
                             MTLSSemiCircle, MTLSplineRenderer ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __Unwind_Resume,
-                            __ZNKSt3__120__vector_base_commonILb1EE20__throw_length_errorEv,
-                            __ZNSt11logic_errorC2EPKc, __ZNSt12length_errorD1Ev,
-                            __ZTVSt12length_error,
-                            ___CFConstantStringClassReference,
-                            ___cxa_allocate_exception, ___cxa_free_exception,
-                            ___cxa_throw, ___gxx_personality_v0, ___invert_f3,
-                            ___invert_f4, ___sincosf_stret, ___stack_chk_fail,
-                            ___stack_chk_guard, __objc_empty_cache, _acosf,
-                            _matrix_identity_float4x4, _memcpy, _memmove,
-                            _objc_alloc, _objc_alloc_init, _objc_copyStruct,
-                            _objc_destroyWeak, _objc_enumerationMutation,
-                            _objc_getProperty, _objc_loadWeakRetained,
-                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
-                            _objc_release, _objc_retain,
-                            _objc_retainAutoreleasedReturnValue,
-                            _objc_setProperty_atomic, _objc_storeStrong,
-                            _objc_storeWeak, _powf, _printf, _tanf, dyld_stub_binder ]
-    objc-classes:         [ MTLRenderPipelineDescriptor, MTLVertexDescriptor,
-                            NSBundle, NSDictionary, NSMutableDictionary, NSObject ]
-    weak-def-symbols:     [ __ZTISt12length_error, __ZdlPv, __Znwm ]
 ...

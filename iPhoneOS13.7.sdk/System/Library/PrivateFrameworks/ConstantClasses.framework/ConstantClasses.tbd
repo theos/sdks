@@ -21,19 +21,4 @@ exports:
                             _NSConstantDictionaryEnumerator.capacity,
                             _NSConstantDictionaryEnumerator.currentKey,
                             _NSConstantDictionaryEnumerator.keyIndex ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _NSGenericException, _NSStringFromClass,
-                            __Block_object_assign, __Block_object_dispose,
-                            __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference, ___stack_chk_fail,
-                            ___stack_chk_guard, __objc_empty_cache, _free, _malloc,
-                            _objc_alloc, _objc_alloc_init, _objc_autorelease,
-                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
-                            _objc_opt_isKindOfClass,
-                            _objc_opt_respondsToSelector, _objc_release,
-                            dyld_stub_binder ]
-    objc-classes:         [ NSArray, NSData, NSDate, NSDecimalNumber, NSDictionary,
-                            NSEnumerator, NSException, NSMutableArray,
-                            NSMutableString, NSNumber, NSObject, NSString ]
 ...

@@ -16,7 +16,4 @@ exports:
                             _HDLCFrameInjectUnsignedChar,
                             _HDLCFrameInjectUnsignedInt,
                             _HDLCFrameInjectUnsignedShort ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _free, _malloc, _memcpy, _memset, dyld_stub_binder ]
 ...

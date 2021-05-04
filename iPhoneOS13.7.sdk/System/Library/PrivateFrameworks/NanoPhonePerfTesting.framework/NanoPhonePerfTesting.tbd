@@ -11,14 +11,4 @@ exports:
     symbols:              [ _NanoPhonePerfTestingVersionNumber,
                             _NanoPhonePerfTestingVersionString, _nph_general_log ]
     objc-classes:         [ NPHPerfTestingUtil ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __NSConcreteGlobalBlock,
-                            ___CFConstantStringClassReference,
-                            __objc_empty_cache, _dispatch_once, _objc_alloc_init,
-                            _objc_msgSend, _objc_release, _objc_retain,
-                            _objc_retainAutoreleaseReturnValue,
-                            _objc_retainAutoreleasedReturnValue, _os_log_create,
-                            dyld_stub_binder ]
-    objc-classes:         [ NSMutableDictionary, NSObject, NSUserDefaults ]
 ...

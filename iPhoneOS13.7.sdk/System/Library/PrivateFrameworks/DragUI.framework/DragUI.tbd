@@ -6,7 +6,4 @@ install-name:          /System/Library/PrivateFrameworks/DragUI.framework/DragUI
 current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

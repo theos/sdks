@@ -52,35 +52,4 @@ exports:
                             GKPeerPickerViewController._state,
                             GKPeerPickerViewController._statusView,
                             GKPeerPickerViewController._updating ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CGAffineTransformIdentity, _CGAffineTransformScale,
-                            _CGRectGetHeight, _CGRectGetMaxX, _CGRectGetMaxY,
-                            _CGRectGetWidth, _CGRectZero, _GKActiveLogBits,
-                            _GKBluetoothPowerStatusChangedNotification,
-                            _GKGameCenterUIFrameworkBundle,
-                            _GKGetLocalizedStringFromTableInBundle, _GKOSLogInit,
-                            __Block_object_assign, __Block_object_dispose,
-                            __NSConcreteGlobalBlock, __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference, ___stack_chk_fail,
-                            ___stack_chk_guard, __dispatch_main_q,
-                            __objc_empty_cache, __os_log_error_impl, __os_log_impl,
-                            _dispatch_after, _dispatch_async, _dispatch_once,
-                            _dispatch_time, _objc_alloc, _objc_alloc_init,
-                            _objc_autorelease, _objc_enumerationMutation,
-                            _objc_getProperty, _objc_msgSend, _objc_msgSendSuper2,
-                            _objc_opt_class, _objc_opt_respondsToSelector,
-                            _objc_release, _objc_retain,
-                            _objc_setProperty_nonatomic, _os_log_GKLogError,
-                            _os_log_GKLogGeneral, _os_log_GKLogMatch,
-                            _os_log_type_enabled, dyld_stub_binder ]
-    objc-classes:         [ GKBluetoothSupport, GKSession, NSArray, NSBundle,
-                            NSCharacterSet, NSDictionary, NSException,
-                            NSMutableArray, NSMutableDictionary, NSMutableString,
-                            NSNotificationCenter, NSNumber, NSObject, NSString,
-                            NSTimer, UIActivityIndicatorView, UIAlertView,
-                            UIApplication, UIButton, UIColor, UIDevice, UIFont, UIImage,
-                            UIImageView, UILabel, UITableView, UITableViewCell, UIView,
-                            UIViewController ]
-    weak-def-symbols:     [ _GKSessionErrorDomain ]
 ...

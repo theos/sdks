@@ -25,8 +25,4 @@ exports:
                             _pb_get_encoded_size, _pb_istream_from_buffer,
                             _pb_make_string_substream, _pb_ostream_from_buffer,
                             _pb_read, _pb_skip_field, _pb_write ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _bzero, _memcpy,
-                            dyld_stub_binder ]
 ...

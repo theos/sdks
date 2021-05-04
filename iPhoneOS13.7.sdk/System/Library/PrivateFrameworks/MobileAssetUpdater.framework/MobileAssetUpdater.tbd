@@ -20,21 +20,4 @@ exports:
                             MobileAssetUpdater._purgeOverrideFile,
                             MobileAssetUpdater._query,
                             MobileAssetUpdater._requireAssetMetadata ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _MGCopyAnswer, _NSLocalizedDescriptionKey, _NSLog,
-                            _NSLogv, __Block_object_assign, __Block_object_dispose,
-                            __NSConcreteStackBlock, __Unwind_Resume,
-                            ___CFConstantStringClassReference,
-                            ___objc_personality_v0, ___stack_chk_fail,
-                            ___stack_chk_guard, __objc_empty_cache, _objc_alloc,
-                            _objc_alloc_init, _objc_autorelease,
-                            _objc_enumerationMutation, _objc_getProperty,
-                            _objc_msgSend, _objc_msgSendSuper2, _objc_opt_class,
-                            _objc_opt_isKindOfClass, _objc_release,
-                            _objc_setProperty_atomic,
-                            _objc_setProperty_atomic_copy, dyld_stub_binder ]
-    objc-classes:         [ ASAsset, MAAsset, MAAssetQuery, MADownloadOptions,
-                            NSDictionary, NSError, NSFileManager, NSLock,
-                            NSMutableDictionary, NSNumber, NSObject, NSString ]
 ...

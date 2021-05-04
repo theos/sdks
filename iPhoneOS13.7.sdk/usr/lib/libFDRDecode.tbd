@@ -37,14 +37,4 @@ exports:
                             _AMFDRDecodeVerifyCertIssuer,
                             _AMFDRDecodeVerifySealingManifest,
                             _AMFDRDecodeVerifySealingRequest ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _AMSupportDigestSha1, _AMSupportDigestSha256,
-                            _AMSupportDigestSha384,
-                            _AMSupportEcDsaVerifySignature, _AMSupportLogFormat,
-                            _AMSupportRsaVerifySignatureSha1,
-                            _AMSupportRsaVerifySignatureSha256,
-                            _AMSupportRsaVerifySignatureSha384,
-                            ___stack_chk_fail, ___stack_chk_guard, _bzero, _free,
-                            _malloc, _memcmp, _memcpy, dyld_stub_binder ]
 ...

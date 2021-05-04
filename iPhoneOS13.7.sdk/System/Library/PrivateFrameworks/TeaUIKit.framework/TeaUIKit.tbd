@@ -25,7 +25,4 @@ exports:
                             TeaTemplate, TeaTemplateTests, TeaUI, TeaUITests,
                             com.apple.news, newsd ]
     symbols:              [ _TeaUIKitVersionNumber, _TeaUIKitVersionString ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ dyld_stub_binder ]
 ...

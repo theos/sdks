@@ -38,16 +38,4 @@ exports:
                             _ETLDLOADExpectCommandType,
                             _ETLDLOADGetNAKReasonAsString,
                             _ETLDLOADGetProtocolVersion ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _ETLFrameReadFromTransport, _HDLCFrameCreateUplink,
-                            _HDLCFrameEncodeAndCache, _HDLCFrameFree,
-                            _HDLCFrameInject, _HDLCFrameInjectUnsignedChar,
-                            _HDLCFrameInjectUnsignedInt,
-                            _HDLCFrameInjectUnsignedShort,
-                            _TelephonyRadiosGetRadio,
-                            _TelephonyUtilRingBufferInitialize, __ETLDebugPrint,
-                            __ETLDebugPrintBinary, ___stack_chk_fail,
-                            ___stack_chk_guard, ___strlcpy_chk, _memcpy,
-                            dyld_stub_binder ]
 ...

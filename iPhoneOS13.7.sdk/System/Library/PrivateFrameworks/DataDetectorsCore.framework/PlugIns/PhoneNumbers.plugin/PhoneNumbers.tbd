@@ -9,11 +9,4 @@ exports:
   - archs:                [ arm64, arm64e ]
     symbols:              [ _GetPrefixInitialState, _GetResultPostprocessor,
                             _GetSuffixInitialState, _GetVersion ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFRelease, _CFStringCompare,
-                            _DDDFAScannerSimulateState, _DDResultAddSubresult,
-                            _DDResultCreate, _DDResultGetQueryRange,
-                            _DDResultGetType, ___CFConstantStringClassReference,
-                            dyld_stub_binder ]
 ...

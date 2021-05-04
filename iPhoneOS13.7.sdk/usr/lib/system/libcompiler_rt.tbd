@@ -40,11 +40,4 @@ exports:
                             _atomic_flag_test_and_set,
                             _atomic_flag_test_and_set_explicit,
                             _atomic_signal_fence, _atomic_thread_fence ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __Unwind_GetIP, __Unwind_GetLanguageSpecificData,
-                            __Unwind_GetRegionStart, __Unwind_SetGR,
-                            __Unwind_SetIP, ____chkstk_darwin, ___assert_rtn,
-                            __os_nospin_lock_lock, __os_nospin_lock_unlock,
-                            _memcmp, _memcpy, dyld_stub_binder ]
 ...

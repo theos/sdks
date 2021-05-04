@@ -20,21 +20,4 @@ exports:
                             CRNOscillationScrollTestParameters,
                             CRNPagingScrollTestParameters,
                             CRNStandardScrollTestParameters, CornobbleTestRunner ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CGRectGetMaxX, _CGRectGetMaxY, _CGRectGetMidX,
-                            _CGRectGetMidY, _CGRectGetMinX, _CGRectGetMinY,
-                            __Block_object_assign, __NSConcreteStackBlock,
-                            ___CFConstantStringClassReference, ___stack_chk_fail,
-                            ___stack_chk_guard, __objc_empty_cache,
-                            _abort_report_np, _dlerror, _dlopen, _objc_alloc,
-                            _objc_autoreleaseReturnValue,
-                            _objc_enumerationMutation, _objc_getClass,
-                            _objc_getProperty, _objc_msgSend, _objc_msgSendSuper2,
-                            _objc_release, _objc_retain,
-                            _objc_retainAutoreleaseReturnValue,
-                            _objc_retainAutoreleasedReturnValue,
-                            _objc_retainBlock, _objc_setProperty_nonatomic_copy,
-                            _objc_storeStrong, dyld_stub_binder ]
-    objc-classes:         [ NSArray, NSObject, UIApplication, UIDevice ]
 ...

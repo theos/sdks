@@ -35,17 +35,4 @@ exports:
                             _ETLSAHGetDebugRecordCount, _ETLSAHGetDebugTable,
                             _ETLSAHGetRecordEx, _ETLSAHModeAsString,
                             _ETLSAHSendReadData ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ _CFNumberGetValue, _ETLDLOADGetProtocolVersion,
-                            _TelephonyCapabilitiesRadioGetCoreDumpInterface,
-                            _TelephonyCapabilitiesRadioProgrammerProductID,
-                            _TelephonyUtilRingBufferGetLinearReadRemaining,
-                            _TelephonyUtilRingBufferGetSize,
-                            _TelephonyUtilRingBufferInsertTransport,
-                            _TelephonyUtilRingBufferReset,
-                            _TelephonyUtilRingBufferSkip, __ETLDebugPrint,
-                            __ETLDebugPrintBinary, _free,
-                            _kTelephonyUtilTransportConfigMaxPacketSize, _malloc,
-                            _memcpy, dyld_stub_binder ]
 ...

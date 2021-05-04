@@ -12,10 +12,4 @@ exports:
     objc-classes:         [ PARCategory, PARCollectionStartEvent, PAREvent,
                             PARFlushEvent, PARImagesSession, PARSafariSession,
                             PARSpotlightSession, PARUsageEvent ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___CFConstantStringClassReference,
-                            __objc_empty_cache, _objc_msgSend, _objc_storeStrong,
-                            dyld_stub_binder ]
-    objc-classes:         [ NSFetchRequest, NSManagedObject, NSObject ]
 ...

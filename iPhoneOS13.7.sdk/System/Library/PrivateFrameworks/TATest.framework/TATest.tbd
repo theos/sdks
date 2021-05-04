@@ -9,9 +9,4 @@ objc-constraint:       retain_release
 exports:
   - archs:                [ arm64, arm64e ]
     objc-classes:         [ TATestObject ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ ___CFConstantStringClassReference,
-                            __objc_empty_cache, dyld_stub_binder ]
-    objc-classes:         [ NSObject ]
 ...

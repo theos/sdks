@@ -11,12 +11,4 @@ exports:
     re-exports:           [ /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers ]
     symbols:              [ _PhoneNumbersVersionNumber,
                             _PhoneNumbersVersionString, _pn_default_log ]
-undefineds:
-  - archs:                [ arm64, arm64e ]
-    symbols:              [ __NSConcreteGlobalBlock,
-                            __PNCopyInternationalCodeForCountry, _dispatch_once,
-                            _objc_msgSend, _objc_opt_class, _objc_release,
-                            _objc_retainAutoreleasedReturnValue, _os_log_create,
-                            dyld_stub_binder ]
-    objc-classes:         [ NSLocale ]
 ...
