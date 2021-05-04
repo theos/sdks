@@ -31,7 +31,7 @@ fi
 version="v1"
 
 archs_option=("--replace-archs" armv7 armv7s arm64)
-tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
+tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports" "--ignore-undefineds")
 write_options=("--preserve-subdirs" "--replace-path-extension")
 
 no_overwrite="--no-overwrite"
