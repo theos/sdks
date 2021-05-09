@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libFosl_dynamic.dylib
 current-version:       0
 compatibility-version: 0
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _fosl_addPrelude, _fosl_astPrint,
                             _fosl_astPrintReachable, _fosl_codeComplete,
                             _fosl_codeCompleteLineColumn, _fosl_createParser,

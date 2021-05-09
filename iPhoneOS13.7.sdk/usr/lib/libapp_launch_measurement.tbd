@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libapp_launch_measurement.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _alm_FrontBoard_lifecycle_log, _alm_app_did_present,
                             _alm_app_extended_launch_end, _alm_app_will_launch,
                             _alm_app_will_launch_with_details,

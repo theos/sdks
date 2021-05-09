@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libxslt.1.dylib
 current-version:       3.26
 compatibility-version: 3
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _xslAddCall, _xslDebugStatus, _xslDropCall,
                             _xslHandleDebugger, _xsltAddKey, _xsltAddStackElemList,
                             _xsltAddTemplate, _xsltAllocateExtra,

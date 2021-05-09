@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libbsm.0.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _au_bsm_to_domain, _au_bsm_to_errno,
                             _au_bsm_to_fcntl_cmd, _au_bsm_to_socket_type,
                             _au_close, _au_close_buffer, _au_close_token,

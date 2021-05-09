@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/HealthEducationUI.framework/HealthEducationUI
@@ -8,7 +8,7 @@ compatibility-version: 1
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s17HealthEducationUI0aB13TileViewModelV11descriptionSSvg,
                             _$s17HealthEducationUI0aB13TileViewModelV11descriptionSSvpMV,
                             _$s17HealthEducationUI0aB13TileViewModelV12presentation0a10ExperienceC012PresentationOvg,

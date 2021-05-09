@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/system/libsystem_configuration.dylib
@@ -7,7 +7,7 @@ current-version:       1061.140.1
 compatibility-version: 1
 parent-umbrella:       System
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __dns_configuration_ack, __libSC_info_fork_child,
                             __libSC_info_fork_parent, __libSC_info_fork_prepare,
                             __nwi_config_agent_copy_data, __nwi_state_ack,

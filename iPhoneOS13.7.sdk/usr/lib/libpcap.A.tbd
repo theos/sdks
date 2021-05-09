@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libpcap.A.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ ___pcap_atodn, ___pcap_atoin, ___pcap_nametodnaddr,
                             _add_addr_to_dev, _add_addr_to_if, _add_dev, _bpf_dump,
                             _bpf_filter, _bpf_filter_with_aux_data, _bpf_image,

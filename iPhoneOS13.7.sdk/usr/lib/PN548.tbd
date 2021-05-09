@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/PN548.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _DefaultServerName, _FindLockBytePosition,
                             _FindResBytePosition, _GetRfTransRegValProc, _NdefInfo,
                             _VerifyRoutingTable, _aHsuBr_115_2K, _aHsuBr_1288K,

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libcoretls.dylib
 current-version:       167
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CipherSuiteCount, _CurvesCount, _KnownCipherSuites,
                             _KnownCurves, _KnownSigAlgs, _SigAlgsCount,
                             _Ssl3Callouts, _Tls12Callouts, _Tls1Callouts,

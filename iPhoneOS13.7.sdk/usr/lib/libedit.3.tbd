@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libedit.3.dylib
 current-version:       3
 compatibility-version: 2
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __el_fn_complete, __el_fn_sh_complete,
                             __rl_abort_internal,
                             __rl_print_completions_horizontally,

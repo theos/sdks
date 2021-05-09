@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/SiriCore.framework/SiriCore
@@ -8,7 +8,7 @@ compatibility-version: 0
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _SiriCoreAceSerializationErrorDomain,
                             _SiriCoreAceSerializationErrorUserInfoBytesAvailableKey,
                             _SiriCoreAceSerializationErrorUserInfoBytesNeededKey,

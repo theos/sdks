@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libABMCommandDriversEUR.dylib
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z11CreateErrorNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE,
                             __ZN20QMIWakeCommandParser13getWakeReasonEN3ctu2cf11CFSharedRefIK8__CFDataEENS2_I14__CFDictionaryEE,
                             __ZN20QMIWakeCommandParser19getWakeReasonForWMSEPKhjN3ctu2cf11CFSharedRefI14__CFDictionaryEE,

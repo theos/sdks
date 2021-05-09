@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libboringssl.dylib
@@ -7,7 +7,7 @@ current-version:       0
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BIO_find_type, _BIO_flush, _BIO_free, _BIO_free_all,
                             _BIO_get_fd, _BIO_get_retry_reason, _BIO_hexdump,
                             _BIO_indent, _BIO_method_type, _BIO_new, _BIO_new_fp,

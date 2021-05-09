@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/TSReading.framework/TSReading
@@ -7,7 +7,7 @@ current-version:       334
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BOOL_NAME, _CGPointFromIntPoint,
                             _CGPointWithTSDDoublePoint, _CGRectContainsIntPoint,
                             _CGRectEmptyUnitSquare, _CGRectFromIntRect,

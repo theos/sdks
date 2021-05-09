@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleBasebandServices.framework/AppleBasebandServices
@@ -7,7 +7,7 @@ current-version:       0
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z15GetGlobalLoggerNSt3__110shared_ptrIN3ctu9LogServerEEE,
                             __Z15GetOsLogContextv, __ZN10MallocZone4freeEPv,
                             __ZN10MallocZone6callocEmm,

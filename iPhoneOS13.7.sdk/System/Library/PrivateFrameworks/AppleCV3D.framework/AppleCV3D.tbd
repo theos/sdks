@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleCV3D.framework/AppleCV3D
@@ -7,7 +7,7 @@ current-version:       2.83.1
 compatibility-version: 2.83.1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _APL_dgemm_noPack_NN, _APL_dgemm_noPack_NT,
                             _APL_dgemm_noPack_TN, _APL_dgemm_noPack_TT,
                             _APL_dsymm_noPack_LL, _APL_dsymm_noPack_LU,

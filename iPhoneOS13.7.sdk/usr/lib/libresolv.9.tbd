@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libresolv.9.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ ___res_9_p_type_syms, __res_9_h_errno_set,
                             __res_9_ns_flagdata, _dns_all_server_addrs,
                             _dns_async_cancel, _dns_async_handle_reply,

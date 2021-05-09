@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libmecab.dylib
 current-version:       883.11
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _mecab_cost_train, _mecab_destroy, _mecab_dict_gen,
                             _mecab_dict_index, _mecab_dictionary_info, _mecab_do,
                             _mecab_format_node, _mecab_get_feature,

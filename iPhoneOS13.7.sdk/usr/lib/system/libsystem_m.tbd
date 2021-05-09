@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/system/libsystem_m.dylib
@@ -7,7 +7,7 @@ current-version:       3178
 compatibility-version: 1
 parent-umbrella:       System
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __FE_DFL_DISABLE_DENORMS_ENV, __FE_DFL_ENV,
                             ___Libm_version, ___cos_d2, ___cos_f4, ___cospi, ___cospif,
                             ___exp10, ___exp10f, ___fegetfltrounds, ___fpclassifyd,

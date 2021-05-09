@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libParallelCompression.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BXDiff5, _BXDiff5Large, _BXDiff5WithIndividualPatches,
                             _BXPatch5, _BXPatch5InPlace, _BXPatch5Large,
                             _BXPatch5WithFlags, _BXPatchFile, _DirectoryDiff,

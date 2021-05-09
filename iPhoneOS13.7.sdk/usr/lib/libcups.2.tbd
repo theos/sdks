@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libcups.2.dylib
 current-version:       2.14
 compatibility-version: 2
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __cupsAppleCopyDefaultPaperID,
                             __cupsAppleCopyDefaultPrinter,
                             __cupsAppleGetUseLastPrinter, __cupsAppleLanguage,

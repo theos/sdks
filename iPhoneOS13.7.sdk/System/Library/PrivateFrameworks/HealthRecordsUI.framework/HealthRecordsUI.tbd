@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/HealthRecordsUI.framework/HealthRecordsUI
@@ -8,7 +8,7 @@ compatibility-version: 1
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10Foundation12DateIntervalV15HealthRecordsUIE03dayC010containingACSo010HKSemanticB0C_tFZ,
                             _$s10Foundation12DateIntervalV15HealthRecordsUIE03dayC010containingAcA0B0V_tFZ,
                             _$s10Foundation12DateIntervalV15HealthRecordsUIE03dayC010containingAcD10CodableBoxVySo010HKSemanticB0CG_tFZ,

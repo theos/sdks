@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libncurses.5.4.dylib
 current-version:       5.4
 compatibility-version: 5.4
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BC, _COLORS, _COLOR_PAIR, _COLOR_PAIRS, _COLS, _ESCDELAY,
                             _LINES, _PAIR_NUMBER, _PC, _SP, _TABSIZE, _UP, __nc_access,
                             __nc_add_to_try, __nc_align_termtype, __nc_basename,

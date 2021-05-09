@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libsqlite3.dylib
 current-version:       308.5
 compatibility-version: 9
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __sqlite3_apple_archive,
                             __sqlite3_apple_archive_type,
                             __sqlite3_apple_unarchive, __sqlite3_db_clone,

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libform.5.4.dylib
 current-version:       5.4
 compatibility-version: 5.4
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _TYPE_ALNUM, _TYPE_ALPHA, _TYPE_ENUM, _TYPE_INTEGER,
                             _TYPE_IPV4, _TYPE_NUMERIC, _TYPE_REGEXP,
                             __nc_Copy_Argument, __nc_Copy_Type, __nc_Default_Field,

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libbz2.1.0.dylib
 current-version:       1.0.5
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BZ2_bzBuffToBuffCompress,
                             _BZ2_bzBuffToBuffDecompress, _BZ2_bzCompress,
                             _BZ2_bzCompressEnd, _BZ2_bzCompressInit,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libacmobileshim.dylib
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ACF3DES_CBC_Decrypt, _ACF3DES_CBC_Encrypt,
                             _ACFAES128_CBC_Decrypt, _ACFAES128_CBC_Encrypt,
                             _ACFAES128_ECB_Decrypt, _ACFAES128_ECB_Encrypt,

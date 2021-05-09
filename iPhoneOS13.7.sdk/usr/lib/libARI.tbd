@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libARI.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ARIMSGDEF_GROUP01_bsp, _ARIMSGDEF_GROUP02_call_cs,
                             _ARIMSGDEF_GROUP03_call_ps, _ARIMSGDEF_GROUP04_sms,
                             _ARIMSGDEF_GROUP05_cbs, _ARIMSGDEF_GROUP06_ss,

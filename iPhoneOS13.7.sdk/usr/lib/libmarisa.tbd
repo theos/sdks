@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libmarisa.dylib
 current-version:       16
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __ZN6marisa4Trie3mapEPKvm, __ZN6marisa4Trie4loadEPKc,
                             __ZN6marisa4Trie4mmapEPKc, __ZN6marisa4Trie4readEi,
                             __ZN6marisa4Trie4swapERS0_,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework/SettingsUIKitPrivate
@@ -8,7 +8,7 @@ compatibility-version: 1
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s20SettingsUIKitPrivate22SUIKPControllerFactoryC010thirdPartyA22ControllerForSpecifier9specifierSo06UIViewH0CSo11PSSpecifierC_tFZ,
                             _$s20SettingsUIKitPrivate22SUIKPControllerFactoryC010thirdPartyA22ControllerForSpecifier9specifierSo06UIViewH0CSo11PSSpecifierC_tFZTq,
                             _$s20SettingsUIKitPrivate22SUIKPControllerFactoryCACycfC,

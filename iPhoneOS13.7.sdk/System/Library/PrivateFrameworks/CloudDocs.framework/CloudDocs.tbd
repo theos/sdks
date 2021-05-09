@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs
@@ -7,7 +7,7 @@ current-version:       699.6
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BRAccountDidCompleteFirstSyncDownKey,
                             _BRAccountIsDatabaseFromTheFutureKey,
                             _BRAccountIsServiceEnabledKey,

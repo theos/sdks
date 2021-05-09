@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          "/usr/lib/libprotobuf-lite.dylib"
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __ZN20wireless_diagnostics6google8protobuf11LogSilencerC1Ev,
                             __ZN20wireless_diagnostics6google8protobuf11LogSilencerC2Ev,
                             __ZN20wireless_diagnostics6google8protobuf11LogSilencerD1Ev,

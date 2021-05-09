@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge
@@ -8,7 +8,7 @@ compatibility-version: 1
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10Foundation14DateComponentsV13CoreKnowledgeE02toB0AA0B0VSgyF,
                             _$s10Foundation14DateComponentsV13CoreKnowledgeE10storeLinks10fromEntity17completionHandleryAD8CKEntityC_ys5Error_pSgctF,
                             _$s10Foundation4DataV13CoreKnowledge5ValueADMc,

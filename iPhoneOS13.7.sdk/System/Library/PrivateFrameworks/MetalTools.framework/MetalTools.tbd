@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/MetalTools.framework/MetalTools
@@ -7,7 +7,7 @@ current-version:       0
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z14MTLGPUDebugLogv,
                             __Z19emitKernelTelemetryP18MTLTelemetryDevice,
                             __Z20emitBlitDistributionP18MTLTelemetryDeviceNSt3__113unordered_mapI14MTLPixelFormat28MTLTelemetryBlitDistributionNS1_4hashIyEENS1_8equal_toIS3_EENS1_9allocatorINS1_4pairIKS3_S4_EEEEEE,

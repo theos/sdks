@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit
@@ -7,7 +7,7 @@ current-version:       382.7.58
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AXDurationStringForDuration, _CFXActionAddEffectKey,
                             _CFXActionCancelCameraKey, _CFXActionExportStillKey,
                             _CFXActionExportVideoKey, _CFXActionFlipCameraKey,

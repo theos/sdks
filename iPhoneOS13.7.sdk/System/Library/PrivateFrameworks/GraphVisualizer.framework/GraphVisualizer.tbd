@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer
@@ -7,7 +7,7 @@ current-version:       0
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     objc-classes:         [ GVEdge, GVGraph, GVInternalRenderer, GVLayout, GVNode ]
     objc-ivars:           [ GVNode.h, GVNode.inNodes, GVNode.inPriority,
                             GVNode.index, GVNode.next, GVNode.outNodes,

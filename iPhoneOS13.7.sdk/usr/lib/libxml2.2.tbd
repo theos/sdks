@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libxml2.2.dylib
 current-version:       10.9
 compatibility-version: 10
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _UTF8ToHtml, _UTF8Toisolat1, ___docbDefaultSAXHandler,
                             ___htmlDefaultSAXHandler, ___oldXMLWDcompatibility,
                             ___xmlBufferAllocScheme, ___xmlDefaultBufferSize,

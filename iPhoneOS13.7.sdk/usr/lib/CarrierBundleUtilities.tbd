@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/CarrierBundleUtilities.dylib
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z12VerifyDigestN3ctu2cf11CFSharedRefIK8__CFDataEES4_P8__SecKey12DigestPrefix,
                             __Z12getSecKeyRefPKhi15CBSignatureType,
                             __Z15createSecKeyRefPKhi,

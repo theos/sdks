@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CryptoKitPrivate.framework/CryptoKitPrivate
@@ -8,7 +8,7 @@ compatibility-version: 1
 swift-abi-version:     6
 objc-constraint:       retain_release
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10Foundation4DataV16CryptoKitPrivateE11secretShareAcD15CKSecretSharingO06SecretG0V_tKcfC,
                             _$s16CryptoKitPrivate0aB5ErrorO014underlyingCoreaD0yACs5Int32V_tcACmFWC,
                             _$s16CryptoKitPrivate0aB5ErrorO16incorrectKeySizeyA2CmFWC,

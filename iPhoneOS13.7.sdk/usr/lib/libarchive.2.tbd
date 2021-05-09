@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libarchive.2.dylib
 current-version:       9.2
 compatibility-version: 9
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _archive_bzlib_version, _archive_clear_error,
                             _archive_compression, _archive_compression_name,
                             _archive_copy_error, _archive_entry_acl,

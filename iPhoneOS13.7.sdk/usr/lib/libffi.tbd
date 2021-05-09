@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libffi.dylib
 current-version:       26
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ffi_call, _ffi_closure_alloc, _ffi_closure_free,
                             _ffi_find_closure_for_code_np,
                             _ffi_get_struct_offsets, _ffi_java_ptrarray_to_raw,

@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ arm64, arm64e ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              ios
 flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libipsec.A.dylib
 current-version:       300
 compatibility-version: 1
 exports:
-  - archs:                [ arm64, arm64e ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ ___ipsec_errcode, ___ipsec_set_strerror,
                             ___libipsec_create_buffer, ___libipsec_delete_buffer,
                             ___libipsec_flex_debug, ___libipsec_flush_buffer,
