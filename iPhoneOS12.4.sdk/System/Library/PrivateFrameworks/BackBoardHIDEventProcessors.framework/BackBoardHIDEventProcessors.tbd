@@ -1,0 +1,33 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/BackBoardHIDEventProcessors.framework/BackBoardHIDEventProcessors
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _BKLogAccelerometer, _BKLogBootUI, _BKLogButton,
+                            _BKLogDisplayAnnotations, _BKLogGenericGesture,
+                            _BKLogHID, _BKLogIdleTimer, _BKLogKeyPresses,
+                            _BKLogKeyboard, _BKLogMotionEvents,
+                            _BKLogRenderOverlay, _BKLogSendHIDEvent,
+                            _BKLogSystemAppSentinel, _BKLogTouchDeliveryPolicy,
+                            _BKLogTouchEvents,
+                            _BackBoardHIDEventProcessorsVersionNumber,
+                            _BackBoardHIDEventProcessorsVersionString ]
+    objc-classes:         [ _BKHIDBiometricEventProcessor,
+                            _BKHIDGameControllerEventProcessor,
+                            _BKHIDGenericGestureEventProcessor,
+                            _BKHIDPointerEventProcessor,
+                            _BKHIDPointerEventRecord, _BKHIDScrollEventProcessor,
+                            _BKHIDVendorDefinedEventProcessor ]
+    objc-ivars:           [ _BKHIDGenericGestureEventProcessor._pendingDestinationsPerSenderID,
+                            _BKHIDPointerEventProcessor._eventRecords,
+                            _BKHIDPointerEventRecord._destinationCaptureTime,
+                            _BKHIDPointerEventRecord._destinations,
+                            _BKHIDPointerEventRecord._didTrackButtonDown,
+                            _BKHIDPointerEventRecord._didTrackPointerMovement,
+                            _BKHIDPointerEventRecord._senderInfo,
+                            _BKHIDPointerEventRecord._trackingButtonDown,
+                            _BKHIDPointerEventRecord._trackingPointerMovement ]
+...

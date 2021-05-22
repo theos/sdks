@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CheckerBoardServices.framework/CheckerBoardServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _CheckerBoardLogHandleForCategory,
+                            _CheckerBoardServicesVersionNumber,
+                            _CheckerBoardServicesVersionString, _kCellIdentifier,
+                            _kCheckerBoardIdentifier,
+                            _kCheckerBoardRemoteAlertsEntitlement,
+                            _kCheckerBoardRemoteServerMachName,
+                            _kCheckerBoardServicesEntitlement,
+                            _kCheckerBoardSystemServicesEntitlement ]
+    objc-classes:         [ CBSClient, CBSPaneViewController,
+                            CBSTableViewController, CBSUIAlert, CBSUIAlertAction,
+                            CBSUtilities ]
+    objc-ivars:           [ CBSClient._connection,
+                            CBSPaneViewController._primaryButton,
+                            CBSPaneViewController._secondaryButton,
+                            CBSTableViewController._attributedDetailDescriptionText,
+                            CBSTableViewController._containerFooterView,
+                            CBSTableViewController._containerFooterViewFrame,
+                            CBSTableViewController._detailDescriptionText,
+                            CBSTableViewController._headerView,
+                            CBSTableViewController._tableView,
+                            CBSTableViewController._titleText,
+                            CBSUIAlert._actions, CBSUIAlert._identifier,
+                            CBSUIAlert._isActive, CBSUIAlert._message,
+                            CBSUIAlert._preferredStyle, CBSUIAlert._title,
+                            CBSUIAlertAction._handler, CBSUIAlertAction._style,
+                            CBSUIAlertAction._title ]
+...

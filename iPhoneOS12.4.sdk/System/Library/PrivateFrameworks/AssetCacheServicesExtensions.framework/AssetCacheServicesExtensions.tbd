@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/AssetCacheServicesExtensions
+current-version:       83.4
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AssetCacheServicesExtensionsVersionNumber,
+                            _AssetCacheServicesExtensionsVersionString,
+                            _kACSEAllServersKey, _kACSEMightHaveKey,
+                            _kACSEPersonalCachingAndImportKey,
+                            _kACSEPersonalCachingKey, _kACSEPublicIPAddressKey,
+                            _kACSEPublicIPAddressRangesKey,
+                            _kACSEReachabilityKey, _kACSERefreshedServersKey,
+                            _kACSESavedServersKey, _kACSESharedCachingKey ]
+    objc-classes:         [ AssetCacheServicesReporter ]
+    objc-ivars:           [ AssetCacheServicesReporter._allServerHostPorts,
+                            AssetCacheServicesReporter._logHandle,
+                            AssetCacheServicesReporter._results,
+                            AssetCacheServicesReporter._weakDelegate,
+                            AssetCacheServicesReporter._weakDelegateQueue ]
+...

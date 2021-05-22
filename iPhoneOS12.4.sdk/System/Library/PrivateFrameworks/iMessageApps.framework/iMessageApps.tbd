@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/iMessageApps.framework/iMessageApps
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ IMADockViewController, IMADropTarget, IMASticker ]
+    objc-ivars:           [ IMADockViewController._alwaysExpandedCoordinator,
+                            IMADockViewController._alwaysPresentAppsExpanded,
+                            IMADockViewController._appStrip,
+                            IMADockViewController._appStripDataSource,
+                            IMADockViewController._currentBalloonPlugin,
+                            IMADockViewController._delegate,
+                            IMADockViewController._expandedAppViewController,
+                            IMADockViewController._hidesCompactAppForStickerDrag,
+                            IMADockViewController._isTransitioningPresentationStyles,
+                            IMADockViewController._switcherViewController,
+                            IMADropTarget._initialSize,
+                            IMADropTarget._meshScaleFactor,
+                            IMADropTarget._rotation, IMADropTarget._scale,
+                            IMADropTarget._screenCoordinate,
+                            IMASticker._accessibilityLabel, IMASticker._fileURL,
+                            IMASticker._stickerName ]
+...

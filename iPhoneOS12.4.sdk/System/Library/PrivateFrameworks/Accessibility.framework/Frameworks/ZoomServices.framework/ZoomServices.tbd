@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/ZoomServices.framework/ZoomServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _ZOTDeviceRotation, _ZOTDisplayMainScreenSize,
+                            _ZOTMainScreenRect, _ZOTMainScreenSize,
+                            _ZOTRotateFromScreen, _ZOTRotateToScreen,
+                            _ZOTTimeUnset, _ZOTWindowServerDisplay,
+                            _ZoomServicesPrimaryZoomWindowClientIdentifier ]
+    objc-classes:         [ AXZoomListenerContainer, ZoomServices ]
+    objc-ivars:           [ AXZoomListenerContainer.handler,
+                            AXZoomListenerContainer.identifier,
+                            ZoomServices._registeredForZoomListener,
+                            ZoomServices._showingZoomLens,
+                            ZoomServices._zoomListeners,
+                            ZoomServices._zoomWindowClient ]
+...

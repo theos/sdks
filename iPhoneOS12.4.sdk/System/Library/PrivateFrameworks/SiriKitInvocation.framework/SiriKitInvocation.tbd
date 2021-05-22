@@ -1,0 +1,29 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SiriKitInvocation.framework/SiriKitInvocation
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RunVoiceShortcutDirectInvocationIdentifier,
+                            _SKIMessagesGatekeeperAppBundleIdKey,
+                            _SKIMessagesInvocationIdentifierGatekeeperFlow,
+                            _SKIPlaybackControlsStopMediaIdentifier,
+                            _SiriKitInvocationVersionNumber,
+                            _SiriKitInvocationVersionString ]
+    objc-classes:         [ _SKIDirectInvocation, _SKIDirectInvocationContext,
+                            _SKIDirectInvocationPayload,
+                            _SKIMediaControlsInvocation,
+                            _SKIMessagesGatekeeperPayload,
+                            _SKIMessagesInvocation, _SKIPhoneInvocation,
+                            _SKIVoiceShortcutsInvocation ]
+    objc-ivars:           [ _SKIDirectInvocationContext._eyesFree,
+                            _SKIDirectInvocationContext._inputOrigin,
+                            _SKIDirectInvocationContext._interactionType,
+                            _SKIDirectInvocationContext._textToSpeechEnabled,
+                            _SKIDirectInvocationContext._voiceTriggerEnabled,
+                            _SKIDirectInvocationPayload._identifier,
+                            _SKIDirectInvocationPayload._userData,
+                            _SKIMessagesGatekeeperPayload._appBundleId ]
+...

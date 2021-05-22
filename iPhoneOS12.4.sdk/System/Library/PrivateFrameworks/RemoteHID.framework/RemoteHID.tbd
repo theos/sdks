@@ -1,0 +1,34 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/RemoteHID.framework/RemoteHID
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RemoteHIDLog, _RemoteHIDLogPackets,
+                            _RemoteHIDVersionNumber, _RemoteHIDVersionString ]
+    objc-classes:         [ _HIDRemoteDevice, _HIDRemoteDeviceAACPServer,
+                            _HIDRemoteDeviceServer ]
+    objc-ivars:           [ _HIDRemoteDevice._deviceID,
+                            _HIDRemoteDevice._endpoint,
+                            _HIDRemoteDevice._handleReportCount,
+                            _HIDRemoteDevice._handleReportError,
+                            _HIDRemoteDevice._intNotify,
+                            _HIDRemoteDevice._intPort,
+                            _HIDRemoteDevice._lastGetReport,
+                            _HIDRemoteDevice._lastSetReportStatus,
+                            _HIDRemoteDevice._semaphore,
+                            _HIDRemoteDevice._server,
+                            _HIDRemoteDevice._waitForReport,
+                            _HIDRemoteDeviceAACPServer._coreTimeSyncManager,
+                            _HIDRemoteDeviceAACPServer._endpointTimeSyncEnabled,
+                            _HIDRemoteDeviceAACPServer._manager,
+                            _HIDRemoteDeviceAACPServer._queue,
+                            _HIDRemoteDeviceAACPServer._session,
+                            _HIDRemoteDeviceAACPServer._timeSyncClock,
+                            _HIDRemoteDeviceServer._devices,
+                            _HIDRemoteDeviceServer._prevDeviceLog,
+                            _HIDRemoteDeviceServer._queue,
+                            _HIDRemoteDeviceServer._stateHandler ]
+...

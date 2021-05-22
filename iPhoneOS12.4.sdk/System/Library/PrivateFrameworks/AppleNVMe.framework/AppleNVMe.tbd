@@ -1,0 +1,22 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AppleNVMe.framework/AppleNVMe
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppleNVMeDeviceSupportsPanicLogAccess,
+                            _AppleNVMeNamespaceAccessFindServiceByNSType,
+                            _AppleNVMeNamespaceAccessFindServiceByName,
+                            _AppleNVMeNamespaceAccessGetBlockCount,
+                            _AppleNVMeNamespaceAccessGetBlockSize,
+                            _AppleNVMeNamespaceAccessOpenConection,
+                            _AppleNVMeNamespaceAccessReadData,
+                            _AppleNVMeNamespaceAccessUnmapRange,
+                            _AppleNVMeNamespaceAccessWriteData,
+                            _AppleNVMePanicLogSourcePath,
+                            _AppleNVMeReadPanicLogData, _AppleNVMeVersionNumber,
+                            _AppleNVMeVersionString,
+                            _sNVMeEmbeddedNamespaceTypeNames ]
+...

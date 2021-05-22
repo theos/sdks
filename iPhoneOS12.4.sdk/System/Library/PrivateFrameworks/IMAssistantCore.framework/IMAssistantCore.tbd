@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore
+current-version:       800
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _IMAssistantContinuityChatsKey,
+                            _IMAssistantContinuityHandlesKey,
+                            _IMAssistantCoreInstantMessageServiceBusinessChat ]
+    objc-classes:         [ IMAssistantAudioPlayer, IMAssistantChatParticipant,
+                            IMAssistantINMessageConverter,
+                            IMAssistantIntentHandler,
+                            IMAssistantMessageAttributeOptions,
+                            IMAssistantMessageHandler,
+                            IMAssistantMessagePlayAudioHandler,
+                            IMAssistantMessageQueryHandler,
+                            IMAssistantMessageReadAttributeSanitizer,
+                            IMAssistantMessageSearchChatParticipant,
+                            IMAssistantMessageSearchHandler,
+                            IMAssistantMessageSendHandler,
+                            IMAssistantMessageSetAttributeHandler,
+                            IMAssistantRelevantChatMatchingRecipients ]
+...

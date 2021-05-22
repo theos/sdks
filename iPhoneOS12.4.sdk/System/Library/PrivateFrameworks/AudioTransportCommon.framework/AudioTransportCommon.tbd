@@ -1,0 +1,35 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AudioTransportCommon.framework/AudioTransportCommon
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AudioTransportCommonVersionNumber,
+                            _AudioTransportCommonVersionString,
+                            _Float64ToIOAudio2Fixed64, _IOAudio2Fixed64ToFloat64 ]
+    objc-classes:         [ _ATCIOA2Device, _ATCIOA2Stream, _ATCIOA2StreamFormat ]
+    objc-ivars:           [ _ATCIOA2Device._availableSampleRates,
+                            _ATCIOA2Device._connection,
+                            _ATCIOA2Device._engineStatus,
+                            _ATCIOA2Device._inputStreams, _ATCIOA2Device._name,
+                            _ATCIOA2Device._notificationPort,
+                            _ATCIOA2Device._notificationSource,
+                            _ATCIOA2Device._outputStreams, _ATCIOA2Device._queue,
+                            _ATCIOA2Device._service, _ATCIOA2Device._uid,
+                            _ATCIOA2Stream._availableFormats,
+                            _ATCIOA2Stream._connection,
+                            _ATCIOA2Stream._currentFormat, _ATCIOA2Stream._index,
+                            _ATCIOA2Stream._input, _ATCIOA2Stream._physicalID,
+                            _ATCIOA2Stream._service,
+                            _ATCIOA2Stream._startingChannel,
+                            _ATCIOA2StreamFormat._bitsPerChannel,
+                            _ATCIOA2StreamFormat._bytesPerFrame,
+                            _ATCIOA2StreamFormat._bytesPerPacket,
+                            _ATCIOA2StreamFormat._channelsPerFrame,
+                            _ATCIOA2StreamFormat._formatFlags,
+                            _ATCIOA2StreamFormat._formatID,
+                            _ATCIOA2StreamFormat._framesPerPacket,
+                            _ATCIOA2StreamFormat._sampleRate ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ServerAccounts.framework/ServerAccounts
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SVAccountComputerModelName, _SVAccountComputerName,
+                            _SVAccountErrorDomain,
+                            _SVAccountManuallyEnteredHostName,
+                            _SVAccountUserTrustedCertificate,
+                            _SVAccountVPNConfigurationIdentifier,
+                            _ServerAccountsVersionNumber,
+                            _ServerAccountsVersionString ]
+    objc-classes:         [ SVATrustHandler, SVAVPNUtility, SVAVerifier ]
+    objc-ivars:           [ SVAVerifier._canceledByUser,
+                            SVAVerifier._completionBlock, SVAVerifier._dataTask,
+                            SVAVerifier._password, SVAVerifier._responseData,
+                            SVAVerifier._serverAddress, SVAVerifier._session,
+                            SVAVerifier._trustedCertificates,
+                            SVAVerifier._userName ]
+...

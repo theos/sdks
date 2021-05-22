@@ -1,0 +1,37 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ContextKitExtractionVersionNumber,
+                            _ContextKitExtractionVersionString ]
+    objc-classes:         [ _CKContextContentProvider,
+                            _CKContextContentProviderManager,
+                            _CKContextContentProviderUIScene, _CKContextDonation,
+                            _CKContextDonationItem, _CKContextExecutor ]
+    objc-ivars:           [ _CKContextContentProviderManager._providers,
+                            _CKContextContentProviderUIScene.__scene,
+                            _CKContextContentProviderUIScene._allowDebugControls,
+                            _CKContextContentProviderUIScene._debugButton,
+                            _CKContextContentProviderUIScene._toolInstallationTimer,
+                            _CKContextDonation._donorBundleIdentifier,
+                            _CKContextDonation._items, _CKContextDonation._nonce,
+                            _CKContextDonationItem._contentAuthor,
+                            _CKContextDonationItem._contentDescription,
+                            _CKContextDonationItem._contentKeywords,
+                            _CKContextDonationItem._debugText,
+                            _CKContextDonationItem._debugUrlString,
+                            _CKContextDonationItem._languageTag,
+                            _CKContextDonationItem._text,
+                            _CKContextDonationItem._title,
+                            _CKContextExecutor._completionCondition,
+                            _CKContextExecutor._completionHandler,
+                            _CKContextExecutor._completionQueue,
+                            _CKContextExecutor._context,
+                            _CKContextExecutor._done, _CKContextExecutor._group,
+                            _CKContextExecutor._timeoutAfter,
+                            _CKContextExecutor._workItemQueue ]
+...

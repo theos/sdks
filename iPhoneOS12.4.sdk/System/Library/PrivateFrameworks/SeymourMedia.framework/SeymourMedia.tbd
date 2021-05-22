@@ -1,0 +1,19 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SeymourMedia.framework/SeymourMedia
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SeymourMediaVersionNumber,
+                            _SeymourMediaVersionString ]
+    objc-classes:         [ _SMMGeometry, _SMMMediaLibrary,
+                            _SMMMusicSubscriptionStatusController,
+                            __TtC12SeymourMedia16IntentDispatcher,
+                            __TtC12SeymourMedia23EndWorkoutIntentHandler,
+                            __TtC12SeymourMedia23StreamingKeyProvisioner,
+                            __TtC12SeymourMedia25PauseWorkoutIntentHandler,
+                            __TtC12SeymourMedia25StartWorkoutIntentHandler,
+                            __TtC12SeymourMedia26ResumeWorkoutIntentHandler ]
+...

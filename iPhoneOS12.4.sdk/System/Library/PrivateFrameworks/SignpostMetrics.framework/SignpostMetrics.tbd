@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics
+current-version:       31.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SignpostMetricsVersionNumber,
+                            _SignpostMetricsVersionString,
+                            __MXSignpostMetricsSnapshot ]
+    objc-classes:         [ SignpostMetricsSnapshotter ]
+...

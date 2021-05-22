@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UserFS.framework/UserFS
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ UserFSFile, UserFSFolder, UserFSItem, UserFSStream,
+                            UserFSVolume ]
+    objc-ivars:           [ UserFSItem._createdDate, UserFSItem._isDirectory,
+                            UserFSItem._length, UserFSItem._locked,
+                            UserFSItem._modifiedDate, UserFSItem._name,
+                            UserFSItem._path, UserFSItem._volume,
+                            UserFSStream._connection, UserFSStream._item,
+                            UserFSStream._length, UserFSVolume._connection,
+                            UserFSVolume._deviceName, UserFSVolume._isLocked ]
+...

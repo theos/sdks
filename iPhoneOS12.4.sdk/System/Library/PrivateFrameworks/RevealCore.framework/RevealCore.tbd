@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RevealCore.framework/RevealCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _RevealCoreVersionNumber, _RevealCoreVersionString ]
+    objc-classes:         [ RVDocumentContext, RVItem ]
+    objc-ivars:           [ RVDocumentContext.authorContactUUID,
+                            RVDocumentContext.authorEmailAddress,
+                            RVDocumentContext.authorName,
+                            RVDocumentContext.contentReferenceDate,
+                            RVDocumentContext.contentReferenceTimeZone,
+                            RVDocumentContext.contentSubject,
+                            RVDocumentContext.coreSpotlightUniqueIdentifier,
+                            RVDocumentContext.documentURL,
+                            RVDocumentContext.existingDDResultsList,
+                            RVDocumentContext.selectedText, RVItem._clientHints,
+                            RVItem._clientIdentifier,
+                            RVItem._contactPropertyType,
+                            RVItem._contactPropertyValue, RVItem._ddResult,
+                            RVItem._highlightRange, RVItem._normalized,
+                            RVItem._normalizedType, RVItem._selectionType,
+                            RVItem._text, RVItem._type, RVItem._url ]
+...

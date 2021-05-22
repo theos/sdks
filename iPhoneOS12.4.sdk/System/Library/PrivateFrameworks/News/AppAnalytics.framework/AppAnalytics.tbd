@@ -1,0 +1,34 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/News/AppAnalytics.framework/AppAnalytics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ AppAnalyticsTests, ArticleNotificationExtension,
+                            ArticleNotificationServiceExtension, "Feldspar Tests",
+                            MarketingNotificationExtension, NVCDemo, News,
+                            NewsAnalytics, NewsAnalyticsTests, NewsAnalyticsUpload,
+                            NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            NewsFormat, NewsFormatTests, NewsInternalSettings,
+                            NewsServices, NewsServicesInternal, NewsSettings,
+                            NewsSubscription, NewsSubscriptionTests, NewsToday,
+                            NewsUI, NewsUI2, NewsUI2Tests, OpenInNews, com.apple.news,
+                            newsd ]
+    symbols:              [ _AppAnalyticsVersionNumber,
+                            _AppAnalyticsVersionString ]
+    objc-classes:         [ AAAccessSessionManager, AAAccessTracker, AAClient,
+                            AADataEventTraits, AADelayedToken, AAEndpoint,
+                            AAEventData, AAEventProperty, AAGroup, AAJSON,
+                            AALoggingEventProcessor, AAProcessEvent,
+                            AAProcessorManager, AARawDataEvent, AARawEvent,
+                            AARawEventProperty, AASession, AASessionData,
+                            AASessionManager, AASessionObserver, AATimedData,
+                            AATracker, AAUploadBatchEventConfig,
+                            AAUploadBatchEventProcessor, AAViewingSession,
+                            AAViewingSessionManager,
+                            _TtC12AppAnalytics13UploadService ]
+...

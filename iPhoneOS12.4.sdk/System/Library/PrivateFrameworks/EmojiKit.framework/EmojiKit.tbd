@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit
+current-version:       15.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _EMKEmojiConversionDisabledNotificationName,
+                            _EMKEmojiConversionLanguageAttributeName,
+                            _EMKEmojiSignifierAttributeName,
+                            _EMKEmojiTokenListAttributeName,
+                            _EMKStartTimerNotificationName,
+                            _EMKStopTimerNotificationName,
+                            _EmojiKitVersionNumber, _EmojiKitVersionString ]
+    objc-classes:         [ EMKEmojiSignifier, EMKEmojiTokenList,
+                            EMKGestureRecognizerDelegate, EMKGlyphRippler,
+                            EMKLayoutManager, EMKOverlayView, EMKTextEnumerator,
+                            EMKTextView ]
+    objc-ivars:           [ EMKEmojiSignifier._string,
+                            EMKEmojiTokenList._emojiTokenArray,
+                            EMKGlyphRippler._animateFrames,
+                            EMKGlyphRippler._colors,
+                            EMKGlyphRippler._delayFrames,
+                            EMKGlyphRippler._offsets,
+                            EMKGlyphRippler._postFrames,
+                            EMKGlyphRippler._preFrames,
+                            EMKGlyphRippler._reduceMotion,
+                            EMKGlyphRippler._scales,
+                            EMKGlyphRippler._shadowColors,
+                            EMKGlyphRippler._startTime,
+                            EMKLayoutManager._attributes,
+                            EMKLayoutManager._currentColor,
+                            EMKLayoutManager._currentOffset,
+                            EMKLayoutManager._currentScale,
+                            EMKLayoutManager._currentShadowColor,
+                            EMKLayoutManager._emojiConversionActive,
+                            EMKLayoutManager._emojiConversionEnabled,
+                            EMKLayoutManager._emojiConversionLanguages,
+                            EMKLayoutManager._enumerator,
+                            EMKLayoutManager._glyphIndexTable,
+                            EMKLayoutManager._rippler,
+                            EMKOverlayView._emojiTokenList,
+                            EMKOverlayView._numEmojiToShow,
+                            EMKOverlayView._overlayRect,
+                            EMKOverlayView._selectedIndex,
+                            EMKOverlayView._selectionHandler,
+                            EMKTextEnumerator._emojiDatasByLanguage,
+                            EMKTextView._displayRect,
+                            EMKTextView._emojiConversionActive,
+                            EMKTextView._emojiPreferences,
+                            EMKTextView._gestureRecognizerDelegate,
+                            EMKTextView._overlayView,
+                            EMKTextView._tappedGlyphIndex,
+                            EMKTextView._tappedGlyphRange, EMKTextView._timer ]
+...

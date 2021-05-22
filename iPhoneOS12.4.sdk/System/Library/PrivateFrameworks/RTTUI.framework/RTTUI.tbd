@@ -1,0 +1,70 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RTTUI.framework/RTTUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _RTTUIVersionNumber, _RTTUIVersionString,
+                            _ttyImageNamed ]
+    objc-classes:         [ RTTUIAbbreviationCell,
+                            RTTUIConversationViewController,
+                            RTTUIReplyActionCell, RTTUIResponseCell,
+                            RTTUIServiceUpdateCell, RTTUITextView, RTTUIUtilities,
+                            RTTUIUtteranceCell, RTTUtteranceRequest ]
+    objc-ivars:           [ RTTUIAbbreviationCell._abbreviation,
+                            RTTUIAbbreviationCell._abbreviationContainer,
+                            RTTUIAbbreviationCell._hint,
+                            RTTUIAbbreviationCell._hintContainer,
+                            RTTUIConversationViewController._asciiSubstitutions,
+                            RTTUIConversationViewController._bubbleLayer,
+                            RTTUIConversationViewController._call,
+                            RTTUIConversationViewController._conversation,
+                            RTTUIConversationViewController._currentServiceMessage,
+                            RTTUIConversationViewController._currentUtterance,
+                            RTTUIConversationViewController._gaButton,
+                            RTTUIConversationViewController._lookupController,
+                            RTTUIConversationViewController._processingUtteranceBuffer,
+                            RTTUIConversationViewController._realtimeSendLock,
+                            RTTUIConversationViewController._serviceMessageVisible,
+                            RTTUIConversationViewController._tableView,
+                            RTTUIConversationViewController._textView,
+                            RTTUIConversationViewController._ttyPredictionsTimer,
+                            RTTUIConversationViewController._unsupportedCharacterSet,
+                            RTTUIConversationViewController._utteranceBuffer,
+                            RTTUIConversationViewController._utteranceRequestQueue,
+                            RTTUIConversationViewController._voAnnouncementBuffer,
+                            RTTUIConversationViewController._voAnnouncementTimer,
+                            RTTUIReplyActionCell._delegate,
+                            RTTUIServiceUpdateCell._delegate,
+                            RTTUIServiceUpdateCell._subtitleView,
+                            RTTUIServiceUpdateCell._titleView,
+                            RTTUITextView._currentKeyboardWidth,
+                            RTTUITextView._flowLayout,
+                            RTTUITextView._iPadBufferView,
+                            RTTUITextView._inputAccessoryPlaceholderView,
+                            RTTUITextView._isHandlingKeyboardFrameChanged,
+                            RTTUITextView._leftBackgroundColorEdge,
+                            RTTUITextView._leftIndex,
+                            RTTUITextView._middleBackgroundColorEdge,
+                            RTTUITextView._panContentOffset,
+                            RTTUITextView._predictionsCollectionView,
+                            RTTUITextView._rightBackgroundColorEdge,
+                            RTTUITextView._showTTYPredictions,
+                            RTTUITextView._ttyAbbreviations,
+                            RTTUIUtilities._callCenterQueue,
+                            RTTUIUtilities._headphoneJackSupportsTTY,
+                            RTTUIUtilities._inUnitTestMode,
+                            RTTUIUtteranceCell._accessibilityIsUnread,
+                            RTTUIUtteranceCell._bubbleLayer,
+                            RTTUIUtteranceCell._delegate,
+                            RTTUIUtteranceCell._editingUtterance,
+                            RTTUIUtteranceCell._textView,
+                            RTTUIUtteranceCell._utterance,
+                            RTTUtteranceRequest._cellIndexPath,
+                            RTTUtteranceRequest._index,
+                            RTTUtteranceRequest._string ]
+...

@@ -1,0 +1,15 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/WeatherCharts.framework/WeatherCharts
+current-version:       1726
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WeatherChartsVersionNumber,
+                            _WeatherChartsVersionString ]
+    objc-classes:         [ _WCNextHourChartView, _WCNextHourViewMinute,
+                            __TtC13WeatherCharts16NextHourGridView,
+                            __TtC13WeatherCharts20NextHourTimelineView,
+                            __TtC13WeatherCharts28NextHourTimelineViewRelative ]
+...

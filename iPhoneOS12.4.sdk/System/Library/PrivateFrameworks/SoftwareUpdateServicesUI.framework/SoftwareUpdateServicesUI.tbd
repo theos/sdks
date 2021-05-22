@@ -1,0 +1,57 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SoftwareUpdateServicesUI.framework/SoftwareUpdateServicesUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SUSUICLIToolConnectionName,
+                            _SUSUIControllerConnectionName,
+                            _SUSUICreateInstallationKeybagWithSecret,
+                            _SUSUICreateInstallationKeybagWithSecretAndHandler,
+                            _SUSUILog, _SUSUILogAuthenticationUI,
+                            _SUSUILogEmergencyCallUI, _SUSUILogKeybagInterface,
+                            _SUSUILogPostUpdateAlert,
+                            _SUSUIPreferencesChangedNotification,
+                            _SUSUIRequiresAlertPresentationAfterUpdate,
+                            _SUSUISettingsBundleIdentifier,
+                            _SoftwareUpdateServicesUIVersionNumber,
+                            _SoftwareUpdateServicesUIVersionString,
+                            _kSUSUIPreferencesID ]
+    objc-classes:         [ SUSUIAuthenticationAlertAction,
+                            SUSUIAuthenticationInterface,
+                            SUSUICommandLineToolClient, SUSUIControllerClient,
+                            SUSUIExternalSettingsAppDefaults,
+                            SUSUIFakeDocumentation,
+                            SUSUIFakeSUAutoInstallForecast,
+                            SUSUIFakeSUAutoInstallOperation,
+                            SUSUIFakeSUDescriptor, SUSUIFakeSUDownload,
+                            SUSUIFakeSUDownloadMetadata,
+                            SUSUIFakeSUOperationProgress, SUSUIPreferences,
+                            SUSUIRemoteEmergencyCallAlertAction,
+                            SUSUISoftwareUpdateDefaults ]
+    objc-ivars:           [ SUSUIAuthenticationAlertAction._autoInstallOperation,
+                            SUSUIAuthenticationAlertAction._canDeferInstallation,
+                            SUSUIAuthenticationAlertAction._download,
+                            SUSUIAuthenticationAlertAction._forInstallTonight,
+                            SUSUIAuthenticationAlertAction._loaded,
+                            SUSUIAuthenticationInterface._defaults,
+                            SUSUIAuthenticationInterface._isController,
+                            SUSUIAuthenticationInterface._isPasscodeLocked,
+                            SUSUIAuthenticationInterface._keybag,
+                            SUSUICommandLineToolClient._connected,
+                            SUSUICommandLineToolClient._delegate,
+                            SUSUICommandLineToolClient._serverConnection,
+                            SUSUICommandLineToolClient._serverIsExiting,
+                            SUSUIControllerClient._connected,
+                            SUSUIControllerClient._serverConnection,
+                            SUSUIControllerClient._serverIsExiting,
+                            SUSUIFakeSUAutoInstallForecast._now,
+                            SUSUIFakeSUAutoInstallOperation._cancelled,
+                            SUSUIFakeSUAutoInstallOperation._uuid,
+                            SUSUIPreferences._alertAfterDownload,
+                            SUSUISoftwareUpdateDefaults._sbLegacyDefaults ]
+...

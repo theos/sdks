@@ -1,0 +1,17 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/IMCorePipeline.framework/IMCorePipeline
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _IMCoreBlastdoorErrorDomain,
+                            _IMCorePipelineVersionNumber,
+                            _IMCorePipelineVersionString,
+                            _IMCoreReceivePipelineErrorDomain ]
+    objc-classes:         [ _IMPipelineComponent, _IMPromise, _IMResult ]
+    objc-ivars:           [ _IMPromise._completionBlocks, _IMPromise._result,
+                            _IMResult._inError, _IMResult._inValue,
+                            _IMResult._state ]
+...

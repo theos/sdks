@@ -1,0 +1,40 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowed-clients:      [ ChronoCoreTests, Gaspar, Xcode, "Xcode Previews", chronod ]
+    symbols:              [ _CHDForwardEntriesToProactive,
+                            _CHDJetsamSetElevatedInactivePriority,
+                            _CHDMonotonicTimeEqual, _CHDMonotonicTimeForever,
+                            _CHDMonotonicTimeFromNow, _CHDMonotonicTimeLessThan,
+                            _CHDMonotonicTimePlusInterval,
+                            _CHDRegisterForTemporaryFolder,
+                            _CHDSerializeNSUserActivity,
+                            _ChronoCoreVersionNumber, _ChronoCoreVersionString ]
+    objc-classes:         [ _CHCWorkloop, _CHDMonotonicTimer, _CHDProactiveEntry,
+                            __TtC10ChronoCore12WidgetWindow,
+                            __TtC10ChronoCore13KeybagMonitor,
+                            __TtC10ChronoCore14ProcessMonitor,
+                            __TtC10ChronoCore15TaskSessionPool,
+                            __TtC10ChronoCore16StateCaptureItem,
+                            __TtC10ChronoCore17ActivityScheduler,
+                            __TtC10ChronoCore17AvocadoController,
+                            __TtC10ChronoCore17DescriptorService,
+                            __TtC10ChronoCore17StateCaptureEntry,
+                            __TtC10ChronoCore18ToolServicesServer,
+                            __TtC10ChronoCore19ApplicationDelegate,
+                            __TtC10ChronoCore19StateCaptureService,
+                            __TtC10ChronoCore19WidgetSceneDelegate,
+                            __TtC10ChronoCore20ChronoServicesServer,
+                            __TtC10ChronoCore23StateCaptureInvalidator,
+                            __TtC10ChronoCore25WidgetSceneViewController,
+                            __TtC10ChronoCore4Task ]
+    objc-ivars:           [ _CHDMonotonicTimer._timer, _CHDProactiveEntry._date,
+                            _CHDProactiveEntry._duration,
+                            _CHDProactiveEntry._hasRelevance,
+                            _CHDProactiveEntry._score ]
+...

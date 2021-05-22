@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Stocks/StocksCore.framework/StocksCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            Stocks, StocksAnalytics, StocksAnalyticsTests,
+                            StocksCore, StocksCoreTests, StocksTests, StocksToday,
+                            StocksUI, StocksUITests ]
+    symbols:              [ _SCContextEnvironmentFromInt,
+                            _SCHeadlineDesiredFieldOptions, _SCIsNewsAppAllowed,
+                            _StocksCoreVersionNumber, _StocksCoreVersionString,
+                            _char_from_uchar, _formattedCountWithLocale ]
+    objc-classes:         [ SCAdPlatforms, SCICUNumberFormatter, SCManagerAssembly,
+                            SCServiceAssembly, SCURLAssembly,
+                            SCUpdateUserIDCommand, SCUpdateUserStartDateCommand,
+                            SCWebHeadline, _TtC10StocksCore13DebugAssembly,
+                            _TtC10StocksCore16NewsCoreAssembly,
+                            _TtC10StocksCore18SparklineOperation,
+                            _TtC10StocksCore18YahooNewsOperation,
+                            _TtC10StocksCore19YahooChartOperation,
+                            _TtC10StocksCore20LegacyStocksAssembly,
+                            _TtC10StocksCore20YahooSearchOperation,
+                            _TtC10StocksCore21IdentificationService,
+                            _TtC10StocksCore21NewsCoreConfiguration,
+                            _TtC10StocksCore24NewsConfigurationManager,
+                            _TtC10StocksCore24YahooMultiQuoteOperation,
+                            _TtC10StocksCore25YahooQuoteDetailOperation,
+                            _TtC10StocksCore26FeedPersonalizationService,
+                            _TtC10StocksCore28EmptyNewsPersonalizationData,
+                            _TtC10StocksCore8Assembly ]
+    objc-ivars:           [ SCWebHeadline._articleID, SCWebHeadline._contentURL,
+                            SCWebHeadline._identifier,
+                            SCWebHeadline._publishDate,
+                            SCWebHeadline._shortExcerpt,
+                            SCWebHeadline._sourceName, SCWebHeadline._title ]
+...

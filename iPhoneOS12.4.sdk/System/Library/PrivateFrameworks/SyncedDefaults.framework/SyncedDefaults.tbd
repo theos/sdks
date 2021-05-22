@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SYDRemotePreferencesSourceConfigurationDidChangeNotification,
+                            _SYDRemotePreferencesSourceDidChangeNotification ]
+    objc-classes:         [ SYDClient, SYDJournal, SYDRemotePreferencesSource ]
+    objc-ivars:           [ SYDClient._additionalSource,
+                            SYDClient._bundleIdentifier, SYDClient._connection,
+                            SYDClient._queue, SYDClient._storeIdentifier,
+                            SYDJournal.journal, SYDJournal.readonly,
+                            SYDJournal.store,
+                            SYDRemotePreferencesSource._forceNextSynchronization,
+                            SYDRemotePreferencesSource._generationCount,
+                            SYDRemotePreferencesSource._isExecutingForClient,
+                            SYDRemotePreferencesSource._lastAccess,
+                            SYDRemotePreferencesSource._lastGenerationFromDisk,
+                            SYDRemotePreferencesSource._memoryWarningSource,
+                            SYDRemotePreferencesSource._protectionQueue,
+                            SYDRemotePreferencesSource.cache,
+                            SYDRemotePreferencesSource.client,
+                            SYDRemotePreferencesSource.configurationDictionary,
+                            SYDRemotePreferencesSource.dirtyKeys,
+                            SYDRemotePreferencesSource.externalChanges,
+                            SYDRemotePreferencesSource.initialSyncChangeCount,
+                            SYDRemotePreferencesSource.isInitialSync,
+                            SYDRemotePreferencesSource.preferenceID,
+                            SYDRemotePreferencesSource.registrationBlock,
+                            SYDRemotePreferencesSource.registrationQueue,
+                            SYDRemotePreferencesSource.storageChangeCount,
+                            SYDRemotePreferencesSource.urlOnDisk ]
+...

@@ -1,0 +1,28 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AFKUser.framework/AFKUser
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AFKUserVersionNumber, _AFKUserVersionString,
+                            _kAFKEventCancel, _kAFKEventError ]
+    objc-classes:         [ _AFKEndpointInterface ]
+    objc-ivars:           [ _AFKEndpointInterface._asyncPort,
+                            _AFKEndpointInterface._commandHandler,
+                            _AFKEndpointInterface._connect,
+                            _AFKEndpointInterface._dataQueue,
+                            _AFKEndpointInterface._dataQueueMachChannel,
+                            _AFKEndpointInterface._dataQueuePort,
+                            _AFKEndpointInterface._dataQueueSize,
+                            _AFKEndpointInterface._eventHandler,
+                            _AFKEndpointInterface._properties,
+                            _AFKEndpointInterface._queue,
+                            _AFKEndpointInterface._regID,
+                            _AFKEndpointInterface._reportHandler,
+                            _AFKEndpointInterface._responseHandler,
+                            _AFKEndpointInterface._service,
+                            _AFKEndpointInterface._source,
+                            _AFKEndpointInterface._state ]
+...

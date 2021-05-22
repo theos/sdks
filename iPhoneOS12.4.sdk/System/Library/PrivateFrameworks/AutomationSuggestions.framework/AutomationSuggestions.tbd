@@ -1,0 +1,62 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AutomationSuggestions.framework/AutomationSuggestions
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATSAnalysisPETATSAnalysisEventReadFrom,
+                            _ATSTelemetryAnalyticsEventName,
+                            _AutomationSuggestionsVersionNumber,
+                            _AutomationSuggestionsVersionString,
+                            _TimeIntervalOneHour, _feedbackATSChannel,
+                            _generalATSChannel, _projectId, _trialATSChannel,
+                            _trialNamespaceId, _trialNamespaceName ]
+    objc-classes:         [ _ATSAnalysisPETATSAnalysisEvent, _ATSConfig,
+                            _ATSFeedback, _ATSSuggester, _ATSSuggestion,
+                            _ActionRetriever ]
+    objc-ivars:           [ _ATSAnalysisPETATSAnalysisEvent._absoluteAntecedentSupport,
+                            _ATSAnalysisPETATSAnalysisEvent._absoluteConsequentSupport,
+                            _ATSAnalysisPETATSAnalysisEvent._absoluteSupport,
+                            _ATSAnalysisPETATSAnalysisEvent._activityType,
+                            _ATSAnalysisPETATSAnalysisEvent._bundleID,
+                            _ATSAnalysisPETATSAnalysisEvent._confidence,
+                            _ATSAnalysisPETATSAnalysisEvent._conviction,
+                            _ATSAnalysisPETATSAnalysisEvent._feedbackAction,
+                            _ATSAnalysisPETATSAnalysisEvent._intentClass,
+                            _ATSAnalysisPETATSAnalysisEvent._lift,
+                            _ATSAnalysisPETATSAnalysisEvent._rulePowerFactor,
+                            _ATSAnalysisPETATSAnalysisEvent._sessionId,
+                            _ATSAnalysisPETATSAnalysisEvent._support,
+                            _ATSAnalysisPETATSAnalysisEvent._trialID,
+                            _ATSAnalysisPETATSAnalysisEvent._trigger,
+                            _ATSAnalysisPETATSAnalysisEvent._uniqueDaysLastWeek,
+                            _ATSAnalysisPETATSAnalysisEvent._uniqueDaysTotal,
+                            _ATSConfig._activityBlacklist,
+                            _ATSConfig._activityForTriggerBlacklist,
+                            _ATSConfig._atsConfig, _ATSConfig._deploymentID,
+                            _ATSConfig._experimentID,
+                            _ATSConfig._heuristicEnablement,
+                            _ATSConfig._intentBlacklist,
+                            _ATSConfig._intentForTriggerBlacklist,
+                            _ATSConfig._parametersForIntentBlacklist,
+                            _ATSConfig._preferredTriggers,
+                            _ATSConfig._scoreCutOffs, _ATSConfig._sortProperty,
+                            _ATSConfig._treatmentID, _ATSConfig._trialClient,
+                            _ATSConfig._trialID, _ATSConfig._trialTrackingID,
+                            _ATSFeedback._action,
+                            _ATSFeedback._automationIdentifier,
+                            _ATSFeedback._suggestion,
+                            _ATSSuggester._actionRetriever,
+                            _ATSSuggester._atsConfig,
+                            _ATSSuggester._rtRoutineManager,
+                            _ATSSuggestion._activity,
+                            _ATSSuggestion._activityString,
+                            _ATSSuggestion._bundleID, _ATSSuggestion._intent,
+                            _ATSSuggestion._rule, _ATSSuggestion._trialID,
+                            _ATSSuggestion._triggers,
+                            _ActionRetriever._activityCache,
+                            _ActionRetriever._intentCache,
+                            _ActionRetriever._knowledgeStore ]
+...

@@ -1,0 +1,33 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/IdleTimerHosting.framework/IdleTimerHosting
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ITLogIdleTimer, _ITLoggingSubsystem,
+                            _IdleTimerHostingVersionNumber,
+                            _IdleTimerHostingVersionString ]
+    objc-classes:         [ _ITAttentionAwareIdleTimer,
+                            _ITAttentionAwarenessClient,
+                            _ITAttentionAwarenessContext, _ITIdleTimeout,
+                            _ITIdleTimerDescriptor ]
+    objc-ivars:           [ _ITAttentionAwareIdleTimer._accessLock,
+                            _ITAttentionAwareIdleTimer._access_client,
+                            _ITAttentionAwareIdleTimer._access_context,
+                            _ITAttentionAwareIdleTimer._access_descriptor,
+                            _ITAttentionAwareIdleTimer._configurationIdentifier,
+                            _ITAttentionAwareIdleTimer._delegate,
+                            _ITAttentionAwarenessClient._accessLock,
+                            _ITAttentionAwarenessClient._access_attentionAwarenessClient,
+                            _ITAttentionAwarenessClient._access_enabled,
+                            _ITAttentionAwarenessClient._delegate,
+                            _ITAttentionAwarenessContext._identifier,
+                            _ITIdleTimeout._duration, _ITIdleTimeout._identifier,
+                            _ITIdleTimerDescriptor._attentionMaintenanceEventMask,
+                            _ITIdleTimerDescriptor._attentionRecoveryEventMask,
+                            _ITIdleTimerDescriptor._attentionSamplingPeriod,
+                            _ITIdleTimerDescriptor._attentionSamplingStartDelay,
+                            _ITIdleTimerDescriptor._timeouts ]
+...

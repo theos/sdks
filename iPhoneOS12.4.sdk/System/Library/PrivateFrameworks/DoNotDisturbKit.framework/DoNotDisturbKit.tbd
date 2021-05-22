@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DoNotDisturbKit.framework/DoNotDisturbKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ DoNotDisturbKitTests, DoNotDisturbModule, NanoSettings,
+                            NanoSettingsGlance, SpringBoard, "SpringBoard-Tests" ]
+    symbols:              [ _DNDEndOfEventAssertionIdentifier,
+                            _DNDKitRegisterLogging, _DNDLogNotifications,
+                            _DNDOneHourLifetimeIdentifier,
+                            _DNDUntilEveningAssertionIdentifier,
+                            _DNDUntilILeaveAssertionIdentifier,
+                            _DNDUntilMorningAssertionIdentifier,
+                            _DoNotDisturbKitVersionNumber,
+                            _DoNotDisturbKitVersionString, _kEventSearchTime,
+                            _kLOIHighConfidence ]
+    objc-classes:         [ DNDAWDMetricsService, DNDLifetimeDetails,
+                            DNDLifetimeDetailsProvider, DNDNotificationsService ]
+    objc-ivars:           [ DNDAWDMetricsService._currentState,
+                            DNDAWDMetricsService._notificationsStateService,
+                            DNDAWDMetricsService._queue,
+                            DNDLifetimeDetails._identifier,
+                            DNDLifetimeDetails._metadata,
+                            DNDLifetimeDetails._name,
+                            DNDLifetimeDetailsProvider._availableLifetimeDetails,
+                            DNDLifetimeDetailsProvider._calendarVisibilityManager,
+                            DNDLifetimeDetailsProvider._calloutQueue,
+                            DNDLifetimeDetailsProvider._currentLocation,
+                            DNDLifetimeDetailsProvider._delegate,
+                            DNDLifetimeDetailsProvider._eventStore,
+                            DNDLifetimeDetailsProvider._geocoder,
+                            DNDLifetimeDetailsProvider._locationManager,
+                            DNDLifetimeDetailsProvider._monitoringLifetimes,
+                            DNDLifetimeDetailsProvider._queue,
+                            DNDLifetimeDetailsProvider._relevantEvent,
+                            DNDLifetimeDetailsProvider._relevantLOI,
+                            DNDLifetimeDetailsProvider._relevantPlacemark,
+                            DNDLifetimeDetailsProvider._routineManager,
+                            DNDNotificationsService._basicActive,
+                            DNDNotificationsService._bedtimeActive,
+                            DNDNotificationsService._currentBehaviorSettings,
+                            DNDNotificationsService._currentPhoneCallBypassSettings,
+                            DNDNotificationsService._currentState,
+                            DNDNotificationsService._doNotDisturbActive,
+                            DNDNotificationsService._drivingActive,
+                            DNDNotificationsService._longestAssertionMetadata,
+                            DNDNotificationsService._notificationsAssertionService,
+                            DNDNotificationsService._notificationsCenter,
+                            DNDNotificationsService._notificationsSettingsService,
+                            DNDNotificationsService._notificationsStateService,
+                            DNDNotificationsService._queue,
+                            DNDNotificationsService._workoutActive ]
+...

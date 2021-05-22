@@ -1,0 +1,40 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/NanoPhotosCore.framework/NanoPhotosCore
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NPTOLibraryAssetCollectionAssetUUIDsKey,
+                            _NPTOLibraryAssetCollectionKeyAssetUUIDsKey,
+                            _NPTOLibraryAssetCollectionSubtitleKey,
+                            _NPTOLibraryAssetCollectionTitleKey,
+                            _NPTOPreferencesSyncedAlbumIdentifierKey,
+                            _NPTOPreferencesSyncedAlbumIdentifierNone,
+                            _NPTOPreferencesSyncedPhotosLimitKey,
+                            _NPTOPreferencesWatchFaceAlbumFetchCountsKey,
+                            _NPTOPreferencesWatchFaceAlwaysUpdatingAlbumsKey,
+                            _nanophotos_log_NanoPhotosCore,
+                            _nanophotos_log_NanoPhotosUI, _nanophotos_log_bridge,
+                            _nanophotos_log_sync, _nanophotos_log_sync_oversize ]
+    objc-classes:         [ _NPTOCollectionTargetLibrary,
+                            _NPTODarwinNotificationObserver, _NPTOLibraryInfo,
+                            _NPTONotificationCenter, _NPTOPreferencesAccessor ]
+    objc-ivars:           [ _NPTOCollectionTargetLibrary._collectionTarget,
+                            _NPTOCollectionTargetLibrary._device,
+                            _NPTOCollectionTargetLibrary._libraryAssetCollections,
+                            _NPTOCollectionTargetLibrary._libraryCollectionTargetMapChangeObserver,
+                            _NPTOCollectionTargetLibrary._libraryInfo,
+                            _NPTOCollectionTargetLibrary._observers,
+                            _NPTOCollectionTargetLibrary._syncingChangeObserver,
+                            _NPTODarwinNotificationObserver._notificationToken,
+                            _NPTOLibraryInfo._legacyPreferencesAccessor,
+                            _NPTOLibraryInfo._libraryURL,
+                            _NPTOLibraryInfo._notificationCenter,
+                            _NPTONotificationCenter._devicePairingID,
+                            _NPTOPreferencesAccessor._batchUpdatesKeyStack,
+                            _NPTOPreferencesAccessor._device,
+                            _NPTOPreferencesAccessor._domainAccessor,
+                            _NPTOPreferencesAccessor._notificationCenter ]
+...

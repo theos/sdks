@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MobileStoreDemoKit.framework/MobileStoreDemoKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _MSDLogToFile, _MobileStoreDemoKitVersionNumber,
+                            _MobileStoreDemoKitVersionString, _defaultLogObj,
+                            _logInit, _messageLogObj ]
+    objc-classes:         [ MSDKManagedDevice, MSDLogModel ]
+    objc-ivars:           [ MSDKManagedDevice._connection,
+                            MSDKManagedDevice._delegate, MSDLogModel._logFP ]
+...

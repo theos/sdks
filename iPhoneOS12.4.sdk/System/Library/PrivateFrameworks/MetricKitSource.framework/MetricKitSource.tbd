@@ -1,0 +1,39 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/MetricKitSource.framework/MetricKitSource
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _MetricKitSourceVersionNumber,
+                            _MetricKitSourceVersionString ]
+    objc-classes:         [ _MXHangTracerData, _MXPowerlogData, _MXReportCrashData,
+                            _MXSampleAnalysisParser, _MXSourceData,
+                            _MXSourceManager, _MXSourceUtilities,
+                            _MXSourceXPCPayload, _MXSpinTracerData ]
+    objc-ivars:           [ _MXHangTracerData._hangDiagnostic,
+                            _MXPowerlogData._animationMetrics,
+                            _MXPowerlogData._applicationExitMetrics,
+                            _MXPowerlogData._applicationLaunchMetrics,
+                            _MXPowerlogData._applicationResponsivenessMetrics,
+                            _MXPowerlogData._applicationTimeMetrics,
+                            _MXPowerlogData._cellularConditionMetrics,
+                            _MXPowerlogData._cpuMetrics,
+                            _MXPowerlogData._diskIOMetrics,
+                            _MXPowerlogData._displayMetrics,
+                            _MXPowerlogData._gpuMetrics,
+                            _MXPowerlogData._includesMultipleApplicationVersions,
+                            _MXPowerlogData._locationActivityMetrics,
+                            _MXPowerlogData._memoryMetrics,
+                            _MXPowerlogData._networkTransferMetrics,
+                            _MXPowerlogData._signpostMetrics,
+                            _MXReportCrashData._crashDiagnostic,
+                            _MXSourceManager._connection,
+                            _MXSourceManager._sourceManagerLogHandle,
+                            _MXSourceXPCPayload._datestamp,
+                            _MXSourceXPCPayload._metrics,
+                            _MXSourceXPCPayload._sourceID,
+                            _MXSpinTracerData._cpuExceptionDiagnostic,
+                            _MXSpinTracerData._diskWriteExceptionDiagnostic ]
+...

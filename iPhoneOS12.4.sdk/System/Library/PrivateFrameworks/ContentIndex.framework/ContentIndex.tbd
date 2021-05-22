@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ContentIndex.framework/ContentIndex
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _CITokenizerCopyQueryTokens,
+                            _CITokenizerCopyQueryTokensWithOptions,
+                            _CITokenizerEnumerateTokens, _CITokenizerGetTokens,
+                            _CITokenizerGetTokensWithOptions,
+                            _CITokenizerRelease, _CXIndexAddDocument,
+                            _CXIndexAddDocumentByName, _CXIndexClose,
+                            _CXIndexCommit, _CXIndexCompact, _CXIndexCreate,
+                            _CXIndexDelete, _CXIndexDeleteDocument,
+                            _CXIndexDeleteDocumentByName, _CXIndexFlush,
+                            _CXIndexOpen, _CXQueryCancel, _CXQueryCreate,
+                            _CXQueryCreateWithOptions, _CXQueryFindMatches,
+                            _CXQueryFindMatchesByName,
+                            _CXQueryFindMatchesCopyValues,
+                            _CXQueryNodeCreateAtom,
+                            _CXQueryNodeCreateIntersection,
+                            _CXQueryNodeCreateNegation, _CXQueryNodeCreateUnion,
+                            _CXSetLoggingBlock, _kCXQueryOptionValueListKey ]
+    objc-classes:         [ CXIndex, CXQuery ]
+    objc-ivars:           [ CXIndex._cancel, CXIndex._path, CXIndex._skRef,
+                            CXQuery._batch, CXQuery._batchOffset,
+                            CXQuery._batchValues, CXQuery._canceled,
+                            CXQuery._complete, CXQuery._index, CXQuery._job,
+                            CXQuery._resultQueue, CXQuery._semaphore,
+                            CXQuery._siQuery, CXQuery._started, CXQuery._waiting ]
+...

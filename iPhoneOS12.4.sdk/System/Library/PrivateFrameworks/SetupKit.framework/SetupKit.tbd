@@ -1,0 +1,59 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SetupKit.framework/SetupKit
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _SKConnection, _SKDevice, _SKFlow, _SKSetupHomeKitClient,
+                            _SKSetupHomeKitServer, _SKStepWiFiSetupClient,
+                            _SKStepWiFiSetupServer ]
+    objc-ivars:           [ _SKDevice._identifier, _SKFlow._activateCalled,
+                            _SKFlow._activatedSteps, _SKFlow._buildStepsHandler,
+                            _SKFlow._currentStepIndex, _SKFlow._dispatchQueue,
+                            _SKFlow._invalidateCalled, _SKFlow._invalidateDone,
+                            _SKFlow._invalidationHandler, _SKFlow._label,
+                            _SKFlow._runState, _SKFlow._ucat,
+                            _SKSetupHomeKitClient._activateCalled,
+                            _SKSetupHomeKitClient._authCompletionHandler,
+                            _SKSetupHomeKitClient._authPromptForPasswordHandler,
+                            _SKSetupHomeKitClient._dispatchQueue,
+                            _SKSetupHomeKitClient._flow,
+                            _SKSetupHomeKitClient._invalidateCalled,
+                            _SKSetupHomeKitClient._invalidateDone,
+                            _SKSetupHomeKitClient._invalidationHandler,
+                            _SKSetupHomeKitClient._label,
+                            _SKSetupHomeKitClient._password,
+                            _SKSetupHomeKitClient._peerDevice,
+                            _SKSetupHomeKitClient._stepWiFiSetup,
+                            _SKSetupHomeKitClient._ucat,
+                            _SKSetupHomeKitServer._activateCalled,
+                            _SKSetupHomeKitServer._authCompletionHandler,
+                            _SKSetupHomeKitServer._authHidePasswordHandler,
+                            _SKSetupHomeKitServer._authShowPasswordHandler,
+                            _SKSetupHomeKitServer._dispatchQueue,
+                            _SKSetupHomeKitServer._invalidateCalled,
+                            _SKSetupHomeKitServer._invalidateDone,
+                            _SKSetupHomeKitServer._invalidationHandler,
+                            _SKSetupHomeKitServer._label,
+                            _SKSetupHomeKitServer._password,
+                            _SKSetupHomeKitServer._stepWiFiSetup,
+                            _SKSetupHomeKitServer._ucat,
+                            _SKStepWiFiSetupClient._activateCalled,
+                            _SKStepWiFiSetupClient._dispatchQueue,
+                            _SKStepWiFiSetupClient._invalidateCalled,
+                            _SKStepWiFiSetupClient._invalidateDone,
+                            _SKStepWiFiSetupClient._invalidationHandler,
+                            _SKStepWiFiSetupClient._label,
+                            _SKStepWiFiSetupClient._runState,
+                            _SKStepWiFiSetupClient._ucat,
+                            _SKStepWiFiSetupServer._activateCalled,
+                            _SKStepWiFiSetupServer._dispatchQueue,
+                            _SKStepWiFiSetupServer._invalidateCalled,
+                            _SKStepWiFiSetupServer._invalidateDone,
+                            _SKStepWiFiSetupServer._invalidationHandler,
+                            _SKStepWiFiSetupServer._label,
+                            _SKStepWiFiSetupServer._runState,
+                            _SKStepWiFiSetupServer._ucat ]
+...

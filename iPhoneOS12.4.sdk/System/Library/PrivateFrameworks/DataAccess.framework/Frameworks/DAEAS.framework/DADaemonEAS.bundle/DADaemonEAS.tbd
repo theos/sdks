@@ -1,0 +1,62 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAEAS.framework/DADaemonEAS.bundle/DADaemonEAS
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ __ASSyncTaskPreservedActionsFromActions,
+                            __DASyncableActionsFromDAActions ]
+    objc-classes:         [ ASAgent, ASAgentFolderHierarchyContext,
+                            ASContactDataHandler, ASDaemonAccount,
+                            ASDaemonPolicyManager, ASDataHandler,
+                            ASEventDataHandler, ASFolderChangedHistory,
+                            ASNoteDataHandler, ASToDoDataHandler ]
+    objc-ivars:           [ ASAgent._calUnitTestMergedRequestsBlock,
+                            ASAgent._contactStoresByFolderId,
+                            ASAgent._currentlySyncingFolderIds,
+                            ASAgent._eventCalendarsByFolderId,
+                            ASAgent._folderIdToSequentialFailureCount,
+                            ASAgent._folderIdToSequentialServerErrorCount,
+                            ASAgent._folderItemSyncRequestLock,
+                            ASAgent._isShuttingDown, ASAgent._matchedRecord,
+                            ASAgent._noteStoreObjectIdsByFolderId,
+                            ASAgent._numLocalFolderUpdatesInFlight,
+                            ASAgent._outstandingFolderRequests,
+                            ASAgent._toDoCalendarsByFolderId,
+                            ASAgentFolderHierarchyContext._isFirstSync,
+                            ASAgentFolderHierarchyContext._oldFolders,
+                            ASDaemonAccount._attachmentManager,
+                            ASDaemonAccount._busyFolderIds,
+                            ASDaemonAccount._curReplyMethod,
+                            ASDaemonAccount._delayedPingTimer,
+                            ASDaemonAccount._eventsNumberOfPastDaysToSync,
+                            ASDaemonAccount._folderChangeHistory,
+                            ASDaemonAccount._folderIdsWithUnacknowledgedPings,
+                            ASDaemonAccount._foldersToMonitorById,
+                            ASDaemonAccount._hasScheduledWake,
+                            ASDaemonAccount._hierarchyChangeHistory,
+                            ASDaemonAccount._invitationActionsInFlight,
+                            ASDaemonAccount._isHierarchyChangeBlackListed,
+                            ASDaemonAccount._isNoChangeBlackListed,
+                            ASDaemonAccount._isTearingDown,
+                            ASDaemonAccount._lastPingFolders,
+                            ASDaemonAccount._lastPingHeartBeat,
+                            ASDaemonAccount._noChangeHistory,
+                            ASDaemonAccount._noteObserver,
+                            ASDaemonAccount._pcManager,
+                            ASDaemonAccount._pingBlacklistFolderIds,
+                            ASDaemonAccount._pingBlacklistFolderSyncTimer,
+                            ASDaemonAccount._pingBlacklistRetrySyncCount,
+                            ASDaemonAccount._pingHistoryBlacklistFolderIds,
+                            ASDaemonAccount._pingPowerAssertionUUID,
+                            ASDaemonAccount._pingTask,
+                            ASDaemonAccount._safeToPing,
+                            ASDaemonPolicyManager._account,
+                            ASDaemonPolicyManager._preflighter,
+                            ASFolderChangedHistory._count,
+                            ASFolderChangedHistory._startTime ]
+...

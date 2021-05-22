@@ -1,0 +1,14 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/MessagesBlastDoorSupport.framework/MessagesBlastDoorSupport
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowed-clients:      [ IMDaemonCore, IMDaemonCoreEmbeddedTests,
+                            IMSharedUtilities, MessagesBlastDoorTester ]
+    symbols:              [ _MessagesBlastDoorSupportVersionNumber,
+                            _MessagesBlastDoorSupportVersionString ]
+    objc-classes:         [ _IMMessagesBlastDoorInterface ]
+...

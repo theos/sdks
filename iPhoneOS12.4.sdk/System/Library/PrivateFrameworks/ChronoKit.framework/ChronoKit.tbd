@@ -1,0 +1,17 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ChronoKit.framework/ChronoKit
+current-version:       104.9.5
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ChronoKitVersionNumber, _ChronoKitVersionString ]
+    objc-classes:         [ _CHSWidgetPreviewInfo, __TtC9ChronoKit12WidgetReaper,
+                            __TtC9ChronoKit16ExtensionManager,
+                            __TtC9ChronoKit23WidgetHostingController,
+                            __TtC9ChronoKit26WidgetPreviewTimelineEntry,
+                            __TtC9ChronoKit32AvocadoLiveViewHostingController,
+                            __TtC9ChronoKit34WidgetPreviewHostingViewController,
+                            __TtCC9ChronoKit34WidgetPreviewHostingViewController16TimelineDelegate ]
+...

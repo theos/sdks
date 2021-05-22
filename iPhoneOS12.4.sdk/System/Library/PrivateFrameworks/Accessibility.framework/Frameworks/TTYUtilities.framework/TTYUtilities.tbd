@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/TTYUtilities.framework/TTYUtilities
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AXTTYMessageKeyCallID, _AXTTYMessageKeyContactID,
+                            _AXTTYMessageKeyContactPathSearchAction,
+                            _AXTTYMessageKeyContactSearchAction,
+                            _AXTTYMessageKeyConversation,
+                            _AXTTYMessageKeyConversationUpdates,
+                            _AXTTYMessageKeyDeleteAction,
+                            _AXTTYMessageKeyReadAction, _AXTTYMessageKeyResult,
+                            _AXTTYMessageKeySettingsKey, _AXTTYMessageKeyUUID,
+                            _AXTTYMessageKeyValue, _AXTTYMessageKeyWriteAction,
+                            _AXTTYPreferredTransportMethodChangedNotification,
+                            _TTYUtilitiesVersionNumber,
+                            _TTYUtilitiesVersionString, _currentProcessIsHeard ]
+    objc-classes:         [ AXTTYSettingsListenerHelper,
+                            AXTTYSimulatorSubscriptionContext, TTYServer,
+                            TTYSettings, TTYTelephonyUtilities ]
+    objc-ivars:           [ AXTTYSettingsListenerHelper._listenerAddress,
+                            AXTTYSettingsListenerHelper._selectorKeys,
+                            TTYServer._actionCompletionBlock,
+                            TTYServer._commonRequestQueue,
+                            TTYServer._dataResponseBlocksLock,
+                            TTYServer._databaseResponseBlocks, TTYServer._server,
+                            TTYSettings._registeredNotifications,
+                            TTYSettings._synchronizeDomainsLock,
+                            TTYSettings._synchronizePreferences,
+                            TTYSettings._updateBlocks,
+                            TTYTelephonyUtilities._activeContextCount,
+                            TTYTelephonyUtilities._defaultVoiceContext,
+                            TTYTelephonyUtilities._headphoneJackSupportsTTY,
+                            TTYTelephonyUtilities._telephonyClient,
+                            TTYTelephonyUtilities._telephonyUpdateQueue ]
+...

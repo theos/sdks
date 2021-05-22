@@ -1,0 +1,15 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AccessibilityFocusEngine.framework/AccessibilityFocusEngine
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AccessibilityFocusEngineVersionNumber,
+                            _AccessibilityFocusEngineVersionString ]
+    objc-classes:         [ _AXFocusManager ]
+    objc-ivars:           [ _AXFocusManager._movementQueue,
+                            _AXFocusManager._pidForSuccessfulTypeaheadMovement,
+                            _AXFocusManager._typeaheadString ]
+...

@@ -1,0 +1,43 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore
+current-version:       141
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _FUFactoryProvider_Default,
+                            _FUFactoryProvider_Parsec ]
+    objc-classes:         [ _FUAirline, _FUAirport, _FUFlight, _FUFlightCodeShare,
+                            _FUFlightFactory, _FUFlightFactory_Parsec,
+                            _FUFlightLeg, _FUFlightStep, _FUStepTime, _FUUtils ]
+    objc-ivars:           [ _FUAirline._FAACode, _FUAirline._IATACode,
+                            _FUAirline._URL, _FUAirline._name,
+                            _FUAirline._phoneNumber, _FUAirport._IATACode,
+                            _FUAirport._city, _FUAirport._location,
+                            _FUAirport._name, _FUAirport._placemark,
+                            _FUAirport._timeZone, _FUFlight._airline,
+                            _FUFlight._allLegs, _FUFlight._arrivalLegIndex,
+                            _FUFlight._cancellationMessage,
+                            _FUFlight._codeShares, _FUFlight._departureLegIndex,
+                            _FUFlight._displayAirline,
+                            _FUFlight._displayFlightNumber,
+                            _FUFlight._expirationDate,
+                            _FUFlight._flightIdentifier, _FUFlight._flightNumber,
+                            _FUFlight._identifier, _FUFlight._legs,
+                            _FUFlight._queriedAirlineTitle,
+                            _FUFlight._rawResponse, _FUFlightCodeShare._airline,
+                            _FUFlightCodeShare._flightNumber,
+                            _FUFlightLeg._arrival, _FUFlightLeg._baggageClaim,
+                            _FUFlightLeg._departure, _FUFlightLeg._duration,
+                            _FUFlightLeg._status, _FUFlightStep._actualTime,
+                            _FUFlightStep._airport,
+                            _FUFlightStep._delayFromSchedule,
+                            _FUFlightStep._departure,
+                            _FUFlightStep._estimatedTime, _FUFlightStep._gate,
+                            _FUFlightStep._legStatus, _FUFlightStep._plannedTime,
+                            _FUFlightStep._runwayTime,
+                            _FUFlightStep._scheduledTime,
+                            _FUFlightStep._terminal, _FUStepTime._date,
+                            _FUStepTime._type ]
+...

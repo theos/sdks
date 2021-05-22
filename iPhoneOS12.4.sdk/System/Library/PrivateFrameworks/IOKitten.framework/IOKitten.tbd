@@ -1,0 +1,52 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/IOKitten.framework/IOKitten
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _IOErrorDomain, _IOKAppPowerStateInterest,
+                            _IOKAudioPlane, _IOKBusyInterest, _IOKDeviceTreePlane,
+                            _IOKFireWirePlane, _IOKFirstMatchNotification,
+                            _IOKFirstPublishNotification, _IOKGeneralInterest,
+                            _IOKMatchedNotification,
+                            _IOKPMAssertionTypeNetworkClientActive,
+                            _IOKPMAssertionTypePreventDiskIdle,
+                            _IOKPMAssertionTypePreventUserIdleDisplaySleep,
+                            _IOKPMAssertionTypePreventUserIdleSleep,
+                            _IOKPowerPlane, _IOKPriorityPowerStateInterest,
+                            _IOKPublishNotification, _IOKServicePlane,
+                            _IOKTerminatedNotification, _IOKUSBPlane,
+                            _IOKWillTerminateNotification,
+                            _IOKittenVersionNumber, _IOKittenVersionString ]
+    objc-classes:         [ _IOKConnection, _IOKInterestNotification,
+                            _IOKInterestNotificationRef, _IOKIterator,
+                            _IOKMatchingNotification,
+                            _IOKMatchingNotificationRef, _IOKNotificationPort,
+                            _IOKObject, _IOKPowerManager,
+                            _IOKPowerManagerPowerAssertion, _IOKPowerNotifier,
+                            _IOKRegistryEntry, _IOKService, _IORegistryIterator ]
+    objc-ivars:           [ _IOKConnection._connection,
+                            _IOKInterestNotification._handler,
+                            _IOKInterestNotification._notificationRef,
+                            _IOKInterestNotification._object,
+                            _IOKInterestNotification._queue,
+                            _IOKInterestNotificationRef._lock,
+                            _IOKInterestNotificationRef._notification,
+                            _IOKIterator._enumerationBlock,
+                            _IOKMatchingNotification._handler,
+                            _IOKMatchingNotification._iterator,
+                            _IOKMatchingNotification._notificationRef,
+                            _IOKMatchingNotification._queue,
+                            _IOKMatchingNotificationRef._lock,
+                            _IOKMatchingNotificationRef._notification,
+                            _IOKNotificationPort._port,
+                            _IOKNotificationPort._queue, _IOKObject._object,
+                            _IOKPowerManager._connection,
+                            _IOKPowerManagerPowerAssertion._pmAssertionID,
+                            _IOKPowerNotifier._connection,
+                            _IOKPowerNotifier._delegate,
+                            _IOKPowerNotifier._notificationPort,
+                            _IOKPowerNotifier._notifier ]
+...

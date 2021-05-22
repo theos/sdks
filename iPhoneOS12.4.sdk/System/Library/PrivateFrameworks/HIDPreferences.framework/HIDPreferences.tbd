@@ -1,0 +1,22 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/HIDPreferences.framework/HIDPreferences
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HIDPreferencesCopy, _HIDPreferencesCopyDomain,
+                            _HIDPreferencesCopyMultiple, _HIDPreferencesSet,
+                            _HIDPreferencesSetDomain, _HIDPreferencesSetMultiple,
+                            _HIDPreferencesSynchronize,
+                            _HIDPreferencesVersionNumber,
+                            _HIDPreferencesVersionString ]
+    objc-classes:         [ _HIDPreferences, _HIDPreferencesHelperClient,
+                            _HIDPreferencesHelperListener ]
+    objc-ivars:           [ _HIDPreferences._queue,
+                            _HIDPreferencesHelperClient._connection,
+                            _HIDPreferencesHelperClient._listener,
+                            _HIDPreferencesHelperListener._clients,
+                            _HIDPreferencesHelperListener._listener ]
+...

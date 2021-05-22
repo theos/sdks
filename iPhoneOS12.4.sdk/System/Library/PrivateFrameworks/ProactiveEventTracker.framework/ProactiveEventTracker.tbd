@@ -1,0 +1,50 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker
+current-version:       126.37
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _ProactiveEventTrackerVersionNumber,
+                            _ProactiveEventTrackerVersionString ]
+    objc-classes:         [ PETAggdLoggingOutlet, PETDeviceInfo,
+                            PETDistributionEventTracker,
+                            PETEventEnumMappedProperty,
+                            PETEventFreeValuedProperty,
+                            PETEventNumericalProperty, PETEventProperty,
+                            PETEventStringValidator,
+                            PETEventStringValuedProperty, PETEventTracker,
+                            PETGoalConversionEventTracker, PETLoggingUtils,
+                            PETScalarEventTracker, PETStringPairs,
+                            PETTestLoggingOutlet ]
+    objc-ivars:           [ PETDeviceInfo._batterySaverModeToken,
+                            PETDistributionEventTracker._event,
+                            PETEventEnumMappedProperty._autoSanitizeValues,
+                            PETEventEnumMappedProperty._enumMap,
+                            PETEventNumericalProperty._clampValues,
+                            PETEventNumericalProperty._validRange,
+                            PETEventProperty._name,
+                            PETEventStringValuedProperty._autoSanitizeValues,
+                            PETEventStringValuedProperty._possibleValues,
+                            PETEventTracker._featureId,
+                            PETEventTracker._loggingOutlet,
+                            PETEventTracker._propertySubsets,
+                            PETEventTracker._registeredProperties,
+                            PETEventTracker._testingMode,
+                            PETGoalConversionEventTracker._conversionEvent,
+                            PETGoalConversionEventTracker._opportunityEvent,
+                            PETScalarEventTracker._event, PETStringPairs._keys,
+                            PETStringPairs._values,
+                            PETTestLoggingOutlet._allLoggedKeys,
+                            PETTestLoggingOutlet._allLoggedValues,
+                            PETTestLoggingOutlet._keyValues,
+                            PETTestLoggingOutlet._lastLoggedDistributionValue,
+                            PETTestLoggingOutlet._lastLoggedKey,
+                            PETTestLoggingOutlet._lastLoggedScalarValue,
+                            PETTestLoggingOutlet._previousLoggedDistributionValue,
+                            PETTestLoggingOutlet._previousLoggedKey,
+                            PETTestLoggingOutlet._previousLoggedScalarValue ]
+...

@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _ITIdleTimerStateServiceIdentifier,
+                            _ITIdleTimerStateServiceMessageKeyParam1,
+                            _ITIdleTimerStateServiceMessageKeyParam2,
+                            _ITLogIdleTimer, _ITLoggingSubsystem,
+                            _IdleTimerServicesVersionNumber,
+                            _IdleTimerServicesVersionString ]
+    objc-classes:         [ ITIdleTimerDisableAssertion, ITIdleTimerState,
+                            ITIdleTimerStateClient, ITIdleTimerStateRequestShim,
+                            ITIdleTimerStateServer, ITIdleTimerStateService ]
+    objc-ivars:           [ ITIdleTimerDisableAssertion._accessQueue,
+                            ITIdleTimerDisableAssertion._internalAssertion,
+                            ITIdleTimerState._accessQueue,
+                            ITIdleTimerState._idleTimerDisableAssertions,
+                            ITIdleTimerState._stateCaptureAssertion,
+                            ITIdleTimerStateClient._accessQueue,
+                            ITIdleTimerStateClient._assertionReasons,
+                            ITIdleTimerStateRequestShim._idleTimerResetTimer,
+                            ITIdleTimerStateServer._delegate,
+                            ITIdleTimerStateService._assertionReasonsByClientID,
+                            ITIdleTimerStateService._assertionsByReason,
+                            ITIdleTimerStateService._calloutDispatchQueue,
+                            ITIdleTimerStateService._calloutQueue,
+                            ITIdleTimerStateService._delegate,
+                            ITIdleTimerStateService._server,
+                            ITIdleTimerStateService._stateCaptureAssertion ]
+...

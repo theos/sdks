@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
+current-version:       227.17.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _GetNSFriendlySeparator, _IntlPreferencesValue,
+                            _IntlSetPreferencesValue,
+                            _NSPersonNameDefaultDisplayNameOrderKey,
+                            _NSPersonNameDefaultNamePreferencesDomain,
+                            _NSPersonNameDefaultShortNameEnabledKey,
+                            _NSPersonNameDefaultShortNameFormatKey,
+                            _NSPersonNameDefaultShouldPreferNicknamesKey,
+                            _NSPersonNamePreferencesDidChangeNotification ]
+    objc-classes:         [ IPFoundationNamePreferenceInfoProvider,
+                            IPOSXABNamePreferenceInfoProvider,
+                            IPiOSABNamePreferenceInfoProvider, ISMigrator,
+                            IntlUtility,
+                            NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:           [ ISMigrator._currentVersion, ISMigrator._platform,
+                            ISMigrator._preferencesAfterMigration,
+                            ISMigrator._preferencesBeforeMigration,
+                            ISMigrator._previousVersion,
+                            IntlUtility.mBidiLanguagesArray,
+                            IntlUtility.mBidiTestedLanguagesArray,
+                            IntlUtility.mDisplayLanguageCachePtr,
+                            IntlUtility.mDisplayLanguageCacheUsed ]
+...

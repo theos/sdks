@@ -1,0 +1,24 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HearingCore.framework/HearingCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AXHAMessageKeyIdentifier, _AXHAMessageKeyPayload,
+                            _AXHANULL, _AXHearingAidServerName,
+                            _HCApplicationGetMainBundleIdentifier,
+                            _HCDeviceGetType, _HCHeardBundleName,
+                            _HCPerformSafeBlock, _HCPreferencesBundleName,
+                            _HearingCoreVersionNumber, _HearingCoreVersionString ]
+    objc-classes:         [ HCServer, HCUtilities, HCXPCClient, HCXPCMessage ]
+    objc-ivars:           [ HCServer._connectionQueue, HCServer._delegate,
+                            HCServer._messageDelegate, HCServer._xpcConnection,
+                            HCXPCClient._requestedUpdates,
+                            HCXPCClient._xpcConnection, HCXPCClient._xpcQueue,
+                            HCXPCMessage._client, HCXPCMessage._error,
+                            HCXPCMessage._payload, HCXPCMessage._xpcMessage ]
+...
