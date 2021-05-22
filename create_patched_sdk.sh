@@ -28,7 +28,7 @@ fi
 
 # tbd info
 
-version="v1"
+version="v3"
 
 archs_option=("--replace-archs" armv7 armv7s arm64)
 tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
