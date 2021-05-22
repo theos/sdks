@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/PushKit.framework/PushKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _PKPushIncomingCallReportedNotification,
+                            _PKPushTypeComplication, _PKPushTypeFileProvider,
+                            _PKPushTypeUserNotifications, _PKPushTypeVoIP ]
+    objc-classes:         [ PKPushCredentials, PKPushPayload, PKPushRegistry,
+                            PKUserNotificationsRemoteNotificationServiceConnection ]
+    objc-ivars:           [ PKPushCredentials._token, PKPushCredentials._type,
+                            PKPushPayload._dictionaryPayload,
+                            PKPushPayload._type,
+                            PKPushRegistry._complicationToken,
+                            PKPushRegistry._delegate,
+                            PKPushRegistry._delegateQueue,
+                            PKPushRegistry._desiredPushTypes,
+                            PKPushRegistry._fileProviderToken,
+                            PKPushRegistry._ivarQueue,
+                            PKPushRegistry._lastReportedCallTime,
+                            PKPushRegistry._outstandingVoIPPushes,
+                            PKPushRegistry._pushTypeToConnection,
+                            PKPushRegistry._pushTypeToToken,
+                            PKPushRegistry._voipToken,
+                            PKUserNotificationsRemoteNotificationServiceConnection._bundleIdentifier,
+                            PKUserNotificationsRemoteNotificationServiceConnection._callOutQueue,
+                            PKUserNotificationsRemoteNotificationServiceConnection._connection,
+                            PKUserNotificationsRemoteNotificationServiceConnection._queue,
+                            PKUserNotificationsRemoteNotificationServiceConnection._registries ]
+...

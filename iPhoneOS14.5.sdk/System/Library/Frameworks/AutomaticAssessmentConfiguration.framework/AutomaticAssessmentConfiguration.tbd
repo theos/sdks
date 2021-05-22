@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AEAssessmentErrorDomain ]
+    objc-classes:         [ AEAssessmentConfiguration, AEAssessmentSession,
+                            _AEErrorHelper ]
+    objc-ivars:           [ AEAssessmentConfiguration._allowsAccessibilitySpeech,
+                            AEAssessmentConfiguration._allowsActivityContinuation,
+                            AEAssessmentConfiguration._allowsContinuousPathKeyboard,
+                            AEAssessmentConfiguration._allowsDictation,
+                            AEAssessmentConfiguration._allowsKeyboardShortcuts,
+                            AEAssessmentConfiguration._allowsPasswordAutoFill,
+                            AEAssessmentConfiguration._allowsPredictiveKeyboard,
+                            AEAssessmentConfiguration._allowsSpellCheck,
+                            AEAssessmentConfiguration._autocorrectMode,
+                            AEAssessmentSession._backingSession,
+                            AEAssessmentSession._delegate ]
+...

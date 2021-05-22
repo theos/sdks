@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/HealthKitUI.framework/HealthKitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _HKGLViewSnapshottingDidEndNotification,
+                            _HKGLViewSnapshottingWillBeginNotification,
+                            _HKHealthKitUIFrameworkBundle ]
+    objc-classes:         [ HKActivityRingView, HKGLView,
+                            _HKActivityRingViewSizingDirective, _HKShapeView ]
+    objc-ivars:           [ HKActivityRingView._activitySummary,
+                            HKActivityRingView._emptyRingAlpha,
+                            HKActivityRingView._maskView,
+                            HKActivityRingView._renderer,
+                            HKActivityRingView._ringInsetPercentage,
+                            HKActivityRingView._ringsView,
+                            HKActivityRingView._shouldBypassApplicationStateChecking,
+                            HKGLView._context, HKGLView._contextPushed,
+                            HKGLView._depthRenderbuffer, HKGLView._displayLink,
+                            HKGLView._displayLinkPaused,
+                            HKGLView._drawableDepthFormat,
+                            HKGLView._drawableHeight, HKGLView._drawableWidth,
+                            HKGLView._lastUpdateTime, HKGLView._latestDrawError,
+                            HKGLView._multisampleColorRenderbuffer,
+                            HKGLView._multisampleFramebuffer,
+                            HKGLView._preferredFramesPerSecond,
+                            HKGLView._resolveColorRenderbuffer,
+                            HKGLView._resolveFramebuffer, HKGLView._screen,
+                            HKGLView._shouldBypassApplicationStateChecking,
+                            HKGLView._shouldDeleteFramebuffer,
+                            HKGLView._synchronizesWithCA, HKGLView._use4XMSAA,
+                            HKGLView._viewIsVisible,
+                            HKGLView._viewSnapshottingActive,
+                            HKGLView._viewWillMoveToWindow,
+                            _HKActivityRingViewSizingDirective._identifier,
+                            _HKActivityRingViewSizingDirective._outerRingOffset,
+                            _HKActivityRingViewSizingDirective._ringInterspacing,
+                            _HKActivityRingViewSizingDirective._ringThickness,
+                            _HKActivityRingViewSizingDirective._width ]
+...

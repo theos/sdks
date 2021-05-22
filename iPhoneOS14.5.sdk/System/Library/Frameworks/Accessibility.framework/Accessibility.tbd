@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/Accessibility.framework/Accessibility
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AXLocalizedString, _AXNameFromColor,
+                            _AccessibilityVersionNumber,
+                            _AccessibilityVersionString, __NXRGBToHSB ]
+    objc-classes:         [ AXCustomContent, AccessibilityFrameworkUtilities ]
+    objc-ivars:           [ AXCustomContent._attributedLabel,
+                            AXCustomContent._attributedValue,
+                            AXCustomContent._importance, AXCustomContent._label,
+                            AXCustomContent._value ]
+...

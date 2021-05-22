@@ -1,0 +1,65 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable,
+                            _NINearbyObjectDirectionNotAvailable,
+                            _NINearbyObjectDirectionNotAvailable_Private,
+                            _NINearbyObjectDistanceNotAvailable,
+                            _NINearbyObjectDistanceNotAvailable_Private,
+                            _NINearbyObjectElevationNotAvailable,
+                            _NINearbyObjectQuaternionNotAvailable,
+                            _NINotifySystemShutdownWithReason,
+                            _kNISystemShutdownCompletionTimeoutSeconds ]
+    objc-classes:         [ NICarKeyConfiguration, NIConfiguration,
+                            NIDiscoveryToken, NIExportedObjectForwarder,
+                            NIHomeDeviceConfiguration, NILocalization,
+                            NINearbyObject, NINearbyPeerConfiguration,
+                            NIPlatformInfo, NIRegionPredicate, NIServerConnection,
+                            NISession, _NIWiFiRangingTestConfiguration ]
+    objc-ivars:           [ NICarKeyConfiguration._configurationTypeInternal,
+                            NICarKeyConfiguration._debugOptions,
+                            NICarKeyConfiguration._vehicleIdentifier,
+                            NIConfiguration._suspensionPolicy,
+                            NIDiscoveryToken._rawToken,
+                            NIExportedObjectForwarder._exportedObject,
+                            NIHomeDeviceConfiguration._allowedDevices,
+                            NIHomeDeviceConfiguration._anchor,
+                            NIHomeDeviceConfiguration._monitoredRegions,
+                            NIHomeDeviceConfiguration._sessionKey,
+                            NINearbyObject._azimuth,
+                            NINearbyObject._deviceIdentifer,
+                            NINearbyObject._direction,
+                            NINearbyObject._discoveryToken,
+                            NINearbyObject._distance, NINearbyObject._elevation,
+                            NINearbyObject._quaternion,
+                            NINearbyObject._relationship,
+                            NINearbyObject._timestamp,
+                            NINearbyPeerConfiguration._peerDiscoveryToken,
+                            NIRegionPredicate._name,
+                            NIRegionPredicate._preferredUpdateRate,
+                            NIRegionPredicate._radius,
+                            NIServerConnection._assertion,
+                            NIServerConnection._connection,
+                            NIServerConnection._exportedObject,
+                            NIServerConnection._queue,
+                            NIServerConnection._sessionID,
+                            NISession._activationResponse, NISession._connection,
+                            NISession._currentConfiguration, NISession._delegate,
+                            NISession._delegateQueue, NISession._duration,
+                            NISession._exportedObjectForwarder,
+                            NISession._internalDelegate, NISession._internalID,
+                            NISession._internalState, NISession._interruptions,
+                            NISession._invalidationError, NISession._log,
+                            NISession._mutex, NISession._queue,
+                            NISession._readyForCallbacks, NISession._startTime,
+                            NISession._updatedNearbyObjects,
+                            _NIWiFiRangingTestConfiguration._parameters,
+                            _NIWiFiRangingTestConfiguration._peerDiscoveryToken ]
+...

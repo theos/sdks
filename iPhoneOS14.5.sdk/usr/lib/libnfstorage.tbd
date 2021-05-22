@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           112C3635-37E2-3ACD-901A-D086DAB7031C
+  - target:          arm64e-ios
+    value:           4D8E4FE1-9F97-35D8-A5DC-50F058960199
+install-name:    '/usr/lib/libnfstorage.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _nfstorageVersionNumber, _nfstorageVersionString ]
+    objc-classes:    [ AppletEntity, ExpressESEEntity, ExpressIcfEntity, NFStorageController, 
+                       NFStorageControllerApplet, NFStorageControllerESEExpress, 
+                       NFStorageControllerIcfExpress, PurpleTrustAppletEntity, PurpleTrustClientEntity, 
+                       PurpleTrustKeyEntity ]
+...
