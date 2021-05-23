@@ -35,7 +35,7 @@ install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ __cache_handle_memory_pressure_event ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _cache_create, _cache_destroy, _cache_get, _cache_get_and_retain, 
@@ -58,7 +58,7 @@ install-name:    '/usr/lib/system/libcommonCrypto.dylib'
 current-version: 60165.120.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _CCRNGCreate, _CCRNGRelease, _CCRSACryptorCreatePairFromData ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _CCAESCmac, _CCAESCmacCreate, _CCAESCmacDestroy, _CCAESCmacFinal, 
@@ -142,7 +142,7 @@ install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 101.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ '$ld$hide$os3.0$___absvdi2', '$ld$hide$os3.0$___absvsi2', 
                        '$ld$hide$os3.0$___adddf3', '$ld$hide$os3.0$___adddf3vfp', 
                        '$ld$hide$os3.0$___addsf3', '$ld$hide$os3.0$___addsf3vfp', 
@@ -685,7 +685,7 @@ uuids:           [ 'armv7: 3A19C691-E409-3E68-BA02-ED8C51E4004D', 'armv7s: ED8F7
 platform:        ios
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___copyfileVersionNumber, ___copyfileVersionString ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _copyfile, _copyfile_state_alloc, _copyfile_state_free, _copyfile_state_get, 
@@ -700,7 +700,7 @@ install-name:    '/usr/lib/system/libcorecrypto.dylib'
 current-version: 866.140.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _DYLIB_FIPS_POST, _cc_is_compiled_with_tu, _cc_mux2p, _ccaes_ios_hardware_cbc_decrypt_mode, 
                        _ccaes_ios_hardware_cbc_encrypt_mode, _ccaes_ios_mux_cbc_decrypt_mode, 
                        _ccaes_ios_mux_cbc_encrypt_mode, _ccn_div_equal_size, _ccprime_rabin_miller, 
@@ -944,7 +944,7 @@ exports:
                        '_voucher_get_current_persona_proximate_info$VARIANT$mp', 
                        '_voucher_get_current_persona_proximate_info$VARIANT$up', 
                        '_voucher_replace_default_voucher$VARIANT$mp', '_voucher_replace_default_voucher$VARIANT$up' ]
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ __dispatch_source_merge_data, __dispatch_source_type_timer_with_aggregate, 
                        __dispatch_trysync_f, _dispatch_timer_aggregate_create, _dispatch_timer_aggregate_get_delay, 
                        _voucher_activity_trace_with_private_strings ]
@@ -1086,7 +1086,7 @@ install-name:    '/usr/lib/system/libdyld.dylib'
 current-version: 750.4.2
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ __dyld_get_all_image_infos, __dyld_get_image_header_containing_address, 
                        __dyld_image_containing_address, _dyld_enumerate_tlv_storage, 
                        _dyld_register_tlv_state_change_handler, _tlv_load_notification ]
@@ -1132,7 +1132,7 @@ install-name:    '/usr/lib/system/liblaunch.dylib'
 current-version: 1738.140.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _os_system_version_get_current_version ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ __spawn_via_launchd, __vproc_get_last_exit_status, __vproc_grab_subset, 
@@ -1182,7 +1182,7 @@ install-name:    '/usr/lib/system/libmacho.dylib'
 current-version: 959.0.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _internal_NXFindBestFatArch ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _NXCombineCpuSubtypes, _NXFindBestFatArch, _NXFindBestFatArch_64, 
@@ -1229,7 +1229,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libremovefile.dylib'
 current-version: 48
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___removefileVersionNumber, ___removefileVersionString, ___removefile_process_file ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ ___removefile_init_random, ___removefile_random_char, ___removefile_randomize_buffer, 
@@ -1245,7 +1245,7 @@ install-name:    '/usr/lib/system/libsystem_asl.dylib'
 current-version: 377.60.2
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___aslVersionNumber, ___aslVersionString, __asl_server_prune, 
                        __asl_server_query, __asl_server_query_timeout, __syslog_asl_client ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
@@ -1324,7 +1324,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 73
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _system_blocksVersionNumber, _system_blocksVersionString ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _Block_size, __Block_copy, __Block_extended_layout, __Block_has_signature, 
@@ -1342,7 +1342,7 @@ install-name:    '/usr/lib/system/libsystem_c.dylib'
 current-version: 1353.100.2
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ '$ld$weak$os10.11$_basename_r', '$ld$weak$os10.11$_clock_getres', 
                        '$ld$weak$os10.11$_clock_gettime', '$ld$weak$os10.11$_clock_settime', 
                        '$ld$weak$os10.11$_dirname_r', '$ld$weak$os10.11$_getentropy', 
@@ -1624,7 +1624,7 @@ install-name:    '/usr/lib/system/libsystem_configuration.dylib'
 current-version: 1061.140.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _libsystem_configurationVersionNumber, _libsystem_configurationVersionString ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ __dns_configuration_ack, __libSC_info_fork_child, __libSC_info_fork_parent, 
@@ -1649,7 +1649,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _container_internal_cached_path_for_user_identifier_and_class, 
                        _container_internal_cached_system_group_path_for_group_identifier, 
                        _container_internal_cached_system_path_for_identifier, _container_internal_copy_uuid_for_container, 
@@ -1696,7 +1696,7 @@ install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
 current-version: 114
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___user_local_mkdir_p ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
     symbols:         [ _NSGetNextSearchPathEnumeration, _NSStartSearchPathEnumeration, 
@@ -1742,7 +1742,7 @@ install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
 current-version: 1096.100.3
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _ConvertHeaderBytes, _VersionString_SCCS_libdnssd, _get_rdata, 
                        _get_string, _get_uint16, _get_uint32, _put_rdata, _put_string, 
                        _put_uint16, _put_uint32 ]
@@ -1781,7 +1781,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _NETGROUP, ___check_rhosts_file, ___ivaliduser, ___ivaliduser_af, 
                        ___ivaliduser_sa, ___rcmd_errstr, ___xdrrec_getrec, ___xdrrec_setnonblock, 
                        __fsi_free_file_netgroup, __fsi_get_line, __fsi_tokenize, 
@@ -1936,7 +1936,7 @@ install-name:    '/usr/lib/system/libsystem_kernel.dylib'
 current-version: 6153.142.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___kernelVersionNumber, ___kernelVersionString, __mach_make_memory_entry, 
                        _get_dp_control_port, _host_zone_info, _mach_vm_region_info, 
                        _mach_vm_region_info_64, _set_dp_control_port, _task_wire, 
@@ -2360,7 +2360,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_m.dylib'
 current-version: 3178
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___fpclassify ]
   - archs:           [ arm64, arm64e ]
     symbols:         [ __FE_DFL_DISABLE_DENORMS_ENV ]
@@ -2449,7 +2449,7 @@ install-name:    '/usr/lib/system/libsystem_malloc.dylib'
 current-version: 283.100.6
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___disk_stack_logging_log_stack, ___invalid_stack_id, ___libsystem_mallocVersionNumber, 
                        ___libsystem_mallocVersionString, ___stack_log_file_path__, 
                        ___stack_logging_fork_child, ___stack_logging_fork_parent, 
@@ -2505,7 +2505,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_networkextension.dylib'
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___nelog_debug_c, ___nelog_err_c, ___nelog_info_c, ___nelog_notice_c, 
                        _ne_options_set_debug_logging, _ne_session_enable_on_demand, 
                        _ne_session_system_app_vpn_configs_present, _ne_simulate_crash, 
@@ -2570,7 +2570,7 @@ platform:        ios
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
 current-version: 241.100.2
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___libsystem_notifyVersionNumber, ___libsystem_notifyVersionString, 
                        __nc_list_concat, __nc_list_data, __nc_list_free_list, __nc_list_new, 
                        __nc_list_next, __nc_list_prepend, __nc_table_delete, __nc_table_delete_64, 
@@ -2622,7 +2622,7 @@ install-name:    '/usr/lib/system/libsystem_platform.dylib'
 current-version: 220.100.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _MKGetTimeBaseInfo, ___platformVersionNumber, ___platformVersionString, 
                        __sigtramp, __sigunaltstack ]
   - archs:           [ armv7, armv7s, arm64, arm64e ]
@@ -2688,7 +2688,7 @@ install-name:    '/usr/lib/system/libsystem_pthread.dylib'
 current-version: 416.100.3
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ ___system_pthreadVersionNumber, ___system_pthreadVersionString, 
                        _pthread_workqueue_setdispatch_with_kevent_np ]
   - archs:           [ armv7, armv7s, arm64 ]
@@ -2776,7 +2776,7 @@ install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
 current-version: 1217.140.4
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _IOS_SANDBOX_EXECUTABLE, _IOS_SANDBOX_SYSTEM_CONTAINER, _IOS_SANDBOX_SYSTEM_GROUP, 
                        ___libsystem_sandboxVersionNumber, ___libsystem_sandboxVersionString, 
                        _rootless_apply, _rootless_apply_internal, _rootless_apply_relative, 
@@ -2850,7 +2850,7 @@ install-name:    '/usr/lib/system/libsystem_trace.dylib'
 current-version: 1147.120
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ __os_event_log_internal, __os_trace_is_logd, __os_trace_set_task_buffer_interval, 
                        __os_trace_set_task_filter, _os_activity_diagnostic_for_uniquepid, 
                        _os_activity_entry_for_task_thread, _os_eventlog_create, _os_log_shim_with_va_list, 
@@ -2913,7 +2913,7 @@ install-name:    '/usr/lib/system/libunwind.dylib'
 current-version: 128.4
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ '$ld$hide$os3.0$__Unwind_DeleteException', '$ld$hide$os3.0$__Unwind_GetCFA', 
                        '$ld$hide$os3.0$__Unwind_GetGR', '$ld$hide$os3.0$__Unwind_GetIP', 
                        '$ld$hide$os3.0$__Unwind_GetIPInfo', '$ld$hide$os3.0$__Unwind_GetLanguageSpecificData', 
@@ -2986,7 +2986,7 @@ install-name:    '/usr/lib/system/libxpc.dylib'
 current-version: 1738.140.1
 parent-umbrella: System
 exports:         
-  - archs:           [ arm64, arm64e ]
+  - archs:           [ armv7, armv7s ]
     symbols:         [ _XPC_ACTIVITY_REQUIRE_USER_INACTIVE, __xpc_dictionary_get_pointer_by_handle, 
                        __xpc_dictionary_get_reply_port, __xpc_dictionary_set_pointer_by_handle, 
                        __xpc_serializer_unpack, _launch_get_last_exit_details_4SB, 
