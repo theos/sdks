@@ -1,65 +1,26 @@
---- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64, arm64e ]
-platform:              (null)
-flags:                 [ flat_namespace ]
-install-name:          /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction
-current-version:       0
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           905825B4-EAE9-3CFB-87ED-5E459C9C94E7
+  - target:          arm64e-ios
+    value:           F25F3793-4192-3C96-BAAD-921387BC10D8
+install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
+current-version: 0
 compatibility-version: 0
-objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64, arm64e ]
-    symbols:              [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable,
-                            _NINearbyObjectDirectionNotAvailable,
-                            _NINearbyObjectDirectionNotAvailable_Private,
-                            _NINearbyObjectDistanceNotAvailable,
-                            _NINearbyObjectDistanceNotAvailable_Private,
-                            _NINearbyObjectElevationNotAvailable,
-                            _NINearbyObjectQuaternionNotAvailable,
-                            _NINotifySystemShutdownWithReason,
-                            _kNISystemShutdownCompletionTimeoutSeconds ]
-    objc-classes:         [ NICarKeyConfiguration, NIConfiguration,
-                            NIDiscoveryToken, NIExportedObjectForwarder,
-                            NIHomeDeviceConfiguration, NILocalization,
-                            NINearbyObject, NINearbyPeerConfiguration,
-                            NIPlatformInfo, NIRegionPredicate, NIServerConnection,
-                            NISession, _NIWiFiRangingTestConfiguration ]
-    objc-ivars:           [ NICarKeyConfiguration._configurationTypeInternal,
-                            NICarKeyConfiguration._debugOptions,
-                            NICarKeyConfiguration._vehicleIdentifier,
-                            NIConfiguration._suspensionPolicy,
-                            NIDiscoveryToken._rawToken,
-                            NIExportedObjectForwarder._exportedObject,
-                            NIHomeDeviceConfiguration._allowedDevices,
-                            NIHomeDeviceConfiguration._anchor,
-                            NIHomeDeviceConfiguration._monitoredRegions,
-                            NIHomeDeviceConfiguration._sessionKey,
-                            NINearbyObject._azimuth,
-                            NINearbyObject._deviceIdentifer,
-                            NINearbyObject._direction,
-                            NINearbyObject._discoveryToken,
-                            NINearbyObject._distance, NINearbyObject._elevation,
-                            NINearbyObject._quaternion,
-                            NINearbyObject._relationship,
-                            NINearbyObject._timestamp,
-                            NINearbyPeerConfiguration._peerDiscoveryToken,
-                            NIRegionPredicate._name,
-                            NIRegionPredicate._preferredUpdateRate,
-                            NIRegionPredicate._radius,
-                            NIServerConnection._assertion,
-                            NIServerConnection._connection,
-                            NIServerConnection._exportedObject,
-                            NIServerConnection._queue,
-                            NIServerConnection._sessionID,
-                            NISession._activationResponse, NISession._connection,
-                            NISession._currentConfiguration, NISession._delegate,
-                            NISession._delegateQueue, NISession._duration,
-                            NISession._exportedObjectForwarder,
-                            NISession._internalDelegate, NISession._internalID,
-                            NISession._internalState, NISession._interruptions,
-                            NISession._invalidationError, NISession._log,
-                            NISession._mutex, NISession._queue,
-                            NISession._readyForCallbacks, NISession._startTime,
-                            NISession._updatedNearbyObjects,
-                            _NIWiFiRangingTestConfiguration._parameters,
-                            _NIWiFiRangingTestConfiguration._peerDiscoveryToken ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable, _NINearbyObjectDirectionNotAvailable, 
+                       _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
+                       _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
+                       _NINearbyObjectQuaternionNotAvailable, _NINotifySystemShutdownWithReason, 
+                       _kNISystemShutdownCompletionTimeoutSeconds ]
+    objc-classes:    [ NICarKeyConfiguration, NIConfiguration, NIDiscoveryToken, 
+                       NIHomeDeviceConfiguration, NINearbyObject, NINearbyPeerConfiguration, 
+                       NIRegionPredicate, NISession, _NIWiFiRangingTestConfiguration ]
 ...

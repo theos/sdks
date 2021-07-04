@@ -1,25 +1,18 @@
---- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64, arm64e ]
-platform:              (null)
-flags:                 [ flat_namespace ]
-install-name:          /System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration
-current-version:       1
-compatibility-version: 1
-objc-constraint:       retain_release
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           206B9CAD-4ED1-3F69-8716-E1A6AD8D2CB9
+  - target:          arm64e-ios
+    value:           ECF98C85-C918-3705-BDC1-5D2B9552092B
+install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration'
 exports:
-  - archs:                [ armv7, armv7s, arm64, arm64e ]
-    symbols:              [ _AEAssessmentErrorDomain ]
-    objc-classes:         [ AEAssessmentConfiguration, AEAssessmentSession,
-                            _AEErrorHelper ]
-    objc-ivars:           [ AEAssessmentConfiguration._allowsAccessibilitySpeech,
-                            AEAssessmentConfiguration._allowsActivityContinuation,
-                            AEAssessmentConfiguration._allowsContinuousPathKeyboard,
-                            AEAssessmentConfiguration._allowsDictation,
-                            AEAssessmentConfiguration._allowsKeyboardShortcuts,
-                            AEAssessmentConfiguration._allowsPasswordAutoFill,
-                            AEAssessmentConfiguration._allowsPredictiveKeyboard,
-                            AEAssessmentConfiguration._allowsSpellCheck,
-                            AEAssessmentConfiguration._autocorrectMode,
-                            AEAssessmentSession._backingSession,
-                            AEAssessmentSession._delegate ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AEAssessmentErrorDomain ]
+    objc-classes:    [ AEAssessmentConfiguration, AEAssessmentSession ]
 ...

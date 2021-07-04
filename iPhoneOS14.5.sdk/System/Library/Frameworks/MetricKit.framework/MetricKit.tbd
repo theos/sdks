@@ -1,158 +1,47 @@
---- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64, arm64e ]
-platform:              (null)
-flags:                 [ flat_namespace ]
-install-name:          /System/Library/Frameworks/MetricKit.framework/MetricKit
-current-version:       1
-compatibility-version: 1
-objc-constraint:       retain_release
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           25EFAF7F-BB19-34FA-9FD5-CD867AE1CC7C
+  - target:          arm64e-ios
+    value:           3777EE79-D1FC-3925-BD77-1A521B9CB5D9
+install-name:    '/System/Library/Frameworks/MetricKit.framework/MetricKit'
+reexported-libraries:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    libraries:       [ '/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics' ]
 exports:
-  - archs:                [ armv7, armv7s, arm64, arm64e ]
-    re-exports:           [ /System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics ]
-    symbols:              [ _MetricKitVersionNumber, _MetricKitVersionString ]
-    objc-classes:         [ MXAnimationMetric, MXAppExitMetric, MXAppLaunchMetric,
-                            MXAppResponsivenessMetric, MXAppRunTimeMetric,
-                            MXAverage, MXBackgroundExitData,
-                            MXCPUExceptionDiagnostic, MXCPUMetric,
-                            MXCallStackFrame, MXCallStackThread, MXCallStackTree,
-                            MXCellularConditionMetric, MXCrashDiagnostic,
-                            MXDiagnostic, MXDiagnosticPayload, MXDiskIOMetric,
-                            MXDiskWriteExceptionDiagnostic, MXDisplayMetric,
-                            MXForegroundExitData, MXGPUMetric, MXHangDiagnostic,
-                            MXHistogram, MXHistogramBucket,
-                            MXLocationActivityMetric, MXMemoryMetric, MXMetaData,
-                            MXMetric, MXMetricManager, MXMetricPayload,
-                            MXNetworkTransferMetric, MXSignpostIntervalData,
-                            MXSignpostMetric, MXUnitAveragePixelLuminance,
-                            MXUnitSignalBars ]
-    objc-ivars:           [ MXAnimationMetric._scrollHitchTimeRatio,
-                            MXAppExitMetric._backgroundExitData,
-                            MXAppExitMetric._foregroundExitData,
-                            MXAppLaunchMetric._histogrammedApplicationResumeTime,
-                            MXAppLaunchMetric._histogrammedTimeToFirstDraw,
-                            MXAppResponsivenessMetric._histogrammedApplicationHangTime,
-                            MXAppRunTimeMetric._cumulativeBackgroundAudioTime,
-                            MXAppRunTimeMetric._cumulativeBackgroundLocationTime,
-                            MXAppRunTimeMetric._cumulativeBackgroundTime,
-                            MXAppRunTimeMetric._cumulativeForegroundTime,
-                            MXAverage._averageMeasurement,
-                            MXAverage._averageMeasurementFormatter,
-                            MXAverage._sampleCount, MXAverage._standardDeviation,
-                            MXBackgroundExitData._cumulativeAbnormalExitCount,
-                            MXBackgroundExitData._cumulativeAppWatchdogExitCount,
-                            MXBackgroundExitData._cumulativeBackgroundFetchCompletionTimeoutExitCount,
-                            MXBackgroundExitData._cumulativeBackgroundTaskAssertionTimeoutExitCount,
-                            MXBackgroundExitData._cumulativeBackgroundURLSessionCompletionTimeoutExitCount,
-                            MXBackgroundExitData._cumulativeBadAccessExitCount,
-                            MXBackgroundExitData._cumulativeCPUResourceLimitExitCount,
-                            MXBackgroundExitData._cumulativeIllegalInstructionExitCount,
-                            MXBackgroundExitData._cumulativeMemoryPressureExitCount,
-                            MXBackgroundExitData._cumulativeMemoryResourceLimitExitCount,
-                            MXBackgroundExitData._cumulativeNormalAppExitCount,
-                            MXBackgroundExitData._cumulativeSuspendedWithLockedFileExitCount,
-                            MXCPUExceptionDiagnostic._callStackTree,
-                            MXCPUExceptionDiagnostic._totalCPUTime,
-                            MXCPUExceptionDiagnostic._totalSampledTime,
-                            MXCPUMetric._cumulativeCPUInstructions,
-                            MXCPUMetric._cumulativeCPUTime,
-                            MXCallStackFrame._address,
-                            MXCallStackFrame._binaryName,
-                            MXCallStackFrame._binaryUUID,
-                            MXCallStackFrame._offsetInBinary,
-                            MXCallStackFrame._sampleCount,
-                            MXCallStackFrame._subFrames,
-                            MXCallStackThread._attributedThread,
-                            MXCallStackThread._topFrames,
-                            MXCallStackTree._callStackPerThread,
-                            MXCallStackTree._callStackThreads,
-                            MXCellularConditionMetric._histogrammedCellularConditionTime,
-                            MXCrashDiagnostic._callStackTree,
-                            MXCrashDiagnostic._exceptionCode,
-                            MXCrashDiagnostic._exceptionType,
-                            MXCrashDiagnostic._signal,
-                            MXCrashDiagnostic._terminationReason,
-                            MXCrashDiagnostic._virtualMemoryRegionInfo,
-                            MXDiagnostic._applicationVersion,
-                            MXDiagnostic._measurementFormatter,
-                            MXDiagnostic._metaData,
-                            MXDiagnosticPayload._cpuExceptionDiagnostics,
-                            MXDiagnosticPayload._crashDiagnostics,
-                            MXDiagnosticPayload._diskWriteExceptionDiagnostics,
-                            MXDiagnosticPayload._hangDiagnostics,
-                            MXDiagnosticPayload._timeStampBegin,
-                            MXDiagnosticPayload._timeStampEnd,
-                            MXDiskIOMetric._cumulativeLogicalWrites,
-                            MXDiskWriteExceptionDiagnostic._callStackTree,
-                            MXDiskWriteExceptionDiagnostic._totalWritesCaused,
-                            MXDisplayMetric._averagePixelLuminance,
-                            MXForegroundExitData._cumulativeAbnormalExitCount,
-                            MXForegroundExitData._cumulativeAppWatchdogExitCount,
-                            MXForegroundExitData._cumulativeBadAccessExitCount,
-                            MXForegroundExitData._cumulativeCPUResourceLimitExitCount,
-                            MXForegroundExitData._cumulativeIllegalInstructionExitCount,
-                            MXForegroundExitData._cumulativeMemoryResourceLimitExitCount,
-                            MXForegroundExitData._cumulativeNormalAppExitCount,
-                            MXGPUMetric._cumulativeGPUTime,
-                            MXHangDiagnostic._callStackTree,
-                            MXHangDiagnostic._hangDuration,
-                            MXHistogram._bucketEnumerator,
-                            MXHistogram._histogramData,
-                            MXHistogram._totalBucketCount,
-                            MXHistogramBucket._bucketCount,
-                            MXHistogramBucket._bucketEnd,
-                            MXHistogramBucket._bucketStart,
-                            MXHistogramBucket._histogramBucketFormatter,
-                            MXLocationActivityMetric._cumulativeBestAccuracyForNavigationTime,
-                            MXLocationActivityMetric._cumulativeBestAccuracyTime,
-                            MXLocationActivityMetric._cumulativeHundredMetersAccuracyTime,
-                            MXLocationActivityMetric._cumulativeKilometerAccuracyTime,
-                            MXLocationActivityMetric._cumulativeNearestTenMetersAccuracyTime,
-                            MXLocationActivityMetric._cumulativeThreeKilometersAccuracyTime,
-                            MXMemoryMetric._averageSuspendedMemory,
-                            MXMemoryMetric._peakMemoryUsage,
-                            MXMetaData._applicationBuildVersion,
-                            MXMetaData._deviceType, MXMetaData._osVersion,
-                            MXMetaData._platformArchitecture,
-                            MXMetaData._regionFormat,
-                            MXMetric._measurementFormatter,
-                            MXMetricManager._connection,
-                            MXMetricManager._iVarQueue,
-                            MXMetricManager._managerLogHandle,
-                            MXMetricManager._metricToken,
-                            MXMetricManager._pastDiagnosticPayloads,
-                            MXMetricManager._pastPayloads,
-                            MXMetricManager._subscribers,
-                            MXMetricPayload._animationMetrics,
-                            MXMetricPayload._applicationExitMetrics,
-                            MXMetricPayload._applicationLaunchMetrics,
-                            MXMetricPayload._applicationResponsivenessMetrics,
-                            MXMetricPayload._applicationTimeMetrics,
-                            MXMetricPayload._cellularConditionMetrics,
-                            MXMetricPayload._cpuMetrics,
-                            MXMetricPayload._diskIOMetrics,
-                            MXMetricPayload._displayMetrics,
-                            MXMetricPayload._gpuMetrics,
-                            MXMetricPayload._includesMultipleApplicationVersions,
-                            MXMetricPayload._latestApplicationVersion,
-                            MXMetricPayload._locationActivityMetrics,
-                            MXMetricPayload._memoryMetrics,
-                            MXMetricPayload._metaData,
-                            MXMetricPayload._networkTransferMetrics,
-                            MXMetricPayload._signpostMetrics,
-                            MXMetricPayload._timeStampBegin,
-                            MXMetricPayload._timeStampEnd,
-                            MXNetworkTransferMetric._cumulativeCellularDownload,
-                            MXNetworkTransferMetric._cumulativeCellularUpload,
-                            MXNetworkTransferMetric._cumulativeWifiDownload,
-                            MXNetworkTransferMetric._cumulativeWifiUpload,
-                            MXSignpostIntervalData._averageMemory,
-                            MXSignpostIntervalData._cumulativeCPUTime,
-                            MXSignpostIntervalData._cumulativeLogicalWrites,
-                            MXSignpostIntervalData._histogrammedSignpostDuration,
-                            MXSignpostIntervalData._measurementFormatter,
-                            MXSignpostIntervalData._peakMemory,
-                            MXSignpostMetric._signpostCategory,
-                            MXSignpostMetric._signpostIntervalData,
-                            MXSignpostMetric._signpostName,
-                            MXSignpostMetric._totalCount ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MetricKitVersionNumber, _MetricKitVersionString ]
+    objc-classes:    [ MXAnimationMetric, MXAppExitMetric, MXAppLaunchMetric, MXAppResponsivenessMetric, 
+                       MXAppRunTimeMetric, MXAverage, MXBackgroundExitData, MXCPUExceptionDiagnostic, 
+                       MXCPUMetric, MXCallStackFrame, MXCallStackThread, MXCallStackTree, 
+                       MXCellularConditionMetric, MXCrashDiagnostic, MXDiagnostic, 
+                       MXDiagnosticPayload, MXDiskIOMetric, MXDiskWriteExceptionDiagnostic, 
+                       MXDisplayMetric, MXForegroundExitData, MXGPUMetric, MXHangDiagnostic, 
+                       MXHistogram, MXHistogramBucket, MXLocationActivityMetric, 
+                       MXMemoryMetric, MXMetaData, MXMetric, MXMetricManager, MXMetricPayload, 
+                       MXNetworkTransferMetric, MXSignpostIntervalData, MXSignpostMetric, 
+                       MXUnitAveragePixelLuminance, MXUnitSignalBars ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7CFD13BB-79C8-3516-8972-965C5E76555A
+  - target:          arm64e-ios
+    value:           7C1D4469-0245-32E0-8DAC-202B7728AA46
+install-name:    '/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics'
+current-version: 60
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __MXSignpostMetricsSnapshot ]
 ...

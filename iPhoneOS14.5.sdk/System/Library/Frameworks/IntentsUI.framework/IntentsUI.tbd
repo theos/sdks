@@ -1,91 +1,27 @@
---- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64, arm64e ]
-platform:              (null)
-flags:                 [ flat_namespace ]
-install-name:          /System/Library/Frameworks/IntentsUI.framework/IntentsUI
-current-version:       1
-compatibility-version: 1
-objc-constraint:       retain_release
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           BD3C0AB5-0CDB-3535-AC03-53A215E690D3
+  - target:          armv7s-ios
+    value:           C78CCB48-5431-3923-AB84-64952246E78C
+  - target:          arm64-ios
+    value:           ADFB7B76-30BF-3CBE-8D53-2E0F08B22428
+  - target:          arm64e-ios
+    value:           00104FF6-0684-354B-ADC6-5066EFCCBA9E
+install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
 exports:
-  - archs:                [ armv7, armv7s, arm64, arm64e ]
-    symbols:              [ _INUIRemoteViewControllerErrorDomain,
-                            _INUIVoiceShortcutExtensionItemBundleURLKey,
-                            _INUIVoiceShortcutExtensionItemSandboxExtensionDataKey,
-                            _IntentsUIVersionNumber, _IntentsUIVersionString,
-                            __INUIRemoteViewControllerErrorDomain,
-                            __INUIUtilitiesBestFittingSizeForSizeBySystemVersionDictionary ]
-    objc-classes:         [ INUIAddVoiceShortcutButton,
-                            INUIAddVoiceShortcutViewController,
-                            INUIAppIntentDeliverer,
-                            INUIAppIntentForwardingActionExecutor,
-                            INUIEditVoiceShortcutViewController,
-                            INUIExtensionRequestInfo,
-                            INUIExtensionViewControllerConfiguration,
-                            INUIImageLoader, INUIImageServiceConnection,
-                            INUIImageSizeProvider, INUIInterfaceSection,
-                            INUILoadingVoiceShortcutViewController,
-                            INUIPortableImageLoaderHelper,
-                            INUIRemoteViewController,
-                            INUISearchFoundationImageAdapter,
-                            INUIVoiceShortcutHostViewController,
-                            INUIVoiceShortcutXPCInterface, _INUIExtensionContext,
-                            _INUIExtensionContextState,
-                            _INUIExtensionHostContext,
-                            _INUIServiceViewController,
-                            _INUIXPCInterfaceUtilities ]
-    objc-ivars:           [ INUIAddVoiceShortcutButton._addToSiriLabel,
-                            INUIAddVoiceShortcutButton._addToSiriLeadingConstraint,
-                            INUIAddVoiceShortcutButton._addedToSiriLeadingConstraint,
-                            INUIAddVoiceShortcutButton._checkmarkHeightConstraint,
-                            INUIAddVoiceShortcutButton._checkmarkImageView,
-                            INUIAddVoiceShortcutButton._cornerRadius,
-                            INUIAddVoiceShortcutButton._delegate,
-                            INUIAddVoiceShortcutButton._highlightFilter,
-                            INUIAddVoiceShortcutButton._phraseLabel,
-                            INUIAddVoiceShortcutButton._shortcut,
-                            INUIAddVoiceShortcutButton._sphiriImageView,
-                            INUIAddVoiceShortcutButton._style,
-                            INUIAddVoiceShortcutButton._voiceShortcut,
-                            INUIAddVoiceShortcutViewController._currentChildViewController,
-                            INUIAddVoiceShortcutViewController._delegate,
-                            INUIAddVoiceShortcutViewController._remoteHostViewController,
-                            INUIAddVoiceShortcutViewController._shortcut,
-                            INUIAppIntentForwardingActionExecutor._application,
-                            INUIAppIntentForwardingActionExecutor._currentHostProcessAuditToken,
-                            INUIAppIntentForwardingActionExecutor._handlerForIntent,
-                            INUIAppIntentForwardingActionExecutor._intentDeliverer,
-                            INUIEditVoiceShortcutViewController._currentChildViewController,
-                            INUIEditVoiceShortcutViewController._delegate,
-                            INUIEditVoiceShortcutViewController._remoteHostViewController,
-                            INUIExtensionRequestInfo._interaction,
-                            INUIExtensionRequestInfo._requiresUserConsent,
-                            INUIExtensionViewControllerConfiguration._hostedViewContext,
-                            INUIExtensionViewControllerConfiguration._interactiveBehavior,
-                            INUIExtensionViewControllerConfiguration._parameters,
-                            INUIImageLoader._delegate,
-                            INUIInterfaceSection._interactiveBehavior,
-                            INUIInterfaceSection._parameters,
-                            INUIPortableImageLoaderHelper._traitCollection,
-                            INUIRemoteViewController._activeExtension,
-                            INUIRemoteViewController._configuration,
-                            INUIRemoteViewController._currentRequestIdentifier,
-                            INUIRemoteViewController._delegate,
-                            INUIRemoteViewController._extensionHostContext,
-                            INUIRemoteViewController._needsStateUpdate,
-                            INUIRemoteViewController._preferredContentSize,
-                            INUIRemoteViewController._requestInfo,
-                            INUIRemoteViewController._widgetDescriptor,
-                            INUIRemoteViewController._widgetHost,
-                            INUISearchFoundationImageAdapter._intentsImage,
-                            INUISearchFoundationImageAdapter._sizeValue,
-                            INUIVoiceShortcutHostViewController._delegate,
-                            INUIVoiceShortcutHostViewController._mode,
-                            _INUIExtensionContext._currentExtensionContextState,
-                            _INUIExtensionContextState._hostedViewMaximumAllowedSizes,
-                            _INUIExtensionContextState._hostedViewMinimumAllowedSizes,
-                            _INUIExtensionContextState._interfaceSections,
-                            _INUIExtensionHostContext._extensionHostContextDelegate,
-                            _INUIServiceViewController._currentContext,
-                            _INUIServiceViewController._currentInteraction,
-                            _INUIServiceViewController._hostedViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INUIRemoteViewControllerErrorDomain, _INUIVoiceShortcutExtensionItemBundleURLKey, 
+                       _INUIVoiceShortcutExtensionItemSandboxExtensionDataKey, _IntentsUIVersionNumber, 
+                       _IntentsUIVersionString, __INUIRemoteViewControllerErrorDomain, 
+                       __INUIUtilitiesBestFittingSizeForSizeBySystemVersionDictionary ]
+    objc-classes:    [ INUIAddVoiceShortcutButton, INUIAddVoiceShortcutViewController, 
+                       INUIAppIntentDeliverer, INUIAppIntentForwardingActionExecutor, 
+                       INUIEditVoiceShortcutViewController, INUIExtensionRequestInfo, 
+                       INUIExtensionViewControllerConfiguration, INUIImageLoader, 
+                       INUIImageServiceConnection, INUIImageSizeProvider, INUIInterfaceSection, 
+                       INUIPortableImageLoaderHelper, INUIRemoteViewController, INUISearchFoundationImageAdapter, 
+                       INUIVoiceShortcutXPCInterface, _INUIExtensionContextState ]
 ...
