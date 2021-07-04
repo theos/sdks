@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Security.framework/Security
@@ -7,7 +7,7 @@ current-version:       59754.102.1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AES_CTR_HighHalf_Transform, _AES_CTR_IV0_Transform,
                             _CFArrayOfSOSPeerInfosSortByID, _CFDataCreateWithDER,
                             _CFPropertyListCreateDERData,

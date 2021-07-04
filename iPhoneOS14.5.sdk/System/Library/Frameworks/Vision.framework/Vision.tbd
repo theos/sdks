@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Vision.framework/Vision
@@ -7,7 +7,7 @@ current-version:       4.2.6
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CCRectLowLevel, _VN0af6454e97767772ce64a19ddaf61f0c,
                             _VN1HsiXmKrxTsH8TYOuN5s7G3uHSP75iYS,
                             _VN1I7oR8JHxER2i7d6nQxNtHhGXxkJuH7c,

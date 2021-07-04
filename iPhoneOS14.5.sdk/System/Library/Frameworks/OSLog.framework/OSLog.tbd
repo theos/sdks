@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/OSLog.framework/OSLog
@@ -7,7 +7,7 @@ current-version:       1277.100.21
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __catalog_create, __catalog_create_with_chunk,
                             __catalog_destroy, __catalog_for_each_uuid,
                             __catalog_lookup_procinfo_by_procid,

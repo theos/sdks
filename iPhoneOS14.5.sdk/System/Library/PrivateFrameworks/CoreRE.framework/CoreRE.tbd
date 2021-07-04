@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CoreRE.framework/CoreRE
@@ -7,7 +7,7 @@ current-version:       60.48.5
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CoreRELog, _REAABBAreEqual, _REAABBCenter,
                             _REAABBComputeDistanceSquaredToPoint,
                             _REAABBContainsBox, _REAABBContainsPoint, _REAABBEmpty,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/PegasusAPI.framework/PegasusAPI
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10PegasusAPI015Sirikit_Intent_D12ResponseTypeO10inProgressyA2CmFWC,
                             _$s10PegasusAPI015Sirikit_Intent_D12ResponseTypeO11unspecifiedyA2CmFWC,
                             _$s10PegasusAPI015Sirikit_Intent_D12ResponseTypeO13continueInAppyA2CmFWC,

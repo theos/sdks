@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/MobileDeviceLink.framework/MobileDeviceLink
 current-version:       264
 compatibility-version: 100
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CFPrintf, _DLConnect, _DLContentsOfDirectory,
                             _DLCopyFileAttributes, _DLCopyHomeDirPath, _DLCopyItem,
                             _DLCopyTempDir, _DLCreateCStringFromCFString,

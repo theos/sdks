@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/ServiceManagement.framework/ServiceManagement
@@ -7,7 +7,7 @@ current-version:       2038.100.48
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _SMCopyAllJobDictionaries,
                             _SMCopyEnabledLoginItems_4BTM, _SMJobCopyDictionary,
                             _SMJobIsEnabled, _SMJobRemove, _SMJobSetEnabled,

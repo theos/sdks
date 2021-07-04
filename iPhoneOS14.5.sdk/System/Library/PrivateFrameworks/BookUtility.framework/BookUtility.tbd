@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/BookUtility.framework/BookUtility
@@ -7,7 +7,7 @@ current-version:       449
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _BUArrayDescription, _BUAssertionFailed,
                             _BUAssertionLog, _BUBooksGroupContainerIdentifier,
                             _BUBundle, _BUCFTypeCast, _BUCastRecord,

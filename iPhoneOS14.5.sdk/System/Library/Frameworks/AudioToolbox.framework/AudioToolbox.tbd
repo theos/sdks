@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
@@ -7,7 +7,7 @@ current-version:       1000
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     re-exports:           [ /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore ]
     symbols:              [ _AQIONodeManager_FindAQIONode,
                             _AQIONodeManager_ReleaseAQIONode,

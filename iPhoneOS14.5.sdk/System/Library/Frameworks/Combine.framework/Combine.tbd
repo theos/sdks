@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Combine.framework/Combine
@@ -7,7 +7,7 @@ current-version:       252.157
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s16SchedulerOptions7Combine0A0PTl,
                             _$s17SchedulerTimeType7Combine0A0PTl,
                             _$s25ObjectWillChangePublisher7Combine010ObservableA0PTl,

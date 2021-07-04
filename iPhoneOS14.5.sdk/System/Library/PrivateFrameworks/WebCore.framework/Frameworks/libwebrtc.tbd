@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib
@@ -7,7 +7,7 @@ current-version:       611.1.21
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _ConvertToI420,
                             __ZN10vp9_parser15Vp9HeaderParser23ParseUncompressedHeaderEPKhm,
                             __ZN3rtc10LogMessage10LogToDebugENS_15LoggingSeverityE,

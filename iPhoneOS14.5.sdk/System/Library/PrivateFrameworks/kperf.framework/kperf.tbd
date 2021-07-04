@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/kperf.framework/kperf
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _kpc_counterbuf_alloc, _kpc_counterbuf_free,
                             _kpc_cpu_string, _kpc_force_all_ctrs_get,
                             _kpc_force_all_ctrs_set, _kpc_get_actionid,

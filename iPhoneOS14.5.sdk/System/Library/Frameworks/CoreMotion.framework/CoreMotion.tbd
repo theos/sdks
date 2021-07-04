@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/CoreMotion.framework/CoreMotion
@@ -7,7 +7,7 @@ current-version:       2420.16.24
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AKSC_Decomp8975, _AKSC_InitDecomp8975,
                             _AKSC_SetHDOELevel, _AKSC_abs16, _AKSC_angRng,
                             _AKSC_atan2, _AKSC_buffer, _AKSC_cholDc, _AKSC_cholSl,

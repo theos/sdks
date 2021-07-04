@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10CoreParsec14fakeEntityDataySo6NSDataCSgSo7NSArrayCSgF,
                             _$sSo11PARResponseC10CoreParsecE5reply7factory10responseV2ABSo8PARReplyC_So16PARResultFactory_p10PegasusAPI06Apple_c8_Search_g1_N8ResponseVtcfC,
                             _$sSo11PARResponseC10CoreParsecE5reply7factory6dataV2ABSgSo8PARReplyC_So16PARResultFactory_p10Foundation4DataVtcfC,

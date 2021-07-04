@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleSauce.framework/AppleSauce
 current-version:       0
 compatibility-version: 0
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __ZN10applesauce3xpc10auto_reply16create_from_dictERKNS0_4dictERKNS0_10connectionE,
                             __ZN10applesauce3xpc10auto_reply17create_from_replyERKNS0_4dictE,
                             __ZN10applesauce3xpc10auto_reply19create_from_requestERKNS0_4dictE,

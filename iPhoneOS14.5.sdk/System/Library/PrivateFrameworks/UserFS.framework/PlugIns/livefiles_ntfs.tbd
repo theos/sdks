@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/UserFS.framework/PlugIns/livefiles_ntfs.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _VNOP_IOCTL, ___ntfs_bitmap_set_bits_in_run,
                             ___ntfs_error, ___ntfs_warning, _buf_bawrite,
                             _buf_bdwrite, _buf_biodone, _buf_brelse, _buf_bwrite,

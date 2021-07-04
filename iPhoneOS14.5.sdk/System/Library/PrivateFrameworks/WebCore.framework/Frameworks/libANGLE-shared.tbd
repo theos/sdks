@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          "/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib"
@@ -7,7 +7,7 @@ current-version:       611.1.21
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     allowable-clients:    [ WebCore, WebCoreTestSupport ]
     symbols:              [ _ANGLEGetDisplayPlatform, _ANGLEResetDisplayPlatform,
                             _EGL_BindAPI, _EGL_BindTexImage, _EGL_ChooseConfig,

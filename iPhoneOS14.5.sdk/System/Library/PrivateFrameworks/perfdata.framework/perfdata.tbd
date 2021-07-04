@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/perfdata.framework/perfdata
@@ -7,7 +7,7 @@ current-version:       67.40.1
 compatibility-version: 0
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _json_end_array, _json_end_object, _json_key,
                             _json_member_bool, _json_member_dbl, _json_member_int,
                             _json_member_start_array, _json_member_start_object,

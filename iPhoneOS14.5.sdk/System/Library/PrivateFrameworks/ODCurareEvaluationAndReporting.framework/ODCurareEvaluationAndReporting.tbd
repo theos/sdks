@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/ODCurareEvaluationAndReporting.framework/ODCurareEvaluationAndReporting
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s30ODCurareEvaluationAndReporting0abcD5ErrorO21__derived_enum_equalsySbAC_ACtFZ,
                             _$s30ODCurareEvaluationAndReporting0abcD5ErrorO4hash4intoys6HasherVz_tF,
                             _$s30ODCurareEvaluationAndReporting0abcD5ErrorO9hashValueSivg,

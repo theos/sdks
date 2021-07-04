@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
 current-version:       760.100.3
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _VVACOS, _VVACOSF, _VVACOSF_, _VVACOSH, _VVACOSHF,
                             _VVACOSHF_, _VVACOSH_, _VVACOS_, _VVASIN, _VVASINF,
                             _VVASINF_, _VVASINH, _VVASINHF, _VVASINHF_, _VVASINH_,

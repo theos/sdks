@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleCVA.framework/AppleCVA
@@ -7,7 +7,7 @@ current-version:       101.16
 compatibility-version: 101.16
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _CVAFaceKitCopySemantics, _CVAFaceKitCreate,
                             _CVAFaceKitGetAPIVersion,
                             _CVAFaceKitGetErrorDescription, _CVAFaceKitGetTypeID,

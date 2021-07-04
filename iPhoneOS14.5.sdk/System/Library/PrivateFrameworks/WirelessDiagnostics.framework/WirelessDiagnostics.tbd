@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics
@@ -7,7 +7,7 @@ current-version:       757
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     re-exports:           [ /usr/lib/libAWDSupportFramework.dylib ]
     symbols:              [ _AWDPostMetric, _AWDPostSimpleMetric,
                             _AWDPostSimpleMetricWithBool,

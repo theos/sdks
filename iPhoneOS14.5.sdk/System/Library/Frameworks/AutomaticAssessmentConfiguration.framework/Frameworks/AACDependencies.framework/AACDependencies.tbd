@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/Frameworks/AACDependencies.framework/AACDependencies
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s15AACDependencies27AEDBackingAssessmentSessionC13configurationAcA0bC13ConfigurationC_tcfC,
                             _$s15AACDependencies27AEDBackingAssessmentSessionC13configurationAcA0bC13ConfigurationC_tcfc,
                             _$s15AACDependencies27AEDBackingAssessmentSessionC3endyyF,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/ProactiveInputPredictionsInternals.framework/ProactiveInputPredictionsInternals
@@ -7,7 +7,7 @@ current-version:       1115.255
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _PSGPBEngagementReadFrom, _PSGPBErrorReadFrom,
                             _PSGPBImpressionReadFrom, _PSGPBPredictionReadFrom,
                             _PSGPBQueryReadFrom, _PSGPBTriggerReadFrom,

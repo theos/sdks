@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/TVRemoteCore.framework/TVRemoteCore
@@ -7,7 +7,7 @@ current-version:       135.40.15
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _NSStringFromRMSMessageType,
                             _NSStringFromRMSResponseCode, _TVRCAirplayIDKey,
                             _TVRCButtonApplicationBundleIDKey,

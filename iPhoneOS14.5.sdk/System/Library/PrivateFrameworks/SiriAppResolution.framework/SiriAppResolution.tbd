@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/SiriAppResolution.framework/SiriAppResolution
@@ -7,7 +7,7 @@ current-version:       1
 compatibility-version: 1
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _$s10IntentType17SiriAppResolution0D9ResolvingPTl,
                             _$s17SiriAppResolution012InstrumentedB9SelectingMp,
                             _$s17SiriAppResolution012InstrumentedB9SelectingP06selectB12WithMetadata6intent16fromEligibleApps_ySo8INIntentC_SayAA0B0CGys6ResultOyAA0bcN0OAA0B16SelectionFailureOG_SDySSypGtctFTj,

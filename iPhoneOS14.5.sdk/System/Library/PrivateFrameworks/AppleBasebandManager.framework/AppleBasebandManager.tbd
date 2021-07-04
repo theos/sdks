@@ -1,12 +1,12 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleBasebandManager.framework/AppleBasebandManager
 current-version:       0
 compatibility-version: 1
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ __Z23ABMGetRootVersionStringv,
                             __ZN10BudgetData3getEN3abm28BasebandCPMSPowerBudgetScaleE,
                             __ZN10BudgetData3setEN3abm28BasebandCPMSPowerBudgetScaleEj,

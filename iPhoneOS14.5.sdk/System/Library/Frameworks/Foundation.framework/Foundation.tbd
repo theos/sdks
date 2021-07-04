@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Foundation.framework/Foundation
@@ -7,7 +7,7 @@ current-version:       1775.118.101
 compatibility-version: 300
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     re-exports:           [ /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation,
                             /usr/lib/libobjc.A.dylib ]
     symbols:              [ _NSAMPMDesignation, _NSAffineTransformStructIdentity,

@@ -1,5 +1,5 @@
 --- !tapi-tbd-v3
-archs:                 [ armv7, armv7s, arm64 ]
+archs:                 [ armv7, armv7s, arm64, arm64e ]
 platform:              (null)
 flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppC3D.framework/AppC3D
@@ -7,7 +7,7 @@ current-version:       1.8.5
 compatibility-version: 1.8.5
 objc-constraint:       retain_release
 exports:
-  - archs:                [ armv7, armv7s, arm64 ]
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
     symbols:              [ _AppC3DCalibrationCreate, _AppC3DCalibrationRelease,
                             _AppC3DCalibrationSetCameraParameters,
                             _AppC3DConfigCreate,
