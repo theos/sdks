@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VisualPairing.framework/VisualPairing
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _convertUV2SignalSpace_Hx16W_N64,
+                            _convertUVDownsample_2x2_2Hx16W_N64,
+                            _convertUVDownsample_3x3_3Hx24W_N64,
+                            _convertUVDownsample_4x4_4Hx32W_N64,
+                            _downsample_2x2_2Hx32W_N64,
+                            _downsample_3x3_3Hx24W_N64,
+                            _downsample_4x4_4Hx32W_N64,
+                            _downsample_5x5_5Hx15W_N64,
+                            _downsample_6x6_6Hx48W_N64 ]
+    objc-classes:         [ VPPresenterView, VPScannerView,
+                            VPScannerViewController ]
+    objc-ivars:           [ VPPresenterView._moviePlayer,
+                            VPPresenterView._started,
+                            VPPresenterView._verificationCode,
+                            VPPresenterView._watermarkLayer,
+                            VPPresenterView._watermarkPixelBuffers,
+                            VPPresenterView._watermarkStepIndex,
+                            VPPresenterView._watermarkStepTimer,
+                            VPScannerView._autoFocusRangeRestriction,
+                            VPScannerView._avCaptureDevice,
+                            VPScannerView._avCaptureQueue,
+                            VPScannerView._avCaptureSession,
+                            VPScannerView._avPreviewLayer,
+                            VPScannerView._focusMode, VPScannerView._reader,
+                            VPScannerView._readerHeight,
+                            VPScannerView._readerLastProgress,
+                            VPScannerView._readerLastWatermarkTicks,
+                            VPScannerView._readerResetTicks,
+                            VPScannerView._readerRowBytes,
+                            VPScannerView._readerWidth,
+                            VPScannerView._scannedCodeHandler,
+                            VPScannerView._scanning,
+                            VPScannerView._viewfinderBorderLayer,
+                            VPScannerView._viewfinderRevealLayer,
+                            VPScannerViewController._cancelButton,
+                            VPScannerViewController._containerView,
+                            VPScannerViewController._eventHandler,
+                            VPScannerViewController._pairManuallyButton,
+                            VPScannerViewController._scannedCodeHandler,
+                            VPScannerViewController._scannerView,
+                            VPScannerViewController._subtitleLabel,
+                            VPScannerViewController._titleLabel,
+                            VPScannerViewController._titleMessage,
+                            VPScannerViewController._viewfinderView ]
+...

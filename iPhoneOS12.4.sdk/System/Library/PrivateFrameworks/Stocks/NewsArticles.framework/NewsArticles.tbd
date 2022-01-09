@@ -1,0 +1,53 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Stocks/NewsArticles.framework/NewsArticles
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            Stocks, StocksAnalytics, StocksAnalyticsTests,
+                            StocksCore, StocksCoreTests, StocksTests, StocksToday,
+                            StocksUI, StocksUITests ]
+    symbols:              [ _NewsArticlesVersionNumber,
+                            _NewsArticlesVersionString ]
+    objc-classes:         [ NAActivityViewController, NAAnalyticsAssembly,
+                            NAArticleAssembly, NAArticleViewerAssembly, NAAssembly,
+                            NAImages, NAManagerAssembly, NARendererAssembly,
+                            NAReportConcernAssembly,
+                            NAReportConcernDetailAssembly, NAServiceAssembly,
+                            NAStylerAssembly, NAUtilityAssembly, SUSharingAssembly,
+                            TSReportConcernModule,
+                            _TtC12NewsArticles10URLHandler,
+                            _TtC12NewsArticles13MailPresenter,
+                            _TtC12NewsArticles13TextInputView,
+                            _TtC12NewsArticles16MacMailPresenter,
+                            _TtC12NewsArticles16MessagePresenter,
+                            _TtC12NewsArticles17ArticleSavedAlert,
+                            _TtC12NewsArticles19ArticleViewerModule,
+                            _TtC12NewsArticles19ReadingListObserver,
+                            _TtC12NewsArticles19SharingActivityItem,
+                            _TtC12NewsArticles20ReportConcernCommand,
+                            _TtC12NewsArticles21ArticleViewController,
+                            _TtC12NewsArticles21TextSizeControlModule,
+                            _TtC12NewsArticles22AnalyticsEventReporter,
+                            _TtC12NewsArticles22ArticleTextSizeManager,
+                            _TtC12NewsArticles22ArticleViewerTitleView,
+                            _TtC12NewsArticles23TextSizeControlAssembly,
+                            _TtC12NewsArticles25ReportConcernDetailModule,
+                            _TtC12NewsArticles27ArticleViewerViewController,
+                            _TtC12NewsArticles27ReportConcernViewController,
+                            _TtC12NewsArticles28ArticleViewerAppStateMonitor,
+                            _TtC12NewsArticles29TextSizeControlViewController,
+                            _TtC12NewsArticles30TextSizeMenuBarHandlerProvider,
+                            _TtC12NewsArticles33ArticleMenuBarItemHandlerProvider,
+                            _TtC12NewsArticles33ReportConcernDetailViewController,
+                            _TtC12NewsArticles35SharingArticleURLActivityItemSource,
+                            _TtC12NewsArticles36SharingArticleTextActivityItemSource,
+                            _TtC12NewsArticles37SharingArticleImageActivityItemSource,
+                            _TtC12NewsArticles39ArticleViewerMenuBarItemHandlerProvider ]
+    objc-ivars:           [ NAActivityViewController._didPerformBlock ]
+...

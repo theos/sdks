@@ -1,0 +1,45 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SiriVideoIntents.framework/SiriVideoIntents
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowed-clients:      [ SiriVideoDESPlugin, SiriVideoIntentsTests,
+                            VideoDialogTests, VideoFlowDelegatePlugin ]
+    symbols:              [ _SiriVideoIntentsVersionNumber,
+                            _SiriVideoIntentsVersionString ]
+    objc-classes:         [ _AddToWatchListContentResolutionResult,
+                            _AddToWatchListIntent, _AddToWatchListIntentResponse,
+                            _ArchiveExtractor, _Content, _ContentImage,
+                            _ContentImageResolutionResult,
+                            _ContentResolutionResult, _ContentSearch,
+                            _ContentSearchResolutionResult,
+                            _ContentSortResolutionResult,
+                            _ContentTypeResolutionResult, _FindVideoIntent,
+                            _FindVideoIntentResponse, _LiveService,
+                            _LiveServiceResolutionResult,
+                            _OrdinalReferenceResolutionResult, _Person,
+                            _PersonResolutionResult, _PersonRoleResolutionResult,
+                            _PlayLiveServiceIntent,
+                            _PlayLiveServiceIntentResponse,
+                            _PlayLiveServiceLiveServiceResolutionResult,
+                            _PlayVideoContentResolutionResult, _PlayVideoIntent,
+                            _PlayVideoIntentResponse,
+                            _RemoveFromWatchListContentResolutionResult,
+                            _RemoveFromWatchListIntent,
+                            _RemoveFromWatchListIntentResponse,
+                            _SearchAttributes, _SearchAttributesResolutionResult,
+                            __TtC16SiriVideoIntents16RecordableResult,
+                            __TtC16SiriVideoIntents22FindVideoIntentHandler,
+                            __TtC16SiriVideoIntents22PlayVideoIntentHandler,
+                            __TtC16SiriVideoIntents27AddToWatchListIntentHandler,
+                            __TtC16SiriVideoIntents28PlayLiveServiceIntentHandler,
+                            __TtC16SiriVideoIntents32RemoveFromWatchListIntentHandler ]
+    objc-ivars:           [ _AddToWatchListIntentResponse._code,
+                            _FindVideoIntentResponse._code,
+                            _PlayLiveServiceIntentResponse._code,
+                            _PlayVideoIntentResponse._code,
+                            _RemoveFromWatchListIntentResponse._code ]
+...

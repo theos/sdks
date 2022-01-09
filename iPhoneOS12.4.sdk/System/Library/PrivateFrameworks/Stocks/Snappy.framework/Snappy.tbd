@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Stocks/Snappy.framework/Snappy
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            SnappyTests, Stocks, StocksAnalytics,
+                            StocksAnalyticsTests, StocksCore, StocksCoreTests,
+                            StocksTests, StocksToday, StocksUI, StocksUITests ]
+    symbols:              [ _SnappyVersionNumber, _SnappyVersionString ]
+    objc-classes:         [ SNAssembly, SNTestAssembly, SNTestChain, SNTestContext,
+                            SNTestCoordinator, SNTestFailure, SNTestRun,
+                            SNTestRunner, SNTestStore, SNTestSuite ]
+    objc-ivars:           [ SNAssembly._assemblies, SNTestChain._linkBlocks,
+                            SNTestContext._application, SNTestContext._objects,
+                            SNTestCoordinator._application,
+                            SNTestFailure._message, SNTestRun._testCase,
+                            SNTestRun._testSuite, SNTestRunner._application,
+                            SNTestRunner._testCoordinator,
+                            SNTestRunner._testStore, SNTestStore._testCases,
+                            SNTestStore._testSuites,
+                            SNTestSuite._parentTestSuite,
+                            SNTestSuite._subTestSuites, SNTestSuite._testCases ]
+...

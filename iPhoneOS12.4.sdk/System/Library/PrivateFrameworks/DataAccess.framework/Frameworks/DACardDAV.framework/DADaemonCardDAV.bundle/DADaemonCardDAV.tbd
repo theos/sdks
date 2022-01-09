@@ -1,0 +1,59 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DADaemonCardDAV.bundle/DADaemonCardDAV
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ CardDAVActionsLogger, CardDAVAgent,
+                            CardDAVDaemonAccount, CardDAVFacebookDaemonAccount,
+                            CardDAVSyncInfo, CardDAVVCardItem,
+                            CardDAViCloudDaemonAccount,
+                            CardDAViCloudGetAccountPropertiesTaskGroup ]
+    objc-ivars:           [ CardDAVAgent._bulkUploadHREFBlacklist,
+                            CardDAVAgent._bulkUploadUUIDBlacklist,
+                            CardDAVAgent._containerPushKeys,
+                            CardDAVAgent._currentlySyncingFolderURLs,
+                            CardDAVAgent._folderItemSyncRequestLock,
+                            CardDAVAgent._folderURLToHeldAsideGroups,
+                            CardDAVAgent._folderURLToSyncInfo,
+                            CardDAVAgent._isSyncingHierarchy,
+                            CardDAVAgent._matchMode, CardDAVAgent._matchedRecord,
+                            CardDAVAgent._outstandingFolderRequests,
+                            CardDAVAgent._serverTokenRegistrationURL,
+                            CardDAVAgent._testRecord,
+                            CardDAVDaemonAccount._hasOutstandingABChanges,
+                            CardDAVDaemonAccount._homeURL,
+                            CardDAVDaemonAccount._mAddressBooks,
+                            CardDAVDaemonAccount._mAddressBooksByFolderURL,
+                            CardDAVDaemonAccount._mPushKeysToFolderURLs,
+                            CardDAVDaemonAccount._mSearchAddressBooks,
+                            CardDAVDaemonAccount._meCardURL,
+                            CardDAVDaemonAccount._meFolderURL,
+                            CardDAVDaemonAccount._pushTransport,
+                            CardDAVDaemonAccount._pushedActionsByTaskGroup,
+                            CardDAVDaemonAccount._searchTaskSet,
+                            CardDAVSyncInfo._startedWithNoContacts,
+                            CardDAVSyncInfo._uuidToPersonCache,
+                            CardDAVVCardItem._UUIDToPersonCache,
+                            CardDAVVCardItem._abRecord,
+                            CardDAVVCardItem._abRecordType,
+                            CardDAVVCardItem._clientID,
+                            CardDAVVCardItem._dataPayload,
+                            CardDAVVCardItem._serverID,
+                            CardDAVVCardItem._syncKey,
+                            CardDAVVCardItem._uuidToPersonCache,
+                            CardDAViCloudDaemonAccount._defaultSession,
+                            CardDAViCloudDaemonAccount._defaultSessionWasUserRequested,
+                            CardDAViCloudDaemonAccount._fetchImageError,
+                            CardDAViCloudDaemonAccount._fetchedImageData,
+                            CardDAViCloudDaemonAccount._fetchingImageDataRefCount,
+                            CardDAViCloudDaemonAccount._hostOverride,
+                            CardDAViCloudDaemonAccount._imageFetchTask,
+                            CardDAViCloudDaemonAccount._portOverride,
+                            CardDAViCloudDaemonAccount._urlRequest,
+                            CardDAViCloudDaemonAccount._useSSLOverride ]
+...

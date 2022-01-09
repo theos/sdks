@@ -1,0 +1,39 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/VoiceShortcutsUICardKitProviderSupport.framework/VoiceShortcutsUICardKitProviderSupport
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _VoiceShortcutsUICardKitProviderSupportVersionNumber,
+                            _VoiceShortcutsUICardKitProviderSupportVersionString ]
+    objc-classes:         [ _VSUIActionStatusView, _VSUIAsyncLoadingCard,
+                            _VSUICKPEntryPoint, _VSUIPerformActionCardProvider,
+                            _VSUIPerformActionCardViewController,
+                            _VSUIProgressCardViewController,
+                            _VSUIVoiceShortcutCard, __VSUIActionStatusErrorView ]
+    objc-ivars:           [ _VSUIActionStatusView._activityView,
+                            _VSUIActionStatusView._delegate,
+                            _VSUIActionStatusView._errorView,
+                            _VSUIAsyncLoadingCard._storedCard,
+                            _VSUIPerformActionCardViewController._commandCompletionBlocksDictionary,
+                            _VSUIPerformActionCardViewController._commandWorkflowControllersDictionary,
+                            _VSUIPerformActionCardViewController._currentWorkflowController,
+                            _VSUIProgressCardViewController._animatesStateTransitions,
+                            _VSUIProgressCardViewController._hairlineView,
+                            _VSUIProgressCardViewController._loadingIndicatorView,
+                            _VSUIProgressCardViewController._progress,
+                            _VSUIProgressCardViewController._progressIndicatorViewController,
+                            _VSUIProgressCardViewController._progressStateMachine,
+                            _VSUIProgressCardViewController._statusView,
+                            _VSUIProgressCardViewController._statusViewFailureHeightConstraint,
+                            _VSUIProgressCardViewController._statusViewSuccessHeightConstraint,
+                            _VSUIVoiceShortcutCard._intent,
+                            _VSUIVoiceShortcutCard._intentResponse,
+                            _VSUIVoiceShortcutCard._sectionCommands,
+                            _VSUIVoiceShortcutCard._shortcutIdentifier,
+                            __VSUIActionStatusErrorView._errorIconBackgroundView,
+                            __VSUIActionStatusErrorView._errorIconView,
+                            __VSUIActionStatusErrorView._errorLabel ]
+...

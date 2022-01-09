@@ -1,0 +1,44 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NewDeviceOutreach.framework/NewDeviceOutreach
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _NewDeviceOutreachVersionNumber,
+                            _NewDeviceOutreachVersionString, __NDOLogSystem ]
+    objc-classes:         [ NDOManager, NDOWarranty ]
+    objc-ivars:           [ NDOWarranty._acLocalizedOfferCTA,
+                            NDOWarranty._acLocalizedOfferDetails,
+                            NDOWarranty._acLocalizedOfferDetailsPluralEligibilityFormat,
+                            NDOWarranty._acLocalizedOfferDetailsSingularEligibility,
+                            NDOWarranty._acLocalizedOfferLabel,
+                            NDOWarranty._acLocalizedOfferPluralDescFormat,
+                            NDOWarranty._acLocalizedOfferSingularDesc,
+                            NDOWarranty._acOfferDisplay,
+                            NDOWarranty._acOfferDurationBeforeEndDate,
+                            NDOWarranty._acOfferEligible,
+                            NDOWarranty._acOfferEligibleUntil,
+                            NDOWarranty._acOfferIdentifier,
+                            NDOWarranty._acOfferSettingsAppBadge,
+                            NDOWarranty._acOfferSettingsRowBadge,
+                            NDOWarranty._acOfferToggle,
+                            NDOWarranty._coverageEndDate,
+                            NDOWarranty._coverageLocalizedDesc,
+                            NDOWarranty._coverageLocalizedDescLong,
+                            NDOWarranty._coverageLocalizedExpirationLabel,
+                            NDOWarranty._coverageLocalizedLabel,
+                            NDOWarranty._coverageValidityDate,
+                            NDOWarranty._covered,
+                            NDOWarranty._dictionaryRepresentation,
+                            NDOWarranty._footer1FormatString,
+                            NDOWarranty._footer1LinkLabel,
+                            NDOWarranty._footer1LinkURL,
+                            NDOWarranty._footer2FormatString,
+                            NDOWarranty._footer2LinkLabel,
+                            NDOWarranty._footer2LinkURL,
+                            NDOWarranty._localizedCoveredDeviceDateLabelFormat ]
+...

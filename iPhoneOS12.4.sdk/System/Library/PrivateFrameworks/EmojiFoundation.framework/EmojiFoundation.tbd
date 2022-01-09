@@ -1,0 +1,50 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _EMFEmojiCategoryActivity, _EMFEmojiCategoryFlags,
+                            _EMFEmojiCategoryFoodAndDrink,
+                            _EMFEmojiCategoryNature, _EMFEmojiCategoryObjects,
+                            _EMFEmojiCategoryPeople,
+                            _EMFEmojiCategoryPrepopulated,
+                            _EMFEmojiCategoryRecents, _EMFEmojiCategorySymbols,
+                            _EMFEmojiCategoryTravelAndPlaces,
+                            _EMFEmojiPreferencesChangedNotification,
+                            _EMFEmojiPreferencesServiceName,
+                            _EMFEmojiUsageAdornment, _EMFEmojiUsageKeyboard,
+                            _EMFEmojiUsageKeywordMatch, _EMFEmojiUsageLearning,
+                            _EMFGetDeviceBuildVersion, _EMFGetDeviceRegionCode ]
+    objc-classes:         [ EMFEmojiCategory, EMFEmojiLocaleData,
+                            EMFEmojiPreferences, EMFEmojiPreferencesClient,
+                            EMFEmojiPreferencesService, EMFEmojiToken,
+                            EMFStringUtilities ]
+    objc-ivars:           [ EMFEmojiCategory._identifier,
+                            EMFEmojiLocaleData._localeDataRef,
+                            EMFEmojiLocaleData._localeIdentifier,
+                            EMFEmojiPreferences._categoryIndexes,
+                            EMFEmojiPreferences._currentSequence,
+                            EMFEmojiPreferences._defaults,
+                            EMFEmojiPreferences._differentialPrivacyQueue,
+                            EMFEmojiPreferences._isDefaultDirty,
+                            EMFEmojiPreferences._maximumRecentsCount,
+                            EMFEmojiPreferences._recents,
+                            EMFEmojiPreferences._skinToneBaseKeyPreferences,
+                            EMFEmojiPreferences._typingNames,
+                            EMFEmojiPreferences._usageHistory,
+                            EMFEmojiPreferencesClient._connection,
+                            EMFEmojiPreferencesClient._isValid,
+                            EMFEmojiPreferencesClient._machName,
+                            EMFEmojiPreferencesService._dispatchQueue,
+                            EMFEmojiPreferencesService._listener,
+                            EMFEmojiPreferencesService._preferences,
+                            EMFEmojiToken._didFailCEM,
+                            EMFEmojiToken._emojiTokenRef,
+                            EMFEmojiToken._localeIdentifier,
+                            EMFEmojiToken._string ]
+...

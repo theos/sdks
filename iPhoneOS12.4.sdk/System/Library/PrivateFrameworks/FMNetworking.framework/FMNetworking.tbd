@@ -1,0 +1,15 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/FMNetworking.framework/FMNetworking
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowed-clients:      [ FMFCore, FMIPCore, FMNetworkingTests, SPSharedTests,
+                            fmipcoretool, searchpartyd, searchpartydTests,
+                            searchpartyuseragent, sptool ]
+    objc-classes:         [ __TtC12FMNetworking13FMNHttpClient,
+                            __TtC12FMNetworking15MockURLDataTask,
+                            __TtC12FMNetworking25FMNPushNotificatonHandler ]
+...

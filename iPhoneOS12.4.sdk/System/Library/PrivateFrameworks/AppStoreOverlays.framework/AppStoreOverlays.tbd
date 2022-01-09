@@ -1,0 +1,68 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/AppStoreOverlays.framework/AppStoreOverlays
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ASOErrorDomain,
+                            _ASOOverlayAnimationAnimationOptions,
+                            _ASOOverlayAnimatorDuration,
+                            _ASOOverlayAnimatorSpringDamping,
+                            _ASOOverlayAnimatorSpringVelocity,
+                            _ASOOverlayConfigurationParameterAppIdentifier,
+                            _ASOOverlayConfigurationParameterCampaignToken,
+                            _ASOOverlayConfigurationParameterHostSignpostSpan,
+                            _ASOOverlayConfigurationParameterPosition,
+                            _ASOOverlayConfigurationParameterProviderToken,
+                            _ASOOverlayConfigurationParameterUserDismissible,
+                            _ASOOverlayConfigurationPrivateParameterIgnoreAdamID,
+                            _ASOOverlayConfigurationPrivateParameterIgnoreParentApp,
+                            _ASOOverlayConfigurationPrivateParameterOverrideIsAppClip,
+                            _ASOOverlayConfigurationPrivateParameterOverrideIsArcadeApp,
+                            _ASOOverlayConfigurationPrivateParameterOverrideIsBetaApp,
+                            _ASOOverlayConfigurationPrivateParameterOverrideIsDevelopment,
+                            _ASOOverlayConfigurationPrivateParameterOverrideParentAppAdamID,
+                            _ASOOverlayConfigurationPrivateParameterOverrideParentAppBundleIdentfier,
+                            _ASOOverlayConfigurationStorageKey,
+                            _ASOStoreOverlayPresentationEndFrameKey,
+                            _ASOStoreOverlayPresentationStartFrameKey,
+                            _AppStoreOverlaysVersionNumber,
+                            _AppStoreOverlaysVersionString,
+                            __ASOOverlayManagerWindowSceneComponentKey ]
+    objc-classes:         [ _ASODismissRemoteOverlayOperation, _ASOHostContext,
+                            _ASOOverlayAnimator, _ASOOverlayAppClipConfiguration,
+                            _ASOOverlayAppConfiguration, _ASOOverlayManager,
+                            _ASOOverlayTransitionContext,
+                            _ASOOverlayViewController, _ASOOverlayWindow,
+                            _ASOPresentRemoteOverlayOperation, _ASORemoteOverlay,
+                            _ASORemoteViewController ]
+    objc-ivars:           [ _ASODismissRemoteOverlayOperation._contextProvider,
+                            _ASODismissRemoteOverlayOperation._isExecuting,
+                            _ASODismissRemoteOverlayOperation._isFinished,
+                            _ASOOverlayAppClipConfiguration._storage,
+                            _ASOOverlayAppConfiguration._storage,
+                            _ASOOverlayManager._scene,
+                            _ASOOverlayManager._viewController,
+                            _ASOOverlayManager._window,
+                            _ASOOverlayTransitionContext._animationBlocks,
+                            _ASOOverlayTransitionContext._endFrame,
+                            _ASOOverlayTransitionContext._startFrame,
+                            _ASOOverlayViewController._context,
+                            _ASOOverlayViewController._currentOverlay,
+                            _ASOOverlayViewController._isViewServiceLoading,
+                            _ASOOverlayViewController._presentationQueue,
+                            _ASOOverlayViewController._remoteViewController,
+                            _ASOOverlayViewController._viewServiceQueue,
+                            _ASOPresentRemoteOverlayOperation._isExecuting,
+                            _ASOPresentRemoteOverlayOperation._isFinished,
+                            _ASOPresentRemoteOverlayOperation._remoteOverlay,
+                            _ASORemoteOverlay._contextProvider,
+                            _ASORemoteOverlay._hostSpan,
+                            _ASORemoteOverlay._isActive,
+                            _ASORemoteOverlay._isLoaded,
+                            _ASORemoteOverlay._overlay,
+                            _ASORemoteOverlay._presentationTransitionContext,
+                            _ASORemoteViewController._delegate ]
+...

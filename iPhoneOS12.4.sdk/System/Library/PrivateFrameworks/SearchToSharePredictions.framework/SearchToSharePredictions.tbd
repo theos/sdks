@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SearchToSharePredictions.framework/SearchToSharePredictions
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SGQPPredictionTypeName, _SGQPPredictionTypesMapping,
+                            _SGQPWeightForPredictionType,
+                            _SearchToSharePredictionsVersionNumber,
+                            _SearchToSharePredictionsVersionString ]
+    objc-classes:         [ SGQPClient, SGQPFeedbackReport, SGQPPrediction,
+                            SGQPServerInterfaces ]
+    objc-ivars:           [ SGQPClient._interface, SGQPClient._machServiceName,
+                            SGQPClient._protocol, SGQPFeedbackReport._body,
+                            SGQPFeedbackReport._subject, SGQPFeedbackReport._to,
+                            SGQPPrediction._identifier, SGQPPrediction._phraseId,
+                            SGQPPrediction._query, SGQPPrediction._score,
+                            SGQPPrediction._type ]
+...

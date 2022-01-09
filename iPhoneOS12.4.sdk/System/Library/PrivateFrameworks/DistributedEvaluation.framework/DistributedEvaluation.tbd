@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _DESAggregatorLogEvaluation,
+                            _DESAggregatorLogRecording,
+                            _DESApplyAsynchronousSequence,
+                            _DESDiagnosticsSubmissionAllowed,
+                            _DESEncryptedDataReadFrom, _DESGetDeviceClass,
+                            _DESGetDeviceID, _DESGetDeviceType, _DESGetOSVersion,
+                            _DESIsInternalInstall, _DESPFLNoisableReadFrom,
+                            _DESPathHasFileVault,
+                            _DESRecipeResponseLocalOnlyPrefix,
+                            _DESServiceAvailable, _DESServiceGetXPCInterface,
+                            _DESSubmissionLogDirectoryURL,
+                            _DESSubmissionLogFileURLs,
+                            _DESSubmissionLogGarbageCollect,
+                            _DESSubmissionLogSetHandler, _DESWriteSubmissionLog,
+                            _DistributedEvaluationVersionNumber,
+                            _DistributedEvaluationVersionString, __DESIsHorseman,
+                            _kDESDistributedEvaluationErrorDomain ]
+    objc-classes:         [ DESEncryptedData, DESJSONPredicate, DESPFLNoisable,
+                            DESRecipe, DESRecordSet, DESRecordStore ]
+    objc-ivars:           [ DESEncryptedData._algorithm, DESEncryptedData._data,
+                            DESEncryptedData._encryptedKey,
+                            DESEncryptedData._has, DESEncryptedData._version,
+                            DESPFLNoisable._datas, DESPFLNoisable._has,
+                            DESPFLNoisable._iteration, DESPFLNoisable._recipeId,
+                            DESPFLNoisable._version, DESPFLNoisable._weight,
+                            DESRecipe._attachments, DESRecipe._parametersUsed,
+                            DESRecipe._recipeUserInfo,
+                            DESRecordSet._coreDuetEvents,
+                            DESRecordSet._dataFetcher,
+                            DESRecordSet._nativeRecordInfo,
+                            DESRecordSet._nativeRecords,
+                            DESRecordStore._bundleId ]
+...

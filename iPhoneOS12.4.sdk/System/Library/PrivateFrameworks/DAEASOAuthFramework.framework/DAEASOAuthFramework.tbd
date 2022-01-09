@@ -1,0 +1,62 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DAEASOAuthFramework.framework/DAEASOAuthFramework
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ DAEASOAuthClient, DAEASOAuthFlowController,
+                            DAEASOAuthIdentity, DAEASOAuthMigrationRequest,
+                            DAEASOAuthRequest, DAEASOAuthTokenRefreshResponse,
+                            DAEASOAuthTokenRequest, DAEASOAuthTokenResponse,
+                            DAEASOAuthWebViewController,
+                            DAEASOpenIDMetadataRequest,
+                            DAEASOpenIDMetadataResponse,
+                            DAExchangeOAuthFlowController,
+                            DAOAuthSafariViewController ]
+    objc-ivars:           [ DAEASOAuthFlowController._completion,
+                            DAEASOAuthFlowController._oauthType,
+                            DAEASOAuthFlowController._oauthURI,
+                            DAEASOAuthFlowController._tokenRequestURI,
+                            DAEASOAuthFlowController._username,
+                            DAEASOAuthIdentity._displayName,
+                            DAEASOAuthIdentity._refreshToken,
+                            DAEASOAuthIdentity._token,
+                            DAEASOAuthIdentity._tokenRequestURI,
+                            DAEASOAuthIdentity._username,
+                            DAEASOAuthTokenRefreshResponse._accessToken,
+                            DAEASOAuthTokenRefreshResponse._error,
+                            DAEASOAuthTokenRefreshResponse._expiryDate,
+                            DAEASOAuthTokenRefreshResponse._refreshToken,
+                            DAEASOAuthTokenRefreshResponse._responseBody,
+                            DAEASOAuthTokenRefreshResponse._statusCode,
+                            DAEASOAuthTokenResponse._data,
+                            DAEASOAuthTokenResponse._error,
+                            DAEASOAuthTokenResponse._errorMessage,
+                            DAEASOAuthTokenResponse._expiryDate,
+                            DAEASOAuthTokenResponse._refreshToken,
+                            DAEASOAuthTokenResponse._statusCode,
+                            DAEASOAuthTokenResponse._token,
+                            DAEASOAuthTokenResponse._user_id,
+                            DAEASOAuthWebViewController._account,
+                            DAEASOAuthWebViewController._accountStore,
+                            DAEASOAuthWebViewController._authURI,
+                            DAEASOAuthWebViewController._completion,
+                            DAEASOAuthWebViewController._extension,
+                            DAEASOAuthWebViewController._extensionCancellationError,
+                            DAEASOAuthWebViewController._extensionRequestDidComplete,
+                            DAEASOAuthWebViewController._isFirstTimeSetup,
+                            DAEASOAuthWebViewController._oauthType,
+                            DAEASOAuthWebViewController._presentationBlock,
+                            DAEASOAuthWebViewController._serviceViewController,
+                            DAEASOpenIDMetadataResponse._data,
+                            DAEASOpenIDMetadataResponse._error,
+                            DAEASOpenIDMetadataResponse._errorMessage,
+                            DAEASOpenIDMetadataResponse._statusCode,
+                            DAEASOpenIDMetadataResponse._tokenRequestURI,
+                            DAExchangeOAuthFlowController._easEndPoint,
+                            DAExchangeOAuthFlowController._redirectURI ]
+...

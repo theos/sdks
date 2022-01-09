@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/News/NewsAnalytics.framework/NewsAnalytics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ ArticleNotificationExtension,
+                            ArticleNotificationServiceExtension, "Feldspar Tests",
+                            MarketingNotificationExtension, NVCDemo, News,
+                            NewsAnalytics, NewsAnalyticsTests, NewsAnalyticsUpload,
+                            NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            NewsFormat, NewsFormatTests, NewsInternalSettings,
+                            NewsServices, NewsServicesInternal, NewsSettings,
+                            NewsSubscription, NewsSubscriptionTests, NewsToday,
+                            NewsUI, NewsUI2, NewsUI2Tests, OpenInNews, com.apple.news,
+                            newsd ]
+    symbols:              [ _NewsAnalyticsVersionNumber,
+                            _NewsAnalyticsVersionString ]
+    objc-classes:         [ NYAssembly, _TtC13NewsAnalytics13DebugAssembly,
+                            _TtC13NewsAnalytics15SessionObserver,
+                            _TtC13NewsAnalytics15TrackerAssembly ]
+...

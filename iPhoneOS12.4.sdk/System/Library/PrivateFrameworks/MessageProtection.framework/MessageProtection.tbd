@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MessageProtection.framework/MessageProtection
+current-version:       139.200.4
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SecExposeStream, _SecMPComputePaddingForStorage,
+                            _SecMPCopyProtectedMsgHash,
+                            _SecMPFIAppendSerialization, _SecMPFICopyProtClass,
+                            _SecMPFIPurgeAllFromKeychain,
+                            _SecMPFIPurgeFromKeychain, _SecMPFIUpdateProtClass,
+                            _SecMPFullIdentityCreate,
+                            _SecMPFullIdentityCreateFromCertNames,
+                            _SecMPFullIdentityCreateFromData,
+                            _SecMPFullIdentityCreateFromRefs,
+                            _SecMPFullIdentityCreateOTRSessionWith,
+                            _SecMPFullIdentityCreateOTRSessionWithFlags,
+                            _SecMPFullIdentityCreateWithAccess,
+                            _SecMPFullIdentityCreateWithAccessProtClass,
+                            _SecMPFullIdentityCreateWithProtClass,
+                            _SecMPPIAppendSerialization,
+                            _SecMPPublicIdentityCopyFromPrivate,
+                            _SecMPPublicIdentityCreateFromData,
+                            _SecMPSignAndProtectMessage,
+                            _SecMPVerifyAndExposeMessage,
+                            _SecMWCopyUnwrappedSessionSeed,
+                            _SecMWCopyWrappedSessionSeedForIdentities,
+                            _SecMWCreateEphemeralDeviceIdentity,
+                            _SecMWCreateSessionSalt, _SecMWCreateSessionSeed,
+                            _SecProtectStream, _ccn_read_uint, _ccn_write_uint,
+                            _ccn_write_uint_size ]
+...

@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IconServices.framework/IconServices
+current-version:       377
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ ISIcon, ISIconFactory, ISIconIOS, ISIconLayer,
+                            ISIconManager, ISIconObserver, ISImage,
+                            ISImageDescriptor ]
+    objc-ivars:           [ ISIconIOS._resourceProxy,
+                            ISIconLayer._backgroundStyle,
+                            ISIconLayer._badgeOptions, ISIconLayer._drawBorder,
+                            ISIconLayer._icon, ISIconLayer._iconShape,
+                            ISIconLayer._shape, ISIconLayer._shouldApplyMask,
+                            ISIconLayer._variantOptions,
+                            ISIconManager._iconCache,
+                            ISIconManager._iconRegistry,
+                            ISIconManager._internalQueue,
+                            ISIconManager._notificationIconsInvalidatedToken,
+                            ISIconManager._observerLock,
+                            ISIconManager._observers, ISIconObserver._delegate,
+                            ISImage._CGImage, ISImage._placeholder, ISImage._scale,
+                            ISImage._size, ISImage._uuid,
+                            ISImageDescriptor._backgroundStyle,
+                            ISImageDescriptor._badgeOptions,
+                            ISImageDescriptor._scale, ISImageDescriptor._size,
+                            ISImageDescriptor._variantOptions ]
+...

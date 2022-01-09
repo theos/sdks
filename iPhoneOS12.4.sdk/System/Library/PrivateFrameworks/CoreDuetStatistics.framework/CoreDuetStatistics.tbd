@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreDuetStatistics.framework/CoreDuetStatistics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ CDSBasisObject, CDSEngine ]
+    objc-ivars:           [ CDSBasisObject._attributeId,
+                            CDSBasisObject._basisDoubleValue,
+                            CDSBasisObject._basisUint64Value,
+                            CDSBasisObject._basisValueString,
+                            CDSBasisObject._creationDate,
+                            CDSBasisObject._duration,
+                            CDSBasisObject._fallingEdge,
+                            CDSBasisObject._localTime,
+                            CDSBasisObject._risingEdge, CDSBasisObject._type ]
+...

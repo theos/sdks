@@ -1,0 +1,64 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal
+current-version:       289
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ReminderKitInternalVersionNumber,
+                            _ReminderKitInternalVersionString, _rdi_os_crash ]
+    objc-classes:         [ _REMAccount_Codable,
+                            _REMAccountsListDataView_Invocation,
+                            _REMColor_Codable,
+                            _REMComplicationDataViewFetchModelInvocation,
+                            _REMComplicationDataViewFetchModelInvocationResult,
+                            _REMListPickerDataView_FlaggedInvocation,
+                            _REMListStableSortingDataView_Invocation,
+                            _REMList_Codable, _REMObjectID_Codable,
+                            _REMReminder_Codable,
+                            _REMRemindersListDataView_AllInvocation,
+                            _REMRemindersListDataView_AssignedInvocation,
+                            _REMRemindersListDataView_DEBUG_AssignedCountInvocation,
+                            _REMRemindersListDataView_DEBUG_PhantomRemindersInvocation,
+                            _REMRemindersListDataView_FlaggedInvocation,
+                            _REMRemindersListDataView_ListInvocation,
+                            _REMRemindersListDataView_ScheduledInvocation,
+                            _REMRemindersListDataView_SearchInvocation,
+                            _REMRemindersListDataView_SiriFoundInAppsInvocation,
+                            _REMRemindersListDataView_TodayInvocation,
+                            _REMRemindersListDataView_TodayNotificationInvocation,
+                            _REMSiriSearchDataView_ListsByCriteriaInvocation,
+                            _REMSiriSearchDataView_RemindersByCriteriaInvocation,
+                            _REMSmartList_Codable,
+                            _REMStructuredLocation_Codable,
+                            _REMSuggestedAttributesHarvester_Invocation,
+                            _REMSuggestedAttributesHarvester_MentionsExtractionInvocation,
+                            _REMSuggestedAttributesTrainer,
+                            _REMWidgetDataViewFetchModelInvocation,
+                            _REMWidgetDataViewFetchModelInvocationResult,
+                            _RMDARC4RandomSource,
+                            _RMDMersenneTwisterRandomSource, _RMDRandomSource,
+                            _RMDSystemArc4RandomSource,
+                            _RREMSmartListOrder_Codable, _TTRNLTextSlotParser,
+                            _TTRNLTextStructuredEvent,
+                            _TTRNLTextStructuredEventLocation,
+                            _TTRNLTextStructuredEventRecurrentEvent,
+                            __TtC19ReminderKitInternal16RDIDispatchQueue,
+                            __TtC19ReminderKitInternal9Analytics ]
+    objc-ivars:           [ _RMDARC4RandomSource._seed,
+                            _RMDARC4RandomSource._state,
+                            _RMDMersenneTwisterRandomSource._engine,
+                            _RMDMersenneTwisterRandomSource._seed,
+                            _TTRNLTextSlotParser._locale,
+                            _TTRNLTextSlotParser._parser,
+                            _TTRNLTextStructuredEvent._structuredEvent,
+                            _TTRNLTextStructuredEventLocation._locationType,
+                            _TTRNLTextStructuredEventLocation._proximity,
+                            _TTRNLTextStructuredEventLocation._range,
+                            _TTRNLTextStructuredEventRecurrentEvent._endDate,
+                            _TTRNLTextStructuredEventRecurrentEvent._frequency,
+                            _TTRNLTextStructuredEventRecurrentEvent._isAllDay,
+                            _TTRNLTextStructuredEventRecurrentEvent._range,
+                            _TTRNLTextStructuredEventRecurrentEvent._startDate ]
+...

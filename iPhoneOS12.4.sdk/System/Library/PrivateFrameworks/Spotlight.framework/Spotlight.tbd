@@ -1,0 +1,73 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Spotlight.framework/Spotlight
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SPSBUIUserAgent,
+                            _SPSearchSuggestionActualSearchIdentifier,
+                            _SPSearchThroughBundleIdentifier, _createDedupeDicts,
+                            _getUrlParameterString, _strippedURL ]
+    objc-classes:         [ SPAppService, SPClientSession, SPGeneralQueryTask,
+                            SPQueryResponse, SPQueryTask, SPResultSearchSuggestion,
+                            SPSearchSuggestion, SPSuggestionSearchResult,
+                            SPSuggestionsQueryTask, SPZKWSearchQuery, SPZKWSession ]
+    objc-ivars:           [ SPAppService._appServiceQueue,
+                            SPAppService._awakeNotifyToken,
+                            SPClientSession._appService,
+                            SPClientSession._contentFilter,
+                            SPClientSession._infinitePatience,
+                            SPClientSession._observersAdded,
+                            SPClientSession._prefsToken,
+                            SPClientSession._searchDomains,
+                            SPClientSession._session,
+                            SPGeneralQueryTask._didReceiveCompleteCallback,
+                            SPGeneralQueryTask._mutableSections,
+                            SPGeneralQueryTask._mutableSessionEntityString,
+                            SPGeneralQueryTask._newQuery,
+                            SPGeneralQueryTask._query,
+                            SPGeneralQueryTask._session,
+                            SPGeneralQueryTask._started,
+                            SPGeneralQueryTask._token, SPQueryResponse._kind,
+                            SPQueryResponse._rankingDebugLog,
+                            SPQueryResponse._resultSections,
+                            SPQueryResponse._sessionEntityString,
+                            SPQueryResponse._state, SPQueryResponse._task,
+                            SPQueryTask._deferredUpdate,
+                            SPQueryTask._delayedResponse, SPQueryTask._delegate,
+                            SPQueryTask._dispatchQueue, SPQueryTask._finished,
+                            SPQueryTask._forceStableResults, SPQueryTask._live,
+                            SPQueryTask._maxTopHitAppResults,
+                            SPQueryTask._queryProcessor,
+                            SPQueryTask._rankingDebugLog, SPQueryTask._sections,
+                            SPQueryTask._sentSuggestions,
+                            SPQueryTask._sessionEntityString, SPQueryTask._state,
+                            SPQueryTask._unsafeState,
+                            SPQueryTask._updatesDisabled, SPQueryTask._whyQuery,
+                            SPResultSearchSuggestion._originalResult,
+                            SPSearchSuggestion._age,
+                            SPSearchSuggestion._completionType,
+                            SPSearchSuggestion._compositeScore,
+                            SPSearchSuggestion._fieldWeight,
+                            SPSearchSuggestion._fragments,
+                            SPSearchSuggestion._hasUsedDate,
+                            SPSearchSuggestion._isShortcut,
+                            SPSearchSuggestion._isSingleThread,
+                            SPSearchSuggestion._len,
+                            SPSearchSuggestion._maxscore,
+                            SPSearchSuggestion._parentWeight,
+                            SPSearchSuggestion._phraseScore,
+                            SPSearchSuggestion._prefixLen,
+                            SPSearchSuggestion._rootWeight,
+                            SPSearchSuggestion._weight,
+                            SPSuggestionSearchResult._suggestion,
+                            SPSuggestionsQueryTask._mutableCombinedSuggestions,
+                            SPSuggestionsQueryTask._mutableLocalSuggestions,
+                            SPSuggestionsQueryTask._mutableParsecSuggestions,
+                            SPZKWSearchQuery._mutableSections,
+                            SPZKWSearchQuery._queryID ]
+...

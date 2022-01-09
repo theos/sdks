@@ -1,0 +1,17 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SiriGeo.framework/SiriGeo
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SiriGeoVersionNumber, _SiriGeoVersionString ]
+    objc-classes:         [ __TtC7SiriGeo18LocationController,
+                            __TtC7SiriGeo23INShareETAIntentHandler,
+                            __TtC7SiriGeo27INStopShareETAIntentHandler,
+                            __TtC7SiriGeo34INSaveParkingLocationIntentHandler,
+                            __TtC7SiriGeo36INDeleteParkingLocationIntentHandler,
+                            __TtC7SiriGeo38INRetrieveParkingLocationIntentHandler,
+                            __TtCC7SiriGeo11MapsService25CapabilityFetcherObserver ]
+...

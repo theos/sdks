@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _DiagnosticExtensionsVersionNumber,
+                            _DiagnosticExtensionsVersionString, _pgrep,
+                            _signal_USR2 ]
+    objc-classes:         [ DEArchive, DEArchiveReader, DEArchiver,
+                            DEAttachmentGroup, DEAttachmentItem, DEExtension,
+                            DEExtensionContext, DEExtensionHostContext,
+                            DEExtensionManager, DEExtensionProvider, DELogMover,
+                            DELogging, DEUtils ]
+    objc-ivars:           [ DEArchive._archive, DEArchive._hasClosedArchive,
+                            DEArchive._sourceDir, DEArchive._tarGzUrl,
+                            DEArchiveReader._archive,
+                            DEAttachmentGroup._attachmentItems,
+                            DEAttachmentGroup._rootURL,
+                            DEAttachmentItem._attachedPath,
+                            DEAttachmentItem._attachmentType,
+                            DEAttachmentItem._deleteOnAttach,
+                            DEAttachmentItem._displayName,
+                            DEAttachmentItem._filesize,
+                            DEAttachmentItem._modificationDate,
+                            DEAttachmentItem._path,
+                            DEAttachmentItem._shouldCompress,
+                            DEExtension._allowUserAttachmentSelection,
+                            DEExtension._attachmentsName, DEExtension._context,
+                            DEExtension._extension, DEExtension._identifier,
+                            DEExtension._isLoggingEnabled,
+                            DEExtension._loggingConsent,
+                            DEExtensionManager._afterExtendedBlock,
+                            DEExtensionManager._extendedLoaded,
+                            DEExtensionManager._extensions,
+                            DEExtensionManager._initialLoadQueue,
+                            DEExtensionProvider._allowUserAttachmentSelection,
+                            DEExtensionProvider._canGenerateNewAttachment,
+                            DEExtensionProvider._loggingConsent,
+                            DELogMover._conn, DELogMover._serviceName ]
+...

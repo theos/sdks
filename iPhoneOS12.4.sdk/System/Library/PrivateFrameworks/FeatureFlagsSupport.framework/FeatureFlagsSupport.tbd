@@ -1,0 +1,19 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport
+current-version:       28.60.1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _FFConfiguration, _FFFeatureAttribute, _FFFeatureState ]
+    objc-ivars:           [ _FFConfiguration._domains,
+                            _FFConfiguration.configByLevel,
+                            _FFConfiguration.lock, _FFConfiguration.metaByLevel,
+                            _FFConfiguration.searchPaths,
+                            _FFFeatureAttribute._name,
+                            _FFFeatureAttribute._value,
+                            _FFFeatureState._attributes, _FFFeatureState._domain,
+                            _FFFeatureState._feature, _FFFeatureState._hidden,
+                            _FFFeatureState._value ]
+...

@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking
+current-version:       51
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ DeviceManagementTests, PowerlogHelperdOperators,
+                            PowerlogLiteOperators, RemoteManagementTests,
+                            SafariShared, UsageTrackingAgent, dmd, remotemanagementd,
+                            usagetool ]
+    symbols:              [ _USDuetClientNameUsageTracking, _USErrorDomain,
+                            _USNotificationReceivedValue,
+                            _USUsageTrackingMachServiceName,
+                            _USUsageTrackingVersionNumber,
+                            _USUsageTrackingVersionString ]
+    objc-classes:         [ USApplicationUsageReport, USBudget,
+                            USCategoryUsageReport, USDomainNormalization,
+                            USTrackingAgentProxy, USUsageMonitor, USUsageQuerying,
+                            USUsageReport, USUsageReporter, USUsageStorage,
+                            USUsageTrackingBundle, USWebHistory, USWebUsageReport,
+                            USWebpageUsage ]
+    objc-ivars:           [ USApplicationUsageReport._applicationUsageTime,
+                            USApplicationUsageReport._bundleIdentifier,
+                            USApplicationUsageReport._totalUsageTime,
+                            USApplicationUsageReport._webUsageByDomain,
+                            USBudget._calendarIdentifier, USBudget._identifier,
+                            USBudget._items, USBudget._schedule, USBudget._type,
+                            USCategoryUsageReport._applicationUsage,
+                            USCategoryUsageReport._categoryIdentifier,
+                            USCategoryUsageReport._totalUsageTime,
+                            USCategoryUsageReport._webUsage,
+                            USDomainNormalization._idna,
+                            USUsageMonitor._xpcConnection,
+                            USUsageQuerying._context,
+                            USUsageQuerying._eventStorage,
+                            USUsageReport._categoryUsage,
+                            USUsageReport._firstPickup, USUsageReport._interval,
+                            USUsageReport._lastEventDate,
+                            USUsageReport._longestSession,
+                            USUsageReport._pickupsByBundleIdentifier,
+                            USUsageReport._pickupsWithoutApplicationUsage,
+                            USUsageReport._screenTime, USUsageReport._timeZone,
+                            USUsageReport._userNotificationsByBundleIdentifier,
+                            USUsageReporter._xpcConnection,
+                            USWebHistory._eventStorage,
+                            USWebUsageReport._domainIdentifier,
+                            USWebUsageReport._totalUsageTime,
+                            USWebUsageReport._webUsageByDomain,
+                            USWebpageUsage._URL, USWebpageUsage._context,
+                            USWebpageUsage._contextUsageRecord,
+                            USWebpageUsage._eventStorage ]
+...

@@ -1,0 +1,38 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/GPURawCounter.framework/GPURawCounter
+current-version:       17.2
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CTRCopyAllCounterSourceGroup,
+                            _CTRReleaseAllCounterSourceGroup,
+                            _GPURawCounterVersionNumber,
+                            _GPURawCounterVersionString,
+                            _GRCCopyAllCounterSourceGroup,
+                            _GRCReleaseAllCounterSourceGroup ]
+    objc-classes:         [ _GPURawCounterSelect,
+                            _GPURawCounterSourceTriggerSelect, __GPURawCounter,
+                            __GPURawCounterSource, __GPURawCounterSourceGroup,
+                            __GPURawCounterSourceTrigger ]
+    objc-ivars:           [ _GPURawCounterSelect._name,
+                            _GPURawCounterSelect._options,
+                            _GPURawCounterSelect._width,
+                            _GPURawCounterSourceTriggerSelect._name,
+                            _GPURawCounterSourceTriggerSelect._options,
+                            __GPURawCounter._counterValueType,
+                            __GPURawCounter._description, __GPURawCounter._name,
+                            __GPURawCounterSource._name,
+                            __GPURawCounterSource._options,
+                            __GPURawCounterSource._sourceGroup,
+                            __GPURawCounterSourceGroup._acceleratorPort,
+                            __GPURawCounterSourceGroup._name,
+                            __GPURawCounterSourceGroup._options,
+                            __GPURawCounterSourceGroup._samplingPeriodInMicroseconds,
+                            __GPURawCounterSourceGroup._samplingTriggers,
+                            __GPURawCounterSourceGroup._sourceList,
+                            __GPURawCounterSourceTrigger._description,
+                            __GPURawCounterSourceTrigger._name,
+                            __GPURawCounterSourceTrigger._options ]
+...

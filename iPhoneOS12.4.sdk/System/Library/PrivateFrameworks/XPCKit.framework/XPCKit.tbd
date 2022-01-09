@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/XPCKit.framework/XPCKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _XPCSetLogBlocks, __XPCLog, __XPCShouldLog,
+                            _kXPCSequenceKey ]
+    objc-classes:         [ XPCClientConnection, XPCNSClientConnection,
+                            XPCNSRequest, XPCNSServiceConnection,
+                            XPCNSServiceListener, XPCRequest, XPCServiceConnection,
+                            XPCServiceListener ]
+    objc-ivars:           [ XPCClientConnection._connection,
+                            XPCClientConnection._delegate,
+                            XPCClientConnection._queue,
+                            XPCClientConnection._serviceName,
+                            XPCNSClientConnection._clientConnection,
+                            XPCNSClientConnection._delegate, XPCNSRequest._data,
+                            XPCNSRequest._message, XPCNSRequest._request,
+                            XPCNSServiceConnection._context,
+                            XPCNSServiceConnection._delegate,
+                            XPCNSServiceConnection._serviceConnection,
+                            XPCNSServiceListener._delegate,
+                            XPCNSServiceListener._serviceListener,
+                            XPCRequest._handler, XPCRequest._message,
+                            XPCRequest._reply, XPCRequest._sequence,
+                            XPCServiceConnection._client,
+                            XPCServiceConnection._context,
+                            XPCServiceConnection._delegate,
+                            XPCServiceConnection._serviceListener,
+                            XPCServiceConnection._serviceName,
+                            XPCServiceConnection._workQueue,
+                            XPCServiceListener._clientCount,
+                            XPCServiceListener._delegate,
+                            XPCServiceListener._listener,
+                            XPCServiceListener._serviceConnections,
+                            XPCServiceListener._serviceName,
+                            XPCServiceListener._workQueue ]
+...

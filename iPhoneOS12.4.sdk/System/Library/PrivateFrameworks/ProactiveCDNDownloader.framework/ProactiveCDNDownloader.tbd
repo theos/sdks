@@ -1,0 +1,35 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ProactiveCDNDownloader.framework/ProactiveCDNDownloader
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATXAppAndClipEntriesPbReadFrom,
+                            _ProactiveCDNDownloaderVersionNumber,
+                            _ProactiveCDNDownloaderVersionString ]
+    objc-classes:         [ _ATXAppAndClipEntriesPb, _ATXAppAndClipEntriesReader,
+                            _ATXAppAndClipEntry, _ATXDigestConverter,
+                            _ATXGEOTileDataReader, _ATXGEOTileLoader,
+                            _ATXProactiveCDNDownloader ]
+    objc-ivars:           [ _ATXAppAndClipEntriesPb._adamIds,
+                            _ATXAppAndClipEntriesPb._deltaLatitudes,
+                            _ATXAppAndClipEntriesPb._deltaLongitudes,
+                            _ATXAppAndClipEntriesPb._isTouristApps,
+                            _ATXAppAndClipEntriesPb._radius,
+                            _ATXAppAndClipEntriesPb._ranks,
+                            _ATXAppAndClipEntriesPb._tileLatitudeE7,
+                            _ATXAppAndClipEntriesPb._tileLongitudeE7,
+                            _ATXAppAndClipEntriesPb._urlHashs,
+                            _ATXAppAndClipEntry._adamId,
+                            _ATXAppAndClipEntry._isTouristApp,
+                            _ATXAppAndClipEntry._location,
+                            _ATXAppAndClipEntry._radiusInMeters,
+                            _ATXAppAndClipEntry._rank,
+                            _ATXAppAndClipEntry._urlHash,
+                            _ATXGEOTileLoader._callbackQueue,
+                            _ATXProactiveCDNDownloader._queue,
+                            _ATXProactiveCDNDownloader._tileDataReader,
+                            _ATXProactiveCDNDownloader._tileLoader ]
+...

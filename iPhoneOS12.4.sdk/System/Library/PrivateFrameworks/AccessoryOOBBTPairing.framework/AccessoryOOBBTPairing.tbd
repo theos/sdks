@@ -1,0 +1,33 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AccessoryOOBBTPairing.framework/AccessoryOOBBTPairing
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _ACCOOBBTPairingAccFwVer, _ACCOOBBTPairingAccHwVer,
+                            _ACCOOBBTPairingAccManufacturer,
+                            _ACCOOBBTPairingAccModel, _ACCOOBBTPairingAccName,
+                            _ACCOOBBTPairingAccSerialNum,
+                            _ACCOOBBTPairingCarPlaySupported,
+                            _ACCOOBBTPairingCertData, _ACCOOBBTPairingCertSerial,
+                            _ACCOOBBTPairingCompletionMACAddressKey,
+                            _ACCOOBBTPairingCompletionNotification,
+                            _ACCOOBBTPairingCompletionStatusKey,
+                            _ACCOOBBTPairingConnectionIDKey,
+                            _ACCOOBBTPairingDisplayName,
+                            _ACCOOBBTPairingIsSupported,
+                            _ACCOOBBTPairingLaunchNotification,
+                            _AccessoryOOBBTPairingVersionNumber,
+                            _AccessoryOOBBTPairingVersionString ]
+    objc-classes:         [ ACCOOBBTPairingAccessory, ACCOOBBTPairingProvider ]
+    objc-ivars:           [ ACCOOBBTPairingAccessory._accessoryUID,
+                            ACCOOBBTPairingProvider._accessories,
+                            ACCOOBBTPairingProvider._delegate,
+                            ACCOOBBTPairingProvider._providerUID,
+                            ACCOOBBTPairingProvider._remoteObject,
+                            ACCOOBBTPairingProvider._serverConnection ]
+...

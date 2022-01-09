@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/News/NewsSubscription.framework/NewsSubscription
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ ArticleNotificationExtension,
+                            ArticleNotificationServiceExtension, "Feldspar Tests",
+                            MarketingNotificationExtension, NVCDemo, News,
+                            NewsAnalytics, NewsAnalyticsTests, NewsAnalyticsUpload,
+                            NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests,
+                            NewsFormat, NewsFormatTests, NewsInternalSettings,
+                            NewsServices, NewsServicesInternal, NewsSettings,
+                            NewsSubscription, NewsSubscriptionTests, NewsToday,
+                            NewsUI, NewsUI2, NewsUI2Tests, OpenInNews, com.apple.news,
+                            newsd ]
+    symbols:              [ _BridgedCampaignClickErrorCode,
+                            _BridgedCampaignClickErrorDomain,
+                            _NewsSubscriptionVersionNumber,
+                            _NewsSubscriptionVersionString ]
+    objc-classes:         [ BridgedAccountPageViewControllerFactory,
+                            BridgedCampaignClickRecorder,
+                            BridgedWebAuthenticationSession, NPAssembly,
+                            NPBridgedPurchaseManager, NPFactoryAssembly,
+                            NPHardPaywallAssembly, NPHardPaywallModule,
+                            NPHardPaywallViewController, NPManagerAssembly,
+                            NPPaywall, NPPurchaseContext,
+                            NPPurchasingSpinnerAssembly, NPRendererAssembly,
+                            NPSoftPaywallAssembly, NPSoftPaywallHeightProvider,
+                            NPSoftPaywallModule, NPSoftPaywallViewController,
+                            NPStylerAssembly, NPUtilityAssembly,
+                            _TtC16NewsSubscription15HardPaywallView,
+                            _TtC16NewsSubscription15SoftPaywallView,
+                            _TtC16NewsSubscription16DatabaseAssembly,
+                            _TtC16NewsSubscription21HardPaywallInteractor,
+                            _TtC16NewsSubscription21PurchasingSpinnerView,
+                            _TtC16NewsSubscription21SoftPaywallInteractor,
+                            _TtC16NewsSubscription23BundlePurchasePrewarmer,
+                            _TtC16NewsSubscription31PurchasingSpinnerViewController,
+                            _TtC16NewsSubscription6Images ]
+    objc-ivars:           [ BridgedWebAuthenticationSession._authenticationSession ]
+...

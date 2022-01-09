@@ -1,0 +1,52 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CHSAppearanceColorSchemeFromUserInterfaceStyle,
+                            _CHUISAvocadoWorkspaceIdentifier,
+                            _CHUISLogViewController, _CHUISURLOpeningEntitlement,
+                            _CHWindowSceneSessionRoleAvocado,
+                            _ChronoLoggingSubsystem,
+                            _ChronoUIServicesVersionNumber,
+                            _ChronoUIServicesVersionString ]
+    objc-classes:         [ _CHUISAvocadoHostCancelTouchesAssertion,
+                            _CHUISAvocadoHostViewController,
+                            _CHUISAvocadoSceneClientSettings,
+                            _CHUISAvocadoSceneSettings,
+                            _CHUISAvocadoSceneSettingsDiffInspector,
+                            _CHUISAvocadoSceneSpecification,
+                            _CHUISAvocadoWindowScene,
+                            _CHUISMutableAvocadoSceneClientSettings,
+                            _CHUISMutableAvocadoSceneSettings ]
+    objc-ivars:           [ _CHUISAvocadoHostCancelTouchesAssertion._assertions,
+                            _CHUISAvocadoHostCancelTouchesAssertion._invalidated,
+                            _CHUISAvocadoHostViewController._animationsDisabled,
+                            _CHUISAvocadoHostViewController._avocadoViewShouldShareTouchesWithHost,
+                            _CHUISAvocadoHostViewController._delegate,
+                            _CHUISAvocadoHostViewController._hasSentForegroundMessage,
+                            _CHUISAvocadoHostViewController._invalidated,
+                            _CHUISAvocadoHostViewController._isInViewDidDisappear,
+                            _CHUISAvocadoHostViewController._metrics,
+                            _CHUISAvocadoHostViewController._mode,
+                            _CHUISAvocadoHostViewController._privateModeEnabled,
+                            _CHUISAvocadoHostViewController._scene,
+                            _CHUISAvocadoHostViewController._scenePresenter,
+                            _CHUISAvocadoHostViewController._screenshotManager,
+                            _CHUISAvocadoHostViewController._signpostID,
+                            _CHUISAvocadoHostViewController._snapshotDebugLabel,
+                            _CHUISAvocadoHostViewController._snapshotImageView,
+                            _CHUISAvocadoHostViewController._style,
+                            _CHUISAvocadoHostViewController._touchDeliveryPolicyAssertions,
+                            _CHUISAvocadoHostViewController._updateScenesTransaction,
+                            _CHUISAvocadoHostViewController._visibleEntryShouldSnapshot,
+                            _CHUISAvocadoHostViewController._visiblySettled,
+                            _CHUISAvocadoHostViewController._widget,
+                            _CHUISAvocadoHostViewController._widgetConfigurationIdentifier,
+                            _CHUISAvocadoSceneSettings._visibleEntryShouldSnapshot,
+                            _CHUISAvocadoWindowScene._visibleEntryShouldSnapshot,
+                            _CHUISMutableAvocadoSceneSettings._privateModeEnabled ]
+...

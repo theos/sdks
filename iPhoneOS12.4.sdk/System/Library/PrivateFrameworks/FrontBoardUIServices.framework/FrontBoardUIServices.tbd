@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FrontBoardUIServices.framework/FrontBoardUIServices
+current-version:       0
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    re-exports:           [ /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices ]
+    symbols:              [ _FBUIGetUserAgent, _FBUIGetUserAgentInternal,
+                            _FBUISFrontBoardUIServicesVersionNumber,
+                            _FBUISFrontBoardUIServicesVersionString,
+                            _FBUISceneErrorCodeDescription,
+                            _FBUISceneErrorDomain ]
+    objc-classes:         [ FBUICurrentProcess, FBUIProcess, FBUIProcessManager,
+                            FBUIScene, FBUISceneActionsEvent, FBUISceneClient,
+                            FBUISceneClientIdentity, FBUISceneEvent,
+                            FBUISceneEventResponse, FBUISceneHost,
+                            FBUISceneInvalidationEvent, FBUISceneManager,
+                            FBUISceneUpdateClientSettingsEvent,
+                            FBUISceneUpdateSettingsEvent, FBUISceneWorkspace,
+                            FBUIUserAgent ]
+    objc-ivars:           [ FBUIScene._activated, FBUIScene._clientSettings,
+                            FBUIScene._contentView, FBUIScene._deactivating,
+                            FBUIScene._delegate, FBUIScene._identifier,
+                            FBUIScene._invalidated, FBUIScene._layerCount,
+                            FBUIScene._name, FBUIScene._pendingUpdateBlocks,
+                            FBUIScene._sceneClient, FBUIScene._sceneHost,
+                            FBUIScene._sceneUpdater, FBUIScene._settings,
+                            FBUIScene._specification, FBUIScene._workspace,
+                            FBUISceneActionsEvent._actions,
+                            FBUISceneClient._hostProxy,
+                            FBUISceneClient._identifier,
+                            FBUISceneClientIdentity._applicationBundleID,
+                            FBUISceneClientIdentity._identifier,
+                            FBUISceneEvent._sender, FBUISceneEvent._sent,
+                            FBUISceneEvent._transitionContext,
+                            FBUISceneEventResponse._error,
+                            FBUISceneHost._identifier,
+                            FBUISceneHost._sceneClient,
+                            FBUISceneHost._specification,
+                            FBUISceneManager._displayMonitor,
+                            FBUISceneManager._sceneHostsByID,
+                            FBUISceneManager._workspacesByID,
+                            FBUISceneUpdateClientSettingsEvent._diff,
+                            FBUISceneUpdateClientSettingsEvent._settings,
+                            FBUISceneUpdateSettingsEvent._diff,
+                            FBUISceneUpdateSettingsEvent._settings,
+                            FBUISceneWorkspace._identifier,
+                            FBUISceneWorkspace._scenesByName,
+                            FBUISceneWorkspace._valid, FBUIUserAgent._systemApp ]
+...

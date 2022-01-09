@@ -1,0 +1,72 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _CoreSuggestionsUIVersionNumber,
+                            _CoreSuggestionsUIVersionString ]
+    objc-classes:         [ SGUIAddAllTableViewCell, SGUIBannerStringGenerator,
+                            SGUIBannerView, SGUIContactConfirmationController,
+                            SGUIContactSuggestionTableViewCell,
+                            SGUIDateFormatting, SGUIEventConfirmationController,
+                            SGUIEventSuggestionTableViewCell,
+                            SGUIEventsAndContactsTableViewController,
+                            SGUISuggestionConfirmationController ]
+    objc-ivars:           [ SGUIAddAllTableViewCell._addAllButton,
+                            SGUIAddAllTableViewCell._bottomMarginConstraint,
+                            SGUIAddAllTableViewCell._delegate,
+                            SGUIAddAllTableViewCell._topMarginConstraint,
+                            SGUIBannerView._bannerImageView,
+                            SGUIBannerView._closeButton,
+                            SGUIBannerView._confirmationController,
+                            SGUIBannerView._delegate,
+                            SGUIBannerView._detailsBaselineConstraint,
+                            SGUIBannerView._detailsLabel,
+                            SGUIBannerView._disclosureImageView,
+                            SGUIBannerView._doneSuggestions,
+                            SGUIBannerView._imageCenterYConstraint,
+                            SGUIBannerView._multipleBannerImageConstraints,
+                            SGUIBannerView._orderedSuggestions,
+                            SGUIBannerView._secondaryBannerImageView,
+                            SGUIBannerView._singleBannerImageConstraints,
+                            SGUIBannerView._suggestionBeingConfirmed,
+                            SGUIBannerView._tapGestureRecognizer,
+                            SGUIBannerView._titleBaselineConstraint,
+                            SGUIBannerView._titleLabel,
+                            SGUIContactConfirmationController._finished,
+                            SGUIContactConfirmationController._realtimeContact,
+                            SGUIContactSuggestionTableViewCell._addUpdateButton,
+                            SGUIContactSuggestionTableViewCell._bottomMarginConstraint,
+                            SGUIContactSuggestionTableViewCell._delegate,
+                            SGUIContactSuggestionTableViewCell._descriptionLabel,
+                            SGUIContactSuggestionTableViewCell._iconImageView,
+                            SGUIContactSuggestionTableViewCell._ignoreButton,
+                            SGUIContactSuggestionTableViewCell._interLabelAndButtonBaselineConstraint,
+                            SGUIContactSuggestionTableViewCell._interLabelBaselineDeltaConstraint,
+                            SGUIContactSuggestionTableViewCell._realtimeContact,
+                            SGUIContactSuggestionTableViewCell._titleLabel,
+                            SGUIContactSuggestionTableViewCell._topMarginConstraint,
+                            SGUIEventConfirmationController._finished,
+                            SGUIEventConfirmationController._realtimeEvent,
+                            SGUIEventSuggestionTableViewCell._addUpdateButton,
+                            SGUIEventSuggestionTableViewCell._bottomMarginConstraint,
+                            SGUIEventSuggestionTableViewCell._delegate,
+                            SGUIEventSuggestionTableViewCell._descriptionLabel,
+                            SGUIEventSuggestionTableViewCell._iconImageView,
+                            SGUIEventSuggestionTableViewCell._ignoreButton,
+                            SGUIEventSuggestionTableViewCell._interLabelAndButtonBaselineConstraint,
+                            SGUIEventSuggestionTableViewCell._interLabelBaselineDeltaConstraint,
+                            SGUIEventSuggestionTableViewCell._realtimeEvent,
+                            SGUIEventSuggestionTableViewCell._titleLabel,
+                            SGUIEventSuggestionTableViewCell._topMarginConstraint,
+                            SGUIEventsAndContactsTableViewController._confirmationController,
+                            SGUIEventsAndContactsTableViewController._delegate,
+                            SGUIEventsAndContactsTableViewController._presentedSuggestion,
+                            SGUIEventsAndContactsTableViewController._realtimeContacts,
+                            SGUIEventsAndContactsTableViewController._realtimeEvents ]
+...

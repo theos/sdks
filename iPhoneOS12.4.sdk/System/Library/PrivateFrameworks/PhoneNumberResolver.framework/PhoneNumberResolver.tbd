@@ -1,0 +1,27 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/PhoneNumberResolver.framework/PhoneNumberResolver
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PNRErrorDomain, _PhoneNumberResolverVersionNumber,
+                            _PhoneNumberResolverVersionString,
+                            _kPNRPhoneNumberCountryKey, _kPNRPhoneNumberKey ]
+    objc-classes:         [ _PNRPhoneNumberResolutionResult,
+                            _PNRPhoneNumberResolutionResultSet,
+                            _PNRPhoneNumberResolver, _PNRResourceManager,
+                            _PNRStringsFileReaderResult, _PNRUtils ]
+    objc-ivars:           [ _PNRPhoneNumberResolutionResult._locationName,
+                            _PNRPhoneNumberResolutionResultSet._results,
+                            _PNRPhoneNumberResolutionResultSet._resultsLock,
+                            _PNRPhoneNumberResolver._resolveQueue,
+                            _PNRResourceManager._catalogLoadRetryMultiplier,
+                            _PNRResourceManager._fileDataCache,
+                            _PNRResourceManager._lastCatalogLoadTime,
+                            _PNRResourceManager._stateCaptureHandle,
+                            _PNRStringsFileReaderResult._city,
+                            _PNRStringsFileReaderResult._country,
+                            _PNRStringsFileReaderResult._region ]
+...

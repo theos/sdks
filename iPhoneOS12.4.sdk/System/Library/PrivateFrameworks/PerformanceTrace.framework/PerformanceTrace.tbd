@@ -1,0 +1,33 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/PerformanceTrace.framework/PerformanceTrace
+current-version:       100.1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PerformanceTraceVersionNumber,
+                            _PerformanceTraceVersionString,
+                            _traceConfigTemplateForString, _traceGroupForString,
+                            _traceTypeForString ]
+    objc-classes:         [ _PTTraceConfig, _PTTraceSession ]
+    objc-ivars:           [ _PTTraceConfig._callstackSamplingRateMS,
+                            _PTTraceConfig._compressWhenFinished,
+                            _PTTraceConfig._connection,
+                            _PTTraceConfig._includeKernelStacks,
+                            _PTTraceConfig._includeOSLogs,
+                            _PTTraceConfig._includeOSSignposts,
+                            _PTTraceConfig._kernelBufferDrainQoS,
+                            _PTTraceConfig._kernelBufferDrainRateMS,
+                            _PTTraceConfig._kernelBufferSizeMB,
+                            _PTTraceConfig._ownerName, _PTTraceConfig._ownerPID,
+                            _PTTraceConfig._skipNotification,
+                            _PTTraceConfig._source, _PTTraceConfig._symbolicate,
+                            _PTTraceConfig._traceDirectoryURL,
+                            _PTTraceConfig._traceGroups,
+                            _PTTraceConfig._traceName,
+                            _PTTraceConfig._traceTimeoutS,
+                            _PTTraceConfig._traceType, _PTTraceSession._config,
+                            _PTTraceSession._connection,
+                            _PTTraceSession._delegate, _PTTraceSession._isValid ]
+...

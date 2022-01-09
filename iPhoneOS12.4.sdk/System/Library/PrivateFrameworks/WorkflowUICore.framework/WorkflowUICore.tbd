@@ -1,0 +1,70 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/WorkflowUICore.framework/WorkflowUICore
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowed-clients:      [ ActionKitUI, RunShortcut, Shortcuts, ShortcutsAppTests,
+                            ShortcutsExtension, WorkflowEditor, WorkflowUI,
+                            WorkflowUITests ]
+    symbols:              [ _WFAPUILongLookViewControllerClass,
+                            _WorkflowUICoreVersionNumber,
+                            _WorkflowUICoreVersionString ]
+    objc-classes:         [ _WFAlertPresentationSource,
+                            _WFConcreteUIKitUserInterface,
+                            _WFIntentPlatterViewController,
+                            _WFItemPickerTableViewCell,
+                            _WFItemPickerViewController,
+                            _WFRichContentItemCellView, _WFTreeNode,
+                            _WFUIAlertControllerAlertPresenter,
+                            _WFUIKitAlertPresenter,
+                            __TtC14WorkflowUICore21DebugStatusBarManager ]
+    objc-ivars:           [ _WFAlertPresentationSource._barButtonItem,
+                            _WFAlertPresentationSource._canOverlapSourceViewRect,
+                            _WFAlertPresentationSource._permittedArrowDirections,
+                            _WFAlertPresentationSource._sourceRect,
+                            _WFAlertPresentationSource._sourceView,
+                            _WFConcreteUIKitUserInterface._actionUserInterface,
+                            _WFConcreteUIKitUserInterface._confirmationCompletionHandler,
+                            _WFConcreteUIKitUserInterface._handleCompletionHandler,
+                            _WFConcreteUIKitUserInterface._intentViewController,
+                            _WFConcreteUIKitUserInterface._presentedAlert,
+                            _WFConcreteUIKitUserInterface._view,
+                            _WFConcreteUIKitUserInterface._viewController,
+                            _WFIntentPlatterViewController._cardPresentation,
+                            _WFIntentPlatterViewController._clickPresentationInteractionManager,
+                            _WFIntentPlatterViewController._configuration,
+                            _WFIntentPlatterViewController._delegate,
+                            _WFIntentPlatterViewController._interaction,
+                            _WFIntentPlatterViewController._longLookViewController,
+                            _WFIntentPlatterViewController._requiresConfirmation,
+                            _WFIntentPlatterViewController._sourceView,
+                            _WFItemPickerTableViewCell._cellView,
+                            _WFItemPickerViewController._allButtons,
+                            _WFItemPickerViewController._buttons,
+                            _WFItemPickerViewController._leadingNavigationButton,
+                            _WFItemPickerViewController._prompt,
+                            _WFItemPickerViewController._trailingNavigationButtons,
+                            _WFRichContentItemCellView._accessibilityLabel,
+                            _WFRichContentItemCellView._altLabel,
+                            _WFRichContentItemCellView._alwaysLeftAlign,
+                            _WFRichContentItemCellView._firstRowConstraintsWithAltText,
+                            _WFRichContentItemCellView._firstRowConstraintsWithoutAltText,
+                            _WFRichContentItemCellView._hasImage,
+                            _WFRichContentItemCellView._imageHeightConstraint,
+                            _WFRichContentItemCellView._imageLeadingConstraint,
+                            _WFRichContentItemCellView._imageRoundingStyle,
+                            _WFRichContentItemCellView._imageView,
+                            _WFRichContentItemCellView._imageWidthConstraint,
+                            _WFRichContentItemCellView._item,
+                            _WFRichContentItemCellView._subtitleLabel,
+                            _WFRichContentItemCellView._titleLabel,
+                            _WFRichContentItemCellView._verticalConstraintsWithSubtitle,
+                            _WFRichContentItemCellView._verticalConstraintsWithoutSubtitle,
+                            _WFTreeNode._flattenedDescendents,
+                            _WFTreeNode._mutableChildNodes,
+                            _WFTreeNode._observer, _WFTreeNode._parentNode,
+                            _WFTreeNode._representedObject ]
+...

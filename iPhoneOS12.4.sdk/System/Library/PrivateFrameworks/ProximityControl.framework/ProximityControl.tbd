@@ -1,0 +1,63 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/ProximityControl.framework/ProximityControl
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PCFrameworkBundleIdentifier, _PCXPCServiceName,
+                            _ProximityControlVersionNumber,
+                            _ProximityControlVersionString,
+                            _kProximityControlAlarmActivityType,
+                            _kProximityControlCallActivityType,
+                            _kProximityControlMediaActivityType,
+                            _kProximityControlTimerActivityType ]
+    objc-classes:         [ _PCActivityUtility, _PCAlarmActivity, _PCCLIClient,
+                            _PCDisambiguationContext, _PCDisplayContext,
+                            _PCHomeKitIdentifier, _PCLocalizedString,
+                            _PCMediaActivity, _PCMediaRemoteDisplayContext,
+                            _PCMediaRemoteIdentifier, _PCProgressEvent,
+                            _PCProximityEvent, _PCRemoteActivityClient,
+                            _PCTelephonyActivity, _PCTimerActivity ]
+    objc-ivars:           [ _PCCLIClient._dispatchQueue,
+                            _PCCLIClient._interruptionHandler,
+                            _PCCLIClient._invalidationHandler,
+                            _PCCLIClient._xpcCnx,
+                            _PCDisambiguationContext._activity,
+                            _PCDisambiguationContext._activityData,
+                            _PCDisambiguationContext._identifier,
+                            _PCDisambiguationContext._interactionDirection,
+                            _PCDisplayContext._interactionBehavior,
+                            _PCDisplayContext._interactionDirection,
+                            _PCDisplayContext._legacyAttachmentURL,
+                            _PCDisplayContext._legacyBodyText,
+                            _PCDisplayContext._localizedPrimaryAltText,
+                            _PCDisplayContext._localizedSecondaryAltText,
+                            _PCHomeKitIdentifier._accessoryID,
+                            _PCHomeKitIdentifier._assetType,
+                            _PCHomeKitIdentifier._homeID,
+                            _PCMediaRemoteDisplayContext._localDeviceState,
+                            _PCMediaRemoteDisplayContext._mediaRemoteID,
+                            _PCMediaRemoteDisplayContext._proxDeviceState,
+                            _PCMediaRemoteDisplayContext._selectedDeviceState,
+                            _PCMediaRemoteIdentifier._assetType,
+                            _PCMediaRemoteIdentifier._mediaRemoteID,
+                            _PCProgressEvent._error, _PCProgressEvent._eventType,
+                            _PCProgressEvent._mediaRemoteID,
+                            _PCProximityEvent._error,
+                            _PCProximityEvent._eventType,
+                            _PCProximityEvent._expectsDisplayContext,
+                            _PCProximityEvent._info,
+                            _PCProximityEvent._mediaRemoteID,
+                            _PCRemoteActivityClient._activityDataUpdateHandler,
+                            _PCRemoteActivityClient._dispatchQueue,
+                            _PCRemoteActivityClient._homeKitUpdateHandler,
+                            _PCRemoteActivityClient._interruptionHandler,
+                            _PCRemoteActivityClient._invalidationHandler,
+                            _PCRemoteActivityClient._mediaRemoteUpdateHandler,
+                            _PCRemoteActivityClient._ucat,
+                            _PCRemoteActivityClient._uiWillDismissHandler,
+                            _PCRemoteActivityClient._updateHandler,
+                            _PCRemoteActivityClient._xpcCnx ]
+...

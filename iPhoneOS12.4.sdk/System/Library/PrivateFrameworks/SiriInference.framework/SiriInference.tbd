@@ -1,0 +1,23 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SiriInference.framework/SiriInference
+current-version:       0
+compatibility-version: 0
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _AppMatches, __TtC13SiriInference14RefreshRollups,
+                            __TtC13SiriInference15BackgroundQueue,
+                            __TtC13SiriInference15SaveInteraction,
+                            __TtC13SiriInference15ScrubOldRecords,
+                            __TtC13SiriInference17ScrubDodMLRecords,
+                            __TtC13SiriInference18FetchMorphunAssets,
+                            __TtC13SiriInference19ScrubDeletedRecords,
+                            __TtC13SiriInference20BackfillInteractions,
+                            __TtC13SiriInference20XPCActivityOperation,
+                            __TtC13SiriInference23ScrubRuntimeDataRecords,
+                            __TtC13SiriInference24ProcessUnstitchedIntents,
+                            __TtC13SiriInference25RestartableBlockOperation,
+                            __TtC13SiriInference26HolidaysDBPollingOperation,
+                            __TtC13SiriInference26HolidaysDBUpdaterOperation ]
+...

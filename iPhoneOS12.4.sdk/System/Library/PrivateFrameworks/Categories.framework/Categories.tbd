@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Categories.framework/Categories
+current-version:       1.0.46
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _CTCategoriesDidChangeNotification,
+                            _CTCategoriesVersionIdentifierKey,
+                            _CTCategoriesVersionNumber,
+                            _CTCategoriesVersionString,
+                            _CTCategoryIdentifierCreativity,
+                            _CTCategoryIdentifierEducation,
+                            _CTCategoryIdentifierEntertainment,
+                            _CTCategoryIdentifierGames,
+                            _CTCategoryIdentifierHealthAndFitness,
+                            _CTCategoryIdentifierOther,
+                            _CTCategoryIdentifierOtherUnknown,
+                            _CTCategoryIdentifierProductivity,
+                            _CTCategoryIdentifierReadingAndReference,
+                            _CTCategoryIdentifierSocialNetworking,
+                            _CTCategoryIdentifierSystem,
+                            _CTCategoryIdentifierSystemBlockable,
+                            _CTCategoryIdentifierSystemHidden,
+                            _CTCategoryIdentifierSystemUnblockable,
+                            _CTErrorDomain, _CTErrorKeyHTTPResponse,
+                            _CTErrorKeyHTTPResponseData ]
+    objc-classes:         [ CTCategories, CTCategory, CTError, CTLogging, CTUtilities ]
+    objc-ivars:           [ CTCategories._indexVersionId,
+                            CTCategory._bundleIdentifier, CTCategory._identifier,
+                            CTCategory._primaryWebDomain,
+                            CTCategory._resourceString,
+                            CTCategory._secondaryIdentifier,
+                            CTCategory._webDomains ]
+...

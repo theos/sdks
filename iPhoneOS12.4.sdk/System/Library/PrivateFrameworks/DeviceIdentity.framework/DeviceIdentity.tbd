@@ -1,0 +1,48 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _DeviceIdentityCreateClientCertificateRequest,
+                            _DeviceIdentityIssueClientCertificateWithCompletion,
+                            _kMAOptionsAllowInvalidNetworkCertificates,
+                            _kMAOptionsBAAAccessControls, _kMAOptionsBAACACert,
+                            _kMAOptionsBAAClientAttestationData,
+                            _kMAOptionsBAAClientAttestationPublicKey,
+                            _kMAOptionsBAAIgnoreExistingKeychainItems,
+                            _kMAOptionsBAAKeychainAccessGroup,
+                            _kMAOptionsBAAKeychainLabel,
+                            _kMAOptionsBAALocalAuthenticationContext,
+                            _kMAOptionsBAANetworkTimeoutInterval,
+                            _kMAOptionsBAANonce, _kMAOptionsBAAOIDAccessControls,
+                            _kMAOptionsBAAOIDDeviceIdentifiers,
+                            _kMAOptionsBAAOIDDeviceIntent,
+                            _kMAOptionsBAAOIDDeviceOSInformation,
+                            _kMAOptionsBAAOIDHardwareProperties,
+                            _kMAOptionsBAAOIDIMG4Manifest,
+                            _kMAOptionsBAAOIDKeyUsageProperties,
+                            _kMAOptionsBAAOIDNonce, _kMAOptionsBAAOIDSToInclude,
+                            _kMAOptionsBAAOIDUCRTDeviceIdentifiers,
+                            _kMAOptionsBAASCRTAttestation,
+                            _kMAOptionsBAAUseAuthenticationUI,
+                            _kMAOptionsBAAValidity, _kMAOptionsBasebandWaitCount,
+                            _kMAOptionsResuseExistingKey,
+                            _kMAOptionsUseSoftwareGeneratedKey ]
+    objc-classes:         [ DeviceTypeDeviceIdentity, GestaltHlpr ]
+    objc-ivars:           [ DeviceTypeDeviceIdentity._device_class,
+                            DeviceTypeDeviceIdentity._hardware_model,
+                            DeviceTypeDeviceIdentity._has_internal_diagnostics,
+                            DeviceTypeDeviceIdentity._has_telephony,
+                            DeviceTypeDeviceIdentity._is_dev_board,
+                            DeviceTypeDeviceIdentity._is_fpga,
+                            DeviceTypeDeviceIdentity._is_internal_build,
+                            DeviceTypeDeviceIdentity._is_ipad,
+                            DeviceTypeDeviceIdentity._is_ipod,
+                            DeviceTypeDeviceIdentity._product_type,
+                            DeviceTypeDeviceIdentity._should_hactivate ]
+...

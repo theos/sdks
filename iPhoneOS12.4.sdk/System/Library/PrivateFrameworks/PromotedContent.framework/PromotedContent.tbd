@@ -1,0 +1,28 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/PromotedContent.framework/PromotedContent
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PromotedContentVersionNumber,
+                            _PromotedContentVersionString ]
+    objc-classes:         [ _APPCBannerRepresentation, _APPCBaseContext,
+                            _APPCBlacklistReasonCharacteristic,
+                            _APPCContentDepiction, _APPCContentRepresentation,
+                            _APPCContext, _APPCContextBuilder,
+                            _APPCDesiredPlacement, _APPCDiagnosticMetricsHelper,
+                            _APPCLifecycleMetricsHelper, _APPCMediaMetricsHelper,
+                            _APPCMetric, _APPCNativeAppAdRepresentation,
+                            _APPCNativeRepresentation,
+                            _APPCNewsSupplementalContext,
+                            _APPCOutstreamVideoInfo, _APPCPromotedContent,
+                            _APPCPromotedContentInfo, _APPCSubscriptionEvent,
+                            _APPCTapAction, _APPCVideoRepresentation,
+                            __TtC15PromotedContent12WebTapAction,
+                            __TtC15PromotedContent14StoreTapAction,
+                            __TtC15PromotedContent15ExpandTapAction,
+                            __TtC15PromotedContent17CalendarTapAction,
+                            __TtC15PromotedContent20JourneyMetricsHelper ]
+...

@@ -1,0 +1,62 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/Timeline.framework/Timeline
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _TLLoggingObjectForDomain, _TimelineVersionNumber,
+                            _TimelineVersionString ]
+    objc-classes:         [ _TLOperation, _TLPreviewTimelineError,
+                            _TLPreviewTimelineSelectableRegion, _TLTimeline,
+                            _TLTimelineBlobEntry, _TLTimelineEntryNode,
+                            _TLTimelineEntryNodeRecycleBin,
+                            _TLTimelineExtendOperation, _TLTimelineNode,
+                            _TLTimelineOperation, _TLTimelineSegment,
+                            _TLTimelineSessionOperation,
+                            _TLTimelineSetupOperation, _TLTimelineUtilities,
+                            _TLTimelineWindow ]
+    objc-ivars:           [ _TLOperation._dataSource, _TLOperation._error,
+                            _TLOperation._operationCompletionBlock,
+                            _TLPreviewTimelineError._errorDescription,
+                            _TLPreviewTimelineError._errorType,
+                            _TLPreviewTimelineError._path,
+                            _TLPreviewTimelineSelectableRegion._path,
+                            _TLPreviewTimelineSelectableRegion._rect,
+                            _TLTimeline._delegate,
+                            _TLTimeline._delegateRespondsToTimerFired,
+                            _TLTimeline._leftmostNode, _TLTimeline._notifyToken,
+                            _TLTimeline._nowWindow, _TLTimeline._paused,
+                            _TLTimeline._rightmostNode, _TLTimeline._timer,
+                            _TLTimeline._updatesNowNodeOnSignificantTimeChange,
+                            _TLTimelineBlobEntry._blob,
+                            _TLTimelineBlobEntry._tl_entryDate,
+                            _TLTimelineEntryNode._entry,
+                            _TLTimelineExtendOperation._afterDate,
+                            _TLTimelineExtendOperation._extendError,
+                            _TLTimelineExtendOperation._limit,
+                            _TLTimelineExtendOperation._timelineEntries,
+                            _TLTimelineExtendOperation._timeout,
+                            _TLTimelineNode._leftNode,
+                            _TLTimelineNode._rightNode,
+                            _TLTimelineOperation._identifiable,
+                            _TLTimelineSegment._count,
+                            _TLTimelineSegment._leftmostNode,
+                            _TLTimelineSegment._rightmostNode,
+                            _TLTimelineSessionOperation._operationQueue,
+                            _TLTimelineSessionOperation._operationTimeout,
+                            _TLTimelineSessionOperation._operations,
+                            _TLTimelineSessionOperation._provider,
+                            _TLTimelineSessionOperation._providerTimeout,
+                            _TLTimelineSessionOperation._sessionCompletionBlock,
+                            _TLTimelineSessionOperation._sessionError,
+                            _TLTimelineSetupOperation._entryLimit,
+                            _TLTimelineSetupOperation._setupError,
+                            _TLTimelineSetupOperation._timeline,
+                            _TLTimelineSetupOperation._timeout,
+                            _TLTimelineWindow._focalNode,
+                            _TLTimelineWindow._leftSegment,
+                            _TLTimelineWindow._maxNodes,
+                            _TLTimelineWindow._rightSegment ]
+...

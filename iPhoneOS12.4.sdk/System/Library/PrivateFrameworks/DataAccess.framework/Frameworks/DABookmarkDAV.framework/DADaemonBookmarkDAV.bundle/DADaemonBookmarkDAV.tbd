@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DABookmarkDAV.framework/DADaemonBookmarkDAV.bundle/DADaemonBookmarkDAV
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ BookmarkDAVAgent, BookmarkDAVDaemonAccount,
+                            BookmarkDAViCloudDaemonAccount ]
+    objc-ivars:           [ BookmarkDAVAgent._containerPushKey,
+                            BookmarkDAVAgent._isSyncing,
+                            BookmarkDAVAgent._isSyncingHierarchy,
+                            BookmarkDAVAgent._isWaitingToSync,
+                            BookmarkDAVAgent._serverTokenRegistrationURL,
+                            BookmarkDAVDaemonAccount._syncDriver,
+                            BookmarkDAViCloudDaemonAccount._host,
+                            BookmarkDAViCloudDaemonAccount._port,
+                            BookmarkDAViCloudDaemonAccount._useSSL ]
+...

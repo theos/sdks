@@ -1,0 +1,67 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ContextKit.framework/ContextKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _CKContextKitNotification_ConfigurationUpdate,
+                            _ContextKitErrorDomain, _ContextKitVersionNumber,
+                            _ContextKitVersionString ]
+    objc-classes:         [ CKContextClient, CKContextCompleter, CKContextGlobals,
+                            CKContextRequest, CKContextResponse, CKContextResult ]
+    objc-ivars:           [ CKContextClient._capabilities,
+                            CKContextClient._defaultRequestType,
+                            CKContextClient._indexVersionId,
+                            CKContextClient._notificationsQueue,
+                            CKContextClient._updateHandlers,
+                            CKContextCompleter._couldHaveShown,
+                            CKContextCompleter._discarded,
+                            CKContextCompleter._hideCompletions,
+                            CKContextCompleter._hideCompletionsAfterDate,
+                            CKContextCompleter._ignorePrefix,
+                            CKContextCompleter._input,
+                            CKContextCompleter._mustPrefixMatchLength,
+                            CKContextCompleter._response,
+                            CKContextCompleter._searchLocale,
+                            CKContextCompleter._zkwResults,
+                            CKContextRequest._contentAuthor,
+                            CKContextRequest._contentDescription,
+                            CKContextRequest._contentKeywords,
+                            CKContextRequest._debug, CKContextRequest._dontSkip,
+                            CKContextRequest._includeHigherLevelTopics,
+                            CKContextRequest._languageTag,
+                            CKContextRequest._overrideBlendAlpha,
+                            CKContextRequest._overrideBlendBeta,
+                            CKContextRequest._overrideBlendGamma,
+                            CKContextRequest._prepareOnly,
+                            CKContextRequest._text, CKContextRequest._textIsRaw,
+                            CKContextRequest._timing, CKContextRequest._title,
+                            CKContextRequest._topk, CKContextRequest._type,
+                            CKContextRequest._url, CKContextResponse._debug,
+                            CKContextResponse._discarded,
+                            CKContextResponse._engaged, CKContextResponse._error,
+                            CKContextResponse._hideCompletionsAfterDate,
+                            CKContextResponse._hideCompletionsTimeLimit,
+                            CKContextResponse._level1Topics,
+                            CKContextResponse._level2Topics,
+                            CKContextResponse._logged,
+                            CKContextResponse._loggingCouldHaveShownMax,
+                            CKContextResponse._loggingInputLengthMax,
+                            CKContextResponse._loggingServerOverride,
+                            CKContextResponse._loggingShownMax,
+                            CKContextResponse._mustPrefixMatchLength,
+                            CKContextResponse._requestType,
+                            CKContextResponse._results,
+                            CKContextResponse._resultsNeedFiltering,
+                            CKContextResponse._shown,
+                            CKContextResponse._transactionSuccessful,
+                            CKContextResponse._uuid, CKContextResult._category,
+                            CKContextResult._debug, CKContextResult._minPrefix,
+                            CKContextResult._portraitId, CKContextResult._query,
+                            CKContextResult._relatedItems,
+                            CKContextResult._title, CKContextResult._url ]
+...

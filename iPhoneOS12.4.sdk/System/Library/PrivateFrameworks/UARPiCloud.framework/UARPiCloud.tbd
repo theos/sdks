@@ -1,0 +1,53 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/UARPiCloud.framework/UARPiCloud
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _UARPiCloudVersionNumber, _UARPiCloudVersionString,
+                            _getEntryForKey, _saveEntryForKey ]
+    objc-classes:         [ _UARPiCloudAccessory, _UARPiCloudAccessoryRecord,
+                            _UARPiCloudContainer, _UARPiCloudManager,
+                            _UARPiCloudZone ]
+    objc-ivars:           [ _UARPiCloudAccessory._availableRecords,
+                            _UARPiCloudAccessory._firmwareVersion,
+                            _UARPiCloudAccessory._productGroup,
+                            _UARPiCloudAccessory._productNumber,
+                            _UARPiCloudAccessory._record,
+                            _UARPiCloudAccessory._signatureValidationNeeded,
+                            _UARPiCloudAccessoryRecord._ckRecord,
+                            _UARPiCloudAccessoryRecord._deploymentList,
+                            _UARPiCloudAccessoryRecord._deploymentStr,
+                            _UARPiCloudAccessoryRecord._firmwareBinaryHash,
+                            _UARPiCloudAccessoryRecord._firmwareFileSize,
+                            _UARPiCloudAccessoryRecord._firmwareURL,
+                            _UARPiCloudAccessoryRecord._firmwareVersion,
+                            _UARPiCloudAccessoryRecord._manufacturer,
+                            _UARPiCloudAccessoryRecord._model,
+                            _UARPiCloudAccessoryRecord._recordName,
+                            _UARPiCloudAccessoryRecord._recordStatus,
+                            _UARPiCloudAccessoryRecord._releaseDate,
+                            _UARPiCloudAccessoryRecord._releaseNotesFileSize,
+                            _UARPiCloudAccessoryRecord._releaseNotesHash,
+                            _UARPiCloudAccessoryRecord._releaseNotesURL,
+                            _UARPiCloudAccessoryRecord._releaseType,
+                            _UARPiCloudAccessoryRecord._signature,
+                            _UARPiCloudAccessoryRecord._updateClassification,
+                            _UARPiCloudContainer._container,
+                            _UARPiCloudContainer._containerID,
+                            _UARPiCloudContainer._database,
+                            _UARPiCloudContainer._databaseChangeToken,
+                            _UARPiCloudContainer._publicKey,
+                            _UARPiCloudContainer._updatedRecords,
+                            _UARPiCloudContainer._updatedZones,
+                            _UARPiCloudContainer._verificationCertificate,
+                            _UARPiCloudManager._container,
+                            _UARPiCloudManager._delegate,
+                            _UARPiCloudManager._log,
+                            _UARPiCloudManager._recordProcessingQueue,
+                            _UARPiCloudZone._changeToken,
+                            _UARPiCloudZone._containerID,
+                            _UARPiCloudZone._zoneID ]
+...

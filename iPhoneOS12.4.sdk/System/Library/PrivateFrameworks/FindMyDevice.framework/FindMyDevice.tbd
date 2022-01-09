@@ -1,0 +1,78 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _FMDFMIPManagerUnregisterErrorDomain,
+                            _fmdFMIPLastOperationResult,
+                            _kAccessoriesChangedNotification,
+                            _kActivationLockAllowedMayHaveChangedNotification,
+                            _kActivationLockStateDidChangeNotification,
+                            _kFMDAccessoryPlaySoundErrorDomain, _kFMDErrorDomain,
+                            _kFMDFMIPAccountNameKey, _kFMDFMIPAccountPersonIDKey,
+                            _kFMDLogPrefsChangedDarwinNotification,
+                            _kFMDNotBackedUpPrefDomain,
+                            _kFMDPlaySoundStartedDarwinNotification,
+                            _kFMDPlaySoundStoppedDarwinNotification,
+                            _kFMDPostWipePrefDomain, _kFMDPrefDomain,
+                            _kFMDPublicNotBackedUpPrefDomain,
+                            _kFMDWatchNotBackedUpPrefDomain,
+                            _kFMDWatchPrefDomain, _kFMIPAppBundleIdentifier,
+                            _kFMIPLowBatteryLocateStateDidChangeNotification,
+                            _kFMIPStateDidChangeNotification,
+                            _kFMWEnabledNotification,
+                            _kFindMyDeviceIdentityXPCInterfaceErrorDomain,
+                            _kLostModeChangedNotification,
+                            _kStopLostModeAlarmNotification ]
+    objc-classes:         [ FMDAccessoryIdentifier, FMDDeviceIdentityFactory,
+                            FMDFMIPManager, FMDFMIPSharedStateManager,
+                            FMDGenericAccessory, FMDGenericMessage,
+                            FMDIdentityAttested, FMDIdentitySigningRequest,
+                            FMDInternalIdentityAttested, FMDLostModeInfo,
+                            FMDVolatileMetaDataRecord, FMNSXPCCachedConnection,
+                            FMNSXPCConnection, FMNSXPCConnectionCache,
+                            FMNSXPCConnectionConfiguration ]
+    objc-ivars:           [ FMDAccessoryIdentifier._string,
+                            FMDGenericAccessory._accessoryIdentifier,
+                            FMDGenericAccessory._audioRoutingIdentifier,
+                            FMDGenericAccessory._audioURL,
+                            FMDGenericMessage._soundDuration,
+                            FMDGenericMessage._soundName,
+                            FMDGenericMessage._vibrate,
+                            FMDIdentityAttested._attestation,
+                            FMDIdentityAttested._sessionIdentifier,
+                            FMDIdentityAttested._signature,
+                            FMDIdentitySigningRequest._dataToSign,
+                            FMDIdentitySigningRequest._useSCRT,
+                            FMDIdentitySigningRequest._validityInMinutes,
+                            FMDInternalIdentityAttested._attestation,
+                            FMDInternalIdentityAttested._sessionIdentifier,
+                            FMDInternalIdentityAttested._signature,
+                            FMDLostModeInfo._disableSlideToUnlock,
+                            FMDLostModeInfo._facetimeCapable,
+                            FMDLostModeInfo._footnoteText,
+                            FMDLostModeInfo._lostModeEnabled,
+                            FMDLostModeInfo._lostModeType,
+                            FMDLostModeInfo._message,
+                            FMDLostModeInfo._phoneNumber,
+                            FMDVolatileMetaDataRecord._dictionary,
+                            FMNSXPCCachedConnection._connection,
+                            FMNSXPCCachedConnection._didInvalidate,
+                            FMNSXPCCachedConnection._failureBlock,
+                            FMNSXPCCachedConnection._serialQueue,
+                            FMNSXPCConnection.__testMockConnection,
+                            FMNSXPCConnection._connection,
+                            FMNSXPCConnection._future,
+                            FMNSXPCConnectionCache._connectionsByServiceName,
+                            FMNSXPCConnectionCache._modsSerialQueue,
+                            FMNSXPCConnectionConfiguration._exportedInterface,
+                            FMNSXPCConnectionConfiguration._machService,
+                            FMNSXPCConnectionConfiguration._options,
+                            FMNSXPCConnectionConfiguration._remoteInterface,
+                            FMNSXPCConnectionConfiguration._serviceName ]
+...

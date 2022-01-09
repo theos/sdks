@@ -1,0 +1,26 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/URLCompression.framework/URLCompression
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _UCURLCoderErrorDomain, _UCURLCoderErrorSymbolKey,
+                            _UCURLCoderUnsupportedURLComponentTypeKey ]
+    objc-classes:         [ _UCAppClipCodeURLDecoder, _UCAppClipCodeURLEncoder,
+                            _UCAppClipCodeURLEncodingResult, _UCResourceFilePath ]
+    objc-ivars:           [ _UCAppClipCodeURLDecoder._codingVersion,
+                            _UCAppClipCodeURLDecoder._decoder,
+                            _UCAppClipCodeURLEncoder._codingVersion,
+                            _UCAppClipCodeURLEncoder._encoder,
+                            _UCAppClipCodeURLEncodingResult._appClipCodeBytes,
+                            _UCAppClipCodeURLEncodingResult._hasPathOrQueryEncoding,
+                            _UCAppClipCodeURLEncodingResult._hostEncodedBitCount,
+                            _UCAppClipCodeURLEncodingResult._hostEncodingFormat,
+                            _UCAppClipCodeURLEncodingResult._nonTemplatePathAndQueryEncodeType,
+                            _UCAppClipCodeURLEncodingResult._rawEncodedBits,
+                            _UCAppClipCodeURLEncodingResult._subdomainType,
+                            _UCAppClipCodeURLEncodingResult._templateType,
+                            _UCAppClipCodeURLEncodingResult._url ]
+...

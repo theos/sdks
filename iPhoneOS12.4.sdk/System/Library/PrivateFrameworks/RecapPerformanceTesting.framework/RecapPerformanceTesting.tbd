@@ -1,0 +1,64 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/RecapPerformanceTesting.framework/RecapPerformanceTesting
+current-version:       17
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RPTAmplitudeFromPagesOfView,
+                            _RPTAxisFromScrollDirection,
+                            _RPTCGPointAdvanceInDirectionByAmount,
+                            _RPTCGRectGetMidpoint, _RPTContentSizeAlongAxis,
+                            _RPTContentSizeInDirection,
+                            _RPTExcludeSystemRegionsFromRect,
+                            _RPTExcludeSystemRegionsFromView,
+                            _RPTGetBoundsForView, _RPTOppositeDirectionFrom,
+                            _RPTPredominantAxisOfContentOf,
+                            _RPTQuadrantOfContentOffsetFor, _RPTSizeAlongAxis,
+                            _RPTViewFrameInScreenSpace ]
+    objc-classes:         [ _RPTDirectionalSwipeTestParameters,
+                            _RPTGroupScrollTestParameters,
+                            _RPTOscillationScrollTestParameters,
+                            _RPTPagingScrollTestParameters,
+                            _RPTScrollViewTestParameters, _RPTTestRunner ]
+    objc-ivars:           [ _RPTDirectionalSwipeTestParameters._completionHandler,
+                            _RPTDirectionalSwipeTestParameters._direction,
+                            _RPTDirectionalSwipeTestParameters._scrollingBounds,
+                            _RPTDirectionalSwipeTestParameters._shouldFlick,
+                            _RPTDirectionalSwipeTestParameters._swipeCount,
+                            _RPTDirectionalSwipeTestParameters._swipeSpeedFactor,
+                            _RPTDirectionalSwipeTestParameters._testName,
+                            _RPTGroupScrollTestParameters._completionHandler,
+                            _RPTGroupScrollTestParameters._parameters,
+                            _RPTGroupScrollTestParameters.testName,
+                            _RPTOscillationScrollTestParameters._amplitudeVariationPerIteration,
+                            _RPTOscillationScrollTestParameters._completionHandler,
+                            _RPTOscillationScrollTestParameters._finishWithHalfIteration,
+                            _RPTOscillationScrollTestParameters._initialAmplitude,
+                            _RPTOscillationScrollTestParameters._initialDirection,
+                            _RPTOscillationScrollTestParameters._iterationDuration,
+                            _RPTOscillationScrollTestParameters._iterations,
+                            _RPTOscillationScrollTestParameters._preventDismissalGestures,
+                            _RPTOscillationScrollTestParameters._realInitialDirection,
+                            _RPTOscillationScrollTestParameters._scrollingBounds,
+                            _RPTOscillationScrollTestParameters._shouldFlick,
+                            _RPTOscillationScrollTestParameters._testName,
+                            _RPTPagingScrollTestParameters._amplitude,
+                            _RPTPagingScrollTestParameters._completionHandler,
+                            _RPTPagingScrollTestParameters._direction,
+                            _RPTPagingScrollTestParameters._iterationDuration,
+                            _RPTPagingScrollTestParameters._iterations,
+                            _RPTPagingScrollTestParameters._realDirection,
+                            _RPTPagingScrollTestParameters._scrollingBounds,
+                            _RPTPagingScrollTestParameters._testName,
+                            _RPTPagingScrollTestParameters._useFlicks,
+                            _RPTScrollViewTestParameters._amplitude,
+                            _RPTScrollViewTestParameters._completionHandler,
+                            _RPTScrollViewTestParameters._direction,
+                            _RPTScrollViewTestParameters._iterationDurationFactor,
+                            _RPTScrollViewTestParameters._preventSheetDismissal,
+                            _RPTScrollViewTestParameters._scrollingBounds,
+                            _RPTScrollViewTestParameters._shouldFlick,
+                            _RPTScrollViewTestParameters._testName ]
+...

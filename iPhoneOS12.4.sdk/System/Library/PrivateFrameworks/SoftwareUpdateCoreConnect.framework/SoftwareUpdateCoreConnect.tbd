@@ -1,0 +1,50 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/SoftwareUpdateCoreConnect.framework/SoftwareUpdateCoreConnect
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _kSUCoreConnectClientIDTypeAny,
+                            _kSUCoreConnectMonitorReplyErrorKey,
+                            _kSUCoreConnectMonitorReplyMessageKey ]
+    objc-classes:         [ _SUCoreConnectClient, _SUCoreConnectClientPolicy,
+                            _SUCoreConnectClientProxy, _SUCoreConnectConstants,
+                            _SUCoreConnectMessage, _SUCoreConnectServer,
+                            _SUCoreConnectServerPolicy, _SUCoreConnectVersion ]
+    objc-ivars:           [ _SUCoreConnectClient._clientCompletionQueue,
+                            _SUCoreConnectClient._clientConnectionStateAccessQueue,
+                            _SUCoreConnectClient._clientDelegateCallbackQueue,
+                            _SUCoreConnectClient._clientMessageQueue,
+                            _SUCoreConnectClient._clientReplyCompletionQueue,
+                            _SUCoreConnectClient._connected,
+                            _SUCoreConnectClient._logger,
+                            _SUCoreConnectClient._policy,
+                            _SUCoreConnectClient._serverConnection,
+                            _SUCoreConnectClientPolicy._clientDelegate,
+                            _SUCoreConnectClientPolicy._clientID,
+                            _SUCoreConnectClientPolicy._serviceName,
+                            _SUCoreConnectClientProxy._clientID,
+                            _SUCoreConnectClientProxy._completionQueue,
+                            _SUCoreConnectClientProxy._progressBlock,
+                            _SUCoreConnectMessage._clientID,
+                            _SUCoreConnectMessage._error,
+                            _SUCoreConnectMessage._message,
+                            _SUCoreConnectMessage._messageName,
+                            _SUCoreConnectMessage._messageType,
+                            _SUCoreConnectMessage._version,
+                            _SUCoreConnectMessage._whitelistedClasses,
+                            _SUCoreConnectServer._connectionPolicy,
+                            _SUCoreConnectServer._connectionSendMessageQueue,
+                            _SUCoreConnectServer._connections,
+                            _SUCoreConnectServer._connectionsAccessQueue,
+                            _SUCoreConnectServer._logger,
+                            _SUCoreConnectServer._observerConnections,
+                            _SUCoreConnectServerPolicy._connectionQueue,
+                            _SUCoreConnectServerPolicy._delegateQueue,
+                            _SUCoreConnectServerPolicy._entitlements,
+                            _SUCoreConnectServerPolicy._serverDelegate,
+                            _SUCoreConnectServerPolicy._serviceName,
+                            _SUCoreConnectVersion._selectorString ]
+...

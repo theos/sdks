@@ -1,0 +1,26 @@
+---
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+install-name:          /System/Library/PrivateFrameworks/CoreThread.framework/CoreThread
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _kTHNetworkChannel_None ]
+    objc-classes:         [ _THThreadNetwork, _THThreadNetworkCredentials,
+                            _THThreadNetworkCredentialsStoreRecord ]
+    objc-ivars:           [ _THThreadNetwork._extendedPANID,
+                            _THThreadNetwork._networkName,
+                            _THThreadNetworkCredentials._PANID,
+                            _THThreadNetworkCredentials._PSKc,
+                            _THThreadNetworkCredentials._channel,
+                            _THThreadNetworkCredentials._masterKey,
+                            _THThreadNetworkCredentials._passPhrase,
+                            _THThreadNetworkCredentials._userInfo,
+                            _THThreadNetworkCredentialsStoreRecord._creationDate,
+                            _THThreadNetworkCredentialsStoreRecord._credentials,
+                            _THThreadNetworkCredentialsStoreRecord._keychainAccessGroup,
+                            _THThreadNetworkCredentialsStoreRecord._lastModificationDate,
+                            _THThreadNetworkCredentialsStoreRecord._network,
+                            _THThreadNetworkCredentialsStoreRecord._uniqueIdentifier ]
+...
