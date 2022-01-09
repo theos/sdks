@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/OSAnalyticsPrivate.framework/OSAnalyticsPrivate
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _OSAnalyticsPrivateVersionNumber,
+                            _OSAnalyticsPrivateVersionString ]
+    objc-classes:         [ OSAEphemeralLog, OSAHttpSubmitter, OSALegacyXform,
+                            OSAStreamDeflater, OSASubmissionPolicy, OSASubmitter,
+                            PCCEndpoint, PCCGroupJob, PCCIDSEndpoint, PCCJob,
+                            PCCProxiedDevice, PCCProxyingDevice, PCCRequest ]
+    objc-ivars:           [ OSASubmitter._dryRun, OSASubmitter._responseCode,
+                            OSASubmitter._responseData,
+                            OSASubmitter._responseError,
+                            OSASubmitter._responseHeaders, PCCEndpoint._delegate,
+                            PCCJob._errObj, PCCJob._package ]
+...

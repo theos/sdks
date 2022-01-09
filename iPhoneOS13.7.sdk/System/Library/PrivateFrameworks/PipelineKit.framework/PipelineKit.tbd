@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PipelineKit.framework/PipelineKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ MediaMiningKit, PhotoAnalysis, PhotosGraph ]
+    symbols:              [ _PIErrorDomain, _PipelineKitVersionNumber,
+                            _PipelineKitVersionString,
+                            _kPIReachabilityChangedNotification ]
+    objc-classes:         [ PICLGeocoderOperation, PIEKEventStoreOperation,
+                            PIError, PIGroup, PILogging, PIMKLocalSearchOperation,
+                            PIOperation, PIOperationSubclass, PIPipeline,
+                            PIReachability, PIStatisticsElapsedTime,
+                            PIURLDataOperation, PIURLDownloadOperation,
+                            PIURLSessionOperationSubclass ]
+...

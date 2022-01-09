@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WPDaemon.framework/WPDaemon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WPErrorDomain, _WPLogInitOnce, _WPLoggingInit,
+                            _WiProxLog, _advertisingHeader,
+                            _kAppleManufacturerTypeBottom,
+                            _kAppleManufacturerTypeTop,
+                            _kCBAdditionalAppleMfgAdvertisements,
+                            _kCBAdvAppleMfgTypeKey, _kCBAdvOptionUseFGInterval,
+                            _kGapManufacturerDataType, _kSPAdvertisementData,
+                            _kSPDeviceAddress, _kSPOptional, _kSPScanDate,
+                            _kSPStatus, _kSPrssi, _kWPDFrameworkMessageQueue ]
+    objc-classes:         [ Endpoint, PipeDataTransfer, PipeInfo,
+                            WPAdvertisingRequest, WPAdvertisingRequestsQueue,
+                            WPCharacteristic, WPDAdvertisingData,
+                            WPDAdvertisingManager, WPDClient, WPDConnection,
+                            WPDManager, WPDObjectDiscoveryClient,
+                            WPDObjectDiscoveryData, WPDObjectDiscoveryManager,
+                            WPDPendingCompletions, WPDPersistence, WPDPipeManager,
+                            WPDScanManager, WPDSearchPartyAgent, WPDStat, WPDState,
+                            WPDStatsManager, WPDXPCInterfaces, WPDZoneManager,
+                            WPDaemonServer, WPPeerTrackingRequest, WPScanRequest,
+                            WPZoneTrackingRequest ]
+...

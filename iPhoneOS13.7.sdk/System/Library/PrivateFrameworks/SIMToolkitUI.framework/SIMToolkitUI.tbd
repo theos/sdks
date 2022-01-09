@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SIMToolkitUI.framework/SIMToolkitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NSStringFromSTKSIMToolkitEvent,
+                            _NSStringFromSTKSessionResponseType,
+                            _STKAlertSessionManagerStart, _STKClass0SMSLog,
+                            _STKCommonLog, _STKSIMToolkitLog,
+                            _STKUSSDHostCommunicationInterface, _STKUSSDLog,
+                            _STKUSSDSessionCommunicationInterface,
+                            _STKUSSDSupplementaryServiceEventTypeKey,
+                            _STKUSSDSupplementaryServiceNotificationDataKey,
+                            _STKUSSDSupplementaryServiceSettingTypeKey ]
+    objc-classes:         [ STKAlertSession, STKAlertSessionEventQueue,
+                            STKAlertSessionManager, STKBaseSound,
+                            STKCallSetupSessionAction, STKCallSetupSessionData,
+                            STKCarrierSubscriptionInfo,
+                            STKCarrierSubscriptionMonitor,
+                            STKClass0SMSAlertSession,
+                            STKClass0SMSAlertSessionManager,
+                            STKClass0SMSSessionAction, STKClass0SMSSessionData,
+                            STKIncomingCallUIStateMonitor, STKListItem,
+                            STKListItemsSessionAction, STKListItemsSessionData,
+                            STKMutableCallSetupSessionData,
+                            STKMutableSessionBehavior,
+                            STKMutableTextInputSessionData,
+                            STKNotifySessionAction, STKNotifySessionData,
+                            STKSIMToolkitAlertSession,
+                            STKSIMToolkitAlertSessionManager, STKSessionAction,
+                            STKSessionBehavior, STKSoundFactory, STKSystemSound,
+                            STKTelephonySelectionListItemsProvider,
+                            STKTextInputSessionAction, STKTextInputSessionData,
+                            STKTextSessionAction, STKTextSessionData,
+                            STKToneAlertSound, STKUSSDAlertSession,
+                            STKUSSDAlertSessionManager, STKUSSDFilter,
+                            STKUSSDSessionAction, STKUSSDSessionData,
+                            STKUserEventMonitor, STKYesNoSessionAction,
+                            _STKClass0SMSResponseProvider,
+                            _STKRemoteAlertDescriptor,
+                            _STKSIMToolkitResponseProvider,
+                            _STKUSSDResponseProvider ]
+    objc-ivars:           [ STKCallSetupSessionData._isHighPriority,
+                            STKCallSetupSessionData._phoneNumber,
+                            STKSessionBehavior._dismissesAfterUserEvent,
+                            STKSessionBehavior._shouldSendResponseUponDisplay,
+                            STKSessionBehavior._timeout,
+                            STKTextInputSessionData._defaultText,
+                            STKTextInputSessionData._isDigitsOnly,
+                            STKTextInputSessionData._isSecure,
+                            STKTextInputSessionData._maximumInputLength,
+                            STKTextInputSessionData._minimumInputLength ]
+...

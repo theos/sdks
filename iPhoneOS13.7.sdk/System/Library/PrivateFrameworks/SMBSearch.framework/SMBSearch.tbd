@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SMBSearch.framework/SMBSearch
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DIFF1970TO1601, _QueryGuid, _SMBSearchVersionNumber,
+                            _SMBSearchVersionString, _ShellDetailsGuid,
+                            _StorageGuid, _SystemFileExtensionGuid,
+                            _SystemFilenameGuid, _TimeMidGuid, _align4Pad,
+                            _align8Pad, _dumpBufferMsg, _getChecksum32,
+                            _propset_cifrmwrkcore_ext_guid,
+                            _propset_fscifrmwork_ext_guid,
+                            _propset_msidxs_rowsetext_guid,
+                            _propset_query_ext_guid, _shell_omit_from_view_guid,
+                            _shell_sfgao_flags_strings_guid, _smb_time_NT2local,
+                            _smb_time_local2NT, _unknown1_guid, _unknown2_guid,
+                            _unknown3_guid, _utf16_to_utf8, _utf8_to_utf16,
+                            _utf8_to_utf16le_data ]
+    objc-classes:         [ QueryStatusExResults, cCoercionRestriction,
+                            cContentRestriction, cNodeRestriction,
+                            cPropertyRestriction, cRestriction, cRestrictionArray,
+                            cRowsetProperties, cTableColumn, catalogNameProp,
+                            cbaseVariant, cdbProp, cmdLocaleStrProp, cnodeBuilder,
+                            colOffsetMap, deferCatalogVerifyProp,
+                            deferNonIndexedTrimProp, enableRowSetEventsProp,
+                            freeTextAnyTermProp, freeTextUseStemmingProp,
+                            fullPropSpec, genParseTreeProp, genericOptionsStrProp,
+                            ignoreNoiseOnlyClausesProp, ignoreSBRIProp,
+                            includeScopesProp, machineProp, maxRankProp,
+                            noExpensivePropsProp, parseTreeProp, pidMapper,
+                            queryRestrictionProp, queryTypeProp, resultsFoundProp,
+                            reuseWhereRestriction, rowQueryStatusProp, rowVariant,
+                            safeArrayBound, sameSortOrderUsedProp, scopeFlagsProp,
+                            searchColumn, searchResults, searchRow,
+                            serverNlsVersionDefProp, serverNlsVersionProp,
+                            serverVersionProp, serverWinVersionMajorProp,
+                            serverWinVersionMinorProp, useContentIndexProp,
+                            useExtendedBtypesProp, utf16leData, vtSafeArray,
+                            vtVector, whereIDProp, wspConnectIn, wspConnectOut,
+                            wspContext, wspDisconnectIn, wspFreeCursorIn,
+                            wspFreeCursorOut, wspGetRows, wspGetRowsOut, wspHeader,
+                            wspPropertySet, wspQueryIn, wspQueryOut,
+                            wspQueryStatusExIn, wspQueryStatusExOut,
+                            wspQueryStatusIn, wspQueryStatusOut, wspSetBindingsIn ]
+    objc-ivars:           [ cdbProp.colidGuid, fullPropSpec.propGuid,
+                            wspConnectIn.msghdr, wspDisconnectIn.msghdr,
+                            wspFreeCursorIn.msghdr, wspGetRows.msghdr,
+                            wspPropertySet.propSetGuid, wspQueryIn.msghdr,
+                            wspQueryStatusExIn.msghdr, wspQueryStatusIn.msghdr,
+                            wspSetBindingsIn.msghdr ]
+...

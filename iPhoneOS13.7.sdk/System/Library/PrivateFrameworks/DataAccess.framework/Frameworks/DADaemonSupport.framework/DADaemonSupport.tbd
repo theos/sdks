@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DADaemonSupport.framework/DADaemonSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DADAgentsStoppedNotification,
+                            _DADRequestClientStatusDumpNotification,
+                            ___RootDomainConnect, __devicePowerChanged,
+                            _gDADHighAvailabilityQueue, _gDADOperationQueue,
+                            _handleSignal ]
+    objc-classes:         [ DAAgent, DAChangeHistoryClerk, DACoreDAVAgent,
+                            DADAccessManager, DADAgentManager, DADClient,
+                            DADClientAccountTimers,
+                            DADClientAttachmentDownloadDelegate,
+                            DADClientCalendarAvailabilityResponseDelegate,
+                            DADClientCalendarDirectorySearchResponseDelegate,
+                            DADClientContactsSearchDelegate, DADClientDelegate,
+                            DADClientGrantedDelegatesListResponseDelegate,
+                            DADClientSettingsDelegate,
+                            DADClientShareResponseDelegate,
+                            DADClientUpdateGrantedDelegatePermissionResponseDelegate,
+                            DADMain, DADStatusReportAggregator,
+                            DADaemonPowerAssertionManager, DAFolderSyncRequest,
+                            DARefreshManager, DARefreshWrapper,
+                            DATokenRegistrationRequest,
+                            _DAChangeHistoryABLegacyClerk,
+                            _DAChangeHistoryContactsClerk ]
+    objc-ivars:           [ DADStatusReportAggregator._completionBlock,
+                            DADStatusReportAggregator._finished,
+                            DADStatusReportAggregator._numOutstandingReports,
+                            DADStatusReportAggregator._persistentUUIDToStatusReport ]
+...

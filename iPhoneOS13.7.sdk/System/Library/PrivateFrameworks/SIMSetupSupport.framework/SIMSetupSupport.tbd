@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CTCellularPlanLocalInfoError,
+                            _SIMSetupSupportVersionNumber,
+                            _SIMSetupSupportVersionString,
+                            _TSUserInfoConfirmationCodeRequiredKey,
+                            _TSUserInfoEidKey, _TSUserInfoFlowTypeKey,
+                            _TSUserInfoIccidKey, _TSUserInfoImei2Key,
+                            _TSUserInfoImeiKey, _TSUserInfoMeidKey,
+                            _TSUserInfoWebsheetPostdataKey,
+                            _TSUserInfoWebsheetRequestTypeKey,
+                            _TSUserInfoWebsheetURLKey ]
+    objc-classes:         [ TSActivationCodeOnlyFlow,
+                            TSActivationFlowWithSimSetupFlow,
+                            TSAddCellularPlanViewController,
+                            TSCellularPlanCardInfoViewController,
+                            TSCellularPlanConfirmationCodeViewController,
+                            TSCellularPlanLabelPickerViewController,
+                            TSCellularPlanLabelTableViewCell,
+                            TSCellularPlanLabelsViewController,
+                            TSCellularPlanManagerCache,
+                            TSCellularPlanQRCodeScannerView,
+                            TSCellularPlanRemapTableViewCell,
+                            TSCellularPlanRemapViewController,
+                            TSCellularPlanScanTransferViewController,
+                            TSCellularPlanScanViewController,
+                            TSCellularPlanTableViewCell,
+                            TSCellularPlanTransferItemCell,
+                            TSCellularPlanUserConsentViewController,
+                            TSCellularPlanUsesDataSwitchCell,
+                            TSCellularPlanUsesTableViewCell,
+                            TSCellularPlanUsesViewController,
+                            TSCoreTelephonyClientCache, TSFlowHelper,
+                            TSIDSSubscriptionSelector,
+                            TSNavigationBarSpinnerManager, TSSIMSetupFlow,
+                            TSSIMSetupPublicApiInstallFlow,
+                            TSSetupAssistantSIMSetupFlow,
+                            TSSpinnerNavigationBarItem, TSTransferFlow,
+                            TSTransferItemViewController,
+                            TSTransferListViewController,
+                            TSTransferredViewController, TSURLRequestFactory,
+                            TSUserConsentPadViewController,
+                            TSUserConsentViewController, TSUserResponseFlow,
+                            TSUtilities, TSWebsheetSignupFlow,
+                            TSWebsheetViewController ]
+...

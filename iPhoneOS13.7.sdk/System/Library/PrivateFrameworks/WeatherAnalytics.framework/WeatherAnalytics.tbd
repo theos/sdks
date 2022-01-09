@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WeatherAnalytics.framework/WeatherAnalytics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WeatherAnalyticsVersionNumber,
+                            _WeatherAnalyticsVersionString ]
+    objc-classes:         [ WAAppData, WAAppSessionEndEvent,
+                            WAAppSessionStartEvent,
+                            WACellularRadioAccessTechnology,
+                            WADataTableExposureEvent, WADebugData, WADeviceData,
+                            WADeviceOrientation, WADevicePlatform, WAEndReason,
+                            WAFollowingLocationListData,
+                            WAFollowingLocationListEvent, WAInterfaceOrientation,
+                            WAListViewEvent, WALocationAccessData,
+                            WALocationCondition, WALocationConditionData,
+                            WALocationData, WALocationExposureEvent,
+                            WALocationListPositionData, WALocationViewEvent,
+                            WAOrientationData, WAOsInstallVariant,
+                            WAPrivateUserData, WAReferralData, WASessionData,
+                            WASessionEndData, WAStartMethod, WATemperatureScale,
+                            WATemperatureScaleChangeEvent,
+                            WATemperatureScaleData, WAUserData, WAViewAction,
+                            WAViewData, WAViewEvent, WAViewType ]
+...

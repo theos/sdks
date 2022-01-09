@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ProactiveMagicalMoments.framework/ProactiveMagicalMoments
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATXLazyLoadDECTypes, _PMMInitializeInOwnerProcess,
+                            _PMMNowPlayingRecommendationEnded,
+                            _PMMNowPlayingRecommendationStarted,
+                            _PMMPredictionReasonBluetoothDeviceName,
+                            _PMMPredictionReasonDeviceName,
+                            _PMMPredictionReasonLocationOfInterestType,
+                            _ProactiveMagicalMomentsVersionNumber,
+                            _ProactiveMagicalMomentsVersionString ]
+    objc-classes:         [ PMMAppsSettingsMonitor, PMMAudioDisconnectListener,
+                            PMMConstants, PMMContextHelper,
+                            PMMDataProtectionMonitor, PMMMusicContainer,
+                            PMMMusicStateProcessor, PMMPrediction,
+                            PMMPredictionItem, PMMPredictionNotification,
+                            PMMPredictor, PMMTelephonyConnection, PMMTypes ]
+...

@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices
+current-version:       61000
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _UIKitServicesVersionNumber,
+                            _UIKitServicesVersionString,
+                            _UISApplicationInitializationContextAlwaysVendEntitlement,
+                            _UISApplicationPushKeepAliveInterval,
+                            _UISApplicationStateServiceErrorDomain,
+                            _UISApplicationStateServiceIdentifier,
+                            _UISApplicationStateServiceMessageKeyBundleIdentifier,
+                            _UISApplicationSupportServiceIdentifier,
+                            _UISDeviceContextDeviceClassKey,
+                            _UISDeviceContextDeviceCornerRadiusKey,
+                            _UISDeviceContextHomeButtonTypeKey,
+                            _UISOpenApplicationOptionAppBasedViewService,
+                            _UISOpenApplicationOptionKeySceneSessionPersistentIdentifier,
+                            _UISOpenApplicationOptionKeyTargetContentIdentifier,
+                            _UISUserInterfaceStyleModeOverrideNone,
+                            _UISUserInterfaceStyleModeOverridesEqual,
+                            _UISUserInterfaceStyleModeScheduleDefault,
+                            _UISUserInterfaceStyleModeScheduleNone,
+                            _UISUserInterfaceStyleModeSchedulesEqual,
+                            _UISUserInterfaceStyleModeValueIsAutomatic,
+                            __UIKitServicesStateFacilityLogger,
+                            __UISVisibilityEnvironmentForSceneIdentityTokenString,
+                            __UISVisibilityEnvironmentForUIHostedWindowContextID,
+                            __UISVisibilityNamespace ]
+    objc-classes:         [ UISApplicationInitializationContext,
+                            UISApplicationState, UISApplicationStateClient,
+                            UISApplicationStateService,
+                            UISApplicationSupportClient,
+                            UISApplicationSupportDisplayEdgeInfo,
+                            UISApplicationSupportDisplayEdgeInsetsWrapper,
+                            UISApplicationSupportService, UISDeviceContext,
+                            UISDisplayContext,
+                            UISMutableApplicationInitializationContext,
+                            UISMutableDeviceContext, UISMutableDisplayContext,
+                            UISUserInterfaceStyleMode ]
+    objc-ivars:           [ UISApplicationInitializationContext._defaultSceneToken,
+                            UISApplicationInitializationContext._deviceContext,
+                            UISApplicationInitializationContext._displayContext,
+                            UISApplicationInitializationContext._persistedSceneIdentifiers,
+                            UISDeviceContext._deviceInfoKeysToValues,
+                            UISDisplayContext._artworkSubtype,
+                            UISDisplayContext._displayConfiguration,
+                            UISDisplayContext._displayEdgeInfo,
+                            UISDisplayContext._userInterfaceStyle ]
+...

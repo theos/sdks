@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ATFoundation.framework/ATFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATAssetLinkControllerDidFinishAllAssets,
+                            _ATInternalErrorDomain, _ATIsPendingDownloadError,
+                            _ATPErrorReadFrom, _ATPMessageReadFrom,
+                            _ATPRequestReadFrom, _ATPResponseReadFrom,
+                            _kATEventIntervalKey, _kATEventIsRecurringKey,
+                            _kATEventNameKey, _kATEventTimeKey,
+                            _kATEventUserDataKey ]
+    objc-classes:         [ ATAssetLinkController, ATAssetLinkPowerLogger,
+                            ATAssetLinkPowerLoggerAggregationKey,
+                            ATConcreteAssetLink, ATConcreteMessageLink,
+                            ATConcreteService, ATCountSessionTask,
+                            ATDownloadProgressManager, ATEnvironmentMonitor,
+                            ATEventScheduler, ATInternalError,
+                            ATMessageLinkListener, ATMessageLinkProxyConnection,
+                            ATMessageLinkProxyListener, ATMessageParser,
+                            ATMovingAverage, ATNetServiceListener,
+                            ATNetServiceSocket, ATPError, ATPMessage, ATPRequest,
+                            ATPResponse, ATProvisioningHandler,
+                            ATRemoteFileManagerLinkHandler,
+                            ATServiceProxyConnection, ATServiceProxyListener,
+                            ATSessionProxyConnection, ATSessionProxyListener,
+                            ATSessionServerListener, ATSignatureProvider,
+                            ATSimpleProvisioningHandler, ATSocket, ATStatusMonitor,
+                            ATStatusObserverConnection, ATStatusObserverListener,
+                            ATThroughputCalculator ]
+    objc-ivars:           [ ATPError._code, ATPError._domain, ATPError._domainCode,
+                            ATPError._errorDescription, ATPError._has,
+                            ATPMessage._additionalPayload, ATPMessage._has,
+                            ATPMessage._messageID, ATPMessage._messageType,
+                            ATPMessage._parameters, ATPMessage._paramsSignature,
+                            ATPMessage._payload, ATPMessage._payloadSignature,
+                            ATPMessage._request, ATPMessage._response,
+                            ATPMessage._sessionID, ATPMessage._streamError,
+                            ATPRequest._command, ATPRequest._dataClass,
+                            ATPResponse._error ]
+...

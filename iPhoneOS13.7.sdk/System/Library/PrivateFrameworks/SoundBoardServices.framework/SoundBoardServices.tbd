@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SoundBoardServices.framework/SoundBoardServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SoundBoardServicesVersionNumber,
+                            _SoundBoardServicesVersionString,
+                            _kCannedDemoEntitlement, _kClientBundleIdentifier,
+                            _kDebugInfoEntitlement, _kHPCDRestartCannedDemo,
+                            _kSettingsEntitlement, _kStereoLeaderEntitlement,
+                            _kSysdiagnoseEntitlement, _kSystemEntitlement ]
+    objc-classes:         [ SBCannedDemoInterface, SBSAppleCareInterface,
+                            SBSClient, SBSDebugInterface, SBSServer,
+                            SBSSettingsInterface, SBSStereoLeaderInterface,
+                            SBSSysdiagnoseInterface, SBSSystemInterface ]
+...

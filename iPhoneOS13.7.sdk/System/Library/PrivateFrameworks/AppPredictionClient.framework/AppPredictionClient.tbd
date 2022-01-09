@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATXAVFoundationOutputDevice,
+                            _ATXAVFoundationRoutingSessionManager,
+                            _ATXActionPredictionInterface,
+                            _ATXAppPredictionXPCInterface, _ATXCacheAppendData,
+                            _ATXCacheAppendDoubles, _ATXCacheAppendFloats,
+                            _ATXCacheAppendInteger, _ATXCacheAppendString,
+                            _ATXCacheAppendUnsignedInteger,
+                            _ATXCacheFileJoinChunks, _ATXCacheFileRead,
+                            _ATXCacheFileSplitChunks, _ATXCacheFileWrite,
+                            _ATXCacheFileWriteChunks, _ATXCacheReadData,
+                            _ATXCacheReadDoubles, _ATXCacheReadFloats,
+                            _ATXCacheReadInteger, _ATXCacheReadString,
+                            _ATXCacheReadUnsignedInteger, _ATXCalendarDateKey,
+                            _ATXCalendarDaySelectionNSUA, _ATXCalendarEndDateKey,
+                            _ATXCalendarEventSelectionNSUA,
+                            _ATXDetailedActionLoggingEnabled,
+                            _ATXFeedbackStateBuilderScoreInputsSize,
+                            _ATXHeuristicMetadataEventIdentifier,
+                            _ATXHeuristicMetadataSuggestedEventUniqueKey,
+                            _ATXLazyLoadDECABHelper, _ATXLazyLoadDuetHelper,
+                            _ATXLazyLoadMediaActionPrediction,
+                            _ATXNewsArticleViewingNSUA,
+                            _AppPredictionClientVersionNumber,
+                            _AppPredictionClientVersionString, __ATXDomain,
+                            _kATXATXAppPredictionXPCInterfaceMachServiceName,
+                            _kATXActionPredictionInterfaceMachServiceName ]
+    objc-classes:         [ ATXAVRouteInfo, ATXAVRoutingHelper,
+                            ATXAVRoutingSessionHelper, ATXAVRoutingUtils,
+                            ATXAction, ATXActionCacheClientReader,
+                            ATXActionCriteria, ATXActionCriteriaPredicateChecker,
+                            ATXActionCriteriaWorldState,
+                            ATXActionPredictionClient, ATXActionPredictionTypes,
+                            ATXActionResponse, ATXActionSearchResult,
+                            ATXAppPredictorAssetMapping, ATXCacheReader,
+                            ATXCacheReaderGuardedData, ATXClient,
+                            ATXClientDuetHelper, ATXContext,
+                            ATXCoreDuetContextHelper, ATXDeviceClass,
+                            ATXFeedbackStateBuilder, ATXFeedbackStateReader,
+                            ATXMetrics, ATXNowPlayingDataProvider,
+                            ATXNowPlayingEvent, ATXPaths, ATXPredictionSetBuilder,
+                            ATXPredictionSetReader,
+                            ATXRecentActionEngagementCache, ATXResponse,
+                            ATXScoredPrediction, ATXSearchFeedbackListener,
+                            ATXSearchFeedbackListenerTargetXPC, ATXSearchResult,
+                            ATXTypes ]
+    objc-ivars:           [ ATXCacheReaderGuardedData._cacheFileDescriptor,
+                            ATXCacheReaderGuardedData._cachePath ]
+...

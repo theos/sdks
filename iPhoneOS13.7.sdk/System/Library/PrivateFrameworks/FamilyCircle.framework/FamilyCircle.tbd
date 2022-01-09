@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _FAErrorDomain, _FAErrorResponseUserInfoKey,
+                            _FAFamilyResponseInvitations,
+                            _FAFamilyResponseTransferRequests,
+                            _FAFamilyUpdateNotification,
+                            _FAFollowUpClientIdentifier,
+                            _FAFollowUpIdentifierInvitePrefix,
+                            _FAFollowUpIdentifierTransferPrefix,
+                            _FAFollowUpInviteeEmail, _FAFollowUpInviteeFirstName,
+                            _FAFollowUpOpenPrefPaneActionInvite,
+                            _FAFollowUpOpenPrefPaneActionKey,
+                            _FAFollowUpOpenPrefPaneActionLabel,
+                            _FAFollowUpOpenPrefPaneActionMessage,
+                            _FAFollowUpOpenPrefPaneActionTransfer,
+                            _FAFollowUpOpenPrefPaneIcon,
+                            _FAFollowUpOpenPrefPanePreferencesBundleIdentifier,
+                            _FAFollowUpOpenPrefPaneURL,
+                            _FAFollowUpTransferChildFirstName,
+                            _FAFollowUpTransferRequestorFirstName,
+                            _FAFollowUpUserInfoAccountIdentifier,
+                            _FAFollowUpUserInfoAltDSID,
+                            _FAFollowUpUserInfoInviteCode,
+                            _FAFollowUpUserInfoRequestCode,
+                            _FAMemberFlagScreenTime, __FALogSystem,
+                            _kFAServicePasswordOption, _kFAServiceUsernameOption ]
+    objc-classes:         [ FAAddFamilyMemberRequest,
+                            FAClearFamilyCircleCacheRequest,
+                            FADispatchFamilyPushRequest, FAFamilyCircle,
+                            FAFamilyCircleRequest, FAFamilyCloudKitProperties,
+                            FAFamilyMember, FAFamilyMemberPhotoRequest,
+                            FAFamilySettings, FAFetchFamilyCircleRequest,
+                            FAFetchFamilyPhotoRequest,
+                            FAHandleFamilyEventPushNotificationRequest,
+                            FAPushNotificationHandler,
+                            FARegisterPushTokenRequest,
+                            FARemoveFamilyMemberRequest,
+                            FAUpdateFamilyMemberFlagRequest,
+                            _FAFamilyCircleRequestConnectionFactory,
+                            _FAFamilyCircleRequestConnectionProvider ]
+...

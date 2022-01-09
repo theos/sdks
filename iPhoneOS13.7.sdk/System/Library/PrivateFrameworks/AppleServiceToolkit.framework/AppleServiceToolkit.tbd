@@ -1,0 +1,59 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleServiceToolkit.framework/AppleServiceToolkit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ASTActionKey, _ASTActionsKey,
+                            _ASTAllowCellularDataKey, _ASTCustomServerKey,
+                            _ASTDomain, _ASTErrorDomain, _ASTGZIPEnabledKey,
+                            _ASTImageNameKey, _ASTLogHandleForCategory,
+                            _ASTPropertyItemsKey, _ASTRelaxTimeoutsKey,
+                            _ASTServerKey, _ASTServerLoggingKey,
+                            _ASTStrongDeviceIdentityKey, _ASTSuiteNameKey,
+                            _ASTTestAutomationKey, _ASTTestSuiteCompleteAction,
+                            _ASTTestSuiteImageAction,
+                            _ASTTestSuiteStartingAction,
+                            _ASTUseChunkedTransferEncodingKey, _ASTViewTitleKey,
+                            _kASTAlwaysAllowCellularSizeThreshold,
+                            _kASTAnalyticsSessionDurationKey,
+                            _kASTAnalyticsStatusCodeKey,
+                            _kASTAnalyticsStatusCodeStringKey,
+                            _kASTAnalyticsTestIDKey, _kASTEndpointAssets,
+                            _kASTEndpointAuthInfo, _kASTEndpointClientStatus,
+                            _kASTEndpointEnroll, _kASTEndpointFileUploadFormat,
+                            _kASTEndpointProfile, _kASTEndpointResults,
+                            _kASTEndpointSession, _kASTHTTPHeaderAccept,
+                            _kASTHTTPHeaderAcceptLanguage,
+                            _kASTHTTPHeaderContentEncoding,
+                            _kASTHTTPHeaderContentLength,
+                            _kASTHTTPHeaderContentType,
+                            _kASTHTTPHeaderFileSequence, _kASTHTTPHeaderFileSize,
+                            _kASTHTTPHeaderHost, _kASTHTTPHeaderLogLevel,
+                            _kASTHTTPHeaderMD5, _kASTHTTPHeaderSessionId,
+                            _kASTHTTPHeaderSignature, _kASTHTTPHeaderToken,
+                            _kASTHTTPHeaderTotalFiles, _kASTHTTPHeaderUserAgent,
+                            _kASTIdentityAliasDictionaryChipIDKey,
+                            _kASTIdentityAliasDictionaryECIDKey,
+                            _kASTIdentityAliasDictionarySerialNumberKey,
+                            _kASTIdentityAliasDictionaryTypeKey ]
+    objc-classes:         [ ASTAction, ASTAnalytics, ASTAuthInfoResult,
+                            ASTAutomatedSession, ASTConnectionAsset,
+                            ASTConnectionAuthInfo, ASTConnectionClientStatus,
+                            ASTConnectionEnroll, ASTConnectionProfile,
+                            ASTConnectionSession, ASTConnectionTestResult,
+                            ASTConnectionTestResultBinary,
+                            ASTConnectionUtilities, ASTContext, ASTControlCommand,
+                            ASTEncodingUtilities, ASTEnvironment, ASTErrorStatus,
+                            ASTFileManagement, ASTIdentity, ASTIdentityAlias,
+                            ASTLocalization, ASTMaterializedConnection,
+                            ASTMaterializedConnectionManager, ASTNetworkObject,
+                            ASTNetworking, ASTProfileResult, ASTRequest, ASTResponse,
+                            ASTSealableFile, ASTSealablePayload,
+                            ASTSendPropertiesErrorStatus, ASTSession,
+                            ASTTestAttributes, ASTTestAutomation, ASTTestResult ]
+...

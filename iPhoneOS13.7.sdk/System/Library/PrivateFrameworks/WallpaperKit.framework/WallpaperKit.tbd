@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WallpaperKit.framework/WallpaperKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WKBundleForWallpaperKitFramework, _WKLogForCategory,
+                            _WKLogicalScreenClassString,
+                            _WKStandardDisplayModeScreenSize,
+                            _WKStringFromWallpaperType,
+                            _WKSupportsLiveWallpapers,
+                            _WKWallpaperAppearanceDark,
+                            _WKWallpaperAppearanceDefault,
+                            _WKWallpaperKitErrorDomain,
+                            _WKWallpaperLocationCoverSheet,
+                            _WKWallpaperLocationHomeScreen,
+                            _WKWallpaperTypeFromString, _WKWallpapersBaseURL,
+                            _WK_LocalizedString ]
+    objc-classes:         [ WKAbstractWallpaper, WKDefaultWallpaperManager,
+                            WKDynamicWallpaper, WKLiveWallpaper, WKStillWallpaper,
+                            WKWallpaperBundle, WKWallpaperBundleCollection,
+                            WKWallpaperBundleImporter,
+                            WKWallpaperLocketViewController ]
+...

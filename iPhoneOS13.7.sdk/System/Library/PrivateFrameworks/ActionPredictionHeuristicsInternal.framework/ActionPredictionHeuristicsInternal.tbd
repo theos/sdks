@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ActionPredictionHeuristicsInternal.framework/ActionPredictionHeuristicsInternal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATXDNDStateChanged,
+                            _ATXHeuristicDataSourcesInterface,
+                            _ATXHeuristicEnvBoxBoolean, _ATXHeuristicIsLearnable,
+                            _ATXPassLibraryChanged,
+                            _ActionPredictionHeuristicsInternalVersionNumber,
+                            _ActionPredictionHeuristicsInternalVersionString ]
+    objc-classes:         [ ATXAlarmsDataSource,
+                            ATXBestContactHandleForServiceDataSource,
+                            ATXBestContactHandleGuardedData,
+                            ATXBestTimeToInteractWithContactDataSource,
+                            ATXBirthdaysDataSource, ATXCalendarEventsDataSource,
+                            ATXCallHistoryDataSource, ATXClipboardContents,
+                            ATXContactsDataSource, ATXCurrentLocationDataSource,
+                            ATXDoNotDisturbDataSource,
+                            ATXDuetInteractionDataSource,
+                            ATXEventTravelTimeDataSource,
+                            ATXEventTravelTimeDataSourceInternal,
+                            ATXExtraordinaryEventsDataSource,
+                            ATXFavoriteContactDataSource,
+                            ATXFlightStatusDataSource, ATXHeuristicActionMaker,
+                            ATXHeuristicActionMakerForAction,
+                            ATXHeuristicActionMakersAndExpirers,
+                            ATXHeuristicAirportCity,
+                            ATXHeuristicCacheExpirationEntry,
+                            ATXHeuristicCacheExpirer,
+                            ATXHeuristicCacheNotificationExpirer,
+                            ATXHeuristicCacheTimeExpirer,
+                            ATXHeuristicCreateCalendarEventActionMaker,
+                            ATXHeuristicDataSourcesServer, ATXHeuristicDevice,
+                            ATXHeuristicObjectHandle,
+                            ATXHeuristicRequestRideForEventActionMaker,
+                            ATXHeuristicResultCache,
+                            ATXHeuristicResultCacheEntry,
+                            ATXHeuristicViewCalendarEventActionMaker,
+                            ATXHolidaysDataSource, ATXLuaObject,
+                            ATXNLEventsDataSource, ATXPeopleSuggesterDataSource,
+                            ATXProtectedRouteHypothesizerCache, ATXRouteCacheKey,
+                            ATXSetAlarmTimeOfDayDataSource,
+                            ATXUnreadMessagesDataSource,
+                            ATXUserAppPreferenceDataSource, ATXVIPsDataSource,
+                            ATXWalletDataSource ]
+    objc-ivars:           [ ATXBestContactHandleGuardedData.contactIdentifier,
+                            ATXHeuristicActionMaker._subtitle,
+                            ATXHeuristicActionMaker._title,
+                            ATXHeuristicResultCacheEntry._actions,
+                            ATXHeuristicResultCacheEntry._cache,
+                            ATXHeuristicResultCacheEntry._expirers,
+                            ATXHeuristicResultCacheEntry._heuristicName,
+                            ATXLuaObject._block, ATXLuaObject._boolean,
+                            ATXProtectedRouteHypothesizerCache.cachedGeoRouteHypothesizers,
+                            ATXRouteCacheKey.destinationLocation,
+                            ATXRouteCacheKey.localOnlyAfterFirstUpdate,
+                            ATXRouteCacheKey.transportType ]
+...
