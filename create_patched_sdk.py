@@ -7,12 +7,12 @@ import shutil
 import subprocess
 import sys
 
-ARCHS = [ "armv6", "armv7", "armv7s", "arm64" ]
+ARCHS = [ "armv7", "armv7s", "arm64", "arm64e" ]
 DIRS = [ "System/Library/Frameworks", "System/Library/PrivateFrameworks" ]
-TARGETS = [ "armv5-ios", "armv6-ios", "armv7-ios", "armv7s-ios", "arm64-ios", "arm64e-ios" ]
-VERSION = "v1"
+TARGETS = [ "armv7-ios", "armv7s-ios", "arm64-ios", "arm64e-ios" ]
+VERSION = "v3"
 
-PATH_OPTIONS = [ "-p", "--macho", "-r", "all", "--ignore-undefineds", "--allow-private-objc-symbols", "--ignore-missing-exports" ]
+PATH_OPTIONS = [ "-p", "--macho", "-r", "all", "--ignore-clients", "--ignore-undefineds", "--allow-private-objc-symbols", "--ignore-missing-exports" ]
 WRITE_OPTIONS = [ "-o", "--preserve-subdirs", "--replace-path-extension" ]
 
 TBD_PATH = Path("/usr/local/bin/tbd")
@@ -428,6 +428,8 @@ def main(argv):
             print("No SDKs were successfully created from DeviceSupport binaries. Falling back to Simulator Binaries")
 
         simulator_path = xcode_developer_path / "Platforms" / "iPhoneOS.platform" / "Library" / "Developer" / "CoreSimulator" / "Profiles" / "Runtimes" / "iOS.simruntime" / "Contents" / "Resources" / "RuntimeRoot"
+        if not simulator_path.exists():
+            simulator_path = xcode_developer_path / "Platforms" / "iPhoneOS.platform" / "Developer" / "Library" / "CoreSimulator" / "Profiles" / "Runtimes" / "iOS.simruntime" / "Contents" / "Resources" / "RuntimeRoot"
         if not simulator_path.exists():
             print("The iOS Simulator RuntimeRoot directory does not exist. Please install a simulator.")
             exit(1)

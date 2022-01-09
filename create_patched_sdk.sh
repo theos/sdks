@@ -28,10 +28,10 @@ fi
 
 # tbd info
 
-version="v1"
+version="v3"
 
 archs_option=("--replace-archs" armv7 armv7s arm64)
-tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports" "--ignore-undefineds")
+tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symbols" "--ignore-missing-exports")
 write_options=("--preserve-subdirs" "--replace-path-extension")
 
 no_overwrite="--no-overwrite"
@@ -79,7 +79,10 @@ if [ -z "$xcode_developer_path" ]; then
     exit 1
 fi
 
-xcode_sim_runtime_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot"
+xcode_sim_runtime_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot"
+if [ ! -d $xcode_sim_runtime_path ]; then
+    xcode_sim_runtime_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot"
+fi
 xcode_default_sdk_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 
 xcode_sdk_paths="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/*"
