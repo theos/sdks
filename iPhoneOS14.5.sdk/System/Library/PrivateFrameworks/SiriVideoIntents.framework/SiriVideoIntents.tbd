@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriVideoIntents.framework/SiriVideoIntents
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ SiriVideoDESPlugin, SiriVideoIntentsTests,
+                            VideoDialogTests, VideoFlowDelegatePlugin ]
+    symbols:              [ _SiriVideoIntentsVersionNumber,
+                            _SiriVideoIntentsVersionString ]
+    objc-classes:         [ AddToWatchListContentResolutionResult,
+                            AddToWatchListIntent, AddToWatchListIntentResponse,
+                            ArchiveExtractor, Content, ContentImage,
+                            ContentImageResolutionResult,
+                            ContentResolutionResult, ContentSearch,
+                            ContentSearchResolutionResult,
+                            ContentSortResolutionResult,
+                            ContentTypeResolutionResult, FindVideoIntent,
+                            FindVideoIntentResponse, LiveService,
+                            LiveServiceResolutionResult,
+                            OrdinalReferenceResolutionResult, Person,
+                            PersonResolutionResult, PersonRoleResolutionResult,
+                            PlayLiveServiceIntent, PlayLiveServiceIntentResponse,
+                            PlayLiveServiceLiveServiceResolutionResult,
+                            PlayVideoContentResolutionResult, PlayVideoIntent,
+                            PlayVideoIntentResponse,
+                            RemoveFromWatchListContentResolutionResult,
+                            RemoveFromWatchListIntent,
+                            RemoveFromWatchListIntentResponse, SearchAttributes,
+                            SearchAttributesResolutionResult,
+                            _TtC16SiriVideoIntents16RecordableResult,
+                            _TtC16SiriVideoIntents22FindVideoIntentHandler,
+                            _TtC16SiriVideoIntents22PlayVideoIntentHandler,
+                            _TtC16SiriVideoIntents27AddToWatchListIntentHandler,
+                            _TtC16SiriVideoIntents28PlayLiveServiceIntentHandler,
+                            _TtC16SiriVideoIntents32RemoveFromWatchListIntentHandler ]
+    objc-ivars:           [ AddToWatchListIntentResponse._code,
+                            FindVideoIntentResponse._code,
+                            PlayLiveServiceIntentResponse._code,
+                            PlayVideoIntentResponse._code,
+                            RemoveFromWatchListIntentResponse._code ]
+...

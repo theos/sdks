@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F20B2189-DC28-3622-B544-AF8B1466C973
+  - target:          arm64e-ios
+    value:           8449B630-E8FC-3426-8952-5BFC2A1D2B9E
+install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ICAuthorizationStatusAuthorized, _ICAuthorizationStatusDenied, 
+                       _ICAuthorizationStatusNotDetermined, _ICAuthorizationStatusRestricted, 
+                       _ICCameraDeviceCanAcceptPTPCommands, _ICCameraDeviceCanDeleteAllFiles, 
+                       _ICCameraDeviceCanDeleteOneFile, _ICCameraDeviceCanReceiveFile, 
+                       _ICCameraDeviceCanSyncClock, _ICCameraDeviceCanTakePicture, 
+                       _ICCameraDeviceCanTakePictureUsingShutterReleaseOnCamera, 
+                       _ICCameraDeviceSupportsApplePTP, _ICCameraDeviceSupportsHEIF, 
+                       _ICCameraDeviceSupportsPLRUUID, _ICDeleteAfterSuccessfulDownload, 
+                       _ICDeleteCanceled, _ICDeleteErrorCanceled, _ICDeleteErrorDeviceMissing, 
+                       _ICDeleteErrorFileMissing, _ICDeleteErrorReadOnly, _ICDeleteFailed, 
+                       _ICDeleteSuccessful, _ICDeviceCanEjectOrDisconnect, _ICDownloadSidecarFiles, 
+                       _ICDownloadsDirectoryURL, _ICEnumerationChronologicalOrder, 
+                       _ICEnumerationPrioritizeSpeed, _ICErrorDomain, _ICImageSourceShouldCache, 
+                       _ICImageSourceThumbnailMaxPixelSize, _ICLoggingDomain, _ICLoggingLevel, 
+                       _ICMetadataBrevity, _ICMetadataBrevityEssential, _ICOverwrite, 
+                       _ICPreferencesDomain, _ICSaveAsFilename, _ICSavedAncillaryFiles, 
+                       _ICSavedFilename, _ICStatusNotificationKey, _ICTransportTypeExFAT, 
+                       _ICTransportTypeMassStorage, _ICTransportTypeTCPIP, _ICTransportTypeUSB, 
+                       _ICTruncateAfterSuccessfulDownload, ___ICAddDecodedErrorToDict, 
+                       ___ICErrorValueDict, ___ICLogDateString, ___ICLogTypeEnabled, 
+                       ___ICLongValueToErrorString, ___ICOSLogCreate, ___ICReadPrefs, 
+                       ___ICValueToErrorString, __gICOSLog ]
+    objc-classes:    [ ICAccessManager, ICCameraDevice, ICCameraFile, ICCameraFolder, 
+                       ICCameraItem, ICDevice, ICDeviceBrowser ]
+...

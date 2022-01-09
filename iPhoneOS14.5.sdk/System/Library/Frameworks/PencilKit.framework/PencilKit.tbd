@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F763CAE2-6CBD-374B-A78A-2662C5032313
+  - target:          arm64e-ios
+    value:           6A43292E-EC84-3622-99D0-964068E5539A
+install-name:    '/System/Library/Frameworks/PencilKit.framework/PencilKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PKAppleDrawingTypeIdentifier, _PKAppleStrokeSelectionTypeIdentifier, 
+                       _PKAttachmentViewDefaultDrawingWidth, _PKClipperScaling, _PKHandwritingFeedbackActivityType, 
+                       _PKHasScribbleInteractionInView, _PKInkBlueComponentProperty, 
+                       _PKInkColorProperty, _PKInkGreenComponentProperty, _PKInkIdentifierCharcoal, 
+                       _PKInkIdentifierEraser, _PKInkIdentifierFountainPen, _PKInkIdentifierHandwriting, 
+                       _PKInkIdentifierLasso, _PKInkIdentifierMarker, _PKInkIdentifierMicronPen, 
+                       _PKInkIdentifierObjectEraser, _PKInkIdentifierPen, _PKInkIdentifierPencil, 
+                       _PKInkOpacityProperty, _PKInkRedComponentProperty, _PKInkTypeMarker, 
+                       _PKInkTypePen, _PKInkTypePencil, _PKInkVariantDefault, _PKInkVariantThick, 
+                       _PKInkWeightProperty, _PKInlineInkPickerAnimationDuration, 
+                       _PKInlineInkPickerPreferencesSuite, _PKInlineInkPickerStackViewHeight, 
+                       _PKInputPointZero, _PKScribbleInteractionInTextInput, _PKScribbleInteractionInView, 
+                       _PKStrokePointEqualToStrokePoint, _PKTextInputControllerDidChangeNotification, 
+                       _PKTextInputSettingsRecognitionLocaleIdentifierDidChangeNotification, 
+                       _PKTextInputWindowFirstResponderControllerReloadNotification, 
+                       _PKTextInputWindowFirstResponderControllerReloadResponderKey, 
+                       _PKTiledViewDrawingMinimumHeight, _PKTiledViewDrawingWidth, 
+                       _PKToolIdentifierRuler, __PKStrokePointZero, _kUTTypeAppleStrokeSelection ]
+    objc-classes:    [ PKAttachmentView, PKCanvasView, PKColorPicker, PKDrawing, 
+                       PKDrawingGestureRecognizer, PKDrawingPaletteView, PKDrawingReplayController, 
+                       PKEraserTool, PKFloatRange, PKHandwritingDebugUtility, PKHandwritingFeedbackActivity, 
+                       PKHandwritingTool, PKImageCompare, PKImageRenderer, PKIndexableContent, 
+                       PKInk, PKInkBehavior, PKInkColorButton, PKInkFeatheringDescriptor, 
+                       PKInkFunction, PKInkModifier, PKInkParticleDescriptor, PKInkProperties, 
+                       PKInkRenderingDescriptor, PKInkSmoothingDescriptor, PKInkToolMinimizedImageFactory, 
+                       PKInkingTool, PKInlineColorPicker, PKInlineInkPicker, PKLRUCache, 
+                       PKLassoTool, PKLegacyDrawingRegressionTester, PKLinedPaper, 
+                       PKMetalUtility, PKMutableStroke, PKPaintAreaView, PKPaletteHostView, 
+                       PKPaletteScaleFactorPolicy, PKPaletteView, PKPaletteViewInteraction, 
+                       PKPencilTextInputElement, PKPencilTextInputElementInteraction, 
+                       PKPencilTouchDetection, PKPencilTouchDetectionService, PKProgressAlertController, 
+                       PKRecognitionDataCollectionViewController, PKReplicaManager, 
+                       PKScribbleInteraction, PKSearchQueryItem, PKSelectionInteraction, 
+                       PKSpaceInsertionController, PKStroke, PKStrokeDelta, PKStrokePath, 
+                       PKStrokePoint, PKStrokeProvider, PKStrokeProviderSlice, PKStrokeSelection, 
+                       PKStrokeSelectionImage, PKStrokeSelectionImageConfig, PKTextInputDebugSharpenerLogViewController, 
+                       PKTextInputInteraction, PKTextInputKeyboardAssistantItem, 
+                       PKTextInputSettings, PKTiledCanvasView, PKTiledTextView, PKTiledView, 
+                       PKTitleQuery, PKTitleQueryItem, PKTool, PKToolPicker, PKUndoCommand, 
+                       PKVisualizationManager, _PKClippedStroke, _PKFlatInkColorButton, 
+                       _PKInkColorButton ]
+...

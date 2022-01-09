@@ -1,0 +1,74 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit
+current-version:       19.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _EXExtensionIsPredicateSafeToExecuteWithObject,
+                            _EXExtensionIsSafeKeyPathForObject, _EXExtensionMain,
+                            _EXGetExtensionClass,
+                            _EXGetExtensionContextInternalClass,
+                            _EXGetExtensionContextVendorClass ]
+    objc-classes:         [ EXConcreteExtension,
+                            EXConcreteExtensionContextVendor,
+                            EXExtensionContextImplementation,
+                            EXRunningExtensionInfo, EXSwiftUI_Subsystem,
+                            _EXItemProviderCopyingLoadOperator,
+                            _EXItemProviderExtensionVendorLoadOperator,
+                            _EXItemProviderSandboxedResource ]
+    objc-ivars:           [ EXConcreteExtension.__allowedErrorClasses,
+                            EXConcreteExtension.__extensionBundle,
+                            EXConcreteExtension.__extensionContexts,
+                            EXConcreteExtension.__extensionExpirationIdentifiers,
+                            EXConcreteExtension.__extensionServiceConnections,
+                            EXConcreteExtension.__localizedName,
+                            EXConcreteExtension.__localizedShortName,
+                            EXConcreteExtension.__plugIn,
+                            EXConcreteExtension.__requestPostCompletionBlock,
+                            EXConcreteExtension.__requestPostCompletionBlockWithItems,
+                            EXConcreteExtension.__stashedPlugInConnection,
+                            EXConcreteExtension._attributes,
+                            EXConcreteExtension._connectionUUID,
+                            EXConcreteExtension._extensionPointIdentifier,
+                            EXConcreteExtension._identifier,
+                            EXConcreteExtension._infoDictionary,
+                            EXConcreteExtension._observingHostAppStateChanges,
+                            EXConcreteExtension._requestCancellationBlock,
+                            EXConcreteExtension._requestCompletionBlock,
+                            EXConcreteExtension._requestInterruptionBlock,
+                            EXConcreteExtension._unfairLock,
+                            EXConcreteExtension._version,
+                            EXConcreteExtension._wantsDedicatedQueue,
+                            EXConcreteExtensionContextVendor.__extensionContexts,
+                            EXConcreteExtensionContextVendor.__extensionPrincipalObjects,
+                            EXConcreteExtensionContextVendor.__extensionServiceConnections,
+                            EXExtensionContextImplementation.__UUID,
+                            EXExtensionContextImplementation.__auxiliaryConnection,
+                            EXExtensionContextImplementation.__auxiliaryListener,
+                            EXExtensionContextImplementation.__dummyExtension,
+                            EXExtensionContextImplementation.__extensionHostAuditToken,
+                            EXExtensionContextImplementation.__extensionHostProxy,
+                            EXExtensionContextImplementation.__extensionVendorProxy,
+                            EXExtensionContextImplementation.__pkUUID,
+                            EXExtensionContextImplementation.__principalObject,
+                            EXExtensionContextImplementation.__processAssertion,
+                            EXExtensionContextImplementation.__requestCleanUpBlock,
+                            EXExtensionContextImplementation.__transaction,
+                            EXExtensionContextImplementation._extensionContext,
+                            EXExtensionContextImplementation._inputItems,
+                            EXRunningExtensionInfo._bundleIdentifier,
+                            EXRunningExtensionInfo._containerBundleIdentifier,
+                            EXRunningExtensionInfo._containingViewControllerClassName,
+                            _EXItemProviderCopyingLoadOperator._destinationProcessAuditToken,
+                            _EXItemProviderCopyingLoadOperator._itemProvider,
+                            _EXItemProviderCopyingLoadOperator._loadedItems,
+                            _EXItemProviderExtensionVendorLoadOperator._extensionContextIdentifier,
+                            _EXItemProviderExtensionVendorLoadOperator._identifier,
+                            _EXItemProviderSandboxedResource._accessingSecurityScopedResource,
+                            _EXItemProviderSandboxedResource._resourceURL,
+                            _EXItemProviderSandboxedResource._sandboxExtensionToken ]
+...

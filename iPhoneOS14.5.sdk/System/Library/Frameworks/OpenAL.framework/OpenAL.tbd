@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           282290B5-DF4C-3E92-92CD-5C0CB7F64583
+  - target:          armv7s-ios
+    value:           FC612FE2-0C71-3328-A752-B34807583A03
+  - target:          arm64-ios
+    value:           82134AA8-51B2-39EE-9D36-38E31AC41D4C
+  - target:          arm64e-ios
+    value:           8989632F-145B-398F-80B5-88B1786D133C
+install-name:    '/System/Library/Frameworks/OpenAL.framework/OpenAL'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _alBuffer3f, _alBuffer3i, _alBufferData, _alBufferf, _alBufferfv, 
+                       _alBufferi, _alBufferiv, _alDeleteBuffers, _alDeleteSources, 
+                       _alDisable, _alDistanceModel, _alDopplerFactor, _alDopplerVelocity, 
+                       _alEnable, _alGenBuffers, _alGenSources, _alGetBoolean, _alGetBooleanv, 
+                       _alGetBuffer3f, _alGetBuffer3i, _alGetBufferf, _alGetBufferfv, 
+                       _alGetBufferi, _alGetBufferiv, _alGetDouble, _alGetDoublev, 
+                       _alGetEnumValue, _alGetError, _alGetFloat, _alGetFloatv, _alGetInteger, 
+                       _alGetIntegerv, _alGetListener3f, _alGetListener3i, _alGetListenerf, 
+                       _alGetListenerfv, _alGetListeneri, _alGetListeneriv, _alGetProcAddress, 
+                       _alGetSource3f, _alGetSource3i, _alGetSourcef, _alGetSourcefv, 
+                       _alGetSourcei, _alGetSourceiv, _alGetString, _alIsBuffer, 
+                       _alIsEnabled, _alIsExtensionPresent, _alIsSource, _alListener3f, 
+                       _alListener3i, _alListenerf, _alListenerfv, _alListeneri, 
+                       _alListeneriv, _alSource3f, _alSource3i, _alSourcePause, _alSourcePausev, 
+                       _alSourcePlay, _alSourcePlayv, _alSourceQueueBuffers, _alSourceRewind, 
+                       _alSourceRewindv, _alSourceStop, _alSourceStopv, _alSourceUnqueueBuffers, 
+                       _alSourcef, _alSourcefv, _alSourcei, _alSourceiv, _alSpeedOfSound, 
+                       _alcCaptureCloseDevice, _alcCaptureOpenDevice, _alcCaptureSamples, 
+                       _alcCaptureStart, _alcCaptureStop, _alcCloseDevice, _alcCreateContext, 
+                       _alcDestroyContext, _alcGetContextsDevice, _alcGetCurrentContext, 
+                       _alcGetEnumValue, _alcGetError, _alcGetIntegerv, _alcGetProcAddress, 
+                       _alcGetString, _alcIsExtensionPresent, _alcMakeContextCurrent, 
+                       _alcOpenDevice, _alcProcessContext, _alcSuspendContext ]
+...

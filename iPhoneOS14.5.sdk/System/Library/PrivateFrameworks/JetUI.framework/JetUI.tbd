@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/JetUI.framework/JetUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ AMPDesktopUI, AMSEngagementViewService,
+                            ASMessagesProvider, AppInstallExtension, AppKing,
+                            AppService, AppStore, AppStoreComponents,
+                            AppStoreComponentsDaemonTests,
+                            AppStoreComponentsTests, AppStoreKit, AppStoreKitTests,
+                            AppStoreOverlaysService, AppStoreTests,
+                            AppStoreTopShelfExtension,
+                            AppleMediaServicesUIDynamic, AppleTV, Arcade,
+                            ArcadeTopShelfExtension, BridgeStoreExtension,
+                            CoreDynamicUIPlugin, GCCloudServiceOwner,
+                            GKGameSessionDashboardExtension,
+                            GKXPCAppRemovalService, GameCenterApp,
+                            GameCenterAppleIDAuthenticationDelegate,
+                            GameCenterAppleIDLoginPlugin,
+                            GameCenterAuthenticateExtension,
+                            GameCenterChallengeIssueExtension,
+                            GameCenterDashboardExtension,
+                            GameCenterMatchmakerExtension,
+                            GameCenterMessageExtension, GameCenterSettings,
+                            GameCenterSetupAssistant,
+                            GameCenterTournamentExtension,
+                            GameCenterTurnBasedMatchmakerExtension, GameCenterUI,
+                            GameCenterUICore, GameCenterUIService, GameKit, JetMusic,
+                            JetPreflight, JetPreflightTests, Music, MusicTests,
+                            NanoAppStoreTests, Podcasts, PodcastsStoreUI,
+                            PodcastsStoreUITests, PodcastsTests, PodcastsUI,
+                            ProductPageExtension, StoreDynamicUIPlugin,
+                            StoreDynamicUIPluginTests, SubscribePageExtension,
+                            TTRGameCenter, TV, TVAppStore, TVAppStoreTests,
+                            TVGameCenterUIService, TVSystemMenuService, TVTests,
+                            VideosUI ]
+    symbols:              [ _JUMeasurementsEqual, _JUMeasurementsMake,
+                            _JUMeasurementsZero, _JetFontTextStyleFastHashValue,
+                            _JetUIVersionNumber, _JetUIVersionString ]
+    objc-classes:         [ _TtC5JetUI27TraitEnvironmentPlaceholder ]
+...

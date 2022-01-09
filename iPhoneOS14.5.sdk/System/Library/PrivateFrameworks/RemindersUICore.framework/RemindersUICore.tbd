@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore
+current-version:       2270
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RemindersUICoreBundleGet, _ttr_os_crash ]
+    objc-classes:         [ REMCursor, RemindersUICoreBundle,
+                            TTRIAccessibilityPrivateTraits, TTRIDeviceSupport,
+                            TTRITableViewCellWithConditionalAccessibilityActions,
+                            TTRUndoManager,
+                            _TtC15RemindersUICore15TTRUserDefaults,
+                            _TtC15RemindersUICore16TTRListBadgeView,
+                            _TtC15RemindersUICore18TTRIInsetTextField,
+                            _TtC15RemindersUICore19TTRICompletedButton,
+                            _TtC15RemindersUICore21TTRGeoLocationService,
+                            _TtC15RemindersUICore21TTRIExpandingTextView,
+                            _TtC15RemindersUICore23TTRSearchQueryPerformer,
+                            _TtC15RemindersUICore23TTRUserDefaultsObserver,
+                            _TtC15RemindersUICore24TTRLocationChangeMonitor,
+                            _TtC15RemindersUICore24TTRReminderCopyPasteItem,
+                            _TtC15RemindersUICore25TTRIExpandedHitTestButton,
+                            _TtC15RemindersUICore26TTRAccountsListsInteractor,
+                            _TtC15RemindersUICore26TTRRemindersListInteractor,
+                            _TtC15RemindersUICore26TTRSingleColorGradientView,
+                            _TtC15RemindersUICore29TTRUserDefaultsObservingBlock,
+                            _TtC15RemindersUICore31TTRNoDefaultImplicitActionLayer,
+                            _TtC15RemindersUICore31TTRNoDefaultImplicitScrollLayer,
+                            _TtC15RemindersUICore31TTRRemindersListImportedContent,
+                            _TtC15RemindersUICore33RemindersUICoreBundleLookupObject,
+                            _TtC15RemindersUICore33TTRCloudKitNetworkActivityMonitor,
+                            _TtC15RemindersUICore34TTRNoDefaultImplicitTransformLayer,
+                            _TtC15RemindersUICore36TTRNoDefaultImplicitActionShapeLayer,
+                            _TtC15RemindersUICore39TTRNoDefaultImplicitActionGradientLayer,
+                            _TtC15RemindersUICore54TTRReminderLocationPickerLocalSearchResultItemProvider,
+                            _TtC15RemindersUICore56TTRReminderLocationPickerAutocompleteContactItemProvider,
+                            _TtC15RemindersUICore9TTRRouter ]
+    objc-ivars:           [ TTRUndoManager._debugIdentifier,
+                            TTRUndoManager._disableRemoveAllActions,
+                            TTRUndoManager._pendingActionName ]
+...

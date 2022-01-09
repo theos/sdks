@@ -1,0 +1,13 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/XavierCore.framework/XavierCore
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ "NewsInternalExtras,NewsServices,NewsServicesInternal,NewsToday,News,NVCDemo,ArticleNotificationExtension,ArticleNotificationServiceExtension,MarketingNotificationExtension,OpenInNews,Feldspar Tests,NewsInternalSettings,NewsSettings,NewsUI,newsd,com.apple.news,NewsAnalyticsUpload,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsArticles,NewsArticlesTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,NewsPersonalization,NewsPersonalizationTests,NewsDES,NewsDESTests,NewsTag,NewsToday2,NewsArticles,NewsArticlesTests,NewsFeed,NewsFeedTests,Stocks,StocksAnalytics,StocksAnalyticsTests,StocksCore,StocksCoreTests,StocksTests,StocksToday,StocksUI,StocksUITests,NewsSubscription,XavierCore,XavierCoreTests,XavierNews,XavierNewsTests" ]
+    symbols:              [ _XavierCoreVersionNumber, _XavierCoreVersionString ]
+...

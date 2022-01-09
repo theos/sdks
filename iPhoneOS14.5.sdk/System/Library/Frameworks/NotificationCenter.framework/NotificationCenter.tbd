@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A04B04A4-8C70-3F7C-BE7A-5BD18FBEDCDF
+  - target:          armv7s-ios
+    value:           D2ED7121-4108-3F86-9EEA-4E71906ADBCC
+  - target:          arm64-ios
+    value:           D721C1BA-6770-3BA1-ABBF-C3DE0E23AA96
+  - target:          arm64e-ios
+    value:           21CEB7CC-3843-3D98-BFA8-6EA81269516C
+install-name:    '/System/Library/Frameworks/NotificationCenter.framework/NotificationCenter'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NCExtensionItemUserInfoInitialLargestAvailableDisplayModeKey, 
+                       _NCWidgetRowHeightDidChangeNotification ]
+    objc-classes:    [ NCDataSourceManager, NCWidgetDataSource, NCWidgetDatum ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NCAppLaunchOriginWidget, _NCExtensionItemUserInfoContainerIdentifierKey, 
+                       _NCExtensionItemUserInfoDefaultMarginsKey, _NCExtensionItemUserInfoInitialActiveDisplayModeKey, 
+                       _NCExtensionItemUserInfoInitialBoundsKey, _NCExtensionItemUserInfoInitialLayoutMarginsKey, 
+                       _NCExtensionItemUserInfoInitialMaxCompactSizeKey, _NCExtensionItemUserInfoInitialMaxExpandedSizeKey, 
+                       _NCExtensionItemUserInfoInitialVisibilityStateKey, _NCExtensionItemUserInfoSnapshotTimestampsEnabledKey, 
+                       _NCExtensionItemUserInfoWidgetIdentifierKey, _NCIsValidWidgetDisplayMode, 
+                       _NCStringFromWidgetDisplayMode, _NCStringFromWidgetVisibilityState, 
+                       _NCWidgetControllerConnectionName, _NCWidgetControllerHasContentEntitlement, 
+                       _NCWidgetControllerRequestRefreshEntitlement, __NCWidgetDisplayModeUnset, 
+                       _kNCDefaultWidgetLayoutMargins ]
+    objc-classes:    [ NCWidgetController, NCWidgetMetrics ]
+...

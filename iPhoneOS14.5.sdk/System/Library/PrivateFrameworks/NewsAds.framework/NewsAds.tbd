@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NewsAds.framework/NewsAds
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ "NewsInternalExtras,NewsServices,NewsServicesInternal,NewsToday,News,NVCDemo,ArticleNotificationExtension,ArticleNotificationServiceExtension,MarketingNotificationExtension,OpenInNews,Feldspar Tests,NewsInternalSettings,NewsSettings,NewsUI,newsd,com.apple.news,NewsAnalyticsUpload,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsAds,NewsAdsTests,NewsArticles,NewsArticlesTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,NewsPersonalization,NewsPersonalizationTests,NewsDemo,NewsAppKit,NewsAppKitBundle,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,NewsDES,NewsDESTests,NewsTag,NewsToday2,NewsAppKit,NewsAppKitBundle,NewsTodayIntents,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsFeed,NewsFeedTests,Stocks,StocksAnalytics,StocksAnalyticsTests,StocksCore,StocksCoreTests,StocksTests,StocksToday,StocksUI,StocksUITests,NewsSubscription" ]
+    symbols:              [ _NewsAdsVersionNumber, _NewsAdsVersionString ]
+    objc-classes:         [ NMAssembly, _TtC7NewsAds13StoreAssembly,
+                            _TtC7NewsAds15CommandAssembly,
+                            _TtC7NewsAds15ContextAssembly,
+                            _TtC7NewsAds15ManagerAssembly,
+                            _TtC7NewsAds15PreviewAssembly,
+                            _TtC7NewsAds16ProviderAssembly,
+                            _TtC7NewsAds16RendererAssembly,
+                            _TtC7NewsAds17DebugBannerAdView,
+                            _TtC7NewsAds19BannerAdMetricsView,
+                            _TtC7NewsAds23DebugJournalSummaryView,
+                            _TtC7NewsAds25InterstitialAdMetricsView,
+                            _TtC7NewsAds26DebugJournalViewController,
+                            _TtC7NewsAds33DebugJournalCodableViewController ]
+...

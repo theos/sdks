@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ComplicationDisplay.framework/ComplicationDisplay
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ComplicationDisplayVersionNumber,
+                            _ComplicationDisplayVersionString ]
+    objc-classes:         [ _ClientRenderer, _ClientRendererWindow,
+                            _TtC19ComplicationDisplay23ComplicationHostingView ]
+    objc-ivars:           [ _ClientRenderer._host, _ClientRenderer._lock,
+                            _ClientRenderer._renderCost,
+                            _ClientRenderer._renderTime, _ClientRenderer._sema ]
+...

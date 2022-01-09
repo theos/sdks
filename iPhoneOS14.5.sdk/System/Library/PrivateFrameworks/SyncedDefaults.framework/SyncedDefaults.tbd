@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SYDGetAccountsLog, _SYDGetAnalyticsLog,
+                            _SYDGetCloudKitLog, _SYDGetConnectionLog,
+                            _SYDGetCoreDataLog, _SYDGetDefaultLog,
+                            _SYDGetMigrationLog, _SYDGetMiscLog,
+                            _SYDGetReachabilityLog, _SYDGetSchedulerLog,
+                            _SYDGetTCCLog, _SYDGetTraceLog,
+                            _SYDRemotePreferencesSourceConfigurationDidChangeNotification,
+                            _SYDRemotePreferencesSourceDidChangeNotification,
+                            _SYDUbiquitousKeyValueStoreDidChangeExternallyNotification,
+                            _SYDXPCCreateCFObjectFromXPCObject,
+                            _SYDXPCCreateXPCObjectFromCFObject,
+                            _SyncedDefaultsVersionNumber,
+                            _SyncedDefaultsVersionString ]
+    objc-classes:         [ SYDClient, SYDClientProtocolProxy,
+                            SYDClientToDaemonConnection, SYDJournal,
+                            SYDRemotePreferencesSource, SYDStoreConfiguration,
+                            SYDStoreID ]
+    objc-ivars:           [ SYDClient._additionalSource,
+                            SYDClient._bundleIdentifier, SYDClient._connection,
+                            SYDClient._queue, SYDClient._storeIdentifier,
+                            SYDClientProtocolProxy._target,
+                            SYDClientToDaemonConnection._analyticsQueue,
+                            SYDClientToDaemonConnection._cachedObjects,
+                            SYDClientToDaemonConnection._callbackQueue,
+                            SYDClientToDaemonConnection._daemonWakeNotifyToken,
+                            SYDClientToDaemonConnection._didLogFaultForEntitlements,
+                            SYDClientToDaemonConnection._queue,
+                            SYDClientToDaemonConnection._storeConfiguration,
+                            SYDClientToDaemonConnection._syncingWithCloudCounter,
+                            SYDClientToDaemonConnection._xpcConnection,
+                            SYDJournal._journal, SYDJournal._readonly,
+                            SYDJournal._store, SYDRemotePreferencesSource._cache,
+                            SYDRemotePreferencesSource._client,
+                            SYDRemotePreferencesSource._configurationDictionary,
+                            SYDRemotePreferencesSource._dirtyKeys,
+                            SYDRemotePreferencesSource._externalChanges,
+                            SYDRemotePreferencesSource._forceNextSynchronization,
+                            SYDRemotePreferencesSource._generationCount,
+                            SYDRemotePreferencesSource._initialSyncChangeCount,
+                            SYDRemotePreferencesSource._isExecutingForClient,
+                            SYDRemotePreferencesSource._isInitialSync,
+                            SYDRemotePreferencesSource._lastAccess,
+                            SYDRemotePreferencesSource._lastGenerationFromDisk,
+                            SYDRemotePreferencesSource._memoryWarningSource,
+                            SYDRemotePreferencesSource._memoryWarningSourceEnabled,
+                            SYDRemotePreferencesSource._preferenceID,
+                            SYDRemotePreferencesSource._protectionQueue,
+                            SYDRemotePreferencesSource._registrationBlock,
+                            SYDRemotePreferencesSource._registrationQueue,
+                            SYDRemotePreferencesSource._storageChangeCount,
+                            SYDRemotePreferencesSource._urlOnDisk,
+                            SYDStoreConfiguration._storeID,
+                            SYDStoreID._identifier, SYDStoreID._type ]
+...

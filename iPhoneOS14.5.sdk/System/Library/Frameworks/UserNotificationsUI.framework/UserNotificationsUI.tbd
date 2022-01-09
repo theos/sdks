@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D299A954-0085-37F1-BC2D-3954F4EA2252
+  - target:          armv7s-ios
+    value:           F4DEBF8C-D3A1-3733-947C-09366DAEB634
+  - target:          arm64-ios
+    value:           568F997A-064C-3CB8-9E45-AFFDEA89966E
+  - target:          arm64e-ios
+    value:           84AA3675-7088-3D81-B00F-E8D273DA61BA
+install-name:    '/System/Library/Frameworks/UserNotificationsUI.framework/UserNotificationsUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _UserNotificationsUIVersionNumber, _UserNotificationsUIVersionString ]
+    objc-classes:    [ _UNNotificationContentExtensionContext, _UNNotificationExtensionHostViewController, 
+                       _UNNotificationExtensionRemoteViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UNAppLaunchOriginContentExtension, _UNLogExtensions, _UNRegisterUserNotificationsUILogging, 
+                       __UNNotificationExtensionActionsKey ]
+    objc-classes:    [ _UNNotificationContentExtensionHostContext ]
+...

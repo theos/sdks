@@ -1,0 +1,50 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Spotlight.framework/Spotlight
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SPAppStoreSearchURLFromQuery,
+                            _SPWebSearchURLFromQuery, _createDedupeDicts ]
+    objc-classes:         [ SPClientSession, SPGeneralQueryTask, SPQueryResponse,
+                            SPQueryTask, SPSafariObserver, SPSuggestionsQueryTask,
+                            SPZKWSearchQueryTask, SPZKWSession ]
+    objc-ivars:           [ SPClientSession._contentFilter,
+                            SPClientSession._infinitePatience,
+                            SPClientSession._maxUISuggestions,
+                            SPClientSession._observersAdded,
+                            SPClientSession._prefsToken,
+                            SPClientSession._searchDomains,
+                            SPClientSession._session,
+                            SPGeneralQueryTask._didReceiveCompleteCallback,
+                            SPGeneralQueryTask._mutableSections,
+                            SPGeneralQueryTask._mutableSessionEntityString,
+                            SPGeneralQueryTask._newQuery,
+                            SPGeneralQueryTask._query,
+                            SPGeneralQueryTask._session,
+                            SPGeneralQueryTask._started,
+                            SPGeneralQueryTask._token, SPQueryResponse._kind,
+                            SPQueryResponse._resultSections,
+                            SPQueryResponse._sessionEntityString,
+                            SPQueryResponse._state, SPQueryResponse._task,
+                            SPQueryTask._deferredUpdate,
+                            SPQueryTask._delayedResponse, SPQueryTask._delegate,
+                            SPQueryTask._dispatchQueue, SPQueryTask._finished,
+                            SPQueryTask._forceStableResults, SPQueryTask._live,
+                            SPQueryTask._maxTopHitAppResults,
+                            SPQueryTask._maxUISuggestions,
+                            SPQueryTask._queryKind, SPQueryTask._queryProcessor,
+                            SPQueryTask._rankingDebugLog, SPQueryTask._sections,
+                            SPQueryTask._sentSuggestions,
+                            SPQueryTask._sessionEntityString,
+                            SPQueryTask._showMoreInAppInfo, SPQueryTask._state,
+                            SPQueryTask._supportedAppScopes,
+                            SPQueryTask._unsafeState,
+                            SPQueryTask._updatesDisabled, SPQueryTask._whyQuery,
+                            SPZKWSearchQueryTask._mutableSections,
+                            SPZKWSearchQueryTask._queryID ]
+...

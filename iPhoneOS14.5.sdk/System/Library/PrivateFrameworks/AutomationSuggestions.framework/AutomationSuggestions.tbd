@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AutomationSuggestions.framework/AutomationSuggestions
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATSAnalysisPETATSAnalysisEventReadFrom,
+                            _ATSTelemetryAnalyticsEventName,
+                            _AutomationSuggestionsVersionNumber,
+                            _AutomationSuggestionsVersionString,
+                            _TimeIntervalOneHour, _feedbackATSChannel,
+                            _generalATSChannel, _projectId, _trialATSChannel,
+                            _trialNamespaceId, _trialNamespaceName ]
+    objc-classes:         [ ATSAnalysisPETATSAnalysisEvent, ATSConfig, ATSFeedback,
+                            ATSSuggester, ATSSuggestion, ActionRetriever ]
+    objc-ivars:           [ ATSAnalysisPETATSAnalysisEvent._absoluteAntecedentSupport,
+                            ATSAnalysisPETATSAnalysisEvent._absoluteConsequentSupport,
+                            ATSAnalysisPETATSAnalysisEvent._absoluteSupport,
+                            ATSAnalysisPETATSAnalysisEvent._activityType,
+                            ATSAnalysisPETATSAnalysisEvent._bundleID,
+                            ATSAnalysisPETATSAnalysisEvent._confidence,
+                            ATSAnalysisPETATSAnalysisEvent._conviction,
+                            ATSAnalysisPETATSAnalysisEvent._feedbackAction,
+                            ATSAnalysisPETATSAnalysisEvent._intentClass,
+                            ATSAnalysisPETATSAnalysisEvent._lift,
+                            ATSAnalysisPETATSAnalysisEvent._rulePowerFactor,
+                            ATSAnalysisPETATSAnalysisEvent._sessionId,
+                            ATSAnalysisPETATSAnalysisEvent._support,
+                            ATSAnalysisPETATSAnalysisEvent._trialID,
+                            ATSAnalysisPETATSAnalysisEvent._trigger,
+                            ATSAnalysisPETATSAnalysisEvent._uniqueDaysLastWeek,
+                            ATSAnalysisPETATSAnalysisEvent._uniqueDaysTotal,
+                            ATSConfig._activityBlacklist,
+                            ATSConfig._activityForTriggerBlacklist,
+                            ATSConfig._atsConfig, ATSConfig._deploymentID,
+                            ATSConfig._experimentID,
+                            ATSConfig._heuristicEnablement,
+                            ATSConfig._intentBlacklist,
+                            ATSConfig._intentForTriggerBlacklist,
+                            ATSConfig._parametersForIntentBlacklist,
+                            ATSConfig._preferredTriggers,
+                            ATSConfig._scoreCutOffs, ATSConfig._sortProperty,
+                            ATSConfig._treatmentID, ATSConfig._trialClient,
+                            ATSConfig._trialID, ATSConfig._trialTrackingID,
+                            ATSFeedback._action,
+                            ATSFeedback._automationIdentifier,
+                            ATSFeedback._suggestion,
+                            ATSSuggester._actionRetriever,
+                            ATSSuggester._atsConfig,
+                            ATSSuggester._rtRoutineManager,
+                            ATSSuggestion._activity,
+                            ATSSuggestion._activityString,
+                            ATSSuggestion._bundleID, ATSSuggestion._intent,
+                            ATSSuggestion._rule, ATSSuggestion._trialID,
+                            ATSSuggestion._triggers,
+                            ActionRetriever._activityCache,
+                            ActionRetriever._intentCache,
+                            ActionRetriever._knowledgeStore ]
+...

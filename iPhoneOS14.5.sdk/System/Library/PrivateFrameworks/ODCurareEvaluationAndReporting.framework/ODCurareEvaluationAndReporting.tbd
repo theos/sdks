@@ -1,0 +1,76 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ODCurareEvaluationAndReporting.framework/ODCurareEvaluationAndReporting
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s30ODCurareEvaluationAndReporting0abcD5ErrorO21__derived_enum_equalsySbAC_ACtFZ,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorO4hash4intoys6HasherVz_tF,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorO9hashValueSivg,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorO9hashValueSivpMV,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorOMa,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorOMn,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorON,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorOSHAAMc,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorOSQAAMc,
+                            _$s30ODCurareEvaluationAndReporting0abcD5ErrorOs0E0AAMc,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC03getB7ResultsSDySSypGyF,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC03getB7ResultsSDySSypGyFTq,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC05trainC21EvaluateAdaptedModels18adaptableModelPath18modelConfigurationSo8NSNumberC10Foundation3URLV_So07MLModelN0CSgtKF,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC05trainC21EvaluateAdaptedModels18adaptableModelPath18modelConfigurationSo8NSNumberC10Foundation3URLV_So07MLModelN0CSgtKFTq,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC16bundleIdentifier20dataProviderInstance010evaluationJ0015personalizationJ013pruningPolicyACSS_So0a4DataI8Protocol_pSo0a9EvaluatorP0_pSo0a15PersonalizationP0_pSo0ao12CachePruningN6ObjectCSgtKcfC,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC16bundleIdentifier20dataProviderInstance010evaluationJ0015personalizationJ013pruningPolicyACSS_So0a4DataI8Protocol_pSo0a9EvaluatorP0_pSo0a15PersonalizationP0_pSo0ao12CachePruningN6ObjectCSgtKcfCTq,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC16bundleIdentifier20dataProviderInstance010evaluationJ0015personalizationJ013pruningPolicyACSS_So0a4DataI8Protocol_pSo0a9EvaluatorP0_pSo0a15PersonalizationP0_pSo0ao12CachePruningN6ObjectCSgtKcfc,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC20evaluateDefaultModel07defaultH4Path18modelConfigurationSo8NSNumberC10Foundation3URLV_So07MLModelL0CSgtKF,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC20evaluateDefaultModel07defaultH4Path18modelConfigurationSo8NSNumberC10Foundation3URLV_So07MLModelL0CSgtKFTq,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC21personalizationResultSo0a15PersonalizationG0CSgvpfi,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC21personalizedModelPath10Foundation3URLVSgvpfi,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC23generatedLatestBoundaryAA0a4DataH0CSgvpfi,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC28allUserDataDictionaryAdaptedSDySSypGSgvpfi,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleC28allUserDataDictionaryDefaultSDySSypGSgvpfi,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCACycfC,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCACycfc,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCMa,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCMn,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCN,
+                            _$s30ODCurareEvaluationAndReporting0abcD6ModuleCfD,
+                            _ODCurareEvaluationAndReportingVersionNumber,
+                            _ODCurareEvaluationAndReportingVersionString,
+                            _ODCurareEvaluationAndReporting_MetadataDataKey,
+                            _ODCurareEvaluationAndReporting_MetadataUUIDKey ]
+    objc-classes:         [ ODCurareCoreDuetStorage, ODCurareDKEvent,
+                            ODCurareDataCachePruningPolicyObject,
+                            ODCurareDataProviderResult,
+                            ODCurareEvaluationAndReportingModule,
+                            ODCurareEvaluationAndReportingModuleInternal,
+                            ODCurareEvaluationResult,
+                            ODCurarePersonalizationResult ]
+    objc-ivars:           [ ODCurareCoreDuetStorage._knowledgeStore,
+                            ODCurareCoreDuetStorage._name,
+                            ODCurareCoreDuetStorage._stream,
+                            ODCurareDKEvent._endDate,
+                            ODCurareDKEvent._identifier,
+                            ODCurareDKEvent._metadata,
+                            ODCurareDKEvent._startDate,
+                            ODCurareDataCachePruningPolicyObject._maximumNumberOfDays,
+                            ODCurareDataCachePruningPolicyObject._maximumNumberOfEvents,
+                            ODCurareDataProviderResult._batchProviders,
+                            ODCurareDataProviderResult._dataArray,
+                            ODCurareDataProviderResult._dateArray,
+                            ODCurareDataProviderResult._metadata,
+                            ODCurareEvaluationAndReportingModule._underlyingObject,
+                            ODCurareEvaluationResult._evaluationName,
+                            ODCurareEvaluationResult._metadata,
+                            ODCurareEvaluationResult._numberOfSamplesPositive,
+                            ODCurareEvaluationResult._numberOfSamplesTotal,
+                            ODCurarePersonalizationResult._currentlyUsedModelPath,
+                            ODCurarePersonalizationResult._metadata,
+                            ODCurarePersonalizationResult._newPersonalizedModelIsSelected,
+                            ODCurarePersonalizationResult._personalizedModelIdentifier,
+                            ODCurarePersonalizationResult._personalizedModelPath,
+                            ODCurarePersonalizationResult._saveNewPersonalizedModel ]
+...

@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ExtensionFoundation.framework/ExtensionFoundation
+current-version:       19.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __EXDefaultLog, __kEXCatalystSDKVariantKey,
+                            __kEXConcreteExtensionKey ]
+    objc-classes:         [ EXCacheBuilder, EXDefaults, EXEnumerator,
+                            EXExtensionPointEnumerator, EXOSExtensionEnumerator,
+                            _EXExtensionPoint ]
+    objc-ivars:           [ EXCacheBuilder.__appleInternalExtensions,
+                            EXCacheBuilder.__combinedAppleInternalExtensionSDK,
+                            EXCacheBuilder.__combinedExtensionSDK,
+                            EXCacheBuilder.__extensions,
+                            EXCacheBuilder._sourceURL,
+                            EXExtensionPointEnumerator._currentExtensionPoint,
+                            EXExtensionPointEnumerator._currentExtensionPointDict,
+                            EXExtensionPointEnumerator._extensionPoints,
+                            EXExtensionPointEnumerator._extensionPointsKeyEnumerator,
+                            EXOSExtensionEnumerator._extensionPaths,
+                            EXOSExtensionEnumerator._extensionPathsEnumerator,
+                            _EXExtensionPoint._SDKDictionary,
+                            _EXExtensionPoint._identifier,
+                            _EXExtensionPoint._platform ]
+...

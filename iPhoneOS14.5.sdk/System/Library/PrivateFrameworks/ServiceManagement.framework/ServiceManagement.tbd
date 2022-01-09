@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ServiceManagement.framework/ServiceManagement
+current-version:       2038.100.48
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SMCopyAllJobDictionaries,
+                            _SMCopyEnabledLoginItems_4BTM, _SMJobCopyDictionary,
+                            _SMJobIsEnabled, _SMJobRemove, _SMJobSetEnabled,
+                            _SMJobSubmit, _SMLaunchdPlistSetUserAllowed_4BTM,
+                            _SMLoginItemSetUserAllowed_4BTM,
+                            __SMLoginItemSetEnabledWithURL, __launch_job_routine,
+                            __launch_job_routine_async, __xpc_service_routine,
+                            _kSMDomainLocalLaunchd, _kSMDomainSystemLaunchd,
+                            _kSMDomainUserLaunchd, _kSMErrorDomainFramework,
+                            _kSMErrorDomainIPC, _kSMErrorDomainLaunchd,
+                            _kSMInfoKeyAuthorizedClients,
+                            _kSMInfoKeyPrivilegedExecutables ]
+...

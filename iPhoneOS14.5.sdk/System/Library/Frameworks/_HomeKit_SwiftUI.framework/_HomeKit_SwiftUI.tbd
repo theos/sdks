@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3BD976A1-231D-31E1-B6D2-AF3A17D332CF
+  - target:          arm64e-ios
+    value:           65D053BF-9560-3A91-894F-D277A7BE9647
+install-name:    '/System/Library/Frameworks/_HomeKit_SwiftUI.framework/_HomeKit_SwiftUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s16_HomeKit_SwiftUI10CameraViewV0cD00F0AAMc', '_$s16_HomeKit_SwiftUI10CameraViewV4bodyQrvg', 
+                       '_$s16_HomeKit_SwiftUI10CameraViewV4bodyQrvpMV', '_$s16_HomeKit_SwiftUI10CameraViewV4bodyQrvpQOMQ', 
+                       '_$s16_HomeKit_SwiftUI10CameraViewV6sourceACSo14HMCameraSourceC_tcfC', 
+                       '_$s16_HomeKit_SwiftUI10CameraViewVMa', '_$s16_HomeKit_SwiftUI10CameraViewVMn', 
+                       '_$s16_HomeKit_SwiftUI10CameraViewVN' ]
+...

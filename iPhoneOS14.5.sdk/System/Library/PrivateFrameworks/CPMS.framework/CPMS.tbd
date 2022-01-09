@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CPMS.framework/CPMS
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CPMSErrorDomain, _CPMSVersionNumber,
+                            _CPMSVersionString, _budgetDictionaryForClient,
+                            _buildDetailedThermalBudgetDetailsDescription,
+                            _buildDetailedThermalBudgetItemDescription,
+                            _clientDecoderRing, _clientDecoderRingItem,
+                            _clientDecoderRingItemForName,
+                            _copyApplePPMArrayProperty, _getAndPrintClientState,
+                            _getApplePPMFloatProperty,
+                            _getClientPowerConsumptionWithCallback,
+                            _getPowerForTimescale, _kCPMSPowerTimeScale100ms,
+                            _kCPMSPowerTimeScale1s,
+                            _kCPMSPowerTimeScaleInstantaneous,
+                            _kCPMSPowerTimeScaleThermal, _laneInputDisplayName,
+                            _openIOConnectionToPPM, _operationModeNames,
+                            _outputForEffort, _printBudget, _printBudgetArray,
+                            _printBudgetItem, _printCPMSBatteryPmaxState,
+                            _printCPMSControlState,
+                            _printCPMSControlStateSnapshotDict,
+                            _printCPMSControlStateSnapshotDictCSV,
+                            _printClientState, _printClientStateCSV,
+                            _printDecisionTreeCurve, _printGenericStructElement,
+                            _sendPowerBudgetToCPMSClient,
+                            _setApplePPMArrayProperty, _setApplePPMFloatProperty,
+                            _setClientDemandScaleFactor,
+                            _setDetailedThermalBudgetsToKext,
+                            _setOverrideClientPowerBudget, _suppressAssert,
+                            _timescaleDisplayName, _timescaleIntDisplayName ]
+    objc-classes:         [ CPMSAgent, CPMSClientDescription, CPMSStateReader ]
+    objc-ivars:           [ CPMSAgent._clientSet, CPMSAgent._connect,
+                            CPMSAgent._notificationPort,
+                            CPMSAgent._notificationQueue, CPMSAgent._ppmService,
+                            CPMSAgent._timeScalesSet,
+                            CPMSClientDescription._clientId,
+                            CPMSClientDescription._getCurrentPower,
+                            CPMSClientDescription._isContinuous,
+                            CPMSClientDescription._notificationCallback,
+                            CPMSClientDescription._powerBudgetUpdateMinimumPeriod,
+                            CPMSClientDescription._powerLevels ]
+...

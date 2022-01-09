@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           BD3C0AB5-0CDB-3535-AC03-53A215E690D3
+  - target:          armv7s-ios
+    value:           C78CCB48-5431-3923-AB84-64952246E78C
+  - target:          arm64-ios
+    value:           ADFB7B76-30BF-3CBE-8D53-2E0F08B22428
+  - target:          arm64e-ios
+    value:           00104FF6-0684-354B-ADC6-5066EFCCBA9E
+install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INUIRemoteViewControllerErrorDomain, _INUIVoiceShortcutExtensionItemBundleURLKey, 
+                       _INUIVoiceShortcutExtensionItemSandboxExtensionDataKey, _IntentsUIVersionNumber, 
+                       _IntentsUIVersionString, __INUIRemoteViewControllerErrorDomain, 
+                       __INUIUtilitiesBestFittingSizeForSizeBySystemVersionDictionary ]
+    objc-classes:    [ INUIAddVoiceShortcutButton, INUIAddVoiceShortcutViewController, 
+                       INUIAppIntentDeliverer, INUIAppIntentForwardingActionExecutor, 
+                       INUIEditVoiceShortcutViewController, INUIExtensionRequestInfo, 
+                       INUIExtensionViewControllerConfiguration, INUIImageLoader, 
+                       INUIImageServiceConnection, INUIImageSizeProvider, INUIInterfaceSection, 
+                       INUIPortableImageLoaderHelper, INUIRemoteViewController, INUISearchFoundationImageAdapter, 
+                       INUIVoiceShortcutXPCInterface, _INUIExtensionContextState ]
+...

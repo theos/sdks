@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           97FC6EFF-07EF-398E-9D06-76176CD941CF
+  - target:          armv7s-ios
+    value:           B0C5C8D7-E6B8-3A4C-9F73-0558E5F29267
+  - target:          arm64-ios
+    value:           34938AD9-A12D-391E-9B4A-049ED1EA632C
+  - target:          arm64e-ios
+    value:           DB5FF2EB-B232-3D1B-8E7F-2A27D6755E9C
+install-name:    '/System/Library/Frameworks/Speech.framework/Speech'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ SFSpeechRecordingRecognitionRequest ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SFAcousticFeature, SFSpeechAudioBufferRecognitionRequest, 
+                       SFSpeechLanguageModel, SFSpeechRecognitionMetadata, SFSpeechRecognitionRequest, 
+                       SFSpeechRecognitionResult, SFSpeechRecognitionTask, SFSpeechRecognizer, 
+                       SFSpeechURLRecognitionRequest, SFTranscription, SFTranscriptionSegment, 
+                       SFVoiceAnalytics, _SFSearchRequest, _SFSearchResult ]
+...

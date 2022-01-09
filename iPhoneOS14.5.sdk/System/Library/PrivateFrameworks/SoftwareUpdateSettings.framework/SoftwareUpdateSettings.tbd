@@ -1,0 +1,67 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework/SoftwareUpdateSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __SUSLoggingFacility ]
+    objc-classes:         [ SUSSoftwareUpdateAnimatedIcon,
+                            SUSSoftwareUpdateLicenseViewController,
+                            SUSSoftwareUpdateReleaseNotesDetail,
+                            SUSSoftwareUpdateScanCell,
+                            SUSSoftwareUpdateTableView,
+                            SUSSoftwareUpdateTermsManager,
+                            SUSSoftwareUpdateTitleCell,
+                            _PSSpinnerHandlingNavigationController,
+                            _PSSpinnerViewController ]
+    objc-ivars:           [ SUSSoftwareUpdateAnimatedIcon._animating,
+                            SUSSoftwareUpdateAnimatedIcon._innerGearView,
+                            SUSSoftwareUpdateAnimatedIcon._outerGearShadowView,
+                            SUSSoftwareUpdateAnimatedIcon._outerGearView,
+                            SUSSoftwareUpdateLicenseViewController._licenseTextInfo,
+                            SUSSoftwareUpdateLicenseViewController._licenseTextView,
+                            SUSSoftwareUpdateReleaseNotesDetail._releaseNotes,
+                            SUSSoftwareUpdateReleaseNotesDetail._webView,
+                            SUSSoftwareUpdateScanCell._checkingForUpdateSpinner,
+                            SUSSoftwareUpdateScanCell._currentVersion,
+                            SUSSoftwareUpdateScanCell._state,
+                            SUSSoftwareUpdateScanCell._statusLabel,
+                            SUSSoftwareUpdateScanCell._suPathsRestricted,
+                            SUSSoftwareUpdateScanCell._subtitleLabel,
+                            SUSSoftwareUpdateScanCell._updatesDeferred,
+                            SUSSoftwareUpdateTableView._checkingForUpdateSpinner,
+                            SUSSoftwareUpdateTableView._checkingStatusLabel,
+                            SUSSoftwareUpdateTableView._currentVersion,
+                            SUSSoftwareUpdateTableView._disableScanUI,
+                            SUSSoftwareUpdateTableView._lastScannedDate,
+                            SUSSoftwareUpdateTableView._state,
+                            SUSSoftwareUpdateTableView._suPathsRestricted,
+                            SUSSoftwareUpdateTableView._subtitleLabel,
+                            SUSSoftwareUpdateTableView._updatesDeferred,
+                            SUSSoftwareUpdateTermsManager._agreeToCombinedTOSInProgress,
+                            SUSSoftwareUpdateTermsManager._hostController,
+                            SUSSoftwareUpdateTermsManager._overrideNextRUIAction,
+                            SUSSoftwareUpdateTermsManager._presentedViewController,
+                            SUSSoftwareUpdateTermsManager._serverFlowStyle,
+                            SUSSoftwareUpdateTermsManager._showProgressViewController,
+                            SUSSoftwareUpdateTermsManager._termsCompletion,
+                            SUSSoftwareUpdateTermsManager._termsRemoteUI,
+                            SUSSoftwareUpdateTermsManager._update,
+                            SUSSoftwareUpdateTitleCell._animatedGearView,
+                            SUSSoftwareUpdateTitleCell._animatingGearView,
+                            SUSSoftwareUpdateTitleCell._delegate,
+                            SUSSoftwareUpdateTitleCell._imageView,
+                            SUSSoftwareUpdateTitleCell._learnMoreLabel,
+                            SUSSoftwareUpdateTitleCell._progressBar,
+                            SUSSoftwareUpdateTitleCell._progressStyle,
+                            SUSSoftwareUpdateTitleCell._releaseNotesSummaryView,
+                            SUSSoftwareUpdateTitleCell._stackView,
+                            SUSSoftwareUpdateTitleCell._updateIcon,
+                            SUSSoftwareUpdateTitleCell._updateStatusLabel,
+                            SUSSoftwareUpdateTitleCell._updateStatusLabelVerticalConstraint,
+                            _PSSpinnerViewController._spinner ]
+...

@@ -1,0 +1,71 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NewsSubscription.framework/NewsSubscription
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ "NewsInternalExtras,NewsServices,NewsServicesInternal,NewsToday,News,NVCDemo,ArticleNotificationExtension,ArticleNotificationServiceExtension,MarketingNotificationExtension,OpenInNews,Feldspar Tests,NewsInternalSettings,NewsSettings,NewsUI,newsd,com.apple.news,NewsAnalyticsUpload,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsAds,NewsAdsTests,NewsArticles,NewsArticlesTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,NewsPersonalization,NewsPersonalizationTests,NewsDemo,NewsAppKit,NewsAppKitBundle,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,NewsDES,NewsDESTests,NewsTag,NewsToday2,NewsAppKit,NewsAppKitBundle,NewsTodayIntents,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsFeed,NewsFeedTests,Stocks,StocksAnalytics,StocksAnalyticsTests,StocksCore,StocksCoreTests,StocksTests,StocksToday,StocksUI,StocksUITests,NewsSubscription" ]
+    symbols:              [ _BridgedCampaignClickErrorCode,
+                            _BridgedCampaignClickErrorDomain,
+                            _NewsSubscriptionVersionNumber,
+                            _NewsSubscriptionVersionString ]
+    objc-classes:         [ BridgedAccountPageViewControllerFactory,
+                            BridgedCampaignClickRecorder,
+                            BridgedWebAuthenticationSession, NPAssembly,
+                            NPBridgedOfferManager, NPFactoryAssembly,
+                            NPFamilyEligibilityProvider,
+                            NPFamilySharingSetupPresenter, NPFamilyStatusManager,
+                            NPManagerAssembly, NPPaywall, NPPaywallAssembly,
+                            NPPurchaseContext, NPPurchaseManager,
+                            NPPurchasingSpinnerAssembly, NPRendererAssembly,
+                            NPSoftPaywallHeightProvider, NPStylerAssembly,
+                            NPUtilityAssembly,
+                            _TtC16NewsSubscription10PlayerView,
+                            _TtC16NewsSubscription12OfferManager,
+                            _TtC16NewsSubscription15PurchaseManager,
+                            _TtC16NewsSubscription16DatabaseAssembly,
+                            _TtC16NewsSubscription17PaywallInteractor,
+                            _TtC16NewsSubscription19AlacartePaywallView,
+                            _TtC16NewsSubscription19WebOptinFlowManager,
+                            _TtC16NewsSubscription21BundleHardPaywallView,
+                            _TtC16NewsSubscription21BundleSoftPaywallView,
+                            _TtC16NewsSubscription21PaywallViewController,
+                            _TtC16NewsSubscription21PurchasingSpinnerView,
+                            _TtC16NewsSubscription22ErrorTransitionContext,
+                            _TtC16NewsSubscription22SubscriptionOffersView,
+                            _TtC16NewsSubscription23BundlePurchasePrewarmer,
+                            _TtC16NewsSubscription25HideMyEmailSignupAssembly,
+                            _TtC16NewsSubscription26SubscriptionOffersAssembly,
+                            _TtC16NewsSubscription27AlacartePaywallViewProvider,
+                            _TtC16NewsSubscription27FlexiblePaywallViewProvider,
+                            _TtC16NewsSubscription27HideMyEmailSignupChoiceView,
+                            _TtC16NewsSubscription27PaywallFormatContentService,
+                            _TtC16NewsSubscription28DynamicViewControllerFactory,
+                            _TtC16NewsSubscription29AMSUIWebViewControllerFactory,
+                            _TtC16NewsSubscription29BundleHardPaywallViewProvider,
+                            _TtC16NewsSubscription29BundleSoftPaywallViewProvider,
+                            _TtC16NewsSubscription29DisplayOfferTransitionContext,
+                            _TtC16NewsSubscription29DynamicViewControllerDelegate,
+                            _TtC16NewsSubscription30AMSUIWebViewControllerDelegate,
+                            _TtC16NewsSubscription30HideMyEmailSignupAlternateView,
+                            _TtC16NewsSubscription31HideMyEmailSignupViewController,
+                            _TtC16NewsSubscription31PurchasingSpinnerViewController,
+                            _TtC16NewsSubscription31RefreshReceiptTransitionContext,
+                            _TtC16NewsSubscription31UnselectableLinkEnabledTextView,
+                            _TtC16NewsSubscription32SubscriptionOffersViewController,
+                            _TtC16NewsSubscription35FlexiblePaywallCollectionViewLayout,
+                            _TtC16NewsSubscription36HideMyEmailSignupBlueprintFooterView,
+                            _TtC16NewsSubscription36HideMyEmailSignupBlueprintHeaderView,
+                            _TtC16NewsSubscription39FlexiblePaywallCollectionViewDataSource,
+                            _TtC16NewsSubscription50HideMyEmailSignupBlueprintViewHeaderFooterProvider,
+                            _TtC16NewsSubscription6Images ]
+    objc-ivars:           [ BridgedAccountPageViewControllerFactory._delegate,
+                            BridgedWebAuthenticationSession._authenticationSession,
+                            NPFamilyEligibilityProvider._accountManager,
+                            NPFamilyEligibilityProvider._eligibilityRequester,
+                            NPFamilyEligibilityProvider._store ]
+...

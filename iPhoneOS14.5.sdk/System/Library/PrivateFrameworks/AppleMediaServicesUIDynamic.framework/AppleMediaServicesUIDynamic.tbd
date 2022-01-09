@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleMediaServicesUIDynamic.framework/AppleMediaServicesUIDynamic
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppleMediaServicesUIDynamicVersionNumber,
+                            _AppleMediaServicesUIDynamicVersionString,
+                            _deviceIsRunningInternalBuild,
+                            _deviceIsRunningSeedBuild ]
+    objc-classes:         [ AMSUIDAirplaneModeInquiry, AMSUIDCellularDataInquiry,
+                            AMSUIDDynamicImpressionItem,
+                            AMSUIDDynamicImpressionMetrics,
+                            AMSUIDDynamicImpressionMetricsIdentifier,
+                            AMSUIDDynamicViewController, AMSUIDHomeScreenIcons,
+                            AMSUIDMobileGestalt,
+                            _TtC27AppleMediaServicesUIDynamic16ArtworkImageView,
+                            _TtC27AppleMediaServicesUIDynamic19ErrorViewController,
+                            _TtC27AppleMediaServicesUIDynamic21LoadingViewController,
+                            _TtC27AppleMediaServicesUIDynamic24FrameworkDynamicUIPlugin,
+                            _TtC27AppleMediaServicesUIDynamic25BundleImageFetchOperation,
+                            _TtC27AppleMediaServicesUIDynamic25SystemImageFetchOperation,
+                            _TtC27AppleMediaServicesUIDynamic26DeferredPageViewController ]
+    objc-ivars:           [ AMSUIDAirplaneModeInquiry._delegate,
+                            AMSUIDAirplaneModeInquiry._radiosPreferences,
+                            AMSUIDCellularDataInquiry._bundle ]
+...

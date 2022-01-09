@@ -1,0 +1,67 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/BatteryCenter.framework/BatteryCenter
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _BCLogDeviceController, _BCLogPowerSourceController,
+                            _BCLogSubsystem, _BCLogWidget,
+                            _BCRegisterUserNotificationsLogging,
+                            _BCStringFromParts, _BatteryCenterVersionNumber,
+                            _BatteryCenterVersionString,
+                            _kBCBatteryDeviceA111ProductIdentifier,
+                            _kBCBatteryDeviceA125ProductIdentifier,
+                            _kBCBatteryDeviceA211ProductIdentifier,
+                            _kBCBatteryDeviceB188ProductIdentifier,
+                            _kBCBatteryDeviceB222ProductIdentifier,
+                            _kBCBatteryDeviceB244ProductIdentifier,
+                            _kBCBatteryDeviceB282ProductIdentifier,
+                            _kBCBatteryDeviceB288ProductIdentifier,
+                            _kBCBatteryDeviceB298ProductIdentifier,
+                            _kBCBatteryDeviceB312ProductIdentifier,
+                            _kBCBatteryDeviceB352ProductIdentifier,
+                            _kBCBatteryDeviceB364ProductIdentifier,
+                            _kBCBatteryDeviceB372ProductIdentifier,
+                            _kBCBatteryDeviceB419ProductIdentifier,
+                            _kBCBatteryDeviceB443ProductIdentifier,
+                            _kBCBatteryDeviceB444ProductIdentifier,
+                            _kBCBatteryDeviceB515ProductIdentifier,
+                            _kBCBatteryDeviceK39ProductIdentifier,
+                            _kBCBatteryDeviceR5xProductIdentifier,
+                            _orderedDeviceAccessoryCategories ]
+    objc-classes:         [ BCBatteryCenterPrototypingDomain, BCBatteryDevice,
+                            BCBatteryDeviceController, _BCPowerSourceController ]
+    objc-ivars:           [ BCBatteryDevice._accessoryCategory,
+                            BCBatteryDevice._accessoryIdentifier,
+                            BCBatteryDevice._approximatesPercentCharge,
+                            BCBatteryDevice._batterySaverModeActive,
+                            BCBatteryDevice._charging,
+                            BCBatteryDevice._connected, BCBatteryDevice._fake,
+                            BCBatteryDevice._groupName,
+                            BCBatteryDevice._identifier,
+                            BCBatteryDevice._internal,
+                            BCBatteryDevice._lowBattery,
+                            BCBatteryDevice._matchIdentifier,
+                            BCBatteryDevice._modelNumber, BCBatteryDevice._name,
+                            BCBatteryDevice._parts,
+                            BCBatteryDevice._percentCharge,
+                            BCBatteryDevice._powerSource,
+                            BCBatteryDevice._powerSourceState,
+                            BCBatteryDevice._productIdentifier,
+                            BCBatteryDevice._transportType,
+                            BCBatteryDevice._vendor,
+                            BCBatteryDevice._wirelesslyCharging,
+                            _BCPowerSourceController._accAttachNotifyToken,
+                            _BCPowerSourceController._accPowerSourceNotifyToken,
+                            _BCPowerSourceController._accPowerSourceTimeRemainingNotifyToken,
+                            _BCPowerSourceController._batterySaverModeActive,
+                            _BCPowerSourceController._batterySaverNotifyToken,
+                            _BCPowerSourceController._observersToQueues,
+                            _BCPowerSourceController._powerSourceBatteryChangeNotifyToken,
+                            _BCPowerSourceController._powerSourceTimeRemainingNotifyToken,
+                            _BCPowerSourceController._queue ]
+...

@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVRemoteKit.framework/TVRemoteKit
+current-version:       9999
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _TVRAdaptiveControlsEvent,
+                            _TVRLaunchableApplicationsEvent,
+                            _TVRemoteKitVersionNumber, _TVRemoteKitVersionString,
+                            __TVRemoteItemModelGroupKey,
+                            __TVRemoteItemModelIconKey,
+                            __TVRemoteItemModelItemTypeKey,
+                            __TVRemoteItemModelItemsKey,
+                            __TVRemoteItemModelTitleKey,
+                            __TVRemoteItemModelUUIDKey ]
+    objc-classes:         [ TVRemoteAction, TVRemoteActionGroup,
+                            _TVRXPCProtocolManager, _TVRemoteItemModel ]
+    objc-ivars:           [ TVRemoteAction._handler, TVRemoteAction._icon,
+                            TVRemoteAction._remoteItemTitle,
+                            TVRemoteActionGroup._icon,
+                            TVRemoteActionGroup._remoteItemTitle,
+                            TVRemoteActionGroup._remoteItems,
+                            _TVRemoteItemModel._group, _TVRemoteItemModel._icon,
+                            _TVRemoteItemModel._item,
+                            _TVRemoteItemModel._itemType,
+                            _TVRemoteItemModel._items, _TVRemoteItemModel._title,
+                            _TVRemoteItemModel._uuid ]
+...

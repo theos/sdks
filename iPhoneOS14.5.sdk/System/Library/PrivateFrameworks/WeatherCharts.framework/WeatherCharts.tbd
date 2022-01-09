@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WeatherCharts.framework/WeatherCharts
+current-version:       1744
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WeatherChartsVersionNumber,
+                            _WeatherChartsVersionString ]
+    objc-classes:         [ WCNextHourChartView, WCNextHourViewMinute,
+                            _TtC13WeatherCharts16NextHourGridView,
+                            _TtC13WeatherCharts20NextHourTimelineView,
+                            _TtC13WeatherCharts28NextHourTimelineViewRelative ]
+...

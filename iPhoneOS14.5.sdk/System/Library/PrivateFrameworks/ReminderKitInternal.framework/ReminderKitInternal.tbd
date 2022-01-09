@@ -1,0 +1,62 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal
+current-version:       370
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ReminderKitInternalVersionNumber,
+                            _ReminderKitInternalVersionString, _rdi_os_crash ]
+    objc-classes:         [ REMAccount_Codable,
+                            REMAccountsListDataView_Invocation, REMColor_Codable,
+                            REMComplicationDataViewFetchModelInvocation,
+                            REMComplicationDataViewFetchModelInvocationResult,
+                            REMListPickerDataView_FlaggedInvocation,
+                            REMListStableSortingDataView_Invocation,
+                            REMList_Codable, REMObjectID_Codable,
+                            REMReminder_Codable,
+                            REMRemindersListDataView_AllInvocation,
+                            REMRemindersListDataView_AssignedInvocation,
+                            REMRemindersListDataView_DEBUG_AssignedCountInvocation,
+                            REMRemindersListDataView_DEBUG_PhantomRemindersInvocation,
+                            REMRemindersListDataView_FlaggedInvocation,
+                            REMRemindersListDataView_ListInvocation,
+                            REMRemindersListDataView_ScheduledInvocation,
+                            REMRemindersListDataView_SearchInvocation,
+                            REMRemindersListDataView_SiriFoundInAppsInvocation,
+                            REMRemindersListDataView_TodayInvocation,
+                            REMRemindersListDataView_TodayNotificationInvocation,
+                            REMSiriSearchDataView_ListsByCriteriaInvocation,
+                            REMSiriSearchDataView_RemindersByCriteriaInvocation,
+                            REMSmartList_Codable, REMStructuredLocation_Codable,
+                            REMSuggestedAttributesHarvester_Invocation,
+                            REMSuggestedAttributesHarvester_MentionsExtractionInvocation,
+                            REMSuggestedAttributesTrainer,
+                            REMWidgetDataViewFetchModelInvocation,
+                            REMWidgetDataViewFetchModelInvocationResult,
+                            RMDARC4RandomSource, RMDMersenneTwisterRandomSource,
+                            RMDRandomSource, RMDSystemArc4RandomSource,
+                            TTRNLTextSlotParser, TTRNLTextStructuredEvent,
+                            TTRNLTextStructuredEventLocation,
+                            TTRNLTextStructuredEventRecurrentEvent,
+                            _TtC19ReminderKitInternal16RDIDispatchQueue,
+                            _TtC19ReminderKitInternal9Analytics ]
+    objc-ivars:           [ RMDARC4RandomSource._seed,
+                            RMDARC4RandomSource._state,
+                            RMDMersenneTwisterRandomSource._engine,
+                            RMDMersenneTwisterRandomSource._seed,
+                            TTRNLTextSlotParser._locale,
+                            TTRNLTextSlotParser._parser,
+                            TTRNLTextStructuredEvent._structuredEvent,
+                            TTRNLTextStructuredEventLocation._locationType,
+                            TTRNLTextStructuredEventLocation._proximity,
+                            TTRNLTextStructuredEventLocation._range,
+                            TTRNLTextStructuredEventRecurrentEvent._endDate,
+                            TTRNLTextStructuredEventRecurrentEvent._frequency,
+                            TTRNLTextStructuredEventRecurrentEvent._isAllDay,
+                            TTRNLTextStructuredEventRecurrentEvent._range,
+                            TTRNLTextStructuredEventRecurrentEvent._startDate ]
+...

@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CHSAppearanceColorSchemeFromUserInterfaceStyle,
+                            _CHUISAvocadoWorkspaceIdentifier,
+                            _CHUISLogViewController,
+                            _CHUISLogViewControllerTouch,
+                            _CHUISURLOpeningEntitlement,
+                            _CHWindowSceneSessionRoleAvocado,
+                            _ChronoLoggingSubsystem,
+                            _ChronoUIServicesVersionNumber,
+                            _ChronoUIServicesVersionString ]
+    objc-classes:         [ CHUISAvocadoHostCancelTouchesAssertion,
+                            CHUISAvocadoHostViewController,
+                            CHUISAvocadoSceneClientSettings,
+                            CHUISAvocadoSceneSettings,
+                            CHUISAvocadoSceneSettingsDiffInspector,
+                            CHUISAvocadoSceneSpecification,
+                            CHUISAvocadoWindowScene,
+                            CHUISMutableAvocadoSceneClientSettings,
+                            CHUISMutableAvocadoSceneSettings,
+                            CHUISMutableWidgetVisibilitySettings,
+                            CHUISTouchPassThroughView,
+                            CHUISWidgetVisibilitySettings ]
+    objc-ivars:           [ CHUISAvocadoHostCancelTouchesAssertion._assertions,
+                            CHUISAvocadoHostCancelTouchesAssertion._invalidated,
+                            CHUISAvocadoHostViewController._animationsDisabled,
+                            CHUISAvocadoHostViewController._avocadoViewShouldShareTouchesWithHost,
+                            CHUISAvocadoHostViewController._cachedSceneLogDigest,
+                            CHUISAvocadoHostViewController._delegate,
+                            CHUISAvocadoHostViewController._foregroundState,
+                            CHUISAvocadoHostViewController._invalidated,
+                            CHUISAvocadoHostViewController._isInViewDidDisappear,
+                            CHUISAvocadoHostViewController._liveSceneSnapshotView,
+                            CHUISAvocadoHostViewController._metrics,
+                            CHUISAvocadoHostViewController._mode,
+                            CHUISAvocadoHostViewController._persistedWidgetSnapshotImageView,
+                            CHUISAvocadoHostViewController._privateModeEnabled,
+                            CHUISAvocadoHostViewController._scene,
+                            CHUISAvocadoHostViewController._scenePresenter,
+                            CHUISAvocadoHostViewController._screenshotManager,
+                            CHUISAvocadoHostViewController._signpostID,
+                            CHUISAvocadoHostViewController._snapshotDebugLabel,
+                            CHUISAvocadoHostViewController._snapshotDebugView,
+                            CHUISAvocadoHostViewController._style,
+                            CHUISAvocadoHostViewController._touchDeliveryPolicyAssertions,
+                            CHUISAvocadoHostViewController._updateScenesTransaction,
+                            CHUISAvocadoHostViewController._visibilitySettings,
+                            CHUISAvocadoHostViewController._visibleEntryShouldSnapshot,
+                            CHUISAvocadoHostViewController._widget,
+                            CHUISAvocadoHostViewController._widgetConfigurationIdentifier,
+                            CHUISAvocadoSceneSettings._visibleEntryShouldSnapshot,
+                            CHUISAvocadoWindowScene._visibleEntryShouldSnapshot,
+                            CHUISMutableAvocadoSceneSettings._privateModeEnabled,
+                            CHUISWidgetVisibilitySettings._settled,
+                            CHUISWidgetVisibilitySettings._visibleBounds ]
+...

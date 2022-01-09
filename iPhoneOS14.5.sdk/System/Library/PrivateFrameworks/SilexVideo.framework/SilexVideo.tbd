@@ -1,0 +1,51 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SilexVideo.framework/SilexVideo
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SVBundle, _SilexVideoVersionNumber,
+                            _SilexVideoVersionString ]
+    objc-classes:         [ SVAudioSession, SVAudioSessionConfiguration,
+                            SVBundleClass, SVButton, SVImageLayer,
+                            SVKeyValueObserver, SVLooper,
+                            SVMediaPlaybackController, SVNonAnimatingDelegate,
+                            SVPlayer, SVPlayerItemObserver, SVPlayerLayer,
+                            SVVideoDurationObserver, SVVideoPlayButton ]
+    objc-ivars:           [ SVAudioSession._audioSessionActive,
+                            SVAudioSession._playbackController,
+                            SVAudioSession._players, SVAudioSession._semaphore,
+                            SVAudioSessionConfiguration._category,
+                            SVAudioSessionConfiguration._mode,
+                            SVAudioSessionConfiguration._routeSharingPolicy,
+                            SVButton._touchInsets, SVButton._touchUpInsideBlock,
+                            SVImageLayer._identifier, SVImageLayer._image,
+                            SVKeyValueObserver._change,
+                            SVKeyValueObserver._keyPath,
+                            SVKeyValueObserver._object,
+                            SVKeyValueObserver._options,
+                            SVLooper._durationObserver, SVLooper._player,
+                            SVMediaPlaybackController._currentlyPlaying,
+                            SVMediaPlaybackController._timeControlStatusObservers,
+                            SVPlayer._audioMode,
+                            SVPlayerItemObserver._changeBlock,
+                            SVPlayerItemObserver._item,
+                            SVPlayerItemObserver._observer,
+                            SVPlayerItemObserver._player,
+                            SVPlayerLayer._currentPlaybackKind,
+                            SVPlayerLayer._looper,
+                            SVPlayerLayer._nonAnimatingDelegate,
+                            SVPlayerLayer._playerLayer,
+                            SVPlayerLayer._readyForDisplayObserver,
+                            SVPlayerLayer._shouldPlayInBackground,
+                            SVPlayerLayer._statusObserver,
+                            SVPlayerLayer._stillImageLayer,
+                            SVVideoDurationObserver._duration,
+                            SVVideoDurationObserver._playerItemDurationObserver,
+                            SVVideoDurationObserver._playerItemObserver,
+                            SVVideoDurationObserver.changeBlock ]
+...

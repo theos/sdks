@@ -1,0 +1,44 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShazamInsights.framework/ShazamInsights
+current-version:       99
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SHInsightsErrorDomain ]
+    objc-classes:         [ SHAffinityGroup, SHAffinityGroupQuery,
+                            SHCDNDataFetcher, SHDataStoreMetadata,
+                            SHDateGeohashServerResponseParser, SHFileReader,
+                            SHInsightsBag, SHInsightsError,
+                            SHInsightsPersistenceController,
+                            SHLouvainClusterDataStore, SHLouvainClusterImport,
+                            SHLouvainClusterQuery, SHNetworkRequester, SHRegion,
+                            SHRegionAffinityGroup, SHTargetingMetadataMO,
+                            SHTargetingTrackMO ]
+    objc-ivars:           [ SHAffinityGroup._clusterType,
+                            SHAffinityGroup._cohesionLevel,
+                            SHAffinityGroup._mutableMediaItems,
+                            SHAffinityGroupQuery._dataManager,
+                            SHDataStoreMetadata._etag,
+                            SHDataStoreMetadata._fetchDate,
+                            SHDataStoreMetadata._storefront,
+                            SHFileReader._filePath, SHFileReader.chunkSize,
+                            SHFileReader.currentOffset, SHFileReader.fileHandle,
+                            SHFileReader.lineDelimiter,
+                            SHFileReader.totalFileLength,
+                            SHInsightsBag._bagContents,
+                            SHInsightsPersistenceController._cloudServiceController,
+                            SHInsightsPersistenceController._dataFetcher,
+                            SHInsightsPersistenceController._dataStore,
+                            SHLouvainClusterDataStore._persistentContainer,
+                            SHLouvainClusterDataStore._query,
+                            SHLouvainClusterDataStore._useInMemoryStore,
+                            SHLouvainClusterImport._dataStore,
+                            SHLouvainClusterQuery._moc, SHRegion._geohash,
+                            SHRegion._location,
+                            SHRegionAffinityGroup._affinityGroup,
+                            SHRegionAffinityGroup._regions ]
+...

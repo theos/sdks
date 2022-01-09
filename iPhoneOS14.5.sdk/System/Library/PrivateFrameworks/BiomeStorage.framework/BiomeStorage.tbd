@@ -1,0 +1,70 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _BMPBStoreBookmarkReadFrom,
+                            _BiomeStorageVersionNumber,
+                            _BiomeStorageVersionString,
+                            _bm_defaultStoreSegmentSize, _bm_defaultStoreVersion,
+                            _bm_frame_bytes, _bm_frame_header_info,
+                            _bm_frame_header_status, _bm_generateChecksum,
+                            _bm_useAdler32, _bm_useCrc32 ]
+    objc-classes:         [ BMFileLock, BMFrame, BMFrameStore, BMMemoryMapping,
+                            BMPBStoreBookmark, BMPublicStreamUtilities,
+                            BMStoreBookmark, BMStoreConfig, BMStoreDirectory,
+                            BMStoreEnumerator, BMStoreEvent, BMStreamDatastore,
+                            BMStreamDatastorePruner, BMStreamDatastoreReader,
+                            BMStreamDatastoreWriter, BMStreamMetadata ]
+    objc-ivars:           [ BMFrame._data, BMFrame._frameHeader, BMFrame._framePtr,
+                            BMFrame._nextOffset, BMFrame._offset,
+                            BMFrame._storePath, BMFrameStore._backingFile,
+                            BMFrameStore._datastoreVersion, BMFrameStore._frames,
+                            BMFrameStore._header,
+                            BMFrameStore._lastAbsoluteTimestamp,
+                            BMFrameStore._permission, BMFrameStore._segmentName,
+                            BMFrameStore._usedBytes, BMMemoryMapping._advice,
+                            BMMemoryMapping._currentOffset, BMMemoryMapping._end,
+                            BMMemoryMapping._mappedAddress,
+                            BMMemoryMapping._offset,
+                            BMMemoryMapping._offsetSpace,
+                            BMMemoryMapping._pageAlignedSize,
+                            BMMemoryMapping._protection, BMMemoryMapping._size,
+                            BMMemoryMapping._start, BMPBStoreBookmark._has,
+                            BMPBStoreBookmark._iterationStartTime,
+                            BMPBStoreBookmark._offset,
+                            BMPBStoreBookmark._segmentName,
+                            BMPBStoreBookmark._streamId,
+                            BMStoreBookmark._iterationStartTime,
+                            BMStoreBookmark._offset,
+                            BMStoreBookmark._segmentName,
+                            BMStoreBookmark._streamId,
+                            BMStoreConfig._datastorePath,
+                            BMStoreConfig._datastoreVersion,
+                            BMStoreConfig._segmentSize,
+                            BMStoreEnumerator._currentFrameStore,
+                            BMStoreEnumerator._ds,
+                            BMStoreEnumerator._frameStoreOffset,
+                            BMStoreEnumerator._iterationStartTime,
+                            BMStoreEvent._dataType, BMStoreEvent._error,
+                            BMStoreEvent._eventBody, BMStoreEvent._frame,
+                            BMStoreEvent._timestamp,
+                            BMStreamDatastore._datastoreVersion,
+                            BMStreamDatastore._framesStore,
+                            BMStreamDatastore._maxFileSize,
+                            BMStreamDatastore._metadata,
+                            BMStreamDatastore._permission,
+                            BMStreamDatastore._segmentNames,
+                            BMStreamDatastore._streamId,
+                            BMStreamDatastore._streamPath,
+                            BMStreamDatastorePruner._accessClient,
+                            BMStreamDatastorePruner._inner,
+                            BMStreamDatastoreReader._inner,
+                            BMStreamDatastoreWriter._inner,
+                            BMStreamMetadata._eventDataClass ]
+...

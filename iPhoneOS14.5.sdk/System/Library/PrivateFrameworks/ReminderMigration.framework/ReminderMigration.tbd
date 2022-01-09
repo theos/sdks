@@ -1,0 +1,61 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ReminderMigration.framework/ReminderMigration
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _kCalAccountIdentifierDictionaryKey,
+                            _kCalAccountTypeDictionaryKey, _kCalBackupFileName,
+                            _kCalDefaultListName,
+                            _kCalLastReminderMigrationCleanupSystemVersionDefaultsKey,
+                            _kCalLocalAccountName,
+                            _kCalMaximumCalendarDirectorySizeAllowedForBackupInBytes,
+                            _kCalReminderMigrationErrorDomain,
+                            _kCalShouldBackupBeforeReminderMigrationDefaultsKey,
+                            _kCalendarDatabaseCalendarDirectoryRelativeToHome ]
+    objc-classes:         [ CalCalendarDatabaseReminderMigrationContext,
+                            CalCalendarDatabaseReminderMigrator,
+                            CalDefaultReminderKitDatabaseMigrationContext,
+                            CalDefaultReminderKitProvider,
+                            CalDefaultReminderMigrationDefaultsProvider,
+                            CalInProcessReminderMigrator,
+                            CalOrderedListChangeItem, CalReminderMigrationBackup,
+                            CalReminderMigrationContext,
+                            CalReminderMigrationErrorUtils,
+                            CalReminderMigrationFailure, CalReminderMigrationLog,
+                            CalReminderMigrationReminderKitUtils ]
+    objc-ivars:           [ CalCalendarDatabaseReminderMigrationContext._calendarsToClearSyncToken,
+                            CalCalendarDatabaseReminderMigrationContext._calendarsToDelete,
+                            CalCalendarDatabaseReminderMigrationContext._calendarsToDisableReminders,
+                            CalCalendarDatabaseReminderMigrationContext._storesToDelete,
+                            CalCalendarDatabaseReminderMigrationContext._storesToDisableReminders,
+                            CalCalendarDatabaseReminderMigrationContext._storesToSetWasMigrated,
+                            CalCalendarDatabaseReminderMigrator._defaultsProvider,
+                            CalCalendarDatabaseReminderMigrator._reminderKitProvider,
+                            CalDefaultReminderKitDatabaseMigrationContext._remDatabaseMigrationContext,
+                            CalInProcessReminderMigrator._defaultsProvider,
+                            CalInProcessReminderMigrator._reminderKitProvider,
+                            CalOrderedListChangeItem._listChangeItem,
+                            CalOrderedListChangeItem._order,
+                            CalReminderMigrationContext._accountChangeItemsForAccountIdentifiers,
+                            CalReminderMigrationContext._accountsForAccountIdentifiers,
+                            CalReminderMigrationContext._accountsLoaded,
+                            CalReminderMigrationContext._defaultListMigratedIdentifier,
+                            CalReminderMigrationContext._defaultListOriginalIdentifier,
+                            CalReminderMigrationContext._localAccount,
+                            CalReminderMigrationContext._localAccountChangeItem,
+                            CalReminderMigrationContext._orderedListChangeItemsStack,
+                            CalReminderMigrationContext._recordedAnyFatalFailures,
+                            CalReminderMigrationContext._remDatabaseMigrationContext,
+                            CalReminderMigrationContext._reminderKitProvider,
+                            CalReminderMigrationContext._reminderStore,
+                            CalReminderMigrationContext._saveRequest,
+                            CalReminderMigrationFailure._failureDescription,
+                            CalReminderMigrationFailure._relatedPath,
+                            CalReminderMigrationFailure._stage,
+                            CalReminderMigrationFailure._underlyingError ]
+...
