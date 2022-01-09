@@ -1,0 +1,71 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SearchAds.framework/SearchAds
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SearchAdsVersionNumber, _SearchAdsVersionString ]
+    objc-classes:         [ ADDataObject, ADInstallAttributionData,
+                            ADLocationManager, ADResponseData, ADSearchAdsSettings,
+                            ADSearchObject, ADSearchSession ]
+    objc-ivars:           [ ADDataObject._error, ADDataObject._iAdData,
+                            ADInstallAttributionData._adNetworkID,
+                            ADInstallAttributionData._adamID,
+                            ADInstallAttributionData._campaignID,
+                            ADInstallAttributionData._signature,
+                            ADInstallAttributionData._timestamp,
+                            ADInstallAttributionData._uuid,
+                            ADLocationManager._actualLocation,
+                            ADLocationManager._callerStatus,
+                            ADLocationManager._currentPlacemark,
+                            ADLocationManager._isLocationInitialized,
+                            ADLocationManager._isLocationUpdating,
+                            ADLocationManager._lastPlacemarkLocation,
+                            ADLocationManager._listeners,
+                            ADLocationManager._locationManager,
+                            ADLocationManager._locationQueue,
+                            ADLocationManager._updatingPlacemark,
+                            ADResponseData._algoID,
+                            ADResponseData._clientRequestID,
+                            ADResponseData._format, ADResponseData._impressionID,
+                            ADResponseData._installAttribution,
+                            ADResponseData._lineItem, ADResponseData._metadata,
+                            ADResponseData._privacy,
+                            ADResponseData._templateType,
+                            ADSearchAdsSettings._algoID,
+                            ADSearchAdsSettings._clickExpirationThresholdInSeconds,
+                            ADSearchAdsSettings._clientSettings,
+                            ADSearchAdsSettings._defaultAdTargetingServerURL,
+                            ADSearchAdsSettings._defaultToroServerURL,
+                            ADSearchAdsSettings._frequencyCapExpirationInSeconds,
+                            ADSearchAdsSettings._isBaseline,
+                            ADSearchAdsSettings._isCustomTemplate,
+                            ADSearchAdsSettings._isRequestedImage,
+                            ADSearchAdsSettings._isRequestedRating,
+                            ADSearchAdsSettings._isTest,
+                            ADSearchAdsSettings._locationGridSpacing,
+                            ADSearchAdsSettings._maxClickCapElements,
+                            ADSearchAdsSettings._maxFrequencyCapElements,
+                            ADSearchAdsSettings._requestedIcon,
+                            ADSearchAdsSettings._requestedLocationAccuracy,
+                            ADSearchAdsSettings._requestedText,
+                            ADSearchAdsSettings._reverseGeolocationRefreshThresholdInMeters,
+                            ADSearchAdsSettings._templateType,
+                            ADSearchAdsSettings._userKeyboards,
+                            ADSearchObject._deviceRequestID,
+                            ADSearchObject._error,
+                            ADSearchObject._routingInfoData,
+                            ADSearchObject._sponsoredSearchRequestData,
+                            ADSearchObject._userTargetingIdentifier,
+                            ADSearchSession._appID, ADSearchSession._appVersion,
+                            ADSearchSession._appsRank,
+                            ADSearchSession._campaignNamespace,
+                            ADSearchSession._capData,
+                            ADSearchSession._idNotificationQueue,
+                            ADSearchSession._notificationObserver,
+                            ADSearchSession._notificationReceivedAndWaiting ]
+...

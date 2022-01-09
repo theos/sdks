@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriAudioSupport.framework/SiriAudioSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ AudioFlowDelegatePlugin,
+                            AudioFlowDelegatePluginTests,
+                            AudioInternalIntentExtension, IntentsServices,
+                            SiriAudioDESPlugin, SiriAudioHeavyweightTests,
+                            SiriAudioInternal, SiriAudioInternalTests,
+                            SiriAudioSupport, SiriAudioSupportIntegrationTests,
+                            SiriAudioSupportTests, SiriMediaFlowDelegatePlugin,
+                            siriaudio_helper ]
+    symbols:              [ _SiriAudioSupportVersionNumber,
+                            _SiriAudioSupportVersionString ]
+    objc-classes:         [ _TtC16SiriAudioSupport16RecordableResult ]
+...

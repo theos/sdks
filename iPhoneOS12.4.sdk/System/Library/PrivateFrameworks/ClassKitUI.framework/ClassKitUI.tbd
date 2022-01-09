@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ClassKitUI.framework/ClassKitUI
+current-version:       144.0.27
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ CLSNotificationBanner,
+                            CLSNotificationBannerDisplayManager,
+                            CLSNotificationBannerView,
+                            CLSNotificationBannerViewController,
+                            CLSNotificationBannerWindow, CLSRemoteViewController ]
+    objc-ivars:           [ CLSNotificationBannerDisplayManager._lastBannerTime,
+                            CLSNotificationBannerView._completionHandler,
+                            CLSNotificationBannerView._duration,
+                            CLSNotificationBannerView._imageView,
+                            CLSNotificationBannerView._messageLabel,
+                            CLSNotificationBannerView._preferredWidthPad,
+                            CLSNotificationBannerView._titleLabel,
+                            CLSNotificationBannerViewController._bannerAnimating,
+                            CLSNotificationBannerViewController._bannerView,
+                            CLSNotificationBannerViewController._bannerVisible,
+                            CLSNotificationBannerViewController._bannerWidthConstraint,
+                            CLSNotificationBannerViewController._bannerYPositionConstraint,
+                            CLSNotificationBannerWindow._bannerSemaphore,
+                            CLSNotificationBannerWindow._currentBannerViewController,
+                            CLSRemoteViewController._previousKeyWindow,
+                            CLSRemoteViewController._window ]
+...

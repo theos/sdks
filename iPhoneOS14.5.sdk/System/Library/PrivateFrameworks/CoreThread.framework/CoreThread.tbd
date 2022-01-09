@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreThread.framework/CoreThread
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _kTHNetworkChannel_None ]
+    objc-classes:         [ THThreadNetwork, THThreadNetworkCredentials,
+                            THThreadNetworkCredentialsStoreRecord ]
+    objc-ivars:           [ THThreadNetwork._extendedPANID,
+                            THThreadNetwork._networkName,
+                            THThreadNetworkCredentials._PANID,
+                            THThreadNetworkCredentials._PSKc,
+                            THThreadNetworkCredentials._channel,
+                            THThreadNetworkCredentials._masterKey,
+                            THThreadNetworkCredentials._passPhrase,
+                            THThreadNetworkCredentials._userInfo,
+                            THThreadNetworkCredentialsStoreRecord._creationDate,
+                            THThreadNetworkCredentialsStoreRecord._credentials,
+                            THThreadNetworkCredentialsStoreRecord._keychainAccessGroup,
+                            THThreadNetworkCredentialsStoreRecord._lastModificationDate,
+                            THThreadNetworkCredentialsStoreRecord._network,
+                            THThreadNetworkCredentialsStoreRecord._uniqueIdentifier ]
+...

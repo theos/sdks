@@ -1,0 +1,49 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           145E29EA-70E6-31B2-BB6D-4A836429BB55
+  - target:          armv7s-ios
+    value:           88034429-6DFB-3795-B8D1-96463413274D
+  - target:          arm64-ios
+    value:           869EFDDA-67ED-31ED-AADC-93B51BBA3880
+  - target:          arm64e-ios
+    value:           788A6E54-FAB1-3B5C-AA1F-6F5719082025
+install-name:    '/System/Library/Frameworks/ReplayKit.framework/ReplayKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _RPScreenRecorderRequiredFreeSpace, _RPScreenRecorderTempDirectory, 
+                       _RPStoreInfoAppNameKey, _RPStoreInfoAuthorKey, _RPStoreInfoBundleIDKey, 
+                       _RPStoreInfoCategoriesKey, _RPStoreInfoItemURLKey, _RPVideoOverlayBackgroundMaskImageName, 
+                       _RPVideoOverlayDefaultGlyphAlpha, _RPVideoOverlayFlatBackgroundAlpha, 
+                       _RPVideoOverlayFlatBackgroundWhite, _RPVideoOverlayGlyphMaskImageName, 
+                       _RPVideoOverlayHighlightedGlyphAlpha ]
+    objc-classes:    [ RPPassThroughView, RPPictureInPictureController, RPPictureInPictureViewController, 
+                       RPPictureInPictureWindow, RPSharedConstants, RPSystemRecordingIndicatorWindow, 
+                       RPYouTubeActivityProgressOverlay ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RPApplicationInfoBundleIdentifierKey, _RPLogSetLogLevel, 
+                       _RPRecordingErrorDomain, _RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer, 
+                       _RPSampleBufferUtilities_CreateAudioSampleBuffer, _RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer, 
+                       _RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval, 
+                       _RPSampleBufferUtilities_CreateSampleBufferFromIOSurface, 
+                       _RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer, 
+                       _RPSampleBufferUtilities_EncodeAudioSampleBuffer, _RPSampleBufferUtilities_ReleaseAudioSampleBuffer, 
+                       _RPSampleBufferUtilities_SecondsPresentationTimeForSample, 
+                       _RPVideoEditorExtensionAppNameKey, _RPVideoEditorExtensionBundleIdentifierKey, 
+                       _RPVideoEditorExtensionFileAttachmentKey, _RPVideoEditorExtensionMoviePathKey, 
+                       _RPVideoEditorExtensionOverrideShareMessageKey, _RPVideoEditorExtensionOverrideTintColorKey, 
+                       _RPVideoSampleOrientationKey, _ReplayKitVersionNumber, _ReplayKitVersionString, 
+                       ___RPLogLevel ]
+    objc-classes:    [ RPAppAudioCaptureManager, RPAudioMixUtility, RPBroadcastActivityExtensionHostContext, 
+                       RPBroadcastActivityHostViewController, RPBroadcastActivityViewController, 
+                       RPBroadcastConfiguration, RPBroadcastController, RPBroadcastExtensionHostContext, 
+                       RPBroadcastExtensionProxy, RPBroadcastHandler, RPBroadcastHostViewController, 
+                       RPBroadcastMP4ClipHandler, RPBroadcastSampleHandler, RPDaemonProxy, 
+                       RPExtensionContext, RPExtensionHostContext, RPFlatVideoOverlayButton, 
+                       RPHighFidelityVideoOverlayButton, RPIOSurfaceObject, RPModalPresentationWindow, 
+                       RPPipView, RPPipViewController, RPPreviewViewController, RPScreenRecorder, 
+                       RPStoreInfo, RPStoreManager, RPSystemBroadcastPickerView, 
+                       RPVideoEditorExtensionHostContext, RPVideoEditorHostViewController ]
+...

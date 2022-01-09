@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DuetExpertCenter.framework/DuetExpertCenter
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DuetExpertCenterVersionNumber,
+                            _DuetExpertCenterVersionString,
+                            __DECAggregateDictionaryKey, __DECConsumerInterface,
+                            __DECDaemonDidLaunchNotificationKey,
+                            __DECExpertInterface, __DECItemExpertScores,
+                            __DECMachServiceName,
+                            __DECPredictionReasonDeviceName,
+                            __DECPredictionReasonLocationOfInterestType,
+                            __DECSchedulerTrainingIdentifier,
+                            __DECServerErrorDomain,
+                            __DECServerErrorExpertIdentifierKey,
+                            __DECServerInterface, __DECServerTimedOutCode,
+                            __DECWeakLinkClass, __DECWeakLinkProtocol,
+                            __DECWeakLinkStringConstant, __DECWeakLinkSymbol,
+                            __kDECFeedbackMetadataLaunchSource,
+                            _kDECUpdatePredictionsNotificationDefaultCacheTimeout ]
+    objc-classes:         [ _DECABHelper, _DECAggregateKeys, _DECAggregateLogger,
+                            _DECAppItem, _DECAssets2, _DECBackupHelper, _DECConsumer,
+                            _DECContextHelper, _DECDaemon,
+                            _DECDailyTrainingScheduler,
+                            _DECDataProtectionMonitor, _DECDeviceInfo,
+                            _DECDeviceState, _DECDuetHelper, _DECExpert,
+                            _DECExpertManager, _DECFeedback, _DECFeedbackBuilder,
+                            _DECFeedbackLoggerManager, _DECFeedbackProvider,
+                            _DECFilter, _DECItem, _DECLaunchInfo,
+                            _DECLocationAppItem, _DECPaths, _DECPersonItem,
+                            _DECPrediction, _DECPredictionCache,
+                            _DECPredictionCacheResult, _DECPredictionExpiry,
+                            _DECPredictionItem, _DECPredictionSet, _DECRankBuilder,
+                            _DECResult, _DECRules, _DECScheduler, _DECServer,
+                            _DECServerResponder, _DECTypes,
+                            _DECUpdatePredictionsNotification,
+                            _DECXPCObjectFactory, _DKExpertConsumerCategory,
+                            _DKExpertFeedbackMetadataKey ]
+...

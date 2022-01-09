@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WelcomeKit.framework/WelcomeKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _WLDaemonExportedInterface,
+                            _WLDataMigrationDelegateInterface,
+                            _WLDataMigratorInterface, _WLDefaultsApplicationID,
+                            _WLDefaultsChangedNotification,
+                            _WLDefaultsStartedNetworkSSIDKey,
+                            _WLDefaultsUseInfrastructureWiFiKey,
+                            _WLLocalizedString, _WLLoggingEnabled,
+                            _WLSourceDevicesChangedNotification,
+                            _WLWifiAndDeviceDiscoveryDidGetInterrupted,
+                            _WelcomeKitVersionNumber, _WelcomeKitVersionString,
+                            __WLLog ]
+    objc-classes:         [ WLDaemonConnection, WLDataMigrationController,
+                            WLLogController, WLSourceDevice,
+                            WLSourceDevicesController, WLTelemetry, WLUtilities ]
+    objc-ivars:           [ WLDaemonConnection._daemonConn,
+                            WLDaemonConnection._daemonLock,
+                            WLDaemonConnection._interruptionHandler,
+                            WLDataMigrationController._dataTypes,
+                            WLDataMigrationController._delegate,
+                            WLDataMigrationController._migrator,
+                            WLLogController._loggingEnabled,
+                            WLSourceDevice._dataTypes,
+                            WLSourceDevice._hardwareBrand,
+                            WLSourceDevice._hardwareDesign,
+                            WLSourceDevice._hardwareMaker,
+                            WLSourceDevice._hardwareModel,
+                            WLSourceDevice._hardwareProduct,
+                            WLSourceDevice._httpPort, WLSourceDevice._ipAddress,
+                            WLSourceDevice._name, WLSourceDevice._osAPIVersion,
+                            WLSourceDevice._persistentIdentifier,
+                            WLSourceDevice._socketPort,
+                            WLSourceDevicesController._delegate ]
+...

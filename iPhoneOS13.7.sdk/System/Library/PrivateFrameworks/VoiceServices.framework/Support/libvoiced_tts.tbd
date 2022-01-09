@@ -1,0 +1,72 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VoiceServices.framework/Support/libvoiced_tts.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _VSAudioPlaybackAudioQueueUID ]
+    objc-classes:         [ OPTTSAudioDescription,
+                            OPTTSBeginTextToSpeechStreamingResponse,
+                            OPTTSFinalTextToSpeechStreamingResponse,
+                            OPTTSMutableAudioDescription,
+                            OPTTSMutableBeginTextToSpeechStreamingResponse,
+                            OPTTSMutableFinalTextToSpeechStreamingResponse,
+                            OPTTSMutablePartialTextToSpeechStreamingResponse,
+                            OPTTSMutableStartTextToSpeechStreamingRequest,
+                            OPTTSMutableStartTextToSpeechStreamingRequest_ContextInfoEntry,
+                            OPTTSMutableTextToSpeechMeta,
+                            OPTTSMutableTextToSpeechRequest,
+                            OPTTSMutableTextToSpeechRequestMeta,
+                            OPTTSMutableTextToSpeechRequest_ContextInfoEntry,
+                            OPTTSMutableTextToSpeechResource,
+                            OPTTSMutableTextToSpeechResponse,
+                            OPTTSMutableTextToSpeechRouterStreamingStreamingRequest,
+                            OPTTSMutableTextToSpeechRouterStreamingStreamingResponse,
+                            OPTTSMutableTextToSpeechVoice,
+                            OPTTSMutableWordTimingInfo,
+                            OPTTSPartialTextToSpeechStreamingResponse,
+                            OPTTSStartTextToSpeechStreamingRequest,
+                            OPTTSStartTextToSpeechStreamingRequest_ContextInfoEntry,
+                            OPTTSTextToSpeechMeta, OPTTSTextToSpeechRequest,
+                            OPTTSTextToSpeechRequestMeta,
+                            OPTTSTextToSpeechRequest_ContextInfoEntry,
+                            OPTTSTextToSpeechResource, OPTTSTextToSpeechResponse,
+                            OPTTSTextToSpeechRouterStreamingStreamingRequest,
+                            OPTTSTextToSpeechRouterStreamingStreamingResponse,
+                            OPTTSTextToSpeechVoice, OPTTSWordTimingInfo,
+                            OspreyTTSService, VSAggdService, VSAudioData,
+                            VSAudioDump, VSAudioPlaybackService,
+                            VSCacheDeleteService, VSCachingService,
+                            VSDeviceTTSCore, VSDownloadService,
+                            VSDurationEstimationTask, VSMemoryMap,
+                            VSNotificationQueue, VSOspreyTTSCore,
+                            VSPostInstallService, VSPrewarmService,
+                            VSServerTTSClient, VSServerTTSConfig, VSShortTermCache,
+                            VSSiriInlineTTSStreamTask, VSSpeechAudioPowerService,
+                            VSSpeechCache, VSSpeechCacheAudio, VSSpeechEngine,
+                            VSSpeechPresynthesizedTask, VSSpeechServerTask,
+                            VSSpeechSpeakTask, VSSpeechSynthesisCallbackResult,
+                            VSSpeechSynthesisTask, VSSpeechTaskQueue,
+                            VSSpeechXPCHandler, VSTimeoutCondition, VSVoiceBooster ]
+    objc-ivars:           [ OPTTSAudioDescription._storage,
+                            OPTTSBeginTextToSpeechStreamingResponse._storage,
+                            OPTTSFinalTextToSpeechStreamingResponse._storage,
+                            OPTTSPartialTextToSpeechStreamingResponse._storage,
+                            OPTTSStartTextToSpeechStreamingRequest._storage,
+                            OPTTSStartTextToSpeechStreamingRequest_ContextInfoEntry._storage,
+                            OPTTSTextToSpeechMeta._storage,
+                            OPTTSTextToSpeechRequest._storage,
+                            OPTTSTextToSpeechRequestMeta._storage,
+                            OPTTSTextToSpeechRequest_ContextInfoEntry._storage,
+                            OPTTSTextToSpeechResource._storage,
+                            OPTTSTextToSpeechResponse._storage,
+                            OPTTSTextToSpeechRouterStreamingStreamingRequest._storage,
+                            OPTTSTextToSpeechRouterStreamingStreamingResponse._storage,
+                            OPTTSTextToSpeechVoice._storage,
+                            OPTTSWordTimingInfo._storage ]
+    weak-def-symbols:     [ __ZN11flatbuffers25flatbuffer_version_stringE ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShazamKit.framework/ShazamKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SHErrorDomain, _SHMediaKeyAdamID,
+                            _SHMediaKeyAppleMusicURL, _SHMediaKeyArtist,
+                            _SHMediaKeyArtworkURL, _SHMediaKeyExplicitContent,
+                            _SHMediaKeyFrequencySkew, _SHMediaKeyID,
+                            _SHMediaKeyLyricsSnippet, _SHMediaKeyOffset,
+                            _SHMediaKeySubtitle, _SHMediaKeySyncedLyricsSnippet,
+                            _SHMediaKeyTimeSkew, _SHMediaKeyTitle,
+                            _SHMediaKeyVideoURL, _SHMediaKeyWebURL ]
+    objc-classes:         [ SHConfiguration, SHLocalConfiguration, SHMatch,
+                            SHMediaItem, SHMutableSignature,
+                            SHPartnerConfiguration, SHRecognitionSession,
+                            SHSignature, SHTokenizedEndpoint ]
+...

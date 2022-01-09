@@ -1,0 +1,74 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagement
+current-version:       2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ AccountExtension, AppManagementExtension,
+                            CloudMDMAppListTestApp, LegacyProfilesExtension,
+                            ManagementTestExtension, MiniLauncher,
+                            PasscodeSettingsExtension,
+                            RemoteManagementAccountSettings,
+                            "RemoteManagementAccountSettings-macOS",
+                            RemoteManagementAccountsNotificationPlugin,
+                            RemoteManagementAgent, RemoteManagementTests,
+                            SettingsSharedSupport, Setup, "Setup Assistant",
+                            SetupTests, exampled, remotemanagementd, rmdctl,
+                            rmdinspect ]
+    symbols:              [ _RMAccountAdditionalInfoKeyManagedByOlympus,
+                            _RMAccountPropertyKeyAdditionalInfo,
+                            _RMAccountPropertyKeyAltDSID,
+                            _RMAccountPropertyKeyDSID,
+                            _RMAccountPropertyKeyEnrollmentToken,
+                            _RMAccountPropertyKeyManagementSourceIdentifier,
+                            _RMAssetTypeImage, _RMAssetTypeUserIdentity,
+                            _RMAssetTypeVPPOnDemand, _RMAuthenticationSchemeMAID,
+                            _RMAuthenticationSchemeMAIDFieldAltDSID,
+                            _RMAuthenticationSchemeMAIDFieldDSID,
+                            _RMAuthenticationSchemeMAIDFieldLongLivedToken,
+                            _RMAuthenticationSchemeMAIDFieldShortLivedToken,
+                            _RMAuthenticationSchemeMAIDFieldUsername,
+                            _RMAuthenticationSchemeTest,
+                            _RMAuthenticationSchemeTestFieldToken,
+                            _RMAuthenticationSchemeTestFieldUsername,
+                            _RMConfigurationTypeAccountCalDAV,
+                            _RMConfigurationTypeAccountCardDAV,
+                            _RMConfigurationTypeAccountExchange,
+                            _RMConfigurationTypeAccountGoogle,
+                            _RMConfigurationTypeAccountMail,
+                            _RMConfigurationTypeApplicationManagement,
+                            _RMConfigurationTypeLegacyProfiles,
+                            _RMConfigurationTypeManagementStatusSubscription,
+                            _RMConfigurationTypeManagementTest,
+                            _RMConfigurationTypePasscodeSettings, _RMErrorDomain,
+                            _RMErrorUserInfoKeyDescriptionKey,
+                            _RMHTTPStatusCodeKey, _RMMobileKeyBagErrorCodeKey,
+                            _RMPersonaRestorationFailedException,
+                            _RMStatusFileKeyIdentifier, _RMStatusFileKeyReasons,
+                            _RMStatusFileKeyServerToken, _RMStatusFileKeyValid,
+                            _RMXPCAgentMachServiceName,
+                            _RMXPCDaemonMachServiceName ]
+    objc-classes:         [ RMAppInstallerController, RMAsset, RMAssetResolver,
+                            RMAuthenticationCredential, RMBundle, RMConfiguration,
+                            RMConfigurationEventStreamSubscriber,
+                            RMConfigurationStatusUpdater,
+                            RMConfigurationSubscriberClient,
+                            RMConfigurationSubscriberDescription,
+                            RMDeviceAuthenticationCredential,
+                            RMEnrollmentController, RMErrorUtilities,
+                            RMEventDescription,
+                            RMExtensionConfigurationSubscriber,
+                            RMExtensionContext, RMExtensionRequestHandler,
+                            RMExtensionStatusPublisher,
+                            RMGenericAuthenticationCredential, RMHTTPLog,
+                            RMLocations, RMLog, RMManagementChannel, RMPersonaHelper,
+                            RMPolicy, RMPolicyStore, RMResolvedAsset,
+                            RMResolvedDataAsset, RMResolvedFileAsset,
+                            RMStatusPublisherDescription, RMUnresolvedDataAsset,
+                            RMUnresolvedFileAsset, RMXPCProxy,
+                            RemoteManagement_Subsystem ]
+...

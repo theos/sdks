@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HomeAutomationInternal.framework/HomeAutomationInternal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ HomeAutomationFlowDelegatePlugin,
+                            HomeAutomationFlowDelegatePluginTests,
+                            HomeAutomationIntentsExtension,
+                            HomeAutomationIntentsExtensionTests,
+                            HomeAutomationInternalTests, HomeKitIntegrationTests ]
+    objc-classes:         [ _TtC22HomeAutomationInternal15NativeHomeStore,
+                            _TtC22HomeAutomationInternal24ControlHomeIntentHandler ]
+...

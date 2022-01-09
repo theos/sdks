@@ -1,0 +1,40 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _AppleNeuralEngineVersionNumber,
+                            _AppleNeuralEngineVersionString,
+                            __ANEDaemonInterface, __ANEDaemonInterfacePrivate,
+                            _kANEFModelANECIRValue, _kANEFModelCoreMLValue,
+                            _kANEFModelPreCompiledValue, _kANEFModelTypeKey ]
+    objc-classes:         [ _ANEClient, _ANECloneHelper, _ANEDaemonConnection,
+                            _ANEDataReporter, _ANEDeviceController, _ANEDeviceInfo,
+                            _ANEErrors, _ANEHashEncoding, _ANEIOSurfaceObject,
+                            _ANELog, _ANEModel, _ANEProgramForEvaluation,
+                            _ANEQoSMapper, _ANERequest, _ANEStrings ]
+    objc-ivars:           [ _ANEClient._conn, _ANEClient._queues,
+                            _ANEDaemonConnection._daemonConnection,
+                            _ANEDaemonConnection._restricted,
+                            _ANEDeviceController._device,
+                            _ANEDeviceController._isPrivileged,
+                            _ANEDeviceController._programHandle,
+                            _ANEDeviceController._q,
+                            _ANEDeviceController._usecount,
+                            _ANEIOSurfaceObject._ioSurface, _ANEModel._key,
+                            _ANEModel._modelAttributes, _ANEModel._modelURL,
+                            _ANEModel._program, _ANEModel._programHandle,
+                            _ANEProgramForEvaluation._controller,
+                            _ANEProgramForEvaluation._programHandle,
+                            _ANEProgramForEvaluation._q,
+                            _ANERequest._completionHandler,
+                            _ANERequest._inputArray, _ANERequest._inputNameArray,
+                            _ANERequest._outputArray,
+                            _ANERequest._outputNameArray,
+                            _ANERequest._procedureName ]
+...

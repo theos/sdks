@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter
+current-version:       61000
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ __UIArbiterLog,
+                            __UIKeyboardArbiter_ForSpringBoard_WorkspaceIdentifier,
+                            __UIKeyboardArbiter_SceneIdentifier ]
+    objc-classes:         [ _UIKeyboardArbiter, _UIKeyboardArbiterDebug,
+                            _UIKeyboardArbiterDebugEntry,
+                            _UIKeyboardArbiterDebugEntryDictionaries,
+                            _UIKeyboardArbiterDebugEntryString,
+                            _UIKeyboardArbiterHandle,
+                            _UIKeyboardArbiter_ForSpringBoard,
+                            _UIKeyboardChangedInformationWithManualFence ]
+    objc-ivars:           [ _UIKeyboardArbiter._activeHandle,
+                            _UIKeyboardArbiter._clients,
+                            _UIKeyboardArbiter._commandFocusHandle,
+                            _UIKeyboardArbiter._currentBundleIdForHardwareKeyboard,
+                            _UIKeyboardArbiter._disablingHandle,
+                            _UIKeyboardArbiter._keyboardFocusHandle,
+                            _UIKeyboardArbiter._lastUpdate,
+                            _UIKeyboardArbiter._listener,
+                            _UIKeyboardArbiter._previouslyActiveHandle,
+                            _UIKeyboardArbiter._queue, _UIKeyboardArbiter._scene,
+                            _UIKeyboardArbiter._sceneLink,
+                            _UIKeyboardArbiter._stateMonitor,
+                            _UIKeyboardArbiter._updateCounter,
+                            _UIKeyboardArbiter._workspace,
+                            _UIKeyboardArbiterDebug._entries,
+                            _UIKeyboardArbiterDebug._importantCount,
+                            _UIKeyboardArbiterDebug._queue,
+                            _UIKeyboardArbiterDebugEntry._timestamp,
+                            _UIKeyboardArbiterDebugEntryDictionaries._dictionaries,
+                            _UIKeyboardArbiterDebugEntryString._message,
+                            _UIKeyboardArbiterDebugEntryString._type,
+                            _UIKeyboardArbiterHandle._active,
+                            _UIKeyboardArbiterHandle._bundleIdentifier,
+                            _UIKeyboardArbiterHandle._cachedContext,
+                            _UIKeyboardArbiterHandle._checkingShowability,
+                            _UIKeyboardArbiterHandle._connection,
+                            _UIKeyboardArbiterHandle._hostedPids,
+                            _UIKeyboardArbiterHandle._invalidated,
+                            _UIKeyboardArbiterHandle._level,
+                            _UIKeyboardArbiterHandle._owner,
+                            _UIKeyboardArbiterHandle._remoteKeepAliveAssertion,
+                            _UIKeyboardArbiterHandle._remoteKeepAliveAssertionCount,
+                            _UIKeyboardArbiterHandle._remoteKeepAliveTimerCount,
+                            _UIKeyboardArbiterHandle._remoteSceneID,
+                            _UIKeyboardArbiterHandle._running,
+                            _UIKeyboardArbiterHandle._sceneLayer,
+                            _UIKeyboardArbiterHandle._suppressionCount,
+                            _UIKeyboardArbiterHandle._wantedActive,
+                            _UIKeyboardArbiterHandle._wantsFence,
+                            _UIKeyboardArbiter_ForSpringBoard._scene,
+                            _UIKeyboardArbiter_ForSpringBoard._workspace,
+                            _UIKeyboardArbiter_ForSpringBoard.owner ]
+...

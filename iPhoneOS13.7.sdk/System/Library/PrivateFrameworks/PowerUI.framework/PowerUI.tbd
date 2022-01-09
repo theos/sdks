@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PowerUI.framework/PowerUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PowerUIErrorDomain,
+                            _PowerUISmartChargeClientCallisto,
+                            _PowerUISmartChargeClientPTOTool,
+                            _PowerUISmartChargeClientSettings,
+                            _PowerUISmartChargeStatusHasChangedNote,
+                            _PowerUIVersionNumber, _PowerUIVersionString ]
+    objc-classes:         [ PowerUIAlarmSignalMonitor,
+                            PowerUIBatteryMitigationManager,
+                            PowerUICalendarSignalMonitor, PowerUIDefines,
+                            PowerUIHistogramPredictor, PowerUILPMNotifier,
+                            PowerUILocationSignalMonitor,
+                            PowerUIMLClassifierModelPredictor,
+                            PowerUIMLRegressorModelPredictor,
+                            PowerUIMLTwoStageModelPredictor,
+                            PowerUISmartChargeClient, PowerUISmartChargeManager,
+                            PowerUISmartChargeUtilities, PowerUIUPOManager,
+                            PowerUIWakeRequestSignalMonitor,
+                            PowerUIWalletSignalMonitor ]
+...

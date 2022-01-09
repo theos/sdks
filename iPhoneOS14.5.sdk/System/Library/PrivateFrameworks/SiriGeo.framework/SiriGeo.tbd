@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriGeo.framework/SiriGeo
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SiriGeoVersionNumber, _SiriGeoVersionString ]
+    objc-classes:         [ _TtC7SiriGeo18LocationController,
+                            _TtC7SiriGeo23INShareETAIntentHandler,
+                            _TtC7SiriGeo27INStopShareETAIntentHandler,
+                            _TtC7SiriGeo34INSaveParkingLocationIntentHandler,
+                            _TtC7SiriGeo36INDeleteParkingLocationIntentHandler,
+                            _TtC7SiriGeo38INRetrieveParkingLocationIntentHandler,
+                            _TtCC7SiriGeo11MapsService25CapabilityFetcherObserver ]
+...

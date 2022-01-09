@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriActivation.framework/SiriActivation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CARAutomaticFeatureStateGetName,
+                            _SASDismissalGetName, _SASDismissalIsError,
+                            _SASDismissalReasonToSISchemaDismissalReason,
+                            _SASRequestSourceGetName, _SASRequestSourceIsHTT,
+                            _SASRequestStateGetName, _SiriActivationEntitlement,
+                            _SiriActivationVersionNumber,
+                            _SiriActivationVersionString,
+                            _SiriContextOverrideKey, _SiriInvokeOnMainQueue,
+                            _SiriSystemUpTimeFromCFAbsoluteCurrentTime,
+                            _SiriTestingContextAudioInputKey,
+                            _SiriTestingContextPPTKey,
+                            _SiriTestingContextRecognitionStringKey ]
+    objc-classes:         [ SASActivationCondition, SASActivationDecision,
+                            SASActivationRequest, SASAnalytics,
+                            SASBoardServicesConfiguration, SASBulletinCache,
+                            SASBulletinCacheNode, SASBulletinManager,
+                            SASButtonActvationRequest,
+                            SASButtonIdentifierTransport,
+                            SASDirectActionEventTransport, SASHeater,
+                            SASLockStateMonitor, SASMyriadController,
+                            SASOverriddenSystemState,
+                            SASPresentationConnectionListener,
+                            SASPresentationDecision, SASPresentationServer,
+                            SASRemoteRequestManager, SASRequestOptions,
+                            SASRequestOptionsBuilder,
+                            SASSignalConnectionListener, SASSignalServer,
+                            SASSiriPocketStateManager, SASSystemState,
+                            SASTestingInput, SASTestingInputController,
+                            SASTimeIntervalTransport, SiriActivationService,
+                            SiriActivationSource, SiriActivityAssertion,
+                            SiriBluetoothContext, SiriBluetoothDeviceSource,
+                            SiriBreadcrumbSource, SiriContext, SiriContextOverride,
+                            SiriContinuityContext, SiriContinuitySource,
+                            SiriDirectActionContext, SiriDirectActionSource,
+                            SiriDismissalOptions, SiriLongPressButtonContext,
+                            SiriLongPressButtonSource,
+                            SiriPresentationActivationCancelReasonTransport,
+                            SiriPresentationIdentifierTransport,
+                            SiriPresentationOptions, SiriPunchoutRequest,
+                            SiriSimpleActivationSource, SiriSpotlightContext,
+                            SiriSpotlightSource, SiriTestingContext,
+                            SiriTestingSource, SiriUILockStateTransport,
+                            SiriVoiceTriggerContext ]
+    objc-ivars:           [ SiriActivationSource._connection,
+                            SiriActivationSource._lock ]
+...

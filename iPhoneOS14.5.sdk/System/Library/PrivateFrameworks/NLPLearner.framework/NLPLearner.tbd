@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NLPLearner.framework/NLPLearner
+current-version:       34.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _trainMLPModelForDES ]
+    objc-classes:         [ PFLBackgroundRunner, QuickTypePFLBackgroundTask,
+                            QuickTypePFLCharacterLanguageModelingData,
+                            QuickTypePFLEmojiClassificationData,
+                            QuickTypePFLLanguageModelingData,
+                            QuickTypePFLTrainerMLP, QuickTypePFLTrainingData,
+                            QuickTypePFLTrainingTask, QuickTypeUtils,
+                            QuickTypeWeightUpdates ]
+    objc-ivars:           [ PFLBackgroundRunner._activity,
+                            PFLBackgroundRunner._assertion,
+                            PFLBackgroundRunner._task,
+                            QuickTypePFLBackgroundTask._url,
+                            QuickTypePFLCharacterLanguageModelingData._locale,
+                            QuickTypePFLCharacterLanguageModelingData._tokenConverter,
+                            QuickTypePFLEmojiClassificationData._embedding,
+                            QuickTypePFLEmojiClassificationData._embeddingDimension,
+                            QuickTypePFLEmojiClassificationData._labelClasses,
+                            QuickTypePFLEmojiClassificationData._labels,
+                            QuickTypePFLEmojiClassificationData._locale,
+                            QuickTypePFLEmojiClassificationData._noneClassProbability,
+                            QuickTypePFLLanguageModelingData._lexicon,
+                            QuickTypePFLLanguageModelingData._locale,
+                            QuickTypePFLLanguageModelingData._tokenIDMapPath,
+                            QuickTypePFLTrainerMLP._batchSize,
+                            QuickTypePFLTrainerMLP._clippingNorm,
+                            QuickTypePFLTrainerMLP._gradientClipMax,
+                            QuickTypePFLTrainerMLP._gradientClipMin,
+                            QuickTypePFLTrainerMLP._initialLoss,
+                            QuickTypePFLTrainerMLP._learningRate,
+                            QuickTypePFLTrainerMLP._model,
+                            QuickTypePFLTrainerMLP._normBinCount,
+                            QuickTypePFLTrainerMLP._privacyIdentifier,
+                            QuickTypePFLTrainerMLP._seedModelPath,
+                            QuickTypePFLTrainerMLP._trainingLoss,
+                            QuickTypePFLTrainingData._iterator,
+                            QuickTypePFLTrainingData._maxSequenceLength,
+                            QuickTypePFLTrainingData._processingNewRecord,
+                            QuickTypePFLTrainingData._sentences,
+                            QuickTypeWeightUpdates._l2Norm,
+                            QuickTypeWeightUpdates._maxNorm,
+                            QuickTypeWeightUpdates._privacyDiagnosticReport,
+                            QuickTypeWeightUpdates._weightUpdates,
+                            QuickTypeWeightUpdates._weightUpdatesDiagnosticReport ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CBC9A6E8-F0D3-3BD9-B870-9CFBCB7BD403
+  - target:          arm64e-ios
+    value:           E6B97FA3-46B0-3AB0-8E84-37BCCC30156F
+install-name:    '/System/Library/Frameworks/AdServices.framework/AdServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AAAttributionErrorDomain, _kAAAttributionXPCMachServiceName ]
+    objc-classes:    [ AAAttribution ]
+...

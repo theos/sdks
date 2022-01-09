@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SecureChannel.framework/SecureChannel
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _SecureChannelVersionNumber,
+                            _SecureChannelVersionString, _main ]
+    objc-classes:         [ CallToAction, Localized, SecureChannelAction,
+                            SecureChannelController, SecureChannelServiceProxy ]
+    objc-ivars:           [ CallToAction._message, CallToAction._title,
+                            SecureChannelAction._message,
+                            SecureChannelAction._title, SecureChannelAction._url,
+                            SecureChannelAction.controller,
+                            SecureChannelServiceProxy._connectionToService,
+                            SecureChannelServiceProxy._remoteObject ]
+...

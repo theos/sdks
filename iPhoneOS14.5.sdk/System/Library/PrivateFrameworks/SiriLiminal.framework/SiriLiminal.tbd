@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriLiminal.framework/SiriLiminal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SLErrorDomain, _SLLogContextFacilityCoreSpeech,
+                            _SLLogInitIfNeeded, _SLLoggingSubsystem,
+                            _SiriLiminalVersionNumber, _SiriLiminalVersionString,
+                            _kSLAudioSourceOption, _kSLInvocationType,
+                            _kSLLanguageCode, _kSLLoggingContextFramework,
+                            _kSLVoiceTriggerEventInfo ]
+    objc-classes:         [ SLProgressiveCheckerAnalyzer,
+                            SLProgressiveCheckerContext,
+                            SLProgressiveCheckerResult, SLUtils ]
+    objc-ivars:           [ SLProgressiveCheckerAnalyzer._activeRecognizers,
+                            SLProgressiveCheckerAnalyzer._analyzedSamplesSoFar,
+                            SLProgressiveCheckerAnalyzer._checkerEndSamples,
+                            SLProgressiveCheckerAnalyzer._context,
+                            SLProgressiveCheckerAnalyzer._delegate,
+                            SLProgressiveCheckerAnalyzer._latestScore,
+                            SLProgressiveCheckerAnalyzer._queue,
+                            SLProgressiveCheckerContext._audioOption,
+                            SLProgressiveCheckerContext._invocationType,
+                            SLProgressiveCheckerContext._locale,
+                            SLProgressiveCheckerContext._vtei,
+                            SLProgressiveCheckerResult._analyzedSamples,
+                            SLProgressiveCheckerResult._detailedResult,
+                            SLProgressiveCheckerResult._resultType,
+                            SLProgressiveCheckerResult._score ]
+...

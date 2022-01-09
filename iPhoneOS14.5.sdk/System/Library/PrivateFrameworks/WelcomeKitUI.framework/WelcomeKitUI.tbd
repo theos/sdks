@@ -1,0 +1,52 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WelcomeKitUI.framework/WelcomeKitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WelcomeKitUIVersionNumber,
+                            _WelcomeKitUIVersionString ]
+    objc-classes:         [ WLCompletedViewController,
+                            WLPairingCodeViewController,
+                            WLPreparationViewController, WLRetryViewController,
+                            WLTransferringViewController,
+                            WLWaitingForDataTypeSelectionViewController,
+                            WLWelcomeController, WLWelcomeViewController ]
+    objc-ivars:           [ WLCompletedViewController._continueHandler,
+                            WLCompletedViewController._welcomeController,
+                            WLPairingCodeViewController._appleInternalOptionsButton,
+                            WLPairingCodeViewController._getLocalImportOptionsHandler,
+                            WLPairingCodeViewController._importLocalContentHandler,
+                            WLPairingCodeViewController._ssid,
+                            WLPairingCodeViewController._stashDataLocallyHandler,
+                            WLPairingCodeViewController._viewWillDisappearBlock,
+                            WLPairingCodeViewController._welcomeController,
+                            WLPairingCodeViewController._wifiPSK,
+                            WLPreparationViewController._welcomeController,
+                            WLRetryViewController._continueHandler,
+                            WLRetryViewController._welcomeController,
+                            WLTransferringViewController._remainingDownloadTime,
+                            WLTransferringViewController._remainingDownloadTimeFormatter,
+                            WLTransferringViewController._remainingDownloadTimeUpdateTimer,
+                            WLTransferringViewController._welcomeController,
+                            WLWaitingForDataTypeSelectionViewController._welcomeController,
+                            WLWelcomeController._completionHandler,
+                            WLWelcomeController._dismissAfterSourceDevicePairingTimeout,
+                            WLWelcomeController._forceUITestModeDownloadError,
+                            WLWelcomeController._migrateUsingRetryPolicies,
+                            WLWelcomeController._migrationConcluded,
+                            WLWelcomeController._migrationController,
+                            WLWelcomeController._migrationControllerDelegateQueueTargetedAtMainQueue,
+                            WLWelcomeController._migrationControllerIsRestartable,
+                            WLWelcomeController._migrationState,
+                            WLWelcomeController._navigationController,
+                            WLWelcomeController._sourceDevice,
+                            WLWelcomeController._sourceDevicesController,
+                            WLWelcomeController._uiTestMode,
+                            WLWelcomeViewController._continueHandler,
+                            WLWelcomeViewController._welcomeController ]
+...

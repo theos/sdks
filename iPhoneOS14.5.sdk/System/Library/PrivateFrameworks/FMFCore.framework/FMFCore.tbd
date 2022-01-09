@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FMFCore.framework/FMFCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ FMFCoreTests, FMInternalSettingsBundle, FindMy,
+                            FindMyNotificationsContent, FindMySiriIntents,
+                            FindMyTests, FindMyWidgetIntentsPeople,
+                            FindMyWidgetPeople, FindMyWidgetTestApp, fmfcoretool ]
+    objc-classes:         [ _TtC7FMFCore13FMFCoreHelper,
+                            _TtC7FMFCore17FMPhoneNumberUtil,
+                            _TtC7FMFCore22FMAPSConnectionHandler,
+                            _TtC7FMFCore23FMFMyLocationController,
+                            _TtC7FMFCore25FMFGenericResponseHandler ]
+...

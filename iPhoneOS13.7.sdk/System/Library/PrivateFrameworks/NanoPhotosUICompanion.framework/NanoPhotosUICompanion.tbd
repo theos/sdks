@@ -1,0 +1,40 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoPhotosUICompanion.framework/NanoPhotosUICompanion
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NPTOGlobalPrefsDomain,
+                            _NPTOGlobalPrefsPhotosFaceMemoryHistoryListChangedNotificationName,
+                            _NPTOGlobalPrefsPhotosFaceMemoryHistoryListKey,
+                            _NPTOGlobalPrefsPhotosFaceMemoryKeyAssetChangedNotificationName,
+                            _NPTOGlobalPrefsPhotosFaceMemoryKeyAssetKey,
+                            _NPTOLocketChangeChangedIndexesKey,
+                            _NPTOLocketChangeDeletedIndexesKey,
+                            _NPTOLocketChangeInsertedIndexesKey,
+                            _NPTOLocketChangeNuclearKey,
+                            _NPTOLocketDidBeginChangesNotification,
+                            _NPTOLocketDidChangeNotification,
+                            _NPTOLocketDidEndChangesNotification,
+                            _NPTOLocketExpectedLibrarySizeKey,
+                            _NPTOLocketSyncDidChangeNotification,
+                            _NPTOLocketSyncInProgressKey,
+                            _NPTOPreferencesSyncedAlbumIdentifierKey,
+                            _NPTOPreferencesSyncedPhotosLimitKey,
+                            _NanoPhotosUICompanionVersionNumber,
+                            _NanoPhotosUICompanionVersionString,
+                            __npto_faceBounds, __npto_rectCentroid,
+                            __npto_rotateFaces, _addFaceMetaDataIfNecessary,
+                            _getImageDimensions, _getImageOrientation,
+                            _getPresentationTransform, _hasFaceMetadata,
+                            _nanophotos_log_app, _nanophotos_log_bridge,
+                            _nanophotos_log_sync, _setMetadataValue ]
+    objc-classes:         [ NPTOGlobalPreference, NPTOImageView, NPTOIrisView,
+                            NPTOLocket, NPTOLocketReader, NPTONotificationObserver,
+                            NPTOPhoto, NPTOPreferencesAccessor, NPTOSidecarPhoto,
+                            NPTOVideoPlayerView, _NPTOPlayerView ]
+...

@@ -1,0 +1,73 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ AppRecommendations, AppRecommendationsTests, Articles,
+                            ArticlesTests, Categories, CategoriesTests, CloudSync,
+                            CloudSyncTests, Education, FeatureTagSandboxPlugin,
+                            Health, HealthAppControlPlugin, HealthAppTests,
+                            HealthArticlesGeneration,
+                            HealthArticlesGenerationTests, HealthArticlesUI,
+                            HealthArticlesUITests, HealthExperience,
+                            HealthExperienceTesting, HealthExperienceTests,
+                            HealthExperienceTestsHost, HealthExperienceUI,
+                            HealthExperienceUITests,
+                            HealthMenstrualCyclesContentExtension,
+                            HealthMenstrualCyclesUI,
+                            HealthMenstrualCyclesUITests, HealthPlatform,
+                            HealthPlatformCore, HealthPlatformCoreTests,
+                            HealthPlatformTests, HealthPluginHost,
+                            HealthPluginHostTests, HealthProfile,
+                            HealthProfileExtensions,
+                            HealthProfileExtensionsTests, HealthProfileTests,
+                            HealthRecords, "HealthRecordsAppPlugin-Tests",
+                            HealthRecordsUI, HealthSandbox, HealthSettings,
+                            HealthToolboxPlugin, HealthToolboxPluginTests,
+                            HealthVisualization, HealthVisualizationTests,
+                            HearingAppPlugin, HearingAppPluginTests, Heart,
+                            HeartTests, HighlightAlerts, HighlightAlertsTests,
+                            Highlights, HighlightsIntegrationTests,
+                            HighlightsTests, MedicalID, MedicalIDTests,
+                            MenstrualCyclesAppPlugin,
+                            MenstrualCyclesAppPluginTests, NotificationExtension,
+                            OrganDonation, OrganDonationTests, Profiles,
+                            ProfilesTests, ResearchApp, ResearchAppTests,
+                            RespiratoryHealthAppPlugin,
+                            RespiratoryHealthAppPluginTests, Safety, SafetyTests,
+                            SleepHealthApp, SleepHealthAppPlugin,
+                            SleepHealthAppPluginTests, SleepHealthUI,
+                            SleepHealthUITests, Snippets, SnippetsTests, healthappd ]
+    symbols:              [ _HAFeatureFlagBrookEnabled,
+                            _HAFeatureFlagSafetyCheckEnabled,
+                            _HAFeatureFlagViewLoggingEnabled,
+                            _HealthExperienceVersionNumber,
+                            _HealthExperienceVersionString,
+                            _health_dispatch_get_current_workloop,
+                            _health_dispatch_workloop_create ]
+    objc-classes:         [ HK_TPSDiscoverabilitySignal, MedicalIDChangeObserver,
+                            MobileGestaltBridge, OrganDonationObserver,
+                            _TtC16HealthExperience14MedicalIDCache,
+                            _TtC16HealthExperience17FavoritesProvider,
+                            _TtC16HealthExperience21AsynchronousOperation,
+                            _TtC16HealthExperience23MedicalIDFetchOperation,
+                            _TtC16HealthExperience24ComposableAsyncOperation,
+                            _TtC16HealthExperience26AsynchronousBlockOperation,
+                            _TtC16HealthExperience28SetDefaultFavoritesOperation,
+                            _TtC16HealthExperience29AsynchronousProgressOperation,
+                            _TtC16HealthExperience31CloudSyncEventPublisherObserver,
+                            _TtC16HealthExperience33SaveManagedObjectContextOperation,
+                            _TtC16HealthExperience37FirstRestoreNotInProgressPrecondition ]
+    objc-ivars:           [ HK_TPSDiscoverabilitySignal._bundleIdentifier,
+                            HK_TPSDiscoverabilitySignal._context,
+                            HK_TPSDiscoverabilitySignal._identifier,
+                            MedicalIDChangeObserver._delegate,
+                            MedicalIDChangeObserver._medicalIDChangedToken,
+                            OrganDonationObserver._delegate,
+                            OrganDonationObserver._organDonationChangedToken ]
+...

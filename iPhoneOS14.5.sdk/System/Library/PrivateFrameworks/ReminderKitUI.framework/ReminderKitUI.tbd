@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ReminderKitUI.framework/ReminderKitUI
+current-version:       370
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ReminderKitUIVersionNumber,
+                            _ReminderKitUIVersionString ]
+    objc-classes:         [ REMReminderCreationContext,
+                            REMReminderCreationRemoteViewController,
+                            REMReminderCreationViewController ]
+    objc-ivars:           [ REMReminderCreationContext._dueDateComponents,
+                            REMReminderCreationContext._location,
+                            REMReminderCreationContext._locationProximity,
+                            REMReminderCreationContext._locationString,
+                            REMReminderCreationContext._notes,
+                            REMReminderCreationContext._siriFoundInAppsData,
+                            REMReminderCreationContext._title,
+                            REMReminderCreationContext._titleIsGeneratedSuggestion,
+                            REMReminderCreationContext._url,
+                            REMReminderCreationContext._userActivity,
+                            REMReminderCreationContext._wantsExtendedDetailOnlyView,
+                            REMReminderCreationRemoteViewController._publicViewController,
+                            REMReminderCreationViewController._childViewController,
+                            REMReminderCreationViewController._deferredErrorDuringPresentation,
+                            REMReminderCreationViewController._delegate ]
+...

@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AuthenticationServicesCore.framework/AuthenticationServicesCore
+current-version:       611.1.21
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ASCAuthorizationErrorDomain,
+                            _ASCAuthorizationPresentationContextDataKey,
+                            _ASViewServiceClientEntitlement,
+                            _ASViewServiceProcess, _descriptionForErrorCode ]
+    objc-classes:         [ ASCAppleIDCredential, ASCAppleIDLoginChoice,
+                            ASCAuthorizationPresentationContext,
+                            ASCAuthorizationPresenter,
+                            ASCAuthorizationPresenterHostInterface,
+                            ASCCredentialRequestContext, ASCPasswordCredential,
+                            ASCPasswordLoginChoice,
+                            ASCPlatformPublicKeyCredential,
+                            ASCPlatformPublicKeyCredentialLoginChoice,
+                            ASCSecurityKeyPublicKeyCredential,
+                            ASCSecurityKeyPublicKeyCredentialLoginChoice,
+                            ASCViewServiceInterface ]
+    objc-ivars:           [ ASCAppleIDCredential._identityToken,
+                            ASCAppleIDCredential._user,
+                            ASCAppleIDLoginChoice._user,
+                            ASCAuthorizationPresentationContext._appIdentifier,
+                            ASCAuthorizationPresentationContext._loginChoices,
+                            ASCAuthorizationPresentationContext._proxiedAssociatedDomains,
+                            ASCAuthorizationPresentationContext._proxiedIconData,
+                            ASCAuthorizationPresentationContext._proxiedIconScale,
+                            ASCAuthorizationPresentationContext._requestTypes,
+                            ASCAuthorizationPresentationContext._serviceName,
+                            ASCAuthorizationPresenter._credentialResultHandler,
+                            ASCAuthorizationPresenter._delegate,
+                            ASCAuthorizationPresenter._hasQueuedPINEntryInterfaceRequest,
+                            ASCAuthorizationPresenter._interfaceUpdateQueue,
+                            ASCAuthorizationPresenter._invalidationQueue,
+                            ASCAuthorizationPresenter._loginChoicesForQueuedUpdate,
+                            ASCAuthorizationPresenter._remoteAlertHandle,
+                            ASCAuthorizationPresenter._remoteListener,
+                            ASCAuthorizationPresenter._viewServiceConnection,
+                            ASCAuthorizationPresenter._viewServiceProxy,
+                            ASCCredentialRequestContext._proxiedAppIdentifier,
+                            ASCCredentialRequestContext._proxiedAppName,
+                            ASCCredentialRequestContext._proxiedAssociatedDomains,
+                            ASCCredentialRequestContext._proxiedIconData,
+                            ASCCredentialRequestContext._proxiedIconScale,
+                            ASCCredentialRequestContext._relyingPartyIdentifier,
+                            ASCCredentialRequestContext._requestTypes,
+                            ASCPasswordLoginChoice._site,
+                            ASCPasswordLoginChoice._username,
+                            ASCPlatformPublicKeyCredentialLoginChoice._displayName,
+                            ASCPlatformPublicKeyCredentialLoginChoice._isRegistrationRequest,
+                            ASCPlatformPublicKeyCredentialLoginChoice._name,
+                            ASCPlatformPublicKeyCredentialLoginChoice._userHandle,
+                            ASCSecurityKeyPublicKeyCredentialLoginChoice._displayName,
+                            ASCSecurityKeyPublicKeyCredentialLoginChoice._loginChoiceKind,
+                            ASCSecurityKeyPublicKeyCredentialLoginChoice._name,
+                            ASCSecurityKeyPublicKeyCredentialLoginChoice._userHandle ]
+...

@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/AccessibilityPlatformTranslation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AXPConvertValue, _AXPCustomActionIdentifier,
+                            _AXPCustomActionName, _AXPCustomRotorDirection,
+                            _AXPCustomRotorName, _AXPCustomRotorSystemType,
+                            _AXPCustomRotorTargetElement,
+                            _AXPCustomRotorTargetRange, _AXPCustomRotorUUID,
+                            _AXPIsCatalyst, _AXPIsGoodOldAppleCatalystApp,
+                            _AXPIsiOSAppOnMac, _AXPLinkedOnOrAfterGozul,
+                            _AXPNilOrEmptyString,
+                            _AccessibilityPlatformTranslationVersionNumber,
+                            _AccessibilityPlatformTranslationVersionString,
+                            __AXPActionToString, __AXPAttributeToString,
+                            __AXPNotificationToString ]
+    objc-classes:         [ AXPIOSPlatformElement, AXPTranslationObject,
+                            AXPTranslator, AXPTranslatorRequest,
+                            AXPTranslatorResponse, AXPTranslator_iOS,
+                            AXPiOSElementData ]
+    objc-ivars:           [ AXPIOSPlatformElement.translation,
+                            AXPTranslationObject._bridgeDelegateToken,
+                            AXPTranslationObject._didPopuldateAppInfo,
+                            AXPTranslationObject._isApplicationElement,
+                            AXPTranslationObject._objectID,
+                            AXPTranslationObject._pid,
+                            AXPTranslationObject._rawElementData,
+                            AXPTranslationObject._remoteDebugDescription,
+                            AXPTranslationObject._remoteDescriptionBlock,
+                            AXPTranslator._accessibilityEnabled,
+                            AXPTranslator._bridgeDelegate,
+                            AXPTranslator._bridgeTokenDelegate,
+                            AXPTranslator._fakeElementCache,
+                            AXPTranslator._runtimeDelegate,
+                            AXPTranslator._supportsDelegateTokens,
+                            AXPTranslator._systemAppDelegate,
+                            AXPTranslatorRequest._actionType,
+                            AXPTranslatorRequest._attributeType,
+                            AXPTranslatorRequest._clientType,
+                            AXPTranslatorRequest._parameters,
+                            AXPTranslatorRequest._requestType,
+                            AXPTranslatorRequest._translation,
+                            AXPTranslatorResponse._associatedNotificationObject,
+                            AXPTranslatorResponse._attribute,
+                            AXPTranslatorResponse._error,
+                            AXPTranslatorResponse._notification,
+                            AXPTranslatorResponse._resultData,
+                            AXPTranslator_iOS._accessibilityEnabled,
+                            AXPTranslator_iOS._axAppReadyFlag,
+                            AXPTranslator_iOS._axEventObserver,
+                            AXPTranslator_iOS._backTranslationCache,
+                            AXPTranslator_iOS._cacheQueue,
+                            AXPTranslator_iOS._systemAppElement,
+                            AXPTranslator_iOS._systemWideElement,
+                            AXPTranslator_iOS._threadSemaphore,
+                            AXPTranslator_iOS._translationCache,
+                            AXPiOSElementData._pid, AXPiOSElementData._uid ]
+...

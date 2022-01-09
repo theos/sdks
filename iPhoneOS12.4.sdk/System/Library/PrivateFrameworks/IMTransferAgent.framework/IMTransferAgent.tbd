@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IMTransferAgent.framework/IMTransferAgent
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _IMOptOutOfOptimizedMadridAttachmentDownloadPath,
+                            _IMOptOutOfOptimizedMadridAttachmentUploadPath,
+                            _IMSetOptOutOfOptimizedMadridAttachmentDownloadPath,
+                            _IMSetOptOutOfOptimizedMadridAttachmentUploadPath ]
+    objc-classes:         [ FTiMessageRequestMMCSDownloadToken,
+                            FTiMessageRequestMMCSUploadToken,
+                            IMTransferAgentController,
+                            IMTransferAgentDeliveryController,
+                            IMTransferAgentIDSInterface,
+                            IMTransferEncryptionController,
+                            IMTransferEncryptionHelpers ]
+...

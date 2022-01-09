@@ -1,0 +1,73 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PointerUIServices.framework/PointerUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PSContentOverlayIntensityForLuminanceAndUsage,
+                            _PSContentOverlayVibrantColorMatrixForLuminance,
+                            _PSIntensityForLuminanceAndUsage, _PSLogAutohide,
+                            _PSLogCommon, _PSLogMaterial, _PSLoggingSubsystem,
+                            _PSPointerAutohideReasonToString,
+                            _PSPointerClientControllerErrorDomain,
+                            _PSPointerClientInteractionStateToString,
+                            _PSPointerVibrantColorMatrixForLuminance,
+                            _PointerUIServicesVersionNumber,
+                            _PointerUIServicesVersionString ]
+    objc-classes:         [ PSMatchMoveSource, PSMutablePointerHoverRegion,
+                            PSPointerClientController,
+                            PSPointerClientDefaultLaunchingServiceSpecification,
+                            PSPointerClientDefaultServiceSpecification,
+                            PSPointerHoverRegion,
+                            PSPointerPortalSourceCollection, PSPointerSettings,
+                            PSPointerSettingsDomain, PSPointerShape,
+                            PSPortalSource ]
+    objc-ivars:           [ PSMatchMoveSource._sourceContextID,
+                            PSMatchMoveSource._sourceLayerRenderID,
+                            PSPointerClientController._accessQueue,
+                            PSPointerClientController._clientInteractionState,
+                            PSPointerClientController._connectionQueue,
+                            PSPointerClientController._delegate,
+                            PSPointerClientController._hasActivatedLaunchingConnection,
+                            PSPointerClientController._invalidationAndConfigurationLock,
+                            PSPointerClientController._isConnectionActive,
+                            PSPointerClientController._launchingConnection,
+                            PSPointerClientController._nonLaunchingConnection,
+                            PSPointerClientController._persistentPointerHideReasons,
+                            PSPointerClientController._serviceKeepAliveAssertions,
+                            PSPointerClientController._systemCursorInteractionContextID,
+                            PSPointerHoverRegion._contentBounds,
+                            PSPointerHoverRegion._contentHoverInverseScale,
+                            PSPointerHoverRegion._contentMatchMoveSource,
+                            PSPointerHoverRegion._contentSlipValue,
+                            PSPointerHoverRegion._coordinateSpaceSourceContextID,
+                            PSPointerHoverRegion._coordinateSpaceSourceLayerRenderID,
+                            PSPointerHoverRegion._hitTestBounds,
+                            PSPointerHoverRegion._overlayEffectStyle,
+                            PSPointerHoverRegion._pointerPortalSourceCollection,
+                            PSPointerHoverRegion._pointerRecenteringAxes,
+                            PSPointerHoverRegion._pointerShape,
+                            PSPointerHoverRegion._pointerSlipValue,
+                            PSPointerHoverRegion._pointerVisualIntensity,
+                            PSPointerHoverRegion._preferredPointerMaterialLuminance,
+                            PSPointerHoverRegion._shouldPointerSuppressMirroring,
+                            PSPointerHoverRegion._shouldPointerUnderlayContent,
+                            PSPointerPortalSourceCollection._overlayEffectPortalSource,
+                            PSPointerPortalSourceCollection._pointerPortalSource,
+                            PSPointerPortalSourceCollection._samplingMatchMoveSource,
+                            PSPointerSettings._materialAlphaDot,
+                            PSPointerSettings._materialAlphaIBeam,
+                            PSPointerSettings._materialAlphaSmallItemDark,
+                            PSPointerSettings._materialAlphaSmallItemDarkHighContrast,
+                            PSPointerSettings._materialAlphaSmallItemLight,
+                            PSPointerShape._bounds, PSPointerShape._cornerCurve,
+                            PSPointerShape._cornerRadius, PSPointerShape._path,
+                            PSPointerShape._shapeType,
+                            PSPointerShape._usesEvenOddFillRule,
+                            PSPortalSource._sourceContextID,
+                            PSPortalSource._sourceLayerRenderID ]
+...

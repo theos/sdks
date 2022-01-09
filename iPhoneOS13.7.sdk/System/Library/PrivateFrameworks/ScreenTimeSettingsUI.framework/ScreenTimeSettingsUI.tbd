@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI
+current-version:       440
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ FamilyCircleUI, ScreenTimeAgent,
+                            ScreenTimeNotificationContentExtension,
+                            ScreenTimeSettings, ScreenTimeWidget, Setup, SetupTests,
+                            screentimetool ]
+    symbols:              [ _STSharedServicesScreenTimeSpecifierId, _STUIBundle,
+                            _STUISortedAvailableCategoriesExcludingSystemCategories ]
+    objc-classes:         [ STAllowance, STAlwaysAllowList, STCandyBarView,
+                            STChildSetupController, STDeviceBedtime,
+                            STDeviceUnlockStateListener,
+                            STFamilyCircleSpecifierProvider,
+                            STHorizontallySegmentedView, STKeyValuePair,
+                            STRootViewModelCoordinator,
+                            STScreenTimeSettingsUIBundle, STSegmentItem,
+                            STSetupAssistantViewController, STUILog, STUIUser,
+                            STUnlockForContentView,
+                            STUsageDetailsViewModelCoordinator,
+                            STUsageGraphViewController, STUsageItem, STUsageReport,
+                            STUsageSummaryTitleView, STWeeklyReportAppUsageView,
+                            STWeeklyReportViewController ]
+...

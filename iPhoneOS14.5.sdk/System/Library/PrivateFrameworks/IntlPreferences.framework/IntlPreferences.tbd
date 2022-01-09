@@ -1,0 +1,48 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
+current-version:       332.3
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _IPAppleLanguagesSchemaVersionCurrent,
+                            _IPAppleLanguagesSchemaVersionGoldzulA,
+                            _IPAppleLanguagesSchemaVersionJazzkonA,
+                            _IPAppleLanguagesSchemaVersionJazzkonA_1,
+                            _IPBackstopLanguage, _IPBackstopLocale,
+                            _NSPersonNameDefaultDisplayNameOrderKey,
+                            _NSPersonNameDefaultNamePreferencesDomain,
+                            _NSPersonNameDefaultShortNameEnabledKey,
+                            _NSPersonNameDefaultShortNameFormatKey,
+                            _NSPersonNameDefaultShouldPreferNicknamesKey,
+                            _NSPersonNamePreferencesDidChangeNotification,
+                            _kAppleLanguagesKey, _kAppleLocaleKey ]
+    objc-classes:         [ IPFoundationNamePreferenceInfoProvider,
+                            IPInternationalAnalytics, IPLanguage,
+                            IPLanguageListGenerator,
+                            IPOSXABNamePreferenceInfoProvider,
+                            IPWatchLocaleController, IP_HK_MO_yue_Hant_migrator,
+                            IP_Zawgyi_migrator, IP_pa_Arab_to_pa_Aran_migrator,
+                            IP_unsupportedVariantsAddedByKeyboards_migrator,
+                            IPiOSABNamePreferenceInfoProvider, ISMigrator,
+                            ISRootMigrator, IntlUtility,
+                            NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:           [ IPLanguage._identifier,
+                            IPLanguage._localizedStringForName, IPLanguage._name,
+                            IPLanguageListGenerator._preferredLanguages,
+                            IPLanguageListGenerator._preferredLocale,
+                            IPLanguageListGenerator._systemDisplayLanguage,
+                            IPLanguageListGenerator._systemLanguages,
+                            IPWatchLocaleController._gizmoGlobalDomain,
+                            IPWatchLocaleController._syncManager,
+                            IPWatchLocaleController._systemLanguages,
+                            ISMigrator._currentVersion, ISMigrator._platform,
+                            ISMigrator._previousSchemaVersion,
+                            ISMigrator._previousVersion, ISRootMigrator._isErase,
+                            ISRootMigrator._isRestoreFromBackup,
+                            IntlUtility.mBidiLanguagesArray,
+                            IntlUtility.mBidiTestedLanguagesArray ]
+...

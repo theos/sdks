@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppPredictionWidget.framework/AppPredictionWidget
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppPredictionWidgetVersionNumber,
+                            _AppPredictionWidgetVersionString ]
+    objc-classes:         [ APWAppIconAndLabelView, APWDebugLightView, APWSettings,
+                            APWUtil ]
+    objc-ivars:           [ APWAppIconAndLabelView._bundleIdentifier,
+                            APWAppIconAndLabelView._iconButton,
+                            APWAppIconAndLabelView._iconLabelTraitCollection,
+                            APWAppIconAndLabelView._label,
+                            APWDebugLightView._blinkDisplayLink,
+                            APWDebugLightView._blinkHertz,
+                            APWDebugLightView._ledColor,
+                            APWDebugLightView._ledIsOn,
+                            APWDebugLightView._ledView,
+                            APWSettings._internalSettings,
+                            APWSettings._lastViewDidDisappearDate,
+                            APWSettings._widgetFeedbackEnabled ]
+...

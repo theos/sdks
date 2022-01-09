@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CarPlayUIServices.framework/CarPlayUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CarPlayUIServicesVersionNumber,
+                            _CarPlayUIServicesVersionString ]
+    objc-classes:         [ CRSDashboardFocusableItem,
+                            CRSUIApplicationSceneSettings,
+                            CRSUIApplicationSceneSettingsDiffInspector,
+                            CRSUIApplicationSceneSpecification,
+                            CRSUIDashboardWidgetSceneSettings,
+                            CRSUIDashboardWidgetSceneSpecification,
+                            CRSUIDashboardWidgetWindow,
+                            CRSUIInstrumentClusterSceneSettings,
+                            CRSUIInstrumentClusterSceneSpecification,
+                            CRSUIMutableApplicationSceneSettings,
+                            CRSUIMutableDashboardWidgetSceneSettings,
+                            CRSUIMutableInstrumentClusterSceneSettings,
+                            CRSUIMutableProxyApplicationSceneSettings,
+                            CRSUIMutableTemplateDashboardWidgetSceneSettings,
+                            CRSUIProxyApplicationSceneSettings,
+                            CRSUIProxyApplicationSceneSpecification,
+                            CRSUITemplateDashboardWidgetSceneSettings,
+                            CRSUITemplateDashboardWidgetSceneSpecification,
+                            CRSUIWindow ]
+...

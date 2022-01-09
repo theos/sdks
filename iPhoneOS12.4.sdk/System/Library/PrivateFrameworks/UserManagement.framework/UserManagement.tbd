@@ -1,0 +1,78 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _UMErrorPasscodeBackOffInterval,
+                            _UMUserManagerErrorDomain,
+                            _kDebugErrorCausingLogoutKey,
+                            _kErrorCausingLogoutKey, _kHasManagedCredentials,
+                            _kLanguagesKey, _kPasscodeTypeKey ]
+    objc-classes:         [ UMAbort, UMError, UMLog, UMLogMessage, UMMobileKeyBag,
+                            UMMutableUser, UMQueue, UMTask, UMUser, UMUserManager,
+                            UMUserSwitchBlockingTask, UMUserSwitchContext,
+                            UMUserSyncTask, UMXPCServer ]
+    objc-ivars:           [ UMLog._type, UMLogMessage._privateStrings,
+                            UMLogMessage._publicStrings, UMQueue._queue,
+                            UMTask._bundleID, UMTask._isFinished, UMTask._name,
+                            UMTask._pid, UMTask._reason, UMTask._uuid,
+                            UMUser.__photo, UMUser._alternateDSID,
+                            UMUser._creationDate, UMUser._dataQuota,
+                            UMUser._dataUsed, UMUser._debugErrorCausingLogout,
+                            UMUser._displayName, UMUser._errorCausingLogout,
+                            UMUser._familyName, UMUser._firstLoginEndDate,
+                            UMUser._firstLoginStartDate, UMUser._gid,
+                            UMUser._givenName, UMUser._hasDataToSync,
+                            UMUser._hasManagedCredentials,
+                            UMUser._homeDirectoryURL, UMUser._isAuditor,
+                            UMUser._isDisabled, UMUser._isLoginUser,
+                            UMUser._languages, UMUser._lastCachedLoginEndDate,
+                            UMUser._lastCachedLoginStartDate,
+                            UMUser._lastLoginDate, UMUser._lastLogoutEndDate,
+                            UMUser._lastLogoutStartDate,
+                            UMUser._lastRemoteAuthDate,
+                            UMUser._passcodeLockGracePeriod,
+                            UMUser._passcodeType, UMUser._photoURL,
+                            UMUser._shouldFetchAttributes, UMUser._uid,
+                            UMUser._userAuxiliaryString, UMUser._username,
+                            UMUserManager._allUsers,
+                            UMUserManager._switchIsOccurring,
+                            UMUserManager._userListUpdateObserver,
+                            UMUserSwitchContext._environmentsByServices,
+                            UMUserSwitchContext._secondaryActionRequired,
+                            UMUserSwitchContext._setupData,
+                            UMUserSwitchContext._shortLivedToken,
+                            UMUserSyncTask._contentSize,
+                            UMXPCServer._bubblePopHandler,
+                            UMXPCServer._contextData,
+                            UMXPCServer._currentlyBroadcastingWillSwitchToUser,
+                            UMXPCServer._didBroadcastUploadContent,
+                            UMXPCServer._didBroadcastWillSwitchToUser,
+                            UMXPCServer._didRegisterStakeholder,
+                            UMXPCServer._didSendTasks,
+                            UMXPCServer._directSwitchCompletionHandler,
+                            UMXPCServer._interruptionRetryCount,
+                            UMXPCServer._loginUICheckinSessionCompletionHandler,
+                            UMXPCServer._logoutToLoginSessionCompletionHandler,
+                            UMXPCServer._machServiceName,
+                            UMXPCServer._passcodeData, UMXPCServer._personaSpec,
+                            UMXPCServer._preferencesDict,
+                            UMXPCServer._registrationCompletionHandler,
+                            UMXPCServer._stakeholder,
+                            UMXPCServer._stakeholderType,
+                            UMXPCServer._suspendQuotasCompletionHandler,
+                            UMXPCServer._switchBlockingTasks,
+                            UMXPCServer._switchCompletionHandler,
+                            UMXPCServer._syncTasks,
+                            UMXPCServer._unregistrationReason,
+                            UMXPCServer._unregistrationStatus,
+                            UMXPCServer._uploadContentCompletionHandler,
+                            UMXPCServer._willSwitchCompletionHandler,
+                            UMXPCServer._willSwitchToUserAddedTaskCount,
+                            UMXPCServer._xpcConnection, UMXPCServer._xpcListener ]
+...

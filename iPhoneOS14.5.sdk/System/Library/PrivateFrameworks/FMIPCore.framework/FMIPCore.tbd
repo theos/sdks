@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FMIPCore.framework/FMIPCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ FMIPCoreTests, FMInternalSettingsBundle, FindMy,
+                            FindMySiriIntents, FindMyTests, FindMyWidgetDevices,
+                            FindMyWidgetIntentsDevices, FindMyWidgetIntentsItems,
+                            FindMyWidgetItems, FindMyWidgetTestApp, SiriFindMy,
+                            SiriFindMyBundle, SiriFindMyTester, SiriFindMyTests,
+                            fmipcoretool ]
+    objc-classes:         [ _TtC8FMIPCore17FMPhoneNumberUtil,
+                            _TtC8FMIPCore22FMAPSConnectionHandler,
+                            _TtC8FMIPCore22FMIPLocationController,
+                            _TtC8FMIPCore29FMIPReverseGeocodingOperation,
+                            _TtC8FMIPCore37FMIPEphemeralAuthenticationController ]
+...

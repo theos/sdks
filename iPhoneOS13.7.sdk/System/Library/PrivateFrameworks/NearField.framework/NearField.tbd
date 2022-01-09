@@ -1,0 +1,62 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NearField.framework/NearField
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NFSecureElementManagerSessionECDSACertificateKey,
+                            _NFSecureElementManagerSessionRSAACertificateKey,
+                            _NFSignedPlatformData,
+                            _NFSignedPlatformSignatureBlob,
+                            _NfRestoreCopyUniqueFDRKey,
+                            _ObliterationDeleteAllApplets, _PTErrorInternal,
+                            _PTErrorInvalidParameters, _PTErrorKeyAlreadyExist,
+                            _PTErrorKeyNotFound, _PTErrorNoMemory,
+                            ___PTErrorString ]
+    objc-classes:         [ NFApplet, NFContactlessPaymentEndEvent,
+                            NFContactlessPaymentSession,
+                            NFContactlessPaymentSessionCallbacks,
+                            NFContactlessPaymentSessionInterface,
+                            NFContactlessPaymentStartEvent, NFContactlessSession,
+                            NFContactlessSessionCallbacks,
+                            NFContactlessSessionInterface,
+                            NFContactlessUICCSession, NFECommercePaymentRequest,
+                            NFECommercePaymentResponse,
+                            NFECommercePaymentSession,
+                            NFECommercePaymentSessionInterface,
+                            NFFieldDetectSession,
+                            NFFieldDetectSessionInterfaceCallbacks,
+                            NFFieldNotification, NFFieldNotificationECP1_0,
+                            NFFieldNotificationECP2_0, NFHCESession,
+                            NFHardwareControllerInfo, NFHardwareManager,
+                            NFHardwareManagerCallbacks,
+                            NFHardwareManagerInterface,
+                            NFHardwareSecureElementInfo,
+                            NFLoyaltyAndPaymentSession, NFNdefMessage,
+                            NFNdefRecord, NFNdefTagSession,
+                            NFPeerPaymentEnrollmentRequest,
+                            NFPeerPaymentEnrollmentResponse,
+                            NFPeerPaymentRequest, NFPeerPaymentResponse,
+                            NFPeerPaymentSession, NFPeerPaymentTransferRequest,
+                            NFReaderSession, NFReaderSessionCallbacks,
+                            NFReaderSessionInterface,
+                            NFReaderSessionInternalInterface,
+                            NFRemoteAdminCardIngestionRequest,
+                            NFRemoteAdminManager, NFRemoteAdminManagerCallbacks,
+                            NFRemoteAdminManagerInterface, NFSecureElement,
+                            NFSecureElementAndHostCardEmulationSession,
+                            NFSecureElementManagerSession,
+                            NFSecureElementManagerSessionInterface,
+                            NFSeshatSession, NFSeshatSessionInterface, NFSession,
+                            NFSignatureInfo, NFTag, NFTapToRadar, NFTechnologyEvent,
+                            NFTrustKey, NFTrustKeyRequest, NFTrustLocalValidation,
+                            NFTrustObject, NFTrustPaymentSignResponse,
+                            NFTrustSession, NFTrustSessionInterface,
+                            NFTrustSignRequest, NFTrustSignResponse,
+                            NFValueAddedServiceCard,
+                            NFValueAddedServiceTransaction ]
+...

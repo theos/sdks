@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ExchangeSync.framework/ExchangeSync
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ESIsRunningInExchangeSyncD,
+                            _kDAAccountDidDiscoverHost,
+                            _kDAAccountDiscoveredHost,
+                            _kDAClientNameForChangeInsertion,
+                            _kDAExchangeOAuthJWKSData,
+                            _kDAExchangeOAuthJWKSDataCachMaxTimeInterval,
+                            _kDAExchangeOAuthJWKSDataCacheDate,
+                            _kDAExchangeOAuthJWKSURI,
+                            _kDAExchangeOAuthTokenIssuer,
+                            _kDAExchangeOAuthVersion,
+                            _kESExchangeBasicAccountMigrationActivityInterval,
+                            _kESExchangeBasicAccountMigrationActivityInterval_Override,
+                            _kESExchangeBasicAccountMigrationActivityTolerance,
+                            _kESExchangeBasicAccountMigrationActivityTolerance_Override,
+                            _kESExchangeBasicAccountMigrationLastAttemptDate,
+                            _kESExchangeBasicAccountMigrationRetryInterval,
+                            _kESExchangeBasicAccountMigrationRetryInterval_Override,
+                            _kESExchangeBasicAccountMigrationStatus,
+                            _kESExchangePasswordPromptDate,
+                            _kGenericDAAccountType,
+                            _kGenericDAAccountWithLoggingType,
+                            _kSubCalCalendarStoreExternalId,
+                            _setESIsRunningInExchangeSyncD ]
+    objc-classes:         [ ESAccount, ESAccountActor, ESAccountClassNames,
+                            ESAccountLoader, ESLocalDBHelper, ESLocalDBWatcher,
+                            ESUserNotificationInfo, ESUserNotificationUtilities ]
+    objc-ivars:           [ ESAccountClassNames._accountClassName,
+                            ESAccountClassNames._agentClassName,
+                            ESAccountClassNames._clientAccountClassName,
+                            ESAccountClassNames._daemonAccountClassName,
+                            ESAccountLoader._acAccountTypeToAccountDaemonBundleSubpath,
+                            ESAccountLoader._acAccountTypeToAccountFrameworkSubpath,
+                            ESAccountLoader._acAccountTypeToClassNames,
+                            ESAccountLoader._acParentAccountTypeToChildAccountTypes,
+                            ESLocalDBHelper._abConnectionCount,
+                            ESLocalDBHelper._abDB, ESLocalDBHelper._abDBQueue,
+                            ESLocalDBHelper._calConnectionCount,
+                            ESLocalDBHelper._calDB, ESLocalDBHelper._calDBQueue,
+                            ESLocalDBHelper._calUnitTestCallbackBlock,
+                            ESLocalDBHelper._clientIdentifier,
+                            ESLocalDBHelper._contactStore,
+                            ESLocalDBHelper._noteConnectionCount,
+                            ESLocalDBHelper._noteDB,
+                            ESLocalDBHelper._noteDBQueue,
+                            ESLocalDBHelper._saveRequests,
+                            ESLocalDBWatcher._abWatcher,
+                            ESLocalDBWatcher._calWatcher,
+                            ESLocalDBWatcher._concernedABPartyToBlockMap,
+                            ESLocalDBWatcher._concernedCalPartyToBlockMap,
+                            ESLocalDBWatcher._concernedNotePartyToBlockMap,
+                            ESLocalDBWatcher._lastSavedABSequenceNumber,
+                            ESLocalDBWatcher._lastSavedCalSequenceNumber,
+                            ESLocalDBWatcher._noteWatcher,
+                            ESUserNotificationInfo._groupIdentifier,
+                            ESUserNotificationInfo._handler ]
+...

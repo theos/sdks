@@ -1,0 +1,52 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _VTUIEnrollmentlanguageOptionsViewDefaultLanguageCode,
+                            _VTUILogContextFacility, _VTUILogInitIfNeeded,
+                            _VTUILoggingSubsystem, _VoiceTriggerUIVersionNumber,
+                            _VoiceTriggerUIVersionString,
+                            _kVTUIAspectRatioDeviceDoneN61Cable,
+                            _kVTUIAspectRatioDeviceDoneN61NoCable,
+                            _kVTUIAspectRatioDeviceIntroN61,
+                            _kVTUIFontSize_Button, _kVTUIFontSize_ButtonSmall,
+                            _kVTUIFontSize_Footer, _kVTUIFontSize_Main,
+                            _kVTUIFontSize_Progress, _kVTUIFontSize_Title,
+                            _kVTUILoggingContextFramework,
+                            _kVTUIPath_ImageDeviceDoneN61Cable,
+                            _kVTUIPath_ImageDeviceDoneN61NoCable,
+                            _kVTUIPath_ImageDeviceIntroN61,
+                            _kVTUIPath_ImageStaticWave, _kVTUIPath_ImageTick,
+                            _kVTUIPath_ImageTickMask, _kVTUIPath_ImageXMask,
+                            _kVTUIStandardScreenHeight,
+                            _kVTUIStandardScreenWidth ]
+    objc-classes:         [ MGWrapper, VTUIArtworksManager, VTUIAudioHintPlayer,
+                            VTUIButton,
+                            VTUIDictationDataSharingOptInAlertViewModel,
+                            VTUIDictationDataSharingOptInPresenter,
+                            VTUIDictationDataSharingReminderAlertViewModel,
+                            VTUIEnrollTrainingView,
+                            VTUIEnrollTrainingViewController,
+                            VTUIEnrollmentLanguageOptionsView,
+                            VTUIEnrollmentSetupIntroView,
+                            VTUIEnrollmentStateView, VTUIEnrollmentSuccessView,
+                            VTUIPagedLabel, VTUIProximityContainerView,
+                            VTUIProximityDataSharingOptInView,
+                            VTUIProximityEnrollTrainingView,
+                            VTUIProximityEnrollTrainingViewController,
+                            VTUIProximityEnrollmentLanguageOptionsView,
+                            VTUIProximityEnrollmentSetupIntroView,
+                            VTUIProximityEnrollmentSuccessView,
+                            VTUIProximityTryAgainView, VTUIProximityView,
+                            VTUISigmoid, VTUISiriDataSharingOptInPresenter,
+                            VTUISiriDataSharingOptInViewController,
+                            VTUISpeechSynthesizer, VTUIStringsHelper, VTUIStyle,
+                            VTUITickMarkView, VTUITurnOnSiriImageView,
+                            VTUITurnOnSiriView, VTVideoView ]
+...

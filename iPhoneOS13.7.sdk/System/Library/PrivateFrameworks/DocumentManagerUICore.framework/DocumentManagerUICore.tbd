@@ -1,0 +1,52 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DocumentManagerUICore.framework/DocumentManagerUICore
+current-version:       171.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DOCBackgroundColorForTagColor,
+                            _DOCConstraintWithPriority,
+                            _DOCConstraintsToCenterWithSuperview,
+                            _DOCConstraintsToResizeViewsWithSuperview,
+                            _DOCConstraintsToResizeWithSuperview,
+                            _DOCConstraintsToResizeWithSuperviewMargins,
+                            _DOCConstraintsToResizeWithSuperviewSafeAreaInsets,
+                            _DOCDotViewColorForTagColor,
+                            _DOCNewThumbnailFittingImageView, _DOCNoMaxWidth,
+                            _DOCPrimaryColorForTagColor,
+                            _DOCShareInfoThumbnailForFPItem,
+                            _DOCShareInfoThumbnailSizeForSizeClass,
+                            _DOCSkipConstraint, _DOCTagViewCornerRadius,
+                            _DOCTagViewHorizontalInset, _DOCTagViewVerticalInset,
+                            _DocumentManagerUICoreVersionNumber,
+                            _DocumentManagerUICoreVersionString,
+                            _createICQBannerView,
+                            _shouldShowICQBannerViewForOffer ]
+    objc-classes:         [ DOCAddTagView, DOCAggdReporter,
+                            DOCBorderedFittingImageView, DOCByteCountFormatter,
+                            DOCCursorInteractionDelegate, DOCDateFormatter,
+                            DOCDeterminateProgressRingView,
+                            DOCFileProviderDomainMonitor, DOCFittingImageView,
+                            DOCGhostRingView, DOCIconPromise,
+                            DOCIconThumbnailRequest,
+                            DOCIndeterminateProgressRingView, DOCItemThumbnail,
+                            DOCItemThumbnailBatchEntry, DOCLargeTagView,
+                            DOCPlainFolderThumbnailRequest, DOCProgressView,
+                            DOCRegularItemThumbnailRequest, DOCSeparatorView,
+                            DOCShareHeaderView, DOCStackedThumbnailView,
+                            DOCStaticBadgedFolderThumbnailRequest,
+                            DOCTagCheckableDotView, DOCTagCheckmarkView,
+                            DOCTagColorPicker, DOCTagDotView,
+                            DOCTagEditorColorPickerCell, DOCTagEditorTagCell,
+                            DOCTagEditorTextFieldCell,
+                            DOCTagEditorViewController, DOCTagView,
+                            DOCTagsLineView, DOCThumbnailBatchingToken,
+                            DOCThumbnailCache, DOCThumbnailDescriptor,
+                            DOCThumbnailFittingImageView, DOCThumbnailFolderIcon,
+                            DOCThumbnailGenerator, DOCThumbnailKey,
+                            DOCThumbnailRequest, DOCVisualEffectLabel ]
+...

@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ControlCenterServices.framework/ControlCenterServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    allowable-clients:    [ ControlCenterServicesTests, ControlCenterSettings,
+                            ControlCenterUI, HearingAidUIServer, HomeKitDaemon,
+                            SpringBoard, "SpringBoard-Tests",
+                            TVRemoteConnectionService,
+                            com.apple.BarcodeSupport.Helper ]
+    symbols:              [ _CCSLogModuleSettings, _CCSLogRemoteService,
+                            _CCSModuleVisibilityPreferenceDescription,
+                            _CCSModuleVisibilityPreferenceFromNumber,
+                            _CCSRegisterControlCenterLogging,
+                            _CCSRemoteServiceName,
+                            _CCSRemoteServiceServerInterface,
+                            _CCSResolveModuleVisibility,
+                            _ControlCenterServicesVersionNumber,
+                            _ControlCenterServicesVersionString, _kVersionNumber ]
+    objc-classes:         [ CCSControlCenterDefaults, CCSControlCenterService,
+                            CCSModuleMetadata, CCSModuleRepository,
+                            CCSModuleSettingsProvider,
+                            CCSRemoteServiceConnection, CCSRemoteServiceProvider,
+                            CCSUsageMetrics ]
+    objc-ivars:           [ CCSControlCenterService._connection,
+                            CCSModuleMetadata._associatedBundleIdentifier,
+                            CCSModuleMetadata._associatedBundleMinimumVersion,
+                            CCSModuleMetadata._moduleBundleURL,
+                            CCSModuleMetadata._moduleIdentifier,
+                            CCSModuleMetadata._requiredDeviceCapabilities,
+                            CCSModuleMetadata._supportedDeviceFamilies,
+                            CCSModuleMetadata._visibilityPreference,
+                            CCSModuleRepository._allModuleMetadataByIdentifier,
+                            CCSModuleRepository._availableModuleIdentifiers,
+                            CCSModuleRepository._callOutQueue,
+                            CCSModuleRepository._directoryURLs,
+                            CCSModuleRepository._ignoreWhitelist,
+                            CCSModuleRepository._interestingBundleIdentifiers,
+                            CCSModuleRepository._internalDefaultsObserver,
+                            CCSModuleRepository._loadableModuleIdentifiers,
+                            CCSModuleRepository._mobileGestaltNotificationToken,
+                            CCSModuleRepository._observers,
+                            CCSModuleRepository._queue,
+                            CCSModuleRepository._whitelistedModuleIdentifiers,
+                            CCSModuleSettingsProvider._callOutQueue,
+                            CCSModuleSettingsProvider._configurationChangedSource,
+                            CCSModuleSettingsProvider._observers,
+                            CCSModuleSettingsProvider._orderedFixedModuleIdentifiers,
+                            CCSModuleSettingsProvider._orderedUserEnabledModuleIdentifiers,
+                            CCSModuleSettingsProvider._queue,
+                            CCSModuleSettingsProvider._userDisabledModuleIdentifiers,
+                            CCSRemoteServiceConnection._callOutQueue,
+                            CCSRemoteServiceConnection._connection,
+                            CCSRemoteServiceConnection._queue,
+                            CCSRemoteServiceProvider._listener,
+                            CCSRemoteServiceProvider._moduleRepository,
+                            CCSRemoteServiceProvider._settingsProvider ]
+...

@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SiriAnalyticsCurrentClockIdentifier,
+                            _SiriAnalyticsLogContextAssistant,
+                            _SiriAnalyticsLogContextStorage,
+                            _SiriAnalyticsLogContextStreaming,
+                            _SiriAnalyticsLogContextUtility,
+                            _SiriAnalyticsLogContextXPC,
+                            _SiriAnalyticsLoggingInit,
+                            _SiriAnalyticsLoggingSubsystem,
+                            _SiriAnalyticsVersionNumber,
+                            _SiriAnalyticsVersionString,
+                            _SiriAnalyticsXPCServiceInterface,
+                            _kAssistantSiriAnalyticsServiceName ]
+    objc-classes:         [ AssistantSiriAnalytics,
+                            AssistantSiriAnalyticsService,
+                            SiriAnalyticsFBFMessageStorageProvider,
+                            SiriAnalyticsMessageObserverHandle,
+                            SiriAnalyticsMessageObserverStream,
+                            SiriAnalyticsTimePeriodBuffer,
+                            SiriAnalyticsTimeStamp, SiriAnalyticsXPCConnection,
+                            SiriAnalyticsXPCMessageEnvelope,
+                            SiriAnalyticsXPCMessageStream,
+                            SiriAnalyticsXPCServiceListener ]
+    objc-ivars:           [ AssistantSiriAnalyticsService._postTransformStream,
+                            AssistantSiriAnalyticsService._queue,
+                            AssistantSiriAnalyticsService._siriAnalyticsListener,
+                            AssistantSiriAnalyticsService._siriAnalyticsObserverHandle,
+                            AssistantSiriAnalyticsService._storageBuffer,
+                            AssistantSiriAnalyticsService._storageProvider,
+                            SiriAnalyticsFBFMessageStorageProvider._applicationIdentifier,
+                            SiriAnalyticsMessageObserverHandle._messagesReceived,
+                            SiriAnalyticsMessageObserverHandle._willRelease,
+                            SiriAnalyticsMessageObserverStream._messageObservers,
+                            SiriAnalyticsMessageObserverStream._queue,
+                            SiriAnalyticsTimePeriodBuffer._bufferInterval,
+                            SiriAnalyticsTimePeriodBuffer._bufferTimer,
+                            SiriAnalyticsTimePeriodBuffer._bufferedMessages,
+                            SiriAnalyticsTimePeriodBuffer._leeway,
+                            SiriAnalyticsTimePeriodBuffer._onMessagesProduced,
+                            SiriAnalyticsTimePeriodBuffer._queue,
+                            SiriAnalyticsTimeStamp._clockIdentifier,
+                            SiriAnalyticsTimeStamp._nanoSecondsSinceBoot,
+                            SiriAnalyticsXPCConnection._connection,
+                            SiriAnalyticsXPCConnection._idleTimer,
+                            SiriAnalyticsXPCConnection._machServiceName,
+                            SiriAnalyticsXPCConnection._queue,
+                            SiriAnalyticsXPCMessageEnvelope._messageBody,
+                            SiriAnalyticsXPCMessageEnvelope._messageType,
+                            SiriAnalyticsXPCMessageEnvelope._timestamp,
+                            SiriAnalyticsXPCMessageStream._connection,
+                            SiriAnalyticsXPCMessageStream._queue,
+                            SiriAnalyticsXPCServiceListener._connections,
+                            SiriAnalyticsXPCServiceListener._currentClockIdentifier,
+                            SiriAnalyticsXPCServiceListener._listener,
+                            SiriAnalyticsXPCServiceListener._observerStream,
+                            SiriAnalyticsXPCServiceListener._queue ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SeymourMedia.framework/SeymourMedia
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SeymourMediaVersionNumber,
+                            _SeymourMediaVersionString ]
+    objc-classes:         [ SMMGeometry, SMMMediaLibrary,
+                            SMMMusicSubscriptionStatusController,
+                            _TtC12SeymourMedia16IntentDispatcher,
+                            _TtC12SeymourMedia23EndWorkoutIntentHandler,
+                            _TtC12SeymourMedia23StreamingKeyProvisioner,
+                            _TtC12SeymourMedia25PauseWorkoutIntentHandler,
+                            _TtC12SeymourMedia25StartWorkoutIntentHandler,
+                            _TtC12SeymourMedia26ResumeWorkoutIntentHandler ]
+...

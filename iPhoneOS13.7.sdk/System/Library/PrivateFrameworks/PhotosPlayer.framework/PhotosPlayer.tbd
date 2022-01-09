@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer
+current-version:       3662.0.110
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ISCircularEaseOut, _ISCubicEaseOut,
+                            _ISLivePhotoShouldRenderAtPlaybackTime,
+                            _ISQuadraticEaseOut, _ISQuarticEaseOut,
+                            _ISQuinticEaseOut, _ISSineEaseOut,
+                            _ISStringFromPlaybackState,
+                            _ISStringFromPlayerItemLoadingTarget,
+                            _ISVideoAnalyzerErrorDomain,
+                            _PhotosPlayerErrorDomain ]
+    objc-classes:         [ ISAVPlayer, ISAVPlayerLayer, ISAnimatedImage,
+                            ISAnimatedImagePlayer, ISAnimatedImageView, ISAsset,
+                            ISBasePlayer, ISBasePlayerUIView, ISEditSession,
+                            ISExportDestination, ISFrameCache,
+                            ISFrameProcessingRequest, ISLivePhotoPlaybackFilter,
+                            ISLivePhotoPlayer, ISLivePhotoUIView,
+                            ISLiveWallpaperPlayer, ISLiveWallpaperUIView,
+                            ISObservable, ISPlaybackSettings, ISPlayerContent,
+                            ISPlayerItem, ISPlayerItemChef, ISPlayerOutputContent,
+                            ISPlayerView, ISRootSettings,
+                            ISScrollViewVitalityController, ISSettings,
+                            ISTouchLivePhotoPlaybackFilter,
+                            ISTouchingGestureRecognizer,
+                            ISUIScrollViewVitalityController,
+                            ISUIVisibilityOffsetHelper, ISVideoAnalyzer,
+                            ISVideoPlayerUIView, ISVisibilityOffsetHelper,
+                            ISVitalitySettings, ISWrappedAVAudioSession,
+                            ISWrappedAVPlayer ]
+...

@@ -1,0 +1,57 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _WFLActionErrorDomain, _WFLErrorDomain,
+                            _WFLForceExecutionOnPhoneKey,
+                            _WFLHandleIntentActionIdentifier, _WFLIntentDataKey,
+                            _WFLLogContext, _WFLLogInitIfNeeded,
+                            _WFLOpenUserActivityActionIdentifier,
+                            _WFLUnderlyingIntentResponseKey,
+                            _WFLWorkflowActionIdentifierKey,
+                            _WFLWorkflowActionParametersKey,
+                            _WFLWorkflowActionsKey,
+                            _WFLWorkflowAssociatedAppBundleIdentifierKey,
+                            _WFLWorkflowDescriptionKey, _WFLWorkflowNameKey,
+                            _WorkflowKitVersionNumber, _WorkflowKitVersionString ]
+    objc-classes:         [ WFLAction, WFLActionImplementation,
+                            WFLHandleIntentAction,
+                            WFLHandleIntentActionImplementation,
+                            WFLOpenUserActivityAction,
+                            WFLOpenUserActivityActionImplementation, WFLWorkflow,
+                            WFLWorkflowController, WFLWorkflowSerialization ]
+    objc-ivars:           [ WFLAction._identifier, WFLAction._parameters,
+                            WFLActionImplementation._action,
+                            WFLActionImplementation._completionHandler,
+                            WFLActionImplementation._executionContext,
+                            WFLActionImplementation._input,
+                            WFLActionImplementation._originDeviceInformation,
+                            WFLActionImplementation._output,
+                            WFLActionImplementation._progress,
+                            WFLActionImplementation._userInterface,
+                            WFLHandleIntentAction._forceExecutionOnPhone,
+                            WFLHandleIntentAction._intent,
+                            WFLHandleIntentActionImplementation._connection,
+                            WFLOpenUserActivityAction._appBundleIdentifier,
+                            WFLOpenUserActivityAction._launchOrigin,
+                            WFLOpenUserActivityAction._userActivity,
+                            WFLOpenUserActivityActionImplementation._applicationWorkspace,
+                            WFLWorkflow._actions,
+                            WFLWorkflow._associatedAppBundleIdentifier,
+                            WFLWorkflow._name, WFLWorkflow._workflowDescription,
+                            WFLWorkflowController._currentActionImplementation,
+                            WFLWorkflowController._currentActionIndex,
+                            WFLWorkflowController._delegate,
+                            WFLWorkflowController._executionContext,
+                            WFLWorkflowController._originDeviceInformation,
+                            WFLWorkflowController._previousActionImplementation,
+                            WFLWorkflowController._progress,
+                            WFLWorkflowController._running,
+                            WFLWorkflowController._workflow ]
+...

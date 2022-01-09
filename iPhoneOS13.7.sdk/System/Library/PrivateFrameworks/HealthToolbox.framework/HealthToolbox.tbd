@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WDNotificationManagerBadgesDidUpdateNotificationName,
+                            _WDProfilePresentationContextApp,
+                            _WDProfilePresentationContextSettings,
+                            _WDProfilePresentationContextSettingsPrivacy,
+                            _WDStoreDataProviderArtistKey,
+                            _WDStoreDataProviderArtworkKey,
+                            _WDStoreDataProviderDisplayNameKey,
+                            _WDStoreDataProviderMobileAssetDataIsAvailableNotification,
+                            _WDStoreDataProviderMobileAssetDownloadErrorKey,
+                            _WDStoreDataProviderReceivedStoreDataNotification,
+                            _WDStoreDataProviderStoreDataKey,
+                            _WDStoreDataProviderStoreIdKey,
+                            _WDStoreDataProviderSubtitleKey,
+                            _WDStoreDataProviderTypeIdentifierKey,
+                            __WDCycleTrackingSummaryFavoritedUserInfoKey,
+                            _kWDFavoriteDisplayTypesControllerUpdatedRemote,
+                            _kWDFavoriteDisplayTypesControllerUserUpdateFavoritesKey ]
+    objc-classes:         [ HBXFitnessManager, HBXTypeSupport, HBXUnitSupport,
+                            HBXViewControllerFactory,
+                            WDAtrialFibrillationDetectionSetupView,
+                            WDAtrialFibrillationEventOverviewViewController,
+                            WDBuddyFlowUserInfoViewController,
+                            WDContactConsolidationController,
+                            WDDeviceSourcesListTableViewSection,
+                            WDDisplayTypeDescriptionTableViewCell,
+                            WDElectrocardiogramOverviewViewController,
+                            WDElectrocardiogramSetupView,
+                            WDFavoriteDisplayTypesController,
+                            WDHealthTableViewController, WDNotificationManager,
+                            WDProfile, WDProfileTableViewController,
+                            WDSourcesListTableViewSection,
+                            WDSourcesViewController, WDStoreDataProvider,
+                            WDTableViewController, WDTableViewSection,
+                            WDUserDefaults ]
+...

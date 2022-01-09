@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleCV3DMOVKit.framework/AppleCV3DMOVKit
+current-version:       2.83.1
+compatibility-version: 2.83.1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CVPixelBufferAttachmentIntrinsicsKey,
+                            _CreateJasperFrameFromRawCVPixelBuffer,
+                            _CreateJasperFrameFromRawCVPixelBuffer2,
+                            __Z16AddToJasperFramemPK7CGPointPKDv3_fPKfPKhS8_jfRN4cv3d3kit11sensor_data11JasperFrameE,
+                            _dummy, _kAVMetadataIdentifierCalibration,
+                            _kAVMetadataIdentifierMovieSummary,
+                            _kAVMetadataIdentifierRecordingEnvironment,
+                            _kCMDataIdentifierValue,
+                            _kCVACameraCalibrationIdentifierValue,
+                            _kCVADepthTOFIdentifierValue,
+                            _kCVAFeatureBufferIdentifierValue,
+                            _kCVAPRDeviceIdentifierValue,
+                            _kCVAUserEventIdentifierValue,
+                            _kCameraExposureTimeKey,
+                            _kCoreLocationIdentifierValue, _kExpectedFPS,
+                            _kExtraConfigs, _kIMUMotionIdentifierValue,
+                            _kJasperCalibData, _kJasperConfidenceThreshold,
+                            _kMOVSummaryBundleID, _kMOVSummaryBundleID_1_0_0,
+                            _kMOVSummaryDeviceName, _kMOVSummaryDeviceString,
+                            _kMOVSummaryDeviceString_1_0_0,
+                            _kMOVSummaryJasperExtrinsics,
+                            _kMOVSummaryMOVKitVersion, _kMOVSummaryProductType,
+                            _kMOVSummarySWtoWExtrinsics,
+                            _kMOVSummarySerialNumber, _kMOVSummaryVersion,
+                            _kMaxSupportedJasperPoints,
+                            _kRawALSIdentifierPrefixValue,
+                            _kRawAccelerometerIdentifierValue,
+                            _kRawCompassIdentifierValue,
+                            _kRawGyroscopeIdentifierValue, _kTrackAdded,
+                            _kTrackBitrate, _kTrackForceH264, _kTrackLossless,
+                            _kWrapperClassData ]
+    objc-classes:         [ CMData, CMDataContainer, CMEvent, CMFileInterface,
+                            CMMessage, CVACLLocation, CVACLMotionTypeDoubleVector3,
+                            CVACLMotionTypeDoubleVector4, CVACLMotionTypeVector3,
+                            CVACLMotionTypeVector4, CVACMALSData,
+                            CVACMAccelerometerData, CVACMCompassData,
+                            CVACMDeviceMotionData, CVACMGyroData,
+                            CVACMMotionTypeDeviceMotionData, CVACalibration,
+                            CVACameraCalibration, CVACameraCalibrationData,
+                            CVADepthTOF, CVAFeatureBuffer, CVAIMUCalibration,
+                            CVAPRAngleMeasurement, CVAPRDevice,
+                            CVAPRRangeMeasurement, CVAUserEvent,
+                            JasperDepthFrameProcessor, MOVReaderInterface,
+                            MOVWriterInterface, MetadataWrapper,
+                            StreamEncodingObject, TimedBuffer ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ TUIKBGraphSerialization, TUIKeyboardLayoutFactory ]
+    objc-ivars:           [ TUIKBGraphSerialization._deserializationCache,
+                            TUIKBGraphSerialization._disableOffsets,
+                            TUIKBGraphSerialization._graphData,
+                            TUIKBGraphSerialization._keyboardOffsets,
+                            TUIKBGraphSerialization._keyboardOffsetsData,
+                            TUIKBGraphSerialization._maxEdgeWidths,
+                            TUIKBGraphSerialization._minEdgeWidths,
+                            TUIKBGraphSerialization._referenceCount,
+                            TUIKBGraphSerialization._serializedData,
+                            TUIKBGraphSerialization._serializedOffsets,
+                            TUIKeyboardLayoutFactory._decoder,
+                            TUIKeyboardLayoutFactory._internalCache,
+                            TUIKeyboardLayoutFactory._layoutsLibraryHandle ]
+...

@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PUIDisplayNameForApp, _PUIDisplayNameForWatchApp,
+                            _PUIGetActivePairedDevice,
+                            _PUIWatchBundleIDForBundleID,
+                            _PUI_BundleForPrivacySettingsFramework,
+                            _PUI_LocalizedStringForAdSupport,
+                            _PUI_LocalizedStringForAlmanac,
+                            _PUI_LocalizedStringForLocationServices,
+                            _PUI_LocalizedStringForLocationServicesPrivacy,
+                            _PUI_LocalizedStringForPrivacy,
+                            _PUI_LocalizedStringForRestrictions,
+                            __PUILoggingFacility ]
+    objc-classes:         [ PUIAllowLocationRestrictionsController,
+                            PUIAllowTCCRestrictionsController,
+                            PUILocationServicesListController,
+                            PUILocationSystemServicesListController,
+                            PUIPrivacyController, PUITCCAccessController ]
+    objc-ivars:           [ PUIAllowLocationRestrictionsController._allowedGroup,
+                            PUIAllowTCCRestrictionsController._allowedGroup,
+                            PUILocationServicesListController._accountStore,
+                            PUILocationServicesListController._coalesceAppKeys,
+                            PUILocationServicesListController._coalescedHomeKitSystemServices,
+                            PUILocationServicesListController._coalescedLocationBasedAlertsSystemServices,
+                            PUILocationServicesListController._coalescedRoutingAndTrafficSystemServices,
+                            PUILocationServicesListController._coalescedWirelessSystemServices,
+                            PUILocationServicesListController._deferredRefreshDueToConfirm,
+                            PUILocationServicesListController._ignoredLocationEntities,
+                            PUILocationServicesListController._locationEntitiesDetails,
+                            PUILocationServicesListController._locationNotificationsEnabled,
+                            PUILocationServicesListController._locationSharingDevice,
+                            PUILocationServicesListController._locationSharingEnabled,
+                            PUILocationServicesListController._locationSharingOperationQueue,
+                            PUILocationServicesListController._locationSharingSession,
+                            PUILocationServicesListController._primaryAccount,
+                            PUILocationServicesListController._twentyFourHoursAgo ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Tips.framework/Tips
+current-version:       431
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _TPSTipsManagerCollectionIdentifierAppleWatch,
+                            _TPSTipsManagerCollectionIdentifierHomePod,
+                            _TipsVersionNumber, _TipsVersionString ]
+    objc-classes:         [ TPSTipsManager, TPSWelcomeInformation ]
+    objc-ivars:           [ TPSTipsManager._collectionImageDownloadHandlerMap,
+                            TPSTipsManager._collectionImageDownloadTasksMap,
+                            TPSTipsManager._collectionImageFetchTransaction,
+                            TPSTipsManager._frameworkBundle,
+                            TPSTipsManager._xpcConnection,
+                            TPSWelcomeInformation._collectionID,
+                            TPSWelcomeInformation._message,
+                            TPSWelcomeInformation._title ]
+...

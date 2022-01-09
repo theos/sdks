@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/GPURawCounter.framework/GPURawCounter
+current-version:       11.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CTRCopyAllCounterSourceGroup,
+                            _CTRReleaseAllCounterSourceGroup,
+                            _GPURawCounterVersionNumber,
+                            _GPURawCounterVersionString ]
+    objc-classes:         [ GPURawCounterSelect, _GPURawCounter,
+                            _GPURawCounterSource, _GPURawCounterSourceGroup ]
+    objc-ivars:           [ _GPURawCounter._counterValueType,
+                            _GPURawCounter._description, _GPURawCounter._name,
+                            _GPURawCounterSource._name,
+                            _GPURawCounterSource._sourceGroup,
+                            _GPURawCounterSourceGroup._acceleratorPort,
+                            _GPURawCounterSourceGroup._deviceRef,
+                            _GPURawCounterSourceGroup._name,
+                            _GPURawCounterSourceGroup._samplingPeriodInMicroseconds,
+                            _GPURawCounterSourceGroup._samplingTriggers,
+                            _GPURawCounterSourceGroup._sourceList,
+                            _GPURawCounterSourceGroup._vendorOptions ]
+...

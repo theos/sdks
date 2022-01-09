@@ -1,0 +1,44 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DocumentManagerExecutables.framework/DocumentManagerExecutables
+current-version:       200.5.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DOCSpotlightEnumeratedItemIdentifierActivities,
+                            _DOCSpotlightEnumeratedItemIdentifierFavoriteFolders,
+                            _DOCSpotlightEnumeratedItemIdentifierRecentDocuments,
+                            _DOCSpotlightEnumeratedItemIdentifierSearch,
+                            _DOCSpotlightEnumeratedItemIdentifierSharedItems,
+                            _DOCSpotlightEnumeratedItemIdentifierTaggedItems,
+                            _DOCSpotlightEnumeratedItemIdentifierTrashedItems,
+                            _DocumentManagerExecutablesVersionNumber,
+                            _DocumentManagerExecutablesVersionString ]
+    objc-classes:         [ DOCSmartFolderManager_OBJC,
+                            _TtC26DocumentManagerExecutables12DOCOperation,
+                            _TtC26DocumentManagerExecutables13DOCTagManager,
+                            _TtC26DocumentManagerExecutables15DOCItemObserver,
+                            _TtC26DocumentManagerExecutables17DOCBlockOperation,
+                            _TtC26DocumentManagerExecutables17DOCChainOperation,
+                            _TtC26DocumentManagerExecutables18DOCOperationBuffer,
+                            _TtC26DocumentManagerExecutables19DOCAnalyticsManager,
+                            _TtC26DocumentManagerExecutables19DOCPostLaunchBuffer,
+                            _TtC26DocumentManagerExecutables20DOCActionUIOperation,
+                            _TtC26DocumentManagerExecutables21DOCChainableOperation,
+                            _TtC26DocumentManagerExecutables21DOCSmartFolderManager,
+                            _TtC26DocumentManagerExecutables23DOCQuickLookInfoPreview,
+                            _TtC26DocumentManagerExecutables24DOCEmptyContentsInfoView,
+                            _TtC26DocumentManagerExecutables24DOCTypeToFocusController,
+                            _TtC26DocumentManagerExecutables25DOCItemObserverSubscriber,
+                            _TtC26DocumentManagerExecutables25DOCUTIDescriptorCollector,
+                            _TtC26DocumentManagerExecutables25DOCUserActivityController,
+                            _TtC26DocumentManagerExecutables26DOCButtonGestureRecognizer,
+                            _TtC26DocumentManagerExecutables29DOCDeletePreflightUIOperation,
+                            _TtC26DocumentManagerExecutables29DOCSafeCenteringContainerView,
+                            _TtC26DocumentManagerExecutables33DOCPostSearchInitializationBuffer,
+                            _TtC26DocumentManagerExecutables39DOCCreateNewFolderPostflightUIOperation ]
+    objc-ivars:           [ DOCSmartFolderManager_OBJC._underlyingSmartFolderManager ]
+...

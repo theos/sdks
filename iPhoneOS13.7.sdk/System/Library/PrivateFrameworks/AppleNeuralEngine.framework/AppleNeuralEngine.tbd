@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppleNeuralEngineVersionNumber,
+                            _AppleNeuralEngineVersionString,
+                            __ANEDaemonInterface, __ANEDaemonInterfacePrivate,
+                            _kANEFCompilerOptionsFilenameKey,
+                            _kANEFIntermediateBufferHandle,
+                            _kANEFModelANECIRValue, _kANEFModelCoreMLValue,
+                            _kANEFModelDescriptionKey,
+                            _kANEFModelInputSymbolIndexArrayKey,
+                            _kANEFModelOutputSymbolIndexArrayKey,
+                            _kANEFModelPreCompiledValue,
+                            _kANEFModelProcedureIDKey,
+                            _kANEFModelProceduresArrayKey, _kANEFModelTypeKey ]
+    objc-classes:         [ _ANEClient, _ANECloneHelper, _ANEDaemonConnection,
+                            _ANEDataReporter, _ANEDeviceController, _ANEDeviceInfo,
+                            _ANEErrors, _ANEHashEncoding, _ANEIOSurfaceObject,
+                            _ANELog, _ANEModel, _ANEProgramForEvaluation,
+                            _ANEQoSMapper, _ANERequest, _ANEStrings ]
+...

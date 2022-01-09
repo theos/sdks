@@ -1,0 +1,73 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ProximityControl.framework/ProximityControl
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PCActivityDeviceBadgeImageSize,
+                            _PCActivityDeviceBadgeInset,
+                            _PCActivityDeviceImageSize,
+                            _PCFrameworkBundleIdentifier, _PCXPCServiceName,
+                            _ProximityControlVersionNumber,
+                            _ProximityControlVersionString,
+                            _kProximityControlAlarmActivityType,
+                            _kProximityControlCallActivityType,
+                            _kProximityControlMediaActivityType,
+                            _kProximityControlTimerActivityType ]
+    objc-classes:         [ PCActivityUtility, PCAlarmActivity, PCCLIClient,
+                            PCDisambiguationContext, PCDisplayContext,
+                            PCHomeKitIdentifier, PCLocalizedString,
+                            PCMediaActivity, PCMediaRemoteDisplayContext,
+                            PCMediaRemoteIdentifier, PCProgressEvent,
+                            PCProximityEvent, PCRemoteActivityClient,
+                            PCTelephonyActivity, PCTimerActivity ]
+    objc-ivars:           [ PCCLIClient._dispatchQueue,
+                            PCCLIClient._interruptionHandler,
+                            PCCLIClient._invalidationHandler,
+                            PCCLIClient._xpcCnx,
+                            PCDisambiguationContext._activity,
+                            PCDisambiguationContext._activityData,
+                            PCDisambiguationContext._deviceIdentifier,
+                            PCDisambiguationContext._identifier,
+                            PCDisambiguationContext._interactionDirection,
+                            PCDisplayContext._interactionBehavior,
+                            PCDisplayContext._interactionDirection,
+                            PCDisplayContext._legacyAttachmentURL,
+                            PCDisplayContext._legacyBodyText,
+                            PCDisplayContext._localizedPrimaryAltText,
+                            PCDisplayContext._localizedSecondaryAltText,
+                            PCHomeKitIdentifier._accessoryID,
+                            PCHomeKitIdentifier._assetType,
+                            PCHomeKitIdentifier._deviceName,
+                            PCHomeKitIdentifier._homeID,
+                            PCMediaRemoteDisplayContext._localDeviceState,
+                            PCMediaRemoteDisplayContext._mediaRemoteID,
+                            PCMediaRemoteDisplayContext._proxDeviceState,
+                            PCMediaRemoteDisplayContext._selectedDeviceState,
+                            PCMediaRemoteIdentifier._assetType,
+                            PCMediaRemoteIdentifier._deviceName,
+                            PCMediaRemoteIdentifier._mediaRemoteID,
+                            PCProgressEvent._error, PCProgressEvent._eventType,
+                            PCProgressEvent._mediaRemoteID,
+                            PCProximityEvent._error, PCProximityEvent._eventType,
+                            PCProximityEvent._expectsDisplayContext,
+                            PCProximityEvent._info,
+                            PCProximityEvent._mediaRemoteID,
+                            PCRemoteActivityClient._activityDataUpdateHandler,
+                            PCRemoteActivityClient._dispatchQueue,
+                            PCRemoteActivityClient._homeKitUpdateHandler,
+                            PCRemoteActivityClient._interruptionHandler,
+                            PCRemoteActivityClient._invalidationHandler,
+                            PCRemoteActivityClient._mediaRemoteUpdateHandler,
+                            PCRemoteActivityClient._ucat,
+                            PCRemoteActivityClient._uiWillDismissHandler,
+                            PCRemoteActivityClient._updateHandler,
+                            PCRemoteActivityClient._xpcCnx,
+                            PCTelephonyActivity._callImage,
+                            PCTelephonyActivity._hostedOnCurrentDevice,
+                            PCTelephonyActivity._hostedOnCurrentDeviceIsValid ]
+...

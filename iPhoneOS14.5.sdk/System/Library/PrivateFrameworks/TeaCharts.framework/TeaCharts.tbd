@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TeaCharts.framework/TeaCharts
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ "NewsInternalExtras,NewsPersonalization,NewsServices,NewsServicesInternal,NewsTag,NewsToday,NewsToday2,NewsTodayIntents,NewsWidgetIntents,News,NVCDemo,ArticleNotificationExtension,ArticleNotificationServiceExtension,MarketingNotificationExtension,OpenInNews,Feldspar Tests,NewsInternalSettings,NewsSettings,NewsUI,newsd,com.apple.news,NewsAnalyticsUpload,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsDES,NewsDESTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,Stocks,StocksAnalytics,StocksAnalyticsTests,StocksCore,StocksCoreTests,StocksDetailIntents,StocksTests,StocksToday,StocksUI,StocksUITests,StocksWidget,WeatherCharts,WeatherDemo,TeaCharts,TeaChartsTests,TeaDB,TeaDBTests,TeaDemo,TeaFoundationTests,TeaSettings,TeaSettingsTests,TeaSnappy,TeaSnappyTests,TeaTemplate,TeaTemplateTests,TeaUI,TeaUITests" ]
+    symbols:              [ _TeaChartsVersionNumber, _TeaChartsVersionString ]
+    objc-classes:         [ TCAccessibilityConstants, TCAssembly, TCChartsAssembly,
+                            TCColumnChartAssembly, TCGridAssembly,
+                            TCLineChartAssembly, TCSparklineAssembly,
+                            _TtC9TeaCharts13LineChartView,
+                            _TtC9TeaCharts13SparklineView,
+                            _TtC9TeaCharts14LineSeriesView,
+                            _TtC9TeaCharts15ColumnChartView,
+                            _TtC9TeaCharts24TapDragGestureRecognizer,
+                            _TtC9TeaCharts30LineSeriesAccessibilityElement,
+                            _TtC9TeaCharts8GridView, _TtC9TeaCharts8LineView ]
+...

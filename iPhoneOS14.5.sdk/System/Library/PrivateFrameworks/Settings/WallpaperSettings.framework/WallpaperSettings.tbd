@@ -1,0 +1,75 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Settings/WallpaperSettings.framework/WallpaperSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _WSLogForCategory ]
+    objc-classes:         [ LegacyWallpaperPreviewNavigationController,
+                            PUPhotosPanoramaHeaderView,
+                            WSBundleCollectionOptionView,
+                            WSBundleCollectionsTableViewCell,
+                            WallpaperAlbumListTableViewController,
+                            WallpaperAlbumListTableViewControllerPadSpec,
+                            WallpaperAlbumListTableViewControllerPhoneSpec,
+                            WallpaperAlbumListTableViewControllerSpec,
+                            WallpaperAlbumViewController,
+                            WallpaperAlbumViewControllerPadSpec,
+                            WallpaperAlbumViewControllerPhoneSpec,
+                            WallpaperAlbumViewControllerSpec,
+                            WallpaperGridViewController,
+                            WallpaperMagicTableViewCellPadSpec,
+                            WallpaperMagicTableViewCellPhoneSpec,
+                            WallpaperMagicTableViewCellSpec,
+                            WallpaperPanoramaViewController,
+                            WallpaperPanoramaViewControllerPadSpec,
+                            WallpaperPanoramaViewControllerPhoneSpec,
+                            WallpaperPanoramaViewControllerSpec,
+                            WallpaperPhotoCell,
+                            _TtC17WallpaperSettings23WSViewControllerFactory,
+                            _TtC17WallpaperSettings24WSTopLevelViewController,
+                            _TtC17WallpaperSettings30WSWallpaperSettingsCoordinator ]
+    objc-ivars:           [ PUPhotosPanoramaHeaderView._titleLabel,
+                            WSBundleCollectionOptionView.__button,
+                            WSBundleCollectionOptionView.__buttonHeightConstraint,
+                            WSBundleCollectionOptionView.__buttonWidthConstraint,
+                            WSBundleCollectionOptionView.__label,
+                            WSBundleCollectionOptionView.__stackView,
+                            WSBundleCollectionOptionView._bundleCollection,
+                            WSBundleCollectionOptionView._canonicalButtonSize,
+                            WSBundleCollectionOptionView._delegate,
+                            WSBundleCollectionsTableViewCell.__optionViews,
+                            WSBundleCollectionsTableViewCell.__stackView,
+                            WSBundleCollectionsTableViewCell._canonicalButtonSize,
+                            WSBundleCollectionsTableViewCell._delegate,
+                            WallpaperAlbumListTableViewController._canonicalButtonSize,
+                            WallpaperAlbumListTableViewController._layoutReferenceWidth,
+                            WallpaperAlbumListTableViewController._parentController,
+                            WallpaperAlbumListTableViewController._rootController,
+                            WallpaperAlbumListTableViewController._specifier,
+                            WallpaperAlbumListTableViewController._wallpaperAlbumListTableViewSpec,
+                            WallpaperAlbumListTableViewController._wallpaperBundleImporter,
+                            WallpaperAlbumViewController._downloadHelper,
+                            WallpaperAlbumViewController._parentController,
+                            WallpaperAlbumViewController._rootController,
+                            WallpaperAlbumViewController._specifier,
+                            WallpaperAlbumViewController._wallpaperAlbumSpec,
+                            WallpaperAlbumViewControllerSpec._gridSpec,
+                            WallpaperGridViewController.__bundleCollection,
+                            WallpaperGridViewController._thumbnailCache,
+                            WallpaperPanoramaViewController.__optionsBeingPreviewed,
+                            WallpaperPanoramaViewController.__previewController,
+                            WallpaperPanoramaViewController.__variantBeingPreviewed,
+                            WallpaperPanoramaViewController.__wallpaperPanoramaSpec,
+                            WallpaperPanoramaViewController.__wallpaperVariants,
+                            WallpaperPanoramaViewController._mineOnly,
+                            WallpaperPhotoCell._appearanceAware,
+                            WallpaperPhotoCell._badgeView,
+                            WallpaperPhotoCell._highlightOverlayView,
+                            WallpaperPhotoCell._image,
+                            WallpaperPhotoCell._imageView ]
+...

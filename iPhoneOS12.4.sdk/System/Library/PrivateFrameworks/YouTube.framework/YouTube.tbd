@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/YouTube.framework/YouTube
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _XMLHTTPRequestAuthenticationFailureErrorCode,
+                            _XMLHTTPRequestErrorDomain,
+                            _XMLHTTPRequestLoadingStatusDidChangeNotification,
+                            _XMLHTTPRequestServiceUnavailableErrorCode,
+                            _XMLHTTPRequestUnknownErrorCode,
+                            _YTAcccountAuthenticatorErrorURLKey,
+                            _YTAccountAuthenticationErrorBadCredentials,
+                            _YTAccountAuthenticationErrorUnauthorized,
+                            _YTAccountAuthenticationErrorUserCancelled,
+                            _YTAccountAuthenticatorDidAuthenticateNotification,
+                            _YTAccountAuthenticatorDidFailToAuthenticateNotification,
+                            _YTAccountAuthenticatorErrorDomain,
+                            _YTAuthenticatorDidAuthenticateRequestNotification,
+                            _YTAuthenticatorDidFailToAuthenticateRequestNotification,
+                            _YouTubeAcceptLanguage, _YouTubeAccountKey,
+                            _YouTubeInitWebServiceConfig,
+                            _YouTubeKeychainServiceKey, _YouTubePlatformName,
+                            _YouTubeUserAgent, _categoryIDKey, _categoryLabelKey,
+                            _clientID, _getAttributeWithName,
+                            _kRUIYTAccountRefreshTokenKey,
+                            _kRUIYTAccountTokenErrorKey, _kRUIYTAccountTokenKey,
+                            _kRUIYTUsernameKey, _kRUIYTYouTubeNameKey,
+                            _realServiceHostname, _serviceHostname ]
+    objc-classes:         [ XMLSAXHTTPRequest, YTAccountAuthenticator,
+                            YTAuthenticator, YTAuthenticatorDeferredRequest,
+                            YTCategoriesRequest, YTMutableURLRequest,
+                            YTWebServiceConfig, YTXMLHTTPRequest ]
+    objc-ivars:           [ XMLSAXHTTPRequest._connection,
+                            XMLSAXHTTPRequest._invalidResponse,
+                            XMLSAXHTTPRequest._rawData,
+                            XMLSAXHTTPRequest._request,
+                            XMLSAXHTTPRequest._saxHandler,
+                            YTAccountAuthenticator._account,
+                            YTAccountAuthenticator._accountRefreshToken,
+                            YTAccountAuthenticator._accountToken,
+                            YTAccountAuthenticator._accountYouTubeName,
+                            YTAuthenticator._accountAuthState,
+                            YTAuthenticator._deferredRequests,
+                            YTAuthenticator._delegate,
+                            YTAuthenticatorDeferredRequest._accountAuthRequired,
+                            YTAuthenticatorDeferredRequest._request,
+                            YTCategoriesRequest._categories,
+                            YTCategoriesRequest._delegate,
+                            YTCategoriesRequest._responseIndicatesAuthenticationFailure,
+                            YTXMLHTTPRequest._deferredRequest,
+                            YTXMLHTTPRequest._needsAccountAuth,
+                            YTXMLHTTPRequest._needsHostHeader ]
+...

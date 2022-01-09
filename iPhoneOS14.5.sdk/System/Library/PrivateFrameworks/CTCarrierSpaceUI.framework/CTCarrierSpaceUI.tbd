@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CTCarrierSpaceUI.framework/CTCarrierSpaceUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ CTCarrierSpaceUIPlanPurchaseWebViewController,
+                            LoadingIndicatorViewController ]
+    objc-ivars:           [ CTCarrierSpaceUIPlanPurchaseWebViewController._contentView,
+                            CTCarrierSpaceUIPlanPurchaseWebViewController._delegate,
+                            CTCarrierSpaceUIPlanPurchaseWebViewController._loadingViewController,
+                            CTCarrierSpaceUIPlanPurchaseWebViewController._webView,
+                            LoadingIndicatorViewController._messageLabel,
+                            LoadingIndicatorViewController._messageText,
+                            LoadingIndicatorViewController._spinnerView,
+                            LoadingIndicatorViewController._titleLabel,
+                            LoadingIndicatorViewController._titleText ]
+...

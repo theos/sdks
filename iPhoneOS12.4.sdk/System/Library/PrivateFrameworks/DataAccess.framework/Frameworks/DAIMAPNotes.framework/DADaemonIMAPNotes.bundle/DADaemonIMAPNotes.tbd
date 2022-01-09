@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAIMAPNotes.framework/DADaemonIMAPNotes.bundle/DADaemonIMAPNotes
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ DAIMAPNotesAgent, DAIMAPNotesDaemonAccount,
+                            DAIMAPNotesFolder,
+                            DAIMAPNotesFolderListConsumerQueueWrapper,
+                            DAIMAPNotesFolderSyncRequest, DAIMAPNotesUtils,
+                            IMAPNotesLibrary, IMAPNotesOutgoingMessage ]
+    objc-ivars:           [ DAIMAPNotesAgent._accountHasShutDown,
+                            DAIMAPNotesAgent._currentlySyncingFolderIds,
+                            DAIMAPNotesAgent._daFoldersByPushNotificationName,
+                            DAIMAPNotesAgent._folderItemSyncRequestLock,
+                            DAIMAPNotesAgent._fullyShutDownCallback,
+                            DAIMAPNotesAgent._isShuttingDown,
+                            DAIMAPNotesAgent._lastFolderSetRegisteredForPush,
+                            DAIMAPNotesAgent._outstandingFolderRequests,
+                            DAIMAPNotesAgent._outstandingInvocationCount,
+                            DAIMAPNotesAgent._pcManager,
+                            DAIMAPNotesDaemonAccount._attachmentManager,
+                            DAIMAPNotesDaemonAccount._daFoldersByFolderId,
+                            DAIMAPNotesDaemonAccount._fullyShutDownCallback,
+                            DAIMAPNotesDaemonAccount._imapMailAccount,
+                            DAIMAPNotesDaemonAccount._isShuttingDown,
+                            DAIMAPNotesDaemonAccount._isSpinning,
+                            DAIMAPNotesDaemonAccount._notesNeedingBodyDownload,
+                            DAIMAPNotesDaemonAccount._outstandingInvocationCount,
+                            DAIMAPNotesFolder._mailboxUid,
+                            DAIMAPNotesFolderListConsumerQueueWrapper._consumer,
+                            DAIMAPNotesFolderListConsumerQueueWrapper._queue,
+                            DAIMAPNotesFolderSyncRequest._noteContext,
+                            IMAPNotesLibrary._account,
+                            IMAPNotesLibrary._noteContext,
+                            IMAPNotesLibrary._notesAccount,
+                            IMAPNotesOutgoingMessage._localIntegerId ]
+...

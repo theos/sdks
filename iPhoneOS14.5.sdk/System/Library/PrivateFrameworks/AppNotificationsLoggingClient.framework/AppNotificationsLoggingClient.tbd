@@ -1,0 +1,33 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppNotificationsLoggingClient.framework/AppNotificationsLoggingClient
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ATXNEventTypeFromString, _ATXNEventTypeToString,
+                            _ATXNRTOutcomeToSettingResponse,
+                            _ATXNSettingResponseToNEvent,
+                            _ATXNSettingResponseToString,
+                            _ATXSuggestionTypeToString,
+                            _AppNotificationsLoggingClientVersionNumber,
+                            _AppNotificationsLoggingClientVersionString ]
+    objc-classes:         [ ATXNotificationsAggregateLogger,
+                            ATXNotificationsInterface,
+                            ATXNotificationsLoggingClient ]
+    objc-ivars:           [ ATXNotificationsAggregateLogger._rttFromTracker,
+                            ATXNotificationsAggregateLogger._rttSelectionTracker,
+                            ATXNotificationsInterface._feed,
+                            ATXNotificationsInterface._message,
+                            ATXNotificationsInterface._numSuppActions,
+                            ATXNotificationsInterface._publicationDate,
+                            ATXNotificationsInterface._sectionID,
+                            ATXNotificationsInterface._subtitle,
+                            ATXNotificationsInterface._title,
+                            ATXNotificationsInterface._topic,
+                            ATXNotificationsLoggingClient._logger,
+                            ATXNotificationsLoggingClient._xpcConnection ]
+...

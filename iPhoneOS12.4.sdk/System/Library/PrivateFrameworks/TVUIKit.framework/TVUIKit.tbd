@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVUIKit.framework/TVUIKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ _TVCarouselCollectionView,
+                            _TVCarouselCollectionViewLayout, _TVCarouselView ]
+    objc-ivars:           [ _TVCarouselCollectionViewLayout._layoutAttributesByIndexPath,
+                            _TVCarouselView._autoScrollTimer,
+                            _TVCarouselView._autoscrollInterval,
+                            _TVCarouselView._carouselViewFlags,
+                            _TVCarouselView._collectionToDatasourceIndexMap,
+                            _TVCarouselView._collectionView,
+                            _TVCarouselView._dataSource,
+                            _TVCarouselView._delegate,
+                            _TVCarouselView._displayLink,
+                            _TVCarouselView._firstFocusChangeInInterval,
+                            _TVCarouselView._focusDirection,
+                            _TVCarouselView._focusGuide,
+                            _TVCarouselView._focusThrottleTimeInterval,
+                            _TVCarouselView._focusedIndexPath,
+                            _TVCarouselView._headerView,
+                            _TVCarouselView._indexToDeque,
+                            _TVCarouselView._interitemSpacing,
+                            _TVCarouselView._itemSize,
+                            _TVCarouselView._layoutUpdateInProgress,
+                            _TVCarouselView._numFocusChangesInInterval,
+                            _TVCarouselView._numberOfRealItemsForDataSource,
+                            _TVCarouselView._offsetChangePerSecond,
+                            _TVCarouselView._originalSelectionDuration,
+                            _TVCarouselView._originalUnselectionDuration,
+                            _TVCarouselView._previousCollectionToDatasourceIndexMap,
+                            _TVCarouselView._previousDisplayLinkTimestamp,
+                            _TVCarouselView._scrollMode,
+                            _TVCarouselView._showcaseFactor,
+                            _TVCarouselView._targetContentOffset,
+                            _TVCarouselView._unitScrollDuration ]
+...

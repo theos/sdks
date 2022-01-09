@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CWFApple80211ErrorDomain, _CWFBootArgs,
+                            _CWFCorrectEthernetAddressString,
+                            _CWFEthernetAddressDataFromString,
+                            _CWFEthernetAddressStringFromData,
+                            _CWFEventAutoJoinStatusKey, _CWFEventJoinStatusKey,
+                            _CWFEventLinkChangeStatusKey,
+                            _CWFEventLinkQualityMetricKey,
+                            _CWFEventRoamStatusKey,
+                            _CWFHexadecimalStringFromData,
+                            _CWFInternalEventAutoJoinResultKey,
+                            _CWFInternalEventAutoJoinStateKey,
+                            _CWFInternalEventAutoJoinTriggerKey,
+                            _CWFInternalEventErrorKey,
+                            _CWFInternalEventIsAutoJoinKey,
+                            _CWFInternalEventScanResultKey, _CWFLog,
+                            _CWFMachineSerialNumber, _CWFManagerErrorDomain,
+                            _CWFNetworkConfigurationTimeout, _CWFSecItemQueryPSK,
+                            _CWFSecItemQueryPassword, _CWFSecItemSetPassword,
+                            _CWFXPCANQPParamsKey,
+                            _CWFXPCAWDLPeerAssistedDiscoveryParamsKey,
+                            _CWFXPCAWDLPeerTrafficRegistrationKey,
+                            _CWFXPCActivityKey, _CWFXPCAssocParamsKey,
+                            _CWFXPCChannelKey, _CWFXPCCountryCodeKey,
+                            _CWFXPCDisassocReasonKey, _CWFXPCEventIDKey,
+                            _CWFXPCNetworkProfileKey,
+                            _CWFXPCNetworkProfilePropertiesKey, _CWFXPCPowerKey,
+                            _CWFXPCRangeableKey, _CWFXPCRangingPeerListKey,
+                            _CWFXPCRangingTimeoutKey, _CWFXPCRemoveKey,
+                            _CWFXPCRemoveReasonKey, _CWFXPCResultKey,
+                            _CWFXPCScanParamsKey, _CWFXPCScanResultKey,
+                            _CWFXPCThermalIndexKey ]
+    objc-classes:         [ CWFANQPParameters,
+                            CWFAWDLPeerAssistedDiscoveryParameters,
+                            CWFAWDLPeerContext, CWFAWDLPeerTrafficRegistration,
+                            CWFActivity, CWFAssocParameters, CWFAutoJoinStatus,
+                            CWFChannel, CWFClient, CWFEAPCredentials, CWFEvent,
+                            CWFEventID, CWFInterface, CWFJoinStatus,
+                            CWFLinkChangeStatus, CWFLinkQualityMetric,
+                            CWFNetworkProfile, CWFRangingMeasurement,
+                            CWFRangingPeer, CWFRangingResult, CWFRoamStatus,
+                            CWFScanParameters, CWFScanResult, CWFXPCConnection,
+                            CWFXPCEvent, CWFXPCManager, CWFXPCParameters,
+                            CWFXPCRequest ]
+...

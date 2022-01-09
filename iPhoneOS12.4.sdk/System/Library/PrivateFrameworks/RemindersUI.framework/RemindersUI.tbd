@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemindersUI.framework/RemindersUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _addRightPaddingToImage,
+                            _defaultPriorityForPriorityLevel,
+                            _priorityLevelForPriority,
+                            _priorityLevelForReminderInList,
+                            _uncoloredPriorityImageForLevelInBundle ]
+    objc-classes:         [ RMUIDetailEditorViewController, RMUIImageUtilities,
+                            RMUIUpNextCell, RMUIUpNextLabel,
+                            RMUIUpNextRowSeparator, RemindersColor ]
+    objc-ivars:           [ RMUIUpNextCell._circleImageView,
+                            RMUIUpNextCell._contentView,
+                            RMUIUpNextCell._locationLabel,
+                            RMUIUpNextCell._primaryVibrantView,
+                            RMUIUpNextCell._rowSeparator,
+                            RMUIUpNextCell._secondaryVibrantView,
+                            RMUIUpNextCell._tertiaryVibrantView,
+                            RMUIUpNextCell._timeLabel,
+                            RMUIUpNextCell._titleLabel ]
+...

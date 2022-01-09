@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NLFoundInAppsPlugin.framework/NLFoundInAppsPlugin
+current-version:       210.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ NLFIAPluginDelegate, NLFoundInAppsPlugin ]
+    objc-ivars:           [ NLFIAPluginDelegate._recordStore,
+                            NLFoundInAppsPlugin._FIAPBundle,
+                            NLFoundInAppsPlugin._FIAPResult,
+                            NLFoundInAppsPlugin._delegates ]
+...

@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking
+current-version:       131
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ DeviceManagementTests, PowerlogHelperdOperators,
+                            PowerlogLiteOperators, RemoteManagementTests,
+                            SafariShared, ScreenTime, ScreenTimeAgent,
+                            ScreenTimeSettingsUI, ScreenTimeTests, ScreenTimeUI,
+                            ScreenTimeWebExtension, UsageTrackingAgent, dmd,
+                            remotemanagementd, usagetool ]
+    symbols:              [ _USBundleIdentifierQuickLookUIServiceEmbedded,
+                            _USBundleIdentifierQuickLookUIServiceMacOS,
+                            _USDuetClientNameUsageTracking, _USErrorDomain,
+                            _USMachServiceNameUsageTracking,
+                            _USNotificationReceivedValue,
+                            _USUsageTrackingVersionNumber,
+                            _USUsageTrackingVersionString,
+                            _usageContextContainsPlayingQuickLookVideo ]
+    objc-classes:         [ USApplicationUsageReport, USBudget,
+                            USCategoryUsageReport, USDomainNormalization,
+                            USTrackingAgentProxy, USUsageMonitor, USUsageQuerying,
+                            USUsageReport, USUsageReporter, USUsageTrackingBundle,
+                            USWebHistory, USWebUsageReport, USWebpageUsage ]
+...

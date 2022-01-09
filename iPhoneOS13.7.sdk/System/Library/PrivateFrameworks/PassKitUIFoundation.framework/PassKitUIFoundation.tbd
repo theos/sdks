@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PKGlyphViewSize, _PKMatrixForRotationAroundXAxis,
+                            _PKMatrixForRotationAroundYAxis, _PKMatrixForScale,
+                            _PKMatrixIdentity ]
+    objc-classes:         [ PK3DCardView, PKAuthenticator,
+                            PKAuthenticatorEvaluationContext,
+                            PKAuthenticatorEvaluationRequest,
+                            PKAuthenticatorEvaluationResponse,
+                            PKAuthenticatorSharedRootContext,
+                            PKCategoryVisualizationCardView, PKCheckGlyphLayer,
+                            PKDisplayLinkTargetProxy, PKFingerprintGlyphView,
+                            PKGlyphView, PKMetalRenderLoop, PKMotionManager,
+                            PKPassFaceViewCategoryVisualizationRendererState,
+                            PKPassFaceViewRendererState,
+                            PKPaymentRemoteInstrumentThumbnailView,
+                            PKPeerPayment3DCharacter, PKPeerPayment3DScene,
+                            PKPeerPayment3DStore, PKPeerPayment3DTextView,
+                            PKPhoneGlyphLayer, PKRenderLoop,
+                            PKUISpringAnimationFactory ]
+...

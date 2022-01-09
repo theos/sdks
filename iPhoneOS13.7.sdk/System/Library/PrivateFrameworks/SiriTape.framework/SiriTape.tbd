@@ -1,0 +1,61 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriTape.framework/SiriTape
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _GCDAsyncSocketErrorDomain, _GCDAsyncSocketException,
+                            _GCDAsyncSocketManuallyEvaluateTrust,
+                            _GCDAsyncSocketQueueName,
+                            _GCDAsyncSocketSSLCipherSuites,
+                            _GCDAsyncSocketSSLPeerID,
+                            _GCDAsyncSocketSSLProtocolVersionMax,
+                            _GCDAsyncSocketSSLProtocolVersionMin,
+                            _GCDAsyncSocketSSLSessionOptionFalseStart,
+                            _GCDAsyncSocketSSLSessionOptionSendOneByteRecord,
+                            _GCDAsyncSocketThreadName,
+                            _GCDAsyncSocketUseCFStreamForTLS,
+                            _STClearInternalLogFiles,
+                            _STCreateDispatchDataFromNSData, _STLogDirectory,
+                            _STLogInitIfNeeded, _STPrintLine,
+                            _STSiriLogContextProxyServer,
+                            _SiriProxyConnectionErrorDomain,
+                            _SiriTapeVersionNumber, _SiriTapeVersionString,
+                            _kAPLogContextProxyServer,
+                            _kAssistantProxyServerHostname,
+                            _kAssistantProxyServerLabel ]
+    objc-classes:         [ GCDAsyncReadPacket, GCDAsyncSocket,
+                            GCDAsyncSocketPreBuffer, GCDAsyncSpecialPacket,
+                            GCDAsyncWritePacket, STAceRecorder,
+                            STAnalyticsObserver, STCFUpdateScripts,
+                            STClientConnection, STMetrics, STMockSessionDJ, STProxy,
+                            STProxyConnection, STProxySocketDelegate,
+                            STServerConnection, STTool ]
+    objc-ivars:           [ GCDAsyncReadPacket.buffer,
+                            GCDAsyncReadPacket.bufferOwner,
+                            GCDAsyncReadPacket.bytesDone,
+                            GCDAsyncReadPacket.maxLength,
+                            GCDAsyncReadPacket.originalBufferLength,
+                            GCDAsyncReadPacket.readLength,
+                            GCDAsyncReadPacket.startOffset,
+                            GCDAsyncReadPacket.tag, GCDAsyncReadPacket.term,
+                            GCDAsyncReadPacket.timeout,
+                            GCDAsyncSocketPreBuffer.preBuffer,
+                            GCDAsyncSocketPreBuffer.preBufferSize,
+                            GCDAsyncSocketPreBuffer.readPointer,
+                            GCDAsyncSocketPreBuffer.writePointer,
+                            GCDAsyncSpecialPacket.tlsSettings,
+                            GCDAsyncWritePacket.buffer,
+                            GCDAsyncWritePacket.bytesDone,
+                            GCDAsyncWritePacket.tag, GCDAsyncWritePacket.timeout,
+                            STProxyConnection._bufferedInputData,
+                            STProxyConnection._handler,
+                            STProxyConnection._isCanceled,
+                            STProxyConnection._isFinished,
+                            STProxyConnection._isOpened,
+                            STProxyConnection._queue, STProxyConnection._socket ]
+...

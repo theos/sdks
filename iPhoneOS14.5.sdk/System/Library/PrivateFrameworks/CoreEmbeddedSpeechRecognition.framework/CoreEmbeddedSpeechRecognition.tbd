@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreEmbeddedSpeechRecognition.framework/CoreEmbeddedSpeechRecognition
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CoreEmbeddedSpeechRecognitionVersionNumber,
+                            _CoreEmbeddedSpeechRecognitionVersionString,
+                            _CoreEmbeddedSpeechRecognizerInstanceUUIDBackground,
+                            _CoreEmbeddedSpeechRecognizerInstanceUUIDInteractive,
+                            _CoreEmbeddedSpeechRecognizerTaskDictation,
+                            _CoreEmbeddedSpeechRecognizerTaskSearchOrMessaging,
+                            _CoreEmbeddedSpeechRecognizerTaskTshot,
+                            _CoreEmbeddedSpeechRecognizerTaskVoiceMail ]
+    objc-classes:         [ CoreEmbeddedSpeechRecognizer ]
+    objc-ivars:           [ CoreEmbeddedSpeechRecognizer._currentLanguage,
+                            CoreEmbeddedSpeechRecognizer._delegate,
+                            CoreEmbeddedSpeechRecognizer._esConnection,
+                            CoreEmbeddedSpeechRecognizer._hasRecognizedAnything,
+                            CoreEmbeddedSpeechRecognizer._instanceUUID,
+                            CoreEmbeddedSpeechRecognizer._preheatedProfile,
+                            CoreEmbeddedSpeechRecognizer._preheatedProfileAssetPath,
+                            CoreEmbeddedSpeechRecognizer._queue,
+                            CoreEmbeddedSpeechRecognizer._recognitionActive,
+                            CoreEmbeddedSpeechRecognizer._recognitionError ]
+...

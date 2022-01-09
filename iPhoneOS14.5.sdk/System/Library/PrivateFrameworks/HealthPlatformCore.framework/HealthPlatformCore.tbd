@@ -1,0 +1,71 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    allowable-clients:    [ AppRecommendations, AppRecommendationsTests, Articles,
+                            ArticlesTests, Categories, CategoriesTests, CloudSync,
+                            CloudSyncTests, Education, FeatureTagSandboxPlugin,
+                            Health, HealthAppControlPlugin, HealthAppTests,
+                            HealthArticlesGeneration,
+                            HealthArticlesGenerationTests, HealthArticlesUI,
+                            HealthArticlesUITests, HealthExperience,
+                            HealthExperienceTesting, HealthExperienceTests,
+                            HealthExperienceTestsHost, HealthExperienceUI,
+                            HealthExperienceUITests,
+                            HealthMenstrualCyclesContentExtension,
+                            HealthMenstrualCyclesUI,
+                            HealthMenstrualCyclesUITests, HealthPlatform,
+                            HealthPlatformCore, HealthPlatformCoreTests,
+                            HealthPlatformTests, HealthPluginHost,
+                            HealthPluginHostTests, HealthProfile,
+                            HealthProfileExtensions,
+                            HealthProfileExtensionsTests, HealthProfileTests,
+                            HealthRecords, "HealthRecordsAppPlugin-Tests",
+                            HealthRecordsUI, HealthSandbox, HealthSettings,
+                            HealthToolboxPlugin, HealthToolboxPluginTests,
+                            HealthVisualization, HealthVisualizationTests,
+                            HearingAppPlugin, HearingAppPluginTests, Heart,
+                            HeartTests, HighlightAlerts, HighlightAlertsTests,
+                            Highlights, HighlightsIntegrationTests,
+                            HighlightsTests, MedicalID, MedicalIDTests,
+                            MenstrualCyclesAppPlugin,
+                            MenstrualCyclesAppPluginTests, NotificationExtension,
+                            OrganDonation, OrganDonationTests, Profiles,
+                            ProfilesTests, ResearchApp, ResearchAppTests,
+                            RespiratoryHealthAppPlugin,
+                            RespiratoryHealthAppPluginTests, Safety, SafetyTests,
+                            SleepHealthApp, SleepHealthAppPlugin,
+                            SleepHealthAppPluginTests, SleepHealthUI,
+                            SleepHealthUITests, Snippets, SnippetsTests, healthappd ]
+    symbols:              [ _HealthPlatformCoreVersionNumber,
+                            _HealthPlatformCoreVersionString ]
+    objc-classes:         [ _TtC18HealthPlatformCore10PluginData,
+                            _TtC18HealthPlatformCore11FeedSection,
+                            _TtC18HealthPlatformCore17EncodedFeatureTag,
+                            _TtC18HealthPlatformCore24GroupConfigurationLoader,
+                            _TtC18HealthPlatformCore26DateRangeRelevanceProvider,
+                            _TtC18HealthPlatformCore26RelevanceEngineCoordinator,
+                            _TtC18HealthPlatformCore27FeedItemREElementDataSource,
+                            _TtC18HealthPlatformCore27HealthExperienceStoreOracle,
+                            _TtC18HealthPlatformCore33DateRangeRelevanceProviderManager,
+                            _TtC18HealthPlatformCore33FeedItemSuggestedActionDataSource,
+                            _TtC18HealthPlatformCore35RelevanceEngineMetricsBlockRecorder,
+                            _TtC18HealthPlatformCore37HealthExperienceStoreCleanupOperation,
+                            _TtC18HealthPlatformCore37PluginBundleProviderPrecacheOperation,
+                            _TtC18HealthPlatformCore38ResumeRelevanceEngineIfNeededOperation,
+                            _TtC18HealthPlatformCore40PopulateFeedFromRelevanceEngineOperation,
+                            _TtC18HealthPlatformCore42HealthExperienceStoreCoreSpotlightDelegate,
+                            _TtC18HealthPlatformCore43HealthExperienceStoreCoreSpotlightOperation,
+                            _TtC18HealthPlatformCore4Feed,
+                            _TtC18HealthPlatformCore6Plugin,
+                            _TtC18HealthPlatformCore7Keyword,
+                            _TtC18HealthPlatformCore7Profile,
+                            _TtC18HealthPlatformCore8DataType,
+                            _TtC18HealthPlatformCore8FeedItem ]
+...

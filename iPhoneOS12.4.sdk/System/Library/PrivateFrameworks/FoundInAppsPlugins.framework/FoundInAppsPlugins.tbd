@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/FoundInAppsPlugins
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _FoundInAppsPluginsVersionNumber,
+                            _FoundInAppsPluginsVersionString ]
+    objc-classes:         [ FIAPEntity, FIAPHistoricalDataRequest, FIAPResult ]
+    objc-ivars:           [ FIAPEntity._activityType,
+                            FIAPEntity._bundleIdentifier,
+                            FIAPEntity._contentCreationDate,
+                            FIAPEntity._detectionDate,
+                            FIAPEntity._domainIdentifier,
+                            FIAPEntity._languageIdentifier, FIAPEntity._name,
+                            FIAPEntity._pluginIdentifier, FIAPEntity._type,
+                            FIAPEntity._uniqueIdentifier,
+                            FIAPHistoricalDataRequest._endDate,
+                            FIAPHistoricalDataRequest._personHandle,
+                            FIAPHistoricalDataRequest._pluginIdentifier,
+                            FIAPHistoricalDataRequest._requestId,
+                            FIAPHistoricalDataRequest._startDate,
+                            FIAPResult._entities, FIAPResult._error,
+                            FIAPResult._historicalDataRequests ]
+...

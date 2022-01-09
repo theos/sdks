@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SettingsCellular.framework/SettingsCellular
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CSLogForCategory,
+                            _PSPerAppNetworkDataAccessPolicyChangedNotification,
+                            _PSSimIsMissing,
+                            _PSSimStatusChangedToReadyNotification,
+                            _kCellularSettingsLogSubsystem,
+                            _kPSWirelessDataUsageCacheRefreshedNotification,
+                            _kPSWirelessDataUsageChangedNotification,
+                            _kPSWirelessDataUsageOtherDevicesKey ]
+    objc-classes:         [ Logger, PSAppCellularUsageSpecifier,
+                            PSAppDataUsagePolicy, PSAppDataUsagePolicyCache,
+                            PSAppDataUsagePolicyListController,
+                            PSAppDataUsagePolicySwitchSpecifier,
+                            PSAppDataUsagePolicySwitchTableCell,
+                            PSAppDataUsagePolicyTernaryControlSpecifier,
+                            PSAppDataUsagePolicyTernaryControlTableCell,
+                            PSBillingPeriodSelectorSpecifier,
+                            PSCellularManagementCache, PSDataUsageSpecifier,
+                            PSDataUsageStatisticsCache, PSSimStatusCache,
+                            PSSubtitleTableCell,
+                            PSWatchOnlyAppCellularUsageSpecifier ]
+    objc-ivars:           [ Logger._logger,
+                            PSAppCellularUsageSpecifier._billingPeriodSource,
+                            PSAppCellularUsageSpecifier._bundleID,
+                            PSAppCellularUsageSpecifier._delegate,
+                            PSAppCellularUsageSpecifier._shouldShowUsage,
+                            PSAppCellularUsageSpecifier._statisticsCache,
+                            PSAppDataUsagePolicy._cellularDataEnabled,
+                            PSAppDataUsagePolicy._isManaged,
+                            PSAppDataUsagePolicy._modificationAllowed,
+                            PSAppDataUsagePolicy._wifiDataEnabled,
+                            PSAppDataUsagePolicyCache._ctServerConnection,
+                            PSAppDataUsagePolicyCache._policyCache,
+                            PSAppDataUsagePolicyTernaryControlSpecifier._displayName,
+                            PSAppDataUsagePolicyTernaryControlSpecifier._fullyInitialized,
+                            PSBillingPeriodSelectorSpecifier._delegate,
+                            PSBillingPeriodSelectorSpecifier._selectedPeriod,
+                            PSCellularManagementCache._managedCellDataAppCache,
+                            PSDataUsageSpecifier._billingPeriodSource,
+                            PSDataUsageSpecifier._bundleID,
+                            PSDataUsageSpecifier._statisticsCache,
+                            PSDataUsageSpecifier._type,
+                            PSDataUsageStatisticsCache._cacheNeedsRefresh,
+                            PSDataUsageStatisticsCache._cachedDeviceDataUsage,
+                            PSDataUsageStatisticsCache._client,
+                            PSDataUsageStatisticsCache._hotspotClientsUsage,
+                            PSDataUsageStatisticsCache._logger,
+                            PSDataUsageStatisticsCache._queue,
+                            PSDataUsageStatisticsCache._refreshCompletionHandler,
+                            PSDataUsageStatisticsCache._refreshInProgress,
+                            PSDataUsageStatisticsCache._workspaceInfoDict,
+                            PSSimStatusCache._coreTelephonyClient,
+                            PSSimStatusCache._isAnySimPresent,
+                            PSSimStatusCache._queue,
+                            PSSimStatusCache._simStatusDict,
+                            PSSimStatusCache._subscriptionInfo ]
+...

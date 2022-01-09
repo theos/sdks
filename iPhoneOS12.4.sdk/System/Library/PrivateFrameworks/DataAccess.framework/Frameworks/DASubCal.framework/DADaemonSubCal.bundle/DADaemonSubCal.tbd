@@ -1,0 +1,62 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DASubCal.framework/DADaemonSubCal.bundle/DADaemonSubCal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    objc-classes:         [ HolidayCalDaemonAccount, SubCalAgent,
+                            SubCalChangeTracker, SubCalDaemonAccount,
+                            SubCalICSDataActor, SubCalRefreshTask,
+                            SubCalWebcalHandler ]
+    objc-ivars:           [ HolidayCalDaemonAccount._lastRefreshDate,
+                            HolidayCalDaemonAccount._refreshTimer,
+                            HolidayCalDaemonAccount._searchTask,
+                            SubCalChangeTracker._existingEventTags,
+                            SubCalChangeTracker._forcedRefresh,
+                            SubCalChangeTracker._icsCalendar,
+                            SubCalChangeTracker._icsEvents,
+                            SubCalDaemonAccount._delegate,
+                            SubCalICSDataActor._actorQueue,
+                            SubCalICSDataActor._calendarExternalId,
+                            SubCalICSDataActor._callbackTarget,
+                            SubCalICSDataActor._changeTrackingID,
+                            SubCalICSDataActor._clearChanges,
+                            SubCalICSDataActor._forcedRefresh,
+                            SubCalICSDataActor._numProgressCallbacks,
+                            SubCalICSDataActor._removeAlarms,
+                            SubCalICSDataActor._shouldCancel,
+                            SubCalICSDataActor._storeExternalId,
+                            SubCalRefreshTask._accountId,
+                            SubCalRefreshTask._backgroundActor,
+                            SubCalRefreshTask._calendarExternalId,
+                            SubCalRefreshTask._calendarName,
+                            SubCalRefreshTask._changeTrackingId,
+                            SubCalRefreshTask._clearChanges,
+                            SubCalRefreshTask._colorString,
+                            SubCalRefreshTask._delegate,
+                            SubCalRefreshTask._forceRefresh,
+                            SubCalRefreshTask._holdingGateKeeperLock,
+                            SubCalRefreshTask._isHolidaySubscribedCalendar,
+                            SubCalRefreshTask._isSpinning,
+                            SubCalRefreshTask._password,
+                            SubCalRefreshTask._removeAlarms,
+                            SubCalRefreshTask._request,
+                            SubCalRefreshTask._storeExternalId,
+                            SubCalRefreshTask._subscriptionURL,
+                            SubCalRefreshTask._timestamp,
+                            SubCalRefreshTask._tmpICSData,
+                            SubCalRefreshTask._updateCalendarProperties,
+                            SubCalRefreshTask._username,
+                            SubCalRefreshTask._usingTmpICSData,
+                            SubCalRefreshTask._waitingForGateKeeper,
+                            SubCalWebcalHandler._account,
+                            SubCalWebcalHandler._calendarId,
+                            SubCalWebcalHandler._consumer,
+                            SubCalWebcalHandler._haveShownSubscribeAlert,
+                            SubCalWebcalHandler._haveTriedHTTPS,
+                            SubCalWebcalHandler._urlString ]
+...

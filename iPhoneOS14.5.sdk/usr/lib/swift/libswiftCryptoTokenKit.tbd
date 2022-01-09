@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FD4C54B6-50D7-3AA8-91CF-78267BF1FD16
+  - target:          arm64e-ios
+    value:           DEB648E8-9E56-37B0-BA32-9E788FAEC1DF
+install-name:    '/usr/lib/swift/libswiftCryptoTokenKit.dylib'
+current-version: 487.100.15
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '$ld$install_name$os10.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os10.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os10.2$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os10.3$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os11.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os11.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os11.2$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os11.3$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os11.4$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os12.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os12.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os7.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os7.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os8.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os8.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os8.2$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os8.3$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os8.4$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os9.0$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os9.1$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os9.2$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '$ld$install_name$os9.3$@rpath/libswiftCryptoTokenKit.dylib', 
+                       '_$sSo11TKSmartCardC14CryptoTokenKitE11withSessionyxxyKcKlF', 
+                       '_$sSo11TKSmartCardC14CryptoTokenKitE4send3ins2p12p24data2le5replyys5UInt8V_A2L10Foundation4DataVSgSiSgyAP_s6UInt16Vs5Error_pSgtctF', 
+                       '_$sSo11TKSmartCardC14CryptoTokenKitE4send3ins2p12p24data2les6UInt16V2sw_10Foundation4DataV8responsets5UInt8V_A2rOSgSiSgtKF', 
+                       '__swift_FORCE_LOAD_$_swiftCryptoTokenKit' ]
+...

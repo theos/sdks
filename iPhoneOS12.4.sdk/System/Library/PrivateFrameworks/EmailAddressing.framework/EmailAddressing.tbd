@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing
+current-version:       3445.120
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _EmailAddressingVersionNumber,
+                            _EmailAddressingVersionString ]
+    objc-classes:         [ EAEmailAddressGenerator, EAEmailAddressLists,
+                            EAEmailAddressParser, EAEmailAddressSet,
+                            EmailAddressingFramework, _EAEmailAddress,
+                            _EAEmailAddressSetEnumerator ]
+    objc-ivars:           [ EAEmailAddressSet._internalSet,
+                            _EAEmailAddress._emailAddress,
+                            _EAEmailAddressSetEnumerator._set,
+                            _EAEmailAddressSetEnumerator._state ]
+...

@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ConversationKit.framework/ConversationKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ConversationKitVersionNumber,
+                            _ConversationKitVersionString ]
+    objc-classes:         [ CNKBuzzedAnimator, CNKCrossFadeAnimator,
+                            CNKDebugOverlayController,
+                            CNKEffectsLayoutController,
+                            CNKFaceTimeCameraViewController,
+                            CNKFaceTimeConstraintsController,
+                            CNKFaceTimeInCallControlsDragController,
+                            CNKFaceTimeInCallControlsViewController,
+                            CNKFaceTimeMultiwayConversationViewController,
+                            CNKMostActiveParticipantViewController,
+                            CNKPipZoomControl, CNKStagingAreaAnimator,
+                            CNKStagingAreaViewController,
+                            _TtC15ConversationKit10CallCenter,
+                            _TtC15ConversationKit12GradientView,
+                            _TtC15ConversationKit12MonogramView,
+                            _TtC15ConversationKit14TapInteraction,
+                            _TtC15ConversationKit15ParticipantCell,
+                            _TtC15ConversationKit15ParticipantView,
+                            _TtC15ConversationKit18InCallControlsView,
+                            _TtC15ConversationKit19InCallControlButton,
+                            _TtC15ConversationKit19ParticipantGridView,
+                            _TtC15ConversationKit19ParticipantInfoView,
+                            _TtC15ConversationKit20LocalParticipantView,
+                            _TtC15ConversationKit20ParticipantAlertView,
+                            _TtC15ConversationKit20ParticipantVideoView,
+                            _TtC15ConversationKit21ParticipantListLayout,
+                            _TtC15ConversationKit21ParticipantViewButton,
+                            _TtC15ConversationKit22AudioVisualizationView,
+                            _TtC15ConversationKit22ConversationController,
+                            _TtC15ConversationKit22ParticipantContactView,
+                            _TtC15ConversationKit23AudioVisualizationLayer,
+                            _TtC15ConversationKit23InCallControlsTitleCell,
+                            _TtC15ConversationKit23ParticipantMonogramView,
+                            _TtC15ConversationKit26ParticipantVideoCameraView,
+                            _TtC15ConversationKit27AudioVisualizationRingLayer,
+                            _TtC15ConversationKit27ParticipantVideoOverlayView,
+                            _TtC15ConversationKit29ParticipantGridViewController,
+                            _TtC15ConversationKit29ParticipantListViewController,
+                            _TtC15ConversationKit33ParticipantViewLabelContainerView,
+                            _TtC15ConversationKit36ParticipantsCollectionViewDataSource,
+                            _TtC15ConversationKit38InCallControlsParticipantTableViewCell,
+                            _TtC15ConversationKit41InCallControlsAddParticipantTableViewCell,
+                            _TtC15ConversationKit41InCallControlsReportAProblemTableViewCell,
+                            _TtC15ConversationKit45InCallControlsParticipantsTableViewController ]
+...

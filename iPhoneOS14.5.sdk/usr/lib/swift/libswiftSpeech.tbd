@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D316A27B-AB9C-36D3-B4C0-2A374A66A490
+  - target:          arm64e-ios
+    value:           EB073AAC-DAB6-343D-809E-A06FFAA8C1ED
+install-name:    '/usr/lib/swift/libswiftSpeech.dylib'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$sSo17SFAcousticFeatureC6SpeechE08acousticB13ValuePerFrameSaySdGvg', 
+                       '_$sSo17SFAcousticFeatureC6SpeechE08acousticB13ValuePerFrameSaySdGvpMV', 
+                       '__swift_FORCE_LOAD_$_swiftSpeech' ]
+...

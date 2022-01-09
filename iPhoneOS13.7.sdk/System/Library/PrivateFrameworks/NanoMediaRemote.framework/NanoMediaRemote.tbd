@@ -1,0 +1,69 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NanoMediaRemote.framework/NanoMediaRemote
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _IDSMessagePriorityFromNMRIDSMessagePriority,
+                            _NMRAggDAddValueForScalarKey,
+                            _NMRAggDPushElapsedTimeValueForDistributionKey,
+                            _NMRAggDPushValueForDistributionKey,
+                            _NMRAggDSendCommandFailedToSendKey,
+                            _NMRAggDSendCommandFailedWithTimeoutKey,
+                            _NMRAggDSendCommandUIRoundTripDelayKey,
+                            _NMRAugmentedNowPlayingInfoArtworkDataDigest,
+                            _NMRCommandResultCodesKey, _NMRCommandResultErrorKey,
+                            _NMRCompanionCloudAvailabilityDidChangeNotification,
+                            _NMRCompanionNowPlayingApplicationIconDidChangeNotification,
+                            _NMRCreateDigestForData, _NMRDigestEqual,
+                            _NMRDiscoverAndConnectEndpoints,
+                            _NMRFetchCompanionCloudAvailability,
+                            _NMRGetArtworkDataDigest,
+                            _NMRIDSMessageTypeIsNonWaking,
+                            _NMRMediaRemoteCommandMessageTimeout,
+                            _NMRMediaRemoteStateMessageDefaultTimeout,
+                            _NMRMediaRemoteStateMessageUserInitiatedTimeout,
+                            _NMRNowPlayingInfoFromProtobuf,
+                            _NMRNowPlayingInfoToProtobuf,
+                            _NMRNowPlayingInfoWhitelistedKeys,
+                            _NMROriginConnectionStateDidChangeNotification,
+                            _NMROriginDeviceInfoDidChangeNotification,
+                            _NMROriginInfoArrayFromProtobuf,
+                            _NMROriginInfoArrayToProtobuf,
+                            _NMROriginManagerActiveOriginDidChangeNotification,
+                            _NMROriginManagerAvailableOriginsDidChangeNotification,
+                            _NMRPlaybackQueueDefaultObservedRange,
+                            _NMRPrewarmCompanionSystemMusicApp,
+                            _NMRPrewarmSystemMusicAppMessageTimeout,
+                            _NMRRefreshMediaRemoteStateIfNecessary,
+                            _NMRServiceEntitlement, _NMRServiceName,
+                            _NMRShortCircuitedMediaRemoteInsertIntoAppPlaybackQueue,
+                            _NMRShortCircuitedMediaRemoteSendCommandToApp,
+                            _NMRShortCircuitedMediaRemoteSetAppPlaybackQueue,
+                            _NMRSupportedCommandsFromProtobuf,
+                            _NMRSupportedCommandsToProtobuf,
+                            _NMRTrackAssetAvailabilityDidChange,
+                            _NSStringFromNMRIDSMessageType ]
+    objc-classes:         [ NMRCloudAvailabilityMessage,
+                            NMREndpointDiscoveryAssertion, NMRIDSMessageCenter,
+                            NMRMediaRemoteGetArtworkMessage,
+                            NMRMediaRemoteGetIconMessage,
+                            NMRMediaRemoteGetStateMessage,
+                            NMRMediaRemoteSetArtworkMessage,
+                            NMRMediaRemoteSetIconMessage,
+                            NMRMediaRemoteSetStateMessage, NMRMediaRemoteUpdater,
+                            NMRNowPlayingApplicationInfo, NMRNowPlayingClient,
+                            NMRNowPlayingController, NMRNowPlayingState, NMROrigin,
+                            NMROriginInfo, NMROriginManager,
+                            NMROriginMediaPlaybackCoreController,
+                            NMRPlaceholderNowPlayingState, NMRPlaybackQueue,
+                            NMRPlaybackQueueRequest, NMRPlaybackQueueResponse,
+                            NMRPlayerResponseNowPlayingState,
+                            NMRProtobufSerialization, NMRSendCommandMessage,
+                            NMRSendCommandResultMessage,
+                            NMRTrackAssetAvailabilityManager ]
+...

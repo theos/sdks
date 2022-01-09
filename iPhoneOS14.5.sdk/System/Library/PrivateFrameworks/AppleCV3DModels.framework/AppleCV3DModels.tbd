@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleCV3DModels.framework/AppleCV3DModels
+current-version:       3.21.1
+compatibility-version: 3.21.1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CV3DModelsCreateObjectRegionProposalModelData,
+                            _CV3DModelsCreateSceneUnderstandingModelData,
+                            _CV3DModelsGetVersionInfo ]
+...

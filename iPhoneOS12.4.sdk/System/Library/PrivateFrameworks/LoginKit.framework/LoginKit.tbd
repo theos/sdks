@@ -1,0 +1,70 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64 ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/LoginKit.framework/LoginKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64 ]
+    symbols:              [ _LKCourseDescriptionKey,
+                            _LKCourseEnrolledStudentIdentifiersKey,
+                            _LKCourseGroupNameKey, _LKCourseGroupsKey,
+                            _LKCourseIDKey, _LKCourseIDsKey,
+                            _LKCourseInstructorIdentifiersKey, _LKCourseNameKey,
+                            _LKCoursesKey, _LKErrorDomain,
+                            _LKErrorPasscodeBackOffInterval, _LKLogDefault,
+                            _LKLogParsing, _LKLogRegression, _LKLogSubsystem,
+                            _LKLoggedInNotificationName,
+                            _LKLoginDaemonClientEntitlement,
+                            _LKLoginDaemonClientServiceName,
+                            _LKLoginDaemonLoginUIEntitlement,
+                            _LKLoginDaemonLoginUIServiceName,
+                            _LKOrganizationDisplayNameKey,
+                            _LKPayloadCertificatePersistentID,
+                            _LKReadyToLoginNotificationName,
+                            _LKRegisterLoginKitLogging, _LKUserAppleIDKey,
+                            _LKUserFamilyNameKey, _LKUserFullNameKey,
+                            _LKUserGivenNameKey, _LKUserIdentifierKey,
+                            _LKUserLargeImageURLKey, _LKUserMediumImageURLKey,
+                            _LKUserPasswordTypeKey, _LKUserPhoneticFamilyNameKey,
+                            _LKUserPhoneticGivenNameKey, _LKUsersKey ]
+    objc-classes:         [ LKClass, LKClassConfiguration, LKClassGroup, LKClasses,
+                            LKError, LKLoginController, LKLoginSupport,
+                            LKLogoutSupport, LKNamingSimilarity, LKStartupSupport,
+                            LKUser, LKUsers ]
+    objc-ivars:           [ LKClass._avatarNameSimilarityDictionary,
+                            LKClass._classDescription, LKClass._classID,
+                            LKClass._classImageURL, LKClass._className,
+                            LKClass._givenNameSimilarityDictionary,
+                            LKClass._instructors, LKClass._students,
+                            LKClassConfiguration._classGroups,
+                            LKClassConfiguration._classRosterInformationDictionary,
+                            LKClassConfiguration._classes,
+                            LKClassConfiguration._classesByClassGroupName,
+                            LKClassConfiguration._classesByClassID,
+                            LKClassConfiguration._instructors,
+                            LKClassConfiguration._payloadCertificatePersistentID,
+                            LKClassConfiguration._schoolName,
+                            LKClassConfiguration._students,
+                            LKClassConfiguration._usersByUsername,
+                            LKClassConfiguration._usersWithAppleIDByIdentifier,
+                            LKClassGroup._classGroupName, LKClassGroup._classes,
+                            LKClasses._classes,
+                            LKLoginController._completionHandler,
+                            LKLoginController._connection,
+                            LKLoginSupport._timerThread,
+                            LKNamingSimilarity._similarity, LKUser._contact,
+                            LKUser._identifier,
+                            LKUser._isAttemptedPhoneticTranscription,
+                            LKUser._isPhoneticInfoProvidedInConfiguration,
+                            LKUser._largeImageURL, LKUser._lastOnlineAuth,
+                            LKUser._localLargeImageURL,
+                            LKUser._localMediumImageURL, LKUser._mediumImageURL,
+                            LKUser._namingSimilarityInfoByClassID,
+                            LKUser._passwordType, LKUser._phoneticFamilyName,
+                            LKUser._phoneticGivenName, LKUser._retryCount,
+                            LKUser._tokenizedPhoneticDisplayName,
+                            LKUsers._students ]
+...

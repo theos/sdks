@@ -1,0 +1,51 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _TVRViewServiceDeviceIdentifierTypeNone,
+                            _TVRViewServiceDidAppearNotificationName,
+                            _TVRViewServiceDidDisappearNotificationName,
+                            _TVRViewServiceWillAppearNotificationName,
+                            _TVRViewServiceWillDisappearNotificationName,
+                            _TVRemoteUIVersionNumber, _TVRemoteUIVersionString,
+                            __TVRAlertViewPreferredWidth, __TVRUIGeneralLog,
+                            __TVRUIInstrumentationLog, __TVRUIViewServiceLog ]
+    objc-classes:         [ TVRMatchPointTouchProcessor,
+                            TVRStandardTouchProcessor, TVRTouchProcessor,
+                            TVRTouchpadView, TVRUIAlertAnimationController,
+                            TVRUIAlertFadeAnimationController, TVRUIButton,
+                            TVRUIButtonEvent, TVRUICaptionsButton,
+                            TVRUIControlPanelViewController, TVRUICoreDevice,
+                            TVRUICoreDeviceQuery, TVRUIDarkStyleProvider,
+                            TVRUIDevice, TVRUIDevicePickerViewController,
+                            TVRUIDeviceQuery, TVRUIIntentManager,
+                            TVRUIMediaControlsViewController,
+                            TVRUIRemoteViewController,
+                            TVRUIStandardTouchProcessor, TVRUITouchEvent,
+                            TVRUITouchpadViewController, TVRUIUnpairedDevices,
+                            TVRViewServiceConfigContext, TVRViewServiceManager,
+                            _TVRAlertController, _TVRAlertView, _TVRButtonHaptic,
+                            _TVRCTouchInfo, _TVRDropDownTableViewFooterView,
+                            _TVREventHaptic, _TVRKeyboardHaptic, _TVRKeyboardView,
+                            _TVRLayoutInfo, _TVRMAlertButton,
+                            _TVRMAlertControllerTransitioning,
+                            _TVRMatchPointArtworkView, _TVRMaterialView,
+                            _TVRMessageView, _TVRPasscodeField,
+                            _TVRPresentationController, _TVRSiriHaptic,
+                            _TVRTapToRadarManager, _TVRTextField,
+                            _TVRTransitioningDelegate, _TVRUIButtonPanelView,
+                            _TVRUICubicSpringAnimator,
+                            _TVRUICubicSpringTimingParameters,
+                            _TVRUIDeviceListCell, _TVRUIDevicePickerView,
+                            _TVRUIDirectionalControlView, _TVRUIFeatures,
+                            _TVRUINetworkObserver, _TVRUITouch, _TVRUITouchpadView,
+                            _TVRemoteAlertVisualStyleProviding,
+                            _TVRemoteAlertVisualStyle_Pad,
+                            _TVRemoteAlertVisualStyle_Phone ]
+...

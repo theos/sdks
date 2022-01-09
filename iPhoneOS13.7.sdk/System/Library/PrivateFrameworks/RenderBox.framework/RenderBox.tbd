@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RenderBox.framework/RenderBox
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RBColorBlack, _RBColorClear, _RBColorEqualToColor,
+                            _RBColorFromCGColor, _RBColorFromLinear, _RBColorMake,
+                            _RBColorMakeLinear, _RBColorToLinear, _RBColorWhite,
+                            _RBImageMakeCGImage, _RBImageMakeIOSurface,
+                            _RBImageMakeRBSurface, _RBImageSimpleTransform,
+                            _RBImageTransform, _RBStrokeBoundingRect,
+                            _RBTiledImageTransform, _RBXMLParserErrorDomain,
+                            _RBXMLParserLinearColors, _RBXMLRecorderStart,
+                            _RBXMLRecorderStop ]
+    objc-classes:         [ RBDevice, RBDisplayList, RBDrawable, RBFill, RBLayer,
+                            RBShape, RBStrokeAccumulator, RBSurface, RBXMLParser ]
+    objc-ivars:           [ RBFill._data ]
+...
