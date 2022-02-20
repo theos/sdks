@@ -8,9 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ IMDaemonCore, IMDaemonCoreEmbeddedTests,
-                            IMSharedUtilities, MessagesBlastDoorService,
-                            MessagesBlastDoorSupport, MessagesBlastDoorTester ]
     symbols:              [ _BlastDoorVersionNumber, _BlastDoorVersionString,
                             _LPMaximumMetadataImagePixelSize,
                             _LPMaximumMetadataSize,

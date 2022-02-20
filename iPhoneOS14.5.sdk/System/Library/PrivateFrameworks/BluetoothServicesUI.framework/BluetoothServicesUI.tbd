@@ -8,11 +8,6 @@ compatibility-version: 0
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ BluetoothUIService, CITests, MediaExperience,
-                            MediaRemote, NexusInternalSettings, Rapport, Sharing,
-                            SharingViewService, TVNowPlayingService,
-                            TVSystemMenuService, bsutil, btutil, cloudpaird, cuutil,
-                            mediaserverd, rapportd, rputil, sharingd, ssutil ]
     objc-classes:         [ BTHighlightButton, BTMediaPlayerView,
                             BTShareAudioBaseViewController,
                             BTShareAudioBringCloseViewController,

@@ -8,7 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ PhotoAnalysis ]
     symbols:              [ _CLSPPTimeLocationClusterDateMargin,
                             _ContentScoreLevelIsBetterThanOtherContentScoreLevel,
                             _GCD, _ItemScoreIsBetterThanOtherItemScore,
