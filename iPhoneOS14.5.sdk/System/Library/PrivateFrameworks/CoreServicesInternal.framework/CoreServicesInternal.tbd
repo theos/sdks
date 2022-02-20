@@ -7,7 +7,6 @@ current-version:       474.3
 compatibility-version: 1
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ CoreFoundation ]
     symbols:              [ __CFURLBookmarkDataCopyDescription,
                             __CFURLBookmarkToAliasHandle,
                             __CFURLCompareBookmarkData,

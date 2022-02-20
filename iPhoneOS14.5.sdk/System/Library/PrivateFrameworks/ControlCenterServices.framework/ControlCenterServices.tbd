@@ -8,15 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ ConnectivityModule, ControlCenterServicesTests,
-                            ControlCenterSettings, ControlCenterUI, CoverSheet,
-                            HearingAidUIServer, HomeKitDaemon, LoginKit,
-                            PerformanceTraceModule, SUIAKit, SUIATPTests, SUICITests,
-                            SUISimulatorTests, SleepDaemon, SleepLockScreen,
-                            SpringBoard, SpringBoardCore,
-                            TVRemoteConnectionService,
-                            com.apple.BarcodeSupport.Helper, controlcentertool,
-                            logind, replayd ]
     symbols:              [ _CCSControlCenterServicesErrorDomain,
                             _CCSIsInternalInstall, _CCSLogModuleSettings,
                             _CCSLogRemoteService,

@@ -8,13 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ "-allowable_client", AppleTV, ArtemisIOS,
-                            TVAccessViewService, TVUpNextExtension,
-                            VideoSubscriberAccountSettings,
-                            VideoSubscriberAccountSetup,
-                            VideoSubscriberAccountTVApp,
-                            VideoSubscriberAccountUI, VideosUITests,
-                            com.apple.tv.appremoval ]
     symbols:              [ _VUIARQLDownloadSessionConfigurationIdentifier,
                             _VUIARQLDownloadSessionDidFinishEventsForBackgroundURLSessionNotification,
                             _VUIAccessOptionsAccountKey,

@@ -8,11 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ ActionKitUI, AddShortcutExtension,
-                            AutomationNotificationContent, HomeUI, RunShortcut,
-                            "Shortcut Tester", Shortcuts, ShortcutsAppTests,
-                            ShortcutsViewService, ShortcutsWidget,
-                            WidgetConfigurationExtension, WorkflowUITests ]
     symbols:              [ _WFActionDrawerActionTableViewCellHorizontalPadding,
                             _WFActionDrawerActionTableViewCellVerticalPadding,
                             _WFActionDrawerPreferredDecelerationRate,

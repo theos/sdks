@@ -8,9 +8,6 @@ compatibility-version: 1
 objc-constraint:       retain_release
 exports:
   - archs:                [ armv7, armv7s, arm64, arm64e ]
-    allowable-clients:    [ Casablanca, DumpRenderTree, Remote, TVBooks, TestWebKitAPI,
-                            WebCoreTestSupport, WebKit, WebKitLegacy,
-                            WebKitTestRunner, iTunesU ]
     symbols:              [ _ANGLEGetDisplayPlatform, _ANGLEResetDisplayPlatform,
                             _EGL_BindAPI, _EGL_BindTexImage, _EGL_ChooseConfig,
                             _EGL_ClientWaitSync, _EGL_ClientWaitSyncKHR,
