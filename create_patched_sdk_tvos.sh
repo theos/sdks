@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 function print_usage {
     printf 'Usage: %s {use_simulator} {sdks_output_path} {overwrite_existing} {no_warnings} {tbd_tool_path} {xcode_installation_path} \n' "$(basename "$0")"
@@ -186,4 +186,3 @@ else
         printf 'Failed to create tbds from iPhoneSimulator runtime for iOS %s\n' $xcode_sdk_ios_version
     fi
 fi
-
