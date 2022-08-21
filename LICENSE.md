@@ -1,6 +1,6 @@
 The SDKs provided in this repo are subject to the [Xcode and Apple SDKs Agreement](https://www.apple.com/legal/sla/docs/xcode.pdf).
 
-The create_patched_sdk.sh script is licensed under the MIT License.
+All scripts provided in this repo are licensed under the MIT License.
 
 # MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
