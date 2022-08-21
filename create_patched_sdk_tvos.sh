@@ -42,12 +42,12 @@ tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
 write_options=("--preserve-subdirs")
 
 no_overwrite="--no-overwrite"
-if [[ $# -gt 2 && ! ignored $3 ]]; then
+if [[ $# -gt 2 ]] && ! ignored $3; then
     no_overwrite=""
 fi
 
 no_warnings=""
-if [[ $# -gt 3 && ! ignored $4 ]]; then
+if [[ $# -gt 3 ]] && ! ignored $4; then
     no_warnings="--dont-print-warnings"
 fi
 

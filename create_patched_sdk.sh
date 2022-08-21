@@ -41,7 +41,7 @@ tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symb
 write_options=("--preserve-subdirs" "--replace-path-extension")
 
 no_overwrite="--no-overwrite"
-if [[ $# -gt 2 && ! ignored $3 ]]; then
+if [[ $# -gt 2 ]] && ! ignored $3; then
     no_overwrite=""
 fi
 
