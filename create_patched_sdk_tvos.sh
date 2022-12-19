@@ -158,7 +158,7 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
                     -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
                     $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
 
-        if [ $? -ne 0 ]; then
+        if [[ $? -ne 0 ]]; then
             printf 'Failed to create tbds from Symbols directory for iOS %s\n' $ios_version
         fi
     done
