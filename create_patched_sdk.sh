@@ -94,7 +94,7 @@ xcode_default_sdk_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Develo
 xcode_sdk_paths="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/*"
 preferred_xcode_sdk_path=""
 
-for xcode_sdk_path in $xcode_sdk_paths; do
+for xcode_sdk_path in "$xcode_sdk_paths"; do
     xcode_sdk_real=$(realpath $xcode_sdk_path)
 
     if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
@@ -115,7 +115,7 @@ xcode_sdk_ios_version=${xcode_sdk_ios_version%????} # Remove '.sdk' at back of s
 sdks_output_path_single_sdk_path=""
 
 if [[ -d $device_support_dir]] && ignored $use_simulator; then
-    for symbols_path in $device_support_dir*; do
+    for symbols_path in "$device_support_dir"*; do
         if ! [[ -d $symbols_path ]]; then
             continue
         fi
