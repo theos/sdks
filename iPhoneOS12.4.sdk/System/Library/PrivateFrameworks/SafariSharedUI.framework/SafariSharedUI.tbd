@@ -1,6 +1,6 @@
 ---
 archs:                 [ armv7, armv7s, arm64, arm64e ]
-platform:              (null)
+platform:              ios
 install-name:          /System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI
 current-version:       610.3.7
 compatibility-version: 0
