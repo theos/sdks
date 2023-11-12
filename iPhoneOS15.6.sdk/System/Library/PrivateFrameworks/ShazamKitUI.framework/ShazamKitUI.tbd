@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShazamKitUI.framework/ShazamKitUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ SHInnerCircleMaskLayer, SHListeningLayer, SHMaths,
+                            SHPalette, SHShazamButtonLayer,
+                            SHTaggingViewAutoShadowLayer,
+                            SHTaggingViewHelperMethods,
+                            SHTaggingViewInnerCircleLayer,
+                            SHTaggingViewInnerCirclesLayer,
+                            SHTaggingViewMediaTimingFunctionProvider,
+                            SHTaggingViewOuterCircleLayer,
+                            SHTaggingViewOuterCirclesLayer ]
+    objc-ivars:           [ SHListeningLayer._autoShadowContainerLayer,
+                            SHListeningLayer._autoShadowLayer,
+                            SHListeningLayer._autoShadowToShazamButtonMaskLayer,
+                            SHListeningLayer._innerCircleToAutoShadowMaskLayer,
+                            SHListeningLayer._innerCircleToShazamButtonMaskLayer,
+                            SHListeningLayer._innerCirclesContainerLayer,
+                            SHListeningLayer._innerCirclesLayer,
+                            SHListeningLayer._innerCirclesSecondaryContainerLayer,
+                            SHListeningLayer._outerCirclesLayer,
+                            SHListeningLayer._shazamButtonLayer,
+                            SHListeningLayer._state,
+                            SHListeningLayer._viewDelegate,
+                            SHShazamButtonLayer._backgroundLayer,
+                            SHShazamButtonLayer._bottomSolidLayer,
+                            SHShazamButtonLayer._bottomTransparentLayer,
+                            SHShazamButtonLayer._buttonDelegate,
+                            SHShazamButtonLayer._initialAnimationPerformed,
+                            SHShazamButtonLayer._shapeLayer,
+                            SHShazamButtonLayer._topBorder,
+                            SHShazamButtonLayer._topSolidLayer,
+                            SHShazamButtonLayer._topTransparentLayer,
+                            SHTaggingViewAutoShadowLayer._autoShadowBackgroundLayer,
+                            SHTaggingViewAutoShadowLayer._autoShadowOuterLayer,
+                            SHTaggingViewInnerCircleLayer._circle,
+                            SHTaggingViewInnerCircleLayer._circleContainerLayer,
+                            SHTaggingViewInnerCirclesLayer._innerCircleLayers,
+                            SHTaggingViewOuterCircleLayer._circleContainerLayer,
+                            SHTaggingViewOuterCircleLayer._circleLayer,
+                            SHTaggingViewOuterCirclesLayer._outerCircleLayers ]
+...

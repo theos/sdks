@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              (null)
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MediaSafetyNet.framework/MediaSafetyNet
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _MSNLog, _MSNMonitorBeginException,
+                            _MSNMonitorEndException,
+                            _MSNMonitorSetCameraNonStandardCameraClient,
+                            _MSNMonitorSetCameraState,
+                            _MSNMonitorSetLastCameraClient,
+                            _MSNMonitorSetLastMicrophoneClient,
+                            _MSNMonitorSetMicrophoneState,
+                            _MSNMonitorSetXCTestExceptionState, _MSNMonitorStart,
+                            _MSNMonitorStartingCamera,
+                            _MSNMonitorStartingMicrophone,
+                            _MSNMonitorStoppingCamera,
+                            _MSNMonitorStoppingMicrophone, _MediaSafetyNetActive,
+                            _MediaSafetyNetIsLocalMonitor,
+                            _MediaSafetyNetVersionNumber,
+                            _MediaSafetyNetVersionString, _g_cameraClient,
+                            _g_cameraExceptionState, _g_cameraState,
+                            _g_keyboardState, _g_microphoneClient,
+                            _g_microphoneState, _g_pillState, _g_production,
+                            _g_uiState ]
+    objc-classes:         [ MSNCarPlay, MSNScopedException,
+                            MSNScopedExceptionsServer, MSNTTR ]
+    objc-ivars:           [ MSNCarPlay._carplayConnected,
+                            MSNCarPlay._systemController,
+                            MSNScopedException._connection,
+                            MSNScopedException._exception,
+                            MSNScopedExceptionsServer._activeExceptions,
+                            MSNScopedExceptionsServer._listener,
+                            MSNScopedExceptionsServer._queue, MSNTTR._pendedTTR,
+                            MSNTTR._runLoopSource, MSNTTR._url,
+                            MSNTTR._userNotification ]
+...

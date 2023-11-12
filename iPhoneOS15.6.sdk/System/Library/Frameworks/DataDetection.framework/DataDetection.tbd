@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           162537E6-416A-353D-85DE-BA020BFAE902
+  - target:          arm64e-ios
+    value:           873CF852-884D-30B8-B48F-2B0878F98CF9
+install-name:    '/System/Library/Frameworks/DataDetection.framework/DataDetection'
+current-version: 697.2
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ DDMatch, DDMatchCalendarEvent, DDMatchEmailAddress, DDMatchFlightNumber, 
+                       DDMatchLink, DDMatchMoneyAmount, DDMatchPhoneNumber, DDMatchPostalAddress, 
+                       DDMatchShipmentTrackingNumber ]
+...
