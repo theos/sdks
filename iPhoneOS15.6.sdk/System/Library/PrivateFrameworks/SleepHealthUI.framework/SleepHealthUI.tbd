@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HKSHUIBundle, _HKSHUICurrentDevice,
+                            _HKSHUILocalizedString ]
+    objc-classes:         [ HKSHBatteryRing,
+                            HKSHQuickScheduleManagementViewController,
+                            HKSHQuickScheduleManagementViewControllerDelegateWrapper,
+                            HKSHQuickScheduleManagementViewControllerInternal,
+                            HKSHSleepChartFormatter, _HKSHLocalizedSleepSchedule,
+                            _TtC13SleepHealthUI17TextTableViewCell,
+                            _TtC13SleepHealthUI18SleepScheduleClock,
+                            _TtC13SleepHealthUI18SleepScheduleModel,
+                            _TtC13SleepHealthUI18SleepSettingsModel,
+                            _TtC13SleepHealthUI21ScheduleComponentView,
+                            _TtC13SleepHealthUI21SleepScheduleProvider,
+                            _TtC13SleepHealthUI21SleepSettingsProvider,
+                            _TtC13SleepHealthUI22ScheduleOccurrenceView,
+                            _TtC13SleepHealthUI22SleepScheduleClockDial,
+                            _TtC13SleepHealthUI22SleepScheduleClockHand,
+                            _TtC13SleepHealthUI23TonePickerStyleProvider,
+                            _TtC13SleepHealthUI24RelativeWeekdayFormatter,
+                            _TtC13SleepHealthUI25SleepScheduleClockCaption,
+                            _TtC13SleepHealthUI25WatchAppInstalledProvider,
+                            _TtC13SleepHealthUI27ScheduleOccurrenceTitleView,
+                            _TtC13SleepHealthUI28ScheduleOccurrenceHeaderView,
+                            _TtC13SleepHealthUI29EditScheduleLinkTableViewCell,
+                            _TtC13SleepHealthUI29SleepScheduleComponentsHeader,
+                            _TtC13SleepHealthUI30ShorterDateComponentsFormatter,
+                            _TtC13SleepHealthUI31ScheduleOccurrenceTableViewCell,
+                            _TtC13SleepHealthUI31SleepActivityConfigurationModel,
+                            _TtC13SleepHealthUI31SleepScheduleComponentsEditView,
+                            _TtC13SleepHealthUI32ShortHourDateComponentsFormatter,
+                            _TtC13SleepHealthUI34ShortMinuteDateComponentsFormatter,
+                            _TtC13SleepHealthUI35QuickScheduleOverrideViewController,
+                            _TtC13SleepHealthUI37ScheduleOccurrenceDeleteTableViewCell,
+                            _TtC13SleepHealthUI39ForceDoubleZerosDateComponentsFormatter,
+                            _TtC13SleepHealthUI41ScheduleOccurrenceAlarmSoundTableViewCell,
+                            _TtC13SleepHealthUI42ScheduleOccurrenceAlarmSnoozeTableViewCell,
+                            _TtC13SleepHealthUI42ScheduleOccurrenceAlarmVolumeTableViewCell,
+                            _TtC13SleepHealthUI43ScheduleOccurrenceAlarmEnabledTableViewCell,
+                            _TtC13SleepHealthUI44ScheduleOccurrenceSectionTableViewHeaderView,
+                            _TtC13SleepHealthUI45BriefOneHourIsSixtyMinDateComponentsFormatter,
+                            _TtC13SleepHealthUI45ScheduleOccurrenceComponentsEditTableViewCell,
+                            _TtC13SleepHealthUI51AbbreviatedOneHourIsSixtyMinDateComponentsFormatter,
+                            _TtC13SleepHealthUI54ScheduleOccurrenceComponentsAccessibilityTableViewCell,
+                            _TtC13SleepHealthUI60ScheduleOccurrenceComponentsAndDayAccessibilityTableViewCell,
+                            _TtCV13SleepHealthUI18FooterViewWithLink11Coordinator,
+                            _TtCV13SleepHealthUI41QuickScheduleManagementViewRepresentation11Coordinator ]
+    objc-ivars:           [ HKSHBatteryRing._backgroundRingAlpha,
+                            HKSHBatteryRing._fillFraction,
+                            HKSHBatteryRing._radius,
+                            HKSHBatteryRing._strokeWidth,
+                            HKSHQuickScheduleManagementViewControllerDelegateWrapper._viewController,
+                            HKSHQuickScheduleManagementViewControllerDelegateWrapper._wrappedDelegate,
+                            HKSHSleepChartFormatter._healthStore,
+                            _HKSHLocalizedSleepSchedule._localizedBedTime,
+                            _HKSHLocalizedSleepSchedule._localizedWakeTime ]
+...

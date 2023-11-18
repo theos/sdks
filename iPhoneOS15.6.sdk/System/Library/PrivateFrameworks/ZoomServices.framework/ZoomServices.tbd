@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ZoomServices.framework/ZoomServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AXZoomHandGestureEventFirst,
+                            _AXZoomHandGestureEventLast,
+                            _AXZoomHandGestureEventUsageNone, _ZOTDeviceRotation,
+                            _ZOTDisplayMainScreenSize, _ZOTMainScreenRect,
+                            _ZOTMainScreenSize, _ZOTRotateFromScreen,
+                            _ZOTRotateToScreen, _ZOTTimeUnset,
+                            _ZOTWindowServerDisplay,
+                            _ZWAttributeKeyActiveZoomMode,
+                            _ZWAttributeKeyAppActivationAnimationStartDelay,
+                            _ZWAttributeKeyAppDeactivationAnimationStartDelay,
+                            _ZWAttributeKeyAppSwitcherRevealAnimationStartDelay,
+                            _ZWAttributeKeyInStandbyMode,
+                            _ZWAttributeKeyReachabilityScaleFactor,
+                            _ZWAttributeKeyShouldSuppressKeyCommandHUD,
+                            _ZWAttributeKeyZoomFrame, _ZWAttributeKeyZoomLevel,
+                            _ZoomServicesPrimaryZoomWindowClientIdentifier,
+                            _kZoomGreyPanValue ]
+    objc-classes:         [ AXZoomListenerContainer, ZoomServices,
+                            ZoomServicesGreyCommandInfo ]
+    objc-ivars:           [ AXZoomListenerContainer.handler,
+                            AXZoomListenerContainer.identifier,
+                            ZoomServices._registeredForZoomAttributeListeners,
+                            ZoomServices._registeredForZoomListener,
+                            ZoomServices._shouldRegisterForZoomListeners,
+                            ZoomServices._showingZoomLens,
+                            ZoomServices._springBoardReady,
+                            ZoomServices._triedToShowLensBeofreSBReady,
+                            ZoomServices._zoomAttributeListeners,
+                            ZoomServices._zoomListeners,
+                            ZoomServices._zoomWindowClient ]
+...

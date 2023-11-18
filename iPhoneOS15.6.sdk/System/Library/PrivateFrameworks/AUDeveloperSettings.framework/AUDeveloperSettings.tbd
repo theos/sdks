@@ -1,0 +1,53 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AUDeveloperSettings.framework/AUDeveloperSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AUDeveloperSettingsAccessoryFusingStringToType,
+                            _AUDeveloperSettingsAccessoryFusingTypeToString,
+                            _AUDeveloperSettingsURLStringToType,
+                            _AUDeveloperSettingsURLTypeToString,
+                            _AUDeveloperSettingsVersionNumber,
+                            _AUDeveloperSettingsVersionString,
+                            _MapPreferenceSuiteToString,
+                            _configuredToDefaultAssetLocationForAccessory,
+                            _getInfoForAccessory, _kActiveVersionKey,
+                            _kAssetLocationFollowupIdentifier,
+                            _kAssetLocationKey, _kBasejumperBuildKey,
+                            _kBasejumperTrainKey, _kClientIndentifier,
+                            _kFollowUpAddressedKey, _kFusingKey,
+                            _kInternalSettingsPaneURL, _kIsOTADisabledKey,
+                            _kModelNumberKey, _kNameKey, _kSerialNumberKey,
+                            _needsToAddressFollowupForAccessory ]
+    objc-classes:         [ AUDeveloperSettingsAboutListController,
+                            AUDeveloperSettingsController,
+                            AUDeveloperSettingsDatabase,
+                            AUDeveloperSettingsLearnMoreController,
+                            AUDeveloperSettingsLocationListController,
+                            AUDeveloperSettingsTextEditingController,
+                            AUHelperInstance, AUInternalSettingsController ]
+    objc-ivars:           [ AUDeveloperSettingsDatabase._log,
+                            AUDeveloperSettingsLearnMoreController._controller,
+                            AUDeveloperSettingsLocationListController._basejumperRadioGroup,
+                            AUDeveloperSettingsLocationListController._basejumperSpecifier,
+                            AUDeveloperSettingsLocationListController._customBasejumperBuildGroup,
+                            AUDeveloperSettingsLocationListController._customBasejumperSpecifier,
+                            AUDeveloperSettingsLocationListController._customBuildSpecifier,
+                            AUDeveloperSettingsLocationListController._customTrainSpecifier,
+                            AUDeveloperSettingsLocationListController._customerSpecifier,
+                            AUDeveloperSettingsLocationListController._internalSeedSpecifier,
+                            AUDeveloperSettingsLocationListController._latestBasejumperSpecifier,
+                            AUDeveloperSettingsLocationListController._livabilitySpecifier,
+                            AUDeveloperSettingsLocationListController._locationRadioGroup,
+                            AUDeveloperSettingsLocationListController._publicSeedSpecifier,
+                            AUDeveloperSettingsLocationListController._showingBasejumperSpecifiers,
+                            AUDeveloperSettingsLocationListController._showingCustomBasejumperBuildSpecifiers,
+                            AUDeveloperSettingsTextEditingController._identifier,
+                            AUDeveloperSettingsTextEditingController._keyboardShownOnce,
+                            AUHelperInstance._xpcConnection ]
+...

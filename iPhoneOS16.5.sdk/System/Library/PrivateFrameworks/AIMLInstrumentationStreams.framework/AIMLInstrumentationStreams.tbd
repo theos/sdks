@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AIMLInstrumentationStreams.framework/AIMLInstrumentationStreams
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AIMLInstrumentationStreamsVersionNumber,
+                            _AIMLInstrumentationStreamsVersionString ]
+    objc-classes:         [ ISComponentGroup, ISComponentIdentifier, ISEventFilter,
+                            ISEventGraph, ISSiriConversation, ISSiriTurn,
+                            ISStreamsFactory, ISStreamsProvider,
+                            ISTimestampedEvent,
+                            _TtC26AIMLInstrumentationStreams20EventGraphsPublisher,
+                            _TtC26AIMLInstrumentationStreams25SiriConversationPublisher,
+                            _TtC26AIMLInstrumentationStreams29InstrumentationStreamsFactory,
+                            _TtCC26AIMLInstrumentationStreams20EventGraphsPublisher34ConnectedComponentGroupsSubscriber,
+                            _TtCC26AIMLInstrumentationStreams25SiriConversationPublisher26SiriConversationSubscriber ]
+...

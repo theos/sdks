@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DocumentUnderstanding.framework/DocumentUnderstanding
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DocumentUnderstandingVersionNumber,
+                            _DocumentUnderstandingVersionString ]
+    objc-classes:         [ DUClientObjC, DUDocumentObjC, DUDocumentUIElementObjC,
+                            DUObjCCompatibilityUtils, DURequestContentTypeObjC,
+                            DURequestObjC, DURequestStrategyObjC, DUResponseObjC,
+                            DUResultObjC,
+                            _TtC21DocumentUnderstanding10DUDocument,
+                            _TtC21DocumentUnderstanding10DUResponse,
+                            _TtC21DocumentUnderstanding17DURequestStrategy,
+                            _TtC21DocumentUnderstanding19DUDocumentUIElement,
+                            _TtC21DocumentUnderstanding20DURequestContentType,
+                            _TtC21DocumentUnderstanding8DUClient,
+                            _TtC21DocumentUnderstanding8DUResult,
+                            _TtC21DocumentUnderstanding9DURequest ]
+    objc-ivars:           [ DUClientObjC._underlyingObject,
+                            DUDocumentObjC._underlyingDocument,
+                            DUDocumentUIElementObjC._underlyingElement,
+                            DURequestContentTypeObjC._options,
+                            DURequestContentTypeObjC._underlyingRequestType,
+                            DURequestObjC._underlyingRequest,
+                            DURequestStrategyObjC._objCContentType,
+                            DURequestStrategyObjC._underlyingStrategy,
+                            DUResponseObjC._underlyingReponse,
+                            DUResultObjC._underlyingResult ]
+...

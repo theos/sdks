@@ -1,0 +1,51 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WebBookmarksSwift.framework/WebBookmarksSwift
+current-version:       615.2.9
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s17WebBookmarksSwift18AsyncBufferedQueueC04makeD8IteratorScS0H0Vyx_GyF,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC15bufferingPolicyACyxGScS12ContinuationV09BufferingH0Oyx__G_tcfC,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC15bufferingPolicyACyxGScS12ContinuationV09BufferingH0Oyx__G_tcfCTj,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC15bufferingPolicyACyxGScS12ContinuationV09BufferingH0Oyx__G_tcfCTq,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC15bufferingPolicyACyxGScS12ContinuationV09BufferingH0Oyx__G_tcfc,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC6finishyyF,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueC7enqueueyScS12ContinuationV11YieldResultOyx__GxF,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCMa,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCMn,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCMo,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCMu,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCfD,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCfd,
+                            _$s17WebBookmarksSwift18AsyncBufferedQueueCyxGSciAAMc,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC011moveCurrentD05toTab02inJ5Group20withDeviceIdentifierySSSg_AHSStF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC016tabIdentifierForD0ySSSgSSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC021tabGroupIdentifierForD0ySSSgSSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC14removeTabGroupyySSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC21endDeviceCoordinationyyF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC23activeParticipantsInTabyShySo07CKShareD0CGSSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC23beginDeviceCoordinationyyF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC24endCollaborationForShareyySo7CKShareCF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC26beginCollaborationForShareyySo7CKShareCF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC28activeParticipantsInTabGroupyShySo07CKShareD0CGSSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC8delegateAA0deF8Delegate_pSgvM,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC8delegateAA0deF8Delegate_pSgvg,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC8delegateAA0deF8Delegate_pSgvpMV,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC8delegateAA0deF8Delegate_pSgvs,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorC9removeTabyySSF,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCACycfC,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCACycfc,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCMa,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCMn,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCMo,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCN,
+                            _$s17WebBookmarksSwift30ParticipantPresenceCoordinatorCfD ]
+    objc-classes:         [ EmptyClass, WBParticipantPresenceCoordinator,
+                            _WBParticipantPresenceCoordinator ]
+    objc-ivars:           [ WBParticipantPresenceCoordinator._delegate,
+                            WBParticipantPresenceCoordinator._internalCoordinator ]
+...

@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          "/System/Library/CoreAccessories/PlugIns/Features/Communications-iOS.feature/Communications-iOS"
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CFArrayCreateRawValuesString, _CFCreateUUIDString,
+                            _CFDictCreateRawKeyValueString,
+                            _CFDictionaryApplierFunction_addKeyToMutableSet,
+                            _CFDictionaryApplierFunction_addValueToMutableDictionary,
+                            _CFDictionaryApplierFunction_setValueInMutableDictionary,
+                            _CFDictionaryGetKeys,
+                            _CFSetApplierFunction_removeValueFromMutableDictionary,
+                            _CFSetCreateRawValuesString,
+                            _CFStringCreateFromCFData, _CFStringCreateFromFormat,
+                            _NSObjectIfNotNull,
+                            __CFArraySetPrintRawValuesApplierFunctionDecimal,
+                            __CFArraySetPrintRawValuesApplierFunctionHex,
+                            __CFDictPrintRawKeyValueApplierFunctionDecimal,
+                            __CFDictPrintRawKeyValueApplierFunctionHex,
+                            _ascii_to_hex, _base64DecodeArray, _base64EncodeArray,
+                            _classImplementsMethodsInProtocol,
+                            _convertNSDataToNSString, _convertNSStringToNSData,
+                            _createCStringFromCFString, _createHexString,
+                            _executeOnMainThreadAsync, _executeOnMainThreadSync,
+                            _getMemoryUse, _init_logging, _isNSObjectEqual,
+                            _isNSObjectNull, _obfuscatedPointer, _printBytes,
+                            _readJSONFile, _removeBidirectionalUnicodeCharacters,
+                            _removeNewline, _trimBidirectionalUnicodeCharacters,
+                            _writeJSONFile ]
+    objc-classes:         [ ACCCommunicationsFeaturePlugin ]
+    objc-ivars:           [ ACCCommunicationsFeaturePlugin._chManager,
+                            ACCCommunicationsFeaturePlugin._commCenter,
+                            ACCCommunicationsFeaturePlugin._isRunning,
+                            ACCCommunicationsFeaturePlugin._queue,
+                            ACCCommunicationsFeaturePlugin._radiosPreferences,
+                            ACCCommunicationsFeaturePlugin._vmManager ]
+...

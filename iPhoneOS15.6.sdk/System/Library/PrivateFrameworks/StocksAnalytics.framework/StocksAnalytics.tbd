@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/StocksAnalytics.framework/StocksAnalytics
+current-version:       999.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _StocksAnalyticsVersionNumber,
+                            _StocksAnalyticsVersionString ]
+    objc-classes:         [ _TtC15StocksAnalytics13DebugAssembly,
+                            _TtC15StocksAnalytics15SessionObserver,
+                            _TtC15StocksAnalytics15TrackerAssembly,
+                            _TtC15StocksAnalytics17TelemetryAssembly,
+                            _TtC15StocksAnalytics8Assembly ]
+...

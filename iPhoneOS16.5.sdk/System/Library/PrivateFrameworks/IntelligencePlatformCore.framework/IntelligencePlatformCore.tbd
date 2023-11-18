@@ -1,0 +1,69 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/IntelligencePlatformCore
+current-version:       28.28
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _GDIsDataCollectionEnabled,
+                            _IntelligencePlatformCoreVersionNumber,
+                            _IntelligencePlatformCoreVersionString,
+                            _kGDEmbeddingIdsKey, _kGDEmbeddingValueKey ]
+    objc-classes:         [ GDBiomeStreamStoreErasure, GDCFBurstTrie, GDContact,
+                            GDEmbedding, GDInteraction, GDInteractionEnumeration,
+                            GDInteractionStoreShim, GDMicroLocationVisitEvent,
+                            GDMicroLocationVisitUtility, GDMockCNFetchResult,
+                            GDMockInteractionStore, GDScreenTimeCategory,
+                            MDDateFormatter,
+                            _TtC24IntelligencePlatformCore11InternalXPC,
+                            _TtC24IntelligencePlatformCore13LighthouseXPC,
+                            _TtC24IntelligencePlatformCore15CoordinationXPC,
+                            _TtC24IntelligencePlatformCore17PhotosPersonEvent,
+                            _TtC24IntelligencePlatformCore18LocationVisitEvent,
+                            _TtC24IntelligencePlatformCore19EntityResolutionXPC,
+                            _TtC24IntelligencePlatformCore21PlaceInferenceFetcher,
+                            _TtC24IntelligencePlatformCore23VirtualInteractionEvent,
+                            _TtC24IntelligencePlatformCore24KnowledgeConstructionXPC,
+                            _TtC24IntelligencePlatformCore26SourceEntityRepresentation,
+                            _TtC24IntelligencePlatformCore27CompletedLocationVisitEvent,
+                            _TtC24IntelligencePlatformCore7ViewXPC,
+                            _TtC24IntelligencePlatformCore8ModelKey,
+                            _TtC24IntelligencePlatformCore9KnosisXPC,
+                            _TtCC24IntelligencePlatformCore11InternalXPC6Server,
+                            _TtCC24IntelligencePlatformCore11InternalXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore13LighthouseXPC6Server,
+                            _TtCC24IntelligencePlatformCore13LighthouseXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore15CoordinationXPC6Server,
+                            _TtCC24IntelligencePlatformCore15CoordinationXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore19EntityResolutionXPC6Server,
+                            _TtCC24IntelligencePlatformCore19EntityResolutionXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore24KnowledgeConstructionXPC6Server,
+                            _TtCC24IntelligencePlatformCore24KnowledgeConstructionXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore7ViewXPC6Server,
+                            _TtCC24IntelligencePlatformCore7ViewXPC8Delegate,
+                            _TtCC24IntelligencePlatformCore9KnosisXPC6Server,
+                            _TtCC24IntelligencePlatformCore9KnosisXPC8Delegate ]
+    objc-ivars:           [ GDCFBurstTrie._trie, GDContact._contactType,
+                            GDContact._displayName, GDContact._handle,
+                            GDEmbedding._ids, GDEmbedding._value,
+                            GDInteraction._bundleId, GDInteraction._direction,
+                            GDInteraction._endDate, GDInteraction._mechanism,
+                            GDInteraction._recipients, GDInteraction._sender,
+                            GDInteraction._startDate,
+                            GDInteractionEnumeration._batch,
+                            GDInteractionEnumeration._predicate,
+                            GDInteractionEnumeration._sortDescriptor,
+                            GDInteractionEnumeration._store,
+                            GDMicroLocationVisitEvent._date,
+                            GDMicroLocationVisitEvent._isEnter,
+                            GDMicroLocationVisitEvent._microLocationIdentifier,
+                            GDMicroLocationVisitEvent._probability,
+                            GDMicroLocationVisitUtility._microLocationVisitStream,
+                            GDMockCNFetchResult._currentHistoryToken,
+                            GDMockCNFetchResult._value,
+                            GDMockInteractionStore._interactions,
+                            MDDateFormatter._formatter ]
+...

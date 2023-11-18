@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport
+current-version:       56
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _FFConfigurationValidateProfilePayload ]
+    objc-classes:         [ FFConfiguration, FFDefaultFileReader,
+                            FFDefaultFileWriter, FFFeatureAttribute,
+                            FFFeatureState ]
+    objc-ivars:           [ FFConfiguration._domains,
+                            FFConfiguration._filereader,
+                            FFConfiguration._filewriter,
+                            FFConfiguration._profilePayloads,
+                            FFConfiguration.configByLevel,
+                            FFConfiguration.disclosuresByLevel,
+                            FFConfiguration.lock, FFConfiguration.metaByLevel,
+                            FFConfiguration.searchPaths,
+                            FFDefaultFileWriter._dirAttributes,
+                            FFDefaultFileWriter._fileAttributes,
+                            FFFeatureAttribute._name, FFFeatureAttribute._value,
+                            FFFeatureState._attributes,
+                            FFFeatureState._disclosurerequired,
+                            FFFeatureState._domain, FFFeatureState._feature,
+                            FFFeatureState._value ]
+...

@@ -1,0 +1,73 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementStore.framework/RemoteManagementStore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RMObserverStoreStoreDidChangeNotification,
+                            _RMStatusFileKeyIdentifier, _RMStatusFileKeyReasons,
+                            _RMStatusFileKeyServerToken, _RMStatusFileKeyValid,
+                            _RMStoreOptionAccountIdentifier,
+                            _RMStoreOptionDescription, _RMStoreOptionName,
+                            _RMStoreOptionPersonaIdentifier,
+                            _RMStoreXPCAgentMachServiceName,
+                            _RMStoreXPCDaemonMachServiceName ]
+    objc-classes:         [ RMBaseStore, RMConfigurationStatusUpdater,
+                            RMConfigurationSubscriberClient,
+                            RMConfigurationSubscriberEventDescription,
+                            RMConfigurationSubscriberEventStream,
+                            RMConfigurationSubscriberEventStreamDelegate,
+                            RMConfigurationSubscriberExtension,
+                            RMConfigurationSubscriberExtensionContext,
+                            RMConfigurationSubscriberExtensionRequestHandler,
+                            RMDeclarationManifest, RMDeclarationManifestItem,
+                            RMObserverStore, RMProviderStore,
+                            RMStoreConfigurationSubscriberDescription,
+                            RMStoreResolvedAsset, RMStoreUnresolvedAsset,
+                            RMStoreUtility, RMStoreXPCConnection, RMStoreXPCProxy,
+                            RMSubscribedConfigurationReference,
+                            RMSubscriberStore ]
+    objc-ivars:           [ RMBaseStore._accountIdentifier,
+                            RMBaseStore._dataSeparated,
+                            RMBaseStore._defaultToInteractive,
+                            RMBaseStore._identifier, RMBaseStore._name,
+                            RMBaseStore._personaIdentifier,
+                            RMBaseStore._storeDescription, RMBaseStore._type,
+                            RMBaseStore._xpcConnection,
+                            RMConfigurationStatusUpdater._store,
+                            RMConfigurationSubscriberEventDescription._configurationSubscriberDescription,
+                            RMConfigurationSubscriberEventStream._configurationTypes,
+                            RMConfigurationSubscriberEventStream._delegate,
+                            RMConfigurationSubscriberEventStream._delegationLock,
+                            RMConfigurationSubscriberEventStream._eventStreamObserver,
+                            RMConfigurationSubscriberEventStreamDelegate._applicatorClassesByType,
+                            RMConfigurationSubscriberExtension._applicator,
+                            RMConfigurationSubscriberExtension._configurationSubscriberClient,
+                            RMConfigurationSubscriberExtension._configurationSubscriberClientLock,
+                            RMConfigurationSubscriberExtension._configurationTypes,
+                            RMConfigurationSubscriberExtensionRequestHandler._configurationSubscriber,
+                            RMDeclarationManifest._activations,
+                            RMDeclarationManifest._assets,
+                            RMDeclarationManifest._configurations,
+                            RMDeclarationManifest._management,
+                            RMDeclarationManifestItem._identifier,
+                            RMDeclarationManifestItem._version,
+                            RMStoreConfigurationSubscriberDescription._principalClassName,
+                            RMStoreConfigurationSubscriberDescription._types,
+                            RMStoreResolvedAsset._assetData,
+                            RMStoreResolvedAsset._assetFile,
+                            RMStoreUnresolvedAsset._assetIdentifier,
+                            RMStoreUnresolvedAsset._downloadURL,
+                            RMStoreUnresolvedAsset._queryParameters,
+                            RMStoreUnresolvedAsset._resolveAs,
+                            RMStoreXPCConnection._connection,
+                            RMSubscribedConfigurationReference._assets,
+                            RMSubscribedConfigurationReference._declaration,
+                            RMSubscribedConfigurationReference._store,
+                            RMSubscriberStore._statusDirectoryURL,
+                            RMSubscriberStore._statusUpdater ]
+...

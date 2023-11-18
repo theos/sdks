@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/DriverKit/System/Library/PrivateFrameworks/IOFileValidation.framework/IOFileValidation
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __Z18processImageVerifyPK12OSDictionaryPK29IOFileValidationTrustedFile_sm,
+                            __Z18requestImageVerifyPK12OSDictionaryPK29IOFileValidationTrustedFile_sm,
+                            __Z28checkSHAForImageWithStoreSetPKcPK12OSMappedFilePK29IOFileValidationTrustedFile_sm,
+                            __Z29checkSHAForImageFromDatastorePKcPK12OSMappedFilePK29IOFileValidationTrustedFile_sm ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/DriverKit/usr/lib/libSystem.dylib
+current-version:       1319.100.3
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    re-exports:           [ /System/DriverKit/usr/lib/system/libcompiler_rt.dylib,
+                            /System/DriverKit/usr/lib/system/libcorecrypto.dylib,
+                            /System/DriverKit/usr/lib/system/libdispatch.dylib,
+                            /System/DriverKit/usr/lib/system/libdyld.dylib,
+                            /System/DriverKit/usr/lib/system/libmacho.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_blocks.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_c.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_kernel.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_m.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_malloc.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_platform.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_pthread.dylib,
+                            /System/DriverKit/usr/lib/system/libsystem_trace.dylib ]
+    symbols:              [ ___crashreporter_info__,
+                            _libSystem_init_after_boot_tasks_4launchd,
+                            _mach_init_routine ]
+...

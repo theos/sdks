@@ -1,0 +1,34 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/Frameworks/AACDependencies.framework/AACDependencies
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ AEDConcreteSingleAppModePrimitives,
+                            AEDConcreteSingleAppModeSession,
+                            AEDNotificationObservation,
+                            AEDSingleAppModeConfiguration,
+                            AEDSingleAppModePrimitivesProvider,
+                            AEDUnionObservation ]
+    objc-ivars:           [ AEDConcreteSingleAppModeSession._session,
+                            AEDNotificationObservation._notificationCenter,
+                            AEDNotificationObservation._notificationHandler,
+                            AEDNotificationObservation._notificationName,
+                            AEDNotificationObservation._object,
+                            AEDNotificationObservation._queue,
+                            AEDSingleAppModeConfiguration._allowsAccessibilitySpeech,
+                            AEDSingleAppModeConfiguration._allowsActivityContinuation,
+                            AEDSingleAppModeConfiguration._allowsAutoCorrection,
+                            AEDSingleAppModeConfiguration._allowsContinuousPathKeyboard,
+                            AEDSingleAppModeConfiguration._allowsDictation,
+                            AEDSingleAppModeConfiguration._allowsKeyboardShortcuts,
+                            AEDSingleAppModeConfiguration._allowsPasswordAutoFill,
+                            AEDSingleAppModeConfiguration._allowsPredictiveKeyboard,
+                            AEDSingleAppModeConfiguration._allowsSmartPunctuation,
+                            AEDSingleAppModeConfiguration._allowsSpellCheck,
+                            AEDUnionObservation._observations ]
+...

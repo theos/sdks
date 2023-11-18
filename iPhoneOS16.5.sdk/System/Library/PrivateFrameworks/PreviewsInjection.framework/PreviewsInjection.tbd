@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PreviewsInjection.framework/PreviewsInjection
+current-version:       20.30.45
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PreviewsInjectionVersionNumber,
+                            _PreviewsInjectionVersionString, _UVCAMainDisplay,
+                            _UVConnectToRenderServerPort,
+                            ___SERVICEHUB_ATTACH_POINT__, _allSubclassesOf ]
+    objc-classes:         [ UVAgentControlServiceMonitor,
+                            _TtC17PreviewsInjection14UVControlAgent,
+                            _TtC17PreviewsInjection14UVPreviewAgent,
+                            _TtC17PreviewsInjection19UVPreviewNonUIAgent,
+                            _TtC17PreviewsInjection19UVPreviewSceneAgent ]
+    objc-ivars:           [ UVAgentControlServiceMonitor._agent,
+                            UVAgentControlServiceMonitor._endpointMonitor ]
+...

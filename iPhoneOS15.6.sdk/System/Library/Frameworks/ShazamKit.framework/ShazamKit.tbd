@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           754FE4BE-3020-3A2C-8D34-66A968F2EE70
+  - target:          arm64e-ios
+    value:           5DEC5D26-B530-30BA-B8FB-9CD2BF66FC6E
+install-name:    '/System/Library/Frameworks/ShazamKit.framework/ShazamKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SHErrorDeviceToDeviceEncryptionKey, _SHErrorDiscardedAudioDurationKey, 
+                       _SHErrorDomain, _SHEventSignalIdentifierMusicRecognitionHistoryActivated, 
+                       _SHEventSignalIdentifierMusicRecognitionRecognitionActivated, 
+                       _SHMaximumSignatureDuration, _SHMediaItemAlbumName, _SHMediaItemAppleMusicID, 
+                       _SHMediaItemAppleMusicURL, _SHMediaItemArtist, _SHMediaItemArtworkURL, 
+                       _SHMediaItemAudioStartDate, _SHMediaItemExplicitContent, _SHMediaItemFrequencySkew, 
+                       _SHMediaItemGenres, _SHMediaItemISRC, _SHMediaItemLyricsSnippet, 
+                       _SHMediaItemMatchOffset, _SHMediaItemReleaseDate, _SHMediaItemShazamID, 
+                       _SHMediaItemSpeedSkew, _SHMediaItemStaticLyricLines, _SHMediaItemSubtitle, 
+                       _SHMediaItemSyncedLyricsSnippet, _SHMediaItemTitle, _SHMediaItemVideoURL, 
+                       _SHMediaItemWebURL, _SHMediaLibraryErrorDomain, _SHMediaLibrarySyncStartConditionInitialFetch, 
+                       _SHMediaLibrarySyncStartConditionInitialUpload, _SHMediaLibrarySyncStartConditionMigration, 
+                       _SHMediaLibrarySyncStartConditionRemotePush, _SHMediaLibrarySyncStartConditionUserAction, 
+                       _SHNotificationKeySessionError, _SHNotificationKeySessionMatch, 
+                       _SHNotificationKeySessionSignature, _SHNotificationNameSessionResult ]
+    objc-classes:    [ SHAttribution, SHCatalog, SHCustomCatalog, SHError, SHEventSignaller, 
+                       SHLyricLine, SHManagedSession, SHMatch, SHMatchedMediaItem, 
+                       SHMatcherResponse, SHMediaItem, SHMediaLibrary, SHMediaLibraryChange, 
+                       SHMediaLibraryGroup, SHMediaLibraryInfo, SHMediaLibraryItemMetadata, 
+                       SHMediaLibraryLabel, SHMediaLibraryQueryParameters, SHMediaLibrarySnapshot, 
+                       SHMediaLibraryTrack, SHMediaLibraryTrackBuilder, SHMediaLibraryTrackUpdate, 
+                       SHMutableSignature, SHSession, SHShazamCatalog, SHShazamKey, 
+                       SHSignature, SHSignatureGenerator, SHSyncedLyrics ]
+...

@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TranslationUIServices.framework/TranslationUIServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LTUIErrorDomain, _kLTUIViewServiceProtocol ]
+    objc-classes:         [ LTUIErrorViewController, LTUIRemoteViewController,
+                            LTUISourceMeta, LTUITranslationViewController ]
+    objc-ivars:           [ LTUIRemoteViewController._delegate,
+                            LTUISourceMeta._context,
+                            LTUISourceMeta._languageHints,
+                            LTUISourceMeta._origin,
+                            LTUITranslationViewController._dismissCompletionHandler,
+                            LTUITranslationViewController._ignoredAttributes,
+                            LTUITranslationViewController._isSourceEditable,
+                            LTUITranslationViewController._matchingToken,
+                            LTUITranslationViewController._remoteViewController,
+                            LTUITranslationViewController._replacementHandler,
+                            LTUITranslationViewController._requestID,
+                            LTUITranslationViewController._sourceMeta,
+                            LTUITranslationViewController._text,
+                            LTUITranslationViewController.cplID,
+                            LTUITranslationViewController.extensionQueryID ]
+...

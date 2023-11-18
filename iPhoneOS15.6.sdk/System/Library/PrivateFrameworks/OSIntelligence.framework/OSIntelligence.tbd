@@ -1,0 +1,60 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/OSIntelligence.framework/OSIntelligence
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _OSIntelligenceVersionNumber,
+                            _OSIntelligenceVersionString,
+                            _kInvalidPredictedDuration ]
+    objc-classes:         [ _OSBatteryDrainPredictor, _OSChargePredictor,
+                            _OSInactivityPredictionClient,
+                            _OSInactivityPredictorOutput, _dayDrainInfo,
+                            inactivityDurationModel,
+                            inactivityDurationModelInput,
+                            inactivityDurationModelOutput, inactivityEngageModel,
+                            inactivityEngageModelInput,
+                            inactivityEngageModelOutput ]
+    objc-ivars:           [ _OSBatteryDrainPredictor._log,
+                            _OSInactivityPredictionClient._connection,
+                            _OSInactivityPredictorOutput._confidenceLevel,
+                            _OSInactivityPredictorOutput._confidenceValue,
+                            _OSInactivityPredictorOutput._predictedDuration,
+                            _dayDrainInfo._drainSoFar,
+                            _dayDrainInfo._lastBatterySoC,
+                            inactivityDurationModel._model,
+                            inactivityDurationModelInput._all_dur_avg_2,
+                            inactivityDurationModelInput._all_dur_std_2,
+                            inactivityDurationModelInput._all_long_percent_2,
+                            inactivityDurationModelInput._dow_dur_avg_2,
+                            inactivityDurationModelInput._dow_dur_std_2,
+                            inactivityDurationModelInput._dow_long_percent_2,
+                            inactivityDurationModelInput._recent_dur_avg_2,
+                            inactivityDurationModelInput._recent_dur_std_2,
+                            inactivityDurationModelInput._recent_long_percent_2,
+                            inactivityDurationModelInput._start_dow_cos,
+                            inactivityDurationModelInput._start_dow_sin,
+                            inactivityDurationModelInput._start_time_cos,
+                            inactivityDurationModelInput._start_time_sin,
+                            inactivityDurationModelOutput._predicted_duration,
+                            inactivityEngageModel._model,
+                            inactivityEngageModelInput._all_dur_avg_2,
+                            inactivityEngageModelInput._all_dur_std_2,
+                            inactivityEngageModelInput._all_long_percent_2,
+                            inactivityEngageModelInput._dow_dur_avg_2,
+                            inactivityEngageModelInput._dow_dur_std_2,
+                            inactivityEngageModelInput._dow_long_percent_2,
+                            inactivityEngageModelInput._recent_dur_avg_2,
+                            inactivityEngageModelInput._recent_dur_std_2,
+                            inactivityEngageModelInput._recent_long_percent_2,
+                            inactivityEngageModelInput._start_dow_cos,
+                            inactivityEngageModelInput._start_dow_sin,
+                            inactivityEngageModelInput._start_time_cos,
+                            inactivityEngageModelInput._start_time_sin,
+                            inactivityEngageModelOutput._classProbability,
+                            inactivityEngageModelOutput._is_long ]
+...

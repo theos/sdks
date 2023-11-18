@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SSMLServices.framework/SSMLServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SSMLServicesVersionNumber,
+                            _SSMLServicesVersionString, _kSSMLErrorDomain ]
+    objc-classes:         [ SSMLParseError, SSMLParseResult, SSMLParserInternal,
+                            SSMLParserWrapperInternal, SSMLRangeConversionResult,
+                            SSMLRangeConverterInternal, SSMLServices,
+                            SSMLServicesWrapper ]
+    objc-ivars:           [ SSMLParseError._error, SSMLParseError._hint,
+                            SSMLParseError._location, SSMLParseResult._error,
+                            SSMLParseResult._plainTalkResult,
+                            SSMLParseResult._plainTextResult,
+                            SSMLParseResult._ssmlResult,
+                            SSMLParseResult._utteranceResult,
+                            SSMLRangeConversionResult._convertedRange,
+                            SSMLRangeConversionResult._error,
+                            SSMLRangeConversionResult._plainString,
+                            SSMLServices._conversionWrapper,
+                            SSMLServicesWrapper._converter,
+                            SSMLServicesWrapper._underlyingObject ]
+...

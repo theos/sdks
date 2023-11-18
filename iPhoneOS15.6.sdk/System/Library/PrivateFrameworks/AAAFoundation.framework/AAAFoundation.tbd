@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AAAFoundation.framework/AAAFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AAAFoundationVersionNumber,
+                            _AAAFoundationVersionString,
+                            _AFUtilitiesAppleIDPrefPath,
+                            _AFUtilitiesEnergySaverPath,
+                            _AFUtilitiesInternetAccountsPrefPath,
+                            _AFUtilitiesMailAppBundleIdentifier,
+                            _AFUtilitiesParentalControlsPrefPath,
+                            _AFUtilitiesPhotosAppBundleIdentifier,
+                            _AFUtilitiesSecurityPrefPath,
+                            _AFUtilitiesSharingPrefPath,
+                            _AFUtilitiesSoftwareUpdateBundleIdentifier,
+                            _AFUtilitiesStoreAppBundleIdentifier, __AAFLogSystem,
+                            _kAAFDisableCertPinningKey,
+                            _kAAFInternalSettingsDomain ]
+    objc-classes:         [ AAFCertificateTrustValidator, AAFKeychainItem,
+                            AAFKeychainItemDescriptor, AAFKeychainManager,
+                            AAFPromise, AAFService, AAFXPCSession,
+                            AAFXPCSessionConfig, AFUtilities ]
+    objc-ivars:           [ AAFKeychainItem._descriptor, AAFKeychainItem._value,
+                            AAFKeychainItemDescriptor._accessGroup,
+                            AAFKeychainItemDescriptor._account,
+                            AAFKeychainItemDescriptor._invisible,
+                            AAFKeychainItemDescriptor._itemAccessible,
+                            AAFKeychainItemDescriptor._itemClass,
+                            AAFKeychainItemDescriptor._label,
+                            AAFKeychainItemDescriptor._securityDomain,
+                            AAFKeychainItemDescriptor._server,
+                            AAFKeychainItemDescriptor._service,
+                            AAFKeychainItemDescriptor._synchronizable,
+                            AAFKeychainItemDescriptor._useDataProtection,
+                            AAFKeychainManager._keychainQueue,
+                            AAFPromise._callbacks, AAFPromise._completed,
+                            AAFPromise._error, AAFPromise._queue,
+                            AAFPromise._selfReference, AAFPromise._value,
+                            AAFService._exportedObject,
+                            AAFService._exportedProtocol,
+                            AAFService._preConnectEntitlements,
+                            AAFService._serviceListener, AAFService._serviceName,
+                            AAFXPCSession.__proxy, AAFXPCSession._connection,
+                            AAFXPCSession._delegate, AAFXPCSession._identifier,
+                            AAFXPCSession._remoteServiceConfig,
+                            AAFXPCSession._serialQueue,
+                            AAFXPCSessionConfig._exportedProtocol,
+                            AAFXPCSessionConfig._options,
+                            AAFXPCSessionConfig._remoteObjectInterface,
+                            AAFXPCSessionConfig._remoteProtocol,
+                            AAFXPCSessionConfig._serviceName ]
+...

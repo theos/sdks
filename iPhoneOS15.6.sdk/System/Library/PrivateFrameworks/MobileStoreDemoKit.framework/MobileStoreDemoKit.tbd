@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MobileStoreDemoKit.framework/MobileStoreDemoKit
+current-version:       895.140.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _MobileStoreDemoKitVersionNumber,
+                            _MobileStoreDemoKitVersionString,
+                            _kMMSDPropertyClaimBodyKey,
+                            _kMMSDPropertyClaimLinkKey,
+                            _kMMSDPropertyClaimTitleKey, _kMSDKProperClaimKey,
+                            _safeAssignError, _safeAssignErrorNoOverwrite,
+                            _safeAssignErrorWithReason ]
+    objc-classes:         [ MSDKDemoState, MSDKManagedDevice, MSDLocalization,
+                            MSDLogModel, MSDPreferencesFile, MSDTestPreferences ]
+    objc-ivars:           [ MSDKDemoState._cache, MSDKManagedDevice._connection,
+                            MSDKManagedDevice._delegate,
+                            MSDKManagedDevice._helperConnection,
+                            MSDKManagedDevice._xpc_cache,
+                            MSDLocalization._localizationTable,
+                            MSDLogModel._logFP, MSDPreferencesFile._cache ]
+...

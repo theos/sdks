@@ -1,0 +1,74 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriTimeInternal.framework/SiriTimeInternal
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _MTDeleteTimerIntentHandlerErrorDomain,
+                            _MTTimerIntentHandlerDurationMax,
+                            _MTTimerIntentHandlerErrorDomain,
+                            _MTTimerIntentResultsComparator,
+                            _SiriTimeInternalVersionNumber,
+                            _SiriTimeInternalVersionString ]
+    objc-classes:         [ AlarmPeriodResolutionResult,
+                            AlarmReferenceTypeResolutionResult,
+                            AlarmRepeatSchedule,
+                            AlarmRepeatScheduleResolutionResult, AlarmSearch,
+                            AlarmSearchResolutionResult,
+                            AlarmSearchStatusResolutionResult,
+                            AlarmSearchTypeResolutionResult,
+                            ChangeAlarmStatusAlarmsResolutionResult,
+                            ChangeAlarmStatusIntent,
+                            ChangeAlarmStatusIntentResponse,
+                            ChangeAlarmStatusOperationResolutionResult,
+                            ClockRequestTypeResolutionResult, CreateAlarmIntent,
+                            CreateAlarmIntentResponse,
+                            CreateAlarmSuccessCodeResolutionResult,
+                            DayOfWeekResolutionResult,
+                            DeleteAlarmAlarmsResolutionResult, DeleteAlarmIntent,
+                            DeleteAlarmIntentResponse, DismissAlarmHalIntent,
+                            DismissAlarmHalIntentResponse, DismissTimerIntent,
+                            DismissTimerIntentResponse,
+                            MTCreateTimerIntentHandler,
+                            MTDeleteTimerIntentHandler,
+                            MTPauseResumeTimerIntentHandler,
+                            MTResetTimerIntentHandler,
+                            MTSearchTimerIntentHandler,
+                            MTSetTimerAttributeIntentHandler,
+                            MTTimerIntentHandler, MTTimerIntentHandlerProvider,
+                            MTUpdateTimerIntentHandler,
+                            RepeatScheduleResolutionResult,
+                            SearchAlarmAlarmsResolutionResult, SearchAlarmIntent,
+                            SearchAlarmIntentResponse, ShowClockIntent,
+                            ShowClockIntentResponse, SiriAlarm,
+                            SiriAlarmResolutionResult,
+                            SiriTimeApertureAvailability, SiriTimeTimerConstants,
+                            SleepAlarmAttribute,
+                            SleepAlarmAttributeResolutionResult,
+                            SnoozeAlarmHalIntent, SnoozeAlarmHalIntentResponse,
+                            UpdateAlarmAlarmResolutionResult, UpdateAlarmIntent,
+                            UpdateAlarmIntentResponse,
+                            UpdateAlarmOperationResolutionResult,
+                            _TtC16SiriTimeInternal22ShowClockIntentHandler,
+                            _TtC16SiriTimeInternal23PauseTimerIntentHandler,
+                            _TtC16SiriTimeInternal23ResetTimerIntentHandler,
+                            _TtC16SiriTimeInternal24CreateAlarmIntentHandler,
+                            _TtC16SiriTimeInternal24CreateTimerIntentHandler,
+                            _TtC16SiriTimeInternal24DeleteAlarmIntentHandler,
+                            _TtC16SiriTimeInternal24DeleteTimerIntentHandler,
+                            _TtC16SiriTimeInternal24ResumeTimerIntentHandler,
+                            _TtC16SiriTimeInternal24SearchAlarmIntentHandler,
+                            _TtC16SiriTimeInternal24SnoozeAlarmIntentHandler,
+                            _TtC16SiriTimeInternal24UpdateAlarmIntentHandler,
+                            _TtC16SiriTimeInternal25DismissTimerIntentHandler,
+                            _TtC16SiriTimeInternal28DismissAlarmHalIntentHandler,
+                            _TtC16SiriTimeInternal28SearchForTimersIntentHandler,
+                            _TtC16SiriTimeInternal30ChangeAlarmStatusIntentHandler,
+                            _TtC16SiriTimeInternal30SetTimerAttributeIntentHandler ]
+    objc-ivars:           [ MTTimerIntentHandler._timerManager,
+                            MTTimerIntentHandler._timerManagerProvider ]
+...

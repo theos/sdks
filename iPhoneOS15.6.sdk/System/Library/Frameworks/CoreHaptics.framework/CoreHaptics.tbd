@@ -1,0 +1,54 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3E4EF8C4-1D06-3B73-8315-DEF35B54FDF2
+  - target:          arm64e-ios
+    value:           F775F716-5DEF-38B5-9FAF-4FB1165C078D
+install-name:    '/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CHHapticAudioResourceKeyUseVolumeEnvelope, _CHHapticDynamicParameterIDAudioAttackTimeControl, 
+                       _CHHapticDynamicParameterIDAudioBrightnessControl, _CHHapticDynamicParameterIDAudioDecayTimeControl, 
+                       _CHHapticDynamicParameterIDAudioPanControl, _CHHapticDynamicParameterIDAudioPitchControl, 
+                       _CHHapticDynamicParameterIDAudioReleaseTimeControl, _CHHapticDynamicParameterIDAudioVolumeControl, 
+                       _CHHapticDynamicParameterIDHapticAttackTimeControl, _CHHapticDynamicParameterIDHapticDecayTimeControl, 
+                       _CHHapticDynamicParameterIDHapticIntensityControl, _CHHapticDynamicParameterIDHapticReleaseTimeControl, 
+                       _CHHapticDynamicParameterIDHapticSharpnessControl, _CHHapticEngineOptionKeyAudioPowerUsage, 
+                       _CHHapticEngineOptionKeyHapticPowerUsage, _CHHapticEngineOptionKeyLocality, 
+                       _CHHapticEngineOptionKeyPriority, _CHHapticEventParameterIDAttackTime, 
+                       _CHHapticEventParameterIDAudioBrightness, _CHHapticEventParameterIDAudioPan, 
+                       _CHHapticEventParameterIDAudioPitch, _CHHapticEventParameterIDAudioVolume, 
+                       _CHHapticEventParameterIDDecayTime, _CHHapticEventParameterIDHapticFullnessSelect, 
+                       _CHHapticEventParameterIDHapticIntensity, _CHHapticEventParameterIDHapticSharpness, 
+                       _CHHapticEventParameterIDHapticSharpnessSelect, _CHHapticEventParameterIDReleaseTime, 
+                       _CHHapticEventParameterIDSustained, _CHHapticEventTypeAudioClick, 
+                       _CHHapticEventTypeAudioContinuous, _CHHapticEventTypeAudioCustom, 
+                       _CHHapticEventTypeHapticContinuous, _CHHapticEventTypeHapticTransient, 
+                       _CHHapticEventTypeWheelsOfTime, _CHHapticLocalityDefault, 
+                       _CHHapticLocalityFullGamut, _CHHapticPatternKeyAudioPowerUsage, 
+                       _CHHapticPatternKeyConfiguration, _CHHapticPatternKeyEvent, 
+                       _CHHapticPatternKeyEventDuration, _CHHapticPatternKeyEventParameters, 
+                       _CHHapticPatternKeyEventType, _CHHapticPatternKeyEventWaveformPath, 
+                       _CHHapticPatternKeyEventWaveformUseVolumeEnvelope, _CHHapticPatternKeyHapticPowerUsage, 
+                       _CHHapticPatternKeyLocality, _CHHapticPatternKeyParameter, 
+                       _CHHapticPatternKeyParameterCurve, _CHHapticPatternKeyParameterCurveControlPoints, 
+                       _CHHapticPatternKeyParameterID, _CHHapticPatternKeyParameterValue, 
+                       _CHHapticPatternKeyPattern, _CHHapticPatternKeyPatternID, 
+                       _CHHapticPatternKeyPriority, _CHHapticPatternKeyTime, _CHHapticPatternKeyVersion, 
+                       _CHHapticPatternLibraryKeyConnectedToPower, _CHHapticPatternLibraryKeyKeyboardDeletion, 
+                       _CHHapticPatternLibraryKeyKeyboardDeletionRapid, _CHHapticPatternLibraryKeyKeyboardDeletionRepeat, 
+                       _CHHapticPatternLibraryKeyKeyboardInputSeparator, _CHHapticPatternLibraryKeyKeyboardInputText, 
+                       _CHHapticPatternLibraryKeyKeyboardOther, _CHHapticPatternLibraryKeyScreenLocked, 
+                       _CHHapticPatternLibraryKeyTestPattern01, _CHHapticPatternLibraryKeyTestPattern02, 
+                       _CHHapticPowerUsageHigh, _CHHapticPowerUsageLow, _CHHapticPriorityHigh, 
+                       _CHHapticPriorityHighest, _CHHapticPriorityLow ]
+    objc-classes:    [ CHHapticDynamicParameter, CHHapticEngine, CHHapticEvent, CHHapticEventParameter, 
+                       CHHapticParameterCurve, CHHapticParameterCurveControlPoint, 
+                       CHHapticPattern ]
+...

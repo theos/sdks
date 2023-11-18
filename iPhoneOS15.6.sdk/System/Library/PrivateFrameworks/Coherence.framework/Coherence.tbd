@@ -1,0 +1,54 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Coherence.framework/Coherence
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CoherenceVersionNumber, _CoherenceVersionString,
+                            _coherence_snapshot_cmp, _coherence_snapshot_free,
+                            _coherence_snapshot_get, _coherence_snapshot_open,
+                            _coherence_snapshot_recover ]
+    objc-classes:         [ CRContext, CRTTMergeableString,
+                            CRTTMergeableStringIndex,
+                            CRTTMergeableStringSelection,
+                            CRTTMergeableStringUndoEditCommand,
+                            ObjCRenameSequence, ObjCReplica, ObjCTimestamp,
+                            ObjCVersion, _TtC9Coherence11ObjCRenames,
+                            _TtC9Coherence15CRStringDecoder,
+                            _TtC9Coherence15CRStringEncoder,
+                            _TtC9Coherence17CRSequenceDecoder,
+                            _TtC9Coherence17CRSequenceEncoder,
+                            _TtC9Coherence19CRFileSyncPresenter,
+                            _TtC9Coherence20CRAssetFilePresenter,
+                            _TtC9Coherence7ObjCRLE,
+                            _TtCC9Coherence25CRDataStoreBundleSnapshot9Presenter ]
+    objc-ivars:           [ CRTTMergeableString._addedByLocalCounter,
+                            CRTTMergeableString._addedByReplica,
+                            CRTTMergeableString._addedByVersion,
+                            CRTTMergeableString._attributedString,
+                            CRTTMergeableString._cacheInvalid,
+                            CRTTMergeableString._context,
+                            CRTTMergeableString._editCount,
+                            CRTTMergeableString._endNodes,
+                            CRTTMergeableString._hasLocalChanges,
+                            CRTTMergeableString._localCounter,
+                            CRTTMergeableString._orderedSubstrings,
+                            CRTTMergeableString._renameGeneration,
+                            CRTTMergeableString._renamedString,
+                            CRTTMergeableString._replica,
+                            CRTTMergeableString._startNodes,
+                            CRTTMergeableString._uuid,
+                            CRTTMergeableString._version,
+                            CRTTMergeableStringIndex._affinity,
+                            CRTTMergeableStringIndex._context,
+                            CRTTMergeableStringIndex._index,
+                            CRTTMergeableStringSelection._selectionAffinity,
+                            CRTTMergeableStringSelection._selectionRanges,
+                            CRTTMergeableStringUndoEditCommand._context,
+                            CRTTMergeableStringUndoEditCommand._deleteRanges,
+                            CRTTMergeableStringUndoEditCommand._insertStrings ]
+...

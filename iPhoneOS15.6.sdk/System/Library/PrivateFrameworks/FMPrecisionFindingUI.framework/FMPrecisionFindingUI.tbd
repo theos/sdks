@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FMPrecisionFindingUI.framework/FMPrecisionFindingUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC20FMPrecisionFindingUI10FMPFSKNode,
+                            _TtC20FMPrecisionFindingUI11FMPFSKScene,
+                            _TtC20FMPrecisionFindingUI12FMPFRingView,
+                            _TtC20FMPrecisionFindingUI13FMPFARSCNView,
+                            _TtC20FMPrecisionFindingUI15FMPFFluidSpring,
+                            _TtC20FMPrecisionFindingUI15FMPFSKLabelNode,
+                            _TtC20FMPrecisionFindingUI15FMPFSKShapeNode,
+                            _TtC20FMPrecisionFindingUI16FMPFSKSpriteNode,
+                            _TtC20FMPrecisionFindingUI17FMPFSKPatternNode,
+                            _TtC20FMPrecisionFindingUI18FMPFSKBTLevelsNode,
+                            _TtC20FMPrecisionFindingUI19FMPFSKBTRangingNode,
+                            _TtC20FMPrecisionFindingUI20FMPFSKBTRangeDotNode,
+                            _TtC20FMPrecisionFindingUI21FMPFSKBTLevelRingNode,
+                            _TtC20FMPrecisionFindingUI21FMPFSKBTRangeDiskNode,
+                            _TtC20FMPrecisionFindingUI23FMPFSKPeripheralDotNode,
+                            _TtC20FMPrecisionFindingUI25FMPFSKPatternFragmentNode,
+                            _TtC20FMPrecisionFindingUI27FMPFARTrackingConfiguration,
+                            _TtC20FMPrecisionFindingUI8FLSpring,
+                            _TtC20FMPrecisionFindingUI8FMPFView ]
+...

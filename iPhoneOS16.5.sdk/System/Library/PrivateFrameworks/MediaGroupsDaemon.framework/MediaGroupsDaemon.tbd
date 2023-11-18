@@ -1,0 +1,43 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MediaGroupsDaemon.framework/MediaGroupsDaemon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ MGDaemon, MGGroupsActivity, MGGroupsMediator,
+                            MGGroupsQueryAgent, MGGroupsQueryOperation,
+                            MGOutstandingQuery, MGServiceClient,
+                            MGServiceClientSet, MGServiceListenerProvider ]
+    objc-ivars:           [ MGDaemon._clients, MGDaemon._dispatchQueue,
+                            MGDaemon._groupsMediator, MGDaemon._listener,
+                            MGDaemon._listenerProvider, MGDaemon._queryAgent,
+                            MGDaemon._topologyRequestHandler,
+                            MGGroupsActivity._name, MGGroupsActivity._when,
+                            MGGroupsMediator._activities,
+                            MGGroupsMediator._groups, MGGroupsMediator._lock,
+                            MGGroupsMediator._pendingChanges,
+                            MGGroupsMediator._queryAgent,
+                            MGGroupsQueryAgent._containers,
+                            MGGroupsQueryAgent._currentIdentifier,
+                            MGGroupsQueryAgent._delegate,
+                            MGGroupsQueryAgent._groups, MGGroupsQueryAgent._lock,
+                            MGGroupsQueryAgent._operations,
+                            MGGroupsQueryAgent._queries,
+                            MGGroupsQueryAgent._queue,
+                            MGGroupsQueryAgent._variables,
+                            MGOutstandingQuery._identifier,
+                            MGOutstandingQuery._predicate,
+                            MGOutstandingQuery._requiresTopology,
+                            MGServiceClient._connection, MGServiceClient._lock,
+                            MGServiceClient._queries,
+                            MGServiceClient._transaction,
+                            MGServiceClientSet._clients,
+                            MGServiceClientSet._lock,
+                            MGServiceListenerProvider._dispatchQueue,
+                            MGServiceListenerProvider._entitlement,
+                            MGServiceListenerProvider._serviceName ]
+...

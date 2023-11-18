@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WeatherUI.framework/WeatherUI
+current-version:       183
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DeviceSupportsMaterialBackgrounds,
+                            _DeviceSupportsStickyHeaders, _DeviceSupportsVFX,
+                            _WeatherUIVersionNumber, _WeatherUIVersionString ]
+    objc-classes:         [ _TtC9WeatherUI13WindFormatter,
+                            _TtC9WeatherUI17PressureFormatter,
+                            _TtC9WeatherUI19VisibilityFormatter,
+                            _TtC9WeatherUI27PrecipitationTotalFormatter ]
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/ContactsSettings.bundle/ContactsSettings
+current-version:       1146.7
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ABAccountIdentifierLocal,
+                            _CNUICopyAccountInformation ]
+    objc-classes:         [ CNSIMImporter, ContactsSettingsPlugin,
+                            ContactsShortNameController ]
+    objc-ivars:           [ ContactsSettingsPlugin._ContactsInMailSpecifier,
+                            ContactsSettingsPlugin._ContactsSortOrderSpecifier,
+                            ContactsSettingsPlugin._MeCardSpecifier,
+                            ContactsSettingsPlugin._PersonNameOrderSpecifier,
+                            ContactsSettingsPlugin._SIMImportSpacerSpecifier,
+                            ContactsSettingsPlugin._SIMImportSpecifier,
+                            ContactsSettingsPlugin._addressBook,
+                            ContactsSettingsPlugin._addressBookQueue,
+                            ContactsSettingsPlugin._appPolicy,
+                            ContactsSettingsPlugin._contactStoreNames,
+                            ContactsSettingsPlugin._contactStores,
+                            ContactsSettingsPlugin._contactStoresCount,
+                            ContactsSettingsPlugin._ctServerConnection,
+                            ContactsSettingsPlugin._currentSpecifiers,
+                            ContactsSettingsPlugin._importButtonIndexToStoreID,
+                            ContactsSettingsPlugin._importStoreID,
+                            ContactsSettingsPlugin._loadingContacts,
+                            ContactsSettingsPlugin._meCardLastCheckedSequenceNumber,
+                            ContactsSettingsPlugin._meCardPicker,
+                            ContactsSettingsPlugin._meCardPopover,
+                            ContactsSettingsPlugin._shouldShowSIMImport,
+                            ContactsShortNameController._shortNameEnabledSpecifier,
+                            ContactsShortNameController._shortNameFormatsGroup,
+                            ContactsShortNameController._shortNameFormatsSpecifiers ]
+...

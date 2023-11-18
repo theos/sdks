@@ -1,0 +1,49 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/MobileStoreSettings.bundle/MobileStoreSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SUSettingsOpenURLBagKey,
+                            _SUSettingsSpecifierPropertyAttributedTitle,
+                            _SUSettingsSpecifierPropertyAttributedTitleHighlighted,
+                            _SUSettingsSpecifierPropertyURLBagKey ]
+    objc-classes:         [ AppStoreVideoSettingsController,
+                            CellularSettingsController,
+                            SUSettingsLinkHeaderFooterView,
+                            SUSettingsPasswordEntryTableCell,
+                            SUSettingsViewControllerFactory,
+                            SUSettingsiForgotHeaderFooterView,
+                            StorePasswordSettingsController,
+                            StoreSettingsAccountCell, StoreSettingsController,
+                            StoreSettingsLinkButton ]
+    objc-ivars:           [ CellularSettingsController._bag,
+                            CellularSettingsController._settings,
+                            SUSettingsLinkHeaderFooterView._linkButton,
+                            SUSettingsLinkHeaderFooterView._linkURLBagKey,
+                            StorePasswordSettingsController._ignoreAccountStoreChangedNotification,
+                            StoreSettingsController._accountMatchStatus,
+                            StoreSettingsController._altDSID,
+                            StoreSettingsController._appleID,
+                            StoreSettingsController._automaticDownloadConfigurations,
+                            StoreSettingsController._biometricFaceIDAvailable,
+                            StoreSettingsController._biometricTouchIDAvailable,
+                            StoreSettingsController._biometricsState,
+                            StoreSettingsController._cellularNetworkingAllowed,
+                            StoreSettingsController._cellularSettings,
+                            StoreSettingsController._defaultAccountName,
+                            StoreSettingsController._didAuthenticate,
+                            StoreSettingsController._enabledAutomaticDownloadKinds,
+                            StoreSettingsController._isLowPowerMode,
+                            StoreSettingsController._password,
+                            StoreSettingsController._pendingAutomaticDownloadKinds,
+                            StoreSettingsController._sandboxAlertController,
+                            StoreSettingsController._signedInAlertController,
+                            StoreSettingsController._signedOutAlertController,
+                            StoreSettingsController._systemPolicy,
+                            StoreSettingsLinkButton._forceHighlight ]
+...

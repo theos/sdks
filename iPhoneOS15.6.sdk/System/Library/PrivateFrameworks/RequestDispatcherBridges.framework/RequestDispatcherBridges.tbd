@@ -1,0 +1,29 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RequestDispatcherBridges.framework/RequestDispatcherBridges
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _RequestDispatcherBridgesVersionNumber,
+                            _RequestDispatcherBridgesVersionString ]
+    objc-classes:         [ _TtC24RequestDispatcherBridges16CoreSpeechClient,
+                            _TtC24RequestDispatcherBridges16ServerPromptData,
+                            _TtC24RequestDispatcherBridges19NLRepetitionMessage,
+                            _TtC24RequestDispatcherBridges24ExecuteNLOnServerMessage,
+                            _TtC24RequestDispatcherBridges24NLResultCandidateMessage,
+                            _TtC24RequestDispatcherBridges25AsrResultCandidateMessage,
+                            _TtC24RequestDispatcherBridges25GRRResultCandidateMessage,
+                            _TtC24RequestDispatcherBridges25GenericContextTransformer,
+                            _TtC24RequestDispatcherBridges28PommesResultCandidateMessage,
+                            _TtC24RequestDispatcherBridges30ConversationalContextContainer,
+                            _TtC24RequestDispatcherBridges31SpeechRecognizerResponseHandler,
+                            _TtC24RequestDispatcherBridges33ServerBoundContextUpdateContainer,
+                            _TtC24RequestDispatcherBridges35RemoveButterflyExecutionGateMessage,
+                            _TtC24RequestDispatcherBridges40AssistantSpeechRecognizerResponseHandler,
+                            _TtC24RequestDispatcherBridges40DictationSpeechRecognizerResponseHandler,
+                            _TtCC24RequestDispatcherBridges8CDMProxy21CDMClientDelegateImpl ]
+...

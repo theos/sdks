@@ -1,0 +1,47 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Health/FeedItemPlugins/HealthRecords.healthplugin/HealthRecords
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC13HealthRecords10PaddedView,
+                            _TtC13HealthRecords18CategoryUpdateView,
+                            _TtC13HealthRecords21LabListViewController,
+                            _TtC13HealthRecords21LabsTipViewController,
+                            _TtC13HealthRecords22NewRecordsFeedItemView,
+                            _TtC13HealthRecords25NewRecordsLabFeedItemView,
+                            _TtC13HealthRecords26IngestNotificationObserver,
+                            _TtC13HealthRecords27CategorySummaryFeedItemView,
+                            _TtC13HealthRecords28CategoryUpdateViewController,
+                            _TtC13HealthRecords28LabsOnboardingViewController,
+                            _TtC13HealthRecords30CategoryFeedItemViewController,
+                            _TtC13HealthRecords30EducationPreviewViewController,
+                            _TtC13HealthRecords30HealthRecordsPluginAppDelegate,
+                            _TtC13HealthRecords31AddImmunizationToWalletTileView,
+                            _TtC13HealthRecords31SharedConceptTileViewController,
+                            _TtC13HealthRecords32AddAccountFeedItemViewController,
+                            _TtC13HealthRecords32NavigationFeedItemViewController,
+                            _TtC13HealthRecords32NewRecordsFeedItemViewController,
+                            _TtC13HealthRecords32RecordKindFeedItemViewController,
+                            _TtC13HealthRecords33CategorySummaryFeedItemHeaderView,
+                            _TtC13HealthRecords33ConceptDeltaHighlightFeedItemView,
+                            _TtC13HealthRecords33SharedConceptDetailViewController,
+                            _TtC13HealthRecords34AccountErrorFeedItemViewController,
+                            _TtC13HealthRecords35NewRecordsLabFeedItemViewController,
+                            _TtC13HealthRecords36AccountSharingFeedItemViewController,
+                            _TtC13HealthRecords36SharedConceptComboTileViewController,
+                            _TtC13HealthRecords37CategorySummaryFeedItemViewController,
+                            _TtC13HealthRecords40ConceptLatestValueFeedItemViewController,
+                            _TtC13HealthRecords41AddImmunizationToWalletTileViewController,
+                            _TtC13HealthRecords41ConceptAlphabeticalFeedItemViewController,
+                            _TtC13HealthRecords42AccountSharingOnboardingTileViewController,
+                            _TtC13HealthRecords43ConceptDeltaHighlightFeedItemViewController,
+                            _TtC13HealthRecords44SharedConcept_SharingVersionMismatchTileView,
+                            _TtC13HealthRecords52ClinicalNotificationSettingsSwitchCellViewController,
+                            _TtC13HealthRecords8NullView,
+                            _TtC13HealthRecords8TipsView ]
+...

@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/MobileSlideShowSettings.bundle/MobileSlideShowSettings
+current-version:       462.0.100
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _kCPLExistNonLocalOriginalsKey,
+                            _kCPLNonLocalOriginalsCountKey,
+                            _kCPLNonLocalOriginalsFileSizeKey,
+                            _kCPLNonLocalOriginalsPhotoCountKey,
+                            _kCPLNonLocalOriginalsVideoCountKey,
+                            _kMSSSettingsCPLKeepOriginalsSpecifierID ]
+    objc-classes:         [ MSSCellularDataSettingsController,
+                            MSSPhotoStreamInAccountSettingsController,
+                            MSSSettingsController, SettingsBaseController,
+                            _MSSCellularDataEnabledInvocation ]
+    objc-ivars:           [ MSSCellularDataSettingsController._appPolicy,
+                            MSSCellularDataSettingsController._cellularSpecifiers,
+                            MSSCellularDataSettingsController._invocations,
+                            MSSCellularDataSettingsController._unlimitedUpdatesSpecifiers,
+                            SettingsBaseController._accountModificationAllowed,
+                            SettingsBaseController._allPhotosSpecifiers,
+                            SettingsBaseController._avalancheAllowed,
+                            SettingsBaseController._cloudPhotosEnabled,
+                            SettingsBaseController._cplStatus,
+                            SettingsBaseController._diagnoseServiceConnection,
+                            SettingsBaseController._displayedSpinner,
+                            SettingsBaseController._iCloudPhotoLibraryConditionalSpecifiers,
+                            SettingsBaseController._iCloudPhotosSwitchSpecifier,
+                            SettingsBaseController._isCPLInExitMode,
+                            SettingsBaseController._offersManager,
+                            SettingsBaseController._photoStreamEnabled,
+                            SettingsBaseController._requireStorageUpgradeForCPL,
+                            SettingsBaseController._sharedStreamsEnabled,
+                            SettingsBaseController._shownFromAccountSettings,
+                            SettingsBaseController._systemPhotoLibrary,
+                            _MSSCellularDataEnabledInvocation._changeHandler,
+                            _MSSCellularDataEnabledInvocation._getter,
+                            _MSSCellularDataEnabledInvocation._setter,
+                            _MSSCellularDataEnabledInvocation._specifier,
+                            _MSSCellularDataEnabledInvocation._target ]
+...

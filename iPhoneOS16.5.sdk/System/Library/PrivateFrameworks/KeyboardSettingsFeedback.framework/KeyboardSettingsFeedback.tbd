@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/KeyboardSettingsFeedback.framework/KeyboardSettingsFeedback
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _KeyboardSettingsFeedbackVersionNumber,
+                            _KeyboardSettingsFeedbackVersionString,
+                            _TIFeedbackInitialInputModesDefaultsKeyPrefix,
+                            _TIFeedbackInitialPreferenceValueDefaultsKeyPrefix,
+                            _TIFeedbackInitialTimestampDefaultsKeyPrefix,
+                            _TUIFeedbackFeatureEnabledDefaultsKeyPrefix,
+                            _TUIFeedbackFinalInputModesDefaultsKeyPrefix,
+                            _TUIFeedbackFinalPreferenceValueDefaultsKeyPrefix,
+                            _TUIFeedbackFinalTimestampDefaultsKeyPrefix,
+                            _TUIFeedbackKeyboardDefaultsDomain,
+                            _TUIFeedbackStateDefaultsKeyPrefix,
+                            _TUIFeedbackSurveyOutcomeDefaultsKeyPrefix ]
+    objc-classes:         [ TUIFeedbackAlert, TUIFeedbackController,
+                            _TtC24KeyboardSettingsFeedback25TUIFeedbackSurveyMetadata,
+                            _TtC24KeyboardSettingsFeedback26TUIFeedbackSurveyPresenter ]
+    objc-ivars:           [ TUIFeedbackController._feedbackFeatureEnabledKey,
+                            TUIFeedbackController._feedbackSurveyPresenter,
+                            TUIFeedbackController._finalInputModesKey,
+                            TUIFeedbackController._finalPreferenceValueKey,
+                            TUIFeedbackController._finalTimestampKey,
+                            TUIFeedbackController._initialInputModesKey,
+                            TUIFeedbackController._initialPreferenceValueKey,
+                            TUIFeedbackController._initialTimestampKey,
+                            TUIFeedbackController._preferenceKey,
+                            TUIFeedbackController._stateKey,
+                            TUIFeedbackController._supportedLanguages,
+                            TUIFeedbackController._surveyOutcomeKey ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC11MediaCoreUI10PlayerView,
+                            _TtC11MediaCoreUI16BackdropHostView,
+                            _TtC11MediaCoreUI16MaterialRenderer,
+                            _TtC11MediaCoreUI21BackdropLayerHostView,
+                            _TtC11MediaCoreUI25MetalImageTextureProvider,
+                            _TtC11MediaCoreUI25MetalVideoTextureProvider,
+                            _TtCO11MediaCoreUI8Backdrop17CompositeRenderer,
+                            _TtCV11MediaCoreUI16MetalTextureView11Coordinator,
+                            _TtCV11MediaCoreUI21NowPlayingRouteButton11Coordinator ]
+...

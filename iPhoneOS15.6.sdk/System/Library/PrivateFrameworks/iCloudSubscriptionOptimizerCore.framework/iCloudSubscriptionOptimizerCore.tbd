@@ -1,0 +1,61 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerCore.framework/iCloudSubscriptionOptimizerCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ISOPBSimpleMessageReadFrom,
+                            _ISOPBSubscriptionLabelMessageReadFrom,
+                            _ISOPBSubscriptiondPetMessageReadFrom,
+                            _iCloudSubscriptionOptimizerCoreVersionNumber,
+                            _iCloudSubscriptionOptimizerCoreVersionString ]
+    objc-classes:         [ ISOPBSimpleMessage, ISOPBSubscriptionLabelMessage,
+                            ISOPBSubscriptiondPetMessage,
+                            ISOXpcSubscriptionClientRequest,
+                            ISOXpcSubscriptionClientResponse,
+                            _TtC31iCloudSubscriptionOptimizerCore29XpcSubscriptionServerDelegate ]
+    objc-ivars:           [ ISOPBSimpleMessage._lastOpenedApp,
+                            ISOPBSubscriptionLabelMessage._has,
+                            ISOPBSubscriptionLabelMessage._label,
+                            ISOPBSubscriptionLabelMessage._minsUntilICloudNotificationOpened,
+                            ISOPBSubscriptiondPetMessage._avgWeeklyScreenTimeSeconds2w,
+                            ISOPBSubscriptiondPetMessage._cameraAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._daemonVersion,
+                            ISOPBSubscriptiondPetMessage._dailyScreenTimeSeconds,
+                            ISOPBSubscriptiondPetMessage._diskStorageCapacityBytes,
+                            ISOPBSubscriptiondPetMessage._dropboxAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._filesAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._googleDriveAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._googlePhotoAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._has,
+                            ISOPBSubscriptiondPetMessage._hourOfDay,
+                            ISOPBSubscriptiondPetMessage._iCloudNotificationUsageTypeTop1,
+                            ISOPBSubscriptiondPetMessage._iCloudNotificationUsageTypeTop2,
+                            ISOPBSubscriptiondPetMessage._iCloudNotificationUsageTypeTop3,
+                            ISOPBSubscriptiondPetMessage._isDoNotDisturbOn,
+                            ISOPBSubscriptiondPetMessage._isDrivingModeOn,
+                            ISOPBSubscriptiondPetMessage._isSleepModeOn,
+                            ISOPBSubscriptiondPetMessage._labelMessage,
+                            ISOPBSubscriptiondPetMessage._lastOpenedAppHour24h,
+                            ISOPBSubscriptiondPetMessage._lastOpenedAppId24h,
+                            ISOPBSubscriptiondPetMessage._mlServerScore,
+                            ISOPBSubscriptiondPetMessage._notificationUsageTypeTop1,
+                            ISOPBSubscriptiondPetMessage._notificationUsageTypeTop2,
+                            ISOPBSubscriptiondPetMessage._notificationUsageTypeTop3,
+                            ISOPBSubscriptiondPetMessage._oBSOLETETrafficType,
+                            ISOPBSubscriptiondPetMessage._offsetMins,
+                            ISOPBSubscriptiondPetMessage._openedICloudNotificationRatio1w,
+                            ISOPBSubscriptiondPetMessage._openedICloudNotificationRatio2w,
+                            ISOPBSubscriptiondPetMessage._openedNotificationRatio1w,
+                            ISOPBSubscriptiondPetMessage._openedNotificationRatio24h,
+                            ISOPBSubscriptiondPetMessage._photosAppLaunchCount1w,
+                            ISOPBSubscriptiondPetMessage._timestampMillis,
+                            ISOPBSubscriptiondPetMessage._totalNotificationCount1w,
+                            ISOPBSubscriptiondPetMessage._totalOpenedNotificationCount1w,
+                            ISOPBSubscriptiondPetMessage._trafficType,
+                            ISOPBSubscriptiondPetMessage._usedDiskCapacityBytes ]
+...

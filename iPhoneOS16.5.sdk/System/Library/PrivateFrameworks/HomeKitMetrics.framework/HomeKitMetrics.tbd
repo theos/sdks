@@ -1,0 +1,69 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HomeKitMetrics.framework/HomeKitMetrics
+current-version:       983.6.23
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HMDTaggedLoggingCreateDictionary,
+                            _HMMLogTagActivityWithError,
+                            _HMMLogTagActivityWithErrorAndField,
+                            _HMMLogTagWithError, _HMMLogTagWithErrorAndField,
+                            _HMMSafeHomeUUIDFromLogEvent, _HMM_ERROR_CODE,
+                            _HMM_ERROR_DOMAIN, _HMM_UNDERLYING_ERROR_CODE,
+                            _HMM_UNDERLYING_ERROR_DOMAIN ]
+    objc-classes:         [ HMMClosedClosedInterval, HMMClosedOpenInterval,
+                            HMMHomeLogEvent, HMMInterval, HMMIntervalMapper,
+                            HMMLogEvent, HMMLogEventDispatcher,
+                            HMMLogEventTagProcessor, HMMOpenClosedInterval,
+                            HMMOpenOpenInterval, HMMStateData, HMMStateTracker,
+                            HMMTagDispatcher, HMMTagManager,
+                            HMMTagProcessorCreatorObserver,
+                            HMMTagSessionProcessorList, HMMTaggedEvent,
+                            UnsignedFixedIntervalMapper ]
+    objc-ivars:           [ HMMHomeLogEvent._homeUUID, HMMInterval._end,
+                            HMMInterval._start, HMMLogEvent._endDate,
+                            HMMLogEvent._endTimeMilliseconds, HMMLogEvent._error,
+                            HMMLogEvent._lock, HMMLogEvent._startDate,
+                            HMMLogEvent._startTimeMilliseconds,
+                            HMMLogEvent._submitted,
+                            HMMLogEventDispatcher._clientQueue,
+                            HMMLogEventDispatcher._dataSource,
+                            HMMLogEventDispatcher._observersByClass,
+                            HMMLogEventDispatcher._observersByProtocol,
+                            HMMLogEventTagProcessor._active,
+                            HMMLogEventTagProcessor._lastUpdate,
+                            HMMLogEventTagProcessor._logEvent,
+                            HMMLogEventTagProcessor._submitter,
+                            HMMStateData._cleanClose, HMMStateData._duration,
+                            HMMStateData._enterData, HMMStateData._enterTime,
+                            HMMStateData._exitData, HMMStateData._name,
+                            HMMStateData._open,
+                            HMMStateTracker._autoStopPreviousState,
+                            HMMStateTracker._closedStates,
+                            HMMStateTracker._longestState,
+                            HMMStateTracker._longestStateDuration,
+                            HMMStateTracker._openStates,
+                            HMMStateTracker._startTime, HMMStateTracker._started,
+                            HMMStateTracker._stateEntryTransitionTime,
+                            HMMStateTracker._totalDuration,
+                            HMMStateTracker._totalStateDuration,
+                            HMMTagDispatcher._allTagProcessors,
+                            HMMTagDispatcher._nextStaleCheckTime,
+                            HMMTagDispatcher._tagObservers,
+                            HMMTagDispatcher._workQueue,
+                            HMMTagManager._currentDispatcher,
+                            HMMTagManager._logEventSubmitter,
+                            HMMTagManager._workQueue,
+                            HMMTagProcessorCreatorObserver._creationBlock,
+                            HMMTagSessionProcessorList._processors,
+                            HMMTagSessionProcessorList._workQueue,
+                            HMMTaggedEvent._tagData, HMMTaggedEvent._tagName,
+                            HMMTaggedEvent._tagTime,
+                            UnsignedFixedIntervalMapper._comparisonBlock,
+                            UnsignedFixedIntervalMapper._creationBlock,
+                            UnsignedFixedIntervalMapper._intervals ]
+...

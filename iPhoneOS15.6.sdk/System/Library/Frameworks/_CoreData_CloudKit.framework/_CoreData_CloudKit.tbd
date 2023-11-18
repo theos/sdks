@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D2A01B87-F9B3-33C4-810C-6E27A0AE99FA
+  - target:          arm64e-ios
+    value:           6E2AF14D-448B-38FC-AB12-1D090D20E6B8
+install-name:    '/System/Library/Frameworks/_CoreData_CloudKit.framework/_CoreData_CloudKit'
+current-version: 15
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0VvM', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0Vvg', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0VvpMV', 
+                       '_$sSo36NSPersistentCloudKitContainerOptionsC010_CoreData_bC0E13databaseScopeSo010CKDatabaseI0Vvs' ]
+...

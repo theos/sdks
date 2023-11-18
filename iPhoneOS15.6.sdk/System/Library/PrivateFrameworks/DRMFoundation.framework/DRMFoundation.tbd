@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DRMFoundation.framework/DRMFoundation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DRMFoundationVersionNumber,
+                            _DRMFoundationVersionString ]
+    objc-classes:         [ _OSBatchingQueue, _OSPriorityQueue ]
+    objc-ivars:           [ _OSBatchingQueue._executionQueue,
+                            _OSBatchingQueue._maxDelay,
+                            _OSBatchingQueue._maxQueueDepth,
+                            _OSBatchingQueue._syncQueue, _OSBatchingQueue._timer,
+                            _OSBatchingQueue._workHandler,
+                            _OSBatchingQueue._workItems, _OSPriorityQueue._count,
+                            _OSPriorityQueue._highestPriority,
+                            _OSPriorityQueue._lowestPriority,
+                            _OSPriorityQueue._objects ]
+...

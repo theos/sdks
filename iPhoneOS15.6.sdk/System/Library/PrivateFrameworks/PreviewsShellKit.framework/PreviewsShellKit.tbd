@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PreviewsShellKit.framework/PreviewsShellKit
+current-version:       19.40.15
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _PreviewsShellKitVersionNumber,
+                            _PreviewsShellKitVersionString ]
+    objc-classes:         [ PSKDeviceDisplayContext, PSKScene,
+                            PSKSceneClientSettings, PSKSceneSettings,
+                            PSKSceneSpecification, PSKSceneTransitionContext,
+                            _TtC16PreviewsShellKit21ConnectViewController,
+                            _TtC16PreviewsShellKit21CrashedViewController,
+                            _TtC16PreviewsShellKit21StoppedViewController ]
+    objc-ivars:           [ PSKDeviceDisplayContext._deviceContext,
+                            PSKDeviceDisplayContext._displayContext,
+                            PSKScene._scene, PSKSceneClientSettings._settings,
+                            PSKSceneSettings._settings,
+                            PSKSceneSpecification._specification,
+                            PSKSceneTransitionContext._context ]
+...

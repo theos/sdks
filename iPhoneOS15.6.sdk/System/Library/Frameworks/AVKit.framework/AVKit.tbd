@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1DC7C312-18DB-30A3-B251-216EAE2D6069
+  - target:          armv7s-ios
+    value:           7FD67720-2276-35D0-8D51-5C45E3C956F0
+  - target:          arm64-ios
+    value:           70ED9C95-FB70-387A-9341-67AA3A0FFB2B
+  - target:          arm64e-ios
+    value:           18A3A997-D720-3D06-8EE4-7E3435C46B17
+install-name:    '/System/Library/Frameworks/AVKit.framework/AVKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AVKitErrorDomain, _AVKitMetadataIdentifierBrandIdentifier, 
+                       _AVKitMetadataIdentifierExternalContentIdentifier, _AVKitMetadataIdentifierExternalUserProfileIdentifier, 
+                       _AVKitMetadataIdentifierPlaybackProgress, _AVKitMetadataIdentifierServiceIdentifier, 
+                       _AVKitMetadataIdentifieriTunesStoreIdentifier, _AVPictureInPictureControllerContentSourceKey, 
+                       _AVPictureInPictureControllerDidStartNotification, _AVPictureInPictureControllerDidStopNotification, 
+                       _AVPictureInPictureControllerPlaybackStateDidChangeNotification, 
+                       _AVPictureInPictureControllerPlaybackStateIsPlayingKey, _AVPictureInPictureControllerWillStartNotification, 
+                       _AVPictureInPictureControllerWillStopNotification, _AVPlayerItemAVKitDataDidChangeNotification ]
+    objc-classes:    [ AVAppStorePlayerView, AVBackgroundView, AVChapter, AVControlItem, 
+                       AVEditBehavior, AVEditBehaviorContext, AVExternalPlaybackController, 
+                       AVHomeIPCameraBehavior, AVHomeIPCameraBehaviorContext, AVHomeLoadingButtonControlItem, 
+                       AVKeyValueChange, AVMediaSelectionViewController, AVMusicAppBehavior, 
+                       AVMusicAppBehaviorContext, AVMutableValueTiming, AVNewsWidgetPlayerBehavior, 
+                       AVNewsWidgetPlayerBehaviorContext, AVObservationController, 
+                       AVPictureInPictureController, AVPictureInPictureControllerContentSource, 
+                       AVPictureInPictureIndicatorView, AVPictureInPicturePlayerLayerView, 
+                       AVPictureInPicturePrerollAttributes, AVPictureInPictureVideoCallViewController, 
+                       AVPlaybackRate, AVPlaybackRateCollection, AVPlayerController, 
+                       AVPlayerControllerTimeResolver, AVPlayerViewController, AVPlayerViewControllerCustomControlsView, 
+                       AVRoutePickerView, AVSeymourBehavior, AVSeymourBehaviorContext, 
+                       AVTimecode, AVTimecodeController, AVTimer, AVValueTiming, 
+                       __AVPlayerLayerView ]
+...

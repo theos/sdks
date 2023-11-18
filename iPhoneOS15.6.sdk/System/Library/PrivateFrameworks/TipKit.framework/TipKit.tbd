@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TipKit.framework/TipKit
+current-version:       619.1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _TPKNotesClientContextKeyCanCollaborate,
+                            _TPKNotesClientContextKeyHasAtLeastFiveFolders,
+                            _TPKNotesClientContextKeyHasAtLeastFiveHashtags,
+                            _TPKNotesClientContextKeyHasAtLeastTenNotes,
+                            _TPKNotesClientContextKeyHasClassifiedImage,
+                            _TPKNotesClientContextKeyHasCloudKitOrLocalAccount,
+                            _TPKNotesClientContextKeyHasDocumentAttachment,
+                            _TPKNotesClientContextKeyHasHandwritingAttachment,
+                            _TPKNotesClientContextKeyHasMoreThanFiveNotes,
+                            _TPKNotesClientContextKeyHasMoreThanThreeFolders,
+                            _TPKNotesClientContextKeyNoteIdentifier,
+                            _TPKPhotosClientContextKeyCanDisplaySyndicatedAssets,
+                            _TPKPhotosClientContextKeyInfoButtonAvailable,
+                            _TPKPhotosClientContextKeyIsDisplayingSyndicatedAssets,
+                            _TPKPhotosClientContextKeyLibrayActionsButtonTapped,
+                            _TPKPhotosClientContextKeyLivePhotoSuggestionEligible,
+                            _TPKRemindersClientContextKeyHasCompletedRemindersInList,
+                            _TPKTVRemoteClientContextKeySiriTipEligible,
+                            _TipKitVersionNumber, _TipKitVersionString ]
+    objc-classes:         [ TPKContent, TPKContentController,
+                            TPKContentPopoverViewController, TPKContentView,
+                            TPKContentViewController,
+                            TPKEligibleContentsMonitoringController,
+                            TPKTipContentAnnotationBubbleView,
+                            TPKTipContentAnnotationView,
+                            TPKTipContentCollectionHeaderView,
+                            TPKTipContentCollectionViewCell,
+                            TPKTipContentHintView, TPKTipContentPlainView,
+                            TPKTipContentTableViewCell, TipImageProxy ]
+    objc-ivars:           [ TPKContentController._checkQueue,
+                            TPKContentController._contentCheckInProgress,
+                            TPKContentController._contentDidDisplayDelayInProgress,
+                            TPKContentController._contentDismissedByUser,
+                            TPKContentController._context,
+                            TPKContentController._currentPopOverController,
+                            TPKContentController._delegates,
+                            TPKContentController._dismissalReason,
+                            TPKContentController._displayTestContent,
+                            TPKContentController._eligibleContentsMonitoringController,
+                            TPKContentController._enterForegroundNotificationRegistered,
+                            TPKContentController._lastContentValidateDate,
+                            TPKContentController._lastRestartDisplayTrackingIdentifier,
+                            TPKContentController._miniTipContentManager,
+                            TPKContentController._nextAllowedCheckDate,
+                            TPKContentController._state,
+                            TPKContentController._testContentText,
+                            TPKContentController._testContentTitle,
+                            TPKEligibleContentsMonitoringController._context,
+                            TPKEligibleContentsMonitoringController._currentContent,
+                            TPKEligibleContentsMonitoringController._delegate,
+                            TPKEligibleContentsMonitoringController._duetEventsProvider,
+                            TPKEligibleContentsMonitoringController._eligibleContents ]
+...

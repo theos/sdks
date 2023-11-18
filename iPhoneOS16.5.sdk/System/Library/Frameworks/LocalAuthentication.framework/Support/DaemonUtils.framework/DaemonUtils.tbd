@@ -1,0 +1,69 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/Support/DaemonUtils.framework/DaemonUtils
+current-version:       1132.120.8
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LAAnalyticsAuthenticationTypeFromEvent,
+                            _LAEventFromBKDevice,
+                            _LANVRAMNamespaceStartupManager,
+                            _NSStringFromBKDevice, _NSStringFromBKLockoutState,
+                            _NSStringFromBKMatchFailReason,
+                            _NSStringFromBKOperationEndReason,
+                            _NSStringFromBKOperationState ]
+    objc-classes:         [ BiometryHelper, Caller, CredentialRequest, DaemonUtils,
+                            EvaluationRequest, InstalledAppsCache, LAAnalytics,
+                            LAAnalyticsEvaluation, LANVRAM, PushButtonMonitor,
+                            Request, StorageRequest ]
+    objc-ivars:           [ BiometryHelper._biometryType,
+                            BiometryHelper._databaseHashesByUserId,
+                            BiometryHelper._delegate, BiometryHelper._device,
+                            BiometryHelper._deviceType, BiometryHelper._fault,
+                            BiometryHelper._identities,
+                            BiometryHelper._permanentError, Caller._asid,
+                            Caller._auditToken, Caller._connection, Caller._euid,
+                            Caller._path, Caller._pid,
+                            CredentialRequest._credentialData,
+                            CredentialRequest._credentialType,
+                            CredentialRequest._readOnly,
+                            DaemonUtils._serverQueue, EvaluationRequest._acl,
+                            EvaluationRequest._aclOperation,
+                            EvaluationRequest._analytics,
+                            EvaluationRequest._customUI,
+                            EvaluationRequest._immediateSuccess,
+                            EvaluationRequest._options,
+                            EvaluationRequest._policy,
+                            EvaluationRequest._purpose,
+                            EvaluationRequest._secureIntentRequested,
+                            LAAnalytics._eventName,
+                            LAAnalyticsEvaluation._authenticationTypes,
+                            LAAnalyticsEvaluation._biometryAttempts,
+                            LAAnalyticsEvaluation._biometryFailures,
+                            LAAnalyticsEvaluation._biometryNoMatches,
+                            LAAnalyticsEvaluation._biometryResult,
+                            LAAnalyticsEvaluation._biometryStarted,
+                            LAAnalyticsEvaluation._biometryType,
+                            LAAnalyticsEvaluation._passcodeAttempts,
+                            LAAnalyticsEvaluation._passcodeFailures,
+                            LAAnalyticsEvaluation._passcodeResult,
+                            LAAnalyticsEvaluation._passcodeStarted,
+                            LAAnalyticsEvaluation._policy,
+                            LAAnalyticsEvaluation._result,
+                            PushButtonMonitor._axDoubleTapDetected,
+                            PushButtonMonitor._axDoubleTapExpirationBlock,
+                            PushButtonMonitor._delegate,
+                            PushButtonMonitor._doubleTapDetected,
+                            PushButtonMonitor._lastDoubleTap,
+                            PushButtonMonitor._lastTap,
+                            PushButtonMonitor._powerButtonObserver,
+                            PushButtonMonitor._sbBiometricsService,
+                            PushButtonMonitor._sbHardwareButtonService,
+                            Request._cachedValues, Request._caller,
+                            Request._heldObjects, Request._identifier,
+                            Request._interactive, Request._log, Request._received,
+                            StorageRequest._domain, StorageRequest._key ]
+...

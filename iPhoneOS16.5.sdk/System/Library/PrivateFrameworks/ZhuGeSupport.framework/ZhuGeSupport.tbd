@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ZhuGeSupport.framework/ZhuGeSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ZhuGeCopyPrivilegeWithCFError,
+                            _ZhuGeCopyPrivilegeWithError,
+                            _ZhuGeCopyValueWithCFError, _ZhuGeCopyValueWithError,
+                            _ZhuGeIsKeyValid, _ZhuGeSetLogHandler ]
+    objc-classes:         [ ZhuGeSupportCache, ZhuGeSupportConfigHelper,
+                            ZhuGeSupportInitializer, ZhuGeSupportRestoreLogClass,
+                            ZhuGeSupportSingleton ]
+    objc-ivars:           [ ZhuGeSupportCache._cacheDict,
+                            ZhuGeSupportCache._cacheList,
+                            ZhuGeSupportCache._cacheType,
+                            ZhuGeSupportCache._capacity,
+                            ZhuGeSupportConfigHelper._aliasesMap,
+                            ZhuGeSupportConfigHelper._allAliasesMap,
+                            ZhuGeSupportConfigHelper._allFlexibleList,
+                            ZhuGeSupportConfigHelper._allKeysConfig,
+                            ZhuGeSupportConfigHelper._extraAliasesMap,
+                            ZhuGeSupportConfigHelper._extraFlexibleList,
+                            ZhuGeSupportConfigHelper._extraKeysConfig,
+                            ZhuGeSupportConfigHelper._flexibleList,
+                            ZhuGeSupportConfigHelper._keysConfig,
+                            ZhuGeSupportConfigHelper._propertiesCache,
+                            ZhuGeSupportInitializer._c2sXpcProxy,
+                            ZhuGeSupportInitializer._configHelper,
+                            ZhuGeSupportInitializer._initXPCDone,
+                            ZhuGeSupportInitializer._s2cElucidateDict,
+                            ZhuGeSupportInitializer._s2cPivotalConf,
+                            ZhuGeSupportInitializer._s2cXpcConnection ]
+...

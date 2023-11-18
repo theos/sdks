@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ANSTKit.framework/ANSTKit
+current-version:       1.2.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ANSTErrorDomain, _ANSTKitVersionNumber,
+                            _ANSTKitVersionString,
+                            __ANSTLoggingGetOSLogForCategoryANSTKit,
+                            __Z14ANSTSupportANEv, _kANSTNetworkInputHeight,
+                            _kANSTNetworkInputLastMaskName,
+                            _kANSTNetworkInputName, _kANSTNetworkInputWidth,
+                            _kANSTNetworkOutputPriorMaskName,
+                            _kANSTNetworkOutputSmudgeConfidenceName ]
+    objc-classes:         [ ANSTAlgorithm, ANSTBaseNetworkEspresso,
+                            ANSTConfiguration, ANSTISPAlgorithm,
+                            ANSTISPAlgorithmConfiguration,
+                            ANSTISPAlgorithmResult, ANSTResult, ANSTUtility ]
+...

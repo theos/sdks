@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/JetUI.framework/JetUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _JUMeasurementsEqual, _JUMeasurementsMake,
+                            _JUMeasurementsZero, _JUMeasuringSizeCompressed,
+                            _JUMeasuringSizeExpanded, _JUPlaceableForButton,
+                            _JUPlaceableForImageView, _JUPlaceableForLabel,
+                            _JetFontTextStyleFastHashValue, _JetTraitsForScreen,
+                            _JetTraitsForView, _JetTraitsForWindow,
+                            _JetUIVersionNumber, _JetUIVersionString ]
+    objc-classes:         [ JUCustomView, JULayouts, JUNQMLParser,
+                            _TtC5JetUI12DynamicLabel,
+                            _TtC5JetUI16CustomLayoutView,
+                            _TtC5JetUI23_PlaceableAsJUPlaceable,
+                            _TtC5JetUI27TraitEnvironmentPlaceholder,
+                            __JUObjCFunctions ]
+    objc-ivars:           [ JUNQMLParser.__parserContext, JUNQMLParser._delegate,
+                            JUNQMLParser._string ]
+...

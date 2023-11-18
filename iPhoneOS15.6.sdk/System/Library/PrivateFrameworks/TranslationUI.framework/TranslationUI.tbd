@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TranslationUI.framework/TranslationUI
+current-version:       173.24
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ LTUIHostedDownloadViewBridge,
+                            LTUITranslateSettingsController,
+                            LTUITranslateSettingsDownloadController,
+                            _TtC13TranslationUI18SharedTranslations,
+                            _TtC13TranslationUI23LanguagesViewController,
+                            _TtC13TranslationUI25AirplaneModeConfiguration ]
+    objc-ivars:           [ LTUITranslateSettingsController.onDeviceOnlyGroup,
+                            LTUITranslateSettingsDownloadController._bridge,
+                            LTUITranslateSettingsDownloadController._usageContext ]
+...

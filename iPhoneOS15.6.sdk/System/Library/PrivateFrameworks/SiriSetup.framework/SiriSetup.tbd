@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriSetup.framework/SiriSetup
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SiriSetupVersionNumber, _SiriSetupVersionString ]
+    objc-classes:         [ SRSVTPreferences, SRSVoiceProfileManager,
+                            SRSVoiceTrainingManager, _TtC9SiriSetup10ColorLayer,
+                            _TtC9SiriSetup12Configurator,
+                            _TtC9SiriSetup13CheckMarkView,
+                            _TtC9SiriSetup14IntroPresenter,
+                            _TtC9SiriSetup16OrbContainerView,
+                            _TtC9SiriSetup16SuccessPresenter,
+                            _TtC9SiriSetup18EducationPresenter,
+                            _TtC9SiriSetup20DataSharingPresenter,
+                            _TtC9SiriSetup20SiriSetupCoordinator,
+                            _TtC9SiriSetup22IntroWelcomeController,
+                            _TtC9SiriSetup22VoiceTrainingPresenter,
+                            _TtC9SiriSetup23IntroProxCardController,
+                            _TtC9SiriSetup24SuccessWelcomeController,
+                            _TtC9SiriSetup25SuccessProxCardController,
+                            _TtC9SiriSetup26EducationWelcomeController,
+                            _TtC9SiriSetup28DataSharingWelcomeController,
+                            _TtC9SiriSetup29DataSharingProxCardController,
+                            _TtC9SiriSetup30VoiceTrainingWelcomeController,
+                            _TtC9SiriSetup8Defaults ]
+    objc-ivars:           [ SRSVTPreferences._preferences,
+                            SRSVoiceProfileManager._voiceProfileManager,
+                            SRSVoiceTrainingManager._delegate,
+                            SRSVoiceTrainingManager._trainingManager ]
+...

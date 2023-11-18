@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SecureTransactionService.framework/SecureTransactionService
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NFECP20TerminalTypeToSTS,
+                            _NFExpressModeStateToSTSExpressModeState,
+                            _NFFieldToSTS, _NFTechnologyToSTS,
+                            _NFTerminalTypeToSTS, _NFVasModeToSTSTerminalMode,
+                            _PTA_CCC_AID, _PTA_HYDRA_CORPORATE_AID,
+                            _PTA_HYDRA_HOME_AID, _STSXPCHelperErrorDescriptions,
+                            _STS_XCPHELPER_ERROR_BT_SUBDOMAIN,
+                            _STS_XCPHELPER_ERROR_DOMAIN,
+                            _STS_XCPHELPER_ERROR_WIFI_SUBDOMAIN,
+                            _SecureTransactionServiceVersionNumber,
+                            _SecureTransactionServiceVersionString, _StsLogFunc,
+                            _StsLogFunc_C, _StsLogFunc_Obj, _StsLogInternal,
+                            _StsSignpostLog ]
+    objc-classes:         [ ISO18013Handler, ISO18013ReaderAuthInfo,
+                            ISO18013RequestElement, PaymentHandler,
+                            STS18013ReaderAuthInfo, STS18013RequestElement,
+                            STSCredential, STSCredentialRequest,
+                            STSCredentialSelect, STSEntitlementChecker, STSField,
+                            STSFieldNFC, STSISO18013CredRequest, STSListener,
+                            STSSession, STSTestReader, STSTimer,
+                            STSTransaction18013Request, STSTransactionEndEvent,
+                            STSTransactionHandler, STSTransactionStartEvent,
+                            STSXPCClientNotificationListener,
+                            UnifiedAccessHandler ]
+...

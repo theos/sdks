@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DMCEnrollmentLibrary.framework/DMCEnrollmentLibrary
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _DMCEnrollmentLibraryVersionNumber,
+                            _DMCEnrollmentLibraryVersionString,
+                            _kMCBridgeAssignedManagedAppleIDKey,
+                            _kMCBridgeEnrollmentModeKey,
+                            _kMCBridgeFriendlyNameKey,
+                            _kMCBridgeManagedAppleIDKey,
+                            _kMCBridgeOrganizationNameKey,
+                            _kMCBridgeProfileIdentifierKey,
+                            _kWebAuthCallbackURLScheme ]
+    objc-classes:         [ DMCAuthenticationHelper, DMCEnrollmentDirtyState,
+                            DMCEnrollmentFlowController,
+                            DMCEnrollmentFlowControllerBase,
+                            DMCMAIDAuthenticator, DMCServiceDiscoveryHelper,
+                            DMCUnenrollmentFlowController ]
+    objc-ivars:           [ DMCEnrollmentDirtyState._stateDictionary,
+                            DMCEnrollmentFlowController._anchorCertificateRefs,
+                            DMCEnrollmentFlowController._authToken,
+                            DMCEnrollmentFlowController._authenticationResults,
+                            DMCEnrollmentFlowController._cleanupIfFail,
+                            DMCEnrollmentFlowController._devicePasscode,
+                            DMCEnrollmentFlowController._dirtyState,
+                            DMCEnrollmentFlowController._enrollmentCompletionHandler,
+                            DMCEnrollmentFlowController._enrollmentMethod,
+                            DMCEnrollmentFlowController._enrollmentType,
+                            DMCEnrollmentFlowController._friendlyName,
+                            DMCEnrollmentFlowController._hasExecutedUIStep,
+                            DMCEnrollmentFlowController._isPostRestoration,
+                            DMCEnrollmentFlowController._isProfileLocked,
+                            DMCEnrollmentFlowController._isRenewalFlow,
+                            DMCEnrollmentFlowController._managedAppleID,
+                            DMCEnrollmentFlowController._managedConfigurationHelper,
+                            DMCEnrollmentFlowController._noCompletionScene,
+                            DMCEnrollmentFlowController._organizationName,
+                            DMCEnrollmentFlowController._personaID,
+                            DMCEnrollmentFlowController._presenter,
+                            DMCEnrollmentFlowController._profileData,
+                            DMCEnrollmentFlowController._profileIdentifier,
+                            DMCEnrollmentFlowController._restartIfFail,
+                            DMCEnrollmentFlowController._rmAccountIdentifier,
+                            DMCEnrollmentFlowController._serviceDiscoveryHelper,
+                            DMCEnrollmentFlowController._serviceURL,
+                            DMCEnrollmentFlowController._userAuthURL,
+                            DMCEnrollmentFlowController._username,
+                            DMCEnrollmentFlowControllerBase._currentStep,
+                            DMCEnrollmentFlowControllerBase._nextStepIndex,
+                            DMCEnrollmentFlowControllerBase._stepQueue,
+                            DMCEnrollmentFlowControllerBase._workerQueue,
+                            DMCMAIDAuthenticator._rmAccountID,
+                            DMCUnenrollmentFlowController._altDSID,
+                            DMCUnenrollmentFlowController._isAppleMAID,
+                            DMCUnenrollmentFlowController._managedConfigurationHelper,
+                            DMCUnenrollmentFlowController._personaID,
+                            DMCUnenrollmentFlowController._presenter,
+                            DMCUnenrollmentFlowController._profileIdentifier,
+                            DMCUnenrollmentFlowController._unenrollmentCompletionHandler ]
+...

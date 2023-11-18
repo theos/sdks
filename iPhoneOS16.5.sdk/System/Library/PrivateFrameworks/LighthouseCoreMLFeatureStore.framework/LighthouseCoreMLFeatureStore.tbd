@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/LighthouseCoreMLFeatureStore.framework/LighthouseCoreMLFeatureStore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LCFLogContextBiomeManager,
+                            _LCFLogDatabaseConnection, _LCFLogFeatureStore,
+                            _LCFLoggingUtilsInit,
+                            _LRRLoggingCategoryBiomeManager,
+                            _LRRLoggingCategoryDatabaseConnection,
+                            _LRRLoggingCategoryFeatureStore,
+                            _LRRLoggingSubsystem,
+                            _LighthouseCoreMLFeatureStoreVersionNumber,
+                            _LighthouseCoreMLFeatureStoreVersionString,
+                            _doubleSort, _kFeatureVersion, _kItemIdentifier,
+                            _kTimestamp, _onceTokenBiomeSource ]
+    objc-classes:         [ LCFBiomeManager, LCFCoreMLBatchProvider,
+                            LCFCoreMLFeatureProvider,
+                            LCFCoreMLFeatureProviderUtils, LCFDatabaseColumn,
+                            LCFDatabaseConnection, LCFFeatureConverter,
+                            LCFFeatureSet, LCFFeatureStore, LCFFeatureValue ]
+    objc-ivars:           [ LCFBiomeManager._biomeSource,
+                            LCFBiomeManager._biomeStream,
+                            LCFCoreMLBatchProvider._count,
+                            LCFCoreMLBatchProvider._featureProviders,
+                            LCFCoreMLFeatureProvider._featureNames,
+                            LCFCoreMLFeatureProvider._featureValues,
+                            LCFDatabaseColumn._name, LCFDatabaseColumn._type,
+                            LCFDatabaseColumn._typeDb,
+                            LCFDatabaseConnection._databaseBaseURL,
+                            LCFDatabaseConnection._databaseName,
+                            LCFDatabaseConnection._databaseNamePath,
+                            LCFDatabaseConnection._tableName,
+                            LCFFeatureSet._featureValues,
+                            LCFFeatureSet._featureVersion,
+                            LCFFeatureSet._itemIdentifier,
+                            LCFFeatureSet._timestamp,
+                            LCFFeatureStore._biomeManagerVirtualFeatureStore,
+                            LCFFeatureStore._dbFeatureStore,
+                            LCFFeatureStore._useSqlite,
+                            LCFFeatureValue._boolValue,
+                            LCFFeatureValue._doubleValue,
+                            LCFFeatureValue._intValue, LCFFeatureValue._shape,
+                            LCFFeatureValue._stride,
+                            LCFFeatureValue._stringValue,
+                            LCFFeatureValue._timeBucketValue,
+                            LCFFeatureValue._typeDb,
+                            LCFFeatureValue._valueInString,
+                            LCFFeatureValue._valuesFlatten ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           790414FE-F938-3901-B6A8-DD4462744FE2
+  - target:          arm64e-ios
+    value:           C8452E79-D9EC-3C21-9FA4-2FA10DDFEEED
+install-name:    '/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DCBAASignerErrorDomain, _DCErrorDomain ]
+    objc-classes:    [ DCAppAttestService, DCContext, DCDevice, DCDeviceMetadataDaemonConnection, 
+                       DCDeviceMetadataInterface ]
+...

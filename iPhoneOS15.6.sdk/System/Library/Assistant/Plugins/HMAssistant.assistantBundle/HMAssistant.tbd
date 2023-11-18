@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/HMAssistant.assistantBundle/HMAssistant
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HMDDidReceiveRemoteMessageWithNoListenerNotification,
+                            _HMErrorCodeNilEventDescription,
+                            _kAccessAllowedWhenLockedKey,
+                            _kAccessAllowedWhenLockedUpdatedNotificationKey,
+                            _kApplyDeviceUnlockKey,
+                            _kCanCacheHomeConfigurationKey,
+                            _kCanUseCachedHomeConfigurationKey,
+                            _kCloudDataSyncInProgressUpdatedNotification,
+                            _kCloudDataSyncTimerExpiredNotification,
+                            _kCloudServerTokenDataResetNotification,
+                            _kFilenameKey, _kHMDUpdaterCurrentDateKey,
+                            _kHMDUpdaterCurrentUUIDKey, _kHomeCountKey,
+                            _kNetworkIdentifierKey, _kProvisioningStatusKey,
+                            _kRemoteUsersDeregisteredKey,
+                            _kResidentProvisioningStatusChangedNotificationKey,
+                            _kUpdateAccessAllowedWhenLockedRequestKey ]
+    objc-classes:         [ HMAssistantSyncHome ]
+...

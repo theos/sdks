@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VoiceServices/PlugIns/iPod.vsplugin/iPod
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ iPodControlDataProvider, iPodControlGeniusAction,
+                            iPodControlIdentifyAction,
+                            iPodControlNextTrackAction, iPodControlNoMusicAction,
+                            iPodControlPauseAction, iPodControlPlayAction,
+                            iPodControlPlayingRequiredAction,
+                            iPodControlPreviousTrackAction,
+                            iPodControlResultHandler, iPodControlResultValidator,
+                            iPodControlSelectAction, iPodControlShuffleAction,
+                            iPodControlSimpleAction ]
+    objc-ivars:           [ iPodControlDataProvider._collectionsByClassID,
+                            iPodControlDataProvider._library,
+                            iPodControlDataProvider._providerFlags,
+                            iPodControlDataProvider._queriesByClassID,
+                            iPodControlDataProvider._reportingQueue,
+                            iPodControlDataProvider._stopSuppressionToken,
+                            iPodControlDataProvider._suppressionToken,
+                            iPodControlGeniusAction._shouldPlay,
+                            iPodControlPauseAction._needsPause,
+                            iPodControlPlayAction._needsPlay,
+                            iPodControlSelectAction._query ]
+...

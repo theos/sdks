@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/FMF.assistantBundle/FMF
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _FMFUrlBase, _LogCategory_Unspecified,
+                            _PreferencesBundleID, _RedirectedHostKey ]
+    objc-classes:         [ Common, ContactsUtilities, FMFBaseCmd, FMFSABaseModel,
+                            FMFSADataSource, FMFSALocation, FMFSAMyLocation,
+                            FMFSAPunchOutFriend, FMFSASearch, FMFSASetGeoFence,
+                            FMFSAUtils, FMFSAVisibility, GetLocationsCmd,
+                            SetGeoFenceCmd, ShowHideLocationCmd ]
+    objc-ivars:           [ FMFSADataSource._mockLocations ]
+...

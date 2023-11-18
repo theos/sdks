@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriRequestDispatcher.framework/SiriRequestDispatcher
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SiriRequestDispatcherVersionNumber,
+                            _SiriRequestDispatcherVersionString ]
+    objc-classes:         [ _TtC21SiriRequestDispatcher11MessageBase,
+                            _TtC21SiriRequestDispatcher18RequestMessageBase,
+                            _TtC21SiriRequestDispatcher18SessionMessageBase,
+                            _TtC21SiriRequestDispatcher19ClearContextMessage,
+                            _TtC21SiriRequestDispatcher19SessionEndedMessage,
+                            _TtC21SiriRequestDispatcher20CancelRequestMessage,
+                            _TtC21SiriRequestDispatcher21EndRequestMessageBase,
+                            _TtC21SiriRequestDispatcher21RequestContextMessage,
+                            _TtC21SiriRequestDispatcher21ResultSelectedMessage,
+                            _TtC21SiriRequestDispatcher21SessionStartedMessage,
+                            _TtC21SiriRequestDispatcher23RequestCompletedMessage,
+                            _TtC21SiriRequestDispatcher23StartRequestMessageBase,
+                            _TtC21SiriRequestDispatcher23StartTextRequestMessage,
+                            _TtC21SiriRequestDispatcher24StartLocalRequestMessage,
+                            _TtC21SiriRequestDispatcher25StartSpeechRequestMessage,
+                            _TtC21SiriRequestDispatcher26EndDictationRequestMessage,
+                            _TtC21SiriRequestDispatcher29StartTestSpeechRequestMessage,
+                            _TtC21SiriRequestDispatcher31StartDirectActionRequestMessage,
+                            _TtC21SiriRequestDispatcher31TextBasedResultCandidateMessage,
+                            _TtC21SiriRequestDispatcher32EndSpeechDictationSessionMessage,
+                            _TtC21SiriRequestDispatcher33ResultCandidateRequestMessageBase,
+                            _TtC21SiriRequestDispatcher34DirectActionResultCandidateMessage,
+                            _TtC21SiriRequestDispatcher34StartCorrectedSpeechRequestMessage,
+                            _TtC21SiriRequestDispatcher34StartSpeechDictationRequestMessage,
+                            _TtC21SiriRequestDispatcher34StartSpeechDictationSessionMessage,
+                            _TtC21SiriRequestDispatcher37CorrectedSpeechResultCandidateMessage,
+                            _TtC21SiriRequestDispatcher40StartUnderstandingOnServerRequestMessage,
+                            _TtC21SiriRequestDispatcher44StartUnderstandingOnServerTextRequestMessage ]
+...
