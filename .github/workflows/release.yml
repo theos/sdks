@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    paths:
+      - '**/*.sdk/**'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Prepare for release
+        run: |
+          for i in *.sdk; do
+              if [[ -d $i ]]; then
+                tar -cJvf $i.tar.xz $i && echo $(ls *.tar.xz)
+              fi
+          done
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${GITHUB_REF##*/}-${GITHUB_SHA:0:7}"
+          gh release create "$TAG" --draft --title "Draft Release"
+          gh release upload "$TAG" ./*.tar.xz
