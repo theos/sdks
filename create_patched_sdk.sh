@@ -61,14 +61,12 @@ if [[ $# -lt 5 ]] || ignored $tbd_tool; then
 else
     tbd_exists=$(command -v "$tbd_tool")
     if [[ -z $tbd_exists ]]; then
-        printf "Provided tbd-tool (%s) doesn't exist\n" "$tbd_tool"
+        printf "Provided tbd-tool (%s) doesn't exist or isn't executable\n" "$tbd_tool"
         exit 1
     fi
 fi
 
 use_simulator="$1"
-device_support_dir="$HOME/Library/Developer/Xcode/iOS DeviceSupport/"
-
 if [[ $# -lt 1 ]]; then
     use_simulator="-"
 fi
@@ -91,11 +89,10 @@ if ! [[ -d $xcode_sim_runtime_path ]]; then
 fi
 xcode_default_sdk_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 
-xcode_sdk_paths="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/*"
 preferred_xcode_sdk_path=""
 
-for xcode_sdk_path in "$xcode_sdk_paths"; do
-    xcode_sdk_real=$(realpath $xcode_sdk_path)
+for xcode_sdk_path in "$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/"*; do
+    xcode_sdk_real=$(cd "$(dirname "$xcode_sdk_path")"; pwd -P)/$(basename "$xcode_sdk_path")
 
     if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
         preferred_xcode_sdk_path=$xcode_sdk_path
@@ -114,7 +111,8 @@ xcode_sdk_ios_version=${xcode_sdk_ios_version%????} # Remove '.sdk' at back of s
 
 sdks_output_path_single_sdk_path=""
 
-if [[ -d $device_support_dir]] && ignored $use_simulator; then
+device_support_dir="$HOME/Library/Developer/Xcode/iOS DeviceSupport/"
+if [[ -d $device_support_dir ]] && ignored $use_simulator; then
     for symbols_path in "$device_support_dir"*; do
         if ! [[ -d $symbols_path ]]; then
             continue

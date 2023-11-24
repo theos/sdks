@@ -69,21 +69,7 @@ def removeDirectory(dir):
     return True
 
 def main(argv):
-    theos_path_env = os.environ.get("THEOS")
-    if theos_path_env is None:
-        print("The path of environment-variable $THEOS doesn't exist.")
-        print("Please run 'export THEOS=<theos path here>' before running this program")
-
-        exit(1)
-
-    theos_path = Path(theos_path_env)
-    if not theos_path.exists() or not theos_path.is_dir():
-        print("No directory exists at path of environment-variable $THEOS")
-        exit(1)
-
-    output_path = theos_path / "sdks"
     parser = argparse.ArgumentParser(description="Apple Platform SDK Generator Python Script", add_help=True)
-
     parser.add_argument("-a", "--archs", nargs='+', help="A list of archs to replace ones in SDK", required=False)
     parser.add_argument("--dirs", help='A list of dirs to recurse while parsing inside SDK', default=DIRS, nargs='+', required=False)
     parser.add_argument("--ignore-warnings", help="Ignore any warnings from tbd", action='store_true', default=False, required=False)
@@ -99,6 +85,42 @@ def main(argv):
     parser.add_argument('-x', "--xcode-path", help=f'Path to Xcode-Installation. Default location is {XCODE_PATH}', required=False)
 
     args = parser.parse_args()
+
+    output_path = args.output_path
+    if output_path is None:
+        theos_path_env = os.environ.get("THEOS")
+
+        if theos_path_env is None:
+            print("No Theos installation found.")
+            print("Please either install Theos or provide a path to an sdks directory")
+
+            exit(1)
+
+        theos_path = Path(theos_path_env)
+
+        if not theos_path.exists():
+            print("No Theos installation found.")
+            print("Please either install Theos or provide a path to an sdks directory")
+
+            exit(1)
+
+        elif not theos_path.is_dir():
+            print("Theos does not appear to be installed correctly.")
+            print("Please either reinstall Theos or provide a path to an sdks directory")
+
+            exit(1)
+
+        output_path = theos_path / "sdks"
+
+    else:
+        output_path = Path(output_path)
+        output_path.mkdir(mode=0o666, parents=True, exist_ok=True)
+        if not output_path.is_dir():
+            print(f'{output_path} does not appear to be a directory.')
+            print("Please provide a path to an sdks directory")
+
+            exit(1)
+
     tbd_path_string = TBD_PATH
 
     if args.tbd_path is not None:
@@ -112,23 +134,17 @@ def main(argv):
 
         exit(1)
 
-    if not tbd_path.is_file():
+    elif not tbd_path.is_file():
         print("Your tbd path is not a path to a file")
         print(f"A tbd executable file was expected at {tbd_path}")
 
         exit(1)
 
-    if not os.access(tbd_path.as_posix(), os.X_OK):
+    elif not os.access(tbd_path.as_posix(), os.X_OK):
         print("Your tbd file is not executable")
         print(f"Please run 'chmod +x {tbd_path}'")
 
         exit(1)
-
-    did_provide_output_path = args.output_path is not None
-    if did_provide_output_path:
-        output_path = Path(args.output_path)
-
-    output_path.mkdir(mode=0o666, parents=False, exist_ok=True)
 
     did_provide_archs = args.archs is not None
     did_provide_targets = args.targets is not None
@@ -137,11 +153,11 @@ def main(argv):
         print("Error: Both --keep-archs and --replace-archs were provided")
         exit(1)
 
-    if args.keep_targets and did_provide_targets:
+    elif args.keep_targets and did_provide_targets:
         print("Error: Both --keep-targets and --replace-targets were provided")
         exit(1)
 
-    if did_provide_archs and did_provide_targets:
+    elif did_provide_archs and did_provide_targets:
         print("Error: Both --replace-archs and --replace-targets were provided")
         exit(1)
 
@@ -262,7 +278,7 @@ def main(argv):
 
         exit(1)
 
-    if not xcode_path.is_dir():
+    elif not xcode_path.is_dir():
         print("Your Xcode Application Path does not point to a directory")
         print(f"The Xcode Application Path Directory was expected at {xcode_path}")
 
@@ -309,7 +325,7 @@ def main(argv):
 
     if not xcode_sdk_version:
         print("No SDK pointing to the default SDK was found")
-        print("The default sdk exists at path {xcode_default_sdk_path}")
+        print(f"The default sdk exists at path {xcode_default_sdk_path}")
 
         exit(1)
 
@@ -359,13 +375,13 @@ def main(argv):
 
                     continue
 
-                if not sdk_write_path.is_dir():
+                elif not sdk_write_path.is_dir():
                     print(f"Warning: A non-directory exists at write-path for SDK for iOS {symbols_ios_version}. Skipping")
                     print(f"SDK for iOS {symbols_ios_version} is at {sdk_write_path}")
 
                     continue
 
-                if not removeDirectory(sdk_write_path):
+                elif not removeDirectory(sdk_write_path):
                     continue
 
             if xcode_sdk_version != symbols_ios_version:
@@ -441,7 +457,7 @@ def main(argv):
 
             exit(1)
 
-        if not simulator_version_path.is_file():
+        elif not simulator_version_path.is_file():
             print("The iOS Simulator RuntimeRoot directory's SystemVersion.plist is not a file. Please re-install the simulator")
             print(f"The iOS Simulator RuntimeRoot directory's SystemVersion.plist is at {simulator_version_path}")
 
