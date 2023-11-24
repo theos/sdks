@@ -92,7 +92,7 @@ xcode_default_sdk_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Devel
 
 preferred_xcode_sdk_path=""
 for xcode_sdk_path in "$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs/"*; do
-    xcode_sdk_real=$(cd "$(dirname "$xcode_sdk_path")"; pwd -P)/$(basename "$xcode_sdk_path")
+    xcode_sdk_real=$(realpath "$xcode_sdk_path")
 
     if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
         preferred_xcode_sdk_path=$xcode_sdk_path
@@ -145,12 +145,6 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
         mkdir -p "$sdks_output_path_single_sdk_path"
         cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-        science="$tbd_tool -p -r all $symbols_actual_path \
-                    -o ${write_options[@]} $no_overwrite $sdks_output_path_single_sdk_path/System \
-                    $no_warnings ${tbd_options[@]} ${archs_option[@]} -v $version"
-
-        echo $science
-
         "$tbd_tool" -p -r all "$symbols_actual_path" \
                     -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
                     $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
@@ -182,10 +176,6 @@ else
     write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
                  "-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
                  "-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Library")
-
-    science="$tbd_tool ${parse_paths[@]} ${write_paths[@]} $no_warnings ${tbd_options[@]} ${archs_option[@]} -v $version"
-
-    echo $science
 
     "$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
 

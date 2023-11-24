@@ -92,7 +92,7 @@ xcode_default_sdk_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Develo
 preferred_xcode_sdk_path=""
 
 for xcode_sdk_path in "$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/"*; do
-    xcode_sdk_real=$(cd "$(dirname "$xcode_sdk_path")"; pwd -P)/$(basename "$xcode_sdk_path")
+    xcode_sdk_real=$(realpath "$xcode_sdk_path")
 
     if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
         preferred_xcode_sdk_path=$xcode_sdk_path
