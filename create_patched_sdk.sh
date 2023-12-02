@@ -118,10 +118,7 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
             continue
         fi
 
-        symbols_path_basename=$(basename "$symbols_path")
-        symbols_path_basename_array=($symbols_path_basename)
-
-        ios_version=${symbols_path_basename_array[0]}
+        ios_version="$(basename "$symbols_path" | grep -o "\d\+\(\.\d\+\)\{1,2\}")"
         sdk_name=$(printf "iPhoneOS%s.sdk" $ios_version)
 
         symbols_actual_path="$symbols_path/Symbols/System"
