@@ -36,7 +36,7 @@ fi
 # tbd info
 version="v3"
 
-archs_option=("--replace-archs" armv7 armv7s arm64)
+archs_option=("--replace-archs" armv7 armv7s arm64 arm64e)
 tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symbols" "--ignore-missing-exports")
 write_options=("--preserve-subdirs" "--replace-path-extension")
 
