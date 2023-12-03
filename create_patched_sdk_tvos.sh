@@ -142,9 +142,9 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
         mkdir -p "$sdks_output_path_single_sdk_path"
         cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-        "$tbd_tool" -p -r all "$symbols_actual_path" \
-                    -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
-                    $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
+        "$tbd_tool" \
+            -p $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version -r all "$symbols_actual_path" \
+            -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
 
         if [[ $? -ne 0 ]]; then
             printf 'Failed to create tbds from Symbols directory for tvOS %s\n' $tvos_version
