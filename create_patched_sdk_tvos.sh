@@ -65,14 +65,12 @@ if [[ $# -lt 5 ]] || ignored $tbd_tool; then
 else
     tbd_exists=$(command -v "$tbd_tool")
     if [[ -z $tbd_exists ]]; then
-        printf "Provided tbd-tool (%s) doesn't exist\n" "$tbd_tool"
+        printf "Provided tbd-tool (%s) doesn't exist or isn't executable\n" "$tbd_tool"
         exit 1
     fi
 fi
 
 use_simulator="$1"
-device_support_dir="$HOME/Library/Developer/Xcode/tvOS DeviceSupport/"
-
 if [[ $# -lt 1 ]]; then
     use_simulator="-"
 fi
@@ -89,14 +87,12 @@ if [[ -z $xcode_developer_path ]]; then
     exit 1
 fi
 
-xcode_sim_runtime_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot"
+xcode_sim_runtime_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot"
 xcode_default_sdk_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk"
 
-xcode_sdk_paths="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs/*"
-
 preferred_xcode_sdk_path=""
-for xcode_sdk_path in "$xcode_sdk_paths"; do
-    xcode_sdk_real=$(realpath $xcode_sdk_path)
+for xcode_sdk_path in "$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs/"*; do
+    xcode_sdk_real=$(realpath "$xcode_sdk_path")
 
     if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
         preferred_xcode_sdk_path=$xcode_sdk_path
@@ -110,56 +106,48 @@ fi
 
 preferred_xcode_sdk_name=$(basename $preferred_xcode_sdk_path)
 
-xcode_sdk_ios_version=${preferred_xcode_sdk_name:8} # Remove 'iPhoneOS' in front of sdk name
-xcode_sdk_ios_version=${xcode_sdk_ios_version%????} # Remove '.sdk' at back of sdk name
+xcode_sdk_tvos_version=${preferred_xcode_sdk_name:9} # Remove 'AppleTVOS' in front of sdk name
+xcode_sdk_tvos_version=${xcode_sdk_tvos_version%????} # Remove '.sdk' at back of sdk name
 
 sdks_output_path_single_sdk_path=""
 
+device_support_dir="$HOME/Library/Developer/Xcode/tvOS DeviceSupport/"
 if [[ -d $device_support_dir ]] && ignored $use_simulator; then
     for symbols_path in "$device_support_dir"*; do
         if ! [[ -d $symbols_path ]]; then
             continue
         fi
 
-        symbols_path_basename=$(basename "$symbols_path")
-        symbols_path_basename_array=($symbols_path_basename)
-
-        ios_version=${symbols_path_basename_array[0]}
-        sdk_name=$(printf "AppleTVOS%s.sdk" $ios_version)
+        tvos_version="$(basename "$symbols_path" | grep -o "\d\+\(\.\d\+\)\{1,2\}")"
+        sdk_name=$(printf "AppleTVOS%s.sdk" $tvos_version)
 
         symbols_actual_path="$symbols_path/Symbols/System"
         if ! [[ -d $symbols_actual_path ]]; then
-            printf "Symbols for iOS %s don't exist\n" "$ios_version"
+            printf "Symbols for tvOS %s don't exist\n" "$tvos_version"
             continue
         fi
 
         sdks_output_path_single_sdk_path="$sdks_output_path/$sdk_name"
         if [[ -d $sdks_output_path_single_sdk_path ]]; then
-            printf 'SDK for iOS %s already exists\n' "$ios_version"
+            printf 'SDK for tvOS %s already exists\n' "$tvos_version"
             continue
         fi
 
-        printf 'Creating SDK for iOS %s ...\n' "$ios_version"
+        printf 'Creating SDK for tvOS %s ...\n' "$tvos_version"
 
-        if [[ $xcode_sdk_ios_version != $ios_version ]]; then
-            printf "Warning: Xcode SDK for iOS %s will be used as a base for sdk for iOS %s\n" $xcode_sdk_ios_version "$ios_version"
+        if [[ $xcode_sdk_tvos_version != $tvos_version ]]; then
+            printf "Warning: Xcode SDK for tvOS %s will be used as a base for sdk for tvOS %s\n" $xcode_sdk_tvos_version "$tvos_version"
         fi
 
         mkdir -p "$sdks_output_path_single_sdk_path"
         cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-        science="$tbd_tool -p -r all $symbols_actual_path \
-                    -o ${write_options[@]} $no_overwrite $sdks_output_path_single_sdk_path/System \
-                    $no_warnings ${tbd_options[@]} ${archs_option[@]} -v $version"
-
-        #echo $science
-
-        "$tbd_tool" -p -r all "$symbols_actual_path" \
-                    -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System" \
-                    $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
+        "$tbd_tool" \
+            -p $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version -r all "$symbols_actual_path" \
+            -o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
 
         if [[ $? -ne 0 ]]; then
-            printf 'Failed to create tbds from Symbols directory for iOS %s\n' $ios_version
+            printf 'Failed to create tbds from Symbols directory for tvOS %s\n' $tvos_version
         fi
     done
 else
@@ -169,11 +157,11 @@ else
 
     sdks_output_path_single_sdk_path="$sdks_output_path/$preferred_xcode_sdk_name"
     if [[ -d $sdks_output_path_single_sdk_path ]]; then
-        printf 'SDK for iOS %s already exists\n' $xcode_sdk_ios_version
+        printf 'SDK for tvOS %s already exists\n' $xcode_sdk_tvos_version
         exit 1
     fi
 
-    printf 'Creating sdk for iOS %s ...\n' "$xcode_sdk_ios_version"
+    printf 'Creating sdk for tvOS %s ...\n' "$xcode_sdk_tvos_version"
 
     mkdir -p "$sdks_output_path_single_sdk_path"
     cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
@@ -189,6 +177,6 @@ else
     "$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
 
     if [[ $? -ne 0 ]]; then
-        printf 'Failed to create tbds from iPhoneSimulator runtime for iOS %s\n' $xcode_sdk_ios_version
+        printf 'Failed to create tbds from AppleTVSimulator runtime for tvOS %s\n' $xcode_sdk_tvos_version
     fi
 fi
