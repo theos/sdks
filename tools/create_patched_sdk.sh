@@ -1,8 +1,25 @@
 #!/usr/bin/env bash
 
 print_usage() {
-    printf "Usage: $(basename $0) {use_simulator} {sdks_output_path} {overwrite_existing} {no_warnings} {tbd_tool_path} {xcode_installation_path} {sdk_platform}\n"
-    printf "Note: {} options are optional to provide, and can be ignored with a '-'\n"
+cat << EOF
+Usage: $(basename $0) {use_simulator} {sdks_output_path} {no_overwrite} {no_warnings} {tbd_tool} {xcode_installation_path} {sdk_platform}
+Options:
+    - use_simulator (bool)
+        Dump binaries from simulator runtime as opposed to DeviceSupport files
+    - sdks_output_path (str)
+        Directory to install SDK to (default: '\$THEOS/sdks')
+    - no_overwrite (bool)
+        Disable overwrite of existing dumped binaries (default: 0)
+    - no_warnings (bool)
+        Disable 'tbd' warnings (default: 0)
+    - tbd_tool (str)
+        Path to 'tbd' tool from inoahdev (default: 'tbd')
+    - xcode_installation_path (str)
+        Path to target Xcode version (default: '/Applications/Xcode.app/')
+    - sdk_platform (str)
+        Target platform for patched SDK (default: 'iOS'; alternatively 'tvOS')
+Note: {} options are optional to provide, and can be ignored with a '-'
+EOF
 }
 
 ignored() {
@@ -13,7 +30,7 @@ ignored() {
     fi
 }
 
-if [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; then
+if [[ $# -lt 1 ]] || [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; then
     print_usage
     exit 0
 fi
