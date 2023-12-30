@@ -45,7 +45,6 @@ if [[ $# -lt 2 ]] || ignored $sdks_output_path; then
     if [[ -z $THEOS ]]; then
         printf 'No Theos installation found. Please either install Theos or provide a path to an sdks directory\n\n'
         print_usage
-
         exit 1
     fi
     sdks_output_path="$THEOS/sdks"
@@ -85,13 +84,12 @@ if [[ $# -lt 5 ]] || ignored $tbd_tool; then
     if [[ -z $tbd_exists ]]; then
         printf 'No installation of tbd found. Please install the latest release of tbd from here; https://github.com/inoahdev/tbd/releases or provide a path to a tbd installation\n\n'
         print_usage
-
         exit 1
     fi
 else
     tbd_exists=$(command -v "$tbd_tool")
     if [[ -z $tbd_exists ]]; then
-        printf "Provided tbd-tool (%s) doesn't exist or isn't executable\n" "$tbd_tool"
+        echo "Provided tbd-tool ($tbd_tool) doesn't exist or isn't executable"
         exit 1
     fi
 fi
@@ -109,7 +107,6 @@ fi
 if [[ -z $xcode_developer_path ]]; then
     printf 'No Xcode installation found. Please either install Xcode or provide a path to an Xcode installation\n\n'
     print_usage
-
     exit 1
 fi
 
@@ -139,7 +136,7 @@ for xcode_sdk_path in "$xcode_plat_sdks_path"*; do
 done
 
 if [[ -z $preferred_xcode_sdk_path ]]; then
-    printf 'Failed to find sdk for simulator runtime\n'
+    echo 'Failed to find sdk for simulator runtime'
     exit 1
 fi
 
@@ -176,9 +173,9 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
         symbols_actual_path="$symbols_path/Symbols/System"
         if ! [[ -d $symbols_actual_path ]]; then
             if [[ $sdk_platform == ios ]]; then
-                printf "Symbols for iOS %s don't exist\n" "$version"
+                echo "Symbols for iOS $version don't exist"
             else
-                printf "Symbols for tvOS %s don't exist\n" "$version"
+                echo "Symbols for tvOS $version don't exist"
             fi
             continue
         fi
@@ -186,24 +183,24 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
         sdks_output_path_single_sdk_path="$sdks_output_path/$sdk_name"
         if [[ -d $sdks_output_path_single_sdk_path ]]; then
             if [[ $sdk_platform == ios ]]; then
-                printf 'SDK for iOS %s already exists\n' "$version"
+                echo "SDK for iOS $version already exists"
             else
-                printf 'SDK for tvOS %s already exists\n' "$version"
+                echo "SDK for tvOS $version already exists"
             fi
             continue
         fi
 
         if [[ $sdk_platform == ios ]]; then
-            printf 'Creating SDK for iOS %s ...\n' "$version"
+            echo "Creating SDK for iOS $version ..."
         else
-            printf 'Creating SDK for tvOS %s ...\n' "$version"
+            echo "Creating SDK for tvOS $version ..."
         fi
 
         if [[ $xcode_sdk_version != $version ]]; then
             if [[ $sdk_platform == ios ]]; then
-                printf "Warning: iOS %s Xcode SDK will be used as a base for sdk for iOS %s\n" $xcode_sdk_version "$version"
+                echo "Warning: iOS $xcode_sdk_version Xcode SDK will be used as a base for sdk for iOS $version"
             else
-                printf "Warning: tvOS %s Xcode SDK will be used as a base for sdk for tvOS %s\n" $xcode_sdk_version "$version"
+                echo "Warning: tvOS $xcode_sdk_version Xcode SDK will be used as a base for sdk for tvOS $version"
             fi
         fi
 
@@ -216,31 +213,31 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
 
         if [[ $? -ne 0 ]]; then
             if [[ $sdk_platform == ios ]]; then
-                printf 'Failed to create tbds from Symbols directory for iOS %s\n' $version
+                echo "Failed to create tbds from Symbols directory for iOS $version"
             else
-                printf 'Failed to create tbds from Symbols directory for tvOS %s\n' $version
+                echo "Failed to create tbds from Symbols directory for tvOS $version"
             fi
         fi
     done
 else
     if ignored $use_simulator; then
-        printf 'No DeviceSupport binaries found, falling back to dumping from simulator runtime binaries\n'
+        echo 'No DeviceSupport binaries found, falling back to dumping from simulator runtime binaries'
     fi
 
     sdks_output_path_single_sdk_path="$sdks_output_path/$preferred_xcode_sdk_name"
     if [[ -d $sdks_output_path_single_sdk_path ]]; then
         if [[ $sdk_platform == ios ]]; then
-            printf 'SDK for iOS %s already exists\n' $xcode_sdk_version
+            echo "SDK for iOS $xcode_sdk_version already exists"
         else
-            printf 'SDK for tvOS %s already exists\n' $xcode_sdk_version
+            echo "SDK for tvOS $xcode_sdk_version already exists"
         fi
         exit 1
     fi
 
     if [[ $sdk_platform == ios ]]; then
-        printf 'Creating sdk for iOS %s ...\n' "$xcode_sdk_version"
+        echo "Creating sdk for iOS $xcode_sdk_version ..."
     else
-        printf 'Creating sdk for tvOS %s ...\n' "$xcode_sdk_version"
+        echo "Creating sdk for tvOS $xcode_sdk_version ..."
     fi
 
     mkdir -p "$sdks_output_path_single_sdk_path"
@@ -270,9 +267,9 @@ else
 
     if [[ $? -ne 0 ]]; then
         if [[ $sdk_platform == ios ]]; then
-            printf 'Failed to create tbds from iPhoneSimulator runtime for iOS %s\n' $xcode_sdk_version
+            echo "Failed to create tbds from iPhoneSimulator runtime for iOS $xcode_sdk_version"
         else
-            printf 'Failed to create tbds from iPhoneSimulator runtime for tvOS %s\n' $xcode_sdk_version
+            echo "Failed to create tbds from AppleTVSimulator runtime for tvOS $xcode_sdk_version"
         fi
     fi
 fi
