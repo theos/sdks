@@ -73,6 +73,7 @@ if [[ $# -gt 2 ]] && ! ignored $3; then
 fi
 
 no_warnings=""
+tbd_tool="$5"
 if [[ $# -gt 3 ]] && ! ignored $4; then
 	no_warnings="--ignore-warnings"
 fi
@@ -85,7 +86,6 @@ if [[ $# -lt 5 ]] || ignored $tbd_tool; then
 		exit 1
 	fi
 else
-	tbd_tool="$5"
 	if [[ -x $tbd_tool ]]; then
 		echo "Provided tbd-tool ($tbd_tool) doesn't exist or isn't executable"
 		exit 1
