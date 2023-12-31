@@ -15,7 +15,7 @@ Options:
   - tbd_tool (str)
 	Path to 'tbd' tool from inoahdev (default: 'tbd')
   - xcode_installation_path (str)
-	Path to target Xcode version (default: '/Applications/Xcode.app/')
+	Path to target Xcode version (default: currently selected Xcode.app)
   - sdk_platform (str)
 	Target platform for patched SDK (default: 'iOS'; alternatively 'tvOS')
 Note: {} options are optional to provide, and can be ignored with a '-'
@@ -79,16 +79,14 @@ fi
 
 if [[ $# -lt 5 ]] || ignored $tbd_tool; then
 	tbd_tool="tbd"
-	tbd_exists=$(command -v $tbd_tool)
-
-	if [[ -z $tbd_exists ]]; then
+	if [[ -x $tbd_tool ]]; then
 		printf 'No installation of tbd found. Please install the latest release of tbd from here; https://github.com/inoahdev/tbd/releases or provide a path to a tbd installation\n\n'
 		print_usage
 		exit 1
 	fi
 else
-	tbd_exists=$(command -v "$tbd_tool")
-	if [[ -z $tbd_exists ]]; then
+	tbd_tool="$5"
+	if [[ -x $tbd_tool ]]; then
 		echo "Provided tbd-tool ($tbd_tool) doesn't exist or isn't executable"
 		exit 1
 	fi
@@ -115,20 +113,20 @@ if [[ $sdk_platform == iOS ]]; then
 	if ! [[ -d $xcode_sim_runtime_path ]]; then
 		xcode_sim_runtime_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot"
 	fi
-	xcode_plat_sdks_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs/"
+	xcode_plat_sdks_path="$xcode_developer_path/Platforms/iPhoneOS.platform/Developer/SDKs"
 	xcode_default_sdk_path="$xcode_plat_sdks_path/iPhoneOS.sdk"
 else
 	xcode_sim_runtime_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot"
 	if ! [[ -d $xcode_sim_runtime_path ]]; then
 		xcode_sim_runtime_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/tvOS.simruntime/Contents/Resources/RuntimeRoot"
 	fi
-	xcode_plat_sdks_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs/"
+	xcode_plat_sdks_path="$xcode_developer_path/Platforms/AppleTVOS.platform/Developer/SDKs"
 	xcode_default_sdk_path="$xcode_plat_sdks_path/AppleTVOS.sdk"
 fi
 
 preferred_xcode_sdk_path=""
-for xcode_sdk_path in "$xcode_plat_sdks_path"*; do
-	xcode_sdk_real=$(realpath "$xcode_sdk_path")
+for xcode_sdk_path in "$xcode_plat_sdks_path/"*; do
+	xcode_sdk_real=$(readlink -f "$xcode_sdk_path")
 
 	if [[ $xcode_sdk_real == $xcode_default_sdk_path ]]; then
 		preferred_xcode_sdk_path=$xcode_sdk_path
@@ -233,6 +231,6 @@ else
 	fi
 
 	if [[ $? -ne 0 ]]; then
-		echo "Failed to create tbds from iPhoneSimulator runtime for $sdk_platform $xcode_sdk_version"
+		echo "Failed to create tbds from simulator runtime for $sdk_platform $xcode_sdk_version"
 	fi
 fi
