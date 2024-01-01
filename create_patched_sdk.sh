@@ -63,7 +63,7 @@ if ! [[ -d $sdks_output_path ]]; then
 fi
 
 # tbd info
-version="v3"
+tbd_version="v3"
 if [[ $sdk_platform == iOS ]]; then
 	archs_option=("--replace-archs" armv7 armv7s arm64 arm64e)
 	tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symbols" "--ignore-missing-exports")
@@ -164,40 +164,40 @@ if [[ -d $device_support_dir ]] && ignored $use_simulator; then
 			continue
 		fi
 
-		version="$(basename "$symbols_path" | grep -o "\d\+\(\.\d\+\)\{1,2\}")"
+		os_version="$(basename "$symbols_path" | grep -o "\d\+\(\.\d\+\)\{1,2\}")"
 		if [[ $sdk_platform == ios ]]; then
-			sdk_name=$(printf "iPhoneOS%s.sdk" $version)
+			sdk_name=$(printf "iPhoneOS%s.sdk" "$os_version")
 		else
-			sdk_name=$(printf "AppleTVOS%s.sdk" $version)
+			sdk_name=$(printf "AppleTVOS%s.sdk" "$os_version")
 		fi
 
 		symbols_actual_path="$symbols_path/Symbols/System"
 		if ! [[ -d $symbols_actual_path ]]; then
-			echo "Symbols for $sdk_platform $version don't exist"
+			echo "Symbols for $sdk_platform $os_version don't exist"
 			continue
 		fi
 
 		sdks_output_path_single_sdk_path="$sdks_output_path/$sdk_name"
 		if [[ -d $sdks_output_path_single_sdk_path ]]; then
-			echo "SDK for $sdk_platform $version already exists"
+			echo "SDK for $sdk_platform $os_version already exists"
 			continue
 		fi
 
-		echo "Creating SDK for $sdk_platform $version ..."
+		echo "Creating SDK for $sdk_platform $os_version ..."
 
-		if [[ $xcode_sdk_version != $version ]]; then
-			echo "Warning: $sdk_platform $xcode_sdk_version Xcode SDK will be used as a base for sdk for $sdk_platform $version"
+		if [[ $xcode_sdk_version != $os_version ]]; then
+			echo "Warning: $sdk_platform $xcode_sdk_version Xcode SDK will be used as a base for sdk for $sdk_platform $os_version"
 		fi
 
 		mkdir -p "$sdks_output_path_single_sdk_path"
 		cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
 		"$tbd_tool" \
-			-p $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version -r all "$symbols_actual_path" \
+			-p $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v "$tbd_version" -r all "$symbols_actual_path" \
 			-o "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
 
 		if [[ $? -ne 0 ]]; then
-			echo "Failed to create tbds from Symbols directory for $sdk_platform $version"
+			echo "Failed to create tbds from Symbols directory for $sdk_platform $os_version"
 		fi
 	done
 else
@@ -216,9 +216,9 @@ else
 	mkdir -p "$sdks_output_path_single_sdk_path"
 	cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-	parse_paths=("-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Developer"
-				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/System"
-				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Library")
+	parse_paths=("-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v "$tbd_version" "-r" "all" "$xcode_sim_runtime_path/Developer"
+				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v "$tbd_version" "-r" "all" "$xcode_sim_runtime_path/System"
+				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v "$tbd_version" "-r" "all" "$xcode_sim_runtime_path/Library")
 
 	write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
 				"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
