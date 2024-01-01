@@ -66,14 +66,12 @@ fi
 tbd_version="v3"
 if [[ $sdk_platform == iOS ]]; then
 	archs_option=("--replace-archs" armv7 armv7s arm64 arm64e)
-	tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symbols" "--ignore-missing-exports")
-	write_options=("--preserve-subdirs" "--replace-path-extension")
 else
-	archs_option=("--replace-archs" arm64)
-	tbd_options=("--allow-private-objc-symbols" "--ignore-missing-exports")
-	#write_options=("--maintain-directories" "--replace-path-extension")
-	write_options=("--preserve-subdirs")
+	archs_option=("--replace-archs" arm64 arm64e)
 fi
+
+tbd_options=("--ignore-clients" "--ignore-undefineds" "--allow-private-objc-symbols" "--ignore-missing-exports")
+write_options=("--preserve-subdirs" "--replace-path-extension")
 
 no_overwrite="--no-overwrite"
 if [[ $# -gt 2 ]] && ! ignored $3; then
