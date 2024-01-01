@@ -208,27 +208,16 @@ else
 	mkdir -p "$sdks_output_path_single_sdk_path"
 	cp -R "$xcode_default_sdk_path/"* "$sdks_output_path_single_sdk_path"
 
-	if [[ $sdk_platform == iOS ]]; then
-		parse_paths=("-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Developer"
-					"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/System"
-					"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Library")
+	parse_paths=("-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Developer"
+				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/System"
+				"-p" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version "-r" "all" "$xcode_sim_runtime_path/Library")
 
-		write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
-					"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
-					"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Library")
+	write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
+				"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
+				"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Library")
 
-		"$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}"
-	else
-		parse_paths=("-p" "-r" "$xcode_sim_runtime_path/Developer"
-					"-p" "-r" "$xcode_sim_runtime_path/System"
-					"-p" "-r" "$xcode_sim_runtime_path/Library")
+	"$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}"
 
-		write_paths=("-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Developer"
-					"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/System"
-					"-o" "${write_options[@]}" $no_overwrite "$sdks_output_path_single_sdk_path/Library")
-
-		"$tbd_tool" "${parse_paths[@]}" "${write_paths[@]}" $no_warnings "${tbd_options[@]}" "${archs_option[@]}" -v $version
-	fi
 
 	if [[ $? -ne 0 ]]; then
 		echo "Failed to create tbds from simulator runtime for $sdk_platform $xcode_sdk_version"
