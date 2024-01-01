@@ -37,7 +37,15 @@ fi
 
 sdk_platform="$7"
 if [[ $# -lt 7 ]] || ignored $sdk_platform; then
+	echo "No sdk_platform provided. Defaulting to iOS."
 	sdk_platform="iOS"
+elif [[ $(echo $sdk_platform | tr '[A-Z]' '[a-z]') == ios ]]; then
+	sdk_platform="iOS"
+elif [[ $(echo $sdk_platform | tr '[A-Z]' '[a-z]') == tvos ]]; then
+	sdk_platform="tvOS"
+else
+	echo "Unsupported sdk_platform provided. Please choose either 'iOS' or 'tvOS'."
+	exit 1
 fi
 
 sdks_output_path="$2"
