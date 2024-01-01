@@ -88,13 +88,13 @@ fi
 
 if [[ $# -lt 5 ]] || ignored $tbd_tool; then
 	tbd_tool="tbd"
-	if [[ -x $(which $tbd_tool) ]]; then
+	if ! [[ -x $(which $tbd_tool) ]]; then
 		printf 'No installation of tbd found. Please install the latest release of tbd from here; https://github.com/inoahdev/tbd/releases or provide a path to a tbd installation\n\n'
 		print_usage
 		exit 1
 	fi
 else
-	if [[ -x $(which $tbd_tool) ]]; then
+	if ! [[ -x $(which $tbd_tool) ]]; then
 		echo "Provided tbd-tool ($tbd_tool) doesn't exist or isn't executable"
 		exit 1
 	fi
