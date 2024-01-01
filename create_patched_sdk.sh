@@ -7,7 +7,7 @@ Options:
   - use_simulator (bool)
 	Dump binaries from simulator runtime as opposed to DeviceSupport files
   - sdks_output_path (str)
- 	Directory to install SDK to (default: '\$THEOS/sdks')
+	Directory to install SDK to (default: '\$THEOS/sdks')
   - no_overwrite (bool)
 	Disable overwrite of existing dumped binaries (default: 0)
   - no_warnings (bool)
