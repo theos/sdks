@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ipsw_device:
-        description: 'The device ID to download the IPSW for. e.g. "iPhone11,2"'
+        description: 'The device ID to download the IPSW for, e.g. "iPhone11,2"'
         required: true
         type: string
       ipsw_version:
@@ -86,6 +86,8 @@ jobs:
           aria2c --dir "${IPSW_DOWNLOAD_DIR}" "${IPSW_DOWNLOAD_URL}"
 
           unzip -d "${IPSW_EXTRACTION_DIR}" "${IPSW_DOWNLOAD_DIR}"/*.ipsw "*.dmg"
+          # remove to save space
+          rm "${IPSW_DOWNLOAD_DIR}"/*.ipsw
 
           for DMG_FILE in "${IPSW_EXTRACTION_DIR}"/*.dmg; do
             # new mount root for each dmg so we don't have to
