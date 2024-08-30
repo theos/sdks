@@ -1,0 +1,133 @@
+name: Create SDKs
+
+on:
+  workflow_dispatch:
+    inputs:
+      ipsw_device:
+        description: 'The device ID to download the IPSW for. e.g. "iPhone11,2"'
+        required: true
+        type: string
+      ipsw_version:
+        description: 'The version to download the IPSW for, e.g. "16.5"'
+        required: true
+        type: string
+      dsc_basename:
+        description: 'The basename for the dyld_shared_cache in the IPSW'
+        required: true
+        type: string
+        default: 'dyld_shared_cache_arm64e'
+      xcode_version:
+        description: 'Xcode version, e.g. "14.4". Primarily used for the base SDK'
+        required: true
+        type: string
+      xcrun_sdk_name:
+        description: 'The value to pass to "xcrun --sdk", e.g. "iphoneos"'
+        required: true
+        type: string
+        default: 'iphoneos'
+      full_sdk_name:
+        description: 'The full name of the output SDK, e.g. "iPhoneOS16.5"'
+        required: true
+        type: string
+
+jobs:
+  create:
+    # https://github.com/actions/runner-images/blob/main/images/macos
+    runs-on: macos-14
+    # needed to be able to push to the repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Clone tbd
+        uses: actions/checkout@v4
+        with:
+          repository: leptos-null/tbd
+          ref: f0ae164d76b7bb802bbdf8ef758cc5637fac0fa1 # pinned, leptos/source-platform
+          path: tbd
+
+      - name: Build tbd
+        run: |
+          cd tbd
+          make bin/tbd
+
+      - name: Install blacktop/ipsw
+        run: brew install blacktop/tap/ipsw
+
+      - name: Install aria2
+        run: brew install aria2
+
+      - name: Patch SDK
+        id: patch-sdk
+        env:
+          DEVELOPER_DIR: /Applications/Xcode_${{ inputs.xcode_version }}.app
+        run: |
+          # use absolute path since we `cd` later
+          TBD_TOOL_PATH="$(pwd)/tbd/bin/tbd"
+          SDK_OUTPUT_PATH="$(pwd)/${{ inputs.full_sdk_name }}.sdk"
+
+          DSC_BASENAME="${{ inputs.dsc_basename }}"
+          XC_SDK_NAME="${{ inputs.xcrun_sdk_name }}"
+
+          cd tools/
+          PLATFORM_PATH="$(xcrun --sdk "${XC_SDK_NAME}" --show-sdk-platform-path)"
+          BASE_SDK_PATH="$(xcrun --sdk "${XC_SDK_NAME}" --show-sdk-path)"
+
+          SYMBOLS_DIR="$(mktemp -d -t symbols)"
+          IPSW_DOWNLOAD_DIR="$(mktemp -d -t ipsw)"
+          IPSW_EXTRACTION_DIR="$(mktemp -d -t ipsw)"
+
+          # `--dyld` is a convenient parameter for us, however it only supports iOS 16+
+          IPSW_DOWNLOAD_URL="$(ipsw download ipsw --urls --version "${{ inputs.ipsw_version }}" --device "${{ inputs.ipsw_device }}")"
+          echo "Downloading ${IPSW_DOWNLOAD_URL}"
+          aria2c --dir "${IPSW_DOWNLOAD_DIR}" "${IPSW_DOWNLOAD_URL}"
+
+          unzip -d "${IPSW_EXTRACTION_DIR}" "${IPSW_DOWNLOAD_DIR}"/*.ipsw "*.dmg"
+
+          for DMG_FILE in "${IPSW_EXTRACTION_DIR}"/*.dmg; do
+            # new mount root for each dmg so we don't have to
+            # worry about how we iterate over the mount root
+            DMG_MOUNT_ROOT="$(mktemp -d -t dmg)"
+            # some of the dmgs can't be mounted - not sure why
+            hdiutil attach "${DMG_FILE}" -mountroot "${DMG_MOUNT_ROOT}" || true
+            for MOUNT_VOL in "${DMG_MOUNT_ROOT}"/*; do
+              DYLD_CACHE_PATH="${MOUNT_VOL}/System/Library/Caches/com.apple.dyld/${DSC_BASENAME}"
+              if [[ -e "${DYLD_CACHE_PATH}" ]]; then
+                break 2 # break out of DMG_FILE loop
+              fi
+              # here becuase we didn't find the dyld shared cache (didn't break)
+              unset DYLD_CACHE_PATH
+              hdiutil detach "${MOUNT_VOL}" || true # this fails occasionally - just ignore
+            done
+          done
+
+          echo "Found dyld_shared_cache: ${DYLD_CACHE_PATH}"
+
+          if [[ -z "${DYLD_CACHE_PATH}" ]]; then
+            echo "Failed to find ${DSC_BASENAME} in IPSW"
+            exit 1
+          fi
+
+          make dsc_extractor_client
+          ./dsc_extractor_client "${PLATFORM_PATH}/usr/lib/dsc_extractor.bundle" "${DYLD_CACHE_PATH}" "${SYMBOLS_DIR}"
+          ./create_patched_sdk.sh "${SYMBOLS_DIR}" "${SDK_OUTPUT_PATH}" "${BASE_SDK_PATH}" "${TBD_TOOL_PATH}"
+
+          echo "sdk-path=${SDK_OUTPUT_PATH}" >> "${GITHUB_OUTPUT}"
+
+      - name: Create branch
+        run: |
+          # thanks to https://github.com/actions/checkout/discussions/479
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          SDK_NAME="${{ inputs.full_sdk_name }}"
+          BRANCH_NAME="bot/${SDK_NAME}"
+
+          git switch -c "${BRANCH_NAME}"
+          git add "${{ steps.patch-sdk.outputs.sdk-path }}"
+
+          git commit -m "Add ${SDK_NAME} SDK"
+          git push --set-upstream origin "${BRANCH_NAME}"
