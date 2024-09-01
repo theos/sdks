@@ -97,7 +97,7 @@ jobs:
             hdiutil attach "${DMG_FILE}" -mountroot "${DMG_MOUNT_ROOT}" || true
             for MOUNT_VOL in "${DMG_MOUNT_ROOT}"/*; do
               DYLD_CACHE_PATH="${MOUNT_VOL}/System/Library/Caches/com.apple.dyld/${DSC_BASENAME}"
-              if [[ -e "${DYLD_CACHE_PATH}" ]]; then
+              if [ -e "${DYLD_CACHE_PATH}" ]; then
                 break 2 # break out of DMG_FILE loop
               fi
               # here becuase we didn't find the dyld shared cache (didn't break)
@@ -108,7 +108,7 @@ jobs:
 
           echo "Found dyld_shared_cache: ${DYLD_CACHE_PATH}"
 
-          if [[ -z "${DYLD_CACHE_PATH}" ]]; then
+          if [ -z "${DYLD_CACHE_PATH}" ]; then
             echo "Failed to find ${DSC_BASENAME} in IPSW"
             exit 1
           fi
