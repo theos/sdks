@@ -1,27 +1,31 @@
 #!/usr/bin/env bash
 
-if [[ "${1}" == "-h" ]] || [[ "${1}" == "--help" ]]; then
+if [ "${1}" == "-h" ] || [ "${1}" == "--help" ]; then
     echo "Usage: ${0} <symbols-path> <sdk-output-path> <base-sdk-path> <tbd-tool>"
     exit 0
 fi
 
+if [ $# -ne 4 ]; then
+    exit 1
+fi
+
 SYMBOLS_PATH="${1}"
-if [[ -z "${SYMBOLS_PATH}" ]]; then
+if [ -z "${SYMBOLS_PATH}" ]; then
     exit 1
 fi
 
 SDK_OUTPUT_PATH="${2}"
-if [[ -z "${SDK_OUTPUT_PATH}" ]]; then
+if [ -z "${SDK_OUTPUT_PATH}" ]; then
     exit 1
 fi
 
 BASE_SDK_PATH="${3}"
-if [[ -z "${BASE_SDK_PATH}" ]]; then
+if [ -z "${BASE_SDK_PATH}" ]; then
     exit 1
 fi
 
 TBD_TOOL_PATH="${4}"
-if [[ -z "${TBD_TOOL_PATH}" ]]; then
+if [ -z "${TBD_TOOL_PATH}" ]; then
     exit 1
 fi
 
