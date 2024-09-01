@@ -113,9 +113,7 @@ jobs:
             exit 1
           fi
 
-          make dsc_extractor_client
-          ./dsc_extractor_client "${PLATFORM_PATH}/usr/lib/dsc_extractor.bundle" "${DYLD_CACHE_PATH}" "${SYMBOLS_DIR}"
-          ./create_patched_sdk.sh "${SYMBOLS_DIR}" "${SDK_OUTPUT_PATH}" "${BASE_SDK_PATH}" "${TBD_TOOL_PATH}"
+          ./create_patched_sdk_image.sh "${DYLD_CACHE_PATH}" "${SDK_OUTPUT_PATH}" "${BASE_SDK_PATH}" "${PLATFORM_PATH}" "${TBD_TOOL_PATH}"
 
           echo "sdk-path=${SDK_OUTPUT_PATH}" >> "${GITHUB_OUTPUT}"
 
