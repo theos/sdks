@@ -1,4 +1,4 @@
-name: Create SDKs
+name: Create SDK
 
 on:
   workflow_dispatch:
