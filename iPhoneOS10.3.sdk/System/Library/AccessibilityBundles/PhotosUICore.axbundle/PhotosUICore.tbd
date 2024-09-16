@@ -1,0 +1,61 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/PhotosUICore.axbundle/PhotosUICore
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _accessibilityPhotoLibraryServicesLocalizedString,
+                            _accessibilityPhotosUICoreLocalizedString,
+                            _kActiveRectHeightInset, _kActiveRectWidthInset ]
+    objc-classes:         [ _AXPhotosUICoreGlue,
+                            _PXAssetUIImageViewTileAccessibility,
+                            _PXFocusableUIImageViewAccessibility,
+                            _PXHighFidelityVideoOverlayButtonAccessibility,
+                            _PXMemoriesFeedUIViewControllerAccessibility,
+                            _PXMemoriesUITileSourceAccessibility,
+                            _PXNavigationTitleViewAccessibility,
+                            _PXPeopleAddViewControllerAccessibility,
+                            _PXPeopleDragAndDropCollectionViewAccessibility,
+                            _PXPeopleFavoritingShelfViewAccessibility,
+                            _PXPeopleHomeCollectionViewCellAccessibility,
+                            _PXPeopleHomeViewControllerAccessibility,
+                            _PXPeopleNamePickerTitleFieldAccessibility,
+                            _PXPeopleStripCollectionViewCellAccessibility,
+                            _PXPhotosDetailsAssetsWidgetAccessibility,
+                            _PXPhotosDetailsHeaderTileWidgetAccessibility,
+                            _PXPhotosDetailsUIViewControllerAccessibility,
+                            _PXTitleSubtitleUILabelAccessibility,
+                            _PXUIAssetBadgeViewAccessibility,
+                            _PXUIMapWidgetAccessibility,
+                            _PXUIRelatedWidgetAccessibility,
+                            _PXUIScrollViewControllerAccessibility,
+                            _PXUIWidgetHeaderViewAccessibility,
+                            __PXUIScrollViewAccessibility,
+                            ___PXAssetUIImageViewTileAccessibility_super,
+                            ___PXFocusableUIImageViewAccessibility_super,
+                            ___PXHighFidelityVideoOverlayButtonAccessibility_super,
+                            ___PXMemoriesFeedUIViewControllerAccessibility_super,
+                            ___PXMemoriesUITileSourceAccessibility_super,
+                            ___PXNavigationTitleViewAccessibility_super,
+                            ___PXPeopleAddViewControllerAccessibility_super,
+                            ___PXPeopleDragAndDropCollectionViewAccessibility_super,
+                            ___PXPeopleFavoritingShelfViewAccessibility_super,
+                            ___PXPeopleHomeCollectionViewCellAccessibility_super,
+                            ___PXPeopleHomeViewControllerAccessibility_super,
+                            ___PXPeopleNamePickerTitleFieldAccessibility_super,
+                            ___PXPeopleStripCollectionViewCellAccessibility_super,
+                            ___PXPhotosDetailsAssetsWidgetAccessibility_super,
+                            ___PXPhotosDetailsHeaderTileWidgetAccessibility_super,
+                            ___PXPhotosDetailsUIViewControllerAccessibility_super,
+                            ___PXTitleSubtitleUILabelAccessibility_super,
+                            ___PXUIAssetBadgeViewAccessibility_super,
+                            ___PXUIMapWidgetAccessibility_super,
+                            ___PXUIRelatedWidgetAccessibility_super,
+                            ___PXUIScrollViewControllerAccessibility_super,
+                            ___PXUIWidgetHeaderViewAccessibility_super,
+                            ____PXUIScrollViewAccessibility_super ]
+...

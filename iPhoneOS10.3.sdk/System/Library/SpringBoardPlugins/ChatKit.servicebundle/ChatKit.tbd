@@ -1,0 +1,49 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/SpringBoardPlugins/ChatKit.servicebundle/ChatKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _MessagesBadgeControllerClearFailureBadgeNotification,
+                            _SpringBoardPreferencesChangedCallBack,
+                            _kSBPreferenceKeyIgnoreSMSDaemon,
+                            _kSBPreferenceKeySMSShowExtraAlerts,
+                            _kSBPreferenceKeySMSShowPreview,
+                            _kSBPreferenceKeySMSShowPreviewWithPasscodeEnabled ]
+    objc-classes:         [ _CKAlertItem, _CKCMASBulletinAlertHandler,
+                            _CKCarrierReceiveController, _CKCarrierSMSAlertItem,
+                            _CKMessageAlertItem, _CMASBBAlertItem,
+                            _MMSDelayedDownloadAlertItem,
+                            _MMSInformationMissingAlertItem,
+                            _MessagesBadgeController, _SMSPluginManager ]
+    objc-ivars:           [ _CKAlertItem._alignment,
+                            _CKAlertItem._alignmentHasBeenSet,
+                            _CKAlertItem._displayingEntireMessage,
+                            _CKAlertItem._shouldHideSMSPreview,
+                            _CKCarrierSMSAlertItem._acknowledgeBlock,
+                            _CKCarrierSMSAlertItem._messageBody,
+                            _CKCarrierSMSAlertItem._sender,
+                            _CKMessageAlertItem._audioPlaybackViewController,
+                            _CKMessageAlertItem._bulletin,
+                            _CKMessageAlertItem._message,
+                            _CKMessageAlertItem._playedSound,
+                            _CKMessageAlertItem._showingImage,
+                            _CKMessageAlertItem.bannerPresenterDelegate,
+                            _CMASBBAlertItem._alreadyPlayedAlertTone,
+                            _CMASBBAlertItem._bulletin,
+                            _CMASBBAlertItem._overrideDefaultDisplayOrder,
+                            _MMSDelayedDownloadAlertItem._fromAddress,
+                            _MMSDelayedDownloadAlertItem._messageCount,
+                            _MMSInformationMissingAlertItem._alertType,
+                            _MessagesBadgeController._acknowledgmentSoundID,
+                            _MessagesBadgeController._disableDBFullDialog,
+                            _MessagesBadgeController._lastMadridFailure,
+                            _MessagesBadgeController._madridCount,
+                            _MessagesBadgeController._showingFailure,
+                            _SMSPluginManager._displayExtraAlerts,
+                            _SMSPluginManager._lastBulletin ]
+...

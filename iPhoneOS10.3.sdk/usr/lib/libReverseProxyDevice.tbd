@@ -1,12 +1,16 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /usr/lib/libReverseProxyDevice.dylib
 current-version:       1
 compatibility-version: 1
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _RPCopyProxyDictionary, _RPCopyProxyDictionaryWithOptions, _RPRegisterForAvailability,
-                          _RPRegistrationInvalidate, _RPRegistrationResume, _RPSetLogLevel, __RPCopyProxyDictionaryWithOptions,
-                          __RPRegisterForAvailability, __RPSetLogLevel ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _RPCopyProxyDictionary,
+                            _RPCopyProxyDictionaryWithOptions,
+                            _RPRegisterForAvailability,
+                            _RPRegistrationInvalidate, _RPRegistrationResume,
+                            _RPSetLogLevel, __RPCopyProxyDictionaryWithOptions,
+                            __RPRegisterForAvailability, __RPSetLogLevel ]
 ...

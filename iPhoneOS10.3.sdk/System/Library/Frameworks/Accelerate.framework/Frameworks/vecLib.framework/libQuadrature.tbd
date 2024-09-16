@@ -1,10 +1,12 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
 current-version:       1
 compatibility-version: 1
+parent-umbrella:       vecLib
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _quadrature_integrate ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _quadrature_integrate ]
 ...

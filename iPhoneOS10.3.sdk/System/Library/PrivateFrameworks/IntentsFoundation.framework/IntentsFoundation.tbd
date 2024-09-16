@@ -1,11 +1,14 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _IntentsFoundationVersionNumber, _IntentsFoundationVersionString ]
-    objc-classes:       [ _INFObject ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _IntentsFoundationVersionNumber,
+                            _IntentsFoundationVersionString ]
+    objc-classes:         [ _INFObject ]
 ...

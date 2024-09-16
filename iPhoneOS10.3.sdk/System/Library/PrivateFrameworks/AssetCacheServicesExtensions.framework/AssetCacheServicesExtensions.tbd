@@ -1,16 +1,24 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/AssetCacheServicesExtensions
 current-version:       46
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _AssetCacheServicesExtensionsVersionNumber, _AssetCacheServicesExtensionsVersionString,
-                          _kACSEAllServersKey, _kACSEMightHaveKey, _kACSEPersonalCachingAndImportKey, _kACSEPersonalCachingKey,
-                          _kACSEPublicIPAddressKey, _kACSEPublicIPAddressRangesKey, _kACSERefreshedServersKey,
-                          _kACSESavedServersKey, _kACSESharedCachingKey ]
-    objc-classes:       [ _AssetCacheServicesReporter ]
-    objc-ivars:         [ _AssetCacheServicesReporter._logHandle, _AssetCacheServicesReporter._results,
-                          _AssetCacheServicesReporter._weakDelegate, _AssetCacheServicesReporter._weakDelegateQueue ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AssetCacheServicesExtensionsVersionNumber,
+                            _AssetCacheServicesExtensionsVersionString,
+                            _kACSEAllServersKey, _kACSEMightHaveKey,
+                            _kACSEPersonalCachingAndImportKey,
+                            _kACSEPersonalCachingKey, _kACSEPublicIPAddressKey,
+                            _kACSEPublicIPAddressRangesKey,
+                            _kACSERefreshedServersKey, _kACSESavedServersKey,
+                            _kACSESharedCachingKey ]
+    objc-classes:         [ _AssetCacheServicesReporter ]
+    objc-ivars:           [ _AssetCacheServicesReporter._logHandle,
+                            _AssetCacheServicesReporter._results,
+                            _AssetCacheServicesReporter._weakDelegate,
+                            _AssetCacheServicesReporter._weakDelegateQueue ]
 ...

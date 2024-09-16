@@ -1,0 +1,70 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/MessageUIFramework.axbundle/MessageUIFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ __Failover, _accessibilityLocalizedString ]
+    objc-classes:         [ _AXMessageUIFrameworkGlue,
+                            _MFAttachmentAccessibility,
+                            _MFAutocompleteResultsTableViewControllerAccessibility,
+                            _MFComposeBodyFieldAccessibility,
+                            _MFComposeFromViewAccessibility,
+                            _MFComposeHeaderViewAccessibility,
+                            _MFComposeImageSizeViewAccessibility,
+                            _MFComposeMultiViewAccessibility,
+                            _MFComposeRecipientAccessibility,
+                            _MFComposeRecipientTextViewAccessibility,
+                            _MFComposeRecipientViewAccessibility,
+                            _MFComposeSubjectViewAccessibility,
+                            _MFComposeTextContentViewAccessibility,
+                            _MFHeaderLabelViewAccessibility,
+                            _MFMailComposeControllerAccessibility,
+                            _MFMailComposeViewAccessibility,
+                            _MFModernAddressAtomAccessibility,
+                            _MFModernAtomViewAccessibility,
+                            _MFModernComposeRecipientAtomAccessibility,
+                            _MFModernLabelledAtomListAccessibility,
+                            _MFRecipientTableViewCellAccessibility,
+                            _MFRecipientTableViewCellDetailViewAccessibility,
+                            _MFRecipientTableViewCellTitleViewAccessibility,
+                            _MFUIViewAccessibility, _MF_UITableViewAccessibility,
+                            _MessageUILabelAccessibility,
+                            _MessageUI_DimmingViewAccessibility,
+                            _MessageWebAccessibilityObjectWrapperAccessibility,
+                            _UIMessageUITextViewAccessibility,
+                            __MFAtomTextViewAccessibility,
+                            ___MFAttachmentAccessibility_super,
+                            ___MFAutocompleteResultsTableViewControllerAccessibility_super,
+                            ___MFComposeBodyFieldAccessibility_super,
+                            ___MFComposeFromViewAccessibility_super,
+                            ___MFComposeHeaderViewAccessibility_super,
+                            ___MFComposeImageSizeViewAccessibility_super,
+                            ___MFComposeMultiViewAccessibility_super,
+                            ___MFComposeRecipientAccessibility_super,
+                            ___MFComposeRecipientTextViewAccessibility_super,
+                            ___MFComposeRecipientViewAccessibility_super,
+                            ___MFComposeSubjectViewAccessibility_super,
+                            ___MFComposeTextContentViewAccessibility_super,
+                            ___MFHeaderLabelViewAccessibility_super,
+                            ___MFMailComposeControllerAccessibility_super,
+                            ___MFMailComposeViewAccessibility_super,
+                            ___MFModernAddressAtomAccessibility_super,
+                            ___MFModernAtomViewAccessibility_super,
+                            ___MFModernComposeRecipientAtomAccessibility_super,
+                            ___MFModernLabelledAtomListAccessibility_super,
+                            ___MFRecipientTableViewCellAccessibility_super,
+                            ___MFRecipientTableViewCellDetailViewAccessibility_super,
+                            ___MFRecipientTableViewCellTitleViewAccessibility_super,
+                            ___MFUIViewAccessibility_super,
+                            ___MF_UITableViewAccessibility_super,
+                            ___MessageUILabelAccessibility_super,
+                            ___MessageUI_DimmingViewAccessibility_super,
+                            ___MessageWebAccessibilityObjectWrapperAccessibility_super,
+                            ___UIMessageUITextViewAccessibility_super,
+                            ____MFAtomTextViewAccessibility_super ]
+...

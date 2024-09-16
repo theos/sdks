@@ -1,0 +1,55 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/HearingAidUIServer.axuiservice/HearingAidUIServer
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    objc-classes:         [ _AXHearingAidCenterController,
+                            _AXHearingAidDisplayController,
+                            _AXHearingAidStatusBar, _AXHearingBatteryStatusCell,
+                            _AXHearingBlurCell, _AXHearingBlurPresetCell,
+                            _AXHearingGapCell, _AXHearingKnockoutView,
+                            _AXHearingVolumeCell, _AXLiveListenMeterCell,
+                            _HearingAidUIServer ]
+    objc-ivars:           [ _AXHearingAidCenterController._backdropView,
+                            _AXHearingAidCenterController._bluetoothAvailable,
+                            _AXHearingAidCenterController._contentView,
+                            _AXHearingAidCenterController._device,
+                            _AXHearingAidCenterController._navBar,
+                            _AXHearingAidCenterController._parentController,
+                            _AXHearingAidCenterController._separatorViews,
+                            _AXHearingAidCenterController._tableView,
+                            _AXHearingAidCenterController._tableViewBackdrop,
+                            _AXHearingAidCenterController._volumeUpdateHysteresis,
+                            _AXHearingAidDisplayController._detailController,
+                            _AXHearingAidDisplayController._ipadPopoverController,
+                            _AXHearingAidDisplayController._isLiveListening,
+                            _AXHearingAidDisplayController._parentController,
+                            _AXHearingAidDisplayController._statusBar,
+                            _AXHearingAidStatusBar._delegate,
+                            _AXHearingBatteryStatusCell._leftBatteryDate,
+                            _AXHearingBatteryStatusCell._leftLabel,
+                            _AXHearingBatteryStatusCell._rightBatteryDate,
+                            _AXHearingBatteryStatusCell._rightLabel,
+                            _AXHearingBatteryStatusCell._updateTimer,
+                            _AXHearingBlurPresetCell._checkedView,
+                            _AXHearingBlurPresetCell._isUsingStreamingIcon,
+                            _AXHearingBlurPresetCell._preset,
+                            _AXHearingKnockoutView._backdropView,
+                            _AXHearingVolumeCell._delegate,
+                            _AXHearingVolumeCell._device,
+                            _AXHearingVolumeCell._numberFormatter,
+                            _AXHearingVolumeCell._stepSlider,
+                            _AXHearingVolumeCell._type,
+                            _AXLiveListenMeterCell._dotImageViews,
+                            _AXLiveListenMeterCell._isListening,
+                            _AXLiveListenMeterCell._numberFormatter,
+                            _HearingAidUIServer._disableSystemGestureAssertion,
+                            _HearingAidUIServer._displayController,
+                            _HearingAidUIServer._emptyViewController,
+                            _HearingAidUIServer._handoffAlertController ]
+...

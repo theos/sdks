@@ -1,16 +1,24 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/CourseKit.framework/CourseKit
 current-version:       15
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _CourseKitVersionNumber, _CourseKitVersionString, _kCKCourseURLTemplate,
-                          _kCKCourseURLTemplateCourseIDKey, _kCKDatabaseName, _kCKLibraryDocumentsPath,
-                          _kCKSystemGroupContainerId, _kCKiTunesUBundleID, _kCKiTunesUMinimumRequiredVersion ]
-    objc-classes:       [ _CKCourse, _CKCourseLibrary, _CKImageTransformer, _CKSharedCourse, _CKSharedDatabase ]
-    objc-ivars:         [ _CKCourse._sharedCourse, _CKCourseLibrary._moc, _CKCourseLibrary._sharedDatabase,
-                          _CKSharedDatabase._mainManagedObjectContext, _CKSharedDatabase._managedObjectModel,
-                          _CKSharedDatabase._persistentStoreCoordinator ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _CourseKitVersionNumber, _CourseKitVersionString,
+                            _kCKCourseURLTemplate,
+                            _kCKCourseURLTemplateCourseIDKey, _kCKDatabaseName,
+                            _kCKLibraryDocumentsPath, _kCKSystemGroupContainerId,
+                            _kCKiTunesUBundleID,
+                            _kCKiTunesUMinimumRequiredVersion ]
+    objc-classes:         [ _CKCourse, _CKCourseLibrary, _CKImageTransformer,
+                            _CKSharedCourse, _CKSharedDatabase ]
+    objc-ivars:           [ _CKCourse._sharedCourse, _CKCourseLibrary._moc,
+                            _CKCourseLibrary._sharedDatabase,
+                            _CKSharedDatabase._mainManagedObjectContext,
+                            _CKSharedDatabase._managedObjectModel,
+                            _CKSharedDatabase._persistentStoreCoordinator ]
 ...

@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/SocialFramework.axbundle/SocialFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ __Failover, _accessibilityLocalizedString ]
+    objc-classes:         [ _AXSocialFrameworkGlue,
+                            _SLComposeServiceViewControllerAccessibility,
+                            _SLFacebookComposeViewControllerAccessibility,
+                            _SLFacebookLoginInfoViewControllerAccessibility,
+                            _SLMicroBlogComposeViewControllerAccessibility,
+                            _SLSheetTextComposeViewAccessibility,
+                            _SLUIButtonAccessibility,
+                            _SLUITableViewAccessibility,
+                            _SLUITextViewAccessibility,
+                            ___SLComposeServiceViewControllerAccessibility_super,
+                            ___SLFacebookComposeViewControllerAccessibility_super,
+                            ___SLFacebookLoginInfoViewControllerAccessibility_super,
+                            ___SLMicroBlogComposeViewControllerAccessibility_super,
+                            ___SLSheetTextComposeViewAccessibility_super,
+                            ___SLUIButtonAccessibility_super,
+                            ___SLUITableViewAccessibility_super,
+                            ___SLUITextViewAccessibility_super ]
+...

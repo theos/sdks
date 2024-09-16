@@ -1,0 +1,37 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/BulletinBoardPlugins/MPDataProvider.bundle/MPDataProvider
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _PHDefaultLog, _PHFaceTimeApplicationIsRemoved,
+                            _PHPreferencesGetValue,
+                            _PHPreferencesGetValueInDomain,
+                            _PHPreferencesSetValue,
+                            _PHPreferencesSetValueInDomain,
+                            _kMPMissedCallsBadgeClearedNotification,
+                            _sMPBBSortMappingNextSortIdentifierKey ]
+    objc-classes:         [ _MPBBDataProvider, _MPBBFaceTimeDataProvider,
+                            _MPBBPhoneDataProvider, _MPBBSortMapping ]
+    objc-ivars:           [ _MPBBDataProvider._callProviderManager,
+                            _MPBBDataProvider._contactFormatter,
+                            _MPBBDataProvider._contactStore,
+                            _MPBBDataProvider._hasVisualVoicemail,
+                            _MPBBDataProvider._identifiersOfVoicemailWaitingForData,
+                            _MPBBDataProvider._latestLockscreenVoicemailRowID,
+                            _MPBBDataProvider._missedCallBulletinIdentifiers,
+                            _MPBBDataProvider._nonVisualVoicemailBulletinDate,
+                            _MPBBDataProvider._nonVisualVoicemailCount,
+                            _MPBBDataProvider._queue,
+                            _MPBBDataProvider._recentsManager,
+                            _MPBBDataProvider._sortMapping,
+                            _MPBBDataProvider._voicemailManager,
+                            _MPBBDataProvider._voicemailWaitingForPost,
+                            _MPBBSortMapping._bulletinRecordIDToSortIdentifier,
+                            _MPBBSortMapping._domain,
+                            _MPBBSortMapping._recordIDsToSuppress ]
+...

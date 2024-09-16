@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/ClientFlowService.assistantBundle/ClientFlowService
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _LastBackgroundActivityDateUserDefaultsKnowledgeStoreKey,
+                            _MinimumWaitInSecondsBeforeNextBackgroundActivityUserDefaultsKnowledgeStoreKey ]
+    objc-classes:         [ _CFBackgroundActionService,
+                            _CFCNAutoCompleteFetchDelelegate,
+                            _CFFlowCommandHandler, _CFProviderCommandHandler,
+                            _CFRemoveScriptCommandHandler, _CFRequestHandler,
+                            _CFServiceConnector, _CFServiceHelper,
+                            _CFSignalHandler ]
+    objc-ivars:           [ _CFServiceHelper._isClientLiteHelper,
+                            _CFServiceHelper._serviceHelper ]
+...

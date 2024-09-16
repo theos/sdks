@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/PhotosFramework.axbundle/PhotosFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _accessibilityCameraUILocalizedString,
+                            _accessibilityPLServicesLocalizedString,
+                            _accessibilityPhotosFrameworkLocalizedString ]
+    objc-classes:         [ _PHAssetAccessibility, _PhotosAXGlue,
+                            ___PHAssetAccessibility_super ]
+...

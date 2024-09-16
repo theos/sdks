@@ -1,0 +1,54 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/AddressBookUIFramework.axbundle/AddressBookUIFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ __Failover, _accessibilityLocalizedString ]
+    objc-classes:         [ _ABBannerViewAccessibility,
+                            _ABContactCellAccessibility,
+                            _ABDynamicLoaderAccessibility,
+                            _ABHighlightingTextFieldAccessibility,
+                            _ABImagePickerControllerAccessibility,
+                            _ABMemberCellAccessibility,
+                            _ABMembersViewControllerAccessibility,
+                            _ABMultiCellAccessibility,
+                            _ABMultiCellContentViewAccessibility,
+                            _ABMultiCellContentView_RowsAccessibility,
+                            _ABPersonCellContentViewAccessibility,
+                            _ABPersonContainerViewAccessibility,
+                            _ABPersonTableHeaderViewAccessibility,
+                            _ABPersonTableViewAccessibility,
+                            _ABPersonTableViewDataSourceAccessibility,
+                            _ABStyleProviderAccessibility,
+                            _ABSwellTextViewAccessibility,
+                            _ABUILabelWithPlaceholderAccessibility,
+                            _ABUITextViewAccessibility, _AXAddressBookUIGlue,
+                            _AddressBookUIAccessibilityUITableView,
+                            _UIABSegmentAccessibility,
+                            ___ABBannerViewAccessibility_super,
+                            ___ABContactCellAccessibility_super,
+                            ___ABDynamicLoaderAccessibility_super,
+                            ___ABHighlightingTextFieldAccessibility_super,
+                            ___ABImagePickerControllerAccessibility_super,
+                            ___ABMemberCellAccessibility_super,
+                            ___ABMembersViewControllerAccessibility_super,
+                            ___ABMultiCellAccessibility_super,
+                            ___ABMultiCellContentViewAccessibility_super,
+                            ___ABMultiCellContentView_RowsAccessibility_super,
+                            ___ABPersonCellContentViewAccessibility_super,
+                            ___ABPersonContainerViewAccessibility_super,
+                            ___ABPersonTableHeaderViewAccessibility_super,
+                            ___ABPersonTableViewAccessibility_super,
+                            ___ABPersonTableViewDataSourceAccessibility_super,
+                            ___ABStyleProviderAccessibility_super,
+                            ___ABSwellTextViewAccessibility_super,
+                            ___ABUILabelWithPlaceholderAccessibility_super,
+                            ___ABUITextViewAccessibility_super,
+                            ___AddressBookUIAccessibilityUITableView_super,
+                            ___UIABSegmentAccessibility_super ]
+...

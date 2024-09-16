@@ -1,12 +1,15 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppStoreUI.framework/AppStoreUI
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _ASAppStoreUIBundle ]
-    objc-classes:       [ _ASClientController, _ASPurchaseBatch, _ASViewControllerFactory ]
-    objc-ivars:         [ _ASClientController._shouldExitAfterPurchases ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _ASAppStoreUIBundle ]
+    objc-classes:         [ _ASClientController, _ASPurchaseBatch,
+                            _ASViewControllerFactory ]
+    objc-ivars:           [ _ASClientController._shouldExitAfterPurchases ]
 ...
