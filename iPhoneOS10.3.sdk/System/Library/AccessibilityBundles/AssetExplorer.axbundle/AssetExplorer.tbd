@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/AssetExplorer.axbundle/AssetExplorer
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _accessibilityLocalizedString ]
+    objc-classes:         [ _AEExplorerViewControllerAccessibility,
+                            _AEMessagesShelfRoundButtonAccessibility,
+                            _AEMessagesShelfViewControllerAccessibility,
+                            _AERoundedCornerButtonAccessibility,
+                            _AXAssetExplorerGlue,
+                            ___AEExplorerViewControllerAccessibility_super,
+                            ___AEMessagesShelfRoundButtonAccessibility_super,
+                            ___AEMessagesShelfViewControllerAccessibility_super,
+                            ___AERoundedCornerButtonAccessibility_super ]
+...

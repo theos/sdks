@@ -1,0 +1,55 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/Memories.axbundle/Memories
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _accessibilityMemoriesLocalizedString,
+                            _kMiroMoodCommentKey, _kMiroMoodIDsStrongMatchKey,
+                            _kMoodID_Action, _kMoodID_Chill, _kMoodID_Epic,
+                            _kMoodID_Ethereal, _kMoodID_Gentle, _kMoodID_Happy,
+                            _kMoodID_Neutral, _kMoodID_Party, _kMoodID_Sentimental,
+                            _kMoodID_Uplifting ]
+    objc-classes:         [ _AXMemoriesGlue, _AXMemoriesSlider,
+                            _AXMiroPhotoScrubber,
+                            _MiroAssetSuggestionsCollectionViewCellAccessibility,
+                            _MiroContentEditorViewControllerAccessibility,
+                            _MiroEditorClipCellAccessibility,
+                            _MiroEditorClipCollectionViewControllerAccessibility,
+                            _MiroIOSPlayerViewControllerAccessibility,
+                            _MiroMemoryEditorTitleViewControllerAccessibility,
+                            _MiroMemoryTitleStyleCollectionViewCellAccessibility,
+                            _MiroMemoryTitleStyleCollectionViewControllerAccessibility,
+                            _MiroMovieViewAccessibility,
+                            _MiroSliderViewControllerAccessibility,
+                            _MiroSmartMusicMenuCellAccessibility,
+                            _MiroTimelineClipCollectionViewControllerAccessibility,
+                            _MiroUICollectionViewAccessibility,
+                            _MiroUITableViewCellAccessibility,
+                            _MiroVideoScrubberContainerViewControllerAccessibility,
+                            _MiroVideoScrubberViewAccessibility,
+                            _RoundProgressViewAccessibility,
+                            ___MiroAssetSuggestionsCollectionViewCellAccessibility_super,
+                            ___MiroContentEditorViewControllerAccessibility_super,
+                            ___MiroEditorClipCellAccessibility_super,
+                            ___MiroEditorClipCollectionViewControllerAccessibility_super,
+                            ___MiroIOSPlayerViewControllerAccessibility_super,
+                            ___MiroMemoryEditorTitleViewControllerAccessibility_super,
+                            ___MiroMemoryTitleStyleCollectionViewCellAccessibility_super,
+                            ___MiroMemoryTitleStyleCollectionViewControllerAccessibility_super,
+                            ___MiroMovieViewAccessibility_super,
+                            ___MiroSliderViewControllerAccessibility_super,
+                            ___MiroSmartMusicMenuCellAccessibility_super,
+                            ___MiroTimelineClipCollectionViewControllerAccessibility_super,
+                            ___MiroUICollectionViewAccessibility_super,
+                            ___MiroUITableViewCellAccessibility_super,
+                            ___MiroVideoScrubberContainerViewControllerAccessibility_super,
+                            ___MiroVideoScrubberViewAccessibility_super,
+                            ___RoundProgressViewAccessibility_super ]
+    objc-ivars:           [ _AXMemoriesSlider._selectedDescription,
+                            _AXMemoriesSlider._sliderType ]
+...

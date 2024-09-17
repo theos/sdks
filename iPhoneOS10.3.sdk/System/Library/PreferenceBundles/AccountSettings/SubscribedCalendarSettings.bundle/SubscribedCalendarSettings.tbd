@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/AccountSettings/SubscribedCalendarSettings.bundle/SubscribedCalendarSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _kSubCalAccountSetupPlist ]
+    objc-classes:         [ _SubCalSettingsAccountsUIController,
+                            _SubCalSettingsPlugin ]
+    objc-ivars:           [ _SubCalSettingsAccountsUIController._broughtUpInitialKeyboard,
+                            _SubCalSettingsAccountsUIController._plistSpecifiers ]
+...

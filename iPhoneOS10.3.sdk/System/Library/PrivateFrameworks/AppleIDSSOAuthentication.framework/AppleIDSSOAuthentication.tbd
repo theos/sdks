@@ -1,13 +1,19 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID,
-                          _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, _AppleIDAuthenticationServicesKey,
-                          _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem, _kDeviceProvisioningMIDKey,
-                          _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AIDAAccountPropertyAltDSID,
+                            _AIDAAccountPropertyDSID,
+                            _AppleIDAuthenticationAppleIDSettingsTokenIdentifier,
+                            _AppleIDAuthenticationServicesKey,
+                            _AppleIDAuthenticationiCloudSettingsTokenIdentifier,
+                            __AIDALogSystem, _kDeviceProvisioningMIDKey,
+                            _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey,
+                            _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
 ...

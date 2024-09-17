@@ -1,0 +1,61 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/MobileSlideShowSettings.bundle/MobileSlideShowSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _MSSIsWiFiAvailable, _MSSIsWiFiEnabled,
+                            _MSSStartObserveNetworkChanges,
+                            _MSSStopObservingNetworkChanges,
+                            _kCPLExistNonLocalOriginalsKey,
+                            _kCPLNonLocalOriginalsCountKey,
+                            _kCPLNonLocalOriginalsFileSizeKey,
+                            _kCPLNonLocalOriginalsPhotoCountKey,
+                            _kCPLNonLocalOriginalsVideoCountKey ]
+    objc-classes:         [ _MSSCameraPreserveSettingsController,
+                            _MSSCameraSlomoSettingsController,
+                            _MSSCameraVideoSettingsController,
+                            _MSSPhotoStreamAlerts,
+                            _MSSPhotoStreamInAccountSettingsController,
+                            _MSSSettingsController, _PLCloudProgressFooterView,
+                            _PLFooterViewUpdater ]
+    objc-ivars:           [ _MSSSettingsController._accountModificationAllowed,
+                            _MSSSettingsController._allCloudPhotosSpecifiers,
+                            _MSSSettingsController._allPeopleAlbumResetSpecifiers,
+                            _MSSSettingsController._avalancheAllowed,
+                            _MSSSettingsController._cloudPhotosEnabled,
+                            _MSSSettingsController._cplStatus,
+                            _MSSSettingsController._diagnoseServiceConnection,
+                            _MSSSettingsController._displayedSpinner,
+                            _MSSSettingsController._iCloudPhotoLibraryConditionalSpecifiers,
+                            _MSSSettingsController._iCloudPhotosSwitchSpecifier,
+                            _MSSSettingsController._inAirplaneMode,
+                            _MSSSettingsController._isCPLInExitMode,
+                            _MSSSettingsController._observingNetworkChanges,
+                            _MSSSettingsController._offersManager,
+                            _MSSSettingsController._originalCellFlag,
+                            _MSSSettingsController._originalWiFiFlag,
+                            _MSSSettingsController._performingRampStatusUpdate,
+                            _MSSSettingsController._photoStreamAvalancheSpecifiers,
+                            _MSSSettingsController._photoStreamEnabled,
+                            _MSSSettingsController._photoStreamSwitchSpecifiers,
+                            _MSSSettingsController._radiosPreferences,
+                            _MSSSettingsController._rampStatus,
+                            _MSSSettingsController._requireStorageUpgradeForCPL,
+                            _MSSSettingsController._sharedStreamsEnabled,
+                            _MSSSettingsController._sharedStreamsSwitchSpecifiers,
+                            _MSSSettingsController._showAirplaneModeAlertWhenViewLoads,
+                            _MSSSettingsController._showWifiUnavailableWhenViewLoads,
+                            _MSSSettingsController._shownFromAccountSettings,
+                            _MSSSettingsController._stoppedObservingNetworkChangesBecauseUIDisappeared,
+                            _MSSSettingsController._wifiAvailable,
+                            _PLCloudProgressFooterView._cplStatus,
+                            _PLCloudProgressFooterView._lastSyncDate,
+                            _PLCloudProgressFooterView._statusLabel,
+                            _PLCloudProgressFooterView._updateTarget,
+                            _PLFooterViewUpdater._footerView ]
+...

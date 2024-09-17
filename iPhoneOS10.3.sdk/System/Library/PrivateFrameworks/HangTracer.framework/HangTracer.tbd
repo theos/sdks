@@ -1,15 +1,23 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/HangTracer.framework/HangTracer
 current-version:       24
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _HTAllowAnyThread, _HTAppActivationEvent, _HTAppActivationGenerateAppIdentifier,
-                          _HTEnabledStateChangedNotification, _HTEnabledUserInfoKey, _HTHangEventCreate, _HTResumeHangTracing,
-                          _HTStartHangTracing, _HTSuspendHangTracing, _HTUpdateHangTracing, _HangTracerVersionNumber,
-                          _HangTracerVersionString, ___logLevel, _kHTAppActivationFailureReasonWatchdog,
-                          _kHTAppActivationKeyBundleID, _kHTAppActivationKeyEventToken, _kHTAppActivationKeyFailureReason,
-                          _kHTAppActivationKeyPID, _kHTAppActivationKeyState ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _HTAllowAnyThread, _HTAppActivationEvent,
+                            _HTAppActivationGenerateAppIdentifier,
+                            _HTEnabledStateChangedNotification,
+                            _HTEnabledUserInfoKey, _HTHangEventCreate,
+                            _HTResumeHangTracing, _HTStartHangTracing,
+                            _HTSuspendHangTracing, _HTUpdateHangTracing,
+                            _HangTracerVersionNumber, _HangTracerVersionString,
+                            ___logLevel, _kHTAppActivationFailureReasonWatchdog,
+                            _kHTAppActivationKeyBundleID,
+                            _kHTAppActivationKeyEventToken,
+                            _kHTAppActivationKeyFailureReason,
+                            _kHTAppActivationKeyPID, _kHTAppActivationKeyState ]
 ...

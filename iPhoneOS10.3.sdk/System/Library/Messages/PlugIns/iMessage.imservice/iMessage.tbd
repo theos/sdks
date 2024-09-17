@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Messages/PlugIns/iMessage.imservice/iMessage
+current-version:       1000
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _IDSIncomingMessageDecryptedDataKey,
+                            _IDSIncomingMessageOriginalEncryptionTypeKey,
+                            _IDSIncomingMessagePushPayloadKey,
+                            _IDSIncomingMessageShouldShowPeerErrorsKey,
+                            _MessagePushHandlerMessageReplayKeyAccountLoginID,
+                            _MessagePushHandlerMessageReplayKeyAccountUniqueID,
+                            _MessagePushHandlerMessageReplayKeyFromID,
+                            _MessagePushHandlerMessageReplayKeyMessage,
+                            _MessagePushHandlerMessageReplayKeyMessageContext,
+                            _MessagePushHandlerMessageReplayKeyService,
+                            _MessageiMessageDeliveryDefaultTimeoutTime,
+                            _StickerRefreshUtilConfigureStickerToken,
+                            _StickerRefreshUtilGetMMCSRefreshHeaders,
+                            __ConvergeGroupParticipants, __FindChat,
+                            __LastAddressedURIForChat,
+                            __UpdateLastAddressedHandle,
+                            _incrementParticipantVersionForChat,
+                            _setParticipantVersionForChat ]
+...

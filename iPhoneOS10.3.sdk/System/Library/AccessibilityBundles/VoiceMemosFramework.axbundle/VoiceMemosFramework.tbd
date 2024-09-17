@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/VoiceMemosFramework.axbundle/VoiceMemosFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AXStringForDuration, __Failover,
+                            _accessibilityLocalizedString ]
+    objc-classes:         [ _AXVoiceMemosFrameworkGlue,
+                            _AXWaveformSelectionBarElement,
+                            _RCAudioRouteBarButtonAccessibility,
+                            _RCEditMemoViewControllerAccessibility,
+                            _RCRecorderStateButtonAccessibility,
+                            _RCUILabelAccessibility,
+                            _RCWaveformSelectionOverlayAccessibility,
+                            ___RCAudioRouteBarButtonAccessibility_super,
+                            ___RCEditMemoViewControllerAccessibility_super,
+                            ___RCRecorderStateButtonAccessibility_super,
+                            ___RCUILabelAccessibility_super,
+                            ___RCWaveformSelectionOverlayAccessibility_super,
+                            ___VoiceMemosFrameworkAccessibility ]
+    objc-ivars:           [ _AXWaveformSelectionBarElement._adjustsStartTime,
+                            ___VoiceMemosFrameworkAccessibility.__CGRect__,
+                            ___VoiceMemosFrameworkAccessibility.__RCTimeRange__ ]
+...

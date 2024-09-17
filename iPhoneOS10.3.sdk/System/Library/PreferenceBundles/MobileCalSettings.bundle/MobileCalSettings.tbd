@@ -1,0 +1,38 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/MobileCalSettings.bundle/MobileCalSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _CSDefaultAlarmsSourcesKey, _CSLogInitialize,
+                            _CalendarModelSpecifierKey, _MobileCalIdentifier,
+                            _TimeZoneKey, _TimeZoneSupportKey, _kCSLogFacility ]
+    objc-classes:         [ _CSDefaultAlarmsController, _CSDefaultCalendarPane,
+                            _CSTimeZoneController, _CalendarSettingsPlugin ]
+    objc-ivars:           [ _CSDefaultAlarmsController._defaultAllDayAlarmOffset,
+                            _CSDefaultAlarmsController._defaultTimedAlarmOffset,
+                            _CSDefaultCalendarPane._chooser,
+                            _CSDefaultCalendarPane._dontSetDefaultCalendar,
+                            _CSDefaultCalendarPane._store,
+                            _CSTimeZoneController._calendarTimeZoneSpecifier,
+                            _CSTimeZoneController._timeZoneSupportEnabled,
+                            _CSTimeZoneController._timeZoneSupportSpecifier,
+                            _CalendarSettingsPlugin._accountStore,
+                            _CalendarSettingsPlugin._birthdayCalendarSpecifier,
+                            _CalendarSettingsPlugin._defaultAlarmsSpecifier,
+                            _CalendarSettingsPlugin._defaultCalendarSpecifier,
+                            _CalendarSettingsPlugin._eventStore,
+                            _CalendarSettingsPlugin._moreThanOneCalendar,
+                            _CalendarSettingsPlugin._overlayCalendarSpecifier,
+                            _CalendarSettingsPlugin._showEventsFoundInMailSpecifier,
+                            _CalendarSettingsPlugin._showInviteeDeclinesSpecifier,
+                            _CalendarSettingsPlugin._showWeekNumbersSpecifier,
+                            _CalendarSettingsPlugin._suggestedLocationsSpecifier,
+                            _CalendarSettingsPlugin._syncDaysSpecifier,
+                            _CalendarSettingsPlugin._timeZoneSupportSpecifier,
+                            _CalendarSettingsPlugin._weekStartSpecifier ]
+...

@@ -1,0 +1,77 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PreferenceBundles/MobileMailSettings.bundle/MobileMailSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AccountChosenTypeKey, _AccountClassKey,
+                            _AccountIncomingHostnameKey,
+                            _AccountOutgoingValuesKey, _AccountPropertyKey,
+                            _AccountValuesKey,
+                            _MFDefaultWidthForAddressLabelType,
+                            _MFDefaultWidthForAddressLabelTypeCustomBundle,
+                            _MFImageForAddressLabelType,
+                            _MFImageForAddressLabelTypeCustomBundleAndBackground,
+                            _MailTableCellImageCenterForLevel,
+                            _MailTableCellTextLeftForLevel,
+                            _OriginalAccountValuesKey,
+                            _SignatureEditingPaneSignatureDidChangeNotification,
+                            _SignatureRadioGroupID,
+                            _SignatureTextFieldsBottomMargin,
+                            __ConfigureBooleanPSSpecifier,
+                            __ConfigurePSButtonSpecifier, __ConfigurePSSpecifier,
+                            _conversationViewIncludesRelatedMessages,
+                            _conversationViewShowsNewestAtTop, _kIncludeMailKey,
+                            _kLocalizedSwipeDirection,
+                            _kNanoMailBridgeSettingsDomain, _kSignatureMailKey,
+                            _kSwipeDirection, _leftSwipeSetting,
+                            _preferencesBundle, _rightSwipeSetting,
+                            _showToCCIndicators, _usesFlagShapeStyle ]
+    objc-classes:         [ _IndividualSwipeOptionController,
+                            _MFFlagStyleSettingsControllerViewController,
+                            _MFNanoBridgeSettingsAccountSpecificMailbox,
+                            _MFNanoBridgeSettingsMailbox,
+                            _MFNanoBridgeSettingsManager,
+                            _MFNanoBridgeSettingsSharedMailbox,
+                            _MFNanoBridgeSettingsUnifiedMailbox,
+                            _MFTableViewCell, _MFTriageActionUtilities,
+                            _MailSettingsPlugin, _MailboxHierarchyNode,
+                            _MailboxHierarchyTree, _QuoteSettingsPane,
+                            _SafeDomainsPane, _SignatureEditingPane,
+                            _SwipeOptionsController ]
+    objc-ivars:           [ _IndividualSwipeOptionController._showArchiveFooter,
+                            _MFNanoBridgeSettingsAccountSpecificMailbox._accountUniqueIdentifier,
+                            _MFNanoBridgeSettingsAccountSpecificMailbox._mailboxURL,
+                            _MFNanoBridgeSettingsAccountSpecificMailbox._mailboxUid,
+                            _MFNanoBridgeSettingsManager._activeAccounts,
+                            _MFNanoBridgeSettingsManager._domainAccessor,
+                            _MFNanoBridgeSettingsManager._syncManager,
+                            _MFNanoBridgeSettingsSharedMailbox._type,
+                            _MFNanoBridgeSettingsUnifiedMailbox._type,
+                            _MFTableViewCell._savedTextColor,
+                            _MFTableViewCell._shouldDisableWhileEditing,
+                            _MailSettingsPlugin._accountsChangedNotifyToken,
+                            _MailSettingsPlugin._allMailAccounts,
+                            _MailSettingsPlugin._signatureLock,
+                            _MailSettingsPlugin._signatureValue,
+                            _MailboxHierarchyNode._children,
+                            _MailboxHierarchyNode._displayName,
+                            _MailboxHierarchyNode._level,
+                            _MailboxHierarchyNode._mailbox,
+                            _MailboxHierarchyNode._parentMailbox,
+                            _MailboxHierarchyTree._mailboxStructureHasBeenCached,
+                            _MailboxHierarchyTree._nodesByMailbox,
+                            _MailboxHierarchyTree._rootMailboxNode,
+                            _SafeDomainsPane._parentListController,
+                            _SafeDomainsPane._textField,
+                            _SignatureEditingPane._accountSignaturesSpecifiers,
+                            _SignatureEditingPane._defaultSignatureSpecifiers,
+                            _SignatureEditingPane._parentListController,
+                            _SignatureEditingPane._singleAccountActive,
+                            _SignatureEditingPane._useAccountSignatures,
+                            _SwipeOptionsController._swipeActionsAndTitles ]
+...

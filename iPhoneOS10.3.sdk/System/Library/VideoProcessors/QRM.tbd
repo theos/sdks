@@ -1,0 +1,53 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoProcessors/QRM.videoprocessor
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _FigSampleBufferProcessorCreateForQRM ]
+    objc-classes:         [ _CrossTalkContextObjC, _DPCContextObjC,
+                            _GradientCalcContextObjC,
+                            _GreenInterpolationContextObjC, _MetalContextObjC,
+                            _RBCalculationContextObjC, _RBGSlopesContextObjC,
+                            _StaticDPCContextObjC ]
+    objc-ivars:           [ _CrossTalkContextObjC.fragUniBuf,
+                            _CrossTalkContextObjC.gainTex,
+                            _CrossTalkContextObjC.lastHeight,
+                            _CrossTalkContextObjC.lastWidth,
+                            _CrossTalkContextObjC.mCtx,
+                            _CrossTalkContextObjC.pipelineState,
+                            _CrossTalkContextObjC.vertexBuf,
+                            _DPCContextObjC.fragUniBuf, _DPCContextObjC.mCtx,
+                            _DPCContextObjC.pipelineState,
+                            _DPCContextObjC.vertexBuf,
+                            _GradientCalcContextObjC.fragUniBuf,
+                            _GradientCalcContextObjC.fragUniBufHostAddr,
+                            _GradientCalcContextObjC.mCtx,
+                            _GradientCalcContextObjC.pipelineState,
+                            _GradientCalcContextObjC.vertexBuf,
+                            _GreenInterpolationContextObjC.fragUniBuf,
+                            _GreenInterpolationContextObjC.mCtx,
+                            _GreenInterpolationContextObjC.pipelineState,
+                            _GreenInterpolationContextObjC.vertexBuf,
+                            _MetalContextObjC.commandQueue,
+                            _MetalContextObjC.device, _MetalContextObjC.library,
+                            _RBCalculationContextObjC.fragUniBuf,
+                            _RBCalculationContextObjC.mCtx,
+                            _RBCalculationContextObjC.pipelineState,
+                            _RBCalculationContextObjC.pipelineStateRGBA,
+                            _RBCalculationContextObjC.vertexBuf,
+                            _RBGSlopesContextObjC.fragUniBuf,
+                            _RBGSlopesContextObjC.fragUniBufHostAddr,
+                            _RBGSlopesContextObjC.mCtx,
+                            _RBGSlopesContextObjC.pipelineState,
+                            _RBGSlopesContextObjC.vertexBuf,
+                            _StaticDPCContextObjC.defaultsWriteOverride,
+                            _StaticDPCContextObjC.mCtx,
+                            _StaticDPCContextObjC.pipelineState,
+                            _StaticDPCContextObjC.pixelCount,
+                            _StaticDPCContextObjC.staticDefectsBuffer ]
+...

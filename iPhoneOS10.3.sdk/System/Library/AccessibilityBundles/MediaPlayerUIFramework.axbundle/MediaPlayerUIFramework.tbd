@@ -1,0 +1,69 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/MediaPlayerUIFramework.axbundle/MediaPlayerUIFramework
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _accessibilityMPUILocalizedString ]
+    objc-classes:         [ _AXMediaPlayerUIGlue,
+                            _MPUAVRouteHeaderViewAccessibility,
+                            _MPUChronologicalProgressViewAccessibility,
+                            _MPUCompletionFooterViewAccessibility,
+                            _MPUControlCenterMediaControlsViewAccessibility,
+                            _MPUControlCenterTransportButtonAccessibility,
+                            _MPUEmphasizedTextAccessibility,
+                            _MPUEmptyNowPlayingViewAccessibility,
+                            _MPUHalfTintedTransportButtonAccessibility,
+                            _MPUItemOfferButtonAccessibility,
+                            _MPUMarqueeViewAccessibility,
+                            _MPUMediaControlsVolumeViewAccessibility,
+                            _MPUMediaRemoteViewControllerAccessibility,
+                            _MPUNowPlayingArtworkViewAccessibility,
+                            _MPUNowPlayingIndicatorViewAccessibility,
+                            _MPUNowPlayingMetadataViewAccessibility,
+                            _MPUNowPlayingTitlesViewAccessibility,
+                            _MPURatingControlAccessibility,
+                            _MPUSkipLimitViewAccessibility,
+                            _MPUSystemMediaControlsViewAccessibility,
+                            _MPUSystemMediaControlsViewControllerAccessibility,
+                            _MPUTableViewControllerAccessibility,
+                            _MPUTextButtonAccessibility,
+                            _MPUTextDrawingViewAccessibility,
+                            _MPUTransportButtonAccessibility,
+                            _MPUTransportControlAccessibility,
+                            _MPUTransportControlMediaRemoteControllerAccessibility,
+                            _MPUTransportControlsViewAccessibility,
+                            _MPUVibrantContentEffectViewAccessibility,
+                            ___MPUAVRouteHeaderViewAccessibility_super,
+                            ___MPUChronologicalProgressViewAccessibility_super,
+                            ___MPUCompletionFooterViewAccessibility_super,
+                            ___MPUControlCenterMediaControlsViewAccessibility_super,
+                            ___MPUControlCenterTransportButtonAccessibility_super,
+                            ___MPUEmphasizedTextAccessibility_super,
+                            ___MPUEmptyNowPlayingViewAccessibility_super,
+                            ___MPUHalfTintedTransportButtonAccessibility_super,
+                            ___MPUItemOfferButtonAccessibility_super,
+                            ___MPUMarqueeViewAccessibility_super,
+                            ___MPUMediaControlsVolumeViewAccessibility_super,
+                            ___MPUMediaRemoteViewControllerAccessibility_super,
+                            ___MPUNowPlayingArtworkViewAccessibility_super,
+                            ___MPUNowPlayingIndicatorViewAccessibility_super,
+                            ___MPUNowPlayingMetadataViewAccessibility_super,
+                            ___MPUNowPlayingTitlesViewAccessibility_super,
+                            ___MPURatingControlAccessibility_super,
+                            ___MPUSkipLimitViewAccessibility_super,
+                            ___MPUSystemMediaControlsViewAccessibility_super,
+                            ___MPUSystemMediaControlsViewControllerAccessibility_super,
+                            ___MPUTableViewControllerAccessibility_super,
+                            ___MPUTextButtonAccessibility_super,
+                            ___MPUTextDrawingViewAccessibility_super,
+                            ___MPUTransportButtonAccessibility_super,
+                            ___MPUTransportControlAccessibility_super,
+                            ___MPUTransportControlMediaRemoteControllerAccessibility_super,
+                            ___MPUTransportControlsViewAccessibility_super,
+                            ___MPUVibrantContentEffectViewAccessibility_super ]
+...

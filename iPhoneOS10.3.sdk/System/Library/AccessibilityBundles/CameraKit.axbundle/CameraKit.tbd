@@ -1,0 +1,58 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/CameraKit.axbundle/CameraKit
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AXAccessibilityDetectFaces,
+                            _AXAccessibilityFaceCoreLightWrapper,
+                            _AXAccessibleFaceElements, _AXFaceDetectionEnabled,
+                            _AXFacePresetPhotoValue,
+                            _AXGetLocalizedStringForFaceLocation,
+                            _AXInitializeFaceAPI, _AXSetFaceFrameCallback,
+                            _accessibilityCameraKitLocalizedString ]
+    objc-classes:         [ _AXCameraKitGlue,
+                            _AXCameraMetadataDelegate_CAMERA_KIT,
+                            _AXFaceAccessibilityElement_CAMERA_KIT,
+                            _CAMEffectPreviewViewAccessibility,
+                            _CMKButtonLabelAccessibility,
+                            _CMKCameraViewAccessibility,
+                            _CMKCaptureControllerAccessibility,
+                            _CMKFilterButtonAccessibility,
+                            _CMKFlashButtonAccessibility,
+                            _CMKFlipButtonAccessibility,
+                            _CMKModeDialAccessibility,
+                            _CMKPanoramaArrowViewAccessibility,
+                            _CMKPanoramaViewAccessibility,
+                            _CMKPreviewViewAccessibility,
+                            _CMKShutterButtonAccessibility,
+                            _CMKTimerButtonAccessibility,
+                            _CMKTimerIndicatorViewAccessibility,
+                            _CMKTopBarAccessibility,
+                            _CMKVideoPreviewViewAccessibility,
+                            _CMKZoomSliderAccessibility,
+                            _DeferredFrameworkLoaderAccessibility,
+                            ___CAMEffectPreviewViewAccessibility_super,
+                            ___CMKButtonLabelAccessibility_super,
+                            ___CMKCameraViewAccessibility_super,
+                            ___CMKCaptureControllerAccessibility_super,
+                            ___CMKFilterButtonAccessibility_super,
+                            ___CMKFlashButtonAccessibility_super,
+                            ___CMKFlipButtonAccessibility_super,
+                            ___CMKModeDialAccessibility_super,
+                            ___CMKPanoramaArrowViewAccessibility_super,
+                            ___CMKPanoramaViewAccessibility_super,
+                            ___CMKPreviewViewAccessibility_super,
+                            ___CMKShutterButtonAccessibility_super,
+                            ___CMKTimerButtonAccessibility_super,
+                            ___CMKTimerIndicatorViewAccessibility_super,
+                            ___CMKTopBarAccessibility_super,
+                            ___CMKVideoPreviewViewAccessibility_super,
+                            ___CMKZoomSliderAccessibility_super,
+                            ___DeferredFrameworkLoaderAccessibility_super ]
+    objc-ivars:           [ _AXFaceAccessibilityElement_CAMERA_KIT._faceBounds ]
+...

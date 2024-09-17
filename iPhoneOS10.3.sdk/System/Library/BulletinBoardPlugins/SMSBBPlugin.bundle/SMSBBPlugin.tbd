@@ -1,0 +1,42 @@
+--- !tapi-tbd-v2
+archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/BulletinBoardPlugins/SMSBBPlugin.bundle/SMSBBPlugin
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _CKChatConversationListSuppressionContext,
+                            _SMSBBPluginCategory,
+                            _SMSBBPluginFirstLockPreferencesDomain,
+                            _SMSBBPluginLastPostedRowIDKey,
+                            _SMSBBPluginPreferencesDomain,
+                            _SMSBBPluginSectionIdentifier,
+                            _kCarrierPreferencesDomain,
+                            _kHandleDeclineAndMessageRecordID,
+                            _kSMSBBClearFailureBadgeNotification,
+                            _kSMSBBIncomingMessageAlertCountChangedNotification,
+                            _kSpringBoardSettingsChangedNotificationName ]
+    objc-classes:         [ _SMSBBPlugin ]
+    objc-ivars:           [ _SMSBBPlugin._audioController,
+                            _SMSBBPlugin._bbPluginLock,
+                            _SMSBBPlugin._bulletinCache,
+                            _SMSBBPlugin._deferredRemovedRowIDs,
+                            _SMSBBPlugin._deferredRowIDs,
+                            _SMSBBPlugin._delayDismissingBulletin,
+                            _SMSBBPlugin._iMessageService,
+                            _SMSBBPlugin._lastAlertedMessageRowID,
+                            _SMSBBPlugin._lastFailedAlertRowID,
+                            _SMSBBPlugin._mediaObjects,
+                            _SMSBBPlugin._playedMediaObjects,
+                            _SMSBBPlugin._playingAudioMessageGUIDs,
+                            _SMSBBPlugin._postBulletinBlockArray,
+                            _SMSBBPlugin._postBulletinThrottleTimer,
+                            _SMSBBPlugin._postedFailedSendRowIDs,
+                            _SMSBBPlugin._postedRowIDs, _SMSBBPlugin._queue,
+                            _SMSBBPlugin._raiseToListen,
+                            _SMSBBPlugin._suggestionsService,
+                            _SMSBBPlugin._wasUnderFirstUnlock ]
+...

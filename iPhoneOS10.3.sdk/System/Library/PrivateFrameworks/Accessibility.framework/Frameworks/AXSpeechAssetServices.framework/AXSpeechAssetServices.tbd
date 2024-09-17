@@ -1,16 +1,25 @@
----
+--- !tapi-tbd-v2
 archs:                 [ armv7, armv7s, arm64, i386, x86_64 ]
 platform:              ios
+flags:                 [ flat_namespace ]
 install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices
 current-version:       1
 compatibility-version: 1
+objc-constraint:       retain_release
 exports:
-  - archs:              [ armv7, armv7s, arm64, i386, x86_64 ]
-    symbols:            [ _AVSpeechSynthesisVoiceIdentifierVictoria, __AXSettingsSortedAssetsFromAssets ]
-    objc-classes:       [ _AXSettingsVoiceAssetManager, _AXSpeechAssetMonitorHelper, _AXSpeechPronunciationHelper,
-                          _AXSpeechPronunciationOptions ]
-    objc-ivars:         [ _AXSettingsVoiceAssetManager._delegates, _AXSettingsVoiceAssetManager._reachability,
-                          _AXSettingsVoiceAssetManager._samplePlayer, _AXSpeechAssetMonitorHelper._lastVoiceAssetUpdateTime,
-                          _AXSpeechPronunciationHelper._inSession, _AXSpeechPronunciationHelper._resultCallback,
-                          _AXSpeechPronunciationOptions._language, _AXSpeechPronunciationOptions._orthography ]
+  - archs:                [ armv7, armv7s, arm64, i386, x86_64 ]
+    symbols:              [ _AVSpeechSynthesisVoiceIdentifierVictoria,
+                            __AXSettingsSortedAssetsFromAssets ]
+    objc-classes:         [ _AXSettingsVoiceAssetManager,
+                            _AXSpeechAssetMonitorHelper,
+                            _AXSpeechPronunciationHelper,
+                            _AXSpeechPronunciationOptions ]
+    objc-ivars:           [ _AXSettingsVoiceAssetManager._delegates,
+                            _AXSettingsVoiceAssetManager._reachability,
+                            _AXSettingsVoiceAssetManager._samplePlayer,
+                            _AXSpeechAssetMonitorHelper._lastVoiceAssetUpdateTime,
+                            _AXSpeechPronunciationHelper._inSession,
+                            _AXSpeechPronunciationHelper._resultCallback,
+                            _AXSpeechPronunciationOptions._language,
+                            _AXSpeechPronunciationOptions._orthography ]
 ...
