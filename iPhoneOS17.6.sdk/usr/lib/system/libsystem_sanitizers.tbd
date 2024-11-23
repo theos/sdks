@@ -1,0 +1,47 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/system/libsystem_sanitizers.dylib
+current-version:       1
+compatibility-version: 1
+parent-umbrella:       System
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ ___asan_abi_addr_is_in_fake_stack,
+                            ___asan_abi_address_is_poisoned,
+                            ___asan_abi_after_dynamic_init,
+                            ___asan_abi_alloca_poison,
+                            ___asan_abi_allocas_unpoison,
+                            ___asan_abi_before_dynamic_init,
+                            ___asan_abi_exp_load_n, ___asan_abi_exp_store_n,
+                            ___asan_abi_get_current_fake_stack,
+                            ___asan_abi_handle_no_return, ___asan_abi_init,
+                            ___asan_abi_load_cxx_array_cookie,
+                            ___asan_abi_load_n, ___asan_abi_load_n_noabort,
+                            ___asan_abi_memcpy, ___asan_abi_memmove,
+                            ___asan_abi_memset,
+                            ___asan_abi_poison_cxx_array_cookie,
+                            ___asan_abi_poison_intra_object_redzone,
+                            ___asan_abi_poison_memory_region,
+                            ___asan_abi_poison_stack_memory,
+                            ___asan_abi_region_is_poisoned,
+                            ___asan_abi_register_image_globals,
+                            ___asan_abi_report_exp_load_n,
+                            ___asan_abi_report_exp_store_n,
+                            ___asan_abi_report_load_n,
+                            ___asan_abi_report_load_n_noabort,
+                            ___asan_abi_report_store_n,
+                            ___asan_abi_report_store_n_noabort,
+                            ___asan_abi_set_shadow_xx_n,
+                            ___asan_abi_stack_free_n,
+                            ___asan_abi_stack_malloc_always_n,
+                            ___asan_abi_stack_malloc_n, ___asan_abi_store_n,
+                            ___asan_abi_store_n_noabort,
+                            ___asan_abi_unpoison_intra_object_redzone,
+                            ___asan_abi_unpoison_memory_region,
+                            ___asan_abi_unpoison_stack_memory,
+                            ___asan_abi_unregister_image_globals,
+                            __sanitizers_init, _sanitizers_diagnose_memory_error,
+                            _sanitizers_report_globals ]
+...

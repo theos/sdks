@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftSystem_Foundation.dylib
+current-version:       33
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s10Foundation3URLV08_System_A0E_11isDirectoryACSg0C08FilePathV_SbtcfC,
+                            _$s10Foundation3URLV08_System_A0EyACSg0C08FilePathVcfC,
+                            _$s6System8FilePathV01_A11_FoundationEyACSg0D03URLVcfC ]
+...

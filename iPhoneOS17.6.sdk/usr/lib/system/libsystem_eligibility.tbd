@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/system/libsystem_eligibility.dylib
+current-version:       47.140.3
+compatibility-version: 1
+parent-umbrella:       System
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _os_eligibility_dump_sysdiagnose_data_to_dir,
+                            _os_eligibility_force_domain_answer,
+                            _os_eligibility_force_domain_set_answers,
+                            _os_eligibility_get_all_domain_answers,
+                            _os_eligibility_get_domain_answer,
+                            _os_eligibility_get_internal_state,
+                            _os_eligibility_get_state_dump,
+                            _os_eligibility_reset_all_domains,
+                            _os_eligibility_reset_domain,
+                            _os_eligibility_set_input ]
+...

@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/LiveSpeechUI.framework/LiveSpeechUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LiveSpeechUIVersionNumber,
+                            _LiveSpeechUIVersionString ]
+    objc-classes:         [ _TtC12LiveSpeechUI15LiveSpeechStore,
+                            _TtC12LiveSpeechUI19_LiveSpeechTextView,
+                            _TtC12LiveSpeechUI21LiveSpeechCallManager,
+                            _TtCV12LiveSpeechUI18LiveSpeechTextView11Coordinator ]
+...

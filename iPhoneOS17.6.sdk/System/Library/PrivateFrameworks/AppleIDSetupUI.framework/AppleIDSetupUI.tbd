@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppleIDSetupUIVersionNumber,
+                            _AppleIDSetupUIVersionString ]
+    objc-classes:         [ AISAIDASignInViewController,
+                            AISAppleIDSignInConfiguration,
+                            AISAppleIDSignInController, AISChildSetupPresenter,
+                            MicaPlayer, _TtC14AppleIDSetupUI16SignInOptionCell,
+                            _TtC14AppleIDSetupUI18AISAppleIDMicaView,
+                            _TtC14AppleIDSetupUI18AISSignInViewModel,
+                            _TtC14AppleIDSetupUI27SignInOptionsViewController,
+                            _TtC14AppleIDSetupUI29AISAppleIDAuthContextProvider,
+                            _TtC14AppleIDSetupUI32SignInOptionChildSetupController,
+                            _TtC14AppleIDSetupUI36SignInOptionAuthenticationController ]
+    objc-ivars:           [ MicaPlayer._delegate, MicaPlayer._documentDuration,
+                            MicaPlayer._isNotifyingDelegate,
+                            MicaPlayer._loopDuringPlayback, MicaPlayer._path,
+                            MicaPlayer._playTimer,
+                            MicaPlayer._preferredPlaybackSpeed,
+                            MicaPlayer._publishedObjects,
+                            MicaPlayer._retinaScale, MicaPlayer._rootLayer ]
+...

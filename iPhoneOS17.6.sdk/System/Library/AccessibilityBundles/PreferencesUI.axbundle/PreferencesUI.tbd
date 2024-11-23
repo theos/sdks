@@ -1,0 +1,24 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/PreferencesUI.axbundle/PreferencesUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _accessibilityLocalizedString,
+                            _accessibilityNonLocalizedStringForKey ]
+    objc-classes:         [ AXPreferencesUIGlue,
+                            PSUICellularPlanOptionTableCellAccessibility,
+                            PSUICircleSegmentAccessibility,
+                            PSUIFooterHyperlinkViewAccessibility,
+                            PSUIPrefsListControllerAccessibility,
+                            PSUITouchIDPasscodeControllerAccessibility,
+                            __PSUICellularPlanOptionTableCellAccessibility_super,
+                            __PSUICircleSegmentAccessibility_super,
+                            __PSUIFooterHyperlinkViewAccessibility_super,
+                            __PSUIPrefsListControllerAccessibility_super,
+                            __PSUITouchIDPasscodeControllerAccessibility_super ]
+...

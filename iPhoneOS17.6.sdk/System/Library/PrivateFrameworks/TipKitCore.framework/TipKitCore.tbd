@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TipKitCore.framework/TipKitCore
+current-version:       55.4.17
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC10TipKitCore13CoreTipRecord,
+                            _TtC10TipKitCore14CoreRuleRecord,
+                            _TtC10TipKitCore15CoreEventRecord,
+                            _TtC10TipKitCore18CoreDonationRecord,
+                            _TtC10TipKitCore19CoreParameterRecord,
+                            _TtCC10TipKitCore7CoreTip20ConstellationContent,
+                            _TtCC10TipKitCore8CoreRule9Predicate ]
+...

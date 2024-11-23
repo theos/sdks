@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/AppIntents.framework/AppIntents
+current-version:       174.200.3
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ LNAppConnectionListener, LNAppContext,
+                            LNAppContextWrapper, LNClientConnection,
+                            LNExtensionConnectionHandler,
+                            LNPerformActionExecutorDelegateProxy,
+                            LNPerformActionOperation, LNUserActivityHelper,
+                            _AppIntentsUserActivityHelper,
+                            _TtC10AppIntents28SystemIntentExecutorDelegate ]
+    objc-ivars:           [ LNAppConnectionListener._appContext,
+                            LNAppConnectionListener._clientConnections,
+                            LNAppConnectionListener._xpcListener,
+                            LNAppContextWrapper._appContext,
+                            LNClientConnection._appContext,
+                            LNClientConnection._performActionOperations,
+                            LNClientConnection._queue,
+                            LNClientConnection._xpcConnection,
+                            LNExtensionConnectionHandler._appContext,
+                            LNExtensionConnectionHandler._clientConnections,
+                            LNExtensionConnectionHandler._principalObject,
+                            LNPerformActionOperation._action,
+                            LNPerformActionOperation._client,
+                            LNPerformActionOperation._completionHandler,
+                            LNPerformActionOperation._delegate,
+                            LNPerformActionOperation._options,
+                            LNPerformActionOperation._progress,
+                            LNPerformActionOperation._result ]
+...

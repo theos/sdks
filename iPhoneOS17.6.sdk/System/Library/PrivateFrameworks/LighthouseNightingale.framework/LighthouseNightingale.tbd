@@ -1,0 +1,57 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/LighthouseNightingale.framework/LighthouseNightingale
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _LighthouseNightingalePluginLogContextPlugin,
+                            _LighthouseNightingalePluginLoggingCategoryPlugin,
+                            _LighthouseNightingalePluginLoggingInit,
+                            _LighthouseNightingalePluginLoggingSubsystem,
+                            _LighthouseNightingaleVersionNumber,
+                            _LighthouseNightingaleVersionString,
+                            _customErrorDomain,
+                            _dateOfPseudoDeviceIDGenerationKey,
+                            _defaultAdditionalDayCount,
+                            _defaultCadenceNumberOfDays, _defaultMaxCycleLength,
+                            _defaultMinCycleLength, _defaultRunWithDropOut,
+                            _defaultSimulateCrashOnTimeout, _pseudoDeviceIDKey,
+                            _reachCheckpointStringCheckedImproveHealthAndPrivacyAllowed,
+                            _reachCheckpointStringCheckedPluginNotRunRecently,
+                            _reachCheckpointStringCheckedUserOnboardedToCycles,
+                            _reachCheckpointStringFinishedAllPredictions,
+                            _reachCheckpointStringFinishedDayInputsQuery,
+                            _reachCheckpointStringFusedAllData,
+                            _reachCheckpointStringGotAllData,
+                            _reachCheckpointStringGotDateOfBirth,
+                            _reachCheckpointStringGotDayInputs,
+                            _reachCheckpointStringGotDayProcessorConfig,
+                            _reachCheckpointStringGotHeartRateStats,
+                            _reachCheckpointStringGotHistoricalCycles,
+                            _reachCheckpointStringGotMenstruationPredictions,
+                            _reachCheckpointStringGotSelfReportedMenstrualCycleLength,
+                            _reachCheckpointStringGotSelfReportedMenstrualCycleLengthUpdateDate,
+                            _reachCheckpointStringGotSelfReportedMenstruationLength,
+                            _reachCheckpointStringGotSelfReportedMenstruationLengthUpdateDate,
+                            _reachCheckpointStringPluginFinished,
+                            _reachCheckpointStringPluginStarted,
+                            _recipeAdditionalDayCountKey, _recipeCadenceKey,
+                            _recipeMaxCycleLengthKey, _recipeMinCycleLengthKey,
+                            _recipeRunWithDropOutKey,
+                            _recipeSimulateCrashOnTimeoutKey, _trialModelsKey,
+                            _trialNamespace, _trialRecipeKey,
+                            _userDefaultsLastRunDeploymentIdKey,
+                            _userDefaultsLastRunJulianDayKey ]
+    objc-classes:         [ DateUtils, EnumConversionUtils, HealthKitDataUtils,
+                            LighthouseNightingalePlugin, MetricsUtils,
+                            NightingaleTelemetryIdentifiers, ParityChecks,
+                            TelemetryUtils ]
+    objc-ivars:           [ NightingaleTelemetryIdentifiers._deploymentId,
+                            NightingaleTelemetryIdentifiers._experimentId,
+                            NightingaleTelemetryIdentifiers._reachId,
+                            NightingaleTelemetryIdentifiers._treatmentId ]
+...

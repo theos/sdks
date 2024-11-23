@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/XOJIT.framework/XOJIT
+current-version:       22
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _XOJIT_Error_Destroy, _XOJIT_Error_DestroyToMessage,
+                            _XOJIT_Error_ToMessage,
+                            _XOJIT_JITDylib_AddToLinkOrder,
+                            _XOJIT_JITDylib_GetName, _XOJIT_JITDylib_Release,
+                            _XOJIT_MemoryBuffer_CreateWithIdentifierFromPath,
+                            _XOJIT_MemoryBuffer_Destroy,
+                            _XOJIT_ObjectLinkingLayer_AddPlugin,
+                            _XOJIT_XOJIT_AddObjectFile,
+                            _XOJIT_XOJIT_CreateFromXPCWithOOPJITType,
+                            _XOJIT_XOJIT_CreateInProcess,
+                            _XOJIT_XOJIT_CreateJITDylib, _XOJIT_XOJIT_Destroy,
+                            _XOJIT_XOJIT_EndSession,
+                            _XOJIT_XOJIT_GetObjectLinkingLayer,
+                            _XOJIT_XOJIT_GetProgramJITDylibRetained,
+                            _XOJIT_XOJIT_LinkStaticArchive,
+                            _XOJIT_XOJIT_NoopMutatingCallback,
+                            _XOJIT_XOJIT_RemoveJITDylibAndRelease ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoEncoders/H264H9.videoencoder
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AVE_DEBUG_H264PrintWhereIAm,
+                            _AVE_DEBUG_H264SetCallback, _AVE_H264CreateInstance,
+                            _AVE_Log_CheckConsole, _AVE_Log_CheckLevel,
+                            _AVE_Log_GetLevelStr, _AVE_Log_Init,
+                            _AVE_Log_PresetCfg, _AVE_Log_ReadCfg,
+                            _AVE_Log_SetLevel,
+                            _AVE_RemoteSession_H264SetCallback,
+                            _H264H9EncoderRegister ]
+...

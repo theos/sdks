@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DeviceDiscoveryUI.framework/DeviceDiscoveryUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _UISceneSessionRoleEndpointPicker,
+                            _UISceneSessionRolePeoplePicker ]
+    objc-classes:         [ DDDevicePickerDebugErrorAction,
+                            DDDevicePickerDismissSceneAction,
+                            DDDevicePickerMutableSceneClientSettings,
+                            DDDevicePickerMutableSceneSettings,
+                            DDDevicePickerSceneClientSettings,
+                            DDDevicePickerSceneSettings,
+                            DDPeoplePickerMutableSceneClientSettings,
+                            DDPeoplePickerMutableSceneSettings,
+                            DDPeoplePickerSceneClientSettings,
+                            DDPeoplePickerSceneSettings,
+                            DD_RPNearFieldActiveClient,
+                            _DDDevicePickerClientContext,
+                            _DDDevicePickerSceneSpecification, _DDNearFieldTap,
+                            _DDPeoplePickerSceneSpecification,
+                            _DDUIAccountManager, _DDUIArtificialPerson,
+                            _TtC17DeviceDiscoveryUI22_DDAskToAirDropManager,
+                            _TtC17DeviceDiscoveryUI25FieldPickerViewController,
+                            _TtC17DeviceDiscoveryUI29_DDWirelessSettingsController,
+                            _TtC17DeviceDiscoveryUI33CNDDUISecureContactViewController,
+                            _TtC17DeviceDiscoveryUI33CNSecureFieldPickerViewController,
+                            _TtC17DeviceDiscoveryUI33SnapshottingContactViewController,
+                            _TtC17DeviceDiscoveryUI33_DDDevicePickerViewController_iOS ]
+    objc-ivars:           [ DDPeoplePickerMutableSceneClientSettings._connectedDeviceUUID,
+                            _DDDevicePickerClientContext._sessionIdentifier,
+                            _DDUIAccountManager._enabled,
+                            _DDUIAccountManager._iCloudToAltDSIDDictionary,
+                            _DDUIAccountManager._iCloudToNameComponentsDictionary,
+                            _DDUIArtificialPerson._accountAltDSID,
+                            _DDUIArtificialPerson._accountIdentifier,
+                            _DDUIArtificialPerson._deviceModel,
+                            _DDUIArtificialPerson._identifier,
+                            _DDUIArtificialPerson._name,
+                            _DDUIArtificialPerson.rapportPerson ]
+...

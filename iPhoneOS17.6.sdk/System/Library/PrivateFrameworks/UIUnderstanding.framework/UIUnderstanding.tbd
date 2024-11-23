@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UIUnderstanding.framework/UIUnderstanding
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _UIUnderstandingVersionNumber,
+                            _UIUnderstandingVersionString ]
+    objc-classes:         [ AddedElementsCompat, DedupeElementCompat,
+                            ScreenShotCompat, UIDeduplicatorCompat, UIObject,
+                            UIObjectCompat, UIUAddedElements, UIUDedupeElement,
+                            UIUDeduplicator, UIUScreenShot,
+                            _TtC15UIUnderstanding11BoundingBox,
+                            _TtC15UIUnderstanding13TemplateGraph,
+                            _TtC15UIUnderstanding15UIUModelFetcher,
+                            _TtC15UIUnderstanding16PixelBoundingBox,
+                            _TtC15UIUnderstanding21NormalizedBoundingBox,
+                            _TtC15UIUnderstanding29UIFingerprintingDetectionInfo ]
+    objc-ivars:           [ UIObject._underlyingObject,
+                            UIUAddedElements._groupID, UIUAddedElements._results,
+                            UIUAddedElements._underlyingObject,
+                            UIUDedupeElement._isDuplicate,
+                            UIUDedupeElement._rect,
+                            UIUDedupeElement._underlyingObject,
+                            UIUDeduplicator._underlyingObject,
+                            UIUScreenShot._underlyingObject ]
+...

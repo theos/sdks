@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/Calculator.axbundle/Calculator
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AXAlternateButtonKey, _AXCalculatorDisplayViewKey,
+                            __Failover, _accessibilityAlternateButtonForButton,
+                            _accessibilityCalculatorKeyIsBasic,
+                            _accessibilityHintLocalizedStringForCalculatorButton,
+                            _accessibilityLabelLocalizedStringForCalculatorButton,
+                            _accessibilityLocalizedString,
+                            _accessibilityShouldEchoButtonWhenPressed ]
+    objc-classes:         [ AXCalculatorGlue, CalculatorControllerAccessibility,
+                            CalculatorKeypadButtonAccessibility,
+                            CalculatorKeypadViewAccessibility,
+                            CalculatorModelAccessibility,
+                            Calculator_UIApplicationAccessibility,
+                            DisplayViewAccessibility,
+                            DisplayViewControllerAccessibility,
+                            __CalculatorControllerAccessibility_super,
+                            __CalculatorKeypadButtonAccessibility_super,
+                            __CalculatorKeypadViewAccessibility_super,
+                            __CalculatorModelAccessibility_super,
+                            __Calculator_UIApplicationAccessibility_super,
+                            __DisplayViewAccessibility_super,
+                            __DisplayViewControllerAccessibility_super ]
+...

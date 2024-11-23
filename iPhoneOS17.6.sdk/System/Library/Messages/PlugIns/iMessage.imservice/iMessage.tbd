@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Messages/PlugIns/iMessage.imservice/iMessage
+current-version:       1000
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _EnableReadReceiptForChatKey,
+                            _EngramControllerErrorDomain,
+                            _IDSIncomingMessageDecryptedDataKey,
+                            _IDSIncomingMessageOriginalEncryptionTypeKey,
+                            _IDSIncomingMessagePushPayloadKey,
+                            _IDSIncomingMessageShouldShowPeerErrorsKey,
+                            _IMDAccountForIDSAccount,
+                            _IMDChatCurrentGroupNameKey, _IMDChatGroupIDKey,
+                            _IMDChatGroupProtocolVersionKey,
+                            _IMDChatParametersKey, _IMDChatParticipantsKey,
+                            _MessageiMessageDeliveryDefaultTimeoutTime,
+                            _PeopleSetByAddingMyID,
+                            _StickerRefreshUtilConfigureStickerToken,
+                            _StickerRefreshUtilGetMMCSRefreshHeaders,
+                            _URIsFromHandles, __ConvergeGroupParticipants,
+                            __LastAddressedURIForChat,
+                            __LastAddressedURIForChatLogMetricIfNeeded,
+                            __PayloadDataWithExtensionPayloadDataFromAttachmentForOutgoingMessage,
+                            __ReplaceExtensionPayloadDataWithAttachmentForIncomingMessage,
+                            __UpdateLastAddressedHandle,
+                            _iMessageLocalFileAttachmentIndexKey,
+                            _iMessageLocalFileDataKey,
+                            _iMessageLocalFileErrorCodeKey,
+                            _iMessageLocalFileMessageGUIDKey,
+                            _iMessageLocalFileRequestKey,
+                            _iMessageLocalFileResponseKey,
+                            _iMessageLocalFileUseFileURLAPI,
+                            _iMessageLocalMessageDictionaryKey,
+                            _iMessageLocalTypeKey,
+                            _iMessageSupportsDirectMMCSDownload,
+                            _incrementParticipantVersionForChat,
+                            _kDefaultIncomingGroupSize,
+                            _setParticipantVersionForChat ]
+    objc-classes:         [ IMDGroupPhotoRefreshController ]
+...

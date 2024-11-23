@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Settings/LegalAndRegulatorySettingsPrivate.framework/LegalAndRegulatorySettingsPrivate
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ LRSPViewControllerFactory,
+                            LRSPViewControllerFactoryInternal,
+                            _TtC33LegalAndRegulatorySettingsPrivate23LRSPWKWebViewController,
+                            _TtC33LegalAndRegulatorySettingsPrivate24LRSPWKWebViewCoordinator,
+                            _TtC33LegalAndRegulatorySettingsPrivate26LRSPTopLevelViewController ]
+...

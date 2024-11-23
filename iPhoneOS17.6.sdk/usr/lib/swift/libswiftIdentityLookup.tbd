@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftIdentityLookup.dylib
+current-version:       1228.255.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE21promotionalSubActionsSaySo0abI6ActionVGvM,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE21promotionalSubActionsSaySo0abI6ActionVGvg,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE21promotionalSubActionsSaySo0abI6ActionVGvpMV,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE21promotionalSubActionsSaySo0abI6ActionVGvs,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE23transactionalSubActionsSaySo0abI6ActionVGvM,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE23transactionalSubActionsSaySo0abI6ActionVGvg,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE23transactionalSubActionsSaySo0abI6ActionVGvpMV,
+                            _$sSo40ILMessageFilterCapabilitiesQueryResponseC14IdentityLookupE23transactionalSubActionsSaySo0abI6ActionVGvs,
+                            __swift_FORCE_LOAD_$_swiftIdentityLookup ]
+...

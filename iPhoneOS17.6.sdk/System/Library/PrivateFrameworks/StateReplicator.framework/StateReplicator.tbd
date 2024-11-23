@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/StateReplicator.framework/StateReplicator
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _STRPCodingErrorDomain, _STRPLogCoding,
+                            _StateReplicatorLoggingSubsystem,
+                            _StateReplicatorVersionNumber,
+                            _StateReplicatorVersionString ]
+    objc-classes:         [ STRPOPACKCoder, STRPPropertyListTypeDecoder,
+                            STRPPropertyListTypeEncoder, STRPSampleByteEncodable,
+                            _TtC15StateReplicator10OPACKCoder,
+                            _TtC15StateReplicator14IDSSyncService,
+                            _TtC15StateReplicator17IDSServiceWrapper,
+                            _TtC15StateReplicator19STRPTapToRadarDraft,
+                            _TtC15StateReplicator21ConcreteIDSDependency ]
+    objc-ivars:           [ STRPPropertyListTypeDecoder._storage,
+                            STRPPropertyListTypeEncoder._storage,
+                            STRPSampleByteEncodable._aStruct ]
+...

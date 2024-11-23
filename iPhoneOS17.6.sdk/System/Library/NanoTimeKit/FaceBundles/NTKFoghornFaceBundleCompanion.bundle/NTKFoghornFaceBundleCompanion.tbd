@@ -1,0 +1,65 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/NanoTimeKit/FaceBundles/NTKFoghornFaceBundleCompanion.bundle/NTKFoghornFaceBundleCompanion
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NTKFaceBundleFoghornNightModeAuto,
+                            _NTKFaceBundleFoghornNightModeOff,
+                            _NTKFaceBundleFoghornNightModeOn,
+                            _NTKFoghornFaceBezelStyleDepthName,
+                            _NTKFoghornFaceBezelStyleElevationName,
+                            _NTKFoghornFaceBezelStyleNoneName,
+                            _NTKFoghornFaceBezelStyleSecondsName,
+                            _NTKFoghornFaceBezelStyleString,
+                            _NTKFoghornFaceLayoutStyleDefaultName,
+                            _NTKFoghornFaceLayoutStyleDefaultWithSecondsName,
+                            _NTKFoghornFaceLayoutStyleLargeName,
+                            _NTKFoghornFaceLayoutStyleLargeWithSecondsName,
+                            _NTKFoghornFaceLayoutStyleString,
+                            _NTKFoghornFaceLayoutStyleXLargeName,
+                            _NTKFoghornFaceLayoutStyleXLargeWithSecondsName,
+                            _NTKFoghornFaceNSBundle,
+                            _NTKFoghornTimeViewAnimationSnapStyleString,
+                            _NTKFoghornTimeViewAnimationStyleString,
+                            _NTKFoghornTimeViewElementMaskString,
+                            _NTKFoghornTimeViewElementString,
+                            _NTKSuperEllipseRectDestroy,
+                            _NTKSuperEllipseRectFirstQuadrantPathCircumference,
+                            _NTKSuperEllipseRectGeometryGetMetrics,
+                            _NTKSuperEllipseRectGeometryGetPathRotationAtPosition,
+                            _NTKSuperEllipseRectGeometryGetPathTangentAtAngle,
+                            _NTKSuperEllipseRectGeometryGetPositionAtAngle,
+                            _NTKSuperEllipseRectGeometryGetRadialPoints,
+                            _NTKSuperEllipseRectGeometryGetTravelRatioForInsetAtAngle,
+                            _NTKSuperEllipseRectGeometryGetXYAfterTravelFromPosition,
+                            _NTKSuperEllipseRectGeometryGetXYAtPosition,
+                            _NTKSuperEllipseRectGeometryTravelRatioForInsetAtPosition,
+                            _NTKSuperEllipseRectGetMetrics,
+                            _NTKSuperEllipseRectGetPathRotationAtPosition,
+                            _NTKSuperEllipseRectGetPathTangentAtAngle,
+                            _NTKSuperEllipseRectGetPositionAtAngle,
+                            _NTKSuperEllipseRectGetRadialXYs,
+                            _NTKSuperEllipseRectGetTravelRatioForInsetAtAngle,
+                            _NTKSuperEllipseRectGetTravelRatioForInsetAtPosition,
+                            _NTKSuperEllipseRectGetXYAfterTravelFromPosition,
+                            _NTKSuperEllipseRectGetXYAtPosition,
+                            _NTKSuperEllipseRectNew,
+                            __preferencesGetAppDoubleValue,
+                            __preferencesGetAppDoubleValueWithDefault,
+                            __preferencesGetAppIntegerValueWithDefault ]
+    objc-classes:         [ NTKFoghornElevationUtilities, NTKFoghornFace,
+                            NTKFoghornFaceBezelStyleEditOption,
+                            NTKFoghornFaceBezelView, NTKFoghornFaceBundle,
+                            NTKFoghornFaceColorPalette, NTKFoghornFaceFontLoader,
+                            NTKFoghornFaceLayoutStyleEditOption,
+                            NTKFoghornFaceView, NTKFoghornNightModeEditOption,
+                            NTKFoghornPreferences, NTKFoghornTimeView,
+                            NTKFoghornTimeViewLayer,
+                            NTKFoghornWaterSubmersionUtilities,
+                            NTKSuperEllipseRectGeometry ]
+...

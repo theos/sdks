@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/CoreIDVRGBLiveness.axbundle/CoreIDVRGBLiveness
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _accessibilityLocalizedString ]
+    objc-classes:         [ AXCoreIDVRGBLivenessGlue,
+                            CIDVRGBCameraShutterViewAccessibility,
+                            CIDVRGBCaptureSelfieVCAccessibility,
+                            CIDVRGBCoachingViewAccessibility,
+                            __CIDVRGBCameraShutterViewAccessibility_super,
+                            __CIDVRGBCaptureSelfieVCAccessibility_super,
+                            __CIDVRGBCoachingViewAccessibility_super ]
+...

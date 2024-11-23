@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MobileSafariSwift.framework/MobileSafariSwift
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ AppDistributorWrapper, SFSiriLinkCoordinator,
+                            SFTipsCoordinator, _AppDistributorWrapper,
+                            _SFSiriLinkCoordinator, _SFTipsCoordinator,
+                            _TtC17MobileSafariSwift18SiriLinkDataSource ]
+    objc-ivars:           [ SFSiriLinkCoordinator._actionPerformer,
+                            SFSiriLinkCoordinator._internal,
+                            SFTipsCoordinator._internal,
+                            SFTipsCoordinator._observer ]
+...

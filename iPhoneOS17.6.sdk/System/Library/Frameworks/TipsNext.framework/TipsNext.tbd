@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/TipsNext.framework/TipsNext
+current-version:       55.4.17
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC8TipsNext13MiniTipUIView,
+                            _TtC8TipsNext27MiniTipUICollectionViewCell,
+                            _TtC8TipsNext30MiniTipUIPopoverViewController,
+                            _TtC8TipsNext31MiniTipUICollectionReusableView ]
+...
